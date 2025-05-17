@@ -1,0 +1,30 @@
+# This file lists the Python libraries used in the virtual enviroment.
+# See the venv.ps1 and venv.sh scripts in this directory.
+# Chris Joakim, 2025
+
+# specific pinned versions
+# aiohttp>=3.11.18
+# six==1.17.0
+
+Faker
+Jinja2
+beautifulsoup4
+black
+docopt
+duckdb
+httpx
+
+langchain==0.3.25
+langchain-core==0.3.58
+langchain-community==0.3.23
+langchain-text-splitters==0.3.8
+langchain-openai==0.3.16
+
+psutil
+
+pytest>= 8.3.5
+pytest-asyncio>=0.25.3
+pytest-cov>=6.0.0
+
+python-dotenv
+redis
