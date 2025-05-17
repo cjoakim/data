@@ -1,0 +1,9 @@
+{
+  "libname": "mypy",
+  "libvers": "1.15.0",
+  "infile": "data/pip/mypy.txt",
+  "dependencies": {
+    "mypy-extensions": "1.1.0",
+    "typing-extensions": "4.13.2"
+  }
+}

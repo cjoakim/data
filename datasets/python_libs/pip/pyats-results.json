@@ -1,0 +1,6 @@
+{
+  "libname": "pyats-results",
+  "libvers": "25.4",
+  "infile": "data/pip/pyats-results.txt",
+  "dependencies": {}
+}

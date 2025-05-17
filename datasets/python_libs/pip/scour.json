@@ -1,0 +1,8 @@
+{
+  "libname": "scour",
+  "libvers": "0.38.2",
+  "infile": "data/pip/scour.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

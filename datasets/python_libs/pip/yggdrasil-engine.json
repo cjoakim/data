@@ -1,0 +1,6 @@
+{
+  "libname": "yggdrasil-engine",
+  "libvers": "0.1.4",
+  "infile": "data/pip/yggdrasil-engine.txt",
+  "dependencies": {}
+}

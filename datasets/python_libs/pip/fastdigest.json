@@ -1,0 +1,6 @@
+{
+  "libname": "fastdigest",
+  "libvers": "0.8.3",
+  "infile": "data/pip/fastdigest.txt",
+  "dependencies": {}
+}

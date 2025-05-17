@@ -1,0 +1,6 @@
+{
+  "libname": "types-prettytable",
+  "libvers": "3.4.2.6",
+  "infile": "data/pip/types-prettytable.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "msgpack-numpy-opentensor",
+  "libvers": "0.5.0",
+  "infile": "data/pip/msgpack-numpy-opentensor.txt",
+  "dependencies": {
+    "msgpack": "1.1.0",
+    "numpy": "2.2.5"
+  }
+}

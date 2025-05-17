@@ -1,0 +1,6 @@
+{
+  "libname": "stringzilla",
+  "libvers": "3.12.5",
+  "infile": "data/pip/stringzilla.txt",
+  "dependencies": {}
+}

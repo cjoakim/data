@@ -1,0 +1,9 @@
+{
+  "libname": "keras-preprocessing",
+  "libvers": "1.1.2",
+  "infile": "data/pip/keras-preprocessing.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "six": "1.17.0"
+  }
+}

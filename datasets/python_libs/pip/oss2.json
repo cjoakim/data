@@ -1,0 +1,21 @@
+{
+  "libname": "oss2",
+  "libvers": "2.19.1",
+  "infile": "data/pip/oss2.txt",
+  "dependencies": {
+    "aliyun-python-sdk-core": "2.16.0",
+    "aliyun-python-sdk-kms": "2.16.5",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "crcmod": "1.7",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "jmespath": "0.10.0",
+    "pycparser": "2.22",
+    "pycryptodome": "3.22.0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

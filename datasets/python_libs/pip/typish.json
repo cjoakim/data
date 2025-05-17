@@ -1,0 +1,6 @@
+{
+  "libname": "typish",
+  "libvers": "1.9.3",
+  "infile": "data/pip/typish.txt",
+  "dependencies": {}
+}

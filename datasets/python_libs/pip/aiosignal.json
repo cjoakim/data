@@ -1,0 +1,8 @@
+{
+  "libname": "aiosignal",
+  "libvers": "1.3.2",
+  "infile": "data/pip/aiosignal.txt",
+  "dependencies": {
+    "frozenlist": "1.6.0"
+  }
+}

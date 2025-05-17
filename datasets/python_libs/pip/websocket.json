@@ -1,0 +1,11 @@
+{
+  "libname": "websocket",
+  "libvers": "0.2.1",
+  "infile": "data/pip/websocket.txt",
+  "dependencies": {
+    "gevent": "25.4.2",
+    "greenlet": "3.2.1",
+    "zope-event": "5.0",
+    "zope-interface": "7.2"
+  }
+}

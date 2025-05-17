@@ -1,0 +1,6 @@
+{
+  "libname": "uwsgi",
+  "libvers": "2.0.29",
+  "infile": "data/pip/uwsgi.txt",
+  "dependencies": {}
+}

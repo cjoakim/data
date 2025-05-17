@@ -1,0 +1,20 @@
+{
+  "libname": "pymantic",
+  "libvers": "1.0.0",
+  "infile": "data/pip/pymantic.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "frozendict": "2.4.6",
+    "idna": "3.10",
+    "lark": "1.1.9",
+    "lxml": "5.4.0",
+    "pyld": "2.0.4",
+    "pyparsing": "3.2.3",
+    "pytz": "2025.2",
+    "rdflib": "7.1.4",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

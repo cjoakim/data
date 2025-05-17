@@ -1,0 +1,10 @@
+{
+  "libname": "pyrofork",
+  "libvers": "2.3.61",
+  "infile": "data/pip/pyrofork.txt",
+  "dependencies": {
+    "pyaes": "1.6.1",
+    "pymediainfo-pyrofork": "6.0.2",
+    "pysocks": "1.7.1"
+  }
+}

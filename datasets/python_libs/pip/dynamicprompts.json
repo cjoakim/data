@@ -1,0 +1,10 @@
+{
+  "libname": "dynamicprompts",
+  "libvers": "0.31.0",
+  "infile": "data/pip/dynamicprompts.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "pyparsing": "3.2.3"
+  }
+}

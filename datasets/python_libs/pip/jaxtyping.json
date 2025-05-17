@@ -1,0 +1,8 @@
+{
+  "libname": "jaxtyping",
+  "libvers": "0.3.2",
+  "infile": "data/pip/jaxtyping.txt",
+  "dependencies": {
+    "wadler-lindig": "0.1.5"
+  }
+}

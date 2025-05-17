@@ -1,0 +1,25 @@
+{
+  "libname": "pyfai",
+  "libvers": "2025.3.0",
+  "infile": "data/pip/pyfai.txt",
+  "dependencies": {
+    "contourpy": "1.3.2",
+    "cycler": "0.12.1",
+    "fabio": "2024.9.0",
+    "fonttools": "4.57.0",
+    "h5py": "3.13.0",
+    "hdf5plugin": "5.1.0",
+    "kiwisolver": "1.4.8",
+    "lxml": "5.4.0",
+    "matplotlib": "3.10.1",
+    "numexpr": "2.10.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "pyparsing": "3.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "scipy": "1.15.2",
+    "silx": "2.2.2",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "structlog-sentry",
+  "libvers": "2.2.1",
+  "infile": "data/pip/structlog-sentry.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "sentry-sdk": "2.27.0",
+    "structlog": "25.3.0",
+    "urllib3": "2.4.0"
+  }
+}

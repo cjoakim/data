@@ -1,0 +1,8 @@
+{
+  "libname": "django-nose",
+  "libvers": "1.4.7",
+  "infile": "data/pip/django-nose.txt",
+  "dependencies": {
+    "nose": "1.3.7"
+  }
+}

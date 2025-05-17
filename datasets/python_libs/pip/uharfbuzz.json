@@ -1,0 +1,6 @@
+{
+  "libname": "uharfbuzz",
+  "libvers": "0.50.0",
+  "infile": "data/pip/uharfbuzz.txt",
+  "dependencies": {}
+}

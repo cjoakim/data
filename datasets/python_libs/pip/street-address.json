@@ -1,0 +1,6 @@
+{
+  "libname": "street-address",
+  "libvers": "0.4.0",
+  "infile": "data/pip/street-address.txt",
+  "dependencies": {}
+}

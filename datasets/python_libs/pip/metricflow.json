@@ -1,0 +1,30 @@
+{
+  "libname": "metricflow",
+  "libvers": "0.207.3",
+  "infile": "data/pip/metricflow.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "attrs": "25.3.0",
+    "click": "8.1.8",
+    "dbt-semantic-interfaces": "0.7.4",
+    "graphviz": "0.20.3",
+    "importlib-metadata": "6.11.0",
+    "jinja2": "3.1.6",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "markupsafe": "3.0.2",
+    "more-itertools": "10.1.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "rapidfuzz": "3.13.0",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "six": "1.17.0",
+    "tabulate": "0.9.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "zipp": "3.21.0"
+  }
+}

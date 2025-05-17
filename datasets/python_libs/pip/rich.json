@@ -1,0 +1,10 @@
+{
+  "libname": "rich",
+  "libvers": "14.0.0",
+  "infile": "data/pip/rich.txt",
+  "dependencies": {
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "pygments": "2.19.1"
+  }
+}

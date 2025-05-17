@@ -1,0 +1,260 @@
+{"ID":256,"parkalias":null,"parkkey":"ALB01","parkname":"Riverside Park","city":"Albany","state":"NY","country":"US"}
+{"ID":257,"parkalias":null,"parkkey":"ALT01","parkname":"Columbia Park","city":"Altoona","state":"PA","country":"US"}
+{"ID":258,"parkalias":"Edison Field; Anaheim Stadium","parkkey":"ANA01","parkname":"Angel Stadium of Anaheim","city":"Anaheim","state":"CA","country":"US"}
+{"ID":259,"parkalias":null,"parkkey":"ARL01","parkname":"Arlington Stadium","city":"Arlington","state":"TX","country":"US"}
+{"ID":260,"parkalias":"The Ballpark in Arlington; Ameriquest Fl","parkkey":"ARL02","parkname":"Rangers Ballpark in Arlington","city":"Arlington","state":"TX","country":"US"}
+{"ID":261,"parkalias":null,"parkkey":"ATL01","parkname":"Atlanta-Fulton County Stadium","city":"Atlanta","state":"GA","country":"US"}
+{"ID":262,"parkalias":null,"parkkey":"ATL02","parkname":"Turner Field","city":"Atlanta","state":"GA","country":"US"}
+{"ID":263,"parkalias":null,"parkkey":"ATL03","parkname":"Suntrust Park","city":"Atlanta","state":"GA","country":"US"}
+{"ID":264,"parkalias":null,"parkkey":"BAL01","parkname":"Madison Avenue Grounds","city":"Baltimore","state":"MD","country":"US"}
+{"ID":265,"parkalias":null,"parkkey":"BAL02","parkname":"Newington Park","city":"Baltimore","state":"MD","country":"US"}
+{"ID":266,"parkalias":null,"parkkey":"BAL03","parkname":"Oriole Park I","city":"Baltimore","state":"MD","country":"US"}
+{"ID":267,"parkalias":null,"parkkey":"BAL04","parkname":"Belair Lot","city":"Baltimore","state":"MD","country":"US"}
+{"ID":268,"parkalias":null,"parkkey":"BAL05","parkname":"Monumental Park","city":"Baltimore","state":"MD","country":"US"}
+{"ID":269,"parkalias":null,"parkkey":"BAL06","parkname":"Oriole Park II","city":"Baltimore","state":"MD","country":"US"}
+{"ID":270,"parkalias":null,"parkkey":"BAL07","parkname":"Oriole Park III","city":"Baltimore","state":"MD","country":"US"}
+{"ID":271,"parkalias":"American League Park","parkkey":"BAL09","parkname":"Oriole Park IV","city":"Baltimore","state":"MD","country":"US"}
+{"ID":272,"parkalias":"Oriole Park V","parkkey":"BAL10","parkname":"Terrapin Park","city":"Baltimore","state":"MD","country":"US"}
+{"ID":273,"parkalias":null,"parkkey":"BAL11","parkname":"Memorial Stadium","city":"Baltimore","state":"MD","country":"US"}
+{"ID":274,"parkalias":null,"parkkey":"BAL12","parkname":"Oriole Park at Camden Yards","city":"Baltimore","state":"MD","country":"US"}
+{"ID":275,"parkalias":"Walpole Street Grounds","parkkey":"BOS01","parkname":"South End Grounds I","city":"Boston","state":"MA","country":"US"}
+{"ID":276,"parkalias":"Union Park","parkkey":"BOS02","parkname":"Dartmouth Grounds","city":"Boston","state":"MA","country":"US"}
+{"ID":277,"parkalias":null,"parkkey":"BOS03","parkname":"South End Grounds II","city":"Boston","state":"MA","country":"US"}
+{"ID":278,"parkalias":null,"parkkey":"BOS04","parkname":"Congress Street Grounds","city":"Boston","state":"MA","country":"US"}
+{"ID":279,"parkalias":null,"parkkey":"BOS05","parkname":"South End Grounds III","city":"Boston","state":"MA","country":"US"}
+{"ID":280,"parkalias":null,"parkkey":"BOS06","parkname":"Huntington Avenue Baseball Grounds","city":"Boston","state":"MA","country":"US"}
+{"ID":281,"parkalias":null,"parkkey":"BOS07","parkname":"Fenway Park","city":"Boston","state":"MA","country":"US"}
+{"ID":282,"parkalias":"Bee Hive","parkkey":"BOS08","parkname":"Braves Field","city":"Boston","state":"MA","country":"US"}
+{"ID":283,"parkalias":null,"parkkey":"BUF01","parkname":"Riverside Grounds","city":"Buffalo","state":"NY","country":"US"}
+{"ID":284,"parkalias":null,"parkkey":"BUF02","parkname":"Olympic Park I","city":"Buffalo","state":"NY","country":"US"}
+{"ID":285,"parkalias":null,"parkkey":"BUF03","parkname":"Olympic Park II","city":"Buffalo","state":"NY","country":"US"}
+{"ID":286,"parkalias":"Federal League Park","parkkey":"BUF04","parkname":"International Fair Association Grounds","city":"Buffalo","state":"NY","country":"US"}
+{"ID":287,"parkalias":"Pastime Park","parkkey":"CAN01","parkname":"Mahaffey Park","city":"Canton","state":"OH","country":"US"}
+{"ID":288,"parkalias":null,"parkkey":"CAN02","parkname":"Pastime Park","city":"Canton","state":"OH","country":"US"}
+{"ID":289,"parkalias":"Union Base-ball Grounds","parkkey":"CHI01","parkname":"Lake Front Park I","city":"Chicago","state":"IL","country":"US"}
+{"ID":290,"parkalias":null,"parkkey":"CHI02","parkname":"23rd Street Park","city":"Chicago","state":"IL","country":"US"}
+{"ID":291,"parkalias":null,"parkkey":"CHI03","parkname":"Lake Front Park II","city":"Chicago","state":"IL","country":"US"}
+{"ID":292,"parkalias":"Cricket Club Grounds; Union Grounds","parkkey":"CHI05","parkname":"South Side Park I","city":"Chicago","state":"IL","country":"US"}
+{"ID":293,"parkalias":null,"parkkey":"CHI06","parkname":"West Side Park","city":"Chicago","state":"IL","country":"US"}
+{"ID":294,"parkalias":null,"parkkey":"CHI07","parkname":"South Side Park II","city":"Chicago","state":"IL","country":"US"}
+{"ID":295,"parkalias":null,"parkkey":"CHI08","parkname":"West Side Grounds","city":"Chicago","state":"IL","country":"US"}
+{"ID":296,"parkalias":null,"parkkey":"CHI09","parkname":"South Side Park III","city":"Chicago","state":"IL","country":"US"}
+{"ID":297,"parkalias":"White Sox Park","parkkey":"CHI10","parkname":"Comiskey Park I","city":"Chicago","state":"IL","country":"US"}
+{"ID":298,"parkalias":"Weeghman Park; Cubs Park","parkkey":"CHI11","parkname":"Wrigley Field","city":"Chicago","state":"IL","country":"US"}
+{"ID":299,"parkalias":"U.S. Cellular Field;White Sox Park; Comiskey Park II","parkkey":"CHI12","parkname":"Guaranteed Rate Field","city":"Chicago","state":"IL","country":"US"}
+{"ID":300,"parkalias":"Union Cricket Club Grounds","parkkey":"CIN01","parkname":"Lincoln Park Grounds","city":"Cincinnati","state":"OH","country":"US"}
+{"ID":301,"parkalias":null,"parkkey":"CIN02","parkname":"Avenue Grounds","city":"Cincinnati","state":"OH","country":"US"}
+{"ID":302,"parkalias":null,"parkkey":"CIN03","parkname":"Bank Street Grounds","city":"Cincinnati","state":"OH","country":"US"}
+{"ID":303,"parkalias":null,"parkkey":"CIN04","parkname":"League Park I","city":"Cincinnati","state":"OH","country":"US"}
+{"ID":304,"parkalias":null,"parkkey":"CIN05","parkname":"League Park II","city":"Cincinnati","state":"OH","country":"US"}
+{"ID":305,"parkalias":"League Park III","parkkey":"CIN06","parkname":"Palace of the Fans","city":"Cincinnati","state":"OH","country":"US"}
+{"ID":306,"parkalias":"Redland Field","parkkey":"CIN07","parkname":"Crosley Field","city":"Cincinnati","state":"OH","country":"US"}
+{"ID":307,"parkalias":"Riverfront Stadium","parkkey":"CIN08","parkname":"Cinergy Field","city":"Cincinnati","state":"OH","country":"US"}
+{"ID":308,"parkalias":null,"parkkey":"CIN09","parkname":"Great American Ballpark","city":"Cincinnati","state":"OH","country":"US"}
+{"ID":309,"parkalias":null,"parkkey":"CLE01","parkname":"National Association Grounds","city":"Cleveland","state":"OH","country":"US"}
+{"ID":310,"parkalias":"Kennard Street Park","parkkey":"CLE02","parkname":"League Park I","city":"Cleveland","state":"OH","country":"US"}
+{"ID":311,"parkalias":"American Association Park","parkkey":"CLE03","parkname":"League Park II","city":"Cleveland","state":"OH","country":"US"}
+{"ID":312,"parkalias":"Players League Park","parkkey":"CLE04","parkname":"Brotherhood Park","city":"Cleveland","state":"OH","country":"US"}
+{"ID":313,"parkalias":"National League Park III","parkkey":"CLE05","parkname":"League Park III","city":"Cleveland","state":"OH","country":"US"}
+{"ID":314,"parkalias":"Dunn Field","parkkey":"CLE06","parkname":"League Park IV","city":"Cleveland","state":"OH","country":"US"}
+{"ID":315,"parkalias":"Municipal Stadium","parkkey":"CLE07","parkname":"Cleveland Stadium","city":"Cleveland","state":"OH","country":"US"}
+{"ID":316,"parkalias":"Jacobs Field","parkkey":"CLE08","parkname":"Progressive Field","city":"Cleveland","state":"OH","country":"US"}
+{"ID":317,"parkalias":null,"parkkey":"CLE09","parkname":"Cedar Avenue Driving Park","city":"Cleveland","state":"OH","country":"US"}
+{"ID":318,"parkalias":null,"parkkey":"CLL01","parkname":"Euclid Beach Park","city":"Collinwood","state":"OH","country":"US"}
+{"ID":319,"parkalias":null,"parkkey":"COL01","parkname":"Recreation Park I","city":"Columbus","state":"OH","country":"US"}
+{"ID":320,"parkalias":null,"parkkey":"COL02","parkname":"Recreation Park II","city":"Columbus","state":"OH","country":"US"}
+{"ID":321,"parkalias":null,"parkkey":"COL03","parkname":"Neil Park I","city":"Columbus","state":"OH","country":"US"}
+{"ID":322,"parkalias":null,"parkkey":"COL04","parkname":"Neil Park II","city":"Columbus","state":"OH","country":"US"}
+{"ID":323,"parkalias":null,"parkkey":"COV01","parkname":"Star Baseball Park","city":"Covington","state":"KY","country":"US"}
+{"ID":324,"parkalias":null,"parkkey":"DAY01","parkname":"Fairview Park","city":"Dayton","state":"OH","country":"US"}
+{"ID":325,"parkalias":null,"parkkey":"DEN01","parkname":"Mile High Stadium","city":"Denver","state":"CO","country":"US"}
+{"ID":326,"parkalias":null,"parkkey":"DEN02","parkname":"Coors Field","city":"Denver","state":"CO","country":"US"}
+{"ID":327,"parkalias":null,"parkkey":"DET01","parkname":"Recreation Park","city":"Detroit","state":"MI","country":"US"}
+{"ID":328,"parkalias":null,"parkkey":"DET02","parkname":"Bennett Park","city":"Detroit","state":"MI","country":"US"}
+{"ID":329,"parkalias":"West End Park","parkkey":"DET03","parkname":"Burns Park","city":"Detroit","state":"MI","country":"US"}
+{"ID":330,"parkalias":"Navin Field; Briggs Stadium","parkkey":"DET04","parkname":"Tiger Stadium","city":"Detroit","state":"MI","country":"US"}
+{"ID":331,"parkalias":null,"parkkey":"DET05","parkname":"Comerica Park","city":"Detroit","state":"MI","country":"US"}
+{"ID":332,"parkalias":null,"parkkey":"DOV01","parkname":"Fairview Park Fair Grounds","city":"Dover","state":"DE","country":"US"}
+{"ID":333,"parkalias":null,"parkkey":"ELM01","parkname":"Maple Avenue Driving Park","city":"Elmira","state":"NY","country":"US"}
+{"ID":334,"parkalias":"Hamilton Field","parkkey":"FOR01","parkname":"Grand Duchess","city":"Fort Wayne","state":"IN","country":"US"}
+{"ID":335,"parkalias":null,"parkkey":"FOR03","parkname":"Jailhouse Flats","city":"Fort Wayne","state":"IN","country":"US"}
+{"ID":336,"parkalias":null,"parkkey":"FTB01","parkname":"Fort Bragg Field","city":"Fort Bragg","state":"NC","country":"US"}
+{"ID":337,"parkalias":"Beyerle's Park","parkkey":"GEA01","parkname":"Geauga Lake Grounds","city":"Geauga Lake","state":"OH","country":"US"}
+{"ID":338,"parkalias":null,"parkkey":"GLO01","parkname":"Gloucester Point Grounds","city":"Gloucester City","state":"NJ","country":"US"}
+{"ID":339,"parkalias":null,"parkkey":"GLO02","parkname":"Gloucester Fireworks Park","city":"Gloucester City","state":"NJ","country":"US"}
+{"ID":340,"parkalias":null,"parkkey":"GRA01","parkname":"Ramona Park","city":"Grand Rapids","state":"MI","country":"US"}
+{"ID":341,"parkalias":null,"parkkey":"HAR01","parkname":"Harrison Field","city":"Harrison","state":"NJ","country":"US"}
+{"ID":342,"parkalias":null,"parkkey":"HOB01","parkname":"Elysian Field","city":"Hoboken","state":"NJ","country":"US"}
+{"ID":343,"parkalias":null,"parkkey":"HON01","parkname":"Aloha Stadium","city":"Honolulu","state":"HI","country":"US"}
+{"ID":344,"parkalias":null,"parkkey":"HOU01","parkname":"Colt Stadium","city":"Houston","state":"TX","country":"US"}
+{"ID":345,"parkalias":null,"parkkey":"HOU02","parkname":"Astrodome","city":"Houston","state":"TX","country":"US"}
+{"ID":346,"parkalias":"Enron Field; Astros Field","parkkey":"HOU03","parkname":"Minute Maid Park","city":"Houston","state":"TX","country":"US"}
+{"ID":347,"parkalias":null,"parkkey":"HRT01","parkname":"Hartford Ball Club Grounds","city":"Hartford","state":"CT","country":"US"}
+{"ID":348,"parkalias":null,"parkkey":"HRT02","parkname":"Hartford Trotting Park","city":"Hartford","state":"CT","country":"US"}
+{"ID":349,"parkalias":null,"parkkey":"IND01","parkname":"South Street Park","city":"Indianapolis","state":"IN","country":"US"}
+{"ID":350,"parkalias":null,"parkkey":"IND02","parkname":"Seventh Street Park I","city":"Indianapolis","state":"IN","country":"US"}
+{"ID":351,"parkalias":null,"parkkey":"IND03","parkname":"Bruce Grounds","city":"Indianapolis","state":"IN","country":"US"}
+{"ID":352,"parkalias":null,"parkkey":"IND04","parkname":"Seventh Street Park II","city":"Indianapolis","state":"IN","country":"US"}
+{"ID":353,"parkalias":null,"parkkey":"IND05","parkname":"Seventh Street Park III","city":"Indianapolis","state":"IN","country":"US"}
+{"ID":354,"parkalias":null,"parkkey":"IND06","parkname":"Indianapolis Park","city":"Indianapolis","state":"IN","country":"US"}
+{"ID":355,"parkalias":"Washington Park","parkkey":"IND07","parkname":"Federal League Park","city":"Indianapolis","state":"IN","country":"US"}
+{"ID":356,"parkalias":null,"parkkey":"IRO01","parkname":"Windsor Beach","city":"Irondequoit","state":"NY","country":"US"}
+{"ID":357,"parkalias":null,"parkkey":"JER01","parkname":"Oakdale Park","city":"Jersey City","state":"NJ","country":"US"}
+{"ID":358,"parkalias":null,"parkkey":"JER02","parkname":"Roosevelt Stadium","city":"Jersey City","state":"NJ","country":"US"}
+{"ID":359,"parkalias":null,"parkkey":"KAN01","parkname":"Athletic Park","city":"Kansas City","state":"MO","country":"US"}
+{"ID":360,"parkalias":null,"parkkey":"KAN02","parkname":"Association Park","city":"Kansas City","state":"MO","country":"US"}
+{"ID":361,"parkalias":null,"parkkey":"KAN03","parkname":"Exposition Park","city":"Kansas City","state":"MO","country":"US"}
+{"ID":362,"parkalias":null,"parkkey":"KAN04","parkname":"Gordon and Koppel Field","city":"Kansas City","state":"MO","country":"US"}
+{"ID":363,"parkalias":null,"parkkey":"KAN05","parkname":"Municipal Stadium","city":"Kansas City","state":"MO","country":"US"}
+{"ID":364,"parkalias":"Royals Stadium","parkkey":"KAN06","parkname":"Kauffman Stadium","city":"Kansas City","state":"MO","country":"US"}
+{"ID":365,"parkalias":"Walte's Pasture","parkkey":"KEO01","parkname":"Perry Park","city":"Keokuk","state":"IA","country":"US"}
+{"ID":366,"parkalias":null,"parkkey":"LAS01","parkname":"Cashman Field","city":"Las Vegas","state":"NV","country":"US"}
+{"ID":367,"parkalias":null,"parkkey":"LBV01","parkname":"The Ballpark at Disney's Wide World","city":"Lake Buena Vista","state":"FL","country":"US"}
+{"ID":368,"parkalias":null,"parkkey":"LON01","parkname":"London Stadium","city":"London","state":"ENG","country":"UK"}
+{"ID":369,"parkalias":null,"parkkey":"LOS01","parkname":"Los Angeles Memorial Coliseum","city":"Los Angeles","state":"CA","country":"US"}
+{"ID":370,"parkalias":null,"parkkey":"LOS02","parkname":"Wrigley Field","city":"Los Angeles","state":"CA","country":"US"}
+{"ID":371,"parkalias":"Chavez Ravine","parkkey":"LOS03","parkname":"Dodger Stadium","city":"Los Angeles","state":"CA","country":"US"}
+{"ID":372,"parkalias":null,"parkkey":"LOU01","parkname":"Louisville Baseball Park","city":"Louisville","state":"KY","country":"US"}
+{"ID":373,"parkalias":null,"parkkey":"LOU02","parkname":"Eclipse Park I","city":"Louisville","state":"KY","country":"US"}
+{"ID":374,"parkalias":null,"parkkey":"LOU03","parkname":"Eclipse Park II","city":"Louisville","state":"KY","country":"US"}
+{"ID":375,"parkalias":null,"parkkey":"LOU04","parkname":"Eclipse Park III","city":"Louisville","state":"KY","country":"US"}
+{"ID":376,"parkalias":null,"parkkey":"LUD01","parkname":"Ludlow Baseball Park","city":"Ludlow","state":"KY","country":"US"}
+{"ID":377,"parkalias":null,"parkkey":"MAS01","parkname":"Long Island Grounds","city":"Maspeth","state":"NY","country":"US"}
+{"ID":378,"parkalias":"JoeRobbie; ProPlayer; Dolphin; LandShark","parkkey":"MIA01","parkname":"Sun Life Stadium","city":"Miami","state":"FL","country":"US"}
+{"ID":379,"parkalias":null,"parkkey":"MIA02","parkname":"Marlins Park","city":"Miami","state":"FL","country":"US"}
+{"ID":380,"parkalias":null,"parkkey":"MID01","parkname":"Mansfield Club Grounds","city":"Middletown","state":"CT","country":"US"}
+{"ID":381,"parkalias":null,"parkkey":"MIL01","parkname":"Milwaukee Base-Ball Grounds","city":"Milwaukee","state":"WI","country":"US"}
+{"ID":382,"parkalias":null,"parkkey":"MIL02","parkname":"Wright Street Grounds","city":"Milwaukee","state":"WI","country":"US"}
+{"ID":383,"parkalias":null,"parkkey":"MIL03","parkname":"Athletic Park","city":"Milwaukee","state":"WI","country":"US"}
+{"ID":384,"parkalias":null,"parkkey":"MIL04","parkname":"Lloyd Street Grounds","city":"Milwaukee","state":"WI","country":"US"}
+{"ID":385,"parkalias":null,"parkkey":"MIL05","parkname":"County Stadium","city":"Milwaukee","state":"WI","country":"US"}
+{"ID":386,"parkalias":null,"parkkey":"MIL06","parkname":"Miller Park","city":"Milwaukee","state":"WI","country":"US"}
+{"ID":387,"parkalias":null,"parkkey":"MIN01","parkname":"Athletic Park","city":"Minneapolis","state":"MN","country":"US"}
+{"ID":388,"parkalias":null,"parkkey":"MIN02","parkname":"Metropolitan Stadium","city":"Bloomington","state":"MN","country":"US"}
+{"ID":389,"parkalias":null,"parkkey":"MIN03","parkname":"Hubert H. Humphrey Metrodome","city":"Minneapolis","state":"MN","country":"US"}
+{"ID":390,"parkalias":null,"parkkey":"MIN04","parkname":"Target Field","city":"Minneapolis","state":"MN","country":"US"}
+{"ID":391,"parkalias":null,"parkkey":"MNT01","parkname":"Estadio Monterrey","city":"Monterrey","state":"Nuevo Leon","country":"MX"}
+{"ID":392,"parkalias":"Jarry Park","parkkey":"MON01","parkname":"Parc Jarry","city":"Montreal","state":"QC","country":"CA"}
+{"ID":393,"parkalias":"Olympic Stadium","parkkey":"MON02","parkname":"Stade Olympique","city":"Montreal","state":"QC","country":"CA"}
+{"ID":394,"parkalias":"Brewster Park","parkkey":"NEW01","parkname":"Howard Avenue Grounds","city":"New Haven","state":"CT","country":"US"}
+{"ID":395,"parkalias":null,"parkkey":"NEW02","parkname":"Hamilton Park","city":"New Haven","state":"CT","country":"US"}
+{"ID":396,"parkalias":"Beyerle's Park","parkkey":"NEW03","parkname":"Geauga Lake Grounds","city":"Geauga Lake","state":"OH","country":"US"}
+{"ID":397,"parkalias":null,"parkkey":"NWK01","parkname":"Wiedenmeyer's Park","city":"Newark","state":"NJ","country":"US"}
+{"ID":398,"parkalias":null,"parkkey":"NYC01","parkname":"Union Grounds","city":"Brooklyn","state":"NY","country":"US"}
+{"ID":399,"parkalias":null,"parkkey":"NYC02","parkname":"Capitoline Grounds","city":"Brooklyn","state":"NY","country":"US"}
+{"ID":400,"parkalias":null,"parkkey":"NYC03","parkname":"Polo Grounds I (Southeast Diamond)","city":"New York","state":"NY","country":"US"}
+{"ID":401,"parkalias":null,"parkkey":"NYC04","parkname":"Polo Grounds II (Southwest Diamond)","city":"New York","state":"NY","country":"US"}
+{"ID":402,"parkalias":null,"parkkey":"NYC05","parkname":"Washington Park I","city":"Brooklyn","state":"NY","country":"US"}
+{"ID":403,"parkalias":null,"parkkey":"NYC06","parkname":"Metropolitan Park","city":"New York","state":"NY","country":"US"}
+{"ID":404,"parkalias":"Ridgewood Park I","parkkey":"NYC07","parkname":"Grauer's Ridgewood Park","city":"Queens","state":"NY","country":"US"}
+{"ID":405,"parkalias":null,"parkkey":"NYC08","parkname":"Washington Park II","city":"Brooklyn","state":"NY","country":"US"}
+{"ID":406,"parkalias":null,"parkkey":"NYC09","parkname":"Polo Grounds III","city":"New York","state":"NY","country":"US"}
+{"ID":407,"parkalias":null,"parkkey":"NYC10","parkname":"Polo Grounds IV","city":"New York","state":"NY","country":"US"}
+{"ID":408,"parkalias":null,"parkkey":"NYC11","parkname":"Eastern Park","city":"Brooklyn","state":"NY","country":"US"}
+{"ID":409,"parkalias":null,"parkkey":"NYC12","parkname":"Washington Park III","city":"Brooklyn","state":"NY","country":"US"}
+{"ID":410,"parkalias":null,"parkkey":"NYC13","parkname":"Hilltop Park","city":"New York","state":"NY","country":"US"}
+{"ID":411,"parkalias":null,"parkkey":"NYC14","parkname":"Polo Grounds V","city":"New York","state":"NY","country":"US"}
+{"ID":412,"parkalias":null,"parkkey":"NYC15","parkname":"Ebbets Field","city":"Brooklyn","state":"NY","country":"US"}
+{"ID":413,"parkalias":null,"parkkey":"NYC16","parkname":"Yankee Stadium I","city":"New York","state":"NY","country":"US"}
+{"ID":414,"parkalias":"William A. Shea Stadium","parkkey":"NYC17","parkname":"Shea Stadium","city":"New York","state":"NY","country":"US"}
+{"ID":415,"parkalias":"Ridgewood Park II","parkkey":"NYC18","parkname":"Wallace's Ridgewood Park","city":"Queens","state":"NY","country":"US"}
+{"ID":416,"parkalias":null,"parkkey":"NYC19","parkname":"Washington Park IV","city":"Brooklyn","state":"NY","country":"US"}
+{"ID":417,"parkalias":null,"parkkey":"NYC20","parkname":"Citi Field","city":"New York","state":"NY","country":"US"}
+{"ID":418,"parkalias":null,"parkkey":"NYC21","parkname":"Yankee Stadium II","city":"New York","state":"NY","country":"US"}
+{"ID":419,"parkalias":"Network Associates Coliseum","parkkey":"OAK01","parkname":"Oakland-Alameda County Coliseum","city":"Oakland","state":"CA","country":"US"}
+{"ID":420,"parkalias":null,"parkkey":"OMA01","parkname":"TD Ameritrade Park","city":"Omaha","state":"NE","country":"US"}
+{"ID":421,"parkalias":"Pendleton Park","parkkey":"PEN01","parkname":"East End Park","city":"Cincinnati","state":"OH","country":"US"}
+{"ID":422,"parkalias":"Athletics Park","parkkey":"PHI01","parkname":"Jefferson Street Grounds","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":423,"parkalias":null,"parkkey":"PHI02","parkname":"Centennial Park","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":424,"parkalias":null,"parkkey":"PHI03","parkname":"Oakdale Park","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":425,"parkalias":null,"parkkey":"PHI04","parkname":"Recreation Park","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":426,"parkalias":null,"parkkey":"PHI05","parkname":"Keystone Park","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":427,"parkalias":null,"parkkey":"PHI06","parkname":"Huntingdon Grounds I","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":428,"parkalias":null,"parkkey":"PHI07","parkname":"Forepaugh Park","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":429,"parkalias":null,"parkkey":"PHI08","parkname":"University of Penn. Athletic Field","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":430,"parkalias":null,"parkkey":"PHI09","parkname":"Baker Bowl","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":431,"parkalias":null,"parkkey":"PHI10","parkname":"Columbia Park","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":432,"parkalias":"Connie Mack Stadium","parkkey":"PHI11","parkname":"Shibe Park","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":433,"parkalias":null,"parkkey":"PHI12","parkname":"Veterans Stadium","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":434,"parkalias":null,"parkkey":"PHI13","parkname":"Citizens Bank Park","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":435,"parkalias":null,"parkkey":"PHI14","parkname":"Huntingdon Grounds II","city":"Philadelphia","state":"PA","country":"US"}
+{"ID":436,"parkalias":"Bank One Ballpark","parkkey":"PHO01","parkname":"Chase Field","city":"Phoenix","state":"AZ","country":"US"}
+{"ID":437,"parkalias":null,"parkkey":"PIT01","parkname":"Union Park","city":"Pittsburgh","state":"PA","country":"US"}
+{"ID":438,"parkalias":"Lower Field","parkkey":"PIT02","parkname":"Exposition Park I","city":"Pittsburgh","state":"PA","country":"US"}
+{"ID":439,"parkalias":"Upper Field","parkkey":"PIT03","parkname":"Exposition Park II","city":"Pittsburgh","state":"PA","country":"US"}
+{"ID":440,"parkalias":null,"parkkey":"PIT04","parkname":"Recreation Park","city":"Pittsburgh","state":"PA","country":"US"}
+{"ID":441,"parkalias":null,"parkkey":"PIT05","parkname":"Exposition Park III","city":"Pittsburgh","state":"PA","country":"US"}
+{"ID":442,"parkalias":null,"parkkey":"PIT06","parkname":"Forbes Field","city":"Pittsburgh","state":"PA","country":"US"}
+{"ID":443,"parkalias":null,"parkkey":"PIT07","parkname":"Three Rivers Stadium","city":"Pittsburgh","state":"PA","country":"US"}
+{"ID":444,"parkalias":null,"parkkey":"PIT08","parkname":"PNC Park","city":"Pittsburgh","state":"PA","country":"US"}
+{"ID":445,"parkalias":null,"parkkey":"PRO01","parkname":"Adelaide Avenue Grounds","city":"Providence","state":"RI","country":"US"}
+{"ID":446,"parkalias":null,"parkkey":"PRO02","parkname":"Messer Street Grounds","city":"Providence","state":"RI","country":"US"}
+{"ID":447,"parkalias":null,"parkkey":"RCK01","parkname":"Agricultural Society Fair Grounds","city":"Rockford","state":"IL","country":"US"}
+{"ID":448,"parkalias":null,"parkkey":"RIC01","parkname":"Richmond Fair Grounds","city":"Richmond","state":"VA","country":"US"}
+{"ID":449,"parkalias":null,"parkkey":"RIC02","parkname":"Allens Pasture","city":"Richmond","state":"VA","country":"US"}
+{"ID":450,"parkalias":null,"parkkey":"ROC01","parkname":"Culver Field I","city":"Rochester","state":"NY","country":"US"}
+{"ID":451,"parkalias":null,"parkkey":"ROC02","parkname":"Culver Field II","city":"Rochester","state":"NY","country":"US"}
+{"ID":452,"parkalias":null,"parkkey":"ROC03","parkname":"Ontario Beach Grounds","city":"Rochester","state":"NY","country":"US"}
+{"ID":453,"parkalias":null,"parkkey":"SAI01","parkname":"St. George Cricket Grounds","city":"New York","state":"NY","country":"US"}
+{"ID":454,"parkalias":"San Diego/Jack Murphy Stadium","parkkey":"SAN01","parkname":"Qualcomm Stadium","city":"San Diego","state":"CA","country":"US"}
+{"ID":455,"parkalias":null,"parkkey":"SAN02","parkname":"PETCO Park","city":"San Diego","state":"CA","country":"US"}
+{"ID":456,"parkalias":null,"parkkey":"SEA01","parkname":"Sick's Stadium","city":"Seattle","state":"WA","country":"US"}
+{"ID":457,"parkalias":null,"parkkey":"SEA02","parkname":"Kingdome","city":"Seattle","state":"WA","country":"US"}
+{"ID":458,"parkalias":"T-Mobile Park","parkkey":"SEA03","parkname":"Safeco Field","city":"Seattle","state":"WA","country":"US"}
+{"ID":459,"parkalias":null,"parkkey":"SFO01","parkname":"Seals Stadium","city":"San Francisco","state":"CA","country":"US"}
+{"ID":460,"parkalias":"3Com Park","parkkey":"SFO02","parkname":"Candlestick Park","city":"San Francisco","state":"CA","country":"US"}
+{"ID":461,"parkalias":"Pacific Bell Park; SBC Park","parkkey":"SFO03","parkname":"AT&T Park","city":"San Francisco","state":"CA","country":"US"}
+{"ID":462,"parkalias":null,"parkkey":"SJU01","parkname":"Estadio Hiram Bithorn","city":"San Juan","state":null,"country":"PR"}
+{"ID":463,"parkalias":"Springfield Track","parkkey":"SPR01","parkname":"Hampden Park Race Track","city":"Springfield","state":"MA","country":"US"}
+{"ID":464,"parkalias":null,"parkkey":"STL01","parkname":"Red Stockings Base Ball Park","city":"St. Louis","state":"MO","country":"US"}
+{"ID":465,"parkalias":null,"parkkey":"STL02","parkname":"Grand Avenue Park","city":"St. Louis","state":"MO","country":"US"}
+{"ID":466,"parkalias":null,"parkkey":"STL03","parkname":"Sportsman's Park I","city":"St. Louis","state":"MO","country":"US"}
+{"ID":467,"parkalias":null,"parkkey":"STL04","parkname":"Union Grounds","city":"St. Louis","state":"MO","country":"US"}
+{"ID":468,"parkalias":null,"parkkey":"STL05","parkname":"Robison Field","city":"St. Louis","state":"MO","country":"US"}
+{"ID":469,"parkalias":null,"parkkey":"STL06","parkname":"Sportsman's Park II","city":"St. Louis","state":"MO","country":"US"}
+{"ID":470,"parkalias":"Busch Stadium I","parkkey":"STL07","parkname":"Sportsman's Park III","city":"St. Louis","state":"MO","country":"US"}
+{"ID":471,"parkalias":"Federal League Park","parkkey":"STL08","parkname":"Handlan's Park","city":"St. Louis","state":"MO","country":"US"}
+{"ID":472,"parkalias":null,"parkkey":"STL09","parkname":"Busch Stadium II","city":"St. Louis","state":"MO","country":"US"}
+{"ID":473,"parkalias":null,"parkkey":"STL10","parkname":"Busch Stadium III","city":"St. Louis","state":"MO","country":"US"}
+{"ID":474,"parkalias":null,"parkkey":"STP01","parkname":"Tropicana Field","city":"St. Petersburg","state":"FL","country":"US"}
+{"ID":475,"parkalias":null,"parkkey":"SYD01","parkname":"Sydney Cricket Ground","city":"Sydney","state":"New South Wales","country":"AU"}
+{"ID":476,"parkalias":"Newell Park","parkkey":"SYR01","parkname":"Star Park I","city":"Syracuse","state":"NY","country":"US"}
+{"ID":477,"parkalias":null,"parkkey":"SYR02","parkname":"Star Park II","city":"Syracuse","state":"NY","country":"US"}
+{"ID":478,"parkalias":null,"parkkey":"SYR03","parkname":"Iron Pier","city":"Syracuse","state":"NY","country":"US"}
+{"ID":479,"parkalias":null,"parkkey":"THR01","parkname":"Three Rivers Park","city":"Three Rivers","state":"NY","country":"US"}
+{"ID":480,"parkalias":null,"parkkey":"TOK01","parkname":"Tokyo Dome","city":"Tokyo","state":"Tokyo","country":"JP"}
+{"ID":481,"parkalias":null,"parkkey":"TOL01","parkname":"League Park","city":"Toledo","state":"OH","country":"US"}
+{"ID":482,"parkalias":null,"parkkey":"TOL02","parkname":"Tri-State Fair Grounds","city":"Toledo","state":"OH","country":"US"}
+{"ID":483,"parkalias":null,"parkkey":"TOL03","parkname":"Speranza Park","city":"Toledo","state":"OH","country":"US"}
+{"ID":484,"parkalias":null,"parkkey":"TOL04","parkname":"Armory Park","city":"Toledo","state":"OH","country":"US"}
+{"ID":485,"parkalias":null,"parkkey":"TOR01","parkname":"Exhibition Stadium","city":"Toronto","state":"ON","country":"CA"}
+{"ID":486,"parkalias":"Skydome","parkkey":"TOR02","parkname":"Rogers Centre","city":"Toronto","state":"ON","country":"CA"}
+{"ID":487,"parkalias":null,"parkkey":"TRO01","parkname":"Haymakers' Grounds","city":"Troy","state":"NY","country":"US"}
+{"ID":488,"parkalias":null,"parkkey":"TRO02","parkname":"Putnam Grounds","city":"Troy","state":"NY","country":"US"}
+{"ID":489,"parkalias":null,"parkkey":"WAR01","parkname":"Rocky Point Park","city":"Warwick","state":"RI","country":"US"}
+{"ID":490,"parkalias":null,"parkkey":"WAS01","parkname":"Olympic Grounds","city":"Washington","state":"DC","country":"US"}
+{"ID":491,"parkalias":null,"parkkey":"WAS02","parkname":"National Grounds","city":"Washington","state":"DC","country":"US"}
+{"ID":492,"parkalias":null,"parkkey":"WAS03","parkname":"Capitol Grounds","city":"Washington","state":"DC","country":"US"}
+{"ID":493,"parkalias":null,"parkkey":"WAS04","parkname":"Athletic Park","city":"Washington","state":"DC","country":"US"}
+{"ID":494,"parkalias":null,"parkkey":"WAS05","parkname":"Swampoodle Grounds","city":"Washington","state":"DC","country":"US"}
+{"ID":495,"parkalias":null,"parkkey":"WAS06","parkname":"Boundary Field","city":"Washington","state":"DC","country":"US"}
+{"ID":496,"parkalias":null,"parkkey":"WAS07","parkname":"American League Park I","city":"Washington","state":"DC","country":"US"}
+{"ID":497,"parkalias":null,"parkkey":"WAS08","parkname":"American League Park II","city":"Washington","state":"DC","country":"US"}
+{"ID":498,"parkalias":null,"parkkey":"WAS09","parkname":"Griffith Stadium","city":"Washington","state":"DC","country":"US"}
+{"ID":499,"parkalias":"D.C. Stadium","parkkey":"WAS10","parkname":"Robert F. Kennedy Stadium","city":"Washington","state":"DC","country":"US"}
+{"ID":500,"parkalias":null,"parkkey":"WAS11","parkname":"Nationals Park","city":"Washington","state":"DC","country":"US"}
+{"ID":501,"parkalias":null,"parkkey":"WAT01","parkname":"Troy Ball Club Grounds","city":"Watervliet","state":"NY","country":"US"}
+{"ID":502,"parkalias":null,"parkkey":"WAV01","parkname":"Waverly Fairgrounds","city":"Waverly","state":"NJ","country":"US"}
+{"ID":503,"parkalias":null,"parkkey":"WEE01","parkname":"Monitor Grounds","city":"Weehawken","state":"NJ","country":"US"}
+{"ID":504,"parkalias":null,"parkkey":"WHE01","parkname":"Island Grounds","city":"Wheeling","state":"WV","country":"US"}
+{"ID":505,"parkalias":null,"parkkey":"WIL01","parkname":"Union Street Park","city":"Wilmington","state":"DE","country":"US"}
+{"ID":506,"parkalias":null,"parkkey":"WIL02","parkname":"BB&T Ballpark at Bowman Field","city":"Williamsport","state":"PA","country":"US"}
+{"ID":507,"parkalias":null,"parkkey":"WNY01","parkname":"West New York Field Club Grounds","city":"West New York","state":"NJ","country":"US"}
+{"ID":508,"parkalias":null,"parkkey":"WOR01","parkname":"Agricultural County Fair Grounds I","city":"Worcester","state":"MA","country":"US"}
+{"ID":509,"parkalias":null,"parkkey":"WOR02","parkname":"Agricultural County Fair Grounds II","city":"Worcester","state":"MA","country":"US"}
+{"ID":510,"parkalias":null,"parkkey":"WOR03","parkname":"Worcester Driving Park Grounds","city":"Worcester","state":"MA","country":"US"}
+{"ID":511,"parkalias":"Estadio Alfredo Harp Hel","parkkey":"MEX02","parkname":"Alfredo Harp Hel Stadium","city":"Mexico City","state":"CDMX","country":"MX"}
+{"ID":512,"parkalias":null,"parkkey":"DYE01","parkname":"Field of Dreams","city":"Dyersville","state":"IA","country":"US"}
+{"ID":513,"parkalias":"Dunedin Stadium at Grant Field; Knology Park; Florida Auto Exchange Stadium","parkkey":"DUN01","parkname":"TD Ballpark","city":"Dunedin","state":"FL","country":"US"}
+{"ID":514,"parkalias":"Pilot Field; Downtown Ballpark; North AmeriCare Park; Dunn Tire Park; Coca-Cola Field","parkkey":"BUF05","parkname":"Sahlen Field","city":"Buffalo","state":"NY","country":"US"}
+{"ID":515,"parkalias":null,"parkkey":"ARL03","parkname":"Field of Dreams","city":"Arlington","state":"TX","country":"US"}

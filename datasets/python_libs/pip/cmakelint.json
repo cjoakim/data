@@ -1,0 +1,6 @@
+{
+  "libname": "cmakelint",
+  "libvers": "1.4.3",
+  "infile": "data/pip/cmakelint.txt",
+  "dependencies": {}
+}

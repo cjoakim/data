@@ -1,0 +1,12 @@
+{
+  "libname": "onnxmltools",
+  "libvers": "1.13.0",
+  "infile": "data/pip/onnxmltools.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "onnx": "1.17.0",
+    "onnxconverter-common": "1.14.0",
+    "packaging": "25.0",
+    "protobuf": "3.20.2"
+  }
+}

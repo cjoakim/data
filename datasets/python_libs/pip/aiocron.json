@@ -1,0 +1,11 @@
+{
+  "libname": "aiocron",
+  "libvers": "2.1",
+  "infile": "data/pip/aiocron.txt",
+  "dependencies": {
+    "cronsim": "2.6",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "tzlocal": "5.3.1"
+  }
+}

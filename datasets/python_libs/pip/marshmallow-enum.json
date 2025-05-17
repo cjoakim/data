@@ -1,0 +1,8 @@
+{
+  "libname": "marshmallow-enum",
+  "libvers": "1.5.1",
+  "infile": "data/pip/marshmallow-enum.txt",
+  "dependencies": {
+    "marshmallow": "4.0.0"
+  }
+}

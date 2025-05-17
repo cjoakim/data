@@ -1,0 +1,6 @@
+{
+  "libname": "traits",
+  "libvers": "7.0.2",
+  "infile": "data/pip/traits.txt",
+  "dependencies": {}
+}

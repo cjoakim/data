@@ -1,0 +1,6 @@
+{
+  "libname": "pyopt",
+  "libvers": "0.84",
+  "infile": "data/pip/pyopt.txt",
+  "dependencies": {}
+}

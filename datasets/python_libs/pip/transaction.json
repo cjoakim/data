@@ -1,0 +1,8 @@
+{
+  "libname": "transaction",
+  "libvers": "5.0",
+  "infile": "data/pip/transaction.txt",
+  "dependencies": {
+    "zope-interface": "7.2"
+  }
+}

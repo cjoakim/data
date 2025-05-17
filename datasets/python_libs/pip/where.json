@@ -1,0 +1,8 @@
+{
+  "libname": "where",
+  "libvers": "1.0.2",
+  "infile": "data/pip/where.txt",
+  "dependencies": {
+    "itermate": "1.0.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "django-maintenance-mode",
+  "libvers": "0.22.0",
+  "infile": "data/pip/django-maintenance-mode.txt",
+  "dependencies": {
+    "python-fsutil": "0.15.0"
+  }
+}

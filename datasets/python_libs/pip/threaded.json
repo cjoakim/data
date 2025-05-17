@@ -1,0 +1,6 @@
+{
+  "libname": "threaded",
+  "libvers": "4.2.0",
+  "infile": "data/pip/threaded.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "sox",
+  "libvers": "1.5.0",
+  "infile": "data/pip/sox.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "tabula",
+  "libvers": "1.0.5",
+  "infile": "data/pip/tabula.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

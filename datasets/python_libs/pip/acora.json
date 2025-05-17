@@ -1,0 +1,6 @@
+{
+  "libname": "acora",
+  "libvers": "2.5",
+  "infile": "data/pip/acora.txt",
+  "dependencies": {}
+}

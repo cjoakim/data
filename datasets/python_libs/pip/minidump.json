@@ -1,0 +1,6 @@
+{
+  "libname": "minidump",
+  "libvers": "0.0.24",
+  "infile": "data/pip/minidump.txt",
+  "dependencies": {}
+}

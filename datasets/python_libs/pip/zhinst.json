@@ -1,0 +1,21 @@
+{
+  "libname": "zhinst",
+  "libvers": "25.4.0",
+  "infile": "data/pip/zhinst.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonref": "1.1.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "numpy": "2.2.5",
+    "pyelftools": "0.32",
+    "pyyaml": "6.0.2",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2",
+    "zhinst-core": "25.4.0.628",
+    "zhinst-timing-models": "25.4.0",
+    "zhinst-toolkit": "0.7.1",
+    "zhinst-utils": "0.6.0"
+  }
+}

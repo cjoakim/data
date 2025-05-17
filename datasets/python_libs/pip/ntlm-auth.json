@@ -1,0 +1,6 @@
+{
+  "libname": "ntlm-auth",
+  "libvers": "1.5.0",
+  "infile": "data/pip/ntlm-auth.txt",
+  "dependencies": {}
+}

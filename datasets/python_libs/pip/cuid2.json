@@ -1,0 +1,6 @@
+{
+  "libname": "cuid2",
+  "libvers": "2.0.1",
+  "infile": "data/pip/cuid2.txt",
+  "dependencies": {}
+}

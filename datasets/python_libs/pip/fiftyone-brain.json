@@ -1,0 +1,12 @@
+{
+  "libname": "fiftyone-brain",
+  "libvers": "0.21.2",
+  "infile": "data/pip/fiftyone-brain.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "numpy": "2.2.5",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "threadpoolctl": "3.6.0"
+  }
+}

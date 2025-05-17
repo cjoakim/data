@@ -1,0 +1,6 @@
+{
+  "libname": "basicauth",
+  "libvers": "1.0.0",
+  "infile": "data/pip/basicauth.txt",
+  "dependencies": {}
+}

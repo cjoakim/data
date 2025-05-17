@@ -1,0 +1,6 @@
+{
+  "libname": "btsocket",
+  "libvers": "0.3.0",
+  "infile": "data/pip/btsocket.txt",
+  "dependencies": {}
+}

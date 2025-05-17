@@ -1,0 +1,8 @@
+{
+  "libname": "aeidon",
+  "libvers": "1.15",
+  "infile": "data/pip/aeidon.txt",
+  "dependencies": {
+    "charset-normalizer": "3.4.2"
+  }
+}

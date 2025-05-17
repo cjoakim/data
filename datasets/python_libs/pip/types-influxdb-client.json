@@ -1,0 +1,8 @@
+{
+  "libname": "types-influxdb-client",
+  "libvers": "1.45.0.20241221",
+  "infile": "data/pip/types-influxdb-client.txt",
+  "dependencies": {
+    "urllib3": "2.4.0"
+  }
+}

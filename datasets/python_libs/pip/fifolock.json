@@ -1,0 +1,6 @@
+{
+  "libname": "fifolock",
+  "libvers": "0.0.20",
+  "infile": "data/pip/fifolock.txt",
+  "dependencies": {}
+}

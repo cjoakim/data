@@ -1,0 +1,6 @@
+{
+  "libname": "identify",
+  "libvers": "2.6.10",
+  "infile": "data/pip/identify.txt",
+  "dependencies": {}
+}

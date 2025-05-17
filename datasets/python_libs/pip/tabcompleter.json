@@ -1,0 +1,6 @@
+{
+  "libname": "tabcompleter",
+  "libvers": "1.4.0",
+  "infile": "data/pip/tabcompleter.txt",
+  "dependencies": {}
+}

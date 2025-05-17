@@ -1,0 +1,6 @@
+{
+  "libname": "latexcodec",
+  "libvers": "3.0.0",
+  "infile": "data/pip/latexcodec.txt",
+  "dependencies": {}
+}

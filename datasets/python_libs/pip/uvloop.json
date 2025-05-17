@@ -1,0 +1,6 @@
+{
+  "libname": "uvloop",
+  "libvers": "0.21.0",
+  "infile": "data/pip/uvloop.txt",
+  "dependencies": {}
+}

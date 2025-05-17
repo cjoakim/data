@@ -1,0 +1,8 @@
+{
+  "libname": "asdf-transform-schemas",
+  "libvers": "0.5.0",
+  "infile": "data/pip/asdf-transform-schemas.txt",
+  "dependencies": {
+    "asdf-standard": "1.1.1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "pygcode",
+  "libvers": "0.2.1",
+  "infile": "data/pip/pygcode.txt",
+  "dependencies": {
+    "argparse": "1.4.0",
+    "euclid3": "0.1",
+    "six": "1.17.0"
+  }
+}

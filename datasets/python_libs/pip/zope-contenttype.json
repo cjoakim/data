@@ -1,0 +1,6 @@
+{
+  "libname": "zope-contenttype",
+  "libvers": "5.2",
+  "infile": "data/pip/zope-contenttype.txt",
+  "dependencies": {}
+}

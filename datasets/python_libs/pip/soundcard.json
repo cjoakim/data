@@ -1,0 +1,10 @@
+{
+  "libname": "soundcard",
+  "libvers": "0.4.4",
+  "infile": "data/pip/soundcard.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "numpy": "2.2.5",
+    "pycparser": "2.22"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "biscuit-python",
+  "libvers": "0.3.2",
+  "infile": "data/pip/biscuit-python.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "elasticsearch6",
+  "libvers": "6.8.2",
+  "infile": "data/pip/elasticsearch6.txt",
+  "dependencies": {
+    "urllib3": "2.4.0"
+  }
+}

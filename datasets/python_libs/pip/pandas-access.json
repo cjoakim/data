@@ -1,0 +1,6 @@
+{
+  "libname": "pandas-access",
+  "libvers": "0.0.1",
+  "infile": "data/pip/pandas-access.txt",
+  "dependencies": {}
+}

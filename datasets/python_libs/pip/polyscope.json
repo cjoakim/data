@@ -1,0 +1,8 @@
+{
+  "libname": "polyscope",
+  "libvers": "2.4.0",
+  "infile": "data/pip/polyscope.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

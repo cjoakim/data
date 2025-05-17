@@ -1,0 +1,6 @@
+{
+  "libname": "google-crc32c",
+  "libvers": "1.7.1",
+  "infile": "data/pip/google-crc32c.txt",
+  "dependencies": {}
+}

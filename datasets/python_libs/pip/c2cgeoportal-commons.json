@@ -1,0 +1,27 @@
+{
+  "libname": "c2cgeoportal-commons",
+  "libvers": "2.9.0.140",
+  "infile": "data/pip/c2cgeoportal-commons.txt",
+  "dependencies": {
+    "geoalchemy2": "0.17.1",
+    "geojson": "3.2.0",
+    "hupper": "1.12.1",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "papyrus": "2.6.2",
+    "pastedeploy": "3.1.0",
+    "plaster": "1.1.2",
+    "plaster-pastedeploy": "1.0.1",
+    "pyramid": "2.0.2",
+    "shapely": "2.1.0",
+    "sqlalchemy": "2.0.40",
+    "transaction": "5.0",
+    "translationstring": "1.4",
+    "typing-extensions": "4.13.2",
+    "venusian": "3.1.1",
+    "webob": "1.8.9",
+    "zope-deprecation": "5.1",
+    "zope-event": "5.0",
+    "zope-interface": "7.2"
+  }
+}

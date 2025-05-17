@@ -1,0 +1,8 @@
+{
+  "libname": "dot2tex",
+  "libvers": "2.11.3",
+  "infile": "data/pip/dot2tex.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

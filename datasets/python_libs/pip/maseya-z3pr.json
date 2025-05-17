@@ -1,0 +1,6 @@
+{
+  "libname": "maseya-z3pr",
+  "libvers": "1.0.0rc1",
+  "infile": "data/pip/maseya-z3pr.txt",
+  "dependencies": {}
+}

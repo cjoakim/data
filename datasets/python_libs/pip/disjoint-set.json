@@ -1,0 +1,6 @@
+{
+  "libname": "disjoint-set",
+  "libvers": "0.8.0",
+  "infile": "data/pip/disjoint-set.txt",
+  "dependencies": {}
+}

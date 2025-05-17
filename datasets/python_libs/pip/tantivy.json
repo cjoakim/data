@@ -1,0 +1,6 @@
+{
+  "libname": "tantivy",
+  "libvers": "0.24.0",
+  "infile": "data/pip/tantivy.txt",
+  "dependencies": {}
+}

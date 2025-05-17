@@ -1,0 +1,6 @@
+{
+  "libname": "pywin32",
+  "libvers": "310",
+  "infile": "data/pip/pywin32.txt",
+  "dependencies": {}
+}

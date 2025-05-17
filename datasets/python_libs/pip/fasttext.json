@@ -1,0 +1,9 @@
+{
+  "libname": "fasttext",
+  "libvers": "0.9.3",
+  "infile": "data/pip/fasttext.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pybind11": "2.13.6"
+  }
+}

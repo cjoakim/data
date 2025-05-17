@@ -1,0 +1,8 @@
+{
+  "libname": "actfast",
+  "libvers": "1.1.2",
+  "infile": "data/pip/actfast.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "glob2",
+  "libvers": "0.7",
+  "infile": "data/pip/glob2.txt",
+  "dependencies": {}
+}

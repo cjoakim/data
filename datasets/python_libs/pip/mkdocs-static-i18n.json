@@ -1,0 +1,23 @@
+{
+  "libname": "mkdocs-static-i18n",
+  "libvers": "1.3.0",
+  "infile": "data/pip/mkdocs-static-i18n.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "ghp-import": "2.1.0",
+    "jinja2": "3.1.6",
+    "markdown": "3.8",
+    "markupsafe": "3.0.2",
+    "mergedeep": "1.3.4",
+    "mkdocs": "1.6.1",
+    "mkdocs-get-deps": "0.2.0",
+    "packaging": "25.0",
+    "pathspec": "0.12.1",
+    "platformdirs": "4.3.7",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "pyyaml-env-tag": "0.1",
+    "six": "1.17.0",
+    "watchdog": "6.0.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "libname": "qiskit-qasm3-import",
+  "libvers": "0.5.1",
+  "infile": "data/pip/qiskit-qasm3-import.txt",
+  "dependencies": {
+    "antlr4-python3-runtime": "4.13.2",
+    "dill": "0.4.0",
+    "mpmath": "1.3.0",
+    "numpy": "2.2.5",
+    "openqasm3[parser]": "1.0.1",
+    "pbr": "6.1.1",
+    "python-dateutil": "2.9.0.post0",
+    "qiskit": "2.0.0",
+    "rustworkx": "0.16.0",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "stevedore": "5.4.1",
+    "symengine": "0.13.0",
+    "sympy": "1.14.0",
+    "typing-extensions": "4.13.2"
+  }
+}

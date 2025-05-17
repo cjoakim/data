@@ -1,0 +1,6 @@
+{
+  "libname": "sshconf",
+  "libvers": "0.2.7",
+  "infile": "data/pip/sshconf.txt",
+  "dependencies": {}
+}

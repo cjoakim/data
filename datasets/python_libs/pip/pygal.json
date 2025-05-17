@@ -1,0 +1,9 @@
+{
+  "libname": "pygal",
+  "libvers": "3.0.5",
+  "infile": "data/pip/pygal.txt",
+  "dependencies": {
+    "importlib-metadata": "8.7.0",
+    "zipp": "3.21.0"
+  }
+}

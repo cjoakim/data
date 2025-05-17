@@ -1,0 +1,18 @@
+{
+  "libname": "aeppl-nightly",
+  "libvers": "0.0.40",
+  "infile": "data/pip/aeppl-nightly.txt",
+  "dependencies": {
+    "aesara": "2.9.4",
+    "cons": "0.4.6",
+    "etuples": "0.3.9",
+    "filelock": "3.18.0",
+    "logical-unification": "0.4.6",
+    "minikanren": "1.0.3",
+    "multipledispatch": "1.0.0",
+    "numpy": "1.26.4",
+    "scipy": "1.12.0",
+    "toolz": "1.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

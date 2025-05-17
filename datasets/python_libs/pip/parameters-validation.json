@@ -1,0 +1,6 @@
+{
+  "libname": "parameters-validation",
+  "libvers": "1.2.0",
+  "infile": "data/pip/parameters-validation.txt",
+  "dependencies": {}
+}

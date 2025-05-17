@@ -1,0 +1,8 @@
+{
+  "libname": "num2words",
+  "libvers": "0.5.14",
+  "infile": "data/pip/num2words.txt",
+  "dependencies": {
+    "docopt": "0.6.2"
+  }
+}

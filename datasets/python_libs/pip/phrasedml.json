@@ -1,0 +1,6 @@
+{
+  "libname": "phrasedml",
+  "libvers": "1.3.0",
+  "infile": "data/pip/phrasedml.txt",
+  "dependencies": {}
+}

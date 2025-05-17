@@ -1,0 +1,6 @@
+{
+  "libname": "dishka",
+  "libvers": "1.5.3",
+  "infile": "data/pip/dishka.txt",
+  "dependencies": {}
+}

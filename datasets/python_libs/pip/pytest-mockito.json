@@ -1,0 +1,12 @@
+{
+  "libname": "pytest-mockito",
+  "libvers": "0.0.4",
+  "infile": "data/pip/pytest-mockito.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "mockito": "1.5.4",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5"
+  }
+}

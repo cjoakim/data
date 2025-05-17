@@ -1,0 +1,9 @@
+{
+  "libname": "accelerator-toolbox",
+  "libvers": "0.6.1",
+  "infile": "data/pip/accelerator-toolbox.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

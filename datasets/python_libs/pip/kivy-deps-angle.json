@@ -1,0 +1,6 @@
+{
+  "libname": "kivy-deps-angle",
+  "libvers": "0.4.0",
+  "infile": "data/pip/kivy-deps-angle.txt",
+  "dependencies": {}
+}

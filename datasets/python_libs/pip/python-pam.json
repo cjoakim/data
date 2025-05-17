@@ -1,0 +1,6 @@
+{
+  "libname": "python-pam",
+  "libvers": "2.0.2",
+  "infile": "data/pip/python-pam.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "wtforms-sqlalchemy",
+  "libvers": "0.4.2",
+  "infile": "data/pip/wtforms-sqlalchemy.txt",
+  "dependencies": {
+    "markupsafe": "3.0.2",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2",
+    "wtforms": "3.2.1"
+  }
+}

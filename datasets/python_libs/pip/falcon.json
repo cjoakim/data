@@ -1,0 +1,6 @@
+{
+  "libname": "falcon",
+  "libvers": "4.0.2",
+  "infile": "data/pip/falcon.txt",
+  "dependencies": {}
+}

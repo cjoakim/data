@@ -1,0 +1,6 @@
+{
+  "libname": "python-gettext",
+  "libvers": "5.0",
+  "infile": "data/pip/python-gettext.txt",
+  "dependencies": {}
+}

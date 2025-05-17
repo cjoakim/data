@@ -1,0 +1,6 @@
+{
+  "libname": "piexif",
+  "libvers": "1.1.3",
+  "infile": "data/pip/piexif.txt",
+  "dependencies": {}
+}

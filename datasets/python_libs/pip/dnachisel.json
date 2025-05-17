@@ -1,0 +1,14 @@
+{
+  "libname": "dnachisel",
+  "libvers": "3.2.15",
+  "infile": "data/pip/dnachisel.txt",
+  "dependencies": {
+    "biopython": "1.85",
+    "docopt": "0.6.2",
+    "flametree": "0.2.0",
+    "numpy": "2.2.5",
+    "proglog": "0.1.11",
+    "python-codon-tables": "0.1.15",
+    "tqdm": "4.67.1"
+  }
+}

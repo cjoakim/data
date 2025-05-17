@@ -1,0 +1,6 @@
+{
+  "libname": "pytimeparse2",
+  "libvers": "1.7.1",
+  "infile": "data/pip/pytimeparse2.txt",
+  "dependencies": {}
+}

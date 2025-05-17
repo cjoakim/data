@@ -1,0 +1,6 @@
+{
+  "libname": "types-pyasn1",
+  "libvers": "0.6.0.20250208",
+  "infile": "data/pip/types-pyasn1.txt",
+  "dependencies": {}
+}

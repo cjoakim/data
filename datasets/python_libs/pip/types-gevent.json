@@ -1,0 +1,9 @@
+{
+  "libname": "types-gevent",
+  "libvers": "24.11.0.20250401",
+  "infile": "data/pip/types-gevent.txt",
+  "dependencies": {
+    "types-greenlet": "3.2.0.20250417",
+    "types-psutil": "7.0.0.20250401"
+  }
+}

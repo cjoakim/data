@@ -1,0 +1,12 @@
+{
+  "libname": "pyjks",
+  "libvers": "20.0.0",
+  "infile": "data/pip/pyjks.txt",
+  "dependencies": {
+    "javaobj-py3": "0.4.4",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pycryptodomex": "3.22.0",
+    "twofish": "0.3.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "bchlib",
+  "libvers": "2.1.3",
+  "infile": "data/pip/bchlib.txt",
+  "dependencies": {}
+}

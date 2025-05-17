@@ -1,0 +1,9 @@
+{
+  "libname": "elasticsearch7",
+  "libvers": "7.17.12",
+  "infile": "data/pip/elasticsearch7.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "urllib3": "1.26.20"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pykcs11",
+  "libvers": "1.5.17",
+  "infile": "data/pip/pykcs11.txt",
+  "dependencies": {}
+}

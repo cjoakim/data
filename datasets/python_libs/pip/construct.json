@@ -1,0 +1,6 @@
+{
+  "libname": "construct",
+  "libvers": "2.10.70",
+  "infile": "data/pip/construct.txt",
+  "dependencies": {}
+}

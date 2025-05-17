@@ -1,0 +1,6 @@
+{
+  "libname": "dis3",
+  "libvers": "0.1.3",
+  "infile": "data/pip/dis3.txt",
+  "dependencies": {}
+}

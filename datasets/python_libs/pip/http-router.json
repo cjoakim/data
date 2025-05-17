@@ -1,0 +1,6 @@
+{
+  "libname": "http-router",
+  "libvers": "5.0.8",
+  "infile": "data/pip/http-router.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "stanio",
+  "libvers": "0.5.1",
+  "infile": "data/pip/stanio.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

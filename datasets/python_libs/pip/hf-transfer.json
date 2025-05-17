@@ -1,0 +1,6 @@
+{
+  "libname": "hf-transfer",
+  "libvers": "0.1.9",
+  "infile": "data/pip/hf-transfer.txt",
+  "dependencies": {}
+}

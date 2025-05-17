@@ -1,0 +1,9 @@
+{
+  "libname": "expr-py",
+  "libvers": "0.3.0",
+  "infile": "data/pip/expr-py.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "rply": "0.7.8"
+  }
+}

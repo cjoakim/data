@@ -1,0 +1,6 @@
+{
+  "libname": "pip-hello-world",
+  "libvers": "0.1",
+  "infile": "data/pip/pip-hello-world.txt",
+  "dependencies": {}
+}

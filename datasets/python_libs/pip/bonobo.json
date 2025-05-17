@@ -1,0 +1,28 @@
+{
+  "libname": "bonobo",
+  "libvers": "0.6.4",
+  "infile": "data/pip/bonobo.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "colorama": "0.4.6",
+    "fs": "2.4.16",
+    "graphviz": "0.8.4",
+    "idna": "3.10",
+    "jinja2": "2.11.3",
+    "markupsafe": "3.0.2",
+    "mondrian": "0.8.1",
+    "packaging": "19.2",
+    "pbr": "6.1.1",
+    "psutil": "5.9.8",
+    "pyparsing": "3.2.3",
+    "python-slugify": "1.2.6",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "stevedore": "1.32.0",
+    "unidecode": "1.4.0",
+    "urllib3": "2.4.0",
+    "whistle": "1.0.1"
+  }
+}

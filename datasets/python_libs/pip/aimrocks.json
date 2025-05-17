@@ -1,0 +1,6 @@
+{
+  "libname": "aimrocks",
+  "libvers": "0.5.2",
+  "infile": "data/pip/aimrocks.txt",
+  "dependencies": {}
+}

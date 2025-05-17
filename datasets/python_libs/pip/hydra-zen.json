@@ -1,0 +1,13 @@
+{
+  "libname": "hydra-zen",
+  "libvers": "0.14.0",
+  "infile": "data/pip/hydra-zen.txt",
+  "dependencies": {
+    "antlr4-python3-runtime": "4.9.3",
+    "hydra-core": "1.3.2",
+    "omegaconf": "2.3.0",
+    "packaging": "25.0",
+    "pyyaml": "6.0.2",
+    "typing-extensions": "4.13.2"
+  }
+}

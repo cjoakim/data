@@ -1,0 +1,6 @@
+{
+  "libname": "pypresence",
+  "libvers": "4.3.0",
+  "infile": "data/pip/pypresence.txt",
+  "dependencies": {}
+}

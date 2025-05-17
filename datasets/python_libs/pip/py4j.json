@@ -1,0 +1,6 @@
+{
+  "libname": "py4j",
+  "libvers": "0.10.9.9",
+  "infile": "data/pip/py4j.txt",
+  "dependencies": {}
+}

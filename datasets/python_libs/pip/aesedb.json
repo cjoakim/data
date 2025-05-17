@@ -1,0 +1,18 @@
+{
+  "libname": "aesedb",
+  "libvers": "0.1.6",
+  "infile": "data/pip/aesedb.txt",
+  "dependencies": {
+    "aiowinreg": "0.0.12",
+    "cffi": "1.17.1",
+    "colorama": "0.4.6",
+    "cryptography": "44.0.3",
+    "prompt-toolkit": "3.0.51",
+    "pycparser": "2.22",
+    "pycryptodomex": "3.22.0",
+    "tqdm": "4.67.1",
+    "unicrypto": "0.0.10",
+    "wcwidth": "0.2.13",
+    "winacl": "0.1.9"
+  }
+}

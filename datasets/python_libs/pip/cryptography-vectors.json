@@ -1,0 +1,6 @@
+{
+  "libname": "cryptography-vectors",
+  "libvers": "44.0.3",
+  "infile": "data/pip/cryptography-vectors.txt",
+  "dependencies": {}
+}

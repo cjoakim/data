@@ -1,0 +1,8 @@
+{
+  "libname": "valkey-glide",
+  "libvers": "1.3.4",
+  "infile": "data/pip/valkey-glide.txt",
+  "dependencies": {
+    "protobuf": "6.30.2"
+  }
+}

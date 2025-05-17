@@ -1,0 +1,12 @@
+{
+  "libname": "pygam",
+  "libvers": "0.9.1",
+  "infile": "data/pip/pygam.txt",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "progressbar2": "4.5.0",
+    "python-utils": "3.9.1",
+    "scipy": "1.11.4",
+    "typing-extensions": "4.13.2"
+  }
+}

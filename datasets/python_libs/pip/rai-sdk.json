@@ -1,0 +1,21 @@
+{
+  "libname": "rai-sdk",
+  "libvers": "0.7.5",
+  "infile": "data/pip/rai-sdk.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "protobuf": "4.25.7",
+    "pyarrow": "15.0.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "requests-toolbelt": "1.0.0",
+    "six": "1.17.0",
+    "tzdata": "2025.2",
+    "urllib3": "2.4.0"
+  }
+}

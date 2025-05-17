@@ -1,0 +1,9 @@
+{
+  "libname": "onigurumacffi",
+  "libvers": "1.4.1",
+  "infile": "data/pip/onigurumacffi.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

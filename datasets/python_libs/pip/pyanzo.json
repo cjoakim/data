@@ -1,0 +1,14 @@
+{
+  "libname": "pyanzo",
+  "libvers": "3.3.12",
+  "infile": "data/pip/pyanzo.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "pyparsing": "3.2.3",
+    "rdflib": "7.1.4",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "adr-tools-python",
+  "libvers": "1.0.3",
+  "infile": "data/pip/adr-tools-python.txt",
+  "dependencies": {
+    "argparse": "1.4.0"
+  }
+}

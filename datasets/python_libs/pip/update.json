@@ -1,0 +1,8 @@
+{
+  "libname": "update",
+  "libvers": "0.0.1",
+  "infile": "data/pip/update.txt",
+  "dependencies": {
+    "style": "1.1.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "static-frame",
+  "libvers": "2.18.1",
+  "infile": "data/pip/static-frame.txt",
+  "dependencies": {
+    "arraykit": "0.10.0",
+    "arraymap": "0.4.0",
+    "numpy": "2.2.5",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "bce-python-sdk",
+  "libvers": "0.9.29",
+  "infile": "data/pip/bce-python-sdk.txt",
+  "dependencies": {
+    "future": "1.0.0",
+    "pycryptodome": "3.22.0",
+    "six": "1.17.0"
+  }
+}

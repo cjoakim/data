@@ -1,0 +1,10 @@
+{
+  "libname": "flyteidl",
+  "libvers": "1.15.3",
+  "infile": "data/pip/flyteidl.txt",
+  "dependencies": {
+    "googleapis-common-protos": "1.70.0",
+    "protobuf": "6.30.2",
+    "protoc-gen-openapiv2": "0.0.1"
+  }
+}

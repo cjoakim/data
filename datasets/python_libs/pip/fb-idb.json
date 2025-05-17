@@ -1,0 +1,16 @@
+{
+  "libname": "fb-idb",
+  "libvers": "1.1.7",
+  "infile": "data/pip/fb-idb.txt",
+  "dependencies": {
+    "aiofiles": "24.1.0",
+    "grpclib": "0.4.8",
+    "h2": "4.2.0",
+    "hpack": "4.1.0",
+    "hyperframe": "6.1.0",
+    "multidict": "6.4.3",
+    "protobuf": "6.30.2",
+    "six": "1.17.0",
+    "treelib": "1.7.1"
+  }
+}

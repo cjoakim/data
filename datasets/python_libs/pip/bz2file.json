@@ -1,0 +1,6 @@
+{
+  "libname": "bz2file",
+  "libvers": "0.98",
+  "infile": "data/pip/bz2file.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-personalize-runtime",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-personalize-runtime.txt",
+  "dependencies": {}
+}

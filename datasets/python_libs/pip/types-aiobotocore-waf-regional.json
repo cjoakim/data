@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-waf-regional",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-waf-regional.txt",
+  "dependencies": {}
+}

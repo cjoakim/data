@@ -1,0 +1,8 @@
+{
+  "libname": "rawpy",
+  "libvers": "0.24.0",
+  "infile": "data/pip/rawpy.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

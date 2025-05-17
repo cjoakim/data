@@ -1,0 +1,9 @@
+{
+  "libname": "dissect-fat",
+  "libvers": "3.12",
+  "infile": "data/pip/dissect-fat.txt",
+  "dependencies": {
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

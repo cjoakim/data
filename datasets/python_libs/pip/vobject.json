@@ -1,0 +1,10 @@
+{
+  "libname": "vobject",
+  "libvers": "0.9.9",
+  "infile": "data/pip/vobject.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0"
+  }
+}

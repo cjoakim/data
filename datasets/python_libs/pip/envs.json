@@ -1,0 +1,6 @@
+{
+  "libname": "envs",
+  "libvers": "1.4",
+  "infile": "data/pip/envs.txt",
+  "dependencies": {}
+}

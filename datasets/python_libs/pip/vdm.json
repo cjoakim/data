@@ -1,0 +1,6 @@
+{
+  "libname": "vdm",
+  "libvers": "0.15",
+  "infile": "data/pip/vdm.txt",
+  "dependencies": {}
+}

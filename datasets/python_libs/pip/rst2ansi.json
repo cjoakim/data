@@ -1,0 +1,6 @@
+{
+  "libname": "rst2ansi",
+  "libvers": "0.1.5",
+  "infile": "data/pip/rst2ansi.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "sqlframe",
+  "libvers": "3.31.3",
+  "infile": "data/pip/sqlframe.txt",
+  "dependencies": {
+    "prettytable": "3.16.0",
+    "sqlglot": "26.16.4",
+    "typing-extensions": "4.13.2",
+    "wcwidth": "0.2.13"
+  }
+}

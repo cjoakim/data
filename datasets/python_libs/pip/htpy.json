@@ -1,0 +1,9 @@
+{
+  "libname": "htpy",
+  "libvers": "25.4.2",
+  "infile": "data/pip/htpy.txt",
+  "dependencies": {
+    "markupsafe": "3.0.2",
+    "typing-extensions": "4.13.2"
+  }
+}

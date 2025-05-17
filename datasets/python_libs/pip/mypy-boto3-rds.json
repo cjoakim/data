@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-rds",
+  "libvers": "1.38.2",
+  "infile": "data/pip/mypy-boto3-rds.txt",
+  "dependencies": {}
+}

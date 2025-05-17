@@ -1,0 +1,6 @@
+{
+  "libname": "ecpy",
+  "libvers": "1.2.5",
+  "infile": "data/pip/ecpy.txt",
+  "dependencies": {}
+}

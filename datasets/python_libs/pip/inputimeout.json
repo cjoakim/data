@@ -1,0 +1,6 @@
+{
+  "libname": "inputimeout",
+  "libvers": "1.0.4",
+  "infile": "data/pip/inputimeout.txt",
+  "dependencies": {}
+}

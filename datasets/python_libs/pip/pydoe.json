@@ -1,0 +1,9 @@
+{
+  "libname": "pydoe",
+  "libvers": "0.3.8",
+  "infile": "data/pip/pydoe.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

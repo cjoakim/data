@@ -1,0 +1,10 @@
+{
+  "libname": "allure-robotframework",
+  "libvers": "2.14.2",
+  "infile": "data/pip/allure-robotframework.txt",
+  "dependencies": {
+    "allure-python-commons": "2.14.2",
+    "attrs": "25.3.0",
+    "pluggy": "1.5.0"
+  }
+}

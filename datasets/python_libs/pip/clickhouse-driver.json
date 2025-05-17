@@ -1,0 +1,9 @@
+{
+  "libname": "clickhouse-driver",
+  "libvers": "0.2.9",
+  "infile": "data/pip/clickhouse-driver.txt",
+  "dependencies": {
+    "pytz": "2025.2",
+    "tzlocal": "5.3.1"
+  }
+}

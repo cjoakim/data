@@ -1,0 +1,6 @@
+{
+  "libname": "puremagic",
+  "libvers": "1.29",
+  "infile": "data/pip/puremagic.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "kmeans-pytorch",
+  "libvers": "0.3",
+  "infile": "data/pip/kmeans-pytorch.txt",
+  "dependencies": {}
+}

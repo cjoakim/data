@@ -1,0 +1,10 @@
+{
+  "libname": "flake8-functions",
+  "libvers": "0.0.8",
+  "infile": "data/pip/flake8-functions.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "mr-proper": "0.0.7",
+    "stdlib-list": "0.11.1"
+  }
+}

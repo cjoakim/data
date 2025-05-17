@@ -1,0 +1,6 @@
+{
+  "libname": "httpx-sse",
+  "libvers": "0.4.0",
+  "infile": "data/pip/httpx-sse.txt",
+  "dependencies": {}
+}

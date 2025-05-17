@@ -1,0 +1,16 @@
+{
+  "libname": "django-rosetta",
+  "libvers": "0.10.2",
+  "infile": "data/pip/django-rosetta.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "django": "5.2",
+    "idna": "3.10",
+    "polib": "1.2.0",
+    "requests": "2.32.3",
+    "sqlparse": "0.5.3",
+    "urllib3": "2.4.0"
+  }
+}

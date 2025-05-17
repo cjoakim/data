@@ -1,0 +1,6 @@
+{
+  "libname": "hpo3",
+  "libvers": "1.4.0",
+  "infile": "data/pip/hpo3.txt",
+  "dependencies": {}
+}

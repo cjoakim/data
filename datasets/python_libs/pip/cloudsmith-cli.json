@@ -1,0 +1,27 @@
+{
+  "libname": "cloudsmith-cli",
+  "libvers": "1.8.1",
+  "infile": "data/pip/cloudsmith-cli.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "click-configfile": "0.2.3",
+    "click-didyoumean": "0.3.1",
+    "click-spinner": "0.1.10",
+    "cloudsmith-api": "2.0.18",
+    "configparser": "7.2.0",
+    "idna": "3.10",
+    "jaraco-classes": "3.4.0",
+    "jaraco-context": "6.0.1",
+    "jaraco-functools": "4.1.0",
+    "keyring": "25.6.0",
+    "more-itertools": "10.7.0",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "requests-toolbelt": "1.0.0",
+    "semver": "3.0.4",
+    "six": "1.17.0",
+    "urllib3": "1.26.20"
+  }
+}

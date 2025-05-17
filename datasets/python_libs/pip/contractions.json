@@ -1,0 +1,10 @@
+{
+  "libname": "contractions",
+  "libvers": "0.1.73",
+  "infile": "data/pip/contractions.txt",
+  "dependencies": {
+    "anyascii": "0.3.2",
+    "pyahocorasick": "2.1.0",
+    "textsearch": "0.0.24"
+  }
+}

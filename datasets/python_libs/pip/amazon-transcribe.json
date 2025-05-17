@@ -1,0 +1,8 @@
+{
+  "libname": "amazon-transcribe",
+  "libvers": "0.6.4",
+  "infile": "data/pip/amazon-transcribe.txt",
+  "dependencies": {
+    "awscrt": "0.26.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "handy-archives",
+  "libvers": "0.2.0",
+  "infile": "data/pip/handy-archives.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,14 @@
+{
+  "libname": "deb-pkg-tools",
+  "libvers": "8.4",
+  "infile": "data/pip/deb-pkg-tools.txt",
+  "dependencies": {
+    "coloredlogs": "15.0.1",
+    "executor": "23.2",
+    "fasteners": "0.19",
+    "humanfriendly": "10.0",
+    "property-manager": "3.0",
+    "six": "1.17.0",
+    "verboselogs": "1.7"
+  }
+}

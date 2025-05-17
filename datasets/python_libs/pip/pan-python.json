@@ -1,0 +1,6 @@
+{
+  "libname": "pan-python",
+  "libvers": "0.25.0",
+  "infile": "data/pip/pan-python.txt",
+  "dependencies": {}
+}

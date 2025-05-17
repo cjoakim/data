@@ -1,0 +1,8 @@
+{
+  "libname": "pyvmomi",
+  "libvers": "8.0.3.0.1",
+  "infile": "data/pip/pyvmomi.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

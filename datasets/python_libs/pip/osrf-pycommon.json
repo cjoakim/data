@@ -1,0 +1,6 @@
+{
+  "libname": "osrf-pycommon",
+  "libvers": "2.0.2",
+  "infile": "data/pip/osrf-pycommon.txt",
+  "dependencies": {}
+}

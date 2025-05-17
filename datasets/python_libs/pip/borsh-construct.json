@@ -1,0 +1,11 @@
+{
+  "libname": "borsh-construct",
+  "libvers": "0.1.0",
+  "infile": "data/pip/borsh-construct.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "construct": "2.10.68",
+    "construct-typing": "0.5.6",
+    "sumtypes": "0.1a6"
+  }
+}

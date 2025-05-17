@@ -1,0 +1,8 @@
+{
+  "libname": "pydbml",
+  "libvers": "1.2.0",
+  "infile": "data/pip/pydbml.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

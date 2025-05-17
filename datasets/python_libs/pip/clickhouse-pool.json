@@ -1,0 +1,10 @@
+{
+  "libname": "clickhouse-pool",
+  "libvers": "0.6.0",
+  "infile": "data/pip/clickhouse-pool.txt",
+  "dependencies": {
+    "clickhouse-driver": "0.2.7",
+    "pytz": "2025.2",
+    "tzlocal": "5.3.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pdfo",
+  "libvers": "2.2.0",
+  "infile": "data/pip/pdfo.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

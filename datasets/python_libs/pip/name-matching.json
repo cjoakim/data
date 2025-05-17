@@ -1,0 +1,19 @@
+{
+  "libname": "name-matching",
+  "libvers": "0.8.12",
+  "infile": "data/pip/name-matching.txt",
+  "dependencies": {
+    "cleanco": "2.3",
+    "joblib": "1.5.0",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "threadpoolctl": "3.6.0",
+    "tqdm": "4.67.1",
+    "tzdata": "2025.2"
+  }
+}

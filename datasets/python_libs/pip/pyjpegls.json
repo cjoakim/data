@@ -1,0 +1,8 @@
+{
+  "libname": "pyjpegls",
+  "libvers": "1.5.1",
+  "infile": "data/pip/pyjpegls.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "libname": "scrubadub",
+  "libvers": "2.0.1",
+  "infile": "data/pip/scrubadub.txt",
+  "dependencies": {
+    "catalogue": "2.0.10",
+    "click": "8.1.8",
+    "dateparser": "1.2.1",
+    "faker": "37.1.0",
+    "joblib": "1.5.0",
+    "nltk": "3.9.1",
+    "numpy": "2.2.5",
+    "phonenumbers": "9.0.4",
+    "python-dateutil": "2.9.0.post0",
+    "python-stdnum": "2.0",
+    "pytz": "2025.2",
+    "regex": "2024.11.6",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "textblob": "0.15.3",
+    "threadpoolctl": "3.6.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2",
+    "tzlocal": "5.3.1"
+  }
+}

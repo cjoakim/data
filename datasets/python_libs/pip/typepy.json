@@ -1,0 +1,9 @@
+{
+  "libname": "typepy",
+  "libvers": "1.3.4",
+  "infile": "data/pip/typepy.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "mbstrdecoder": "1.1.4"
+  }
+}

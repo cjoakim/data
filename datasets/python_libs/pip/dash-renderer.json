@@ -1,0 +1,6 @@
+{
+  "libname": "dash-renderer",
+  "libvers": "1.9.1",
+  "infile": "data/pip/dash-renderer.txt",
+  "dependencies": {}
+}

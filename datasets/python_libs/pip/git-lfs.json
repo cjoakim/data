@@ -1,0 +1,6 @@
+{
+  "libname": "git-lfs",
+  "libvers": "1.6",
+  "infile": "data/pip/git-lfs.txt",
+  "dependencies": {}
+}

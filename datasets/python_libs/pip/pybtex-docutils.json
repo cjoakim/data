@@ -1,0 +1,12 @@
+{
+  "libname": "pybtex-docutils",
+  "libvers": "1.0.3",
+  "infile": "data/pip/pybtex-docutils.txt",
+  "dependencies": {
+    "docutils": "0.21.2",
+    "latexcodec": "3.0.0",
+    "pybtex": "0.24.0",
+    "pyyaml": "6.0.2",
+    "six": "1.17.0"
+  }
+}

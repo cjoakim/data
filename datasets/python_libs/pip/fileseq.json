@@ -1,0 +1,6 @@
+{
+  "libname": "fileseq",
+  "libvers": "2.1.2",
+  "infile": "data/pip/fileseq.txt",
+  "dependencies": {}
+}

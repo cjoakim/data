@@ -1,0 +1,6 @@
+{
+  "libname": "uniseg",
+  "libvers": "0.10.0",
+  "infile": "data/pip/uniseg.txt",
+  "dependencies": {}
+}

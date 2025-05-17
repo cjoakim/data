@@ -1,0 +1,14 @@
+{
+  "libname": "persistence",
+  "libvers": "5.1",
+  "infile": "data/pip/persistence.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "extensionclass": "6.0",
+    "persistent": "6.1.1",
+    "pycparser": "2.22",
+    "zope-deferredimport": "5.0",
+    "zope-interface": "7.2",
+    "zope-proxy": "6.1"
+  }
+}

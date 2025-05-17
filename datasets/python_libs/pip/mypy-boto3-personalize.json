@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-personalize",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-personalize.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,14 @@
+{
+  "libname": "p-tqdm",
+  "libvers": "1.4.2",
+  "infile": "data/pip/p-tqdm.txt",
+  "dependencies": {
+    "dill": "0.4.0",
+    "multiprocess": "0.70.18",
+    "pathos": "0.3.4",
+    "pox": "0.3.6",
+    "ppft": "1.7.7",
+    "six": "1.17.0",
+    "tqdm": "4.67.1"
+  }
+}

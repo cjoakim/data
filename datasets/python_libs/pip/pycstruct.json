@@ -1,0 +1,6 @@
+{
+  "libname": "pycstruct",
+  "libvers": "0.12.2",
+  "infile": "data/pip/pycstruct.txt",
+  "dependencies": {}
+}

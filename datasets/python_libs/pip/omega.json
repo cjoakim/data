@@ -1,0 +1,14 @@
+{
+  "libname": "omega",
+  "libvers": "0.4.0",
+  "infile": "data/pip/omega.txt",
+  "dependencies": {
+    "astutils": "0.0.6",
+    "dd": "0.6.0",
+    "natsort": "8.4.0",
+    "networkx": "3.4.2",
+    "ply": "3.10",
+    "pydot": "4.0.0",
+    "pyparsing": "3.2.3"
+  }
+}

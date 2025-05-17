@@ -1,0 +1,8 @@
+{
+  "libname": "slimit",
+  "libvers": "0.8.1",
+  "infile": "data/pip/slimit.txt",
+  "dependencies": {
+    "ply": "3.11"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "pecan",
+  "libvers": "1.6.0",
+  "infile": "data/pip/pecan.txt",
+  "dependencies": {
+    "mako": "1.3.10",
+    "markupsafe": "3.0.2",
+    "webob": "1.8.9"
+  }
+}

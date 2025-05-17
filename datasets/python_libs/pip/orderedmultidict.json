@@ -1,0 +1,8 @@
+{
+  "libname": "orderedmultidict",
+  "libvers": "1.0.1",
+  "infile": "data/pip/orderedmultidict.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

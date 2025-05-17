@@ -1,0 +1,6 @@
+{
+  "libname": "pysam",
+  "libvers": "0.23.0",
+  "infile": "data/pip/pysam.txt",
+  "dependencies": {}
+}

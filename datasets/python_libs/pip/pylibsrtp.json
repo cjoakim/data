@@ -1,0 +1,9 @@
+{
+  "libname": "pylibsrtp",
+  "libvers": "0.12.0",
+  "infile": "data/pip/pylibsrtp.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

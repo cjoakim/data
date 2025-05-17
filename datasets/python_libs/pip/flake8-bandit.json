@@ -1,0 +1,19 @@
+{
+  "libname": "flake8-bandit",
+  "libvers": "4.1.1",
+  "infile": "data/pip/flake8-bandit.txt",
+  "dependencies": {
+    "bandit": "1.8.3",
+    "flake8": "7.2.0",
+    "markdown-it-py": "3.0.0",
+    "mccabe": "0.7.0",
+    "mdurl": "0.1.2",
+    "pbr": "6.1.1",
+    "pycodestyle": "2.13.0",
+    "pyflakes": "3.3.2",
+    "pygments": "2.19.1",
+    "pyyaml": "6.0.2",
+    "rich": "14.0.0",
+    "stevedore": "5.4.1"
+  }
+}

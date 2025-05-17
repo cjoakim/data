@@ -1,0 +1,12 @@
+{
+  "libname": "semchunk",
+  "libvers": "3.2.1",
+  "infile": "data/pip/semchunk.txt",
+  "dependencies": {
+    "dill": "0.4.0",
+    "mpire[dill]": "2.10.2",
+    "multiprocess": "0.70.18",
+    "pygments": "2.19.1",
+    "tqdm": "4.67.1"
+  }
+}

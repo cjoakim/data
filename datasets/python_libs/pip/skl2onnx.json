@@ -1,0 +1,16 @@
+{
+  "libname": "skl2onnx",
+  "libvers": "1.18.0",
+  "infile": "data/pip/skl2onnx.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "numpy": "2.2.5",
+    "onnx": "1.17.0",
+    "onnxconverter-common": "1.14.0",
+    "packaging": "25.0",
+    "protobuf": "3.20.2",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "threadpoolctl": "3.6.0"
+  }
+}

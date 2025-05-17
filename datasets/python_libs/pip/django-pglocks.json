@@ -1,0 +1,8 @@
+{
+  "libname": "django-pglocks",
+  "libvers": "1.0.4",
+  "infile": "data/pip/django-pglocks.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

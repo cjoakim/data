@@ -1,0 +1,6 @@
+{
+  "libname": "verboselogs",
+  "libvers": "1.7",
+  "infile": "data/pip/verboselogs.txt",
+  "dependencies": {}
+}

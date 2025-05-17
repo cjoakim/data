@@ -1,0 +1,6 @@
+{
+  "libname": "gruut-ipa",
+  "libvers": "0.13.0",
+  "infile": "data/pip/gruut-ipa.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "penaltymodel",
+  "libvers": "1.2.0",
+  "infile": "data/pip/penaltymodel.txt",
+  "dependencies": {
+    "dimod": "0.12.20",
+    "homebase": "1.0.1",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

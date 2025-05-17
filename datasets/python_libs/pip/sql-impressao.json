@@ -1,0 +1,6 @@
+{
+  "libname": "sql-impressao",
+  "libvers": "1.4.0",
+  "infile": "data/pip/sql-impressao.txt",
+  "dependencies": {}
+}

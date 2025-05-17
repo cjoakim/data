@@ -1,0 +1,12 @@
+{
+  "libname": "multi-model-server",
+  "libvers": "1.1.11",
+  "infile": "data/pip/multi-model-server.txt",
+  "dependencies": {
+    "enum-compat": "0.0.3",
+    "future": "1.0.0",
+    "model-archiver": "1.0.3",
+    "pillow": "11.2.1",
+    "psutil": "7.0.0"
+  }
+}

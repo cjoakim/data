@@ -1,0 +1,9 @@
+{
+  "libname": "mcstatus",
+  "libvers": "11.1.1",
+  "infile": "data/pip/mcstatus.txt",
+  "dependencies": {
+    "asyncio-dgram": "2.2.0",
+    "dnspython": "2.7.0"
+  }
+}

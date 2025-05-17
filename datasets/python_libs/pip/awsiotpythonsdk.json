@@ -1,0 +1,6 @@
+{
+  "libname": "awsiotpythonsdk",
+  "libvers": "1.5.4",
+  "infile": "data/pip/awsiotpythonsdk.txt",
+  "dependencies": {}
+}

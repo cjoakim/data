@@ -1,0 +1,8 @@
+{
+  "libname": "treelib",
+  "libvers": "1.7.1",
+  "infile": "data/pip/treelib.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

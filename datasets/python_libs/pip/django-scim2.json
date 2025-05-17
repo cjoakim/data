@@ -1,0 +1,12 @@
+{
+  "libname": "django-scim2",
+  "libvers": "0.19.1",
+  "infile": "data/pip/django-scim2.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "scim2-filter-parser": "0.7.0",
+    "sly": "0.5",
+    "sqlparse": "0.5.3"
+  }
+}

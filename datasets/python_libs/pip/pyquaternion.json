@@ -1,0 +1,8 @@
+{
+  "libname": "pyquaternion",
+  "libvers": "0.9.9",
+  "infile": "data/pip/pyquaternion.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

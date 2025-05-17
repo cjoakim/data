@@ -1,0 +1,6 @@
+{
+  "libname": "slicer",
+  "libvers": "0.0.8",
+  "infile": "data/pip/slicer.txt",
+  "dependencies": {}
+}

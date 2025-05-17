@@ -1,0 +1,6 @@
+{
+  "libname": "isbnlib",
+  "libvers": "3.10.14",
+  "infile": "data/pip/isbnlib.txt",
+  "dependencies": {}
+}

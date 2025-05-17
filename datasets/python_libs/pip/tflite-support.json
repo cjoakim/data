@@ -1,0 +1,10 @@
+{
+  "libname": "tflite-support",
+  "libvers": "0.1.0a1",
+  "infile": "data/pip/tflite-support.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "numpy": "2.2.5",
+    "pybind11": "2.13.6"
+  }
+}

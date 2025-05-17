@@ -1,0 +1,6 @@
+{
+  "libname": "multiping",
+  "libvers": "1.1.2",
+  "infile": "data/pip/multiping.txt",
+  "dependencies": {}
+}

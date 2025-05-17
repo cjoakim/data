@@ -1,0 +1,8 @@
+{
+  "libname": "python-frontmatter",
+  "libvers": "1.1.0",
+  "infile": "data/pip/python-frontmatter.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

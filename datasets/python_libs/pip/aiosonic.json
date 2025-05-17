@@ -1,0 +1,12 @@
+{
+  "libname": "aiosonic",
+  "libvers": "0.24.0",
+  "infile": "data/pip/aiosonic.txt",
+  "dependencies": {
+    "charset-normalizer": "3.4.2",
+    "h2": "4.2.0",
+    "hpack": "4.1.0",
+    "hyperframe": "6.1.0",
+    "onecache": "0.7.1"
+  }
+}

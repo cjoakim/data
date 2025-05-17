@@ -1,0 +1,21 @@
+{
+  "libname": "pulp-cli-deb",
+  "libvers": "0.3.2",
+  "infile": "data/pip/pulp-cli-deb.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "idna": "3.10",
+    "multidict": "6.1.0",
+    "packaging": "24.2",
+    "pulp-cli": "0.31.1",
+    "pulp-glue": "0.31.1",
+    "pulp-glue-deb": "0.3.2",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "schema": "0.7.7",
+    "tomli-w": "1.2.0",
+    "urllib3": "2.4.0"
+  }
+}

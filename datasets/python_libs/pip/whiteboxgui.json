@@ -1,0 +1,31 @@
+{
+  "libname": "whiteboxgui",
+  "libvers": "2.3.0",
+  "infile": "data/pip/whiteboxgui.txt",
+  "dependencies": {
+    "asttokens": "3.0.0",
+    "click": "8.1.8",
+    "comm": "0.2.2",
+    "decorator": "5.2.1",
+    "executing": "2.2.0",
+    "ipyfilechooser": "0.6.0",
+    "ipython": "9.2.0",
+    "ipython-pygments-lexers": "1.1.1",
+    "ipytree": "0.2.2",
+    "ipywidgets": "8.1.7",
+    "jedi": "0.19.2",
+    "jupyterlab-widgets": "3.0.15",
+    "matplotlib-inline": "0.1.7",
+    "parso": "0.8.4",
+    "pexpect": "4.9.0",
+    "prompt-toolkit": "3.0.51",
+    "ptyprocess": "0.7.0",
+    "pure-eval": "0.2.3",
+    "pygments": "2.19.1",
+    "stack-data": "0.6.3",
+    "traitlets": "5.14.3",
+    "wcwidth": "0.2.13",
+    "whitebox": "2.3.6",
+    "widgetsnbextension": "4.0.14"
+  }
+}

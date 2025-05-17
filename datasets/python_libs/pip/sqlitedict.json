@@ -1,0 +1,6 @@
+{
+  "libname": "sqlitedict",
+  "libvers": "2.1.0",
+  "infile": "data/pip/sqlitedict.txt",
+  "dependencies": {}
+}

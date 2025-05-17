@@ -1,0 +1,6 @@
+{
+  "libname": "cxxfilt",
+  "libvers": "0.3.0",
+  "infile": "data/pip/cxxfilt.txt",
+  "dependencies": {}
+}

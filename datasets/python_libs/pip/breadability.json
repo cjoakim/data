@@ -1,0 +1,10 @@
+{
+  "libname": "breadability",
+  "libvers": "0.1.20",
+  "infile": "data/pip/breadability.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "docopt": "0.6.2",
+    "lxml": "5.4.0"
+  }
+}

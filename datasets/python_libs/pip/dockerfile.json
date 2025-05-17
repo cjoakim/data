@@ -1,0 +1,6 @@
+{
+  "libname": "dockerfile",
+  "libvers": "3.4.0",
+  "infile": "data/pip/dockerfile.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "yamale",
+  "libvers": "6.0.0",
+  "infile": "data/pip/yamale.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

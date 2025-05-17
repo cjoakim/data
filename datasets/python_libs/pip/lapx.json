@@ -1,0 +1,8 @@
+{
+  "libname": "lapx",
+  "libvers": "0.5.11.post1",
+  "infile": "data/pip/lapx.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

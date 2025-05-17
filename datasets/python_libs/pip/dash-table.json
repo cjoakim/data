@@ -1,0 +1,6 @@
+{
+  "libname": "dash-table",
+  "libvers": "5.0.0",
+  "infile": "data/pip/dash-table.txt",
+  "dependencies": {}
+}

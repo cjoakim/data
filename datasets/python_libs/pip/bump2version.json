@@ -1,0 +1,6 @@
+{
+  "libname": "bump2version",
+  "libvers": "1.0.1",
+  "infile": "data/pip/bump2version.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "traceback-with-variables",
+  "libvers": "2.2.0",
+  "infile": "data/pip/traceback-with-variables.txt",
+  "dependencies": {}
+}

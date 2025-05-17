@@ -1,0 +1,6 @@
+{
+  "libname": "typedload",
+  "libvers": "2.37",
+  "infile": "data/pip/typedload.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pybloom-live",
+  "libvers": "4.0.0",
+  "infile": "data/pip/pybloom-live.txt",
+  "dependencies": {
+    "bitarray": "3.4.0",
+    "xxhash": "3.5.0"
+  }
+}

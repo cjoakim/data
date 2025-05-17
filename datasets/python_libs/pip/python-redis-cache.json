@@ -1,0 +1,8 @@
+{
+  "libname": "python-redis-cache",
+  "libvers": "4.0.2",
+  "infile": "data/pip/python-redis-cache.txt",
+  "dependencies": {
+    "redis": "6.0.0"
+  }
+}

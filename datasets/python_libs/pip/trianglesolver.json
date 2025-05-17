@@ -1,0 +1,6 @@
+{
+  "libname": "trianglesolver",
+  "libvers": "1.2",
+  "infile": "data/pip/trianglesolver.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "python-tfvars",
+  "libvers": "0.1.0",
+  "infile": "data/pip/python-tfvars.txt",
+  "dependencies": {}
+}

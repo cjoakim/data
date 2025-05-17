@@ -1,0 +1,9 @@
+{
+  "libname": "ai-edge-litert",
+  "libvers": "1.2.0",
+  "infile": "data/pip/ai-edge-litert.txt",
+  "dependencies": {
+    "flatbuffers": "25.2.10",
+    "numpy": "2.2.5"
+  }
+}

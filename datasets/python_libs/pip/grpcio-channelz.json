@@ -1,0 +1,9 @@
+{
+  "libname": "grpcio-channelz",
+  "libvers": "1.71.0",
+  "infile": "data/pip/grpcio-channelz.txt",
+  "dependencies": {
+    "grpcio": "1.71.0",
+    "protobuf": "5.29.4"
+  }
+}

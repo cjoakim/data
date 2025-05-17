@@ -1,0 +1,10 @@
+{
+  "libname": "sconf",
+  "libvers": "0.2.5",
+  "infile": "data/pip/sconf.txt",
+  "dependencies": {
+    "munch": "4.0.0",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12"
+  }
+}

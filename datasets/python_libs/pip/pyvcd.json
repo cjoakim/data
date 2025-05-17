@@ -1,0 +1,6 @@
+{
+  "libname": "pyvcd",
+  "libvers": "0.4.1",
+  "infile": "data/pip/pyvcd.txt",
+  "dependencies": {}
+}

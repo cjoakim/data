@@ -1,0 +1,8 @@
+{
+  "libname": "robotframework-dependencylibrary",
+  "libvers": "4.0.1",
+  "infile": "data/pip/robotframework-dependencylibrary.txt",
+  "dependencies": {
+    "robotframework": "7.2.2"
+  }
+}

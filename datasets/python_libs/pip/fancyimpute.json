@@ -1,0 +1,26 @@
+{
+  "libname": "fancyimpute",
+  "libvers": "0.7.0",
+  "infile": "data/pip/fancyimpute.txt",
+  "dependencies": {
+    "clarabel": "0.10.0",
+    "cvxopt": "1.3.2",
+    "cvxpy": "1.6.5",
+    "iniconfig": "2.1.0",
+    "jinja2": "3.1.6",
+    "joblib": "1.5.0",
+    "knnimpute": "0.1.0",
+    "markupsafe": "3.0.2",
+    "nose": "1.3.7",
+    "numpy": "2.2.5",
+    "osqp": "1.0.3",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "scs": "3.2.7.post2",
+    "six": "1.17.0",
+    "threadpoolctl": "3.6.0"
+  }
+}

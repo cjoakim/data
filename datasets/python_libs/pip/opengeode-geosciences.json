@@ -1,0 +1,8 @@
+{
+  "libname": "opengeode-geosciences",
+  "libvers": "8.4.7",
+  "infile": "data/pip/opengeode-geosciences.txt",
+  "dependencies": {
+    "opengeode-core": "15.18.0"
+  }
+}

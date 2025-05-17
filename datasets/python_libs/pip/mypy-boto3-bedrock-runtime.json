@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-bedrock-runtime",
+  "libvers": "1.38.4",
+  "infile": "data/pip/mypy-boto3-bedrock-runtime.txt",
+  "dependencies": {}
+}

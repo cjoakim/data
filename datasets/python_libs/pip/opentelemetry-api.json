@@ -1,0 +1,11 @@
+{
+  "libname": "opentelemetry-api",
+  "libvers": "1.32.1",
+  "infile": "data/pip/opentelemetry-api.txt",
+  "dependencies": {
+    "deprecated": "1.2.18",
+    "importlib-metadata": "8.6.1",
+    "wrapt": "1.17.2",
+    "zipp": "3.21.0"
+  }
+}

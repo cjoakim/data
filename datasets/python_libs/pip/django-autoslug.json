@@ -1,0 +1,6 @@
+{
+  "libname": "django-autoslug",
+  "libvers": "1.9.9",
+  "infile": "data/pip/django-autoslug.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,13 @@
+{
+  "libname": "moderngl-window",
+  "libvers": "3.1.1",
+  "infile": "data/pip/moderngl-window.txt",
+  "dependencies": {
+    "glcontext": "3.0.0",
+    "moderngl": "5.12.0",
+    "numpy": "2.2.5",
+    "pillow": "11.2.1",
+    "pyglet": "2.1.6",
+    "pyglm": "2.8.2"
+  }
+}

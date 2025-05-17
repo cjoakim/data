@@ -1,0 +1,8 @@
+{
+  "libname": "distinctipy",
+  "libvers": "1.3.4",
+  "infile": "data/pip/distinctipy.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "noise",
+  "libvers": "1.2.2",
+  "infile": "data/pip/noise.txt",
+  "dependencies": {}
+}

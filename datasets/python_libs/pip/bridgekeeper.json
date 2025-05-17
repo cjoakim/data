@@ -1,0 +1,6 @@
+{
+  "libname": "bridgekeeper",
+  "libvers": "0.9",
+  "infile": "data/pip/bridgekeeper.txt",
+  "dependencies": {}
+}

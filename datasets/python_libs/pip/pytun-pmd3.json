@@ -1,0 +1,6 @@
+{
+  "libname": "pytun-pmd3",
+  "libvers": "2.0.10",
+  "infile": "data/pip/pytun-pmd3.txt",
+  "dependencies": {}
+}

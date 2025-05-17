@@ -1,0 +1,15 @@
+{
+  "libname": "pysfeel",
+  "libvers": "1.4.2",
+  "infile": "data/pip/pysfeel.txt",
+  "dependencies": {
+    "datetime": "5.5",
+    "docutils": "0.21.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "sly": "0.5",
+    "statistics": "1.0.3.5",
+    "zope-interface": "7.2"
+  }
+}

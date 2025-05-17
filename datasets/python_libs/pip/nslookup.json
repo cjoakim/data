@@ -1,0 +1,8 @@
+{
+  "libname": "nslookup",
+  "libvers": "1.8.1",
+  "infile": "data/pip/nslookup.txt",
+  "dependencies": {
+    "dnspython": "2.7.0"
+  }
+}

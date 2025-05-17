@@ -1,0 +1,6 @@
+{
+  "libname": "types-regex",
+  "libvers": "2024.11.6.20250403",
+  "infile": "data/pip/types-regex.txt",
+  "dependencies": {}
+}

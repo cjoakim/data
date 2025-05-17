@@ -1,0 +1,8 @@
+{
+  "libname": "django-upgrade",
+  "libvers": "1.24.0",
+  "infile": "data/pip/django-upgrade.txt",
+  "dependencies": {
+    "tokenize-rt": "6.1.0"
+  }
+}

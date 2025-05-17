@@ -1,0 +1,6 @@
+{
+  "libname": "annoy",
+  "libvers": "1.17.3",
+  "infile": "data/pip/annoy.txt",
+  "dependencies": {}
+}

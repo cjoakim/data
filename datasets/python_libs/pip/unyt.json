@@ -1,0 +1,11 @@
+{
+  "libname": "unyt",
+  "libvers": "3.0.4",
+  "infile": "data/pip/unyt.txt",
+  "dependencies": {
+    "mpmath": "1.3.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "sympy": "1.14.0"
+  }
+}

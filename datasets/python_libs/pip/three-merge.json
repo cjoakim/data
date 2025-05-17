@@ -1,0 +1,8 @@
+{
+  "libname": "three-merge",
+  "libvers": "0.1.1",
+  "infile": "data/pip/three-merge.txt",
+  "dependencies": {
+    "diff-match-patch": "20241021"
+  }
+}

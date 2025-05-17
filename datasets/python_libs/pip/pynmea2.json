@@ -1,0 +1,6 @@
+{
+  "libname": "pynmea2",
+  "libvers": "1.19.0",
+  "infile": "data/pip/pynmea2.txt",
+  "dependencies": {}
+}

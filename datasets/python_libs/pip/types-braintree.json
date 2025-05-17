@@ -1,0 +1,6 @@
+{
+  "libname": "types-braintree",
+  "libvers": "4.35.0.20250506",
+  "infile": "data/pip/types-braintree.txt",
+  "dependencies": {}
+}

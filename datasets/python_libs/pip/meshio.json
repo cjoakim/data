@@ -1,0 +1,12 @@
+{
+  "libname": "meshio",
+  "libvers": "5.3.5",
+  "infile": "data/pip/meshio.txt",
+  "dependencies": {
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "numpy": "2.2.5",
+    "pygments": "2.19.1",
+    "rich": "14.0.0"
+  }
+}

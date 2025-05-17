@@ -1,0 +1,6 @@
+{
+  "libname": "openapi-generator-cli",
+  "libvers": "7.13.0.post0",
+  "infile": "data/pip/openapi-generator-cli.txt",
+  "dependencies": {}
+}

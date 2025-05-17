@@ -1,0 +1,8 @@
+{
+  "libname": "environ-config",
+  "libvers": "24.1.0",
+  "infile": "data/pip/environ-config.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

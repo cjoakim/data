@@ -1,0 +1,15 @@
+{
+  "libname": "jmcomic",
+  "libvers": "2.5.38",
+  "infile": "data/pip/jmcomic.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "commonx": "0.6.38",
+    "curl-cffi": "0.10.0",
+    "pillow": "11.2.1",
+    "pycparser": "2.22",
+    "pycryptodome": "3.22.0",
+    "pyyaml": "6.0.2"
+  }
+}

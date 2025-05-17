@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-appconfig",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-appconfig.txt",
+  "dependencies": {}
+}

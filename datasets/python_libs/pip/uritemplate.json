@@ -1,0 +1,6 @@
+{
+  "libname": "uritemplate",
+  "libvers": "4.1.1",
+  "infile": "data/pip/uritemplate.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "markdown-it-pyrs",
+  "libvers": "0.4.0",
+  "infile": "data/pip/markdown-it-pyrs.txt",
+  "dependencies": {}
+}

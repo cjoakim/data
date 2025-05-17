@@ -1,0 +1,10 @@
+{
+  "libname": "chia-base",
+  "libvers": "0.1.7",
+  "infile": "data/pip/chia-base.txt",
+  "dependencies": {
+    "chia-rs": "0.22.0",
+    "clvm-rs": "0.2.5",
+    "typing-extensions": "4.13.2"
+  }
+}

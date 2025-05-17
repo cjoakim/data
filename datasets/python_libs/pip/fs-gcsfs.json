@@ -1,0 +1,29 @@
+{
+  "libname": "fs-gcsfs",
+  "libvers": "1.5.1",
+  "infile": "data/pip/fs-gcsfs.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "fs": "2.4.16",
+    "google-api-core": "2.25.0rc0",
+    "google-auth": "2.40.1",
+    "google-cloud-core": "2.4.3",
+    "google-cloud-storage": "3.1.0",
+    "google-crc32c": "1.7.1",
+    "google-resumable-media": "2.7.2",
+    "googleapis-common-protos": "1.70.0",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "proto-plus": "1.26.1",
+    "protobuf": "6.30.2",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "six": "1.17.0",
+    "urllib3": "1.26.20"
+  }
+}

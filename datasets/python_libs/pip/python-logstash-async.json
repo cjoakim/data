@@ -1,0 +1,18 @@
+{
+  "libname": "python-logstash-async",
+  "libvers": "4.0.2",
+  "infile": "data/pip/python-logstash-async.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "deprecated": "1.2.18",
+    "idna": "3.10",
+    "limits": "5.1.0",
+    "packaging": "25.0",
+    "pylogbeat": "2.0.1",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2"
+  }
+}

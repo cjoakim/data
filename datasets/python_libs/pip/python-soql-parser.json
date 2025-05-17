@@ -1,0 +1,8 @@
+{
+  "libname": "python-soql-parser",
+  "libvers": "0.2.0",
+  "infile": "data/pip/python-soql-parser.txt",
+  "dependencies": {
+    "pyparsing": "2.4.7"
+  }
+}

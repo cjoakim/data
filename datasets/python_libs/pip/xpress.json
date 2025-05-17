@@ -1,0 +1,9 @@
+{
+  "libname": "xpress",
+  "libvers": "9.6.0",
+  "infile": "data/pip/xpress.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "xpresslibs": "9.6.0"
+  }
+}

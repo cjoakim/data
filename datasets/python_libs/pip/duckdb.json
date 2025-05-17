@@ -1,0 +1,6 @@
+{
+  "libname": "duckdb",
+  "libvers": "1.2.2",
+  "infile": "data/pip/duckdb.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "devtools",
+  "libvers": "0.12.2",
+  "infile": "data/pip/devtools.txt",
+  "dependencies": {
+    "asttokens": "2.4.1",
+    "executing": "2.2.0",
+    "pygments": "2.19.1",
+    "six": "1.17.0"
+  }
+}

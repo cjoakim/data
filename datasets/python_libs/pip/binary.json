@@ -1,0 +1,6 @@
+{
+  "libname": "binary",
+  "libvers": "1.0.1",
+  "infile": "data/pip/binary.txt",
+  "dependencies": {}
+}

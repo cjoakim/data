@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-nimble",
+  "libvers": "2.15.2",
+  "infile": "data/pip/types-aiobotocore-nimble.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "ratelim",
+  "libvers": "0.1.6",
+  "infile": "data/pip/ratelim.txt",
+  "dependencies": {
+    "decorator": "5.2.1"
+  }
+}

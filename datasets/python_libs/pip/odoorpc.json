@@ -1,0 +1,6 @@
+{
+  "libname": "odoorpc",
+  "libvers": "0.10.1",
+  "infile": "data/pip/odoorpc.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "zc-buildout",
+  "libvers": "4.1.9",
+  "infile": "data/pip/zc-buildout.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "wheel": "0.45.1"
+  }
+}

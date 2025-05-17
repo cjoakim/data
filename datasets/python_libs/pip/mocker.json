@@ -1,0 +1,6 @@
+{
+  "libname": "mocker",
+  "libvers": "1.1.1",
+  "infile": "data/pip/mocker.txt",
+  "dependencies": {}
+}

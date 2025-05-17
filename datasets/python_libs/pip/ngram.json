@@ -1,0 +1,6 @@
+{
+  "libname": "ngram",
+  "libvers": "4.0.3",
+  "infile": "data/pip/ngram.txt",
+  "dependencies": {}
+}

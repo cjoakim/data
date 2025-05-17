@@ -1,0 +1,6 @@
+{
+  "libname": "prodict",
+  "libvers": "0.8.20",
+  "infile": "data/pip/prodict.txt",
+  "dependencies": {}
+}

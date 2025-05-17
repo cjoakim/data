@@ -1,0 +1,6 @@
+{
+  "libname": "cython",
+  "libvers": "3.0.12",
+  "infile": "data/pip/cython.txt",
+  "dependencies": {}
+}

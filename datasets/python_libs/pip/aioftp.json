@@ -1,0 +1,6 @@
+{
+  "libname": "aioftp",
+  "libvers": "0.25.1",
+  "infile": "data/pip/aioftp.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pairtree",
+  "libvers": "0.8.1",
+  "infile": "data/pip/pairtree.txt",
+  "dependencies": {}
+}

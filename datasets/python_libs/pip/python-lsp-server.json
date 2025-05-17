@@ -1,0 +1,16 @@
+{
+  "libname": "python-lsp-server",
+  "libvers": "1.12.2",
+  "infile": "data/pip/python-lsp-server.txt",
+  "dependencies": {
+    "docstring-to-markdown": "0.17",
+    "importlib-metadata": "8.7.0",
+    "jedi": "0.19.2",
+    "parso": "0.8.4",
+    "pluggy": "1.5.0",
+    "python-lsp-jsonrpc": "1.1.2",
+    "typing-extensions": "4.13.2",
+    "ujson": "5.10.0",
+    "zipp": "3.21.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "hyperlink",
+  "libvers": "21.0.0",
+  "infile": "data/pip/hyperlink.txt",
+  "dependencies": {
+    "idna": "3.10"
+  }
+}

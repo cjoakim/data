@@ -1,0 +1,6 @@
+{
+  "libname": "elementpath",
+  "libvers": "5.0.0",
+  "infile": "data/pip/elementpath.txt",
+  "dependencies": {}
+}

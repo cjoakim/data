@@ -1,0 +1,9 @@
+{
+  "libname": "textsearch",
+  "libvers": "0.0.24",
+  "infile": "data/pip/textsearch.txt",
+  "dependencies": {
+    "anyascii": "0.3.2",
+    "pyahocorasick": "2.1.0"
+  }
+}

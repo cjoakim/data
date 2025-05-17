@@ -1,0 +1,6 @@
+{
+  "libname": "sabctools",
+  "libvers": "8.2.5",
+  "infile": "data/pip/sabctools.txt",
+  "dependencies": {}
+}

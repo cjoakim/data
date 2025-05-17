@@ -1,0 +1,13 @@
+{
+  "libname": "easydev",
+  "libvers": "0.13.3",
+  "infile": "data/pip/easydev.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "colorlog": "6.9.0",
+    "line-profiler": "4.2.0",
+    "pexpect": "4.9.0",
+    "platformdirs": "4.3.7",
+    "ptyprocess": "0.7.0"
+  }
+}

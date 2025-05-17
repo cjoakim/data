@@ -1,0 +1,9 @@
+{
+  "libname": "trame-vuetify",
+  "libvers": "3.0.1",
+  "infile": "data/pip/trame-vuetify.txt",
+  "dependencies": {
+    "trame-client": "3.8.2",
+    "trame-common": "0.2.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "py-eureka-client",
+  "libvers": "0.11.13",
+  "infile": "data/pip/py-eureka-client.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "ifaddr": "0.2.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "libname": "extract-msg",
+  "libvers": "0.54.1",
+  "infile": "data/pip/extract-msg.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "cffi": "1.17.1",
+    "colorclass": "2.2.2",
+    "compressed-rtf": "1.0.7",
+    "cryptography": "44.0.3",
+    "easygui": "0.98.3",
+    "ebcdic": "1.1.1",
+    "lark": "1.1.9",
+    "msoffcrypto-tool": "5.4.2",
+    "olefile": "0.47",
+    "oletools": "0.60.2",
+    "pcodedmp": "1.2.6",
+    "pycparser": "2.22",
+    "pyparsing": "3.2.3",
+    "red-black-tree-mod": "1.22",
+    "rtfde": "0.1.2.1",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "tzlocal": "5.3.1"
+  }
+}

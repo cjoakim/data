@@ -1,0 +1,6 @@
+{
+  "libname": "parameter-decorators",
+  "libvers": "0.0.2",
+  "infile": "data/pip/parameter-decorators.txt",
+  "dependencies": {}
+}

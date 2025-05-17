@@ -1,0 +1,6 @@
+{
+  "libname": "schema",
+  "libvers": "0.7.7",
+  "infile": "data/pip/schema.txt",
+  "dependencies": {}
+}

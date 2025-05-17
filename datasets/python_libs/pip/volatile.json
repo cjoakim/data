@@ -1,0 +1,6 @@
+{
+  "libname": "volatile",
+  "libvers": "2.1.0",
+  "infile": "data/pip/volatile.txt",
+  "dependencies": {}
+}

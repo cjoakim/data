@@ -1,0 +1,6 @@
+{
+  "libname": "moose-cli",
+  "libvers": "0.4.145",
+  "infile": "data/pip/moose-cli.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "pyscreenshot",
+  "libvers": "3.1",
+  "infile": "data/pip/pyscreenshot.txt",
+  "dependencies": {
+    "easyprocess": "1.1",
+    "entrypoint2": "1.1",
+    "mss": "10.0.0"
+  }
+}

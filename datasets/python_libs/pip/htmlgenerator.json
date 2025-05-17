@@ -1,0 +1,6 @@
+{
+  "libname": "htmlgenerator",
+  "libvers": "1.2.32",
+  "infile": "data/pip/htmlgenerator.txt",
+  "dependencies": {}
+}

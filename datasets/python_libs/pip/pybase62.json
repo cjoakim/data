@@ -1,0 +1,6 @@
+{
+  "libname": "pybase62",
+  "libvers": "1.0.0",
+  "infile": "data/pip/pybase62.txt",
+  "dependencies": {}
+}

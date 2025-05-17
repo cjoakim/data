@@ -1,0 +1,11 @@
+{
+  "libname": "django-admin-interface",
+  "libvers": "0.30.0",
+  "infile": "data/pip/django-admin-interface.txt",
+  "dependencies": {
+    "django-colorfield": "0.14.0",
+    "pillow": "11.2.1",
+    "python-slugify": "8.0.4",
+    "text-unidecode": "1.3"
+  }
+}

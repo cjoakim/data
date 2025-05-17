@@ -1,0 +1,6 @@
+{
+  "libname": "ntgcalls",
+  "libvers": "1.3.4",
+  "infile": "data/pip/ntgcalls.txt",
+  "dependencies": {}
+}

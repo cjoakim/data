@@ -1,0 +1,17 @@
+{
+  "libname": "signalfx",
+  "libvers": "1.1.16",
+  "infile": "data/pip/signalfx.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "protobuf": "3.20.3",
+    "pyformance": "0.4",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "sseclient-py": "1.8.0",
+    "urllib3": "2.4.0",
+    "ws4py": "0.6.0"
+  }
+}

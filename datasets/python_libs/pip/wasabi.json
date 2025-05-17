@@ -1,0 +1,6 @@
+{
+  "libname": "wasabi",
+  "libvers": "1.1.3",
+  "infile": "data/pip/wasabi.txt",
+  "dependencies": {}
+}

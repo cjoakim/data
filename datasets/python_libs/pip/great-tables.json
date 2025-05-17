@@ -1,0 +1,17 @@
+{
+  "libname": "great-tables",
+  "libvers": "0.17.0",
+  "infile": "data/pip/great-tables.txt",
+  "dependencies": {
+    "babel": "2.17.0",
+    "commonmark": "0.9.1",
+    "faicons": "0.2.2",
+    "htmltools": "0.6.0",
+    "importlib-metadata": "8.7.0",
+    "importlib-resources": "6.5.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "typing-extensions": "4.13.2",
+    "zipp": "3.21.0"
+  }
+}

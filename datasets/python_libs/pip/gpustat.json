@@ -1,0 +1,11 @@
+{
+  "libname": "gpustat",
+  "libvers": "1.1.1",
+  "infile": "data/pip/gpustat.txt",
+  "dependencies": {
+    "blessed": "1.21.0",
+    "nvidia-ml-py": "12.575.51",
+    "psutil": "7.0.0",
+    "wcwidth": "0.2.13"
+  }
+}

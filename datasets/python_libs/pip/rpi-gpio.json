@@ -1,0 +1,6 @@
+{
+  "libname": "rpi-gpio",
+  "libvers": "0.7.1",
+  "infile": "data/pip/rpi-gpio.txt",
+  "dependencies": {}
+}

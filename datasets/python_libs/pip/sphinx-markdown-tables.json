@@ -1,0 +1,8 @@
+{
+  "libname": "sphinx-markdown-tables",
+  "libvers": "0.0.17",
+  "infile": "data/pip/sphinx-markdown-tables.txt",
+  "dependencies": {
+    "markdown": "3.8"
+  }
+}

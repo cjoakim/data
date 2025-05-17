@@ -1,0 +1,12 @@
+{
+  "libname": "ramp-packer",
+  "libvers": "2.5.13",
+  "infile": "data/pip/ramp-packer.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "distro": "1.9.0",
+    "pyyaml": "6.0.2",
+    "redis": "6.0.0",
+    "semantic-version": "2.10.0"
+  }
+}

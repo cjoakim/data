@@ -1,0 +1,28 @@
+{
+  "libname": "gspread-pandas",
+  "libvers": "3.3.0",
+  "infile": "data/pip/gspread-pandas.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "decorator": "5.2.1",
+    "google-auth": "2.40.1",
+    "google-auth-oauthlib": "1.2.2",
+    "gspread": "5.12.4",
+    "idna": "3.10",
+    "numpy": "2.2.5",
+    "oauthlib": "3.2.2",
+    "pandas": "2.2.3",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "requests-oauthlib": "2.0.0",
+    "rsa": "4.9.1",
+    "six": "1.17.0",
+    "tzdata": "2025.2",
+    "urllib3": "2.4.0"
+  }
+}

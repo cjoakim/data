@@ -1,0 +1,10 @@
+{
+  "libname": "cfenv",
+  "libvers": "0.5.3",
+  "infile": "data/pip/cfenv.txt",
+  "dependencies": {
+    "furl": "2.1.4",
+    "orderedmultidict": "1.0.1",
+    "six": "1.17.0"
+  }
+}

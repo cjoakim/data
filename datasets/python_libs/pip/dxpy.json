@@ -1,0 +1,15 @@
+{
+  "libname": "dxpy",
+  "libvers": "0.396.0",
+  "infile": "data/pip/dxpy.txt",
+  "dependencies": {
+    "argcomplete": "3.6.2",
+    "certifi": "2025.4.26",
+    "crc32c": "2.7.1",
+    "psutil": "7.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.1.0",
+    "websocket-client": "1.7.0"
+  }
+}

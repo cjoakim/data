@@ -1,0 +1,6 @@
+{
+  "libname": "palettable",
+  "libvers": "3.3.3",
+  "infile": "data/pip/palettable.txt",
+  "dependencies": {}
+}

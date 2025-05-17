@@ -1,0 +1,6 @@
+{
+  "libname": "summa-embed",
+  "libvers": "0.25.1",
+  "infile": "data/pip/summa-embed.txt",
+  "dependencies": {}
+}

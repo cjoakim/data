@@ -1,0 +1,10 @@
+{
+  "libname": "numpy-minmax",
+  "libvers": "0.4.0",
+  "infile": "data/pip/numpy-minmax.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "numpy": "2.2.5",
+    "pycparser": "2.22"
+  }
+}

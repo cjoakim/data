@@ -1,0 +1,6 @@
+{
+  "libname": "pillow",
+  "libvers": "11.2.1",
+  "infile": "data/pip/pillow.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,14 @@
+{
+  "libname": "adversarial-robustness-toolbox",
+  "libvers": "1.19.1",
+  "infile": "data/pip/adversarial-robustness-toolbox.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "numpy": "2.2.5",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "threadpoolctl": "3.6.0",
+    "tqdm": "4.67.1"
+  }
+}

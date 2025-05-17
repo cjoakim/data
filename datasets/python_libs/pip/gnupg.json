@@ -1,0 +1,8 @@
+{
+  "libname": "gnupg",
+  "libvers": "2.3.1",
+  "infile": "data/pip/gnupg.txt",
+  "dependencies": {
+    "psutil": "7.0.0"
+  }
+}

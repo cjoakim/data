@@ -1,0 +1,11 @@
+{
+  "libname": "pyexcel-xlsx",
+  "libvers": "0.6.1",
+  "infile": "data/pip/pyexcel-xlsx.txt",
+  "dependencies": {
+    "et-xmlfile": "2.0.0",
+    "lml": "0.2.0",
+    "openpyxl": "3.1.5",
+    "pyexcel-io": "0.6.7"
+  }
+}

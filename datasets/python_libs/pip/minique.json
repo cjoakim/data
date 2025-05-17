@@ -1,0 +1,8 @@
+{
+  "libname": "minique",
+  "libvers": "0.10.0",
+  "infile": "data/pip/minique.txt",
+  "dependencies": {
+    "redis": "6.0.0"
+  }
+}

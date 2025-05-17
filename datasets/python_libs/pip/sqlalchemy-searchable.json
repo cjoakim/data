@@ -1,0 +1,10 @@
+{
+  "libname": "sqlalchemy-searchable",
+  "libvers": "2.1.0",
+  "infile": "data/pip/sqlalchemy-searchable.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "sqlalchemy-utils": "0.41.2",
+    "typing-extensions": "4.13.2"
+  }
+}

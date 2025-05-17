@@ -1,0 +1,8 @@
+{
+  "libname": "intervaltree",
+  "libvers": "3.1.0",
+  "infile": "data/pip/intervaltree.txt",
+  "dependencies": {
+    "sortedcontainers": "2.4.0"
+  }
+}

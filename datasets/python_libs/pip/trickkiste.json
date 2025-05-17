@@ -1,0 +1,9 @@
+{
+  "libname": "trickkiste",
+  "libvers": "0.2.2",
+  "infile": "data/pip/trickkiste.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

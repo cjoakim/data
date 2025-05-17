@@ -1,0 +1,13 @@
+{
+  "libname": "pytest-regressions",
+  "libvers": "2.7.0",
+  "infile": "data/pip/pytest-regressions.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "pytest-datadir": "1.6.1",
+    "pyyaml": "6.0.2"
+  }
+}

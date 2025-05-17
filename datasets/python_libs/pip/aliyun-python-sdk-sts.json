@@ -1,0 +1,12 @@
+{
+  "libname": "aliyun-python-sdk-sts",
+  "libvers": "3.1.2",
+  "infile": "data/pip/aliyun-python-sdk-sts.txt",
+  "dependencies": {
+    "aliyun-python-sdk-core": "2.16.0",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "jmespath": "0.10.0",
+    "pycparser": "2.22"
+  }
+}

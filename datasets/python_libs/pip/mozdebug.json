@@ -1,0 +1,11 @@
+{
+  "libname": "mozdebug",
+  "libvers": "0.3.1",
+  "infile": "data/pip/mozdebug.txt",
+  "dependencies": {
+    "distro": "1.9.0",
+    "mozfile": "3.0.0",
+    "mozinfo": "1.2.3",
+    "six": "1.17.0"
+  }
+}

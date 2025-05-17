@@ -1,0 +1,6 @@
+{
+  "libname": "ciso8601",
+  "libvers": "2.3.2",
+  "infile": "data/pip/ciso8601.txt",
+  "dependencies": {}
+}

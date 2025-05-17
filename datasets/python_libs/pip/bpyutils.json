@@ -1,0 +1,6 @@
+{
+  "libname": "bpyutils",
+  "libvers": "0.5.8",
+  "infile": "data/pip/bpyutils.txt",
+  "dependencies": {}
+}

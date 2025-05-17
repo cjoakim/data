@@ -1,0 +1,8 @@
+{
+  "libname": "rouge-chinese",
+  "libvers": "1.0.3",
+  "infile": "data/pip/rouge-chinese.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

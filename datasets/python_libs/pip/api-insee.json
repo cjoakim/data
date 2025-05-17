@@ -1,0 +1,6 @@
+{
+  "libname": "api-insee",
+  "libvers": "1.6",
+  "infile": "data/pip/api-insee.txt",
+  "dependencies": {}
+}

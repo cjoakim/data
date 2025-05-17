@@ -1,0 +1,8 @@
+{
+  "libname": "domain2idna",
+  "libvers": "1.12.3",
+  "infile": "data/pip/domain2idna.txt",
+  "dependencies": {
+    "colorama": "0.4.6"
+  }
+}

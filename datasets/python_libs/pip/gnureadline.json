@@ -1,0 +1,6 @@
+{
+  "libname": "gnureadline",
+  "libvers": "8.2.13",
+  "infile": "data/pip/gnureadline.txt",
+  "dependencies": {}
+}

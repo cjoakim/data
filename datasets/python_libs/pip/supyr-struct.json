@@ -1,0 +1,6 @@
+{
+  "libname": "supyr-struct",
+  "libvers": "1.5.4",
+  "infile": "data/pip/supyr-struct.txt",
+  "dependencies": {}
+}

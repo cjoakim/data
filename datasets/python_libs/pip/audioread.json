@@ -1,0 +1,6 @@
+{
+  "libname": "audioread",
+  "libvers": "3.0.1",
+  "infile": "data/pip/audioread.txt",
+  "dependencies": {}
+}

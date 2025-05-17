@@ -1,0 +1,6 @@
+{
+  "libname": "protoc-wrapper",
+  "libvers": "30.2.0.post0",
+  "infile": "data/pip/protoc-wrapper.txt",
+  "dependencies": {}
+}

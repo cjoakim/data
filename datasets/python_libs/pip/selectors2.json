@@ -1,0 +1,6 @@
+{
+  "libname": "selectors2",
+  "libvers": "2.0.2",
+  "infile": "data/pip/selectors2.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "icontract",
+  "libvers": "2.7.1",
+  "infile": "data/pip/icontract.txt",
+  "dependencies": {
+    "asttokens": "2.4.1",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "afeng-py-tools",
+  "libvers": "0.0.340",
+  "infile": "data/pip/afeng-py-tools.txt",
+  "dependencies": {}
+}

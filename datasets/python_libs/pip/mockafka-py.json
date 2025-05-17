@@ -1,0 +1,12 @@
+{
+  "libname": "mockafka-py",
+  "libvers": "0.1.63",
+  "infile": "data/pip/mockafka-py.txt",
+  "dependencies": {
+    "aiokafka": "0.11.0",
+    "async-timeout": "5.0.1",
+    "confluent-kafka": "2.10.0",
+    "packaging": "25.0",
+    "typing-extensions": "4.13.2"
+  }
+}

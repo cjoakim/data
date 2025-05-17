@@ -1,0 +1,18 @@
+{
+  "libname": "optimistix",
+  "libvers": "0.0.10",
+  "infile": "data/pip/optimistix.txt",
+  "dependencies": {
+    "equinox": "0.12.1",
+    "jax": "0.6.0",
+    "jaxlib": "0.6.0",
+    "jaxtyping": "0.3.2",
+    "lineax": "0.0.8",
+    "ml-dtypes": "0.5.1",
+    "numpy": "2.2.5",
+    "opt-einsum": "3.4.0",
+    "scipy": "1.15.2",
+    "typing-extensions": "4.13.2",
+    "wadler-lindig": "0.1.5"
+  }
+}

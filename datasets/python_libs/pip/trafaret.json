@@ -1,0 +1,6 @@
+{
+  "libname": "trafaret",
+  "libvers": "2.1.1",
+  "infile": "data/pip/trafaret.txt",
+  "dependencies": {}
+}

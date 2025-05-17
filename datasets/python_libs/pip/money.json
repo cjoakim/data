@@ -1,0 +1,6 @@
+{
+  "libname": "money",
+  "libvers": "1.3.0",
+  "infile": "data/pip/money.txt",
+  "dependencies": {}
+}

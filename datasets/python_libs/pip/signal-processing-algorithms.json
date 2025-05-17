@@ -1,0 +1,17 @@
+{
+  "libname": "signal-processing-algorithms",
+  "libvers": "2.1.5",
+  "infile": "data/pip/signal-processing-algorithms.txt",
+  "dependencies": {
+    "gevent": "23.9.1",
+    "greenlet": "3.2.1",
+    "more-itertools": "8.14.0",
+    "numpy": "1.26.4",
+    "pyyaml": "6.0.2",
+    "scipy": "1.15.2",
+    "structlog": "24.4.0",
+    "typing-extensions": "4.13.2",
+    "zope-event": "5.0",
+    "zope-interface": "7.2"
+  }
+}

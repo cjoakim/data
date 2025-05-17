@@ -1,0 +1,8 @@
+{
+  "libname": "genie-libs-parser",
+  "libvers": "25.4",
+  "infile": "data/pip/genie-libs-parser.txt",
+  "dependencies": {
+    "xmltodict": "0.14.2"
+  }
+}

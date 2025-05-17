@@ -1,0 +1,9 @@
+{
+  "libname": "types-docker",
+  "libvers": "7.1.0.20250503",
+  "infile": "data/pip/types-docker.txt",
+  "dependencies": {
+    "types-requests": "2.32.0.20250328",
+    "urllib3": "2.4.0"
+  }
+}

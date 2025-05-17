@@ -1,0 +1,6 @@
+{
+  "libname": "coqpit",
+  "libvers": "0.0.17",
+  "infile": "data/pip/coqpit.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "colorthief",
+  "libvers": "0.2.1",
+  "infile": "data/pip/colorthief.txt",
+  "dependencies": {
+    "pillow": "11.2.1"
+  }
+}

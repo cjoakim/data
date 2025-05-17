@@ -1,0 +1,6 @@
+{
+  "libname": "shtab",
+  "libvers": "1.7.2",
+  "infile": "data/pip/shtab.txt",
+  "dependencies": {}
+}

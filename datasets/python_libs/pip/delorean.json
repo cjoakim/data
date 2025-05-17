@@ -1,0 +1,13 @@
+{
+  "libname": "delorean",
+  "libvers": "1.0.0",
+  "infile": "data/pip/delorean.txt",
+  "dependencies": {
+    "babel": "2.17.0",
+    "humanize": "4.12.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tzlocal": "5.3.1"
+  }
+}

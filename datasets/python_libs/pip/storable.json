@@ -1,0 +1,6 @@
+{
+  "libname": "storable",
+  "libvers": "1.2.4",
+  "infile": "data/pip/storable.txt",
+  "dependencies": {}
+}

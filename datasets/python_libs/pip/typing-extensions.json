@@ -1,0 +1,6 @@
+{
+  "libname": "typing-extensions",
+  "libvers": "4.13.2",
+  "infile": "data/pip/typing-extensions.txt",
+  "dependencies": {}
+}

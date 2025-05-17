@@ -1,0 +1,23 @@
+{
+  "libname": "deepecho",
+  "libvers": "0.7.0",
+  "infile": "data/pip/deepecho.txt",
+  "dependencies": {
+    "filelock": "3.18.0",
+    "fsspec": "2025.3.2",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "mpmath": "1.3.0",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "sympy": "1.14.0",
+    "torch": "2.7.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

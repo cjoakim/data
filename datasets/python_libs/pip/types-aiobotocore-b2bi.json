@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-b2bi",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-b2bi.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "samplerate",
+  "libvers": "0.2.1",
+  "infile": "data/pip/samplerate.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

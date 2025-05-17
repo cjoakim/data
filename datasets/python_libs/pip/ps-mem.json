@@ -1,0 +1,6 @@
+{
+  "libname": "ps-mem",
+  "libvers": "3.14",
+  "infile": "data/pip/ps-mem.txt",
+  "dependencies": {}
+}

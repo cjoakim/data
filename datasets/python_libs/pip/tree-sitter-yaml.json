@@ -1,0 +1,6 @@
+{
+  "libname": "tree-sitter-yaml",
+  "libvers": "0.7.0",
+  "infile": "data/pip/tree-sitter-yaml.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "faker-enum",
+  "libvers": "0.0.2",
+  "infile": "data/pip/faker-enum.txt",
+  "dependencies": {
+    "faker": "37.1.0",
+    "tzdata": "2025.2"
+  }
+}

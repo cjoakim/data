@@ -1,0 +1,6 @@
+{
+  "libname": "truss-transfer",
+  "libvers": "0.0.11",
+  "infile": "data/pip/truss-transfer.txt",
+  "dependencies": {}
+}

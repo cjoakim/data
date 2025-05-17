@@ -1,0 +1,12 @@
+{
+  "libname": "django-restql",
+  "libvers": "0.16.2",
+  "infile": "data/pip/django-restql.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "djangorestframework": "3.16.0",
+    "pypeg2": "2.15.2",
+    "sqlparse": "0.5.3"
+  }
+}

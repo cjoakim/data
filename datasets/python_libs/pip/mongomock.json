@@ -1,0 +1,10 @@
+{
+  "libname": "mongomock",
+  "libvers": "4.3.0",
+  "infile": "data/pip/mongomock.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "pytz": "2025.2",
+    "sentinels": "1.0.0"
+  }
+}

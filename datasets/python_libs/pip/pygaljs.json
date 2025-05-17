@@ -1,0 +1,6 @@
+{
+  "libname": "pygaljs",
+  "libvers": "1.0.2",
+  "infile": "data/pip/pygaljs.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "binho-host-adapter",
+  "libvers": "0.1.6",
+  "infile": "data/pip/binho-host-adapter.txt",
+  "dependencies": {
+    "pyserial": "3.5"
+  }
+}

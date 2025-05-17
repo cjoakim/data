@@ -1,0 +1,8 @@
+{
+  "libname": "jdatetime",
+  "libvers": "5.2.0",
+  "infile": "data/pip/jdatetime.txt",
+  "dependencies": {
+    "jalali-core": "1.0.0"
+  }
+}

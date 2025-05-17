@@ -1,0 +1,6 @@
+{
+  "libname": "opencc-python-reimplemented",
+  "libvers": "0.1.7",
+  "infile": "data/pip/opencc-python-reimplemented.txt",
+  "dependencies": {}
+}

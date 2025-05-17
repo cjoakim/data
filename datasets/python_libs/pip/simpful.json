@@ -1,0 +1,9 @@
+{
+  "libname": "simpful",
+  "libvers": "2.12.0",
+  "infile": "data/pip/simpful.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

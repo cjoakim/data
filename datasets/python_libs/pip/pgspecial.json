@@ -1,0 +1,11 @@
+{
+  "libname": "pgspecial",
+  "libvers": "2.2.1",
+  "infile": "data/pip/pgspecial.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "psycopg": "3.2.7",
+    "sqlparse": "0.5.3",
+    "typing-extensions": "4.13.2"
+  }
+}

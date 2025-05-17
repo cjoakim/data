@@ -1,0 +1,6 @@
+{
+  "libname": "pymsalruntime",
+  "libvers": "0.18.1",
+  "infile": "data/pip/pymsalruntime.txt",
+  "dependencies": {}
+}

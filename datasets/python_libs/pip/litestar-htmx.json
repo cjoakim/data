@@ -1,0 +1,6 @@
+{
+  "libname": "litestar-htmx",
+  "libvers": "0.4.1",
+  "infile": "data/pip/litestar-htmx.txt",
+  "dependencies": {}
+}

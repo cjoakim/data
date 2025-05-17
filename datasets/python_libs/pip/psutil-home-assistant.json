@@ -1,0 +1,8 @@
+{
+  "libname": "psutil-home-assistant",
+  "libvers": "0.0.1",
+  "infile": "data/pip/psutil-home-assistant.txt",
+  "dependencies": {
+    "psutil": "7.0.0"
+  }
+}

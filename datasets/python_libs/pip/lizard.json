@@ -1,0 +1,9 @@
+{
+  "libname": "lizard",
+  "libvers": "1.17.28",
+  "infile": "data/pip/lizard.txt",
+  "dependencies": {
+    "pathspec": "0.12.1",
+    "pygments": "2.19.1"
+  }
+}

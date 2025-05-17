@@ -1,0 +1,6 @@
+{
+  "libname": "cgroupspy",
+  "libvers": "0.2.3",
+  "infile": "data/pip/cgroupspy.txt",
+  "dependencies": {}
+}

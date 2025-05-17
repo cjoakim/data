@@ -1,0 +1,6 @@
+{
+  "libname": "y-py",
+  "libvers": "0.6.2",
+  "infile": "data/pip/y-py.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "dhash",
+  "libvers": "1.4",
+  "infile": "data/pip/dhash.txt",
+  "dependencies": {}
+}

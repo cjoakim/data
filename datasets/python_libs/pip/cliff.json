@@ -1,0 +1,16 @@
+{
+  "libname": "cliff",
+  "libvers": "4.9.1",
+  "infile": "data/pip/cliff.txt",
+  "dependencies": {
+    "autopage": "0.5.2",
+    "cmd2": "2.5.11",
+    "gnureadline": "8.2.13",
+    "pbr": "6.1.1",
+    "prettytable": "3.16.0",
+    "pyperclip": "1.9.0",
+    "pyyaml": "6.0.2",
+    "stevedore": "5.4.1",
+    "wcwidth": "0.2.13"
+  }
+}

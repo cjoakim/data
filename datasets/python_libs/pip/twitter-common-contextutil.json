@@ -1,0 +1,9 @@
+{
+  "libname": "twitter-common-contextutil",
+  "libvers": "0.3.11",
+  "infile": "data/pip/twitter-common-contextutil.txt",
+  "dependencies": {
+    "twitter-common-dirutil": "0.3.11",
+    "twitter-common-lang": "0.3.11"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "x21",
+  "libvers": "0.5.3",
+  "infile": "data/pip/x21.txt",
+  "dependencies": {}
+}

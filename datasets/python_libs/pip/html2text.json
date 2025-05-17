@@ -1,0 +1,6 @@
+{
+  "libname": "html2text",
+  "libvers": "2025.4.15",
+  "infile": "data/pip/html2text.txt",
+  "dependencies": {}
+}

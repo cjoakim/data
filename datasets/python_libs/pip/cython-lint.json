@@ -1,0 +1,10 @@
+{
+  "libname": "cython-lint",
+  "libvers": "0.16.6",
+  "infile": "data/pip/cython-lint.txt",
+  "dependencies": {
+    "cython": "3.0.12",
+    "pycodestyle": "2.13.0",
+    "tokenize-rt": "6.1.0"
+  }
+}

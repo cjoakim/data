@@ -1,0 +1,6 @@
+{
+  "libname": "preppy",
+  "libvers": "4.3.0",
+  "infile": "data/pip/preppy.txt",
+  "dependencies": {}
+}

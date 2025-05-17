@@ -1,0 +1,11 @@
+{
+  "libname": "import-linter",
+  "libvers": "2.3",
+  "infile": "data/pip/import-linter.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "grimp": "3.9",
+    "joblib": "1.5.0",
+    "typing-extensions": "4.13.2"
+  }
+}

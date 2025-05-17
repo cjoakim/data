@@ -1,0 +1,9 @@
+{
+  "libname": "coverage-conditional-plugin",
+  "libvers": "0.9.0",
+  "infile": "data/pip/coverage-conditional-plugin.txt",
+  "dependencies": {
+    "coverage": "7.8.0",
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "gviz-api",
+  "libvers": "1.10.0",
+  "infile": "data/pip/gviz-api.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

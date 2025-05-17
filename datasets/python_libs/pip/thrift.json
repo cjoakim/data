@@ -1,0 +1,8 @@
+{
+  "libname": "thrift",
+  "libvers": "0.21.0",
+  "infile": "data/pip/thrift.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

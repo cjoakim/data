@@ -1,0 +1,6 @@
+{
+  "libname": "parsley",
+  "libvers": "1.3",
+  "infile": "data/pip/parsley.txt",
+  "dependencies": {}
+}

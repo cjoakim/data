@@ -1,0 +1,6 @@
+{
+  "libname": "brewer2mpl",
+  "libvers": "1.4.1",
+  "infile": "data/pip/brewer2mpl.txt",
+  "dependencies": {}
+}

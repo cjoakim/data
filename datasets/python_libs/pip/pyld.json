@@ -1,0 +1,10 @@
+{
+  "libname": "pyld",
+  "libvers": "2.0.4",
+  "infile": "data/pip/pyld.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "frozendict": "2.4.6",
+    "lxml": "5.4.0"
+  }
+}

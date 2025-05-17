@@ -1,0 +1,6 @@
+{
+  "libname": "dedupe-levenshtein-search",
+  "libvers": "1.4.5",
+  "infile": "data/pip/dedupe-levenshtein-search.txt",
+  "dependencies": {}
+}

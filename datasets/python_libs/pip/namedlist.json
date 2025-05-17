@@ -1,0 +1,6 @@
+{
+  "libname": "namedlist",
+  "libvers": "1.8",
+  "infile": "data/pip/namedlist.txt",
+  "dependencies": {}
+}

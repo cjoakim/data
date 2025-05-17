@@ -1,0 +1,10 @@
+{
+  "libname": "blind-watermark",
+  "libvers": "0.4.4",
+  "infile": "data/pip/blind-watermark.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "opencv-python": "4.11.0.86",
+    "pywavelets": "1.8.0"
+  }
+}

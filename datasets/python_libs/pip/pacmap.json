@@ -1,0 +1,15 @@
+{
+  "libname": "pacmap",
+  "libvers": "0.8.0",
+  "infile": "data/pip/pacmap.txt",
+  "dependencies": {
+    "annoy": "1.17.3",
+    "joblib": "1.5.0",
+    "llvmlite": "0.44.0",
+    "numba": "0.61.2",
+    "numpy": "2.2.5",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "threadpoolctl": "3.6.0"
+  }
+}

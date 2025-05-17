@@ -1,0 +1,12 @@
+{
+  "libname": "pytest-parallel",
+  "libvers": "0.1.1",
+  "infile": "data/pip/pytest-parallel.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "tblib": "3.1.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pre-commit-hooks",
+  "libvers": "5.0.0",
+  "infile": "data/pip/pre-commit-hooks.txt",
+  "dependencies": {
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12"
+  }
+}

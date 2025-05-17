@@ -1,0 +1,9 @@
+{
+  "libname": "xgboost-cpu",
+  "libvers": "3.0.0",
+  "infile": "data/pip/xgboost-cpu.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

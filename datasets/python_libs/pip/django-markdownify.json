@@ -1,0 +1,14 @@
+{
+  "libname": "django-markdownify",
+  "libvers": "0.9.5",
+  "infile": "data/pip/django-markdownify.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "bleach[css]": "6.2.0",
+    "django": "5.2",
+    "markdown": "3.8",
+    "sqlparse": "0.5.3",
+    "tinycss2": "1.4.0",
+    "webencodings": "0.5.1"
+  }
+}

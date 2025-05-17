@@ -1,0 +1,10 @@
+{
+  "libname": "cmd2",
+  "libvers": "2.5.11",
+  "infile": "data/pip/cmd2.txt",
+  "dependencies": {
+    "gnureadline": "8.2.13",
+    "pyperclip": "1.9.0",
+    "wcwidth": "0.2.13"
+  }
+}

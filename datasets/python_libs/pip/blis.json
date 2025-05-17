@@ -1,0 +1,8 @@
+{
+  "libname": "blis",
+  "libvers": "1.3.0",
+  "infile": "data/pip/blis.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

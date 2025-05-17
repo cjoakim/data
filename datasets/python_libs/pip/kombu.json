@@ -1,0 +1,10 @@
+{
+  "libname": "kombu",
+  "libvers": "5.5.3",
+  "infile": "data/pip/kombu.txt",
+  "dependencies": {
+    "amqp": "5.3.1",
+    "tzdata": "2025.2",
+    "vine": "5.1.0"
+  }
+}

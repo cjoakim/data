@@ -1,0 +1,6 @@
+{
+  "libname": "vl-convert-python",
+  "libvers": "1.7.0",
+  "infile": "data/pip/vl-convert-python.txt",
+  "dependencies": {}
+}

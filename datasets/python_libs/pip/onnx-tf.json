@@ -1,0 +1,11 @@
+{
+  "libname": "onnx-tf",
+  "libvers": "1.6.0",
+  "infile": "data/pip/onnx-tf.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "onnx": "1.17.0",
+    "protobuf": "6.30.2",
+    "pyyaml": "6.0.2"
+  }
+}

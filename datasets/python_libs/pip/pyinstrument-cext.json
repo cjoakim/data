@@ -1,0 +1,6 @@
+{
+  "libname": "pyinstrument-cext",
+  "libvers": "0.2.4",
+  "infile": "data/pip/pyinstrument-cext.txt",
+  "dependencies": {}
+}

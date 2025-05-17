@@ -1,0 +1,6 @@
+{
+  "libname": "devicetorch",
+  "libvers": "0.1.13",
+  "infile": "data/pip/devicetorch.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "sparqlwrapper",
+  "libvers": "2.0.0",
+  "infile": "data/pip/sparqlwrapper.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3",
+    "rdflib": "7.1.4"
+  }
+}

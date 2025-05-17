@@ -1,0 +1,16 @@
+{
+  "libname": "fintech",
+  "libvers": "7.7.0",
+  "infile": "data/pip/fintech.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "defusedxml": "0.7.1",
+    "fonttools": "4.57.0",
+    "fpdf2": "2.8.3",
+    "lxml": "5.4.0",
+    "pillow": "11.2.1",
+    "pycparser": "2.22"
+  }
+}

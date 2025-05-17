@@ -1,0 +1,6 @@
+{
+  "libname": "narwhals",
+  "libvers": "1.38.0",
+  "infile": "data/pip/narwhals.txt",
+  "dependencies": {}
+}

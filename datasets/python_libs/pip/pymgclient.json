@@ -1,0 +1,13 @@
+{
+  "libname": "pymgclient",
+  "libvers": "1.4.0",
+  "infile": "data/pip/pymgclient.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "networkx": "3.4.2",
+    "pycparser": "2.22",
+    "pyopenssl": "25.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "pytest-archon",
+  "libvers": "0.0.6",
+  "infile": "data/pip/pytest-archon.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5"
+  }
+}

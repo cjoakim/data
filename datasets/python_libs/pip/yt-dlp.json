@@ -1,0 +1,6 @@
+{
+  "libname": "yt-dlp",
+  "libvers": "2025.4.30",
+  "infile": "data/pip/yt-dlp.txt",
+  "dependencies": {}
+}

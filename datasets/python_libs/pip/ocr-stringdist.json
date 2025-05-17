@@ -1,0 +1,6 @@
+{
+  "libname": "ocr-stringdist",
+  "libvers": "0.1.0",
+  "infile": "data/pip/ocr-stringdist.txt",
+  "dependencies": {}
+}

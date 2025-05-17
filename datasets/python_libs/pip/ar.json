@@ -1,0 +1,6 @@
+{
+  "libname": "ar",
+  "libvers": "1.0.0",
+  "infile": "data/pip/ar.txt",
+  "dependencies": {}
+}

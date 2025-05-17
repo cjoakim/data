@@ -1,0 +1,9 @@
+{
+  "libname": "lsprotocol",
+  "libvers": "2023.0.1",
+  "infile": "data/pip/lsprotocol.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "cattrs": "24.1.3"
+  }
+}

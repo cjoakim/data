@@ -1,0 +1,6 @@
+{
+  "libname": "pypdftk",
+  "libvers": "0.5",
+  "infile": "data/pip/pypdftk.txt",
+  "dependencies": {}
+}

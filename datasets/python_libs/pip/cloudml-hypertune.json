@@ -1,0 +1,6 @@
+{
+  "libname": "cloudml-hypertune",
+  "libvers": "0.1.0.dev6",
+  "infile": "data/pip/cloudml-hypertune.txt",
+  "dependencies": {}
+}

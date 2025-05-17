@@ -1,0 +1,6 @@
+{
+  "libname": "greenlet",
+  "libvers": "3.2.1",
+  "infile": "data/pip/greenlet.txt",
+  "dependencies": {}
+}

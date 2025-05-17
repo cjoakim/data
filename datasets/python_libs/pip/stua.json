@@ -1,0 +1,6 @@
+{
+  "libname": "stua",
+  "libvers": "0.3",
+  "infile": "data/pip/stua.txt",
+  "dependencies": {}
+}

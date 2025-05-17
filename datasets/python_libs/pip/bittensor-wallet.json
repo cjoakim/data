@@ -1,0 +1,13 @@
+{
+  "libname": "bittensor-wallet",
+  "libvers": "3.0.9",
+  "infile": "data/pip/bittensor-wallet.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "43.0.3",
+    "password-strength": "0.0.3.post2",
+    "py-bip39-bindings": "0.1.11",
+    "pycparser": "2.22",
+    "six": "1.17.0"
+  }
+}

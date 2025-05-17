@@ -1,0 +1,6 @@
+{
+  "libname": "wsgi-request-logger",
+  "libvers": "0.4.6",
+  "infile": "data/pip/wsgi-request-logger.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pathspec",
+  "libvers": "0.12.1",
+  "infile": "data/pip/pathspec.txt",
+  "dependencies": {}
+}

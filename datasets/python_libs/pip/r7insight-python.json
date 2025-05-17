@@ -1,0 +1,8 @@
+{
+  "libname": "r7insight-python",
+  "libvers": "1.0.1",
+  "infile": "data/pip/r7insight-python.txt",
+  "dependencies": {
+    "certifi": "2025.4.26"
+  }
+}

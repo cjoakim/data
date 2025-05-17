@@ -1,0 +1,10 @@
+{
+  "libname": "pyshelly",
+  "libvers": "1.0.4",
+  "infile": "data/pip/pyshelly.txt",
+  "dependencies": {
+    "ifaddr": "0.2.0",
+    "websocket-client": "1.8.0",
+    "zeroconf": "0.147.0"
+  }
+}

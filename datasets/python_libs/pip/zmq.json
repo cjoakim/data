@@ -1,0 +1,8 @@
+{
+  "libname": "zmq",
+  "libvers": "0.0.0",
+  "infile": "data/pip/zmq.txt",
+  "dependencies": {
+    "pyzmq": "26.4.0"
+  }
+}

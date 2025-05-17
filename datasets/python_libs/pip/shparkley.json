@@ -1,0 +1,12 @@
+{
+  "libname": "shparkley",
+  "libvers": "1.0.1",
+  "infile": "data/pip/shparkley.txt",
+  "dependencies": {
+    "future": "1.0.0",
+    "mock": "5.2.0",
+    "numpy": "2.2.5",
+    "py4j": "0.10.9.7",
+    "pyspark": "3.5.5"
+  }
+}

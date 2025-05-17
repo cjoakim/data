@@ -1,0 +1,8 @@
+{
+  "libname": "oldest-supported-numpy",
+  "libvers": "2023.12.21",
+  "infile": "data/pip/oldest-supported-numpy.txt",
+  "dependencies": {
+    "numpy": "1.26.2"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "ai-edge-litert-nightly",
+  "libvers": "1.2.0.dev20250505",
+  "infile": "data/pip/ai-edge-litert-nightly.txt",
+  "dependencies": {
+    "flatbuffers": "25.2.10",
+    "numpy": "2.2.5",
+    "tqdm": "4.67.1"
+  }
+}

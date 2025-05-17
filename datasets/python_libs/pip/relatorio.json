@@ -1,0 +1,10 @@
+{
+  "libname": "relatorio",
+  "libvers": "0.11.1",
+  "infile": "data/pip/relatorio.txt",
+  "dependencies": {
+    "genshi": "0.7.9",
+    "lxml": "5.4.0",
+    "six": "1.17.0"
+  }
+}

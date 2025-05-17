@@ -1,0 +1,6 @@
+{
+  "libname": "ffmpeg-progress-yield",
+  "libvers": "0.12.0",
+  "infile": "data/pip/ffmpeg-progress-yield.txt",
+  "dependencies": {}
+}

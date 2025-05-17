@@ -1,0 +1,6 @@
+{
+  "libname": "legacy-api-wrap",
+  "libvers": "1.4.1",
+  "infile": "data/pip/legacy-api-wrap.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "ftputil",
+  "libvers": "5.1.0",
+  "infile": "data/pip/ftputil.txt",
+  "dependencies": {}
+}

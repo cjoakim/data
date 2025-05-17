@@ -1,0 +1,6 @@
+{
+  "libname": "disklru",
+  "libvers": "2.0.4",
+  "infile": "data/pip/disklru.txt",
+  "dependencies": {}
+}

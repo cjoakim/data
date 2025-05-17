@@ -1,0 +1,8 @@
+{
+  "libname": "staticx",
+  "libvers": "0.14.1",
+  "infile": "data/pip/staticx.txt",
+  "dependencies": {
+    "pyelftools": "0.32"
+  }
+}

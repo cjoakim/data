@@ -1,0 +1,10 @@
+{
+  "libname": "py3-validate-email",
+  "libvers": "1.0.5.post2",
+  "infile": "data/pip/py3-validate-email.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "filelock": "3.18.0",
+    "idna": "3.10"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "ocp-tessellate",
+  "libvers": "3.0.11",
+  "infile": "data/pip/ocp-tessellate.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "imagesize": "1.4.1",
+    "numpy": "2.2.5",
+    "webcolors": "24.8.0"
+  }
+}

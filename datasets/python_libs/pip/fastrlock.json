@@ -1,0 +1,6 @@
+{
+  "libname": "fastrlock",
+  "libvers": "0.8.3",
+  "infile": "data/pip/fastrlock.txt",
+  "dependencies": {}
+}

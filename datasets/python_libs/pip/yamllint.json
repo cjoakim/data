@@ -1,0 +1,9 @@
+{
+  "libname": "yamllint",
+  "libvers": "1.37.1",
+  "infile": "data/pip/yamllint.txt",
+  "dependencies": {
+    "pathspec": "0.12.1",
+    "pyyaml": "6.0.2"
+  }
+}

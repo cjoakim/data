@@ -1,0 +1,8 @@
+{
+  "libname": "phone-gen",
+  "libvers": "3.0.18",
+  "infile": "data/pip/phone-gen.txt",
+  "dependencies": {
+    "string-gen": "0.1.0"
+  }
+}

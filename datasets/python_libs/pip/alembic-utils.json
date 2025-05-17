@@ -1,0 +1,14 @@
+{
+  "libname": "alembic-utils",
+  "libvers": "0.8.8",
+  "infile": "data/pip/alembic-utils.txt",
+  "dependencies": {
+    "alembic": "1.15.2",
+    "flupy": "1.2.1",
+    "mako": "1.3.10",
+    "markupsafe": "3.0.2",
+    "parse": "1.20.2",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

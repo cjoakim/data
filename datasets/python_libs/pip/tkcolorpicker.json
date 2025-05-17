@@ -1,0 +1,8 @@
+{
+  "libname": "tkcolorpicker",
+  "libvers": "2.1.3",
+  "infile": "data/pip/tkcolorpicker.txt",
+  "dependencies": {
+    "pillow": "11.2.1"
+  }
+}

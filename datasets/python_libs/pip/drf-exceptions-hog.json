@@ -1,0 +1,11 @@
+{
+  "libname": "drf-exceptions-hog",
+  "libvers": "0.4.0",
+  "infile": "data/pip/drf-exceptions-hog.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "djangorestframework": "3.16.0",
+    "sqlparse": "0.5.3"
+  }
+}

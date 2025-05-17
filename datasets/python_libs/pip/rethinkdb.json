@@ -1,0 +1,9 @@
+{
+  "libname": "rethinkdb",
+  "libvers": "2.4.10.post1",
+  "infile": "data/pip/rethinkdb.txt",
+  "dependencies": {
+    "looseversion": "1.3.0",
+    "six": "1.17.0"
+  }
+}

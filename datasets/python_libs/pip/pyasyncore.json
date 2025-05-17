@@ -1,0 +1,6 @@
+{
+  "libname": "pyasyncore",
+  "libvers": "1.0.4",
+  "infile": "data/pip/pyasyncore.txt",
+  "dependencies": {}
+}

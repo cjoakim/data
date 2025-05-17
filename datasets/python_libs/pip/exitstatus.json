@@ -1,0 +1,6 @@
+{
+  "libname": "exitstatus",
+  "libvers": "2.6.0",
+  "infile": "data/pip/exitstatus.txt",
+  "dependencies": {}
+}

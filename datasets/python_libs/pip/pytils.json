@@ -1,0 +1,6 @@
+{
+  "libname": "pytils",
+  "libvers": "0.4.3",
+  "infile": "data/pip/pytils.txt",
+  "dependencies": {}
+}

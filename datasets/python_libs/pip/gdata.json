@@ -1,0 +1,6 @@
+{
+  "libname": "gdata",
+  "libvers": "2.0.18",
+  "infile": "data/pip/gdata.txt",
+  "dependencies": {}
+}

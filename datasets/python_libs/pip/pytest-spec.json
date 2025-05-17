@@ -1,0 +1,6 @@
+{
+  "libname": "pytest-spec",
+  "libvers": "4.0.0",
+  "infile": "data/pip/pytest-spec.txt",
+  "dependencies": {}
+}

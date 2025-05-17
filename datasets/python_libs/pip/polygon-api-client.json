@@ -1,0 +1,10 @@
+{
+  "libname": "polygon-api-client",
+  "libvers": "1.14.5",
+  "infile": "data/pip/polygon-api-client.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "urllib3": "2.4.0",
+    "websockets": "14.2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "libname": "tables",
+  "libvers": "3.10.2",
+  "infile": "data/pip/tables.txt",
+  "dependencies": {
+    "blosc2": "3.3.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "msgpack": "1.1.0",
+    "ndindex": "1.9.2",
+    "numexpr": "2.10.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "platformdirs": "4.3.7",
+    "py-cpuinfo": "9.0.0",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "html-testrunner",
+  "libvers": "1.2.1",
+  "infile": "data/pip/html-testrunner.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "py3nvml",
+  "libvers": "0.2.7",
+  "infile": "data/pip/py3nvml.txt",
+  "dependencies": {
+    "xmltodict": "0.14.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "django-rest-multiple-models",
+  "libvers": "2.1.3",
+  "infile": "data/pip/django-rest-multiple-models.txt",
+  "dependencies": {}
+}

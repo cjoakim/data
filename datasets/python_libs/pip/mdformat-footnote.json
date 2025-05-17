@@ -1,0 +1,11 @@
+{
+  "libname": "mdformat-footnote",
+  "libvers": "0.1.1",
+  "infile": "data/pip/mdformat-footnote.txt",
+  "dependencies": {
+    "markdown-it-py": "3.0.0",
+    "mdformat": "0.7.22",
+    "mdit-py-plugins": "0.4.2",
+    "mdurl": "0.1.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "command-runner",
+  "libvers": "1.7.3",
+  "infile": "data/pip/command-runner.txt",
+  "dependencies": {
+    "psutil": "7.0.0"
+  }
+}

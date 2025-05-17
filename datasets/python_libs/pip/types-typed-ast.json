@@ -1,0 +1,6 @@
+{
+  "libname": "types-typed-ast",
+  "libvers": "1.5.8.7",
+  "infile": "data/pip/types-typed-ast.txt",
+  "dependencies": {}
+}

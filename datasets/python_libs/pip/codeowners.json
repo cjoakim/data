@@ -1,0 +1,8 @@
+{
+  "libname": "codeowners",
+  "libvers": "0.8.0",
+  "infile": "data/pip/codeowners.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

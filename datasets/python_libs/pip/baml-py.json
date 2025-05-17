@@ -1,0 +1,6 @@
+{
+  "libname": "baml-py",
+  "libvers": "0.86.1",
+  "infile": "data/pip/baml-py.txt",
+  "dependencies": {}
+}

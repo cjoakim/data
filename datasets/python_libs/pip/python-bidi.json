@@ -1,0 +1,6 @@
+{
+  "libname": "python-bidi",
+  "libvers": "0.6.6",
+  "infile": "data/pip/python-bidi.txt",
+  "dependencies": {}
+}

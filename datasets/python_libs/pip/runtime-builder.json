@@ -1,0 +1,8 @@
+{
+  "libname": "runtime-builder",
+  "libvers": "0.1.5",
+  "infile": "data/pip/runtime-builder.txt",
+  "dependencies": {
+    "importlib-resources": "6.5.2"
+  }
+}

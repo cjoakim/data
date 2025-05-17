@@ -1,0 +1,6 @@
+{
+  "libname": "pybind11-stubgen",
+  "libvers": "2.5.3",
+  "infile": "data/pip/pybind11-stubgen.txt",
+  "dependencies": {}
+}

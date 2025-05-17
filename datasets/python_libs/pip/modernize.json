@@ -1,0 +1,9 @@
+{
+  "libname": "modernize",
+  "libvers": "0.8.0",
+  "infile": "data/pip/modernize.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "fissix": "24.4.24"
+  }
+}

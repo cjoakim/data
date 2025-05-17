@@ -1,0 +1,6 @@
+{
+  "libname": "binance",
+  "libvers": "0.3.6",
+  "infile": "data/pip/binance.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,24 @@
+{
+  "libname": "trytond",
+  "libvers": "7.6.0",
+  "infile": "data/pip/trytond.txt",
+  "dependencies": {
+    "argon2-cffi": "23.1.0",
+    "argon2-cffi-bindings": "21.2.0",
+    "cffi": "1.17.1",
+    "defusedxml": "0.7.1",
+    "genshi": "0.7.9",
+    "lxml": "5.4.0",
+    "markupsafe": "3.0.2",
+    "polib": "1.2.0",
+    "pwdlib[argon2]": "0.2.1",
+    "pycparser": "2.22",
+    "python-dateutil": "2.9.0.post0",
+    "python-magic": "0.4.27",
+    "python-sql": "1.6.0",
+    "relatorio[fodt]": "0.11.1",
+    "simpleeval": "1.0.3",
+    "six": "1.17.0",
+    "werkzeug": "3.1.3"
+  }
+}

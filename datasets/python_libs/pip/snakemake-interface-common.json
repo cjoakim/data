@@ -1,0 +1,9 @@
+{
+  "libname": "snakemake-interface-common",
+  "libvers": "1.17.4",
+  "infile": "data/pip/snakemake-interface-common.txt",
+  "dependencies": {
+    "argparse-dataclass": "2.0.0",
+    "configargparse": "1.7"
+  }
+}

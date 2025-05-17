@@ -1,0 +1,6 @@
+{
+  "libname": "z3-solver",
+  "libvers": "4.14.1.0",
+  "infile": "data/pip/z3-solver.txt",
+  "dependencies": {}
+}

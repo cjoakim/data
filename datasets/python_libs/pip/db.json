@@ -1,0 +1,8 @@
+{
+  "libname": "db",
+  "libvers": "0.1.1",
+  "infile": "data/pip/db.txt",
+  "dependencies": {
+    "antiorm": "1.2.1"
+  }
+}

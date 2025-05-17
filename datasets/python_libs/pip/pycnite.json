@@ -1,0 +1,6 @@
+{
+  "libname": "pycnite",
+  "libvers": "2024.7.31",
+  "infile": "data/pip/pycnite.txt",
+  "dependencies": {}
+}

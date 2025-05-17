@@ -1,0 +1,9 @@
+{
+  "libname": "rsinstrument",
+  "libvers": "1.100.0",
+  "infile": "data/pip/rsinstrument.txt",
+  "dependencies": {
+    "pyvisa": "1.15.0",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "opencv-contrib-python",
+  "libvers": "4.11.0.86",
+  "infile": "data/pip/opencv-contrib-python.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "libname": "arelle-release",
+  "libvers": "2.37.6",
+  "infile": "data/pip/arelle-release.txt",
+  "dependencies": {
+    "bottle": "0.13.3",
+    "certifi": "2025.4.26",
+    "et-xmlfile": "2.0.0",
+    "filelock": "3.18.0",
+    "isodate": "0.7.2",
+    "lxml": "5.4.0",
+    "numpy": "2.2.5",
+    "openpyxl": "3.1.5",
+    "pillow": "11.2.1",
+    "pyparsing": "3.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "regex": "2024.11.6",
+    "six": "1.17.0"
+  }
+}

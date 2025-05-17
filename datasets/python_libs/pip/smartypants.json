@@ -1,0 +1,6 @@
+{
+  "libname": "smartypants",
+  "libvers": "2.0.1",
+  "infile": "data/pip/smartypants.txt",
+  "dependencies": {}
+}

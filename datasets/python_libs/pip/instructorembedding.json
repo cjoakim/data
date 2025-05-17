@@ -1,0 +1,6 @@
+{
+  "libname": "instructorembedding",
+  "libvers": "1.0.1",
+  "infile": "data/pip/instructorembedding.txt",
+  "dependencies": {}
+}

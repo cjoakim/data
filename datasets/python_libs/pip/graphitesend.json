@@ -1,0 +1,6 @@
+{
+  "libname": "graphitesend",
+  "libvers": "0.10.0",
+  "infile": "data/pip/graphitesend.txt",
+  "dependencies": {}
+}

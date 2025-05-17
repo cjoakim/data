@@ -1,0 +1,6 @@
+{
+  "libname": "blake3",
+  "libvers": "1.0.4",
+  "infile": "data/pip/blake3.txt",
+  "dependencies": {}
+}

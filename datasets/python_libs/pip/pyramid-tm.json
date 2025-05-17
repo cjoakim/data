@@ -1,0 +1,18 @@
+{
+  "libname": "pyramid-tm",
+  "libvers": "2.6",
+  "infile": "data/pip/pyramid-tm.txt",
+  "dependencies": {
+    "hupper": "1.12.1",
+    "pastedeploy": "3.1.0",
+    "plaster": "1.1.2",
+    "plaster-pastedeploy": "1.0.1",
+    "pyramid": "2.0.2",
+    "transaction": "5.0",
+    "translationstring": "1.4",
+    "venusian": "3.1.1",
+    "webob": "1.8.9",
+    "zope-deprecation": "5.1",
+    "zope-interface": "7.2"
+  }
+}

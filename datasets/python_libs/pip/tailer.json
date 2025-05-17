@@ -1,0 +1,6 @@
+{
+  "libname": "tailer",
+  "libvers": "0.4.1",
+  "infile": "data/pip/tailer.txt",
+  "dependencies": {}
+}

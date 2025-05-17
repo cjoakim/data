@@ -1,0 +1,8 @@
+{
+  "libname": "pydotplus",
+  "libvers": "2.0.2",
+  "infile": "data/pip/pydotplus.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

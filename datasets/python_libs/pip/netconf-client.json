@@ -1,0 +1,14 @@
+{
+  "libname": "netconf-client",
+  "libvers": "3.1.3",
+  "infile": "data/pip/netconf-client.txt",
+  "dependencies": {
+    "bcrypt": "4.3.0",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "lxml": "5.4.0",
+    "paramiko": "3.5.1",
+    "pycparser": "2.22",
+    "pynacl": "1.5.0"
+  }
+}

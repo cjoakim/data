@@ -1,0 +1,14 @@
+{
+  "libname": "canals",
+  "libvers": "0.11.0",
+  "infile": "data/pip/canals.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "networkx": "3.4.2",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

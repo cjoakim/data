@@ -1,0 +1,6 @@
+{
+  "libname": "gurobipy",
+  "libvers": "12.0.2",
+  "infile": "data/pip/gurobipy.txt",
+  "dependencies": {}
+}

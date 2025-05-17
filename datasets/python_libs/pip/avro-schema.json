@@ -1,0 +1,6 @@
+{
+  "libname": "avro-schema",
+  "libvers": "0.3.3",
+  "infile": "data/pip/avro-schema.txt",
+  "dependencies": {}
+}

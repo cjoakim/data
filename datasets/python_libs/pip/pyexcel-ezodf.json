@@ -1,0 +1,8 @@
+{
+  "libname": "pyexcel-ezodf",
+  "libvers": "0.3.4",
+  "infile": "data/pip/pyexcel-ezodf.txt",
+  "dependencies": {
+    "lxml": "5.4.0"
+  }
+}

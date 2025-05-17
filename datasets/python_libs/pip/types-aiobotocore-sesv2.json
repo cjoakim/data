@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-sesv2",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-sesv2.txt",
+  "dependencies": {}
+}

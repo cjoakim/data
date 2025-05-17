@@ -1,0 +1,6 @@
+{
+  "libname": "erppeek",
+  "libvers": "1.7.1",
+  "infile": "data/pip/erppeek.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "asyncpg-trek",
+  "libvers": "0.4.0",
+  "infile": "data/pip/asyncpg-trek.txt",
+  "dependencies": {}
+}

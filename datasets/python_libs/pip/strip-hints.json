@@ -1,0 +1,8 @@
+{
+  "libname": "strip-hints",
+  "libvers": "0.1.13",
+  "infile": "data/pip/strip-hints.txt",
+  "dependencies": {
+    "wheel": "0.45.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pluginlib",
+  "libvers": "0.9.4",
+  "infile": "data/pip/pluginlib.txt",
+  "dependencies": {}
+}

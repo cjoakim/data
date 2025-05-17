@@ -1,0 +1,6 @@
+{
+  "libname": "nanotime",
+  "libvers": "0.5.2",
+  "infile": "data/pip/nanotime.txt",
+  "dependencies": {}
+}

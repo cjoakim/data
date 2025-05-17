@@ -1,0 +1,9 @@
+{
+  "libname": "pip-requirements-parser",
+  "libvers": "32.0.1",
+  "infile": "data/pip/pip-requirements-parser.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "pyparsing": "3.2.3"
+  }
+}

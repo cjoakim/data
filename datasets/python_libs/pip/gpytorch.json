@@ -1,0 +1,24 @@
+{
+  "libname": "gpytorch",
+  "libvers": "1.14",
+  "infile": "data/pip/gpytorch.txt",
+  "dependencies": {
+    "filelock": "3.18.0",
+    "fsspec": "2025.3.2",
+    "jaxtyping": "0.3.2",
+    "jinja2": "3.1.6",
+    "joblib": "1.5.0",
+    "linear-operator": "0.6",
+    "markupsafe": "3.0.2",
+    "mpmath": "1.3.0",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "sympy": "1.14.0",
+    "threadpoolctl": "3.6.0",
+    "torch": "2.7.0",
+    "typing-extensions": "4.13.2",
+    "wadler-lindig": "0.1.5"
+  }
+}

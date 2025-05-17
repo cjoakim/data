@@ -1,0 +1,21 @@
+{
+  "libname": "aws",
+  "libvers": "0.2.5",
+  "infile": "data/pip/aws.txt",
+  "dependencies": {
+    "bcrypt": "4.3.0",
+    "boto": "2.49.0",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "decorator": "5.2.1",
+    "deprecated": "1.2.18",
+    "fabric": "3.2.2",
+    "invoke": "2.2.0",
+    "paramiko": "3.5.1",
+    "prettytable": "3.16.0",
+    "pycparser": "2.22",
+    "pynacl": "1.5.0",
+    "wcwidth": "0.2.13",
+    "wrapt": "1.17.2"
+  }
+}

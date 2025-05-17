@@ -1,0 +1,10 @@
+{
+  "libname": "tmuxp",
+  "libvers": "1.55.0",
+  "infile": "data/pip/tmuxp.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "libtmux": "0.46.1",
+    "pyyaml": "6.0.2"
+  }
+}

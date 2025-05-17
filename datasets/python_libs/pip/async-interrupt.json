@@ -1,0 +1,6 @@
+{
+  "libname": "async-interrupt",
+  "libvers": "1.2.2",
+  "infile": "data/pip/async-interrupt.txt",
+  "dependencies": {}
+}

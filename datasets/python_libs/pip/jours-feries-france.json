@@ -1,0 +1,6 @@
+{
+  "libname": "jours-feries-france",
+  "libvers": "0.7.0",
+  "infile": "data/pip/jours-feries-france.txt",
+  "dependencies": {}
+}

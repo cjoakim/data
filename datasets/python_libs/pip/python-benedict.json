@@ -1,0 +1,15 @@
+{
+  "libname": "python-benedict",
+  "libvers": "0.34.1",
+  "infile": "data/pip/python-benedict.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "python-fsutil": "0.15.0",
+    "python-slugify": "8.0.4",
+    "requests": "2.32.3",
+    "text-unidecode": "1.3",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "numpy-stl",
+  "libvers": "3.2.0",
+  "infile": "data/pip/numpy-stl.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "python-utils": "3.9.1",
+    "typing-extensions": "4.13.2"
+  }
+}

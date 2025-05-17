@@ -1,0 +1,6 @@
+{
+  "libname": "flametree",
+  "libvers": "0.2.0",
+  "infile": "data/pip/flametree.txt",
+  "dependencies": {}
+}

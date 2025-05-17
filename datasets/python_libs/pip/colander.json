@@ -1,0 +1,9 @@
+{
+  "libname": "colander",
+  "libvers": "2.0",
+  "infile": "data/pip/colander.txt",
+  "dependencies": {
+    "iso8601": "2.1.0",
+    "translationstring": "1.4"
+  }
+}

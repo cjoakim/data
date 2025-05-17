@@ -1,0 +1,6 @@
+{
+  "libname": "gvgen",
+  "libvers": "1.0",
+  "infile": "data/pip/gvgen.txt",
+  "dependencies": {}
+}

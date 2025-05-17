@@ -1,0 +1,10 @@
+{
+  "libname": "mdx-include",
+  "libvers": "1.4.2",
+  "infile": "data/pip/mdx-include.txt",
+  "dependencies": {
+    "cyclic": "1.0.0",
+    "markdown": "3.8",
+    "rcslice": "1.1.0"
+  }
+}

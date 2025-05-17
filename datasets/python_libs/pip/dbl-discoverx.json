@@ -1,0 +1,8 @@
+{
+  "libname": "dbl-discoverx",
+  "libvers": "0.0.9",
+  "infile": "data/pip/dbl-discoverx.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-backports",
+  "libvers": "0.1.3",
+  "infile": "data/pip/types-backports.txt",
+  "dependencies": {}
+}

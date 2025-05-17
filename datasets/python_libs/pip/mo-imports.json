@@ -1,0 +1,8 @@
+{
+  "libname": "mo-imports",
+  "libvers": "7.678.25061",
+  "infile": "data/pip/mo-imports.txt",
+  "dependencies": {
+    "mo-future": "7.678.25061"
+  }
+}

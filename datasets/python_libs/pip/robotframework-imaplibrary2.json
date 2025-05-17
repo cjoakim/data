@@ -1,0 +1,10 @@
+{
+  "libname": "robotframework-imaplibrary2",
+  "libvers": "0.4.11",
+  "infile": "data/pip/robotframework-imaplibrary2.txt",
+  "dependencies": {
+    "future": "1.0.0",
+    "pysocks": "1.7.1",
+    "robotframework": "7.2.2"
+  }
+}

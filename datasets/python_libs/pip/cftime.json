@@ -1,0 +1,8 @@
+{
+  "libname": "cftime",
+  "libvers": "1.6.4.post1",
+  "infile": "data/pip/cftime.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

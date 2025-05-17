@@ -1,0 +1,8 @@
+{
+  "libname": "devicetree",
+  "libvers": "0.0.2",
+  "infile": "data/pip/devicetree.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

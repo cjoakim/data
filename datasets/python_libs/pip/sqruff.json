@@ -1,0 +1,6 @@
+{
+  "libname": "sqruff",
+  "libvers": "0.26.3",
+  "infile": "data/pip/sqruff.txt",
+  "dependencies": {}
+}

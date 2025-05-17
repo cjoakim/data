@@ -1,0 +1,6 @@
+{
+  "libname": "core-universal4",
+  "libvers": "4.37.0",
+  "infile": "data/pip/core-universal4.txt",
+  "dependencies": {}
+}

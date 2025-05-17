@@ -1,0 +1,6 @@
+{
+  "libname": "guppy3",
+  "libvers": "3.1.5",
+  "infile": "data/pip/guppy3.txt",
+  "dependencies": {}
+}

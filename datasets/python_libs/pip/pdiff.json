@@ -1,0 +1,8 @@
+{
+  "libname": "pdiff",
+  "libvers": "1.1.4",
+  "infile": "data/pip/pdiff.txt",
+  "dependencies": {
+    "colorama": "0.4.6"
+  }
+}

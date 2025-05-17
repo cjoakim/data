@@ -1,0 +1,9 @@
+{
+  "libname": "types-babel",
+  "libvers": "2.11.0.15",
+  "infile": "data/pip/types-babel.txt",
+  "dependencies": {
+    "types-pytz": "2025.2.0.20250326",
+    "types-setuptools": "80.3.0.20250505"
+  }
+}

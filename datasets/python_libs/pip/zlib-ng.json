@@ -1,0 +1,6 @@
+{
+  "libname": "zlib-ng",
+  "libvers": "0.5.1",
+  "infile": "data/pip/zlib-ng.txt",
+  "dependencies": {}
+}

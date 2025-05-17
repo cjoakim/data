@@ -1,0 +1,8 @@
+{
+  "libname": "robust-laplacian",
+  "libvers": "1.0.0",
+  "infile": "data/pip/robust-laplacian.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

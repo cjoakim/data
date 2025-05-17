@@ -1,0 +1,6 @@
+{
+  "libname": "charset-normalizer",
+  "libvers": "3.4.2",
+  "infile": "data/pip/charset-normalizer.txt",
+  "dependencies": {}
+}

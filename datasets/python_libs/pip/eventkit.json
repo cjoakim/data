@@ -1,0 +1,8 @@
+{
+  "libname": "eventkit",
+  "libvers": "1.0.3",
+  "infile": "data/pip/eventkit.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "anytree",
+  "libvers": "2.13.0",
+  "infile": "data/pip/anytree.txt",
+  "dependencies": {}
+}

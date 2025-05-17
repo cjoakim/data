@@ -1,0 +1,6 @@
+{
+  "libname": "eflips-schedule-rust",
+  "libvers": "2.0.3",
+  "infile": "data/pip/eflips-schedule-rust.txt",
+  "dependencies": {}
+}

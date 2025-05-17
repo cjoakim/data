@@ -1,0 +1,8 @@
+{
+  "libname": "django-types",
+  "libvers": "0.20.0",
+  "infile": "data/pip/django-types.txt",
+  "dependencies": {
+    "types-psycopg2": "2.9.21.20250318"
+  }
+}

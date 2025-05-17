@@ -1,0 +1,6 @@
+{
+  "libname": "dominate",
+  "libvers": "2.9.1",
+  "infile": "data/pip/dominate.txt",
+  "dependencies": {}
+}

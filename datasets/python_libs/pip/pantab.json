@@ -1,0 +1,8 @@
+{
+  "libname": "pantab",
+  "libvers": "5.2.1",
+  "infile": "data/pip/pantab.txt",
+  "dependencies": {
+    "pyarrow": "20.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "webdav4",
+  "libvers": "0.10.0",
+  "infile": "data/pip/webdav4.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "certifi": "2025.4.26",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.10",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "sniffio": "1.3.1",
+    "typing-extensions": "4.13.2"
+  }
+}

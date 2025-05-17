@@ -1,0 +1,12 @@
+{
+  "libname": "python-jwt",
+  "libvers": "4.1.0",
+  "infile": "data/pip/python-jwt.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "jwcrypto": "1.5.6",
+    "pycparser": "2.22",
+    "typing-extensions": "4.13.2"
+  }
+}

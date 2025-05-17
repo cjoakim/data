@@ -1,0 +1,17 @@
+{
+  "libname": "chart-studio",
+  "libvers": "1.1.0",
+  "infile": "data/pip/chart-studio.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "narwhals": "1.38.0",
+    "packaging": "25.0",
+    "plotly": "6.0.1",
+    "requests": "2.32.3",
+    "retrying": "1.3.4",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

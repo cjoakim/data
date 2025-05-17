@@ -1,0 +1,28 @@
+{
+  "libname": "antsibull-changelog",
+  "libvers": "0.33.0",
+  "infile": "data/pip/antsibull-changelog.txt",
+  "dependencies": {
+    "aiofiles": "24.1.0",
+    "annotated-types": "0.7.0",
+    "antsibull-docutils": "1.1.0",
+    "antsibull-fileutils": "1.2.0",
+    "click": "8.1.8",
+    "docutils": "0.21.2",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "packaging": "25.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pygments": "2.19.1",
+    "pyyaml": "6.0.2",
+    "rich": "14.0.0",
+    "rstcheck": "6.2.4",
+    "rstcheck-core": "1.2.1",
+    "semantic-version": "2.10.0",
+    "shellingham": "1.5.4",
+    "typer": "0.15.3",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

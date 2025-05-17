@@ -1,0 +1,6 @@
+{
+  "libname": "pyteomics",
+  "libvers": "4.7.5",
+  "infile": "data/pip/pyteomics.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "nuclio-sdk",
+  "libvers": "0.5.15",
+  "infile": "data/pip/nuclio-sdk.txt",
+  "dependencies": {}
+}

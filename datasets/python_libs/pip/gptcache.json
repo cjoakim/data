@@ -1,0 +1,14 @@
+{
+  "libname": "gptcache",
+  "libvers": "0.1.44",
+  "infile": "data/pip/gptcache.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "numpy": "2.2.5",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

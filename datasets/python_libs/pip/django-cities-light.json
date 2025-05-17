@@ -1,0 +1,13 @@
+{
+  "libname": "django-cities-light",
+  "libvers": "3.10.1",
+  "infile": "data/pip/django-cities-light.txt",
+  "dependencies": {
+    "django-autoslug": "1.9.9",
+    "progressbar2": "4.5.0",
+    "python-utils": "3.9.1",
+    "pytz": "2025.2",
+    "typing-extensions": "4.13.2",
+    "unidecode": "1.4.0"
+  }
+}

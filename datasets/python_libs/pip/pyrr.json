@@ -1,0 +1,9 @@
+{
+  "libname": "pyrr",
+  "libvers": "0.10.3",
+  "infile": "data/pip/pyrr.txt",
+  "dependencies": {
+    "multipledispatch": "1.0.0",
+    "numpy": "2.2.5"
+  }
+}

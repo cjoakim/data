@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-shield",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-shield.txt",
+  "dependencies": {}
+}

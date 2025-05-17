@@ -1,0 +1,6 @@
+{
+  "libname": "hdbcli",
+  "libvers": "2.24.24",
+  "infile": "data/pip/hdbcli.txt",
+  "dependencies": {}
+}

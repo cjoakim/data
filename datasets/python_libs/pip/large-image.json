@@ -1,0 +1,12 @@
+{
+  "libname": "large-image",
+  "libvers": "1.32.3",
+  "infile": "data/pip/large-image.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "numpy": "2.2.5",
+    "palettable": "3.3.3",
+    "pillow": "11.2.1",
+    "typing-extensions": "4.13.2"
+  }
+}

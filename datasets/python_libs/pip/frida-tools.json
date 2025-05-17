@@ -1,0 +1,13 @@
+{
+  "libname": "frida-tools",
+  "libvers": "13.7.1",
+  "infile": "data/pip/frida-tools.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "frida": "16.7.14",
+    "prompt-toolkit": "3.0.51",
+    "pygments": "2.19.1",
+    "wcwidth": "0.2.13",
+    "websockets": "13.1"
+  }
+}

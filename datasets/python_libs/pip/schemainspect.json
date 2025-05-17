@@ -1,0 +1,9 @@
+{
+  "libname": "schemainspect",
+  "libvers": "3.1.1663587362",
+  "infile": "data/pip/schemainspect.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

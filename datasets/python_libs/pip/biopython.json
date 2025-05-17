@@ -1,0 +1,8 @@
+{
+  "libname": "biopython",
+  "libvers": "1.85",
+  "infile": "data/pip/biopython.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

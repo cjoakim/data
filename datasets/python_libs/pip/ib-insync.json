@@ -1,0 +1,10 @@
+{
+  "libname": "ib-insync",
+  "libvers": "0.9.86",
+  "infile": "data/pip/ib-insync.txt",
+  "dependencies": {
+    "eventkit": "1.0.3",
+    "nest-asyncio": "1.6.0",
+    "numpy": "2.2.5"
+  }
+}

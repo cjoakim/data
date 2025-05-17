@@ -1,0 +1,8 @@
+{
+  "libname": "contextvars",
+  "libvers": "2.4",
+  "infile": "data/pip/contextvars.txt",
+  "dependencies": {
+    "immutables": "0.21"
+  }
+}

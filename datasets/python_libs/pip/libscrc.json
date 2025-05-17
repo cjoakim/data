@@ -1,0 +1,8 @@
+{
+  "libname": "libscrc",
+  "libvers": "1.8.1",
+  "infile": "data/pip/libscrc.txt",
+  "dependencies": {
+    "wheel": "0.45.1"
+  }
+}

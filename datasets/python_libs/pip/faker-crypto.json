@@ -1,0 +1,9 @@
+{
+  "libname": "faker-crypto",
+  "libvers": "0.2.2",
+  "infile": "data/pip/faker-crypto.txt",
+  "dependencies": {
+    "faker": "37.1.0",
+    "tzdata": "2025.2"
+  }
+}

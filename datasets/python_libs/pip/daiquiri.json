@@ -1,0 +1,8 @@
+{
+  "libname": "daiquiri",
+  "libvers": "3.3.0",
+  "infile": "data/pip/daiquiri.txt",
+  "dependencies": {
+    "python-json-logger": "3.3.0"
+  }
+}

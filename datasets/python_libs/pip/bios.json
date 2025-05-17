@@ -1,0 +1,9 @@
+{
+  "libname": "bios",
+  "libvers": "0.1.2",
+  "infile": "data/pip/bios.txt",
+  "dependencies": {
+    "oyaml": "1.0",
+    "pyyaml": "6.0.2"
+  }
+}

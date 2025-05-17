@@ -1,0 +1,6 @@
+{
+  "libname": "krb5",
+  "libvers": "0.7.1",
+  "infile": "data/pip/krb5.txt",
+  "dependencies": {}
+}

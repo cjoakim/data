@@ -1,0 +1,8 @@
+{
+  "libname": "docker-pycreds",
+  "libvers": "0.4.0",
+  "infile": "data/pip/docker-pycreds.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pybindgen",
+  "libvers": "0.22.1",
+  "infile": "data/pip/pybindgen.txt",
+  "dependencies": {}
+}

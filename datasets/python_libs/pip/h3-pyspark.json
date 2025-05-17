@@ -1,0 +1,6 @@
+{
+  "libname": "h3-pyspark",
+  "libvers": "1.2.6",
+  "infile": "data/pip/h3-pyspark.txt",
+  "dependencies": {}
+}

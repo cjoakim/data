@@ -1,0 +1,6 @@
+{
+  "libname": "libtmux",
+  "libvers": "0.46.1",
+  "infile": "data/pip/libtmux.txt",
+  "dependencies": {}
+}

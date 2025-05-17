@@ -1,0 +1,9 @@
+{
+  "libname": "auditwheel",
+  "libvers": "6.3.0",
+  "infile": "data/pip/auditwheel.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "pyelftools": "0.32"
+  }
+}

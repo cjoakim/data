@@ -1,0 +1,9 @@
+{
+  "libname": "sphinx-jinja2-compat",
+  "libvers": "0.3.0",
+  "infile": "data/pip/sphinx-jinja2-compat.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

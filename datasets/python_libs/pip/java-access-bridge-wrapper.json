@@ -1,0 +1,6 @@
+{
+  "libname": "java-access-bridge-wrapper",
+  "libvers": "1.2.0",
+  "infile": "data/pip/java-access-bridge-wrapper.txt",
+  "dependencies": {}
+}

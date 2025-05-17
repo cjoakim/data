@@ -1,0 +1,6 @@
+{
+  "libname": "snowflake",
+  "libvers": "0.0.4",
+  "infile": "data/pip/snowflake.txt",
+  "dependencies": {}
+}

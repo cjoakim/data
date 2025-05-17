@@ -1,0 +1,6 @@
+{
+  "libname": "strenum",
+  "libvers": "0.4.15",
+  "infile": "data/pip/strenum.txt",
+  "dependencies": {}
+}

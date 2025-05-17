@@ -1,0 +1,8 @@
+{
+  "libname": "unify",
+  "libvers": "0.5",
+  "infile": "data/pip/unify.txt",
+  "dependencies": {
+    "untokenize": "0.1.1"
+  }
+}

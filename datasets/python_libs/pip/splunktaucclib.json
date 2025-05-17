@@ -1,0 +1,15 @@
+{
+  "libname": "splunktaucclib",
+  "libvers": "8.0.0",
+  "infile": "data/pip/splunktaucclib.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1",
+    "deprecation": "2.1.0",
+    "packaging": "25.0",
+    "pysocks": "1.7.1",
+    "solnlib": "6.3.0",
+    "sortedcontainers": "2.4.0",
+    "splunk-sdk": "2.1.0",
+    "urllib3": "1.26.20"
+  }
+}

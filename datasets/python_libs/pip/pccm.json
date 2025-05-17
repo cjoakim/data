@@ -1,0 +1,19 @@
+{
+  "libname": "pccm",
+  "libvers": "0.4.16",
+  "infile": "data/pip/pccm.txt",
+  "dependencies": {
+    "ccimport": "0.4.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "fire": "0.7.0",
+    "idna": "3.10",
+    "lark": "1.2.2",
+    "ninja": "1.11.1.4",
+    "portalocker": "3.1.1",
+    "pybind11": "2.13.6",
+    "requests": "2.32.3",
+    "termcolor": "3.1.0",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "lc3-ensemble-test",
+  "libvers": "0.1.12",
+  "infile": "data/pip/lc3-ensemble-test.txt",
+  "dependencies": {}
+}

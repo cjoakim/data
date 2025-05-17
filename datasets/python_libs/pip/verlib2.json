@@ -1,0 +1,6 @@
+{
+  "libname": "verlib2",
+  "libvers": "0.3.1",
+  "infile": "data/pip/verlib2.txt",
+  "dependencies": {}
+}

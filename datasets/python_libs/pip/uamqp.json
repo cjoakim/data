@@ -1,0 +1,8 @@
+{
+  "libname": "uamqp",
+  "libvers": "1.6.11",
+  "infile": "data/pip/uamqp.txt",
+  "dependencies": {
+    "certifi": "2025.4.26"
+  }
+}

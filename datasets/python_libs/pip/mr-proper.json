@@ -1,0 +1,9 @@
+{
+  "libname": "mr-proper",
+  "libvers": "0.0.7",
+  "infile": "data/pip/mr-proper.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "stdlib-list": "0.11.1"
+  }
+}

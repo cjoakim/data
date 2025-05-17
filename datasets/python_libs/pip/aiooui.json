@@ -1,0 +1,6 @@
+{
+  "libname": "aiooui",
+  "libvers": "0.1.9",
+  "infile": "data/pip/aiooui.txt",
+  "dependencies": {}
+}

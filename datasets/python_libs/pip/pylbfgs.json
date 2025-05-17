@@ -1,0 +1,8 @@
+{
+  "libname": "pylbfgs",
+  "libvers": "0.2.0.16",
+  "infile": "data/pip/pylbfgs.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "voluptuous-openapi",
+  "libvers": "0.0.7",
+  "infile": "data/pip/voluptuous-openapi.txt",
+  "dependencies": {
+    "voluptuous": "0.15.2"
+  }
+}

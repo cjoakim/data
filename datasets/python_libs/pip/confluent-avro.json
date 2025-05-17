@@ -1,0 +1,14 @@
+{
+  "libname": "confluent-avro",
+  "libvers": "1.8.0",
+  "infile": "data/pip/confluent-avro.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "fastavro": "1.10.0",
+    "idna": "3.10",
+    "python-status": "1.0.1",
+    "requests[security]": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

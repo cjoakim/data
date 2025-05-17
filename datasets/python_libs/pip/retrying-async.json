@@ -1,0 +1,8 @@
+{
+  "libname": "retrying-async",
+  "libvers": "2.0.0",
+  "infile": "data/pip/retrying-async.txt",
+  "dependencies": {
+    "async-timeout": "5.0.1"
+  }
+}

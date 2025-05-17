@@ -1,0 +1,10 @@
+{
+  "libname": "pymorphy2",
+  "libvers": "0.9.1",
+  "infile": "data/pip/pymorphy2.txt",
+  "dependencies": {
+    "dawg-python": "0.7.2",
+    "docopt": "0.6.2",
+    "pymorphy2-dicts-ru": "2.4.417127.4579844"
+  }
+}

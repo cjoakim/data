@@ -1,0 +1,8 @@
+{
+  "libname": "pydevicetree",
+  "libvers": "0.0.13",
+  "infile": "data/pip/pydevicetree.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "sas7bdat",
+  "libvers": "2.2.3",
+  "infile": "data/pip/sas7bdat.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

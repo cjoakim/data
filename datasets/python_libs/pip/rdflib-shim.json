@@ -1,0 +1,10 @@
+{
+  "libname": "rdflib-shim",
+  "libvers": "1.0.3",
+  "infile": "data/pip/rdflib-shim.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3",
+    "rdflib": "7.1.4",
+    "rdflib-jsonld": "0.6.1"
+  }
+}

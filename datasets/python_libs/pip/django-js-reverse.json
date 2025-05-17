@@ -1,0 +1,11 @@
+{
+  "libname": "django-js-reverse",
+  "libvers": "0.10.2",
+  "infile": "data/pip/django-js-reverse.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "packaging": "25.0",
+    "sqlparse": "0.5.3"
+  }
+}

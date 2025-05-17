@@ -1,0 +1,10 @@
+{
+  "libname": "taskipy",
+  "libvers": "1.14.1",
+  "infile": "data/pip/taskipy.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "psutil": "6.1.1",
+    "tomli": "2.2.1"
+  }
+}

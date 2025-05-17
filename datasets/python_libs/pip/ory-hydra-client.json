@@ -1,0 +1,10 @@
+{
+  "libname": "ory-hydra-client",
+  "libvers": "2.2.0",
+  "infile": "data/pip/ory-hydra-client.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

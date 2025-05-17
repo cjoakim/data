@@ -1,0 +1,10 @@
+{
+  "libname": "courlan",
+  "libvers": "1.3.2",
+  "infile": "data/pip/courlan.txt",
+  "dependencies": {
+    "babel": "2.17.0",
+    "tld": "0.13",
+    "urllib3": "2.4.0"
+  }
+}

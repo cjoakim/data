@@ -1,0 +1,8 @@
+{
+  "libname": "launchdarkly-eventsource",
+  "libvers": "1.2.2",
+  "infile": "data/pip/launchdarkly-eventsource.txt",
+  "dependencies": {
+    "urllib3": "2.4.0"
+  }
+}

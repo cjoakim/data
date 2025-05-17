@@ -1,0 +1,8 @@
+{
+  "libname": "laspy",
+  "libvers": "2.5.4",
+  "infile": "data/pip/laspy.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

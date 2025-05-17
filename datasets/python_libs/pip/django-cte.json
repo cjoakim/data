@@ -1,0 +1,6 @@
+{
+  "libname": "django-cte",
+  "libvers": "1.3.3",
+  "infile": "data/pip/django-cte.txt",
+  "dependencies": {}
+}

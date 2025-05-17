@@ -1,0 +1,8 @@
+{
+  "libname": "python-cfonts",
+  "libvers": "1.5.2",
+  "infile": "data/pip/python-cfonts.txt",
+  "dependencies": {
+    "colorama": "0.4.6"
+  }
+}

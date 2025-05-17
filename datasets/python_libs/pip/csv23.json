@@ -1,0 +1,6 @@
+{
+  "libname": "csv23",
+  "libvers": "0.3.4",
+  "infile": "data/pip/csv23.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "algebraic-immunity-utils",
+  "libvers": "1.6.0",
+  "infile": "data/pip/algebraic-immunity-utils.txt",
+  "dependencies": {}
+}

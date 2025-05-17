@@ -1,0 +1,6 @@
+{
+  "libname": "parsedatetime",
+  "libvers": "2.6",
+  "infile": "data/pip/parsedatetime.txt",
+  "dependencies": {}
+}

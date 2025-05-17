@@ -1,0 +1,6 @@
+{
+  "libname": "pipx-in-pipx",
+  "libvers": "1.0.1",
+  "infile": "data/pip/pipx-in-pipx.txt",
+  "dependencies": {}
+}

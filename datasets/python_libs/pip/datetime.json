@@ -1,0 +1,9 @@
+{
+  "libname": "datetime",
+  "libvers": "5.5",
+  "infile": "data/pip/datetime.txt",
+  "dependencies": {
+    "pytz": "2025.2",
+    "zope-interface": "7.2"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "tuf",
+  "libvers": "6.0.0",
+  "infile": "data/pip/tuf.txt",
+  "dependencies": {
+    "securesystemslib": "1.3.0",
+    "urllib3": "2.4.0"
+  }
+}

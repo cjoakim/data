@@ -1,0 +1,20 @@
+{
+  "libname": "robotframework-tidy",
+  "libvers": "4.16.0",
+  "infile": "data/pip/robotframework-tidy.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "colorama": "0.4.6",
+    "jinja2": "3.1.6",
+    "markdown-it-py": "3.0.0",
+    "markupsafe": "3.0.2",
+    "mdurl": "0.1.2",
+    "pathspec": "0.12.1",
+    "pygments": "2.19.1",
+    "rich": "14.0.0",
+    "rich-click": "1.8.5",
+    "robotframework": "7.2.2",
+    "tomli": "2.2.1",
+    "typing-extensions": "4.13.2"
+  }
+}

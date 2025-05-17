@@ -1,0 +1,8 @@
+{
+  "libname": "djangorestframework-jwt",
+  "libvers": "1.11.0",
+  "infile": "data/pip/djangorestframework-jwt.txt",
+  "dependencies": {
+    "pyjwt": "1.7.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "ansi2txt",
+  "libvers": "0.2.0",
+  "infile": "data/pip/ansi2txt.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "alembic-autogenerate-enums",
+  "libvers": "0.1.2",
+  "infile": "data/pip/alembic-autogenerate-enums.txt",
+  "dependencies": {}
+}

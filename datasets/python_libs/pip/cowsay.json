@@ -1,0 +1,6 @@
+{
+  "libname": "cowsay",
+  "libvers": "6.1",
+  "infile": "data/pip/cowsay.txt",
+  "dependencies": {}
+}

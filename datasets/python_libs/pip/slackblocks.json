@@ -1,0 +1,6 @@
+{
+  "libname": "slackblocks",
+  "libvers": "1.0.15",
+  "infile": "data/pip/slackblocks.txt",
+  "dependencies": {}
+}

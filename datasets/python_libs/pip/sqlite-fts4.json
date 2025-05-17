@@ -1,0 +1,6 @@
+{
+  "libname": "sqlite-fts4",
+  "libvers": "1.0.3",
+  "infile": "data/pip/sqlite-fts4.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "postgres",
+  "libvers": "4.0",
+  "infile": "data/pip/postgres.txt",
+  "dependencies": {
+    "psycopg2-binary": "2.9.10",
+    "psycopg2-pool": "1.2"
+  }
+}

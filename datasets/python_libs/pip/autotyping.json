@@ -1,0 +1,10 @@
+{
+  "libname": "autotyping",
+  "libvers": "24.9.0",
+  "infile": "data/pip/autotyping.txt",
+  "dependencies": {
+    "libcst": "1.7.0",
+    "pyyaml": "6.0.2",
+    "typing-extensions": "4.13.2"
+  }
+}

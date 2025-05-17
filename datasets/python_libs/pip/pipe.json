@@ -1,0 +1,6 @@
+{
+  "libname": "pipe",
+  "libvers": "2.2",
+  "infile": "data/pip/pipe.txt",
+  "dependencies": {}
+}

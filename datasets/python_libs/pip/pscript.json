@@ -1,0 +1,6 @@
+{
+  "libname": "pscript",
+  "libvers": "0.8.0",
+  "infile": "data/pip/pscript.txt",
+  "dependencies": {}
+}

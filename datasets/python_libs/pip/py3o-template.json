@@ -1,0 +1,13 @@
+{
+  "libname": "py3o-template",
+  "libvers": "0.10.0",
+  "infile": "data/pip/py3o-template.txt",
+  "dependencies": {
+    "babel": "2.17.0",
+    "genshi": "0.7.9",
+    "lxml": "5.4.0",
+    "pillow": "11.2.1",
+    "pyjon-utils": "0.7",
+    "six": "1.17.0"
+  }
+}

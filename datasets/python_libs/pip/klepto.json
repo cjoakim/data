@@ -1,0 +1,9 @@
+{
+  "libname": "klepto",
+  "libvers": "0.2.7",
+  "infile": "data/pip/klepto.txt",
+  "dependencies": {
+    "dill": "0.4.0",
+    "pox": "0.3.6"
+  }
+}

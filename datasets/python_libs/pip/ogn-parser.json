@@ -1,0 +1,6 @@
+{
+  "libname": "ogn-parser",
+  "libvers": "0.3.11",
+  "infile": "data/pip/ogn-parser.txt",
+  "dependencies": {}
+}

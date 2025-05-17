@@ -1,0 +1,8 @@
+{
+  "libname": "simple-ddl-parser",
+  "libvers": "1.7.1",
+  "infile": "data/pip/simple-ddl-parser.txt",
+  "dependencies": {
+    "ply": "3.11"
+  }
+}

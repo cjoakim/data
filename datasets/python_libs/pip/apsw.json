@@ -1,0 +1,6 @@
+{
+  "libname": "apsw",
+  "libvers": "3.49.1.0",
+  "infile": "data/pip/apsw.txt",
+  "dependencies": {}
+}

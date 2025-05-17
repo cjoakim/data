@@ -1,0 +1,6 @@
+{
+  "libname": "purify",
+  "libvers": "0.2.3",
+  "infile": "data/pip/purify.txt",
+  "dependencies": {}
+}

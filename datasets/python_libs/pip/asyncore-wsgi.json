@@ -1,0 +1,6 @@
+{
+  "libname": "asyncore-wsgi",
+  "libvers": "0.0.11",
+  "infile": "data/pip/asyncore-wsgi.txt",
+  "dependencies": {}
+}

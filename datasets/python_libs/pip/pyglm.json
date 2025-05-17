@@ -1,0 +1,6 @@
+{
+  "libname": "pyglm",
+  "libvers": "2.8.2",
+  "infile": "data/pip/pyglm.txt",
+  "dependencies": {}
+}

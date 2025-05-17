@@ -1,0 +1,10 @@
+{
+  "libname": "intel-openmp",
+  "libvers": "2025.1.1",
+  "infile": "data/pip/intel-openmp.txt",
+  "dependencies": {
+    "intel-cmplr-lib-ur": "2025.1.1",
+    "tcmlib": "1.3.0",
+    "umf": "0.10.0"
+  }
+}

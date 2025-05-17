@@ -1,0 +1,8 @@
+{
+  "libname": "jsonasobj2",
+  "libvers": "1.0.4",
+  "infile": "data/pip/jsonasobj2.txt",
+  "dependencies": {
+    "hbreader": "0.9.1"
+  }
+}

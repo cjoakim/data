@@ -1,0 +1,15 @@
+{
+  "libname": "ciscoisesdk",
+  "libvers": "2.3.1",
+  "infile": "data/pip/ciscoisesdk.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "fastjsonschema": "2.21.1",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "requests-toolbelt": "1.0.0",
+    "urllib3": "2.4.0",
+    "xmltodict": "0.12.0"
+  }
+}

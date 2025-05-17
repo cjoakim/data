@@ -1,0 +1,6 @@
+{
+  "libname": "pyrsistent",
+  "libvers": "0.20.0",
+  "infile": "data/pip/pyrsistent.txt",
+  "dependencies": {}
+}

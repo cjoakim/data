@@ -1,0 +1,6 @@
+{
+  "libname": "speaklater",
+  "libvers": "1.3",
+  "infile": "data/pip/speaklater.txt",
+  "dependencies": {}
+}

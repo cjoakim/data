@@ -1,0 +1,22 @@
+{
+  "libname": "check-jsonschema",
+  "libvers": "0.33.0",
+  "infile": "data/pip/check-jsonschema.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "idna": "3.10",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "referencing": "0.36.2",
+    "regress": "2025.3.1",
+    "requests": "2.32.3",
+    "rpds-py": "0.24.0",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "dci-utils",
+  "libvers": "0.0.1148",
+  "infile": "data/pip/dci-utils.txt",
+  "dependencies": {}
+}

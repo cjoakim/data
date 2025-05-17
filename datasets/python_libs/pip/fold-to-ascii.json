@@ -1,0 +1,6 @@
+{
+  "libname": "fold-to-ascii",
+  "libvers": "1.0.2.post1",
+  "infile": "data/pip/fold-to-ascii.txt",
+  "dependencies": {}
+}

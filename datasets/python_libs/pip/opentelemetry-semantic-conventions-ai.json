@@ -1,0 +1,6 @@
+{
+  "libname": "opentelemetry-semantic-conventions-ai",
+  "libvers": "0.4.6",
+  "infile": "data/pip/opentelemetry-semantic-conventions-ai.txt",
+  "dependencies": {}
+}

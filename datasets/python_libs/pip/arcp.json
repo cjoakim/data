@@ -1,0 +1,6 @@
+{
+  "libname": "arcp",
+  "libvers": "0.2.1",
+  "infile": "data/pip/arcp.txt",
+  "dependencies": {}
+}

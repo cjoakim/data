@@ -1,0 +1,26 @@
+{
+  "libname": "netmiko",
+  "libvers": "4.5.0",
+  "infile": "data/pip/netmiko.txt",
+  "dependencies": {
+    "bcrypt": "4.3.0",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "future": "1.0.0",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "ntc-templates": "7.8.0",
+    "paramiko": "3.5.1",
+    "pycparser": "2.22",
+    "pygments": "2.19.1",
+    "pynacl": "1.5.0",
+    "pyserial": "3.5",
+    "pyyaml": "6.0.2",
+    "rich": "14.0.0",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "scp": "0.15.0",
+    "six": "1.17.0",
+    "textfsm": "1.1.3"
+  }
+}

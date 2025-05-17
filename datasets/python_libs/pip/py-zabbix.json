@@ -1,0 +1,6 @@
+{
+  "libname": "py-zabbix",
+  "libvers": "1.1.7",
+  "infile": "data/pip/py-zabbix.txt",
+  "dependencies": {}
+}

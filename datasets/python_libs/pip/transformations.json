@@ -1,0 +1,8 @@
+{
+  "libname": "transformations",
+  "libvers": "2025.1.1",
+  "infile": "data/pip/transformations.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "libname": "pdfplumber",
+  "libvers": "0.11.6",
+  "infile": "data/pip/pdfplumber.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "pdfminer-six": "20250327",
+    "pillow": "11.2.1",
+    "pycparser": "2.22",
+    "pypdfium2": "4.30.1"
+  }
+}

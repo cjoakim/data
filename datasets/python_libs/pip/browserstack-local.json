@@ -1,0 +1,8 @@
+{
+  "libname": "browserstack-local",
+  "libvers": "1.2.10",
+  "infile": "data/pip/browserstack-local.txt",
+  "dependencies": {
+    "psutil": "7.0.0"
+  }
+}

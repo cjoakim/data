@@ -1,0 +1,9 @@
+{
+  "libname": "htmltools",
+  "libvers": "0.6.0",
+  "infile": "data/pip/htmltools.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "typing-extensions": "4.13.2"
+  }
+}

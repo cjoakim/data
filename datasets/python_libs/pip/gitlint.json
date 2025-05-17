@@ -1,0 +1,13 @@
+{
+  "libname": "gitlint",
+  "libvers": "0.19.1",
+  "infile": "data/pip/gitlint.txt",
+  "dependencies": {
+    "arrow": "1.2.3",
+    "click": "8.1.3",
+    "gitlint-core[trusted-deps]": "0.19.1",
+    "python-dateutil": "2.9.0.post0",
+    "sh": "1.14.3",
+    "six": "1.17.0"
+  }
+}

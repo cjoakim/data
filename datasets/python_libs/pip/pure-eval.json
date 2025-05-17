@@ -1,0 +1,6 @@
+{
+  "libname": "pure-eval",
+  "libvers": "0.2.3",
+  "infile": "data/pip/pure-eval.txt",
+  "dependencies": {}
+}

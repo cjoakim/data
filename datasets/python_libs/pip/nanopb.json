@@ -1,0 +1,8 @@
+{
+  "libname": "nanopb",
+  "libvers": "0.4.9.1",
+  "infile": "data/pip/nanopb.txt",
+  "dependencies": {
+    "protobuf": "6.30.2"
+  }
+}

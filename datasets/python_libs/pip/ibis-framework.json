@@ -1,0 +1,15 @@
+{
+  "libname": "ibis-framework",
+  "libvers": "10.5.0",
+  "infile": "data/pip/ibis-framework.txt",
+  "dependencies": {
+    "atpublic": "6.0.1",
+    "parsy": "2.1",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "sqlglot": "26.16.4",
+    "toolz": "1.0.0",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

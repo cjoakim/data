@@ -1,0 +1,13 @@
+{
+  "libname": "prompty",
+  "libvers": "0.1.50",
+  "infile": "data/pip/prompty.txt",
+  "dependencies": {
+    "aiofiles": "24.1.0",
+    "click": "8.1.8",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "python-dotenv": "1.1.0",
+    "pyyaml": "6.0.2"
+  }
+}

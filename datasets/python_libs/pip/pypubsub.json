@@ -1,0 +1,6 @@
+{
+  "libname": "pypubsub",
+  "libvers": "4.0.3",
+  "infile": "data/pip/pypubsub.txt",
+  "dependencies": {}
+}

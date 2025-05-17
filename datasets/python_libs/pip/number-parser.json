@@ -1,0 +1,8 @@
+{
+  "libname": "number-parser",
+  "libvers": "0.3.2",
+  "infile": "data/pip/number-parser.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

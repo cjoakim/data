@@ -1,0 +1,10 @@
+{
+  "libname": "asset",
+  "libvers": "0.6.13",
+  "infile": "data/pip/asset.txt",
+  "dependencies": {
+    "aadict": "0.2.3",
+    "globre": "0.1.5",
+    "six": "1.17.0"
+  }
+}

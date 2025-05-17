@@ -1,0 +1,32 @@
+{
+  "libname": "nbdev",
+  "libvers": "2.4.2",
+  "infile": "data/pip/nbdev.txt",
+  "dependencies": {
+    "asttokens": "3.0.0",
+    "astunparse": "1.6.3",
+    "decorator": "5.2.1",
+    "execnb": "0.1.14",
+    "executing": "2.2.0",
+    "fastcore": "1.8.1",
+    "ghapi": "1.0.6",
+    "ipython": "9.2.0",
+    "ipython-pygments-lexers": "1.1.1",
+    "jedi": "0.19.2",
+    "matplotlib-inline": "0.1.7",
+    "packaging": "25.0",
+    "parso": "0.8.4",
+    "pexpect": "4.9.0",
+    "prompt-toolkit": "3.0.51",
+    "ptyprocess": "0.7.0",
+    "pure-eval": "0.2.3",
+    "pygments": "2.19.1",
+    "pyyaml": "6.0.2",
+    "six": "1.17.0",
+    "stack-data": "0.6.3",
+    "traitlets": "5.14.3",
+    "watchdog": "6.0.0",
+    "wcwidth": "0.2.13",
+    "wheel": "0.45.1"
+  }
+}

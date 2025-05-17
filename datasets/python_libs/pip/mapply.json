@@ -1,0 +1,20 @@
+{
+  "libname": "mapply",
+  "libvers": "0.1.27",
+  "infile": "data/pip/mapply.txt",
+  "dependencies": {
+    "dill": "0.4.0",
+    "multiprocess": "0.70.18",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "pathos": "0.3.4",
+    "pox": "0.3.6",
+    "ppft": "1.7.7",
+    "psutil": "7.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tqdm": "4.67.1",
+    "tzdata": "2025.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "spacy-alignments",
+  "libvers": "0.9.1",
+  "infile": "data/pip/spacy-alignments.txt",
+  "dependencies": {}
+}

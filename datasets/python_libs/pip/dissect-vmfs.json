@@ -1,0 +1,9 @@
+{
+  "libname": "dissect-vmfs",
+  "libvers": "3.11",
+  "infile": "data/pip/dissect-vmfs.txt",
+  "dependencies": {
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

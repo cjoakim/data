@@ -1,0 +1,10 @@
+{
+  "libname": "types-jack-client",
+  "libvers": "0.5.10.20250401",
+  "infile": "data/pip/types-jack-client.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "types-cffi": "1.17.0.20250326",
+    "types-setuptools": "80.3.0.20250505"
+  }
+}

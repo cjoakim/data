@@ -1,0 +1,8 @@
+{
+  "libname": "multiprocess",
+  "libvers": "0.70.18",
+  "infile": "data/pip/multiprocess.txt",
+  "dependencies": {
+    "dill": "0.4.0"
+  }
+}

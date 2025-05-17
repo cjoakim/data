@@ -1,0 +1,8 @@
+{
+  "libname": "einops-exts",
+  "libvers": "0.0.4",
+  "infile": "data/pip/einops-exts.txt",
+  "dependencies": {
+    "einops": "0.8.1"
+  }
+}

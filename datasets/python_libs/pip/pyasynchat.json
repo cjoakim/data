@@ -1,0 +1,8 @@
+{
+  "libname": "pyasynchat",
+  "libvers": "1.0.4",
+  "infile": "data/pip/pyasynchat.txt",
+  "dependencies": {
+    "pyasyncore": "1.0.4"
+  }
+}

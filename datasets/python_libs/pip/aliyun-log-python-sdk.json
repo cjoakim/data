@@ -1,0 +1,24 @@
+{
+  "libname": "aliyun-log-python-sdk",
+  "libvers": "0.9.19",
+  "infile": "data/pip/aliyun-log-python-sdk.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "dateparser": "1.2.1",
+    "elastic-transport": "8.17.1",
+    "elasticsearch": "9.0.1",
+    "idna": "3.10",
+    "jmespath": "1.0.1",
+    "lz4": "4.4.4",
+    "protobuf": "5.29.4",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "regex": "2024.11.6",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "tzlocal": "5.3.1",
+    "urllib3": "2.4.0"
+  }
+}

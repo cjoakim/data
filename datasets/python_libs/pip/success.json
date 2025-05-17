@@ -1,0 +1,6 @@
+{
+  "libname": "success",
+  "libvers": "1.0.0",
+  "infile": "data/pip/success.txt",
+  "dependencies": {}
+}

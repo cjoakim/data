@@ -1,0 +1,8 @@
+{
+  "libname": "wavio",
+  "libvers": "0.0.9",
+  "infile": "data/pip/wavio.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

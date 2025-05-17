@@ -1,0 +1,10 @@
+{
+  "libname": "scikit-video",
+  "libvers": "1.1.11",
+  "infile": "data/pip/scikit-video.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pillow": "11.2.1",
+    "scipy": "1.15.2"
+  }
+}

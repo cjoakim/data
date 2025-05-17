@@ -1,0 +1,6 @@
+{
+  "libname": "cashews",
+  "libvers": "7.4.0",
+  "infile": "data/pip/cashews.txt",
+  "dependencies": {}
+}

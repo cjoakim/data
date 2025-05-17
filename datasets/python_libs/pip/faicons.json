@@ -1,0 +1,10 @@
+{
+  "libname": "faicons",
+  "libvers": "0.2.2",
+  "infile": "data/pip/faicons.txt",
+  "dependencies": {
+    "htmltools": "0.6.0",
+    "packaging": "25.0",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "libname": "mixpanel-py-async",
+  "libvers": "0.3.0",
+  "infile": "data/pip/mixpanel-py-async.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "mixpanel": "4.10.1",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

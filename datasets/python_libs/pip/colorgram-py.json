@@ -1,0 +1,8 @@
+{
+  "libname": "colorgram-py",
+  "libvers": "1.2.0",
+  "infile": "data/pip/colorgram-py.txt",
+  "dependencies": {
+    "pillow": "11.2.1"
+  }
+}

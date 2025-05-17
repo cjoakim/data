@@ -1,0 +1,13 @@
+{
+  "libname": "pyworxcloud",
+  "libvers": "4.1.37",
+  "infile": "data/pip/pyworxcloud.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "paho-mqtt": "2.1.0",
+    "requests": "2.32.3",
+    "urllib3": "1.26.20"
+  }
+}

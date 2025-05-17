@@ -1,0 +1,16 @@
+{
+  "libname": "mujoco",
+  "libvers": "3.3.2",
+  "infile": "data/pip/mujoco.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "etils[epath,epy]": "1.12.2",
+    "fsspec": "2025.3.2",
+    "glfw": "2.9.0",
+    "importlib-resources": "6.5.2",
+    "numpy": "2.2.5",
+    "pyopengl": "3.1.9",
+    "typing-extensions": "4.13.2",
+    "zipp": "3.21.0"
+  }
+}

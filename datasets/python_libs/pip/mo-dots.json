@@ -1,0 +1,9 @@
+{
+  "libname": "mo-dots",
+  "libvers": "10.678.25061",
+  "infile": "data/pip/mo-dots.txt",
+  "dependencies": {
+    "mo-future": "7.678.25061",
+    "mo-imports": "7.678.25061"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pyvips",
+  "libvers": "3.0.0",
+  "infile": "data/pip/pyvips.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

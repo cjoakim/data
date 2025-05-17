@@ -1,0 +1,26 @@
+{
+  "libname": "pytest-playwright-visual",
+  "libvers": "2.1.2",
+  "infile": "data/pip/pytest-playwright-visual.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "greenlet": "3.2.1",
+    "idna": "3.10",
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "pixelmatch": "0.3.0",
+    "playwright": "1.52.0",
+    "pluggy": "1.5.0",
+    "pyee": "13.0.0",
+    "pytest": "8.3.5",
+    "pytest-base-url": "2.1.0",
+    "pytest-playwright": "0.7.0",
+    "python-slugify": "8.0.4",
+    "requests": "2.32.3",
+    "text-unidecode": "1.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "covdefaults",
+  "libvers": "2.3.0",
+  "infile": "data/pip/covdefaults.txt",
+  "dependencies": {
+    "coverage": "7.8.0"
+  }
+}

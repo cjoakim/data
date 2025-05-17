@@ -1,0 +1,6 @@
+{
+  "libname": "sslpsk-pmd3",
+  "libvers": "1.0.3",
+  "infile": "data/pip/sslpsk-pmd3.txt",
+  "dependencies": {}
+}

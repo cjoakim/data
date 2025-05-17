@@ -1,0 +1,9 @@
+{
+  "libname": "scikit-fem",
+  "libvers": "11.0.0",
+  "infile": "data/pip/scikit-fem.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

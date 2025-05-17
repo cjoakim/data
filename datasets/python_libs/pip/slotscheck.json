@@ -1,0 +1,8 @@
+{
+  "libname": "slotscheck",
+  "libvers": "0.19.1",
+  "infile": "data/pip/slotscheck.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

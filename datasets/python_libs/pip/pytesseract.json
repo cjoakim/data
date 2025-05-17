@@ -1,0 +1,9 @@
+{
+  "libname": "pytesseract",
+  "libvers": "0.3.13",
+  "infile": "data/pip/pytesseract.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "pillow": "11.2.1"
+  }
+}

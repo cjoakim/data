@@ -1,0 +1,6 @@
+{
+  "libname": "fastavro",
+  "libvers": "1.10.0",
+  "infile": "data/pip/fastavro.txt",
+  "dependencies": {}
+}

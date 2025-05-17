@@ -1,0 +1,6 @@
+{
+  "libname": "validate-email",
+  "libvers": "1.3",
+  "infile": "data/pip/validate-email.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "django-localflavor",
+  "libvers": "4.0",
+  "infile": "data/pip/django-localflavor.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "python-stdnum": "2.0",
+    "sqlparse": "0.5.3"
+  }
+}

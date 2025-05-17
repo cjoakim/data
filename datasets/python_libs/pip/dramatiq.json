@@ -1,0 +1,8 @@
+{
+  "libname": "dramatiq",
+  "libvers": "1.17.1",
+  "infile": "data/pip/dramatiq.txt",
+  "dependencies": {
+    "prometheus-client": "0.21.1"
+  }
+}

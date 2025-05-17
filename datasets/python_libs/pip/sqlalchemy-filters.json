@@ -1,0 +1,10 @@
+{
+  "libname": "sqlalchemy-filters",
+  "libvers": "0.13.0",
+  "infile": "data/pip/sqlalchemy-filters.txt",
+  "dependencies": {
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

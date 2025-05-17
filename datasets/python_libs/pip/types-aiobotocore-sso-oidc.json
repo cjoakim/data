@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-sso-oidc",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-sso-oidc.txt",
+  "dependencies": {}
+}

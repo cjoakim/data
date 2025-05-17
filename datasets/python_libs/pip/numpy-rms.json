@@ -1,0 +1,10 @@
+{
+  "libname": "numpy-rms",
+  "libvers": "0.5.0",
+  "infile": "data/pip/numpy-rms.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "numpy": "2.2.5",
+    "pycparser": "2.22"
+  }
+}

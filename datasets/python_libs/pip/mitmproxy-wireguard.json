@@ -1,0 +1,6 @@
+{
+  "libname": "mitmproxy-wireguard",
+  "libvers": "0.1.23",
+  "infile": "data/pip/mitmproxy-wireguard.txt",
+  "dependencies": {}
+}

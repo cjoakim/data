@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-qldb-session",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-qldb-session.txt",
+  "dependencies": {}
+}

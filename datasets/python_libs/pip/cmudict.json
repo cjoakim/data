@@ -1,0 +1,10 @@
+{
+  "libname": "cmudict",
+  "libvers": "1.0.32",
+  "infile": "data/pip/cmudict.txt",
+  "dependencies": {
+    "importlib-metadata": "8.7.0",
+    "importlib-resources": "6.5.2",
+    "zipp": "3.21.0"
+  }
+}

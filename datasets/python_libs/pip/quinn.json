@@ -1,0 +1,6 @@
+{
+  "libname": "quinn",
+  "libvers": "0.10.3",
+  "infile": "data/pip/quinn.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "sagemaker-scikit-learn-extension",
+  "libvers": "2.5.0",
+  "infile": "data/pip/sagemaker-scikit-learn-extension.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "locate",
+  "libvers": "1.1.1",
+  "infile": "data/pip/locate.txt",
+  "dependencies": {}
+}

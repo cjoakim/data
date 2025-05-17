@@ -1,0 +1,9 @@
+{
+  "libname": "lets-plot",
+  "libvers": "4.6.2",
+  "infile": "data/pip/lets-plot.txt",
+  "dependencies": {
+    "palettable": "3.3.3",
+    "pypng": "0.20220715.0"
+  }
+}

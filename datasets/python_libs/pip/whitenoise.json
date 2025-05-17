@@ -1,0 +1,6 @@
+{
+  "libname": "whitenoise",
+  "libvers": "6.9.0",
+  "infile": "data/pip/whitenoise.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-iot-jobs-data",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-iot-jobs-data.txt",
+  "dependencies": {}
+}

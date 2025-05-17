@@ -1,0 +1,16 @@
+{
+  "libname": "pychromecast",
+  "libvers": "14.0.7",
+  "infile": "data/pip/pychromecast.txt",
+  "dependencies": {
+    "casttube": "0.2.1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "ifaddr": "0.2.0",
+    "protobuf": "6.30.2",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0",
+    "zeroconf": "0.147.0"
+  }
+}

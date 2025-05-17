@@ -1,0 +1,11 @@
+{
+  "libname": "plaid-python",
+  "libvers": "31.0.0",
+  "infile": "data/pip/plaid-python.txt",
+  "dependencies": {
+    "nulltype": "2.3.1",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

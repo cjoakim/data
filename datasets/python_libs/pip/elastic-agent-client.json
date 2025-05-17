@@ -1,0 +1,13 @@
+{
+  "libname": "elastic-agent-client",
+  "libvers": "0.0.1.dev2",
+  "infile": "data/pip/elastic-agent-client.txt",
+  "dependencies": {
+    "ecs-logging": "2.2.0",
+    "grpcio": "1.68.1",
+    "grpcio-tools": "1.68.1",
+    "protobuf": "5.28.3",
+    "types-protobuf": "5.28.3.20241203",
+    "uvloop": "0.21.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "velatus",
+  "libvers": "0.3.0",
+  "infile": "data/pip/velatus.txt",
+  "dependencies": {}
+}

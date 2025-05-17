@@ -1,0 +1,13 @@
+{
+  "libname": "mypy-zope",
+  "libvers": "1.0.11",
+  "infile": "data/pip/mypy-zope.txt",
+  "dependencies": {
+    "mypy": "1.15.0",
+    "mypy-extensions": "1.1.0",
+    "typing-extensions": "4.13.2",
+    "zope-event": "5.0",
+    "zope-interface": "7.2",
+    "zope-schema": "7.0.1"
+  }
+}

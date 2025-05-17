@@ -1,0 +1,19 @@
+{
+  "libname": "shodan",
+  "libvers": "1.31.0",
+  "infile": "data/pip/shodan.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "click-plugins": "1.1.1",
+    "colorama": "0.4.6",
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "requests-file": "2.1.0",
+    "tldextract": "5.3.0",
+    "urllib3": "2.4.0",
+    "xlsxwriter": "3.2.3"
+  }
+}

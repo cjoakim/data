@@ -1,0 +1,6 @@
+{
+  "libname": "tinysegmenter",
+  "libvers": "0.4",
+  "infile": "data/pip/tinysegmenter.txt",
+  "dependencies": {}
+}

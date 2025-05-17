@@ -1,0 +1,6 @@
+{
+  "libname": "py-securestring",
+  "libvers": "0.3",
+  "infile": "data/pip/py-securestring.txt",
+  "dependencies": {}
+}

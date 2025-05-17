@@ -1,0 +1,24 @@
+{
+  "libname": "cwl-utils",
+  "libvers": "0.37",
+  "infile": "data/pip/cwl-utils.txt",
+  "dependencies": {
+    "cachecontrol[filecache]": "0.14.3",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "cwl-upgrader": "1.2.12",
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "mistune": "3.0.2",
+    "msgpack": "1.1.0",
+    "mypy-extensions": "1.1.0",
+    "packaging": "25.0",
+    "pyparsing": "3.2.3",
+    "rdflib": "7.1.4",
+    "requests": "2.32.3",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "schema-salad": "8.9.20250408123006",
+    "urllib3": "2.4.0"
+  }
+}

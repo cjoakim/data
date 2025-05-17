@@ -1,0 +1,6 @@
+{
+  "libname": "aoe2rec-py",
+  "libvers": "0.1.10",
+  "infile": "data/pip/aoe2rec-py.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "django-s3-storage",
+  "libvers": "0.15.0",
+  "infile": "data/pip/django-s3-storage.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "boto3": "1.38.10",
+    "botocore": "1.38.10",
+    "django": "5.2",
+    "jmespath": "1.0.1",
+    "python-dateutil": "2.9.0.post0",
+    "s3transfer": "0.12.0",
+    "six": "1.17.0",
+    "sqlparse": "0.5.3",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "json2xml",
+  "libvers": "5.0.5",
+  "infile": "data/pip/json2xml.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "svgutils",
+  "libvers": "0.3.4",
+  "infile": "data/pip/svgutils.txt",
+  "dependencies": {
+    "lxml": "5.4.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "trec-car-tools",
+  "libvers": "2.6",
+  "infile": "data/pip/trec-car-tools.txt",
+  "dependencies": {
+    "cbor": "1.0.0",
+    "numpy": "2.2.5"
+  }
+}

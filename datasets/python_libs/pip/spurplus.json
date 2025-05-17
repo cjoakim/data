@@ -1,0 +1,19 @@
+{
+  "libname": "spurplus",
+  "libvers": "2.3.5",
+  "infile": "data/pip/spurplus.txt",
+  "dependencies": {
+    "asttokens": "2.4.1",
+    "bcrypt": "4.3.0",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "icontract": "2.7.1",
+    "paramiko": "3.5.1",
+    "pycparser": "2.22",
+    "pynacl": "1.5.0",
+    "six": "1.17.0",
+    "spur": "0.3.23",
+    "temppathlib": "1.2.0",
+    "typing-extensions": "4.13.2"
+  }
+}

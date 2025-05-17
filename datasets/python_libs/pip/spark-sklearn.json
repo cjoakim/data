@@ -1,0 +1,8 @@
+{
+  "libname": "spark-sklearn",
+  "libvers": "0.3.0",
+  "infile": "data/pip/spark-sklearn.txt",
+  "dependencies": {
+    "scikit-learn": "0.19.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "draftjs-exporter",
+  "libvers": "5.1.0",
+  "infile": "data/pip/draftjs-exporter.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "sparkaid",
+  "libvers": "1.0.0",
+  "infile": "data/pip/sparkaid.txt",
+  "dependencies": {
+    "py4j": "0.10.9.7",
+    "pyspark": "3.5.5"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "aiozoneinfo",
+  "libvers": "0.2.3",
+  "infile": "data/pip/aiozoneinfo.txt",
+  "dependencies": {
+    "tzdata": "2025.2"
+  }
+}

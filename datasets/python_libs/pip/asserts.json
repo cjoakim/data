@@ -1,0 +1,8 @@
+{
+  "libname": "asserts",
+  "libvers": "0.13.1",
+  "infile": "data/pip/asserts.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

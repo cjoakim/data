@@ -1,0 +1,8 @@
+{
+  "libname": "convertbng",
+  "libvers": "0.7.5",
+  "infile": "data/pip/convertbng.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

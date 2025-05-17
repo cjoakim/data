@@ -1,0 +1,8 @@
+{
+  "libname": "nbdev-pandas",
+  "libvers": "0.0.1840",
+  "infile": "data/pip/nbdev-pandas.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

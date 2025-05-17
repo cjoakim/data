@@ -1,0 +1,6 @@
+{
+  "libname": "u-msgpack-python",
+  "libvers": "2.8.0",
+  "infile": "data/pip/u-msgpack-python.txt",
+  "dependencies": {}
+}

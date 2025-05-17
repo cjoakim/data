@@ -1,0 +1,8 @@
+{
+  "libname": "casbin",
+  "libvers": "1.41.0",
+  "infile": "data/pip/casbin.txt",
+  "dependencies": {
+    "simpleeval": "1.0.3"
+  }
+}

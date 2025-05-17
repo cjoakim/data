@@ -1,0 +1,9 @@
+{
+  "libname": "logical-unification",
+  "libvers": "0.4.6",
+  "infile": "data/pip/logical-unification.txt",
+  "dependencies": {
+    "multipledispatch": "1.0.0",
+    "toolz": "1.0.0"
+  }
+}

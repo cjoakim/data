@@ -1,0 +1,8 @@
+{
+  "libname": "smart-open",
+  "libvers": "7.1.0",
+  "infile": "data/pip/smart-open.txt",
+  "dependencies": {
+    "wrapt": "1.17.2"
+  }
+}

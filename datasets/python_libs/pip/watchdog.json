@@ -1,0 +1,6 @@
+{
+  "libname": "watchdog",
+  "libvers": "6.0.0",
+  "infile": "data/pip/watchdog.txt",
+  "dependencies": {}
+}

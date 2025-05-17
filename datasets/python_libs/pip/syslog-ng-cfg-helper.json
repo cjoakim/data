@@ -1,0 +1,10 @@
+{
+  "libname": "syslog-ng-cfg-helper",
+  "libvers": "1.8.1",
+  "infile": "data/pip/syslog-ng-cfg-helper.txt",
+  "dependencies": {
+    "nodeenv": "1.9.1",
+    "pyright": "1.1.400",
+    "typing-extensions": "4.13.2"
+  }
+}

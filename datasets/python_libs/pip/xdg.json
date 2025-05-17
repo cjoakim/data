@@ -1,0 +1,6 @@
+{
+  "libname": "xdg",
+  "libvers": "6.0.0",
+  "infile": "data/pip/xdg.txt",
+  "dependencies": {}
+}

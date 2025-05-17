@@ -1,0 +1,11 @@
+{
+  "libname": "cmsis-pack-manager",
+  "libvers": "0.5.3",
+  "infile": "data/pip/cmsis-pack-manager.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "cffi": "1.17.1",
+    "pycparser": "2.22",
+    "pyyaml": "6.0.2"
+  }
+}

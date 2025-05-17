@@ -1,0 +1,12 @@
+{
+  "libname": "cylp",
+  "libvers": "0.92.3",
+  "infile": "data/pip/cylp.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "hypothesis": "6.131.12",
+    "numpy": "1.26.4",
+    "scipy": "1.15.2",
+    "sortedcontainers": "2.4.0"
+  }
+}

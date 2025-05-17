@@ -1,0 +1,16 @@
+{
+  "libname": "grequests",
+  "libvers": "0.7.0",
+  "infile": "data/pip/grequests.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "gevent": "25.4.2",
+    "greenlet": "3.2.1",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0",
+    "zope-event": "5.0",
+    "zope-interface": "7.2"
+  }
+}

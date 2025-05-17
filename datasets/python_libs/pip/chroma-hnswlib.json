@@ -1,0 +1,8 @@
+{
+  "libname": "chroma-hnswlib",
+  "libvers": "0.7.6",
+  "infile": "data/pip/chroma-hnswlib.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "google-reauth",
+  "libvers": "0.1.1",
+  "infile": "data/pip/google-reauth.txt",
+  "dependencies": {
+    "pyu2f": "0.1.5",
+    "six": "1.17.0"
+  }
+}

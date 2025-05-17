@@ -1,0 +1,23 @@
+{
+  "libname": "cvat-sdk",
+  "libvers": "2.35.0",
+  "infile": "data/pip/cvat-sdk.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "future": "1.0.0",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "platformdirs": "4.3.7",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "tinydb": "4.8.2",
+    "tqdm": "4.67.1",
+    "tuspy": "0.2.5",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

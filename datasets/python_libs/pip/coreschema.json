@@ -1,0 +1,9 @@
+{
+  "libname": "coreschema",
+  "libvers": "0.0.4",
+  "infile": "data/pip/coreschema.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

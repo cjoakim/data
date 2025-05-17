@@ -1,0 +1,20 @@
+{
+  "libname": "sigstore-protobuf-specs",
+  "libvers": "0.4.1",
+  "infile": "data/pip/sigstore-protobuf-specs.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "betterproto": "2.0.0b7",
+    "grpclib": "0.4.8",
+    "h2": "4.2.0",
+    "hpack": "4.1.0",
+    "hyperframe": "6.1.0",
+    "multidict": "6.4.3",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

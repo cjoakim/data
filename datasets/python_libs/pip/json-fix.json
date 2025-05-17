@@ -1,0 +1,6 @@
+{
+  "libname": "json-fix",
+  "libvers": "1.0.0",
+  "infile": "data/pip/json-fix.txt",
+  "dependencies": {}
+}

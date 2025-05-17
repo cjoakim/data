@@ -1,0 +1,6 @@
+{
+  "libname": "ruamel-base",
+  "libvers": "1.0.0",
+  "infile": "data/pip/ruamel-base.txt",
+  "dependencies": {}
+}

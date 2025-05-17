@@ -1,0 +1,6 @@
+{
+  "libname": "graphql-core",
+  "libvers": "3.2.6",
+  "infile": "data/pip/graphql-core.txt",
+  "dependencies": {}
+}

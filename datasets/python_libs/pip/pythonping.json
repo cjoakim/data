@@ -1,0 +1,6 @@
+{
+  "libname": "pythonping",
+  "libvers": "1.1.4",
+  "infile": "data/pip/pythonping.txt",
+  "dependencies": {}
+}

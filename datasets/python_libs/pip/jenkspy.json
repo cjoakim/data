@@ -1,0 +1,8 @@
+{
+  "libname": "jenkspy",
+  "libvers": "0.4.1",
+  "infile": "data/pip/jenkspy.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "readthedocs-sphinx-search",
+  "libvers": "0.3.2",
+  "infile": "data/pip/readthedocs-sphinx-search.txt",
+  "dependencies": {}
+}

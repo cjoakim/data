@@ -1,0 +1,20 @@
+{
+  "libname": "chonkie",
+  "libvers": "1.0.7",
+  "infile": "data/pip/chonkie.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "filelock": "3.18.0",
+    "fsspec": "2025.3.2",
+    "huggingface-hub": "0.30.2",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "tokenizers": "0.21.1",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

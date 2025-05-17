@@ -1,0 +1,6 @@
+{
+  "libname": "mat4py",
+  "libvers": "0.6.0",
+  "infile": "data/pip/mat4py.txt",
+  "dependencies": {}
+}

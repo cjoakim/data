@@ -1,0 +1,6 @@
+{
+  "libname": "blingfire",
+  "libvers": "0.1.8",
+  "infile": "data/pip/blingfire.txt",
+  "dependencies": {}
+}

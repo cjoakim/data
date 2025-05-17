@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-bedrock-data-automation",
+  "libvers": "1.38.8",
+  "infile": "data/pip/mypy-boto3-bedrock-data-automation.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "opencensus-context",
+  "libvers": "0.1.3",
+  "infile": "data/pip/opencensus-context.txt",
+  "dependencies": {}
+}

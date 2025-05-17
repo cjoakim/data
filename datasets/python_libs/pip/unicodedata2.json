@@ -1,0 +1,6 @@
+{
+  "libname": "unicodedata2",
+  "libvers": "16.0.0",
+  "infile": "data/pip/unicodedata2.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "types-pyjwt",
+  "libvers": "1.7.1",
+  "infile": "data/pip/types-pyjwt.txt",
+  "dependencies": {
+    "types-cryptography": "3.3.23.2"
+  }
+}

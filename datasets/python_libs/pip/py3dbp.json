@@ -1,0 +1,6 @@
+{
+  "libname": "py3dbp",
+  "libvers": "1.1.2",
+  "infile": "data/pip/py3dbp.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "openpmd-api",
+  "libvers": "0.16.1",
+  "infile": "data/pip/openpmd-api.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

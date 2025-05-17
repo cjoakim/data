@@ -1,0 +1,9 @@
+{
+  "libname": "badx12",
+  "libvers": "0.2.2",
+  "infile": "data/pip/badx12.txt",
+  "dependencies": {
+    "click": "7.0",
+    "dicttoxml": "1.7.4"
+  }
+}

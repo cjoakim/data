@@ -1,0 +1,9 @@
+{
+  "libname": "single-beat",
+  "libvers": "0.6.3",
+  "infile": "data/pip/single-beat.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "redis": "6.0.0"
+  }
+}

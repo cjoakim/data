@@ -1,0 +1,8 @@
+{
+  "libname": "python-debian",
+  "libvers": "1.0.1",
+  "infile": "data/pip/python-debian.txt",
+  "dependencies": {
+    "charset-normalizer": "3.4.2"
+  }
+}

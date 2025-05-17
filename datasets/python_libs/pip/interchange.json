@@ -1,0 +1,9 @@
+{
+  "libname": "interchange",
+  "libvers": "2021.0.4",
+  "infile": "data/pip/interchange.txt",
+  "dependencies": {
+    "pytz": "2025.2",
+    "six": "1.17.0"
+  }
+}

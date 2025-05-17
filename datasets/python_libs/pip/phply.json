@@ -1,0 +1,8 @@
+{
+  "libname": "phply",
+  "libvers": "1.2.6",
+  "infile": "data/pip/phply.txt",
+  "dependencies": {
+    "ply": "3.11"
+  }
+}

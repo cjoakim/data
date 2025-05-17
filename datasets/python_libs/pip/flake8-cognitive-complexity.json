@@ -1,0 +1,8 @@
+{
+  "libname": "flake8-cognitive-complexity",
+  "libvers": "0.1.0",
+  "infile": "data/pip/flake8-cognitive-complexity.txt",
+  "dependencies": {
+    "cognitive-complexity": "1.3.0"
+  }
+}

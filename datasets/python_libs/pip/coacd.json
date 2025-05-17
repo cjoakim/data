@@ -1,0 +1,8 @@
+{
+  "libname": "coacd",
+  "libvers": "1.0.7",
+  "infile": "data/pip/coacd.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

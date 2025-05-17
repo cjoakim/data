@@ -1,0 +1,9 @@
+{
+  "libname": "pyobjc-framework-coreml",
+  "libvers": "11.0",
+  "infile": "data/pip/pyobjc-framework-coreml.txt",
+  "dependencies": {
+    "pyobjc-core": "11.0",
+    "pyobjc-framework-cocoa": "11.0"
+  }
+}

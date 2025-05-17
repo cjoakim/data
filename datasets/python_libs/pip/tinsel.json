@@ -1,0 +1,9 @@
+{
+  "libname": "tinsel",
+  "libvers": "0.3.0",
+  "infile": "data/pip/tinsel.txt",
+  "dependencies": {
+    "py4j": "0.10.9.7",
+    "pyspark": "3.5.5"
+  }
+}

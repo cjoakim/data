@@ -1,0 +1,6 @@
+{
+  "libname": "smtpapi",
+  "libvers": "0.4.12",
+  "infile": "data/pip/smtpapi.txt",
+  "dependencies": {}
+}

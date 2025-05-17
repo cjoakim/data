@@ -1,0 +1,9 @@
+{
+  "libname": "lightly-utils",
+  "libvers": "0.0.2",
+  "infile": "data/pip/lightly-utils.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pillow": "11.2.1"
+  }
+}

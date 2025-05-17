@@ -1,0 +1,9 @@
+{
+  "libname": "ipcqueue",
+  "libvers": "0.9.7",
+  "infile": "data/pip/ipcqueue.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

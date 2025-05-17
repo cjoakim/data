@@ -1,0 +1,11 @@
+{
+  "libname": "icecream",
+  "libvers": "2.1.4",
+  "infile": "data/pip/icecream.txt",
+  "dependencies": {
+    "asttokens": "3.0.0",
+    "colorama": "0.4.6",
+    "executing": "2.2.0",
+    "pygments": "2.19.1"
+  }
+}

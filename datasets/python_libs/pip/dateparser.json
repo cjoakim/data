@@ -1,0 +1,12 @@
+{
+  "libname": "dateparser",
+  "libvers": "1.2.1",
+  "infile": "data/pip/dateparser.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "regex": "2024.11.6",
+    "six": "1.17.0",
+    "tzlocal": "5.3.1"
+  }
+}

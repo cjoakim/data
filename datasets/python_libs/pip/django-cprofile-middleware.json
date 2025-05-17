@@ -1,0 +1,6 @@
+{
+  "libname": "django-cprofile-middleware",
+  "libvers": "1.0.5",
+  "infile": "data/pip/django-cprofile-middleware.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "rcssmin",
+  "libvers": "1.2.1",
+  "infile": "data/pip/rcssmin.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "primepy",
+  "libvers": "1.3",
+  "infile": "data/pip/primepy.txt",
+  "dependencies": {}
+}

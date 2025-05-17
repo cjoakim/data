@@ -1,0 +1,8 @@
+{
+  "libname": "python-git",
+  "libvers": "2018.2.1",
+  "infile": "data/pip/python-git.txt",
+  "dependencies": {
+    "send2trash": "1.8.3"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "luhn",
+  "libvers": "0.2.0",
+  "infile": "data/pip/luhn.txt",
+  "dependencies": {}
+}

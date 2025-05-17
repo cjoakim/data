@@ -1,0 +1,6 @@
+{
+  "libname": "graphyte",
+  "libvers": "1.7.1",
+  "infile": "data/pip/graphyte.txt",
+  "dependencies": {}
+}

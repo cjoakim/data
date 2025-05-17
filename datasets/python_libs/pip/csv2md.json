@@ -1,0 +1,6 @@
+{
+  "libname": "csv2md",
+  "libvers": "1.4.0",
+  "infile": "data/pip/csv2md.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "persist-queue",
+  "libvers": "1.0.0",
+  "infile": "data/pip/persist-queue.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "fnvhash",
+  "libvers": "0.2.1",
+  "infile": "data/pip/fnvhash.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "grpc-google-pubsub-v1",
+  "libvers": "0.11.1",
+  "infile": "data/pip/grpc-google-pubsub-v1.txt",
+  "dependencies": {
+    "googleapis-common-protos[grpc]": "1.70.0",
+    "grpcio": "1.72.0rc1",
+    "httplib2": "0.22.0",
+    "oauth2client": "3.0.0",
+    "protobuf": "6.30.2",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pyparsing": "3.2.3",
+    "rsa": "4.9.1",
+    "six": "1.17.0"
+  }
+}

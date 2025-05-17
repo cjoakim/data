@@ -1,0 +1,6 @@
+{
+  "libname": "tree-sitter-javascript",
+  "libvers": "0.23.1",
+  "infile": "data/pip/tree-sitter-javascript.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "clevercsv",
+  "libvers": "0.8.3",
+  "infile": "data/pip/clevercsv.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "packaging": "25.0",
+    "regex": "2024.11.6"
+  }
+}

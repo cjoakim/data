@@ -1,0 +1,9 @@
+{
+  "libname": "zhinst-core",
+  "libvers": "25.4.0.628",
+  "infile": "data/pip/zhinst-core.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "typing-extensions": "4.13.2"
+  }
+}

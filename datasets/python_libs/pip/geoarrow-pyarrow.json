@@ -1,0 +1,10 @@
+{
+  "libname": "geoarrow-pyarrow",
+  "libvers": "0.1.2",
+  "infile": "data/pip/geoarrow-pyarrow.txt",
+  "dependencies": {
+    "geoarrow-c": "0.1.2",
+    "pyarrow": "20.0.0",
+    "pyarrow-hotfix": "0.7"
+  }
+}

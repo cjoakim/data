@@ -1,0 +1,10 @@
+{
+  "libname": "iden",
+  "libvers": "0.2.0",
+  "infile": "data/pip/iden.txt",
+  "dependencies": {
+    "coola": "0.8.7",
+    "objectory": "0.2.0",
+    "tornado": "6.4.2"
+  }
+}

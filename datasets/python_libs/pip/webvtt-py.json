@@ -1,0 +1,6 @@
+{
+  "libname": "webvtt-py",
+  "libvers": "0.5.1",
+  "infile": "data/pip/webvtt-py.txt",
+  "dependencies": {}
+}

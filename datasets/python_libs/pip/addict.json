@@ -1,0 +1,6 @@
+{
+  "libname": "addict",
+  "libvers": "2.4.0",
+  "infile": "data/pip/addict.txt",
+  "dependencies": {}
+}

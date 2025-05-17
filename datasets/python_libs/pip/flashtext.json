@@ -1,0 +1,6 @@
+{
+  "libname": "flashtext",
+  "libvers": "2.7",
+  "infile": "data/pip/flashtext.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "seed-isort-config",
+  "libvers": "2.2.0",
+  "infile": "data/pip/seed-isort-config.txt",
+  "dependencies": {
+    "aspy-refactor-imports": "3.0.2"
+  }
+}

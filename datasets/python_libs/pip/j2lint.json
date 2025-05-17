@@ -1,0 +1,13 @@
+{
+  "libname": "j2lint",
+  "libvers": "1.2.0",
+  "infile": "data/pip/j2lint.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markdown-it-py": "3.0.0",
+    "markupsafe": "3.0.2",
+    "mdurl": "0.1.2",
+    "pygments": "2.19.1",
+    "rich": "14.0.0"
+  }
+}

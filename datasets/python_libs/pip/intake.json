@@ -1,0 +1,11 @@
+{
+  "libname": "intake",
+  "libvers": "2.0.8",
+  "infile": "data/pip/intake.txt",
+  "dependencies": {
+    "fsspec": "2025.3.2",
+    "networkx": "3.4.2",
+    "platformdirs": "4.3.7",
+    "pyyaml": "6.0.2"
+  }
+}

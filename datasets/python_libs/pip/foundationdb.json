@@ -1,0 +1,6 @@
+{
+  "libname": "foundationdb",
+  "libvers": "7.4.1",
+  "infile": "data/pip/foundationdb.txt",
+  "dependencies": {}
+}

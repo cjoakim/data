@@ -1,0 +1,9 @@
+{
+  "libname": "zake",
+  "libvers": "0.2.2",
+  "infile": "data/pip/zake.txt",
+  "dependencies": {
+    "kazoo": "2.10.0",
+    "six": "1.17.0"
+  }
+}

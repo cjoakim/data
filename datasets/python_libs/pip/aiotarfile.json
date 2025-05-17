@@ -1,0 +1,6 @@
+{
+  "libname": "aiotarfile",
+  "libvers": "0.5.1",
+  "infile": "data/pip/aiotarfile.txt",
+  "dependencies": {}
+}

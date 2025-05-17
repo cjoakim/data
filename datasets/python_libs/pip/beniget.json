@@ -1,0 +1,8 @@
+{
+  "libname": "beniget",
+  "libvers": "0.4.2.post1",
+  "infile": "data/pip/beniget.txt",
+  "dependencies": {
+    "gast": "0.6.0"
+  }
+}

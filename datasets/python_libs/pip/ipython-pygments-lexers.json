@@ -1,0 +1,8 @@
+{
+  "libname": "ipython-pygments-lexers",
+  "libvers": "1.1.1",
+  "infile": "data/pip/ipython-pygments-lexers.txt",
+  "dependencies": {
+    "pygments": "2.19.1"
+  }
+}

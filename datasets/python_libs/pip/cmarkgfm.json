@@ -1,0 +1,9 @@
+{
+  "libname": "cmarkgfm",
+  "libvers": "2024.11.20",
+  "infile": "data/pip/cmarkgfm.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

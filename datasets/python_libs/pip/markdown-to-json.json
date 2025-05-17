@@ -1,0 +1,6 @@
+{
+  "libname": "markdown-to-json",
+  "libvers": "2.1.2",
+  "infile": "data/pip/markdown-to-json.txt",
+  "dependencies": {}
+}

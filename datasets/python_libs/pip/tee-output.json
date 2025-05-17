@@ -1,0 +1,8 @@
+{
+  "libname": "tee-output",
+  "libvers": "0.4.16",
+  "infile": "data/pip/tee-output.txt",
+  "dependencies": {
+    "psutil": "7.0.0"
+  }
+}

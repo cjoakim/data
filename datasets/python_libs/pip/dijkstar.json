@@ -1,0 +1,8 @@
+{
+  "libname": "dijkstar",
+  "libvers": "2.6.0",
+  "infile": "data/pip/dijkstar.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

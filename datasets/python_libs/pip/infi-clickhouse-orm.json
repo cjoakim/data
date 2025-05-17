@@ -1,0 +1,14 @@
+{
+  "libname": "infi-clickhouse-orm",
+  "libvers": "2.1.3",
+  "infile": "data/pip/infi-clickhouse-orm.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "iso8601": "2.1.0",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

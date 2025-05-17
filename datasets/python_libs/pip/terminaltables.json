@@ -1,0 +1,6 @@
+{
+  "libname": "terminaltables",
+  "libvers": "3.1.10",
+  "infile": "data/pip/terminaltables.txt",
+  "dependencies": {}
+}

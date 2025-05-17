@@ -1,0 +1,6 @@
+{
+  "libname": "ifaddr",
+  "libvers": "0.2.0",
+  "infile": "data/pip/ifaddr.txt",
+  "dependencies": {}
+}

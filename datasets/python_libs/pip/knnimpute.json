@@ -1,0 +1,9 @@
+{
+  "libname": "knnimpute",
+  "libvers": "0.1.0",
+  "infile": "data/pip/knnimpute.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "six": "1.17.0"
+  }
+}

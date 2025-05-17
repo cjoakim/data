@@ -1,0 +1,8 @@
+{
+  "libname": "traceback2",
+  "libvers": "1.4.0",
+  "infile": "data/pip/traceback2.txt",
+  "dependencies": {
+    "linecache2": "1.0.0"
+  }
+}

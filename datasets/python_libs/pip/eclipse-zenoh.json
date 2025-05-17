@@ -1,0 +1,6 @@
+{
+  "libname": "eclipse-zenoh",
+  "libvers": "1.3.4",
+  "infile": "data/pip/eclipse-zenoh.txt",
+  "dependencies": {}
+}

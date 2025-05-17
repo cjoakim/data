@@ -1,0 +1,6 @@
+{
+  "libname": "pyzstd",
+  "libvers": "0.16.2",
+  "infile": "data/pip/pyzstd.txt",
+  "dependencies": {}
+}

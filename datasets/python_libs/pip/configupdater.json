@@ -1,0 +1,6 @@
+{
+  "libname": "configupdater",
+  "libvers": "3.2",
+  "infile": "data/pip/configupdater.txt",
+  "dependencies": {}
+}

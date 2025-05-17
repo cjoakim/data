@@ -1,0 +1,13 @@
+{
+  "libname": "wpilib",
+  "libvers": "2025.3.2.1",
+  "infile": "data/pip/wpilib.txt",
+  "dependencies": {
+    "pyntcore": "2025.3.2.1",
+    "robotpy-cli": "2024.0.0",
+    "robotpy-hal": "2025.3.2.1",
+    "robotpy-wpimath": "2025.3.2.1",
+    "robotpy-wpinet": "2025.3.2.1",
+    "robotpy-wpiutil": "2025.3.2.1"
+  }
+}

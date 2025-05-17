@@ -1,0 +1,14 @@
+{
+  "libname": "sqlalchemy-migrate",
+  "libvers": "0.13.0",
+  "infile": "data/pip/sqlalchemy-migrate.txt",
+  "dependencies": {
+    "decorator": "5.2.1",
+    "pbr": "6.1.1",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "sqlparse": "0.5.3",
+    "tempita": "0.6.0",
+    "typing-extensions": "4.13.2"
+  }
+}

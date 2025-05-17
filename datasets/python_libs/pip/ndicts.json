@@ -1,0 +1,8 @@
+{
+  "libname": "ndicts",
+  "libvers": "0.3.0",
+  "infile": "data/pip/ndicts.txt",
+  "dependencies": {
+    "more-itertools": "9.1.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "twitter-common-lang",
+  "libvers": "0.3.11",
+  "infile": "data/pip/twitter-common-lang.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "pylcs",
+  "libvers": "0.1.1",
+  "infile": "data/pip/pylcs.txt",
+  "dependencies": {
+    "pybind11": "2.13.6"
+  }
+}

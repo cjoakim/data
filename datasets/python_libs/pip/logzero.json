@@ -1,0 +1,6 @@
+{
+  "libname": "logzero",
+  "libvers": "1.7.0",
+  "infile": "data/pip/logzero.txt",
+  "dependencies": {}
+}

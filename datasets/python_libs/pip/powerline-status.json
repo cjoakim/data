@@ -1,0 +1,6 @@
+{
+  "libname": "powerline-status",
+  "libvers": "2.7",
+  "infile": "data/pip/powerline-status.txt",
+  "dependencies": {}
+}

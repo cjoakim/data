@@ -1,0 +1,6 @@
+{
+  "libname": "json-logging-py",
+  "libvers": "0.2",
+  "infile": "data/pip/json-logging-py.txt",
+  "dependencies": {}
+}

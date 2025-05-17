@@ -1,0 +1,6 @@
+{
+  "libname": "executing",
+  "libvers": "2.2.0",
+  "infile": "data/pip/executing.txt",
+  "dependencies": {}
+}

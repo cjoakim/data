@@ -1,0 +1,8 @@
+{
+  "libname": "nbdev-sphinx",
+  "libvers": "0.0.1849",
+  "infile": "data/pip/nbdev-sphinx.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

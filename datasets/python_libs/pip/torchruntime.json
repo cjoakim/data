@@ -1,0 +1,6 @@
+{
+  "libname": "torchruntime",
+  "libvers": "1.17.3",
+  "infile": "data/pip/torchruntime.txt",
+  "dependencies": {}
+}

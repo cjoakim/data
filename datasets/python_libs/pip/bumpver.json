@@ -1,0 +1,11 @@
+{
+  "libname": "bumpver",
+  "libvers": "2024.1130",
+  "infile": "data/pip/bumpver.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "colorama": "0.4.6",
+    "lexid": "2021.1006",
+    "toml": "0.10.2"
+  }
+}

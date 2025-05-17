@@ -1,0 +1,9 @@
+{
+  "libname": "mct-quantizers-nightly",
+  "libvers": "1.6.0.20250507.post1440",
+  "infile": "data/pip/mct-quantizers-nightly.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0"
+  }
+}

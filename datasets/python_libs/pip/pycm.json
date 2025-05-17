@@ -1,0 +1,9 @@
+{
+  "libname": "pycm",
+  "libvers": "4.3",
+  "infile": "data/pip/pycm.txt",
+  "dependencies": {
+    "art": "6.5",
+    "numpy": "2.2.5"
+  }
+}

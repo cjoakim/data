@@ -1,0 +1,8 @@
+{
+  "libname": "pyside6-essentials",
+  "libvers": "6.9.0",
+  "infile": "data/pip/pyside6-essentials.txt",
+  "dependencies": {
+    "shiboken6": "6.9.0"
+  }
+}

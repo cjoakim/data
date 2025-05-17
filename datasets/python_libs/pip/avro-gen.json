@@ -1,0 +1,12 @@
+{
+  "libname": "avro-gen",
+  "libvers": "0.3.0",
+  "infile": "data/pip/avro-gen.txt",
+  "dependencies": {
+    "avro-python3": "1.10.2",
+    "frozendict": "2.4.6",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tzlocal": "5.3.1"
+  }
+}

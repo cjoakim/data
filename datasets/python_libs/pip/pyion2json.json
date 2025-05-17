@@ -1,0 +1,8 @@
+{
+  "libname": "pyion2json",
+  "libvers": "0.0.2",
+  "infile": "data/pip/pyion2json.txt",
+  "dependencies": {
+    "amazon-ion": "0.13.0"
+  }
+}

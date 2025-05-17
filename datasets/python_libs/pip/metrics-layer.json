@@ -1,0 +1,29 @@
+{
+  "libname": "metrics-layer",
+  "libvers": "0.14.3",
+  "infile": "data/pip/metrics-layer.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "colorama": "0.4.6",
+    "gitdb": "4.0.12",
+    "gitpython": "3.1.44",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "networkx": "2.8.8",
+    "numpy": "1.26.4",
+    "pandas": "1.5.3",
+    "pendulum": "3.1.0",
+    "pypika": "0.48.9",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "ruamel-yaml": "0.17.40",
+    "ruamel-yaml-clib": "0.2.12",
+    "six": "1.17.0",
+    "smmap": "5.0.2",
+    "sqlalchemy": "2.0.40",
+    "sqlparse": "0.5.3",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "imapclient",
+  "libvers": "3.0.1",
+  "infile": "data/pip/imapclient.txt",
+  "dependencies": {}
+}

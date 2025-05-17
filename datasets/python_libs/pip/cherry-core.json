@@ -1,0 +1,6 @@
+{
+  "libname": "cherry-core",
+  "libvers": "0.5.5",
+  "infile": "data/pip/cherry-core.txt",
+  "dependencies": {}
+}

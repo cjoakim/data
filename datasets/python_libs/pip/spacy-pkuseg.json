@@ -1,0 +1,10 @@
+{
+  "libname": "spacy-pkuseg",
+  "libvers": "1.0.0",
+  "infile": "data/pip/spacy-pkuseg.txt",
+  "dependencies": {
+    "catalogue": "2.0.10",
+    "numpy": "2.2.5",
+    "srsly": "2.5.1"
+  }
+}

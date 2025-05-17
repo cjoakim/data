@@ -1,0 +1,6 @@
+{
+  "libname": "libpff-python",
+  "libvers": "20231205",
+  "infile": "data/pip/libpff-python.txt",
+  "dependencies": {}
+}

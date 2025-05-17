@@ -1,0 +1,6 @@
+{
+  "libname": "typescript",
+  "libvers": "0.0.12",
+  "infile": "data/pip/typescript.txt",
+  "dependencies": {}
+}

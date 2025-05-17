@@ -1,0 +1,6 @@
+{
+  "libname": "rtree",
+  "libvers": "1.4.0",
+  "infile": "data/pip/rtree.txt",
+  "dependencies": {}
+}

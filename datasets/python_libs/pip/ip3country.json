@@ -1,0 +1,6 @@
+{
+  "libname": "ip3country",
+  "libvers": "0.3.0",
+  "infile": "data/pip/ip3country.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "faust-cchardet",
+  "libvers": "2.1.19",
+  "infile": "data/pip/faust-cchardet.txt",
+  "dependencies": {}
+}

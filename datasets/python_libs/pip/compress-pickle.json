@@ -1,0 +1,6 @@
+{
+  "libname": "compress-pickle",
+  "libvers": "2.1.0",
+  "infile": "data/pip/compress-pickle.txt",
+  "dependencies": {}
+}

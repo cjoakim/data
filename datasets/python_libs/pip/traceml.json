@@ -1,0 +1,6 @@
+{
+  "libname": "traceml",
+  "libvers": "1.2.1",
+  "infile": "data/pip/traceml.txt",
+  "dependencies": {}
+}

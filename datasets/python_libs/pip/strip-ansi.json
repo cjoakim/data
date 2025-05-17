@@ -1,0 +1,6 @@
+{
+  "libname": "strip-ansi",
+  "libvers": "0.1.1",
+  "infile": "data/pip/strip-ansi.txt",
+  "dependencies": {}
+}

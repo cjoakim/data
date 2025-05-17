@@ -1,0 +1,6 @@
+{
+  "libname": "django-templated-mail",
+  "libvers": "1.1.1",
+  "infile": "data/pip/django-templated-mail.txt",
+  "dependencies": {}
+}

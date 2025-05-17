@@ -1,0 +1,9 @@
+{
+  "libname": "pyadi-iio",
+  "libvers": "0.0.19",
+  "infile": "data/pip/pyadi-iio.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pylibiio": "0.25"
+  }
+}

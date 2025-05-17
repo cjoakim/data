@@ -1,0 +1,8 @@
+{
+  "libname": "torcheval-nightly",
+  "libvers": "2024.7.31",
+  "infile": "data/pip/torcheval-nightly.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

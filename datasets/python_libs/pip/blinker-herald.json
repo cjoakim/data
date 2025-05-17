@@ -1,0 +1,6 @@
+{
+  "libname": "blinker-herald",
+  "libvers": "0.2.0",
+  "infile": "data/pip/blinker-herald.txt",
+  "dependencies": {}
+}

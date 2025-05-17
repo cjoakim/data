@@ -1,0 +1,6 @@
+{
+  "libname": "widgetsnbextension",
+  "libvers": "4.0.14",
+  "infile": "data/pip/widgetsnbextension.txt",
+  "dependencies": {}
+}

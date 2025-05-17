@@ -1,0 +1,21 @@
+{
+  "libname": "djangocms-text-ckeditor",
+  "libvers": "5.1.7",
+  "infile": "data/pip/djangocms-text-ckeditor.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "django-classy-tags": "4.1.0",
+    "django-cms": "4.1.6",
+    "django-formtools": "2.5.1",
+    "django-sekizai": "4.1.0",
+    "django-treebeard": "4.7.1",
+    "djangocms-admin-style": "3.3.1",
+    "html5lib": "1.1",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "six": "1.17.0",
+    "sqlparse": "0.5.3",
+    "webencodings": "0.5.1"
+  }
+}

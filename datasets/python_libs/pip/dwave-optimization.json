@@ -1,0 +1,8 @@
+{
+  "libname": "dwave-optimization",
+  "libvers": "0.6.1",
+  "infile": "data/pip/dwave-optimization.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

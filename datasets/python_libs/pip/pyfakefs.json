@@ -1,0 +1,6 @@
+{
+  "libname": "pyfakefs",
+  "libvers": "5.8.0",
+  "infile": "data/pip/pyfakefs.txt",
+  "dependencies": {}
+}

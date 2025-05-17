@@ -1,0 +1,6 @@
+{
+  "libname": "fysom",
+  "libvers": "2.1.6",
+  "infile": "data/pip/fysom.txt",
+  "dependencies": {}
+}

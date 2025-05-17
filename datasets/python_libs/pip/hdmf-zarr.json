@@ -1,0 +1,31 @@
+{
+  "libname": "hdmf-zarr",
+  "libvers": "0.11.1",
+  "infile": "data/pip/hdmf-zarr.txt",
+  "dependencies": {
+    "asciitree": "0.3.3",
+    "attrs": "25.3.0",
+    "deprecated": "1.2.18",
+    "fasteners": "0.19",
+    "h5py": "3.13.0",
+    "hdmf": "4.0.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "numcodecs": "0.15.1",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "pynwb": "3.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "six": "1.17.0",
+    "threadpoolctl": "3.6.0",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2",
+    "wrapt": "1.17.2",
+    "zarr": "2.18.7"
+  }
+}

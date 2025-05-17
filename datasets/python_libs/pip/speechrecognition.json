@@ -1,0 +1,8 @@
+{
+  "libname": "speechrecognition",
+  "libvers": "3.14.2",
+  "infile": "data/pip/speechrecognition.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

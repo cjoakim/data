@@ -1,0 +1,6 @@
+{
+  "libname": "s3-path-wrangler",
+  "libvers": "0.5.0",
+  "infile": "data/pip/s3-path-wrangler.txt",
+  "dependencies": {}
+}

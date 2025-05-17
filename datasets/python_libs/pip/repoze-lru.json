@@ -1,0 +1,6 @@
+{
+  "libname": "repoze-lru",
+  "libvers": "0.7",
+  "infile": "data/pip/repoze-lru.txt",
+  "dependencies": {}
+}

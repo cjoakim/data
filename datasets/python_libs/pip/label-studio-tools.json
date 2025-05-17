@@ -1,0 +1,9 @@
+{
+  "libname": "label-studio-tools",
+  "libvers": "0.0.4",
+  "infile": "data/pip/label-studio-tools.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "lxml": "5.4.0"
+  }
+}

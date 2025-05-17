@@ -1,0 +1,11 @@
+{
+  "libname": "sqlalchemy-mate",
+  "libvers": "2.0.0.3",
+  "infile": "data/pip/sqlalchemy-mate.txt",
+  "dependencies": {
+    "prettytable": "3.16.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2",
+    "wcwidth": "0.2.13"
+  }
+}

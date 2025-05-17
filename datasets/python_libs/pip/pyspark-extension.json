@@ -1,0 +1,6 @@
+{
+  "libname": "pyspark-extension",
+  "libvers": "2.13.0.3.5",
+  "infile": "data/pip/pyspark-extension.txt",
+  "dependencies": {}
+}

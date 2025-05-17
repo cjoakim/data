@@ -1,0 +1,17 @@
+{
+  "libname": "tox-poetry-installer",
+  "libvers": "0.10.3",
+  "infile": "data/pip/tox-poetry-installer.txt",
+  "dependencies": {
+    "distlib": "0.3.9",
+    "filelock": "3.18.0",
+    "packaging": "25.0",
+    "platformdirs": "4.3.7",
+    "pluggy": "1.5.0",
+    "poetry-core": "1.9.1",
+    "py": "1.11.0",
+    "six": "1.17.0",
+    "tox": "3.28.0",
+    "virtualenv": "20.31.1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "libname": "sqlalchemy-drill",
+  "libvers": "1.1.8",
+  "infile": "data/pip/sqlalchemy-drill.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "ijson": "3.3.0",
+    "requests": "2.32.3",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

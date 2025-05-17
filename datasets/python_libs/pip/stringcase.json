@@ -1,0 +1,6 @@
+{
+  "libname": "stringcase",
+  "libvers": "1.2.0",
+  "infile": "data/pip/stringcase.txt",
+  "dependencies": {}
+}

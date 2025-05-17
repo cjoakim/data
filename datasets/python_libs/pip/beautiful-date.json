@@ -1,0 +1,9 @@
+{
+  "libname": "beautiful-date",
+  "libvers": "2.3.0",
+  "infile": "data/pip/beautiful-date.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

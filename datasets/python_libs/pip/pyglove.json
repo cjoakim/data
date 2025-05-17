@@ -1,0 +1,8 @@
+{
+  "libname": "pyglove",
+  "libvers": "0.4.4",
+  "infile": "data/pip/pyglove.txt",
+  "dependencies": {
+    "docstring-parser": "0.16"
+  }
+}

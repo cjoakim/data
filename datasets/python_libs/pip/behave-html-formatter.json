@@ -1,0 +1,11 @@
+{
+  "libname": "behave-html-formatter",
+  "libvers": "0.9.10",
+  "infile": "data/pip/behave-html-formatter.txt",
+  "dependencies": {
+    "behave": "1.2.6",
+    "parse": "1.20.2",
+    "parse-type": "0.6.4",
+    "six": "1.17.0"
+  }
+}

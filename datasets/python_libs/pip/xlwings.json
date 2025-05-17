@@ -1,0 +1,10 @@
+{
+  "libname": "xlwings",
+  "libvers": "0.33.14",
+  "infile": "data/pip/xlwings.txt",
+  "dependencies": {
+    "appscript": "1.3.0",
+    "lxml": "5.4.0",
+    "psutil": "7.0.0"
+  }
+}

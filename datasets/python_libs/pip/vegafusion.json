@@ -1,0 +1,10 @@
+{
+  "libname": "vegafusion",
+  "libvers": "2.0.2",
+  "infile": "data/pip/vegafusion.txt",
+  "dependencies": {
+    "arro3-core": "0.4.6",
+    "narwhals": "1.38.0",
+    "packaging": "25.0"
+  }
+}

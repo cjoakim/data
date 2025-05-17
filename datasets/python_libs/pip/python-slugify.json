@@ -1,0 +1,8 @@
+{
+  "libname": "python-slugify",
+  "libvers": "8.0.4",
+  "infile": "data/pip/python-slugify.txt",
+  "dependencies": {
+    "text-unidecode": "1.3"
+  }
+}

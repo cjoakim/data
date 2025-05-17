@@ -1,0 +1,12 @@
+{
+  "libname": "python-socketio",
+  "libvers": "5.13.0",
+  "infile": "data/pip/python-socketio.txt",
+  "dependencies": {
+    "bidict": "0.23.1",
+    "h11": "0.16.0",
+    "python-engineio": "4.12.0",
+    "simple-websocket": "1.1.0",
+    "wsproto": "1.2.0"
+  }
+}

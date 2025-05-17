@@ -1,0 +1,6 @@
+{
+  "libname": "types-tabulate",
+  "libvers": "0.9.0.20241207",
+  "infile": "data/pip/types-tabulate.txt",
+  "dependencies": {}
+}

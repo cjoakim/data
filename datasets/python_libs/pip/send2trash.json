@@ -1,0 +1,6 @@
+{
+  "libname": "send2trash",
+  "libvers": "1.8.3",
+  "infile": "data/pip/send2trash.txt",
+  "dependencies": {}
+}

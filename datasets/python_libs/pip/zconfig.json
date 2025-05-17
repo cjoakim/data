@@ -1,0 +1,6 @@
+{
+  "libname": "zconfig",
+  "libvers": "4.2",
+  "infile": "data/pip/zconfig.txt",
+  "dependencies": {}
+}

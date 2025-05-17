@@ -1,0 +1,6 @@
+{
+  "libname": "rust-demangler",
+  "libvers": "1.0",
+  "infile": "data/pip/rust-demangler.txt",
+  "dependencies": {}
+}

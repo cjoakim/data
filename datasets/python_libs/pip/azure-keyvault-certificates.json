@@ -1,0 +1,16 @@
+{
+  "libname": "azure-keyvault-certificates",
+  "libvers": "4.9.0",
+  "infile": "data/pip/azure-keyvault-certificates.txt",
+  "dependencies": {
+    "azure-core": "1.34.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "isodate": "0.7.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

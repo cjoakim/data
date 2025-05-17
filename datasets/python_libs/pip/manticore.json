@@ -1,0 +1,31 @@
+{
+  "libname": "manticore",
+  "libvers": "0.3.7",
+  "infile": "data/pip/manticore.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "crytic-compile": "0.2.2",
+    "cytoolz": "1.0.1",
+    "eth-hash": "0.7.1",
+    "eth-typing": "5.2.1",
+    "eth-utils": "5.3.0",
+    "future": "1.0.0",
+    "intervaltree": "3.1.0",
+    "ply": "3.11",
+    "prettytable": "3.16.0",
+    "protobuf": "6.30.2",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pyevmasm": "0.2.3",
+    "pysha3": "1.0.2",
+    "pyyaml": "6.0.2",
+    "rlp": "4.1.0",
+    "sortedcontainers": "2.4.0",
+    "toolz": "1.0.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "wasm": "1.2",
+    "wcwidth": "0.2.13",
+    "z3-solver": "4.14.1.0"
+  }
+}

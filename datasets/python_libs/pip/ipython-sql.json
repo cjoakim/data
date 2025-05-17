@@ -1,0 +1,29 @@
+{
+  "libname": "ipython-sql",
+  "libvers": "0.5.0",
+  "infile": "data/pip/ipython-sql.txt",
+  "dependencies": {
+    "asttokens": "3.0.0",
+    "decorator": "5.2.1",
+    "executing": "2.2.0",
+    "ipython": "9.2.0",
+    "ipython-genutils": "0.2.0",
+    "ipython-pygments-lexers": "1.1.1",
+    "jedi": "0.19.2",
+    "matplotlib-inline": "0.1.7",
+    "parso": "0.8.4",
+    "pexpect": "4.9.0",
+    "prettytable": "3.16.0",
+    "prompt-toolkit": "3.0.51",
+    "ptyprocess": "0.7.0",
+    "pure-eval": "0.2.3",
+    "pygments": "2.19.1",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "sqlparse": "0.5.3",
+    "stack-data": "0.6.3",
+    "traitlets": "5.14.3",
+    "typing-extensions": "4.13.2",
+    "wcwidth": "0.2.13"
+  }
+}

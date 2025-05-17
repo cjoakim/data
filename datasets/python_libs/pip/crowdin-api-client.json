@@ -1,0 +1,14 @@
+{
+  "libname": "crowdin-api-client",
+  "libvers": "1.22.0",
+  "infile": "data/pip/crowdin-api-client.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "deprecated": "1.2.18",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2"
+  }
+}

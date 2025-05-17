@@ -1,0 +1,8 @@
+{
+  "libname": "purl",
+  "libvers": "1.6",
+  "infile": "data/pip/purl.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

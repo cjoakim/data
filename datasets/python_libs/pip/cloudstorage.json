@@ -1,0 +1,11 @@
+{
+  "libname": "cloudstorage",
+  "libvers": "0.10.0",
+  "infile": "data/pip/cloudstorage.txt",
+  "dependencies": {
+    "inflection": "0.5.1",
+    "python-dateutil": "2.9.0.post0",
+    "python-magic": "0.4.27",
+    "six": "1.17.0"
+  }
+}

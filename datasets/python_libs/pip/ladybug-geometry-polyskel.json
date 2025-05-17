@@ -1,0 +1,8 @@
+{
+  "libname": "ladybug-geometry-polyskel",
+  "libvers": "1.7.23",
+  "infile": "data/pip/ladybug-geometry-polyskel.txt",
+  "dependencies": {
+    "ladybug-geometry": "1.34.2"
+  }
+}

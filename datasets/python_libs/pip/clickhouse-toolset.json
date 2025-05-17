@@ -1,0 +1,6 @@
+{
+  "libname": "clickhouse-toolset",
+  "libvers": "0.37.dev0",
+  "infile": "data/pip/clickhouse-toolset.txt",
+  "dependencies": {}
+}

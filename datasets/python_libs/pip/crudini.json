@@ -1,0 +1,9 @@
+{
+  "libname": "crudini",
+  "libvers": "0.9.6",
+  "infile": "data/pip/crudini.txt",
+  "dependencies": {
+    "iniparse": "0.5",
+    "six": "1.17.0"
+  }
+}

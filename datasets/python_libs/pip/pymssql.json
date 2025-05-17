@@ -1,0 +1,6 @@
+{
+  "libname": "pymssql",
+  "libvers": "2.3.4",
+  "infile": "data/pip/pymssql.txt",
+  "dependencies": {}
+}

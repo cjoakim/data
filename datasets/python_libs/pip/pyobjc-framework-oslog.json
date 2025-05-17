@@ -1,0 +1,11 @@
+{
+  "libname": "pyobjc-framework-oslog",
+  "libvers": "11.0",
+  "infile": "data/pip/pyobjc-framework-oslog.txt",
+  "dependencies": {
+    "pyobjc-core": "11.0",
+    "pyobjc-framework-cocoa": "11.0",
+    "pyobjc-framework-coremedia": "11.0",
+    "pyobjc-framework-quartz": "11.0"
+  }
+}

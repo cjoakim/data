@@ -1,0 +1,8 @@
+{
+  "libname": "mailbits",
+  "libvers": "0.2.2",
+  "infile": "data/pip/mailbits.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

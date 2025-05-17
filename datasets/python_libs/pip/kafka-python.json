@@ -1,0 +1,6 @@
+{
+  "libname": "kafka-python",
+  "libvers": "2.2.4",
+  "infile": "data/pip/kafka-python.txt",
+  "dependencies": {}
+}

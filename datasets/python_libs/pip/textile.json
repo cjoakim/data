@@ -1,0 +1,9 @@
+{
+  "libname": "textile",
+  "libvers": "4.0.3",
+  "infile": "data/pip/textile.txt",
+  "dependencies": {
+    "nh3": "0.2.21",
+    "regex": "2024.11.6"
+  }
+}

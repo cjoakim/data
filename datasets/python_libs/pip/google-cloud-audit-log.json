@@ -1,0 +1,9 @@
+{
+  "libname": "google-cloud-audit-log",
+  "libvers": "0.3.2",
+  "infile": "data/pip/google-cloud-audit-log.txt",
+  "dependencies": {
+    "googleapis-common-protos": "1.70.0",
+    "protobuf": "6.30.2"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pybammsolvers",
+  "libvers": "0.1.0",
+  "infile": "data/pip/pybammsolvers.txt",
+  "dependencies": {
+    "casadi": "3.7.0",
+    "numpy": "1.26.4"
+  }
+}

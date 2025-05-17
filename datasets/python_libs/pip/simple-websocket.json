@@ -1,0 +1,9 @@
+{
+  "libname": "simple-websocket",
+  "libvers": "1.1.0",
+  "infile": "data/pip/simple-websocket.txt",
+  "dependencies": {
+    "h11": "0.16.0",
+    "wsproto": "1.2.0"
+  }
+}

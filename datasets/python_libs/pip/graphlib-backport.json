@@ -1,0 +1,6 @@
+{
+  "libname": "graphlib-backport",
+  "libvers": "1.1.0",
+  "infile": "data/pip/graphlib-backport.txt",
+  "dependencies": {}
+}

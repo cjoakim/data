@@ -1,0 +1,10 @@
+{
+  "libname": "joserfc",
+  "libvers": "1.0.4",
+  "infile": "data/pip/joserfc.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "olefile",
+  "libvers": "0.47",
+  "infile": "data/pip/olefile.txt",
+  "dependencies": {}
+}

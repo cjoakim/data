@@ -1,0 +1,6 @@
+{
+  "libname": "loguru",
+  "libvers": "0.7.3",
+  "infile": "data/pip/loguru.txt",
+  "dependencies": {}
+}

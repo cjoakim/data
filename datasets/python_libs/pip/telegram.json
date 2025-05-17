@@ -1,0 +1,6 @@
+{
+  "libname": "telegram",
+  "libvers": "0.0.1",
+  "infile": "data/pip/telegram.txt",
+  "dependencies": {}
+}

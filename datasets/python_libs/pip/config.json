@@ -1,0 +1,6 @@
+{
+  "libname": "config",
+  "libvers": "0.5.1",
+  "infile": "data/pip/config.txt",
+  "dependencies": {}
+}

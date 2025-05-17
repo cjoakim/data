@@ -1,0 +1,21 @@
+{
+  "libname": "nevergrad",
+  "libvers": "1.0.12",
+  "infile": "data/pip/nevergrad.txt",
+  "dependencies": {
+    "bayesian-optimization": "1.4.0",
+    "cma": "4.0.0",
+    "directsearch": "1.0",
+    "joblib": "1.5.0",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "threadpoolctl": "3.6.0",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

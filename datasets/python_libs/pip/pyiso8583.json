@@ -1,0 +1,6 @@
+{
+  "libname": "pyiso8583",
+  "libvers": "3.0.0",
+  "infile": "data/pip/pyiso8583.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "python-datauri",
+  "libvers": "3.0.2",
+  "infile": "data/pip/python-datauri.txt",
+  "dependencies": {
+    "cached-property": "2.0.1",
+    "typing-extensions": "4.13.2"
+  }
+}

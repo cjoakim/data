@@ -1,0 +1,8 @@
+{
+  "libname": "codesee-util",
+  "libvers": "0.88.0",
+  "infile": "data/pip/codesee-util.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "junitxml",
+  "libvers": "0.7",
+  "infile": "data/pip/junitxml.txt",
+  "dependencies": {}
+}

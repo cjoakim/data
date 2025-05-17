@@ -1,0 +1,6 @@
+{
+  "libname": "eth-hash",
+  "libvers": "0.7.1",
+  "infile": "data/pip/eth-hash.txt",
+  "dependencies": {}
+}

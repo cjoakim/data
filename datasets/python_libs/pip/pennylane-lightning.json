@@ -1,0 +1,31 @@
+{
+  "libname": "pennylane-lightning",
+  "libvers": "0.41.1",
+  "infile": "data/pip/pennylane-lightning.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "astunparse": "1.6.3",
+    "autograd": "1.8.0",
+    "autoray": "0.7.1",
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "diastatic-malt": "2.15.2",
+    "gast": "0.6.0",
+    "idna": "3.10",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pennylane": "0.41.1",
+    "requests": "2.32.3",
+    "rustworkx": "0.16.0",
+    "scipy": "1.15.2",
+    "scipy-openblas32": "0.3.29.0.0",
+    "six": "1.17.0",
+    "termcolor": "3.1.0",
+    "tomlkit": "0.13.2",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "wheel": "0.45.1"
+  }
+}

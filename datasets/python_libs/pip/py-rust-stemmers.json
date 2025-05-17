@@ -1,0 +1,6 @@
+{
+  "libname": "py-rust-stemmers",
+  "libvers": "0.1.5",
+  "infile": "data/pip/py-rust-stemmers.txt",
+  "dependencies": {}
+}

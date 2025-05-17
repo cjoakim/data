@@ -1,0 +1,9 @@
+{
+  "libname": "dwave-preprocessing",
+  "libvers": "0.6.8",
+  "infile": "data/pip/dwave-preprocessing.txt",
+  "dependencies": {
+    "dimod": "0.12.20",
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "aiopg",
+  "libvers": "1.4.0",
+  "infile": "data/pip/aiopg.txt",
+  "dependencies": {
+    "async-timeout": "4.0.3",
+    "psycopg2-binary": "2.9.10"
+  }
+}

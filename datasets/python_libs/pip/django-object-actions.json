@@ -1,0 +1,6 @@
+{
+  "libname": "django-object-actions",
+  "libvers": "5.0.0",
+  "infile": "data/pip/django-object-actions.txt",
+  "dependencies": {}
+}

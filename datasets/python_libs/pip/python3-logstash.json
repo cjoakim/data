@@ -1,0 +1,6 @@
+{
+  "libname": "python3-logstash",
+  "libvers": "0.4.80",
+  "infile": "data/pip/python3-logstash.txt",
+  "dependencies": {}
+}

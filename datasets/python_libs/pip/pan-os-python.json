@@ -1,0 +1,8 @@
+{
+  "libname": "pan-os-python",
+  "libvers": "1.12.2",
+  "infile": "data/pip/pan-os-python.txt",
+  "dependencies": {
+    "pan-python": "0.17.0"
+  }
+}

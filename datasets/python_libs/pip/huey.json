@@ -1,0 +1,6 @@
+{
+  "libname": "huey",
+  "libvers": "2.5.3",
+  "infile": "data/pip/huey.txt",
+  "dependencies": {}
+}

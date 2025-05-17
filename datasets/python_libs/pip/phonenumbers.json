@@ -1,0 +1,6 @@
+{
+  "libname": "phonenumbers",
+  "libvers": "9.0.4",
+  "infile": "data/pip/phonenumbers.txt",
+  "dependencies": {}
+}

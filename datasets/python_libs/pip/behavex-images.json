@@ -1,0 +1,19 @@
+{
+  "libname": "behavex-images",
+  "libvers": "3.1.1",
+  "infile": "data/pip/behavex-images.txt",
+  "dependencies": {
+    "behave": "1.2.6",
+    "behavex": "4.1.2",
+    "configobj": "5.0.9",
+    "csscompressor": "0.9.5",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "minify-html": "0.16.4",
+    "numpy": "2.2.5",
+    "parse": "1.20.2",
+    "parse-type": "0.6.4",
+    "pillow": "11.2.1",
+    "six": "1.17.0"
+  }
+}

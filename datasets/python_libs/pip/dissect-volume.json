@@ -1,0 +1,9 @@
+{
+  "libname": "dissect-volume",
+  "libvers": "3.14",
+  "infile": "data/pip/dissect-volume.txt",
+  "dependencies": {
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

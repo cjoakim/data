@@ -1,0 +1,6 @@
+{
+  "libname": "pyfunceble-process-manager",
+  "libvers": "1.0.10",
+  "infile": "data/pip/pyfunceble-process-manager.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "mockito",
+  "libvers": "1.5.4",
+  "infile": "data/pip/mockito.txt",
+  "dependencies": {}
+}

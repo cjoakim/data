@@ -1,0 +1,9 @@
+{
+  "libname": "gower",
+  "libvers": "0.1.2",
+  "infile": "data/pip/gower.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

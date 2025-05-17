@@ -1,0 +1,8 @@
+{
+  "libname": "etcpak",
+  "libvers": "0.9.13",
+  "infile": "data/pip/etcpak.txt",
+  "dependencies": {
+    "archspec": "0.2.5"
+  }
+}

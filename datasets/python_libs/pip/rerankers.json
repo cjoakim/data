@@ -1,0 +1,6 @@
+{
+  "libname": "rerankers",
+  "libvers": "0.9.1.post1",
+  "infile": "data/pip/rerankers.txt",
+  "dependencies": {}
+}

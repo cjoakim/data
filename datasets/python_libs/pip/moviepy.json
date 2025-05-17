@@ -1,0 +1,15 @@
+{
+  "libname": "moviepy",
+  "libvers": "2.1.2",
+  "infile": "data/pip/moviepy.txt",
+  "dependencies": {
+    "decorator": "5.2.1",
+    "imageio": "2.37.0",
+    "imageio-ffmpeg": "0.6.0",
+    "numpy": "2.2.5",
+    "pillow": "10.4.0",
+    "proglog": "0.1.11",
+    "python-dotenv": "1.1.0",
+    "tqdm": "4.67.1"
+  }
+}

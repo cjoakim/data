@@ -1,0 +1,6 @@
+{
+  "libname": "astral",
+  "libvers": "3.2",
+  "infile": "data/pip/astral.txt",
+  "dependencies": {}
+}

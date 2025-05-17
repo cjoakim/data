@@ -1,0 +1,6 @@
+{
+  "libname": "pytoml",
+  "libvers": "0.1.21",
+  "infile": "data/pip/pytoml.txt",
+  "dependencies": {}
+}

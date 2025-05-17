@@ -1,0 +1,8 @@
+{
+  "libname": "citeproc-py",
+  "libvers": "0.8.2",
+  "infile": "data/pip/citeproc-py.txt",
+  "dependencies": {
+    "lxml": "5.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "enums",
+  "libvers": "0.0.2",
+  "infile": "data/pip/enums.txt",
+  "dependencies": {}
+}

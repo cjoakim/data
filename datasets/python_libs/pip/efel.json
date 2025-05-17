@@ -1,0 +1,28 @@
+{
+  "libname": "efel",
+  "libvers": "5.7.17",
+  "infile": "data/pip/efel.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "h5py": "3.13.0",
+    "hdmf": "4.0.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "neo": "0.14.1",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "pynwb": "3.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "quantities": "0.16.2",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

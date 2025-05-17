@@ -1,0 +1,8 @@
+{
+  "libname": "proxy-protocol",
+  "libvers": "0.11.3",
+  "infile": "data/pip/proxy-protocol.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

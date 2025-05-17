@@ -1,0 +1,29 @@
+{
+  "libname": "pins",
+  "libvers": "0.8.7",
+  "infile": "data/pip/pins.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "fsspec": "2025.3.2",
+    "humanize": "4.12.3",
+    "idna": "3.10",
+    "importlib-metadata": "8.7.0",
+    "importlib-resources": "6.5.2",
+    "jinja2": "3.1.6",
+    "joblib": "1.5.0",
+    "markupsafe": "3.0.2",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "tzdata": "2025.2",
+    "urllib3": "2.4.0",
+    "xxhash": "3.5.0",
+    "zipp": "3.21.0"
+  }
+}

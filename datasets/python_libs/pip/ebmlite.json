@@ -1,0 +1,6 @@
+{
+  "libname": "ebmlite",
+  "libvers": "3.3.1",
+  "infile": "data/pip/ebmlite.txt",
+  "dependencies": {}
+}

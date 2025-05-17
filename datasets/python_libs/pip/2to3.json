@@ -1,0 +1,6 @@
+{
+  "libname": "2to3",
+  "libvers": "1.0",
+  "infile": "data/pip/2to3.txt",
+  "dependencies": {}
+}

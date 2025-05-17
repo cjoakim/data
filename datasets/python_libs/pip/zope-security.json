@@ -1,0 +1,15 @@
+{
+  "libname": "zope-security",
+  "libvers": "7.3",
+  "infile": "data/pip/zope-security.txt",
+  "dependencies": {
+    "zope-component": "6.0",
+    "zope-event": "5.0",
+    "zope-hookable": "7.0",
+    "zope-i18nmessageid": "7.0",
+    "zope-interface": "7.2",
+    "zope-location": "5.1",
+    "zope-proxy": "6.1",
+    "zope-schema": "7.0.1"
+  }
+}

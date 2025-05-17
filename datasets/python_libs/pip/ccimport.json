@@ -1,0 +1,14 @@
+{
+  "libname": "ccimport",
+  "libvers": "0.4.4",
+  "infile": "data/pip/ccimport.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "ninja": "1.11.1.4",
+    "pybind11": "2.13.6",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

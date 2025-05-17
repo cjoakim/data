@@ -1,0 +1,6 @@
+{
+  "libname": "winkerberos",
+  "libvers": "0.12.2",
+  "infile": "data/pip/winkerberos.txt",
+  "dependencies": {}
+}

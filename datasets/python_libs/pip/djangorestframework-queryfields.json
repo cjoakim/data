@@ -1,0 +1,6 @@
+{
+  "libname": "djangorestframework-queryfields",
+  "libvers": "1.1.0",
+  "infile": "data/pip/djangorestframework-queryfields.txt",
+  "dependencies": {}
+}

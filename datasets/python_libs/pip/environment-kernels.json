@@ -1,0 +1,6 @@
+{
+  "libname": "environment-kernels",
+  "libvers": "1.2.0",
+  "infile": "data/pip/environment-kernels.txt",
+  "dependencies": {}
+}

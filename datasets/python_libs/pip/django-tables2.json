@@ -1,0 +1,10 @@
+{
+  "libname": "django-tables2",
+  "libvers": "2.7.5",
+  "infile": "data/pip/django-tables2.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "sqlparse": "0.5.3"
+  }
+}

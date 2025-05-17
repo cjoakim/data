@@ -1,0 +1,8 @@
+{
+  "libname": "feedgenerator",
+  "libvers": "2.1.0",
+  "infile": "data/pip/feedgenerator.txt",
+  "dependencies": {
+    "pytz": "2025.2"
+  }
+}

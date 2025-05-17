@@ -1,0 +1,22 @@
+{
+  "libname": "gruut",
+  "libvers": "2.4.0",
+  "infile": "data/pip/gruut.txt",
+  "dependencies": {
+    "babel": "2.17.0",
+    "dateparser": "1.1.8",
+    "docopt": "0.6.2",
+    "gruut-ipa": "0.13.0",
+    "gruut-lang-en": "2.0.1",
+    "jsonlines": "1.2.0",
+    "networkx": "3.4.2",
+    "num2words": "0.5.14",
+    "numpy": "2.2.5",
+    "python-crfsuite": "0.9.11",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "regex": "2024.11.6",
+    "six": "1.17.0",
+    "tzlocal": "5.3.1"
+  }
+}

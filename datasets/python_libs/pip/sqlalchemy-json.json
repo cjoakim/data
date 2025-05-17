@@ -1,0 +1,9 @@
+{
+  "libname": "sqlalchemy-json",
+  "libvers": "0.7.0",
+  "infile": "data/pip/sqlalchemy-json.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

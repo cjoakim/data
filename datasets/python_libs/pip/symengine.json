@@ -1,0 +1,6 @@
+{
+  "libname": "symengine",
+  "libvers": "0.14.1",
+  "infile": "data/pip/symengine.txt",
+  "dependencies": {}
+}

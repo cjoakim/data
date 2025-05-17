@@ -1,0 +1,9 @@
+{
+  "libname": "torch-complex",
+  "libvers": "0.4.4",
+  "infile": "data/pip/torch-complex.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0"
+  }
+}

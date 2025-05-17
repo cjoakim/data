@@ -1,0 +1,8 @@
+{
+  "libname": "iab-tcf",
+  "libvers": "0.2.2",
+  "infile": "data/pip/iab-tcf.txt",
+  "dependencies": {
+    "bitarray-hardbyte": "2.3.8"
+  }
+}

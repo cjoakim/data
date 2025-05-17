@@ -1,0 +1,6 @@
+{
+  "libname": "xlwt",
+  "libvers": "1.3.0",
+  "infile": "data/pip/xlwt.txt",
+  "dependencies": {}
+}

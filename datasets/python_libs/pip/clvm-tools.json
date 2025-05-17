@@ -1,0 +1,13 @@
+{
+  "libname": "clvm-tools",
+  "libvers": "0.4.10",
+  "infile": "data/pip/clvm-tools.txt",
+  "dependencies": {
+    "chia-rs": "0.22.0",
+    "clvm": "0.9.12",
+    "clvm-tools-rs": "0.2.0",
+    "importlib-metadata": "7.2.1",
+    "typing-extensions": "4.13.2",
+    "zipp": "3.21.0"
+  }
+}

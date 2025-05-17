@@ -1,0 +1,6 @@
+{
+  "libname": "pylru",
+  "libvers": "1.2.1",
+  "infile": "data/pip/pylru.txt",
+  "dependencies": {}
+}

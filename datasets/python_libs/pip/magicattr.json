@@ -1,0 +1,6 @@
+{
+  "libname": "magicattr",
+  "libvers": "0.1.6",
+  "infile": "data/pip/magicattr.txt",
+  "dependencies": {}
+}

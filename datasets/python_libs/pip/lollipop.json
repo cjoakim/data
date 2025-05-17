@@ -1,0 +1,6 @@
+{
+  "libname": "lollipop",
+  "libvers": "1.1.8",
+  "infile": "data/pip/lollipop.txt",
+  "dependencies": {}
+}

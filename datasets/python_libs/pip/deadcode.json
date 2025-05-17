@@ -1,0 +1,8 @@
+{
+  "libname": "deadcode",
+  "libvers": "2.4.1",
+  "infile": "data/pip/deadcode.txt",
+  "dependencies": {
+    "tomli": "2.2.1"
+  }
+}

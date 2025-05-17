@@ -1,0 +1,6 @@
+{
+  "libname": "queuelib",
+  "libvers": "1.8.0",
+  "infile": "data/pip/queuelib.txt",
+  "dependencies": {}
+}

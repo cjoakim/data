@@ -1,0 +1,10 @@
+{
+  "libname": "thriftpy2",
+  "libvers": "0.5.2",
+  "infile": "data/pip/thriftpy2.txt",
+  "dependencies": {
+    "cython": "3.0.12",
+    "ply": "3.11",
+    "six": "1.17.0"
+  }
+}

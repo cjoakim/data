@@ -1,0 +1,16 @@
+{
+  "libname": "chex",
+  "libvers": "0.1.89",
+  "infile": "data/pip/chex.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "jax": "0.6.0",
+    "jaxlib": "0.6.0",
+    "ml-dtypes": "0.5.1",
+    "numpy": "2.2.5",
+    "opt-einsum": "3.4.0",
+    "scipy": "1.15.2",
+    "toolz": "1.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

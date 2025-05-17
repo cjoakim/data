@@ -1,0 +1,10 @@
+{
+  "libname": "pytools",
+  "libvers": "2025.1.3",
+  "infile": "data/pip/pytools.txt",
+  "dependencies": {
+    "platformdirs": "4.3.7",
+    "siphash24": "1.7",
+    "typing-extensions": "4.13.2"
+  }
+}

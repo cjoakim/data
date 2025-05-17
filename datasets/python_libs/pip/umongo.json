@@ -1,0 +1,10 @@
+{
+  "libname": "umongo",
+  "libvers": "3.1.0",
+  "infile": "data/pip/umongo.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "marshmallow": "4.0.0",
+    "pymongo": "4.12.1"
+  }
+}

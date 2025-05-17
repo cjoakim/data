@@ -1,0 +1,12 @@
+{
+  "libname": "dcor",
+  "libvers": "0.6",
+  "infile": "data/pip/dcor.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "llvmlite": "0.44.0",
+    "numba": "0.61.2",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

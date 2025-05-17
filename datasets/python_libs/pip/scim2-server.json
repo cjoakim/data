@@ -1,0 +1,20 @@
+{
+  "libname": "scim2-server",
+  "libvers": "0.1.5",
+  "infile": "data/pip/scim2-server.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "dnspython": "2.7.0",
+    "email-validator": "2.2.0",
+    "idna": "3.10",
+    "markupsafe": "3.0.2",
+    "pydantic[email]": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "scim2-filter-parser": "0.7.0",
+    "scim2-models": "0.3.2",
+    "sly": "0.5",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "werkzeug": "3.1.3"
+  }
+}

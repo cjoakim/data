@@ -1,0 +1,8 @@
+{
+  "libname": "apscheduler",
+  "libvers": "3.11.0",
+  "infile": "data/pip/apscheduler.txt",
+  "dependencies": {
+    "tzlocal": "5.3.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "portalocker",
+  "libvers": "3.1.1",
+  "infile": "data/pip/portalocker.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,21 @@
+{
+  "libname": "pyramid-debugtoolbar",
+  "libvers": "4.12.1",
+  "infile": "data/pip/pyramid-debugtoolbar.txt",
+  "dependencies": {
+    "hupper": "1.12.1",
+    "mako": "1.3.10",
+    "markupsafe": "3.0.2",
+    "pastedeploy": "3.1.0",
+    "plaster": "1.1.2",
+    "plaster-pastedeploy": "1.0.1",
+    "pygments": "2.19.1",
+    "pyramid": "2.0.2",
+    "pyramid-mako": "1.1.0",
+    "translationstring": "1.4",
+    "venusian": "3.1.1",
+    "webob": "1.8.9",
+    "zope-deprecation": "5.1",
+    "zope-interface": "7.2"
+  }
+}

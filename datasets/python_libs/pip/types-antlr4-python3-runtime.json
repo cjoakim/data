@@ -1,0 +1,6 @@
+{
+  "libname": "types-antlr4-python3-runtime",
+  "libvers": "4.13.0.20240519",
+  "infile": "data/pip/types-antlr4-python3-runtime.txt",
+  "dependencies": {}
+}

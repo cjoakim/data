@@ -1,0 +1,12 @@
+{
+  "libname": "pyctcdecode",
+  "libvers": "0.5.0",
+  "infile": "data/pip/pyctcdecode.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "hypothesis": "6.131.14",
+    "numpy": "1.26.4",
+    "pygtrie": "2.5.0",
+    "sortedcontainers": "2.4.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "libname": "bioc",
+  "libvers": "2.1",
+  "infile": "data/pip/bioc.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "docopt": "0.6.2",
+    "intervaltree": "3.1.0",
+    "jsonlines": "4.0.0",
+    "lxml": "5.4.0",
+    "sortedcontainers": "2.4.0",
+    "tqdm": "4.67.1"
+  }
+}

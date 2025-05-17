@@ -1,0 +1,13 @@
+{
+  "libname": "plum-dispatch",
+  "libvers": "2.5.7",
+  "infile": "data/pip/plum-dispatch.txt",
+  "dependencies": {
+    "beartype": "0.20.2",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "pygments": "2.19.1",
+    "rich": "14.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

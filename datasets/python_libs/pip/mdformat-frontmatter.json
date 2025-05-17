@@ -1,0 +1,13 @@
+{
+  "libname": "mdformat-frontmatter",
+  "libvers": "2.0.8",
+  "infile": "data/pip/mdformat-frontmatter.txt",
+  "dependencies": {
+    "markdown-it-py": "3.0.0",
+    "mdformat": "0.7.22",
+    "mdit-py-plugins": "0.4.2",
+    "mdurl": "0.1.2",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12"
+  }
+}

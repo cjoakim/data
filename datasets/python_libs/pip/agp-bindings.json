@@ -1,0 +1,6 @@
+{
+  "libname": "agp-bindings",
+  "libvers": "0.3.0",
+  "infile": "data/pip/agp-bindings.txt",
+  "dependencies": {}
+}

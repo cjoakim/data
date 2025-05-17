@@ -1,0 +1,9 @@
+{
+  "libname": "envtpl",
+  "libvers": "0.7.2",
+  "infile": "data/pip/envtpl.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

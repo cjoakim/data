@@ -1,0 +1,6 @@
+{
+  "libname": "tree-sitter-go",
+  "libvers": "0.23.4",
+  "infile": "data/pip/tree-sitter-go.txt",
+  "dependencies": {}
+}

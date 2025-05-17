@@ -1,0 +1,12 @@
+{
+  "libname": "bleak-retry-connector",
+  "libvers": "3.10.0",
+  "infile": "data/pip/bleak-retry-connector.txt",
+  "dependencies": {
+    "bleak": "0.22.3",
+    "pyobjc-core": "10.3.2",
+    "pyobjc-framework-cocoa": "10.3.2",
+    "pyobjc-framework-corebluetooth": "10.3.2",
+    "pyobjc-framework-libdispatch": "10.3.2"
+  }
+}

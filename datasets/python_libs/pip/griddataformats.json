@@ -1,0 +1,10 @@
+{
+  "libname": "griddataformats",
+  "libvers": "1.0.2",
+  "infile": "data/pip/griddataformats.txt",
+  "dependencies": {
+    "mrcfile": "1.5.4",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

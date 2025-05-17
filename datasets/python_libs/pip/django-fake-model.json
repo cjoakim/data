@@ -1,0 +1,6 @@
+{
+  "libname": "django-fake-model",
+  "libvers": "0.1.4",
+  "infile": "data/pip/django-fake-model.txt",
+  "dependencies": {}
+}

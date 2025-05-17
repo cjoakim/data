@@ -1,0 +1,9 @@
+{
+  "libname": "pastescript",
+  "libvers": "3.7.0",
+  "infile": "data/pip/pastescript.txt",
+  "dependencies": {
+    "paste": "3.10.1",
+    "pastedeploy": "3.1.0"
+  }
+}

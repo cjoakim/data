@@ -1,0 +1,6 @@
+{
+  "libname": "circuitbreaker",
+  "libvers": "2.1.3",
+  "infile": "data/pip/circuitbreaker.txt",
+  "dependencies": {}
+}

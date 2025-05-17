@@ -1,0 +1,8 @@
+{
+  "libname": "surrealist",
+  "libvers": "1.1.2",
+  "infile": "data/pip/surrealist.txt",
+  "dependencies": {
+    "websocket-client": "1.8.0"
+  }
+}

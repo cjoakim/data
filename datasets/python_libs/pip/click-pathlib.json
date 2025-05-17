@@ -1,0 +1,8 @@
+{
+  "libname": "click-pathlib",
+  "libvers": "2020.3.13.0",
+  "infile": "data/pip/click-pathlib.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

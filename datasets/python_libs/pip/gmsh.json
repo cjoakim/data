@@ -1,0 +1,6 @@
+{
+  "libname": "gmsh",
+  "libvers": "4.13.1",
+  "infile": "data/pip/gmsh.txt",
+  "dependencies": {}
+}

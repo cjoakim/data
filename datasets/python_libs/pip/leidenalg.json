@@ -1,0 +1,9 @@
+{
+  "libname": "leidenalg",
+  "libvers": "0.10.2",
+  "infile": "data/pip/leidenalg.txt",
+  "dependencies": {
+    "igraph": "0.11.8",
+    "texttable": "1.7.0"
+  }
+}

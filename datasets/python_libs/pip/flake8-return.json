@@ -1,0 +1,8 @@
+{
+  "libname": "flake8-return",
+  "libvers": "1.2.0",
+  "infile": "data/pip/flake8-return.txt",
+  "dependencies": {
+    "flake8-plugin-utils": "1.3.3"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "django-robots",
+  "libvers": "6.1",
+  "infile": "data/pip/django-robots.txt",
+  "dependencies": {}
+}

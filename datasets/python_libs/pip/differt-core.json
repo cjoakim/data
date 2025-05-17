@@ -1,0 +1,8 @@
+{
+  "libname": "differt-core",
+  "libvers": "0.0.37",
+  "infile": "data/pip/differt-core.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

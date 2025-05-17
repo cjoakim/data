@@ -1,0 +1,6 @@
+{
+  "libname": "django-bulk-sync",
+  "libvers": "3.3.0",
+  "infile": "data/pip/django-bulk-sync.txt",
+  "dependencies": {}
+}

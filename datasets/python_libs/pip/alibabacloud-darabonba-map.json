@@ -1,0 +1,6 @@
+{
+  "libname": "alibabacloud-darabonba-map",
+  "libvers": "0.0.1",
+  "infile": "data/pip/alibabacloud-darabonba-map.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,19 @@
+{
+  "libname": "large-image-source-multi",
+  "libvers": "1.32.3",
+  "infile": "data/pip/large-image-source-multi.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "cachetools": "5.5.2",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "large-image": "1.32.3",
+    "numpy": "2.2.5",
+    "palettable": "3.3.3",
+    "pillow": "11.2.1",
+    "pyyaml": "6.0.2",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2"
+  }
+}

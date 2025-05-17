@@ -1,0 +1,6 @@
+{
+  "libname": "spinners",
+  "libvers": "0.0.24",
+  "infile": "data/pip/spinners.txt",
+  "dependencies": {}
+}

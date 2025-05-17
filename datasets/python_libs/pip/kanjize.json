@@ -1,0 +1,6 @@
+{
+  "libname": "kanjize",
+  "libvers": "1.6.0",
+  "infile": "data/pip/kanjize.txt",
+  "dependencies": {}
+}

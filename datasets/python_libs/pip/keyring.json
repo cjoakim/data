@@ -1,0 +1,11 @@
+{
+  "libname": "keyring",
+  "libvers": "25.6.0",
+  "infile": "data/pip/keyring.txt",
+  "dependencies": {
+    "jaraco-classes": "3.4.0",
+    "jaraco-context": "6.0.1",
+    "jaraco-functools": "4.1.0",
+    "more-itertools": "10.7.0"
+  }
+}

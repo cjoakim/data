@@ -1,0 +1,8 @@
+{
+  "libname": "python-snappy",
+  "libvers": "0.7.3",
+  "infile": "data/pip/python-snappy.txt",
+  "dependencies": {
+    "cramjam": "2.10.0"
+  }
+}

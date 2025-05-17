@@ -1,0 +1,9 @@
+{
+  "libname": "pystoi",
+  "libvers": "0.4.1",
+  "infile": "data/pip/pystoi.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

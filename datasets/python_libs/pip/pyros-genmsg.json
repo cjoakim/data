@@ -1,0 +1,6 @@
+{
+  "libname": "pyros-genmsg",
+  "libvers": "0.5.8",
+  "infile": "data/pip/pyros-genmsg.txt",
+  "dependencies": {}
+}

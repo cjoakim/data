@@ -1,0 +1,6 @@
+{
+  "libname": "amplitude-analytics",
+  "libvers": "1.1.5",
+  "infile": "data/pip/amplitude-analytics.txt",
+  "dependencies": {}
+}

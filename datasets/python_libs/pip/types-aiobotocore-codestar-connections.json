@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-codestar-connections",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-codestar-connections.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "marshmallow",
+  "libvers": "4.0.0",
+  "infile": "data/pip/marshmallow.txt",
+  "dependencies": {}
+}

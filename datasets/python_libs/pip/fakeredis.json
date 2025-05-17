@@ -1,0 +1,9 @@
+{
+  "libname": "fakeredis",
+  "libvers": "2.29.0",
+  "infile": "data/pip/fakeredis.txt",
+  "dependencies": {
+    "redis": "6.0.0",
+    "sortedcontainers": "2.4.0"
+  }
+}

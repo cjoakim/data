@@ -1,0 +1,9 @@
+{
+  "libname": "airbyte-protocol-models",
+  "libvers": "0.15.0",
+  "infile": "data/pip/airbyte-protocol-models.txt",
+  "dependencies": {
+    "pydantic": "1.10.22",
+    "typing-extensions": "4.13.2"
+  }
+}

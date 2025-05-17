@@ -1,0 +1,6 @@
+{
+  "libname": "openqasm3",
+  "libvers": "1.0.1",
+  "infile": "data/pip/openqasm3.txt",
+  "dependencies": {}
+}

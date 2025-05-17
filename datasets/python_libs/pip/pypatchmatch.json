@@ -1,0 +1,10 @@
+{
+  "libname": "pypatchmatch",
+  "libvers": "1.0.2",
+  "infile": "data/pip/pypatchmatch.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pillow": "11.2.1",
+    "tqdm": "4.67.1"
+  }
+}

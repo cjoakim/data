@@ -1,0 +1,6 @@
+{
+  "libname": "pytzdata",
+  "libvers": "2020.1",
+  "infile": "data/pip/pytzdata.txt",
+  "dependencies": {}
+}

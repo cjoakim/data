@@ -1,0 +1,6 @@
+{
+  "libname": "pyreadline3",
+  "libvers": "3.5.4",
+  "infile": "data/pip/pyreadline3.txt",
+  "dependencies": {}
+}

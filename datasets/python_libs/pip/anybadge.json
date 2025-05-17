@@ -1,0 +1,8 @@
+{
+  "libname": "anybadge",
+  "libvers": "1.16.0",
+  "infile": "data/pip/anybadge.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "libname": "coala",
+  "libvers": "0.11.0",
+  "infile": "data/pip/coala.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "coala-utils": "0.6.7",
+    "colorama": "0.3.9",
+    "colorlog": "2.10.0",
+    "dependency-management": "0.4.0",
+    "idna": "3.10",
+    "libclang-py3": "3.4.0",
+    "pygments": "2.19.1",
+    "pyprint": "0.2.6",
+    "requests": "2.32.3",
+    "sarge": "0.1.7.post1",
+    "termcolor": "1.1.0",
+    "unidiff": "0.5.5",
+    "urllib3": "2.4.0"
+  }
+}

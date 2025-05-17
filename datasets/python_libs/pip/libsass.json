@@ -1,0 +1,6 @@
+{
+  "libname": "libsass",
+  "libvers": "0.23.0",
+  "infile": "data/pip/libsass.txt",
+  "dependencies": {}
+}

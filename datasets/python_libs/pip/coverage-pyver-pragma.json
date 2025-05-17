@@ -1,0 +1,13 @@
+{
+  "libname": "coverage-pyver-pragma",
+  "libvers": "0.3.3",
+  "infile": "data/pip/coverage-pyver-pragma.txt",
+  "dependencies": {
+    "coverage": "7.8.0",
+    "domdf-python-tools": "3.10.0",
+    "natsort": "8.4.0",
+    "packaging": "25.0",
+    "pyparsing": "3.2.3",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "moz-sql-parser",
+  "libvers": "4.40.21126",
+  "infile": "data/pip/moz-sql-parser.txt",
+  "dependencies": {
+    "mo-dots": "4.22.21108",
+    "mo-future": "3.147.20327",
+    "mo-imports": "3.149.20327",
+    "mo-kwargs": "4.22.21108",
+    "mo-logs": "4.23.21108"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "neobolt",
+  "libvers": "1.7.17",
+  "infile": "data/pip/neobolt.txt",
+  "dependencies": {}
+}

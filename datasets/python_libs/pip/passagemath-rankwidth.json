@@ -1,0 +1,14 @@
+{
+  "libname": "passagemath-rankwidth",
+  "libvers": "10.5.30",
+  "infile": "data/pip/passagemath-rankwidth.txt",
+  "dependencies": {
+    "cysignals": "1.12.0rc2",
+    "cython": "3.0.12",
+    "gmpy2": "2.2.1",
+    "memory-allocator": "0.1.4",
+    "passagemath-categories": "10.5.30",
+    "passagemath-graphs": "10.5.30",
+    "passagemath-objects": "10.5.30"
+  }
+}

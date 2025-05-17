@@ -1,0 +1,9 @@
+{
+  "libname": "pynag",
+  "libvers": "1.1.2",
+  "infile": "data/pip/pynag.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "pep8-naming",
+  "libvers": "0.15.1",
+  "infile": "data/pip/pep8-naming.txt",
+  "dependencies": {
+    "flake8": "7.2.0",
+    "mccabe": "0.7.0",
+    "pycodestyle": "2.13.0",
+    "pyflakes": "3.3.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "token-bucket",
+  "libvers": "0.3.0",
+  "infile": "data/pip/token-bucket.txt",
+  "dependencies": {}
+}

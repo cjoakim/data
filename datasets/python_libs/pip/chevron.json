@@ -1,0 +1,6 @@
+{
+  "libname": "chevron",
+  "libvers": "0.14.0",
+  "infile": "data/pip/chevron.txt",
+  "dependencies": {}
+}

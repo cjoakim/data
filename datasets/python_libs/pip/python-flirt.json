@@ -1,0 +1,6 @@
+{
+  "libname": "python-flirt",
+  "libvers": "0.9.7",
+  "infile": "data/pip/python-flirt.txt",
+  "dependencies": {}
+}

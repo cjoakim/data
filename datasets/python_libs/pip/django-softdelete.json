@@ -1,0 +1,6 @@
+{
+  "libname": "django-softdelete",
+  "libvers": "0.11.5",
+  "infile": "data/pip/django-softdelete.txt",
+  "dependencies": {}
+}

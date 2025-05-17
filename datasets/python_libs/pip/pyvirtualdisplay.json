@@ -1,0 +1,6 @@
+{
+  "libname": "pyvirtualdisplay",
+  "libvers": "3.0",
+  "infile": "data/pip/pyvirtualdisplay.txt",
+  "dependencies": {}
+}

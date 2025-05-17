@@ -1,0 +1,6 @@
+{
+  "libname": "rest-framework-simplejwt",
+  "libvers": "0.0.2",
+  "infile": "data/pip/rest-framework-simplejwt.txt",
+  "dependencies": {}
+}

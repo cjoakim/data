@@ -1,0 +1,6 @@
+{
+  "libname": "schedule",
+  "libvers": "1.2.2",
+  "infile": "data/pip/schedule.txt",
+  "dependencies": {}
+}

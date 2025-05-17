@@ -1,0 +1,6 @@
+{
+  "libname": "azure-common",
+  "libvers": "1.1.28",
+  "infile": "data/pip/azure-common.txt",
+  "dependencies": {}
+}

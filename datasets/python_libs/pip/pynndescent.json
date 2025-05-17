@@ -1,0 +1,14 @@
+{
+  "libname": "pynndescent",
+  "libvers": "0.5.13",
+  "infile": "data/pip/pynndescent.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "llvmlite": "0.44.0",
+    "numba": "0.61.2",
+    "numpy": "2.2.5",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "threadpoolctl": "3.6.0"
+  }
+}

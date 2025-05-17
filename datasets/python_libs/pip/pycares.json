@@ -1,0 +1,9 @@
+{
+  "libname": "pycares",
+  "libvers": "4.8.0",
+  "infile": "data/pip/pycares.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

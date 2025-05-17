@@ -1,0 +1,9 @@
+{
+  "libname": "stream-unzip",
+  "libvers": "0.0.99",
+  "infile": "data/pip/stream-unzip.txt",
+  "dependencies": {
+    "pycryptodome": "3.22.0",
+    "stream-inflate": "0.0.42"
+  }
+}

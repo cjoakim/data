@@ -1,0 +1,8 @@
+{
+  "libname": "robotframework-whitelibrary",
+  "libvers": "1.6.0",
+  "infile": "data/pip/robotframework-whitelibrary.txt",
+  "dependencies": {
+    "robotframework": "7.2.2"
+  }
+}

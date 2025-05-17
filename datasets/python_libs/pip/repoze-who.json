@@ -1,0 +1,9 @@
+{
+  "libname": "repoze-who",
+  "libvers": "3.1.0",
+  "infile": "data/pip/repoze-who.txt",
+  "dependencies": {
+    "webob": "1.8.9",
+    "zope-interface": "7.2"
+  }
+}

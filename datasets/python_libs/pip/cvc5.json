@@ -1,0 +1,6 @@
+{
+  "libname": "cvc5",
+  "libvers": "1.2.1",
+  "infile": "data/pip/cvc5.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "ttp-templates",
+  "libvers": "0.3.7",
+  "infile": "data/pip/ttp-templates.txt",
+  "dependencies": {
+    "ttp": "0.9.5"
+  }
+}

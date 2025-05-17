@@ -1,0 +1,6 @@
+{
+  "libname": "crc",
+  "libvers": "7.1.0",
+  "infile": "data/pip/crc.txt",
+  "dependencies": {}
+}

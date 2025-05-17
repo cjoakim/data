@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-cusparselt-cu12",
+  "libvers": "0.7.1",
+  "infile": "data/pip/nvidia-cusparselt-cu12.txt",
+  "dependencies": {}
+}

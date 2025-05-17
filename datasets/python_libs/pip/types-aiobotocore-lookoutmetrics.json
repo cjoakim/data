@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-lookoutmetrics",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-lookoutmetrics.txt",
+  "dependencies": {}
+}

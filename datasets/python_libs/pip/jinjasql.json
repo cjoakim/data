@@ -1,0 +1,9 @@
+{
+  "libname": "jinjasql",
+  "libvers": "0.1.8",
+  "infile": "data/pip/jinjasql.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

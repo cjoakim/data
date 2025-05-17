@@ -1,0 +1,6 @@
+{
+  "libname": "restrictedpython",
+  "libvers": "8.0",
+  "infile": "data/pip/restrictedpython.txt",
+  "dependencies": {}
+}

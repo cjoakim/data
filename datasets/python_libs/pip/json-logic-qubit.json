@@ -1,0 +1,8 @@
+{
+  "libname": "json-logic-qubit",
+  "libvers": "0.9.1",
+  "infile": "data/pip/json-logic-qubit.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

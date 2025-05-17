@@ -1,0 +1,6 @@
+{
+  "libname": "pydsdl",
+  "libvers": "1.22.2",
+  "infile": "data/pip/pydsdl.txt",
+  "dependencies": {}
+}

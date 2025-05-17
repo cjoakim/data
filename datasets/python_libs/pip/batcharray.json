@@ -1,0 +1,9 @@
+{
+  "libname": "batcharray",
+  "libvers": "0.1.0",
+  "infile": "data/pip/batcharray.txt",
+  "dependencies": {
+    "coola": "0.8.7",
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "wimpy",
+  "libvers": "0.6",
+  "infile": "data/pip/wimpy.txt",
+  "dependencies": {}
+}

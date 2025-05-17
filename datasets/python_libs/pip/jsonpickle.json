@@ -1,0 +1,6 @@
+{
+  "libname": "jsonpickle",
+  "libvers": "4.0.5",
+  "infile": "data/pip/jsonpickle.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "typeid-python",
+  "libvers": "0.3.2",
+  "infile": "data/pip/typeid-python.txt",
+  "dependencies": {
+    "uuid6": "2024.7.10"
+  }
+}

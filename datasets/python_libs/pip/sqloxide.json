@@ -1,0 +1,6 @@
+{
+  "libname": "sqloxide",
+  "libvers": "0.1.54",
+  "infile": "data/pip/sqloxide.txt",
+  "dependencies": {}
+}

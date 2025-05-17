@@ -1,0 +1,14 @@
+{
+  "libname": "sphobjinv",
+  "libvers": "2.3.1.2",
+  "infile": "data/pip/sphobjinv.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2"
+  }
+}

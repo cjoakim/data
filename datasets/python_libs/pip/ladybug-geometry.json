@@ -1,0 +1,6 @@
+{
+  "libname": "ladybug-geometry",
+  "libvers": "1.34.2",
+  "infile": "data/pip/ladybug-geometry.txt",
+  "dependencies": {}
+}

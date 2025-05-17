@@ -1,0 +1,8 @@
+{
+  "libname": "coloredlogs",
+  "libvers": "15.0.1",
+  "infile": "data/pip/coloredlogs.txt",
+  "dependencies": {
+    "humanfriendly": "10.0"
+  }
+}

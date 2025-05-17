@@ -1,0 +1,8 @@
+{
+  "libname": "python-redis-rate-limit",
+  "libvers": "0.0.10",
+  "infile": "data/pip/python-redis-rate-limit.txt",
+  "dependencies": {
+    "redis": "6.0.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "opengeode-io",
+  "libvers": "7.2.0",
+  "infile": "data/pip/opengeode-io.txt",
+  "dependencies": {
+    "opengeode-core": "15.18.0"
+  }
+}

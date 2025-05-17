@@ -1,0 +1,6 @@
+{
+  "libname": "watching-testrunner",
+  "libvers": "1.2.2",
+  "infile": "data/pip/watching-testrunner.txt",
+  "dependencies": {}
+}

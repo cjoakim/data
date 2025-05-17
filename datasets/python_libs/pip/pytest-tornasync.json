@@ -1,0 +1,12 @@
+{
+  "libname": "pytest-tornasync",
+  "libvers": "0.6.0.post2",
+  "infile": "data/pip/pytest-tornasync.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "tornado": "6.4.2"
+  }
+}

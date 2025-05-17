@@ -1,0 +1,11 @@
+{
+  "libname": "wiki-fetch",
+  "libvers": "0.1.1",
+  "infile": "data/pip/wiki-fetch.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "bs4": "0.0.1",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2"
+  }
+}

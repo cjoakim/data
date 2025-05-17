@@ -1,0 +1,6 @@
+{
+  "libname": "defusedxml",
+  "libvers": "0.7.1",
+  "infile": "data/pip/defusedxml.txt",
+  "dependencies": {}
+}

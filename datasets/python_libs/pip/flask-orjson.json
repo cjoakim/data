@@ -1,0 +1,15 @@
+{
+  "libname": "flask-orjson",
+  "libvers": "2.0.0",
+  "infile": "data/pip/flask-orjson.txt",
+  "dependencies": {
+    "blinker": "1.9.0",
+    "click": "8.1.8",
+    "flask": "3.1.0",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "orjson": "3.10.18",
+    "werkzeug": "3.1.3"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "newtools",
+  "libvers": "2.2.489",
+  "infile": "data/pip/newtools.txt",
+  "dependencies": {
+    "json-log-formatter": "1.1.1",
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "reconplogger",
+  "libvers": "4.17.1",
+  "infile": "data/pip/reconplogger.txt",
+  "dependencies": {
+    "python-json-logger": "3.3.0",
+    "pyyaml": "6.0.2"
+  }
+}

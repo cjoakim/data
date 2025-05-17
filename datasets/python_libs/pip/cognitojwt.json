@@ -1,0 +1,15 @@
+{
+  "libname": "cognitojwt",
+  "libvers": "1.4.1",
+  "infile": "data/pip/cognitojwt.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "ecdsa": "0.19.1",
+    "pyasn1": "0.4.8",
+    "pycparser": "2.22",
+    "python-jose[cryptography]": "3.4.0",
+    "rsa": "4.9.1",
+    "six": "1.17.0"
+  }
+}

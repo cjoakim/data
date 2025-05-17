@@ -1,0 +1,15 @@
+{
+  "libname": "internetarchive",
+  "libvers": "5.4.0",
+  "infile": "data/pip/internetarchive.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "jsonpatch": "1.33",
+    "jsonpointer": "3.0.0",
+    "requests": "2.32.3",
+    "tqdm": "4.67.1",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "kazoo",
+  "libvers": "2.10.0",
+  "infile": "data/pip/kazoo.txt",
+  "dependencies": {}
+}

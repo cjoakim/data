@@ -1,0 +1,10 @@
+{
+  "libname": "netapp-lib",
+  "libvers": "2021.6.25",
+  "infile": "data/pip/netapp-lib.txt",
+  "dependencies": {
+    "lxml": "5.4.0",
+    "six": "1.17.0",
+    "xmltodict": "0.14.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "xpinyin",
+  "libvers": "0.7.6",
+  "infile": "data/pip/xpinyin.txt",
+  "dependencies": {}
+}

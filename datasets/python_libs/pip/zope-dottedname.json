@@ -1,0 +1,6 @@
+{
+  "libname": "zope-dottedname",
+  "libvers": "6.0",
+  "infile": "data/pip/zope-dottedname.txt",
+  "dependencies": {}
+}

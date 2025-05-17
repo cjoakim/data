@@ -1,0 +1,13 @@
+{
+  "libname": "getschema",
+  "libvers": "0.2.10",
+  "infile": "data/pip/getschema.txt",
+  "dependencies": {
+    "jsonpath-ng": "1.7.0",
+    "ply": "3.11",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "simplejson": "3.11.1",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "propelauth-fastapi",
+  "libvers": "4.2.6",
+  "infile": "data/pip/propelauth-fastapi.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "propelauth-py": "4.2.6",
+    "pycparser": "2.22",
+    "pyjwt[crypto]": "2.10.1",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

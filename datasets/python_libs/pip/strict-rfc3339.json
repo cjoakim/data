@@ -1,0 +1,6 @@
+{
+  "libname": "strict-rfc3339",
+  "libvers": "0.7",
+  "infile": "data/pip/strict-rfc3339.txt",
+  "dependencies": {}
+}

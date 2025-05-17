@@ -1,0 +1,8 @@
+{
+  "libname": "pytz-deprecation-shim",
+  "libvers": "0.1.0.post0",
+  "infile": "data/pip/pytz-deprecation-shim.txt",
+  "dependencies": {
+    "tzdata": "2025.2"
+  }
+}

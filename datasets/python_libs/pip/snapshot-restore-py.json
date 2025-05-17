@@ -1,0 +1,6 @@
+{
+  "libname": "snapshot-restore-py",
+  "libvers": "1.0.0",
+  "infile": "data/pip/snapshot-restore-py.txt",
+  "dependencies": {}
+}

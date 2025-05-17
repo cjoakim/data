@@ -1,0 +1,9 @@
+{
+  "libname": "vector",
+  "libvers": "1.6.2",
+  "infile": "data/pip/vector.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0"
+  }
+}

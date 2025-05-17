@@ -1,0 +1,6 @@
+{
+  "libname": "easing-functions",
+  "libvers": "1.0.4",
+  "infile": "data/pip/easing-functions.txt",
+  "dependencies": {}
+}

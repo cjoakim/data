@@ -1,0 +1,17 @@
+{
+  "libname": "cdktf",
+  "libvers": "0.20.12",
+  "infile": "data/pip/cdktf.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "cattrs": "24.1.3",
+    "constructs": "10.4.2",
+    "importlib-resources": "6.5.2",
+    "jsii": "1.111.0",
+    "publication": "0.0.3",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "typeguard": "2.13.3",
+    "typing-extensions": "4.13.2"
+  }
+}

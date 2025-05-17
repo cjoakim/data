@@ -1,0 +1,6 @@
+{
+  "libname": "pkginfo2",
+  "libvers": "30.0.0",
+  "infile": "data/pip/pkginfo2.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "provide-dir",
+  "libvers": "0.1.2",
+  "infile": "data/pip/provide-dir.txt",
+  "dependencies": {
+    "colorama": "0.4.6"
+  }
+}

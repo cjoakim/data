@@ -1,0 +1,24 @@
+{
+  "libname": "gsheetsdb",
+  "libvers": "0.1.13.1",
+  "infile": "data/pip/gsheetsdb.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "google-auth": "2.40.1",
+    "idna": "3.10",
+    "mo-dots": "4.22.21108",
+    "mo-future": "3.147.20327",
+    "mo-imports": "3.149.20327",
+    "mo-kwargs": "4.22.21108",
+    "mo-logs": "4.23.21108",
+    "moz-sql-parser": "4.40.21126",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

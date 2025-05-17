@@ -1,0 +1,8 @@
+{
+  "libname": "metatrader5",
+  "libvers": "5.0.4993",
+  "infile": "data/pip/metatrader5.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

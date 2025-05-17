@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-athena",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-athena.txt",
+  "dependencies": {}
+}

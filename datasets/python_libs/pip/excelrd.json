@@ -1,0 +1,6 @@
+{
+  "libname": "excelrd",
+  "libvers": "3.0.0",
+  "infile": "data/pip/excelrd.txt",
+  "dependencies": {}
+}

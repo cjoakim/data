@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-worklink",
+  "libvers": "2.15.1",
+  "infile": "data/pip/types-aiobotocore-worklink.txt",
+  "dependencies": {}
+}

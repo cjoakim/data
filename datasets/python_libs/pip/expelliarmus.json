@@ -1,0 +1,8 @@
+{
+  "libname": "expelliarmus",
+  "libvers": "1.1.12",
+  "infile": "data/pip/expelliarmus.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

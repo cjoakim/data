@@ -1,0 +1,13 @@
+{
+  "libname": "django-bootstrap4",
+  "libvers": "25.1",
+  "infile": "data/pip/django-bootstrap4.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "beautifulsoup4": "4.13.4",
+    "django": "5.2",
+    "soupsieve": "2.7",
+    "sqlparse": "0.5.3",
+    "typing-extensions": "4.13.2"
+  }
+}

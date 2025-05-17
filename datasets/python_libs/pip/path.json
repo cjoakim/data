@@ -1,0 +1,6 @@
+{
+  "libname": "path",
+  "libvers": "17.1.0",
+  "infile": "data/pip/path.txt",
+  "dependencies": {}
+}

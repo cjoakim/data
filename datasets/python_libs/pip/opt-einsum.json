@@ -1,0 +1,6 @@
+{
+  "libname": "opt-einsum",
+  "libvers": "3.4.0",
+  "infile": "data/pip/opt-einsum.txt",
+  "dependencies": {}
+}

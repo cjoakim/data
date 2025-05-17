@@ -1,0 +1,13 @@
+{
+  "libname": "pims",
+  "libvers": "0.7",
+  "infile": "data/pip/pims.txt",
+  "dependencies": {
+    "imageio": "2.37.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "slicerator": "1.1.0",
+    "tifffile": "2025.3.30"
+  }
+}

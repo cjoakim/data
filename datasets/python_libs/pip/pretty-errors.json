@@ -1,0 +1,8 @@
+{
+  "libname": "pretty-errors",
+  "libvers": "1.2.25",
+  "infile": "data/pip/pretty-errors.txt",
+  "dependencies": {
+    "colorama": "0.4.6"
+  }
+}

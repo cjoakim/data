@@ -1,0 +1,32 @@
+{
+  "libname": "singer-sdk",
+  "libvers": "0.46.0",
+  "infile": "data/pip/singer-sdk.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "backoff": "2.2.1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "fsspec": "2025.3.2",
+    "idna": "3.10",
+    "inflection": "0.5.1",
+    "joblib": "1.5.0",
+    "jsonpath-ng": "1.7.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "packaging": "25.0",
+    "ply": "3.11",
+    "python-dotenv": "1.1.0",
+    "pyyaml": "6.0.2",
+    "referencing": "0.36.2",
+    "requests": "2.32.3",
+    "rpds-py": "0.24.0",
+    "simpleeval": "1.0.3",
+    "simplejson": "3.20.1",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2",
+    "universal-pathlib": "0.2.6",
+    "urllib3": "2.4.0"
+  }
+}

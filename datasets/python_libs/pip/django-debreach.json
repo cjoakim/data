@@ -1,0 +1,6 @@
+{
+  "libname": "django-debreach",
+  "libvers": "2.1.0",
+  "infile": "data/pip/django-debreach.txt",
+  "dependencies": {}
+}

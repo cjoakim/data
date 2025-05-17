@@ -1,0 +1,32 @@
+{
+  "libname": "cog",
+  "libvers": "0.14.8",
+  "infile": "data/pip/cog.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "anyio": "4.9.0",
+    "attrs": "23.2.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "fastapi": "0.115.12",
+    "h11": "0.16.0",
+    "httptools": "0.6.4",
+    "idna": "3.10",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "python-dotenv": "1.1.0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "sniffio": "1.3.1",
+    "starlette": "0.46.2",
+    "structlog": "24.4.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "urllib3": "2.4.0",
+    "uvicorn[standard]": "0.34.2",
+    "uvloop": "0.21.0",
+    "watchfiles": "1.0.5",
+    "websockets": "15.0.1"
+  }
+}

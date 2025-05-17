@@ -1,0 +1,6 @@
+{
+  "libname": "apig-wsgi",
+  "libvers": "2.19.0",
+  "infile": "data/pip/apig-wsgi.txt",
+  "dependencies": {}
+}

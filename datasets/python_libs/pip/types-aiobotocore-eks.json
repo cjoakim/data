@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-eks",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-eks.txt",
+  "dependencies": {}
+}

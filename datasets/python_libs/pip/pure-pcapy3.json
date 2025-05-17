@@ -1,0 +1,6 @@
+{
+  "libname": "pure-pcapy3",
+  "libvers": "1.0.1",
+  "infile": "data/pip/pure-pcapy3.txt",
+  "dependencies": {}
+}

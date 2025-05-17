@@ -1,0 +1,13 @@
+{
+  "libname": "amazoncaptcha",
+  "libvers": "0.5.11",
+  "infile": "data/pip/amazoncaptcha.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "pillow": "9.5.0",
+    "requests": "2.30.0",
+    "urllib3": "2.4.0"
+  }
+}

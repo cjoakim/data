@@ -1,0 +1,11 @@
+{
+  "libname": "django-mptt",
+  "libvers": "0.17.0",
+  "infile": "data/pip/django-mptt.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "django-js-asset": "3.1.2",
+    "sqlparse": "0.5.3"
+  }
+}

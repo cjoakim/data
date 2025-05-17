@@ -1,0 +1,6 @@
+{
+  "libname": "biplist",
+  "libvers": "1.0.3",
+  "infile": "data/pip/biplist.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "snoop",
+  "libvers": "0.6.0",
+  "infile": "data/pip/snoop.txt",
+  "dependencies": {
+    "asttokens": "3.0.0",
+    "cheap-repr": "0.5.2",
+    "executing": "2.2.0",
+    "pygments": "2.19.1"
+  }
+}

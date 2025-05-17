@@ -1,0 +1,6 @@
+{
+  "libname": "findafactor",
+  "libvers": "6.7.0",
+  "infile": "data/pip/findafactor.txt",
+  "dependencies": {}
+}

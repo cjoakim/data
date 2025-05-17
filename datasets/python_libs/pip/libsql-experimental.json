@@ -1,0 +1,6 @@
+{
+  "libname": "libsql-experimental",
+  "libvers": "0.0.49",
+  "infile": "data/pip/libsql-experimental.txt",
+  "dependencies": {}
+}

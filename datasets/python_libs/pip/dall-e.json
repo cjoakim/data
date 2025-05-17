@@ -1,0 +1,33 @@
+{
+  "libname": "dall-e",
+  "libvers": "0.1",
+  "infile": "data/pip/dall-e.txt",
+  "dependencies": {
+    "blobfile": "3.0.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "filelock": "3.18.0",
+    "fsspec": "2025.3.2",
+    "idna": "3.10",
+    "iniconfig": "2.1.0",
+    "jinja2": "3.1.6",
+    "lxml": "5.4.0",
+    "markupsafe": "3.0.2",
+    "mpmath": "1.3.0",
+    "mypy": "1.15.0",
+    "mypy-extensions": "1.1.0",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "pluggy": "1.5.0",
+    "pycryptodomex": "3.22.0",
+    "pytest": "8.3.5",
+    "requests": "2.32.3",
+    "sympy": "1.14.0",
+    "torch": "2.7.0",
+    "torchvision": "0.22.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

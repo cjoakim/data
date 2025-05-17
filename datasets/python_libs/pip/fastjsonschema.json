@@ -1,0 +1,6 @@
+{
+  "libname": "fastjsonschema",
+  "libvers": "2.21.1",
+  "infile": "data/pip/fastjsonschema.txt",
+  "dependencies": {}
+}

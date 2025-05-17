@@ -1,0 +1,9 @@
+{
+  "libname": "zope-tal",
+  "libvers": "5.1",
+  "infile": "data/pip/zope-tal.txt",
+  "dependencies": {
+    "zope-i18nmessageid": "7.0",
+    "zope-interface": "7.2"
+  }
+}

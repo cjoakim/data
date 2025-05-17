@@ -1,0 +1,6 @@
+{
+  "libname": "matterhook",
+  "libvers": "0.2",
+  "infile": "data/pip/matterhook.txt",
+  "dependencies": {}
+}

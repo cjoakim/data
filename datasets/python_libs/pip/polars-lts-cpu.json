@@ -1,0 +1,6 @@
+{
+  "libname": "polars-lts-cpu",
+  "libvers": "1.29.0",
+  "infile": "data/pip/polars-lts-cpu.txt",
+  "dependencies": {}
+}

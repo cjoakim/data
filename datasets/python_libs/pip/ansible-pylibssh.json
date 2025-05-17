@@ -1,0 +1,6 @@
+{
+  "libname": "ansible-pylibssh",
+  "libvers": "1.2.2",
+  "infile": "data/pip/ansible-pylibssh.txt",
+  "dependencies": {}
+}

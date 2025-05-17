@@ -1,0 +1,8 @@
+{
+  "libname": "pydantic-core",
+  "libvers": "2.34.1",
+  "infile": "data/pip/pydantic-core.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

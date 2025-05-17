@@ -1,0 +1,6 @@
+{
+  "libname": "evdev",
+  "libvers": "1.9.2",
+  "infile": "data/pip/evdev.txt",
+  "dependencies": {}
+}

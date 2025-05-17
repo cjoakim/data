@@ -1,0 +1,9 @@
+{
+  "libname": "tlslite-ng",
+  "libvers": "0.8.2",
+  "infile": "data/pip/tlslite-ng.txt",
+  "dependencies": {
+    "ecdsa": "0.19.1",
+    "six": "1.17.0"
+  }
+}

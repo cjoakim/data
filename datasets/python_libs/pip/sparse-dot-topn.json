@@ -1,0 +1,10 @@
+{
+  "libname": "sparse-dot-topn",
+  "libvers": "1.1.5",
+  "infile": "data/pip/sparse-dot-topn.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "psutil": "7.0.0",
+    "scipy": "1.15.2"
+  }
+}

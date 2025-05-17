@@ -1,0 +1,20 @@
+{
+  "libname": "meteomatics",
+  "libvers": "2.11.6",
+  "infile": "data/pip/meteomatics.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "isodate": "0.7.2",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "pathlib2": "2.3.7.post1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "tzdata": "2025.2",
+    "urllib3": "2.4.0"
+  }
+}

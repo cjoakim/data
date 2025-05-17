@@ -1,0 +1,15 @@
+{
+  "libname": "openapi-schema-validator",
+  "libvers": "0.6.3",
+  "infile": "data/pip/openapi-schema-validator.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "referencing": "0.36.2",
+    "rfc3339-validator": "0.1.4",
+    "rpds-py": "0.24.0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2"
+  }
+}

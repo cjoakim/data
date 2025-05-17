@@ -1,0 +1,6 @@
+{
+  "libname": "qh3",
+  "libvers": "1.5.1",
+  "infile": "data/pip/qh3.txt",
+  "dependencies": {}
+}

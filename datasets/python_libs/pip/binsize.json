@@ -1,0 +1,11 @@
+{
+  "libname": "binsize",
+  "libvers": "0.1.4",
+  "infile": "data/pip/binsize.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "platformdirs": "4.3.7",
+    "termcolor": "3.1.0",
+    "typing-extensions": "4.13.2"
+  }
+}

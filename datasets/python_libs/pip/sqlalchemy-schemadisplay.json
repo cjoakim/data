@@ -1,0 +1,12 @@
+{
+  "libname": "sqlalchemy-schemadisplay",
+  "libvers": "2.0",
+  "infile": "data/pip/sqlalchemy-schemadisplay.txt",
+  "dependencies": {
+    "pillow": "11.2.1",
+    "pydot": "4.0.0",
+    "pyparsing": "3.2.3",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

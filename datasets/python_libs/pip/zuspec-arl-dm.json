@@ -1,0 +1,9 @@
+{
+  "libname": "zuspec-arl-dm",
+  "libvers": "0.0.1.11428805070",
+  "infile": "data/pip/zuspec-arl-dm.txt",
+  "dependencies": {
+    "debug-mgr": "0.0.2.14425062851",
+    "vsc-dm": "0.0.1.11205837584"
+  }
+}

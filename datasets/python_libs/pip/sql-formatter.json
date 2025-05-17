@@ -1,0 +1,6 @@
+{
+  "libname": "sql-formatter",
+  "libvers": "0.6.2",
+  "infile": "data/pip/sql-formatter.txt",
+  "dependencies": {}
+}

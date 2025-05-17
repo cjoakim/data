@@ -1,0 +1,8 @@
+{
+  "libname": "returns",
+  "libvers": "0.25.0",
+  "infile": "data/pip/returns.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

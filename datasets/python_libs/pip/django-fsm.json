@@ -1,0 +1,6 @@
+{
+  "libname": "django-fsm",
+  "libvers": "3.0.0",
+  "infile": "data/pip/django-fsm.txt",
+  "dependencies": {}
+}

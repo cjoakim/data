@@ -1,0 +1,8 @@
+{
+  "libname": "restructuredtext-lint",
+  "libvers": "1.4.0",
+  "infile": "data/pip/restructuredtext-lint.txt",
+  "dependencies": {
+    "docutils": "0.21.2"
+  }
+}

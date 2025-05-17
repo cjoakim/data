@@ -1,0 +1,12 @@
+{
+  "libname": "halo",
+  "libvers": "0.0.31",
+  "infile": "data/pip/halo.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "log-symbols": "0.0.14",
+    "six": "1.17.0",
+    "spinners": "0.0.24",
+    "termcolor": "3.1.0"
+  }
+}

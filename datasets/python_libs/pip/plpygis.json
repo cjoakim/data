@@ -1,0 +1,6 @@
+{
+  "libname": "plpygis",
+  "libvers": "0.5.5",
+  "infile": "data/pip/plpygis.txt",
+  "dependencies": {}
+}

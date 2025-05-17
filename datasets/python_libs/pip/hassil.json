@@ -1,0 +1,9 @@
+{
+  "libname": "hassil",
+  "libvers": "3.0.1",
+  "infile": "data/pip/hassil.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2",
+    "unicode-rbnf": "2.3.0"
+  }
+}

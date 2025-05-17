@@ -1,0 +1,12 @@
+{
+  "libname": "stone",
+  "libvers": "3.3.9",
+  "infile": "data/pip/stone.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "packaging": "25.0",
+    "ply": "3.11",
+    "six": "1.17.0"
+  }
+}

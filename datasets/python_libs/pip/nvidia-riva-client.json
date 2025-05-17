@@ -1,0 +1,10 @@
+{
+  "libname": "nvidia-riva-client",
+  "libvers": "2.19.1",
+  "infile": "data/pip/nvidia-riva-client.txt",
+  "dependencies": {
+    "grpcio": "1.67.1",
+    "grpcio-tools": "1.67.1",
+    "protobuf": "5.29.4"
+  }
+}

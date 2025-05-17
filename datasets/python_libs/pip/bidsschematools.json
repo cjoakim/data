@@ -1,0 +1,15 @@
+{
+  "libname": "bidsschematools",
+  "libvers": "1.0.5",
+  "infile": "data/pip/bidsschematools.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "click": "8.1.8",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "pyyaml": "6.0.2",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2"
+  }
+}

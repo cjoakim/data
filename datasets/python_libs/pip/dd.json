@@ -1,0 +1,10 @@
+{
+  "libname": "dd",
+  "libvers": "0.6.0",
+  "infile": "data/pip/dd.txt",
+  "dependencies": {
+    "astutils": "0.0.6",
+    "networkx": "3.4.2",
+    "ply": "3.10"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-certifi",
+  "libvers": "2021.10.8.3",
+  "infile": "data/pip/types-certifi.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "chrome-devtools-protocol",
+  "libvers": "0.4.0",
+  "infile": "data/pip/chrome-devtools-protocol.txt",
+  "dependencies": {
+    "deprecated": "1.2.18",
+    "wrapt": "1.17.2"
+  }
+}

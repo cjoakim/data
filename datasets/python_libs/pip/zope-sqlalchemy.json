@@ -1,0 +1,12 @@
+{
+  "libname": "zope-sqlalchemy",
+  "libvers": "3.1",
+  "infile": "data/pip/zope-sqlalchemy.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "sqlalchemy": "2.0.40",
+    "transaction": "5.0",
+    "typing-extensions": "4.13.2",
+    "zope-interface": "7.2"
+  }
+}

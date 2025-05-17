@@ -1,0 +1,12 @@
+{
+  "libname": "shandy-sqlfmt",
+  "libvers": "0.26.0",
+  "infile": "data/pip/shandy-sqlfmt.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "platformdirs": "4.3.7",
+    "tqdm": "4.67.1"
+  }
+}

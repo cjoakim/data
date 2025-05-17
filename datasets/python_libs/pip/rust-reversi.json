@@ -1,0 +1,6 @@
+{
+  "libname": "rust-reversi",
+  "libvers": "1.4.4",
+  "infile": "data/pip/rust-reversi.txt",
+  "dependencies": {}
+}

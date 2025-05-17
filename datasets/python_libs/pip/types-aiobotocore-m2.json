@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-m2",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-m2.txt",
+  "dependencies": {}
+}

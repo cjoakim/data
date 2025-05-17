@@ -1,0 +1,6 @@
+{
+  "libname": "urllib3-secure-extra",
+  "libvers": "0.1.0",
+  "infile": "data/pip/urllib3-secure-extra.txt",
+  "dependencies": {}
+}

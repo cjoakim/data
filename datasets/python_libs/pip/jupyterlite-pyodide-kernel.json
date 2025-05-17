@@ -1,0 +1,16 @@
+{
+  "libname": "jupyterlite-pyodide-kernel",
+  "libvers": "0.5.2",
+  "infile": "data/pip/jupyterlite-pyodide-kernel.txt",
+  "dependencies": {
+    "cloudpickle": "3.1.1",
+    "doit": "0.36.0",
+    "importlib-metadata": "8.7.0",
+    "jupyter-core": "5.7.2",
+    "jupyterlite-core": "0.5.1",
+    "pkginfo": "1.12.1.2",
+    "platformdirs": "4.3.7",
+    "traitlets": "5.14.3",
+    "zipp": "3.21.0"
+  }
+}

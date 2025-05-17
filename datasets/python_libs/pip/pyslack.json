@@ -1,0 +1,6 @@
+{
+  "libname": "pyslack",
+  "libvers": "0.5.0",
+  "infile": "data/pip/pyslack.txt",
+  "dependencies": {}
+}

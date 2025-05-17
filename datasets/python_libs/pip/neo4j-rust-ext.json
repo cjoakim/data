@@ -1,0 +1,9 @@
+{
+  "libname": "neo4j-rust-ext",
+  "libvers": "5.28.1.0",
+  "infile": "data/pip/neo4j-rust-ext.txt",
+  "dependencies": {
+    "neo4j": "5.28.1",
+    "pytz": "2025.2"
+  }
+}

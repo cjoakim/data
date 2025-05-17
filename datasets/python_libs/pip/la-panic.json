@@ -1,0 +1,11 @@
+{
+  "libname": "la-panic",
+  "libvers": "0.5.0",
+  "infile": "data/pip/la-panic.txt",
+  "dependencies": {
+    "cached-property": "2.0.1",
+    "click": "8.1.8",
+    "coloredlogs": "15.0.1",
+    "humanfriendly": "10.0"
+  }
+}

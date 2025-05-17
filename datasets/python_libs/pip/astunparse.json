@@ -1,0 +1,9 @@
+{
+  "libname": "astunparse",
+  "libvers": "1.6.3",
+  "infile": "data/pip/astunparse.txt",
+  "dependencies": {
+    "six": "1.17.0",
+    "wheel": "0.45.1"
+  }
+}

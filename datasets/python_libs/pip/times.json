@@ -1,0 +1,11 @@
+{
+  "libname": "times",
+  "libvers": "0.7",
+  "infile": "data/pip/times.txt",
+  "dependencies": {
+    "arrow": "1.3.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "types-python-dateutil": "2.9.0.20241206"
+  }
+}

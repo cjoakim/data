@@ -1,0 +1,8 @@
+{
+  "libname": "opencv-python-headless",
+  "libvers": "4.11.0.86",
+  "infile": "data/pip/opencv-python-headless.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

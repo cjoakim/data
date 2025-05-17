@@ -1,0 +1,6 @@
+{
+  "libname": "aiohappyeyeballs",
+  "libvers": "2.6.1",
+  "infile": "data/pip/aiohappyeyeballs.txt",
+  "dependencies": {}
+}

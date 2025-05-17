@@ -1,0 +1,8 @@
+{
+  "libname": "mdx-breakless-lists",
+  "libvers": "1.0.1",
+  "infile": "data/pip/mdx-breakless-lists.txt",
+  "dependencies": {
+    "markdown": "3.8"
+  }
+}

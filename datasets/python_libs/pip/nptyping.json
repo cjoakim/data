@@ -1,0 +1,8 @@
+{
+  "libname": "nptyping",
+  "libvers": "2.5.0",
+  "infile": "data/pip/nptyping.txt",
+  "dependencies": {
+    "numpy": "1.26.4"
+  }
+}

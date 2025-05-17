@@ -1,0 +1,6 @@
+{
+  "libname": "airium",
+  "libvers": "0.2.6",
+  "infile": "data/pip/airium.txt",
+  "dependencies": {}
+}

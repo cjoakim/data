@@ -1,0 +1,10 @@
+{
+  "libname": "snakemake-interface-report-plugins",
+  "libvers": "1.1.0",
+  "infile": "data/pip/snakemake-interface-report-plugins.txt",
+  "dependencies": {
+    "argparse-dataclass": "2.0.0",
+    "configargparse": "1.7",
+    "snakemake-interface-common": "1.17.4"
+  }
+}

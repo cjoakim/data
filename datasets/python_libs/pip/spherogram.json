@@ -1,0 +1,11 @@
+{
+  "libname": "spherogram",
+  "libvers": "2.3",
+  "infile": "data/pip/spherogram.txt",
+  "dependencies": {
+    "decorator": "5.2.1",
+    "knot-floer-homology": "1.2.2",
+    "networkx": "3.4.2",
+    "snappy-manifolds": "1.2.1"
+  }
+}

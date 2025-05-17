@@ -1,0 +1,9 @@
+{
+  "libname": "betterpath",
+  "libvers": "0.2.2",
+  "infile": "data/pip/betterpath.txt",
+  "dependencies": {
+    "vcversioner": "2.16.0.0",
+    "zope-interface": "7.2"
+  }
+}

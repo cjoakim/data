@@ -1,0 +1,6 @@
+{
+  "libname": "affine",
+  "libvers": "2.4.0",
+  "infile": "data/pip/affine.txt",
+  "dependencies": {}
+}

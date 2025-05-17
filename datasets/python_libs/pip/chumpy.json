@@ -1,0 +1,10 @@
+{
+  "libname": "chumpy",
+  "libvers": "0.70",
+  "infile": "data/pip/chumpy.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "six": "1.17.0"
+  }
+}

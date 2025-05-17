@@ -1,0 +1,8 @@
+{
+  "libname": "pip-check-reqs",
+  "libvers": "2.5.3",
+  "infile": "data/pip/pip-check-reqs.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

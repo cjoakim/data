@@ -1,0 +1,8 @@
+{
+  "libname": "comm",
+  "libvers": "0.2.2",
+  "infile": "data/pip/comm.txt",
+  "dependencies": {
+    "traitlets": "5.14.3"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "eciespy",
+  "libvers": "0.4.4",
+  "infile": "data/pip/eciespy.txt",
+  "dependencies": {
+    "coincurve": "21.0.0",
+    "pycryptodome": "3.22.0"
+  }
+}

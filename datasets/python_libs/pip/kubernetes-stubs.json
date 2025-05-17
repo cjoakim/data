@@ -1,0 +1,6 @@
+{
+  "libname": "kubernetes-stubs",
+  "libvers": "22.6.0.post1",
+  "infile": "data/pip/kubernetes-stubs.txt",
+  "dependencies": {}
+}

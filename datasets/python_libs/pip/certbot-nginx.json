@@ -1,0 +1,27 @@
+{
+  "libname": "certbot-nginx",
+  "libvers": "4.0.0",
+  "infile": "data/pip/certbot-nginx.txt",
+  "dependencies": {
+    "acme": "4.0.0",
+    "certbot": "4.0.0",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "configargparse": "1.7",
+    "configobj": "5.0.9",
+    "cryptography": "44.0.3",
+    "distro": "1.9.0",
+    "idna": "3.10",
+    "josepy": "2.0.0",
+    "parsedatetime": "2.6",
+    "pycparser": "2.22",
+    "pyopenssl": "25.0.0",
+    "pyparsing": "3.2.3",
+    "pyrfc3339": "2.0.1",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

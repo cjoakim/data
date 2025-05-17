@@ -1,0 +1,10 @@
+{
+  "libname": "hya",
+  "libvers": "0.2.4",
+  "infile": "data/pip/hya.txt",
+  "dependencies": {
+    "antlr4-python3-runtime": "4.9.3",
+    "omegaconf": "2.3.0",
+    "pyyaml": "6.0.2"
+  }
+}

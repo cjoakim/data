@@ -1,0 +1,6 @@
+{
+  "libname": "gggdtparser",
+  "libvers": "0.1.6",
+  "infile": "data/pip/gggdtparser.txt",
+  "dependencies": {}
+}

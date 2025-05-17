@@ -1,0 +1,6 @@
+{
+  "libname": "libipld",
+  "libvers": "3.0.1",
+  "infile": "data/pip/libipld.txt",
+  "dependencies": {}
+}

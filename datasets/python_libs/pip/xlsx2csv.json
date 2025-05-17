@@ -1,0 +1,6 @@
+{
+  "libname": "xlsx2csv",
+  "libvers": "0.8.4",
+  "infile": "data/pip/xlsx2csv.txt",
+  "dependencies": {}
+}

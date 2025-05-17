@@ -1,0 +1,6 @@
+{
+  "libname": "rcslice",
+  "libvers": "1.1.0",
+  "infile": "data/pip/rcslice.txt",
+  "dependencies": {}
+}

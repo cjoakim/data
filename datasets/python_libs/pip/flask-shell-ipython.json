@@ -1,0 +1,30 @@
+{
+  "libname": "flask-shell-ipython",
+  "libvers": "0.5.3",
+  "infile": "data/pip/flask-shell-ipython.txt",
+  "dependencies": {
+    "asttokens": "3.0.0",
+    "blinker": "1.9.0",
+    "click": "8.1.8",
+    "decorator": "5.2.1",
+    "executing": "2.2.0",
+    "flask": "3.1.0",
+    "ipython": "9.2.0",
+    "ipython-pygments-lexers": "1.1.1",
+    "itsdangerous": "2.2.0",
+    "jedi": "0.19.2",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "matplotlib-inline": "0.1.7",
+    "parso": "0.8.4",
+    "pexpect": "4.9.0",
+    "prompt-toolkit": "3.0.51",
+    "ptyprocess": "0.7.0",
+    "pure-eval": "0.2.3",
+    "pygments": "2.19.1",
+    "stack-data": "0.6.3",
+    "traitlets": "5.14.3",
+    "wcwidth": "0.2.13",
+    "werkzeug": "3.1.3"
+  }
+}

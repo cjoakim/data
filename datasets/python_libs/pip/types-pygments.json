@@ -1,0 +1,8 @@
+{
+  "libname": "types-pygments",
+  "libvers": "2.19.0.20250305",
+  "infile": "data/pip/types-pygments.txt",
+  "dependencies": {
+    "types-docutils": "0.21.0.20241128"
+  }
+}

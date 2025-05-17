@@ -1,0 +1,6 @@
+{
+  "libname": "xopen",
+  "libvers": "2.0.2",
+  "infile": "data/pip/xopen.txt",
+  "dependencies": {}
+}

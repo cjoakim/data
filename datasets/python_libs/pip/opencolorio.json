@@ -1,0 +1,6 @@
+{
+  "libname": "opencolorio",
+  "libvers": "2.4.2",
+  "infile": "data/pip/opencolorio.txt",
+  "dependencies": {}
+}

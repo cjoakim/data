@@ -1,0 +1,6 @@
+{
+  "libname": "multiline-log-formatter",
+  "libvers": "0.1.8",
+  "infile": "data/pip/multiline-log-formatter.txt",
+  "dependencies": {}
+}

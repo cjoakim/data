@@ -1,0 +1,20 @@
+{
+  "libname": "genie-libs-filetransferutils",
+  "libvers": "25.4",
+  "infile": "data/pip/genie-libs-filetransferutils.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "dill": "0.4.0",
+    "prettytable": "3.16.0",
+    "pyasynchat": "1.0.4",
+    "pyasyncore": "1.0.4",
+    "pycparser": "2.22",
+    "pyftpdlib": "2.0.1",
+    "pyyaml": "6.0.2",
+    "tftpy": "0.8.0",
+    "unicon": "25.4",
+    "unicon-plugins": "25.4",
+    "wcwidth": "0.2.13"
+  }
+}

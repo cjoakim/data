@@ -1,0 +1,11 @@
+{
+  "libname": "pytest-harvest",
+  "libvers": "1.10.5",
+  "infile": "data/pip/pytest-harvest.txt",
+  "dependencies": {
+    "decopatch": "1.4.10",
+    "makefun": "1.15.6",
+    "packaging": "25.0",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-elastic-inference",
+  "libvers": "1.36.0",
+  "infile": "data/pip/mypy-boto3-elastic-inference.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "rustpy-xlsxwriter",
+  "libvers": "0.0.7",
+  "infile": "data/pip/rustpy-xlsxwriter.txt",
+  "dependencies": {}
+}

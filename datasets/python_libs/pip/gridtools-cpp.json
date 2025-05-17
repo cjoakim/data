@@ -1,0 +1,6 @@
+{
+  "libname": "gridtools-cpp",
+  "libvers": "2.3.9",
+  "infile": "data/pip/gridtools-cpp.txt",
+  "dependencies": {}
+}

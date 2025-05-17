@@ -1,0 +1,6 @@
+{
+  "libname": "asynctest",
+  "libvers": "0.13.0",
+  "infile": "data/pip/asynctest.txt",
+  "dependencies": {}
+}

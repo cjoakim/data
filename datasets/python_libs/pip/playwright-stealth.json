@@ -1,0 +1,11 @@
+{
+  "libname": "playwright-stealth",
+  "libvers": "1.0.6",
+  "infile": "data/pip/playwright-stealth.txt",
+  "dependencies": {
+    "greenlet": "3.2.1",
+    "playwright": "1.52.0",
+    "pyee": "13.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

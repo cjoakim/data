@@ -1,0 +1,8 @@
+{
+  "libname": "querystring-parser",
+  "libvers": "1.2.4",
+  "infile": "data/pip/querystring-parser.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

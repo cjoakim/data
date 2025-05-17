@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-deadline",
+  "libvers": "1.38.6",
+  "infile": "data/pip/mypy-boto3-deadline.txt",
+  "dependencies": {}
+}

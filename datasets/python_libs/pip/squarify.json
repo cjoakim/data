@@ -1,0 +1,6 @@
+{
+  "libname": "squarify",
+  "libvers": "0.4.4",
+  "infile": "data/pip/squarify.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "rfc3987",
+  "libvers": "1.3.8",
+  "infile": "data/pip/rfc3987.txt",
+  "dependencies": {}
+}

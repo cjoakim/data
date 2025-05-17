@@ -1,0 +1,12 @@
+{
+  "libname": "tf-playwright-stealth",
+  "libvers": "1.1.2",
+  "infile": "data/pip/tf-playwright-stealth.txt",
+  "dependencies": {
+    "fake-http-header": "0.3.5",
+    "greenlet": "3.2.1",
+    "playwright": "1.52.0",
+    "pyee": "13.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

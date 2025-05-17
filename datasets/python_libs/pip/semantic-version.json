@@ -1,0 +1,6 @@
+{
+  "libname": "semantic-version",
+  "libvers": "2.10.0",
+  "infile": "data/pip/semantic-version.txt",
+  "dependencies": {}
+}

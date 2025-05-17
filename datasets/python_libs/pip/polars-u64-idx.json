@@ -1,0 +1,6 @@
+{
+  "libname": "polars-u64-idx",
+  "libvers": "1.29.0",
+  "infile": "data/pip/polars-u64-idx.txt",
+  "dependencies": {}
+}

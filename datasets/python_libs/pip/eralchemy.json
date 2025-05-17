@@ -1,0 +1,9 @@
+{
+  "libname": "eralchemy",
+  "libvers": "1.5.0",
+  "infile": "data/pip/eralchemy.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

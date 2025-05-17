@@ -1,0 +1,6 @@
+{
+  "libname": "testtools",
+  "libvers": "2.7.2",
+  "infile": "data/pip/testtools.txt",
+  "dependencies": {}
+}

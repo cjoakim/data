@@ -1,0 +1,6 @@
+{
+  "libname": "espeakng-loader",
+  "libvers": "0.2.4",
+  "infile": "data/pip/espeakng-loader.txt",
+  "dependencies": {}
+}

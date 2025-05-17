@@ -1,0 +1,6 @@
+{
+  "libname": "phonetics",
+  "libvers": "1.0.5",
+  "infile": "data/pip/phonetics.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,20 @@
+{
+  "libname": "nflx-genie-client",
+  "libvers": "3.6.19",
+  "infile": "data/pip/nflx-genie-client.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "decorator": "5.2.1",
+    "future": "1.0.0",
+    "idna": "3.10",
+    "importlib-metadata": "8.7.0",
+    "multipledispatch": "1.0.0",
+    "pyconfigurator": "0.4.19",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0",
+    "zipp": "3.21.0"
+  }
+}

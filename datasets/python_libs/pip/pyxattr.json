@@ -1,0 +1,6 @@
+{
+  "libname": "pyxattr",
+  "libvers": "0.8.1",
+  "infile": "data/pip/pyxattr.txt",
+  "dependencies": {}
+}

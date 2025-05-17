@@ -1,0 +1,10 @@
+{
+  "libname": "securetar",
+  "libvers": "2025.2.1",
+  "infile": "data/pip/securetar.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22"
+  }
+}

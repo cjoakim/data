@@ -1,0 +1,6 @@
+{
+  "libname": "elephas",
+  "libvers": "3.4.3",
+  "infile": "data/pip/elephas.txt",
+  "dependencies": {}
+}

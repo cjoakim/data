@@ -1,0 +1,6 @@
+{
+  "libname": "djc-core-html-parser",
+  "libvers": "1.0.2",
+  "infile": "data/pip/djc-core-html-parser.txt",
+  "dependencies": {}
+}

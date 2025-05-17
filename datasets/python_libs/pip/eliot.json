@@ -1,0 +1,11 @@
+{
+  "libname": "eliot",
+  "libvers": "1.17.5",
+  "infile": "data/pip/eliot.txt",
+  "dependencies": {
+    "boltons": "25.0.0",
+    "orjson": "3.10.18",
+    "pyrsistent": "0.20.0",
+    "zope-interface": "7.2"
+  }
+}

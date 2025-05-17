@@ -1,0 +1,8 @@
+{
+  "libname": "webhelpers",
+  "libvers": "1.3",
+  "infile": "data/pip/webhelpers.txt",
+  "dependencies": {
+    "markupsafe": "3.0.2"
+  }
+}

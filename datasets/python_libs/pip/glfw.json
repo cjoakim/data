@@ -1,0 +1,6 @@
+{
+  "libname": "glfw",
+  "libvers": "2.9.0",
+  "infile": "data/pip/glfw.txt",
+  "dependencies": {}
+}

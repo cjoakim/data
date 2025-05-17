@@ -1,0 +1,6 @@
+{
+  "libname": "avro-python3",
+  "libvers": "1.10.2",
+  "infile": "data/pip/avro-python3.txt",
+  "dependencies": {}
+}

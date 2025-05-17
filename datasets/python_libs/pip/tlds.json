@@ -1,0 +1,6 @@
+{
+  "libname": "tlds",
+  "libvers": "2025043000",
+  "infile": "data/pip/tlds.txt",
+  "dependencies": {}
+}

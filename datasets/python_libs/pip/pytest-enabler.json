@@ -1,0 +1,11 @@
+{
+  "libname": "pytest-enabler",
+  "libvers": "3.3.0",
+  "infile": "data/pip/pytest-enabler.txt",
+  "dependencies": {
+    "jaraco-context": "6.0.1",
+    "jaraco-functools": "4.1.0",
+    "more-itertools": "10.7.0",
+    "toml": "0.10.2"
+  }
+}

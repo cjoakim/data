@@ -1,0 +1,6 @@
+{
+  "libname": "smart-getenv",
+  "libvers": "1.1.0",
+  "infile": "data/pip/smart-getenv.txt",
+  "dependencies": {}
+}

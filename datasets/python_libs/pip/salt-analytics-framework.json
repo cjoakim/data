@@ -1,0 +1,21 @@
+{
+  "libname": "salt-analytics-framework",
+  "libvers": "0.5.0",
+  "infile": "data/pip/salt-analytics-framework.txt",
+  "dependencies": {
+    "aiofiles": "24.1.0",
+    "aiorun": "2025.1.1",
+    "aiostream": "0.6.4",
+    "annotated-types": "0.7.0",
+    "backoff": "2.2.1",
+    "cachetools": "4.2.1",
+    "drain3": "0.9.11",
+    "jsonpickle": "1.5.1",
+    "psutil": "7.0.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "salt": "3007.1",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

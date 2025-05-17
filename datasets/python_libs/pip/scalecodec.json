@@ -1,0 +1,14 @@
+{
+  "libname": "scalecodec",
+  "libvers": "1.2.11",
+  "infile": "data/pip/scalecodec.txt",
+  "dependencies": {
+    "base58": "2.1.1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "more-itertools": "10.7.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "types-ldap3",
+  "libvers": "2.9.13.20240205",
+  "infile": "data/pip/types-ldap3.txt",
+  "dependencies": {
+    "types-pyasn1": "0.6.0.20250208"
+  }
+}

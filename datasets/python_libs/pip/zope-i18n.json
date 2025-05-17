@@ -1,0 +1,16 @@
+{
+  "libname": "zope-i18n",
+  "libvers": "5.2",
+  "infile": "data/pip/zope-i18n.txt",
+  "dependencies": {
+    "python-gettext": "5.0",
+    "pytz": "2025.2",
+    "zope-component": "6.0",
+    "zope-deprecation": "5.1",
+    "zope-event": "5.0",
+    "zope-hookable": "7.0",
+    "zope-i18nmessageid": "7.0",
+    "zope-interface": "7.2",
+    "zope-schema": "7.0.1"
+  }
+}

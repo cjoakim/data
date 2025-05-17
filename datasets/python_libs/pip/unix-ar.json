@@ -1,0 +1,6 @@
+{
+  "libname": "unix-ar",
+  "libvers": "0.2.1",
+  "infile": "data/pip/unix-ar.txt",
+  "dependencies": {}
+}

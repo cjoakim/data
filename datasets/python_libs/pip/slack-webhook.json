@@ -1,0 +1,6 @@
+{
+  "libname": "slack-webhook",
+  "libvers": "1.0.7",
+  "infile": "data/pip/slack-webhook.txt",
+  "dependencies": {}
+}

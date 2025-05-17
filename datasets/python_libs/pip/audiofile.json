@@ -1,0 +1,14 @@
+{
+  "libname": "audiofile",
+  "libvers": "1.5.1",
+  "infile": "data/pip/audiofile.txt",
+  "dependencies": {
+    "audeer": "2.2.1",
+    "audmath": "1.4.1",
+    "cffi": "1.17.1",
+    "numpy": "2.2.5",
+    "pycparser": "2.22",
+    "soundfile": "0.13.1",
+    "tqdm": "4.67.1"
+  }
+}

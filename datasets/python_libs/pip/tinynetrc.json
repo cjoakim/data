@@ -1,0 +1,6 @@
+{
+  "libname": "tinynetrc",
+  "libvers": "1.3.1",
+  "infile": "data/pip/tinynetrc.txt",
+  "dependencies": {}
+}

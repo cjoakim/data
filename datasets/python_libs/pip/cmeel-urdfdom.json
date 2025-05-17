@@ -1,0 +1,10 @@
+{
+  "libname": "cmeel-urdfdom",
+  "libvers": "4.0.1",
+  "infile": "data/pip/cmeel-urdfdom.txt",
+  "dependencies": {
+    "cmeel": "0.57.3",
+    "cmeel-console-bridge": "1.0.2.3",
+    "cmeel-tinyxml2": "10.0.0"
+  }
+}

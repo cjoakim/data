@@ -1,0 +1,6 @@
+{
+  "libname": "unittest-parametrize",
+  "libvers": "1.6.0",
+  "infile": "data/pip/unittest-parametrize.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "logdecorator",
+  "libvers": "2.5",
+  "infile": "data/pip/logdecorator.txt",
+  "dependencies": {}
+}

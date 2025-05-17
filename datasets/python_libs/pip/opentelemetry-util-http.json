@@ -1,0 +1,6 @@
+{
+  "libname": "opentelemetry-util-http",
+  "libvers": "0.53b1",
+  "infile": "data/pip/opentelemetry-util-http.txt",
+  "dependencies": {}
+}

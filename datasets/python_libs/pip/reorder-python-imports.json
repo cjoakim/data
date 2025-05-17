@@ -1,0 +1,8 @@
+{
+  "libname": "reorder-python-imports",
+  "libvers": "3.14.0",
+  "infile": "data/pip/reorder-python-imports.txt",
+  "dependencies": {
+    "classify-imports": "4.2.0"
+  }
+}

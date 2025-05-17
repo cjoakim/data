@@ -1,0 +1,6 @@
+{
+  "libname": "gilknocker",
+  "libvers": "0.4.1",
+  "infile": "data/pip/gilknocker.txt",
+  "dependencies": {}
+}

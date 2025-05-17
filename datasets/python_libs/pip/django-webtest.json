@@ -1,0 +1,13 @@
+{
+  "libname": "django-webtest",
+  "libvers": "1.9.13",
+  "infile": "data/pip/django-webtest.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "waitress": "3.0.2",
+    "webob": "1.8.9",
+    "webtest": "3.0.4"
+  }
+}

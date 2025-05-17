@@ -1,0 +1,6 @@
+{
+  "libname": "workdays",
+  "libvers": "1.4",
+  "infile": "data/pip/workdays.txt",
+  "dependencies": {}
+}

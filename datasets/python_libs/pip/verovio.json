@@ -1,0 +1,6 @@
+{
+  "libname": "verovio",
+  "libvers": "5.2.0",
+  "infile": "data/pip/verovio.txt",
+  "dependencies": {}
+}

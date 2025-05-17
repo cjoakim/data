@@ -1,0 +1,9 @@
+{
+  "libname": "simple-parsing",
+  "libvers": "0.1.7",
+  "infile": "data/pip/simple-parsing.txt",
+  "dependencies": {
+    "docstring-parser": "0.16",
+    "typing-extensions": "4.13.2"
+  }
+}

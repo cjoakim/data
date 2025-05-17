@@ -1,0 +1,6 @@
+{
+  "libname": "pep562",
+  "libvers": "1.1",
+  "infile": "data/pip/pep562.txt",
+  "dependencies": {}
+}

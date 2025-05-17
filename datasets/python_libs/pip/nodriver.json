@@ -1,0 +1,11 @@
+{
+  "libname": "nodriver",
+  "libvers": "0.45.2",
+  "infile": "data/pip/nodriver.txt",
+  "dependencies": {
+    "deprecated": "1.2.18",
+    "mss": "10.0.0",
+    "websockets": "15.0.1",
+    "wrapt": "1.17.2"
+  }
+}

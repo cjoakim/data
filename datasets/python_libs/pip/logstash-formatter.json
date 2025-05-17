@@ -1,0 +1,6 @@
+{
+  "libname": "logstash-formatter",
+  "libvers": "0.5.17",
+  "infile": "data/pip/logstash-formatter.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "edx-tincan-py35",
+  "libvers": "2.0.0",
+  "infile": "data/pip/edx-tincan-py35.txt",
+  "dependencies": {
+    "aniso8601": "10.0.1",
+    "pytz": "2025.2"
+  }
+}

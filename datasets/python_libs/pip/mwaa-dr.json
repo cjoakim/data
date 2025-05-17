@@ -1,0 +1,9 @@
+{
+  "libname": "mwaa-dr",
+  "libvers": "2.1.1",
+  "infile": "data/pip/mwaa-dr.txt",
+  "dependencies": {
+    "smart-open": "7.1.0",
+    "wrapt": "1.17.2"
+  }
+}

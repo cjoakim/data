@@ -1,0 +1,6 @@
+{
+  "libname": "partial-json-parser",
+  "libvers": "0.2.1.1.post5",
+  "infile": "data/pip/partial-json-parser.txt",
+  "dependencies": {}
+}

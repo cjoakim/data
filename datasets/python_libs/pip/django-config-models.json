@@ -1,0 +1,22 @@
+{
+  "libname": "django-config-models",
+  "libvers": "2.9.0",
+  "infile": "data/pip/django-config-models.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "cffi": "1.17.1",
+    "click": "8.1.8",
+    "django": "5.2",
+    "django-crum": "0.7.9",
+    "django-waffle": "4.2.0",
+    "djangorestframework": "3.16.0",
+    "edx-django-utils": "7.4.0",
+    "newrelic": "10.11.0",
+    "pbr": "6.1.1",
+    "psutil": "7.0.0",
+    "pycparser": "2.22",
+    "pynacl": "1.5.0",
+    "sqlparse": "0.5.3",
+    "stevedore": "5.4.1"
+  }
+}

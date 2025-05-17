@@ -1,0 +1,6 @@
+{
+  "libname": "base58check",
+  "libvers": "1.0.2",
+  "infile": "data/pip/base58check.txt",
+  "dependencies": {}
+}

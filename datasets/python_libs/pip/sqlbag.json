@@ -1,0 +1,11 @@
+{
+  "libname": "sqlbag",
+  "libvers": "0.1.1617247075",
+  "infile": "data/pip/sqlbag.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

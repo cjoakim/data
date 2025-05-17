@@ -1,0 +1,6 @@
+{
+  "libname": "hyperframe",
+  "libvers": "6.1.0",
+  "infile": "data/pip/hyperframe.txt",
+  "dependencies": {}
+}

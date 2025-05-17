@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-osis",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-osis.txt",
+  "dependencies": {}
+}

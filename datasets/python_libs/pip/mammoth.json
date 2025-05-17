@@ -1,0 +1,8 @@
+{
+  "libname": "mammoth",
+  "libvers": "1.9.0",
+  "infile": "data/pip/mammoth.txt",
+  "dependencies": {
+    "cobble": "0.1.4"
+  }
+}

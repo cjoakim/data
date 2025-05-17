@@ -1,0 +1,9 @@
+{
+  "libname": "columnar",
+  "libvers": "1.4.1",
+  "infile": "data/pip/columnar.txt",
+  "dependencies": {
+    "toolz": "1.0.0",
+    "wcwidth": "0.2.13"
+  }
+}

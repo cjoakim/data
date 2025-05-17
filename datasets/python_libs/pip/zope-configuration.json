@@ -1,0 +1,11 @@
+{
+  "libname": "zope-configuration",
+  "libvers": "6.0",
+  "infile": "data/pip/zope-configuration.txt",
+  "dependencies": {
+    "zope-event": "5.0",
+    "zope-i18nmessageid": "7.0",
+    "zope-interface": "7.2",
+    "zope-schema": "7.0.1"
+  }
+}

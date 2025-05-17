@@ -1,0 +1,8 @@
+{
+  "libname": "isosurfaces",
+  "libvers": "0.1.2",
+  "infile": "data/pip/isosurfaces.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

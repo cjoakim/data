@@ -1,0 +1,6 @@
+{
+  "libname": "catalogue",
+  "libvers": "2.0.10",
+  "infile": "data/pip/catalogue.txt",
+  "dependencies": {}
+}

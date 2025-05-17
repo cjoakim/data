@@ -1,0 +1,6 @@
+{
+  "libname": "cyclic",
+  "libvers": "1.0.0",
+  "infile": "data/pip/cyclic.txt",
+  "dependencies": {}
+}

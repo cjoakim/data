@@ -1,0 +1,6 @@
+{
+  "libname": "typing-compat",
+  "libvers": "0.1.0",
+  "infile": "data/pip/typing-compat.txt",
+  "dependencies": {}
+}

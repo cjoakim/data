@@ -1,0 +1,8 @@
+{
+  "libname": "class-registry",
+  "libvers": "2.1.2",
+  "infile": "data/pip/class-registry.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

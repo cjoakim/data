@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-athena",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-athena.txt",
+  "dependencies": {}
+}

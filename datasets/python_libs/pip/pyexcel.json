@@ -1,0 +1,10 @@
+{
+  "libname": "pyexcel",
+  "libvers": "0.7.3",
+  "infile": "data/pip/pyexcel.txt",
+  "dependencies": {
+    "lml": "0.2.0",
+    "pyexcel-io": "0.6.7",
+    "texttable": "1.7.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "libname": "pytorch-pfn-extras",
+  "libvers": "0.8.2",
+  "infile": "data/pip/pytorch-pfn-extras.txt",
+  "dependencies": {
+    "filelock": "3.18.0",
+    "fsspec": "2025.3.2",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "mpmath": "1.3.0",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "sympy": "1.14.0",
+    "torch": "2.7.0",
+    "typing-extensions": "4.13.2"
+  }
+}

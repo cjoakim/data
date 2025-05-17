@@ -1,0 +1,17 @@
+{
+  "libname": "wavefront-sdk-python",
+  "libvers": "2.1.0",
+  "infile": "data/pip/wavefront-sdk-python.txt",
+  "dependencies": {
+    "accumulation-tree": "0.6.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "deprecated": "1.2.18",
+    "idna": "3.10",
+    "pyudorandom": "1.0.0",
+    "requests": "2.32.3",
+    "tdigest": "0.5.2.2",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2"
+  }
+}

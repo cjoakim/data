@@ -1,0 +1,17 @@
+{
+  "libname": "kanaries-track",
+  "libvers": "0.0.5",
+  "infile": "data/pip/kanaries-track.txt",
+  "dependencies": {
+    "backoff": "2.2.1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "dateutils": "0.6.12",
+    "idna": "3.10",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "nulltype",
+  "libvers": "2.3.1",
+  "infile": "data/pip/nulltype.txt",
+  "dependencies": {}
+}

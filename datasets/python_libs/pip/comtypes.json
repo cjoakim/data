@@ -1,0 +1,6 @@
+{
+  "libname": "comtypes",
+  "libvers": "1.4.10",
+  "infile": "data/pip/comtypes.txt",
+  "dependencies": {}
+}

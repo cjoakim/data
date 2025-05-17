@@ -1,0 +1,10 @@
+{
+  "libname": "juliacall",
+  "libvers": "0.9.24",
+  "infile": "data/pip/juliacall.txt",
+  "dependencies": {
+    "filelock": "3.18.0",
+    "juliapkg": "0.1.16",
+    "semver": "3.0.4"
+  }
+}

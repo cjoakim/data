@@ -1,0 +1,8 @@
+{
+  "libname": "asn1",
+  "libvers": "3.0.1",
+  "infile": "data/pip/asn1.txt",
+  "dependencies": {
+    "enum-compat": "0.0.3"
+  }
+}

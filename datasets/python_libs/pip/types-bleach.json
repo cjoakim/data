@@ -1,0 +1,8 @@
+{
+  "libname": "types-bleach",
+  "libvers": "6.2.0.20241123",
+  "infile": "data/pip/types-bleach.txt",
+  "dependencies": {
+    "types-html5lib": "1.1.11.20241018"
+  }
+}

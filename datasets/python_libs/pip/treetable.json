@@ -1,0 +1,6 @@
+{
+  "libname": "treetable",
+  "libvers": "0.2.5",
+  "infile": "data/pip/treetable.txt",
+  "dependencies": {}
+}

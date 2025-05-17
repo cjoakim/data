@@ -1,0 +1,11 @@
+{
+  "libname": "ezdxf",
+  "libvers": "1.4.1",
+  "infile": "data/pip/ezdxf.txt",
+  "dependencies": {
+    "fonttools": "4.57.0",
+    "numpy": "2.2.5",
+    "pyparsing": "3.2.3",
+    "typing-extensions": "4.13.2"
+  }
+}

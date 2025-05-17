@@ -1,0 +1,8 @@
+{
+  "libname": "asynckivy",
+  "libvers": "0.8.1",
+  "infile": "data/pip/asynckivy.txt",
+  "dependencies": {
+    "asyncgui": "0.8.0"
+  }
+}

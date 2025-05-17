@@ -1,0 +1,10 @@
+{
+  "libname": "stack-data",
+  "libvers": "0.6.3",
+  "infile": "data/pip/stack-data.txt",
+  "dependencies": {
+    "asttokens": "3.0.0",
+    "executing": "2.2.0",
+    "pure-eval": "0.2.3"
+  }
+}

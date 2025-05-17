@@ -1,0 +1,6 @@
+{
+  "libname": "txaio",
+  "libvers": "23.1.1",
+  "infile": "data/pip/txaio.txt",
+  "dependencies": {}
+}

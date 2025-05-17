@@ -1,0 +1,6 @@
+{
+  "libname": "siphashc",
+  "libvers": "2.5",
+  "infile": "data/pip/siphashc.txt",
+  "dependencies": {}
+}

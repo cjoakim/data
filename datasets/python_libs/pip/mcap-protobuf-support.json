@@ -1,0 +1,11 @@
+{
+  "libname": "mcap-protobuf-support",
+  "libvers": "0.5.3",
+  "infile": "data/pip/mcap-protobuf-support.txt",
+  "dependencies": {
+    "lz4": "4.4.4",
+    "mcap": "1.2.2",
+    "protobuf": "6.30.2",
+    "zstandard": "0.23.0"
+  }
+}

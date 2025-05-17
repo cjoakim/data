@@ -1,0 +1,6 @@
+{
+  "libname": "jmespath",
+  "libvers": "1.0.1",
+  "infile": "data/pip/jmespath.txt",
+  "dependencies": {}
+}

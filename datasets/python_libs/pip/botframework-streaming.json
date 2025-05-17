@@ -1,0 +1,26 @@
+{
+  "libname": "botframework-streaming",
+  "libvers": "4.16.2",
+  "infile": "data/pip/botframework-streaming.txt",
+  "dependencies": {
+    "azure-core": "1.34.0",
+    "botbuilder-schema": "4.16.2",
+    "botframework-connector": "4.16.2",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "isodate": "0.7.2",
+    "msal": "1.32.3",
+    "msrest": "0.7.1",
+    "oauthlib": "3.2.2",
+    "pycparser": "2.22",
+    "pyjwt[crypto]": "2.10.1",
+    "requests": "2.32.3",
+    "requests-oauthlib": "2.0.0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

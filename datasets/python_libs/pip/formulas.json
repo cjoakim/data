@@ -1,0 +1,13 @@
+{
+  "libname": "formulas",
+  "libvers": "1.2.9",
+  "infile": "data/pip/formulas.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "numpy-financial": "1.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "regex": "2024.11.6",
+    "schedula": "1.5.62",
+    "six": "1.17.0"
+  }
+}

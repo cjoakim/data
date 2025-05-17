@@ -1,0 +1,6 @@
+{
+  "libname": "lambda-utils",
+  "libvers": "0.2.13",
+  "infile": "data/pip/lambda-utils.txt",
+  "dependencies": {}
+}

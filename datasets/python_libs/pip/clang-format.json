@@ -1,0 +1,6 @@
+{
+  "libname": "clang-format",
+  "libvers": "20.1.3",
+  "infile": "data/pip/clang-format.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "typed-settings",
+  "libvers": "24.6.0",
+  "infile": "data/pip/typed-settings.txt",
+  "dependencies": {}
+}

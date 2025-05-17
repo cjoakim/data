@@ -1,0 +1,8 @@
+{
+  "libname": "ssh-import-id",
+  "libvers": "5.11",
+  "infile": "data/pip/ssh-import-id.txt",
+  "dependencies": {
+    "distro": "1.9.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "fonttools",
+  "libvers": "4.57.0",
+  "infile": "data/pip/fonttools.txt",
+  "dependencies": {}
+}

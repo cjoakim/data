@@ -1,0 +1,9 @@
+{
+  "libname": "zope-schema",
+  "libvers": "7.0.1",
+  "infile": "data/pip/zope-schema.txt",
+  "dependencies": {
+    "zope-event": "5.0",
+    "zope-interface": "7.2"
+  }
+}

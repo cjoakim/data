@@ -1,0 +1,13 @@
+{
+  "libname": "tuya-device-sharing-sdk",
+  "libvers": "0.2.1",
+  "infile": "data/pip/tuya-device-sharing-sdk.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "paho-mqtt": "2.1.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

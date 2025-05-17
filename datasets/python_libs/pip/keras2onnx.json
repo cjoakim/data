@@ -1,0 +1,19 @@
+{
+  "libname": "keras2onnx",
+  "libvers": "1.7.0",
+  "infile": "data/pip/keras2onnx.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "fire": "0.7.0",
+    "idna": "3.10",
+    "numpy": "2.2.5",
+    "onnx": "1.17.0",
+    "onnxconverter-common": "1.14.0",
+    "packaging": "25.0",
+    "protobuf": "3.20.2",
+    "requests": "2.32.3",
+    "termcolor": "3.1.0",
+    "urllib3": "2.4.0"
+  }
+}

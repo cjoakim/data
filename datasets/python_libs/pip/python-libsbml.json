@@ -1,0 +1,6 @@
+{
+  "libname": "python-libsbml",
+  "libvers": "5.20.5",
+  "infile": "data/pip/python-libsbml.txt",
+  "dependencies": {}
+}

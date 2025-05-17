@@ -1,0 +1,6 @@
+{
+  "libname": "hat-splitter",
+  "libvers": "0.1.10",
+  "infile": "data/pip/hat-splitter.txt",
+  "dependencies": {}
+}

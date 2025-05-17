@@ -1,0 +1,6 @@
+{
+  "libname": "z4d-certified-devices",
+  "libvers": "6.446",
+  "infile": "data/pip/z4d-certified-devices.txt",
+  "dependencies": {}
+}

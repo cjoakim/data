@@ -1,0 +1,8 @@
+{
+  "libname": "bashate",
+  "libvers": "2.1.1",
+  "infile": "data/pip/bashate.txt",
+  "dependencies": {
+    "pbr": "6.1.1"
+  }
+}

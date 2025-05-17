@@ -1,0 +1,6 @@
+{
+  "libname": "plotext",
+  "libvers": "5.3.2",
+  "infile": "data/pip/plotext.txt",
+  "dependencies": {}
+}

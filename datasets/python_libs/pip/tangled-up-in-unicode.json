@@ -1,0 +1,6 @@
+{
+  "libname": "tangled-up-in-unicode",
+  "libvers": "0.2.0",
+  "infile": "data/pip/tangled-up-in-unicode.txt",
+  "dependencies": {}
+}

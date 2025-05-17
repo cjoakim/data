@@ -1,0 +1,8 @@
+{
+  "libname": "perfetto",
+  "libvers": "0.11.0",
+  "infile": "data/pip/perfetto.txt",
+  "dependencies": {
+    "protobuf": "6.30.2"
+  }
+}

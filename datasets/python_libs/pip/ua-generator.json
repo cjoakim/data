@@ -1,0 +1,6 @@
+{
+  "libname": "ua-generator",
+  "libvers": "2.0.5",
+  "infile": "data/pip/ua-generator.txt",
+  "dependencies": {}
+}

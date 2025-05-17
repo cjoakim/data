@@ -1,0 +1,6 @@
+{
+  "libname": "pydicom",
+  "libvers": "3.0.1",
+  "infile": "data/pip/pydicom.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "zeroize",
+  "libvers": "1.1.2",
+  "infile": "data/pip/zeroize.txt",
+  "dependencies": {}
+}

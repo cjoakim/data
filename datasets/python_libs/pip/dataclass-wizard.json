@@ -1,0 +1,8 @@
+{
+  "libname": "dataclass-wizard",
+  "libvers": "0.35.0",
+  "infile": "data/pip/dataclass-wizard.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

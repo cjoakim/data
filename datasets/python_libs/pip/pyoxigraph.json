@@ -1,0 +1,6 @@
+{
+  "libname": "pyoxigraph",
+  "libvers": "0.4.9",
+  "infile": "data/pip/pyoxigraph.txt",
+  "dependencies": {}
+}

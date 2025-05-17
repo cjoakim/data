@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-connect-contact-lens",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-connect-contact-lens.txt",
+  "dependencies": {}
+}

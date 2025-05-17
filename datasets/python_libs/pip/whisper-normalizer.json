@@ -1,0 +1,10 @@
+{
+  "libname": "whisper-normalizer",
+  "libvers": "0.1.9",
+  "infile": "data/pip/whisper-normalizer.txt",
+  "dependencies": {
+    "indic-numtowords": "1.0.2",
+    "more-itertools": "10.7.0",
+    "regex": "2024.11.6"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "flask-talisman",
+  "libvers": "1.1.0",
+  "infile": "data/pip/flask-talisman.txt",
+  "dependencies": {}
+}

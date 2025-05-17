@@ -1,0 +1,27 @@
+{
+  "libname": "devpi-plumber",
+  "libvers": "0.7.0",
+  "infile": "data/pip/devpi-plumber.txt",
+  "dependencies": {
+    "build": "1.2.2.post1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "check-manifest": "0.50",
+    "devpi-client": "7.2.0",
+    "devpi-common": "4.0.4",
+    "idna": "3.10",
+    "iniconfig": "2.1.0",
+    "lazy": "1.6",
+    "packaging": "25.0",
+    "packaging-legacy": "23.0.post0",
+    "pkginfo": "1.12.1.2",
+    "platformdirs": "4.3.7",
+    "pluggy": "1.5.0",
+    "pyproject-hooks": "1.2.0",
+    "requests": "2.32.3",
+    "twitter-common-contextutil": "0.3.11",
+    "twitter-common-dirutil": "0.3.11",
+    "twitter-common-lang": "0.3.11",
+    "urllib3": "2.4.0"
+  }
+}

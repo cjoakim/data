@@ -1,0 +1,6 @@
+{
+  "libname": "fiftyone-db",
+  "libvers": "1.1.7",
+  "infile": "data/pip/fiftyone-db.txt",
+  "dependencies": {}
+}

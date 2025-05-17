@@ -1,0 +1,13 @@
+{
+  "libname": "migra",
+  "libvers": "3.0.1663481299",
+  "infile": "data/pip/migra.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "schemainspect": "3.1.1663587362",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "sqlbag": "0.1.1617247075",
+    "typing-extensions": "4.13.2"
+  }
+}

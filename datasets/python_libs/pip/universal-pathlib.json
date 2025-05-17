@@ -1,0 +1,8 @@
+{
+  "libname": "universal-pathlib",
+  "libvers": "0.2.6",
+  "infile": "data/pip/universal-pathlib.txt",
+  "dependencies": {
+    "fsspec": "2025.3.2"
+  }
+}

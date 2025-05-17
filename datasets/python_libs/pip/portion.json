@@ -1,0 +1,8 @@
+{
+  "libname": "portion",
+  "libvers": "2.6.0",
+  "infile": "data/pip/portion.txt",
+  "dependencies": {
+    "sortedcontainers": "2.4.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "transforms3d",
+  "libvers": "0.4.2",
+  "infile": "data/pip/transforms3d.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

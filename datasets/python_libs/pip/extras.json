@@ -1,0 +1,6 @@
+{
+  "libname": "extras",
+  "libvers": "1.0.0",
+  "infile": "data/pip/extras.txt",
+  "dependencies": {}
+}

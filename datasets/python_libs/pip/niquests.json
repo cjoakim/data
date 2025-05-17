@@ -1,0 +1,13 @@
+{
+  "libname": "niquests",
+  "libvers": "3.14.0",
+  "infile": "data/pip/niquests.txt",
+  "dependencies": {
+    "charset-normalizer": "3.4.2",
+    "h11": "0.16.0",
+    "jh2": "5.0.9",
+    "qh3": "1.5.1",
+    "urllib3-future": "2.12.920",
+    "wassima": "1.2.2"
+  }
+}

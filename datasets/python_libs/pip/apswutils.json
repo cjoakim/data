@@ -1,0 +1,10 @@
+{
+  "libname": "apswutils",
+  "libvers": "0.0.2",
+  "infile": "data/pip/apswutils.txt",
+  "dependencies": {
+    "apsw": "3.49.1.0",
+    "fastcore": "1.8.1",
+    "packaging": "25.0"
+  }
+}

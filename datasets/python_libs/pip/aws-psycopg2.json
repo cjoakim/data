@@ -1,0 +1,6 @@
+{
+  "libname": "aws-psycopg2",
+  "libvers": "1.3.8",
+  "infile": "data/pip/aws-psycopg2.txt",
+  "dependencies": {}
+}

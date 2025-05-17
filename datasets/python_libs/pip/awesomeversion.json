@@ -1,0 +1,6 @@
+{
+  "libname": "awesomeversion",
+  "libvers": "24.6.0",
+  "infile": "data/pip/awesomeversion.txt",
+  "dependencies": {}
+}

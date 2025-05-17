@@ -1,0 +1,6 @@
+{
+  "libname": "silpa-common",
+  "libvers": "0.3",
+  "infile": "data/pip/silpa-common.txt",
+  "dependencies": {}
+}

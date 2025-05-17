@@ -1,0 +1,9 @@
+{
+  "libname": "winrt-windows-ui-viewmanagement",
+  "libvers": "3.1.0",
+  "infile": "data/pip/winrt-windows-ui-viewmanagement.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2",
+    "winrt-runtime": "3.1.0"
+  }
+}

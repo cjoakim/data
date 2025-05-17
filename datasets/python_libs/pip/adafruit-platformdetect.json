@@ -1,0 +1,6 @@
+{
+  "libname": "adafruit-platformdetect",
+  "libvers": "3.78.0",
+  "infile": "data/pip/adafruit-platformdetect.txt",
+  "dependencies": {}
+}

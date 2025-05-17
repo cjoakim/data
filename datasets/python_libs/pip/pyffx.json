@@ -1,0 +1,8 @@
+{
+  "libname": "pyffx",
+  "libvers": "0.3.0",
+  "infile": "data/pip/pyffx.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

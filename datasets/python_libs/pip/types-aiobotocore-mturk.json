@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-mturk",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-mturk.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pywatchman",
+  "libvers": "2.0.0",
+  "infile": "data/pip/pywatchman.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "pyerfa",
+  "libvers": "2.0.1.5",
+  "infile": "data/pip/pyerfa.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

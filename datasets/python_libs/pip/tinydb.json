@@ -1,0 +1,6 @@
+{
+  "libname": "tinydb",
+  "libvers": "4.8.2",
+  "infile": "data/pip/tinydb.txt",
+  "dependencies": {}
+}

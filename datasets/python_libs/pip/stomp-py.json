@@ -1,0 +1,9 @@
+{
+  "libname": "stomp-py",
+  "libvers": "8.2.0",
+  "infile": "data/pip/stomp-py.txt",
+  "dependencies": {
+    "docopt": "0.6.2",
+    "websocket-client": "1.8.0"
+  }
+}

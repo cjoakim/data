@@ -1,0 +1,28 @@
+{
+  "libname": "dask-geopandas",
+  "libvers": "0.4.3",
+  "infile": "data/pip/dask-geopandas.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "click": "8.1.8",
+    "cloudpickle": "3.1.1",
+    "dask[array,dataframe]": "2025.4.1",
+    "fsspec": "2025.3.2",
+    "geopandas": "1.0.1",
+    "locket": "1.0.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "partd": "1.4.2",
+    "pyarrow": "20.0.0",
+    "pyogrio": "0.10.0",
+    "pyproj": "3.7.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "shapely": "2.1.0",
+    "six": "1.17.0",
+    "toolz": "1.0.0",
+    "tzdata": "2025.2"
+  }
+}

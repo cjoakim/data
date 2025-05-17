@@ -1,0 +1,8 @@
+{
+  "libname": "numpy-ringbuffer",
+  "libvers": "0.2.2",
+  "infile": "data/pip/numpy-ringbuffer.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "oauthlib",
+  "libvers": "3.2.2",
+  "infile": "data/pip/oauthlib.txt",
+  "dependencies": {}
+}

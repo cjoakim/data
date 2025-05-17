@@ -1,0 +1,6 @@
+{
+  "libname": "simpervisor",
+  "libvers": "1.0.0",
+  "infile": "data/pip/simpervisor.txt",
+  "dependencies": {}
+}

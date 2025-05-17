@@ -1,0 +1,6 @@
+{
+  "libname": "type-enforced",
+  "libvers": "1.10.2",
+  "infile": "data/pip/type-enforced.txt",
+  "dependencies": {}
+}

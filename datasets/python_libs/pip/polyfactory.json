@@ -1,0 +1,10 @@
+{
+  "libname": "polyfactory",
+  "libvers": "2.21.0",
+  "infile": "data/pip/polyfactory.txt",
+  "dependencies": {
+    "faker": "37.1.0",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

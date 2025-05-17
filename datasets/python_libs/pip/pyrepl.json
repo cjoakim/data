@@ -1,0 +1,6 @@
+{
+  "libname": "pyrepl",
+  "libvers": "0.11.3.post1",
+  "infile": "data/pip/pyrepl.txt",
+  "dependencies": {}
+}

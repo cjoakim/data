@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-cuda-cupti-cu11",
+  "libvers": "11.8.87",
+  "infile": "data/pip/nvidia-cuda-cupti-cu11.txt",
+  "dependencies": {}
+}

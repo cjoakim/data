@@ -1,0 +1,6 @@
+{
+  "libname": "distro",
+  "libvers": "1.9.0",
+  "infile": "data/pip/distro.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,16 @@
+{
+  "libname": "kivy",
+  "libvers": "2.3.1",
+  "infile": "data/pip/kivy.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "docutils": "0.21.2",
+    "filetype": "1.2.0",
+    "idna": "3.10",
+    "kivy-garden": "0.1.5",
+    "pygments": "2.19.1",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

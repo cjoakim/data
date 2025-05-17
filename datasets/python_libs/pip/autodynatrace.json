@@ -1,0 +1,11 @@
+{
+  "libname": "autodynatrace",
+  "libvers": "2.1.1",
+  "infile": "data/pip/autodynatrace.txt",
+  "dependencies": {
+    "autowrapt": "1.0",
+    "oneagent-sdk": "1.5.1.20240104.95100",
+    "six": "1.17.0",
+    "wrapt": "1.17.2"
+  }
+}

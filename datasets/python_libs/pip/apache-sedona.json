@@ -1,0 +1,10 @@
+{
+  "libname": "apache-sedona",
+  "libvers": "1.7.1",
+  "infile": "data/pip/apache-sedona.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "numpy": "2.2.5",
+    "shapely": "2.1.0"
+  }
+}

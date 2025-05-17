@@ -1,0 +1,16 @@
+{
+  "libname": "fasttransform",
+  "libvers": "0.0.2",
+  "infile": "data/pip/fasttransform.txt",
+  "dependencies": {
+    "beartype": "0.20.2",
+    "fastcore": "1.8.1",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "packaging": "25.0",
+    "plum-dispatch": "2.5.7",
+    "pygments": "2.19.1",
+    "rich": "14.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

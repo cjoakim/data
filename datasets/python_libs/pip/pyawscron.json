@@ -1,0 +1,9 @@
+{
+  "libname": "pyawscron",
+  "libvers": "1.0.7",
+  "infile": "data/pip/pyawscron.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

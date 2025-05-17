@@ -1,0 +1,6 @@
+{
+  "libname": "pyvoronoi",
+  "libvers": "1.2.4",
+  "infile": "data/pip/pyvoronoi.txt",
+  "dependencies": {}
+}

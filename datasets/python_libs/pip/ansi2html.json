@@ -1,0 +1,6 @@
+{
+  "libname": "ansi2html",
+  "libvers": "1.9.2",
+  "infile": "data/pip/ansi2html.txt",
+  "dependencies": {}
+}

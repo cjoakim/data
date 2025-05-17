@@ -1,0 +1,8 @@
+{
+  "libname": "wmctrl",
+  "libvers": "0.5",
+  "infile": "data/pip/wmctrl.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

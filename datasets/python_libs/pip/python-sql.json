@@ -1,0 +1,6 @@
+{
+  "libname": "python-sql",
+  "libvers": "1.6.0",
+  "infile": "data/pip/python-sql.txt",
+  "dependencies": {}
+}

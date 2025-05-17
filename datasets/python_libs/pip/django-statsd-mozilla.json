@@ -1,0 +1,8 @@
+{
+  "libname": "django-statsd-mozilla",
+  "libvers": "0.4.0",
+  "infile": "data/pip/django-statsd-mozilla.txt",
+  "dependencies": {
+    "statsd": "4.0.0"
+  }
+}

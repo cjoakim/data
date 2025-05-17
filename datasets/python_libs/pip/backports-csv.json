@@ -1,0 +1,6 @@
+{
+  "libname": "backports-csv",
+  "libvers": "1.0.7",
+  "infile": "data/pip/backports-csv.txt",
+  "dependencies": {}
+}

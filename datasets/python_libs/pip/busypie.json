@@ -1,0 +1,6 @@
+{
+  "libname": "busypie",
+  "libvers": "0.5.1",
+  "infile": "data/pip/busypie.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "apiclient",
+  "libvers": "1.0.4",
+  "infile": "data/pip/apiclient.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "urllib3": "2.4.0"
+  }
+}

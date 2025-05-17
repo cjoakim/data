@@ -1,0 +1,6 @@
+{
+  "libname": "mgrs",
+  "libvers": "1.5.0",
+  "infile": "data/pip/mgrs.txt",
+  "dependencies": {}
+}

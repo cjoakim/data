@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-geo-routes",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-geo-routes.txt",
+  "dependencies": {}
+}

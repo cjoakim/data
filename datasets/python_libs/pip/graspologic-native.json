@@ -1,0 +1,6 @@
+{
+  "libname": "graspologic-native",
+  "libvers": "1.2.5",
+  "infile": "data/pip/graspologic-native.txt",
+  "dependencies": {}
+}

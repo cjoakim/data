@@ -1,0 +1,6 @@
+{
+  "libname": "python-gdcm",
+  "libvers": "3.0.24.1",
+  "infile": "data/pip/python-gdcm.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "py-ed25519-zebra-bindings",
+  "libvers": "1.2.0",
+  "infile": "data/pip/py-ed25519-zebra-bindings.txt",
+  "dependencies": {}
+}

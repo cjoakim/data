@@ -1,0 +1,6 @@
+{
+  "libname": "metar-taf-parser-mivek",
+  "libvers": "1.9.0",
+  "infile": "data/pip/metar-taf-parser-mivek.txt",
+  "dependencies": {}
+}

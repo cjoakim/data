@@ -1,0 +1,9 @@
+{
+  "libname": "apysc",
+  "libvers": "4.12.0",
+  "infile": "data/pip/apysc.txt",
+  "dependencies": {
+    "html-minifier": "0.0.4",
+    "typing-extensions": "4.13.2"
+  }
+}

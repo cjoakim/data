@@ -1,0 +1,6 @@
+{
+  "libname": "warc3-wet",
+  "libvers": "0.2.5",
+  "infile": "data/pip/warc3-wet.txt",
+  "dependencies": {}
+}

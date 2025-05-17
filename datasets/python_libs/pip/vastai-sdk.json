@@ -1,0 +1,28 @@
+{
+  "libname": "vastai-sdk",
+  "libvers": "0.1.19",
+  "infile": "data/pip/vastai-sdk.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "borb": "2.0.32",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "fonttools": "4.57.0",
+    "idna": "3.10",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "pillow": "11.2.1",
+    "pyparsing": "3.2.3",
+    "python-barcode": "0.15.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "qrcode[pil]": "8.2",
+    "referencing": "0.36.2",
+    "requests": "2.32.3",
+    "rpds-py": "0.24.0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "xdg": "6.0.0"
+  }
+}

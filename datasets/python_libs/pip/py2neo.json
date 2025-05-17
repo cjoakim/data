@@ -1,0 +1,17 @@
+{
+  "libname": "py2neo",
+  "libvers": "2021.2.4",
+  "infile": "data/pip/py2neo.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "interchange": "2021.0.4",
+    "monotonic": "1.6",
+    "packaging": "25.0",
+    "pansi": "2024.11.0",
+    "pillow": "11.2.1",
+    "pygments": "2.19.1",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-python-dateutil",
+  "libvers": "2.9.0.20241206",
+  "infile": "data/pip/types-python-dateutil.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "punq",
+  "libvers": "0.7.0",
+  "infile": "data/pip/punq.txt",
+  "dependencies": {}
+}

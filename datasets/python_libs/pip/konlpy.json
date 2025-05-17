@@ -1,0 +1,11 @@
+{
+  "libname": "konlpy",
+  "libvers": "0.6.0",
+  "infile": "data/pip/konlpy.txt",
+  "dependencies": {
+    "jpype1": "1.5.2",
+    "lxml": "5.4.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0"
+  }
+}

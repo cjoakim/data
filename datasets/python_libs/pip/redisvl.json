@@ -1,0 +1,21 @@
+{
+  "libname": "redisvl",
+  "libvers": "0.6.0",
+  "infile": "data/pip/redisvl.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "jsonpath-ng": "1.7.0",
+    "ml-dtypes": "0.5.1",
+    "numpy": "2.2.5",
+    "ply": "3.11",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pyjwt": "2.9.0",
+    "python-ulid": "3.0.0",
+    "pyyaml": "6.0.2",
+    "redis": "5.3.0",
+    "tenacity": "9.1.2",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "yappi",
+  "libvers": "1.6.10",
+  "infile": "data/pip/yappi.txt",
+  "dependencies": {}
+}

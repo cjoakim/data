@@ -1,0 +1,10 @@
+{
+  "libname": "rfc3161-client",
+  "libvers": "1.0.1",
+  "infile": "data/pip/rfc3161-client.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22"
+  }
+}

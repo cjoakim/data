@@ -1,0 +1,10 @@
+{
+  "libname": "esp-idf-nvs-partition-gen",
+  "libvers": "0.1.9",
+  "infile": "data/pip/esp-idf-nvs-partition-gen.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22"
+  }
+}

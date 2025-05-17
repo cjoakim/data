@@ -1,0 +1,6 @@
+{
+  "libname": "yara-python",
+  "libvers": "4.5.2",
+  "infile": "data/pip/yara-python.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,33 @@
+{
+  "libname": "localstack-core",
+  "libvers": "4.3.0",
+  "infile": "data/pip/localstack-core.txt",
+  "dependencies": {
+    "build": "1.2.2.post1",
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "cryptography": "44.0.3",
+    "dill": "0.3.6",
+    "dnslib": "0.9.26",
+    "dnspython": "2.7.0",
+    "idna": "3.10",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "packaging": "25.0",
+    "plux": "1.12.1",
+    "psutil": "7.0.0",
+    "pycparser": "2.22",
+    "pygments": "2.19.1",
+    "pyproject-hooks": "1.2.0",
+    "python-dotenv": "1.1.0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "rich": "14.0.0",
+    "semver": "3.0.4",
+    "tailer": "0.4.1",
+    "urllib3": "2.4.0"
+  }
+}

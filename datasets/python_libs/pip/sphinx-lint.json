@@ -1,0 +1,9 @@
+{
+  "libname": "sphinx-lint",
+  "libvers": "1.0.0",
+  "infile": "data/pip/sphinx-lint.txt",
+  "dependencies": {
+    "polib": "1.2.0",
+    "regex": "2024.11.6"
+  }
+}

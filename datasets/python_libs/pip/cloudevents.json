@@ -1,0 +1,9 @@
+{
+  "libname": "cloudevents",
+  "libvers": "1.11.0",
+  "infile": "data/pip/cloudevents.txt",
+  "dependencies": {
+    "deprecation": "2.1.0",
+    "packaging": "25.0"
+  }
+}

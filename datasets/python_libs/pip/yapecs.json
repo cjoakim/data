@@ -1,0 +1,8 @@
+{
+  "libname": "yapecs",
+  "libvers": "0.4.0",
+  "infile": "data/pip/yapecs.txt",
+  "dependencies": {
+    "filelock": "3.18.0"
+  }
+}

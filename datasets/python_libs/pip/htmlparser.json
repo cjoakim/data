@@ -1,0 +1,6 @@
+{
+  "libname": "htmlparser",
+  "libvers": "0.0.2",
+  "infile": "data/pip/htmlparser.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "markdown",
+  "libvers": "3.8",
+  "infile": "data/pip/markdown.txt",
+  "dependencies": {}
+}

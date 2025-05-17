@@ -1,0 +1,6 @@
+{
+  "libname": "xdg-base-dirs",
+  "libvers": "6.0.2",
+  "infile": "data/pip/xdg-base-dirs.txt",
+  "dependencies": {}
+}

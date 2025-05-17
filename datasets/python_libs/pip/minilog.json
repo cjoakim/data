@@ -1,0 +1,6 @@
+{
+  "libname": "minilog",
+  "libvers": "2.3.1",
+  "infile": "data/pip/minilog.txt",
+  "dependencies": {}
+}

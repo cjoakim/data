@@ -1,0 +1,14 @@
+{
+  "libname": "mxnet",
+  "libvers": "1.6.0",
+  "infile": "data/pip/mxnet.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "graphviz": "0.8.4",
+    "idna": "3.10",
+    "numpy": "1.26.4",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

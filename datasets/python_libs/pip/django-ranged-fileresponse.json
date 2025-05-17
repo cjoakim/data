@@ -1,0 +1,6 @@
+{
+  "libname": "django-ranged-fileresponse",
+  "libvers": "0.1.2",
+  "infile": "data/pip/django-ranged-fileresponse.txt",
+  "dependencies": {}
+}

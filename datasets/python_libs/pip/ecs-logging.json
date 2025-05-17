@@ -1,0 +1,6 @@
+{
+  "libname": "ecs-logging",
+  "libvers": "2.2.0",
+  "infile": "data/pip/ecs-logging.txt",
+  "dependencies": {}
+}

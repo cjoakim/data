@@ -1,0 +1,6 @@
+{
+  "libname": "ipywebrtc",
+  "libvers": "0.6.0",
+  "infile": "data/pip/ipywebrtc.txt",
+  "dependencies": {}
+}

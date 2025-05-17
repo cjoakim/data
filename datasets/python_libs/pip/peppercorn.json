@@ -1,0 +1,6 @@
+{
+  "libname": "peppercorn",
+  "libvers": "0.6",
+  "infile": "data/pip/peppercorn.txt",
+  "dependencies": {}
+}

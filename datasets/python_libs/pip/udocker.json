@@ -1,0 +1,6 @@
+{
+  "libname": "udocker",
+  "libvers": "1.3.17",
+  "infile": "data/pip/udocker.txt",
+  "dependencies": {}
+}

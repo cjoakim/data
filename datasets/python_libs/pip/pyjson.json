@@ -1,0 +1,6 @@
+{
+  "libname": "pyjson",
+  "libvers": "1.4.1",
+  "infile": "data/pip/pyjson.txt",
+  "dependencies": {}
+}

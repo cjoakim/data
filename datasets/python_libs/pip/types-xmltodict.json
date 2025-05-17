@@ -1,0 +1,6 @@
+{
+  "libname": "types-xmltodict",
+  "libvers": "0.14.0.20241009",
+  "infile": "data/pip/types-xmltodict.txt",
+  "dependencies": {}
+}

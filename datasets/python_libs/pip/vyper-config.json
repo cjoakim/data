@@ -1,0 +1,11 @@
+{
+  "libname": "vyper-config",
+  "libvers": "1.2.1",
+  "infile": "data/pip/vyper-config.txt",
+  "dependencies": {
+    "distconfig3": "1.0.1",
+    "pyyaml": "6.0.2",
+    "toml": "0.10.2",
+    "watchdog": "6.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "libname": "types-redis",
+  "libvers": "4.6.0.20241004",
+  "infile": "data/pip/types-redis.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22",
+    "types-cffi": "1.17.0.20250326",
+    "types-pyopenssl": "24.1.0.20240722",
+    "types-setuptools": "80.3.0.20250505"
+  }
+}

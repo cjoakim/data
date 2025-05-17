@@ -1,0 +1,8 @@
+{
+  "libname": "eight",
+  "libvers": "1.0.1",
+  "infile": "data/pip/eight.txt",
+  "dependencies": {
+    "future": "0.18.3"
+  }
+}

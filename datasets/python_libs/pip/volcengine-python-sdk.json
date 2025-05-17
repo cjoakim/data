@@ -1,0 +1,11 @@
+{
+  "libname": "volcengine-python-sdk",
+  "libvers": "2.0.1",
+  "infile": "data/pip/volcengine-python-sdk.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

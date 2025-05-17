@@ -1,0 +1,10 @@
+{
+  "libname": "beautysh",
+  "libvers": "6.2.1",
+  "infile": "data/pip/beautysh.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "types-colorama": "0.4.15.20240311",
+    "types-setuptools": "57.4.18"
+  }
+}

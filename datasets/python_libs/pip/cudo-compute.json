@@ -1,0 +1,13 @@
+{
+  "libname": "cudo-compute",
+  "libvers": "0.3.6",
+  "infile": "data/pip/cudo-compute.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "python-dateutil": "2.9.0.post0",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "libname": "py-cid",
+  "libvers": "0.3.0",
+  "infile": "data/pip/py-cid.txt",
+  "dependencies": {
+    "base58": "1.0.3",
+    "morphys": "1.0",
+    "py-multibase": "1.0.3",
+    "py-multicodec": "0.2.1",
+    "py-multihash": "0.2.3",
+    "python-baseconv": "1.2.2",
+    "six": "1.17.0",
+    "varint": "1.0.2"
+  }
+}

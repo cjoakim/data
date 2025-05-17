@@ -1,0 +1,6 @@
+{
+  "libname": "win-unicode-console",
+  "libvers": "0.5",
+  "infile": "data/pip/win-unicode-console.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "bitmap",
+  "libvers": "0.0.7",
+  "infile": "data/pip/bitmap.txt",
+  "dependencies": {
+    "future": "1.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "optax-shampoo",
+  "libvers": "0.0.6",
+  "infile": "data/pip/optax-shampoo.txt",
+  "dependencies": {}
+}

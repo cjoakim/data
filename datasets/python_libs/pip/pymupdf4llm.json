@@ -1,0 +1,8 @@
+{
+  "libname": "pymupdf4llm",
+  "libvers": "0.0.22",
+  "infile": "data/pip/pymupdf4llm.txt",
+  "dependencies": {
+    "pymupdf": "1.25.5"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "libname": "boutiques",
+  "libvers": "0.5.29",
+  "infile": "data/pip/boutiques.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "simplejson": "3.20.1",
+    "tabulate": "0.9.0",
+    "termcolor": "3.1.0",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pycdlib",
+  "libvers": "1.14.0",
+  "infile": "data/pip/pycdlib.txt",
+  "dependencies": {}
+}

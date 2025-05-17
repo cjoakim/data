@@ -1,0 +1,8 @@
+{
+  "libname": "vsc-dm",
+  "libvers": "0.0.1.11205837584",
+  "infile": "data/pip/vsc-dm.txt",
+  "dependencies": {
+    "debug-mgr": "0.0.2.14425062851"
+  }
+}

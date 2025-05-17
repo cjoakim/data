@@ -1,0 +1,8 @@
+{
+  "libname": "flake8-pie",
+  "libvers": "0.16.0",
+  "infile": "data/pip/flake8-pie.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

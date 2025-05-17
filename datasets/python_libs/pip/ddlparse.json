@@ -1,0 +1,8 @@
+{
+  "libname": "ddlparse",
+  "libvers": "1.10.0",
+  "infile": "data/pip/ddlparse.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "libname": "cos-python-sdk-v5",
+  "libvers": "1.9.36",
+  "infile": "data/pip/cos-python-sdk-v5.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "crcmod": "1.7",
+    "idna": "3.10",
+    "pycryptodome": "3.22.0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0",
+    "xmltodict": "0.14.2"
+  }
+}

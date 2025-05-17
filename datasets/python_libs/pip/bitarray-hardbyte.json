@@ -1,0 +1,6 @@
+{
+  "libname": "bitarray-hardbyte",
+  "libvers": "2.3.8",
+  "infile": "data/pip/bitarray-hardbyte.txt",
+  "dependencies": {}
+}

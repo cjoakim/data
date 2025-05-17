@@ -1,0 +1,9 @@
+{
+  "libname": "brotlipy",
+  "libvers": "0.7.0",
+  "infile": "data/pip/brotlipy.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

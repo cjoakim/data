@@ -1,0 +1,13 @@
+{
+  "libname": "aiopath",
+  "libvers": "0.7.7",
+  "infile": "data/pip/aiopath.txt",
+  "dependencies": {
+    "aiofile": "3.9.0",
+    "anyio": "4.9.0",
+    "caio": "0.9.24",
+    "idna": "3.10",
+    "sniffio": "1.3.1",
+    "typing-extensions": "4.13.2"
+  }
+}

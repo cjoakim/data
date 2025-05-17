@@ -1,0 +1,27 @@
+{
+  "libname": "edx-toggles",
+  "libvers": "5.3.0",
+  "infile": "data/pip/edx-toggles.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "cffi": "1.17.1",
+    "click": "8.1.8",
+    "code-annotations": "2.3.0",
+    "django": "5.2",
+    "django-crum": "0.7.9",
+    "django-waffle": "4.2.0",
+    "edx-django-utils": "7.4.0",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "newrelic": "10.11.0",
+    "pbr": "6.1.1",
+    "psutil": "7.0.0",
+    "pycparser": "2.22",
+    "pynacl": "1.5.0",
+    "python-slugify": "8.0.4",
+    "pyyaml": "6.0.2",
+    "sqlparse": "0.5.3",
+    "stevedore": "5.4.1",
+    "text-unidecode": "1.3"
+  }
+}

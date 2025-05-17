@@ -1,0 +1,8 @@
+{
+  "libname": "networkx-stubs",
+  "libvers": "0.0.1",
+  "infile": "data/pip/networkx-stubs.txt",
+  "dependencies": {
+    "networkx": "3.4.2"
+  }
+}

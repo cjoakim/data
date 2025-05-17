@@ -1,0 +1,6 @@
+{
+  "libname": "wasmer",
+  "libvers": "1.1.0",
+  "infile": "data/pip/wasmer.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "drf-writable-nested",
+  "libvers": "0.7.2",
+  "infile": "data/pip/drf-writable-nested.txt",
+  "dependencies": {}
+}

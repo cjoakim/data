@@ -1,0 +1,28 @@
+{
+  "libname": "pytest-embedded-serial-esp",
+  "libvers": "1.16.1",
+  "infile": "data/pip/pytest-embedded-serial-esp.txt",
+  "dependencies": {
+    "argcomplete": "3.6.2",
+    "bitarray": "3.4.0",
+    "bitstring": "4.3.1",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "ecdsa": "0.19.1",
+    "esptool": "4.8.1",
+    "iniconfig": "2.1.0",
+    "intelhex": "2.3.0",
+    "packaging": "25.0",
+    "pexpect": "4.9.0",
+    "pluggy": "1.5.0",
+    "ptyprocess": "0.7.0",
+    "pycparser": "2.22",
+    "pyserial": "3.5",
+    "pytest": "8.3.5",
+    "pytest-embedded": "1.16.1",
+    "pytest-embedded-serial": "1.16.1",
+    "pyyaml": "6.0.2",
+    "reedsolo": "1.7.0",
+    "six": "1.17.0"
+  }
+}

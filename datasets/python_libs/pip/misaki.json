@@ -1,0 +1,9 @@
+{
+  "libname": "misaki",
+  "libvers": "0.9.4",
+  "infile": "data/pip/misaki.txt",
+  "dependencies": {
+    "addict": "2.4.0",
+    "regex": "2024.11.6"
+  }
+}

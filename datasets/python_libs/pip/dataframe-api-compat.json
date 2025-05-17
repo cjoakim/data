@@ -1,0 +1,6 @@
+{
+  "libname": "dataframe-api-compat",
+  "libvers": "0.2.7",
+  "infile": "data/pip/dataframe-api-compat.txt",
+  "dependencies": {}
+}

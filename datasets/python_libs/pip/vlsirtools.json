@@ -1,0 +1,15 @@
+{
+  "libname": "vlsirtools",
+  "libvers": "7.0.0",
+  "infile": "data/pip/vlsirtools.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "protobuf": "4.25.7",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tzdata": "2025.2",
+    "vlsir": "7.0.0"
+  }
+}

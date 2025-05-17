@@ -1,0 +1,6 @@
+{
+  "libname": "esphome-dashboard",
+  "libvers": "20250415.0",
+  "infile": "data/pip/esphome-dashboard.txt",
+  "dependencies": {}
+}

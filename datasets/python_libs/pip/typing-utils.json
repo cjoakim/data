@@ -1,0 +1,6 @@
+{
+  "libname": "typing-utils",
+  "libvers": "0.1.0",
+  "infile": "data/pip/typing-utils.txt",
+  "dependencies": {}
+}

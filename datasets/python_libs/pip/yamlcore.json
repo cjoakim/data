@@ -1,0 +1,8 @@
+{
+  "libname": "yamlcore",
+  "libvers": "0.0.4",
+  "infile": "data/pip/yamlcore.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

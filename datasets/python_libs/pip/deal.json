@@ -1,0 +1,6 @@
+{
+  "libname": "deal",
+  "libvers": "4.24.5",
+  "infile": "data/pip/deal.txt",
+  "dependencies": {}
+}

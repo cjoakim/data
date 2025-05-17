@@ -1,0 +1,8 @@
+{
+  "libname": "pyhocon",
+  "libvers": "0.3.61",
+  "infile": "data/pip/pyhocon.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

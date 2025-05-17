@@ -1,0 +1,17 @@
+{
+  "libname": "identity",
+  "libvers": "0.10.0",
+  "infile": "data/pip/identity.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "msal": "1.32.3",
+    "pycparser": "2.22",
+    "pyjwt[crypto]": "2.10.1",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

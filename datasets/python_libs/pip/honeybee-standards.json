@@ -1,0 +1,6 @@
+{
+  "libname": "honeybee-standards",
+  "libvers": "2.0.7",
+  "infile": "data/pip/honeybee-standards.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,15 @@
+{
+  "libname": "hsms",
+  "libvers": "0.3.1",
+  "infile": "data/pip/hsms.txt",
+  "dependencies": {
+    "chia-base": "0.1.7",
+    "chia-rs": "0.22.0",
+    "chialisp-loader": "0.1.2",
+    "chialisp-puzzles": "0.1.1",
+    "clvm-rs": "0.2.5",
+    "importlib-resources": "6.5.2",
+    "segno": "1.4.1",
+    "typing-extensions": "4.13.2"
+  }
+}

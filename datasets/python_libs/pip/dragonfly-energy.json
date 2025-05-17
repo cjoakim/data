@@ -1,0 +1,20 @@
+{
+  "libname": "dragonfly-energy",
+  "libvers": "1.33.20",
+  "infile": "data/pip/dragonfly-energy.txt",
+  "dependencies": {
+    "click": "8.1.7",
+    "dragonfly-core": "1.64.0",
+    "dragonfly-schema": "1.14.1",
+    "honeybee-core": "1.61.14",
+    "honeybee-energy": "1.116.20",
+    "honeybee-schema": "1.59.0",
+    "honeybee-standards": "2.0.7",
+    "ladybug-core": "0.44.9",
+    "ladybug-geometry": "1.34.2",
+    "ladybug-geometry-polyskel": "1.7.23",
+    "pydantic": "1.10.22",
+    "pydantic-openapi-helper": "0.2.11",
+    "typing-extensions": "4.13.2"
+  }
+}

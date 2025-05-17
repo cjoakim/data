@@ -1,0 +1,21 @@
+{
+  "libname": "fds-sdk-sparengine",
+  "libvers": "2.0.3",
+  "infile": "data/pip/fds-sdk-sparengine.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "fds-sdk-utils": "2.1.0",
+    "idna": "3.10",
+    "joserfc": "0.11.1",
+    "oauthlib": "3.2.2",
+    "pycparser": "2.22",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "requests-oauthlib": "2.0.0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

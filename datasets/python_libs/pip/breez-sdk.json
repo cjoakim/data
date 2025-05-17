@@ -1,0 +1,6 @@
+{
+  "libname": "breez-sdk",
+  "libvers": "0.7.1",
+  "infile": "data/pip/breez-sdk.txt",
+  "dependencies": {}
+}

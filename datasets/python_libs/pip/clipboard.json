@@ -1,0 +1,8 @@
+{
+  "libname": "clipboard",
+  "libvers": "0.0.4",
+  "infile": "data/pip/clipboard.txt",
+  "dependencies": {
+    "pyperclip": "1.9.0"
+  }
+}

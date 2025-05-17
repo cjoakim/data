@@ -1,0 +1,16 @@
+{
+  "libname": "pyexasol",
+  "libvers": "0.27.0",
+  "infile": "data/pip/pyexasol.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "packaging": "25.0",
+    "pyasn1": "0.6.1",
+    "pycparser": "2.22",
+    "pyopenssl": "25.0.0",
+    "rsa": "4.9.1",
+    "typing-extensions": "4.13.2",
+    "websocket-client": "1.8.0"
+  }
+}

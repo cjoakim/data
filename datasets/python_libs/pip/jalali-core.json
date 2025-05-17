@@ -1,0 +1,6 @@
+{
+  "libname": "jalali-core",
+  "libvers": "1.0.0",
+  "infile": "data/pip/jalali-core.txt",
+  "dependencies": {}
+}

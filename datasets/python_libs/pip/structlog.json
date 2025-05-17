@@ -1,0 +1,6 @@
+{
+  "libname": "structlog",
+  "libvers": "25.3.0",
+  "infile": "data/pip/structlog.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "gguf",
+  "libvers": "0.16.3",
+  "infile": "data/pip/gguf.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pyyaml": "6.0.2",
+    "sentencepiece": "0.2.0",
+    "tqdm": "4.67.1"
+  }
+}

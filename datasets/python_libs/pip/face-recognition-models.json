@@ -1,0 +1,6 @@
+{
+  "libname": "face-recognition-models",
+  "libvers": "0.3.0",
+  "infile": "data/pip/face-recognition-models.txt",
+  "dependencies": {}
+}

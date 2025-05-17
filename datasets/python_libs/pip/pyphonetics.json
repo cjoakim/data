@@ -1,0 +1,8 @@
+{
+  "libname": "pyphonetics",
+  "libvers": "0.5.3",
+  "infile": "data/pip/pyphonetics.txt",
+  "dependencies": {
+    "unidecode": "1.4.0"
+  }
+}

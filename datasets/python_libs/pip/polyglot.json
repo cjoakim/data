@@ -1,0 +1,6 @@
+{
+  "libname": "polyglot",
+  "libvers": "16.7.4",
+  "infile": "data/pip/polyglot.txt",
+  "dependencies": {}
+}

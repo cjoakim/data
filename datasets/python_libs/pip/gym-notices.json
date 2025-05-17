@@ -1,0 +1,6 @@
+{
+  "libname": "gym-notices",
+  "libvers": "0.0.8",
+  "infile": "data/pip/gym-notices.txt",
+  "dependencies": {}
+}

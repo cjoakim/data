@@ -1,0 +1,6 @@
+{
+  "libname": "stdiomask",
+  "libvers": "0.0.6",
+  "infile": "data/pip/stdiomask.txt",
+  "dependencies": {}
+}

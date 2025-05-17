@@ -1,0 +1,29 @@
+{
+  "libname": "dask-image",
+  "libvers": "2024.5.3",
+  "infile": "data/pip/dask-image.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "cloudpickle": "3.1.1",
+    "dask[array,dataframe]": "2025.4.1",
+    "fsspec": "2025.3.2",
+    "imageio": "2.37.0",
+    "locket": "1.0.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "partd": "1.4.2",
+    "pillow": "11.2.1",
+    "pims": "0.7",
+    "pyarrow": "20.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "slicerator": "1.1.0",
+    "tifffile": "2025.3.30",
+    "toolz": "1.0.0",
+    "tzdata": "2025.2"
+  }
+}

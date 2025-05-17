@@ -1,0 +1,9 @@
+{
+  "libname": "grappa",
+  "libvers": "1.0.1",
+  "infile": "data/pip/grappa.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "six": "1.17.0"
+  }
+}

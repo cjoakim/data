@@ -1,0 +1,9 @@
+{
+  "libname": "python-binary-memcached",
+  "libvers": "0.31.4",
+  "infile": "data/pip/python-binary-memcached.txt",
+  "dependencies": {
+    "six": "1.17.0",
+    "uhashring": "2.4"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "cmp-version",
+  "libvers": "3.0.0",
+  "infile": "data/pip/cmp-version.txt",
+  "dependencies": {}
+}

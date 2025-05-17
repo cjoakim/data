@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-codebuild",
+  "libvers": "1.38.2",
+  "infile": "data/pip/mypy-boto3-codebuild.txt",
+  "dependencies": {}
+}

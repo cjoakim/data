@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-kinesis-video-signaling",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-kinesis-video-signaling.txt",
+  "dependencies": {}
+}

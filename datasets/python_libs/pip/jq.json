@@ -1,0 +1,6 @@
+{
+  "libname": "jq",
+  "libvers": "1.8.0",
+  "infile": "data/pip/jq.txt",
+  "dependencies": {}
+}

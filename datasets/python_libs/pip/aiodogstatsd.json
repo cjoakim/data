@@ -1,0 +1,6 @@
+{
+  "libname": "aiodogstatsd",
+  "libvers": "0.16.0.post0",
+  "infile": "data/pip/aiodogstatsd.txt",
+  "dependencies": {}
+}

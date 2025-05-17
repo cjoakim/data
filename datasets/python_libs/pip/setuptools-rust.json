@@ -1,0 +1,8 @@
+{
+  "libname": "setuptools-rust",
+  "libvers": "1.11.1",
+  "infile": "data/pip/setuptools-rust.txt",
+  "dependencies": {
+    "semantic-version": "2.10.0"
+  }
+}

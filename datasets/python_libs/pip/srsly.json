@@ -1,0 +1,8 @@
+{
+  "libname": "srsly",
+  "libvers": "2.5.1",
+  "infile": "data/pip/srsly.txt",
+  "dependencies": {
+    "catalogue": "2.0.10"
+  }
+}

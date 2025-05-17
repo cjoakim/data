@@ -1,0 +1,6 @@
+{
+  "libname": "autopy",
+  "libvers": "4.0.1",
+  "infile": "data/pip/autopy.txt",
+  "dependencies": {}
+}

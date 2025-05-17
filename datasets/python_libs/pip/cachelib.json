@@ -1,0 +1,6 @@
+{
+  "libname": "cachelib",
+  "libvers": "0.13.0",
+  "infile": "data/pip/cachelib.txt",
+  "dependencies": {}
+}

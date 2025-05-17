@@ -1,0 +1,18 @@
+{
+  "libname": "ploomber-core",
+  "libvers": "0.2.26",
+  "infile": "data/pip/ploomber-core.txt",
+  "dependencies": {
+    "backoff": "2.2.1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "distro": "1.9.0",
+    "idna": "3.10",
+    "posthog": "4.0.1",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

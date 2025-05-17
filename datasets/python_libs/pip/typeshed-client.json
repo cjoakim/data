@@ -1,0 +1,9 @@
+{
+  "libname": "typeshed-client",
+  "libvers": "2.7.0",
+  "infile": "data/pip/typeshed-client.txt",
+  "dependencies": {
+    "importlib-resources": "6.5.2",
+    "typing-extensions": "4.13.2"
+  }
+}

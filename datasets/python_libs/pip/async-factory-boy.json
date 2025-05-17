@@ -1,0 +1,10 @@
+{
+  "libname": "async-factory-boy",
+  "libvers": "1.0.1",
+  "infile": "data/pip/async-factory-boy.txt",
+  "dependencies": {
+    "factory-boy": "3.3.3",
+    "faker": "37.1.0",
+    "tzdata": "2025.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "django-ipware",
+  "libvers": "7.0.1",
+  "infile": "data/pip/django-ipware.txt",
+  "dependencies": {
+    "python-ipware": "3.0.0"
+  }
+}

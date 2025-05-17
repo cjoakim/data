@@ -1,0 +1,8 @@
+{
+  "libname": "yaml-config",
+  "libvers": "0.1.5",
+  "infile": "data/pip/yaml-config.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

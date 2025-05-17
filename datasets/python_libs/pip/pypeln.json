@@ -1,0 +1,8 @@
+{
+  "libname": "pypeln",
+  "libvers": "0.4.9",
+  "infile": "data/pip/pypeln.txt",
+  "dependencies": {
+    "stopit": "1.1.2"
+  }
+}

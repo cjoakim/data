@@ -1,0 +1,8 @@
+{
+  "libname": "resfo",
+  "libvers": "4.2.0",
+  "infile": "data/pip/resfo.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

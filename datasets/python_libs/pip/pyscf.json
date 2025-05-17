@@ -1,0 +1,10 @@
+{
+  "libname": "pyscf",
+  "libvers": "2.9.0",
+  "infile": "data/pip/pyscf.txt",
+  "dependencies": {
+    "h5py": "3.13.0",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "globus-identity-mapping",
+  "libvers": "0.4.0",
+  "infile": "data/pip/globus-identity-mapping.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "marshmallow": "3.21.3",
+    "marshmallow-oneofschema": "3.1.1",
+    "packaging": "25.0",
+    "typing-extensions": "4.13.2"
+  }
+}

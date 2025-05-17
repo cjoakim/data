@@ -1,0 +1,6 @@
+{
+  "libname": "astropy-iers-data",
+  "libvers": "0.2025.5.5.0.38.14",
+  "infile": "data/pip/astropy-iers-data.txt",
+  "dependencies": {}
+}

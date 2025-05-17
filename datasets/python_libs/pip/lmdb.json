@@ -1,0 +1,6 @@
+{
+  "libname": "lmdb",
+  "libvers": "1.6.2",
+  "infile": "data/pip/lmdb.txt",
+  "dependencies": {}
+}

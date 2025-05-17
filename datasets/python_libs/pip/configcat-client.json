@@ -1,0 +1,15 @@
+{
+  "libname": "configcat-client",
+  "libvers": "9.0.4",
+  "infile": "data/pip/configcat-client.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "enum-compat": "0.0.3",
+    "idna": "3.10",
+    "qualname": "0.1.0",
+    "requests": "2.32.3",
+    "semver": "3.0.4",
+    "urllib3": "2.4.0"
+  }
+}

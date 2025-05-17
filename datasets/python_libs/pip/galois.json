@@ -1,0 +1,11 @@
+{
+  "libname": "galois",
+  "libvers": "0.4.6",
+  "infile": "data/pip/galois.txt",
+  "dependencies": {
+    "llvmlite": "0.44.0",
+    "numba": "0.61.2",
+    "numpy": "2.2.5",
+    "typing-extensions": "4.13.2"
+  }
+}

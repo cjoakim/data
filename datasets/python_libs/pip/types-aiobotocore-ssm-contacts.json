@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-ssm-contacts",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-ssm-contacts.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "meson-python",
+  "libvers": "0.18.0",
+  "infile": "data/pip/meson-python.txt",
+  "dependencies": {
+    "meson": "1.8.0",
+    "packaging": "25.0",
+    "pyproject-metadata": "0.9.1"
+  }
+}

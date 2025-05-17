@@ -1,0 +1,6 @@
+{
+  "libname": "text-unidecode",
+  "libvers": "1.3",
+  "infile": "data/pip/text-unidecode.txt",
+  "dependencies": {}
+}

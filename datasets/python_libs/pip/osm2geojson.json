@@ -1,0 +1,14 @@
+{
+  "libname": "osm2geojson",
+  "libvers": "0.2.6",
+  "infile": "data/pip/osm2geojson.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "numpy": "2.2.5",
+    "requests": "2.32.3",
+    "shapely": "2.1.0",
+    "urllib3": "2.4.0"
+  }
+}

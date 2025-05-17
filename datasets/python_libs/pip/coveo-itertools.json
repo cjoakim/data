@@ -1,0 +1,6 @@
+{
+  "libname": "coveo-itertools",
+  "libvers": "2.0.11",
+  "infile": "data/pip/coveo-itertools.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,27 @@
+{
+  "libname": "bluesky",
+  "libvers": "1.14.0",
+  "infile": "data/pip/bluesky.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "cycler": "0.12.1",
+    "deprecated": "1.2.18",
+    "event-model": "1.22.3",
+    "historydict": "1.2.6",
+    "importlib-metadata": "8.6.1",
+    "importlib-resources": "6.5.2",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "msgpack": "1.1.0",
+    "msgpack-numpy": "0.4.8",
+    "numpy": "2.2.5",
+    "opentelemetry-api": "1.32.1",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "toolz": "1.0.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2",
+    "zipp": "3.21.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "openai-clip",
+  "libvers": "1.0.1",
+  "infile": "data/pip/openai-clip.txt",
+  "dependencies": {
+    "ftfy": "6.3.1",
+    "regex": "2024.11.6",
+    "tqdm": "4.67.1",
+    "wcwidth": "0.2.13"
+  }
+}

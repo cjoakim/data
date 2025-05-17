@@ -1,0 +1,13 @@
+{
+  "libname": "asgi-correlation-id",
+  "libvers": "4.3.4",
+  "infile": "data/pip/asgi-correlation-id.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "sniffio": "1.3.1",
+    "starlette": "0.46.2",
+    "typing-extensions": "4.13.2"
+  }
+}

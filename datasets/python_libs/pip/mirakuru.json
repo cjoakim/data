@@ -1,0 +1,8 @@
+{
+  "libname": "mirakuru",
+  "libvers": "2.6.0",
+  "infile": "data/pip/mirakuru.txt",
+  "dependencies": {
+    "psutil": "7.0.0"
+  }
+}

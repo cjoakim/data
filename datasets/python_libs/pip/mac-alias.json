@@ -1,0 +1,6 @@
+{
+  "libname": "mac-alias",
+  "libvers": "2.2.2",
+  "infile": "data/pip/mac-alias.txt",
+  "dependencies": {}
+}

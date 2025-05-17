@@ -1,0 +1,6 @@
+{
+  "libname": "npy-append-array",
+  "libvers": "0.9.16",
+  "infile": "data/pip/npy-append-array.txt",
+  "dependencies": {}
+}

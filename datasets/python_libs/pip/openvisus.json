@@ -1,0 +1,6 @@
+{
+  "libname": "openvisus",
+  "libvers": "2.2.138",
+  "infile": "data/pip/openvisus.txt",
+  "dependencies": {}
+}

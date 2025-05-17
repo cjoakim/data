@@ -1,0 +1,19 @@
+{
+  "libname": "gitman",
+  "libvers": "3.5.3",
+  "infile": "data/pip/gitman.txt",
+  "dependencies": {
+    "cached-property": "1.5.2",
+    "classproperties": "0.2.0",
+    "datafiles": "2.3.3",
+    "json-five": "1.1.2",
+    "minilog": "2.3.1",
+    "parse": "1.20.2",
+    "regex": "2024.11.6",
+    "ruamel-yaml": "0.17.40",
+    "ruamel-yaml-clib": "0.2.12",
+    "sly": "0.5",
+    "tomlkit": "0.10.2",
+    "universal-startfile": "0.2"
+  }
+}

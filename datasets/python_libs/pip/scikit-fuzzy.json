@@ -1,0 +1,6 @@
+{
+  "libname": "scikit-fuzzy",
+  "libvers": "0.5.0",
+  "infile": "data/pip/scikit-fuzzy.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "langdetect",
+  "libvers": "1.0.9",
+  "infile": "data/pip/langdetect.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

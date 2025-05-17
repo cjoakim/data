@@ -1,0 +1,22 @@
+{
+  "libname": "multi-storage-client",
+  "libvers": "0.20.2",
+  "infile": "data/pip/multi-storage-client.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "deprecated": "1.2.18",
+    "filelock": "3.18.0",
+    "importlib-metadata": "8.6.1",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "opentelemetry-api": "1.32.1",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2",
+    "zipp": "3.21.0"
+  }
+}

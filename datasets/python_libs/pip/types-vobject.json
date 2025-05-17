@@ -1,0 +1,6 @@
+{
+  "libname": "types-vobject",
+  "libvers": "0.9.9.20250228",
+  "infile": "data/pip/types-vobject.txt",
+  "dependencies": {}
+}

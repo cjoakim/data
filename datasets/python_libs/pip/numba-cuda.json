@@ -1,0 +1,10 @@
+{
+  "libname": "numba-cuda",
+  "libvers": "0.10.0",
+  "infile": "data/pip/numba-cuda.txt",
+  "dependencies": {
+    "llvmlite": "0.44.0",
+    "numba": "0.61.2",
+    "numpy": "2.2.5"
+  }
+}

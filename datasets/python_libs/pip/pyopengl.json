@@ -1,0 +1,6 @@
+{
+  "libname": "pyopengl",
+  "libvers": "3.1.9",
+  "infile": "data/pip/pyopengl.txt",
+  "dependencies": {}
+}

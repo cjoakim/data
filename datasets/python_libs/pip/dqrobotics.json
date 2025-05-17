@@ -1,0 +1,8 @@
+{
+  "libname": "dqrobotics",
+  "libvers": "0.0.0",
+  "infile": "data/pip/dqrobotics.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

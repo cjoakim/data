@@ -1,0 +1,6 @@
+{
+  "libname": "python-decouple",
+  "libvers": "3.8",
+  "infile": "data/pip/python-decouple.txt",
+  "dependencies": {}
+}

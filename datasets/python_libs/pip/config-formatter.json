@@ -1,0 +1,8 @@
+{
+  "libname": "config-formatter",
+  "libvers": "1.2.0",
+  "infile": "data/pip/config-formatter.txt",
+  "dependencies": {
+    "configupdater": "3.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "backcall",
+  "libvers": "0.2.0",
+  "infile": "data/pip/backcall.txt",
+  "dependencies": {}
+}

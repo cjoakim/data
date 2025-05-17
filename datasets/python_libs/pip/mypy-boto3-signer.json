@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-signer",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-signer.txt",
+  "dependencies": {}
+}

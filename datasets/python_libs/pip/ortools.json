@@ -1,0 +1,16 @@
+{
+  "libname": "ortools",
+  "libvers": "9.12.4544",
+  "infile": "data/pip/ortools.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "immutabledict": "4.2.1",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "protobuf": "5.29.4",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tzdata": "2025.2"
+  }
+}

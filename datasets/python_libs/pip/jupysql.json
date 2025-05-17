@@ -1,0 +1,29 @@
+{
+  "libname": "jupysql",
+  "libvers": "0.11.1",
+  "infile": "data/pip/jupysql.txt",
+  "dependencies": {
+    "backoff": "2.2.1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "distro": "1.9.0",
+    "idna": "3.10",
+    "ipython-genutils": "0.2.0",
+    "jinja2": "3.1.6",
+    "jupysql-plugin": "0.4.5",
+    "markupsafe": "3.0.2",
+    "ploomber-core": "0.2.26",
+    "posthog": "4.0.1",
+    "prettytable": "3.16.0",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "sqlglot": "26.16.4",
+    "sqlparse": "0.5.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "wcwidth": "0.2.13"
+  }
+}

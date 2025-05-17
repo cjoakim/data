@@ -1,0 +1,13 @@
+{
+  "libname": "mongo-connector",
+  "libvers": "3.1.1",
+  "infile": "data/pip/mongo-connector.txt",
+  "dependencies": {
+    "autocommand": "2.2.2",
+    "dnspython": "2.7.0",
+    "importlib-metadata": "8.7.0",
+    "importlib-resources": "6.5.2",
+    "pymongo": "4.12.1",
+    "zipp": "3.21.0"
+  }
+}

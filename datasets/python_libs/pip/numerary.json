@@ -1,0 +1,8 @@
+{
+  "libname": "numerary",
+  "libvers": "0.4.4",
+  "infile": "data/pip/numerary.txt",
+  "dependencies": {
+    "beartype": "0.20.2"
+  }
+}

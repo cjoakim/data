@@ -1,0 +1,9 @@
+{
+  "libname": "pynut3",
+  "libvers": "2.2.1",
+  "infile": "data/pip/pynut3.txt",
+  "dependencies": {
+    "pexpect": "4.9.0",
+    "ptyprocess": "0.7.0"
+  }
+}

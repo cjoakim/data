@@ -1,0 +1,6 @@
+{
+  "libname": "pyminizip",
+  "libvers": "0.2.6",
+  "infile": "data/pip/pyminizip.txt",
+  "dependencies": {}
+}

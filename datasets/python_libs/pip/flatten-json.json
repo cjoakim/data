@@ -1,0 +1,8 @@
+{
+  "libname": "flatten-json",
+  "libvers": "0.1.14",
+  "infile": "data/pip/flatten-json.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

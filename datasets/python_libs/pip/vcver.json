@@ -1,0 +1,8 @@
+{
+  "libname": "vcver",
+  "libvers": "0.2.12",
+  "infile": "data/pip/vcver.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "libname": "stestr",
+  "libvers": "4.2.0",
+  "infile": "data/pip/stestr.txt",
+  "dependencies": {
+    "autopage": "0.5.2",
+    "cliff": "4.9.1",
+    "cmd2": "2.5.11",
+    "fixtures": "4.2.5",
+    "gnureadline": "8.2.13",
+    "iso8601": "2.1.0",
+    "pbr": "6.1.1",
+    "prettytable": "3.16.0",
+    "pyperclip": "1.9.0",
+    "python-subunit": "1.4.4",
+    "pyyaml": "6.0.2",
+    "stevedore": "5.4.1",
+    "testtools": "2.7.2",
+    "tomlkit": "0.13.2",
+    "voluptuous": "0.15.2",
+    "wcwidth": "0.2.13"
+  }
+}

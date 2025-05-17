@@ -1,0 +1,26 @@
+{
+  "libname": "phylib",
+  "libvers": "2.6.0",
+  "infile": "data/pip/phylib.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "cloudpickle": "3.1.1",
+    "dask": "2025.4.1",
+    "fsspec": "2025.3.2",
+    "idna": "3.10",
+    "joblib": "1.5.0",
+    "locket": "1.0.0",
+    "mtscomp": "1.0.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "partd": "1.4.2",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "scipy": "1.15.2",
+    "toolz": "1.0.0",
+    "tqdm": "4.67.1",
+    "urllib3": "2.4.0"
+  }
+}

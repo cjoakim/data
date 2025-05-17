@@ -1,0 +1,6 @@
+{
+  "libname": "pywin32-ctypes",
+  "libvers": "0.2.3",
+  "infile": "data/pip/pywin32-ctypes.txt",
+  "dependencies": {}
+}

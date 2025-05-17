@@ -1,0 +1,6 @@
+{
+  "libname": "commonmark",
+  "libvers": "0.9.1",
+  "infile": "data/pip/commonmark.txt",
+  "dependencies": {}
+}

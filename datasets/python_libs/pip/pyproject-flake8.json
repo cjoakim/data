@@ -1,0 +1,11 @@
+{
+  "libname": "pyproject-flake8",
+  "libvers": "7.0.0",
+  "infile": "data/pip/pyproject-flake8.txt",
+  "dependencies": {
+    "flake8": "7.0.0",
+    "mccabe": "0.7.0",
+    "pycodestyle": "2.11.1",
+    "pyflakes": "3.2.0"
+  }
+}

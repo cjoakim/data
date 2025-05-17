@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-iot-data",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-iot-data.txt",
+  "dependencies": {}
+}

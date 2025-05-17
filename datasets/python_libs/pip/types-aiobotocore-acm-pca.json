@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-acm-pca",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-acm-pca.txt",
+  "dependencies": {}
+}

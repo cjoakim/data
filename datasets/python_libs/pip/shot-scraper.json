@@ -1,0 +1,14 @@
+{
+  "libname": "shot-scraper",
+  "libvers": "1.8",
+  "infile": "data/pip/shot-scraper.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "click-default-group": "1.2.4",
+    "greenlet": "3.2.1",
+    "playwright": "1.52.0",
+    "pyee": "13.0.0",
+    "pyyaml": "6.0.2",
+    "typing-extensions": "4.13.2"
+  }
+}

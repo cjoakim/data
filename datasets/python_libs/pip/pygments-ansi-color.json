@@ -1,0 +1,8 @@
+{
+  "libname": "pygments-ansi-color",
+  "libvers": "0.3.0",
+  "infile": "data/pip/pygments-ansi-color.txt",
+  "dependencies": {
+    "pygments": "2.19.1"
+  }
+}

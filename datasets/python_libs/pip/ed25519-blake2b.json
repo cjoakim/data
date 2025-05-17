@@ -1,0 +1,6 @@
+{
+  "libname": "ed25519-blake2b",
+  "libvers": "1.4.1",
+  "infile": "data/pip/ed25519-blake2b.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "names-generator",
+  "libvers": "0.2.0",
+  "infile": "data/pip/names-generator.txt",
+  "dependencies": {
+    "cmdkit": "2.7.7"
+  }
+}

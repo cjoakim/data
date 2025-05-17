@@ -1,0 +1,6 @@
+{
+  "libname": "types-fb303",
+  "libvers": "1.0.0",
+  "infile": "data/pip/types-fb303.txt",
+  "dependencies": {}
+}

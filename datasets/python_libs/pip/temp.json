@@ -1,0 +1,6 @@
+{
+  "libname": "temp",
+  "libvers": "2020.7.2",
+  "infile": "data/pip/temp.txt",
+  "dependencies": {}
+}

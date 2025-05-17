@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-nvimgcodec-cu12",
+  "libvers": "0.5.0.13",
+  "infile": "data/pip/nvidia-nvimgcodec-cu12.txt",
+  "dependencies": {}
+}

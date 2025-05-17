@@ -1,0 +1,19 @@
+{
+  "libname": "texterrors",
+  "libvers": "1.0.9",
+  "infile": "data/pip/texterrors.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "levenshtein": "0.27.1",
+    "loguru": "0.7.3",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "plac": "1.4.5",
+    "pluggy": "1.5.0",
+    "pybind11": "2.13.6",
+    "pytest": "8.3.5",
+    "rapidfuzz": "3.13.0",
+    "regex": "2024.11.6",
+    "termcolor": "3.1.0"
+  }
+}

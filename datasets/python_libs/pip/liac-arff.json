@@ -1,0 +1,6 @@
+{
+  "libname": "liac-arff",
+  "libvers": "2.5.0",
+  "infile": "data/pip/liac-arff.txt",
+  "dependencies": {}
+}

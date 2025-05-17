@@ -1,0 +1,8 @@
+{
+  "libname": "proglog",
+  "libvers": "0.1.11",
+  "infile": "data/pip/proglog.txt",
+  "dependencies": {
+    "tqdm": "4.67.1"
+  }
+}

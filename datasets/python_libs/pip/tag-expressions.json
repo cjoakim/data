@@ -1,0 +1,6 @@
+{
+  "libname": "tag-expressions",
+  "libvers": "2.0.1",
+  "infile": "data/pip/tag-expressions.txt",
+  "dependencies": {}
+}

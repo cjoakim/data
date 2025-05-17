@@ -1,0 +1,8 @@
+{
+  "libname": "ensure",
+  "libvers": "1.0.4",
+  "infile": "data/pip/ensure.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

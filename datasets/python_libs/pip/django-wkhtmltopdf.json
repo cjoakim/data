@@ -1,0 +1,8 @@
+{
+  "libname": "django-wkhtmltopdf",
+  "libvers": "3.4.0",
+  "infile": "data/pip/django-wkhtmltopdf.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

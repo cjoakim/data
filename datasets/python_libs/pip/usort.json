@@ -1,0 +1,16 @@
+{
+  "libname": "usort",
+  "libvers": "1.0.8.post1",
+  "infile": "data/pip/usort.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "click": "8.1.8",
+    "libcst": "1.7.0",
+    "moreorless": "0.5.0",
+    "pathspec": "0.12.1",
+    "pyyaml": "6.0.2",
+    "stdlibs": "2025.4.4",
+    "toml": "0.10.2",
+    "trailrunner": "1.4.0"
+  }
+}

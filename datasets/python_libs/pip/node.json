@@ -1,0 +1,17 @@
+{
+  "libname": "node",
+  "libvers": "1.2.2",
+  "infile": "data/pip/node.txt",
+  "dependencies": {
+    "odict": "1.9.0",
+    "plumber": "1.7",
+    "zope-component": "6.0",
+    "zope-deferredimport": "5.0",
+    "zope-deprecation": "5.1",
+    "zope-event": "5.0",
+    "zope-hookable": "7.0",
+    "zope-interface": "7.2",
+    "zope-lifecycleevent": "5.1",
+    "zope-proxy": "6.1"
+  }
+}

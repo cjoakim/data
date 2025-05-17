@@ -1,0 +1,12 @@
+{
+  "libname": "wfuzz",
+  "libvers": "2.4.5",
+  "infile": "data/pip/wfuzz.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "future": "1.0.0",
+    "pycurl": "7.43.0.3",
+    "pyparsing": "3.2.3",
+    "six": "1.17.0"
+  }
+}

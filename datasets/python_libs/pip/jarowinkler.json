@@ -1,0 +1,8 @@
+{
+  "libname": "jarowinkler",
+  "libvers": "2.0.1",
+  "infile": "data/pip/jarowinkler.txt",
+  "dependencies": {
+    "rapidfuzz": "3.13.0"
+  }
+}

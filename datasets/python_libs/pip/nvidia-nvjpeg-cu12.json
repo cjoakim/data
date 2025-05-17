@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-nvjpeg-cu12",
+  "libvers": "12.4.0.16",
+  "infile": "data/pip/nvidia-nvjpeg-cu12.txt",
+  "dependencies": {}
+}

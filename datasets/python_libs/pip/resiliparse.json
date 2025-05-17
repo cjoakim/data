@@ -1,0 +1,11 @@
+{
+  "libname": "resiliparse",
+  "libvers": "0.15.2",
+  "infile": "data/pip/resiliparse.txt",
+  "dependencies": {
+    "brotli": "1.1.0",
+    "click": "8.1.8",
+    "fastwarc": "0.15.2",
+    "tqdm": "4.67.1"
+  }
+}

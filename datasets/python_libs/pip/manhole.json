@@ -1,0 +1,6 @@
+{
+  "libname": "manhole",
+  "libvers": "1.8.1",
+  "infile": "data/pip/manhole.txt",
+  "dependencies": {}
+}

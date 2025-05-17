@@ -1,0 +1,6 @@
+{
+  "libname": "mailchecker",
+  "libvers": "6.0.17",
+  "infile": "data/pip/mailchecker.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,25 @@
+{
+  "libname": "pyannote-database",
+  "libvers": "5.1.3",
+  "infile": "data/pip/pyannote-database.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "pyannote-core": "5.0.0",
+    "pygments": "2.19.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "rich": "14.0.0",
+    "scipy": "1.15.2",
+    "shellingham": "1.5.4",
+    "six": "1.17.0",
+    "sortedcontainers": "2.4.0",
+    "typer": "0.15.3",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

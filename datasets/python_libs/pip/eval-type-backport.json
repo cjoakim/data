@@ -1,0 +1,6 @@
+{
+  "libname": "eval-type-backport",
+  "libvers": "0.2.2",
+  "infile": "data/pip/eval-type-backport.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "py-topping",
+  "libvers": "0.4.11",
+  "infile": "data/pip/py-topping.txt",
+  "dependencies": {}
+}

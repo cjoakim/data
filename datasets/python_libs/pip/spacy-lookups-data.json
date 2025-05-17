@@ -1,0 +1,6 @@
+{
+  "libname": "spacy-lookups-data",
+  "libvers": "1.0.5",
+  "infile": "data/pip/spacy-lookups-data.txt",
+  "dependencies": {}
+}

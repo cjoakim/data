@@ -1,0 +1,8 @@
+{
+  "libname": "concurrent-log-handler",
+  "libvers": "0.9.25",
+  "infile": "data/pip/concurrent-log-handler.txt",
+  "dependencies": {
+    "portalocker": "3.1.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "docstring-parser-fork",
+  "libvers": "0.0.12",
+  "infile": "data/pip/docstring-parser-fork.txt",
+  "dependencies": {}
+}

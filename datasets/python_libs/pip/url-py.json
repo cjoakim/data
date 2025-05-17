@@ -1,0 +1,6 @@
+{
+  "libname": "url-py",
+  "libvers": "0.14.1",
+  "infile": "data/pip/url-py.txt",
+  "dependencies": {}
+}

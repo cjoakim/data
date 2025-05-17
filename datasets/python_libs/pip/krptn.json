@@ -1,0 +1,16 @@
+{
+  "libname": "krptn",
+  "libvers": "0.8.6",
+  "infile": "data/pip/krptn.txt",
+  "dependencies": {
+    "asn1crypto": "1.5.1",
+    "cbor2": "5.6.5",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22",
+    "pyopenssl": "25.0.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2",
+    "webauthn": "2.5.2"
+  }
+}

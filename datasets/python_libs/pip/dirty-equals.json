@@ -1,0 +1,6 @@
+{
+  "libname": "dirty-equals",
+  "libvers": "0.9.0",
+  "infile": "data/pip/dirty-equals.txt",
+  "dependencies": {}
+}

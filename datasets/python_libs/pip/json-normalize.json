@@ -1,0 +1,6 @@
+{
+  "libname": "json-normalize",
+  "libvers": "1.1.0",
+  "infile": "data/pip/json-normalize.txt",
+  "dependencies": {}
+}

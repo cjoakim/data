@@ -1,0 +1,9 @@
+{
+  "libname": "honeybadger",
+  "libvers": "0.22.1",
+  "infile": "data/pip/honeybadger.txt",
+  "dependencies": {
+    "psutil": "7.0.0",
+    "six": "1.17.0"
+  }
+}

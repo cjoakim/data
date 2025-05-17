@@ -1,0 +1,6 @@
+{
+  "libname": "indexed-bzip2",
+  "libvers": "1.6.0",
+  "infile": "data/pip/indexed-bzip2.txt",
+  "dependencies": {}
+}

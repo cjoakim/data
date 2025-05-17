@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-application-autoscaling",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-application-autoscaling.txt",
+  "dependencies": {}
+}

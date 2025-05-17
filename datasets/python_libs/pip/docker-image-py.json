@@ -1,0 +1,8 @@
+{
+  "libname": "docker-image-py",
+  "libvers": "0.1.13",
+  "infile": "data/pip/docker-image-py.txt",
+  "dependencies": {
+    "regex": "2024.11.6"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pymonetdb",
+  "libvers": "1.8.4",
+  "infile": "data/pip/pymonetdb.txt",
+  "dependencies": {}
+}

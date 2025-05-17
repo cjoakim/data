@@ -1,0 +1,10 @@
+{
+  "libname": "csaps",
+  "libvers": "1.3.2",
+  "infile": "data/pip/csaps.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "typing-extensions": "4.13.2"
+  }
+}

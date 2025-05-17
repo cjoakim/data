@@ -1,0 +1,9 @@
+{
+  "libname": "mock-alchemy",
+  "libvers": "0.2.6",
+  "infile": "data/pip/mock-alchemy.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

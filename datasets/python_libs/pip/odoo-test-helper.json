@@ -1,0 +1,6 @@
+{
+  "libname": "odoo-test-helper",
+  "libvers": "2.1.1",
+  "infile": "data/pip/odoo-test-helper.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "sexpdata",
+  "libvers": "1.0.2",
+  "infile": "data/pip/sexpdata.txt",
+  "dependencies": {}
+}

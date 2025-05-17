@@ -1,0 +1,8 @@
+{
+  "libname": "apispec",
+  "libvers": "6.8.1",
+  "infile": "data/pip/apispec.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

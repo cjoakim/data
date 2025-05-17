@@ -1,0 +1,6 @@
+{
+  "libname": "pyphen",
+  "libvers": "0.17.2",
+  "infile": "data/pip/pyphen.txt",
+  "dependencies": {}
+}

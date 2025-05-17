@@ -1,0 +1,11 @@
+{
+  "libname": "robocorp-tasks",
+  "libvers": "4.0.0",
+  "infile": "data/pip/robocorp-tasks.txt",
+  "dependencies": {
+    "docstring-parser-fork": "0.0.5",
+    "packaging": "24.2",
+    "psutil": "5.9.8",
+    "robocorp-log": "3.0.0"
+  }
+}

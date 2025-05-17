@@ -1,0 +1,17 @@
+{
+  "libname": "unitypy",
+  "libvers": "1.22.2",
+  "infile": "data/pip/unitypy.txt",
+  "dependencies": {
+    "archspec": "0.2.5",
+    "astc-encoder-py": "0.1.11",
+    "attrs": "25.3.0",
+    "brotli": "1.1.0",
+    "etcpak": "0.9.13",
+    "fsspec": "2025.3.2",
+    "lz4": "4.4.4",
+    "pillow": "11.2.1",
+    "pyfmodex": "0.7.2",
+    "texture2ddecoder": "1.0.5"
+  }
+}

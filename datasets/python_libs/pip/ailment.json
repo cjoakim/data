@@ -1,0 +1,8 @@
+{
+  "libname": "ailment",
+  "libvers": "9.2.154",
+  "infile": "data/pip/ailment.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

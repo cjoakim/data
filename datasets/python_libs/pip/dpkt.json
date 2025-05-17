@@ -1,0 +1,6 @@
+{
+  "libname": "dpkt",
+  "libvers": "1.9.8",
+  "infile": "data/pip/dpkt.txt",
+  "dependencies": {}
+}

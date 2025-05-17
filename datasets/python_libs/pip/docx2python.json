@@ -1,0 +1,15 @@
+{
+  "libname": "docx2python",
+  "libvers": "3.5.0",
+  "infile": "data/pip/docx2python.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "cssselect": "1.3.0",
+    "lxml": "5.4.0",
+    "paragraphs": "1.0.1",
+    "soupsieve": "2.7",
+    "types-html5lib": "1.1.11.20241018",
+    "types-lxml": "2025.3.30",
+    "typing-extensions": "4.13.2"
+  }
+}

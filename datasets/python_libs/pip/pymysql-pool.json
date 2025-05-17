@@ -1,0 +1,8 @@
+{
+  "libname": "pymysql-pool",
+  "libvers": "0.4.6",
+  "infile": "data/pip/pymysql-pool.txt",
+  "dependencies": {
+    "pymysql": "1.1.1"
+  }
+}

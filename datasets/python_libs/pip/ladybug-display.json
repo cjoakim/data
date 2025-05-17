@@ -1,0 +1,10 @@
+{
+  "libname": "ladybug-display",
+  "libvers": "0.13.2",
+  "infile": "data/pip/ladybug-display.txt",
+  "dependencies": {
+    "click": "8.1.7",
+    "ladybug-core": "0.44.9",
+    "ladybug-geometry": "1.34.2"
+  }
+}

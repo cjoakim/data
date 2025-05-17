@@ -1,0 +1,11 @@
+{
+  "libname": "urlextract",
+  "libvers": "1.9.0",
+  "infile": "data/pip/urlextract.txt",
+  "dependencies": {
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "platformdirs": "4.3.7",
+    "uritools": "5.0.0"
+  }
+}

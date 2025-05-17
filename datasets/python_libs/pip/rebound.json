@@ -1,0 +1,6 @@
+{
+  "libname": "rebound",
+  "libvers": "4.4.8",
+  "infile": "data/pip/rebound.txt",
+  "dependencies": {}
+}

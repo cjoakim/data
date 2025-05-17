@@ -1,0 +1,9 @@
+{
+  "libname": "avro-gen3",
+  "libvers": "0.7.16",
+  "infile": "data/pip/avro-gen3.txt",
+  "dependencies": {
+    "avro": "1.12.0",
+    "six": "1.17.0"
+  }
+}

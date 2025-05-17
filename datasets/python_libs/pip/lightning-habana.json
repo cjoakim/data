@@ -1,0 +1,10 @@
+{
+  "libname": "lightning-habana",
+  "libvers": "1.6.0",
+  "infile": "data/pip/lightning-habana.txt",
+  "dependencies": {
+    "lightning-utilities": "0.14.3",
+    "packaging": "25.0",
+    "typing-extensions": "4.13.2"
+  }
+}

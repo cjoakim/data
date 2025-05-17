@@ -1,0 +1,6 @@
+{
+  "libname": "beaker",
+  "libvers": "1.13.0",
+  "infile": "data/pip/beaker.txt",
+  "dependencies": {}
+}

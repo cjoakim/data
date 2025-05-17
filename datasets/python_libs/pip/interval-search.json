@@ -1,0 +1,6 @@
+{
+  "libname": "interval-search",
+  "libvers": "0.5.2",
+  "infile": "data/pip/interval-search.txt",
+  "dependencies": {}
+}

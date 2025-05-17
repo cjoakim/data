@@ -1,0 +1,6 @@
+{
+  "libname": "adafruit-pureio",
+  "libvers": "1.1.11",
+  "infile": "data/pip/adafruit-pureio.txt",
+  "dependencies": {}
+}

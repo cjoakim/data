@@ -1,0 +1,11 @@
+{
+  "libname": "openvino-tokenizers",
+  "libvers": "2025.1.0.0",
+  "infile": "data/pip/openvino-tokenizers.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "openvino": "2025.1.0",
+    "openvino-telemetry": "2025.1.0",
+    "packaging": "25.0"
+  }
+}

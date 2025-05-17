@@ -1,0 +1,9 @@
+{
+  "libname": "sphinxcontrib-napoleon",
+  "libvers": "0.7",
+  "infile": "data/pip/sphinxcontrib-napoleon.txt",
+  "dependencies": {
+    "pockets": "0.9.1",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pyqt5-sip",
+  "libvers": "12.17.0",
+  "infile": "data/pip/pyqt5-sip.txt",
+  "dependencies": {}
+}

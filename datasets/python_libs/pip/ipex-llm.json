@@ -1,0 +1,6 @@
+{
+  "libname": "ipex-llm",
+  "libvers": "2.2.0",
+  "infile": "data/pip/ipex-llm.txt",
+  "dependencies": {}
+}

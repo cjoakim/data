@@ -1,0 +1,6 @@
+{
+  "libname": "sparganothis-vim",
+  "libvers": "0.1.37",
+  "infile": "data/pip/sparganothis-vim.txt",
+  "dependencies": {}
+}

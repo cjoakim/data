@@ -1,0 +1,6 @@
+{
+  "libname": "emot",
+  "libvers": "3.1",
+  "infile": "data/pip/emot.txt",
+  "dependencies": {}
+}

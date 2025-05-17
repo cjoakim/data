@@ -1,0 +1,6 @@
+{
+  "libname": "decli",
+  "libvers": "0.6.2",
+  "infile": "data/pip/decli.txt",
+  "dependencies": {}
+}

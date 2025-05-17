@@ -1,0 +1,10 @@
+{
+  "libname": "pyogrio",
+  "libvers": "0.10.0",
+  "infile": "data/pip/pyogrio.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "numpy": "2.2.5",
+    "packaging": "25.0"
+  }
+}

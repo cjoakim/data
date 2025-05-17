@@ -1,0 +1,6 @@
+{
+  "libname": "sagemaker-feature-store-pyspark-3-1",
+  "libvers": "1.1.3",
+  "infile": "data/pip/sagemaker-feature-store-pyspark-3-1.txt",
+  "dependencies": {}
+}

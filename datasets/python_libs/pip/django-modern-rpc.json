@@ -1,0 +1,6 @@
+{
+  "libname": "django-modern-rpc",
+  "libvers": "1.1.0",
+  "infile": "data/pip/django-modern-rpc.txt",
+  "dependencies": {}
+}

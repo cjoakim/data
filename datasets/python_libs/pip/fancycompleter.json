@@ -1,0 +1,8 @@
+{
+  "libname": "fancycompleter",
+  "libvers": "0.11.0",
+  "infile": "data/pip/fancycompleter.txt",
+  "dependencies": {
+    "pyrepl": "0.11.3.post1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "wait-for2",
+  "libvers": "0.3.2",
+  "infile": "data/pip/wait-for2.txt",
+  "dependencies": {}
+}

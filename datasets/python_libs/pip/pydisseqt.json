@@ -1,0 +1,6 @@
+{
+  "libname": "pydisseqt",
+  "libvers": "0.1.18",
+  "infile": "data/pip/pydisseqt.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,14 @@
+{
+  "libname": "geventhttpclient",
+  "libvers": "2.3.3",
+  "infile": "data/pip/geventhttpclient.txt",
+  "dependencies": {
+    "brotli": "1.1.0",
+    "certifi": "2025.4.26",
+    "gevent": "25.4.2",
+    "greenlet": "3.2.1",
+    "urllib3": "2.4.0",
+    "zope-event": "5.0",
+    "zope-interface": "7.2"
+  }
+}

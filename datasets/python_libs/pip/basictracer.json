@@ -1,0 +1,10 @@
+{
+  "libname": "basictracer",
+  "libvers": "3.2.0",
+  "infile": "data/pip/basictracer.txt",
+  "dependencies": {
+    "opentracing": "2.4.0",
+    "protobuf": "6.31.0rc2",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "patool",
+  "libvers": "4.0.1",
+  "infile": "data/pip/patool.txt",
+  "dependencies": {}
+}

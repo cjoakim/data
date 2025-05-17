@@ -1,0 +1,6 @@
+{
+  "libname": "sng4onnx",
+  "libvers": "1.0.4",
+  "infile": "data/pip/sng4onnx.txt",
+  "dependencies": {}
+}

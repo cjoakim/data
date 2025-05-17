@@ -1,0 +1,6 @@
+{
+  "libname": "jmxquery",
+  "libvers": "0.6.0",
+  "infile": "data/pip/jmxquery.txt",
+  "dependencies": {}
+}

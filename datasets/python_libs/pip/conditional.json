@@ -1,0 +1,6 @@
+{
+  "libname": "conditional",
+  "libvers": "2.0",
+  "infile": "data/pip/conditional.txt",
+  "dependencies": {}
+}

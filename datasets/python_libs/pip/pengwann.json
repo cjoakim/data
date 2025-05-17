@@ -1,0 +1,11 @@
+{
+  "libname": "pengwann",
+  "libvers": "0.5.2",
+  "infile": "data/pip/pengwann.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2"
+  }
+}

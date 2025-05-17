@@ -1,0 +1,13 @@
+{
+  "libname": "django-money",
+  "libvers": "3.5.4",
+  "infile": "data/pip/django-money.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "babel": "2.17.0",
+    "django": "5.2",
+    "py-moneyed": "3.0",
+    "sqlparse": "0.5.3",
+    "typing-extensions": "4.13.2"
+  }
+}

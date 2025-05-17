@@ -1,0 +1,6 @@
+{
+  "libname": "intel-cmplr-lic-rt",
+  "libvers": "2025.1.1",
+  "infile": "data/pip/intel-cmplr-lic-rt.txt",
+  "dependencies": {}
+}

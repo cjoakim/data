@@ -1,0 +1,6 @@
+{
+  "libname": "libzim",
+  "libvers": "3.7.0",
+  "infile": "data/pip/libzim.txt",
+  "dependencies": {}
+}

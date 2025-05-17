@@ -1,0 +1,15 @@
+{
+  "libname": "mailosaur",
+  "libvers": "7.19.0",
+  "infile": "data/pip/mailosaur.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "python-dateutil": "2.9.0.post0",
+    "requests[security]": "2.32.3",
+    "six": "1.17.0",
+    "tzlocal": "5.3.1",
+    "urllib3": "2.4.0"
+  }
+}

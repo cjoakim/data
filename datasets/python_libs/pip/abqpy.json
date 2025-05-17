@@ -1,0 +1,16 @@
+{
+  "libname": "abqpy",
+  "libvers": "2025.8",
+  "infile": "data/pip/abqpy.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "auto-all": "1.4.1",
+    "fire": "0.7.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "termcolor": "3.1.0",
+    "typeguard": "4.4.2",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

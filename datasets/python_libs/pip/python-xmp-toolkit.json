@@ -1,0 +1,8 @@
+{
+  "libname": "python-xmp-toolkit",
+  "libvers": "2.0.2",
+  "infile": "data/pip/python-xmp-toolkit.txt",
+  "dependencies": {
+    "pytz": "2025.2"
+  }
+}

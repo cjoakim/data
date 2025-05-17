@@ -1,0 +1,8 @@
+{
+  "libname": "fastapi-injector",
+  "libvers": "0.8.0",
+  "infile": "data/pip/fastapi-injector.txt",
+  "dependencies": {
+    "injector": "0.22.0"
+  }
+}

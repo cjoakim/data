@@ -1,0 +1,8 @@
+{
+  "libname": "pipupgrade",
+  "libvers": "1.12.0",
+  "infile": "data/pip/pipupgrade.txt",
+  "dependencies": {
+    "bpyutils": "0.5.8"
+  }
+}

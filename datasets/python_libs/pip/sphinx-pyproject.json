@@ -1,0 +1,12 @@
+{
+  "libname": "sphinx-pyproject",
+  "libvers": "0.3.0",
+  "infile": "data/pip/sphinx-pyproject.txt",
+  "dependencies": {
+    "dom-toml": "2.0.1",
+    "domdf-python-tools": "3.10.0",
+    "natsort": "8.4.0",
+    "tomli": "2.2.1",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "boto3-type-annotations",
+  "libvers": "0.3.1",
+  "infile": "data/pip/boto3-type-annotations.txt",
+  "dependencies": {}
+}

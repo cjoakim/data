@@ -1,0 +1,8 @@
+{
+  "libname": "plyfile",
+  "libvers": "1.1",
+  "infile": "data/pip/plyfile.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

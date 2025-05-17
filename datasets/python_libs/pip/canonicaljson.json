@@ -1,0 +1,6 @@
+{
+  "libname": "canonicaljson",
+  "libvers": "2.0.0",
+  "infile": "data/pip/canonicaljson.txt",
+  "dependencies": {}
+}

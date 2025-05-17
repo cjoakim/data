@@ -1,0 +1,8 @@
+{
+  "libname": "walrus",
+  "libvers": "0.9.4",
+  "infile": "data/pip/walrus.txt",
+  "dependencies": {
+    "redis": "6.0.0"
+  }
+}

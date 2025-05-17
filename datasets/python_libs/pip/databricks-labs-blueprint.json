@@ -1,0 +1,18 @@
+{
+  "libname": "databricks-labs-blueprint",
+  "libvers": "0.10.1",
+  "infile": "data/pip/databricks-labs-blueprint.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "databricks-sdk": "0.52.0",
+    "google-auth": "2.40.0",
+    "idna": "3.10",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "cachey",
+  "libvers": "0.2.1",
+  "infile": "data/pip/cachey.txt",
+  "dependencies": {
+    "heapdict": "1.0.1"
+  }
+}

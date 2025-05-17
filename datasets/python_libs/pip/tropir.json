@@ -1,0 +1,6 @@
+{
+  "libname": "tropir",
+  "libvers": "2.0.2",
+  "infile": "data/pip/tropir.txt",
+  "dependencies": {}
+}

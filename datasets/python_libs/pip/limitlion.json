@@ -1,0 +1,8 @@
+{
+  "libname": "limitlion",
+  "libvers": "1.0.0",
+  "infile": "data/pip/limitlion.txt",
+  "dependencies": {
+    "redis": "6.0.0"
+  }
+}

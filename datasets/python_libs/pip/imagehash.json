@@ -1,0 +1,11 @@
+{
+  "libname": "imagehash",
+  "libvers": "4.3.2",
+  "infile": "data/pip/imagehash.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pillow": "11.2.1",
+    "pywavelets": "1.8.0",
+    "scipy": "1.15.2"
+  }
+}

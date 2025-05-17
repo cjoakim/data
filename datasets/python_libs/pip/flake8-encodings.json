@@ -1,0 +1,17 @@
+{
+  "libname": "flake8-encodings",
+  "libvers": "0.5.1",
+  "infile": "data/pip/flake8-encodings.txt",
+  "dependencies": {
+    "astatine": "0.3.3",
+    "asttokens": "3.0.0",
+    "domdf-python-tools": "3.10.0",
+    "flake8": "7.2.0",
+    "flake8-helper": "0.2.2",
+    "mccabe": "0.7.0",
+    "natsort": "8.4.0",
+    "pycodestyle": "2.13.0",
+    "pyflakes": "3.3.2",
+    "typing-extensions": "4.13.2"
+  }
+}

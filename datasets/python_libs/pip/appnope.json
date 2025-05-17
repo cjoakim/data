@@ -1,0 +1,6 @@
+{
+  "libname": "appnope",
+  "libvers": "0.1.4",
+  "infile": "data/pip/appnope.txt",
+  "dependencies": {}
+}

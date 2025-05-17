@@ -1,0 +1,23 @@
+{
+  "libname": "dapr",
+  "libvers": "1.15.0",
+  "infile": "data/pip/dapr.txt",
+  "dependencies": {
+    "aiohappyeyeballs": "2.6.1",
+    "aiohttp": "3.11.18",
+    "aiosignal": "1.3.2",
+    "attrs": "25.3.0",
+    "frozenlist": "1.6.0",
+    "googleapis-common-protos": "1.70.0",
+    "grpcio": "1.71.0",
+    "grpcio-status": "1.71.0",
+    "idna": "3.10",
+    "multidict": "6.4.3",
+    "propcache": "0.3.1",
+    "protobuf": "5.29.4",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "yarl": "1.20.0"
+  }
+}

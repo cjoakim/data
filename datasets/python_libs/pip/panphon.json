@@ -1,0 +1,13 @@
+{
+  "libname": "panphon",
+  "libvers": "0.21.2",
+  "infile": "data/pip/panphon.txt",
+  "dependencies": {
+    "editdistance": "0.8.1",
+    "munkres": "1.1.4",
+    "numpy": "2.2.5",
+    "pyyaml": "6.0.2",
+    "regex": "2024.11.6",
+    "unicodecsv": "0.14.1"
+  }
+}

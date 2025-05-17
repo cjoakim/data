@@ -1,0 +1,15 @@
+{
+  "libname": "large-image-source-openjpeg",
+  "libvers": "1.32.3",
+  "infile": "data/pip/large-image-source-openjpeg.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "glymur": "0.14.1.post1",
+    "large-image": "1.32.3",
+    "lxml": "5.4.0",
+    "numpy": "2.2.5",
+    "palettable": "3.3.3",
+    "pillow": "11.2.1",
+    "typing-extensions": "4.13.2"
+  }
+}

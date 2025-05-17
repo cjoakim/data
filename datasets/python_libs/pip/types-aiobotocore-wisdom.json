@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-wisdom",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-wisdom.txt",
+  "dependencies": {}
+}

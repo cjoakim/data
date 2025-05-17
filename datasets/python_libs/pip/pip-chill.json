@@ -1,0 +1,6 @@
+{
+  "libname": "pip-chill",
+  "libvers": "1.0.3",
+  "infile": "data/pip/pip-chill.txt",
+  "dependencies": {}
+}

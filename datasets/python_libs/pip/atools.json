@@ -1,0 +1,8 @@
+{
+  "libname": "atools",
+  "libvers": "0.14.2",
+  "infile": "data/pip/atools.txt",
+  "dependencies": {
+    "frozendict": "2.4.6"
+  }
+}

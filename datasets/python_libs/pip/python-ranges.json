@@ -1,0 +1,6 @@
+{
+  "libname": "python-ranges",
+  "libvers": "1.2.2",
+  "infile": "data/pip/python-ranges.txt",
+  "dependencies": {}
+}

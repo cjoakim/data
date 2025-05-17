@@ -1,0 +1,9 @@
+{
+  "libname": "periodictable",
+  "libvers": "2.0.2",
+  "infile": "data/pip/periodictable.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pyparsing": "3.2.3"
+  }
+}

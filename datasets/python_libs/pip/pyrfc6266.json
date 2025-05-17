@@ -1,0 +1,8 @@
+{
+  "libname": "pyrfc6266",
+  "libvers": "1.0.2",
+  "infile": "data/pip/pyrfc6266.txt",
+  "dependencies": {
+    "pyparsing": "3.0.9"
+  }
+}

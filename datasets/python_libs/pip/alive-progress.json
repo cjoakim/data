@@ -1,0 +1,9 @@
+{
+  "libname": "alive-progress",
+  "libvers": "3.2.0",
+  "infile": "data/pip/alive-progress.txt",
+  "dependencies": {
+    "about-time": "4.2.1",
+    "grapheme": "0.6.0"
+  }
+}

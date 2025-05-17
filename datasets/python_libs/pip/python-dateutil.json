@@ -1,0 +1,8 @@
+{
+  "libname": "python-dateutil",
+  "libvers": "2.9.0.post0",
+  "infile": "data/pip/python-dateutil.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

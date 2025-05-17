@@ -1,0 +1,6 @@
+{
+  "libname": "retry-decorator",
+  "libvers": "1.1.1",
+  "infile": "data/pip/retry-decorator.txt",
+  "dependencies": {}
+}

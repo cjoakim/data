@@ -1,0 +1,6 @@
+{
+  "libname": "plyara",
+  "libvers": "2.2.8",
+  "infile": "data/pip/plyara.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,18 @@
+{
+  "libname": "cadquery",
+  "libvers": "2.5.2",
+  "infile": "data/pip/cadquery.txt",
+  "dependencies": {
+    "cadquery-ocp": "7.7.2",
+    "casadi": "3.7.0",
+    "ezdxf": "1.4.1",
+    "fonttools": "4.57.0",
+    "multimethod": "1.12",
+    "nlopt": "2.9.1",
+    "numpy": "2.2.5",
+    "path": "17.1.0",
+    "pyparsing": "3.2.3",
+    "typing-extensions": "4.13.2",
+    "typish": "1.9.3"
+  }
+}

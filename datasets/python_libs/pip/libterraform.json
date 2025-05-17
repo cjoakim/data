@@ -1,0 +1,6 @@
+{
+  "libname": "libterraform",
+  "libvers": "0.8.0",
+  "infile": "data/pip/libterraform.txt",
+  "dependencies": {}
+}

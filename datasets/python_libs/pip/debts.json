@@ -1,0 +1,9 @@
+{
+  "libname": "debts",
+  "libvers": "0.5",
+  "infile": "data/pip/debts.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

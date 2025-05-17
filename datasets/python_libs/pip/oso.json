@@ -1,0 +1,9 @@
+{
+  "libname": "oso",
+  "libvers": "0.27.3",
+  "infile": "data/pip/oso.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

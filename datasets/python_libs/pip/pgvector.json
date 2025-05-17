@@ -1,0 +1,8 @@
+{
+  "libname": "pgvector",
+  "libvers": "0.4.1",
+  "infile": "data/pip/pgvector.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

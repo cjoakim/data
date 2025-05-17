@@ -1,0 +1,11 @@
+{
+  "libname": "tiletanic",
+  "libvers": "1.1.0",
+  "infile": "data/pip/tiletanic.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "geojson": "3.2.0",
+    "numpy": "2.2.5",
+    "shapely": "2.1.0"
+  }
+}

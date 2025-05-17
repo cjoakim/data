@@ -1,0 +1,9 @@
+{
+  "libname": "pynacl",
+  "libvers": "1.5.0",
+  "infile": "data/pip/pynacl.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

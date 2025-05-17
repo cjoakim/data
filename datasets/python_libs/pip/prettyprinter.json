@@ -1,0 +1,9 @@
+{
+  "libname": "prettyprinter",
+  "libvers": "0.18.0",
+  "infile": "data/pip/prettyprinter.txt",
+  "dependencies": {
+    "colorful": "0.5.6",
+    "pygments": "2.19.1"
+  }
+}

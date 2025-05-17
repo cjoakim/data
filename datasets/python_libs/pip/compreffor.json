@@ -1,0 +1,8 @@
+{
+  "libname": "compreffor",
+  "libvers": "0.5.6",
+  "infile": "data/pip/compreffor.txt",
+  "dependencies": {
+    "fonttools": "4.57.0"
+  }
+}

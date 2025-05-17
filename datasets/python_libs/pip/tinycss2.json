@@ -1,0 +1,8 @@
+{
+  "libname": "tinycss2",
+  "libvers": "1.4.0",
+  "infile": "data/pip/tinycss2.txt",
+  "dependencies": {
+    "webencodings": "0.5.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "salt-lint",
+  "libvers": "0.9.2",
+  "infile": "data/pip/salt-lint.txt",
+  "dependencies": {
+    "pathspec": "0.12.1",
+    "pyyaml": "6.0.2"
+  }
+}

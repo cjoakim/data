@@ -1,0 +1,6 @@
+{
+  "libname": "cleanco",
+  "libvers": "2.3",
+  "infile": "data/pip/cleanco.txt",
+  "dependencies": {}
+}

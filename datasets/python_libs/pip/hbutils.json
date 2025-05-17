@@ -1,0 +1,12 @@
+{
+  "libname": "hbutils",
+  "libvers": "0.11.0",
+  "infile": "data/pip/hbutils.txt",
+  "dependencies": {
+    "bitmath": "1.3.3.1",
+    "chardet": "4.0.0",
+    "deprecation": "2.1.0",
+    "packaging": "25.0",
+    "pytimeparse": "1.1.8"
+  }
+}

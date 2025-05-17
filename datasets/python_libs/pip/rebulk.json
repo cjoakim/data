@@ -1,0 +1,6 @@
+{
+  "libname": "rebulk",
+  "libvers": "3.2.0",
+  "infile": "data/pip/rebulk.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "model-pruning-google-research",
+  "libvers": "0.0.5",
+  "infile": "data/pip/model-pruning-google-research.txt",
+  "dependencies": {}
+}

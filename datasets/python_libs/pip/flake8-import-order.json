@@ -1,0 +1,8 @@
+{
+  "libname": "flake8-import-order",
+  "libvers": "0.18.2",
+  "infile": "data/pip/flake8-import-order.txt",
+  "dependencies": {
+    "pycodestyle": "2.13.0"
+  }
+}

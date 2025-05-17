@@ -1,0 +1,8 @@
+{
+  "libname": "pyproject-api",
+  "libvers": "1.9.0",
+  "infile": "data/pip/pyproject-api.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

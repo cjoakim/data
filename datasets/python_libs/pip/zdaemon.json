@@ -1,0 +1,8 @@
+{
+  "libname": "zdaemon",
+  "libvers": "5.1",
+  "infile": "data/pip/zdaemon.txt",
+  "dependencies": {
+    "zconfig": "4.2"
+  }
+}

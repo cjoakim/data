@@ -1,0 +1,8 @@
+{
+  "libname": "h5py",
+  "libvers": "3.13.0",
+  "infile": "data/pip/h5py.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

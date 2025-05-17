@@ -1,0 +1,6 @@
+{
+  "libname": "docstring-inheritance",
+  "libvers": "2.2.2",
+  "infile": "data/pip/docstring-inheritance.txt",
+  "dependencies": {}
+}

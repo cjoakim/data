@@ -1,0 +1,8 @@
+{
+  "libname": "properties",
+  "libvers": "0.6.1",
+  "infile": "data/pip/properties.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

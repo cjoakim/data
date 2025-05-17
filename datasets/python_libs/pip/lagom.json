@@ -1,0 +1,6 @@
+{
+  "libname": "lagom",
+  "libvers": "2.7.5",
+  "infile": "data/pip/lagom.txt",
+  "dependencies": {}
+}

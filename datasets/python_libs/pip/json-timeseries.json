@@ -1,0 +1,9 @@
+{
+  "libname": "json-timeseries",
+  "libvers": "0.1.7",
+  "infile": "data/pip/json-timeseries.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "snakemake-interface-executor-plugins",
+  "libvers": "9.3.5",
+  "infile": "data/pip/snakemake-interface-executor-plugins.txt",
+  "dependencies": {
+    "argparse-dataclass": "2.0.0",
+    "configargparse": "1.7",
+    "snakemake-interface-common": "1.17.4",
+    "throttler": "1.2.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "durationpy",
+  "libvers": "0.9",
+  "infile": "data/pip/durationpy.txt",
+  "dependencies": {}
+}

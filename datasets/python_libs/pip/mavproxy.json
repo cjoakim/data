@@ -1,0 +1,13 @@
+{
+  "libname": "mavproxy",
+  "libvers": "1.8.71",
+  "infile": "data/pip/mavproxy.txt",
+  "dependencies": {
+    "future": "1.0.0",
+    "lxml": "5.4.0",
+    "numpy": "2.2.5",
+    "pymavlink": "2.4.43",
+    "pynmeagps": "1.0.50",
+    "pyserial": "3.5"
+  }
+}

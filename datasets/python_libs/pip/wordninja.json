@@ -1,0 +1,6 @@
+{
+  "libname": "wordninja",
+  "libvers": "2.0.0",
+  "infile": "data/pip/wordninja.txt",
+  "dependencies": {}
+}

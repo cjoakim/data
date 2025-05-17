@@ -1,0 +1,6 @@
+{
+  "libname": "istari-digital-core",
+  "libvers": "6.0.7",
+  "infile": "data/pip/istari-digital-core.txt",
+  "dependencies": {}
+}

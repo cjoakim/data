@@ -1,0 +1,6 @@
+{
+  "libname": "paste",
+  "libvers": "3.10.1",
+  "infile": "data/pip/paste.txt",
+  "dependencies": {}
+}

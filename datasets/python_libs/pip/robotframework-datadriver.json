@@ -1,0 +1,10 @@
+{
+  "libname": "robotframework-datadriver",
+  "libvers": "1.11.2",
+  "infile": "data/pip/robotframework-datadriver.txt",
+  "dependencies": {
+    "docutils": "0.21.2",
+    "pygments": "2.19.1",
+    "robotframework": "7.2.2"
+  }
+}

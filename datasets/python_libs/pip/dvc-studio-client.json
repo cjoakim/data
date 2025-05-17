@@ -1,0 +1,14 @@
+{
+  "libname": "dvc-studio-client",
+  "libvers": "0.21.0",
+  "infile": "data/pip/dvc-studio-client.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "dulwich": "0.22.8",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0",
+    "voluptuous": "0.15.2"
+  }
+}

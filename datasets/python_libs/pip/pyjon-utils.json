@@ -1,0 +1,6 @@
+{
+  "libname": "pyjon-utils",
+  "libvers": "0.7",
+  "infile": "data/pip/pyjon-utils.txt",
+  "dependencies": {}
+}

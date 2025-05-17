@@ -1,0 +1,6 @@
+{
+  "libname": "whois",
+  "libvers": "1.20240129.2",
+  "infile": "data/pip/whois.txt",
+  "dependencies": {}
+}

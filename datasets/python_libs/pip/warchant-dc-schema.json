@@ -1,0 +1,6 @@
+{
+  "libname": "warchant-dc-schema",
+  "libvers": "0.0.10",
+  "infile": "data/pip/warchant-dc-schema.txt",
+  "dependencies": {}
+}

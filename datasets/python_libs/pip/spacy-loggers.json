@@ -1,0 +1,6 @@
+{
+  "libname": "spacy-loggers",
+  "libvers": "1.0.5",
+  "infile": "data/pip/spacy-loggers.txt",
+  "dependencies": {}
+}

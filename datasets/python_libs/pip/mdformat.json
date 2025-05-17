@@ -1,0 +1,9 @@
+{
+  "libname": "mdformat",
+  "libvers": "0.7.22",
+  "infile": "data/pip/mdformat.txt",
+  "dependencies": {
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2"
+  }
+}

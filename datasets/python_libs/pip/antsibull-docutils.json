@@ -1,0 +1,8 @@
+{
+  "libname": "antsibull-docutils",
+  "libvers": "1.1.0",
+  "infile": "data/pip/antsibull-docutils.txt",
+  "dependencies": {
+    "docutils": "0.21.2"
+  }
+}

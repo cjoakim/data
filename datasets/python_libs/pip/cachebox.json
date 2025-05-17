@@ -1,0 +1,6 @@
+{
+  "libname": "cachebox",
+  "libvers": "5.0.1",
+  "infile": "data/pip/cachebox.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "js2py",
+  "libvers": "0.74",
+  "infile": "data/pip/js2py.txt",
+  "dependencies": {
+    "pyjsparser": "2.7.1",
+    "six": "1.17.0",
+    "tzlocal": "5.3.1"
+  }
+}

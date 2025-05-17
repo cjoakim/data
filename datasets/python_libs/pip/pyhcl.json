@@ -1,0 +1,6 @@
+{
+  "libname": "pyhcl",
+  "libvers": "0.4.5",
+  "infile": "data/pip/pyhcl.txt",
+  "dependencies": {}
+}

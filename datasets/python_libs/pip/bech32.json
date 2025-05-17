@@ -1,0 +1,6 @@
+{
+  "libname": "bech32",
+  "libvers": "1.2.0",
+  "infile": "data/pip/bech32.txt",
+  "dependencies": {}
+}

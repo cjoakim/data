@@ -1,0 +1,8 @@
+{
+  "libname": "grpc-interceptor",
+  "libvers": "0.15.4",
+  "infile": "data/pip/grpc-interceptor.txt",
+  "dependencies": {
+    "grpcio": "1.71.0"
+  }
+}

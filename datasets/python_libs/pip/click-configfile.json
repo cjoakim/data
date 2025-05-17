@@ -1,0 +1,10 @@
+{
+  "libname": "click-configfile",
+  "libvers": "0.2.3",
+  "infile": "data/pip/click-configfile.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "configparser": "7.2.0",
+    "six": "1.17.0"
+  }
+}

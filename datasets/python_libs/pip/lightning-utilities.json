@@ -1,0 +1,9 @@
+{
+  "libname": "lightning-utilities",
+  "libvers": "0.14.3",
+  "infile": "data/pip/lightning-utilities.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "typing-extensions": "4.13.2"
+  }
+}

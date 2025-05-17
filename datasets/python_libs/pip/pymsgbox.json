@@ -1,0 +1,6 @@
+{
+  "libname": "pymsgbox",
+  "libvers": "1.0.9",
+  "infile": "data/pip/pymsgbox.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "regress",
+  "libvers": "2025.3.1",
+  "infile": "data/pip/regress.txt",
+  "dependencies": {}
+}

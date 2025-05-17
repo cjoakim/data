@@ -1,0 +1,8 @@
+{
+  "libname": "griffe",
+  "libvers": "1.7.3",
+  "infile": "data/pip/griffe.txt",
+  "dependencies": {
+    "colorama": "0.4.6"
+  }
+}

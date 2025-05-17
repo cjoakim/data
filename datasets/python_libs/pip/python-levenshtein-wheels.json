@@ -1,0 +1,6 @@
+{
+  "libname": "python-levenshtein-wheels",
+  "libvers": "0.13.2",
+  "infile": "data/pip/python-levenshtein-wheels.txt",
+  "dependencies": {}
+}

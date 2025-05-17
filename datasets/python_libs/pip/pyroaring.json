@@ -1,0 +1,6 @@
+{
+  "libname": "pyroaring",
+  "libvers": "1.0.0",
+  "infile": "data/pip/pyroaring.txt",
+  "dependencies": {}
+}

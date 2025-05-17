@@ -1,0 +1,8 @@
+{
+  "libname": "geolib",
+  "libvers": "1.0.7",
+  "infile": "data/pip/geolib.txt",
+  "dependencies": {
+    "future": "1.0.0"
+  }
+}

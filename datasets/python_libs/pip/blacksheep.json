@@ -1,0 +1,19 @@
+{
+  "libname": "blacksheep",
+  "libvers": "2.2.0",
+  "infile": "data/pip/blacksheep.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "essentials": "1.1.6",
+    "essentials-openapi": "1.2.0",
+    "guardpost": "1.0.2",
+    "httptools": "0.6.4",
+    "itsdangerous": "2.2.0",
+    "markupsafe": "3.0.2",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "rodi": "2.0.8",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "shadowcopy",
+  "libvers": "0.0.4",
+  "infile": "data/pip/shadowcopy.txt",
+  "dependencies": {
+    "wmi": "1.4.9"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "pytest-platform-markers",
+  "libvers": "1.0.0",
+  "infile": "data/pip/pytest-platform-markers.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "cssbeautifier",
+  "libvers": "1.15.4",
+  "infile": "data/pip/cssbeautifier.txt",
+  "dependencies": {
+    "editorconfig": "0.17.0",
+    "jsbeautifier": "1.15.4",
+    "six": "1.17.0"
+  }
+}

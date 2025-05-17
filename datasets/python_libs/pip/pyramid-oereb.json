@@ -1,0 +1,6 @@
+{
+  "libname": "pyramid-oereb",
+  "libvers": "2.5.6",
+  "infile": "data/pip/pyramid-oereb.txt",
+  "dependencies": {}
+}

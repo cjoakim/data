@@ -1,0 +1,9 @@
+{
+  "libname": "eventlet",
+  "libvers": "0.39.1",
+  "infile": "data/pip/eventlet.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "greenlet": "3.2.1"
+  }
+}

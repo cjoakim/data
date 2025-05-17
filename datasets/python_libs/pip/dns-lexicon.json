@@ -1,0 +1,24 @@
+{
+  "libname": "dns-lexicon",
+  "libvers": "3.21.1",
+  "infile": "data/pip/dns-lexicon.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "dnspython": "2.7.0",
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "pycparser": "2.22",
+    "pyotp": "2.9.0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "requests-file": "2.1.0",
+    "soupsieve": "2.7",
+    "tldextract": "5.3.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

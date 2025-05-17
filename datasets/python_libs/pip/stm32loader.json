@@ -1,0 +1,9 @@
+{
+  "libname": "stm32loader",
+  "libvers": "0.7.1",
+  "infile": "data/pip/stm32loader.txt",
+  "dependencies": {
+    "progress": "1.6",
+    "pyserial": "3.5"
+  }
+}

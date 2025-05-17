@@ -1,0 +1,10 @@
+{
+  "libname": "python3-saml",
+  "libvers": "1.16.0",
+  "infile": "data/pip/python3-saml.txt",
+  "dependencies": {
+    "isodate": "0.7.2",
+    "lxml": "5.4.0",
+    "xmlsec": "1.3.15"
+  }
+}

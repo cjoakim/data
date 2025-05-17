@@ -1,0 +1,12 @@
+{
+  "libname": "strawberry-graphql",
+  "libvers": "0.266.1",
+  "infile": "data/pip/strawberry-graphql.txt",
+  "dependencies": {
+    "graphql-core": "3.2.6",
+    "packaging": "25.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2"
+  }
+}

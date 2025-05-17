@@ -1,0 +1,10 @@
+{
+  "libname": "scikit-build",
+  "libvers": "0.18.1",
+  "infile": "data/pip/scikit-build.txt",
+  "dependencies": {
+    "distro": "1.9.0",
+    "packaging": "25.0",
+    "wheel": "0.45.1"
+  }
+}

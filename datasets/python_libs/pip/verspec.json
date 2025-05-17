@@ -1,0 +1,6 @@
+{
+  "libname": "verspec",
+  "libvers": "0.1.0",
+  "infile": "data/pip/verspec.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "random2",
+  "libvers": "1.0.2",
+  "infile": "data/pip/random2.txt",
+  "dependencies": {}
+}

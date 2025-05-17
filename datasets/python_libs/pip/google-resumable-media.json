@@ -1,0 +1,8 @@
+{
+  "libname": "google-resumable-media",
+  "libvers": "2.7.2",
+  "infile": "data/pip/google-resumable-media.txt",
+  "dependencies": {
+    "google-crc32c": "1.7.1"
+  }
+}

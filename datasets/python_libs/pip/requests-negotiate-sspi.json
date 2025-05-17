@@ -1,0 +1,14 @@
+{
+  "libname": "requests-negotiate-sspi",
+  "libvers": "0.5.2",
+  "infile": "data/pip/requests-negotiate-sspi.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "pypiwin32": "223",
+    "pywin32": "310",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

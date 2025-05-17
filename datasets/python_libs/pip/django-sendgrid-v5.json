@@ -1,0 +1,15 @@
+{
+  "libname": "django-sendgrid-v5",
+  "libvers": "1.2.4",
+  "infile": "data/pip/django-sendgrid-v5.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "markupsafe": "3.0.2",
+    "python-http-client": "3.3.7",
+    "sendgrid": "6.12.0",
+    "sqlparse": "0.5.3",
+    "starkbank-ecdsa": "2.2.0",
+    "werkzeug": "3.1.3"
+  }
+}

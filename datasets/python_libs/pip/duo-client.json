@@ -1,0 +1,6 @@
+{
+  "libname": "duo-client",
+  "libvers": "5.5.0",
+  "infile": "data/pip/duo-client.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-sns",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-sns.txt",
+  "dependencies": {}
+}

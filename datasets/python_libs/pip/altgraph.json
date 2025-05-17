@@ -1,0 +1,6 @@
+{
+  "libname": "altgraph",
+  "libvers": "0.17.4",
+  "infile": "data/pip/altgraph.txt",
+  "dependencies": {}
+}

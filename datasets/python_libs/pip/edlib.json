@@ -1,0 +1,6 @@
+{
+  "libname": "edlib",
+  "libvers": "1.3.9.post1",
+  "infile": "data/pip/edlib.txt",
+  "dependencies": {}
+}

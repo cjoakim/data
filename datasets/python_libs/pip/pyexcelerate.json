@@ -1,0 +1,10 @@
+{
+  "libname": "pyexcelerate",
+  "libvers": "0.12.0",
+  "infile": "data/pip/pyexcelerate.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "six": "1.17.0"
+  }
+}

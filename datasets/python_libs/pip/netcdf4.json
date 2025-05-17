@@ -1,0 +1,10 @@
+{
+  "libname": "netcdf4",
+  "libvers": "1.7.2",
+  "infile": "data/pip/netcdf4.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cftime": "1.6.4.post1",
+    "numpy": "2.2.5"
+  }
+}

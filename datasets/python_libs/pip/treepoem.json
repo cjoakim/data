@@ -1,0 +1,8 @@
+{
+  "libname": "treepoem",
+  "libvers": "3.27.1",
+  "infile": "data/pip/treepoem.txt",
+  "dependencies": {
+    "pillow": "11.2.1"
+  }
+}

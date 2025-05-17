@@ -1,0 +1,14 @@
+{
+  "libname": "cfgrib",
+  "libvers": "0.9.15.0",
+  "infile": "data/pip/cfgrib.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "cffi": "1.17.1",
+    "click": "8.1.8",
+    "eccodes": "2.41.0",
+    "findlibs": "0.1.1",
+    "numpy": "2.2.5",
+    "pycparser": "2.22"
+  }
+}

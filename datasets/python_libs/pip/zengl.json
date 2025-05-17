@@ -1,0 +1,6 @@
+{
+  "libname": "zengl",
+  "libvers": "2.7.1",
+  "infile": "data/pip/zengl.txt",
+  "dependencies": {}
+}

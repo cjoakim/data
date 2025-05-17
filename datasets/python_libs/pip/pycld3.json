@@ -1,0 +1,6 @@
+{
+  "libname": "pycld3",
+  "libvers": "0.22",
+  "infile": "data/pip/pycld3.txt",
+  "dependencies": {}
+}

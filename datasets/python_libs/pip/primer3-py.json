@@ -1,0 +1,6 @@
+{
+  "libname": "primer3-py",
+  "libvers": "2.1.0",
+  "infile": "data/pip/primer3-py.txt",
+  "dependencies": {}
+}

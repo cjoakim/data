@@ -1,0 +1,9 @@
+{
+  "libname": "dissect-ntfs",
+  "libvers": "3.14",
+  "infile": "data/pip/dissect-ntfs.txt",
+  "dependencies": {
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

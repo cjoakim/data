@@ -1,0 +1,6 @@
+{
+  "libname": "mgzip",
+  "libvers": "0.2.1",
+  "infile": "data/pip/mgzip.txt",
+  "dependencies": {}
+}

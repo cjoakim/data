@@ -1,0 +1,6 @@
+{
+  "libname": "pkgconfig",
+  "libvers": "1.5.5",
+  "infile": "data/pip/pkgconfig.txt",
+  "dependencies": {}
+}

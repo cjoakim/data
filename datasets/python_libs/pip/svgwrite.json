@@ -1,0 +1,6 @@
+{
+  "libname": "svgwrite",
+  "libvers": "1.4.3",
+  "infile": "data/pip/svgwrite.txt",
+  "dependencies": {}
+}

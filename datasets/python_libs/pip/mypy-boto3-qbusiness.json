@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-qbusiness",
+  "libvers": "1.38.5",
+  "infile": "data/pip/mypy-boto3-qbusiness.txt",
+  "dependencies": {}
+}

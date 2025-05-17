@@ -1,0 +1,8 @@
+{
+  "libname": "jaraco-functools",
+  "libvers": "4.1.0",
+  "infile": "data/pip/jaraco-functools.txt",
+  "dependencies": {
+    "more-itertools": "10.7.0"
+  }
+}

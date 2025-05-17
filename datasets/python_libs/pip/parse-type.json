@@ -1,0 +1,9 @@
+{
+  "libname": "parse-type",
+  "libvers": "0.6.4",
+  "infile": "data/pip/parse-type.txt",
+  "dependencies": {
+    "parse": "1.20.2",
+    "six": "1.17.0"
+  }
+}

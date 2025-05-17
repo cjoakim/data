@@ -1,0 +1,11 @@
+{
+  "libname": "flake8-no-implicit-concat",
+  "libvers": "0.3.7",
+  "infile": "data/pip/flake8-no-implicit-concat.txt",
+  "dependencies": {
+    "flake8": "7.2.0",
+    "mccabe": "0.7.0",
+    "pycodestyle": "2.13.0",
+    "pyflakes": "3.3.2"
+  }
+}

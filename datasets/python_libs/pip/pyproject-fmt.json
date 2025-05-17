@@ -1,0 +1,8 @@
+{
+  "libname": "pyproject-fmt",
+  "libvers": "2.5.1",
+  "infile": "data/pip/pyproject-fmt.txt",
+  "dependencies": {
+    "toml-fmt-common": "1.0.1"
+  }
+}

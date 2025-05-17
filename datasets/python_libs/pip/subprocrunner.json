@@ -1,0 +1,9 @@
+{
+  "libname": "subprocrunner",
+  "libvers": "2.0.1",
+  "infile": "data/pip/subprocrunner.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "mbstrdecoder": "1.1.4"
+  }
+}

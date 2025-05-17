@@ -1,0 +1,8 @@
+{
+  "libname": "ml-dtypes",
+  "libvers": "0.5.1",
+  "infile": "data/pip/ml-dtypes.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "polling",
+  "libvers": "0.3.2",
+  "infile": "data/pip/polling.txt",
+  "dependencies": {}
+}

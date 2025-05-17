@@ -1,0 +1,14 @@
+{
+  "libname": "azure-servicemanagement-legacy",
+  "libvers": "0.20.8",
+  "infile": "data/pip/azure-servicemanagement-legacy.txt",
+  "dependencies": {
+    "azure-common": "1.1.28",
+    "azure-nspkg": "3.0.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

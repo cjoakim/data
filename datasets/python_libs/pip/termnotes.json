@@ -1,0 +1,15 @@
+{
+  "libname": "termnotes",
+  "libvers": "18.8",
+  "infile": "data/pip/termnotes.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "gnureadline": "8.2.13",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "pygments": "2.19.1",
+    "pyperclip": "1.9.0",
+    "rich": "14.0.0",
+    "termcolor": "3.1.0"
+  }
+}

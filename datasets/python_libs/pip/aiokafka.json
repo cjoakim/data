@@ -1,0 +1,10 @@
+{
+  "libname": "aiokafka",
+  "libvers": "0.12.0",
+  "infile": "data/pip/aiokafka.txt",
+  "dependencies": {
+    "async-timeout": "5.0.1",
+    "packaging": "25.0",
+    "typing-extensions": "4.13.2"
+  }
+}

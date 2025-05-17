@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-baseline",
+  "libvers": "0.7.2",
+  "infile": "data/pip/mypy-baseline.txt",
+  "dependencies": {}
+}

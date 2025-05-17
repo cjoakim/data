@@ -1,0 +1,6 @@
+{
+  "libname": "cowpy",
+  "libvers": "1.1.5",
+  "infile": "data/pip/cowpy.txt",
+  "dependencies": {}
+}

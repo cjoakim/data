@@ -1,0 +1,8 @@
+{
+  "libname": "jax-jumpy",
+  "libvers": "1.0.0",
+  "infile": "data/pip/jax-jumpy.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

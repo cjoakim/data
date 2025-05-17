@@ -1,0 +1,8 @@
+{
+  "libname": "pip-review",
+  "libvers": "1.3.0",
+  "infile": "data/pip/pip-review.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

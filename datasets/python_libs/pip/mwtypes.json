@@ -1,0 +1,8 @@
+{
+  "libname": "mwtypes",
+  "libvers": "0.4.0",
+  "infile": "data/pip/mwtypes.txt",
+  "dependencies": {
+    "jsonable": "0.3.1"
+  }
+}

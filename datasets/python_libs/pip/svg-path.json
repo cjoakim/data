@@ -1,0 +1,6 @@
+{
+  "libname": "svg-path",
+  "libvers": "6.3",
+  "infile": "data/pip/svg-path.txt",
+  "dependencies": {}
+}

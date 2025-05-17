@@ -1,0 +1,6 @@
+{
+  "libname": "llvmlite",
+  "libvers": "0.44.0",
+  "infile": "data/pip/llvmlite.txt",
+  "dependencies": {}
+}

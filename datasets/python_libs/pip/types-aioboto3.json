@@ -1,0 +1,11 @@
+{
+  "libname": "types-aioboto3",
+  "libvers": "14.2.0",
+  "infile": "data/pip/types-aioboto3.txt",
+  "dependencies": {
+    "botocore-stubs": "1.38.10",
+    "types-aiobotocore": "2.22.0",
+    "types-awscrt": "0.26.1",
+    "types-s3transfer": "0.12.0"
+  }
+}

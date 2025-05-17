@@ -1,0 +1,9 @@
+{
+  "libname": "point-cloud-utils",
+  "libvers": "0.34.0",
+  "infile": "data/pip/point-cloud-utils.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

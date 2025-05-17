@@ -1,0 +1,6 @@
+{
+  "libname": "boto3-stubs-full",
+  "libvers": "1.38.9",
+  "infile": "data/pip/boto3-stubs-full.txt",
+  "dependencies": {}
+}

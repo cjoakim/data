@@ -1,0 +1,6 @@
+{
+  "libname": "pkcs7",
+  "libvers": "0.1.2",
+  "infile": "data/pip/pkcs7.txt",
+  "dependencies": {}
+}

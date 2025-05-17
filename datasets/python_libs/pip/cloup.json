@@ -1,0 +1,8 @@
+{
+  "libname": "cloup",
+  "libvers": "3.0.7",
+  "infile": "data/pip/cloup.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

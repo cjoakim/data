@@ -1,0 +1,10 @@
+{
+  "libname": "pyjdbc",
+  "libvers": "0.2.2",
+  "infile": "data/pip/pyjdbc.txt",
+  "dependencies": {
+    "jpype1": "1.5.2",
+    "packaging": "25.0",
+    "sqlparams": "6.2.0"
+  }
+}

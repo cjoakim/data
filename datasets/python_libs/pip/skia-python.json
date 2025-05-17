@@ -1,0 +1,9 @@
+{
+  "libname": "skia-python",
+  "libvers": "87.8",
+  "infile": "data/pip/skia-python.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pybind11": "2.13.6"
+  }
+}

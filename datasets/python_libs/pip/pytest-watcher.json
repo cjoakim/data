@@ -1,0 +1,8 @@
+{
+  "libname": "pytest-watcher",
+  "libvers": "0.4.3",
+  "infile": "data/pip/pytest-watcher.txt",
+  "dependencies": {
+    "watchdog": "6.0.0"
+  }
+}

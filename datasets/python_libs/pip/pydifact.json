@@ -1,0 +1,6 @@
+{
+  "libname": "pydifact",
+  "libvers": "0.1.8",
+  "infile": "data/pip/pydifact.txt",
+  "dependencies": {}
+}

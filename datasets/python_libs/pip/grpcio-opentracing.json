@@ -1,0 +1,10 @@
+{
+  "libname": "grpcio-opentracing",
+  "libvers": "1.1.4",
+  "infile": "data/pip/grpcio-opentracing.txt",
+  "dependencies": {
+    "grpcio": "1.71.0",
+    "opentracing": "2.4.0",
+    "six": "1.17.0"
+  }
+}

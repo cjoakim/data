@@ -1,0 +1,8 @@
+{
+  "libname": "pyspark",
+  "libvers": "3.5.5",
+  "infile": "data/pip/pyspark.txt",
+  "dependencies": {
+    "py4j": "0.10.9.7"
+  }
+}

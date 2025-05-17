@@ -1,0 +1,6 @@
+{
+  "libname": "authencoding",
+  "libvers": "6.0",
+  "infile": "data/pip/authencoding.txt",
+  "dependencies": {}
+}

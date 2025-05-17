@@ -1,0 +1,8 @@
+{
+  "libname": "djangoql",
+  "libvers": "0.18.1",
+  "infile": "data/pip/djangoql.txt",
+  "dependencies": {
+    "ply": "3.11"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "mqt-core",
+  "libvers": "3.0.2",
+  "infile": "data/pip/mqt-core.txt",
+  "dependencies": {}
+}

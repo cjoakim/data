@@ -1,0 +1,24 @@
+{
+  "libname": "pycontrails",
+  "libvers": "0.54.9",
+  "infile": "data/pip/pycontrails.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "cloudpickle": "3.1.1",
+    "dask": "2025.4.1",
+    "fsspec": "2025.3.2",
+    "locket": "1.0.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "partd": "1.4.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "toolz": "1.0.0",
+    "tzdata": "2025.2",
+    "xarray": "2025.4.0"
+  }
+}

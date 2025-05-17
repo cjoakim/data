@@ -1,0 +1,17 @@
+{
+  "libname": "mdformat-myst",
+  "libvers": "0.2.1",
+  "infile": "data/pip/mdformat-myst.txt",
+  "dependencies": {
+    "markdown-it-py": "3.0.0",
+    "mdformat": "0.7.22",
+    "mdformat-footnote": "0.1.1",
+    "mdformat-frontmatter": "2.0.8",
+    "mdformat-tables": "1.0.0",
+    "mdit-py-plugins": "0.4.2",
+    "mdurl": "0.1.2",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "wcwidth": "0.2.13"
+  }
+}

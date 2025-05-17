@@ -1,0 +1,16 @@
+{
+  "libname": "docusign-esign",
+  "libvers": "4.0.0",
+  "infile": "data/pip/docusign-esign.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "nose": "1.3.7",
+    "pycparser": "2.22",
+    "pyjwt": "2.10.1",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

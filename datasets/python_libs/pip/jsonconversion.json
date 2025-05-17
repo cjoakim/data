@@ -1,0 +1,8 @@
+{
+  "libname": "jsonconversion",
+  "libvers": "1.1.1",
+  "infile": "data/pip/jsonconversion.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

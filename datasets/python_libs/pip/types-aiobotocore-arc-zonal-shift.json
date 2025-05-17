@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-arc-zonal-shift",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-arc-zonal-shift.txt",
+  "dependencies": {}
+}

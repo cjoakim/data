@@ -1,0 +1,8 @@
+{
+  "libname": "pyupgrade",
+  "libvers": "3.19.1",
+  "infile": "data/pip/pyupgrade.txt",
+  "dependencies": {
+    "tokenize-rt": "6.1.0"
+  }
+}

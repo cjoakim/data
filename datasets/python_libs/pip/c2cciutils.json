@@ -1,0 +1,22 @@
+{
+  "libname": "c2cciutils",
+  "libvers": "1.7.3",
+  "infile": "data/pip/c2cciutils.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "chardet": "5.2.0",
+    "charset-normalizer": "3.4.2",
+    "debian-inspector": "31.1.0",
+    "defusedxml": "0.7.1",
+    "idna": "3.10",
+    "markdown": "3.8",
+    "markdown-table": "2020.12.3",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "security-md": "1.0.0",
+    "urllib3": "2.4.0"
+  }
+}

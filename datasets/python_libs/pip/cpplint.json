@@ -1,0 +1,6 @@
+{
+  "libname": "cpplint",
+  "libvers": "2.0.2",
+  "infile": "data/pip/cpplint.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "pydeps",
+  "libvers": "3.0.1",
+  "infile": "data/pip/pydeps.txt",
+  "dependencies": {
+    "stdlib-list": "0.11.1"
+  }
+}

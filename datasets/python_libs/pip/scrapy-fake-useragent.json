@@ -1,0 +1,10 @@
+{
+  "libname": "scrapy-fake-useragent",
+  "libvers": "1.4.4",
+  "infile": "data/pip/scrapy-fake-useragent.txt",
+  "dependencies": {
+    "fake-useragent": "2.2.0",
+    "faker": "37.1.0",
+    "tzdata": "2025.2"
+  }
+}

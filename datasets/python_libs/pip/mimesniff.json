@@ -1,0 +1,6 @@
+{
+  "libname": "mimesniff",
+  "libvers": "1.1.1",
+  "infile": "data/pip/mimesniff.txt",
+  "dependencies": {}
+}

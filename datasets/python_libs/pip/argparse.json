@@ -1,0 +1,6 @@
+{
+  "libname": "argparse",
+  "libvers": "1.4.0",
+  "infile": "data/pip/argparse.txt",
+  "dependencies": {}
+}

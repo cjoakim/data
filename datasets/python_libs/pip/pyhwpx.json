@@ -1,0 +1,18 @@
+{
+  "libname": "pyhwpx",
+  "libvers": "1.0.2",
+  "infile": "data/pip/pyhwpx.txt",
+  "dependencies": {
+    "et-xmlfile": "2.0.0",
+    "numpy": "2.2.5",
+    "openpyxl": "3.1.5",
+    "pandas": "2.2.3",
+    "pillow": "11.2.1",
+    "pyperclip": "1.9.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pywin32": "310",
+    "six": "1.17.0",
+    "tzdata": "2025.2"
+  }
+}

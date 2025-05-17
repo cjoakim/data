@@ -1,0 +1,13 @@
+{
+  "libname": "imbalanced-learn",
+  "libvers": "0.13.0",
+  "infile": "data/pip/imbalanced-learn.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "numpy": "2.2.5",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "sklearn-compat": "0.1.3",
+    "threadpoolctl": "3.6.0"
+  }
+}

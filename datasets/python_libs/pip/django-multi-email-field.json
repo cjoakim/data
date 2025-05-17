@@ -1,0 +1,10 @@
+{
+  "libname": "django-multi-email-field",
+  "libvers": "0.7.0",
+  "infile": "data/pip/django-multi-email-field.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "4.2.20",
+    "sqlparse": "0.5.3"
+  }
+}

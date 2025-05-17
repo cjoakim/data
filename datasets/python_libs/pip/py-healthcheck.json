@@ -1,0 +1,8 @@
+{
+  "libname": "py-healthcheck",
+  "libvers": "1.10.1",
+  "infile": "data/pip/py-healthcheck.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

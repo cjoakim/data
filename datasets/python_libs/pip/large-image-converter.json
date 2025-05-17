@@ -1,0 +1,20 @@
+{
+  "libname": "large-image-converter",
+  "libvers": "1.32.3",
+  "infile": "data/pip/large-image-converter.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "cffi": "1.17.1",
+    "large-image": "1.32.3",
+    "large-image-source-tiff": "1.32.3",
+    "numpy": "2.2.5",
+    "palettable": "3.3.3",
+    "pillow": "11.2.1",
+    "psutil": "7.0.0",
+    "pycparser": "2.22",
+    "pylibtiff": "0.6.1",
+    "pyvips": "3.0.0",
+    "tifftools": "1.6.0",
+    "typing-extensions": "4.13.2"
+  }
+}

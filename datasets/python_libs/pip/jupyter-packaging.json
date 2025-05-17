@@ -1,0 +1,11 @@
+{
+  "libname": "jupyter-packaging",
+  "libvers": "0.12.3",
+  "infile": "data/pip/jupyter-packaging.txt",
+  "dependencies": {
+    "deprecation": "2.1.0",
+    "packaging": "25.0",
+    "tomlkit": "0.13.2",
+    "wheel": "0.45.1"
+  }
+}

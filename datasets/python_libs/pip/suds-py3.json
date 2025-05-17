@@ -1,0 +1,6 @@
+{
+  "libname": "suds-py3",
+  "libvers": "1.4.5.0",
+  "infile": "data/pip/suds-py3.txt",
+  "dependencies": {}
+}

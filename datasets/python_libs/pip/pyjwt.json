@@ -1,0 +1,6 @@
+{
+  "libname": "pyjwt",
+  "libvers": "2.10.1",
+  "infile": "data/pip/pyjwt.txt",
+  "dependencies": {}
+}

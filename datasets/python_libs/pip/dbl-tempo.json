@@ -1,0 +1,6 @@
+{
+  "libname": "dbl-tempo",
+  "libvers": "0.1.29",
+  "infile": "data/pip/dbl-tempo.txt",
+  "dependencies": {}
+}

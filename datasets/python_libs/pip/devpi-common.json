@@ -1,0 +1,15 @@
+{
+  "libname": "devpi-common",
+  "libvers": "4.0.4",
+  "infile": "data/pip/devpi-common.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "lazy": "1.6",
+    "packaging": "25.0",
+    "packaging-legacy": "23.0.post0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

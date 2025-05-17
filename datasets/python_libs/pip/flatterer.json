@@ -1,0 +1,16 @@
+{
+  "libname": "flatterer",
+  "libvers": "0.22.0",
+  "infile": "data/pip/flatterer.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "ijson": "3.3.0",
+    "numpy": "2.2.5",
+    "orjson": "3.10.18",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tzdata": "2025.2"
+  }
+}

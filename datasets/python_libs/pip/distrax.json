@@ -1,0 +1,25 @@
+{
+  "libname": "distrax",
+  "libvers": "0.1.5",
+  "infile": "data/pip/distrax.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "attrs": "25.3.0",
+    "chex": "0.1.89",
+    "cloudpickle": "3.1.1",
+    "decorator": "5.2.1",
+    "dm-tree": "0.1.9",
+    "gast": "0.6.0",
+    "jax": "0.6.0",
+    "jaxlib": "0.6.0",
+    "ml-dtypes": "0.5.1",
+    "numpy": "2.2.5",
+    "opt-einsum": "3.4.0",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "tensorflow-probability": "0.25.0",
+    "toolz": "1.0.0",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2"
+  }
+}

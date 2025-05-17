@@ -1,0 +1,6 @@
+{
+  "libname": "clvm-rs",
+  "libvers": "0.13.1",
+  "infile": "data/pip/clvm-rs.txt",
+  "dependencies": {}
+}

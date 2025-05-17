@@ -1,0 +1,27 @@
+{
+  "libname": "snowfakery",
+  "libvers": "4.0.0",
+  "infile": "data/pip/snowfakery.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "faker": "37.1.0",
+    "faker-edu": "1.1.0",
+    "faker-nonprofit": "1.0.0",
+    "gvgen": "1.0",
+    "idna": "3.10",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "pydantic": "1.10.22",
+    "python-baseconv": "1.2.2",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2",
+    "urllib3": "2.4.0"
+  }
+}

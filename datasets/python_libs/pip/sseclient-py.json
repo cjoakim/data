@@ -1,0 +1,6 @@
+{
+  "libname": "sseclient-py",
+  "libvers": "1.8.0",
+  "infile": "data/pip/sseclient-py.txt",
+  "dependencies": {}
+}

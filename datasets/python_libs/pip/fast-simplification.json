@@ -1,0 +1,8 @@
+{
+  "libname": "fast-simplification",
+  "libvers": "0.1.10",
+  "infile": "data/pip/fast-simplification.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

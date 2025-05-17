@@ -1,0 +1,23 @@
+{
+  "libname": "meltano-dbt-ext",
+  "libvers": "0.3.2",
+  "infile": "data/pip/meltano-dbt-ext.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "asttokens": "2.4.1",
+    "click": "8.1.8",
+    "devtools": "0.12.2",
+    "executing": "2.2.0",
+    "importlib-resources": "5.13.0",
+    "meltano-edk": "0.4.4",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pygments": "2.19.1",
+    "pyyaml": "6.0.2",
+    "six": "1.17.0",
+    "structlog": "24.4.0",
+    "typer": "0.6.1",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

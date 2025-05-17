@@ -1,0 +1,6 @@
+{
+  "libname": "plumbum",
+  "libvers": "1.9.0",
+  "infile": "data/pip/plumbum.txt",
+  "dependencies": {}
+}

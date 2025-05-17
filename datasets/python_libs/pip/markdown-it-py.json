@@ -1,0 +1,8 @@
+{
+  "libname": "markdown-it-py",
+  "libvers": "3.0.0",
+  "infile": "data/pip/markdown-it-py.txt",
+  "dependencies": {
+    "mdurl": "0.1.2"
+  }
+}

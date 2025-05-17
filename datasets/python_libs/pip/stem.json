@@ -1,0 +1,6 @@
+{
+  "libname": "stem",
+  "libvers": "1.8.2",
+  "infile": "data/pip/stem.txt",
+  "dependencies": {}
+}

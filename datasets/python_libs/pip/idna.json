@@ -1,0 +1,6 @@
+{
+  "libname": "idna",
+  "libvers": "3.10",
+  "infile": "data/pip/idna.txt",
+  "dependencies": {}
+}

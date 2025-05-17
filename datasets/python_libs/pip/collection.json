@@ -1,0 +1,6 @@
+{
+  "libname": "collection",
+  "libvers": "0.1.6",
+  "infile": "data/pip/collection.txt",
+  "dependencies": {}
+}

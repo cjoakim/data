@@ -1,0 +1,26 @@
+{
+  "libname": "aiohomekit",
+  "libvers": "3.2.14",
+  "infile": "data/pip/aiohomekit.txt",
+  "dependencies": {
+    "aiocoap": "0.4.14",
+    "aiohappyeyeballs": "2.6.1",
+    "async-interrupt": "1.2.2",
+    "bleak": "0.22.3",
+    "bleak-retry-connector": "3.10.0",
+    "cffi": "1.17.1",
+    "chacha20poly1305": "0.0.3",
+    "chacha20poly1305-reuseable": "0.13.2",
+    "commentjson": "0.9.0",
+    "cryptography": "44.0.3",
+    "ifaddr": "0.2.0",
+    "lark-parser": "0.7.8",
+    "orjson": "3.10.18",
+    "pycparser": "2.22",
+    "pyobjc-core": "10.3.2",
+    "pyobjc-framework-cocoa": "10.3.2",
+    "pyobjc-framework-corebluetooth": "10.3.2",
+    "pyobjc-framework-libdispatch": "10.3.2",
+    "zeroconf": "0.147.0"
+  }
+}

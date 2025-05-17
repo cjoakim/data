@@ -1,0 +1,10 @@
+{
+  "libname": "probablepeople",
+  "libvers": "0.5.6",
+  "infile": "data/pip/probablepeople.txt",
+  "dependencies": {
+    "doublemetaphone": "1.1",
+    "probableparsing": "0.0.1",
+    "python-crfsuite": "0.9.11"
+  }
+}

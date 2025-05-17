@@ -1,0 +1,16 @@
+{
+  "libname": "pdb2pqr",
+  "libvers": "3.7.1",
+  "infile": "data/pip/pdb2pqr.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "docutils": "0.17.1",
+    "idna": "3.10",
+    "mmcif-pdbx": "2.0.1",
+    "numpy": "2.2.5",
+    "propka": "3.5.1",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

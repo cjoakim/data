@@ -1,0 +1,6 @@
+{
+  "libname": "func-timeout",
+  "libvers": "4.3.5",
+  "infile": "data/pip/func-timeout.txt",
+  "dependencies": {}
+}

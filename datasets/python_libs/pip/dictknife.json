@@ -1,0 +1,6 @@
+{
+  "libname": "dictknife",
+  "libvers": "0.14.1",
+  "infile": "data/pip/dictknife.txt",
+  "dependencies": {}
+}

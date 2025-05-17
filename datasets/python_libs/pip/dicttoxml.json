@@ -1,0 +1,6 @@
+{
+  "libname": "dicttoxml",
+  "libvers": "1.7.16",
+  "infile": "data/pip/dicttoxml.txt",
+  "dependencies": {}
+}

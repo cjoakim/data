@@ -1,0 +1,12 @@
+{
+  "libname": "aliyun-python-sdk-vpc",
+  "libvers": "3.0.46",
+  "infile": "data/pip/aliyun-python-sdk-vpc.txt",
+  "dependencies": {
+    "aliyun-python-sdk-core": "2.16.0",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "jmespath": "0.10.0",
+    "pycparser": "2.22"
+  }
+}

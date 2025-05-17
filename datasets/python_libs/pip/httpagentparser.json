@@ -1,0 +1,6 @@
+{
+  "libname": "httpagentparser",
+  "libvers": "1.9.5",
+  "infile": "data/pip/httpagentparser.txt",
+  "dependencies": {}
+}

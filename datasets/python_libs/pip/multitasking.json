@@ -1,0 +1,6 @@
+{
+  "libname": "multitasking",
+  "libvers": "0.0.11",
+  "infile": "data/pip/multitasking.txt",
+  "dependencies": {}
+}

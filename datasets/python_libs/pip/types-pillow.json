@@ -1,0 +1,6 @@
+{
+  "libname": "types-pillow",
+  "libvers": "10.2.0.20240822",
+  "infile": "data/pip/types-pillow.txt",
+  "dependencies": {}
+}

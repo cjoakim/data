@@ -1,0 +1,8 @@
+{
+  "libname": "soxr",
+  "libvers": "0.5.0.post1",
+  "infile": "data/pip/soxr.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

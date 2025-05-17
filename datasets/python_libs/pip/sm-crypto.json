@@ -1,0 +1,8 @@
+{
+  "libname": "sm-crypto",
+  "libvers": "0.1.1",
+  "infile": "data/pip/sm-crypto.txt",
+  "dependencies": {
+    "pyasn1": "0.6.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "python-docx-ml6",
+  "libvers": "1.0.2",
+  "infile": "data/pip/python-docx-ml6.txt",
+  "dependencies": {
+    "lxml": "5.4.0",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "libname": "google-auth-stubs",
+  "libvers": "0.3.0",
+  "infile": "data/pip/google-auth-stubs.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "google-auth": "2.40.1",
+    "grpc-stubs": "1.53.0.6",
+    "grpcio": "1.71.0",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "rsa": "4.9.1",
+    "types-requests": "2.32.0.20250328",
+    "urllib3": "2.4.0"
+  }
+}

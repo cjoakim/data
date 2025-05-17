@@ -1,0 +1,9 @@
+{
+  "libname": "onnx",
+  "libvers": "1.17.0",
+  "infile": "data/pip/onnx.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "protobuf": "6.30.2"
+  }
+}

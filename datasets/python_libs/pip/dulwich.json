@@ -1,0 +1,8 @@
+{
+  "libname": "dulwich",
+  "libvers": "0.22.8",
+  "infile": "data/pip/dulwich.txt",
+  "dependencies": {
+    "urllib3": "2.4.0"
+  }
+}

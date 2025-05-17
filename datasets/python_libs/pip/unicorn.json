@@ -1,0 +1,6 @@
+{
+  "libname": "unicorn",
+  "libvers": "2.1.3",
+  "infile": "data/pip/unicorn.txt",
+  "dependencies": {}
+}

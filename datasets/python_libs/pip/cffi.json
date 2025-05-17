@@ -1,0 +1,8 @@
+{
+  "libname": "cffi",
+  "libvers": "1.17.1",
+  "infile": "data/pip/cffi.txt",
+  "dependencies": {
+    "pycparser": "2.22"
+  }
+}

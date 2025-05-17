@@ -1,0 +1,6 @@
+{
+  "libname": "pip-api",
+  "libvers": "0.0.34",
+  "infile": "data/pip/pip-api.txt",
+  "dependencies": {}
+}

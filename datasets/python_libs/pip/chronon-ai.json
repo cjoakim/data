@@ -1,0 +1,11 @@
+{
+  "libname": "chronon-ai",
+  "libvers": "0.0.96",
+  "infile": "data/pip/chronon-ai.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "six": "1.17.0",
+    "sqlglot": "26.16.4",
+    "thrift": "0.13.0"
+  }
+}

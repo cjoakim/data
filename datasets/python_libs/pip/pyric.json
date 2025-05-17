@@ -1,0 +1,6 @@
+{
+  "libname": "pyric",
+  "libvers": "0.1.6.3",
+  "infile": "data/pip/pyric.txt",
+  "dependencies": {}
+}

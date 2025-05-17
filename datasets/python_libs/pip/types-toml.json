@@ -1,0 +1,6 @@
+{
+  "libname": "types-toml",
+  "libvers": "0.10.8.20240310",
+  "infile": "data/pip/types-toml.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "dissect-hypervisor",
+  "libvers": "3.17",
+  "infile": "data/pip/dissect-hypervisor.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1",
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "hmsclient",
+  "libvers": "0.1.1",
+  "infile": "data/pip/hmsclient.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "six": "1.17.0",
+    "thrift": "0.21.0"
+  }
+}

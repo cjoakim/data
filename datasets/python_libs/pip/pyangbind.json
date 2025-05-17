@@ -1,0 +1,11 @@
+{
+  "libname": "pyangbind",
+  "libvers": "0.8.6",
+  "infile": "data/pip/pyangbind.txt",
+  "dependencies": {
+    "enum34": "1.1.10",
+    "lxml": "5.4.0",
+    "pyang": "2.6.1",
+    "regex": "2024.11.6"
+  }
+}

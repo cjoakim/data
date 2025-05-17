@@ -1,0 +1,6 @@
+{
+  "libname": "json2table",
+  "libvers": "1.1.5",
+  "infile": "data/pip/json2table.txt",
+  "dependencies": {}
+}

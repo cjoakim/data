@@ -1,0 +1,6 @@
+{
+  "libname": "archinfo",
+  "libvers": "9.2.154",
+  "infile": "data/pip/archinfo.txt",
+  "dependencies": {}
+}

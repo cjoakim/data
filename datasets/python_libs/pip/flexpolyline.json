@@ -1,0 +1,6 @@
+{
+  "libname": "flexpolyline",
+  "libvers": "0.1.0",
+  "infile": "data/pip/flexpolyline.txt",
+  "dependencies": {}
+}

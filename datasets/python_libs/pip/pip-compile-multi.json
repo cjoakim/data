@@ -1,0 +1,14 @@
+{
+  "libname": "pip-compile-multi",
+  "libvers": "3.0.0",
+  "infile": "data/pip/pip-compile-multi.txt",
+  "dependencies": {
+    "build": "1.2.2.post1",
+    "click": "8.1.8",
+    "packaging": "25.0",
+    "pip-tools": "7.4.1",
+    "pyproject-hooks": "1.2.0",
+    "toposort": "1.10",
+    "wheel": "0.45.1"
+  }
+}

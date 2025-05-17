@@ -1,0 +1,6 @@
+{
+  "libname": "contexttimer",
+  "libvers": "0.3.3",
+  "infile": "data/pip/contexttimer.txt",
+  "dependencies": {}
+}

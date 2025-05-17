@@ -1,0 +1,6 @@
+{
+  "libname": "python-osc",
+  "libvers": "1.9.3",
+  "infile": "data/pip/python-osc.txt",
+  "dependencies": {}
+}

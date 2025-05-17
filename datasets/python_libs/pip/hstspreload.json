@@ -1,0 +1,6 @@
+{
+  "libname": "hstspreload",
+  "libvers": "2025.1.1",
+  "infile": "data/pip/hstspreload.txt",
+  "dependencies": {}
+}

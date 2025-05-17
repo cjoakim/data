@@ -1,0 +1,15 @@
+{
+  "libname": "awsretry",
+  "libvers": "1.0.1",
+  "infile": "data/pip/awsretry.txt",
+  "dependencies": {
+    "boto": "2.49.0",
+    "boto3": "1.38.10",
+    "botocore": "1.38.10",
+    "jmespath": "1.0.1",
+    "python-dateutil": "2.9.0.post0",
+    "s3transfer": "0.12.0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

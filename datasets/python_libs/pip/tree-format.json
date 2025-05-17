@@ -1,0 +1,6 @@
+{
+  "libname": "tree-format",
+  "libvers": "0.1.2",
+  "infile": "data/pip/tree-format.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "django-loginas",
+  "libvers": "0.3.11",
+  "infile": "data/pip/django-loginas.txt",
+  "dependencies": {}
+}

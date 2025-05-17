@@ -1,0 +1,6 @@
+{
+  "libname": "pdm-pep517",
+  "libvers": "1.1.4",
+  "infile": "data/pip/pdm-pep517.txt",
+  "dependencies": {}
+}

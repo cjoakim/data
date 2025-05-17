@@ -1,0 +1,8 @@
+{
+  "libname": "pansi",
+  "libvers": "2024.11.0",
+  "infile": "data/pip/pansi.txt",
+  "dependencies": {
+    "pillow": "11.2.1"
+  }
+}

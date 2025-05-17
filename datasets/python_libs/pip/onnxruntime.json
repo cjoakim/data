@@ -1,0 +1,15 @@
+{
+  "libname": "onnxruntime",
+  "libvers": "1.21.1",
+  "infile": "data/pip/onnxruntime.txt",
+  "dependencies": {
+    "coloredlogs": "15.0.1",
+    "flatbuffers": "25.2.10",
+    "humanfriendly": "10.0",
+    "mpmath": "1.3.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "protobuf": "6.30.2",
+    "sympy": "1.14.0"
+  }
+}

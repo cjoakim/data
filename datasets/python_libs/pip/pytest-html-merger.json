@@ -1,0 +1,11 @@
+{
+  "libname": "pytest-html-merger",
+  "libvers": "0.1.0",
+  "infile": "data/pip/pytest-html-merger.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "packaging": "25.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2"
+  }
+}

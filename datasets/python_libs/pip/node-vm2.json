@@ -1,0 +1,6 @@
+{
+  "libname": "node-vm2",
+  "libvers": "0.4.7",
+  "infile": "data/pip/node-vm2.txt",
+  "dependencies": {}
+}

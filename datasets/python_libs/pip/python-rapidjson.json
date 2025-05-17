@@ -1,0 +1,6 @@
+{
+  "libname": "python-rapidjson",
+  "libvers": "1.20",
+  "infile": "data/pip/python-rapidjson.txt",
+  "dependencies": {}
+}

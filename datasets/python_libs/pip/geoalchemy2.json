@@ -1,0 +1,10 @@
+{
+  "libname": "geoalchemy2",
+  "libvers": "0.17.1",
+  "infile": "data/pip/geoalchemy2.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pynrrd",
+  "libvers": "1.1.3",
+  "infile": "data/pip/pynrrd.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "typing-extensions": "4.13.2"
+  }
+}

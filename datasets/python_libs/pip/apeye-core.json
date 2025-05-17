@@ -1,0 +1,11 @@
+{
+  "libname": "apeye-core",
+  "libvers": "1.1.5",
+  "infile": "data/pip/apeye-core.txt",
+  "dependencies": {
+    "domdf-python-tools": "3.10.0",
+    "idna": "3.10",
+    "natsort": "8.4.0",
+    "typing-extensions": "4.13.2"
+  }
+}

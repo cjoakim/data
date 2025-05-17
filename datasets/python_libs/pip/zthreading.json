@@ -1,0 +1,6 @@
+{
+  "libname": "zthreading",
+  "libvers": "0.1.19",
+  "infile": "data/pip/zthreading.txt",
+  "dependencies": {}
+}

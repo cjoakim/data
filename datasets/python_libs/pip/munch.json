@@ -1,0 +1,6 @@
+{
+  "libname": "munch",
+  "libvers": "4.0.0",
+  "infile": "data/pip/munch.txt",
+  "dependencies": {}
+}

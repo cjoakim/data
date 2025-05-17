@@ -1,0 +1,6 @@
+{
+  "libname": "netflix-spectator-py",
+  "libvers": "1.0.3",
+  "infile": "data/pip/netflix-spectator-py.txt",
+  "dependencies": {}
+}

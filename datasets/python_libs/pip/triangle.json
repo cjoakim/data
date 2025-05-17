@@ -1,0 +1,8 @@
+{
+  "libname": "triangle",
+  "libvers": "20250106",
+  "infile": "data/pip/triangle.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

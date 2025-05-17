@@ -1,0 +1,6 @@
+{
+  "libname": "eclipse-zenoh-nightly",
+  "libvers": "0.7.0rc20230328",
+  "infile": "data/pip/eclipse-zenoh-nightly.txt",
+  "dependencies": {}
+}

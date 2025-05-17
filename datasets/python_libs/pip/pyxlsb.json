@@ -1,0 +1,6 @@
+{
+  "libname": "pyxlsb",
+  "libvers": "1.0.10",
+  "infile": "data/pip/pyxlsb.txt",
+  "dependencies": {}
+}

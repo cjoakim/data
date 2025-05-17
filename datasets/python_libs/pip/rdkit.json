@@ -1,0 +1,9 @@
+{
+  "libname": "rdkit",
+  "libvers": "2024.9.6",
+  "infile": "data/pip/rdkit.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pillow": "11.2.1"
+  }
+}

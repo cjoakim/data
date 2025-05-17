@@ -1,0 +1,10 @@
+{
+  "libname": "blendmodes",
+  "libvers": "2025",
+  "infile": "data/pip/blendmodes.txt",
+  "dependencies": {
+    "aenum": "3.1.16",
+    "numpy": "2.2.5",
+    "pillow": "11.2.1"
+  }
+}

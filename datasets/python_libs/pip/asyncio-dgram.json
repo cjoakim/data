@@ -1,0 +1,6 @@
+{
+  "libname": "asyncio-dgram",
+  "libvers": "2.2.0",
+  "infile": "data/pip/asyncio-dgram.txt",
+  "dependencies": {}
+}

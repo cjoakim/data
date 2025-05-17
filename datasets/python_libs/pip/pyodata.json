@@ -1,0 +1,8 @@
+{
+  "libname": "pyodata",
+  "libvers": "1.11.2",
+  "infile": "data/pip/pyodata.txt",
+  "dependencies": {
+    "lxml": "5.4.0"
+  }
+}

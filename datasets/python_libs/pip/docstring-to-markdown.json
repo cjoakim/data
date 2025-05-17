@@ -1,0 +1,10 @@
+{
+  "libname": "docstring-to-markdown",
+  "libvers": "0.17",
+  "infile": "data/pip/docstring-to-markdown.txt",
+  "dependencies": {
+    "importlib-metadata": "8.7.0",
+    "typing-extensions": "4.13.2",
+    "zipp": "3.21.0"
+  }
+}

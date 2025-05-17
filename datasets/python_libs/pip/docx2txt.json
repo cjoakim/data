@@ -1,0 +1,6 @@
+{
+  "libname": "docx2txt",
+  "libvers": "0.9",
+  "infile": "data/pip/docx2txt.txt",
+  "dependencies": {}
+}

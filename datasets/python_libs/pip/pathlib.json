@@ -1,0 +1,6 @@
+{
+  "libname": "pathlib",
+  "libvers": "1.0.1",
+  "infile": "data/pip/pathlib.txt",
+  "dependencies": {}
+}

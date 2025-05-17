@@ -1,0 +1,12 @@
+{
+  "libname": "rich-rst",
+  "libvers": "1.3.1",
+  "infile": "data/pip/rich-rst.txt",
+  "dependencies": {
+    "docutils": "0.21.2",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "pygments": "2.19.1",
+    "rich": "14.0.0"
+  }
+}

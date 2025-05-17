@@ -1,0 +1,6 @@
+{
+  "libname": "pygobject-stubs",
+  "libvers": "2.13.0",
+  "infile": "data/pip/pygobject-stubs.txt",
+  "dependencies": {}
+}

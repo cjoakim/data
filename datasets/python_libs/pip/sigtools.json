@@ -1,0 +1,8 @@
+{
+  "libname": "sigtools",
+  "libvers": "4.0.1",
+  "infile": "data/pip/sigtools.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

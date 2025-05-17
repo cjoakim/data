@@ -1,0 +1,6 @@
+{
+  "libname": "a2wsgi",
+  "libvers": "1.10.8",
+  "infile": "data/pip/a2wsgi.txt",
+  "dependencies": {}
+}

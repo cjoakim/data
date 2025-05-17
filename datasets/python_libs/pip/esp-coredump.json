@@ -1,0 +1,22 @@
+{
+  "libname": "esp-coredump",
+  "libvers": "1.13.1",
+  "infile": "data/pip/esp-coredump.txt",
+  "dependencies": {
+    "argcomplete": "3.6.2",
+    "bitarray": "3.4.0",
+    "bitstring": "4.3.1",
+    "cffi": "1.17.1",
+    "construct": "2.10.70",
+    "cryptography": "44.0.3",
+    "ecdsa": "0.19.1",
+    "esptool": "4.8.1",
+    "intelhex": "2.3.0",
+    "pycparser": "2.22",
+    "pygdbmi": "0.11.0.0",
+    "pyserial": "3.5",
+    "pyyaml": "6.0.2",
+    "reedsolo": "1.7.0",
+    "six": "1.17.0"
+  }
+}

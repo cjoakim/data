@@ -1,0 +1,6 @@
+{
+  "libname": "m2crypto",
+  "libvers": "0.45.1",
+  "infile": "data/pip/m2crypto.txt",
+  "dependencies": {}
+}

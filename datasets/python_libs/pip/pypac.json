@@ -1,0 +1,19 @@
+{
+  "libname": "pypac",
+  "libvers": "0.16.5",
+  "infile": "data/pip/pypac.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "dukpy": "0.5.0",
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "pyobjc-core": "11.0",
+    "pyobjc-framework-cocoa": "11.0",
+    "pyobjc-framework-systemconfiguration": "11.0",
+    "requests": "2.32.3",
+    "requests-file": "2.1.0",
+    "tldextract": "5.3.0",
+    "urllib3": "2.4.0"
+  }
+}

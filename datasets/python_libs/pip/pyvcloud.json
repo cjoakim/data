@@ -1,0 +1,21 @@
+{
+  "libname": "pyvcloud",
+  "libvers": "23.0.4",
+  "infile": "data/pip/pyvcloud.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "humanfriendly": "10.0",
+    "idna": "3.10",
+    "lxml": "5.4.0",
+    "packaging": "25.0",
+    "pygments": "2.19.1",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "unittest-xml-reporting": "3.2.0",
+    "urllib3": "2.4.0",
+    "vcd-api-schemas-type": "10.3.0.dev72"
+  }
+}

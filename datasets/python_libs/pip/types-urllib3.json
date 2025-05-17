@@ -1,0 +1,6 @@
+{
+  "libname": "types-urllib3",
+  "libvers": "1.26.25.14",
+  "infile": "data/pip/types-urllib3.txt",
+  "dependencies": {}
+}

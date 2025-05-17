@@ -1,0 +1,6 @@
+{
+  "libname": "environ",
+  "libvers": "1.0",
+  "infile": "data/pip/environ.txt",
+  "dependencies": {}
+}

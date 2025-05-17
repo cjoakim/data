@@ -1,0 +1,8 @@
+{
+  "libname": "graphql-sync-dataloaders",
+  "libvers": "0.1.1",
+  "infile": "data/pip/graphql-sync-dataloaders.txt",
+  "dependencies": {
+    "graphql-core": "3.2.6"
+  }
+}

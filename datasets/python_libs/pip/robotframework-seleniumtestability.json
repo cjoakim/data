@@ -1,0 +1,30 @@
+{
+  "libname": "robotframework-seleniumtestability",
+  "libvers": "2.1.0",
+  "infile": "data/pip/robotframework-seleniumtestability.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "click": "8.1.8",
+    "furl": "2.1.4",
+    "h11": "0.16.0",
+    "idna": "3.10",
+    "orderedmultidict": "1.0.1",
+    "outcome": "1.3.0.post0",
+    "pysocks": "1.7.1",
+    "robotframework": "7.2.2",
+    "robotframework-pythonlibcore": "4.4.1",
+    "robotframework-seleniumlibrary": "6.7.1",
+    "selenium": "4.32.0",
+    "six": "1.17.0",
+    "sniffio": "1.3.1",
+    "sortedcontainers": "2.4.0",
+    "trio": "0.30.0",
+    "trio-websocket": "0.12.2",
+    "typing-extensions": "4.13.2",
+    "urllib3[socks]": "2.4.0",
+    "websocket-client": "1.8.0",
+    "wrapt": "1.17.2",
+    "wsproto": "1.2.0"
+  }
+}

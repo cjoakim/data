@@ -1,0 +1,8 @@
+{
+  "libname": "pylsl",
+  "libvers": "1.17.6",
+  "infile": "data/pip/pylsl.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

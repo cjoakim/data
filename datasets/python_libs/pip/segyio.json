@@ -1,0 +1,8 @@
+{
+  "libname": "segyio",
+  "libvers": "1.9.13",
+  "infile": "data/pip/segyio.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

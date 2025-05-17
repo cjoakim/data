@@ -1,0 +1,9 @@
+{
+  "libname": "openpulse",
+  "libvers": "1.0.1",
+  "infile": "data/pip/openpulse.txt",
+  "dependencies": {
+    "antlr4-python3-runtime": "4.13.2",
+    "openqasm3[parser]": "1.0.1"
+  }
+}

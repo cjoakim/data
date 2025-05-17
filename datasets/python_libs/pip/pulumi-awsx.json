@@ -1,0 +1,20 @@
+{
+  "libname": "pulumi-awsx",
+  "libvers": "2.21.1",
+  "infile": "data/pip/pulumi-awsx.txt",
+  "dependencies": {
+    "arpeggio": "2.0.2",
+    "attrs": "25.3.0",
+    "debugpy": "1.8.14",
+    "dill": "0.4.0",
+    "grpcio": "1.66.2",
+    "parver": "0.5",
+    "protobuf": "4.25.7",
+    "pulumi": "3.167.0",
+    "pulumi-aws": "6.80.0",
+    "pulumi-docker": "4.6.2",
+    "pulumi-docker-build": "0.0.11",
+    "pyyaml": "6.0.2",
+    "semver": "3.0.4"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "mdformat-tables",
+  "libvers": "1.0.0",
+  "infile": "data/pip/mdformat-tables.txt",
+  "dependencies": {
+    "markdown-it-py": "3.0.0",
+    "mdformat": "0.7.22",
+    "mdurl": "0.1.2",
+    "wcwidth": "0.2.13"
+  }
+}

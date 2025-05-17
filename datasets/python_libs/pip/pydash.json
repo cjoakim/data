@@ -1,0 +1,8 @@
+{
+  "libname": "pydash",
+  "libvers": "8.0.5",
+  "infile": "data/pip/pydash.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

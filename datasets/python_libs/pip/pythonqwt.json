@@ -1,0 +1,10 @@
+{
+  "libname": "pythonqwt",
+  "libvers": "0.14.5",
+  "infile": "data/pip/pythonqwt.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "qtpy": "2.4.3"
+  }
+}

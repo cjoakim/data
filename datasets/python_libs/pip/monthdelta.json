@@ -1,0 +1,6 @@
+{
+  "libname": "monthdelta",
+  "libvers": "0.9.1",
+  "infile": "data/pip/monthdelta.txt",
+  "dependencies": {}
+}

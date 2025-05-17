@@ -1,0 +1,6 @@
+{
+  "libname": "billiard",
+  "libvers": "4.2.1",
+  "infile": "data/pip/billiard.txt",
+  "dependencies": {}
+}

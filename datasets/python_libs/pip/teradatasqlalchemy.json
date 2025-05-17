@@ -1,0 +1,11 @@
+{
+  "libname": "teradatasqlalchemy",
+  "libvers": "20.0.0.4",
+  "infile": "data/pip/teradatasqlalchemy.txt",
+  "dependencies": {
+    "pycryptodome": "3.22.0",
+    "sqlalchemy": "2.0.40",
+    "teradatasql": "20.0.0.30",
+    "typing-extensions": "4.13.2"
+  }
+}

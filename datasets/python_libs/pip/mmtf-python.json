@@ -1,0 +1,8 @@
+{
+  "libname": "mmtf-python",
+  "libvers": "1.1.3",
+  "infile": "data/pip/mmtf-python.txt",
+  "dependencies": {
+    "msgpack": "1.1.0"
+  }
+}

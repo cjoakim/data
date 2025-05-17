@@ -1,0 +1,8 @@
+{
+  "libname": "types-networkx",
+  "libvers": "3.4.2.20250507",
+  "infile": "data/pip/types-networkx.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "json-tricks",
+  "libvers": "3.17.3",
+  "infile": "data/pip/json-tricks.txt",
+  "dependencies": {}
+}

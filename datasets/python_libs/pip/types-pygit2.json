@@ -1,0 +1,9 @@
+{
+  "libname": "types-pygit2",
+  "libvers": "1.15.0.20250319",
+  "infile": "data/pip/types-pygit2.txt",
+  "dependencies": {
+    "types-cffi": "1.17.0.20250326",
+    "types-setuptools": "80.3.0.20250505"
+  }
+}

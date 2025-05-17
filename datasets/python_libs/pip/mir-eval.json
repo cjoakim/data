@@ -1,0 +1,10 @@
+{
+  "libname": "mir-eval",
+  "libvers": "0.8.2",
+  "infile": "data/pip/mir-eval.txt",
+  "dependencies": {
+    "decorator": "5.2.1",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

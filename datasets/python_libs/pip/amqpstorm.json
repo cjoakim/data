@@ -1,0 +1,8 @@
+{
+  "libname": "amqpstorm",
+  "libvers": "2.11.1",
+  "infile": "data/pip/amqpstorm.txt",
+  "dependencies": {
+    "pamqp": "2.3.0"
+  }
+}

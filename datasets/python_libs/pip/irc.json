@@ -1,0 +1,19 @@
+{
+  "libname": "irc",
+  "libvers": "20.5.0",
+  "infile": "data/pip/irc.txt",
+  "dependencies": {
+    "autocommand": "2.2.2",
+    "jaraco-collections": "5.1.0",
+    "jaraco-context": "6.0.1",
+    "jaraco-functools": "4.1.0",
+    "jaraco-logging": "3.3.0",
+    "jaraco-stream": "3.0.4",
+    "jaraco-text": "4.0.0",
+    "more-itertools": "10.7.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tempora": "5.8.0"
+  }
+}

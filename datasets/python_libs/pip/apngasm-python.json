@@ -1,0 +1,6 @@
+{
+  "libname": "apngasm-python",
+  "libvers": "1.3.2",
+  "infile": "data/pip/apngasm-python.txt",
+  "dependencies": {}
+}

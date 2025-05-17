@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-bcm-data-exports",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-bcm-data-exports.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "dukpy",
+  "libvers": "0.5.0",
+  "infile": "data/pip/dukpy.txt",
+  "dependencies": {}
+}

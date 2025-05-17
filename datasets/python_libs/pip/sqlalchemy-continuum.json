@@ -1,0 +1,10 @@
+{
+  "libname": "sqlalchemy-continuum",
+  "libvers": "1.4.2",
+  "infile": "data/pip/sqlalchemy-continuum.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "sqlalchemy-utils": "0.41.2",
+    "typing-extensions": "4.13.2"
+  }
+}

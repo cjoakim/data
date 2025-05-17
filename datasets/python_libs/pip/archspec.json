@@ -1,0 +1,6 @@
+{
+  "libname": "archspec",
+  "libvers": "0.2.5",
+  "infile": "data/pip/archspec.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,15 @@
+{
+  "libname": "micloud",
+  "libvers": "0.6",
+  "infile": "data/pip/micloud.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "idna": "3.10",
+    "pycryptodome": "3.22.0",
+    "requests": "2.32.3",
+    "tzlocal": "5.3.1",
+    "urllib3": "2.4.0"
+  }
+}

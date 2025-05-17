@@ -1,0 +1,9 @@
+{
+  "libname": "django",
+  "libvers": "5.2",
+  "infile": "data/pip/django.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "sqlparse": "0.5.3"
+  }
+}

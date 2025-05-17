@@ -1,0 +1,9 @@
+{
+  "libname": "sqlalchemy-views",
+  "libvers": "0.3.2",
+  "infile": "data/pip/sqlalchemy-views.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

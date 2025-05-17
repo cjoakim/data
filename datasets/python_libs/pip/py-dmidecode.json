@@ -1,0 +1,6 @@
+{
+  "libname": "py-dmidecode",
+  "libvers": "0.1.3",
+  "infile": "data/pip/py-dmidecode.txt",
+  "dependencies": {}
+}

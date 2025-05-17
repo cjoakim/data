@@ -1,0 +1,6 @@
+{
+  "libname": "polygraphy",
+  "libvers": "0.49.20",
+  "infile": "data/pip/polygraphy.txt",
+  "dependencies": {}
+}

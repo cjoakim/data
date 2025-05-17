@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-kendra-ranking",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-kendra-ranking.txt",
+  "dependencies": {}
+}

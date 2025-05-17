@@ -1,0 +1,8 @@
+{
+  "libname": "pepeline",
+  "libvers": "0.3.14",
+  "infile": "data/pip/pepeline.txt",
+  "dependencies": {
+    "numpy": "1.26.4"
+  }
+}

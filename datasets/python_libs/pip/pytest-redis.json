@@ -1,0 +1,15 @@
+{
+  "libname": "pytest-redis",
+  "libvers": "3.1.3",
+  "infile": "data/pip/pytest-redis.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "mirakuru": "2.6.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "port-for": "0.7.4",
+    "psutil": "7.0.0",
+    "pytest": "8.3.5",
+    "redis": "6.0.0"
+  }
+}

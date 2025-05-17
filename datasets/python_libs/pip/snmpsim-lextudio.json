@@ -1,0 +1,28 @@
+{
+  "libname": "snmpsim-lextudio",
+  "libvers": "1.1.1",
+  "infile": "data/pip/snmpsim-lextudio.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "coverage[toml]": "7.8.0",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "iniconfig": "2.1.0",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "ply": "3.11",
+    "pyasn1": "0.6.0",
+    "pycparser": "2.22",
+    "pysmi-lextudio": "1.4.3",
+    "pysnmp-lextudio": "6.3.0",
+    "pysnmpcrypto": "0.0.4",
+    "pytest": "8.3.5",
+    "pytest-cov": "4.1.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

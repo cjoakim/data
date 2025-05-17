@@ -1,0 +1,10 @@
+{
+  "libname": "docx2pdf",
+  "libvers": "0.1.8",
+  "infile": "data/pip/docx2pdf.txt",
+  "dependencies": {
+    "appscript": "1.3.0",
+    "lxml": "5.4.0",
+    "tqdm": "4.67.1"
+  }
+}

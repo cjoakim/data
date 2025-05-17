@@ -1,0 +1,6 @@
+{
+  "libname": "datedelta",
+  "libvers": "1.4",
+  "infile": "data/pip/datedelta.txt",
+  "dependencies": {}
+}

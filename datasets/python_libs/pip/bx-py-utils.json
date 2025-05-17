@@ -1,0 +1,6 @@
+{
+  "libname": "bx-py-utils",
+  "libvers": "108",
+  "infile": "data/pip/bx-py-utils.txt",
+  "dependencies": {}
+}

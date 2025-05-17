@@ -1,0 +1,6 @@
+{
+  "libname": "flip-evaluator",
+  "libvers": "1.6.0.1",
+  "infile": "data/pip/flip-evaluator.txt",
+  "dependencies": {}
+}

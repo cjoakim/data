@@ -1,0 +1,21 @@
+{
+  "libname": "pytest-pgsql",
+  "libvers": "1.1.2",
+  "infile": "data/pip/pytest-pgsql.txt",
+  "dependencies": {
+    "asn1crypto": "1.5.1",
+    "freezegun": "1.5.1",
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pg8000": "1.31.2",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "python-dateutil": "2.9.0.post0",
+    "scramp": "1.4.5",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "testing-common-database": "2.0.3",
+    "testing-postgresql": "1.3.0",
+    "typing-extensions": "4.13.2"
+  }
+}

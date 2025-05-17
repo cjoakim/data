@@ -1,0 +1,6 @@
+{
+  "libname": "fastprogress",
+  "libvers": "1.0.3",
+  "infile": "data/pip/fastprogress.txt",
+  "dependencies": {}
+}

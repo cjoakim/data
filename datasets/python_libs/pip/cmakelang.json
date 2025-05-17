@@ -1,0 +1,8 @@
+{
+  "libname": "cmakelang",
+  "libvers": "0.6.13",
+  "infile": "data/pip/cmakelang.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

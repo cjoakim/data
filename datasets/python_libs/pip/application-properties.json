@@ -1,0 +1,10 @@
+{
+  "libname": "application-properties",
+  "libvers": "0.8.2",
+  "infile": "data/pip/application-properties.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2",
+    "tomli": "2.2.1",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "applicationinsights",
+  "libvers": "0.11.10",
+  "infile": "data/pip/applicationinsights.txt",
+  "dependencies": {}
+}

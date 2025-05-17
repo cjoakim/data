@@ -1,0 +1,6 @@
+{
+  "libname": "graph-compression-google-research",
+  "libvers": "0.0.4",
+  "infile": "data/pip/graph-compression-google-research.txt",
+  "dependencies": {}
+}

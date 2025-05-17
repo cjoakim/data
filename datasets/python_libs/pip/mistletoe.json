@@ -1,0 +1,6 @@
+{
+  "libname": "mistletoe",
+  "libvers": "1.4.0",
+  "infile": "data/pip/mistletoe.txt",
+  "dependencies": {}
+}

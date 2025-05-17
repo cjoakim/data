@@ -1,0 +1,9 @@
+{
+  "libname": "numba",
+  "libvers": "0.61.2",
+  "infile": "data/pip/numba.txt",
+  "dependencies": {
+    "llvmlite": "0.44.0",
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pytgcrypto",
+  "libvers": "1.2.9.2",
+  "infile": "data/pip/pytgcrypto.txt",
+  "dependencies": {}
+}

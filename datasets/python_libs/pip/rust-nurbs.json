@@ -1,0 +1,6 @@
+{
+  "libname": "rust-nurbs",
+  "libvers": "0.28.0",
+  "infile": "data/pip/rust-nurbs.txt",
+  "dependencies": {}
+}

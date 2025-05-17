@@ -1,0 +1,8 @@
+{
+  "libname": "imgkit",
+  "libvers": "1.2.3",
+  "infile": "data/pip/imgkit.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

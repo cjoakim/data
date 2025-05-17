@@ -1,0 +1,9 @@
+{
+  "libname": "mode",
+  "libvers": "4.4.0",
+  "infile": "data/pip/mode.txt",
+  "dependencies": {
+    "colorlog": "6.9.0",
+    "mypy-extensions": "1.1.0"
+  }
+}

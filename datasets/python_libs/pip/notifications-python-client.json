@@ -1,0 +1,14 @@
+{
+  "libname": "notifications-python-client",
+  "libvers": "10.0.1",
+  "infile": "data/pip/notifications-python-client.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "docopt": "0.6.2",
+    "idna": "3.10",
+    "pyjwt": "2.10.1",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

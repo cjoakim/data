@@ -1,0 +1,8 @@
+{
+  "libname": "deepdiff6",
+  "libvers": "6.2.0",
+  "infile": "data/pip/deepdiff6.txt",
+  "dependencies": {
+    "ordered-set": "4.1.0"
+  }
+}

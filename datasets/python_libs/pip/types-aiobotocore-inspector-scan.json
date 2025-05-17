@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-inspector-scan",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-inspector-scan.txt",
+  "dependencies": {}
+}

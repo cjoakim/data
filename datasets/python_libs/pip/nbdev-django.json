@@ -1,0 +1,8 @@
+{
+  "libname": "nbdev-django",
+  "libvers": "0.0.1850",
+  "infile": "data/pip/nbdev-django.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

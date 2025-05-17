@@ -1,0 +1,17 @@
+{
+  "libname": "imgui-bundle",
+  "libvers": "1.6.2",
+  "infile": "data/pip/imgui-bundle.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "glfw": "2.9.0",
+    "munch": "4.0.0",
+    "numpy": "2.2.5",
+    "pillow": "11.2.1",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pyopengl": "3.1.9",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

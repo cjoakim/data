@@ -1,0 +1,8 @@
+{
+  "libname": "eth-retry",
+  "libvers": "0.3.4",
+  "infile": "data/pip/eth-retry.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

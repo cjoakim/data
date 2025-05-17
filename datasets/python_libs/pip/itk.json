@@ -1,0 +1,14 @@
+{
+  "libname": "itk",
+  "libvers": "5.4.3",
+  "infile": "data/pip/itk.txt",
+  "dependencies": {
+    "itk-core": "5.4.3",
+    "itk-filtering": "5.4.3",
+    "itk-io": "5.4.3",
+    "itk-numerics": "5.4.3",
+    "itk-registration": "5.4.3",
+    "itk-segmentation": "5.4.3",
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "aliyun-python-sdk-core-v3",
+  "libvers": "2.13.33",
+  "infile": "data/pip/aliyun-python-sdk-core-v3.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "jmespath": "0.10.0",
+    "pycparser": "2.22"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "shutils",
+  "libvers": "0.1.0",
+  "infile": "data/pip/shutils.txt",
+  "dependencies": {
+    "configparser": "7.2.0",
+    "pymysql": "1.1.1"
+  }
+}

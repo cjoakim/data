@@ -1,0 +1,6 @@
+{
+  "libname": "result",
+  "libvers": "0.17.0",
+  "infile": "data/pip/result.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pyjnius",
+  "libvers": "1.6.1",
+  "infile": "data/pip/pyjnius.txt",
+  "dependencies": {}
+}

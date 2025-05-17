@@ -1,0 +1,11 @@
+{
+  "libname": "pydoris",
+  "libvers": "1.0.6",
+  "infile": "data/pip/pydoris.txt",
+  "dependencies": {
+    "greenlet": "3.2.1",
+    "mysqlclient": "2.2.7",
+    "sqlalchemy": "1.4.54",
+    "sqlalchemy-utils": "0.38.3"
+  }
+}

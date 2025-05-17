@@ -1,0 +1,8 @@
+{
+  "libname": "lintrunner-adapters",
+  "libvers": "0.12.4",
+  "infile": "data/pip/lintrunner-adapters.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "sounddevice",
+  "libvers": "0.5.1",
+  "infile": "data/pip/sounddevice.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

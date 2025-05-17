@@ -1,0 +1,6 @@
+{
+  "libname": "kiss-headers",
+  "libvers": "2.5.0",
+  "infile": "data/pip/kiss-headers.txt",
+  "dependencies": {}
+}

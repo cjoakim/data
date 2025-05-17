@@ -1,0 +1,10 @@
+{
+  "libname": "ncrystal",
+  "libvers": "4.1.6",
+  "infile": "data/pip/ncrystal.txt",
+  "dependencies": {
+    "ncrystal-core": "4.1.6",
+    "ncrystal-python": "4.1.6",
+    "numpy": "2.2.5"
+  }
+}

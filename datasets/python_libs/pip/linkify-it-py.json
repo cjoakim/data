@@ -1,0 +1,8 @@
+{
+  "libname": "linkify-it-py",
+  "libvers": "2.0.3",
+  "infile": "data/pip/linkify-it-py.txt",
+  "dependencies": {
+    "uc-micro-py": "1.0.3"
+  }
+}

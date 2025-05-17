@@ -1,0 +1,6 @@
+{
+  "libname": "aiocache",
+  "libvers": "0.12.3",
+  "infile": "data/pip/aiocache.txt",
+  "dependencies": {}
+}

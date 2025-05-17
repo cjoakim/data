@@ -1,0 +1,8 @@
+{
+  "libname": "gekko",
+  "libvers": "1.3.0",
+  "infile": "data/pip/gekko.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "click-didyoumean",
+  "libvers": "0.3.1",
+  "infile": "data/pip/click-didyoumean.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "pdfminer",
+  "libvers": "20191125",
+  "infile": "data/pip/pdfminer.txt",
+  "dependencies": {
+    "pycryptodome": "3.22.0"
+  }
+}

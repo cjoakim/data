@@ -1,0 +1,6 @@
+{
+  "libname": "dbnd-test-scenarios",
+  "libvers": "1.0.28.1",
+  "infile": "data/pip/dbnd-test-scenarios.txt",
+  "dependencies": {}
+}

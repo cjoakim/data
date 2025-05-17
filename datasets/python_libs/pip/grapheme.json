@@ -1,0 +1,6 @@
+{
+  "libname": "grapheme",
+  "libvers": "0.6.0",
+  "infile": "data/pip/grapheme.txt",
+  "dependencies": {}
+}

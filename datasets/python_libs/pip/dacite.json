@@ -1,0 +1,6 @@
+{
+  "libname": "dacite",
+  "libvers": "1.9.2",
+  "infile": "data/pip/dacite.txt",
+  "dependencies": {}
+}

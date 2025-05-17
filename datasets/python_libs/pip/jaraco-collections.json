@@ -1,0 +1,12 @@
+{
+  "libname": "jaraco-collections",
+  "libvers": "5.1.0",
+  "infile": "data/pip/jaraco-collections.txt",
+  "dependencies": {
+    "autocommand": "2.2.2",
+    "jaraco-context": "6.0.1",
+    "jaraco-functools": "4.1.0",
+    "jaraco-text": "4.0.0",
+    "more-itertools": "10.7.0"
+  }
+}

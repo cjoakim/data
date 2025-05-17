@@ -1,0 +1,8 @@
+{
+  "libname": "gtsam-develop",
+  "libvers": "4.3a0.dev202504272156",
+  "infile": "data/pip/gtsam-develop.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

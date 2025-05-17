@@ -1,0 +1,16 @@
+{
+  "libname": "prefixmaps",
+  "libvers": "0.2.6",
+  "infile": "data/pip/prefixmaps.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "curies": "0.10.16",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pytrie": "0.4.0",
+    "pyyaml": "6.0.2",
+    "sortedcontainers": "2.4.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

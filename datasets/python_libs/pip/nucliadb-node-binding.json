@@ -1,0 +1,6 @@
+{
+  "libname": "nucliadb-node-binding",
+  "libvers": "6.2.1.post1611",
+  "infile": "data/pip/nucliadb-node-binding.txt",
+  "dependencies": {}
+}

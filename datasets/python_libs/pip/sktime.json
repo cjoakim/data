@@ -1,0 +1,19 @@
+{
+  "libname": "sktime",
+  "libvers": "0.37.0",
+  "infile": "data/pip/sktime.txt",
+  "dependencies": {
+    "joblib": "1.4.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "scikit-base": "0.12.2",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "threadpoolctl": "3.6.0",
+    "tzdata": "2025.2"
+  }
+}

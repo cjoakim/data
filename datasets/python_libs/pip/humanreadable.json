@@ -1,0 +1,10 @@
+{
+  "libname": "humanreadable",
+  "libvers": "0.4.1",
+  "infile": "data/pip/humanreadable.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "mbstrdecoder": "1.1.4",
+    "typepy": "1.3.4"
+  }
+}

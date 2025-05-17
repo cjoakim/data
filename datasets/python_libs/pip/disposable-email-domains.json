@@ -1,0 +1,6 @@
+{
+  "libname": "disposable-email-domains",
+  "libvers": "0.0.126",
+  "infile": "data/pip/disposable-email-domains.txt",
+  "dependencies": {}
+}

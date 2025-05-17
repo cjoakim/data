@@ -1,0 +1,8 @@
+{
+  "libname": "aioodbc",
+  "libvers": "0.5.0",
+  "infile": "data/pip/aioodbc.txt",
+  "dependencies": {
+    "pyodbc": "5.2.0"
+  }
+}

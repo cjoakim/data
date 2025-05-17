@@ -1,0 +1,8 @@
+{
+  "libname": "os-resource-classes",
+  "libvers": "1.1.0",
+  "infile": "data/pip/os-resource-classes.txt",
+  "dependencies": {
+    "pbr": "6.1.1"
+  }
+}

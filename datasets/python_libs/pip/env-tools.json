@@ -1,0 +1,10 @@
+{
+  "libname": "env-tools",
+  "libvers": "2.4.0",
+  "infile": "data/pip/env-tools.txt",
+  "dependencies": {
+    "configparser": "7.2.0",
+    "six": "1.17.0",
+    "tini": "4.0.0"
+  }
+}

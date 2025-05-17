@@ -1,0 +1,6 @@
+{
+  "libname": "types-invoke",
+  "libvers": "2.0.0.10",
+  "infile": "data/pip/types-invoke.txt",
+  "dependencies": {}
+}

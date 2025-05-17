@@ -1,0 +1,9 @@
+{
+  "libname": "dissect-executable",
+  "libvers": "1.8",
+  "infile": "data/pip/dissect-executable.txt",
+  "dependencies": {
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

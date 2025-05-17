@@ -1,0 +1,11 @@
+{
+  "libname": "bloock",
+  "libvers": "2.8.7",
+  "infile": "data/pip/bloock.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "grpcio": "1.71.0",
+    "protobuf": "4.25.7",
+    "pycparser": "2.22"
+  }
+}

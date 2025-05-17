@@ -1,0 +1,6 @@
+{
+  "libname": "mkdocs-glightbox",
+  "libvers": "0.4.0",
+  "infile": "data/pip/mkdocs-glightbox.txt",
+  "dependencies": {}
+}

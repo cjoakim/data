@@ -1,0 +1,6 @@
+{
+  "libname": "pygresql",
+  "libvers": "6.1.0",
+  "infile": "data/pip/pygresql.txt",
+  "dependencies": {}
+}

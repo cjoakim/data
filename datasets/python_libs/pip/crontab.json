@@ -1,0 +1,6 @@
+{
+  "libname": "crontab",
+  "libvers": "1.0.4",
+  "infile": "data/pip/crontab.txt",
+  "dependencies": {}
+}

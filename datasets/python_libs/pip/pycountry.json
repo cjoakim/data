@@ -1,0 +1,6 @@
+{
+  "libname": "pycountry",
+  "libvers": "24.6.1",
+  "infile": "data/pip/pycountry.txt",
+  "dependencies": {}
+}

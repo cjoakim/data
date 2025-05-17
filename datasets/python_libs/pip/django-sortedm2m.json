@@ -1,0 +1,6 @@
+{
+  "libname": "django-sortedm2m",
+  "libvers": "4.0.0",
+  "infile": "data/pip/django-sortedm2m.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "scrypt",
+  "libvers": "0.8.27",
+  "infile": "data/pip/scrypt.txt",
+  "dependencies": {}
+}

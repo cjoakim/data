@@ -1,0 +1,10 @@
+{
+  "libname": "pyaxmlparser",
+  "libvers": "0.3.31",
+  "infile": "data/pip/pyaxmlparser.txt",
+  "dependencies": {
+    "asn1crypto": "1.5.1",
+    "click": "8.1.8",
+    "lxml": "5.4.0"
+  }
+}

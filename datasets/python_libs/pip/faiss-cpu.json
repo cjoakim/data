@@ -1,0 +1,9 @@
+{
+  "libname": "faiss-cpu",
+  "libvers": "1.11.0",
+  "infile": "data/pip/faiss-cpu.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0"
+  }
+}

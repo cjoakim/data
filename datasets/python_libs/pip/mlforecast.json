@@ -1,0 +1,31 @@
+{
+  "libname": "mlforecast",
+  "libvers": "1.0.2",
+  "infile": "data/pip/mlforecast.txt",
+  "dependencies": {
+    "alembic": "1.15.2",
+    "cloudpickle": "3.1.1",
+    "colorlog": "6.9.0",
+    "coreforecast": "0.0.16",
+    "fsspec": "2025.3.2",
+    "joblib": "1.5.0",
+    "mako": "1.3.10",
+    "markupsafe": "3.0.2",
+    "numpy": "2.2.5",
+    "optuna": "4.3.0",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "threadpoolctl": "3.6.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2",
+    "utilsforecast": "0.2.12"
+  }
+}

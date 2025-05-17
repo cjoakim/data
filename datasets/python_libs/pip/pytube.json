@@ -1,0 +1,6 @@
+{
+  "libname": "pytube",
+  "libvers": "15.0.0",
+  "infile": "data/pip/pytube.txt",
+  "dependencies": {}
+}

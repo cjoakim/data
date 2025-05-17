@@ -1,0 +1,10 @@
+{
+  "libname": "yte",
+  "libvers": "1.7.0",
+  "infile": "data/pip/yte.txt",
+  "dependencies": {
+    "dpath": "2.2.0",
+    "plac": "1.4.5",
+    "pyyaml": "6.0.2"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "libname": "generative-ai-hub-sdk",
+  "libvers": "4.10.2",
+  "infile": "data/pip/generative-ai-hub-sdk.txt",
+  "dependencies": {
+    "aenum": "3.1.16",
+    "ai-api-client-sdk": "2.4.6",
+    "ai-core-sdk": "2.5.7",
+    "annotated-types": "0.7.0",
+    "anyio": "4.9.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "dacite": "1.9.2",
+    "distro": "1.9.0",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.10",
+    "jiter": "0.9.0",
+    "openai": "1.77.0",
+    "overloading": "0.5.0",
+    "packaging": "25.0",
+    "pydantic": "2.10.6",
+    "pydantic-core": "2.27.2",
+    "pyhumps": "3.8.0",
+    "requests": "2.32.3",
+    "sniffio": "1.3.1",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

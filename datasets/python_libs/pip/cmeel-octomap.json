@@ -1,0 +1,8 @@
+{
+  "libname": "cmeel-octomap",
+  "libvers": "1.10.0",
+  "infile": "data/pip/cmeel-octomap.txt",
+  "dependencies": {
+    "cmeel": "0.57.3"
+  }
+}

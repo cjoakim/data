@@ -1,0 +1,8 @@
+{
+  "libname": "levenshtein",
+  "libvers": "0.27.1",
+  "infile": "data/pip/levenshtein.txt",
+  "dependencies": {
+    "rapidfuzz": "3.13.0"
+  }
+}

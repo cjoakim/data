@@ -1,0 +1,9 @@
+{
+  "libname": "graphql-server",
+  "libvers": "3.0.0b7",
+  "infile": "data/pip/graphql-server.txt",
+  "dependencies": {
+    "graphql-core": "3.2.6",
+    "typing-extensions": "4.13.2"
+  }
+}

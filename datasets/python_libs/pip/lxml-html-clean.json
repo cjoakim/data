@@ -1,0 +1,8 @@
+{
+  "libname": "lxml-html-clean",
+  "libvers": "0.4.2",
+  "infile": "data/pip/lxml-html-clean.txt",
+  "dependencies": {
+    "lxml": "5.4.0"
+  }
+}

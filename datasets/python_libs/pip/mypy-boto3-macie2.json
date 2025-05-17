@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-macie2",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-macie2.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "fonts",
+  "libvers": "0.0.3",
+  "infile": "data/pip/fonts.txt",
+  "dependencies": {}
+}

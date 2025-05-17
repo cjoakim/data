@@ -1,0 +1,8 @@
+{
+  "libname": "dict-hash",
+  "libvers": "1.3.6",
+  "infile": "data/pip/dict-hash.txt",
+  "dependencies": {
+    "deflate-dict": "1.2.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "pytest-helpers-namespace",
+  "libvers": "2021.12.29",
+  "infile": "data/pip/pytest-helpers-namespace.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5"
+  }
+}

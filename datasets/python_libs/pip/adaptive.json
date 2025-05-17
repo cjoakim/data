@@ -1,0 +1,15 @@
+{
+  "libname": "adaptive",
+  "libvers": "1.3.2",
+  "infile": "data/pip/adaptive.txt",
+  "dependencies": {
+    "cloudpickle": "3.1.1",
+    "loky": "3.5.3",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "scipy": "1.15.2",
+    "sortedcollections": "2.1.0",
+    "sortedcontainers": "2.4.0",
+    "versioningit": "3.1.2"
+  }
+}

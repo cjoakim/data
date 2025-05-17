@@ -1,0 +1,9 @@
+{
+  "libname": "owlrl",
+  "libvers": "7.1.3",
+  "infile": "data/pip/owlrl.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3",
+    "rdflib": "7.1.4"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "libname": "pydload",
+  "libvers": "1.0.9",
+  "infile": "data/pip/pydload.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "progressbar2": "4.5.0",
+    "python-utils": "3.9.1",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

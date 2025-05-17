@@ -1,0 +1,8 @@
+{
+  "libname": "django-redis-sessions",
+  "libvers": "0.6.2",
+  "infile": "data/pip/django-redis-sessions.txt",
+  "dependencies": {
+    "redis": "6.0.0"
+  }
+}

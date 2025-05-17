@@ -1,0 +1,8 @@
+{
+  "libname": "types-tzlocal",
+  "libvers": "5.1.0.1",
+  "infile": "data/pip/types-tzlocal.txt",
+  "dependencies": {
+    "types-pytz": "2025.2.0.20250326"
+  }
+}

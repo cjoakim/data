@@ -1,0 +1,16 @@
+{
+  "libname": "pyppeteer",
+  "libvers": "2.0.0",
+  "infile": "data/pip/pyppeteer.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "certifi": "2025.4.26",
+    "importlib-metadata": "8.7.0",
+    "pyee": "11.1.1",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "urllib3": "1.26.20",
+    "websockets": "10.4",
+    "zipp": "3.21.0"
+  }
+}

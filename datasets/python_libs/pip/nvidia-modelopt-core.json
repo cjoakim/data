@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-modelopt-core",
+  "libvers": "0.27.0",
+  "infile": "data/pip/nvidia-modelopt-core.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "wxpython",
+  "libvers": "4.2.3",
+  "infile": "data/pip/wxpython.txt",
+  "dependencies": {}
+}

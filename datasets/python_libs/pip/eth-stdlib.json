@@ -1,0 +1,8 @@
+{
+  "libname": "eth-stdlib",
+  "libvers": "0.2.8",
+  "infile": "data/pip/eth-stdlib.txt",
+  "dependencies": {
+    "pycryptodome": "3.22.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "zstd",
+  "libvers": "1.5.7.0",
+  "infile": "data/pip/zstd.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "fiddle",
+  "libvers": "0.3.0",
+  "infile": "data/pip/fiddle.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "graphviz": "0.20.3",
+    "libcst": "1.7.0",
+    "pyyaml": "6.0.2",
+    "typing-extensions": "4.13.2"
+  }
+}

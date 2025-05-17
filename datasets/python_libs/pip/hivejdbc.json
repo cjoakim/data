@@ -1,0 +1,11 @@
+{
+  "libname": "hivejdbc",
+  "libvers": "0.2.3",
+  "infile": "data/pip/hivejdbc.txt",
+  "dependencies": {
+    "jpype1": "1.5.2",
+    "packaging": "25.0",
+    "pyjdbc": "0.2.2",
+    "sqlparams": "6.2.0"
+  }
+}

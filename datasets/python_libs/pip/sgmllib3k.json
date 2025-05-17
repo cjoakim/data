@@ -1,0 +1,6 @@
+{
+  "libname": "sgmllib3k",
+  "libvers": "1.0.0",
+  "infile": "data/pip/sgmllib3k.txt",
+  "dependencies": {}
+}

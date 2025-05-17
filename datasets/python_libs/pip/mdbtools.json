@@ -1,0 +1,9 @@
+{
+  "libname": "mdbtools",
+  "libvers": "0.3.14",
+  "infile": "data/pip/mdbtools.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "pymongo": "4.12.1"
+  }
+}

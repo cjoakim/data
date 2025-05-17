@@ -1,0 +1,6 @@
+{
+  "libname": "boltons",
+  "libvers": "25.0.0",
+  "infile": "data/pip/boltons.txt",
+  "dependencies": {}
+}

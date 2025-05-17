@@ -1,0 +1,10 @@
+{
+  "libname": "pdoc",
+  "libvers": "15.0.3",
+  "infile": "data/pip/pdoc.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "pygments": "2.19.1"
+  }
+}

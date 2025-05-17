@@ -1,0 +1,6 @@
+{
+  "libname": "selectolax",
+  "libvers": "0.3.29",
+  "infile": "data/pip/selectolax.txt",
+  "dependencies": {}
+}

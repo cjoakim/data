@@ -1,0 +1,6 @@
+{
+  "libname": "hai",
+  "libvers": "0.4.1",
+  "infile": "data/pip/hai.txt",
+  "dependencies": {}
+}

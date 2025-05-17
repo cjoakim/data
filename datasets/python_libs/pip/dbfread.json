@@ -1,0 +1,6 @@
+{
+  "libname": "dbfread",
+  "libvers": "2.0.7",
+  "infile": "data/pip/dbfread.txt",
+  "dependencies": {}
+}

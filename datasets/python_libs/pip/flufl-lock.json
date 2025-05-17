@@ -1,0 +1,9 @@
+{
+  "libname": "flufl-lock",
+  "libvers": "8.1.0",
+  "infile": "data/pip/flufl-lock.txt",
+  "dependencies": {
+    "atpublic": "6.0",
+    "psutil": "7.0.0"
+  }
+}

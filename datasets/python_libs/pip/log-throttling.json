@@ -1,0 +1,6 @@
+{
+  "libname": "log-throttling",
+  "libvers": "0.0.3",
+  "infile": "data/pip/log-throttling.txt",
+  "dependencies": {}
+}

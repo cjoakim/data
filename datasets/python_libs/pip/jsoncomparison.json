@@ -1,0 +1,6 @@
+{
+  "libname": "jsoncomparison",
+  "libvers": "1.1.0",
+  "infile": "data/pip/jsoncomparison.txt",
+  "dependencies": {}
+}

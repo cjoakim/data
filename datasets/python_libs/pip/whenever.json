@@ -1,0 +1,6 @@
+{
+  "libname": "whenever",
+  "libvers": "0.8.0",
+  "infile": "data/pip/whenever.txt",
+  "dependencies": {}
+}

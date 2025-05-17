@@ -1,0 +1,10 @@
+{
+  "libname": "headerparser",
+  "libvers": "0.5.2",
+  "infile": "data/pip/headerparser.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "deprecated": "1.2.18",
+    "wrapt": "1.17.2"
+  }
+}

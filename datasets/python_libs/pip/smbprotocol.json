@@ -1,0 +1,11 @@
+{
+  "libname": "smbprotocol",
+  "libvers": "1.15.0",
+  "infile": "data/pip/smbprotocol.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22",
+    "pyspnego": "0.11.2"
+  }
+}

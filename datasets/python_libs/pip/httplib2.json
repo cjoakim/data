@@ -1,0 +1,8 @@
+{
+  "libname": "httplib2",
+  "libvers": "0.22.0",
+  "infile": "data/pip/httplib2.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

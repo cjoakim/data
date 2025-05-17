@@ -1,0 +1,6 @@
+{
+  "libname": "lumigo-core",
+  "libvers": "0.0.14",
+  "infile": "data/pip/lumigo-core.txt",
+  "dependencies": {}
+}

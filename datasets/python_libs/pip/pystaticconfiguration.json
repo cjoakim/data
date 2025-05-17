@@ -1,0 +1,8 @@
+{
+  "libname": "pystaticconfiguration",
+  "libvers": "0.11.1",
+  "infile": "data/pip/pystaticconfiguration.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

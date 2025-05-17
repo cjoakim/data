@@ -1,0 +1,10 @@
+{
+  "libname": "apispec-webframeworks",
+  "libvers": "1.2.0",
+  "infile": "data/pip/apispec-webframeworks.txt",
+  "dependencies": {
+    "apispec[yaml]": "6.8.1",
+    "packaging": "25.0",
+    "pyyaml": "6.0.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "delta-spark",
+  "libvers": "3.3.1",
+  "infile": "data/pip/delta-spark.txt",
+  "dependencies": {
+    "importlib-metadata": "8.7.0",
+    "py4j": "0.10.9.7",
+    "pyspark": "3.5.5",
+    "zipp": "3.21.0"
+  }
+}

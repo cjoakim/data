@@ -1,0 +1,8 @@
+{
+  "libname": "jsonargparse",
+  "libvers": "4.39.0",
+  "infile": "data/pip/jsonargparse.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "conventional-pre-commit",
+  "libvers": "4.2.0",
+  "infile": "data/pip/conventional-pre-commit.txt",
+  "dependencies": {}
+}

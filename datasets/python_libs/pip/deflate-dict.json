@@ -1,0 +1,6 @@
+{
+  "libname": "deflate-dict",
+  "libvers": "1.2.2",
+  "infile": "data/pip/deflate-dict.txt",
+  "dependencies": {}
+}

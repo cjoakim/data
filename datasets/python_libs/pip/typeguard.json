@@ -1,0 +1,8 @@
+{
+  "libname": "typeguard",
+  "libvers": "4.4.2",
+  "infile": "data/pip/typeguard.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

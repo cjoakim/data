@@ -1,0 +1,19 @@
+{
+  "libname": "zeep",
+  "libvers": "4.3.1",
+  "infile": "data/pip/zeep.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "isodate": "0.7.2",
+    "lxml": "5.4.0",
+    "platformdirs": "4.3.7",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "requests-file": "2.1.0",
+    "requests-toolbelt": "1.0.0",
+    "urllib3": "2.4.0"
+  }
+}

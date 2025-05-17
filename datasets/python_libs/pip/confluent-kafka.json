@@ -1,0 +1,6 @@
+{
+  "libname": "confluent-kafka",
+  "libvers": "2.10.0",
+  "infile": "data/pip/confluent-kafka.txt",
+  "dependencies": {}
+}

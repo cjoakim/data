@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-kinesis",
+  "libvers": "1.38.8",
+  "infile": "data/pip/mypy-boto3-kinesis.txt",
+  "dependencies": {}
+}

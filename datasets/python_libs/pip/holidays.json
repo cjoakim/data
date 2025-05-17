@@ -1,0 +1,9 @@
+{
+  "libname": "holidays",
+  "libvers": "0.72",
+  "infile": "data/pip/holidays.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

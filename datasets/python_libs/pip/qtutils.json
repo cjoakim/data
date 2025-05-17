@@ -1,0 +1,9 @@
+{
+  "libname": "qtutils",
+  "libvers": "4.0.0",
+  "infile": "data/pip/qtutils.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "setuptools-scm": "8.3.1"
+  }
+}

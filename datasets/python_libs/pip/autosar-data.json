@@ -1,0 +1,6 @@
+{
+  "libname": "autosar-data",
+  "libvers": "0.11.0",
+  "infile": "data/pip/autosar-data.txt",
+  "dependencies": {}
+}

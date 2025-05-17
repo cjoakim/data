@@ -1,0 +1,9 @@
+{
+  "libname": "dennis",
+  "libvers": "1.1.0",
+  "infile": "data/pip/dennis.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "polib": "1.2.0"
+  }
+}

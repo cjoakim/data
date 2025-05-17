@@ -1,0 +1,9 @@
+{
+  "libname": "mail-parser",
+  "libvers": "4.1.2",
+  "infile": "data/pip/mail-parser.txt",
+  "dependencies": {
+    "ipaddress": "1.0.23",
+    "six": "1.17.0"
+  }
+}

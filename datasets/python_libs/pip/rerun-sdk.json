@@ -1,0 +1,12 @@
+{
+  "libname": "rerun-sdk",
+  "libvers": "0.23.2",
+  "infile": "data/pip/rerun-sdk.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "numpy": "2.2.5",
+    "pillow": "11.2.1",
+    "pyarrow": "20.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

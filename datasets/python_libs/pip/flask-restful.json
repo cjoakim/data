@@ -1,0 +1,17 @@
+{
+  "libname": "flask-restful",
+  "libvers": "0.3.10",
+  "infile": "data/pip/flask-restful.txt",
+  "dependencies": {
+    "aniso8601": "10.0.1",
+    "blinker": "1.9.0",
+    "click": "8.1.8",
+    "flask": "3.1.0",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "werkzeug": "3.1.3"
+  }
+}

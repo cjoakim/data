@@ -1,0 +1,19 @@
+{
+  "libname": "flask-openapi3",
+  "libvers": "4.1.0",
+  "infile": "data/pip/flask-openapi3.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "blinker": "1.9.0",
+    "click": "8.1.8",
+    "flask": "3.1.0",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "werkzeug": "3.1.3"
+  }
+}

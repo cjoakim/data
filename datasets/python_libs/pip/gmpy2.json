@@ -1,0 +1,6 @@
+{
+  "libname": "gmpy2",
+  "libvers": "2.2.1",
+  "infile": "data/pip/gmpy2.txt",
+  "dependencies": {}
+}

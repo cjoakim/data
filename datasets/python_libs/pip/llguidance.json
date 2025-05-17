@@ -1,0 +1,6 @@
+{
+  "libname": "llguidance",
+  "libvers": "0.7.19",
+  "infile": "data/pip/llguidance.txt",
+  "dependencies": {}
+}

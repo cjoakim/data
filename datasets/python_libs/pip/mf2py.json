@@ -1,0 +1,18 @@
+{
+  "libname": "mf2py",
+  "libvers": "2.0.1",
+  "infile": "data/pip/mf2py.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "html5lib": "1.1",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "webencodings": "0.5.1"
+  }
+}

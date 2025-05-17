@@ -1,0 +1,8 @@
+{
+  "libname": "rdp",
+  "libvers": "0.8",
+  "infile": "data/pip/rdp.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

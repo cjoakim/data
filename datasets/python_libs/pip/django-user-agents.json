@@ -1,0 +1,13 @@
+{
+  "libname": "django-user-agents",
+  "libvers": "0.4.0",
+  "infile": "data/pip/django-user-agents.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "sqlparse": "0.5.3",
+    "ua-parser": "1.0.1",
+    "ua-parser-builtins": "0.18.0.post1",
+    "user-agents": "2.2.0"
+  }
+}

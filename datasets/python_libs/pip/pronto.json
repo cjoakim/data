@@ -1,0 +1,12 @@
+{
+  "libname": "pronto",
+  "libvers": "2.7.0",
+  "infile": "data/pip/pronto.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "fastobo": "0.13.0",
+    "networkx": "3.4.2",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

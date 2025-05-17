@@ -1,0 +1,6 @@
+{
+  "libname": "types-dateparser",
+  "libvers": "1.2.0.20250408",
+  "infile": "data/pip/types-dateparser.txt",
+  "dependencies": {}
+}

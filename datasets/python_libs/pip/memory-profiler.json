@@ -1,0 +1,8 @@
+{
+  "libname": "memory-profiler",
+  "libvers": "0.61.0",
+  "infile": "data/pip/memory-profiler.txt",
+  "dependencies": {
+    "psutil": "7.0.0"
+  }
+}

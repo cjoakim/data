@@ -1,0 +1,9 @@
+{
+  "libname": "hashin",
+  "libvers": "1.0.3",
+  "infile": "data/pip/hashin.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "pip-api": "0.0.34"
+  }
+}

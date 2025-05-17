@@ -1,0 +1,6 @@
+{
+  "libname": "types-humanfriendly",
+  "libvers": "10.0.1.20250319",
+  "infile": "data/pip/types-humanfriendly.txt",
+  "dependencies": {}
+}

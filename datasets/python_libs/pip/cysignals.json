@@ -1,0 +1,6 @@
+{
+  "libname": "cysignals",
+  "libvers": "1.12.3",
+  "infile": "data/pip/cysignals.txt",
+  "dependencies": {}
+}

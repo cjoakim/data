@@ -1,0 +1,10 @@
+{
+  "libname": "versionfinder",
+  "libvers": "1.1.1",
+  "infile": "data/pip/versionfinder.txt",
+  "dependencies": {
+    "gitdb": "4.0.12",
+    "gitpython": "3.1.44",
+    "smmap": "5.0.2"
+  }
+}

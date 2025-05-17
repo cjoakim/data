@@ -1,0 +1,11 @@
+{
+  "libname": "python-pptx",
+  "libvers": "1.0.2",
+  "infile": "data/pip/python-pptx.txt",
+  "dependencies": {
+    "lxml": "5.4.0",
+    "pillow": "11.2.1",
+    "typing-extensions": "4.13.2",
+    "xlsxwriter": "3.2.3"
+  }
+}

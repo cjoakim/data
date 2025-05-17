@@ -1,0 +1,16 @@
+{
+  "libname": "ensureconda",
+  "libvers": "1.4.7",
+  "infile": "data/pip/ensureconda.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

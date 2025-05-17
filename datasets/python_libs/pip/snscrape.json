@@ -1,0 +1,18 @@
+{
+  "libname": "snscrape",
+  "libvers": "0.7.0.20230622",
+  "infile": "data/pip/snscrape.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "lxml": "5.4.0",
+    "pysocks": "1.7.1",
+    "requests[socks]": "2.32.3",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "tensorboard-plugin-wit",
+  "libvers": "1.8.1",
+  "infile": "data/pip/tensorboard-plugin-wit.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "quimb",
+  "libvers": "1.10.0",
+  "infile": "data/pip/quimb.txt",
+  "dependencies": {
+    "autoray": "0.7.1",
+    "cotengra": "0.7.2",
+    "cytoolz": "1.0.1",
+    "llvmlite": "0.44.0",
+    "numba": "0.61.2",
+    "numpy": "2.2.5",
+    "psutil": "7.0.0",
+    "scipy": "1.15.2",
+    "toolz": "1.0.0",
+    "tqdm": "4.67.1"
+  }
+}

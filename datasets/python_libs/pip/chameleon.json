@@ -1,0 +1,6 @@
+{
+  "libname": "chameleon",
+  "libvers": "4.6.0",
+  "infile": "data/pip/chameleon.txt",
+  "dependencies": {}
+}

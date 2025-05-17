@@ -1,0 +1,6 @@
+{
+  "libname": "databricks-pypi-extras",
+  "libvers": "0.1",
+  "infile": "data/pip/databricks-pypi-extras.txt",
+  "dependencies": {}
+}

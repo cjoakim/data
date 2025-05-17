@@ -1,0 +1,8 @@
+{
+  "libname": "rply",
+  "libvers": "0.7.8",
+  "infile": "data/pip/rply.txt",
+  "dependencies": {
+    "appdirs": "1.4.4"
+  }
+}

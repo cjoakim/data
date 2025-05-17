@@ -1,0 +1,6 @@
+{
+  "libname": "arabic-reshaper",
+  "libvers": "3.0.0",
+  "infile": "data/pip/arabic-reshaper.txt",
+  "dependencies": {}
+}

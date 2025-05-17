@@ -1,0 +1,13 @@
+{
+  "libname": "stability-sdk",
+  "libvers": "0.8.6",
+  "infile": "data/pip/stability-sdk.txt",
+  "dependencies": {
+    "grpcio": "1.63.2",
+    "grpcio-tools": "1.63.2",
+    "param": "2.2.0",
+    "pillow": "11.2.1",
+    "protobuf": "5.29.4",
+    "python-dotenv": "1.1.0"
+  }
+}

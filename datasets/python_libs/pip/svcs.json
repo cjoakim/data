@@ -1,0 +1,8 @@
+{
+  "libname": "svcs",
+  "libvers": "25.1.0",
+  "infile": "data/pip/svcs.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "backports-zoneinfo",
+  "libvers": "0.2.1",
+  "infile": "data/pip/backports-zoneinfo.txt",
+  "dependencies": {}
+}

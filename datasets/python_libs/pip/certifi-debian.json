@@ -1,0 +1,6 @@
+{
+  "libname": "certifi-debian",
+  "libvers": "2021.1.10",
+  "infile": "data/pip/certifi-debian.txt",
+  "dependencies": {}
+}

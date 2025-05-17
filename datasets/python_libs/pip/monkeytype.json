@@ -1,0 +1,10 @@
+{
+  "libname": "monkeytype",
+  "libvers": "23.3.0",
+  "infile": "data/pip/monkeytype.txt",
+  "dependencies": {
+    "libcst": "1.7.0",
+    "mypy-extensions": "1.1.0",
+    "pyyaml": "6.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "mando",
+  "libvers": "0.8.2",
+  "infile": "data/pip/mando.txt",
+  "dependencies": {}
+}

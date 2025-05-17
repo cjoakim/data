@@ -1,0 +1,9 @@
+{
+  "libname": "pydapper",
+  "libvers": "0.12.0",
+  "infile": "data/pip/pydapper.txt",
+  "dependencies": {
+    "coro-context-manager": "0.2.1",
+    "dsnparse": "0.2.1"
+  }
+}

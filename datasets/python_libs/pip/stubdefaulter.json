@@ -1,0 +1,14 @@
+{
+  "libname": "stubdefaulter",
+  "libvers": "0.1.0",
+  "infile": "data/pip/stubdefaulter.txt",
+  "dependencies": {
+    "importlib-resources": "6.5.2",
+    "libcst": "1.7.0",
+    "pyyaml": "6.0.2",
+    "termcolor": "3.1.0",
+    "tomli": "2.2.1",
+    "typeshed-client": "2.7.0",
+    "typing-extensions": "4.13.2"
+  }
+}

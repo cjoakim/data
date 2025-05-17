@@ -1,0 +1,9 @@
+{
+  "libname": "sqlobject",
+  "libvers": "3.13.0",
+  "infile": "data/pip/sqlobject.txt",
+  "dependencies": {
+    "formencode": "2.1.1",
+    "pydispatcher": "2.0.7"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "cinemagoer",
+  "libvers": "2023.5.1",
+  "infile": "data/pip/cinemagoer.txt",
+  "dependencies": {
+    "lxml": "5.4.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

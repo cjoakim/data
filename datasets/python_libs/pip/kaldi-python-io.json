@@ -1,0 +1,8 @@
+{
+  "libname": "kaldi-python-io",
+  "libvers": "1.2.2",
+  "infile": "data/pip/kaldi-python-io.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "praat-parselmouth",
+  "libvers": "0.4.5",
+  "infile": "data/pip/praat-parselmouth.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

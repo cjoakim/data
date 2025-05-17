@@ -1,0 +1,6 @@
+{
+  "libname": "asciitree",
+  "libvers": "0.3.3",
+  "infile": "data/pip/asciitree.txt",
+  "dependencies": {}
+}

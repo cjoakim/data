@@ -1,0 +1,10 @@
+{
+  "libname": "arrow-odbc",
+  "libvers": "8.3.9",
+  "infile": "data/pip/arrow-odbc.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pyarrow": "20.0.0",
+    "pycparser": "2.22"
+  }
+}

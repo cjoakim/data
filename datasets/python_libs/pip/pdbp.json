@@ -1,0 +1,9 @@
+{
+  "libname": "pdbp",
+  "libvers": "1.7.0",
+  "infile": "data/pip/pdbp.txt",
+  "dependencies": {
+    "pygments": "2.19.1",
+    "tabcompleter": "1.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "apache-airflow-microsoft-fabric-plugin",
+  "libvers": "1.0.3",
+  "infile": "data/pip/apache-airflow-microsoft-fabric-plugin.txt",
+  "dependencies": {}
+}

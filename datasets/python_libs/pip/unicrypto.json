@@ -1,0 +1,8 @@
+{
+  "libname": "unicrypto",
+  "libvers": "0.0.10",
+  "infile": "data/pip/unicrypto.txt",
+  "dependencies": {
+    "pycryptodomex": "3.22.0"
+  }
+}

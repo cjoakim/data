@@ -1,0 +1,10 @@
+{
+  "libname": "inquirerpy",
+  "libvers": "0.3.4",
+  "infile": "data/pip/inquirerpy.txt",
+  "dependencies": {
+    "pfzy": "0.3.4",
+    "prompt-toolkit": "3.0.51",
+    "wcwidth": "0.2.13"
+  }
+}

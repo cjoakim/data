@@ -1,0 +1,6 @@
+{
+  "libname": "lazr-uri",
+  "libvers": "1.0.7",
+  "infile": "data/pip/lazr-uri.txt",
+  "dependencies": {}
+}

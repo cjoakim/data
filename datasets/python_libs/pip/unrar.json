@@ -1,0 +1,6 @@
+{
+  "libname": "unrar",
+  "libvers": "0.4",
+  "infile": "data/pip/unrar.txt",
+  "dependencies": {}
+}

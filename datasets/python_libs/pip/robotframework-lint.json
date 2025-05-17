@@ -1,0 +1,8 @@
+{
+  "libname": "robotframework-lint",
+  "libvers": "1.1",
+  "infile": "data/pip/robotframework-lint.txt",
+  "dependencies": {
+    "robotframework": "7.2.2"
+  }
+}

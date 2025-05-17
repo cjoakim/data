@@ -1,0 +1,9 @@
+{
+  "libname": "flake8-pydocstyle",
+  "libvers": "0.2.5",
+  "infile": "data/pip/flake8-pydocstyle.txt",
+  "dependencies": {
+    "pydocstyle": "6.3.0",
+    "snowballstemmer": "2.2.0"
+  }
+}

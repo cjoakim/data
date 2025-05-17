@@ -1,0 +1,8 @@
+{
+  "libname": "pytorch-wpe",
+  "libvers": "0.0.1",
+  "infile": "data/pip/pytorch-wpe.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

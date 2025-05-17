@@ -1,0 +1,6 @@
+{
+  "libname": "netron",
+  "libvers": "8.3.0",
+  "infile": "data/pip/netron.txt",
+  "dependencies": {}
+}

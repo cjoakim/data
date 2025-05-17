@@ -1,0 +1,8 @@
+{
+  "libname": "pykdtree",
+  "libvers": "1.4.1",
+  "infile": "data/pip/pykdtree.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

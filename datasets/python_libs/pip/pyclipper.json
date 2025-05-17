@@ -1,0 +1,6 @@
+{
+  "libname": "pyclipper",
+  "libvers": "1.3.0.post6",
+  "infile": "data/pip/pyclipper.txt",
+  "dependencies": {}
+}

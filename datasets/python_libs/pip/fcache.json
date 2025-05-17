@@ -1,0 +1,8 @@
+{
+  "libname": "fcache",
+  "libvers": "0.6.0",
+  "infile": "data/pip/fcache.txt",
+  "dependencies": {
+    "platformdirs": "3.11.0"
+  }
+}

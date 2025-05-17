@@ -1,0 +1,8 @@
+{
+  "libname": "picosdk",
+  "libvers": "1.1",
+  "infile": "data/pip/picosdk.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "libname": "launchdarkly-server-sdk",
+  "libvers": "9.11.0",
+  "infile": "data/pip/launchdarkly-server-sdk.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "expiringdict": "1.2.2",
+    "launchdarkly-eventsource": "1.2.2",
+    "pyrfc3339": "2.0.1",
+    "semver": "3.0.4",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "daff",
+  "libvers": "1.4.2",
+  "infile": "data/pip/daff.txt",
+  "dependencies": {}
+}

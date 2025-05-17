@@ -1,0 +1,8 @@
+{
+  "libname": "proto-plus",
+  "libvers": "1.26.1",
+  "infile": "data/pip/proto-plus.txt",
+  "dependencies": {
+    "protobuf": "6.30.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "uwsgitop",
+  "libvers": "0.12",
+  "infile": "data/pip/uwsgitop.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-pca-connector-ad",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-pca-connector-ad.txt",
+  "dependencies": {}
+}

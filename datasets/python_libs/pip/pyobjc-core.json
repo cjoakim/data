@@ -1,0 +1,6 @@
+{
+  "libname": "pyobjc-core",
+  "libvers": "11.0",
+  "infile": "data/pip/pyobjc-core.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "delta-rest-client",
+  "libvers": "1.0.12",
+  "infile": "data/pip/delta-rest-client.txt",
+  "dependencies": {}
+}

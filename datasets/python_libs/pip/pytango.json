@@ -1,0 +1,11 @@
+{
+  "libname": "pytango",
+  "libvers": "10.0.2",
+  "infile": "data/pip/pytango.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "psutil": "7.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

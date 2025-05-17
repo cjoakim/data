@@ -1,0 +1,9 @@
+{
+  "libname": "pymdown-extensions",
+  "libvers": "10.15",
+  "infile": "data/pip/pymdown-extensions.txt",
+  "dependencies": {
+    "markdown": "3.8",
+    "pyyaml": "6.0.2"
+  }
+}

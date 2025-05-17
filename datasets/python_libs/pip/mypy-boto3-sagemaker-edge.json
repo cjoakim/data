@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-sagemaker-edge",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-sagemaker-edge.txt",
+  "dependencies": {}
+}

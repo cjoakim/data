@@ -1,0 +1,6 @@
+{
+  "libname": "pysparkip",
+  "libvers": "1.2.4",
+  "infile": "data/pip/pysparkip.txt",
+  "dependencies": {}
+}

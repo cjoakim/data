@@ -1,0 +1,15 @@
+{
+  "libname": "aicli",
+  "libvers": "99.0.202504021717",
+  "infile": "data/pip/aicli.txt",
+  "dependencies": {
+    "assisted-service-client": "2.40.1.post6",
+    "certifi": "2025.4.26",
+    "prettytable": "3.16.0",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "six": "1.17.0",
+    "urllib3": "2.4.0",
+    "wcwidth": "0.2.13"
+  }
+}

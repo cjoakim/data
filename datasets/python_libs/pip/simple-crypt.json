@@ -1,0 +1,8 @@
+{
+  "libname": "simple-crypt",
+  "libvers": "4.1.7",
+  "infile": "data/pip/simple-crypt.txt",
+  "dependencies": {
+    "pycrypto": "2.6.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "aws-lambda-builders",
+  "libvers": "1.54.0",
+  "infile": "data/pip/aws-lambda-builders.txt",
+  "dependencies": {
+    "wheel": "0.45.1"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "types-factory-boy",
+  "libvers": "0.4.1",
+  "infile": "data/pip/types-factory-boy.txt",
+  "dependencies": {
+    "factory-boy": "3.3.3",
+    "faker": "37.1.0",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "coola",
+  "libvers": "0.8.7",
+  "infile": "data/pip/coola.txt",
+  "dependencies": {}
+}

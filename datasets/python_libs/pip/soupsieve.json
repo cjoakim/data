@@ -1,0 +1,6 @@
+{
+  "libname": "soupsieve",
+  "libvers": "2.7",
+  "infile": "data/pip/soupsieve.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "weatherlink-v2-api-sdk",
+  "libvers": "1.0.0",
+  "infile": "data/pip/weatherlink-v2-api-sdk.txt",
+  "dependencies": {}
+}

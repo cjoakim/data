@@ -1,0 +1,6 @@
+{
+  "libname": "argcomplete",
+  "libvers": "3.6.2",
+  "infile": "data/pip/argcomplete.txt",
+  "dependencies": {}
+}

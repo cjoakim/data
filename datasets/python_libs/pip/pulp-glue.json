@@ -1,0 +1,14 @@
+{
+  "libname": "pulp-glue",
+  "libvers": "0.32.1",
+  "infile": "data/pip/pulp-glue.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "multidict": "6.2.0",
+    "packaging": "24.2",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

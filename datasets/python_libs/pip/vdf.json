@@ -1,0 +1,6 @@
+{
+  "libname": "vdf",
+  "libvers": "3.4",
+  "infile": "data/pip/vdf.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,18 @@
+{
+  "libname": "elasticsearch-curator",
+  "libvers": "8.0.21",
+  "infile": "data/pip/elasticsearch-curator.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "click": "8.1.8",
+    "dotmap": "1.3.30",
+    "ecs-logging": "2.2.0",
+    "elastic-transport": "8.17.1",
+    "elasticsearch8": "8.17.2",
+    "es-client": "8.17.5",
+    "pyyaml": "6.0.2",
+    "tiered-debug": "1.0.0",
+    "urllib3": "2.4.0",
+    "voluptuous": "0.15.2"
+  }
+}

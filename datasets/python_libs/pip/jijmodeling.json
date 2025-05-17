@@ -1,0 +1,18 @@
+{
+  "libname": "jijmodeling",
+  "libvers": "1.12.4",
+  "infile": "data/pip/jijmodeling.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "ommx": "1.9.5",
+    "orjson": "3.10.18",
+    "pandas": "2.2.3",
+    "protobuf": "5.29.4",
+    "pyarrow": "19.0.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

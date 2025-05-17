@@ -1,0 +1,6 @@
+{
+  "libname": "fake-factory",
+  "libvers": "9999.9.9",
+  "infile": "data/pip/fake-factory.txt",
+  "dependencies": {}
+}

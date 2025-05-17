@@ -1,0 +1,6 @@
+{
+  "libname": "python-arptable",
+  "libvers": "0.0.2",
+  "infile": "data/pip/python-arptable.txt",
+  "dependencies": {}
+}

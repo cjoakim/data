@@ -1,0 +1,26 @@
+{
+  "libname": "orbax-checkpoint",
+  "libvers": "0.11.13",
+  "infile": "data/pip/orbax-checkpoint.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "etils[epath,epy]": "1.12.2",
+    "fsspec": "2025.3.2",
+    "humanize": "4.12.3",
+    "importlib-resources": "6.5.2",
+    "jax": "0.6.0",
+    "jaxlib": "0.6.0",
+    "ml-dtypes": "0.5.1",
+    "msgpack": "1.1.0",
+    "nest-asyncio": "1.6.0",
+    "numpy": "2.2.5",
+    "opt-einsum": "3.4.0",
+    "protobuf": "6.30.2",
+    "pyyaml": "6.0.2",
+    "scipy": "1.15.2",
+    "simplejson": "3.20.1",
+    "tensorstore": "0.1.74",
+    "typing-extensions": "4.13.2",
+    "zipp": "3.21.0"
+  }
+}

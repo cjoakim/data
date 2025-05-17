@@ -1,0 +1,9 @@
+{
+  "libname": "fastdiff",
+  "libvers": "0.3.0",
+  "infile": "data/pip/fastdiff.txt",
+  "dependencies": {
+    "wasmer": "1.1.0",
+    "wasmer-compiler-cranelift": "1.1.0"
+  }
+}

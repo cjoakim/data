@@ -1,0 +1,6 @@
+{
+  "libname": "libarchive-c",
+  "libvers": "5.2",
+  "infile": "data/pip/libarchive-c.txt",
+  "dependencies": {}
+}

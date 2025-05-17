@@ -1,0 +1,10 @@
+{
+  "libname": "onnx-graphsurgeon",
+  "libvers": "0.5.8",
+  "infile": "data/pip/onnx-graphsurgeon.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "onnx": "1.17.0",
+    "protobuf": "6.30.2"
+  }
+}

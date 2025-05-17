@@ -1,0 +1,14 @@
+{
+  "libname": "babelone",
+  "libvers": "0.1.9",
+  "infile": "data/pip/babelone.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "pygments": "2.19.1",
+    "rich": "14.0.0",
+    "rich-click": "1.8.8",
+    "typing-extensions": "4.13.2"
+  }
+}

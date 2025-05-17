@@ -1,0 +1,8 @@
+{
+  "libname": "codejail-includes",
+  "libvers": "1.0.0",
+  "infile": "data/pip/codejail-includes.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "cachy",
+  "libvers": "0.3.0",
+  "infile": "data/pip/cachy.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,23 @@
+{
+  "libname": "serialized-data-interface",
+  "libvers": "0.7.0",
+  "infile": "data/pip/serialized-data-interface.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "deprecated": "1.2.18",
+    "idna": "3.10",
+    "importlib-metadata": "8.6.1",
+    "jsonschema": "4.17.3",
+    "opentelemetry-api": "1.32.1",
+    "ops": "2.21.1",
+    "pyrsistent": "0.20.0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0",
+    "websocket-client": "1.8.0",
+    "wrapt": "1.17.2",
+    "zipp": "3.21.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "synchronicity",
+  "libvers": "0.9.12",
+  "infile": "data/pip/synchronicity.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "sigtools": "4.0.1",
+    "typing-extensions": "4.13.2"
+  }
+}

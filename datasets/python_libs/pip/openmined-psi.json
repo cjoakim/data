@@ -1,0 +1,8 @@
+{
+  "libname": "openmined-psi",
+  "libvers": "2.0.5",
+  "infile": "data/pip/openmined-psi.txt",
+  "dependencies": {
+    "protobuf": "5.27.2"
+  }
+}

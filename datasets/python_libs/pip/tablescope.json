@@ -1,0 +1,8 @@
+{
+  "libname": "tablescope",
+  "libvers": "0.1.12",
+  "infile": "data/pip/tablescope.txt",
+  "dependencies": {
+    "narwhals": "1.38.0"
+  }
+}

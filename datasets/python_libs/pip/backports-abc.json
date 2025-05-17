@@ -1,0 +1,6 @@
+{
+  "libname": "backports-abc",
+  "libvers": "0.5",
+  "infile": "data/pip/backports-abc.txt",
+  "dependencies": {}
+}

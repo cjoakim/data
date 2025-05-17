@@ -1,0 +1,11 @@
+{
+  "libname": "jsonplus",
+  "libvers": "0.8.0",
+  "infile": "data/pip/jsonplus.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "simplejson": "3.20.1",
+    "six": "1.17.0",
+    "sortedcontainers": "2.4.0"
+  }
+}

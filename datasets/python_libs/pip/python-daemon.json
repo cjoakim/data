@@ -1,0 +1,8 @@
+{
+  "libname": "python-daemon",
+  "libvers": "3.1.2",
+  "infile": "data/pip/python-daemon.txt",
+  "dependencies": {
+    "lockfile": "0.12.2"
+  }
+}

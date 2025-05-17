@@ -1,0 +1,6 @@
+{
+  "libname": "slackweb",
+  "libvers": "1.0.5",
+  "infile": "data/pip/slackweb.txt",
+  "dependencies": {}
+}

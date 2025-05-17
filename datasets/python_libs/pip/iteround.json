@@ -1,0 +1,6 @@
+{
+  "libname": "iteround",
+  "libvers": "1.0.4",
+  "infile": "data/pip/iteround.txt",
+  "dependencies": {}
+}

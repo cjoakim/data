@@ -1,0 +1,18 @@
+{
+  "libname": "openapi-codec",
+  "libvers": "1.3.2",
+  "infile": "data/pip/openapi-codec.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "coreapi": "2.3.3",
+    "coreschema": "0.0.4",
+    "idna": "3.10",
+    "itypes": "1.2.0",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "requests": "2.32.3",
+    "uritemplate": "4.1.1",
+    "urllib3": "2.4.0"
+  }
+}

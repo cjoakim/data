@@ -1,0 +1,6 @@
+{
+  "libname": "tf-estimator-nightly",
+  "libvers": "2.16.0.dev2024012409",
+  "infile": "data/pip/tf-estimator-nightly.txt",
+  "dependencies": {}
+}

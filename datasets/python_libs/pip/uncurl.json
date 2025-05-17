@@ -1,0 +1,9 @@
+{
+  "libname": "uncurl",
+  "libvers": "0.0.11",
+  "infile": "data/pip/uncurl.txt",
+  "dependencies": {
+    "pyperclip": "1.9.0",
+    "six": "1.17.0"
+  }
+}

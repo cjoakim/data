@@ -1,0 +1,6 @@
+{
+  "libname": "types-selenium",
+  "libvers": "3.141.9",
+  "infile": "data/pip/types-selenium.txt",
+  "dependencies": {}
+}

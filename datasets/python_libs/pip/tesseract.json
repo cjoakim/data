@@ -1,0 +1,6 @@
+{
+  "libname": "tesseract",
+  "libvers": "0.1.3",
+  "infile": "data/pip/tesseract.txt",
+  "dependencies": {}
+}

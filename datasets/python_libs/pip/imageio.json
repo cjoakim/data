@@ -1,0 +1,9 @@
+{
+  "libname": "imageio",
+  "libvers": "2.37.0",
+  "infile": "data/pip/imageio.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pillow": "11.2.1"
+  }
+}

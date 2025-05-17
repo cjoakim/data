@@ -1,0 +1,8 @@
+{
+  "libname": "ansimarkup",
+  "libvers": "2.1.0",
+  "infile": "data/pip/ansimarkup.txt",
+  "dependencies": {
+    "colorama": "0.4.6"
+  }
+}

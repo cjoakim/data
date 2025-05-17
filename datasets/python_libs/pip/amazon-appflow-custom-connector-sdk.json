@@ -1,0 +1,6 @@
+{
+  "libname": "amazon-appflow-custom-connector-sdk",
+  "libvers": "1.0.4",
+  "infile": "data/pip/amazon-appflow-custom-connector-sdk.txt",
+  "dependencies": {}
+}

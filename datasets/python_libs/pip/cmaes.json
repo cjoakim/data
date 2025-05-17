@@ -1,0 +1,8 @@
+{
+  "libname": "cmaes",
+  "libvers": "0.11.1",
+  "infile": "data/pip/cmaes.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

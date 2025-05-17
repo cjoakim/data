@@ -1,0 +1,17 @@
+{
+  "libname": "pytest-docker-tools",
+  "libvers": "3.1.9",
+  "infile": "data/pip/pytest-docker-tools.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "docker": "7.1.0",
+    "idna": "3.10",
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "libname": "pyedb",
+  "libvers": "0.44.0",
+  "infile": "data/pip/pyedb.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "ansys-api-edb": "1.0.10",
+    "ansys-edb-core": "0.1.10",
+    "ansys-pythonnet": "3.1.0rc6",
+    "cffi": "1.17.1",
+    "clr-loader": "0.2.7.post0",
+    "grpcio": "1.71.0",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "protobuf": "4.25.7",
+    "psutil": "7.0.0",
+    "pycparser": "2.22",
+    "pydantic": "2.10.6",
+    "pydantic-core": "2.27.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "rtree": "1.4.0",
+    "scikit-rf": "1.6.2",
+    "scipy": "1.15.2",
+    "shapely": "2.1.0",
+    "six": "1.17.0",
+    "toml": "0.10.2",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

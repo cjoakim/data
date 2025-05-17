@@ -1,0 +1,17 @@
+{
+  "libname": "coremltools",
+  "libvers": "8.3.0",
+  "infile": "data/pip/coremltools.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "cattrs": "24.1.3",
+    "mpmath": "1.3.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "protobuf": "6.30.2",
+    "pyaml": "25.1.0",
+    "pyyaml": "6.0.2",
+    "sympy": "1.14.0",
+    "tqdm": "4.67.1"
+  }
+}

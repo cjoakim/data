@@ -1,0 +1,9 @@
+{
+  "libname": "plantuml",
+  "libvers": "0.3.0",
+  "infile": "data/pip/plantuml.txt",
+  "dependencies": {
+    "httplib2": "0.22.0",
+    "pyparsing": "3.2.3"
+  }
+}

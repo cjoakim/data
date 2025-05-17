@@ -1,0 +1,11 @@
+{
+  "libname": "pytest-error-for-skips",
+  "libvers": "2.0.2",
+  "infile": "data/pip/pytest-error-for-skips.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5"
+  }
+}

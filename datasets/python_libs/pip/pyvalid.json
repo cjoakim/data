@@ -1,0 +1,8 @@
+{
+  "libname": "pyvalid",
+  "libvers": "1.0.4",
+  "infile": "data/pip/pyvalid.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

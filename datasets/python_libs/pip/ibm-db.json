@@ -1,0 +1,6 @@
+{
+  "libname": "ibm-db",
+  "libvers": "3.2.6",
+  "infile": "data/pip/ibm-db.txt",
+  "dependencies": {}
+}

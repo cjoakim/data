@@ -1,0 +1,6 @@
+{
+  "libname": "rtfunicode",
+  "libvers": "2.0",
+  "infile": "data/pip/rtfunicode.txt",
+  "dependencies": {}
+}

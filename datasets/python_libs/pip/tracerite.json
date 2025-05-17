@@ -1,0 +1,8 @@
+{
+  "libname": "tracerite",
+  "libvers": "1.1.1",
+  "infile": "data/pip/tracerite.txt",
+  "dependencies": {
+    "html5tagger": "1.3.0"
+  }
+}

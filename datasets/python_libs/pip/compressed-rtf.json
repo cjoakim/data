@@ -1,0 +1,6 @@
+{
+  "libname": "compressed-rtf",
+  "libvers": "1.0.7",
+  "infile": "data/pip/compressed-rtf.txt",
+  "dependencies": {}
+}

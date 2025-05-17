@@ -1,0 +1,8 @@
+{
+  "libname": "nvidia-cusolver-cu11",
+  "libvers": "11.4.1.48",
+  "infile": "data/pip/nvidia-cusolver-cu11.txt",
+  "dependencies": {
+    "nvidia-cublas-cu11": "11.11.3.6"
+  }
+}

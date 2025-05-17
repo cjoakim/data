@@ -1,0 +1,20 @@
+{
+  "libname": "async-upnp-client",
+  "libvers": "0.44.0",
+  "infile": "data/pip/async-upnp-client.txt",
+  "dependencies": {
+    "aiohappyeyeballs": "2.6.1",
+    "aiohttp": "3.11.18",
+    "aiosignal": "1.3.2",
+    "async-timeout": "5.0.1",
+    "attrs": "25.3.0",
+    "defusedxml": "0.7.1",
+    "frozenlist": "1.6.0",
+    "idna": "3.10",
+    "multidict": "6.4.3",
+    "propcache": "0.3.1",
+    "python-didl-lite": "1.4.1",
+    "voluptuous": "0.15.2",
+    "yarl": "1.20.0"
+  }
+}

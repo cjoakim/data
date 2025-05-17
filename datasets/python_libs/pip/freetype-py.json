@@ -1,0 +1,6 @@
+{
+  "libname": "freetype-py",
+  "libvers": "2.5.1",
+  "infile": "data/pip/freetype-py.txt",
+  "dependencies": {}
+}

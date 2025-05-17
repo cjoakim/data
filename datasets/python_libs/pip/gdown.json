@@ -1,0 +1,18 @@
+{
+  "libname": "gdown",
+  "libvers": "5.2.0",
+  "infile": "data/pip/gdown.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "pysocks": "1.7.1",
+    "requests[socks]": "2.32.3",
+    "soupsieve": "2.7",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

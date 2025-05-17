@@ -1,0 +1,6 @@
+{
+  "libname": "fastapi-events",
+  "libvers": "0.12.2",
+  "infile": "data/pip/fastapi-events.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "thesilent",
+  "libvers": "0.1.8",
+  "infile": "data/pip/thesilent.txt",
+  "dependencies": {}
+}

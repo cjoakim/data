@@ -1,0 +1,6 @@
+{
+  "libname": "mag-tools",
+  "libvers": "0.3.142",
+  "infile": "data/pip/mag-tools.txt",
+  "dependencies": {}
+}

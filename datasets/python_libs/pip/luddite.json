@@ -1,0 +1,8 @@
+{
+  "libname": "luddite",
+  "libvers": "1.0.4",
+  "infile": "data/pip/luddite.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

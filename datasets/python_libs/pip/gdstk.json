@@ -1,0 +1,8 @@
+{
+  "libname": "gdstk",
+  "libvers": "0.9.60",
+  "infile": "data/pip/gdstk.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

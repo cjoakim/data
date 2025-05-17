@@ -1,0 +1,15 @@
+{
+  "libname": "safety-schemas",
+  "libvers": "0.0.14",
+  "infile": "data/pip/safety-schemas.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "dparse": "0.6.4",
+    "packaging": "25.0",
+    "pydantic": "2.9.2",
+    "pydantic-core": "2.23.4",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "typing-extensions": "4.13.2"
+  }
+}

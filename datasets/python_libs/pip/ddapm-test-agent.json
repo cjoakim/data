@@ -1,0 +1,25 @@
+{
+  "libname": "ddapm-test-agent",
+  "libvers": "1.23.1",
+  "infile": "data/pip/ddapm-test-agent.txt",
+  "dependencies": {
+    "aiohappyeyeballs": "2.6.1",
+    "aiohttp": "3.11.18",
+    "aiosignal": "1.3.2",
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "ddsketch[serialization]": "3.0.1",
+    "frozenlist": "1.6.0",
+    "idna": "3.10",
+    "msgpack": "1.1.0",
+    "multidict": "6.4.3",
+    "propcache": "0.3.1",
+    "protobuf": "6.30.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "yarl": "1.20.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "opencv-fixer",
+  "libvers": "0.2.5",
+  "infile": "data/pip/opencv-fixer.txt",
+  "dependencies": {}
+}

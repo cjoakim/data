@@ -1,0 +1,8 @@
+{
+  "libname": "hunter",
+  "libvers": "3.7.0",
+  "infile": "data/pip/hunter.txt",
+  "dependencies": {
+    "manhole": "1.8.1"
+  }
+}

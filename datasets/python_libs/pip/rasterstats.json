@@ -1,0 +1,19 @@
+{
+  "libname": "rasterstats",
+  "libvers": "0.20.0",
+  "infile": "data/pip/rasterstats.txt",
+  "dependencies": {
+    "affine": "2.4.0",
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "click": "8.1.8",
+    "click-plugins": "1.1.1",
+    "cligj": "0.7.2",
+    "fiona": "1.10.1",
+    "numpy": "2.2.5",
+    "pyparsing": "3.2.3",
+    "rasterio": "1.4.3",
+    "shapely": "2.1.0",
+    "simplejson": "3.20.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "dosei-util",
+  "libvers": "0.0.18",
+  "infile": "data/pip/dosei-util.txt",
+  "dependencies": {}
+}

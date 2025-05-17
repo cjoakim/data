@@ -1,0 +1,9 @@
+{
+  "libname": "bitsandbytes",
+  "libvers": "0.42.0",
+  "infile": "data/pip/bitsandbytes.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

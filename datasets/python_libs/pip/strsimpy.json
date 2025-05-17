@@ -1,0 +1,6 @@
+{
+  "libname": "strsimpy",
+  "libvers": "0.2.1",
+  "infile": "data/pip/strsimpy.txt",
+  "dependencies": {}
+}

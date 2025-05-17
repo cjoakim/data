@@ -1,0 +1,6 @@
+{
+  "libname": "pyscard",
+  "libvers": "2.2.2",
+  "infile": "data/pip/pyscard.txt",
+  "dependencies": {}
+}

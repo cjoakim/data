@@ -1,0 +1,6 @@
+{
+  "libname": "od",
+  "libvers": "2.0.2",
+  "infile": "data/pip/od.txt",
+  "dependencies": {}
+}

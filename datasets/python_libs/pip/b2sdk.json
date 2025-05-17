@@ -1,0 +1,14 @@
+{
+  "libname": "b2sdk",
+  "libvers": "2.8.1",
+  "infile": "data/pip/b2sdk.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "logfury": "1.0.1",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

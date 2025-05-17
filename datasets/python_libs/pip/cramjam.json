@@ -1,0 +1,6 @@
+{
+  "libname": "cramjam",
+  "libvers": "2.10.0",
+  "infile": "data/pip/cramjam.txt",
+  "dependencies": {}
+}

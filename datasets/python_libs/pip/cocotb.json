@@ -1,0 +1,8 @@
+{
+  "libname": "cocotb",
+  "libvers": "1.9.2",
+  "infile": "data/pip/cocotb.txt",
+  "dependencies": {
+    "find-libpython": "0.4.0"
+  }
+}

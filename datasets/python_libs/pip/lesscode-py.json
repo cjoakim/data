@@ -1,0 +1,6 @@
+{
+  "libname": "lesscode-py",
+  "libvers": "0.4.20",
+  "infile": "data/pip/lesscode-py.txt",
+  "dependencies": {}
+}

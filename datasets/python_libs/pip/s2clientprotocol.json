@@ -1,0 +1,8 @@
+{
+  "libname": "s2clientprotocol",
+  "libvers": "5.0.14.93333.0",
+  "infile": "data/pip/s2clientprotocol.txt",
+  "dependencies": {
+    "protobuf": "6.30.2"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "libname": "large-image-source-rasterio",
+  "libvers": "1.32.3",
+  "infile": "data/pip/large-image-source-rasterio.txt",
+  "dependencies": {
+    "affine": "2.4.0",
+    "attrs": "25.3.0",
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "click": "8.1.8",
+    "click-plugins": "1.1.1",
+    "cligj": "0.7.2",
+    "large-image": "1.32.3",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "palettable": "3.3.3",
+    "pillow": "11.2.1",
+    "pyparsing": "3.2.3",
+    "rasterio": "1.4.3",
+    "typing-extensions": "4.13.2"
+  }
+}

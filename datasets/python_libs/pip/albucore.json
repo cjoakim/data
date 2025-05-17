@@ -1,0 +1,11 @@
+{
+  "libname": "albucore",
+  "libvers": "0.0.24",
+  "infile": "data/pip/albucore.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "opencv-python-headless": "4.11.0.86",
+    "simsimd": "6.2.1",
+    "stringzilla": "3.12.5"
+  }
+}

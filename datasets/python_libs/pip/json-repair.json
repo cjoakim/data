@@ -1,0 +1,6 @@
+{
+  "libname": "json-repair",
+  "libvers": "0.44.1",
+  "infile": "data/pip/json-repair.txt",
+  "dependencies": {}
+}

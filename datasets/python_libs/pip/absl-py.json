@@ -1,0 +1,6 @@
+{
+  "libname": "absl-py",
+  "libvers": "2.2.2",
+  "infile": "data/pip/absl-py.txt",
+  "dependencies": {}
+}

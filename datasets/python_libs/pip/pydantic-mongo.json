@@ -1,0 +1,14 @@
+{
+  "libname": "pydantic-mongo",
+  "libvers": "3.1.0",
+  "infile": "data/pip/pydantic-mongo.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "dnspython": "2.7.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pymongo": "4.12.1",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

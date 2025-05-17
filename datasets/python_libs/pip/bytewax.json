@@ -1,0 +1,9 @@
+{
+  "libname": "bytewax",
+  "libvers": "0.21.1",
+  "infile": "data/pip/bytewax.txt",
+  "dependencies": {
+    "prometheus-client": "0.21.1",
+    "typing-extensions": "4.13.2"
+  }
+}

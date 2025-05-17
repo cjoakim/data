@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-supplychain",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-supplychain.txt",
+  "dependencies": {}
+}

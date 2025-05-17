@@ -1,0 +1,9 @@
+{
+  "libname": "xlutils",
+  "libvers": "2.0.0",
+  "infile": "data/pip/xlutils.txt",
+  "dependencies": {
+    "xlrd": "2.0.1",
+    "xlwt": "1.3.0"
+  }
+}

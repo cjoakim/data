@@ -1,0 +1,10 @@
+{
+  "libname": "web-py",
+  "libvers": "0.62",
+  "infile": "data/pip/web-py.txt",
+  "dependencies": {
+    "cheroot": "10.0.1",
+    "jaraco-functools": "4.1.0",
+    "more-itertools": "10.7.0"
+  }
+}

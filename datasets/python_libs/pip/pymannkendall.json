@@ -1,0 +1,9 @@
+{
+  "libname": "pymannkendall",
+  "libvers": "1.4.3",
+  "infile": "data/pip/pymannkendall.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

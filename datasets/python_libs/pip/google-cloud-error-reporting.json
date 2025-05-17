@@ -1,0 +1,33 @@
+{
+  "libname": "google-cloud-error-reporting",
+  "libvers": "1.11.1",
+  "infile": "data/pip/google-cloud-error-reporting.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "deprecated": "1.2.18",
+    "google-api-core[grpc]": "2.25.0rc0",
+    "google-auth": "2.40.1",
+    "google-cloud-appengine-logging": "1.6.1",
+    "google-cloud-audit-log": "0.3.2",
+    "google-cloud-core": "2.4.3",
+    "google-cloud-logging": "3.12.1",
+    "googleapis-common-protos[grpc]": "1.70.0",
+    "grpc-google-iam-v1": "0.14.2",
+    "grpcio": "1.71.0",
+    "grpcio-status": "1.71.0",
+    "idna": "3.10",
+    "importlib-metadata": "8.6.1",
+    "opentelemetry-api": "1.32.1",
+    "proto-plus": "1.26.1",
+    "protobuf": "5.29.4",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2",
+    "zipp": "3.21.0"
+  }
+}

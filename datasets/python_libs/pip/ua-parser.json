@@ -1,0 +1,8 @@
+{
+  "libname": "ua-parser",
+  "libvers": "1.0.1",
+  "infile": "data/pip/ua-parser.txt",
+  "dependencies": {
+    "ua-parser-builtins": "0.18.0.post1"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "libname": "scikeras",
+  "libvers": "0.13.0",
+  "infile": "data/pip/scikeras.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "h5py": "3.13.0",
+    "joblib": "1.5.0",
+    "keras": "3.9.2",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "ml-dtypes": "0.5.1",
+    "namex": "0.0.9",
+    "numpy": "2.2.5",
+    "optree": "0.15.0",
+    "packaging": "25.0",
+    "pygments": "2.19.1",
+    "rich": "14.0.0",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "threadpoolctl": "3.6.0",
+    "typing-extensions": "4.13.2"
+  }
+}

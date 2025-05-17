@@ -1,0 +1,8 @@
+{
+  "libname": "tifffile",
+  "libvers": "2025.3.30",
+  "infile": "data/pip/tifffile.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "namedtupled",
+  "libvers": "0.3.3",
+  "infile": "data/pip/namedtupled.txt",
+  "dependencies": {
+    "future": "1.0.0",
+    "pyyaml": "6.0.2"
+  }
+}

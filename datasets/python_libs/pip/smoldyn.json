@@ -1,0 +1,8 @@
+{
+  "libname": "smoldyn",
+  "libvers": "2.63.dev2020070805",
+  "infile": "data/pip/smoldyn.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

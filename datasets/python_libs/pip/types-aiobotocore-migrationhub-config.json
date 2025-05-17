@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-migrationhub-config",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-migrationhub-config.txt",
+  "dependencies": {}
+}

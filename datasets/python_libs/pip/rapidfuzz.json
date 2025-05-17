@@ -1,0 +1,6 @@
+{
+  "libname": "rapidfuzz",
+  "libvers": "3.13.0",
+  "infile": "data/pip/rapidfuzz.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-boto3-full",
+  "libvers": "1.38.10",
+  "infile": "data/pip/types-boto3-full.txt",
+  "dependencies": {}
+}

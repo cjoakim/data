@@ -1,0 +1,6 @@
+{
+  "libname": "vcd-api-schemas-type",
+  "libvers": "10.3.0.dev72",
+  "infile": "data/pip/vcd-api-schemas-type.txt",
+  "dependencies": {}
+}

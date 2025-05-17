@@ -1,0 +1,14 @@
+{
+  "libname": "lazr-restfulclient",
+  "libvers": "0.14.6",
+  "infile": "data/pip/lazr-restfulclient.txt",
+  "dependencies": {
+    "distro": "1.9.0",
+    "httplib2": "0.22.0",
+    "lazr-uri": "1.0.7",
+    "oauthlib": "3.2.2",
+    "pyparsing": "3.2.3",
+    "six": "1.17.0",
+    "wadllib": "2.0.0"
+  }
+}

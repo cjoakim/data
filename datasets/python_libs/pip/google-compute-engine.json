@@ -1,0 +1,9 @@
+{
+  "libname": "google-compute-engine",
+  "libvers": "2.8.13",
+  "infile": "data/pip/google-compute-engine.txt",
+  "dependencies": {
+    "boto": "2.49.0",
+    "distro": "1.9.0"
+  }
+}

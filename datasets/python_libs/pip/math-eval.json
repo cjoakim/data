@@ -1,0 +1,6 @@
+{
+  "libname": "math-eval",
+  "libvers": "0.2.4",
+  "infile": "data/pip/math-eval.txt",
+  "dependencies": {}
+}

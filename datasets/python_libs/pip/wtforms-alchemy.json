@@ -1,0 +1,16 @@
+{
+  "libname": "wtforms-alchemy",
+  "libvers": "0.19.0",
+  "infile": "data/pip/wtforms-alchemy.txt",
+  "dependencies": {
+    "infinity": "1.5",
+    "intervals": "0.9.2",
+    "markupsafe": "3.0.2",
+    "sqlalchemy": "2.0.40",
+    "sqlalchemy-utils": "0.41.2",
+    "typing-extensions": "4.13.2",
+    "validators": "0.35.0",
+    "wtforms": "3.2.1",
+    "wtforms-components": "0.11.0"
+  }
+}

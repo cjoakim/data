@@ -1,0 +1,6 @@
+{
+  "libname": "addonfactory-splunk-conf-parser-lib",
+  "libvers": "0.4.3",
+  "infile": "data/pip/addonfactory-splunk-conf-parser-lib.txt",
+  "dependencies": {}
+}

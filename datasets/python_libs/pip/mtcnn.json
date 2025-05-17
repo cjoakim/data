@@ -1,0 +1,9 @@
+{
+  "libname": "mtcnn",
+  "libvers": "1.0.0",
+  "infile": "data/pip/mtcnn.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "lz4": "4.4.4"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "django-devserver",
+  "libvers": "0.8.0",
+  "infile": "data/pip/django-devserver.txt",
+  "dependencies": {}
+}

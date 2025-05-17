@@ -1,0 +1,8 @@
+{
+  "libname": "coreforecast",
+  "libvers": "0.0.16",
+  "infile": "data/pip/coreforecast.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

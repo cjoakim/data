@@ -1,0 +1,6 @@
+{
+  "libname": "unlzw3",
+  "libvers": "0.2.3",
+  "infile": "data/pip/unlzw3.txt",
+  "dependencies": {}
+}

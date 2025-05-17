@@ -1,0 +1,12 @@
+{
+  "libname": "dclab",
+  "libvers": "0.63.1",
+  "infile": "data/pip/dclab.txt",
+  "dependencies": {
+    "h5py": "3.13.0",
+    "hdf5plugin": "4.4.0",
+    "importlib-resources": "6.5.2",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

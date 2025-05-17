@@ -1,0 +1,10 @@
+{
+  "libname": "temporalio",
+  "libvers": "1.11.0",
+  "infile": "data/pip/temporalio.txt",
+  "dependencies": {
+    "protobuf": "6.30.2",
+    "types-protobuf": "6.30.2.20250506",
+    "typing-extensions": "4.13.2"
+  }
+}

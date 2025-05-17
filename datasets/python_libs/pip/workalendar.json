@@ -1,0 +1,13 @@
+{
+  "libname": "workalendar",
+  "libvers": "17.0.0",
+  "infile": "data/pip/workalendar.txt",
+  "dependencies": {
+    "convertdate": "2.4.0",
+    "lunardate": "0.2.2",
+    "pyluach": "2.2.0",
+    "pymeeus": "0.5.12",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "protego",
+  "libvers": "0.4.0",
+  "infile": "data/pip/protego.txt",
+  "dependencies": {}
+}

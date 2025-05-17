@@ -1,0 +1,6 @@
+{
+  "libname": "statsd",
+  "libvers": "4.0.1",
+  "infile": "data/pip/statsd.txt",
+  "dependencies": {}
+}

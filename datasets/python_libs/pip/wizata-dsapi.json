@@ -1,0 +1,27 @@
+{
+  "libname": "wizata-dsapi",
+  "libvers": "1.1.48",
+  "infile": "data/pip/wizata-dsapi.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "dill": "0.3.6",
+    "idna": "3.10",
+    "joblib": "1.2.0",
+    "msal": "1.32.3",
+    "numpy": "1.26.4",
+    "pandas": "1.5.3",
+    "plotly": "5.13.1",
+    "protobuf": "3.20.3",
+    "pycparser": "2.22",
+    "pyjwt[crypto]": "2.10.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "requests": "2.28.2",
+    "six": "1.17.0",
+    "tenacity": "9.1.2",
+    "urllib3": "1.26.20"
+  }
+}

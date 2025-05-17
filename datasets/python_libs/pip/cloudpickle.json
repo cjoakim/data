@@ -1,0 +1,6 @@
+{
+  "libname": "cloudpickle",
+  "libvers": "3.1.1",
+  "infile": "data/pip/cloudpickle.txt",
+  "dependencies": {}
+}

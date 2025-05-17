@@ -1,0 +1,6 @@
+{
+  "libname": "maturin",
+  "libvers": "1.8.3",
+  "infile": "data/pip/maturin.txt",
+  "dependencies": {}
+}

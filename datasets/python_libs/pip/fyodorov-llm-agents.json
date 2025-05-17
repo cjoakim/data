@@ -1,0 +1,6 @@
+{
+  "libname": "fyodorov-llm-agents",
+  "libvers": "0.4.61",
+  "infile": "data/pip/fyodorov-llm-agents.txt",
+  "dependencies": {}
+}

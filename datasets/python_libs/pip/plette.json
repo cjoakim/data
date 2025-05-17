@@ -1,0 +1,8 @@
+{
+  "libname": "plette",
+  "libvers": "2.1.0",
+  "infile": "data/pip/plette.txt",
+  "dependencies": {
+    "tomlkit": "0.13.2"
+  }
+}

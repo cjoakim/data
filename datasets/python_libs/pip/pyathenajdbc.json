@@ -1,0 +1,9 @@
+{
+  "libname": "pyathenajdbc",
+  "libvers": "3.0.1",
+  "infile": "data/pip/pyathenajdbc.txt",
+  "dependencies": {
+    "jpype1": "1.5.2",
+    "packaging": "25.0"
+  }
+}

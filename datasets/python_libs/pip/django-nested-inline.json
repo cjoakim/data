@@ -1,0 +1,6 @@
+{
+  "libname": "django-nested-inline",
+  "libvers": "0.4.6",
+  "infile": "data/pip/django-nested-inline.txt",
+  "dependencies": {}
+}

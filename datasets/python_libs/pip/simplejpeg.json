@@ -1,0 +1,8 @@
+{
+  "libname": "simplejpeg",
+  "libvers": "1.8.2",
+  "infile": "data/pip/simplejpeg.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

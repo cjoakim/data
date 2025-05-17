@@ -1,0 +1,6 @@
+{
+  "libname": "allpairspy",
+  "libvers": "2.5.1",
+  "infile": "data/pip/allpairspy.txt",
+  "dependencies": {}
+}

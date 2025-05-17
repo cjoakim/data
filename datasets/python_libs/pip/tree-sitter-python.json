@@ -1,0 +1,6 @@
+{
+  "libname": "tree-sitter-python",
+  "libvers": "0.23.6",
+  "infile": "data/pip/tree-sitter-python.txt",
+  "dependencies": {}
+}

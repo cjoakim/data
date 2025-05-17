@@ -1,0 +1,8 @@
+{
+  "libname": "stevedore",
+  "libvers": "5.4.1",
+  "infile": "data/pip/stevedore.txt",
+  "dependencies": {
+    "pbr": "6.1.1"
+  }
+}

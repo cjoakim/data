@@ -1,0 +1,8 @@
+{
+  "libname": "bt-decode",
+  "libvers": "0.6.0",
+  "infile": "data/pip/bt-decode.txt",
+  "dependencies": {
+    "toml": "0.10.0"
+  }
+}

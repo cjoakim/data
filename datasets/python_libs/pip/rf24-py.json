@@ -1,0 +1,6 @@
+{
+  "libname": "rf24-py",
+  "libvers": "0.3.0",
+  "infile": "data/pip/rf24-py.txt",
+  "dependencies": {}
+}

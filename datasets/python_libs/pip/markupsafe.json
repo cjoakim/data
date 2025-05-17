@@ -1,0 +1,6 @@
+{
+  "libname": "markupsafe",
+  "libvers": "3.0.2",
+  "infile": "data/pip/markupsafe.txt",
+  "dependencies": {}
+}

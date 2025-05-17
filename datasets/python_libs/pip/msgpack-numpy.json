@@ -1,0 +1,9 @@
+{
+  "libname": "msgpack-numpy",
+  "libvers": "0.4.8",
+  "infile": "data/pip/msgpack-numpy.txt",
+  "dependencies": {
+    "msgpack": "1.1.0",
+    "numpy": "2.2.5"
+  }
+}

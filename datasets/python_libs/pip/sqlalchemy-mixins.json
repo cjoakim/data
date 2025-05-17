@@ -1,0 +1,10 @@
+{
+  "libname": "sqlalchemy-mixins",
+  "libvers": "2.0.5",
+  "infile": "data/pip/sqlalchemy-mixins.txt",
+  "dependencies": {
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

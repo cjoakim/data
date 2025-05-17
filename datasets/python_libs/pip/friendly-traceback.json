@@ -1,0 +1,12 @@
+{
+  "libname": "friendly-traceback",
+  "libvers": "0.7.61",
+  "infile": "data/pip/friendly-traceback.txt",
+  "dependencies": {
+    "asttokens": "3.0.0",
+    "executing": "2.2.0",
+    "pure-eval": "0.2.3",
+    "six": "1.17.0",
+    "stack-data": "0.6.3"
+  }
+}

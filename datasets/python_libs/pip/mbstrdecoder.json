@@ -1,0 +1,8 @@
+{
+  "libname": "mbstrdecoder",
+  "libvers": "1.1.4",
+  "infile": "data/pip/mbstrdecoder.txt",
+  "dependencies": {
+    "chardet": "5.2.0"
+  }
+}

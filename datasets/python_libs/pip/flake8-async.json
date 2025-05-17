@@ -1,0 +1,9 @@
+{
+  "libname": "flake8-async",
+  "libvers": "25.5.1",
+  "infile": "data/pip/flake8-async.txt",
+  "dependencies": {
+    "libcst": "1.7.0",
+    "pyyaml": "6.0.2"
+  }
+}

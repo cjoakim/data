@@ -1,0 +1,6 @@
+{
+  "libname": "ua-parser-rs",
+  "libvers": "0.1.2",
+  "infile": "data/pip/ua-parser-rs.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "weblinx",
+  "libvers": "0.3.2",
+  "infile": "data/pip/weblinx.txt",
+  "dependencies": {
+    "tqdm": "4.67.1"
+  }
+}

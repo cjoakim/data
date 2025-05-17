@@ -1,0 +1,17 @@
+{
+  "libname": "cassio",
+  "libvers": "0.1.10",
+  "infile": "data/pip/cassio.txt",
+  "dependencies": {
+    "cassandra-driver": "3.29.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "geomet": "0.2.1.post1",
+    "idna": "3.10",
+    "numpy": "2.2.5",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

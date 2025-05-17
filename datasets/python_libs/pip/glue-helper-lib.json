@@ -1,0 +1,6 @@
+{
+  "libname": "glue-helper-lib",
+  "libvers": "0.5.5",
+  "infile": "data/pip/glue-helper-lib.txt",
+  "dependencies": {}
+}

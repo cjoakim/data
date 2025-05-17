@@ -1,0 +1,6 @@
+{
+  "libname": "pex",
+  "libvers": "2.36.1",
+  "infile": "data/pip/pex.txt",
+  "dependencies": {}
+}

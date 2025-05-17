@@ -1,0 +1,10 @@
+{
+  "libname": "apache-airflow-client",
+  "libvers": "2.10.0",
+  "infile": "data/pip/apache-airflow-client.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

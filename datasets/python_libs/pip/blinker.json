@@ -1,0 +1,6 @@
+{
+  "libname": "blinker",
+  "libvers": "1.9.0",
+  "infile": "data/pip/blinker.txt",
+  "dependencies": {}
+}

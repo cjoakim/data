@@ -1,0 +1,6 @@
+{
+  "libname": "netutils",
+  "libvers": "1.13.0",
+  "infile": "data/pip/netutils.txt",
+  "dependencies": {}
+}

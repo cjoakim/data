@@ -1,0 +1,6 @@
+{
+  "libname": "scikit-base",
+  "libvers": "0.12.2",
+  "infile": "data/pip/scikit-base.txt",
+  "dependencies": {}
+}

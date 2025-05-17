@@ -1,0 +1,6 @@
+{
+  "libname": "pyleri",
+  "libvers": "1.4.3",
+  "infile": "data/pip/pyleri.txt",
+  "dependencies": {}
+}

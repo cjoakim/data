@@ -1,0 +1,6 @@
+{
+  "libname": "jsonc-parser",
+  "libvers": "1.1.5",
+  "infile": "data/pip/jsonc-parser.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,21 @@
+{
+  "libname": "aws-cdk-assets",
+  "libvers": "1.204.0",
+  "infile": "data/pip/aws-cdk-assets.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "aws-cdk-cloud-assembly-schema": "1.204.0",
+    "aws-cdk-core": "1.204.0",
+    "aws-cdk-cx-api": "1.204.0",
+    "aws-cdk-region-info": "1.204.0",
+    "cattrs": "24.1.3",
+    "constructs": "3.4.344",
+    "importlib-resources": "6.5.2",
+    "jsii": "1.111.0",
+    "publication": "0.0.3",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "typeguard": "2.13.3",
+    "typing-extensions": "4.13.2"
+  }
+}

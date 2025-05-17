@@ -1,0 +1,6 @@
+{
+  "libname": "apipkg",
+  "libvers": "3.0.2",
+  "infile": "data/pip/apipkg.txt",
+  "dependencies": {}
+}

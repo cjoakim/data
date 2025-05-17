@@ -1,0 +1,9 @@
+{
+  "libname": "ebooklib",
+  "libvers": "0.19",
+  "infile": "data/pip/ebooklib.txt",
+  "dependencies": {
+    "lxml": "5.4.0",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "zodbpickle",
+  "libvers": "4.2",
+  "infile": "data/pip/zodbpickle.txt",
+  "dependencies": {}
+}

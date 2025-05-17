@@ -1,0 +1,8 @@
+{
+  "libname": "pyct",
+  "libvers": "0.5.0",
+  "infile": "data/pip/pyct.txt",
+  "dependencies": {
+    "param": "2.2.0"
+  }
+}

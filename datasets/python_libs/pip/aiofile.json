@@ -1,0 +1,8 @@
+{
+  "libname": "aiofile",
+  "libvers": "3.9.0",
+  "infile": "data/pip/aiofile.txt",
+  "dependencies": {
+    "caio": "0.9.24"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "robotbackgroundlogger",
+  "libvers": "1.2",
+  "infile": "data/pip/robotbackgroundlogger.txt",
+  "dependencies": {
+    "robotframework": "7.2.2"
+  }
+}

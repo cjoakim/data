@@ -1,0 +1,14 @@
+{
+  "libname": "pusher-push-notifications",
+  "libvers": "2.0.2",
+  "infile": "data/pip/pusher-push-notifications.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "pyjwt": "2.10.1",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

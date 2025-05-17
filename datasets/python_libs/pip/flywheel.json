@@ -1,0 +1,13 @@
+{
+  "libname": "flywheel",
+  "libvers": "0.5.4",
+  "infile": "data/pip/flywheel.txt",
+  "dependencies": {
+    "botocore": "1.38.10",
+    "dynamo3": "0.4.10",
+    "jmespath": "1.0.1",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

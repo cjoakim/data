@@ -1,0 +1,6 @@
+{
+  "libname": "s3torchconnectorclient",
+  "libvers": "1.4.0",
+  "infile": "data/pip/s3torchconnectorclient.txt",
+  "dependencies": {}
+}

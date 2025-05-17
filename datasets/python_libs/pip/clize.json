@@ -1,0 +1,11 @@
+{
+  "libname": "clize",
+  "libvers": "5.0.2",
+  "infile": "data/pip/clize.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "docutils": "0.21.2",
+    "od": "2.0.2",
+    "sigtools": "4.0.1"
+  }
+}

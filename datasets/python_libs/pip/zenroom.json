@@ -1,0 +1,6 @@
+{
+  "libname": "zenroom",
+  "libvers": "5.10.2",
+  "infile": "data/pip/zenroom.txt",
+  "dependencies": {}
+}

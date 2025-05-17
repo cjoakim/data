@@ -1,0 +1,8 @@
+{
+  "libname": "scim2-filter-parser",
+  "libvers": "0.7.0",
+  "infile": "data/pip/scim2-filter-parser.txt",
+  "dependencies": {
+    "sly": "0.5"
+  }
+}

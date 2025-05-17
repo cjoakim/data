@@ -1,0 +1,8 @@
+{
+  "libname": "repath",
+  "libvers": "0.9.0",
+  "infile": "data/pip/repath.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

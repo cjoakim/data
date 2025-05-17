@@ -1,0 +1,22 @@
+{
+  "libname": "sumy",
+  "libvers": "0.11.0",
+  "infile": "data/pip/sumy.txt",
+  "dependencies": {
+    "breadability": "0.1.20",
+    "certifi": "2025.4.26",
+    "chardet": "5.2.0",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "docopt": "0.6.2",
+    "idna": "3.10",
+    "joblib": "1.5.0",
+    "lxml": "5.4.0",
+    "nltk": "3.9.1",
+    "pycountry": "24.6.1",
+    "regex": "2024.11.6",
+    "requests": "2.32.3",
+    "tqdm": "4.67.1",
+    "urllib3": "2.4.0"
+  }
+}

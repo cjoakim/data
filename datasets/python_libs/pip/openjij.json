@@ -1,0 +1,17 @@
+{
+  "libname": "openjij",
+  "libvers": "0.9.2",
+  "infile": "data/pip/openjij.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "dimod": "0.12.20",
+    "idna": "3.10",
+    "jij-cimod": "1.6.2",
+    "numpy": "1.26.4",
+    "requests": "2.31.0",
+    "scipy": "1.11.4",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

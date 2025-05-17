@@ -1,0 +1,6 @@
+{
+  "libname": "pycryptodomex",
+  "libvers": "3.22.0",
+  "infile": "data/pip/pycryptodomex.txt",
+  "dependencies": {}
+}

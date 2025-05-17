@@ -1,0 +1,6 @@
+{
+  "libname": "lazyasd",
+  "libvers": "0.1.4",
+  "infile": "data/pip/lazyasd.txt",
+  "dependencies": {}
+}

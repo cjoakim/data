@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-detective",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-detective.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pytomlpp",
+  "libvers": "1.0.13",
+  "infile": "data/pip/pytomlpp.txt",
+  "dependencies": {}
+}

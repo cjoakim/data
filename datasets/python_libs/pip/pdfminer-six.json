@@ -1,0 +1,11 @@
+{
+  "libname": "pdfminer-six",
+  "libvers": "20250506",
+  "infile": "data/pip/pdfminer-six.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22"
+  }
+}

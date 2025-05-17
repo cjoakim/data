@@ -1,0 +1,10 @@
+{
+  "libname": "drf-spectacular-sidecar",
+  "libvers": "2025.5.1",
+  "infile": "data/pip/drf-spectacular-sidecar.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "sqlparse": "0.5.3"
+  }
+}

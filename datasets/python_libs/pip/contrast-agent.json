@@ -1,0 +1,14 @@
+{
+  "libname": "contrast-agent",
+  "libvers": "10.5.0",
+  "infile": "data/pip/contrast-agent.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "contrast-agent-lib": "0.10.0",
+    "contrast-fireball": "0.1.10",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

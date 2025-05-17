@@ -1,0 +1,16 @@
+{
+  "libname": "bmipy",
+  "libvers": "2.0.1",
+  "infile": "data/pip/bmipy.txt",
+  "dependencies": {
+    "black": "25.1.0",
+    "click": "8.1.8",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "mypy-extensions": "1.1.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pathspec": "0.12.1",
+    "platformdirs": "4.3.7"
+  }
+}

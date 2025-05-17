@@ -1,0 +1,6 @@
+{
+  "libname": "android-backup",
+  "libvers": "0.2.0",
+  "infile": "data/pip/android-backup.txt",
+  "dependencies": {}
+}

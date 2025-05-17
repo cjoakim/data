@@ -1,0 +1,8 @@
+{
+  "libname": "pyface",
+  "libvers": "8.0.0",
+  "infile": "data/pip/pyface.txt",
+  "dependencies": {
+    "traits": "7.0.2"
+  }
+}

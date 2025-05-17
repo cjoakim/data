@@ -1,0 +1,6 @@
+{
+  "libname": "cobble",
+  "libvers": "0.1.4",
+  "infile": "data/pip/cobble.txt",
+  "dependencies": {}
+}

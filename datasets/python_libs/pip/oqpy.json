@@ -1,0 +1,12 @@
+{
+  "libname": "oqpy",
+  "libvers": "0.3.7",
+  "infile": "data/pip/oqpy.txt",
+  "dependencies": {
+    "antlr4-python3-runtime": "4.13.2",
+    "mypy-extensions": "1.1.0",
+    "numpy": "2.2.5",
+    "openpulse": "1.0.1",
+    "openqasm3[parser]": "1.0.1"
+  }
+}

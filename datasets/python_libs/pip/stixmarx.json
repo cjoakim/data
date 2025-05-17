@@ -1,0 +1,15 @@
+{
+  "libname": "stixmarx",
+  "libvers": "1.0.8",
+  "infile": "data/pip/stixmarx.txt",
+  "dependencies": {
+    "cybox": "2.1.0.21",
+    "lxml": "5.4.0",
+    "mixbox": "1.0.5",
+    "ordered-set": "4.1.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "stix": "1.2.0.11",
+    "weakrefmethod": "1.0.3"
+  }
+}

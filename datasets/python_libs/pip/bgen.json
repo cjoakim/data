@@ -1,0 +1,8 @@
+{
+  "libname": "bgen",
+  "libvers": "1.7.3",
+  "infile": "data/pip/bgen.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

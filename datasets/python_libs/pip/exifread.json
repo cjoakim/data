@@ -1,0 +1,6 @@
+{
+  "libname": "exifread",
+  "libvers": "3.3.0",
+  "infile": "data/pip/exifread.txt",
+  "dependencies": {}
+}

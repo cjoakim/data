@@ -1,0 +1,8 @@
+{
+  "libname": "typedspark",
+  "libvers": "1.5.3",
+  "infile": "data/pip/typedspark.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.1"
+  }
+}

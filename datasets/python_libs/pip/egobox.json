@@ -1,0 +1,8 @@
+{
+  "libname": "egobox",
+  "libvers": "0.28.1",
+  "infile": "data/pip/egobox.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

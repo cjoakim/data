@@ -1,0 +1,14 @@
+{
+  "libname": "rq-scheduler",
+  "libvers": "0.14.0",
+  "infile": "data/pip/rq-scheduler.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "crontab": "1.0.4",
+    "freezegun": "1.5.1",
+    "python-dateutil": "2.9.0.post0",
+    "redis": "6.0.0",
+    "rq": "2.3.2",
+    "six": "1.17.0"
+  }
+}

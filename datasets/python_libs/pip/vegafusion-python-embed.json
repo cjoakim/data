@@ -1,0 +1,6 @@
+{
+  "libname": "vegafusion-python-embed",
+  "libvers": "1.6.9",
+  "infile": "data/pip/vegafusion-python-embed.txt",
+  "dependencies": {}
+}

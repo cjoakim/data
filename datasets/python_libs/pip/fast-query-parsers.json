@@ -1,0 +1,6 @@
+{
+  "libname": "fast-query-parsers",
+  "libvers": "1.0.3",
+  "infile": "data/pip/fast-query-parsers.txt",
+  "dependencies": {}
+}

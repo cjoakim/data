@@ -1,0 +1,6 @@
+{
+  "libname": "anycrc",
+  "libvers": "1.3.3",
+  "infile": "data/pip/anycrc.txt",
+  "dependencies": {}
+}

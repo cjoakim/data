@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-sqs",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-sqs.txt",
+  "dependencies": {}
+}

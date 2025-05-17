@@ -1,0 +1,8 @@
+{
+  "libname": "audeer",
+  "libvers": "2.2.1",
+  "infile": "data/pip/audeer.txt",
+  "dependencies": {
+    "tqdm": "4.67.1"
+  }
+}

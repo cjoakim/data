@@ -1,0 +1,8 @@
+{
+  "libname": "lasio",
+  "libvers": "0.31",
+  "infile": "data/pip/lasio.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

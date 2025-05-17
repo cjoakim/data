@@ -1,0 +1,8 @@
+{
+  "libname": "django-mssql-backend",
+  "libvers": "2.8.1",
+  "infile": "data/pip/django-mssql-backend.txt",
+  "dependencies": {
+    "pyodbc": "5.2.0"
+  }
+}

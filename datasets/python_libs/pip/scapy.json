@@ -1,0 +1,6 @@
+{
+  "libname": "scapy",
+  "libvers": "2.6.1",
+  "infile": "data/pip/scapy.txt",
+  "dependencies": {}
+}

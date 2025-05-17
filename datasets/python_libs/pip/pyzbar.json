@@ -1,0 +1,6 @@
+{
+  "libname": "pyzbar",
+  "libvers": "0.1.9",
+  "infile": "data/pip/pyzbar.txt",
+  "dependencies": {}
+}

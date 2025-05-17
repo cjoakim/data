@@ -1,0 +1,6 @@
+{
+  "libname": "aioshutil",
+  "libvers": "1.5",
+  "infile": "data/pip/aioshutil.txt",
+  "dependencies": {}
+}

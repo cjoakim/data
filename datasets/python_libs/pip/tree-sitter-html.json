@@ -1,0 +1,6 @@
+{
+  "libname": "tree-sitter-html",
+  "libvers": "0.23.2",
+  "infile": "data/pip/tree-sitter-html.txt",
+  "dependencies": {}
+}

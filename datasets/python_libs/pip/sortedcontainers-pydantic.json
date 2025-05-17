@@ -1,0 +1,13 @@
+{
+  "libname": "sortedcontainers-pydantic",
+  "libvers": "2.0.0",
+  "infile": "data/pip/sortedcontainers-pydantic.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "sortedcontainers": "2.4.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

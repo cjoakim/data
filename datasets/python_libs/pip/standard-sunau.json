@@ -1,0 +1,6 @@
+{
+  "libname": "standard-sunau",
+  "libvers": "3.13.0",
+  "infile": "data/pip/standard-sunau.txt",
+  "dependencies": {}
+}

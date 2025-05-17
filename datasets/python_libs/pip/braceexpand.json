@@ -1,0 +1,6 @@
+{
+  "libname": "braceexpand",
+  "libvers": "0.1.7",
+  "infile": "data/pip/braceexpand.txt",
+  "dependencies": {}
+}

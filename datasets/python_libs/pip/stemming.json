@@ -1,0 +1,6 @@
+{
+  "libname": "stemming",
+  "libvers": "1.0.1",
+  "infile": "data/pip/stemming.txt",
+  "dependencies": {}
+}

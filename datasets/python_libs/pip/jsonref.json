@@ -1,0 +1,6 @@
+{
+  "libname": "jsonref",
+  "libvers": "1.1.0",
+  "infile": "data/pip/jsonref.txt",
+  "dependencies": {}
+}

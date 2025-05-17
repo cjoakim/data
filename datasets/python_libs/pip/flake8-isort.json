@@ -1,0 +1,12 @@
+{
+  "libname": "flake8-isort",
+  "libvers": "6.1.2",
+  "infile": "data/pip/flake8-isort.txt",
+  "dependencies": {
+    "flake8": "7.2.0",
+    "isort": "6.0.1",
+    "mccabe": "0.7.0",
+    "pycodestyle": "2.13.0",
+    "pyflakes": "3.3.2"
+  }
+}

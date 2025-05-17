@@ -1,0 +1,6 @@
+{
+  "libname": "crc32c",
+  "libvers": "2.7.1",
+  "infile": "data/pip/crc32c.txt",
+  "dependencies": {}
+}

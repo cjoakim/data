@@ -1,0 +1,6 @@
+{
+  "libname": "pyppeteer-stealth",
+  "libvers": "2.7.4",
+  "infile": "data/pip/pyppeteer-stealth.txt",
+  "dependencies": {}
+}

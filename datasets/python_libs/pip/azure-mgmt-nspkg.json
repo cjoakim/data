@@ -1,0 +1,8 @@
+{
+  "libname": "azure-mgmt-nspkg",
+  "libvers": "3.0.2",
+  "infile": "data/pip/azure-mgmt-nspkg.txt",
+  "dependencies": {
+    "azure-nspkg": "3.0.2"
+  }
+}

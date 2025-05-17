@@ -1,0 +1,6 @@
+{
+  "libname": "types-pika-ts",
+  "libvers": "1.3.0.20250401",
+  "infile": "data/pip/types-pika-ts.txt",
+  "dependencies": {}
+}

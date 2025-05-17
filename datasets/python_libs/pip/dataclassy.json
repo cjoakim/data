@@ -1,0 +1,6 @@
+{
+  "libname": "dataclassy",
+  "libvers": "1.0.1",
+  "infile": "data/pip/dataclassy.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "art",
+  "libvers": "6.5",
+  "infile": "data/pip/art.txt",
+  "dependencies": {}
+}

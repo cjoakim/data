@@ -1,0 +1,6 @@
+{
+  "libname": "pysnooper",
+  "libvers": "1.2.2",
+  "infile": "data/pip/pysnooper.txt",
+  "dependencies": {}
+}

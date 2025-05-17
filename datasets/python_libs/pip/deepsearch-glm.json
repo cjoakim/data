@@ -1,0 +1,6 @@
+{
+  "libname": "deepsearch-glm",
+  "libvers": "1.0.0",
+  "infile": "data/pip/deepsearch-glm.txt",
+  "dependencies": {}
+}

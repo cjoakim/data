@@ -1,0 +1,10 @@
+{
+  "libname": "nmslib",
+  "libvers": "2.1.1",
+  "infile": "data/pip/nmslib.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "psutil": "7.0.0",
+    "pybind11": "2.6.1"
+  }
+}

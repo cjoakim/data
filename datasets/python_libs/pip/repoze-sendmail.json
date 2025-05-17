@@ -1,0 +1,9 @@
+{
+  "libname": "repoze-sendmail",
+  "libvers": "4.4.1",
+  "infile": "data/pip/repoze-sendmail.txt",
+  "dependencies": {
+    "transaction": "5.0",
+    "zope-interface": "7.2"
+  }
+}

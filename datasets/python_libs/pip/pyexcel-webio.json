@@ -1,0 +1,11 @@
+{
+  "libname": "pyexcel-webio",
+  "libvers": "0.1.4",
+  "infile": "data/pip/pyexcel-webio.txt",
+  "dependencies": {
+    "lml": "0.2.0",
+    "pyexcel": "0.7.3",
+    "pyexcel-io": "0.6.7",
+    "texttable": "1.7.0"
+  }
+}

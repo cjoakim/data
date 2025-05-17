@@ -1,0 +1,10 @@
+{
+  "libname": "django-sslserver",
+  "libvers": "0.22",
+  "infile": "data/pip/django-sslserver.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "sqlparse": "0.5.3"
+  }
+}

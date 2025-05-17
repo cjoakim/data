@@ -1,0 +1,6 @@
+{
+  "libname": "zipfile-deflate64",
+  "libvers": "0.2.0",
+  "infile": "data/pip/zipfile-deflate64.txt",
+  "dependencies": {}
+}

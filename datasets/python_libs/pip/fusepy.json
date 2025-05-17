@@ -1,0 +1,6 @@
+{
+  "libname": "fusepy",
+  "libvers": "3.0.1",
+  "infile": "data/pip/fusepy.txt",
+  "dependencies": {}
+}

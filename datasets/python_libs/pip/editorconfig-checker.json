@@ -1,0 +1,6 @@
+{
+  "libname": "editorconfig-checker",
+  "libvers": "3.2.1",
+  "infile": "data/pip/editorconfig-checker.txt",
+  "dependencies": {}
+}

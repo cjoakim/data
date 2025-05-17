@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-appintegrations",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-appintegrations.txt",
+  "dependencies": {}
+}

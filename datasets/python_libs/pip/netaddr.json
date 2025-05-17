@@ -1,0 +1,6 @@
+{
+  "libname": "netaddr",
+  "libvers": "1.3.0",
+  "infile": "data/pip/netaddr.txt",
+  "dependencies": {}
+}

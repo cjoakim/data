@@ -1,0 +1,6 @@
+{
+  "libname": "pystemmer",
+  "libvers": "2.2.0.3",
+  "infile": "data/pip/pystemmer.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "domdf-python-tools",
+  "libvers": "3.10.0",
+  "infile": "data/pip/domdf-python-tools.txt",
+  "dependencies": {
+    "natsort": "8.4.0",
+    "typing-extensions": "4.13.2"
+  }
+}

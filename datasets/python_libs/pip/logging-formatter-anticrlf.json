@@ -1,0 +1,6 @@
+{
+  "libname": "logging-formatter-anticrlf",
+  "libvers": "1.2.1",
+  "infile": "data/pip/logging-formatter-anticrlf.txt",
+  "dependencies": {}
+}

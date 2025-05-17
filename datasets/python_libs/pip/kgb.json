@@ -1,0 +1,6 @@
+{
+  "libname": "kgb",
+  "libvers": "7.2",
+  "infile": "data/pip/kgb.txt",
+  "dependencies": {}
+}

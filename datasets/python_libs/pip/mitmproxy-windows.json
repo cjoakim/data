@@ -1,0 +1,6 @@
+{
+  "libname": "mitmproxy-windows",
+  "libvers": "0.12.3",
+  "infile": "data/pip/mitmproxy-windows.txt",
+  "dependencies": {}
+}

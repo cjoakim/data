@@ -1,0 +1,11 @@
+{
+  "libname": "python-nvd3",
+  "libvers": "0.16.0",
+  "infile": "data/pip/python-nvd3.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "python-slugify": "8.0.4",
+    "text-unidecode": "1.3"
+  }
+}

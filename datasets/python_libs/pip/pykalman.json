@@ -1,0 +1,11 @@
+{
+  "libname": "pykalman",
+  "libvers": "0.10.1",
+  "infile": "data/pip/pykalman.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "scikit-base": "0.12.2",
+    "scipy": "1.15.2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "libname": "large-image-source-tiff",
+  "libvers": "1.32.3",
+  "infile": "data/pip/large-image-source-tiff.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "large-image": "1.32.3",
+    "numpy": "2.2.5",
+    "palettable": "3.3.3",
+    "pillow": "11.2.1",
+    "pylibtiff": "0.6.1",
+    "tifftools": "1.6.0",
+    "typing-extensions": "4.13.2"
+  }
+}

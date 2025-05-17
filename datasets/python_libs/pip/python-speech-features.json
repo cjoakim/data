@@ -1,0 +1,6 @@
+{
+  "libname": "python-speech-features",
+  "libvers": "0.6",
+  "infile": "data/pip/python-speech-features.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pycoin",
+  "libvers": "0.92.20241201",
+  "infile": "data/pip/pycoin.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,19 @@
+{
+  "libname": "dissect-target",
+  "libvers": "3.21",
+  "infile": "data/pip/dissect-target.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1",
+    "dissect-cstruct": "4.4",
+    "dissect-eventlog": "3.10",
+    "dissect-evidence": "3.11",
+    "dissect-hypervisor": "3.17",
+    "dissect-ntfs": "3.14",
+    "dissect-regf": "3.12",
+    "dissect-util": "3.20",
+    "dissect-volume": "3.14",
+    "flow-record": "3.19",
+    "msgpack": "1.1.0",
+    "structlog": "25.3.0"
+  }
+}

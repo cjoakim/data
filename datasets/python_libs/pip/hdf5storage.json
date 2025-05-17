@@ -1,0 +1,9 @@
+{
+  "libname": "hdf5storage",
+  "libvers": "0.2.0",
+  "infile": "data/pip/hdf5storage.txt",
+  "dependencies": {
+    "h5py": "3.13.0",
+    "numpy": "2.2.5"
+  }
+}

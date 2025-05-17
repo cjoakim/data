@@ -1,0 +1,6 @@
+{
+  "libname": "ry",
+  "libvers": "0.0.41",
+  "infile": "data/pip/ry.txt",
+  "dependencies": {}
+}

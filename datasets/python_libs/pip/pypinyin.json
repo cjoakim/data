@@ -1,0 +1,6 @@
+{
+  "libname": "pypinyin",
+  "libvers": "0.54.0",
+  "infile": "data/pip/pypinyin.txt",
+  "dependencies": {}
+}

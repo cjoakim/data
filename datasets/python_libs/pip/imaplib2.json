@@ -1,0 +1,6 @@
+{
+  "libname": "imaplib2",
+  "libvers": "3.6",
+  "infile": "data/pip/imaplib2.txt",
+  "dependencies": {}
+}

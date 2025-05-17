@@ -1,0 +1,6 @@
+{
+  "libname": "plyvel",
+  "libvers": "1.5.1",
+  "infile": "data/pip/plyvel.txt",
+  "dependencies": {}
+}

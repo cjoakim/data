@@ -1,0 +1,18 @@
+{
+  "libname": "sendsafely",
+  "libvers": "1.0.8",
+  "infile": "data/pip/sendsafely.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "pgpy": "0.6.0",
+    "pyasn1": "0.6.1",
+    "pycparser": "2.22",
+    "requests": "2.32.3",
+    "standard-imghdr": "3.13.0",
+    "urllib3": "2.4.0"
+  }
+}

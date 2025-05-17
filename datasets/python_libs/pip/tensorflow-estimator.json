@@ -1,0 +1,6 @@
+{
+  "libname": "tensorflow-estimator",
+  "libvers": "2.15.0",
+  "infile": "data/pip/tensorflow-estimator.txt",
+  "dependencies": {}
+}

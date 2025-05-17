@@ -1,0 +1,8 @@
+{
+  "libname": "runcmd",
+  "libvers": "2020.12.3",
+  "infile": "data/pip/runcmd.txt",
+  "dependencies": {
+    "psutil": "7.0.0"
+  }
+}

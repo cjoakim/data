@@ -1,0 +1,6 @@
+{
+  "libname": "fair-esm",
+  "libvers": "2.0.0",
+  "infile": "data/pip/fair-esm.txt",
+  "dependencies": {}
+}

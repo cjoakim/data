@@ -1,0 +1,6 @@
+{
+  "libname": "aioblescan",
+  "libvers": "0.2.14",
+  "infile": "data/pip/aioblescan.txt",
+  "dependencies": {}
+}

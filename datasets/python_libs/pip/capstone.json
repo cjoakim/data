@@ -1,0 +1,6 @@
+{
+  "libname": "capstone",
+  "libvers": "5.0.6",
+  "infile": "data/pip/capstone.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pysodium",
+  "libvers": "0.7.18",
+  "infile": "data/pip/pysodium.txt",
+  "dependencies": {}
+}

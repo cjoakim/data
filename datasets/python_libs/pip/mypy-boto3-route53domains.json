@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-route53domains",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-route53domains.txt",
+  "dependencies": {}
+}

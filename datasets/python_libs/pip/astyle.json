@@ -1,0 +1,6 @@
+{
+  "libname": "astyle",
+  "libvers": "3.6.9",
+  "infile": "data/pip/astyle.txt",
+  "dependencies": {}
+}

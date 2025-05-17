@@ -1,0 +1,10 @@
+{
+  "libname": "pynomaly",
+  "libvers": "0.3.4",
+  "infile": "data/pip/pynomaly.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "python-utils": "3.9.1",
+    "typing-extensions": "4.13.2"
+  }
+}

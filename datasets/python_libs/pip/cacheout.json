@@ -1,0 +1,6 @@
+{
+  "libname": "cacheout",
+  "libvers": "0.16.0",
+  "infile": "data/pip/cacheout.txt",
+  "dependencies": {}
+}

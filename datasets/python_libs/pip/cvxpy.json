@@ -1,0 +1,15 @@
+{
+  "libname": "cvxpy",
+  "libvers": "1.6.5",
+  "infile": "data/pip/cvxpy.txt",
+  "dependencies": {
+    "clarabel": "0.10.0",
+    "jinja2": "3.1.6",
+    "joblib": "1.5.0",
+    "markupsafe": "3.0.2",
+    "numpy": "2.2.5",
+    "osqp": "1.0.3",
+    "scipy": "1.15.2",
+    "scs": "3.2.7.post2"
+  }
+}

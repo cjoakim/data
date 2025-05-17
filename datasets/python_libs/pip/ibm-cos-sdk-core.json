@@ -1,0 +1,15 @@
+{
+  "libname": "ibm-cos-sdk-core",
+  "libvers": "2.14.0",
+  "infile": "data/pip/ibm-cos-sdk-core.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "jmespath": "1.0.1",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.2",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

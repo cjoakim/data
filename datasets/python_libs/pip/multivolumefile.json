@@ -1,0 +1,6 @@
+{
+  "libname": "multivolumefile",
+  "libvers": "0.2.3",
+  "infile": "data/pip/multivolumefile.txt",
+  "dependencies": {}
+}

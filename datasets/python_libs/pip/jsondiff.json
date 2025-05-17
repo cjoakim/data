@@ -1,0 +1,8 @@
+{
+  "libname": "jsondiff",
+  "libvers": "2.2.1",
+  "infile": "data/pip/jsondiff.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

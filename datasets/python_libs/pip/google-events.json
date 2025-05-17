@@ -1,0 +1,9 @@
+{
+  "libname": "google-events",
+  "libvers": "0.14.0",
+  "infile": "data/pip/google-events.txt",
+  "dependencies": {
+    "proto-plus": "1.26.1",
+    "protobuf": "6.30.2"
+  }
+}

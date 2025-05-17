@@ -1,0 +1,8 @@
+{
+  "libname": "antlr4-tools",
+  "libvers": "0.2.2",
+  "infile": "data/pip/antlr4-tools.txt",
+  "dependencies": {
+    "install-jdk": "1.1.0"
+  }
+}

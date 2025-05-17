@@ -1,0 +1,8 @@
+{
+  "libname": "vesin",
+  "libvers": "0.3.4",
+  "infile": "data/pip/vesin.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

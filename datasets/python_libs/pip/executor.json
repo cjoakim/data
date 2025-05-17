@@ -1,0 +1,13 @@
+{
+  "libname": "executor",
+  "libvers": "23.2",
+  "infile": "data/pip/executor.txt",
+  "dependencies": {
+    "coloredlogs": "15.0.1",
+    "fasteners": "0.19",
+    "humanfriendly": "10.0",
+    "property-manager": "3.0",
+    "six": "1.17.0",
+    "verboselogs": "1.7"
+  }
+}

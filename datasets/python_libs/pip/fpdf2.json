@@ -1,0 +1,10 @@
+{
+  "libname": "fpdf2",
+  "libvers": "2.8.3",
+  "infile": "data/pip/fpdf2.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1",
+    "fonttools": "4.57.0",
+    "pillow": "11.2.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "libname": "atlassian-python-api",
+  "libvers": "4.0.3",
+  "infile": "data/pip/atlassian-python-api.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "deprecated": "1.2.18",
+    "idna": "3.10",
+    "jmespath": "1.0.1",
+    "oauthlib": "3.2.2",
+    "requests": "2.32.3",
+    "requests-oauthlib": "2.0.0",
+    "six": "1.17.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2"
+  }
+}

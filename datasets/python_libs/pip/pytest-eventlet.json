@@ -1,0 +1,10 @@
+{
+  "libname": "pytest-eventlet",
+  "libvers": "1.0.0",
+  "infile": "data/pip/pytest-eventlet.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "eventlet": "0.39.1",
+    "greenlet": "3.2.1"
+  }
+}

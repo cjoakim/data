@@ -1,0 +1,10 @@
+{
+  "libname": "ml-metadata",
+  "libvers": "0.13.1.dev0",
+  "infile": "data/pip/ml-metadata.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "protobuf": "3.20.3",
+    "six": "1.17.0"
+  }
+}

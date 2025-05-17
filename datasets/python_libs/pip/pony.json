@@ -1,0 +1,6 @@
+{
+  "libname": "pony",
+  "libvers": "0.7.19",
+  "infile": "data/pip/pony.txt",
+  "dependencies": {}
+}

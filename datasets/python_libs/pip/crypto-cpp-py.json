@@ -1,0 +1,11 @@
+{
+  "libname": "crypto-cpp-py",
+  "libvers": "1.4.5",
+  "infile": "data/pip/crypto-cpp-py.txt",
+  "dependencies": {
+    "ecdsa": "0.18.0",
+    "mpmath": "1.3.0",
+    "six": "1.17.0",
+    "sympy": "1.12.1"
+  }
+}

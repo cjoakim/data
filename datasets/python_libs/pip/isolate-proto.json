@@ -1,0 +1,16 @@
+{
+  "libname": "isolate-proto",
+  "libvers": "0.8.0",
+  "infile": "data/pip/isolate-proto.txt",
+  "dependencies": {
+    "distlib": "0.3.9",
+    "filelock": "3.18.0",
+    "grpcio": "1.64.0",
+    "isolate[build]": "0.16.2",
+    "platformdirs": "4.3.7",
+    "protobuf": "6.30.2",
+    "pyyaml": "6.0.2",
+    "tblib": "3.1.0",
+    "virtualenv": "20.31.1"
+  }
+}

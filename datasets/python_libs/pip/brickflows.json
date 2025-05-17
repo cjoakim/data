@@ -1,0 +1,31 @@
+{
+  "libname": "brickflows",
+  "libvers": "0.10.3",
+  "infile": "data/pip/brickflows.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "databricks-sdk": "0.52.0",
+    "google-auth": "2.40.0",
+    "idna": "3.10",
+    "jinja2": "3.1.2",
+    "markupsafe": "3.0.2",
+    "networkx": "3.1",
+    "pendulum": "2.1.2",
+    "pluggy": "1.5.0",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pydantic": "1.10.22",
+    "python-dateutil": "2.9.0.post0",
+    "python-decouple": "3.8",
+    "pytzdata": "2020.1",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

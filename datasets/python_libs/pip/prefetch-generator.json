@@ -1,0 +1,6 @@
+{
+  "libname": "prefetch-generator",
+  "libvers": "1.0.3",
+  "infile": "data/pip/prefetch-generator.txt",
+  "dependencies": {}
+}

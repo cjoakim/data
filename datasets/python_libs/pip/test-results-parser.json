@@ -1,0 +1,6 @@
+{
+  "libname": "test-results-parser",
+  "libvers": "0.5.4",
+  "infile": "data/pip/test-results-parser.txt",
+  "dependencies": {}
+}

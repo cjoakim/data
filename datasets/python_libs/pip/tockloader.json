@@ -1,0 +1,23 @@
+{
+  "libname": "tockloader",
+  "libvers": "1.14.0",
+  "infile": "data/pip/tockloader.txt",
+  "dependencies": {
+    "argcomplete": "3.6.2",
+    "colorama": "0.4.6",
+    "crcmod": "1.7",
+    "ecdsa": "0.19.1",
+    "future": "1.0.0",
+    "prompt-toolkit": "3.0.51",
+    "pycryptodome": "3.22.0",
+    "pynrfjprog": "10.19.0",
+    "pyserial": "3.5",
+    "questionary": "2.1.0",
+    "siphash": "0.0.1",
+    "six": "1.17.0",
+    "toml": "0.10.2",
+    "tomli-w": "1.2.0",
+    "tqdm": "4.67.1",
+    "wcwidth": "0.2.13"
+  }
+}

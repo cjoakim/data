@@ -1,0 +1,6 @@
+{
+  "libname": "webrtcvad-wheels",
+  "libvers": "2.0.14",
+  "infile": "data/pip/webrtcvad-wheels.txt",
+  "dependencies": {}
+}

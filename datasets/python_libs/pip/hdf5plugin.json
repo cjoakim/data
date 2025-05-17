@@ -1,0 +1,9 @@
+{
+  "libname": "hdf5plugin",
+  "libvers": "5.1.0",
+  "infile": "data/pip/hdf5plugin.txt",
+  "dependencies": {
+    "h5py": "3.13.0",
+    "numpy": "2.2.5"
+  }
+}

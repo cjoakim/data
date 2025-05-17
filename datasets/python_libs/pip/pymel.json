@@ -1,0 +1,8 @@
+{
+  "libname": "pymel",
+  "libvers": "1.5.0",
+  "infile": "data/pip/pymel.txt",
+  "dependencies": {
+    "future": "1.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "ffmpeg",
+  "libvers": "1.4",
+  "infile": "data/pip/ffmpeg.txt",
+  "dependencies": {}
+}

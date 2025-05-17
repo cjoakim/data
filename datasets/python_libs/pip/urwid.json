@@ -1,0 +1,8 @@
+{
+  "libname": "urwid",
+  "libvers": "3.0.2",
+  "infile": "data/pip/urwid.txt",
+  "dependencies": {
+    "wcwidth": "0.2.13"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "cppheaderparser",
+  "libvers": "2.7.4",
+  "infile": "data/pip/cppheaderparser.txt",
+  "dependencies": {
+    "ply": "3.11"
+  }
+}

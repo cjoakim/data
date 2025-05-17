@@ -1,0 +1,8 @@
+{
+  "libname": "sgl-kernel",
+  "libvers": "0.0.1",
+  "infile": "data/pip/sgl-kernel.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

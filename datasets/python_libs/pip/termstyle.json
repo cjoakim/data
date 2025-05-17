@@ -1,0 +1,6 @@
+{
+  "libname": "termstyle",
+  "libvers": "0.1.11",
+  "infile": "data/pip/termstyle.txt",
+  "dependencies": {}
+}

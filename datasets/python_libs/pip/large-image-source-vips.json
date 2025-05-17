@@ -1,0 +1,17 @@
+{
+  "libname": "large-image-source-vips",
+  "libvers": "1.32.3",
+  "infile": "data/pip/large-image-source-vips.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "cffi": "1.17.1",
+    "large-image": "1.32.3",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "palettable": "3.3.3",
+    "pillow": "11.2.1",
+    "pycparser": "2.22",
+    "pyvips": "3.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

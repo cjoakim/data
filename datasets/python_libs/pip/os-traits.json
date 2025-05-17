@@ -1,0 +1,8 @@
+{
+  "libname": "os-traits",
+  "libvers": "3.4.0",
+  "infile": "data/pip/os-traits.txt",
+  "dependencies": {
+    "pbr": "6.1.1"
+  }
+}

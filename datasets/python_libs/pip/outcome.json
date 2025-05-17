@@ -1,0 +1,8 @@
+{
+  "libname": "outcome",
+  "libvers": "1.3.0.post0",
+  "infile": "data/pip/outcome.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

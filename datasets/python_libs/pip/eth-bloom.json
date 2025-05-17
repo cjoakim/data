@@ -1,0 +1,9 @@
+{
+  "libname": "eth-bloom",
+  "libvers": "3.1.0",
+  "infile": "data/pip/eth-bloom.txt",
+  "dependencies": {
+    "eth-hash[pycryptodome]": "0.7.1",
+    "pycryptodome": "3.22.0"
+  }
+}

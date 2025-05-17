@@ -1,0 +1,6 @@
+{
+  "libname": "beartype",
+  "libvers": "0.20.2",
+  "infile": "data/pip/beartype.txt",
+  "dependencies": {}
+}

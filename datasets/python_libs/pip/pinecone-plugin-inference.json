@@ -1,0 +1,8 @@
+{
+  "libname": "pinecone-plugin-inference",
+  "libvers": "3.1.0",
+  "infile": "data/pip/pinecone-plugin-inference.txt",
+  "dependencies": {
+    "pinecone-plugin-interface": "0.0.7"
+  }
+}

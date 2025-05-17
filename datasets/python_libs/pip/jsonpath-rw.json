@@ -1,0 +1,10 @@
+{
+  "libname": "jsonpath-rw",
+  "libvers": "1.4.0",
+  "infile": "data/pip/jsonpath-rw.txt",
+  "dependencies": {
+    "decorator": "5.2.1",
+    "ply": "3.11",
+    "six": "1.17.0"
+  }
+}

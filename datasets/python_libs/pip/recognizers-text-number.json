@@ -1,0 +1,11 @@
+{
+  "libname": "recognizers-text-number",
+  "libvers": "1.0.2a2",
+  "infile": "data/pip/recognizers-text-number.txt",
+  "dependencies": {
+    "emoji": "2.14.1",
+    "multipledispatch": "1.0.0",
+    "recognizers-text": "1.0.2a2",
+    "regex": "2024.11.6"
+  }
+}

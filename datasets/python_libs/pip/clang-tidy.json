@@ -1,0 +1,6 @@
+{
+  "libname": "clang-tidy",
+  "libvers": "20.1.0",
+  "infile": "data/pip/clang-tidy.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "amplify",
+  "libvers": "1.3.1",
+  "infile": "data/pip/amplify.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "typing-extensions": "4.13.2"
+  }
+}

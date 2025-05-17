@@ -1,0 +1,6 @@
+{
+  "libname": "rodi",
+  "libvers": "2.0.8",
+  "infile": "data/pip/rodi.txt",
+  "dependencies": {}
+}

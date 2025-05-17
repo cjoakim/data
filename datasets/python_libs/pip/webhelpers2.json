@@ -1,0 +1,9 @@
+{
+  "libname": "webhelpers2",
+  "libvers": "2.1",
+  "infile": "data/pip/webhelpers2.txt",
+  "dependencies": {
+    "markupsafe": "3.0.2",
+    "six": "1.17.0"
+  }
+}

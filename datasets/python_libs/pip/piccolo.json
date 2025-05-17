@@ -1,0 +1,27 @@
+{
+  "libname": "piccolo",
+  "libvers": "1.25.0",
+  "infile": "data/pip/piccolo.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "black": "25.1.0",
+    "click": "8.1.8",
+    "colorama": "0.4.6",
+    "dnspython": "2.7.0",
+    "docstring-parser": "0.16",
+    "email-validator": "2.2.0",
+    "idna": "3.10",
+    "inflection": "0.5.1",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "mypy-extensions": "1.1.0",
+    "packaging": "25.0",
+    "pathspec": "0.12.1",
+    "platformdirs": "4.3.7",
+    "pydantic[email]": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "targ": "0.4.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

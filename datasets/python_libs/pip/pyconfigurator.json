@@ -1,0 +1,8 @@
+{
+  "libname": "pyconfigurator",
+  "libvers": "0.4.19",
+  "infile": "data/pip/pyconfigurator.txt",
+  "dependencies": {
+    "future": "1.0.0"
+  }
+}

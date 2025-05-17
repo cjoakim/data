@@ -1,0 +1,6 @@
+{
+  "libname": "ring-flash-attn",
+  "libvers": "0.1.4",
+  "infile": "data/pip/ring-flash-attn.txt",
+  "dependencies": {}
+}

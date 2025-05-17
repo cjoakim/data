@@ -1,0 +1,8 @@
+{
+  "libname": "psycopg-pool",
+  "libvers": "3.2.6",
+  "infile": "data/pip/psycopg-pool.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "shipyard-bp-utils",
+  "libvers": "1.3.0",
+  "infile": "data/pip/shipyard-bp-utils.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "shipyard-templates": "0.9.0",
+    "six": "1.17.0"
+  }
+}

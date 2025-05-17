@@ -1,0 +1,6 @@
+{
+  "libname": "aiosocks",
+  "libvers": "0.2.6",
+  "infile": "data/pip/aiosocks.txt",
+  "dependencies": {}
+}

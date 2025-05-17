@@ -1,0 +1,14 @@
+{
+  "libname": "authorizenet",
+  "libvers": "1.1.6",
+  "infile": "data/pip/authorizenet.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "lxml": "4.9.4",
+    "pyxb-x": "1.2.6.3",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

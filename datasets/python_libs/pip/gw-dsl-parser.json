@@ -1,0 +1,9 @@
+{
+  "libname": "gw-dsl-parser",
+  "libvers": "0.1.49.1",
+  "infile": "data/pip/gw-dsl-parser.txt",
+  "dependencies": {
+    "importlib-resources": "6.5.2",
+    "wasmtime": "32.0.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "autopep8",
+  "libvers": "2.3.2",
+  "infile": "data/pip/autopep8.txt",
+  "dependencies": {
+    "pycodestyle": "2.13.0"
+  }
+}

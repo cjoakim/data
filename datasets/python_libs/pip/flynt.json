@@ -1,0 +1,8 @@
+{
+  "libname": "flynt",
+  "libvers": "1.0.2",
+  "infile": "data/pip/flynt.txt",
+  "dependencies": {
+    "astor": "0.8.1"
+  }
+}

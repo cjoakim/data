@@ -1,0 +1,6 @@
+{
+  "libname": "daily-python",
+  "libvers": "0.18.1",
+  "infile": "data/pip/daily-python.txt",
+  "dependencies": {}
+}

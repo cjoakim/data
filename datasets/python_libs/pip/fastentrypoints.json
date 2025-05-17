@@ -1,0 +1,6 @@
+{
+  "libname": "fastentrypoints",
+  "libvers": "0.12",
+  "infile": "data/pip/fastentrypoints.txt",
+  "dependencies": {}
+}

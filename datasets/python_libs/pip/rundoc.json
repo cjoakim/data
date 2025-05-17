@@ -1,0 +1,16 @@
+{
+  "libname": "rundoc",
+  "libvers": "0.4.5",
+  "infile": "data/pip/rundoc.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "click": "7.1.2",
+    "markdown": "2.6.11",
+    "markdown-rundoc": "0.3.1",
+    "prompt-toolkit": "3.0.51",
+    "pygments": "2.19.1",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "wcwidth": "0.2.13"
+  }
+}

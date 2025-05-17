@@ -1,0 +1,6 @@
+{
+  "libname": "cheap-repr",
+  "libvers": "0.5.2",
+  "infile": "data/pip/cheap-repr.txt",
+  "dependencies": {}
+}

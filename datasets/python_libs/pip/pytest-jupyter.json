@@ -1,0 +1,14 @@
+{
+  "libname": "pytest-jupyter",
+  "libvers": "0.10.1",
+  "infile": "data/pip/pytest-jupyter.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "jupyter-core": "5.7.2",
+    "packaging": "25.0",
+    "platformdirs": "4.3.7",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "traitlets": "5.14.3"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "rockset",
+  "libvers": "2.1.2",
+  "infile": "data/pip/rockset.txt",
+  "dependencies": {
+    "geojson": "2.5.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "1.26.20"
+  }
+}

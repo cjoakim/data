@@ -1,0 +1,6 @@
+{
+  "libname": "imutils",
+  "libvers": "0.5.4",
+  "infile": "data/pip/imutils.txt",
+  "dependencies": {}
+}

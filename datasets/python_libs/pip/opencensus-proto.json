@@ -1,0 +1,8 @@
+{
+  "libname": "opencensus-proto",
+  "libvers": "0.1.0",
+  "infile": "data/pip/opencensus-proto.txt",
+  "dependencies": {
+    "grpcio": "1.71.0"
+  }
+}

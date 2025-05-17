@@ -1,0 +1,10 @@
+{
+  "libname": "aiodns",
+  "libvers": "3.3.0",
+  "infile": "data/pip/aiodns.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycares": "4.8.0",
+    "pycparser": "2.22"
+  }
+}

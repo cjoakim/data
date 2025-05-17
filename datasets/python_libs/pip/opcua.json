@@ -1,0 +1,11 @@
+{
+  "libname": "opcua",
+  "libvers": "0.98.13",
+  "infile": "data/pip/opcua.txt",
+  "dependencies": {
+    "lxml": "5.4.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0"
+  }
+}

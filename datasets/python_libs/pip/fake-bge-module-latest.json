@@ -1,0 +1,6 @@
+{
+  "libname": "fake-bge-module-latest",
+  "libvers": "20250317",
+  "infile": "data/pip/fake-bge-module-latest.txt",
+  "dependencies": {}
+}

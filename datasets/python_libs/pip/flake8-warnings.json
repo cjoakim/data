@@ -1,0 +1,8 @@
+{
+  "libname": "flake8-warnings",
+  "libvers": "0.4.1",
+  "infile": "data/pip/flake8-warnings.txt",
+  "dependencies": {
+    "astroid": "3.3.9"
+  }
+}

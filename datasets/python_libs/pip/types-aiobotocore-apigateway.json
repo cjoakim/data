@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-apigateway",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-apigateway.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "hccpy",
+  "libvers": "0.1.9",
+  "infile": "data/pip/hccpy.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

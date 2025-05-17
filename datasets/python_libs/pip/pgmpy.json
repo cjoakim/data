@@ -1,0 +1,33 @@
+{
+  "libname": "pgmpy",
+  "libvers": "1.0.0",
+  "infile": "data/pip/pgmpy.txt",
+  "dependencies": {
+    "filelock": "3.18.0",
+    "fsspec": "2025.3.2",
+    "jinja2": "3.1.6",
+    "joblib": "1.5.0",
+    "markupsafe": "3.0.2",
+    "mpmath": "1.3.0",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "opt-einsum": "3.4.0",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "patsy": "1.0.1",
+    "pyro-api": "0.1.2",
+    "pyro-ppl": "1.9.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "statsmodels": "0.14.4",
+    "sympy": "1.14.0",
+    "threadpoolctl": "3.6.0",
+    "torch": "2.7.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

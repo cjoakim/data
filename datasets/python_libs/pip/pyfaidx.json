@@ -1,0 +1,8 @@
+{
+  "libname": "pyfaidx",
+  "libvers": "0.8.1.4",
+  "infile": "data/pip/pyfaidx.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

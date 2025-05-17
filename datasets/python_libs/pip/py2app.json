@@ -1,0 +1,11 @@
+{
+  "libname": "py2app",
+  "libvers": "0.28.8",
+  "infile": "data/pip/py2app.txt",
+  "dependencies": {
+    "altgraph": "0.17.4",
+    "macholib": "1.16.3",
+    "modulegraph": "0.19.6",
+    "packaging": "25.0"
+  }
+}

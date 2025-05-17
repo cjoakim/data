@@ -1,0 +1,6 @@
+{
+  "libname": "flake8-junit-report",
+  "libvers": "2.1.0",
+  "infile": "data/pip/flake8-junit-report.txt",
+  "dependencies": {}
+}

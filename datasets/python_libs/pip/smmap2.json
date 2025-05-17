@@ -1,0 +1,8 @@
+{
+  "libname": "smmap2",
+  "libvers": "3.0.1",
+  "infile": "data/pip/smmap2.txt",
+  "dependencies": {
+    "smmap": "5.0.2"
+  }
+}

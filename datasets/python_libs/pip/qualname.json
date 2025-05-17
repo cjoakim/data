@@ -1,0 +1,6 @@
+{
+  "libname": "qualname",
+  "libvers": "0.1.0",
+  "infile": "data/pip/qualname.txt",
+  "dependencies": {}
+}

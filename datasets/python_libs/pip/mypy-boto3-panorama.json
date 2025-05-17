@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-panorama",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-panorama.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pyexr",
+  "libvers": "0.5.0",
+  "infile": "data/pip/pyexr.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "openexr": "3.3.3"
+  }
+}

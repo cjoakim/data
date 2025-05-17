@@ -1,0 +1,18 @@
+{
+  "libname": "flanker",
+  "libvers": "0.9.11",
+  "infile": "data/pip/flanker.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "cffi": "1.17.1",
+    "chardet": "5.2.0",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "ply": "3.11",
+    "pycparser": "2.22",
+    "regex": "2024.11.6",
+    "six": "1.17.0",
+    "tld": "0.13",
+    "webob": "1.8.9"
+  }
+}

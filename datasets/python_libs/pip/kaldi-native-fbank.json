@@ -1,0 +1,6 @@
+{
+  "libname": "kaldi-native-fbank",
+  "libvers": "1.21.1",
+  "infile": "data/pip/kaldi-native-fbank.txt",
+  "dependencies": {}
+}

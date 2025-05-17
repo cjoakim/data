@@ -1,0 +1,6 @@
+{
+  "libname": "dash-testing-stub",
+  "libvers": "0.0.2",
+  "infile": "data/pip/dash-testing-stub.txt",
+  "dependencies": {}
+}

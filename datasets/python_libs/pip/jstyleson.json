@@ -1,0 +1,6 @@
+{
+  "libname": "jstyleson",
+  "libvers": "0.0.2",
+  "infile": "data/pip/jstyleson.txt",
+  "dependencies": {}
+}

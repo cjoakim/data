@@ -1,0 +1,10 @@
+{
+  "libname": "ansible-creator",
+  "libvers": "25.4.1",
+  "infile": "data/pip/ansible-creator.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "pyyaml": "6.0.2"
+  }
+}

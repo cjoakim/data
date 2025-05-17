@@ -1,0 +1,14 @@
+{
+  "libname": "singer-python",
+  "libvers": "6.1.1",
+  "infile": "data/pip/singer-python.txt",
+  "dependencies": {
+    "backoff": "2.2.1",
+    "ciso8601": "2.3.2",
+    "jsonschema": "2.6.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "simplejson": "3.20.1",
+    "six": "1.17.0"
+  }
+}

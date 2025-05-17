@@ -1,0 +1,16 @@
+{
+  "libname": "flask-openid",
+  "libvers": "1.3.1",
+  "infile": "data/pip/flask-openid.txt",
+  "dependencies": {
+    "blinker": "1.9.0",
+    "click": "8.1.8",
+    "defusedxml": "0.7.1",
+    "flask": "3.1.0",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "python3-openid": "3.2.0",
+    "werkzeug": "3.1.3"
+  }
+}

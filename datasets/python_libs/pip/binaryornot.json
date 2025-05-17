@@ -1,0 +1,8 @@
+{
+  "libname": "binaryornot",
+  "libvers": "0.4.4",
+  "infile": "data/pip/binaryornot.txt",
+  "dependencies": {
+    "chardet": "5.2.0"
+  }
+}

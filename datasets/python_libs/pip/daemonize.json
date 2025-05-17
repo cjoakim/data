@@ -1,0 +1,6 @@
+{
+  "libname": "daemonize",
+  "libvers": "2.5.0",
+  "infile": "data/pip/daemonize.txt",
+  "dependencies": {}
+}

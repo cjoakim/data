@@ -1,0 +1,10 @@
+{
+  "libname": "getdaft",
+  "libvers": "0.4.13",
+  "infile": "data/pip/getdaft.txt",
+  "dependencies": {
+    "fsspec": "2025.3.2",
+    "pyarrow": "20.0.0",
+    "tqdm": "4.67.1"
+  }
+}

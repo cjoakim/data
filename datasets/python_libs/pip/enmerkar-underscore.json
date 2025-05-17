@@ -1,0 +1,12 @@
+{
+  "libname": "enmerkar-underscore",
+  "libvers": "2.4.0",
+  "infile": "data/pip/enmerkar-underscore.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "babel": "2.17.0",
+    "django": "5.2",
+    "enmerkar": "0.7.1",
+    "sqlparse": "0.5.3"
+  }
+}

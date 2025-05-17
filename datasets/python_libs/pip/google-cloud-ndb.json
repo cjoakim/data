@@ -1,0 +1,29 @@
+{
+  "libname": "google-cloud-ndb",
+  "libvers": "2.3.2",
+  "infile": "data/pip/google-cloud-ndb.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "google-api-core[grpc]": "2.25.0rc0",
+    "google-auth": "2.40.1",
+    "google-cloud-core": "2.4.3",
+    "google-cloud-datastore": "2.21.0",
+    "googleapis-common-protos": "1.70.0",
+    "grpcio": "1.71.0",
+    "grpcio-status": "1.71.0",
+    "idna": "3.10",
+    "proto-plus": "1.26.1",
+    "protobuf": "5.29.4",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pyjwt": "2.9.0",
+    "pymemcache": "4.0.0",
+    "pytz": "2025.2",
+    "redis": "5.3.0",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "urllib3": "2.4.0"
+  }
+}

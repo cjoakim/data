@@ -1,0 +1,6 @@
+{
+  "libname": "astpretty",
+  "libvers": "3.0.0",
+  "infile": "data/pip/astpretty.txt",
+  "dependencies": {}
+}

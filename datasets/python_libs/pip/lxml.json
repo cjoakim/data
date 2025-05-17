@@ -1,0 +1,6 @@
+{
+  "libname": "lxml",
+  "libvers": "5.4.0",
+  "infile": "data/pip/lxml.txt",
+  "dependencies": {}
+}

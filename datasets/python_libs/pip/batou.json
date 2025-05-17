@@ -1,0 +1,22 @@
+{
+  "libname": "batou",
+  "libvers": "2.5.4",
+  "infile": "data/pip/batou.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "configupdater": "3.2",
+    "execnet": "2.1.1",
+    "idna": "3.10",
+    "importlib-metadata": "8.7.0",
+    "importlib-resources": "6.5.2",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "py": "1.11.0",
+    "pyyaml": "6.0.2",
+    "remote-pdb": "2.1.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0",
+    "zipp": "3.21.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "pyproj",
+  "libvers": "3.7.1",
+  "infile": "data/pip/pyproj.txt",
+  "dependencies": {
+    "certifi": "2025.4.26"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "fastcore",
+  "libvers": "1.8.1",
+  "infile": "data/pip/fastcore.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

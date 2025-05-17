@@ -1,0 +1,22 @@
+{
+  "libname": "valohai-utils",
+  "libvers": "0.7.0",
+  "infile": "data/pip/valohai-utils.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "leval": "1.3.0",
+    "pyyaml": "6.0.2",
+    "referencing": "0.36.2",
+    "requests": "2.32.3",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "valohai-papi": "0.1.3",
+    "valohai-yaml": "0.46.0"
+  }
+}

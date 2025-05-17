@@ -1,0 +1,8 @@
+{
+  "libname": "tkcalendar",
+  "libvers": "1.6.1",
+  "infile": "data/pip/tkcalendar.txt",
+  "dependencies": {
+    "babel": "2.17.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "dissect-thumbcache",
+  "libvers": "1.10",
+  "infile": "data/pip/dissect-thumbcache.txt",
+  "dependencies": {
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

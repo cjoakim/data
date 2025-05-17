@@ -1,0 +1,6 @@
+{
+  "libname": "junitparser",
+  "libvers": "3.2.0",
+  "infile": "data/pip/junitparser.txt",
+  "dependencies": {}
+}

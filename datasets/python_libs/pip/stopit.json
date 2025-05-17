@@ -1,0 +1,6 @@
+{
+  "libname": "stopit",
+  "libvers": "1.1.2",
+  "infile": "data/pip/stopit.txt",
+  "dependencies": {}
+}

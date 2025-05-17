@@ -1,0 +1,6 @@
+{
+  "libname": "q",
+  "libvers": "2.7",
+  "infile": "data/pip/q.txt",
+  "dependencies": {}
+}

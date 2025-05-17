@@ -1,0 +1,10 @@
+{
+  "libname": "cassandra-driver",
+  "libvers": "3.29.2",
+  "infile": "data/pip/cassandra-driver.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "geomet": "0.2.1.post1",
+    "six": "1.17.0"
+  }
+}

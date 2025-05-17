@@ -1,0 +1,9 @@
+{
+  "libname": "black-junit",
+  "libvers": "0.2.5",
+  "infile": "data/pip/black-junit.txt",
+  "dependencies": {
+    "junit-xml": "1.9",
+    "six": "1.17.0"
+  }
+}

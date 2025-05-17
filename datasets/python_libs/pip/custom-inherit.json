@@ -1,0 +1,6 @@
+{
+  "libname": "custom-inherit",
+  "libvers": "2.4.1",
+  "infile": "data/pip/custom-inherit.txt",
+  "dependencies": {}
+}

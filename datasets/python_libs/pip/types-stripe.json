@@ -1,0 +1,6 @@
+{
+  "libname": "types-stripe",
+  "libvers": "3.5.2.20240106",
+  "infile": "data/pip/types-stripe.txt",
+  "dependencies": {}
+}

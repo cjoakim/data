@@ -1,0 +1,8 @@
+{
+  "libname": "more-executors",
+  "libvers": "2.11.4",
+  "infile": "data/pip/more-executors.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

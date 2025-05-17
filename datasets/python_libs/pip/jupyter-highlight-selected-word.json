@@ -1,0 +1,6 @@
+{
+  "libname": "jupyter-highlight-selected-word",
+  "libvers": "0.2.0",
+  "infile": "data/pip/jupyter-highlight-selected-word.txt",
+  "dependencies": {}
+}

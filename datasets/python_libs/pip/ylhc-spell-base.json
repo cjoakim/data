@@ -1,0 +1,6 @@
+{
+  "libname": "ylhc-spell-base",
+  "libvers": "17.0.0.56",
+  "infile": "data/pip/ylhc-spell-base.txt",
+  "dependencies": {}
+}

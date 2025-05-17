@@ -1,0 +1,23 @@
+{
+  "libname": "doc-warden",
+  "libvers": "0.7.2",
+  "infile": "data/pip/doc-warden.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "docutils": "0.21.2",
+    "idna": "3.10",
+    "jinja2": "3.1.6",
+    "markdown2": "2.5.3",
+    "markupsafe": "3.0.2",
+    "pathlib2": "2.3.7.post1",
+    "pygments": "2.19.1",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

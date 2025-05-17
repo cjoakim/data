@@ -1,0 +1,6 @@
+{
+  "libname": "types-waitress",
+  "libvers": "3.0.1.20241117",
+  "infile": "data/pip/types-waitress.txt",
+  "dependencies": {}
+}

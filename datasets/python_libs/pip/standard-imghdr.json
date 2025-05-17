@@ -1,0 +1,6 @@
+{
+  "libname": "standard-imghdr",
+  "libvers": "3.13.0",
+  "infile": "data/pip/standard-imghdr.txt",
+  "dependencies": {}
+}

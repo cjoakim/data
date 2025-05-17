@@ -1,0 +1,10 @@
+{
+  "libname": "django-tastypie",
+  "libvers": "0.15.1",
+  "infile": "data/pip/django-tastypie.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "python-mimeparse": "2.0.0",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pinject",
+  "libvers": "0.14.1",
+  "infile": "data/pip/pinject.txt",
+  "dependencies": {
+    "decorator": "5.2.1",
+    "six": "1.17.0"
+  }
+}

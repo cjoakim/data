@@ -1,0 +1,6 @@
+{
+  "libname": "python-stdnum",
+  "libvers": "2.0",
+  "infile": "data/pip/python-stdnum.txt",
+  "dependencies": {}
+}

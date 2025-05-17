@@ -1,0 +1,6 @@
+{
+  "libname": "rpds-py",
+  "libvers": "0.24.0",
+  "infile": "data/pip/rpds-py.txt",
+  "dependencies": {}
+}

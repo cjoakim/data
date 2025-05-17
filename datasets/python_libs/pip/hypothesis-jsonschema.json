@@ -1,0 +1,15 @@
+{
+  "libname": "hypothesis-jsonschema",
+  "libvers": "0.23.1",
+  "infile": "data/pip/hypothesis-jsonschema.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "hypothesis": "6.131.13",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "sortedcontainers": "2.4.0",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "red-black-tree-mod",
+  "libvers": "1.22",
+  "infile": "data/pip/red-black-tree-mod.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "dissect-xfs",
+  "libvers": "3.12",
+  "infile": "data/pip/dissect-xfs.txt",
+  "dependencies": {
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "cliquepicking",
+  "libvers": "0.3.0",
+  "infile": "data/pip/cliquepicking.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "tnefparse",
+  "libvers": "1.4.0",
+  "infile": "data/pip/tnefparse.txt",
+  "dependencies": {}
+}

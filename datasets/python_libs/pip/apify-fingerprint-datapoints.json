@@ -1,0 +1,6 @@
+{
+  "libname": "apify-fingerprint-datapoints",
+  "libvers": "0.0.2",
+  "infile": "data/pip/apify-fingerprint-datapoints.txt",
+  "dependencies": {}
+}

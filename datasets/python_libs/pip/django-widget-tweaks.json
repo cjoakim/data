@@ -1,0 +1,6 @@
+{
+  "libname": "django-widget-tweaks",
+  "libvers": "1.5.0",
+  "infile": "data/pip/django-widget-tweaks.txt",
+  "dependencies": {}
+}

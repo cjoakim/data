@@ -1,0 +1,12 @@
+{
+  "libname": "pyscaffold",
+  "libvers": "4.6",
+  "infile": "data/pip/pyscaffold.txt",
+  "dependencies": {
+    "configupdater": "3.2",
+    "packaging": "25.0",
+    "platformdirs": "4.3.7",
+    "setuptools-scm": "8.3.1",
+    "tomlkit": "0.13.2"
+  }
+}

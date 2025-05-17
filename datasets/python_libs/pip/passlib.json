@@ -1,0 +1,6 @@
+{
+  "libname": "passlib",
+  "libvers": "1.7.4",
+  "infile": "data/pip/passlib.txt",
+  "dependencies": {}
+}

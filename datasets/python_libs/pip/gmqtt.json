@@ -1,0 +1,6 @@
+{
+  "libname": "gmqtt",
+  "libvers": "0.7.0",
+  "infile": "data/pip/gmqtt.txt",
+  "dependencies": {}
+}

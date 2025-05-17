@@ -1,0 +1,9 @@
+{
+  "libname": "environs",
+  "libvers": "14.1.1",
+  "infile": "data/pip/environs.txt",
+  "dependencies": {
+    "marshmallow": "4.0.0",
+    "python-dotenv": "1.1.0"
+  }
+}

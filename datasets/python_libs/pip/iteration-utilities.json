@@ -1,0 +1,6 @@
+{
+  "libname": "iteration-utilities",
+  "libvers": "0.13.0",
+  "infile": "data/pip/iteration-utilities.txt",
+  "dependencies": {}
+}

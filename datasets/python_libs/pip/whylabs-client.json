@@ -1,0 +1,10 @@
+{
+  "libname": "whylabs-client",
+  "libvers": "0.6.16",
+  "infile": "data/pip/whylabs-client.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

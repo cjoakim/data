@@ -1,0 +1,6 @@
+{
+  "libname": "simple-di",
+  "libvers": "0.1.5",
+  "infile": "data/pip/simple-di.txt",
+  "dependencies": {}
+}

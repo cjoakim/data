@@ -1,0 +1,8 @@
+{
+  "libname": "openslide-python",
+  "libvers": "1.4.2",
+  "infile": "data/pip/openslide-python.txt",
+  "dependencies": {
+    "pillow": "11.2.1"
+  }
+}

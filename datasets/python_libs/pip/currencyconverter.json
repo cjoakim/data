@@ -1,0 +1,6 @@
+{
+  "libname": "currencyconverter",
+  "libvers": "0.18.5",
+  "infile": "data/pip/currencyconverter.txt",
+  "dependencies": {}
+}

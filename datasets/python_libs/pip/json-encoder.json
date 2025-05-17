@@ -1,0 +1,9 @@
+{
+  "libname": "json-encoder",
+  "libvers": "0.4.4",
+  "infile": "data/pip/json-encoder.txt",
+  "dependencies": {
+    "singledispatch": "4.1.1",
+    "six": "1.17.0"
+  }
+}

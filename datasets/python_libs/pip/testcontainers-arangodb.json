@@ -1,0 +1,21 @@
+{
+  "libname": "testcontainers-arangodb",
+  "libvers": "0.0.1rc1",
+  "infile": "data/pip/testcontainers-arangodb.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "docker": "7.1.0",
+    "idna": "3.10",
+    "importlib-metadata": "8.7.0",
+    "packaging": "25.0",
+    "pyjwt": "2.10.1",
+    "python-arango": "8.1.6",
+    "requests": "2.32.3",
+    "requests-toolbelt": "1.0.0",
+    "testcontainers-core": "0.0.1rc1",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2",
+    "zipp": "3.21.0"
+  }
+}

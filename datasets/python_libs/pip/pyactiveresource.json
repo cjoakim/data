@@ -1,0 +1,8 @@
+{
+  "libname": "pyactiveresource",
+  "libvers": "2.2.2",
+  "infile": "data/pip/pyactiveresource.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

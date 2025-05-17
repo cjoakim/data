@@ -1,0 +1,11 @@
+{
+  "libname": "types-flask",
+  "libvers": "1.1.6",
+  "infile": "data/pip/types-flask.txt",
+  "dependencies": {
+    "types-click": "7.1.8",
+    "types-jinja2": "2.11.9",
+    "types-markupsafe": "1.1.10",
+    "types-werkzeug": "1.0.9"
+  }
+}

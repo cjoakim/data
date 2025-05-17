@@ -1,0 +1,6 @@
+{
+  "libname": "waiter",
+  "libvers": "1.5",
+  "infile": "data/pip/waiter.txt",
+  "dependencies": {}
+}

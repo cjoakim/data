@@ -1,0 +1,10 @@
+{
+  "libname": "eigenpy",
+  "libvers": "3.10.3",
+  "infile": "data/pip/eigenpy.txt",
+  "dependencies": {
+    "cmeel": "0.57.3",
+    "cmeel-boost": "1.87.0.1",
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "python-forge",
+  "libvers": "18.6.0",
+  "infile": "data/pip/python-forge.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "lumigo-tracer",
+  "libvers": "1.1.248",
+  "infile": "data/pip/lumigo-tracer.txt",
+  "dependencies": {
+    "lumigo-core": "0.0.14"
+  }
+}

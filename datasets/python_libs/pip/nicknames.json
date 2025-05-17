@@ -1,0 +1,6 @@
+{
+  "libname": "nicknames",
+  "libvers": "0.1.11",
+  "infile": "data/pip/nicknames.txt",
+  "dependencies": {}
+}

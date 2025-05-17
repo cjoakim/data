@@ -1,0 +1,8 @@
+{
+  "libname": "types-flask-sqlalchemy",
+  "libvers": "2.5.9.4",
+  "infile": "data/pip/types-flask-sqlalchemy.txt",
+  "dependencies": {
+    "types-sqlalchemy": "1.4.53.38"
+  }
+}

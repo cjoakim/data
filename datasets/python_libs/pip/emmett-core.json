@@ -1,0 +1,6 @@
+{
+  "libname": "emmett-core",
+  "libvers": "1.3.1",
+  "infile": "data/pip/emmett-core.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "bloomfilter-py",
+  "libvers": "1.1.0",
+  "infile": "data/pip/bloomfilter-py.txt",
+  "dependencies": {
+    "bitarray": "2.9.2",
+    "mmh3": "4.1.0"
+  }
+}

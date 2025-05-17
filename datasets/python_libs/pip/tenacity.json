@@ -1,0 +1,6 @@
+{
+  "libname": "tenacity",
+  "libvers": "9.1.2",
+  "infile": "data/pip/tenacity.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pytictoc",
+  "libvers": "1.5.3",
+  "infile": "data/pip/pytictoc.txt",
+  "dependencies": {}
+}

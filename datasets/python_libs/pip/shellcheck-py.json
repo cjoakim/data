@@ -1,0 +1,6 @@
+{
+  "libname": "shellcheck-py",
+  "libvers": "0.10.0.1",
+  "infile": "data/pip/shellcheck-py.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pyglet",
+  "libvers": "2.1.6",
+  "infile": "data/pip/pyglet.txt",
+  "dependencies": {}
+}

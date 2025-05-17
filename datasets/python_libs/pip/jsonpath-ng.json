@@ -1,0 +1,8 @@
+{
+  "libname": "jsonpath-ng",
+  "libvers": "1.7.0",
+  "infile": "data/pip/jsonpath-ng.txt",
+  "dependencies": {
+    "ply": "3.11"
+  }
+}

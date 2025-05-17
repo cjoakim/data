@@ -1,0 +1,6 @@
+{
+  "libname": "pygments",
+  "libvers": "2.19.1",
+  "infile": "data/pip/pygments.txt",
+  "dependencies": {}
+}

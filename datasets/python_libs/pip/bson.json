@@ -1,0 +1,9 @@
+{
+  "libname": "bson",
+  "libvers": "0.5.10",
+  "infile": "data/pip/bson.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

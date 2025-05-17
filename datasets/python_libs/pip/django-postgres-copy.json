@@ -1,0 +1,6 @@
+{
+  "libname": "django-postgres-copy",
+  "libvers": "2.7.6",
+  "infile": "data/pip/django-postgres-copy.txt",
+  "dependencies": {}
+}

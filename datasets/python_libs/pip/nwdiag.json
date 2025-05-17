@@ -1,0 +1,11 @@
+{
+  "libname": "nwdiag",
+  "libvers": "3.0.0",
+  "infile": "data/pip/nwdiag.txt",
+  "dependencies": {
+    "blockdiag": "3.0.0",
+    "funcparserlib": "2.0.0a0",
+    "pillow": "11.2.1",
+    "webcolors": "24.11.1"
+  }
+}

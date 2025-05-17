@@ -1,0 +1,12 @@
+{
+  "libname": "pytest-nunit",
+  "libvers": "1.0.7",
+  "infile": "data/pip/pytest-nunit.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5"
+  }
+}

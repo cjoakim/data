@@ -1,0 +1,6 @@
+{
+  "libname": "pyinstrument",
+  "libvers": "5.0.1",
+  "infile": "data/pip/pyinstrument.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,18 @@
+{
+  "libname": "simplesqlite",
+  "libvers": "1.5.4",
+  "infile": "data/pip/simplesqlite.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "dataproperty": "1.1.0",
+    "mbstrdecoder": "1.1.4",
+    "packaging": "25.0",
+    "pathvalidate": "3.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "sqliteschema": "2.0.1",
+    "tabledata": "1.3.4",
+    "typepy[datetime]": "1.3.4"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "types-requests-oauthlib",
+  "libvers": "2.0.0.20250306",
+  "infile": "data/pip/types-requests-oauthlib.txt",
+  "dependencies": {
+    "types-oauthlib": "3.2.0.20250408",
+    "types-requests": "2.32.0.20250328",
+    "urllib3": "2.4.0"
+  }
+}

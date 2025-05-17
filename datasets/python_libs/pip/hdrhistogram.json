@@ -1,0 +1,8 @@
+{
+  "libname": "hdrhistogram",
+  "libvers": "0.10.3",
+  "infile": "data/pip/hdrhistogram.txt",
+  "dependencies": {
+    "pbr": "6.1.1"
+  }
+}

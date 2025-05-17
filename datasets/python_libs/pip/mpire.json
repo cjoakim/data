@@ -1,0 +1,9 @@
+{
+  "libname": "mpire",
+  "libvers": "2.10.2",
+  "infile": "data/pip/mpire.txt",
+  "dependencies": {
+    "pygments": "2.19.1",
+    "tqdm": "4.67.1"
+  }
+}

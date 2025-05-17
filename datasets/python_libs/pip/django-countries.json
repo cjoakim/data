@@ -1,0 +1,9 @@
+{
+  "libname": "django-countries",
+  "libvers": "7.6.1",
+  "infile": "data/pip/django-countries.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "typing-extensions": "4.13.2"
+  }
+}

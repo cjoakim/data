@@ -1,0 +1,14 @@
+{
+  "libname": "vulners",
+  "libvers": "2.3.6",
+  "infile": "data/pip/vulners.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

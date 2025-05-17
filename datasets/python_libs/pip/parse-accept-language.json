@@ -1,0 +1,6 @@
+{
+  "libname": "parse-accept-language",
+  "libvers": "0.1.2",
+  "infile": "data/pip/parse-accept-language.txt",
+  "dependencies": {}
+}

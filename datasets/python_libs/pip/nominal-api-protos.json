@@ -1,0 +1,8 @@
+{
+  "libname": "nominal-api-protos",
+  "libvers": "0.669.0",
+  "infile": "data/pip/nominal-api-protos.txt",
+  "dependencies": {
+    "protobuf": "6.30.2"
+  }
+}

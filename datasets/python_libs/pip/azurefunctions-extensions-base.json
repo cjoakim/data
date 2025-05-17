@@ -1,0 +1,6 @@
+{
+  "libname": "azurefunctions-extensions-base",
+  "libvers": "1.0.0b2",
+  "infile": "data/pip/azurefunctions-extensions-base.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "blokus-engine",
+  "libvers": "0.3.6",
+  "infile": "data/pip/blokus-engine.txt",
+  "dependencies": {}
+}

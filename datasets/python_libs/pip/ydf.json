@@ -1,0 +1,10 @@
+{
+  "libname": "ydf",
+  "libvers": "0.11.0",
+  "infile": "data/pip/ydf.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "numpy": "2.2.5",
+    "protobuf": "5.29.4"
+  }
+}

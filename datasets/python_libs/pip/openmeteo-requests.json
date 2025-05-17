@@ -1,0 +1,14 @@
+{
+  "libname": "openmeteo-requests",
+  "libvers": "1.4.0",
+  "infile": "data/pip/openmeteo-requests.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "flatbuffers": "25.2.10",
+    "idna": "3.10",
+    "openmeteo-sdk": "1.20.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

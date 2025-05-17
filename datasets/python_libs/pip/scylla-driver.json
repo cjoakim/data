@@ -1,0 +1,10 @@
+{
+  "libname": "scylla-driver",
+  "libvers": "3.29.3",
+  "infile": "data/pip/scylla-driver.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "geomet": "1.1.0",
+    "pyyaml": "6.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "datadog-checks-base",
+  "libvers": "37.10.1",
+  "infile": "data/pip/datadog-checks-base.txt",
+  "dependencies": {}
+}

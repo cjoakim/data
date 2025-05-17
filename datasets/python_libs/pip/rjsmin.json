@@ -1,0 +1,6 @@
+{
+  "libname": "rjsmin",
+  "libvers": "1.2.4",
+  "infile": "data/pip/rjsmin.txt",
+  "dependencies": {}
+}

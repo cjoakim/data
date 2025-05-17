@@ -1,0 +1,8 @@
+{
+  "libname": "conditional-cache",
+  "libvers": "1.2",
+  "infile": "data/pip/conditional-cache.txt",
+  "dependencies": {
+    "circular-dict": "1.9"
+  }
+}

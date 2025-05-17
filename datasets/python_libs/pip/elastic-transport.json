@@ -1,0 +1,9 @@
+{
+  "libname": "elastic-transport",
+  "libvers": "8.17.1",
+  "infile": "data/pip/elastic-transport.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "urllib3": "2.4.0"
+  }
+}

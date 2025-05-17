@@ -1,0 +1,11 @@
+{
+  "libname": "pyqtwebengine",
+  "libvers": "5.15.7",
+  "infile": "data/pip/pyqtwebengine.txt",
+  "dependencies": {
+    "pyqt5": "5.15.11",
+    "pyqt5-qt5": "5.15.16",
+    "pyqt5-sip": "12.17.0",
+    "pyqtwebengine-qt5": "5.15.16"
+  }
+}

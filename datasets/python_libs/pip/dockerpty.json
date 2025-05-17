@@ -1,0 +1,8 @@
+{
+  "libname": "dockerpty",
+  "libvers": "0.4.1",
+  "infile": "data/pip/dockerpty.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

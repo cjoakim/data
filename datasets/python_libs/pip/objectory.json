@@ -1,0 +1,8 @@
+{
+  "libname": "objectory",
+  "libvers": "0.2.0",
+  "infile": "data/pip/objectory.txt",
+  "dependencies": {
+    "tornado": "6.4.2"
+  }
+}

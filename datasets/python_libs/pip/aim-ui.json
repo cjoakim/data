@@ -1,0 +1,6 @@
+{
+  "libname": "aim-ui",
+  "libvers": "3.28.0",
+  "infile": "data/pip/aim-ui.txt",
+  "dependencies": {}
+}

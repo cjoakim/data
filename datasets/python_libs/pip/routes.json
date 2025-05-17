@@ -1,0 +1,9 @@
+{
+  "libname": "routes",
+  "libvers": "2.5.1",
+  "infile": "data/pip/routes.txt",
+  "dependencies": {
+    "repoze-lru": "0.7",
+    "six": "1.17.0"
+  }
+}

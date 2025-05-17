@@ -1,0 +1,6 @@
+{
+  "libname": "types-boto3-rds",
+  "libvers": "1.38.2",
+  "infile": "data/pip/types-boto3-rds.txt",
+  "dependencies": {}
+}

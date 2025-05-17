@@ -1,0 +1,6 @@
+{
+  "libname": "tinyunicodeblock",
+  "libvers": "1.3",
+  "infile": "data/pip/tinyunicodeblock.txt",
+  "dependencies": {}
+}

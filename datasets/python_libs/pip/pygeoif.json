@@ -1,0 +1,8 @@
+{
+  "libname": "pygeoif",
+  "libvers": "1.5.1",
+  "infile": "data/pip/pygeoif.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

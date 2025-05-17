@@ -1,0 +1,19 @@
+{
+  "libname": "devcycle-python-server-sdk",
+  "libvers": "3.11.1",
+  "infile": "data/pip/devcycle-python-server-sdk.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "importlib-resources": "6.5.2",
+    "launchdarkly-eventsource": "1.2.2",
+    "openfeature-sdk": "0.8.1",
+    "protobuf": "6.30.2",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "responses": "0.25.7",
+    "urllib3": "2.4.0",
+    "wasmtime": "30.0.0"
+  }
+}

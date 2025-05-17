@@ -1,0 +1,23 @@
+{
+  "libname": "python-tools-scripts",
+  "libvers": "0.20.5",
+  "infile": "data/pip/python-tools-scripts.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pygments": "2.19.1",
+    "requests": "2.32.3",
+    "rich": "14.0.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "urllib3": "2.4.0"
+  }
+}

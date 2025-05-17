@@ -1,0 +1,22 @@
+{
+  "libname": "flagsmith",
+  "libvers": "3.9.1",
+  "infile": "data/pip/flagsmith.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "flagsmith-flag-engine": "5.3.0",
+    "idna": "3.10",
+    "pydantic": "2.11.4",
+    "pydantic-collections": "0.6.0",
+    "pydantic-core": "2.33.2",
+    "requests": "2.32.3",
+    "requests-futures": "1.0.2",
+    "semver": "3.0.4",
+    "sseclient-py": "1.8.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "urllib3": "2.4.0"
+  }
+}

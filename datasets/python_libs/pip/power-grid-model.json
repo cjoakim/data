@@ -1,0 +1,8 @@
+{
+  "libname": "power-grid-model",
+  "libvers": "1.10.107",
+  "infile": "data/pip/power-grid-model.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

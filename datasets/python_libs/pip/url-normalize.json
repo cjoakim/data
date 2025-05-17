@@ -1,0 +1,8 @@
+{
+  "libname": "url-normalize",
+  "libvers": "2.2.1",
+  "infile": "data/pip/url-normalize.txt",
+  "dependencies": {
+    "idna": "3.10"
+  }
+}

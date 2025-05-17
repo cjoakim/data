@@ -1,0 +1,6 @@
+{
+  "libname": "pyreqwest-impersonate",
+  "libvers": "0.5.3",
+  "infile": "data/pip/pyreqwest-impersonate.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "ninja",
+  "libvers": "1.11.1.4",
+  "infile": "data/pip/ninja.txt",
+  "dependencies": {}
+}

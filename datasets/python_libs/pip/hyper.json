@@ -1,0 +1,10 @@
+{
+  "libname": "hyper",
+  "libvers": "0.7.0",
+  "infile": "data/pip/hyper.txt",
+  "dependencies": {
+    "h2": "2.6.2",
+    "hpack": "3.0.0",
+    "hyperframe": "3.2.0"
+  }
+}

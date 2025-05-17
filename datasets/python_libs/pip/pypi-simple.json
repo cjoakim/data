@@ -1,0 +1,22 @@
+{
+  "libname": "pypi-simple",
+  "libvers": "1.6.1",
+  "infile": "data/pip/pypi-simple.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "attrs": "25.3.0",
+    "beautifulsoup4": "4.13.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "mailbits": "0.2.2",
+    "packaging": "25.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "requests": "2.32.3",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "libname": "ariadne",
+  "libvers": "0.26.2",
+  "infile": "data/pip/ariadne.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "graphql-core": "3.2.5",
+    "idna": "3.10",
+    "sniffio": "1.3.1",
+    "starlette": "0.46.2",
+    "typing-extensions": "4.13.2"
+  }
+}

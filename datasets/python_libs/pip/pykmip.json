@@ -1,0 +1,19 @@
+{
+  "libname": "pykmip",
+  "libvers": "0.10.0",
+  "infile": "data/pip/pykmip.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "enum-compat": "0.0.3",
+    "idna": "3.10",
+    "pycparser": "2.22",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "yapf",
+  "libvers": "0.43.0",
+  "infile": "data/pip/yapf.txt",
+  "dependencies": {
+    "platformdirs": "4.3.7"
+  }
+}

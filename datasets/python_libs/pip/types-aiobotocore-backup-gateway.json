@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-backup-gateway",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-backup-gateway.txt",
+  "dependencies": {}
+}

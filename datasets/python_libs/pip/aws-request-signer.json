@@ -1,0 +1,6 @@
+{
+  "libname": "aws-request-signer",
+  "libvers": "1.2.0",
+  "infile": "data/pip/aws-request-signer.txt",
+  "dependencies": {}
+}

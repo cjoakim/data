@@ -1,0 +1,260 @@
+{"Name":"Aruba","IsoCode":"AW","DafifCode":"AA"}
+{"Name":"Antigua and Barbuda","IsoCode":"AG","DafifCode":"AC"}
+{"Name":"United Arab Emirates","IsoCode":"AE","DafifCode":"AE"}
+{"Name":"Afghanistan","IsoCode":"AF","DafifCode":"AF"}
+{"Name":"Algeria","IsoCode":"DZ","DafifCode":"AG"}
+{"Name":"Azerbaijan","IsoCode":"AZ","DafifCode":"AJ"}
+{"Name":"Albania","IsoCode":"AL","DafifCode":"AL"}
+{"Name":"Armenia","IsoCode":"AM","DafifCode":"AM"}
+{"Name":"Angola","IsoCode":"AO","DafifCode":"AO"}
+{"Name":"American Samoa","IsoCode":"AS","DafifCode":"AQ"}
+{"Name":"Argentina","IsoCode":"AR","DafifCode":"AR"}
+{"Name":"Australia","IsoCode":"AU","DafifCode":"AS"}
+{"Name":"Ashmore and Cartier Islands","IsoCode":"\\N","DafifCode":"AT"}
+{"Name":"Austria","IsoCode":"AT","DafifCode":"AU"}
+{"Name":"Anguilla","IsoCode":"AI","DafifCode":"AV"}
+{"Name":"Antarctica","IsoCode":"AQ","DafifCode":"AY"}
+{"Name":"Bahrain","IsoCode":"BH","DafifCode":"BA"}
+{"Name":"Barbados","IsoCode":"BB","DafifCode":"BB"}
+{"Name":"Botswana","IsoCode":"BW","DafifCode":"BC"}
+{"Name":"Bermuda","IsoCode":"BM","DafifCode":"BD"}
+{"Name":"Belgium","IsoCode":"BE","DafifCode":"BE"}
+{"Name":"Bahamas","IsoCode":"BS","DafifCode":"BF"}
+{"Name":"Bangladesh","IsoCode":"BD","DafifCode":"BG"}
+{"Name":"Belize","IsoCode":"BZ","DafifCode":"BH"}
+{"Name":"Bosnia and Herzegovina","IsoCode":"BA","DafifCode":"BK"}
+{"Name":"Bolivia","IsoCode":"BO","DafifCode":"BL"}
+{"Name":"Myanmar","IsoCode":"MM","DafifCode":"BM"}
+{"Name":"Benin","IsoCode":"BJ","DafifCode":"BN"}
+{"Name":"Belarus","IsoCode":"BY","DafifCode":"BO"}
+{"Name":"Solomon Islands","IsoCode":"SB","DafifCode":"BP"}
+{"Name":"Navassa Island","IsoCode":"\\N","DafifCode":"BQ"}
+{"Name":"Brazil","IsoCode":"BR","DafifCode":"BR"}
+{"Name":"India","IsoCode":"IN","DafifCode":"BS"}
+{"Name":"Bhutan","IsoCode":"BT","DafifCode":"BT"}
+{"Name":"Bulgaria","IsoCode":"BG","DafifCode":"BU"}
+{"Name":"Bouvet Island","IsoCode":"BV","DafifCode":"BV"}
+{"Name":"Brunei Darussalam","IsoCode":"BN","DafifCode":"BX"}
+{"Name":"Burundi","IsoCode":"BI","DafifCode":"BY"}
+{"Name":"Canada","IsoCode":"CA","DafifCode":"CA"}
+{"Name":"Cambodia","IsoCode":"KH","DafifCode":"CB"}
+{"Name":"Chad","IsoCode":"TD","DafifCode":"CD"}
+{"Name":"Sri Lanka","IsoCode":"LK","DafifCode":"CE"}
+{"Name":"DR Congo","IsoCode":"CD","DafifCode":"CF"}
+{"Name":"Congo Republic","IsoCode":"CG","DafifCode":"CG"}
+{"Name":"China","IsoCode":"CN","DafifCode":"CH"}
+{"Name":"Chile","IsoCode":"CL","DafifCode":"CI"}
+{"Name":"Cayman Islands","IsoCode":"KY","DafifCode":"CJ"}
+{"Name":"Cocos (Keeling) Islands","IsoCode":"CC","DafifCode":"CK"}
+{"Name":"Cameroon","IsoCode":"CM","DafifCode":"CM"}
+{"Name":"Comoros","IsoCode":"KM","DafifCode":"CN"}
+{"Name":"Colombia","IsoCode":"CO","DafifCode":"CO"}
+{"Name":"Northern Mariana Islands","IsoCode":"MP","DafifCode":"CQ"}
+{"Name":"Coral Sea Islands","IsoCode":"\\N","DafifCode":"CR"}
+{"Name":"Costa Rica","IsoCode":"CR","DafifCode":"CS"}
+{"Name":"Central African Republic","IsoCode":"CF","DafifCode":"CT"}
+{"Name":"Cuba","IsoCode":"CU","DafifCode":"CU"}
+{"Name":"Cabo Verde","IsoCode":"CV","DafifCode":"CV"}
+{"Name":"Cook Islands","IsoCode":"CK","DafifCode":"CW"}
+{"Name":"Cyprus","IsoCode":"CY","DafifCode":"CY"}
+{"Name":"Denmark","IsoCode":"DK","DafifCode":"DA"}
+{"Name":"Djibouti","IsoCode":"DJ","DafifCode":"DJ"}
+{"Name":"Dominica","IsoCode":"DM","DafifCode":"DO"}
+{"Name":"Jarvis Island","IsoCode":"\\N","DafifCode":"DQ"}
+{"Name":"Dominican Republic","IsoCode":"DO","DafifCode":"DR"}
+{"Name":"Ecuador","IsoCode":"EC","DafifCode":"EC"}
+{"Name":"Egypt","IsoCode":"EG","DafifCode":"EG"}
+{"Name":"Ireland","IsoCode":"IE","DafifCode":"EI"}
+{"Name":"Equatorial Guinea","IsoCode":"GQ","DafifCode":"EK"}
+{"Name":"Estonia","IsoCode":"EE","DafifCode":"EN"}
+{"Name":"Eritrea","IsoCode":"ER","DafifCode":"ER"}
+{"Name":"El Salvador","IsoCode":"SV","DafifCode":"ES"}
+{"Name":"Ethiopia","IsoCode":"ET","DafifCode":"ET"}
+{"Name":"Europa Island","IsoCode":"\\N","DafifCode":"EU"}
+{"Name":"Czech Republic","IsoCode":"CZ","DafifCode":"EZ"}
+{"Name":"French Guiana","IsoCode":"GF","DafifCode":"FG"}
+{"Name":"Finland","IsoCode":"FI","DafifCode":"FI"}
+{"Name":"Fiji","IsoCode":"FJ","DafifCode":"FJ"}
+{"Name":"Falkland Islands","IsoCode":"FK","DafifCode":"FK"}
+{"Name":"Micronesia, Fed. Sts.","IsoCode":"FM","DafifCode":"FM"}
+{"Name":"Faeroe Islands","IsoCode":"FO","DafifCode":"FO"}
+{"Name":"French Polynesia","IsoCode":"PF","DafifCode":"FP"}
+{"Name":"Baker Island","IsoCode":"\\N","DafifCode":"FQ"}
+{"Name":"France","IsoCode":"FR","DafifCode":"FR"}
+{"Name":"French Southern Territories","IsoCode":"TF","DafifCode":"FS"}
+{"Name":"Gambia","IsoCode":"GM","DafifCode":"GA"}
+{"Name":"Gabon","IsoCode":"GA","DafifCode":"GB"}
+{"Name":"Georgia","IsoCode":"GE","DafifCode":"GG"}
+{"Name":"Ghana","IsoCode":"GH","DafifCode":"GH"}
+{"Name":"Gibraltar","IsoCode":"GI","DafifCode":"GI"}
+{"Name":"Grenada","IsoCode":"GD","DafifCode":"GJ"}
+{"Name":"Guernsey","IsoCode":"GG","DafifCode":"GK"}
+{"Name":"Greenland","IsoCode":"GL","DafifCode":"GL"}
+{"Name":"Germany","IsoCode":"DE","DafifCode":"GM"}
+{"Name":"Glorioso Islands","IsoCode":"\\N","DafifCode":"GO"}
+{"Name":"Guadeloupe","IsoCode":"GP","DafifCode":"GP"}
+{"Name":"Guam","IsoCode":"GU","DafifCode":"GQ"}
+{"Name":"Greece","IsoCode":"GR","DafifCode":"GR"}
+{"Name":"Guatemala","IsoCode":"GT","DafifCode":"GT"}
+{"Name":"Guinea","IsoCode":"GN","DafifCode":"GV"}
+{"Name":"Guyana","IsoCode":"GY","DafifCode":"GY"}
+{"Name":"Palestine","IsoCode":"PS","DafifCode":"GZ"}
+{"Name":"Haiti","IsoCode":"HT","DafifCode":"HA"}
+{"Name":"Hong Kong","IsoCode":"HK","DafifCode":"HK"}
+{"Name":"Heard and McDonald Islands","IsoCode":"HM","DafifCode":"HM"}
+{"Name":"Honduras","IsoCode":"HN","DafifCode":"HO"}
+{"Name":"Howland Island","IsoCode":"\\N","DafifCode":"HQ"}
+{"Name":"Croatia","IsoCode":"HR","DafifCode":"HR"}
+{"Name":"Hungary","IsoCode":"HU","DafifCode":"HU"}
+{"Name":"Iceland","IsoCode":"IS","DafifCode":"IC"}
+{"Name":"Indonesia","IsoCode":"ID","DafifCode":"ID"}
+{"Name":"Isle of Man","IsoCode":"IM","DafifCode":"IM"}
+{"Name":"India","IsoCode":"IN","DafifCode":"IN"}
+{"Name":"British Indian Ocean Territory","IsoCode":"IO","DafifCode":"IO"}
+{"Name":"Clipperton Island","IsoCode":"\\N","DafifCode":"IP"}
+{"Name":"Iran","IsoCode":"IR","DafifCode":"IR"}
+{"Name":"Israel","IsoCode":"IL","DafifCode":"IS"}
+{"Name":"Italy","IsoCode":"IT","DafifCode":"IT"}
+{"Name":"Cote d'Ivoire","IsoCode":"CI","DafifCode":"IV"}
+{"Name":"Iraq","IsoCode":"IQ","DafifCode":"IZ"}
+{"Name":"Japan","IsoCode":"JP","DafifCode":"JA"}
+{"Name":"Jersey","IsoCode":"JE","DafifCode":"JE"}
+{"Name":"Jamaica","IsoCode":"JM","DafifCode":"JM"}
+{"Name":"Jan Mayen","IsoCode":"\\N","DafifCode":"JN"}
+{"Name":"Jordan","IsoCode":"JO","DafifCode":"JO"}
+{"Name":"Johnston Atoll","IsoCode":"\\N","DafifCode":"JQ"}
+{"Name":"Juan de Nova Island","IsoCode":"\\N","DafifCode":"JU"}
+{"Name":"Kenya","IsoCode":"KE","DafifCode":"KE"}
+{"Name":"Kyrgyz Republic","IsoCode":"KG","DafifCode":"KG"}
+{"Name":"North Korea","IsoCode":"KP","DafifCode":"KN"}
+{"Name":"Kingman Reef","IsoCode":"\\N","DafifCode":"KQ"}
+{"Name":"Kiribati","IsoCode":"KI","DafifCode":"KR"}
+{"Name":"South Korea","IsoCode":"KR","DafifCode":"KS"}
+{"Name":"Christmas Island","IsoCode":"CX","DafifCode":"KT"}
+{"Name":"Kuwait","IsoCode":"KW","DafifCode":"KU"}
+{"Name":"Kazakhstan","IsoCode":"KZ","DafifCode":"KZ"}
+{"Name":"Laos","IsoCode":"LA","DafifCode":"LA"}
+{"Name":"Lebanon","IsoCode":"LB","DafifCode":"LE"}
+{"Name":"Latvia","IsoCode":"LV","DafifCode":"LG"}
+{"Name":"Lithuania","IsoCode":"LT","DafifCode":"LH"}
+{"Name":"Liberia","IsoCode":"LR","DafifCode":"LI"}
+{"Name":"Slovakia","IsoCode":"SK","DafifCode":"LO"}
+{"Name":"Palmyra Atoll","IsoCode":"\\N","DafifCode":"LQ"}
+{"Name":"Lesotho","IsoCode":"LS","DafifCode":"LT"}
+{"Name":"Luxembourg","IsoCode":"LU","DafifCode":"LU"}
+{"Name":"Libya","IsoCode":"LY","DafifCode":"LY"}
+{"Name":"Madagascar","IsoCode":"MG","DafifCode":"MA"}
+{"Name":"Martinique","IsoCode":"MQ","DafifCode":"MB"}
+{"Name":"Macao","IsoCode":"MO","DafifCode":"MC"}
+{"Name":"Moldova","IsoCode":"MD","DafifCode":"MD"}
+{"Name":"Mayotte","IsoCode":"YT","DafifCode":"MF"}
+{"Name":"Mongolia","IsoCode":"MN","DafifCode":"MG"}
+{"Name":"Montserrat","IsoCode":"MS","DafifCode":"MH"}
+{"Name":"Malawi","IsoCode":"MW","DafifCode":"MI"}
+{"Name":"Montenegro","IsoCode":"ME","DafifCode":"MJ"}
+{"Name":"Macedonia","IsoCode":"MK","DafifCode":"MK"}
+{"Name":"Mali","IsoCode":"ML","DafifCode":"ML"}
+{"Name":"Monaco","IsoCode":"MC","DafifCode":"MN"}
+{"Name":"Morocco","IsoCode":"MA","DafifCode":"MO"}
+{"Name":"Mauritius","IsoCode":"MU","DafifCode":"MP"}
+{"Name":"Midway Islands","IsoCode":"\\N","DafifCode":"MQ"}
+{"Name":"Mauritania","IsoCode":"MR","DafifCode":"MR"}
+{"Name":"Malta","IsoCode":"MT","DafifCode":"MT"}
+{"Name":"Oman","IsoCode":"OM","DafifCode":"MU"}
+{"Name":"Maldives","IsoCode":"MV","DafifCode":"MV"}
+{"Name":"Mexico","IsoCode":"MX","DafifCode":"MX"}
+{"Name":"Malaysia","IsoCode":"MY","DafifCode":"MY"}
+{"Name":"Mozambique","IsoCode":"MZ","DafifCode":"MZ"}
+{"Name":"New Caledonia","IsoCode":"NC","DafifCode":"NC"}
+{"Name":"Niue","IsoCode":"NU","DafifCode":"NE"}
+{"Name":"Norfolk Island","IsoCode":"NF","DafifCode":"NF"}
+{"Name":"Niger","IsoCode":"NE","DafifCode":"NG"}
+{"Name":"Vanuatu","IsoCode":"VU","DafifCode":"NH"}
+{"Name":"Nigeria","IsoCode":"NG","DafifCode":"NI"}
+{"Name":"Netherlands","IsoCode":"NL","DafifCode":"NL"}
+{"Name":"Norway","IsoCode":"NO","DafifCode":"NO"}
+{"Name":"Nepal","IsoCode":"NP","DafifCode":"NP"}
+{"Name":"Nauru","IsoCode":"NR","DafifCode":"NR"}
+{"Name":"Suriname","IsoCode":"SR","DafifCode":"NS"}
+{"Name":"Netherlands Antilles","IsoCode":"AN","DafifCode":"NT"}
+{"Name":"Nicaragua","IsoCode":"NI","DafifCode":"NU"}
+{"Name":"New Zealand","IsoCode":"NZ","DafifCode":"NZ"}
+{"Name":"Paraguay","IsoCode":"PY","DafifCode":"PA"}
+{"Name":"Pitcairn","IsoCode":"PN","DafifCode":"PC"}
+{"Name":"Peru","IsoCode":"PE","DafifCode":"PE"}
+{"Name":"Paracel Islands","IsoCode":"\\N","DafifCode":"PF"}
+{"Name":"Spratly Islands","IsoCode":"\\N","DafifCode":"PG"}
+{"Name":"Pakistan","IsoCode":"PK","DafifCode":"PK"}
+{"Name":"Poland","IsoCode":"PL","DafifCode":"PL"}
+{"Name":"Panama","IsoCode":"PA","DafifCode":"PM"}
+{"Name":"Portugal","IsoCode":"PT","DafifCode":"PO"}
+{"Name":"Papua New Guinea","IsoCode":"PG","DafifCode":"PP"}
+{"Name":"Palau","IsoCode":"PW","DafifCode":"PS"}
+{"Name":"Guinea-Bissau","IsoCode":"GW","DafifCode":"PU"}
+{"Name":"Qatar","IsoCode":"QA","DafifCode":"QA"}
+{"Name":"Serbia","IsoCode":"RS","DafifCode":"RB"}
+{"Name":"Reunion","IsoCode":"RE","DafifCode":"RE"}
+{"Name":"Marshall Islands","IsoCode":"MH","DafifCode":"RM"}
+{"Name":"Romania","IsoCode":"RO","DafifCode":"RO"}
+{"Name":"Philippines","IsoCode":"PH","DafifCode":"RP"}
+{"Name":"Puerto Rico","IsoCode":"PR","DafifCode":"RQ"}
+{"Name":"Russia","IsoCode":"RU","DafifCode":"RS"}
+{"Name":"Rwanda","IsoCode":"RW","DafifCode":"RW"}
+{"Name":"Saudi Arabia","IsoCode":"SA","DafifCode":"SA"}
+{"Name":"St. Pierre and Miquelon","IsoCode":"PM","DafifCode":"SB"}
+{"Name":"St. Kitts and Nevis","IsoCode":"KN","DafifCode":"SC"}
+{"Name":"Seychelles","IsoCode":"SC","DafifCode":"SE"}
+{"Name":"South Africa","IsoCode":"ZA","DafifCode":"SF"}
+{"Name":"Senegal","IsoCode":"SN","DafifCode":"SG"}
+{"Name":"St. Helena","IsoCode":"SH","DafifCode":"SH"}
+{"Name":"Slovenia","IsoCode":"SI","DafifCode":"SI"}
+{"Name":"Sierra Leone","IsoCode":"SL","DafifCode":"SL"}
+{"Name":"Singapore","IsoCode":"SG","DafifCode":"SN"}
+{"Name":"Somalia","IsoCode":"SO","DafifCode":"SO"}
+{"Name":"Spain","IsoCode":"ES","DafifCode":"SP"}
+{"Name":"South Sudan","IsoCode":"SS","DafifCode":"SS"}
+{"Name":"St. Lucia","IsoCode":"LC","DafifCode":"ST"}
+{"Name":"Sudan","IsoCode":"SD","DafifCode":"SU"}
+{"Name":"Svalbard and Jan Mayen Islands","IsoCode":"SJ","DafifCode":"SV"}
+{"Name":"Sweden","IsoCode":"SE","DafifCode":"SW"}
+{"Name":"South Georgia and South Sandwich Is.","IsoCode":"GS","DafifCode":"SX"}
+{"Name":"Syria","IsoCode":"SY","DafifCode":"SY"}
+{"Name":"Switzerland","IsoCode":"CH","DafifCode":"SZ"}
+{"Name":"Trinidad and Tobago","IsoCode":"TT","DafifCode":"TD"}
+{"Name":"Tromelin Island","IsoCode":"\\N","DafifCode":"TE"}
+{"Name":"Thailand","IsoCode":"TH","DafifCode":"TH"}
+{"Name":"Tajikistan","IsoCode":"TJ","DafifCode":"TI"}
+{"Name":"Turks and Caicos Islands","IsoCode":"TC","DafifCode":"TK"}
+{"Name":"Tokelau","IsoCode":"TK","DafifCode":"TL"}
+{"Name":"Tonga","IsoCode":"TO","DafifCode":"TN"}
+{"Name":"Togo","IsoCode":"TG","DafifCode":"TO"}
+{"Name":"Sao Tome and Principe","IsoCode":"ST","DafifCode":"TP"}
+{"Name":"Tunisia","IsoCode":"TN","DafifCode":"TS"}
+{"Name":"Timor-Leste","IsoCode":"TL","DafifCode":"TT"}
+{"Name":"Turkey","IsoCode":"TR","DafifCode":"TU"}
+{"Name":"Tuvalu","IsoCode":"TV","DafifCode":"TV"}
+{"Name":"Taiwan","IsoCode":"TW","DafifCode":"TW"}
+{"Name":"Turkmenistan","IsoCode":"TM","DafifCode":"TX"}
+{"Name":"Tanzania","IsoCode":"TZ","DafifCode":"TZ"}
+{"Name":"Uganda","IsoCode":"UG","DafifCode":"UG"}
+{"Name":"United Kingdom","IsoCode":"GB","DafifCode":"UK"}
+{"Name":"Ukraine","IsoCode":"UA","DafifCode":"UP"}
+{"Name":"United States","IsoCode":"US","DafifCode":"US"}
+{"Name":"Burkina Faso","IsoCode":"BF","DafifCode":"UV"}
+{"Name":"Uruguay","IsoCode":"UY","DafifCode":"UY"}
+{"Name":"Uzbekistan","IsoCode":"UZ","DafifCode":"UZ"}
+{"Name":"St. Vincent and the Grenadines","IsoCode":"VC","DafifCode":"VC"}
+{"Name":"Venezuela","IsoCode":"VE","DafifCode":"VE"}
+{"Name":"British Virgin Islands","IsoCode":"VG","DafifCode":"VI"}
+{"Name":"Vietnam","IsoCode":"VN","DafifCode":"VM"}
+{"Name":"United States Virgin Islands","IsoCode":"VI","DafifCode":"VQ"}
+{"Name":"Namibia","IsoCode":"NA","DafifCode":"WA"}
+{"Name":"Palestine","IsoCode":"PS","DafifCode":"WE"}
+{"Name":"Wallis and Futuna Islands","IsoCode":"WF","DafifCode":"WF"}
+{"Name":"Western Sahara","IsoCode":"EH","DafifCode":"WI"}
+{"Name":"Wake Island","IsoCode":"\\N","DafifCode":"WQ"}
+{"Name":"Samoa","IsoCode":"WS","DafifCode":"WS"}
+{"Name":"Eswatini","IsoCode":"SZ","DafifCode":"WZ"}
+{"Name":"Yemen","IsoCode":"YE","DafifCode":"YM"}
+{"Name":"Zambia","IsoCode":"ZM","DafifCode":"ZA"}
+{"Name":"Zimbabwe","IsoCode":"ZW","DafifCode":"ZI"}

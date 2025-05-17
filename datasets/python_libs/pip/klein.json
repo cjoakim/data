@@ -1,0 +1,20 @@
+{
+  "libname": "klein",
+  "libvers": "24.8.0",
+  "infile": "data/pip/klein.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "automat": "25.4.16",
+    "constantly": "23.10.4",
+    "hyperlink": "21.0.0",
+    "idna": "3.10",
+    "incremental": "24.7.2",
+    "markupsafe": "3.0.2",
+    "six": "1.17.0",
+    "tubes": "0.2.1",
+    "twisted": "24.11.0",
+    "typing-extensions": "4.13.2",
+    "werkzeug": "3.1.3",
+    "zope-interface": "7.2"
+  }
+}

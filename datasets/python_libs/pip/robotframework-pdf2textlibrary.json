@@ -1,0 +1,11 @@
+{
+  "libname": "robotframework-pdf2textlibrary",
+  "libvers": "1.0.1",
+  "infile": "data/pip/robotframework-pdf2textlibrary.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "pdfminer2": "20151206",
+    "robotframework": "7.2.2",
+    "six": "1.17.0"
+  }
+}

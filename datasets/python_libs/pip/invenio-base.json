@@ -1,0 +1,18 @@
+{
+  "libname": "invenio-base",
+  "libvers": "2.2.0",
+  "infile": "data/pip/invenio-base.txt",
+  "dependencies": {
+    "blinker": "1.9.0",
+    "click": "8.1.8",
+    "flask": "3.1.0",
+    "importlib-metadata": "8.7.0",
+    "importlib-resources": "6.5.2",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "watchdog": "6.0.0",
+    "werkzeug": "3.1.3",
+    "zipp": "3.21.0"
+  }
+}

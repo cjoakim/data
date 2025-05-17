@@ -1,0 +1,8 @@
+{
+  "libname": "mdx-truly-sane-lists",
+  "libvers": "1.3",
+  "infile": "data/pip/mdx-truly-sane-lists.txt",
+  "dependencies": {
+    "markdown": "3.8"
+  }
+}

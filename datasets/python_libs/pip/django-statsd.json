@@ -1,0 +1,8 @@
+{
+  "libname": "django-statsd",
+  "libvers": "2.7.0",
+  "infile": "data/pip/django-statsd.txt",
+  "dependencies": {
+    "python-statsd": "2.1.0"
+  }
+}

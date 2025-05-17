@@ -1,0 +1,6 @@
+{
+  "libname": "nose-parameterized",
+  "libvers": "0.6.0",
+  "infile": "data/pip/nose-parameterized.txt",
+  "dependencies": {}
+}

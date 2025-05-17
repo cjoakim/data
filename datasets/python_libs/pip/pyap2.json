@@ -1,0 +1,6 @@
+{
+  "libname": "pyap2",
+  "libvers": "0.1.10",
+  "infile": "data/pip/pyap2.txt",
+  "dependencies": {}
+}

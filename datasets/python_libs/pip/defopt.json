@@ -1,0 +1,11 @@
+{
+  "libname": "defopt",
+  "libvers": "6.4.0",
+  "infile": "data/pip/defopt.txt",
+  "dependencies": {
+    "docutils": "0.21.2",
+    "pockets": "0.9.1",
+    "six": "1.17.0",
+    "sphinxcontrib-napoleon": "0.7"
+  }
+}

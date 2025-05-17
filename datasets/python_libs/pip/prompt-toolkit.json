@@ -1,0 +1,8 @@
+{
+  "libname": "prompt-toolkit",
+  "libvers": "3.0.51",
+  "infile": "data/pip/prompt-toolkit.txt",
+  "dependencies": {
+    "wcwidth": "0.2.13"
+  }
+}

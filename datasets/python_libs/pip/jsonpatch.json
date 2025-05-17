@@ -1,0 +1,8 @@
+{
+  "libname": "jsonpatch",
+  "libvers": "1.33",
+  "infile": "data/pip/jsonpatch.txt",
+  "dependencies": {
+    "jsonpointer": "3.0.0"
+  }
+}

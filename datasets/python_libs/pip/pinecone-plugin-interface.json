@@ -1,0 +1,6 @@
+{
+  "libname": "pinecone-plugin-interface",
+  "libvers": "0.0.7",
+  "infile": "data/pip/pinecone-plugin-interface.txt",
+  "dependencies": {}
+}

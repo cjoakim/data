@@ -1,0 +1,12 @@
+{
+  "libname": "helics",
+  "libvers": "3.6.1",
+  "infile": "data/pip/helics.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "click": "8.1.8",
+    "pycparser": "2.22",
+    "strip-hints": "0.1.13",
+    "wheel": "0.45.1"
+  }
+}

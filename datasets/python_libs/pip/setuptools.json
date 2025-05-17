@@ -1,0 +1,6 @@
+{
+  "libname": "setuptools",
+  "libvers": null,
+  "infile": "data/pip/setuptools.txt",
+  "dependencies": {}
+}

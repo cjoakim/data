@@ -1,0 +1,8 @@
+{
+  "libname": "shyaml",
+  "libvers": "0.6.2",
+  "infile": "data/pip/shyaml.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

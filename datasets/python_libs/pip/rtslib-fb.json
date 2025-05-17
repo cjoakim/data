@@ -1,0 +1,8 @@
+{
+  "libname": "rtslib-fb",
+  "libvers": "2.2.3",
+  "infile": "data/pip/rtslib-fb.txt",
+  "dependencies": {
+    "pyudev": "0.24.3"
+  }
+}

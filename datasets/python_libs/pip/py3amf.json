@@ -1,0 +1,8 @@
+{
+  "libname": "py3amf",
+  "libvers": "0.8.12",
+  "infile": "data/pip/py3amf.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1"
+  }
+}

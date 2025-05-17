@@ -1,0 +1,6 @@
+{
+  "libname": "mmcif-pdbx",
+  "libvers": "2.0.1",
+  "infile": "data/pip/mmcif-pdbx.txt",
+  "dependencies": {}
+}

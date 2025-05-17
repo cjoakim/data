@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-stub",
+  "libvers": "0.1.8",
+  "infile": "data/pip/nvidia-stub.txt",
+  "dependencies": {}
+}

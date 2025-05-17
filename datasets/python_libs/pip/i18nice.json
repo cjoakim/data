@@ -1,0 +1,6 @@
+{
+  "libname": "i18nice",
+  "libvers": "0.15.5",
+  "infile": "data/pip/i18nice.txt",
+  "dependencies": {}
+}

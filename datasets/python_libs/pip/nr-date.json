@@ -1,0 +1,6 @@
+{
+  "libname": "nr-date",
+  "libvers": "2.1.0",
+  "infile": "data/pip/nr-date.txt",
+  "dependencies": {}
+}

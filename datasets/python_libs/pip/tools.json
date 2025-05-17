@@ -1,0 +1,6 @@
+{
+  "libname": "tools",
+  "libvers": "1.0.2",
+  "infile": "data/pip/tools.txt",
+  "dependencies": {}
+}

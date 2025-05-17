@@ -1,0 +1,10 @@
+{
+  "libname": "git-python",
+  "libvers": "1.0.3",
+  "infile": "data/pip/git-python.txt",
+  "dependencies": {
+    "gitdb": "4.0.12",
+    "gitpython": "3.1.44",
+    "smmap": "5.0.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "business-rules",
+  "libvers": "1.1.1",
+  "infile": "data/pip/business-rules.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

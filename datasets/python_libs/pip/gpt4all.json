@@ -1,0 +1,13 @@
+{
+  "libname": "gpt4all",
+  "libvers": "2.8.2",
+  "infile": "data/pip/gpt4all.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "tqdm": "4.67.1",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "jinja2-strcase",
+  "libvers": "0.0.2",
+  "infile": "data/pip/jinja2-strcase.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

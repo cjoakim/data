@@ -1,0 +1,6 @@
+{
+  "libname": "subprocess32",
+  "libvers": "3.5.4",
+  "infile": "data/pip/subprocess32.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "graphql-core-promise",
+  "libvers": "3.4.2",
+  "infile": "data/pip/graphql-core-promise.txt",
+  "dependencies": {
+    "graphql-core": "3.2.6",
+    "promise": "2.3",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "speedtest-cli",
+  "libvers": "2.1.3",
+  "infile": "data/pip/speedtest-cli.txt",
+  "dependencies": {}
+}

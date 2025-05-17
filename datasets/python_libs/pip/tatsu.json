@@ -1,0 +1,6 @@
+{
+  "libname": "tatsu",
+  "libvers": "5.13.1",
+  "infile": "data/pip/tatsu.txt",
+  "dependencies": {}
+}

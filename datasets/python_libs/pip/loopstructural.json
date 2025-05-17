@@ -1,0 +1,24 @@
+{
+  "libname": "loopstructural",
+  "libvers": "1.6.13",
+  "infile": "data/pip/loopstructural.txt",
+  "dependencies": {
+    "imageio": "2.37.0",
+    "joblib": "1.5.0",
+    "lazy-loader": "0.4",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "pillow": "11.2.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "scikit-image": "0.25.2",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "threadpoolctl": "3.6.0",
+    "tifffile": "2025.3.30",
+    "tzdata": "2025.2"
+  }
+}

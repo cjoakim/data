@@ -1,0 +1,9 @@
+{
+  "libname": "magicinvoke",
+  "libvers": "2.4.6",
+  "infile": "data/pip/magicinvoke.txt",
+  "dependencies": {
+    "cachepath": "1.1.1",
+    "colorama": "0.4.6"
+  }
+}

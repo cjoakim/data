@@ -1,0 +1,8 @@
+{
+  "libname": "nbdev-stdlib",
+  "libvers": "0.0.1854",
+  "infile": "data/pip/nbdev-stdlib.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

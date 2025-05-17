@@ -1,0 +1,6 @@
+{
+  "libname": "dotmap",
+  "libvers": "1.3.30",
+  "infile": "data/pip/dotmap.txt",
+  "dependencies": {}
+}

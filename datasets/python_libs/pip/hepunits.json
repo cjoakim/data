@@ -1,0 +1,6 @@
+{
+  "libname": "hepunits",
+  "libvers": "2.3.5",
+  "infile": "data/pip/hepunits.txt",
+  "dependencies": {}
+}

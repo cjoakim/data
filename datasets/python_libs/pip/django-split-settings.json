@@ -1,0 +1,6 @@
+{
+  "libname": "django-split-settings",
+  "libvers": "1.3.2",
+  "infile": "data/pip/django-split-settings.txt",
+  "dependencies": {}
+}

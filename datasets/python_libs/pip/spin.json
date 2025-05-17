@@ -1,0 +1,10 @@
+{
+  "libname": "spin",
+  "libvers": "0.14",
+  "infile": "data/pip/spin.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "importlib-metadata": "8.7.0",
+    "zipp": "3.21.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "libname": "k8s",
+  "libvers": "0.28.0",
+  "infile": "data/pip/k8s.txt",
+  "dependencies": {
+    "cachetools": "5.3.3",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "pyrfc3339": "1.1",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

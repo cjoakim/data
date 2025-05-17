@@ -1,0 +1,25 @@
+{
+  "libname": "aegis-tools",
+  "libvers": "2.9.7",
+  "infile": "data/pip/aegis-tools.txt",
+  "dependencies": {
+    "bcrypt": "3.2.0",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "pycparser": "2.22",
+    "pympler": "1.1",
+    "pyreferrer": "0.6.6",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "requests-file": "2.1.0",
+    "six": "1.17.0",
+    "tldextract": "2.2.1",
+    "tornado": "6.4.2",
+    "ua-parser": "1.0.1",
+    "ua-parser-builtins": "0.18.0.post1",
+    "urllib3": "2.4.0",
+    "user-agents": "2.2.0"
+  }
+}

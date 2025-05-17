@@ -1,0 +1,6 @@
+{
+  "libname": "observable",
+  "libvers": "1.0.3",
+  "infile": "data/pip/observable.txt",
+  "dependencies": {}
+}

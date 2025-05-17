@@ -1,0 +1,6 @@
+{
+  "libname": "leb128",
+  "libvers": "1.0.8",
+  "infile": "data/pip/leb128.txt",
+  "dependencies": {}
+}

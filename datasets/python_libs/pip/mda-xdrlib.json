@@ -1,0 +1,6 @@
+{
+  "libname": "mda-xdrlib",
+  "libvers": "0.2.0",
+  "infile": "data/pip/mda-xdrlib.txt",
+  "dependencies": {}
+}

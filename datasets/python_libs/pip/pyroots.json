@@ -1,0 +1,6 @@
+{
+  "libname": "pyroots",
+  "libvers": "0.5.0",
+  "infile": "data/pip/pyroots.txt",
+  "dependencies": {}
+}

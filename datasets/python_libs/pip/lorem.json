@@ -1,0 +1,6 @@
+{
+  "libname": "lorem",
+  "libvers": "0.1.1",
+  "infile": "data/pip/lorem.txt",
+  "dependencies": {}
+}

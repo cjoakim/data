@@ -1,0 +1,6 @@
+{
+  "libname": "sentinels",
+  "libvers": "1.0.0",
+  "infile": "data/pip/sentinels.txt",
+  "dependencies": {}
+}

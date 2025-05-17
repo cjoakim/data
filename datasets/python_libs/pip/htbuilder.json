@@ -1,0 +1,6 @@
+{
+  "libname": "htbuilder",
+  "libvers": "0.9.0",
+  "infile": "data/pip/htbuilder.txt",
+  "dependencies": {}
+}

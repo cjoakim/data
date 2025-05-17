@@ -1,0 +1,8 @@
+{
+  "libname": "simdkalman",
+  "libvers": "1.0.4",
+  "infile": "data/pip/simdkalman.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

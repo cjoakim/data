@@ -1,0 +1,9 @@
+{
+  "libname": "falkordb",
+  "libvers": "1.1.1",
+  "infile": "data/pip/falkordb.txt",
+  "dependencies": {
+    "pyjwt": "2.9.0",
+    "redis": "5.3.0"
+  }
+}

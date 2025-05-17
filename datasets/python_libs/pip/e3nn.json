@@ -1,0 +1,21 @@
+{
+  "libname": "e3nn",
+  "libvers": "0.5.6",
+  "infile": "data/pip/e3nn.txt",
+  "dependencies": {
+    "filelock": "3.18.0",
+    "fsspec": "2025.3.2",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "mpmath": "1.3.0",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "opt-einsum": "3.4.0",
+    "opt-einsum-fx": "0.1.4",
+    "packaging": "25.0",
+    "scipy": "1.15.2",
+    "sympy": "1.14.0",
+    "torch": "2.7.0",
+    "typing-extensions": "4.13.2"
+  }
+}

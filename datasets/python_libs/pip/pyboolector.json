@@ -1,0 +1,6 @@
+{
+  "libname": "pyboolector",
+  "libvers": "3.2.4.20240823.1",
+  "infile": "data/pip/pyboolector.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "libpcap",
+  "libvers": "1.11.0b23",
+  "infile": "data/pip/libpcap.txt",
+  "dependencies": {
+    "importlib-metadata": "8.7.0",
+    "packaging": "25.0",
+    "pkg-about": "1.3.3",
+    "zipp": "3.21.0"
+  }
+}

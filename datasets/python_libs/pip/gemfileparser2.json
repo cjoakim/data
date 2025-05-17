@@ -1,0 +1,6 @@
+{
+  "libname": "gemfileparser2",
+  "libvers": "0.9.4",
+  "infile": "data/pip/gemfileparser2.txt",
+  "dependencies": {}
+}

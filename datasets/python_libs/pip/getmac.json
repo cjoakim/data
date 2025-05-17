@@ -1,0 +1,6 @@
+{
+  "libname": "getmac",
+  "libvers": "0.9.5",
+  "infile": "data/pip/getmac.txt",
+  "dependencies": {}
+}

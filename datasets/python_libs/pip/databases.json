@@ -1,0 +1,9 @@
+{
+  "libname": "databases",
+  "libvers": "0.9.0",
+  "infile": "data/pip/databases.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

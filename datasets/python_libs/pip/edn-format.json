@@ -1,0 +1,10 @@
+{
+  "libname": "edn-format",
+  "libvers": "0.7.5",
+  "infile": "data/pip/edn-format.txt",
+  "dependencies": {
+    "ply": "3.11",
+    "pyrfc3339": "2.0.1",
+    "pytz": "2025.2"
+  }
+}

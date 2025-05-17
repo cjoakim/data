@@ -1,0 +1,9 @@
+{
+  "libname": "py-moneyed",
+  "libvers": "3.0",
+  "infile": "data/pip/py-moneyed.txt",
+  "dependencies": {
+    "babel": "2.17.0",
+    "typing-extensions": "4.13.2"
+  }
+}

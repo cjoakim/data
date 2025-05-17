@@ -1,0 +1,8 @@
+{
+  "libname": "jsoncomment",
+  "libvers": "0.4.2",
+  "infile": "data/pip/jsoncomment.txt",
+  "dependencies": {
+    "json-spec": "0.12.0"
+  }
+}

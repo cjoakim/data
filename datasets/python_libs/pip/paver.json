@@ -1,0 +1,8 @@
+{
+  "libname": "paver",
+  "libvers": "1.3.4",
+  "infile": "data/pip/paver.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

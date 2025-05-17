@@ -1,0 +1,8 @@
+{
+  "libname": "awkward-cpp",
+  "libvers": "45",
+  "infile": "data/pip/awkward-cpp.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

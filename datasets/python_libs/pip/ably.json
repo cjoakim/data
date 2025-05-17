@@ -1,0 +1,22 @@
+{
+  "libname": "ably",
+  "libvers": "2.0.12",
+  "infile": "data/pip/ably.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "certifi": "2025.4.26",
+    "h11": "0.16.0",
+    "h2": "4.2.0",
+    "hpack": "4.1.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "hyperframe": "6.1.0",
+    "idna": "3.10",
+    "methoddispatch": "3.0.2",
+    "msgpack": "1.1.0",
+    "pyee": "12.1.1",
+    "sniffio": "1.3.1",
+    "typing-extensions": "4.13.2",
+    "websockets": "13.1"
+  }
+}

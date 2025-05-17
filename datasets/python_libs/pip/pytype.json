@@ -1,0 +1,23 @@
+{
+  "libname": "pytype",
+  "libvers": "2024.10.11",
+  "infile": "data/pip/pytype.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "immutabledict": "4.2.1",
+    "importlab": "0.8.1",
+    "jinja2": "3.1.6",
+    "libcst": "1.7.0",
+    "markupsafe": "3.0.2",
+    "msgspec": "0.19.0",
+    "networkx": "3.4.2",
+    "ninja": "1.11.1.4",
+    "pycnite": "2024.7.31",
+    "pydot": "4.0.0",
+    "pyparsing": "3.2.3",
+    "pyyaml": "6.0.2",
+    "tabulate": "0.9.0",
+    "toml": "0.10.2",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "unidep",
+  "libvers": "1.0.0",
+  "infile": "data/pip/unidep.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12"
+  }
+}

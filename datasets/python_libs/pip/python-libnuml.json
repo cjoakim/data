@@ -1,0 +1,6 @@
+{
+  "libname": "python-libnuml",
+  "libvers": "1.1.7",
+  "infile": "data/pip/python-libnuml.txt",
+  "dependencies": {}
+}

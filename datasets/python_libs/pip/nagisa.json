@@ -1,0 +1,11 @@
+{
+  "libname": "nagisa",
+  "libvers": "0.2.11",
+  "infile": "data/pip/nagisa.txt",
+  "dependencies": {
+    "cython": "3.0.12",
+    "dynet38": "2.2",
+    "numpy": "2.2.5",
+    "six": "1.17.0"
+  }
+}

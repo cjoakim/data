@@ -1,0 +1,11 @@
+{
+  "libname": "multiaddr",
+  "libvers": "0.0.9",
+  "infile": "data/pip/multiaddr.txt",
+  "dependencies": {
+    "base58": "2.1.1",
+    "netaddr": "1.3.0",
+    "six": "1.17.0",
+    "varint": "1.0.2"
+  }
+}

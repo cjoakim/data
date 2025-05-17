@@ -1,0 +1,9 @@
+{
+  "libname": "pyliquibase",
+  "libvers": "2.4.0",
+  "infile": "data/pip/pyliquibase.txt",
+  "dependencies": {
+    "pyjnius": "1.6.1",
+    "tqdm": "4.67.1"
+  }
+}

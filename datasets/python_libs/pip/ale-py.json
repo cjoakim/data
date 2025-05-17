@@ -1,0 +1,8 @@
+{
+  "libname": "ale-py",
+  "libvers": "0.11.0",
+  "infile": "data/pip/ale-py.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

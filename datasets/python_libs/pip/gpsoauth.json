@@ -1,0 +1,13 @@
+{
+  "libname": "gpsoauth",
+  "libvers": "1.1.1",
+  "infile": "data/pip/gpsoauth.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "pycryptodomex": "3.22.0",
+    "requests": "2.32.3",
+    "urllib3": "1.26.20"
+  }
+}

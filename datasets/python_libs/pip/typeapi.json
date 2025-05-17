@@ -1,0 +1,8 @@
+{
+  "libname": "typeapi",
+  "libvers": "2.2.4",
+  "infile": "data/pip/typeapi.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

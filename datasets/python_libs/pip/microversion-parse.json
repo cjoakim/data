@@ -1,0 +1,8 @@
+{
+  "libname": "microversion-parse",
+  "libvers": "2.0.0",
+  "infile": "data/pip/microversion-parse.txt",
+  "dependencies": {
+    "webob": "1.8.9"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "categorical-distance",
+  "libvers": "1.9",
+  "infile": "data/pip/categorical-distance.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

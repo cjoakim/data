@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-ivschat",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-ivschat.txt",
+  "dependencies": {}
+}

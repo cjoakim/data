@@ -1,0 +1,11 @@
+{
+  "libname": "python-certifi-win32",
+  "libvers": "1.6.1",
+  "infile": "data/pip/python-certifi-win32.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "packaging": "25.0",
+    "setuptools-scm": "8.3.1",
+    "wrapt": "1.17.2"
+  }
+}

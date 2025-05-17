@@ -1,0 +1,8 @@
+{
+  "libname": "amazon-textract-idp-cdk-manifest",
+  "libvers": "0.0.1",
+  "infile": "data/pip/amazon-textract-idp-cdk-manifest.txt",
+  "dependencies": {
+    "marshmallow": "4.0.0"
+  }
+}

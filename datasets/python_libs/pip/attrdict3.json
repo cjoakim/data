@@ -1,0 +1,8 @@
+{
+  "libname": "attrdict3",
+  "libvers": "2.0.2",
+  "infile": "data/pip/attrdict3.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

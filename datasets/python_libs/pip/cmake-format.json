@@ -1,0 +1,9 @@
+{
+  "libname": "cmake-format",
+  "libvers": "0.6.13",
+  "infile": "data/pip/cmake-format.txt",
+  "dependencies": {
+    "cmakelang": "0.6.13",
+    "six": "1.17.0"
+  }
+}

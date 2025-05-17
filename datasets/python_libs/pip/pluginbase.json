@@ -1,0 +1,6 @@
+{
+  "libname": "pluginbase",
+  "libvers": "1.0.1",
+  "infile": "data/pip/pluginbase.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "aiodebug",
+  "libvers": "2.3.0",
+  "infile": "data/pip/aiodebug.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pypika",
+  "libvers": "0.48.9",
+  "infile": "data/pip/pypika.txt",
+  "dependencies": {}
+}

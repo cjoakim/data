@@ -1,0 +1,20 @@
+{
+  "libname": "magicgui",
+  "libvers": "0.10.0",
+  "infile": "data/pip/magicgui.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "docstring-parser": "0.16",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "psygnal": "0.13.0",
+    "pyconify": "0.2.1",
+    "pygments": "2.19.1",
+    "qtpy": "2.4.3",
+    "requests": "2.32.3",
+    "superqt[iconify]": "0.7.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "pynliner",
+  "libvers": "0.8.0",
+  "infile": "data/pip/pynliner.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "cssutils": "2.11.1",
+    "more-itertools": "10.7.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2"
+  }
+}

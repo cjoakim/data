@@ -1,0 +1,8 @@
+{
+  "libname": "psycopg2-pool",
+  "libvers": "1.2",
+  "infile": "data/pip/psycopg2-pool.txt",
+  "dependencies": {
+    "psycopg2-binary": "2.9.10"
+  }
+}

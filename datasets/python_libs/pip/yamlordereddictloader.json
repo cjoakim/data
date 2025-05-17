@@ -1,0 +1,8 @@
+{
+  "libname": "yamlordereddictloader",
+  "libvers": "0.4.2",
+  "infile": "data/pip/yamlordereddictloader.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

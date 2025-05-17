@@ -1,0 +1,6 @@
+{
+  "libname": "pillow-avif-plugin",
+  "libvers": "1.5.2",
+  "infile": "data/pip/pillow-avif-plugin.txt",
+  "dependencies": {}
+}

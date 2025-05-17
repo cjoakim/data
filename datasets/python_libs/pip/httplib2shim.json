@@ -1,0 +1,12 @@
+{
+  "libname": "httplib2shim",
+  "libvers": "0.0.3",
+  "infile": "data/pip/httplib2shim.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "httplib2": "0.22.0",
+    "pyparsing": "3.2.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

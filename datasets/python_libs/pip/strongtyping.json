@@ -1,0 +1,6 @@
+{
+  "libname": "strongtyping",
+  "libvers": "3.12.1",
+  "infile": "data/pip/strongtyping.txt",
+  "dependencies": {}
+}

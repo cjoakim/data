@@ -1,0 +1,8 @@
+{
+  "libname": "lomond",
+  "libvers": "0.3.3",
+  "infile": "data/pip/lomond.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

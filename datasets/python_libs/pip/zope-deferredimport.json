@@ -1,0 +1,9 @@
+{
+  "libname": "zope-deferredimport",
+  "libvers": "5.0",
+  "infile": "data/pip/zope-deferredimport.txt",
+  "dependencies": {
+    "zope-interface": "7.2",
+    "zope-proxy": "6.1"
+  }
+}

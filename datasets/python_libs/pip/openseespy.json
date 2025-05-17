@@ -1,0 +1,8 @@
+{
+  "libname": "openseespy",
+  "libvers": "3.7.1.2",
+  "infile": "data/pip/openseespy.txt",
+  "dependencies": {
+    "openseespymac": "3.4.0.2"
+  }
+}

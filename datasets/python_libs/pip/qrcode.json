@@ -1,0 +1,6 @@
+{
+  "libname": "qrcode",
+  "libvers": "8.2",
+  "infile": "data/pip/qrcode.txt",
+  "dependencies": {}
+}

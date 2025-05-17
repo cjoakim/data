@@ -1,0 +1,6 @@
+{
+  "libname": "pybase64",
+  "libvers": "1.4.1",
+  "infile": "data/pip/pybase64.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "neo4j-driver",
+  "libvers": "5.28.1",
+  "infile": "data/pip/neo4j-driver.txt",
+  "dependencies": {
+    "pytz": "2025.2"
+  }
+}

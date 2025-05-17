@@ -1,0 +1,6 @@
+{
+  "libname": "secure-smtplib",
+  "libvers": "0.1.1",
+  "infile": "data/pip/secure-smtplib.txt",
+  "dependencies": {}
+}

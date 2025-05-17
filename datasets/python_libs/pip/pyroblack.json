@@ -1,0 +1,12 @@
+{
+  "libname": "pyroblack",
+  "libvers": "2.6.7",
+  "infile": "data/pip/pyroblack.txt",
+  "dependencies": {
+    "aiosqlite-black": "0.21.0",
+    "pyaes": "1.6.1",
+    "pymediainfo-pyroblack": "6.1.1",
+    "pysocks": "1.7.1",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "python-mimeparse",
+  "libvers": "2.0.0",
+  "infile": "data/pip/python-mimeparse.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "textdistance",
+  "libvers": "4.6.3",
+  "infile": "data/pip/textdistance.txt",
+  "dependencies": {}
+}

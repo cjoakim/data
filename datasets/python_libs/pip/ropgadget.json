@@ -1,0 +1,8 @@
+{
+  "libname": "ropgadget",
+  "libvers": "7.6",
+  "infile": "data/pip/ropgadget.txt",
+  "dependencies": {
+    "capstone": "5.0.6"
+  }
+}

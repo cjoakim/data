@@ -1,0 +1,8 @@
+{
+  "libname": "numexpr",
+  "libvers": "2.10.2",
+  "infile": "data/pip/numexpr.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

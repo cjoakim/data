@@ -1,0 +1,10 @@
+{
+  "libname": "urllib3-future",
+  "libvers": "2.12.920",
+  "infile": "data/pip/urllib3-future.txt",
+  "dependencies": {
+    "h11": "0.16.0",
+    "jh2": "5.0.9",
+    "qh3": "1.5.1"
+  }
+}

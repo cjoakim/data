@@ -1,0 +1,6 @@
+{
+  "libname": "interruptingcow",
+  "libvers": "0.8",
+  "infile": "data/pip/interruptingcow.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "tfparse",
+  "libvers": "0.6.15",
+  "infile": "data/pip/tfparse.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pyodbc",
+  "libvers": "5.2.0",
+  "infile": "data/pip/pyodbc.txt",
+  "dependencies": {}
+}

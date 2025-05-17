@@ -1,0 +1,8 @@
+{
+  "libname": "newrelic-telemetry-sdk",
+  "libvers": "0.6.0",
+  "infile": "data/pip/newrelic-telemetry-sdk.txt",
+  "dependencies": {
+    "urllib3": "2.4.0"
+  }
+}

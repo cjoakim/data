@@ -1,0 +1,6 @@
+{
+  "libname": "resourcebundle",
+  "libvers": "2.2.0",
+  "infile": "data/pip/resourcebundle.txt",
+  "dependencies": {}
+}

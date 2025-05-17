@@ -1,0 +1,6 @@
+{
+  "libname": "plac",
+  "libvers": "1.4.5",
+  "infile": "data/pip/plac.txt",
+  "dependencies": {}
+}

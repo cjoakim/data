@@ -1,0 +1,9 @@
+{
+  "libname": "pysnmp-mibs",
+  "libvers": "0.1.6",
+  "infile": "data/pip/pysnmp-mibs.txt",
+  "dependencies": {
+    "pyasn1": "0.6.1",
+    "pysnmp": "7.1.20"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "coverage-badge",
+  "libvers": "1.1.2",
+  "infile": "data/pip/coverage-badge.txt",
+  "dependencies": {
+    "coverage": "7.8.0"
+  }
+}

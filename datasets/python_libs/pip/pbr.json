@@ -1,0 +1,6 @@
+{
+  "libname": "pbr",
+  "libvers": "6.1.1",
+  "infile": "data/pip/pbr.txt",
+  "dependencies": {}
+}

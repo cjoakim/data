@@ -1,0 +1,6 @@
+{
+  "libname": "pytkdocs",
+  "libvers": "0.16.5",
+  "infile": "data/pip/pytkdocs.txt",
+  "dependencies": {}
+}

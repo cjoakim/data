@@ -1,0 +1,9 @@
+{
+  "libname": "autosemver",
+  "libvers": "1.0.0",
+  "infile": "data/pip/autosemver.txt",
+  "dependencies": {
+    "dulwich": "0.22.8",
+    "urllib3": "2.4.0"
+  }
+}

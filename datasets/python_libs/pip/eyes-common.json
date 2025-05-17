@@ -1,0 +1,12 @@
+{
+  "libname": "eyes-common",
+  "libvers": "6.2.0",
+  "infile": "data/pip/eyes-common.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "core-universal4": "4.37.0",
+    "marshmallow": "3.26.1",
+    "packaging": "25.0",
+    "websocket-client": "1.8.0"
+  }
+}

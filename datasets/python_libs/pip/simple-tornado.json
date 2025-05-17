@@ -1,0 +1,8 @@
+{
+  "libname": "simple-tornado",
+  "libvers": "0.2.2",
+  "infile": "data/pip/simple-tornado.txt",
+  "dependencies": {
+    "tornado": "6.4.2"
+  }
+}

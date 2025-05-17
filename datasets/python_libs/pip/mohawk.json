@@ -1,0 +1,8 @@
+{
+  "libname": "mohawk",
+  "libvers": "1.1.0",
+  "infile": "data/pip/mohawk.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

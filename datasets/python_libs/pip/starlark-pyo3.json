@@ -1,0 +1,6 @@
+{
+  "libname": "starlark-pyo3",
+  "libvers": "2025.1",
+  "infile": "data/pip/starlark-pyo3.txt",
+  "dependencies": {}
+}

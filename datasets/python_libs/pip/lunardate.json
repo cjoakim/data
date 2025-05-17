@@ -1,0 +1,6 @@
+{
+  "libname": "lunardate",
+  "libvers": "0.2.2",
+  "infile": "data/pip/lunardate.txt",
+  "dependencies": {}
+}

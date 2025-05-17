@@ -1,0 +1,10 @@
+{
+  "libname": "flit-scm",
+  "libvers": "1.7.0",
+  "infile": "data/pip/flit-scm.txt",
+  "dependencies": {
+    "flit-core": "3.12.0",
+    "packaging": "25.0",
+    "setuptools-scm": "8.3.1"
+  }
+}

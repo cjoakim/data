@@ -1,0 +1,11 @@
+{
+  "libname": "trustme",
+  "libvers": "1.2.1",
+  "infile": "data/pip/trustme.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "pycparser": "2.22"
+  }
+}

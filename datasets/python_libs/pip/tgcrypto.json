@@ -1,0 +1,6 @@
+{
+  "libname": "tgcrypto",
+  "libvers": "1.2.5",
+  "infile": "data/pip/tgcrypto.txt",
+  "dependencies": {}
+}

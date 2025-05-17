@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-ec2-instance-connect",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-ec2-instance-connect.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "immutables",
+  "libvers": "0.21",
+  "infile": "data/pip/immutables.txt",
+  "dependencies": {}
+}

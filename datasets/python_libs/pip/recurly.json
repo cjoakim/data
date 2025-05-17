@@ -1,0 +1,6 @@
+{
+  "libname": "recurly",
+  "libvers": "4.59.0",
+  "infile": "data/pip/recurly.txt",
+  "dependencies": {}
+}

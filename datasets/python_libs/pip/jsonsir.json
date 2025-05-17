@@ -1,0 +1,6 @@
+{
+  "libname": "jsonsir",
+  "libvers": "0.0.2",
+  "infile": "data/pip/jsonsir.txt",
+  "dependencies": {}
+}

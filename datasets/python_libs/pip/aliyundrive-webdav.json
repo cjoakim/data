@@ -1,0 +1,6 @@
+{
+  "libname": "aliyundrive-webdav",
+  "libvers": "2.3.3",
+  "infile": "data/pip/aliyundrive-webdav.txt",
+  "dependencies": {}
+}

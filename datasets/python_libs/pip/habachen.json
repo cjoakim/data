@@ -1,0 +1,6 @@
+{
+  "libname": "habachen",
+  "libvers": "0.5.2",
+  "infile": "data/pip/habachen.txt",
+  "dependencies": {}
+}

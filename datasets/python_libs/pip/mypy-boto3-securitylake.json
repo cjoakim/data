@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-securitylake",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-securitylake.txt",
+  "dependencies": {}
+}

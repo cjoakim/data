@@ -1,0 +1,6 @@
+{
+  "libname": "dbutils",
+  "libvers": "3.1.0",
+  "infile": "data/pip/dbutils.txt",
+  "dependencies": {}
+}

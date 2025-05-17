@@ -1,0 +1,10 @@
+{
+  "libname": "tsmoothie",
+  "libvers": "1.0.5",
+  "infile": "data/pip/tsmoothie.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "simdkalman": "1.0.4"
+  }
+}

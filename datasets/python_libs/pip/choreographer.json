@@ -1,0 +1,9 @@
+{
+  "libname": "choreographer",
+  "libvers": "1.0.7",
+  "infile": "data/pip/choreographer.txt",
+  "dependencies": {
+    "logistro": "1.1.0",
+    "simplejson": "3.20.1"
+  }
+}

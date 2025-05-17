@@ -1,0 +1,6 @@
+{
+  "libname": "lepl",
+  "libvers": "5.1.3",
+  "infile": "data/pip/lepl.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "saneyaml",
+  "libvers": "0.6.1",
+  "infile": "data/pip/saneyaml.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

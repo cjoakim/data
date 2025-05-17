@@ -1,0 +1,9 @@
+{
+  "libname": "depyf",
+  "libvers": "0.19.0",
+  "infile": "data/pip/depyf.txt",
+  "dependencies": {
+    "astor": "0.8.1",
+    "dill": "0.4.0"
+  }
+}

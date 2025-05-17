@@ -1,0 +1,6 @@
+{
+  "libname": "argh",
+  "libvers": "0.31.3",
+  "infile": "data/pip/argh.txt",
+  "dependencies": {}
+}

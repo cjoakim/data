@@ -1,0 +1,9 @@
+{
+  "libname": "livekit-protocol",
+  "libvers": "1.0.2",
+  "infile": "data/pip/livekit-protocol.txt",
+  "dependencies": {
+    "protobuf": "6.30.2",
+    "types-protobuf": "6.30.2.20250506"
+  }
+}

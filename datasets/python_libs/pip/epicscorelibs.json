@@ -1,0 +1,9 @@
+{
+  "libname": "epicscorelibs",
+  "libvers": "7.0.7.99.1.1",
+  "infile": "data/pip/epicscorelibs.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "setuptools-dso": "2.12.2"
+  }
+}

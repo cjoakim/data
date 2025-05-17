@@ -1,0 +1,9 @@
+{
+  "libname": "rfc5424-logging-handler",
+  "libvers": "1.4.3",
+  "infile": "data/pip/rfc5424-logging-handler.txt",
+  "dependencies": {
+    "pytz": "2025.2",
+    "tzlocal": "5.3.1"
+  }
+}

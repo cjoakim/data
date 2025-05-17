@@ -1,0 +1,18 @@
+{
+  "libname": "pyspelling",
+  "libvers": "2.10",
+  "infile": "data/pip/pyspelling.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "bracex": "2.5.post1",
+    "html5lib": "1.1",
+    "lxml": "5.4.0",
+    "markdown": "3.8",
+    "pyyaml": "6.0.2",
+    "six": "1.17.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "wcmatch": "10.0",
+    "webencodings": "0.5.1"
+  }
+}

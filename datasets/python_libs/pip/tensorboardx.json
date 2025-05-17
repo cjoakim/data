@@ -1,0 +1,10 @@
+{
+  "libname": "tensorboardx",
+  "libvers": "2.6.2.2",
+  "infile": "data/pip/tensorboardx.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "protobuf": "6.30.2"
+  }
+}

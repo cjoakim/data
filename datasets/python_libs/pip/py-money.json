@@ -1,0 +1,8 @@
+{
+  "libname": "py-money",
+  "libvers": "0.5.0",
+  "infile": "data/pip/py-money.txt",
+  "dependencies": {
+    "babel": "2.17.0"
+  }
+}

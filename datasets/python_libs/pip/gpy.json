@@ -1,0 +1,13 @@
+{
+  "libname": "gpy",
+  "libvers": "1.13.2",
+  "infile": "data/pip/gpy.txt",
+  "dependencies": {
+    "cython": "3.0.12",
+    "decorator": "5.2.1",
+    "numpy": "1.26.4",
+    "paramz": "0.9.6",
+    "scipy": "1.12.0",
+    "six": "1.17.0"
+  }
+}

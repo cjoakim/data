@@ -1,0 +1,8 @@
+{
+  "libname": "hdrpy",
+  "libvers": "0.3.3",
+  "infile": "data/pip/hdrpy.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "mosek",
+  "libvers": "11.0.19",
+  "infile": "data/pip/mosek.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

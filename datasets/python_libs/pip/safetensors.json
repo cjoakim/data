@@ -1,0 +1,6 @@
+{
+  "libname": "safetensors",
+  "libvers": "0.5.3",
+  "infile": "data/pip/safetensors.txt",
+  "dependencies": {}
+}

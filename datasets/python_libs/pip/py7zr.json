@@ -1,0 +1,16 @@
+{
+  "libname": "py7zr",
+  "libvers": "0.22.0",
+  "infile": "data/pip/py7zr.txt",
+  "dependencies": {
+    "brotli": "1.1.0",
+    "inflate64": "1.0.1",
+    "multivolumefile": "0.2.3",
+    "psutil": "7.0.0",
+    "pybcj": "1.0.6",
+    "pycryptodomex": "3.22.0",
+    "pyppmd": "1.1.1",
+    "pyzstd": "0.16.2",
+    "texttable": "1.7.0"
+  }
+}

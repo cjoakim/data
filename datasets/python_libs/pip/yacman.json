@@ -1,0 +1,17 @@
+{
+  "libname": "yacman",
+  "libvers": "0.9.3",
+  "infile": "data/pip/yacman.txt",
+  "dependencies": {
+    "attmap": "0.13.2",
+    "attrs": "25.3.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "oyaml": "1.0",
+    "pyyaml": "6.0.2",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2",
+    "ubiquerg": "0.8.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "mssql-django",
+  "libvers": "1.5",
+  "infile": "data/pip/mssql-django.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.0.14",
+    "pyodbc": "5.2.0",
+    "pytz": "2025.2",
+    "sqlparse": "0.5.3"
+  }
+}

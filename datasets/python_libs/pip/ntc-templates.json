@@ -1,0 +1,10 @@
+{
+  "libname": "ntc-templates",
+  "libvers": "7.8.0",
+  "infile": "data/pip/ntc-templates.txt",
+  "dependencies": {
+    "future": "1.0.0",
+    "six": "1.17.0",
+    "textfsm": "1.1.3"
+  }
+}

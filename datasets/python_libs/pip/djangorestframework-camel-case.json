@@ -1,0 +1,6 @@
+{
+  "libname": "djangorestframework-camel-case",
+  "libvers": "1.4.2",
+  "infile": "data/pip/djangorestframework-camel-case.txt",
+  "dependencies": {}
+}

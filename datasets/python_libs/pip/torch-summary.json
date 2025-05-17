@@ -1,0 +1,6 @@
+{
+  "libname": "torch-summary",
+  "libvers": "1.4.5",
+  "infile": "data/pip/torch-summary.txt",
+  "dependencies": {}
+}

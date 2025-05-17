@@ -1,0 +1,8 @@
+{
+  "libname": "viztracer",
+  "libvers": "1.0.3",
+  "infile": "data/pip/viztracer.txt",
+  "dependencies": {
+    "objprint": "0.3.0"
+  }
+}

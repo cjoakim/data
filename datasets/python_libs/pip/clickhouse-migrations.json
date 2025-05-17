@@ -1,0 +1,10 @@
+{
+  "libname": "clickhouse-migrations",
+  "libvers": "0.8.1",
+  "infile": "data/pip/clickhouse-migrations.txt",
+  "dependencies": {
+    "clickhouse-driver": "0.2.9",
+    "pytz": "2025.2",
+    "tzlocal": "5.3.1"
+  }
+}

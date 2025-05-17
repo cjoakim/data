@@ -1,0 +1,8 @@
+{
+  "libname": "pyarabic",
+  "libvers": "0.6.15",
+  "infile": "data/pip/pyarabic.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

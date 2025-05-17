@@ -1,0 +1,6 @@
+{
+  "libname": "openedx-django-require",
+  "libvers": "2.1.0",
+  "infile": "data/pip/openedx-django-require.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "poetry-core",
+  "libvers": "2.1.3",
+  "infile": "data/pip/poetry-core.txt",
+  "dependencies": {}
+}

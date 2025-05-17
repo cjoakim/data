@@ -1,0 +1,8 @@
+{
+  "libname": "gpiozero",
+  "libvers": "2.0.1",
+  "infile": "data/pip/gpiozero.txt",
+  "dependencies": {
+    "colorzero": "2.0"
+  }
+}

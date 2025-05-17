@@ -1,0 +1,8 @@
+{
+  "libname": "pockets",
+  "libvers": "0.9.1",
+  "infile": "data/pip/pockets.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

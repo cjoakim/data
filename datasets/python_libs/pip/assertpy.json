@@ -1,0 +1,6 @@
+{
+  "libname": "assertpy",
+  "libvers": "1.1",
+  "infile": "data/pip/assertpy.txt",
+  "dependencies": {}
+}

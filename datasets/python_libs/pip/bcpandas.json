@@ -1,0 +1,20 @@
+{
+  "libname": "bcpandas",
+  "libvers": "2.7.2",
+  "infile": "data/pip/bcpandas.txt",
+  "dependencies": {
+    "adbc-driver-manager": "1.6.0",
+    "adbc-driver-postgresql": "1.6.0",
+    "adbc-driver-sqlite": "1.6.0",
+    "importlib-resources": "6.5.2",
+    "numpy": "2.2.5",
+    "pandas[sql-other]": "2.2.3",
+    "pyodbc": "5.2.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

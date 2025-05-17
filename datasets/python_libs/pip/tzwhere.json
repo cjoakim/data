@@ -1,0 +1,9 @@
+{
+  "libname": "tzwhere",
+  "libvers": "3.0.3",
+  "infile": "data/pip/tzwhere.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "shapely": "2.1.0"
+  }
+}

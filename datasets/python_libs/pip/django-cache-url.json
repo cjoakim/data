@@ -1,0 +1,6 @@
+{
+  "libname": "django-cache-url",
+  "libvers": "3.4.5",
+  "infile": "data/pip/django-cache-url.txt",
+  "dependencies": {}
+}

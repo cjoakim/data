@@ -1,0 +1,13 @@
+{
+  "libname": "fs-smbfs",
+  "libvers": "1.0.7",
+  "infile": "data/pip/fs-smbfs.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "fs": "2.4.16",
+    "pyasn1": "0.6.1",
+    "pysmb": "1.2.9.1",
+    "six": "1.17.0",
+    "tqdm": "4.67.1"
+  }
+}

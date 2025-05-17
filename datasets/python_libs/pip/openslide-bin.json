@@ -1,0 +1,6 @@
+{
+  "libname": "openslide-bin",
+  "libvers": "4.0.0.8",
+  "infile": "data/pip/openslide-bin.txt",
+  "dependencies": {}
+}

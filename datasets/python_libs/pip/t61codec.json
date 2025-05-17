@@ -1,0 +1,6 @@
+{
+  "libname": "t61codec",
+  "libvers": "2.0.0",
+  "infile": "data/pip/t61codec.txt",
+  "dependencies": {}
+}

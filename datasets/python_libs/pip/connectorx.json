@@ -1,0 +1,6 @@
+{
+  "libname": "connectorx",
+  "libvers": "0.4.3",
+  "infile": "data/pip/connectorx.txt",
+  "dependencies": {}
+}

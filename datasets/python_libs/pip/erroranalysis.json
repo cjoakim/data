@@ -1,0 +1,23 @@
+{
+  "libname": "erroranalysis",
+  "libvers": "0.5.5",
+  "infile": "data/pip/erroranalysis.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "joblib": "1.5.0",
+    "lightgbm": "4.6.0",
+    "numpy": "1.26.4",
+    "pandas": "1.5.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "raiutils": "0.4.2",
+    "requests": "2.32.3",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "threadpoolctl": "3.6.0",
+    "urllib3": "2.4.0"
+  }
+}

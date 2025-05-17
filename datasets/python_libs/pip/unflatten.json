@@ -1,0 +1,6 @@
+{
+  "libname": "unflatten",
+  "libvers": "0.2.0",
+  "infile": "data/pip/unflatten.txt",
+  "dependencies": {}
+}

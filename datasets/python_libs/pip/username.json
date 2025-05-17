@@ -1,0 +1,6 @@
+{
+  "libname": "username",
+  "libvers": "2.1.0",
+  "infile": "data/pip/username.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,15 @@
+{
+  "libname": "businessready",
+  "libvers": "0.9.152",
+  "infile": "data/pip/businessready.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "jinja2": "2.11.2",
+    "markupsafe": "2.0.1",
+    "requests": "2.32.3",
+    "urllib3": "1.26.20",
+    "xmltodict": "0.12.0"
+  }
+}

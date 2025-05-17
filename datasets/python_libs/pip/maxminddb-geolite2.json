@@ -1,0 +1,8 @@
+{
+  "libname": "maxminddb-geolite2",
+  "libvers": "2018.703",
+  "infile": "data/pip/maxminddb-geolite2.txt",
+  "dependencies": {
+    "maxminddb": "2.7.0"
+  }
+}

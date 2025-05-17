@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-ssm-sap",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-ssm-sap.txt",
+  "dependencies": {}
+}

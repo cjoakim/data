@@ -1,0 +1,6 @@
+{
+  "libname": "poster3",
+  "libvers": "0.8.1",
+  "infile": "data/pip/poster3.txt",
+  "dependencies": {}
+}

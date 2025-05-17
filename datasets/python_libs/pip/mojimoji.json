@@ -1,0 +1,6 @@
+{
+  "libname": "mojimoji",
+  "libvers": "0.0.13",
+  "infile": "data/pip/mojimoji.txt",
+  "dependencies": {}
+}

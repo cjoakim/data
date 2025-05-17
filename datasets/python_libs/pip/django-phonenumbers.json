@@ -1,0 +1,8 @@
+{
+  "libname": "django-phonenumbers",
+  "libvers": "1.0.1",
+  "infile": "data/pip/django-phonenumbers.txt",
+  "dependencies": {
+    "phonenumbers": "9.0.4"
+  }
+}

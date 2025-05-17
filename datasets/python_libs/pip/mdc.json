@@ -1,0 +1,9 @@
+{
+  "libname": "mdc",
+  "libvers": "1.2.1",
+  "infile": "data/pip/mdc.txt",
+  "dependencies": {
+    "future": "1.0.0",
+    "python-json-logger": "3.3.0"
+  }
+}

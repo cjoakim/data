@@ -1,0 +1,9 @@
+{
+  "libname": "schwifty",
+  "libvers": "2025.1.0",
+  "infile": "data/pip/schwifty.txt",
+  "dependencies": {
+    "pycountry": "24.6.1",
+    "rstr": "3.2.2"
+  }
+}

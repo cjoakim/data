@@ -1,0 +1,6 @@
+{
+  "libname": "basemap-data",
+  "libvers": "1.3.2",
+  "infile": "data/pip/basemap-data.txt",
+  "dependencies": {}
+}

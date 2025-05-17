@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-lakeformation",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-lakeformation.txt",
+  "dependencies": {}
+}

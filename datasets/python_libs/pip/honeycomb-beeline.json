@@ -1,0 +1,15 @@
+{
+  "libname": "honeycomb-beeline",
+  "libvers": "3.6.0",
+  "infile": "data/pip/honeycomb-beeline.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "libhoney": "2.4.0",
+    "requests": "2.32.3",
+    "statsd": "4.0.1",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-marketplace-agreement",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-marketplace-agreement.txt",
+  "dependencies": {}
+}

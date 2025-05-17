@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-kinesisanalyticsv2",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-kinesisanalyticsv2.txt",
+  "dependencies": {}
+}

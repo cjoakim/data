@@ -1,0 +1,6 @@
+{
+  "libname": "atomicwrites-homeassistant",
+  "libvers": "1.4.1",
+  "infile": "data/pip/atomicwrites-homeassistant.txt",
+  "dependencies": {}
+}

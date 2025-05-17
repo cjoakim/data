@@ -1,0 +1,6 @@
+{
+  "libname": "oneagent-sdk",
+  "libvers": "1.5.1.20240104.95100",
+  "infile": "data/pip/oneagent-sdk.txt",
+  "dependencies": {}
+}

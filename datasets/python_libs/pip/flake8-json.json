@@ -1,0 +1,6 @@
+{
+  "libname": "flake8-json",
+  "libvers": "24.4.0",
+  "infile": "data/pip/flake8-json.txt",
+  "dependencies": {}
+}

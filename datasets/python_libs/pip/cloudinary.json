@@ -1,0 +1,10 @@
+{
+  "libname": "cloudinary",
+  "libvers": "1.44.0",
+  "infile": "data/pip/cloudinary.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "sortedcontainers-stubs",
+  "libvers": "2.4.3",
+  "infile": "data/pip/sortedcontainers-stubs.txt",
+  "dependencies": {
+    "sortedcontainers": "2.4.0",
+    "typing-extensions": "4.13.2"
+  }
+}

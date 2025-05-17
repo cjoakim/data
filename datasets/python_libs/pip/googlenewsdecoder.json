@@ -1,0 +1,14 @@
+{
+  "libname": "googlenewsdecoder",
+  "libvers": "0.1.7",
+  "infile": "data/pip/googlenewsdecoder.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "pysocks": "1.7.1",
+    "requests": "2.32.3",
+    "selectolax": "0.3.29",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "qrlyzer",
+  "libvers": "0.2.6",
+  "infile": "data/pip/qrlyzer.txt",
+  "dependencies": {}
+}

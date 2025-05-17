@@ -1,0 +1,6 @@
+{
+  "libname": "inflate64",
+  "libvers": "1.0.1",
+  "infile": "data/pip/inflate64.txt",
+  "dependencies": {}
+}

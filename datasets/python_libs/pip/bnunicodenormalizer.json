@@ -1,0 +1,6 @@
+{
+  "libname": "bnunicodenormalizer",
+  "libvers": "0.1.7",
+  "infile": "data/pip/bnunicodenormalizer.txt",
+  "dependencies": {}
+}

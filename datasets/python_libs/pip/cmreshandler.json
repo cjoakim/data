@@ -1,0 +1,17 @@
+{
+  "libname": "cmreshandler",
+  "libvers": "1.0.0",
+  "infile": "data/pip/cmreshandler.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "elastic-transport": "8.17.1",
+    "elasticsearch": "9.0.1",
+    "idna": "3.10",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

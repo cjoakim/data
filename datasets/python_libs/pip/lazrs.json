@@ -1,0 +1,6 @@
+{
+  "libname": "lazrs",
+  "libvers": "0.6.3",
+  "infile": "data/pip/lazrs.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "mcap",
+  "libvers": "1.2.2",
+  "infile": "data/pip/mcap.txt",
+  "dependencies": {
+    "lz4": "4.4.4",
+    "zstandard": "0.23.0"
+  }
+}

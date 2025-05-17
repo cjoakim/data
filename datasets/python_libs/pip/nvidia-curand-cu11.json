@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-curand-cu11",
+  "libvers": "10.3.0.86",
+  "infile": "data/pip/nvidia-curand-cu11.txt",
+  "dependencies": {}
+}

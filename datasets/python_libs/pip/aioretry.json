@@ -1,0 +1,6 @@
+{
+  "libname": "aioretry",
+  "libvers": "6.3.1",
+  "infile": "data/pip/aioretry.txt",
+  "dependencies": {}
+}

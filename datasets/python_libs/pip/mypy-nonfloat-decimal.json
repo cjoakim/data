@@ -1,0 +1,10 @@
+{
+  "libname": "mypy-nonfloat-decimal",
+  "libvers": "0.1.8",
+  "infile": "data/pip/mypy-nonfloat-decimal.txt",
+  "dependencies": {
+    "mypy": "1.15.0",
+    "mypy-extensions": "1.1.0",
+    "typing-extensions": "4.13.2"
+  }
+}

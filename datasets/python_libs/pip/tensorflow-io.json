@@ -1,0 +1,8 @@
+{
+  "libname": "tensorflow-io",
+  "libvers": "0.37.1",
+  "infile": "data/pip/tensorflow-io.txt",
+  "dependencies": {
+    "tensorflow-io-gcs-filesystem": "0.37.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "gitchangelog",
+  "libvers": "3.0.4",
+  "infile": "data/pip/gitchangelog.txt",
+  "dependencies": {}
+}

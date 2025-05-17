@@ -1,0 +1,8 @@
+{
+  "libname": "polars-hash",
+  "libvers": "0.5.4",
+  "infile": "data/pip/polars-hash.txt",
+  "dependencies": {
+    "polars": "1.29.0"
+  }
+}

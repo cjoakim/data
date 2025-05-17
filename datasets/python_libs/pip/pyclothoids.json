@@ -1,0 +1,8 @@
+{
+  "libname": "pyclothoids",
+  "libvers": "0.2.0",
+  "infile": "data/pip/pyclothoids.txt",
+  "dependencies": {
+    "pybind11": "2.13.6"
+  }
+}

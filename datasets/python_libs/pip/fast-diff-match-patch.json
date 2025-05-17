@@ -1,0 +1,6 @@
+{
+  "libname": "fast-diff-match-patch",
+  "libvers": "2.1.0",
+  "infile": "data/pip/fast-diff-match-patch.txt",
+  "dependencies": {}
+}

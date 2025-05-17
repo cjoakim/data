@@ -1,0 +1,6 @@
+{
+  "libname": "pygame-ce",
+  "libvers": "2.5.3",
+  "infile": "data/pip/pygame-ce.txt",
+  "dependencies": {}
+}

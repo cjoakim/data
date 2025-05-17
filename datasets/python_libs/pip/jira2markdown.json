@@ -1,0 +1,8 @@
+{
+  "libname": "jira2markdown",
+  "libvers": "0.5",
+  "infile": "data/pip/jira2markdown.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

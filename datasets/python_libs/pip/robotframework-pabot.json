@@ -1,0 +1,10 @@
+{
+  "libname": "robotframework-pabot",
+  "libvers": "4.2.0",
+  "infile": "data/pip/robotframework-pabot.txt",
+  "dependencies": {
+    "natsort": "8.4.0",
+    "robotframework": "7.2.2",
+    "robotframework-stacktrace": "0.4.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pysingleton",
+  "libvers": "0.2.1",
+  "infile": "data/pip/pysingleton.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-timestream-write",
+  "libvers": "1.38.10",
+  "infile": "data/pip/mypy-boto3-timestream-write.txt",
+  "dependencies": {}
+}

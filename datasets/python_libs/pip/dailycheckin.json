@@ -1,0 +1,15 @@
+{
+  "libname": "dailycheckin",
+  "libvers": "25.1.7",
+  "infile": "data/pip/dailycheckin.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "chardet": "4.0.0",
+    "idna": "2.10",
+    "pyasn1": "0.6.1",
+    "pycryptodome": "3.17",
+    "requests": "2.25.1",
+    "rsa": "4.9.1",
+    "urllib3": "1.26.20"
+  }
+}

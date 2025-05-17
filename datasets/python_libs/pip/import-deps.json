@@ -1,0 +1,6 @@
+{
+  "libname": "import-deps",
+  "libvers": "0.3.0",
+  "infile": "data/pip/import-deps.txt",
+  "dependencies": {}
+}

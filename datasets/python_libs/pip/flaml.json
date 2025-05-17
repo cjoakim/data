@@ -1,0 +1,8 @@
+{
+  "libname": "flaml",
+  "libvers": "2.3.4",
+  "infile": "data/pip/flaml.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

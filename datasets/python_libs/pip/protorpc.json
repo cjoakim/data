@@ -1,0 +1,8 @@
+{
+  "libname": "protorpc",
+  "libvers": "0.12.0",
+  "infile": "data/pip/protorpc.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

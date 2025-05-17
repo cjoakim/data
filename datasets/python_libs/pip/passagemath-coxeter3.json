@@ -1,0 +1,6 @@
+{
+  "libname": "passagemath-coxeter3",
+  "libvers": "10.5.30",
+  "infile": "data/pip/passagemath-coxeter3.txt",
+  "dependencies": {}
+}

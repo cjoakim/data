@@ -1,0 +1,6 @@
+{
+  "libname": "hachoir",
+  "libvers": "3.3.0",
+  "infile": "data/pip/hachoir.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,19 @@
+{
+  "libname": "cleanit",
+  "libvers": "0.4.8",
+  "infile": "data/pip/cleanit.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "attrs": "25.3.0",
+    "babelfish": "0.6.1",
+    "chardet": "5.2.0",
+    "click": "8.1.8",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "pysrt": "1.1.2",
+    "pyyaml": "6.0.2",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2"
+  }
+}

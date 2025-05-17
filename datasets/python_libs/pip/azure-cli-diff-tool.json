@@ -1,0 +1,14 @@
+{
+  "libname": "azure-cli-diff-tool",
+  "libvers": "0.1.0",
+  "infile": "data/pip/azure-cli-diff-tool.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "deepdiff": "6.3.0",
+    "idna": "3.10",
+    "ordered-set": "4.1.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "find-libpython",
+  "libvers": "0.4.0",
+  "infile": "data/pip/find-libpython.txt",
+  "dependencies": {}
+}

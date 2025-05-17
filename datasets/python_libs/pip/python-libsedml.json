@@ -1,0 +1,6 @@
+{
+  "libname": "python-libsedml",
+  "libvers": "2.0.33",
+  "infile": "data/pip/python-libsedml.txt",
+  "dependencies": {}
+}

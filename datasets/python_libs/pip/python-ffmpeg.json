@@ -1,0 +1,9 @@
+{
+  "libname": "python-ffmpeg",
+  "libvers": "2.0.12",
+  "infile": "data/pip/python-ffmpeg.txt",
+  "dependencies": {
+    "pyee": "13.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "mako",
+  "libvers": "1.3.10",
+  "infile": "data/pip/mako.txt",
+  "dependencies": {
+    "markupsafe": "3.0.2"
+  }
+}

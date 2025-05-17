@@ -1,0 +1,6 @@
+{
+  "libname": "ubiquerg",
+  "libvers": "0.8.1",
+  "infile": "data/pip/ubiquerg.txt",
+  "dependencies": {}
+}

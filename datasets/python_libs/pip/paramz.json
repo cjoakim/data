@@ -1,0 +1,11 @@
+{
+  "libname": "paramz",
+  "libvers": "0.9.6",
+  "infile": "data/pip/paramz.txt",
+  "dependencies": {
+    "decorator": "5.2.1",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "six": "1.17.0"
+  }
+}

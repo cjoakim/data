@@ -1,0 +1,6 @@
+{
+  "libname": "pcpp",
+  "libvers": "1.30",
+  "infile": "data/pip/pcpp.txt",
+  "dependencies": {}
+}

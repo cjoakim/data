@@ -1,0 +1,6 @@
+{
+  "libname": "types-gdb",
+  "libvers": "15.0.0.20250321",
+  "infile": "data/pip/types-gdb.txt",
+  "dependencies": {}
+}

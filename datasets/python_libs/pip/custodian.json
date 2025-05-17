@@ -1,0 +1,12 @@
+{
+  "libname": "custodian",
+  "libvers": "2025.4.14",
+  "infile": "data/pip/custodian.txt",
+  "dependencies": {
+    "monty": "2025.3.3",
+    "numpy": "2.2.5",
+    "psutil": "7.0.0",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12"
+  }
+}

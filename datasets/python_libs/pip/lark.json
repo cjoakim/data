@@ -1,0 +1,6 @@
+{
+  "libname": "lark",
+  "libvers": "1.2.2",
+  "infile": "data/pip/lark.txt",
+  "dependencies": {}
+}

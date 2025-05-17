@@ -1,0 +1,6 @@
+{
+  "libname": "zope-datetime",
+  "libvers": "5.1",
+  "infile": "data/pip/zope-datetime.txt",
+  "dependencies": {}
+}

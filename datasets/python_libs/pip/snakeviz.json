@@ -1,0 +1,8 @@
+{
+  "libname": "snakeviz",
+  "libvers": "2.2.2",
+  "infile": "data/pip/snakeviz.txt",
+  "dependencies": {
+    "tornado": "6.4.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "typing-validation",
+  "libvers": "1.2.12",
+  "infile": "data/pip/typing-validation.txt",
+  "dependencies": {}
+}

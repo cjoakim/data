@@ -1,0 +1,8 @@
+{
+  "libname": "pymeshlab",
+  "libvers": "2023.12.post3",
+  "infile": "data/pip/pymeshlab.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

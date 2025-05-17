@@ -1,0 +1,19 @@
+{
+  "libname": "bpemb",
+  "libvers": "0.3.6",
+  "infile": "data/pip/bpemb.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "gensim": "4.3.3",
+    "idna": "3.10",
+    "numpy": "1.26.4",
+    "requests": "2.32.3",
+    "scipy": "1.13.1",
+    "sentencepiece": "0.2.0",
+    "smart-open": "7.1.0",
+    "tqdm": "4.67.1",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-redshift",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-redshift.txt",
+  "dependencies": {}
+}

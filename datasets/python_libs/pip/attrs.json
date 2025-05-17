@@ -1,0 +1,6 @@
+{
+  "libname": "attrs",
+  "libvers": "25.3.0",
+  "infile": "data/pip/attrs.txt",
+  "dependencies": {}
+}

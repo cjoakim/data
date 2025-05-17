@@ -1,0 +1,10 @@
+{
+  "libname": "sqlalchemy-diff",
+  "libvers": "0.1.5",
+  "infile": "data/pip/sqlalchemy-diff.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "sqlalchemy-utils": "0.41.2",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pdfkit",
+  "libvers": "1.0.0",
+  "infile": "data/pip/pdfkit.txt",
+  "dependencies": {}
+}

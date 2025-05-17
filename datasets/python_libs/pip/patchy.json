@@ -1,0 +1,6 @@
+{
+  "libname": "patchy",
+  "libvers": "2.9.0",
+  "infile": "data/pip/patchy.txt",
+  "dependencies": {}
+}

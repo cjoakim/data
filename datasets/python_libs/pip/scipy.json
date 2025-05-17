@@ -1,0 +1,8 @@
+{
+  "libname": "scipy",
+  "libvers": "1.15.2",
+  "infile": "data/pip/scipy.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

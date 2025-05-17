@@ -1,0 +1,9 @@
+{
+  "libname": "pypugjs",
+  "libvers": "5.12.0",
+  "infile": "data/pip/pypugjs.txt",
+  "dependencies": {
+    "charset-normalizer": "3.4.2",
+    "six": "1.17.0"
+  }
+}

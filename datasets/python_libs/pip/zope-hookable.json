@@ -1,0 +1,6 @@
+{
+  "libname": "zope-hookable",
+  "libvers": "7.0",
+  "infile": "data/pip/zope-hookable.txt",
+  "dependencies": {}
+}

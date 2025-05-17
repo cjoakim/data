@@ -1,0 +1,9 @@
+{
+  "libname": "pysoundfile",
+  "libvers": "0.9.0.post1",
+  "infile": "data/pip/pysoundfile.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "prettytable",
+  "libvers": "3.16.0",
+  "infile": "data/pip/prettytable.txt",
+  "dependencies": {
+    "wcwidth": "0.2.13"
+  }
+}

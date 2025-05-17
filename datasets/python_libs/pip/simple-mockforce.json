@@ -1,0 +1,18 @@
+{
+  "libname": "simple-mockforce",
+  "libvers": "0.8.1",
+  "infile": "data/pip/simple-mockforce.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "decorator": "5.2.1",
+    "idna": "3.10",
+    "pyparsing": "2.4.7",
+    "python-dateutil": "2.9.0.post0",
+    "python-soql-parser": "0.2.0",
+    "requests": "2.32.3",
+    "responses": "0.20.0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

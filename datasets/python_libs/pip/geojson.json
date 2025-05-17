@@ -1,0 +1,6 @@
+{
+  "libname": "geojson",
+  "libvers": "3.2.0",
+  "infile": "data/pip/geojson.txt",
+  "dependencies": {}
+}

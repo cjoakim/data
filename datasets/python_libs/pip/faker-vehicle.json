@@ -1,0 +1,9 @@
+{
+  "libname": "faker-vehicle",
+  "libvers": "0.2.0",
+  "infile": "data/pip/faker-vehicle.txt",
+  "dependencies": {
+    "faker": "37.1.0",
+    "tzdata": "2025.2"
+  }
+}

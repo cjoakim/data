@@ -1,0 +1,17 @@
+{
+  "libname": "pymongoarrow",
+  "libvers": "1.7.2",
+  "infile": "data/pip/pymongoarrow.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "pyarrow": "19.0.1",
+    "pymongo": "4.12.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tzdata": "2025.2"
+  }
+}

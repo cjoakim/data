@@ -1,0 +1,15 @@
+{
+  "libname": "bluetooth-adapters",
+  "libvers": "0.21.4",
+  "infile": "data/pip/bluetooth-adapters.txt",
+  "dependencies": {
+    "aiooui": "0.1.9",
+    "bleak": "0.22.3",
+    "pyobjc-core": "10.3.2",
+    "pyobjc-framework-cocoa": "10.3.2",
+    "pyobjc-framework-corebluetooth": "10.3.2",
+    "pyobjc-framework-libdispatch": "10.3.2",
+    "uart-devices": "0.1.1",
+    "usb-devices": "0.4.5"
+  }
+}

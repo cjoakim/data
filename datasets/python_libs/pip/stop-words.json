@@ -1,0 +1,6 @@
+{
+  "libname": "stop-words",
+  "libvers": "2018.7.23",
+  "infile": "data/pip/stop-words.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "robotexclusionrulesparser",
+  "libvers": "1.7.1",
+  "infile": "data/pip/robotexclusionrulesparser.txt",
+  "dependencies": {}
+}

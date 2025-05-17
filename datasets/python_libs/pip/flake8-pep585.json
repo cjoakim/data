@@ -1,0 +1,6 @@
+{
+  "libname": "flake8-pep585",
+  "libvers": "0.1.7",
+  "infile": "data/pip/flake8-pep585.txt",
+  "dependencies": {}
+}

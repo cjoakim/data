@@ -1,0 +1,12 @@
+{
+  "libname": "dotenv-linter",
+  "libvers": "0.7.0",
+  "infile": "data/pip/dotenv-linter.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "click": "8.1.8",
+    "click-default-group": "1.2.4",
+    "lark": "1.2.2",
+    "typing-extensions": "4.13.2"
+  }
+}

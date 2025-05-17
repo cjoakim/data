@@ -1,0 +1,9 @@
+{
+  "libname": "rdflib-jsonld",
+  "libvers": "0.6.2",
+  "infile": "data/pip/rdflib-jsonld.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3",
+    "rdflib": "7.1.4"
+  }
+}

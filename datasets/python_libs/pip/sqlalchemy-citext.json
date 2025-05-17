@@ -1,0 +1,9 @@
+{
+  "libname": "sqlalchemy-citext",
+  "libvers": "1.8.0",
+  "infile": "data/pip/sqlalchemy-citext.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

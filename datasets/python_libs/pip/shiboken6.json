@@ -1,0 +1,6 @@
+{
+  "libname": "shiboken6",
+  "libvers": "6.9.0",
+  "infile": "data/pip/shiboken6.txt",
+  "dependencies": {}
+}

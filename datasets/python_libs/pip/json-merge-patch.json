@@ -1,0 +1,6 @@
+{
+  "libname": "json-merge-patch",
+  "libvers": "0.3.0",
+  "infile": "data/pip/json-merge-patch.txt",
+  "dependencies": {}
+}

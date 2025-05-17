@@ -1,0 +1,6 @@
+{
+  "libname": "pyrate-limiter",
+  "libvers": "3.7.0",
+  "infile": "data/pip/pyrate-limiter.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "fissix",
+  "libvers": "24.4.24",
+  "infile": "data/pip/fissix.txt",
+  "dependencies": {
+    "appdirs": "1.4.4"
+  }
+}

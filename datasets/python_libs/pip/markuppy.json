@@ -1,0 +1,6 @@
+{
+  "libname": "markuppy",
+  "libvers": "1.18",
+  "infile": "data/pip/markuppy.txt",
+  "dependencies": {}
+}

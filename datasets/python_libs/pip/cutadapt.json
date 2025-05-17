@@ -1,0 +1,9 @@
+{
+  "libname": "cutadapt",
+  "libvers": "5.0",
+  "infile": "data/pip/cutadapt.txt",
+  "dependencies": {
+    "dnaio": "1.2.3",
+    "xopen": "2.0.2"
+  }
+}

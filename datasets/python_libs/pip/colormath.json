@@ -1,0 +1,9 @@
+{
+  "libname": "colormath",
+  "libvers": "3.0.0",
+  "infile": "data/pip/colormath.txt",
+  "dependencies": {
+    "networkx": "3.4.2",
+    "numpy": "2.2.5"
+  }
+}

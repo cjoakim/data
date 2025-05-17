@@ -1,0 +1,6 @@
+{
+  "libname": "pythran-openblas",
+  "libvers": "0.3.6",
+  "infile": "data/pip/pythran-openblas.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "asn1crypto",
+  "libvers": "1.5.1",
+  "infile": "data/pip/asn1crypto.txt",
+  "dependencies": {}
+}

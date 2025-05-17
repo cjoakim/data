@@ -1,0 +1,11 @@
+{
+  "libname": "fillpdf",
+  "libvers": "0.7.3",
+  "infile": "data/pip/fillpdf.txt",
+  "dependencies": {
+    "pdf2image": "1.17.0",
+    "pdfrw2": "0.5.0",
+    "pillow": "11.2.1",
+    "pymupdf": "1.25.5"
+  }
+}

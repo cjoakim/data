@@ -1,0 +1,6 @@
+{
+  "libname": "glcontext",
+  "libvers": "3.0.0",
+  "infile": "data/pip/glcontext.txt",
+  "dependencies": {}
+}

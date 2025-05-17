@@ -1,0 +1,6 @@
+{
+  "libname": "html-tag-names",
+  "libvers": "0.1.2",
+  "infile": "data/pip/html-tag-names.txt",
+  "dependencies": {}
+}

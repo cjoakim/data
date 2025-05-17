@@ -1,0 +1,6 @@
+{
+  "libname": "hiredis",
+  "libvers": "3.1.0",
+  "infile": "data/pip/hiredis.txt",
+  "dependencies": {}
+}

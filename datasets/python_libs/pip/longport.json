@@ -1,0 +1,6 @@
+{
+  "libname": "longport",
+  "libvers": "2.1.12",
+  "infile": "data/pip/longport.txt",
+  "dependencies": {}
+}

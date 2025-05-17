@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-lexv2-runtime",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-lexv2-runtime.txt",
+  "dependencies": {}
+}

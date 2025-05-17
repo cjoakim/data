@@ -1,0 +1,6 @@
+{
+  "libname": "javaobj-py3",
+  "libvers": "0.4.4",
+  "infile": "data/pip/javaobj-py3.txt",
+  "dependencies": {}
+}

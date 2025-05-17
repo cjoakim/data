@@ -1,0 +1,6 @@
+{
+  "libname": "pandocfilters",
+  "libvers": "1.5.1",
+  "infile": "data/pip/pandocfilters.txt",
+  "dependencies": {}
+}

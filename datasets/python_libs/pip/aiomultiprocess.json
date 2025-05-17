@@ -1,0 +1,6 @@
+{
+  "libname": "aiomultiprocess",
+  "libvers": "0.9.1",
+  "infile": "data/pip/aiomultiprocess.txt",
+  "dependencies": {}
+}

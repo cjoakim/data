@@ -1,0 +1,8 @@
+{
+  "libname": "log-symbols",
+  "libvers": "0.0.14",
+  "infile": "data/pip/log-symbols.txt",
+  "dependencies": {
+    "colorama": "0.4.6"
+  }
+}

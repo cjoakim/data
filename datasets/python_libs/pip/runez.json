@@ -1,0 +1,6 @@
+{
+  "libname": "runez",
+  "libvers": "5.3.0",
+  "infile": "data/pip/runez.txt",
+  "dependencies": {}
+}

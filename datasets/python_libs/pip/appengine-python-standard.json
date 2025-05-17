@@ -1,0 +1,27 @@
+{
+  "libname": "appengine-python-standard",
+  "libvers": "1.1.10",
+  "infile": "data/pip/appengine-python-standard.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "frozendict": "2.4.6",
+    "google-auth": "2.40.0",
+    "idna": "3.10",
+    "legacy-cgi": "2.6.3",
+    "mock": "5.2.0",
+    "pillow": "11.2.1",
+    "protobuf": "6.30.2",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "six": "1.17.0",
+    "urllib3": "1.26.20"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "lupa",
+  "libvers": "2.4",
+  "infile": "data/pip/lupa.txt",
+  "dependencies": {}
+}

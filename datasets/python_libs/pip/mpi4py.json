@@ -1,0 +1,6 @@
+{
+  "libname": "mpi4py",
+  "libvers": "4.0.3",
+  "infile": "data/pip/mpi4py.txt",
+  "dependencies": {}
+}

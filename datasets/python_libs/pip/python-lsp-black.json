@@ -1,0 +1,23 @@
+{
+  "libname": "python-lsp-black",
+  "libvers": "2.0.0",
+  "infile": "data/pip/python-lsp-black.txt",
+  "dependencies": {
+    "black": "25.1.0",
+    "click": "8.1.8",
+    "docstring-to-markdown": "0.17",
+    "importlib-metadata": "8.7.0",
+    "jedi": "0.19.2",
+    "mypy-extensions": "1.1.0",
+    "packaging": "25.0",
+    "parso": "0.8.4",
+    "pathspec": "0.12.1",
+    "platformdirs": "4.3.7",
+    "pluggy": "1.5.0",
+    "python-lsp-jsonrpc": "1.1.2",
+    "python-lsp-server": "1.12.2",
+    "typing-extensions": "4.13.2",
+    "ujson": "5.10.0",
+    "zipp": "3.21.0"
+  }
+}

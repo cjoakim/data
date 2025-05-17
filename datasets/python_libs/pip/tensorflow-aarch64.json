@@ -1,0 +1,6 @@
+{
+  "libname": "tensorflow-aarch64",
+  "libvers": "1.2",
+  "infile": "data/pip/tensorflow-aarch64.txt",
+  "dependencies": {}
+}

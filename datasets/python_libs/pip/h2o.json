@@ -1,0 +1,13 @@
+{
+  "libname": "h2o",
+  "libvers": "3.46.0.7",
+  "infile": "data/pip/h2o.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "tabulate": "0.9.0",
+    "urllib3": "2.4.0"
+  }
+}

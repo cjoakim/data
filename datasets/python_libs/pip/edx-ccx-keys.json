@@ -1,0 +1,14 @@
+{
+  "libname": "edx-ccx-keys",
+  "libvers": "2.0.2",
+  "infile": "data/pip/edx-ccx-keys.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "edx-opaque-keys": "3.0.0",
+    "pbr": "6.1.1",
+    "pymongo": "4.12.1",
+    "six": "1.17.0",
+    "stevedore": "5.4.1",
+    "typing-extensions": "4.13.2"
+  }
+}

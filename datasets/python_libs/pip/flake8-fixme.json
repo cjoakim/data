@@ -1,0 +1,6 @@
+{
+  "libname": "flake8-fixme",
+  "libvers": "1.1.1",
+  "infile": "data/pip/flake8-fixme.txt",
+  "dependencies": {}
+}

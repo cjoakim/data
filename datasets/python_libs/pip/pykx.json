@@ -1,0 +1,14 @@
+{
+  "libname": "pykx",
+  "libvers": "2.5.3",
+  "infile": "data/pip/pykx.txt",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "pandas": "2.1.4",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "toml": "0.10.2",
+    "tzdata": "2025.2"
+  }
+}

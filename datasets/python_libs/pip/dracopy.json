@@ -1,0 +1,6 @@
+{
+  "libname": "dracopy",
+  "libvers": "1.5.0",
+  "infile": "data/pip/dracopy.txt",
+  "dependencies": {}
+}

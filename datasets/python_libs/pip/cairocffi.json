@@ -1,0 +1,9 @@
+{
+  "libname": "cairocffi",
+  "libvers": "1.7.1",
+  "infile": "data/pip/cairocffi.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

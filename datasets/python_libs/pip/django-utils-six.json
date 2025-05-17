@@ -1,0 +1,6 @@
+{
+  "libname": "django-utils-six",
+  "libvers": "2.0",
+  "infile": "data/pip/django-utils-six.txt",
+  "dependencies": {}
+}

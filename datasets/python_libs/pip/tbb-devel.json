@@ -1,0 +1,9 @@
+{
+  "libname": "tbb-devel",
+  "libvers": "2022.1.0",
+  "infile": "data/pip/tbb-devel.txt",
+  "dependencies": {
+    "tbb": "2022.1.0",
+    "tcmlib": "1.3.0"
+  }
+}

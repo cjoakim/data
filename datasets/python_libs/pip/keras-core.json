@@ -1,0 +1,18 @@
+{
+  "libname": "keras-core",
+  "libvers": "0.1.7",
+  "infile": "data/pip/keras-core.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "attrs": "25.3.0",
+    "dm-tree": "0.1.9",
+    "h5py": "3.13.0",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "namex": "0.0.9",
+    "numpy": "2.2.5",
+    "pygments": "2.19.1",
+    "rich": "14.0.0",
+    "wrapt": "1.17.2"
+  }
+}

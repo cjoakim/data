@@ -1,0 +1,6 @@
+{
+  "libname": "databricks-test",
+  "libvers": "0.0.4",
+  "infile": "data/pip/databricks-test.txt",
+  "dependencies": {}
+}

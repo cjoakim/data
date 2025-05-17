@@ -1,0 +1,6 @@
+{
+  "libname": "xxhash",
+  "libvers": "3.5.0",
+  "infile": "data/pip/xxhash.txt",
+  "dependencies": {}
+}

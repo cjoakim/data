@@ -1,0 +1,10 @@
+{
+  "libname": "mmh3cffi",
+  "libvers": "0.2.1",
+  "infile": "data/pip/mmh3cffi.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "future": "1.0.0",
+    "pycparser": "2.22"
+  }
+}

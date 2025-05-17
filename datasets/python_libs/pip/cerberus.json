@@ -1,0 +1,6 @@
+{
+  "libname": "cerberus",
+  "libvers": "1.3.7",
+  "infile": "data/pip/cerberus.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "plaster",
+  "libvers": "1.1.2",
+  "infile": "data/pip/plaster.txt",
+  "dependencies": {}
+}

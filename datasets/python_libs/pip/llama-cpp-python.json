@@ -1,0 +1,12 @@
+{
+  "libname": "llama-cpp-python",
+  "libvers": "0.3.8",
+  "infile": "data/pip/llama-cpp-python.txt",
+  "dependencies": {
+    "diskcache": "5.6.3",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "numpy": "2.2.5",
+    "typing-extensions": "4.13.2"
+  }
+}

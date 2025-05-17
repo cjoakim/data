@@ -1,0 +1,6 @@
+{
+  "libname": "objsize",
+  "libvers": "0.7.1",
+  "infile": "data/pip/objsize.txt",
+  "dependencies": {}
+}

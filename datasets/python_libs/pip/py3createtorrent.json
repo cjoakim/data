@@ -1,0 +1,8 @@
+{
+  "libname": "py3createtorrent",
+  "libvers": "1.2.1",
+  "infile": "data/pip/py3createtorrent.txt",
+  "dependencies": {
+    "bencode-py": "4.0.0"
+  }
+}

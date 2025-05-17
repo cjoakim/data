@@ -1,0 +1,6 @@
+{
+  "libname": "celery-progress",
+  "libvers": "0.5",
+  "infile": "data/pip/celery-progress.txt",
+  "dependencies": {}
+}

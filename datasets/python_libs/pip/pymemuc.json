@@ -1,0 +1,6 @@
+{
+  "libname": "pymemuc",
+  "libvers": "0.6.0",
+  "infile": "data/pip/pymemuc.txt",
+  "dependencies": {}
+}

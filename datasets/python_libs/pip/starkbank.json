@@ -1,0 +1,14 @@
+{
+  "libname": "starkbank",
+  "libvers": "2.28.1",
+  "infile": "data/pip/starkbank.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "starkbank-ecdsa": "2.2.0",
+    "starkcore": "0.5.0",
+    "urllib3": "2.4.0"
+  }
+}

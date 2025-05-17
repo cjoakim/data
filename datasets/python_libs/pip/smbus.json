@@ -1,0 +1,6 @@
+{
+  "libname": "smbus",
+  "libvers": "1.1.post2",
+  "infile": "data/pip/smbus.txt",
+  "dependencies": {}
+}

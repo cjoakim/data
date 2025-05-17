@@ -1,0 +1,8 @@
+{
+  "libname": "opentelemetry-proto",
+  "libvers": "1.32.1",
+  "infile": "data/pip/opentelemetry-proto.txt",
+  "dependencies": {
+    "protobuf": "5.29.4"
+  }
+}

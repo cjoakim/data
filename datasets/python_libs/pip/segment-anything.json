@@ -1,0 +1,6 @@
+{
+  "libname": "segment-anything",
+  "libvers": "1.0",
+  "infile": "data/pip/segment-anything.txt",
+  "dependencies": {}
+}

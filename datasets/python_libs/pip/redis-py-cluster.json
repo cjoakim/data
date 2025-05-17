@@ -1,0 +1,8 @@
+{
+  "libname": "redis-py-cluster",
+  "libvers": "2.1.3",
+  "infile": "data/pip/redis-py-cluster.txt",
+  "dependencies": {
+    "redis": "3.5.3"
+  }
+}

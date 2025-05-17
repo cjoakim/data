@@ -1,0 +1,10 @@
+{
+  "libname": "mux-python",
+  "libvers": "5.0.1",
+  "infile": "data/pip/mux-python.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

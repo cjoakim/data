@@ -1,0 +1,9 @@
+{
+  "libname": "measurement",
+  "libvers": "3.2.2",
+  "infile": "data/pip/measurement.txt",
+  "dependencies": {
+    "mpmath": "1.3.0",
+    "sympy": "1.14.0"
+  }
+}

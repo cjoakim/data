@@ -1,0 +1,6 @@
+{
+  "libname": "jsonrpclib",
+  "libvers": "0.2.1",
+  "infile": "data/pip/jsonrpclib.txt",
+  "dependencies": {}
+}

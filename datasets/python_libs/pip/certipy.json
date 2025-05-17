@@ -1,0 +1,10 @@
+{
+  "libname": "certipy",
+  "libvers": "0.2.2",
+  "infile": "data/pip/certipy.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22"
+  }
+}

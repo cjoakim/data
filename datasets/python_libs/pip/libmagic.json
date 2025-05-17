@@ -1,0 +1,6 @@
+{
+  "libname": "libmagic",
+  "libvers": "1.0",
+  "infile": "data/pip/libmagic.txt",
+  "dependencies": {}
+}

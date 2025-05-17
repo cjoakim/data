@@ -1,0 +1,10 @@
+{
+  "libname": "psycopg2cffi",
+  "libvers": "2.9.0",
+  "infile": "data/pip/psycopg2cffi.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22",
+    "six": "1.17.0"
+  }
+}

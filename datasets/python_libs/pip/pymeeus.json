@@ -1,0 +1,6 @@
+{
+  "libname": "pymeeus",
+  "libvers": "0.5.12",
+  "infile": "data/pip/pymeeus.txt",
+  "dependencies": {}
+}

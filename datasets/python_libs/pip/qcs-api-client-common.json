@@ -1,0 +1,17 @@
+{
+  "libname": "qcs-api-client-common",
+  "libvers": "0.11.8",
+  "infile": "data/pip/qcs-api-client-common.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "certifi": "2025.4.26",
+    "grpc-interceptor": "0.15.4",
+    "grpcio": "1.71.0",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.10",
+    "sniffio": "1.3.1",
+    "typing-extensions": "4.13.2"
+  }
+}

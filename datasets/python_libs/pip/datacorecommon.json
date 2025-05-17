@@ -1,0 +1,6 @@
+{
+  "libname": "datacorecommon",
+  "libvers": "0.5.0",
+  "infile": "data/pip/datacorecommon.txt",
+  "dependencies": {}
+}

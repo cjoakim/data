@@ -1,0 +1,12 @@
+{
+  "libname": "fab-classic",
+  "libvers": "1.20.0",
+  "infile": "data/pip/fab-classic.txt",
+  "dependencies": {
+    "bcrypt": "4.3.0",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "paramiko-ng": "2.9.0",
+    "pycparser": "2.22"
+  }
+}

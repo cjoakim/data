@@ -1,0 +1,8 @@
+{
+  "libname": "cwe2",
+  "libvers": "3.0.0",
+  "infile": "data/pip/cwe2.txt",
+  "dependencies": {
+    "importlib-resources": "6.5.2"
+  }
+}

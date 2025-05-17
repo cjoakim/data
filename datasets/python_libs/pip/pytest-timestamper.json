@@ -1,0 +1,6 @@
+{
+  "libname": "pytest-timestamper",
+  "libvers": "0.0.10",
+  "infile": "data/pip/pytest-timestamper.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "opencc",
+  "libvers": "1.1.9",
+  "infile": "data/pip/opencc.txt",
+  "dependencies": {}
+}

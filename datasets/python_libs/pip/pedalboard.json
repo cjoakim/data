@@ -1,0 +1,8 @@
+{
+  "libname": "pedalboard",
+  "libvers": "0.9.16",
+  "infile": "data/pip/pedalboard.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

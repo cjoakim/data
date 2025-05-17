@@ -1,0 +1,10 @@
+{
+  "libname": "scrapy-user-agents",
+  "libvers": "0.1.1",
+  "infile": "data/pip/scrapy-user-agents.txt",
+  "dependencies": {
+    "ua-parser": "1.0.1",
+    "ua-parser-builtins": "0.18.0.post1",
+    "user-agents": "2.2.0"
+  }
+}

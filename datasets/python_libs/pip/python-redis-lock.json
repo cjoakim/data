@@ -1,0 +1,8 @@
+{
+  "libname": "python-redis-lock",
+  "libvers": "4.0.0",
+  "infile": "data/pip/python-redis-lock.txt",
+  "dependencies": {
+    "redis": "6.0.0"
+  }
+}

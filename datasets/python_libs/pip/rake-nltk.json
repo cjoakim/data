@@ -1,0 +1,12 @@
+{
+  "libname": "rake-nltk",
+  "libvers": "1.0.6",
+  "infile": "data/pip/rake-nltk.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "joblib": "1.5.0",
+    "nltk": "3.9.1",
+    "regex": "2024.11.6",
+    "tqdm": "4.67.1"
+  }
+}

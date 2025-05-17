@@ -1,0 +1,6 @@
+{
+  "libname": "zhdate",
+  "libvers": "0.1",
+  "infile": "data/pip/zhdate.txt",
+  "dependencies": {}
+}

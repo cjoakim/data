@@ -1,0 +1,29 @@
+{
+  "libname": "butterfree",
+  "libvers": "1.7.2",
+  "infile": "data/pip/butterfree.txt",
+  "dependencies": {
+    "boto3": "1.35.99",
+    "botocore": "1.35.99",
+    "cassandra-driver": "3.24.0",
+    "click": "8.1.8",
+    "delta-spark": "3.2.0",
+    "geomet": "0.2.1.post1",
+    "importlib-metadata": "8.7.0",
+    "jmespath": "1.0.1",
+    "mdutils": "1.6.0",
+    "numpy": "1.26.4",
+    "pandas": "1.5.3",
+    "parameters-validation": "1.2.0",
+    "py4j": "0.10.9.7",
+    "pyspark": "3.5.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "s3transfer": "0.10.4",
+    "six": "1.17.0",
+    "typer": "0.4.2",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "zipp": "3.21.0"
+  }
+}

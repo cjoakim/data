@@ -1,0 +1,8 @@
+{
+  "libname": "sentence-splitter",
+  "libvers": "1.4",
+  "infile": "data/pip/sentence-splitter.txt",
+  "dependencies": {
+    "regex": "2024.11.6"
+  }
+}

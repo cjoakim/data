@@ -1,0 +1,13 @@
+{
+  "libname": "pytest-mock-resources",
+  "libvers": "2.12.2",
+  "infile": "data/pip/pytest-mock-resources.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

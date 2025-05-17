@@ -1,0 +1,8 @@
+{
+  "libname": "dirsync",
+  "libvers": "2.2.5",
+  "infile": "data/pip/dirsync.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

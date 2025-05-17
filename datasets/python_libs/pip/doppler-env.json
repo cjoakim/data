@@ -1,0 +1,8 @@
+{
+  "libname": "doppler-env",
+  "libvers": "0.3.1",
+  "infile": "data/pip/doppler-env.txt",
+  "dependencies": {
+    "python-dotenv": "1.1.0"
+  }
+}

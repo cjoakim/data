@@ -1,0 +1,6 @@
+{
+  "libname": "cppyy-cling",
+  "libvers": "6.32.8",
+  "infile": "data/pip/cppyy-cling.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "lpc-checksum",
+  "libvers": "3.0.0",
+  "infile": "data/pip/lpc-checksum.txt",
+  "dependencies": {
+    "intelhex": "2.3.0"
+  }
+}

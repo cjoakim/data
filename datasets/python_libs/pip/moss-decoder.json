@@ -1,0 +1,6 @@
+{
+  "libname": "moss-decoder",
+  "libvers": "1.0.0",
+  "infile": "data/pip/moss-decoder.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "tf-slim",
+  "libvers": "1.1.0",
+  "infile": "data/pip/tf-slim.txt",
+  "dependencies": {
+    "absl-py": "2.2.2"
+  }
+}

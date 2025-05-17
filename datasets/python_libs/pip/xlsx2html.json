@@ -1,0 +1,12 @@
+{
+  "libname": "xlsx2html",
+  "libvers": "0.6.2",
+  "infile": "data/pip/xlsx2html.txt",
+  "dependencies": {
+    "babel": "2.17.0",
+    "et-xmlfile": "2.0.0",
+    "openpyxl": "3.1.5",
+    "packaging": "25.0",
+    "six": "1.17.0"
+  }
+}

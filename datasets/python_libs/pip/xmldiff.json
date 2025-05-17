@@ -1,0 +1,8 @@
+{
+  "libname": "xmldiff",
+  "libvers": "2.7.0",
+  "infile": "data/pip/xmldiff.txt",
+  "dependencies": {
+    "lxml": "5.4.0"
+  }
+}

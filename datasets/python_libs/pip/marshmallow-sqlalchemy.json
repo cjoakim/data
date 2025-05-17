@@ -1,0 +1,10 @@
+{
+  "libname": "marshmallow-sqlalchemy",
+  "libvers": "1.4.2",
+  "infile": "data/pip/marshmallow-sqlalchemy.txt",
+  "dependencies": {
+    "marshmallow": "4.0.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

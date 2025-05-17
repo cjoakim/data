@@ -1,0 +1,6 @@
+{
+  "libname": "pip2pi",
+  "libvers": "0.8.2",
+  "infile": "data/pip/pip2pi.txt",
+  "dependencies": {}
+}

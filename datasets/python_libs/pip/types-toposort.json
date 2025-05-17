@@ -1,0 +1,6 @@
+{
+  "libname": "types-toposort",
+  "libvers": "1.10.0.20250401",
+  "infile": "data/pip/types-toposort.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,19 @@
+{
+  "libname": "hera",
+  "libvers": "5.20.1",
+  "infile": "data/pip/hera.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "dnspython": "2.7.0",
+    "email-validator": "2.2.0",
+    "idna": "3.10",
+    "pydantic[email]": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "urllib3": "2.4.0"
+  }
+}

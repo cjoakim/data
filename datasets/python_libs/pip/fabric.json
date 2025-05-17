@@ -1,0 +1,17 @@
+{
+  "libname": "fabric",
+  "libvers": "3.2.2",
+  "infile": "data/pip/fabric.txt",
+  "dependencies": {
+    "bcrypt": "4.3.0",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "decorator": "5.2.1",
+    "deprecated": "1.2.18",
+    "invoke": "2.2.0",
+    "paramiko": "3.5.1",
+    "pycparser": "2.22",
+    "pynacl": "1.5.0",
+    "wrapt": "1.17.2"
+  }
+}

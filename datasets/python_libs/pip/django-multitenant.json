@@ -1,0 +1,6 @@
+{
+  "libname": "django-multitenant",
+  "libvers": "4.1.1",
+  "infile": "data/pip/django-multitenant.txt",
+  "dependencies": {}
+}

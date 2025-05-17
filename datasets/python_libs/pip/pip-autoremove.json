@@ -1,0 +1,6 @@
+{
+  "libname": "pip-autoremove",
+  "libvers": "0.10.0",
+  "infile": "data/pip/pip-autoremove.txt",
+  "dependencies": {}
+}

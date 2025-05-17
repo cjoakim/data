@@ -1,0 +1,8 @@
+{
+  "libname": "grandalf",
+  "libvers": "0.8",
+  "infile": "data/pip/grandalf.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

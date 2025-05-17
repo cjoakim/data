@@ -1,0 +1,6 @@
+{
+  "libname": "idstools",
+  "libvers": "0.6.5",
+  "infile": "data/pip/idstools.txt",
+  "dependencies": {}
+}

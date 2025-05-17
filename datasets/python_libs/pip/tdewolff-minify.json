@@ -1,0 +1,9 @@
+{
+  "libname": "tdewolff-minify",
+  "libvers": "2.20.37",
+  "infile": "data/pip/tdewolff-minify.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

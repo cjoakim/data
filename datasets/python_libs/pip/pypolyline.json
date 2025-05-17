@@ -1,0 +1,8 @@
+{
+  "libname": "pypolyline",
+  "libvers": "0.5.4",
+  "infile": "data/pip/pypolyline.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

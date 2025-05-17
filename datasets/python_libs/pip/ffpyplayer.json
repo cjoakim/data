@@ -1,0 +1,6 @@
+{
+  "libname": "ffpyplayer",
+  "libvers": "4.5.2",
+  "infile": "data/pip/ffpyplayer.txt",
+  "dependencies": {}
+}

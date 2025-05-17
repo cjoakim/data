@@ -1,0 +1,15 @@
+# This file lists the Python libraries used in the virtual enviroment.
+# See the venv.ps1 and venv.sh scripts in this directory.
+# Chris Joakim, 2025
+
+Faker
+black>=24.3.0
+certifi>=2022.12.07
+docopt
+duckdb
+h11>=0.14.0
+httpx
+idna==3.7
+psutil
+python-dotenv
+redis

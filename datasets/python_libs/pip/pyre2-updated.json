@@ -1,0 +1,6 @@
+{
+  "libname": "pyre2-updated",
+  "libvers": "0.3.9.post1",
+  "infile": "data/pip/pyre2-updated.txt",
+  "dependencies": {}
+}

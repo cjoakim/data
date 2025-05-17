@@ -1,0 +1,6 @@
+{
+  "libname": "acryl-sqlglot",
+  "libvers": "25.25.2.dev9",
+  "infile": "data/pip/acryl-sqlglot.txt",
+  "dependencies": {}
+}

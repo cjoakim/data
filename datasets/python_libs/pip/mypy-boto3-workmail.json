@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-workmail",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-workmail.txt",
+  "dependencies": {}
+}

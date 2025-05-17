@@ -1,0 +1,8 @@
+{
+  "libname": "tensorrt-cu12-libs",
+  "libvers": "10.10.0.31",
+  "infile": "data/pip/tensorrt-cu12-libs.txt",
+  "dependencies": {
+    "nvidia-cuda-runtime-cu12": "12.9.37"
+  }
+}

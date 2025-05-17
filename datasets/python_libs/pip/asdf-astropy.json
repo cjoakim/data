@@ -1,0 +1,20 @@
+{
+  "libname": "asdf-astropy",
+  "libvers": "0.7.1",
+  "infile": "data/pip/asdf-astropy.txt",
+  "dependencies": {
+    "asdf": "4.1.0",
+    "asdf-coordinates-schemas": "0.3.0",
+    "asdf-standard": "1.1.1",
+    "asdf-transform-schemas": "0.5.0",
+    "astropy": "7.0.1",
+    "astropy-iers-data": "0.2025.5.5.0.38.14",
+    "attrs": "25.3.0",
+    "jmespath": "1.0.1",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pyerfa": "2.0.1.5",
+    "pyyaml": "6.0.2",
+    "semantic-version": "2.10.0"
+  }
+}

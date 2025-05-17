@@ -1,0 +1,11 @@
+{
+  "libname": "sqlalchemy-serializer",
+  "libvers": "1.4.22",
+  "infile": "data/pip/sqlalchemy-serializer.txt",
+  "dependencies": {
+    "psycopg2-binary": "2.9.9",
+    "pytz": "2024.2",
+    "sqlalchemy": "2.0.29",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "pyapi-compat-if",
+  "libvers": "0.0.1.11357295239",
+  "infile": "data/pip/pyapi-compat-if.txt",
+  "dependencies": {
+    "debug-mgr": "0.0.2.14425062851"
+  }
+}

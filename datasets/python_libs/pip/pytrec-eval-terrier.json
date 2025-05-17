@@ -1,0 +1,6 @@
+{
+  "libname": "pytrec-eval-terrier",
+  "libvers": "0.5.7",
+  "infile": "data/pip/pytrec-eval-terrier.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "django-pgviews-redux",
+  "libvers": "0.11.0",
+  "infile": "data/pip/django-pgviews-redux.txt",
+  "dependencies": {}
+}

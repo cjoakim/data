@@ -1,0 +1,11 @@
+{
+  "libname": "elastic-apm",
+  "libvers": "6.23.0",
+  "infile": "data/pip/elastic-apm.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "ecs-logging": "2.2.0",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2"
+  }
+}

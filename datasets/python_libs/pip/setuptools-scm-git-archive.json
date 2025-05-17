@@ -1,0 +1,6 @@
+{
+  "libname": "setuptools-scm-git-archive",
+  "libvers": "1.4.1",
+  "infile": "data/pip/setuptools-scm-git-archive.txt",
+  "dependencies": {}
+}

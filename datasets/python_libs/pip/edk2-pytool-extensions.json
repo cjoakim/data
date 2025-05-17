@@ -1,0 +1,31 @@
+{
+  "libname": "edk2-pytool-extensions",
+  "libvers": "0.29.5",
+  "infile": "data/pip/edk2-pytool-extensions.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "chardet": "5.2.0",
+    "cryptography": "44.0.3",
+    "edk2-pytool-library": "0.23.2",
+    "et-xmlfile": "2.0.0",
+    "gitdb": "4.0.12",
+    "gitpython": "3.1.44",
+    "joblib": "1.5.0",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "openpyxl": "3.1.5",
+    "pefile": "2024.8.26",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pycparser": "2.22",
+    "pygments": "2.19.1",
+    "pygount": "2.0.0",
+    "pyyaml": "6.0.2",
+    "rich": "13.9.4",
+    "semantic-version": "2.10.0",
+    "smmap": "5.0.2",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2",
+    "xlsxwriter": "3.2.3"
+  }
+}

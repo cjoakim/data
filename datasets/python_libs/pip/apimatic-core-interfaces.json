@@ -1,0 +1,6 @@
+{
+  "libname": "apimatic-core-interfaces",
+  "libvers": "0.1.6",
+  "infile": "data/pip/apimatic-core-interfaces.txt",
+  "dependencies": {}
+}

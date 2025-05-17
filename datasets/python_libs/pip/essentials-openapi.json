@@ -1,0 +1,10 @@
+{
+  "libname": "essentials-openapi",
+  "libvers": "1.2.0",
+  "infile": "data/pip/essentials-openapi.txt",
+  "dependencies": {
+    "essentials": "1.1.6",
+    "markupsafe": "3.0.2",
+    "pyyaml": "6.0.2"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "robotframework-excellib",
+  "libvers": "2.0.1",
+  "infile": "data/pip/robotframework-excellib.txt",
+  "dependencies": {
+    "et-xmlfile": "2.0.0",
+    "openpyxl": "3.1.5",
+    "robotframework": "7.2.2"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pyutils-hep",
+  "libvers": "0.1.11",
+  "infile": "data/pip/pyutils-hep.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "systemrdl-compiler",
+  "libvers": "1.29.3",
+  "infile": "data/pip/systemrdl-compiler.txt",
+  "dependencies": {
+    "antlr4-python3-runtime": "4.13.2",
+    "colorama": "0.4.6",
+    "markdown": "3.8",
+    "typing-extensions": "4.13.2"
+  }
+}

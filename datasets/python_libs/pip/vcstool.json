@@ -1,0 +1,8 @@
+{
+  "libname": "vcstool",
+  "libvers": "0.3.0",
+  "infile": "data/pip/vcstool.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

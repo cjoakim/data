@@ -1,0 +1,6 @@
+{
+  "libname": "install-jdk",
+  "libvers": "1.1.0",
+  "infile": "data/pip/install-jdk.txt",
+  "dependencies": {}
+}

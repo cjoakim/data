@@ -1,0 +1,8 @@
+{
+  "libname": "django-compat",
+  "libvers": "1.0.15",
+  "infile": "data/pip/django-compat.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

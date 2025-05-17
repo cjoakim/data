@@ -1,0 +1,8 @@
+{
+  "libname": "pdf417gen",
+  "libvers": "0.8.1",
+  "infile": "data/pip/pdf417gen.txt",
+  "dependencies": {
+    "pillow": "11.2.1"
+  }
+}

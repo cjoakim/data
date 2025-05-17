@@ -1,0 +1,6 @@
+{
+  "libname": "mnemonic",
+  "libvers": "0.21",
+  "infile": "data/pip/mnemonic.txt",
+  "dependencies": {}
+}

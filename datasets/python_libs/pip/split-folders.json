@@ -1,0 +1,6 @@
+{
+  "libname": "split-folders",
+  "libvers": "0.5.1",
+  "infile": "data/pip/split-folders.txt",
+  "dependencies": {}
+}

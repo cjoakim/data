@@ -1,0 +1,6 @@
+{
+  "libname": "weblate-language-data",
+  "libvers": "2025.5",
+  "infile": "data/pip/weblate-language-data.txt",
+  "dependencies": {}
+}

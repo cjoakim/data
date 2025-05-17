@@ -1,0 +1,6 @@
+{
+  "libname": "google-re2",
+  "libvers": "1.1.20240702",
+  "infile": "data/pip/google-re2.txt",
+  "dependencies": {}
+}

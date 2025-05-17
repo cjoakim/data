@@ -1,0 +1,10 @@
+{
+  "libname": "passagemath-mcqd",
+  "libvers": "10.5.30",
+  "infile": "data/pip/passagemath-mcqd.txt",
+  "dependencies": {
+    "cysignals": "1.12.0rc2",
+    "cython": "3.0.12",
+    "memory-allocator": "0.1.4"
+  }
+}

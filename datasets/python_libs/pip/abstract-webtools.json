@@ -1,0 +1,18 @@
+{
+  "libname": "abstract-webtools",
+  "libvers": "0.1.6.96",
+  "infile": "data/pip/abstract-webtools.txt",
+  "dependencies": {
+    "abstract-security": "0.63",
+    "abstract-utilities": "0.2.2.185",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "pexpect": "4.9.0",
+    "ptyprocess": "0.7.0",
+    "pysimplegui": "5.0.8.3",
+    "python-dotenv": "1.1.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

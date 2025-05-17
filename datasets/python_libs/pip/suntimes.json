@@ -1,0 +1,10 @@
+{
+  "libname": "suntimes",
+  "libvers": "1.1.2",
+  "infile": "data/pip/suntimes.txt",
+  "dependencies": {
+    "jdcal": "1.4.1",
+    "pytz": "2025.2",
+    "tzlocal": "5.3.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "infisical-python",
+  "libvers": "2.3.6",
+  "infile": "data/pip/infisical-python.txt",
+  "dependencies": {}
+}

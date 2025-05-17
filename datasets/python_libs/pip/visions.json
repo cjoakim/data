@@ -1,0 +1,17 @@
+{
+  "libname": "visions",
+  "libvers": "0.8.1",
+  "infile": "data/pip/visions.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "multimethod": "2.0",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "puremagic": "1.29",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tzdata": "2025.2"
+  }
+}

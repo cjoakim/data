@@ -1,0 +1,9 @@
+{
+  "libname": "debian-inspector",
+  "libvers": "31.1.0",
+  "infile": "data/pip/debian-inspector.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "chardet": "5.2.0"
+  }
+}

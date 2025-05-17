@@ -1,0 +1,8 @@
+{
+  "libname": "floret",
+  "libvers": "0.10.5",
+  "infile": "data/pip/floret.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

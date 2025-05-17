@@ -1,0 +1,8 @@
+{
+  "libname": "types-wtforms",
+  "libvers": "3.2.1.20250401",
+  "infile": "data/pip/types-wtforms.txt",
+  "dependencies": {
+    "markupsafe": "3.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "django-pgcrypto-fields",
+  "libvers": "2.6.0",
+  "infile": "data/pip/django-pgcrypto-fields.txt",
+  "dependencies": {}
+}

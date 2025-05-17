@@ -1,0 +1,8 @@
+{
+  "libname": "importlab",
+  "libvers": "0.8.1",
+  "infile": "data/pip/importlab.txt",
+  "dependencies": {
+    "networkx": "3.4.2"
+  }
+}

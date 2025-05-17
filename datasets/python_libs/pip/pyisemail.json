@@ -1,0 +1,8 @@
+{
+  "libname": "pyisemail",
+  "libvers": "2.0.1",
+  "infile": "data/pip/pyisemail.txt",
+  "dependencies": {
+    "dnspython": "2.7.0"
+  }
+}

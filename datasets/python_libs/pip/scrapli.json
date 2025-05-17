@@ -1,0 +1,6 @@
+{
+  "libname": "scrapli",
+  "libvers": "2025.1.30",
+  "infile": "data/pip/scrapli.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "curtsies",
+  "libvers": "0.4.2",
+  "infile": "data/pip/curtsies.txt",
+  "dependencies": {
+    "blessed": "1.21.0",
+    "cwcwidth": "0.1.10",
+    "wcwidth": "0.2.13"
+  }
+}

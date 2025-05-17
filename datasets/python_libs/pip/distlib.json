@@ -1,0 +1,6 @@
+{
+  "libname": "distlib",
+  "libvers": "0.3.9",
+  "infile": "data/pip/distlib.txt",
+  "dependencies": {}
+}

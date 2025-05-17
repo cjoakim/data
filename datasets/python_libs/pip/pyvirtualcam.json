@@ -1,0 +1,8 @@
+{
+  "libname": "pyvirtualcam",
+  "libvers": "0.12.1",
+  "infile": "data/pip/pyvirtualcam.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

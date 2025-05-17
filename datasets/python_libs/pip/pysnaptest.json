@@ -1,0 +1,6 @@
+{
+  "libname": "pysnaptest",
+  "libvers": "0.3.0",
+  "infile": "data/pip/pysnaptest.txt",
+  "dependencies": {}
+}

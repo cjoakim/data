@@ -1,0 +1,6 @@
+{
+  "libname": "icdiff",
+  "libvers": "2.0.7",
+  "infile": "data/pip/icdiff.txt",
+  "dependencies": {}
+}

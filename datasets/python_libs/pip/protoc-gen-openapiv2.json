@@ -1,0 +1,9 @@
+{
+  "libname": "protoc-gen-openapiv2",
+  "libvers": "0.0.1",
+  "infile": "data/pip/protoc-gen-openapiv2.txt",
+  "dependencies": {
+    "googleapis-common-protos": "1.70.0",
+    "protobuf": "6.30.2"
+  }
+}

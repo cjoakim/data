@@ -1,0 +1,6 @@
+{
+  "libname": "awscrt",
+  "libvers": "0.26.1",
+  "infile": "data/pip/awscrt.txt",
+  "dependencies": {}
+}

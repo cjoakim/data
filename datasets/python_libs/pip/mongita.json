@@ -1,0 +1,10 @@
+{
+  "libname": "mongita",
+  "libvers": "1.2.0",
+  "infile": "data/pip/mongita.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "pymongo": "4.12.1",
+    "sortedcontainers": "2.4.0"
+  }
+}

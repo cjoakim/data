@@ -1,0 +1,8 @@
+{
+  "libname": "geog",
+  "libvers": "0.0.2",
+  "infile": "data/pip/geog.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

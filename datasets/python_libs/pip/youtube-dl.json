@@ -1,0 +1,6 @@
+{
+  "libname": "youtube-dl",
+  "libvers": "2021.12.17",
+  "infile": "data/pip/youtube-dl.txt",
+  "dependencies": {}
+}

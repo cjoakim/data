@@ -1,0 +1,6 @@
+{
+  "libname": "colorlog",
+  "libvers": "6.9.0",
+  "infile": "data/pip/colorlog.txt",
+  "dependencies": {}
+}

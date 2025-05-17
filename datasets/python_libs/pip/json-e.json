@@ -1,0 +1,6 @@
+{
+  "libname": "json-e",
+  "libvers": "4.8.0",
+  "infile": "data/pip/json-e.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "vici",
+  "libvers": "6.0.1",
+  "infile": "data/pip/vici.txt",
+  "dependencies": {}
+}

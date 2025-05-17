@@ -1,0 +1,20 @@
+{
+  "libname": "large-image-tasks",
+  "libvers": "1.32.3",
+  "infile": "data/pip/large-image-tasks.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "diskcache": "5.6.3",
+    "girder-client": "3.2.8",
+    "girder-worker-utils": "0.9.2",
+    "idna": "3.10",
+    "jsonpickle": "4.0.5",
+    "packaging": "25.0",
+    "requests": "2.32.3",
+    "requests-toolbelt": "1.0.0",
+    "setuptools-scm": "8.3.1",
+    "urllib3": "2.4.0"
+  }
+}

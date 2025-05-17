@@ -1,0 +1,9 @@
+{
+  "libname": "browser-cookie3",
+  "libvers": "0.20.1",
+  "infile": "data/pip/browser-cookie3.txt",
+  "dependencies": {
+    "lz4": "4.4.4",
+    "pycryptodomex": "3.22.0"
+  }
+}

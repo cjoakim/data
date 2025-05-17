@@ -1,0 +1,10 @@
+{
+  "libname": "curl-cffi",
+  "libvers": "0.10.0",
+  "infile": "data/pip/curl-cffi.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

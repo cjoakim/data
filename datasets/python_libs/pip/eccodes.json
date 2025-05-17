@@ -1,0 +1,12 @@
+{
+  "libname": "eccodes",
+  "libvers": "2.41.0",
+  "infile": "data/pip/eccodes.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "cffi": "1.17.1",
+    "findlibs": "0.1.1",
+    "numpy": "2.2.5",
+    "pycparser": "2.22"
+  }
+}

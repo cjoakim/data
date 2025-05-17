@@ -1,0 +1,6 @@
+{
+  "libname": "dotty-dict",
+  "libvers": "1.3.1",
+  "infile": "data/pip/dotty-dict.txt",
+  "dependencies": {}
+}

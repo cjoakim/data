@@ -1,0 +1,8 @@
+{
+  "libname": "pyviz-comms",
+  "libvers": "3.0.4",
+  "infile": "data/pip/pyviz-comms.txt",
+  "dependencies": {
+    "param": "2.2.0"
+  }
+}

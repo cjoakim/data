@@ -1,0 +1,6 @@
+{
+  "libname": "multi-key-dict",
+  "libvers": "2.0.3",
+  "infile": "data/pip/multi-key-dict.txt",
+  "dependencies": {}
+}

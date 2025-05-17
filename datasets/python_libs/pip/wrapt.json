@@ -1,0 +1,6 @@
+{
+  "libname": "wrapt",
+  "libvers": "1.17.2",
+  "infile": "data/pip/wrapt.txt",
+  "dependencies": {}
+}

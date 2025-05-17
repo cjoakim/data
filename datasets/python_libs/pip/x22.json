@@ -1,0 +1,6 @@
+{
+  "libname": "x22",
+  "libvers": "0.2.1",
+  "infile": "data/pip/x22.txt",
+  "dependencies": {}
+}

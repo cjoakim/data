@@ -1,0 +1,8 @@
+{
+  "libname": "cargo-lambda",
+  "libvers": "1.8.4",
+  "infile": "data/pip/cargo-lambda.txt",
+  "dependencies": {
+    "ziglang": "0.14.0"
+  }
+}

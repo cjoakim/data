@@ -1,0 +1,6 @@
+{
+  "libname": "pyudev",
+  "libvers": "0.24.3",
+  "infile": "data/pip/pyudev.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "magicalimport",
+  "libvers": "0.9.1",
+  "infile": "data/pip/magicalimport.txt",
+  "dependencies": {}
+}

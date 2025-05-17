@@ -1,0 +1,6 @@
+{
+  "libname": "pytorch",
+  "libvers": "1.0.2",
+  "infile": "data/pip/pytorch.txt",
+  "dependencies": {}
+}

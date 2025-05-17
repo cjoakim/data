@@ -1,0 +1,6 @@
+{
+  "libname": "dotsi",
+  "libvers": "0.0.3",
+  "infile": "data/pip/dotsi.txt",
+  "dependencies": {}
+}

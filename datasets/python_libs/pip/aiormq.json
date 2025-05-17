@@ -1,0 +1,12 @@
+{
+  "libname": "aiormq",
+  "libvers": "6.8.1",
+  "infile": "data/pip/aiormq.txt",
+  "dependencies": {
+    "idna": "3.10",
+    "multidict": "6.4.3",
+    "pamqp": "3.3.0",
+    "propcache": "0.3.1",
+    "yarl": "1.20.0"
+  }
+}

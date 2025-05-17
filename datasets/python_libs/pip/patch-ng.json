@@ -1,0 +1,6 @@
+{
+  "libname": "patch-ng",
+  "libvers": "1.18.1",
+  "infile": "data/pip/patch-ng.txt",
+  "dependencies": {}
+}

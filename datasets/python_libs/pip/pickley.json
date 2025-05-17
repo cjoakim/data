@@ -1,0 +1,9 @@
+{
+  "libname": "pickley",
+  "libvers": "4.5.9",
+  "infile": "data/pip/pickley.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "runez": "5.3.0"
+  }
+}

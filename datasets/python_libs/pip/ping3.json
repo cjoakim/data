@@ -1,0 +1,6 @@
+{
+  "libname": "ping3",
+  "libvers": "4.0.8",
+  "infile": "data/pip/ping3.txt",
+  "dependencies": {}
+}

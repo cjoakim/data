@@ -1,0 +1,6 @@
+{
+  "libname": "pafy",
+  "libvers": "0.5.5",
+  "infile": "data/pip/pafy.txt",
+  "dependencies": {}
+}

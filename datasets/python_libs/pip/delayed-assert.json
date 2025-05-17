@@ -1,0 +1,6 @@
+{
+  "libname": "delayed-assert",
+  "libvers": "0.3.6",
+  "infile": "data/pip/delayed-assert.txt",
+  "dependencies": {}
+}

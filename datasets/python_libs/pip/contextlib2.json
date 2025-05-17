@@ -1,0 +1,6 @@
+{
+  "libname": "contextlib2",
+  "libvers": "21.6.0",
+  "infile": "data/pip/contextlib2.txt",
+  "dependencies": {}
+}

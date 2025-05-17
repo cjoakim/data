@@ -1,0 +1,6 @@
+{
+  "libname": "mergedeep",
+  "libvers": "1.3.4",
+  "infile": "data/pip/mergedeep.txt",
+  "dependencies": {}
+}

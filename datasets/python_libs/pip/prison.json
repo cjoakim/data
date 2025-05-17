@@ -1,0 +1,8 @@
+{
+  "libname": "prison",
+  "libvers": "0.2.1",
+  "infile": "data/pip/prison.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

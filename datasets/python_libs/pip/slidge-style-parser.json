@@ -1,0 +1,6 @@
+{
+  "libname": "slidge-style-parser",
+  "libvers": "0.1.9",
+  "infile": "data/pip/slidge-style-parser.txt",
+  "dependencies": {}
+}

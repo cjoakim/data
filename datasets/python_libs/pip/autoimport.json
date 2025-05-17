@@ -1,0 +1,20 @@
+{
+  "libname": "autoimport",
+  "libvers": "1.6.1",
+  "infile": "data/pip/autoimport.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "autoflake": "2.3.1",
+    "click": "8.1.8",
+    "maison": "1.4.3",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pyflakes": "3.3.2",
+    "pyprojroot": "0.3.0",
+    "sh": "2.2.2",
+    "toml": "0.10.2",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "xdg": "6.0.0"
+  }
+}

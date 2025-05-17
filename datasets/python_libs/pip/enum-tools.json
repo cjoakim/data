@@ -1,0 +1,9 @@
+{
+  "libname": "enum-tools",
+  "libvers": "0.13.0",
+  "infile": "data/pip/enum-tools.txt",
+  "dependencies": {
+    "pygments": "2.19.1",
+    "typing-extensions": "4.13.2"
+  }
+}

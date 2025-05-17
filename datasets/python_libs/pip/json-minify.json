@@ -1,0 +1,6 @@
+{
+  "libname": "json-minify",
+  "libvers": "0.3.0",
+  "infile": "data/pip/json-minify.txt",
+  "dependencies": {}
+}

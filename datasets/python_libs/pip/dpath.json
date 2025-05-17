@@ -1,0 +1,6 @@
+{
+  "libname": "dpath",
+  "libvers": "2.2.0",
+  "infile": "data/pip/dpath.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "pyone",
+  "libvers": "6.10.3",
+  "infile": "data/pip/pyone.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "dict2xml": "1.7.6",
+    "idna": "3.10",
+    "lxml": "5.4.0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "tblib": "3.1.0",
+    "urllib3": "2.4.0",
+    "xmltodict": "0.14.2"
+  }
+}

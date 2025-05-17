@@ -1,0 +1,25 @@
+{
+  "libname": "odxtools",
+  "libvers": "10.1.1",
+  "infile": "data/pip/odxtools.txt",
+  "dependencies": {
+    "argparse-addons": "0.12.0",
+    "beautifulsoup4": "4.13.4",
+    "bitstruct": "8.20.0",
+    "deprecation": "2.1.0",
+    "jinja2": "3.1.6",
+    "markdown-it-py": "3.0.0",
+    "markdownify": "1.1.0",
+    "markupsafe": "3.0.2",
+    "mdurl": "0.1.2",
+    "msgpack": "1.1.0",
+    "packaging": "25.0",
+    "pygments": "2.19.1",
+    "python-can": "4.5.0",
+    "rich": "14.0.0",
+    "six": "1.17.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2"
+  }
+}

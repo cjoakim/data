@@ -1,0 +1,6 @@
+{
+  "libname": "trufflehogregexes",
+  "libvers": "0.0.7",
+  "infile": "data/pip/trufflehogregexes.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "safe-pysha3",
+  "libvers": "1.0.4",
+  "infile": "data/pip/safe-pysha3.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "genshi",
+  "libvers": "0.7.9",
+  "infile": "data/pip/genshi.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

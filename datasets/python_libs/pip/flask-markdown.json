@@ -1,0 +1,8 @@
+{
+  "libname": "flask-markdown",
+  "libvers": "0.3",
+  "infile": "data/pip/flask-markdown.txt",
+  "dependencies": {
+    "markdown": "3.8"
+  }
+}

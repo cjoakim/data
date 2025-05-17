@@ -1,0 +1,6 @@
+{
+  "libname": "flake8-functions-names",
+  "libvers": "0.4.0",
+  "infile": "data/pip/flake8-functions-names.txt",
+  "dependencies": {}
+}

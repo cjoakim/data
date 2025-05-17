@@ -1,0 +1,6 @@
+{
+  "libname": "acres",
+  "libvers": "0.3.0",
+  "infile": "data/pip/acres.txt",
+  "dependencies": {}
+}

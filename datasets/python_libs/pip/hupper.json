@@ -1,0 +1,6 @@
+{
+  "libname": "hupper",
+  "libvers": "1.12.1",
+  "infile": "data/pip/hupper.txt",
+  "dependencies": {}
+}

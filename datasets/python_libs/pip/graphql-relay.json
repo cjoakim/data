@@ -1,0 +1,8 @@
+{
+  "libname": "graphql-relay",
+  "libvers": "3.2.0",
+  "infile": "data/pip/graphql-relay.txt",
+  "dependencies": {
+    "graphql-core": "3.2.6"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "libname": "eth-event",
+  "libvers": "1.2.6",
+  "infile": "data/pip/eth-event.txt",
+  "dependencies": {
+    "cytoolz": "1.0.1",
+    "eth-abi": "5.2.0",
+    "eth-hash[pycryptodome]": "0.7.1",
+    "eth-typing": "5.2.1",
+    "eth-utils": "3.0.0",
+    "hexbytes": "0.3.1",
+    "parsimonious": "0.10.0",
+    "pycryptodome": "3.22.0",
+    "regex": "2024.11.6",
+    "toolz": "1.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "django-resized",
+  "libvers": "1.0.3",
+  "infile": "data/pip/django-resized.txt",
+  "dependencies": {}
+}

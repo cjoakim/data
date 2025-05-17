@@ -1,0 +1,8 @@
+{
+  "libname": "bed-reader",
+  "libvers": "1.0.6",
+  "infile": "data/pip/bed-reader.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

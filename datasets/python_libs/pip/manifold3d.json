@@ -1,0 +1,8 @@
+{
+  "libname": "manifold3d",
+  "libvers": "3.0.1",
+  "infile": "data/pip/manifold3d.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

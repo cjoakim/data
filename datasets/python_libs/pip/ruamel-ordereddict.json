@@ -1,0 +1,6 @@
+{
+  "libname": "ruamel-ordereddict",
+  "libvers": "0.4.15",
+  "infile": "data/pip/ruamel-ordereddict.txt",
+  "dependencies": {}
+}

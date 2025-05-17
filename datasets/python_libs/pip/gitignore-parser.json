@@ -1,0 +1,6 @@
+{
+  "libname": "gitignore-parser",
+  "libvers": "0.1.12",
+  "infile": "data/pip/gitignore-parser.txt",
+  "dependencies": {}
+}

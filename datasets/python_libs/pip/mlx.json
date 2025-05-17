@@ -1,0 +1,6 @@
+{
+  "libname": "mlx",
+  "libvers": "0.25.1",
+  "infile": "data/pip/mlx.txt",
+  "dependencies": {}
+}

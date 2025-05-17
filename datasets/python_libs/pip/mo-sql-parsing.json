@@ -1,0 +1,11 @@
+{
+  "libname": "mo-sql-parsing",
+  "libvers": "11.675.25037",
+  "infile": "data/pip/mo-sql-parsing.txt",
+  "dependencies": {
+    "mo-dots": "10.672.25036",
+    "mo-future": "7.672.25036",
+    "mo-imports": "7.672.25036",
+    "mo-parsing": "8.675.25037"
+  }
+}

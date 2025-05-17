@@ -1,0 +1,6 @@
+{
+  "libname": "mitogen",
+  "libvers": "0.3.23",
+  "infile": "data/pip/mitogen.txt",
+  "dependencies": {}
+}

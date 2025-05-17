@@ -1,0 +1,6 @@
+{
+  "libname": "docstring-parser",
+  "libvers": "0.16",
+  "infile": "data/pip/docstring-parser.txt",
+  "dependencies": {}
+}

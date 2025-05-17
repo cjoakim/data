@@ -1,0 +1,29 @@
+{
+  "libname": "djangocms-picture",
+  "libvers": "4.1.1",
+  "infile": "data/pip/djangocms-picture.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "chardet": "5.2.0",
+    "cssselect2": "0.8.0",
+    "django": "5.2",
+    "django-classy-tags": "4.1.0",
+    "django-cms": "4.1.6",
+    "django-filer": "3.3.1",
+    "django-formtools": "2.5.1",
+    "django-polymorphic": "3.1.0",
+    "django-sekizai": "4.1.0",
+    "django-treebeard": "4.7.1",
+    "djangocms-admin-style": "3.3.1",
+    "djangocms-attributes-field": "4.0.0",
+    "easy-thumbnails[svg]": "2.10",
+    "lxml": "5.4.0",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "reportlab": "4.4.0",
+    "sqlparse": "0.5.3",
+    "svglib": "1.5.1",
+    "tinycss2": "1.4.0",
+    "webencodings": "0.5.1"
+  }
+}

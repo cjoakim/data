@@ -1,0 +1,6 @@
+{
+  "libname": "django-login-required-middleware",
+  "libvers": "0.9.0",
+  "infile": "data/pip/django-login-required-middleware.txt",
+  "dependencies": {}
+}

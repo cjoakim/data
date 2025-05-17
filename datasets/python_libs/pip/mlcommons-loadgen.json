@@ -1,0 +1,6 @@
+{
+  "libname": "mlcommons-loadgen",
+  "libvers": "5.0.16",
+  "infile": "data/pip/mlcommons-loadgen.txt",
+  "dependencies": {}
+}

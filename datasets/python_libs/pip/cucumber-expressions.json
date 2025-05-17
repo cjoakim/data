@@ -1,0 +1,6 @@
+{
+  "libname": "cucumber-expressions",
+  "libvers": "18.0.1",
+  "infile": "data/pip/cucumber-expressions.txt",
+  "dependencies": {}
+}

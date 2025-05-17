@@ -1,0 +1,6 @@
+{
+  "libname": "crhelper",
+  "libvers": "2.0.12",
+  "infile": "data/pip/crhelper.txt",
+  "dependencies": {}
+}

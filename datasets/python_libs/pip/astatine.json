@@ -1,0 +1,11 @@
+{
+  "libname": "astatine",
+  "libvers": "0.3.3",
+  "infile": "data/pip/astatine.txt",
+  "dependencies": {
+    "asttokens": "3.0.0",
+    "domdf-python-tools": "3.10.0",
+    "natsort": "8.4.0",
+    "typing-extensions": "4.13.2"
+  }
+}

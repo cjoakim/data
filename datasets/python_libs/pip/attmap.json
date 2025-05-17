@@ -1,0 +1,8 @@
+{
+  "libname": "attmap",
+  "libvers": "0.13.2",
+  "infile": "data/pip/attmap.txt",
+  "dependencies": {
+    "ubiquerg": "0.8.1"
+  }
+}

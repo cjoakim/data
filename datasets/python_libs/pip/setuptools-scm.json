@@ -1,0 +1,8 @@
+{
+  "libname": "setuptools-scm",
+  "libvers": "8.3.1",
+  "infile": "data/pip/setuptools-scm.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "libname": "ytsaurus-yson",
+  "libvers": "0.4.10",
+  "infile": "data/pip/ytsaurus-yson.txt",
+  "dependencies": {
+    "argcomplete": "3.6.2",
+    "charset-normalizer": "3.4.2",
+    "decorator": "4.4.2",
+    "distro": "1.9.0",
+    "simplejson": "3.20.1",
+    "six": "1.17.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "ytsaurus-client": "0.13.28"
+  }
+}

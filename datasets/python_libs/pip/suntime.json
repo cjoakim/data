@@ -1,0 +1,9 @@
+{
+  "libname": "suntime",
+  "libvers": "1.3.2",
+  "infile": "data/pip/suntime.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

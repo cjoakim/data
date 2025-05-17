@@ -1,0 +1,9 @@
+{
+  "libname": "python-mbedtls",
+  "libvers": "2.10.1",
+  "infile": "data/pip/python-mbedtls.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "typing-extensions": "4.13.2"
+  }
+}

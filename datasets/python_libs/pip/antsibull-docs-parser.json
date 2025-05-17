@@ -1,0 +1,6 @@
+{
+  "libname": "antsibull-docs-parser",
+  "libvers": "1.2.0",
+  "infile": "data/pip/antsibull-docs-parser.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "django-meta",
+  "libvers": "2.5.0",
+  "infile": "data/pip/django-meta.txt",
+  "dependencies": {}
+}

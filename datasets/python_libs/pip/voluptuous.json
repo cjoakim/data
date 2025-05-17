@@ -1,0 +1,6 @@
+{
+  "libname": "voluptuous",
+  "libvers": "0.15.2",
+  "infile": "data/pip/voluptuous.txt",
+  "dependencies": {}
+}

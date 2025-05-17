@@ -1,0 +1,6 @@
+{
+  "libname": "pymediainfo",
+  "libvers": "7.0.1",
+  "infile": "data/pip/pymediainfo.txt",
+  "dependencies": {}
+}

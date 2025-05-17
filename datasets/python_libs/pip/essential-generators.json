@@ -1,0 +1,6 @@
+{
+  "libname": "essential-generators",
+  "libvers": "1.0",
+  "infile": "data/pip/essential-generators.txt",
+  "dependencies": {}
+}

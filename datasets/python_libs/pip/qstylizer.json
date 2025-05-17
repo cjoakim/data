@@ -1,0 +1,10 @@
+{
+  "libname": "qstylizer",
+  "libvers": "0.2.4",
+  "infile": "data/pip/qstylizer.txt",
+  "dependencies": {
+    "inflection": "0.5.1",
+    "tinycss2": "1.4.0",
+    "webencodings": "0.5.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "neomodel",
+  "libvers": "5.4.5",
+  "infile": "data/pip/neomodel.txt",
+  "dependencies": {
+    "neo4j": "5.28.1",
+    "pytz": "2025.2"
+  }
+}

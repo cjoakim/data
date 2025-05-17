@@ -1,0 +1,9 @@
+{
+  "libname": "tiledb",
+  "libvers": "0.33.6",
+  "infile": "data/pip/tiledb.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "adbc-driver-manager",
+  "libvers": "1.6.0",
+  "infile": "data/pip/adbc-driver-manager.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

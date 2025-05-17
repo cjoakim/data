@@ -1,0 +1,15 @@
+{
+  "libname": "mmcv-full",
+  "libvers": "1.7.2",
+  "infile": "data/pip/mmcv-full.txt",
+  "dependencies": {
+    "addict": "2.4.0",
+    "numpy": "2.2.5",
+    "opencv-python": "4.11.0.86",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "platformdirs": "4.3.7",
+    "pyyaml": "6.0.2",
+    "yapf": "0.43.0"
+  }
+}

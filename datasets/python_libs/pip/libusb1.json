@@ -1,0 +1,6 @@
+{
+  "libname": "libusb1",
+  "libvers": "3.3.1",
+  "infile": "data/pip/libusb1.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "in-n-out",
+  "libvers": "0.2.1",
+  "infile": "data/pip/in-n-out.txt",
+  "dependencies": {}
+}

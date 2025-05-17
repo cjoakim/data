@@ -1,0 +1,15 @@
+{
+  "libname": "tccli",
+  "libvers": "3.0.1306.1",
+  "infile": "data/pip/tccli.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "jmespath": "0.10.0",
+    "requests": "2.32.3",
+    "six": "1.16.0",
+    "tencentcloud-sdk-python": "3.0.1373",
+    "urllib3": "2.4.0"
+  }
+}

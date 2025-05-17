@@ -1,0 +1,9 @@
+{
+  "libname": "python-augeas",
+  "libvers": "1.2.0",
+  "infile": "data/pip/python-augeas.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

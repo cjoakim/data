@@ -1,0 +1,8 @@
+{
+  "libname": "pipfile",
+  "libvers": "0.0.2",
+  "infile": "data/pip/pipfile.txt",
+  "dependencies": {
+    "toml": "0.10.2"
+  }
+}

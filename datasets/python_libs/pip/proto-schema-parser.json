@@ -1,0 +1,8 @@
+{
+  "libname": "proto-schema-parser",
+  "libvers": "1.6.0",
+  "infile": "data/pip/proto-schema-parser.txt",
+  "dependencies": {
+    "antlr4-python3-runtime": "4.13.2"
+  }
+}

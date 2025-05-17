@@ -1,0 +1,6 @@
+{
+  "libname": "sageattention",
+  "libvers": "1.0.6",
+  "infile": "data/pip/sageattention.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "ttach",
+  "libvers": "0.0.3",
+  "infile": "data/pip/ttach.txt",
+  "dependencies": {}
+}

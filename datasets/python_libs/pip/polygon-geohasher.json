@@ -1,0 +1,10 @@
+{
+  "libname": "polygon-geohasher",
+  "libvers": "0.0.1",
+  "infile": "data/pip/polygon-geohasher.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "python-geohash": "0.8.5",
+    "shapely": "2.1.0"
+  }
+}

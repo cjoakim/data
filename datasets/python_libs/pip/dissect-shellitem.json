@@ -1,0 +1,9 @@
+{
+  "libname": "dissect-shellitem",
+  "libvers": "3.11",
+  "infile": "data/pip/dissect-shellitem.txt",
+  "dependencies": {
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

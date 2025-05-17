@@ -1,0 +1,6 @@
+{
+  "libname": "circular-dict",
+  "libvers": "1.9",
+  "infile": "data/pip/circular-dict.txt",
+  "dependencies": {}
+}

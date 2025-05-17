@@ -1,0 +1,6 @@
+{
+  "libname": "locustio",
+  "libvers": "0.999",
+  "infile": "data/pip/locustio.txt",
+  "dependencies": {}
+}

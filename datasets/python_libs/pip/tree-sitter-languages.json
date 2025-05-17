@@ -1,0 +1,8 @@
+{
+  "libname": "tree-sitter-languages",
+  "libvers": "1.10.2",
+  "infile": "data/pip/tree-sitter-languages.txt",
+  "dependencies": {
+    "tree-sitter": "0.24.0"
+  }
+}

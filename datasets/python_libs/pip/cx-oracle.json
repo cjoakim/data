@@ -1,0 +1,6 @@
+{
+  "libname": "cx-oracle",
+  "libvers": "8.3.0",
+  "infile": "data/pip/cx-oracle.txt",
+  "dependencies": {}
+}

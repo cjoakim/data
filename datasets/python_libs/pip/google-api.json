@@ -1,0 +1,8 @@
+{
+  "libname": "google-api",
+  "libvers": "0.1.12",
+  "infile": "data/pip/google-api.txt",
+  "dependencies": {
+    "appier": "1.34.6"
+  }
+}

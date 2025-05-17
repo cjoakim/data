@@ -1,0 +1,9 @@
+{
+  "libname": "pyvisa-py",
+  "libvers": "0.8.0",
+  "infile": "data/pip/pyvisa-py.txt",
+  "dependencies": {
+    "pyvisa": "1.15.0",
+    "typing-extensions": "4.13.2"
+  }
+}

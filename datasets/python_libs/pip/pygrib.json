@@ -1,0 +1,11 @@
+{
+  "libname": "pygrib",
+  "libvers": "2.1.6",
+  "infile": "data/pip/pygrib.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pyproj": "3.7.1"
+  }
+}

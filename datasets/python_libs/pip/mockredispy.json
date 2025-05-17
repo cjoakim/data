@@ -1,0 +1,6 @@
+{
+  "libname": "mockredispy",
+  "libvers": "2.9.3",
+  "infile": "data/pip/mockredispy.txt",
+  "dependencies": {}
+}

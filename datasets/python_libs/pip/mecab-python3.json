@@ -1,0 +1,6 @@
+{
+  "libname": "mecab-python3",
+  "libvers": "1.0.10",
+  "infile": "data/pip/mecab-python3.txt",
+  "dependencies": {}
+}

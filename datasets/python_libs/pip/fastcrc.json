@@ -1,0 +1,6 @@
+{
+  "libname": "fastcrc",
+  "libvers": "0.3.2",
+  "infile": "data/pip/fastcrc.txt",
+  "dependencies": {}
+}

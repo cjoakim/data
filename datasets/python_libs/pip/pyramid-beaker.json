@@ -1,0 +1,18 @@
+{
+  "libname": "pyramid-beaker",
+  "libvers": "0.9",
+  "infile": "data/pip/pyramid-beaker.txt",
+  "dependencies": {
+    "beaker": "1.13.0",
+    "hupper": "1.12.1",
+    "pastedeploy": "3.1.0",
+    "plaster": "1.1.2",
+    "plaster-pastedeploy": "1.0.1",
+    "pyramid": "2.0.2",
+    "translationstring": "1.4",
+    "venusian": "3.1.1",
+    "webob": "1.8.9",
+    "zope-deprecation": "5.1",
+    "zope-interface": "7.2"
+  }
+}

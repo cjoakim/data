@@ -1,0 +1,6 @@
+{
+  "libname": "tcolorpy",
+  "libvers": "0.1.7",
+  "infile": "data/pip/tcolorpy.txt",
+  "dependencies": {}
+}

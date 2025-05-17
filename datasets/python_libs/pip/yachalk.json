@@ -1,0 +1,8 @@
+{
+  "libname": "yachalk",
+  "libvers": "0.1.7",
+  "infile": "data/pip/yachalk.txt",
+  "dependencies": {
+    "importlib-resources": "6.5.2"
+  }
+}

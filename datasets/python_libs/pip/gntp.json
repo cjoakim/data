@@ -1,0 +1,6 @@
+{
+  "libname": "gntp",
+  "libvers": "1.0.3",
+  "infile": "data/pip/gntp.txt",
+  "dependencies": {}
+}

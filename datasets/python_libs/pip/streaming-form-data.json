@@ -1,0 +1,9 @@
+{
+  "libname": "streaming-form-data",
+  "libvers": "1.19.1",
+  "infile": "data/pip/streaming-form-data.txt",
+  "dependencies": {
+    "smart-open": "7.1.0",
+    "wrapt": "1.17.2"
+  }
+}

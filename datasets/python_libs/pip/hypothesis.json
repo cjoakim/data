@@ -1,0 +1,9 @@
+{
+  "libname": "hypothesis",
+  "libvers": "6.131.13",
+  "infile": "data/pip/hypothesis.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "sortedcontainers": "2.4.0"
+  }
+}

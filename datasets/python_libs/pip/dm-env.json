@@ -1,0 +1,12 @@
+{
+  "libname": "dm-env",
+  "libvers": "1.6",
+  "infile": "data/pip/dm-env.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "attrs": "25.3.0",
+    "dm-tree": "0.1.9",
+    "numpy": "2.2.5",
+    "wrapt": "1.17.2"
+  }
+}

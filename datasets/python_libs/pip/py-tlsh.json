@@ -1,0 +1,6 @@
+{
+  "libname": "py-tlsh",
+  "libvers": "4.7.2",
+  "infile": "data/pip/py-tlsh.txt",
+  "dependencies": {}
+}

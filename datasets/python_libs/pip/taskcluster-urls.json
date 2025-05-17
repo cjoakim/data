@@ -1,0 +1,6 @@
+{
+  "libname": "taskcluster-urls",
+  "libvers": "13.0.1",
+  "infile": "data/pip/taskcluster-urls.txt",
+  "dependencies": {}
+}

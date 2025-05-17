@@ -1,0 +1,6 @@
+{
+  "libname": "pproxy",
+  "libvers": "2.7.9",
+  "infile": "data/pip/pproxy.txt",
+  "dependencies": {}
+}

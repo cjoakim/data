@@ -1,0 +1,9 @@
+{
+  "libname": "pydantic-openapi-helper",
+  "libvers": "0.2.11",
+  "infile": "data/pip/pydantic-openapi-helper.txt",
+  "dependencies": {
+    "pydantic": "1.10.22",
+    "typing-extensions": "4.13.2"
+  }
+}

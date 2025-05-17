@@ -1,0 +1,9 @@
+{
+  "libname": "neotime",
+  "libvers": "1.7.4",
+  "infile": "data/pip/neotime.txt",
+  "dependencies": {
+    "pytz": "2025.2",
+    "six": "1.17.0"
+  }
+}

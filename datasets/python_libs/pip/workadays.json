@@ -1,0 +1,9 @@
+{
+  "libname": "workadays",
+  "libvers": "2023.12.30",
+  "infile": "data/pip/workadays.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

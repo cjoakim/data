@@ -1,0 +1,9 @@
+{
+  "libname": "scipy-stubs",
+  "libvers": "1.15.2.2",
+  "infile": "data/pip/scipy-stubs.txt",
+  "dependencies": {
+    "optype": "0.9.3",
+    "typing-extensions": "4.13.2"
+  }
+}

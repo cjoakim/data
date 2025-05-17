@@ -1,0 +1,6 @@
+{
+  "libname": "dissect-util",
+  "libvers": "3.20",
+  "infile": "data/pip/dissect-util.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "azure-functions",
+  "libvers": "1.23.0",
+  "infile": "data/pip/azure-functions.txt",
+  "dependencies": {
+    "markupsafe": "3.0.2",
+    "werkzeug": "3.1.3"
+  }
+}

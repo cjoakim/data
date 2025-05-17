@@ -1,0 +1,10 @@
+{
+  "libname": "neo",
+  "libvers": "0.14.1",
+  "infile": "data/pip/neo.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "quantities": "0.16.2"
+  }
+}

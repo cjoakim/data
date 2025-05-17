@@ -1,0 +1,9 @@
+{
+  "libname": "factory-boy",
+  "libvers": "3.3.3",
+  "infile": "data/pip/factory-boy.txt",
+  "dependencies": {
+    "faker": "37.1.0",
+    "tzdata": "2025.2"
+  }
+}

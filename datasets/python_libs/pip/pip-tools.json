@@ -1,0 +1,12 @@
+{
+  "libname": "pip-tools",
+  "libvers": "7.4.1",
+  "infile": "data/pip/pip-tools.txt",
+  "dependencies": {
+    "build": "1.2.2.post1",
+    "click": "8.1.8",
+    "packaging": "25.0",
+    "pyproject-hooks": "1.2.0",
+    "wheel": "0.45.1"
+  }
+}

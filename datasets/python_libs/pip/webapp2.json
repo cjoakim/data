@@ -1,0 +1,6 @@
+{
+  "libname": "webapp2",
+  "libvers": "2.5.2",
+  "infile": "data/pip/webapp2.txt",
+  "dependencies": {}
+}

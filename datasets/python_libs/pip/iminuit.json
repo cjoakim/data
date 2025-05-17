@@ -1,0 +1,8 @@
+{
+  "libname": "iminuit",
+  "libvers": "2.31.1",
+  "infile": "data/pip/iminuit.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

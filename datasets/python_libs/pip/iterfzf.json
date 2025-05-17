@@ -1,0 +1,6 @@
+{
+  "libname": "iterfzf",
+  "libvers": "1.6.0.60.3",
+  "infile": "data/pip/iterfzf.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pbxproj",
+  "libvers": "4.2.1",
+  "infile": "data/pip/pbxproj.txt",
+  "dependencies": {
+    "docopt": "0.6.2",
+    "openstep-parser": "2.0.1"
+  }
+}

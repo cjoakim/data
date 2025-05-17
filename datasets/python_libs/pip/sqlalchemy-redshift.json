@@ -1,0 +1,9 @@
+{
+  "libname": "sqlalchemy-redshift",
+  "libvers": "0.8.14",
+  "infile": "data/pip/sqlalchemy-redshift.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "sqlalchemy": "1.4.54"
+  }
+}

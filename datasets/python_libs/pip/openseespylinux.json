@@ -1,0 +1,6 @@
+{
+  "libname": "openseespylinux",
+  "libvers": "3.7.1.2",
+  "infile": "data/pip/openseespylinux.txt",
+  "dependencies": {}
+}

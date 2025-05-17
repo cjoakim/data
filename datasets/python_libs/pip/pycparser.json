@@ -1,0 +1,6 @@
+{
+  "libname": "pycparser",
+  "libvers": "2.22",
+  "infile": "data/pip/pycparser.txt",
+  "dependencies": {}
+}

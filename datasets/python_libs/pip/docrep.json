@@ -1,0 +1,8 @@
+{
+  "libname": "docrep",
+  "libvers": "0.3.2",
+  "infile": "data/pip/docrep.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

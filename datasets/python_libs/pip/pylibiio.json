@@ -1,0 +1,6 @@
+{
+  "libname": "pylibiio",
+  "libvers": "0.25",
+  "infile": "data/pip/pylibiio.txt",
+  "dependencies": {}
+}

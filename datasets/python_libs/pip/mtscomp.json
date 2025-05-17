@@ -1,0 +1,6 @@
+{
+  "libname": "mtscomp",
+  "libvers": "1.0.2",
+  "infile": "data/pip/mtscomp.txt",
+  "dependencies": {}
+}

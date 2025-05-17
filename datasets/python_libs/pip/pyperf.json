@@ -1,0 +1,8 @@
+{
+  "libname": "pyperf",
+  "libvers": "2.9.0",
+  "infile": "data/pip/pyperf.txt",
+  "dependencies": {
+    "psutil": "7.0.0"
+  }
+}

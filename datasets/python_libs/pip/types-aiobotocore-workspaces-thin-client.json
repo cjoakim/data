@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-workspaces-thin-client",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-workspaces-thin-client.txt",
+  "dependencies": {}
+}

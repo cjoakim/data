@@ -1,0 +1,8 @@
+{
+  "libname": "docplex",
+  "libvers": "2.29.245",
+  "infile": "data/pip/docplex.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

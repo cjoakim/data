@@ -1,0 +1,8 @@
+{
+  "libname": "kml2geojson",
+  "libvers": "5.1.0",
+  "infile": "data/pip/kml2geojson.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

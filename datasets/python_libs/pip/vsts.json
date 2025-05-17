@@ -1,0 +1,16 @@
+{
+  "libname": "vsts",
+  "libvers": "0.1.25",
+  "infile": "data/pip/vsts.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "isodate": "0.7.2",
+    "msrest": "0.6.21",
+    "oauthlib": "3.2.2",
+    "requests": "2.32.3",
+    "requests-oauthlib": "2.0.0",
+    "urllib3": "2.4.0"
+  }
+}

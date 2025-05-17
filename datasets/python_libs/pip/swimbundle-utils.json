@@ -1,0 +1,26 @@
+{
+  "libname": "swimbundle-utils",
+  "libvers": "4.8.1",
+  "infile": "data/pip/swimbundle-utils.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "2.0.12",
+    "decorator": "5.2.1",
+    "dict-plus": "0.2.3",
+    "future": "0.18.2",
+    "idna": "3.10",
+    "iocextract": "1.13.1",
+    "ipaddress": "1.0.23",
+    "pendulum": "2.1.2",
+    "polling": "0.3.0",
+    "pyparsing": "2.4.7",
+    "python-dateutil": "2.9.0.post0",
+    "python-libpython-debian-bin": "0.0.4",
+    "pytzdata": "2020.1",
+    "regex": "2024.11.6",
+    "requests": "2.26.0",
+    "six": "1.13.0",
+    "urllib3": "1.26.20",
+    "validators": "0.14.0"
+  }
+}

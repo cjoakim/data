@@ -1,0 +1,32 @@
+{
+  "libname": "gnocchiclient",
+  "libvers": "7.2.0",
+  "infile": "data/pip/gnocchiclient.txt",
+  "dependencies": {
+    "autopage": "0.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "cliff": "4.9.1",
+    "cmd2": "2.5.11",
+    "debtcollector": "3.0.0",
+    "futurist": "3.1.1",
+    "gnureadline": "8.2.13",
+    "idna": "3.10",
+    "iso8601": "2.1.0",
+    "keystoneauth1": "5.10.0",
+    "os-service-types": "1.7.0",
+    "pbr": "6.1.1",
+    "prettytable": "3.16.0",
+    "pyperclip": "1.9.0",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "stevedore": "5.4.1",
+    "typing-extensions": "4.13.2",
+    "ujson": "5.10.0",
+    "urllib3": "2.4.0",
+    "wcwidth": "0.2.13",
+    "wrapt": "1.17.2"
+  }
+}

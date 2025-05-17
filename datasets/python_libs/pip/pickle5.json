@@ -1,0 +1,6 @@
+{
+  "libname": "pickle5",
+  "libvers": "0.0.11",
+  "infile": "data/pip/pickle5.txt",
+  "dependencies": {}
+}

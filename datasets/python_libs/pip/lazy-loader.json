@@ -1,0 +1,8 @@
+{
+  "libname": "lazy-loader",
+  "libvers": "0.4",
+  "infile": "data/pip/lazy-loader.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

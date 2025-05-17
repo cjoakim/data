@@ -1,0 +1,6 @@
+{
+  "libname": "siphash24",
+  "libvers": "1.7",
+  "infile": "data/pip/siphash24.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pynose",
+  "libvers": "1.5.4",
+  "infile": "data/pip/pynose.txt",
+  "dependencies": {}
+}

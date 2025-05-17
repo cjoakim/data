@@ -1,0 +1,8 @@
+{
+  "libname": "robocorp-log",
+  "libvers": "3.0.0",
+  "infile": "data/pip/robocorp-log.txt",
+  "dependencies": {
+    "psutil": "5.9.8"
+  }
+}

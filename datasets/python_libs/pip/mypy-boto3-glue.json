@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-glue",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-glue.txt",
+  "dependencies": {}
+}

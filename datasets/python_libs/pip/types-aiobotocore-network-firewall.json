@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-network-firewall",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-network-firewall.txt",
+  "dependencies": {}
+}

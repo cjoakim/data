@@ -1,0 +1,6 @@
+{
+  "libname": "pamela",
+  "libvers": "1.2.0",
+  "infile": "data/pip/pamela.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "topojson",
+  "libvers": "1.9",
+  "infile": "data/pip/topojson.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "shapely": "2.1.0"
+  }
+}

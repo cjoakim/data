@@ -1,0 +1,8 @@
+{
+  "libname": "grafanalib",
+  "libvers": "0.7.1",
+  "infile": "data/pip/grafanalib.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

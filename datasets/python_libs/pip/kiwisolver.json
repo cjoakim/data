@@ -1,0 +1,6 @@
+{
+  "libname": "kiwisolver",
+  "libvers": "1.4.8",
+  "infile": "data/pip/kiwisolver.txt",
+  "dependencies": {}
+}

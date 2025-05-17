@@ -1,0 +1,16 @@
+{
+  "libname": "flakeheaven",
+  "libvers": "3.3.0",
+  "infile": "data/pip/flakeheaven.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "entrypoints": "0.4",
+    "flake8": "4.0.1",
+    "mccabe": "0.6.1",
+    "pycodestyle": "2.8.0",
+    "pyflakes": "2.4.0",
+    "pygments": "2.19.1",
+    "toml": "0.10.2",
+    "urllib3": "2.4.0"
+  }
+}

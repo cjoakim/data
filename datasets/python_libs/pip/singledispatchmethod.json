@@ -1,0 +1,6 @@
+{
+  "libname": "singledispatchmethod",
+  "libvers": "1.0",
+  "infile": "data/pip/singledispatchmethod.txt",
+  "dependencies": {}
+}

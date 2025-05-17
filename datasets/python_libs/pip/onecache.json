@@ -1,0 +1,6 @@
+{
+  "libname": "onecache",
+  "libvers": "0.7.1",
+  "infile": "data/pip/onecache.txt",
+  "dependencies": {}
+}

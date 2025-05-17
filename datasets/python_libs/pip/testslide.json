@@ -1,0 +1,10 @@
+{
+  "libname": "testslide",
+  "libvers": "2.7.1",
+  "infile": "data/pip/testslide.txt",
+  "dependencies": {
+    "psutil": "7.0.0",
+    "pygments": "2.19.1",
+    "typeguard": "2.13.3"
+  }
+}

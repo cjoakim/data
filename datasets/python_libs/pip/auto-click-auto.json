@@ -1,0 +1,8 @@
+{
+  "libname": "auto-click-auto",
+  "libvers": "0.1.5",
+  "infile": "data/pip/auto-click-auto.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pymorphy3-dicts-ru",
+  "libvers": "2.4.417150.4580142",
+  "infile": "data/pip/pymorphy3-dicts-ru.txt",
+  "dependencies": {}
+}

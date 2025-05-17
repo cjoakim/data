@@ -1,0 +1,6 @@
+{
+  "libname": "fortranformat",
+  "libvers": "2.0.3",
+  "infile": "data/pip/fortranformat.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "casers",
+  "libvers": "0.11.0",
+  "infile": "data/pip/casers.txt",
+  "dependencies": {}
+}

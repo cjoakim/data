@@ -1,0 +1,8 @@
+{
+  "libname": "kink",
+  "libvers": "0.8.1",
+  "infile": "data/pip/kink.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "onnxruntime-tools",
+  "libvers": "1.7.0",
+  "infile": "data/pip/onnxruntime-tools.txt",
+  "dependencies": {
+    "coloredlogs": "15.0.1",
+    "humanfriendly": "10.0",
+    "numpy": "2.2.5",
+    "onnx": "1.17.0",
+    "packaging": "25.0",
+    "protobuf": "6.30.2",
+    "psutil": "7.0.0",
+    "py-cpuinfo": "9.0.0",
+    "py3nvml": "0.2.7",
+    "xmltodict": "0.14.2"
+  }
+}

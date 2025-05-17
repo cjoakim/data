@@ -1,0 +1,9 @@
+{
+  "libname": "spf2ip",
+  "libvers": "1.0.5",
+  "infile": "data/pip/spf2ip.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "ipaddress": "1.0.23"
+  }
+}

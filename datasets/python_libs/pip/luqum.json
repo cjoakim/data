@@ -1,0 +1,8 @@
+{
+  "libname": "luqum",
+  "libvers": "1.0.0",
+  "infile": "data/pip/luqum.txt",
+  "dependencies": {
+    "ply": "3.11"
+  }
+}

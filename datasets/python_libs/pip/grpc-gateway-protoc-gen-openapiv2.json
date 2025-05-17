@@ -1,0 +1,9 @@
+{
+  "libname": "grpc-gateway-protoc-gen-openapiv2",
+  "libvers": "0.1.0",
+  "infile": "data/pip/grpc-gateway-protoc-gen-openapiv2.txt",
+  "dependencies": {
+    "googleapis-common-protos": "1.70.0",
+    "protobuf": "6.30.2"
+  }
+}

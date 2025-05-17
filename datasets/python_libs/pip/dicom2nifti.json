@@ -1,0 +1,14 @@
+{
+  "libname": "dicom2nifti",
+  "libvers": "2.6.1",
+  "infile": "data/pip/dicom2nifti.txt",
+  "dependencies": {
+    "nibabel": "5.3.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pydicom": "3.0.1",
+    "python-gdcm": "3.0.24.1",
+    "scipy": "1.15.2",
+    "typing-extensions": "4.13.2"
+  }
+}

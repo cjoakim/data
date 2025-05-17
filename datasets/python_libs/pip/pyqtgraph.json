@@ -1,0 +1,8 @@
+{
+  "libname": "pyqtgraph",
+  "libvers": "0.13.7",
+  "infile": "data/pip/pyqtgraph.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

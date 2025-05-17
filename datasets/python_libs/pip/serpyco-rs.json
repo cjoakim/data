@@ -1,0 +1,9 @@
+{
+  "libname": "serpyco-rs",
+  "libvers": "1.13.0",
+  "infile": "data/pip/serpyco-rs.txt",
+  "dependencies": {
+    "attributes-doc": "0.4.0",
+    "typing-extensions": "4.13.2"
+  }
+}

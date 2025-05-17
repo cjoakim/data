@@ -1,0 +1,6 @@
+{
+  "libname": "deep-merge",
+  "libvers": "0.0.4",
+  "infile": "data/pip/deep-merge.txt",
+  "dependencies": {}
+}

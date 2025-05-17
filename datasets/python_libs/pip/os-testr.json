@@ -1,0 +1,11 @@
+{
+  "libname": "os-testr",
+  "libvers": "3.0.0",
+  "infile": "data/pip/os-testr.txt",
+  "dependencies": {
+    "iso8601": "2.1.0",
+    "pbr": "6.1.1",
+    "python-subunit": "1.4.4",
+    "testtools": "2.7.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "flake8-comments",
+  "libvers": "0.1.2",
+  "infile": "data/pip/flake8-comments.txt",
+  "dependencies": {
+    "flake8": "7.2.0",
+    "mccabe": "0.7.0",
+    "pycodestyle": "2.13.0",
+    "pyflakes": "3.3.2"
+  }
+}

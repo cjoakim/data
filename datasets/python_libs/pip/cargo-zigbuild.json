@@ -1,0 +1,8 @@
+{
+  "libname": "cargo-zigbuild",
+  "libvers": "0.20.0",
+  "infile": "data/pip/cargo-zigbuild.txt",
+  "dependencies": {
+    "ziglang": "0.14.0"
+  }
+}

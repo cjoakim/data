@@ -1,0 +1,13 @@
+{
+  "libname": "wiremock",
+  "libvers": "2.6.1",
+  "infile": "data/pip/wiremock.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "importlib-resources": "5.13.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

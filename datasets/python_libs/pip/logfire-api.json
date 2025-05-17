@@ -1,0 +1,6 @@
+{
+  "libname": "logfire-api",
+  "libvers": "3.14.1",
+  "infile": "data/pip/logfire-api.txt",
+  "dependencies": {}
+}

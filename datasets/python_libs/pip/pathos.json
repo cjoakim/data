@@ -1,0 +1,11 @@
+{
+  "libname": "pathos",
+  "libvers": "0.3.4",
+  "infile": "data/pip/pathos.txt",
+  "dependencies": {
+    "dill": "0.4.0",
+    "multiprocess": "0.70.18",
+    "pox": "0.3.6",
+    "ppft": "1.7.7"
+  }
+}

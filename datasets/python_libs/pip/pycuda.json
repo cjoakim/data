@@ -1,0 +1,13 @@
+{
+  "libname": "pycuda",
+  "libvers": "2025.1",
+  "infile": "data/pip/pycuda.txt",
+  "dependencies": {
+    "mako": "1.3.10",
+    "markupsafe": "3.0.2",
+    "platformdirs": "4.3.7",
+    "pytools": "2025.1.3",
+    "siphash24": "1.7",
+    "typing-extensions": "4.13.2"
+  }
+}

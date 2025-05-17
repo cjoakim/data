@@ -1,0 +1,6 @@
+{
+  "libname": "pycups",
+  "libvers": "2.0.4",
+  "infile": "data/pip/pycups.txt",
+  "dependencies": {}
+}

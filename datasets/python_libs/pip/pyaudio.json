@@ -1,0 +1,6 @@
+{
+  "libname": "pyaudio",
+  "libvers": "0.2.14",
+  "infile": "data/pip/pyaudio.txt",
+  "dependencies": {}
+}

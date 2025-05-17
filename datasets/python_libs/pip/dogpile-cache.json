@@ -1,0 +1,10 @@
+{
+  "libname": "dogpile-cache",
+  "libvers": "1.4.0",
+  "infile": "data/pip/dogpile-cache.txt",
+  "dependencies": {
+    "decorator": "5.2.1",
+    "pbr": "6.1.1",
+    "stevedore": "5.4.1"
+  }
+}

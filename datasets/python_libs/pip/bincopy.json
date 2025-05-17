@@ -1,0 +1,10 @@
+{
+  "libname": "bincopy",
+  "libvers": "20.1.0",
+  "infile": "data/pip/bincopy.txt",
+  "dependencies": {
+    "argparse-addons": "0.12.0",
+    "humanfriendly": "10.0",
+    "pyelftools": "0.32"
+  }
+}

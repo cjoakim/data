@@ -1,0 +1,27 @@
+{
+  "libname": "pydoctor",
+  "libvers": "24.11.2",
+  "infile": "data/pip/pydoctor.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "automat": "25.4.16",
+    "cachecontrol[filecache]": "0.14.3",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "configargparse": "1.7",
+    "constantly": "23.10.4",
+    "docutils": "0.21.2",
+    "filelock": "3.18.0",
+    "hyperlink": "21.0.0",
+    "idna": "3.10",
+    "incremental": "24.7.2",
+    "lunr": "0.7.0.post1",
+    "msgpack": "1.1.0",
+    "platformdirs": "4.3.7",
+    "requests": "2.32.3",
+    "twisted": "24.11.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "zope-interface": "7.2"
+  }
+}

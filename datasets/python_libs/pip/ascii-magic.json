@@ -1,0 +1,9 @@
+{
+  "libname": "ascii-magic",
+  "libvers": "2.3.0",
+  "infile": "data/pip/ascii-magic.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "pillow": "11.2.1"
+  }
+}

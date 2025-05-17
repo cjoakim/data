@@ -1,0 +1,8 @@
+{
+  "libname": "pydocstyle",
+  "libvers": "6.3.0",
+  "infile": "data/pip/pydocstyle.txt",
+  "dependencies": {
+    "snowballstemmer": "2.2.0"
+  }
+}

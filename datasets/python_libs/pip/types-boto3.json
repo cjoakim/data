@@ -1,0 +1,10 @@
+{
+  "libname": "types-boto3",
+  "libvers": "1.38.10",
+  "infile": "data/pip/types-boto3.txt",
+  "dependencies": {
+    "botocore-stubs": "1.38.10",
+    "types-awscrt": "0.26.1",
+    "types-s3transfer": "0.12.0"
+  }
+}

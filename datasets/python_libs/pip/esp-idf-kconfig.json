@@ -1,0 +1,6 @@
+{
+  "libname": "esp-idf-kconfig",
+  "libvers": "2.5.0",
+  "infile": "data/pip/esp-idf-kconfig.txt",
+  "dependencies": {}
+}

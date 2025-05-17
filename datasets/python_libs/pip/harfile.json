@@ -1,0 +1,6 @@
+{
+  "libname": "harfile",
+  "libvers": "0.3.0",
+  "infile": "data/pip/harfile.txt",
+  "dependencies": {}
+}

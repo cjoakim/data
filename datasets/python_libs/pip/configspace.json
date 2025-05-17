@@ -1,0 +1,12 @@
+{
+  "libname": "configspace",
+  "libvers": "1.2.1",
+  "infile": "data/pip/configspace.txt",
+  "dependencies": {
+    "more-itertools": "10.7.0",
+    "numpy": "2.2.5",
+    "pyparsing": "3.2.3",
+    "scipy": "1.15.2",
+    "typing-extensions": "4.13.2"
+  }
+}

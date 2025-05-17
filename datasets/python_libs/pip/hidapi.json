@@ -1,0 +1,6 @@
+{
+  "libname": "hidapi",
+  "libvers": "0.14.0.post4",
+  "infile": "data/pip/hidapi.txt",
+  "dependencies": {}
+}

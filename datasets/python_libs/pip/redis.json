@@ -1,0 +1,6 @@
+{
+  "libname": "redis",
+  "libvers": "6.0.0",
+  "infile": "data/pip/redis.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "fluent-runtime",
+  "libvers": "0.4.0",
+  "infile": "data/pip/fluent-runtime.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "babel": "2.17.0",
+    "fluent-syntax": "0.19.0",
+    "pytz": "2025.2",
+    "typing-extensions": "4.13.2"
+  }
+}

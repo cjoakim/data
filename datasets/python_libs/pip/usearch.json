@@ -1,0 +1,10 @@
+{
+  "libname": "usearch",
+  "libvers": "2.17.7",
+  "infile": "data/pip/usearch.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "simsimd": "6.2.1",
+    "tqdm": "4.67.1"
+  }
+}

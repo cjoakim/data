@@ -1,0 +1,8 @@
+{
+  "libname": "pyft4222",
+  "libvers": "0.3.2",
+  "infile": "data/pip/pyft4222.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

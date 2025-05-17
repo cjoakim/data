@@ -1,0 +1,6 @@
+{
+  "libname": "tonalite",
+  "libvers": "1.8.4",
+  "infile": "data/pip/tonalite.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-amplify",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-amplify.txt",
+  "dependencies": {}
+}

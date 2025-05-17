@@ -1,0 +1,8 @@
+{
+  "libname": "pemja",
+  "libvers": "0.5.1",
+  "infile": "data/pip/pemja.txt",
+  "dependencies": {
+    "find-libpython": "0.4.0"
+  }
+}

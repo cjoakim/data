@@ -1,0 +1,6 @@
+{
+  "libname": "bashlex",
+  "libvers": "0.18",
+  "infile": "data/pip/bashlex.txt",
+  "dependencies": {}
+}

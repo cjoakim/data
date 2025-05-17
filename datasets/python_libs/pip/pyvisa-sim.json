@@ -1,0 +1,11 @@
+{
+  "libname": "pyvisa-sim",
+  "libvers": "0.7.0",
+  "infile": "data/pip/pyvisa-sim.txt",
+  "dependencies": {
+    "pyvisa": "1.15.0",
+    "pyyaml": "6.0.2",
+    "stringparser": "0.7",
+    "typing-extensions": "4.13.2"
+  }
+}

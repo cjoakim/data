@@ -1,0 +1,10 @@
+{
+  "libname": "robotframework-debuglibrary",
+  "libvers": "2.5.0",
+  "infile": "data/pip/robotframework-debuglibrary.txt",
+  "dependencies": {
+    "prompt-toolkit": "3.0.51",
+    "robotframework": "7.2.2",
+    "wcwidth": "0.2.13"
+  }
+}

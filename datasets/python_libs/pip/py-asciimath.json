@@ -1,0 +1,10 @@
+{
+  "libname": "py-asciimath",
+  "libvers": "0.3.0",
+  "infile": "data/pip/py-asciimath.txt",
+  "dependencies": {
+    "docopt": "0.6.2",
+    "lark-parser": "0.12.0",
+    "lxml": "5.4.0"
+  }
+}

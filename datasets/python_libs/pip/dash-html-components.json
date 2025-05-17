@@ -1,0 +1,6 @@
+{
+  "libname": "dash-html-components",
+  "libvers": "2.0.0",
+  "infile": "data/pip/dash-html-components.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "minictl",
+  "libvers": "0.1.9",
+  "infile": "data/pip/minictl.txt",
+  "dependencies": {}
+}

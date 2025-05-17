@@ -1,0 +1,12 @@
+{
+  "libname": "python-language-server",
+  "libvers": "0.36.2",
+  "infile": "data/pip/python-language-server.txt",
+  "dependencies": {
+    "jedi": "0.17.2",
+    "parso": "0.7.1",
+    "pluggy": "1.5.0",
+    "python-jsonrpc-server": "0.4.0",
+    "ujson": "5.10.0"
+  }
+}

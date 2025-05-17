@@ -1,0 +1,8 @@
+{
+  "libname": "colorspacious",
+  "libvers": "1.1.2",
+  "infile": "data/pip/colorspacious.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "secweb",
+  "libvers": "1.18.1",
+  "infile": "data/pip/secweb.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "pymodm",
+  "libvers": "0.4.3",
+  "infile": "data/pip/pymodm.txt",
+  "dependencies": {
+    "pymongo": "3.13.0"
+  }
+}

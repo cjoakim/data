@@ -1,0 +1,13 @@
+{
+  "libname": "slip10",
+  "libvers": "1.0.1",
+  "infile": "data/pip/slip10.txt",
+  "dependencies": {
+    "base58": "2.1.1",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "ecdsa": "0.19.1",
+    "pycparser": "2.22",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pause",
+  "libvers": "0.3",
+  "infile": "data/pip/pause.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "apeye",
+  "libvers": "1.4.1",
+  "infile": "data/pip/apeye.txt",
+  "dependencies": {
+    "apeye-core": "1.1.5",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "domdf-python-tools": "3.10.0",
+    "idna": "3.10",
+    "natsort": "8.4.0",
+    "platformdirs": "4.3.7",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

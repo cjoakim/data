@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-ecs",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-ecs.txt",
+  "dependencies": {}
+}

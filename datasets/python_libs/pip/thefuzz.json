@@ -1,0 +1,8 @@
+{
+  "libname": "thefuzz",
+  "libvers": "0.22.1",
+  "infile": "data/pip/thefuzz.txt",
+  "dependencies": {
+    "rapidfuzz": "3.13.0"
+  }
+}

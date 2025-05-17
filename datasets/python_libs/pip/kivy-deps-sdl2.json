@@ -1,0 +1,6 @@
+{
+  "libname": "kivy-deps-sdl2",
+  "libvers": "0.8.0",
+  "infile": "data/pip/kivy-deps-sdl2.txt",
+  "dependencies": {}
+}

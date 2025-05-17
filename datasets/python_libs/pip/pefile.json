@@ -1,0 +1,6 @@
+{
+  "libname": "pefile",
+  "libvers": "2024.8.26",
+  "infile": "data/pip/pefile.txt",
+  "dependencies": {}
+}

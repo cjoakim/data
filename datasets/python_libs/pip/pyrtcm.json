@@ -1,0 +1,6 @@
+{
+  "libname": "pyrtcm",
+  "libvers": "1.1.6",
+  "infile": "data/pip/pyrtcm.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "py-multibase",
+  "libvers": "1.0.3",
+  "infile": "data/pip/py-multibase.txt",
+  "dependencies": {
+    "morphys": "1.0",
+    "python-baseconv": "1.2.2",
+    "six": "1.17.0"
+  }
+}

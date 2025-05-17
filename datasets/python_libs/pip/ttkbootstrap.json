@@ -1,0 +1,8 @@
+{
+  "libname": "ttkbootstrap",
+  "libvers": "1.12.2",
+  "infile": "data/pip/ttkbootstrap.txt",
+  "dependencies": {
+    "pillow": "10.4.0"
+  }
+}

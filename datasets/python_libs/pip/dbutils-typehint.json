@@ -1,0 +1,6 @@
+{
+  "libname": "dbutils-typehint",
+  "libvers": "0.1.9",
+  "infile": "data/pip/dbutils-typehint.txt",
+  "dependencies": {}
+}

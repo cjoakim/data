@@ -1,0 +1,9 @@
+{
+  "libname": "juliapkg",
+  "libvers": "0.1.16",
+  "infile": "data/pip/juliapkg.txt",
+  "dependencies": {
+    "filelock": "3.18.0",
+    "semver": "3.0.4"
+  }
+}

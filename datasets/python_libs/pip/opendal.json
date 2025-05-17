@@ -1,0 +1,6 @@
+{
+  "libname": "opendal",
+  "libvers": "0.45.18",
+  "infile": "data/pip/opendal.txt",
+  "dependencies": {}
+}

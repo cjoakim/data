@@ -1,0 +1,6 @@
+{
+  "libname": "ordered-enum",
+  "libvers": "0.0.9",
+  "infile": "data/pip/ordered-enum.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "jobase",
+  "libvers": "3.0",
+  "infile": "data/pip/jobase.txt",
+  "dependencies": {}
+}

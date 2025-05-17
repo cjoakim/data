@@ -1,0 +1,9 @@
+{
+  "libname": "ansys-api-fluent",
+  "libvers": "0.3.35",
+  "infile": "data/pip/ansys-api-fluent.txt",
+  "dependencies": {
+    "grpcio": "1.71.0",
+    "protobuf": "4.25.7"
+  }
+}

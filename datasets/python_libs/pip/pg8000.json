@@ -1,0 +1,11 @@
+{
+  "libname": "pg8000",
+  "libvers": "1.31.2",
+  "infile": "data/pip/pg8000.txt",
+  "dependencies": {
+    "asn1crypto": "1.5.1",
+    "python-dateutil": "2.9.0.post0",
+    "scramp": "1.4.5",
+    "six": "1.17.0"
+  }
+}

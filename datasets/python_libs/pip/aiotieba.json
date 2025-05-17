@@ -1,0 +1,24 @@
+{
+  "libname": "aiotieba",
+  "libvers": "4.5.3",
+  "infile": "data/pip/aiotieba.txt",
+  "dependencies": {
+    "aiohappyeyeballs": "2.6.1",
+    "aiohttp": "3.11.18",
+    "aiosignal": "1.3.2",
+    "attrs": "25.3.0",
+    "beautifulsoup4": "4.13.4",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "frozenlist": "1.6.0",
+    "idna": "3.10",
+    "lxml": "5.4.0",
+    "multidict": "6.4.3",
+    "propcache": "0.3.1",
+    "protobuf": "5.29.4",
+    "pycparser": "2.22",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "yarl": "1.20.0"
+  }
+}

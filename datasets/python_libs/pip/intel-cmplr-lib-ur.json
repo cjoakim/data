@@ -1,0 +1,9 @@
+{
+  "libname": "intel-cmplr-lib-ur",
+  "libvers": "2025.1.1",
+  "infile": "data/pip/intel-cmplr-lib-ur.txt",
+  "dependencies": {
+    "tcmlib": "1.3.0",
+    "umf": "0.10.0"
+  }
+}

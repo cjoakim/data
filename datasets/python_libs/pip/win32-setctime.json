@@ -1,0 +1,6 @@
+{
+  "libname": "win32-setctime",
+  "libvers": "1.2.0",
+  "infile": "data/pip/win32-setctime.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-eks-auth",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-eks-auth.txt",
+  "dependencies": {}
+}

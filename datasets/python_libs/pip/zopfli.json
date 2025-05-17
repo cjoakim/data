@@ -1,0 +1,6 @@
+{
+  "libname": "zopfli",
+  "libvers": "0.2.3.post1",
+  "infile": "data/pip/zopfli.txt",
+  "dependencies": {}
+}

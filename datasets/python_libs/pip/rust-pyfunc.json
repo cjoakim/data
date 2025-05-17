@@ -1,0 +1,6 @@
+{
+  "libname": "rust-pyfunc",
+  "libvers": "0.11.2",
+  "infile": "data/pip/rust-pyfunc.txt",
+  "dependencies": {}
+}

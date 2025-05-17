@@ -1,0 +1,6 @@
+{
+  "libname": "pygeoip",
+  "libvers": "0.3.2",
+  "infile": "data/pip/pygeoip.txt",
+  "dependencies": {}
+}

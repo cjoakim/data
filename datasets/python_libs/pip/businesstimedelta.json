@@ -1,0 +1,11 @@
+{
+  "libname": "businesstimedelta",
+  "libvers": "1.0.1",
+  "infile": "data/pip/businesstimedelta.txt",
+  "dependencies": {
+    "holidays": "0.72",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0"
+  }
+}

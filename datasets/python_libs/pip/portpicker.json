@@ -1,0 +1,8 @@
+{
+  "libname": "portpicker",
+  "libvers": "1.6.0",
+  "infile": "data/pip/portpicker.txt",
+  "dependencies": {
+    "psutil": "7.0.0"
+  }
+}

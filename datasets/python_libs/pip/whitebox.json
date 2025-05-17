@@ -1,0 +1,8 @@
+{
+  "libname": "whitebox",
+  "libvers": "2.3.6",
+  "infile": "data/pip/whitebox.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

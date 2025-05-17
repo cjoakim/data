@@ -1,0 +1,9 @@
+{
+  "libname": "glog",
+  "libvers": "0.3.1",
+  "infile": "data/pip/glog.txt",
+  "dependencies": {
+    "python-gflags": "3.1.2",
+    "six": "1.17.0"
+  }
+}

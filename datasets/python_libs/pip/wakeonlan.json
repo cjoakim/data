@@ -1,0 +1,6 @@
+{
+  "libname": "wakeonlan",
+  "libvers": "3.1.0",
+  "infile": "data/pip/wakeonlan.txt",
+  "dependencies": {}
+}

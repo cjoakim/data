@@ -1,0 +1,8 @@
+{
+  "libname": "zeroconf",
+  "libvers": "0.147.0",
+  "infile": "data/pip/zeroconf.txt",
+  "dependencies": {
+    "ifaddr": "0.2.0"
+  }
+}

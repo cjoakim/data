@@ -1,0 +1,6 @@
+{
+  "libname": "django-mathfilters",
+  "libvers": "1.0.0",
+  "infile": "data/pip/django-mathfilters.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "pylogrus",
+  "libvers": "0.4.0",
+  "infile": "data/pip/pylogrus.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

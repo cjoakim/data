@@ -1,0 +1,12 @@
+{
+  "libname": "awkward1",
+  "libvers": "1.0.0",
+  "infile": "data/pip/awkward1.txt",
+  "dependencies": {
+    "awkward": "2.8.2",
+    "awkward-cpp": "45",
+    "fsspec": "2025.3.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0"
+  }
+}

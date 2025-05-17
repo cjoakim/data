@@ -1,0 +1,10 @@
+{
+  "libname": "pyhs2",
+  "libvers": "0.6.0",
+  "infile": "data/pip/pyhs2.txt",
+  "dependencies": {
+    "sasl": "0.3.1",
+    "six": "1.17.0",
+    "thrift": "0.21.0"
+  }
+}

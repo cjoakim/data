@@ -1,0 +1,10 @@
+{
+  "libname": "tritonclient",
+  "libvers": "2.56.0",
+  "infile": "data/pip/tritonclient.txt",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "python-rapidjson": "1.20",
+    "urllib3": "2.4.0"
+  }
+}

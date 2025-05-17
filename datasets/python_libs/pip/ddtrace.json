@@ -1,0 +1,17 @@
+{
+  "libname": "ddtrace",
+  "libvers": "3.6.0",
+  "infile": "data/pip/ddtrace.txt",
+  "dependencies": {
+    "bytecode": "0.16.2",
+    "deprecated": "1.2.18",
+    "envier": "0.6.1",
+    "importlib-metadata": "8.6.1",
+    "opentelemetry-api": "1.32.1",
+    "protobuf": "6.30.2",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2",
+    "xmltodict": "0.14.2",
+    "zipp": "3.21.0"
+  }
+}

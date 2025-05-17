@@ -1,0 +1,10 @@
+{
+  "libname": "yamlpath",
+  "libvers": "3.8.2",
+  "infile": "data/pip/yamlpath.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "ruamel-yaml": "0.17.21",
+    "six": "1.17.0"
+  }
+}

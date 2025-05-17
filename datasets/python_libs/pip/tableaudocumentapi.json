@@ -1,0 +1,8 @@
+{
+  "libname": "tableaudocumentapi",
+  "libvers": "0.11",
+  "infile": "data/pip/tableaudocumentapi.txt",
+  "dependencies": {
+    "lxml": "5.4.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "evergreen-lint",
+  "libvers": "0.1.9",
+  "infile": "data/pip/evergreen-lint.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "pyyaml": "6.0.2",
+    "typing-extensions": "4.13.2"
+  }
+}

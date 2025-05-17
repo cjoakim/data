@@ -1,0 +1,23 @@
+{
+  "libname": "yandexcloud",
+  "libvers": "0.342.0",
+  "infile": "data/pip/yandexcloud.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "deprecated": "1.2.18",
+    "googleapis-common-protos": "1.70.0",
+    "grpcio": "1.71.0",
+    "grpcio-tools": "1.71.0",
+    "idna": "3.10",
+    "protobuf": "5.29.4",
+    "pycparser": "2.22",
+    "pyjwt": "2.10.1",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2"
+  }
+}

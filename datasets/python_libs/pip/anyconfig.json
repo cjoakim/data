@@ -1,0 +1,6 @@
+{
+  "libname": "anyconfig",
+  "libvers": "0.14.0",
+  "infile": "data/pip/anyconfig.txt",
+  "dependencies": {}
+}

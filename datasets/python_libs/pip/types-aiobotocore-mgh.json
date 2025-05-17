@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-mgh",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-mgh.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "rel",
+  "libvers": "0.4.9.20",
+  "infile": "data/pip/rel.txt",
+  "dependencies": {}
+}

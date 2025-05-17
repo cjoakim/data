@@ -1,0 +1,6 @@
+{
+  "libname": "boilerpy3",
+  "libvers": "1.0.7",
+  "infile": "data/pip/boilerpy3.txt",
+  "dependencies": {}
+}

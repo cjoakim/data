@@ -1,0 +1,9 @@
+{
+  "libname": "l18n",
+  "libvers": "2021.3",
+  "infile": "data/pip/l18n.txt",
+  "dependencies": {
+    "pytz": "2025.2",
+    "six": "1.17.0"
+  }
+}

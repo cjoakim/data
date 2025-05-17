@@ -1,0 +1,12 @@
+{
+  "libname": "pytest-forked",
+  "libvers": "1.6.0",
+  "infile": "data/pip/pytest-forked.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "py": "1.11.0",
+    "pytest": "8.3.5"
+  }
+}

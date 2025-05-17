@@ -1,0 +1,6 @@
+{
+  "libname": "ghostscript",
+  "libvers": "0.7",
+  "infile": "data/pip/ghostscript.txt",
+  "dependencies": {}
+}

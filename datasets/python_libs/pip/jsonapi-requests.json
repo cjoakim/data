@@ -1,0 +1,13 @@
+{
+  "libname": "jsonapi-requests",
+  "libvers": "0.8.0",
+  "infile": "data/pip/jsonapi-requests.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "tenacity": "9.1.2",
+    "urllib3": "2.4.0"
+  }
+}

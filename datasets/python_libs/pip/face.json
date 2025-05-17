@@ -1,0 +1,8 @@
+{
+  "libname": "face",
+  "libvers": "24.0.0",
+  "infile": "data/pip/face.txt",
+  "dependencies": {
+    "boltons": "25.0.0"
+  }
+}

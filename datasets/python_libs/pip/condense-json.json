@@ -1,0 +1,6 @@
+{
+  "libname": "condense-json",
+  "libvers": "0.1.2",
+  "infile": "data/pip/condense-json.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "openssl-ocsp-responder",
+  "libvers": "1.0.1",
+  "infile": "data/pip/openssl-ocsp-responder.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22",
+    "pyopenssl": "25.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

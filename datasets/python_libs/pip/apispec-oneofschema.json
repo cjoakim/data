@@ -1,0 +1,11 @@
+{
+  "libname": "apispec-oneofschema",
+  "libvers": "3.0.1",
+  "infile": "data/pip/apispec-oneofschema.txt",
+  "dependencies": {
+    "apispec": "6.8.1",
+    "marshmallow": "3.26.1",
+    "marshmallow-oneofschema": "3.1.1",
+    "packaging": "25.0"
+  }
+}

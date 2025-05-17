@@ -1,0 +1,6 @@
+{
+  "libname": "pygelf",
+  "libvers": "0.4.2",
+  "infile": "data/pip/pygelf.txt",
+  "dependencies": {}
+}

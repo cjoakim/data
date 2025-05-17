@@ -1,0 +1,6 @@
+{
+  "libname": "pysimstring",
+  "libvers": "1.3.0",
+  "infile": "data/pip/pysimstring.txt",
+  "dependencies": {}
+}

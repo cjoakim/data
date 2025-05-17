@@ -1,0 +1,11 @@
+{
+  "libname": "py-multihash",
+  "libvers": "2.0.1",
+  "infile": "data/pip/py-multihash.txt",
+  "dependencies": {
+    "base58": "2.1.1",
+    "morphys": "1.0",
+    "six": "1.17.0",
+    "varint": "1.0.2"
+  }
+}

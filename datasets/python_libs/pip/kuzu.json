@@ -1,0 +1,6 @@
+{
+  "libname": "kuzu",
+  "libvers": "0.9.0",
+  "infile": "data/pip/kuzu.txt",
+  "dependencies": {}
+}

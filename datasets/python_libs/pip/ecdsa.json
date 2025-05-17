@@ -1,0 +1,8 @@
+{
+  "libname": "ecdsa",
+  "libvers": "0.19.1",
+  "infile": "data/pip/ecdsa.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

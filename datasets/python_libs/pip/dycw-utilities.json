@@ -1,0 +1,8 @@
+{
+  "libname": "dycw-utilities",
+  "libvers": "0.113.2",
+  "infile": "data/pip/dycw-utilities.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "python-jsonrpc-server",
+  "libvers": "0.4.0",
+  "infile": "data/pip/python-jsonrpc-server.txt",
+  "dependencies": {
+    "ujson": "5.10.0"
+  }
+}

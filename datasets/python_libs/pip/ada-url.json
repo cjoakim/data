@@ -1,0 +1,9 @@
+{
+  "libname": "ada-url",
+  "libvers": "1.23.0",
+  "infile": "data/pip/ada-url.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

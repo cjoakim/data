@@ -1,0 +1,6 @@
+{
+  "libname": "pyudorandom",
+  "libvers": "1.0.0",
+  "infile": "data/pip/pyudorandom.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "xsdata",
+  "libvers": "25.4",
+  "infile": "data/pip/xsdata.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

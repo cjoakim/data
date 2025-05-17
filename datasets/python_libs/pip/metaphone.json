@@ -1,0 +1,6 @@
+{
+  "libname": "metaphone",
+  "libvers": "0.6",
+  "infile": "data/pip/metaphone.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "jupyter-telemetry",
+  "libvers": "0.1.0",
+  "infile": "data/pip/jupyter-telemetry.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "python-json-logger": "3.3.0",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "traitlets": "5.14.3",
+    "typing-extensions": "4.13.2"
+  }
+}

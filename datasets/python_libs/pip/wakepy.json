@@ -1,0 +1,6 @@
+{
+  "libname": "wakepy",
+  "libvers": "0.10.2.post1",
+  "infile": "data/pip/wakepy.txt",
+  "dependencies": {}
+}

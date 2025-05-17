@@ -1,0 +1,6 @@
+{
+  "libname": "warp",
+  "libvers": "1.0.4",
+  "infile": "data/pip/warp.txt",
+  "dependencies": {}
+}

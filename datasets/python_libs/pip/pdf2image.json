@@ -1,0 +1,8 @@
+{
+  "libname": "pdf2image",
+  "libvers": "1.17.0",
+  "infile": "data/pip/pdf2image.txt",
+  "dependencies": {
+    "pillow": "11.2.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "matplotlib-inline",
+  "libvers": "0.1.7",
+  "infile": "data/pip/matplotlib-inline.txt",
+  "dependencies": {
+    "traitlets": "5.14.3"
+  }
+}

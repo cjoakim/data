@@ -1,0 +1,10 @@
+{
+  "libname": "zope-component",
+  "libvers": "6.0",
+  "infile": "data/pip/zope-component.txt",
+  "dependencies": {
+    "zope-event": "5.0",
+    "zope-hookable": "7.0",
+    "zope-interface": "7.2"
+  }
+}

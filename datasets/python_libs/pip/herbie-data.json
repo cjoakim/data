@@ -1,0 +1,29 @@
+{
+  "libname": "herbie-data",
+  "libvers": "2025.5.0",
+  "infile": "data/pip/herbie-data.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "cfgrib": "0.9.15.0",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "eccodes": "2.41.0",
+    "findlibs": "0.1.1",
+    "idna": "3.10",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "pycparser": "2.22",
+    "pyproj": "3.7.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "toml": "0.10.2",
+    "tzdata": "2025.2",
+    "urllib3": "2.4.0",
+    "xarray": "2025.4.0"
+  }
+}

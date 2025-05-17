@@ -1,0 +1,6 @@
+{
+  "libname": "python-fsutil",
+  "libvers": "0.15.0",
+  "infile": "data/pip/python-fsutil.txt",
+  "dependencies": {}
+}

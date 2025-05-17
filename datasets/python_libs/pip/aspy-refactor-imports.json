@@ -1,0 +1,6 @@
+{
+  "libname": "aspy-refactor-imports",
+  "libvers": "3.0.2",
+  "infile": "data/pip/aspy-refactor-imports.txt",
+  "dependencies": {}
+}

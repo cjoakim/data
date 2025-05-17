@@ -1,0 +1,9 @@
+{
+  "libname": "delegator-py",
+  "libvers": "0.1.1",
+  "infile": "data/pip/delegator-py.txt",
+  "dependencies": {
+    "pexpect": "4.9.0",
+    "ptyprocess": "0.7.0"
+  }
+}

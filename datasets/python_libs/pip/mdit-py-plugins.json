@@ -1,0 +1,9 @@
+{
+  "libname": "mdit-py-plugins",
+  "libvers": "0.4.2",
+  "infile": "data/pip/mdit-py-plugins.txt",
+  "dependencies": {
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2"
+  }
+}

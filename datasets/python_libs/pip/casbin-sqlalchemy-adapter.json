@@ -1,0 +1,11 @@
+{
+  "libname": "casbin-sqlalchemy-adapter",
+  "libvers": "1.4.0",
+  "infile": "data/pip/casbin-sqlalchemy-adapter.txt",
+  "dependencies": {
+    "casbin": "1.41.0",
+    "simpleeval": "1.0.3",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

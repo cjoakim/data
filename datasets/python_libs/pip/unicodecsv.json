@@ -1,0 +1,6 @@
+{
+  "libname": "unicodecsv",
+  "libvers": "0.14.1",
+  "infile": "data/pip/unicodecsv.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "adb-shell",
+  "libvers": "0.4.4",
+  "infile": "data/pip/adb-shell.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pyasn1": "0.6.1",
+    "pycparser": "2.22",
+    "rsa": "4.9.1"
+  }
+}

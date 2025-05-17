@@ -1,0 +1,6 @@
+{
+  "libname": "commonx",
+  "libvers": "0.6.38",
+  "infile": "data/pip/commonx.txt",
+  "dependencies": {}
+}

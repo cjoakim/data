@@ -1,0 +1,12 @@
+{
+  "libname": "asysocks",
+  "libvers": "0.2.13",
+  "infile": "data/pip/asysocks.txt",
+  "dependencies": {
+    "asn1crypto": "1.5.1",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "h11": "0.16.0",
+    "pycparser": "2.22"
+  }
+}

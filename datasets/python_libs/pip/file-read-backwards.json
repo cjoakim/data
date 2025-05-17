@@ -1,0 +1,6 @@
+{
+  "libname": "file-read-backwards",
+  "libvers": "3.2.0",
+  "infile": "data/pip/file-read-backwards.txt",
+  "dependencies": {}
+}

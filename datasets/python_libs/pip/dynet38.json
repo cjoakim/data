@@ -1,0 +1,9 @@
+{
+  "libname": "dynet38",
+  "libvers": "2.2",
+  "infile": "data/pip/dynet38.txt",
+  "dependencies": {
+    "cython": "3.0.12",
+    "numpy": "2.2.5"
+  }
+}

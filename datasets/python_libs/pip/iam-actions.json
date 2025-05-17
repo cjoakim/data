@@ -1,0 +1,6 @@
+{
+  "libname": "iam-actions",
+  "libvers": "1.2.99999999",
+  "infile": "data/pip/iam-actions.txt",
+  "dependencies": {}
+}

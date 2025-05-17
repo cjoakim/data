@@ -1,0 +1,6 @@
+{
+  "libname": "pyarrow",
+  "libvers": "20.0.0",
+  "infile": "data/pip/pyarrow.txt",
+  "dependencies": {}
+}

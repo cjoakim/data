@@ -1,0 +1,8 @@
+{
+  "libname": "xml-python",
+  "libvers": "0.4.3",
+  "infile": "data/pip/xml-python.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

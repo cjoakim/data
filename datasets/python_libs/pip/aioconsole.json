@@ -1,0 +1,6 @@
+{
+  "libname": "aioconsole",
+  "libvers": "0.8.1",
+  "infile": "data/pip/aioconsole.txt",
+  "dependencies": {}
+}

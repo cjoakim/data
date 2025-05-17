@@ -1,0 +1,10 @@
+{
+  "libname": "aspen",
+  "libvers": "1.1",
+  "infile": "data/pip/aspen.txt",
+  "dependencies": {
+    "filesystem-tree": "1.1.2",
+    "python-mimeparse": "2.0.0",
+    "six": "1.17.0"
+  }
+}

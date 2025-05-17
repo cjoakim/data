@@ -1,0 +1,10 @@
+{
+  "libname": "markdown-exec",
+  "libvers": "1.10.3",
+  "infile": "data/pip/markdown-exec.txt",
+  "dependencies": {
+    "markdown": "3.8",
+    "pymdown-extensions": "10.15",
+    "pyyaml": "6.0.2"
+  }
+}

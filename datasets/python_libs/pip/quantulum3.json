@@ -1,0 +1,13 @@
+{
+  "libname": "quantulum3",
+  "libvers": "0.9.2",
+  "infile": "data/pip/quantulum3.txt",
+  "dependencies": {
+    "docopt": "0.6.2",
+    "inflect": "7.5.0",
+    "more-itertools": "10.7.0",
+    "num2words": "0.5.14",
+    "typeguard": "4.4.2",
+    "typing-extensions": "4.13.2"
+  }
+}

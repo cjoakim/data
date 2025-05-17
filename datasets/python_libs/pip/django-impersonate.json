@@ -1,0 +1,6 @@
+{
+  "libname": "django-impersonate",
+  "libvers": "1.9.5",
+  "infile": "data/pip/django-impersonate.txt",
+  "dependencies": {}
+}

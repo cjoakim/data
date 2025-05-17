@@ -1,0 +1,6 @@
+{
+  "libname": "wave",
+  "libvers": "0.0.2",
+  "infile": "data/pip/wave.txt",
+  "dependencies": {}
+}

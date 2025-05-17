@@ -1,0 +1,6 @@
+{
+  "libname": "lml",
+  "libvers": "0.2.0",
+  "infile": "data/pip/lml.txt",
+  "dependencies": {}
+}

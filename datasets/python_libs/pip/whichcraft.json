@@ -1,0 +1,6 @@
+{
+  "libname": "whichcraft",
+  "libvers": "0.6.1",
+  "infile": "data/pip/whichcraft.txt",
+  "dependencies": {}
+}

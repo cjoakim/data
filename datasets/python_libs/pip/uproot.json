@@ -1,0 +1,14 @@
+{
+  "libname": "uproot",
+  "libvers": "5.6.1",
+  "infile": "data/pip/uproot.txt",
+  "dependencies": {
+    "awkward": "2.8.2",
+    "awkward-cpp": "45",
+    "cramjam": "2.10.0",
+    "fsspec": "2025.3.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "xxhash": "3.5.0"
+  }
+}

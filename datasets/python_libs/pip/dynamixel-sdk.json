@@ -1,0 +1,8 @@
+{
+  "libname": "dynamixel-sdk",
+  "libvers": "3.7.31",
+  "infile": "data/pip/dynamixel-sdk.txt",
+  "dependencies": {
+    "pyserial": "3.5"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "azure-mgmt-datalake-nspkg",
+  "libvers": "3.0.1",
+  "infile": "data/pip/azure-mgmt-datalake-nspkg.txt",
+  "dependencies": {
+    "azure-mgmt-nspkg": "3.0.2",
+    "azure-nspkg": "3.0.2"
+  }
+}

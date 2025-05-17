@@ -1,0 +1,6 @@
+{
+  "libname": "rouge-metric",
+  "libvers": "1.0.1",
+  "infile": "data/pip/rouge-metric.txt",
+  "dependencies": {}
+}

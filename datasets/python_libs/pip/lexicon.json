@@ -1,0 +1,6 @@
+{
+  "libname": "lexicon",
+  "libvers": "2.0.1",
+  "infile": "data/pip/lexicon.txt",
+  "dependencies": {}
+}

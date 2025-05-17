@@ -1,0 +1,8 @@
+{
+  "libname": "python-lsp-jsonrpc",
+  "libvers": "1.1.2",
+  "infile": "data/pip/python-lsp-jsonrpc.txt",
+  "dependencies": {
+    "ujson": "5.10.0"
+  }
+}

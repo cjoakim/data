@@ -1,0 +1,12 @@
+{
+  "libname": "pynput-robocorp-fork",
+  "libvers": "5.0.0",
+  "infile": "data/pip/pynput-robocorp-fork.txt",
+  "dependencies": {
+    "pyobjc-core": "9.2",
+    "pyobjc-framework-applicationservices": "9.2",
+    "pyobjc-framework-cocoa": "9.2",
+    "pyobjc-framework-quartz": "9.2",
+    "six": "1.17.0"
+  }
+}

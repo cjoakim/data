@@ -1,0 +1,8 @@
+{
+  "libname": "stream-zip",
+  "libvers": "0.0.83",
+  "infile": "data/pip/stream-zip.txt",
+  "dependencies": {
+    "pycryptodome": "3.22.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "natto-py",
+  "libvers": "1.0.1",
+  "infile": "data/pip/natto-py.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

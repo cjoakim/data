@@ -1,0 +1,9 @@
+{
+  "libname": "cli-exit-tools",
+  "libvers": "1.2.7",
+  "infile": "data/pip/cli-exit-tools.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "lib-detect-testenv": "2.0.8"
+  }
+}

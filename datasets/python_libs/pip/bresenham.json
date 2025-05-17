@@ -1,0 +1,6 @@
+{
+  "libname": "bresenham",
+  "libvers": "0.2.1",
+  "infile": "data/pip/bresenham.txt",
+  "dependencies": {}
+}

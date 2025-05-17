@@ -1,0 +1,6 @@
+{
+  "libname": "types-orjson",
+  "libvers": "3.6.2",
+  "infile": "data/pip/types-orjson.txt",
+  "dependencies": {}
+}

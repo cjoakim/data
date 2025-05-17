@@ -1,0 +1,6 @@
+{
+  "libname": "pfzy",
+  "libvers": "0.3.4",
+  "infile": "data/pip/pfzy.txt",
+  "dependencies": {}
+}

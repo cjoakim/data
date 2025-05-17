@@ -1,0 +1,6 @@
+{
+  "libname": "gast",
+  "libvers": "0.6.0",
+  "infile": "data/pip/gast.txt",
+  "dependencies": {}
+}

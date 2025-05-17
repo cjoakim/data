@@ -1,0 +1,6 @@
+{
+  "libname": "natsort",
+  "libvers": "8.4.0",
+  "infile": "data/pip/natsort.txt",
+  "dependencies": {}
+}

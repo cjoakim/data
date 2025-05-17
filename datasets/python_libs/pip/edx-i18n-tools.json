@@ -1,0 +1,15 @@
+{
+  "libname": "edx-i18n-tools",
+  "libvers": "1.9.0",
+  "infile": "data/pip/edx-i18n-tools.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "lxml[html-clean,html_clean]": "5.4.0",
+    "lxml-html-clean": "0.4.2",
+    "path": "16.16.0",
+    "polib": "1.2.0",
+    "pyyaml": "6.0.2",
+    "sqlparse": "0.5.3"
+  }
+}

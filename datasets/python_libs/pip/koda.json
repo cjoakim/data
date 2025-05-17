@@ -1,0 +1,6 @@
+{
+  "libname": "koda",
+  "libvers": "1.4.0",
+  "infile": "data/pip/koda.txt",
+  "dependencies": {}
+}

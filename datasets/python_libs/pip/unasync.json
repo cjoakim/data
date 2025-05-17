@@ -1,0 +1,8 @@
+{
+  "libname": "unasync",
+  "libvers": "0.6.0",
+  "infile": "data/pip/unasync.txt",
+  "dependencies": {
+    "tokenize-rt": "6.1.0"
+  }
+}

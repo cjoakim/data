@@ -1,0 +1,8 @@
+{
+  "libname": "pyomo",
+  "libvers": "6.9.2",
+  "infile": "data/pip/pyomo.txt",
+  "dependencies": {
+    "ply": "3.11"
+  }
+}

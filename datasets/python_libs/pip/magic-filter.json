@@ -1,0 +1,6 @@
+{
+  "libname": "magic-filter",
+  "libvers": "1.0.12",
+  "infile": "data/pip/magic-filter.txt",
+  "dependencies": {}
+}

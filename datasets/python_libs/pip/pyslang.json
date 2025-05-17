@@ -1,0 +1,6 @@
+{
+  "libname": "pyslang",
+  "libvers": "8.0.0",
+  "infile": "data/pip/pyslang.txt",
+  "dependencies": {}
+}

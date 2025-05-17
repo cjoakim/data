@@ -1,0 +1,20 @@
+{
+  "libname": "pytest-jira",
+  "libvers": "0.3.22",
+  "infile": "data/pip/pytest-jira.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "decorator": "5.2.1",
+    "idna": "3.10",
+    "iniconfig": "2.1.0",
+    "marshmallow": "4.0.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "requests": "2.32.3",
+    "retry2": "0.9.5",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

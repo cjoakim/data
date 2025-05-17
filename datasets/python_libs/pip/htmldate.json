@@ -1,0 +1,16 @@
+{
+  "libname": "htmldate",
+  "libvers": "1.9.3",
+  "infile": "data/pip/htmldate.txt",
+  "dependencies": {
+    "charset-normalizer": "3.4.2",
+    "dateparser": "1.2.1",
+    "lxml": "5.4.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "regex": "2024.11.6",
+    "six": "1.17.0",
+    "tzlocal": "5.3.1",
+    "urllib3": "2.4.0"
+  }
+}

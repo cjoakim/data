@@ -1,0 +1,16 @@
+{
+  "libname": "pytest-postgresql",
+  "libvers": "7.0.1",
+  "infile": "data/pip/pytest-postgresql.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "mirakuru": "2.6.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "port-for": "0.7.4",
+    "psutil": "7.0.0",
+    "psycopg": "3.2.7",
+    "pytest": "8.3.5",
+    "typing-extensions": "4.13.2"
+  }
+}

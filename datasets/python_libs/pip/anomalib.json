@@ -1,0 +1,22 @@
+{
+  "libname": "anomalib",
+  "libvers": "2.0.0",
+  "infile": "data/pip/anomalib.txt",
+  "dependencies": {
+    "antlr4-python3-runtime": "4.9.3",
+    "docstring-parser": "0.16",
+    "importlib-resources": "6.5.2",
+    "jsonargparse[signatures,typing-extensions]": "4.39.0",
+    "lightning-utilities": "0.14.3",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "omegaconf": "2.3.0",
+    "packaging": "25.0",
+    "pygments": "2.19.1",
+    "pyyaml": "6.0.2",
+    "rich": "14.0.0",
+    "rich-argparse": "1.7.0",
+    "typeshed-client": "2.7.0",
+    "typing-extensions": "4.13.2"
+  }
+}

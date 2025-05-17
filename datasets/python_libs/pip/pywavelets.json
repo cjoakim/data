@@ -1,0 +1,8 @@
+{
+  "libname": "pywavelets",
+  "libvers": "1.8.0",
+  "infile": "data/pip/pywavelets.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

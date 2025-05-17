@@ -1,0 +1,8 @@
+{
+  "libname": "selinux",
+  "libvers": "0.3.0",
+  "infile": "data/pip/selinux.txt",
+  "dependencies": {
+    "distro": "1.9.0"
+  }
+}

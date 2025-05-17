@@ -1,0 +1,6 @@
+{
+  "libname": "mutf8",
+  "libvers": "1.0.6",
+  "infile": "data/pip/mutf8.txt",
+  "dependencies": {}
+}

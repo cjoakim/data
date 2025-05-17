@@ -1,0 +1,14 @@
+{
+  "libname": "aigpy",
+  "libvers": "2022.7.8.1",
+  "infile": "data/pip/aigpy.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "colorama": "0.4.6",
+    "idna": "3.10",
+    "mutagen": "1.47.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "st-annotated-text",
+  "libvers": "4.0.2",
+  "infile": "data/pip/st-annotated-text.txt",
+  "dependencies": {
+    "htbuilder": "0.9.0"
+  }
+}

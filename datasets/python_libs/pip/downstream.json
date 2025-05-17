@@ -1,0 +1,14 @@
+{
+  "libname": "downstream",
+  "libvers": "1.14.3",
+  "infile": "data/pip/downstream.txt",
+  "dependencies": {
+    "joinem": "0.9.3",
+    "lazy-loader": "0.4",
+    "numpy": "2.2.5",
+    "opytional": "0.1.0",
+    "packaging": "25.0",
+    "polars": "1.29.0",
+    "tqdm": "4.67.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pyspellchecker",
+  "libvers": "0.8.2",
+  "infile": "data/pip/pyspellchecker.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "coalesce",
+  "libvers": "0.3",
+  "infile": "data/pip/coalesce.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "py-mini-racer",
+  "libvers": "0.6.0",
+  "infile": "data/pip/py-mini-racer.txt",
+  "dependencies": {}
+}

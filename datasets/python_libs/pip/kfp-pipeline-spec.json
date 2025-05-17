@@ -1,0 +1,8 @@
+{
+  "libname": "kfp-pipeline-spec",
+  "libvers": "0.6.0",
+  "infile": "data/pip/kfp-pipeline-spec.txt",
+  "dependencies": {
+    "protobuf": "4.25.7"
+  }
+}

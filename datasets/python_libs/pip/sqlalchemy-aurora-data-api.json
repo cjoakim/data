@@ -1,0 +1,17 @@
+{
+  "libname": "sqlalchemy-aurora-data-api",
+  "libvers": "0.5.0",
+  "infile": "data/pip/sqlalchemy-aurora-data-api.txt",
+  "dependencies": {
+    "aurora-data-api": "0.5.0",
+    "boto3": "1.38.10",
+    "botocore": "1.38.10",
+    "jmespath": "1.0.1",
+    "python-dateutil": "2.9.0.post0",
+    "s3transfer": "0.12.0",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

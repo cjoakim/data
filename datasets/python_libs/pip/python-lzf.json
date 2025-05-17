@@ -1,0 +1,6 @@
+{
+  "libname": "python-lzf",
+  "libvers": "0.2.6",
+  "infile": "data/pip/python-lzf.txt",
+  "dependencies": {}
+}

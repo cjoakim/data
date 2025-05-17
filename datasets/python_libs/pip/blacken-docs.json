@@ -1,0 +1,13 @@
+{
+  "libname": "blacken-docs",
+  "libvers": "1.19.1",
+  "infile": "data/pip/blacken-docs.txt",
+  "dependencies": {
+    "black": "25.1.0",
+    "click": "8.1.8",
+    "mypy-extensions": "1.1.0",
+    "packaging": "25.0",
+    "pathspec": "0.12.1",
+    "platformdirs": "4.3.7"
+  }
+}

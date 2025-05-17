@@ -1,0 +1,8 @@
+{
+  "libname": "darkgraylib",
+  "libvers": "2.2.0",
+  "infile": "data/pip/darkgraylib.txt",
+  "dependencies": {
+    "toml": "0.10.2"
+  }
+}

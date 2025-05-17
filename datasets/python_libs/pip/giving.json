@@ -1,0 +1,12 @@
+{
+  "libname": "giving",
+  "libvers": "0.4.3",
+  "infile": "data/pip/giving.txt",
+  "dependencies": {
+    "asttokens": "3.0.0",
+    "executing": "2.2.0",
+    "reactivex": "4.0.4",
+    "typing-extensions": "4.13.2",
+    "varname": "0.14.0"
+  }
+}

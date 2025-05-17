@@ -1,0 +1,21 @@
+{
+  "libname": "bigsansar",
+  "libvers": "2.6.6",
+  "infile": "data/pip/bigsansar.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "django": "5.2",
+    "django-ckeditor": "6.7.2",
+    "django-js-asset": "3.1.2",
+    "django-phonenumber-field[phonenumberslite]": "8.1.0",
+    "fontawesomefree": "6.6.0",
+    "idna": "3.10",
+    "phonenumberslite": "9.0.4",
+    "pillow": "11.2.1",
+    "requests": "2.32.3",
+    "sqlparse": "0.5.3",
+    "urllib3": "2.4.0"
+  }
+}

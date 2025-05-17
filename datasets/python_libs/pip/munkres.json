@@ -1,0 +1,6 @@
+{
+  "libname": "munkres",
+  "libvers": "1.1.4",
+  "infile": "data/pip/munkres.txt",
+  "dependencies": {}
+}

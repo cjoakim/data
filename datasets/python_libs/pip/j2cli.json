@@ -1,0 +1,9 @@
+{
+  "libname": "j2cli",
+  "libvers": "0.3.10",
+  "infile": "data/pip/j2cli.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

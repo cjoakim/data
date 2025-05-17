@@ -1,0 +1,6 @@
+{
+  "libname": "contributors-txt",
+  "libvers": "1.0.0",
+  "infile": "data/pip/contributors-txt.txt",
+  "dependencies": {}
+}

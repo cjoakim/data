@@ -1,0 +1,6 @@
+{
+  "libname": "bencode-py",
+  "libvers": "4.0.0",
+  "infile": "data/pip/bencode-py.txt",
+  "dependencies": {}
+}

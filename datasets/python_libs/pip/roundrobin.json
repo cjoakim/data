@@ -1,0 +1,6 @@
+{
+  "libname": "roundrobin",
+  "libvers": "0.0.4",
+  "infile": "data/pip/roundrobin.txt",
+  "dependencies": {}
+}

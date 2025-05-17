@@ -1,0 +1,11 @@
+{
+  "libname": "html-to-json",
+  "libvers": "2.0.0",
+  "infile": "data/pip/html-to-json.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "bs4": "0.0.2",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2"
+  }
+}

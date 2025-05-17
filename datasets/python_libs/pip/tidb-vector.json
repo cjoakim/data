@@ -1,0 +1,8 @@
+{
+  "libname": "tidb-vector",
+  "libvers": "0.0.14",
+  "infile": "data/pip/tidb-vector.txt",
+  "dependencies": {
+    "numpy": "1.26.4"
+  }
+}

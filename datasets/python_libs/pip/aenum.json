@@ -1,0 +1,6 @@
+{
+  "libname": "aenum",
+  "libvers": "3.1.16",
+  "infile": "data/pip/aenum.txt",
+  "dependencies": {}
+}

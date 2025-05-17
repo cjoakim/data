@@ -1,0 +1,6 @@
+{
+  "libname": "extension-helpers",
+  "libvers": "1.2.0",
+  "infile": "data/pip/extension-helpers.txt",
+  "dependencies": {}
+}

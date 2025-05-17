@@ -1,0 +1,12 @@
+{
+  "libname": "pybacklogpy",
+  "libvers": "0.12",
+  "infile": "data/pip/pybacklogpy.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "chardet": "3.0.4",
+    "idna": "2.8",
+    "requests": "2.22.0",
+    "urllib3": "1.25.11"
+  }
+}

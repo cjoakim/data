@@ -1,0 +1,8 @@
+{
+  "libname": "delvewheel",
+  "libvers": "1.10.1",
+  "infile": "data/pip/delvewheel.txt",
+  "dependencies": {
+    "pefile": "2024.8.26"
+  }
+}

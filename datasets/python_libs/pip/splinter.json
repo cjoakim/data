@@ -1,0 +1,8 @@
+{
+  "libname": "splinter",
+  "libvers": "0.21.0",
+  "infile": "data/pip/splinter.txt",
+  "dependencies": {
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "validx",
+  "libvers": "0.8.1",
+  "infile": "data/pip/validx.txt",
+  "dependencies": {}
+}

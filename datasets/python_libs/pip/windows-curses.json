@@ -1,0 +1,6 @@
+{
+  "libname": "windows-curses",
+  "libvers": "2.4.1",
+  "infile": "data/pip/windows-curses.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "git-cliff",
+  "libvers": "2.8.0",
+  "infile": "data/pip/git-cliff.txt",
+  "dependencies": {}
+}

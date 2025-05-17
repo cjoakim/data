@@ -1,0 +1,24 @@
+{
+  "libname": "pylertalertmanager",
+  "libvers": "0.1.1",
+  "infile": "data/pip/pylertalertmanager.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "dateparser": "1.2.1",
+    "humanize": "4.12.3",
+    "idna": "3.10",
+    "maya": "0.6.1",
+    "pendulum": "3.1.0",
+    "python-box": "7.3.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "regex": "2024.11.6",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "snaptime": "0.2.4",
+    "tzdata": "2025.2",
+    "tzlocal": "5.3.1",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "json-five",
+  "libvers": "1.1.2",
+  "infile": "data/pip/json-five.txt",
+  "dependencies": {
+    "regex": "2024.11.6",
+    "sly": "0.5"
+  }
+}

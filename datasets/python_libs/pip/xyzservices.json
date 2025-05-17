@@ -1,0 +1,6 @@
+{
+  "libname": "xyzservices",
+  "libvers": "2025.4.0",
+  "infile": "data/pip/xyzservices.txt",
+  "dependencies": {}
+}

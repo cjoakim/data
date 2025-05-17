@@ -1,0 +1,8 @@
+{
+  "libname": "pybars4",
+  "libvers": "0.9.13",
+  "infile": "data/pip/pybars4.txt",
+  "dependencies": {
+    "pymeta3": "0.5.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "dadaptation",
+  "libvers": "3.2",
+  "infile": "data/pip/dadaptation.txt",
+  "dependencies": {}
+}

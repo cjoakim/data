@@ -1,0 +1,6 @@
+{
+  "libname": "uc-micro-py",
+  "libvers": "1.0.3",
+  "infile": "data/pip/uc-micro-py.txt",
+  "dependencies": {}
+}

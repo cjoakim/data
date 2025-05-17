@@ -1,0 +1,10 @@
+{
+  "libname": "rule-engine",
+  "libvers": "4.5.3",
+  "infile": "data/pip/rule-engine.txt",
+  "dependencies": {
+    "ply": "3.11",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

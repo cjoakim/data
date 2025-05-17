@@ -1,0 +1,6 @@
+{
+  "libname": "lauterbach-trace32-rcl",
+  "libvers": "1.1.3",
+  "infile": "data/pip/lauterbach-trace32-rcl.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "django-pipeline",
+  "libvers": "4.0.0",
+  "infile": "data/pip/django-pipeline.txt",
+  "dependencies": {
+    "wheel": "0.45.1"
+  }
+}

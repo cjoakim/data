@@ -1,0 +1,6 @@
+{
+  "libname": "homoglyphs",
+  "libvers": "2.0.4",
+  "infile": "data/pip/homoglyphs.txt",
+  "dependencies": {}
+}

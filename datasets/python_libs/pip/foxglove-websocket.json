@@ -1,0 +1,8 @@
+{
+  "libname": "foxglove-websocket",
+  "libvers": "0.1.2",
+  "infile": "data/pip/foxglove-websocket.txt",
+  "dependencies": {
+    "websockets": "15.0.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "libname": "visdom",
+  "libvers": "0.2.4",
+  "infile": "data/pip/visdom.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "jsonpatch": "1.33",
+    "jsonpointer": "3.0.0",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "pillow": "11.2.1",
+    "requests": "2.32.3",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "tornado": "6.4.2",
+    "urllib3": "2.4.0",
+    "websocket-client": "1.8.0"
+  }
+}

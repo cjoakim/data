@@ -1,0 +1,6 @@
+{
+  "libname": "toolz",
+  "libvers": "1.0.0",
+  "infile": "data/pip/toolz.txt",
+  "dependencies": {}
+}

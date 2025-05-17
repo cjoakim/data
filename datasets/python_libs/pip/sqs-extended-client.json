@@ -1,0 +1,8 @@
+{
+  "libname": "sqs-extended-client",
+  "libvers": "0.0.11",
+  "infile": "data/pip/sqs-extended-client.txt",
+  "dependencies": {
+    "botoinator": "0.0.6"
+  }
+}

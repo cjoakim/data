@@ -1,0 +1,6 @@
+{
+  "libname": "threadsafe-tkinter",
+  "libvers": "1.0.4",
+  "infile": "data/pip/threadsafe-tkinter.txt",
+  "dependencies": {}
+}

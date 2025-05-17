@@ -1,0 +1,6 @@
+{
+  "libname": "types-cachetools",
+  "libvers": "5.5.0.20240820",
+  "infile": "data/pip/types-cachetools.txt",
+  "dependencies": {}
+}

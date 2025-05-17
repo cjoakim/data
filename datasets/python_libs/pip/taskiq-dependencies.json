@@ -1,0 +1,6 @@
+{
+  "libname": "taskiq-dependencies",
+  "libvers": "1.5.7",
+  "infile": "data/pip/taskiq-dependencies.txt",
+  "dependencies": {}
+}

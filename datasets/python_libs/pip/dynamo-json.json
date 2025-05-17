@@ -1,0 +1,6 @@
+{
+  "libname": "dynamo-json",
+  "libvers": "1.2.0",
+  "infile": "data/pip/dynamo-json.txt",
+  "dependencies": {}
+}

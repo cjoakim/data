@@ -1,0 +1,10 @@
+{
+  "libname": "kiwipiepy",
+  "libvers": "0.21.0",
+  "infile": "data/pip/kiwipiepy.txt",
+  "dependencies": {
+    "kiwipiepy-model": "0.21.0",
+    "numpy": "2.2.5",
+    "tqdm": "4.67.1"
+  }
+}

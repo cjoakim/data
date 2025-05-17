@@ -1,0 +1,8 @@
+{
+  "libname": "monitored-ioloop",
+  "libvers": "0.0.14",
+  "infile": "data/pip/monitored-ioloop.txt",
+  "dependencies": {
+    "wrapt": "1.17.2"
+  }
+}

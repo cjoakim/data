@@ -1,0 +1,9 @@
+{
+  "libname": "bc-jsonpath-ng",
+  "libvers": "1.6.1",
+  "infile": "data/pip/bc-jsonpath-ng.txt",
+  "dependencies": {
+    "decorator": "5.2.1",
+    "ply": "3.11"
+  }
+}

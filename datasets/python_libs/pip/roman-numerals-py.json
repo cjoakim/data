@@ -1,0 +1,6 @@
+{
+  "libname": "roman-numerals-py",
+  "libvers": "3.1.0",
+  "infile": "data/pip/roman-numerals-py.txt",
+  "dependencies": {}
+}

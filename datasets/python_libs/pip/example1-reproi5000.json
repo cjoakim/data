@@ -1,0 +1,6 @@
+{
+  "libname": "example1-reproi5000",
+  "libvers": "0.0.695",
+  "infile": "data/pip/example1-reproi5000.txt",
+  "dependencies": {}
+}

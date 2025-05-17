@@ -1,0 +1,6 @@
+{
+  "libname": "kafka-python-ng",
+  "libvers": "2.2.3",
+  "infile": "data/pip/kafka-python-ng.txt",
+  "dependencies": {}
+}

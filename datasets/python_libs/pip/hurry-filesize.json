@@ -1,0 +1,6 @@
+{
+  "libname": "hurry-filesize",
+  "libvers": "0.9",
+  "infile": "data/pip/hurry-filesize.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "jplephem",
+  "libvers": "2.22",
+  "infile": "data/pip/jplephem.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "libname": "pytablewriter",
+  "libvers": "1.2.1",
+  "infile": "data/pip/pytablewriter.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "dataproperty": "1.1.0",
+    "mbstrdecoder": "1.1.4",
+    "packaging": "25.0",
+    "pathvalidate": "3.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tabledata": "1.3.4",
+    "tcolorpy": "0.1.7",
+    "typepy[datetime]": "1.3.4"
+  }
+}

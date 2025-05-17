@@ -1,0 +1,9 @@
+{
+  "libname": "partd",
+  "libvers": "1.4.2",
+  "infile": "data/pip/partd.txt",
+  "dependencies": {
+    "locket": "1.0.0",
+    "toolz": "1.0.0"
+  }
+}

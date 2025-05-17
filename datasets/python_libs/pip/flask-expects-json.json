@@ -1,0 +1,20 @@
+{
+  "libname": "flask-expects-json",
+  "libvers": "1.7.0",
+  "infile": "data/pip/flask-expects-json.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "blinker": "1.9.0",
+    "click": "8.1.8",
+    "flask": "3.1.0",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "markupsafe": "3.0.2",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2",
+    "werkzeug": "3.1.3"
+  }
+}

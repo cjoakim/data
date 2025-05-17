@@ -1,0 +1,14 @@
+{
+  "libname": "docker-registry-client",
+  "libvers": "0.5.2",
+  "infile": "data/pip/docker-registry-client.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "ecdsa": "0.13.3",
+    "idna": "3.10",
+    "jws": "0.1.3",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

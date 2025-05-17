@@ -1,0 +1,9 @@
+{
+  "libname": "bx-python",
+  "libvers": "0.13.0",
+  "infile": "data/pip/bx-python.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pyparsing": "3.2.3"
+  }
+}

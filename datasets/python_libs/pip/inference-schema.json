@@ -1,0 +1,11 @@
+{
+  "libname": "inference-schema",
+  "libvers": "1.8",
+  "infile": "data/pip/inference-schema.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "wrapt": "1.16.0"
+  }
+}

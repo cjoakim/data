@@ -1,0 +1,13 @@
+{
+  "libname": "elasticsearch8",
+  "libvers": "8.18.1",
+  "infile": "data/pip/elasticsearch8.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "elastic-transport": "8.17.1",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

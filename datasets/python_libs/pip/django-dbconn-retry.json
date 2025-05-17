@@ -1,0 +1,6 @@
+{
+  "libname": "django-dbconn-retry",
+  "libvers": "0.1.8",
+  "infile": "data/pip/django-dbconn-retry.txt",
+  "dependencies": {}
+}

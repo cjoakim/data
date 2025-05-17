@@ -1,0 +1,12 @@
+{
+  "libname": "openpyxl-stubs",
+  "libvers": "0.1.25",
+  "infile": "data/pip/openpyxl-stubs.txt",
+  "dependencies": {
+    "et-xmlfile": "2.0.0",
+    "mypy": "1.15.0",
+    "mypy-extensions": "1.1.0",
+    "openpyxl": "3.1.5",
+    "typing-extensions": "4.13.2"
+  }
+}

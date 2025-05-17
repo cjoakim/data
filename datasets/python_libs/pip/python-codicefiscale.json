@@ -1,0 +1,12 @@
+{
+  "libname": "python-codicefiscale",
+  "libvers": "0.10.3",
+  "infile": "data/pip/python-codicefiscale.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "python-fsutil": "0.15.0",
+    "python-slugify": "8.0.4",
+    "six": "1.17.0",
+    "text-unidecode": "1.3"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "isort",
+  "libvers": "6.0.1",
+  "infile": "data/pip/isort.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "sk-video",
+  "libvers": "1.1.10",
+  "infile": "data/pip/sk-video.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

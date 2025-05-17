@@ -1,0 +1,6 @@
+{
+  "libname": "lexid",
+  "libvers": "2021.1006",
+  "infile": "data/pip/lexid.txt",
+  "dependencies": {}
+}

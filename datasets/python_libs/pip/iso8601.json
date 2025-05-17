@@ -1,0 +1,6 @@
+{
+  "libname": "iso8601",
+  "libvers": "2.1.0",
+  "infile": "data/pip/iso8601.txt",
+  "dependencies": {}
+}

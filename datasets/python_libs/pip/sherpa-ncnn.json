@@ -1,0 +1,8 @@
+{
+  "libname": "sherpa-ncnn",
+  "libvers": "2.1.11",
+  "infile": "data/pip/sherpa-ncnn.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

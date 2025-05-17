@@ -1,0 +1,8 @@
+{
+  "libname": "python-geoip-geolite2",
+  "libvers": "2015.303",
+  "infile": "data/pip/python-geoip-geolite2.txt",
+  "dependencies": {
+    "python-geoip": "1.2"
+  }
+}

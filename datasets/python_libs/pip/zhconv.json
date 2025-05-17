@@ -1,0 +1,6 @@
+{
+  "libname": "zhconv",
+  "libvers": "1.4.3",
+  "infile": "data/pip/zhconv.txt",
+  "dependencies": {}
+}

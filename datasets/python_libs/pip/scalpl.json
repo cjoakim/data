@@ -1,0 +1,6 @@
+{
+  "libname": "scalpl",
+  "libvers": "0.4.2",
+  "infile": "data/pip/scalpl.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "kenlm",
+  "libvers": "0.3.0",
+  "infile": "data/pip/kenlm.txt",
+  "dependencies": {}
+}

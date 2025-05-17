@@ -1,0 +1,9 @@
+{
+  "libname": "types-hvac",
+  "libvers": "2.3.0.20250429",
+  "infile": "data/pip/types-hvac.txt",
+  "dependencies": {
+    "types-requests": "2.32.0.20250328",
+    "urllib3": "2.4.0"
+  }
+}

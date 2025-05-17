@@ -1,0 +1,30 @@
+{
+  "libname": "checkmk-dev-tools",
+  "libvers": "0.8.0",
+  "infile": "data/pip/checkmk-dev-tools.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "decorator": "5.2.1",
+    "idna": "3.10",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "multi-key-dict": "2.0.3",
+    "pbr": "6.1.1",
+    "py": "1.11.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pygments": "2.19.1",
+    "python-dateutil": "2.9.0.post0",
+    "python-jenkins-checkmk-retry-parameter": "1.8.3.dev8",
+    "requests": "2.32.3",
+    "retry": "0.9.2",
+    "rich": "14.0.0",
+    "six": "1.17.0",
+    "trickkiste": "0.2.2",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "urllib3": "2.4.0"
+  }
+}

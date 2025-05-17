@@ -1,0 +1,11 @@
+{
+  "libname": "rsconnect-python",
+  "libvers": "1.25.2",
+  "infile": "data/pip/rsconnect-python.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "pyjwt": "2.10.1",
+    "semver": "3.0.4",
+    "typing-extensions": "4.13.2"
+  }
+}

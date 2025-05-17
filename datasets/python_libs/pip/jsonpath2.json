@@ -1,0 +1,8 @@
+{
+  "libname": "jsonpath2",
+  "libvers": "0.4.5",
+  "infile": "data/pip/jsonpath2.txt",
+  "dependencies": {
+    "antlr4-python3-runtime": "4.10"
+  }
+}

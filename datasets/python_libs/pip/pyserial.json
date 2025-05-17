@@ -1,0 +1,6 @@
+{
+  "libname": "pyserial",
+  "libvers": "3.5",
+  "infile": "data/pip/pyserial.txt",
+  "dependencies": {}
+}

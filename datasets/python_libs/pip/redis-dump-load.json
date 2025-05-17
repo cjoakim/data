@@ -1,0 +1,8 @@
+{
+  "libname": "redis-dump-load",
+  "libvers": "1.1",
+  "infile": "data/pip/redis-dump-load.txt",
+  "dependencies": {
+    "redis": "6.0.0"
+  }
+}

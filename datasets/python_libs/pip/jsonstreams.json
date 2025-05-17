@@ -1,0 +1,8 @@
+{
+  "libname": "jsonstreams",
+  "libvers": "0.6.0",
+  "infile": "data/pip/jsonstreams.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

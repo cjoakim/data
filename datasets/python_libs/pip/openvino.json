@@ -1,0 +1,10 @@
+{
+  "libname": "openvino",
+  "libvers": "2025.1.0",
+  "infile": "data/pip/openvino.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "openvino-telemetry": "2025.1.0",
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "fastobo",
+  "libvers": "0.13.0",
+  "infile": "data/pip/fastobo.txt",
+  "dependencies": {}
+}

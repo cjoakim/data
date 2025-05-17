@@ -1,0 +1,6 @@
+{
+  "libname": "param",
+  "libvers": "2.2.0",
+  "infile": "data/pip/param.txt",
+  "dependencies": {}
+}

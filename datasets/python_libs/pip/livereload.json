@@ -1,0 +1,8 @@
+{
+  "libname": "livereload",
+  "libvers": "2.7.1",
+  "infile": "data/pip/livereload.txt",
+  "dependencies": {
+    "tornado": "6.4.2"
+  }
+}

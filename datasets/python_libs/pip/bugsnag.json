@@ -1,0 +1,8 @@
+{
+  "libname": "bugsnag",
+  "libvers": "4.7.1",
+  "infile": "data/pip/bugsnag.txt",
+  "dependencies": {
+    "webob": "1.8.9"
+  }
+}

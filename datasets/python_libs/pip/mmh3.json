@@ -1,0 +1,6 @@
+{
+  "libname": "mmh3",
+  "libvers": "5.1.0",
+  "infile": "data/pip/mmh3.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "comfyui-frontend-package",
+  "libvers": "1.19.2",
+  "infile": "data/pip/comfyui-frontend-package.txt",
+  "dependencies": {}
+}

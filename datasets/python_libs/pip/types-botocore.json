@@ -1,0 +1,9 @@
+{
+  "libname": "types-botocore",
+  "libvers": "1.0.2",
+  "infile": "data/pip/types-botocore.txt",
+  "dependencies": {
+    "botocore-stubs": "1.38.10",
+    "types-awscrt": "0.26.1"
+  }
+}

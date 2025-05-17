@@ -1,0 +1,6 @@
+{
+  "libname": "pyhdb",
+  "libvers": "0.3.4",
+  "infile": "data/pip/pyhdb.txt",
+  "dependencies": {}
+}

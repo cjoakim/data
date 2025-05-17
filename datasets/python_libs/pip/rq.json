@@ -1,0 +1,9 @@
+{
+  "libname": "rq",
+  "libvers": "2.3.2",
+  "infile": "data/pip/rq.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "redis": "6.0.0"
+  }
+}

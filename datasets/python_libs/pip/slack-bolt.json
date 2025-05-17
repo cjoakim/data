@@ -1,0 +1,8 @@
+{
+  "libname": "slack-bolt",
+  "libvers": "1.23.0",
+  "infile": "data/pip/slack-bolt.txt",
+  "dependencies": {
+    "slack-sdk": "3.35.0"
+  }
+}

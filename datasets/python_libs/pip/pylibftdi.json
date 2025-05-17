@@ -1,0 +1,6 @@
+{
+  "libname": "pylibftdi",
+  "libvers": "0.23.0",
+  "infile": "data/pip/pylibftdi.txt",
+  "dependencies": {}
+}

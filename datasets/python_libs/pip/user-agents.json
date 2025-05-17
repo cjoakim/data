@@ -1,0 +1,9 @@
+{
+  "libname": "user-agents",
+  "libvers": "2.2.0",
+  "infile": "data/pip/user-agents.txt",
+  "dependencies": {
+    "ua-parser": "1.0.1",
+    "ua-parser-builtins": "0.18.0.post1"
+  }
+}

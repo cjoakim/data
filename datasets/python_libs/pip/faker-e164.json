@@ -1,0 +1,10 @@
+{
+  "libname": "faker-e164",
+  "libvers": "0.1.0",
+  "infile": "data/pip/faker-e164.txt",
+  "dependencies": {
+    "faker": "37.1.0",
+    "phonenumberslite": "9.0.4",
+    "tzdata": "2025.2"
+  }
+}

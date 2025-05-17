@@ -1,0 +1,8 @@
+{
+  "libname": "persiantools",
+  "libvers": "5.2.0",
+  "infile": "data/pip/persiantools.txt",
+  "dependencies": {
+    "pytz": "2025.2"
+  }
+}

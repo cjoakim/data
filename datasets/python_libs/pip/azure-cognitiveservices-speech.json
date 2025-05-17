@@ -1,0 +1,6 @@
+{
+  "libname": "azure-cognitiveservices-speech",
+  "libvers": "1.43.0",
+  "infile": "data/pip/azure-cognitiveservices-speech.txt",
+  "dependencies": {}
+}

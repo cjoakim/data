@@ -1,0 +1,12 @@
+{
+  "libname": "dazl",
+  "libvers": "8.2.1",
+  "infile": "data/pip/dazl.txt",
+  "dependencies": {
+    "googleapis-common-protos": "1.70.0",
+    "grpcio": "1.67.1",
+    "protobuf": "6.30.2",
+    "semver": "3.0.4",
+    "typing-extensions": "4.13.2"
+  }
+}

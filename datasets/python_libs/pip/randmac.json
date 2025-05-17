@@ -1,0 +1,6 @@
+{
+  "libname": "randmac",
+  "libvers": "0.1",
+  "infile": "data/pip/randmac.txt",
+  "dependencies": {}
+}

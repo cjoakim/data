@@ -1,0 +1,6 @@
+{
+  "libname": "appdynamics-bindeps-linux-x64",
+  "libvers": "24.12.0",
+  "infile": "data/pip/appdynamics-bindeps-linux-x64.txt",
+  "dependencies": {}
+}

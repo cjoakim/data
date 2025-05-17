@@ -1,0 +1,29 @@
+{
+  "libname": "ir-datasets",
+  "libvers": "0.5.10",
+  "infile": "data/pip/ir-datasets.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "cbor": "1.0.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "ijson": "3.3.0",
+    "inscriptis": "2.6.0",
+    "lxml": "5.4.0",
+    "lz4": "4.4.4",
+    "numpy": "2.2.5",
+    "pyarrow": "20.0.0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "soupsieve": "2.7",
+    "tqdm": "4.67.1",
+    "trec-car-tools": "2.6",
+    "typing-extensions": "4.13.2",
+    "unlzw3": "0.2.3",
+    "urllib3": "2.4.0",
+    "warc3-wet": "0.2.5",
+    "warc3-wet-clueweb09": "0.2.5",
+    "zlib-state": "0.1.9"
+  }
+}

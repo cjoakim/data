@@ -1,0 +1,6 @@
+{
+  "libname": "cypari",
+  "libvers": "2.5.5",
+  "infile": "data/pip/cypari.txt",
+  "dependencies": {}
+}

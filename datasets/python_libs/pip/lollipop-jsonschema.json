@@ -1,0 +1,8 @@
+{
+  "libname": "lollipop-jsonschema",
+  "libvers": "0.8.2",
+  "infile": "data/pip/lollipop-jsonschema.txt",
+  "dependencies": {
+    "lollipop": "1.1.8"
+  }
+}

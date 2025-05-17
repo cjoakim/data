@@ -1,0 +1,6 @@
+{
+  "libname": "astronomer-starship",
+  "libvers": "2.2.3",
+  "infile": "data/pip/astronomer-starship.txt",
+  "dependencies": {}
+}

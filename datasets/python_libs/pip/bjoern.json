@@ -1,0 +1,6 @@
+{
+  "libname": "bjoern",
+  "libvers": "3.2.2",
+  "infile": "data/pip/bjoern.txt",
+  "dependencies": {}
+}

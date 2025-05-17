@@ -1,0 +1,6 @@
+{
+  "libname": "arcgis2geojson",
+  "libvers": "3.0.3",
+  "infile": "data/pip/arcgis2geojson.txt",
+  "dependencies": {}
+}

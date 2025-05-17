@@ -1,0 +1,20 @@
+{
+  "libname": "anki",
+  "libvers": "25.2.4",
+  "infile": "data/pip/anki.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "decorator": "5.2.1",
+    "idna": "3.10",
+    "markdown": "3.8",
+    "orjson": "3.10.18",
+    "protobuf": "6.30.2",
+    "pysocks": "1.7.1",
+    "requests[socks]": "2.32.3",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

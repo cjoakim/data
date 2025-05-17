@@ -1,0 +1,6 @@
+{
+  "libname": "tls-parser",
+  "libvers": "2.0.2",
+  "infile": "data/pip/tls-parser.txt",
+  "dependencies": {}
+}

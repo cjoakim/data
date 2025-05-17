@@ -1,0 +1,6 @@
+{
+  "libname": "pydevd",
+  "libvers": "3.3.0",
+  "infile": "data/pip/pydevd.txt",
+  "dependencies": {}
+}

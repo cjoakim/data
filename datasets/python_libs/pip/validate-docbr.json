@@ -1,0 +1,6 @@
+{
+  "libname": "validate-docbr",
+  "libvers": "1.10.0",
+  "infile": "data/pip/validate-docbr.txt",
+  "dependencies": {}
+}

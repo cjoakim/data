@@ -1,0 +1,9 @@
+{
+  "libname": "cryptography",
+  "libvers": "44.0.3",
+  "infile": "data/pip/cryptography.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "pocketsphinx",
+  "libvers": "5.0.4",
+  "infile": "data/pip/pocketsphinx.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22",
+    "sounddevice": "0.5.1"
+  }
+}

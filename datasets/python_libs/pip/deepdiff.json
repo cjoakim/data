@@ -1,0 +1,8 @@
+{
+  "libname": "deepdiff",
+  "libvers": "8.4.2",
+  "infile": "data/pip/deepdiff.txt",
+  "dependencies": {
+    "orderly-set": "5.4.0"
+  }
+}

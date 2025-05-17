@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-forecast",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-forecast.txt",
+  "dependencies": {}
+}

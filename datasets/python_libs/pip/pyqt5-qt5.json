@@ -1,0 +1,6 @@
+{
+  "libname": "pyqt5-qt5",
+  "libvers": "5.15.16",
+  "infile": "data/pip/pyqt5-qt5.txt",
+  "dependencies": {}
+}

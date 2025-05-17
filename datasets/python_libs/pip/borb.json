@@ -1,0 +1,20 @@
+{
+  "libname": "borb",
+  "libvers": "2.1.25",
+  "infile": "data/pip/borb.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "fonttools": "4.57.0",
+    "idna": "3.10",
+    "lxml": "5.4.0",
+    "pillow": "11.2.1",
+    "pycparser": "2.22",
+    "python-barcode": "0.15.1",
+    "qrcode[pil]": "8.2",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

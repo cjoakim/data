@@ -1,0 +1,6 @@
+{
+  "libname": "shamir-mnemonic",
+  "libvers": "0.3.0",
+  "infile": "data/pip/shamir-mnemonic.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "docassemble",
+  "libvers": "1.6.5",
+  "infile": "data/pip/docassemble.txt",
+  "dependencies": {}
+}

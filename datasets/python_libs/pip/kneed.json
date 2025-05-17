@@ -1,0 +1,9 @@
+{
+  "libname": "kneed",
+  "libvers": "0.8.5",
+  "infile": "data/pip/kneed.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

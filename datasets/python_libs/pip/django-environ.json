@@ -1,0 +1,6 @@
+{
+  "libname": "django-environ",
+  "libvers": "0.12.0",
+  "infile": "data/pip/django-environ.txt",
+  "dependencies": {}
+}

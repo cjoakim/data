@@ -1,0 +1,22 @@
+{
+  "libname": "pulumi-kubernetes",
+  "libvers": "4.23.0",
+  "infile": "data/pip/pulumi-kubernetes.txt",
+  "dependencies": {
+    "arpeggio": "2.0.2",
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "debugpy": "1.8.14",
+    "dill": "0.4.0",
+    "grpcio": "1.66.2",
+    "idna": "3.10",
+    "parver": "0.5",
+    "protobuf": "4.25.7",
+    "pulumi": "3.167.0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "semver": "3.0.4",
+    "urllib3": "2.4.0"
+  }
+}

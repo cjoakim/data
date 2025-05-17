@@ -1,0 +1,6 @@
+{
+  "libname": "drf-flex-fields",
+  "libvers": "1.0.2",
+  "infile": "data/pip/drf-flex-fields.txt",
+  "dependencies": {}
+}

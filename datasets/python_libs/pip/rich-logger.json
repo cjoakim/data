@@ -1,0 +1,16 @@
+{
+  "libname": "rich-logger",
+  "libvers": "0.3.1",
+  "infile": "data/pip/rich-logger.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pygments": "2.19.1",
+    "rich": "14.0.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

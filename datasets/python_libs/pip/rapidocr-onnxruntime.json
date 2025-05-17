@@ -1,0 +1,23 @@
+{
+  "libname": "rapidocr-onnxruntime",
+  "libvers": "1.4.4",
+  "infile": "data/pip/rapidocr-onnxruntime.txt",
+  "dependencies": {
+    "coloredlogs": "15.0.1",
+    "flatbuffers": "25.2.10",
+    "humanfriendly": "10.0",
+    "mpmath": "1.3.0",
+    "numpy": "2.2.5",
+    "onnxruntime": "1.21.1",
+    "opencv-python": "4.11.0.86",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "protobuf": "6.30.2",
+    "pyclipper": "1.3.0.post6",
+    "pyyaml": "6.0.2",
+    "shapely": "2.1.0",
+    "six": "1.17.0",
+    "sympy": "1.14.0",
+    "tqdm": "4.67.1"
+  }
+}

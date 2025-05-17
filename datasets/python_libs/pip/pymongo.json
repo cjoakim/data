@@ -1,0 +1,8 @@
+{
+  "libname": "pymongo",
+  "libvers": "4.12.1",
+  "infile": "data/pip/pymongo.txt",
+  "dependencies": {
+    "dnspython": "2.7.0"
+  }
+}

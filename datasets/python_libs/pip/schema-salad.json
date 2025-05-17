@@ -1,0 +1,21 @@
+{
+  "libname": "schema-salad",
+  "libvers": "8.9.20250408123006",
+  "infile": "data/pip/schema-salad.txt",
+  "dependencies": {
+    "cachecontrol[filecache]": "0.14.3",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "mistune": "3.0.2",
+    "msgpack": "1.1.0",
+    "mypy-extensions": "1.1.0",
+    "pyparsing": "3.2.3",
+    "rdflib": "7.1.4",
+    "requests": "2.32.3",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "urllib3": "2.4.0"
+  }
+}

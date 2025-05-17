@@ -1,0 +1,6 @@
+{
+  "libname": "lumopackage",
+  "libvers": "2.2022.10.13",
+  "infile": "data/pip/lumopackage.txt",
+  "dependencies": {}
+}

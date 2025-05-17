@@ -1,0 +1,6 @@
+{
+  "libname": "tenseal",
+  "libvers": "0.3.16",
+  "infile": "data/pip/tenseal.txt",
+  "dependencies": {}
+}

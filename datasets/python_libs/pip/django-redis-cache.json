@@ -1,0 +1,8 @@
+{
+  "libname": "django-redis-cache",
+  "libvers": "3.0.1",
+  "infile": "data/pip/django-redis-cache.txt",
+  "dependencies": {
+    "redis": "3.5.3"
+  }
+}

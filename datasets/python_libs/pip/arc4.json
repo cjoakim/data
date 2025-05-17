@@ -1,0 +1,6 @@
+{
+  "libname": "arc4",
+  "libvers": "0.4.0",
+  "infile": "data/pip/arc4.txt",
+  "dependencies": {}
+}

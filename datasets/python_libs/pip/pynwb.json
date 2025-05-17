@@ -1,0 +1,23 @@
+{
+  "libname": "pynwb",
+  "libvers": "3.0.0",
+  "infile": "data/pip/pynwb.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "h5py": "3.13.0",
+    "hdmf": "4.0.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

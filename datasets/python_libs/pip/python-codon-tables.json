@@ -1,0 +1,9 @@
+{
+  "libname": "python-codon-tables",
+  "libvers": "0.1.15",
+  "infile": "data/pip/python-codon-tables.txt",
+  "dependencies": {
+    "biopython": "1.85",
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "retworkx",
+  "libvers": "0.16.0",
+  "infile": "data/pip/retworkx.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "rustworkx": "0.16.0"
+  }
+}

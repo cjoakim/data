@@ -1,0 +1,12 @@
+{
+  "libname": "curlylint",
+  "libvers": "0.13.1",
+  "infile": "data/pip/curlylint.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "click": "8.1.8",
+    "parsy": "1.1.0",
+    "pathspec": "0.12.1",
+    "toml": "0.10.2"
+  }
+}

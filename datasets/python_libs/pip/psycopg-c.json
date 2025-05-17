@@ -1,0 +1,6 @@
+{
+  "libname": "psycopg-c",
+  "libvers": "3.2.7",
+  "infile": "data/pip/psycopg-c.txt",
+  "dependencies": {}
+}

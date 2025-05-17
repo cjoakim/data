@@ -1,0 +1,6 @@
+{
+  "libname": "xlrd",
+  "libvers": "2.0.1",
+  "infile": "data/pip/xlrd.txt",
+  "dependencies": {}
+}

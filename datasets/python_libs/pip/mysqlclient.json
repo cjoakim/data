@@ -1,0 +1,6 @@
+{
+  "libname": "mysqlclient",
+  "libvers": "2.2.7",
+  "infile": "data/pip/mysqlclient.txt",
+  "dependencies": {}
+}

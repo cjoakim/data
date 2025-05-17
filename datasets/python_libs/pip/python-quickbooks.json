@@ -1,0 +1,22 @@
+{
+  "libname": "python-quickbooks",
+  "libvers": "0.9.12",
+  "infile": "data/pip/python-quickbooks.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "enum-compat": "0.0.3",
+    "idna": "3.10",
+    "intuit-oauth": "1.2.6",
+    "oauthlib": "3.2.2",
+    "pycparser": "2.22",
+    "pyjwt[crypto]": "2.10.1",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "requests-oauthlib": "2.0.0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

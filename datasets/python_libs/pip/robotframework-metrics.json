@@ -1,0 +1,16 @@
+{
+  "libname": "robotframework-metrics",
+  "libvers": "3.7.0",
+  "infile": "data/pip/robotframework-metrics.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "robotframework": "7.2.2",
+    "six": "1.17.0",
+    "tzdata": "2025.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "schemdraw",
+  "libvers": "0.20",
+  "infile": "data/pip/schemdraw.txt",
+  "dependencies": {}
+}

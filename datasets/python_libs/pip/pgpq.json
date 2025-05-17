@@ -1,0 +1,8 @@
+{
+  "libname": "pgpq",
+  "libvers": "0.9.0",
+  "infile": "data/pip/pgpq.txt",
+  "dependencies": {
+    "pyarrow": "20.0.0"
+  }
+}

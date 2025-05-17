@@ -1,0 +1,6 @@
+{
+  "libname": "netbox-topology-views",
+  "libvers": "4.2.1",
+  "infile": "data/pip/netbox-topology-views.txt",
+  "dependencies": {}
+}

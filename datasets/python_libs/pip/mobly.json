@@ -1,0 +1,10 @@
+{
+  "libname": "mobly",
+  "libvers": "1.12.4",
+  "infile": "data/pip/mobly.txt",
+  "dependencies": {
+    "portpicker": "1.6.0",
+    "psutil": "7.0.0",
+    "pyyaml": "6.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "sccache",
+  "libvers": "0.10.0",
+  "infile": "data/pip/sccache.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "python-jose-cryptodome",
+  "libvers": "1.3.2",
+  "infile": "data/pip/python-jose-cryptodome.txt",
+  "dependencies": {
+    "ecdsa": "0.19.1",
+    "future": "0.18.3",
+    "pycryptodome": "3.3.1",
+    "six": "1.17.0"
+  }
+}

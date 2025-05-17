@@ -1,0 +1,6 @@
+{
+  "libname": "six",
+  "libvers": "1.17.0",
+  "infile": "data/pip/six.txt",
+  "dependencies": {}
+}

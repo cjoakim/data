@@ -1,0 +1,6 @@
+{
+  "libname": "advent-of-code",
+  "libvers": "2024.21.0",
+  "infile": "data/pip/advent-of-code.txt",
+  "dependencies": {}
+}

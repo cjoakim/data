@@ -1,0 +1,6 @@
+{
+  "libname": "django-hosts",
+  "libvers": "6.0",
+  "infile": "data/pip/django-hosts.txt",
+  "dependencies": {}
+}

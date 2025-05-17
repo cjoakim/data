@@ -1,0 +1,20 @@
+{
+  "libname": "s3pypi",
+  "libvers": "2.0.1",
+  "infile": "data/pip/s3pypi.txt",
+  "dependencies": {
+    "boto3": "1.38.10",
+    "boto3-stubs[dynamodb,s3]": "1.38.10",
+    "botocore": "1.38.10",
+    "botocore-stubs": "1.38.10",
+    "jmespath": "1.0.1",
+    "mypy-boto3-dynamodb": "1.38.4",
+    "mypy-boto3-s3": "1.38.0",
+    "python-dateutil": "2.9.0.post0",
+    "s3transfer": "0.12.0",
+    "six": "1.17.0",
+    "types-awscrt": "0.26.1",
+    "types-s3transfer": "0.12.0",
+    "urllib3": "2.4.0"
+  }
+}

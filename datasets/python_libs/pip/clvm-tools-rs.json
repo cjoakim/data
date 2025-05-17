@@ -1,0 +1,6 @@
+{
+  "libname": "clvm-tools-rs",
+  "libvers": "0.2.0",
+  "infile": "data/pip/clvm-tools-rs.txt",
+  "dependencies": {}
+}

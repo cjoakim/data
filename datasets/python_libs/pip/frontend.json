@@ -1,0 +1,17 @@
+{
+  "libname": "frontend",
+  "libvers": "0.0.3",
+  "infile": "data/pip/frontend.txt",
+  "dependencies": {
+    "aiofiles": "24.1.0",
+    "anyio": "4.9.0",
+    "click": "8.1.8",
+    "h11": "0.16.0",
+    "idna": "3.10",
+    "itsdangerous": "2.2.0",
+    "sniffio": "1.3.1",
+    "starlette": "0.46.2",
+    "typing-extensions": "4.13.2",
+    "uvicorn": "0.34.2"
+  }
+}

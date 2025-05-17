@@ -1,0 +1,30 @@
+{
+  "libname": "astroquery",
+  "libvers": "0.4.10",
+  "infile": "data/pip/astroquery.txt",
+  "dependencies": {
+    "astropy": "7.0.1",
+    "astropy-iers-data": "0.2025.5.5.0.38.14",
+    "beautifulsoup4": "4.13.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "html5lib": "1.1",
+    "idna": "3.10",
+    "jaraco-classes": "3.4.0",
+    "jaraco-context": "6.0.1",
+    "jaraco-functools": "4.1.0",
+    "keyring": "25.6.0",
+    "more-itertools": "10.7.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pyerfa": "2.0.1.5",
+    "pyvo": "1.6.2",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "webencodings": "0.5.1"
+  }
+}

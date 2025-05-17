@@ -1,0 +1,6 @@
+{
+  "libname": "atomicwrites",
+  "libvers": "1.4.1",
+  "infile": "data/pip/atomicwrites.txt",
+  "dependencies": {}
+}

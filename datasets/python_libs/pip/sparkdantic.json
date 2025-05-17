@@ -1,0 +1,15 @@
+{
+  "libname": "sparkdantic",
+  "libvers": "2.3.0",
+  "infile": "data/pip/sparkdantic.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "jmespath": "1.0.1",
+    "packaging": "25.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pyparsing": "3.2.3",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

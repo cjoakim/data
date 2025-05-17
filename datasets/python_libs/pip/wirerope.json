@@ -1,0 +1,8 @@
+{
+  "libname": "wirerope",
+  "libvers": "1.0.0",
+  "infile": "data/pip/wirerope.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "python-i18n",
+  "libvers": "0.3.9",
+  "infile": "data/pip/python-i18n.txt",
+  "dependencies": {}
+}

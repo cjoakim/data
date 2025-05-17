@@ -1,0 +1,9 @@
+{
+  "libname": "fhconfparser",
+  "libvers": "2024.1",
+  "infile": "data/pip/fhconfparser.txt",
+  "dependencies": {
+    "attrs": "23.2.0",
+    "tomli": "2.2.1"
+  }
+}

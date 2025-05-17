@@ -1,0 +1,6 @@
+{
+  "libname": "entrypoint2",
+  "libvers": "1.1",
+  "infile": "data/pip/entrypoint2.txt",
+  "dependencies": {}
+}

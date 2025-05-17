@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-mediastore",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-mediastore.txt",
+  "dependencies": {}
+}

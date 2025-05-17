@@ -1,0 +1,6 @@
+{
+  "libname": "logistro",
+  "libvers": "1.1.0",
+  "infile": "data/pip/logistro.txt",
+  "dependencies": {}
+}

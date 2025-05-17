@@ -1,0 +1,8 @@
+{
+  "libname": "pyyaml-env-tag",
+  "libvers": "0.1",
+  "infile": "data/pip/pyyaml-env-tag.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

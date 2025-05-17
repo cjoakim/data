@@ -1,0 +1,9 @@
+{
+  "libname": "pyntcore",
+  "libvers": "2025.3.2.1",
+  "infile": "data/pip/pyntcore.txt",
+  "dependencies": {
+    "robotpy-wpinet": "2025.3.2.1",
+    "robotpy-wpiutil": "2025.3.2.1"
+  }
+}

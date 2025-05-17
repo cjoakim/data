@@ -1,0 +1,6 @@
+{
+  "libname": "pygeohash",
+  "libvers": "3.1.1",
+  "infile": "data/pip/pygeohash.txt",
+  "dependencies": {}
+}

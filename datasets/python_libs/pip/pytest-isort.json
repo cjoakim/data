@@ -1,0 +1,12 @@
+{
+  "libname": "pytest-isort",
+  "libvers": "4.0.0",
+  "infile": "data/pip/pytest-isort.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "isort": "6.0.1",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5"
+  }
+}

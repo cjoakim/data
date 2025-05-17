@@ -1,0 +1,6 @@
+{
+  "libname": "sentencepiece",
+  "libvers": "0.2.0",
+  "infile": "data/pip/sentencepiece.txt",
+  "dependencies": {}
+}

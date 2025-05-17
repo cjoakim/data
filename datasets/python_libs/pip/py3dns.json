@@ -1,0 +1,6 @@
+{
+  "libname": "py3dns",
+  "libvers": "4.0.2",
+  "infile": "data/pip/py3dns.txt",
+  "dependencies": {}
+}

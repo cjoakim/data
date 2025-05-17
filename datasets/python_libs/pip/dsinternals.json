@@ -1,0 +1,6 @@
+{
+  "libname": "dsinternals",
+  "libvers": "1.2.4",
+  "infile": "data/pip/dsinternals.txt",
+  "dependencies": {}
+}

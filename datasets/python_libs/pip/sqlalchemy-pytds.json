@@ -1,0 +1,10 @@
+{
+  "libname": "sqlalchemy-pytds",
+  "libvers": "1.0.2",
+  "infile": "data/pip/sqlalchemy-pytds.txt",
+  "dependencies": {
+    "python-tds": "1.16.1",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

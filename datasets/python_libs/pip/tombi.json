@@ -1,0 +1,6 @@
+{
+  "libname": "tombi",
+  "libvers": "0.3.30",
+  "infile": "data/pip/tombi.txt",
+  "dependencies": {}
+}

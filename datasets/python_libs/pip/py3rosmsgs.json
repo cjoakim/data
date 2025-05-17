@@ -1,0 +1,10 @@
+{
+  "libname": "py3rosmsgs",
+  "libvers": "1.18.2",
+  "infile": "data/pip/py3rosmsgs.txt",
+  "dependencies": {
+    "gnupg": "2.3.1",
+    "numpy": "2.2.5",
+    "psutil": "7.0.0"
+  }
+}

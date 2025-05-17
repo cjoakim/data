@@ -1,0 +1,9 @@
+{
+  "libname": "python-subunit",
+  "libvers": "1.4.4",
+  "infile": "data/pip/python-subunit.txt",
+  "dependencies": {
+    "iso8601": "2.1.0",
+    "testtools": "2.7.2"
+  }
+}

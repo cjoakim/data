@@ -1,0 +1,12 @@
+{
+  "libname": "fingerprints",
+  "libvers": "1.2.3",
+  "infile": "data/pip/fingerprints.txt",
+  "dependencies": {
+    "banal": "1.0.6",
+    "chardet": "5.2.0",
+    "charset-normalizer": "3.4.2",
+    "normality": "2.6.1",
+    "text-unidecode": "1.3"
+  }
+}

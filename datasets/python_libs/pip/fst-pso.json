@@ -1,0 +1,10 @@
+{
+  "libname": "fst-pso",
+  "libvers": "1.8.1",
+  "infile": "data/pip/fst-pso.txt",
+  "dependencies": {
+    "miniful": "0.0.6",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

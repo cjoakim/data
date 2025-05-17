@@ -1,0 +1,6 @@
+{
+  "libname": "factorio-rcon-py",
+  "libvers": "2.1.3",
+  "infile": "data/pip/factorio-rcon-py.txt",
+  "dependencies": {}
+}

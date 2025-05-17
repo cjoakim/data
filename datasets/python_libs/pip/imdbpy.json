@@ -1,0 +1,11 @@
+{
+  "libname": "imdbpy",
+  "libvers": "2022.7.9",
+  "infile": "data/pip/imdbpy.txt",
+  "dependencies": {
+    "cinemagoer": "2023.5.1",
+    "lxml": "5.4.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

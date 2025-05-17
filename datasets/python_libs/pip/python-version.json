@@ -1,0 +1,6 @@
+{
+  "libname": "python-version",
+  "libvers": "0.0.2",
+  "infile": "data/pip/python-version.txt",
+  "dependencies": {}
+}

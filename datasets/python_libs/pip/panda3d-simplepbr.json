@@ -1,0 +1,9 @@
+{
+  "libname": "panda3d-simplepbr",
+  "libvers": "0.13.1",
+  "infile": "data/pip/panda3d-simplepbr.txt",
+  "dependencies": {
+    "panda3d": "1.10.15",
+    "typing-extensions": "4.13.2"
+  }
+}

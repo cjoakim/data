@@ -1,0 +1,6 @@
+{
+  "libname": "setoptconf-tmp",
+  "libvers": "0.3.1",
+  "infile": "data/pip/setoptconf-tmp.txt",
+  "dependencies": {}
+}

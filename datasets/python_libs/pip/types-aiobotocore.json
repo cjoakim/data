@@ -1,0 +1,9 @@
+{
+  "libname": "types-aiobotocore",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore.txt",
+  "dependencies": {
+    "botocore-stubs": "1.38.10",
+    "types-awscrt": "0.26.1"
+  }
+}

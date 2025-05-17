@@ -1,0 +1,6 @@
+{
+  "libname": "pkce",
+  "libvers": "1.0.3",
+  "infile": "data/pip/pkce.txt",
+  "dependencies": {}
+}

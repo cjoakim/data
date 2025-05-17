@@ -1,0 +1,16 @@
+{
+  "libname": "asdf-coordinates-schemas",
+  "libvers": "0.3.0",
+  "infile": "data/pip/asdf-coordinates-schemas.txt",
+  "dependencies": {
+    "asdf": "4.1.0",
+    "asdf-standard": "1.1.1",
+    "asdf-transform-schemas": "0.5.0",
+    "attrs": "25.3.0",
+    "jmespath": "1.0.1",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pyyaml": "6.0.2",
+    "semantic-version": "2.10.0"
+  }
+}

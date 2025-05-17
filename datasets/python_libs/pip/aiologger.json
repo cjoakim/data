@@ -1,0 +1,6 @@
+{
+  "libname": "aiologger",
+  "libvers": "0.7.0",
+  "infile": "data/pip/aiologger.txt",
+  "dependencies": {}
+}

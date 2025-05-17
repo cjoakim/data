@@ -1,0 +1,6 @@
+{
+  "libname": "psqlpy",
+  "libvers": "0.10.1",
+  "infile": "data/pip/psqlpy.txt",
+  "dependencies": {}
+}

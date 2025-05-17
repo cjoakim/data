@@ -1,0 +1,8 @@
+{
+  "libname": "dkimpy",
+  "libvers": "1.1.8",
+  "infile": "data/pip/dkimpy.txt",
+  "dependencies": {
+    "dnspython": "2.7.0"
+  }
+}

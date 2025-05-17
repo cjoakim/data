@@ -1,0 +1,6 @@
+{
+  "libname": "kconfiglib",
+  "libvers": "14.1.0",
+  "infile": "data/pip/kconfiglib.txt",
+  "dependencies": {}
+}

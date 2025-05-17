@@ -1,0 +1,6 @@
+{
+  "libname": "presto-client",
+  "libvers": "0.303.0",
+  "infile": "data/pip/presto-client.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "protoc-gen-validate",
+  "libvers": "1.2.1",
+  "infile": "data/pip/protoc-gen-validate.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "protobuf": "6.30.2",
+    "validate-email": "1.3"
+  }
+}

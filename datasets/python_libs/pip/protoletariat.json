@@ -1,0 +1,9 @@
+{
+  "libname": "protoletariat",
+  "libvers": "3.3.10",
+  "infile": "data/pip/protoletariat.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "protobuf": "5.29.4"
+  }
+}

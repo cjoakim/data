@@ -1,0 +1,6 @@
+{
+  "libname": "sh",
+  "libvers": "2.2.2",
+  "infile": "data/pip/sh.txt",
+  "dependencies": {}
+}

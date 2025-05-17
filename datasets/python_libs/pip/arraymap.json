@@ -1,0 +1,8 @@
+{
+  "libname": "arraymap",
+  "libvers": "0.4.0",
+  "infile": "data/pip/arraymap.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

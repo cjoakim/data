@@ -1,0 +1,6 @@
+{
+  "libname": "django-dynamic-fixture",
+  "libvers": "4.0.1",
+  "infile": "data/pip/django-dynamic-fixture.txt",
+  "dependencies": {}
+}

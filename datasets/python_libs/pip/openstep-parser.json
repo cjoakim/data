@@ -1,0 +1,6 @@
+{
+  "libname": "openstep-parser",
+  "libvers": "2.0.1",
+  "infile": "data/pip/openstep-parser.txt",
+  "dependencies": {}
+}

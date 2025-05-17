@@ -1,0 +1,6 @@
+{
+  "libname": "pykerberos",
+  "libvers": "1.2.4",
+  "infile": "data/pip/pykerberos.txt",
+  "dependencies": {}
+}

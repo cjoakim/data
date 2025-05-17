@@ -1,0 +1,6 @@
+{
+  "libname": "types-setuptools",
+  "libvers": "80.3.0.20250505",
+  "infile": "data/pip/types-setuptools.txt",
+  "dependencies": {}
+}

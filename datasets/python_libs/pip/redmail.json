@@ -1,0 +1,9 @@
+{
+  "libname": "redmail",
+  "libvers": "0.6.0",
+  "infile": "data/pip/redmail.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

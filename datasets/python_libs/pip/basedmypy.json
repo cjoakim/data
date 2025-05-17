@@ -1,0 +1,10 @@
+{
+  "libname": "basedmypy",
+  "libvers": "2.10.0",
+  "infile": "data/pip/basedmypy.txt",
+  "dependencies": {
+    "basedtyping": "0.1.10",
+    "mypy-extensions": "1.1.0",
+    "typing-extensions": "4.13.2"
+  }
+}

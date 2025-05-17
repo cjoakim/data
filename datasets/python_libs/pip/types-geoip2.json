@@ -1,0 +1,9 @@
+{
+  "libname": "types-geoip2",
+  "libvers": "3.0.0",
+  "infile": "data/pip/types-geoip2.txt",
+  "dependencies": {
+    "types-ipaddress": "1.0.8",
+    "types-maxminddb": "1.5.0"
+  }
+}

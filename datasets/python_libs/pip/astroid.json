@@ -1,0 +1,6 @@
+{
+  "libname": "astroid",
+  "libvers": "3.3.9",
+  "infile": "data/pip/astroid.txt",
+  "dependencies": {}
+}

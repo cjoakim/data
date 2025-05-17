@@ -1,0 +1,6 @@
+{
+  "libname": "python-nginx",
+  "libvers": "1.5.7",
+  "infile": "data/pip/python-nginx.txt",
+  "dependencies": {}
+}

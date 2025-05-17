@@ -1,0 +1,8 @@
+{
+  "libname": "simplecosine",
+  "libvers": "1.2",
+  "infile": "data/pip/simplecosine.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

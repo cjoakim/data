@@ -1,0 +1,6 @@
+{
+  "libname": "dagster-pipes",
+  "libvers": "1.10.13",
+  "infile": "data/pip/dagster-pipes.txt",
+  "dependencies": {}
+}

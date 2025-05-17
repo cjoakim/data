@@ -1,0 +1,8 @@
+{
+  "libname": "envyaml",
+  "libvers": "1.10.211231",
+  "infile": "data/pip/envyaml.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "ajsonrpc",
+  "libvers": "1.2.0",
+  "infile": "data/pip/ajsonrpc.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "purecloudplatformclientv2",
+  "libvers": "227.0.0",
+  "infile": "data/pip/purecloudplatformclientv2.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0",
+    "watchdog": "6.0.0"
+  }
+}

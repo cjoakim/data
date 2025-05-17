@@ -1,0 +1,8 @@
+{
+  "libname": "multipart-reader",
+  "libvers": "0.2",
+  "infile": "data/pip/multipart-reader.txt",
+  "dependencies": {
+    "future": "1.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "xatlas",
+  "libvers": "0.0.10",
+  "infile": "data/pip/xatlas.txt",
+  "dependencies": {}
+}

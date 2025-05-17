@@ -1,0 +1,6 @@
+{
+  "libname": "dockerfile-parse",
+  "libvers": "2.0.1",
+  "infile": "data/pip/dockerfile-parse.txt",
+  "dependencies": {}
+}

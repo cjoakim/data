@@ -1,0 +1,8 @@
+{
+  "libname": "docopts",
+  "libvers": "0.6.1",
+  "infile": "data/pip/docopts.txt",
+  "dependencies": {
+    "docopt": "0.6.1"
+  }
+}

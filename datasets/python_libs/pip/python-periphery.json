@@ -1,0 +1,6 @@
+{
+  "libname": "python-periphery",
+  "libvers": "2.4.1",
+  "infile": "data/pip/python-periphery.txt",
+  "dependencies": {}
+}

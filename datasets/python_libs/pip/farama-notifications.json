@@ -1,0 +1,6 @@
+{
+  "libname": "farama-notifications",
+  "libvers": "0.0.4",
+  "infile": "data/pip/farama-notifications.txt",
+  "dependencies": {}
+}

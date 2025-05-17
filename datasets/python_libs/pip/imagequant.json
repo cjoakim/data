@@ -1,0 +1,9 @@
+{
+  "libname": "imagequant",
+  "libvers": "1.1.4",
+  "infile": "data/pip/imagequant.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

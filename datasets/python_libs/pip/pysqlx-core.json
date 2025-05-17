@@ -1,0 +1,6 @@
+{
+  "libname": "pysqlx-core",
+  "libvers": "0.2.3",
+  "infile": "data/pip/pysqlx-core.txt",
+  "dependencies": {}
+}

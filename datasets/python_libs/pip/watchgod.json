@@ -1,0 +1,10 @@
+{
+  "libname": "watchgod",
+  "libvers": "0.8.2",
+  "infile": "data/pip/watchgod.txt",
+  "dependencies": {
+    "anyio": "3.7.1",
+    "idna": "3.10",
+    "sniffio": "1.3.1"
+  }
+}

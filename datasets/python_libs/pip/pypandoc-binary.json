@@ -1,0 +1,6 @@
+{
+  "libname": "pypandoc-binary",
+  "libvers": "1.15",
+  "infile": "data/pip/pypandoc-binary.txt",
+  "dependencies": {}
+}

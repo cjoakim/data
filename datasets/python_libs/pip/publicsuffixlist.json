@@ -1,0 +1,6 @@
+{
+  "libname": "publicsuffixlist",
+  "libvers": "1.0.2.20250503",
+  "infile": "data/pip/publicsuffixlist.txt",
+  "dependencies": {}
+}

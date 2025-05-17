@@ -1,0 +1,6 @@
+{
+  "libname": "perky",
+  "libvers": "0.9.3",
+  "infile": "data/pip/perky.txt",
+  "dependencies": {}
+}

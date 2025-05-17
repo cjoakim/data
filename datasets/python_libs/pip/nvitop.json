@@ -1,0 +1,9 @@
+{
+  "libname": "nvitop",
+  "libvers": "1.5.0",
+  "infile": "data/pip/nvitop.txt",
+  "dependencies": {
+    "nvidia-ml-py": "12.570.86",
+    "psutil": "7.0.0"
+  }
+}

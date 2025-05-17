@@ -1,0 +1,8 @@
+{
+  "libname": "packaging-legacy",
+  "libvers": "23.0.post0",
+  "infile": "data/pip/packaging-legacy.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

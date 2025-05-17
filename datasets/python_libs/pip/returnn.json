@@ -1,0 +1,8 @@
+{
+  "libname": "returnn",
+  "libvers": "1.20250430.145858",
+  "infile": "data/pip/returnn.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

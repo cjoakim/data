@@ -1,0 +1,6 @@
+{
+  "libname": "django-registration-redux",
+  "libvers": "2.13",
+  "infile": "data/pip/django-registration-redux.txt",
+  "dependencies": {}
+}

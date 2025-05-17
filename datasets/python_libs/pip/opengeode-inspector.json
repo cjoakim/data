@@ -1,0 +1,8 @@
+{
+  "libname": "opengeode-inspector",
+  "libvers": "6.4.1",
+  "infile": "data/pip/opengeode-inspector.txt",
+  "dependencies": {
+    "opengeode-core": "15.18.0"
+  }
+}

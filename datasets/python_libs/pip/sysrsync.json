@@ -1,0 +1,8 @@
+{
+  "libname": "sysrsync",
+  "libvers": "1.1.1",
+  "infile": "data/pip/sysrsync.txt",
+  "dependencies": {
+    "toml": "0.10.2"
+  }
+}

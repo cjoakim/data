@@ -1,0 +1,8 @@
+{
+  "libname": "bezier",
+  "libvers": "2024.6.20",
+  "infile": "data/pip/bezier.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

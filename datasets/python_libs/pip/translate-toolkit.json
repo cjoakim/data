@@ -1,0 +1,9 @@
+{
+  "libname": "translate-toolkit",
+  "libvers": "3.15.2",
+  "infile": "data/pip/translate-toolkit.txt",
+  "dependencies": {
+    "cwcwidth": "0.1.10",
+    "lxml": "5.4.0"
+  }
+}

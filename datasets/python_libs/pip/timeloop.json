@@ -1,0 +1,6 @@
+{
+  "libname": "timeloop",
+  "libvers": "1.0.2",
+  "infile": "data/pip/timeloop.txt",
+  "dependencies": {}
+}

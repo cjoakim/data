@@ -1,0 +1,8 @@
+{
+  "libname": "trimesh",
+  "libvers": "4.6.8",
+  "infile": "data/pip/trimesh.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

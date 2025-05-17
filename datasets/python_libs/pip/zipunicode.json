@@ -1,0 +1,8 @@
+{
+  "libname": "zipunicode",
+  "libvers": "1.1.1",
+  "infile": "data/pip/zipunicode.txt",
+  "dependencies": {
+    "chardet": "5.2.0"
+  }
+}

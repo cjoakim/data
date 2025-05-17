@@ -1,0 +1,6 @@
+{
+  "libname": "etils",
+  "libvers": "1.12.2",
+  "infile": "data/pip/etils.txt",
+  "dependencies": {}
+}

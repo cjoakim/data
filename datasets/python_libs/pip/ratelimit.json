@@ -1,0 +1,6 @@
+{
+  "libname": "ratelimit",
+  "libvers": "2.2.1",
+  "infile": "data/pip/ratelimit.txt",
+  "dependencies": {}
+}

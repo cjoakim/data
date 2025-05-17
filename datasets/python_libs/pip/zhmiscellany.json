@@ -1,0 +1,6 @@
+{
+  "libname": "zhmiscellany",
+  "libvers": "0.3.7",
+  "infile": "data/pip/zhmiscellany.txt",
+  "dependencies": {}
+}

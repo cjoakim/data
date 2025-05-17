@@ -1,0 +1,6 @@
+{
+  "libname": "types-pexpect",
+  "libvers": "4.9.0.20241208",
+  "infile": "data/pip/types-pexpect.txt",
+  "dependencies": {}
+}

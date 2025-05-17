@@ -1,0 +1,11 @@
+{
+  "libname": "mesh-tensorflow",
+  "libvers": "0.1.21",
+  "infile": "data/pip/mesh-tensorflow.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "future": "1.0.0",
+    "gin-config": "0.5.0",
+    "six": "1.17.0"
+  }
+}

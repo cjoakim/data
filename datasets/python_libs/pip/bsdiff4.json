@@ -1,0 +1,6 @@
+{
+  "libname": "bsdiff4",
+  "libvers": "1.2.6",
+  "infile": "data/pip/bsdiff4.txt",
+  "dependencies": {}
+}

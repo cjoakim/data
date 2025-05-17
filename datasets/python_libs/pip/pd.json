@@ -1,0 +1,6 @@
+{
+  "libname": "pd",
+  "libvers": "0.0.4",
+  "infile": "data/pip/pd.txt",
+  "dependencies": {}
+}

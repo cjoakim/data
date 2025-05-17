@@ -1,0 +1,6 @@
+{
+  "libname": "odict",
+  "libvers": "1.9.0",
+  "infile": "data/pip/odict.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "django-nested-admin",
+  "libvers": "4.1.1",
+  "infile": "data/pip/django-nested-admin.txt",
+  "dependencies": {
+    "python-monkey-business": "1.1.0"
+  }
+}

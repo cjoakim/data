@@ -1,0 +1,10 @@
+{
+  "libname": "mechanize",
+  "libvers": "0.4.10",
+  "infile": "data/pip/mechanize.txt",
+  "dependencies": {
+    "html5lib": "1.1",
+    "six": "1.17.0",
+    "webencodings": "0.5.1"
+  }
+}

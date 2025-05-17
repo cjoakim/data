@@ -1,0 +1,8 @@
+{
+  "libname": "beautifultable",
+  "libvers": "1.1.0",
+  "infile": "data/pip/beautifultable.txt",
+  "dependencies": {
+    "wcwidth": "0.2.13"
+  }
+}

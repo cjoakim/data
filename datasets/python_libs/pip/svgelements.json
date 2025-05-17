@@ -1,0 +1,6 @@
+{
+  "libname": "svgelements",
+  "libvers": "1.9.6",
+  "infile": "data/pip/svgelements.txt",
+  "dependencies": {}
+}

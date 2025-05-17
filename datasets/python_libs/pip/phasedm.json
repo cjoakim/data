@@ -1,0 +1,6 @@
+{
+  "libname": "phasedm",
+  "libvers": "1.2.1",
+  "infile": "data/pip/phasedm.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "snakemake-interface-logger-plugins",
+  "libvers": "1.2.3",
+  "infile": "data/pip/snakemake-interface-logger-plugins.txt",
+  "dependencies": {
+    "argparse-dataclass": "2.0.0",
+    "configargparse": "1.7",
+    "snakemake-interface-common": "1.17.4"
+  }
+}

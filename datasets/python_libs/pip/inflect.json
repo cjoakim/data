@@ -1,0 +1,10 @@
+{
+  "libname": "inflect",
+  "libvers": "7.5.0",
+  "infile": "data/pip/inflect.txt",
+  "dependencies": {
+    "more-itertools": "10.7.0",
+    "typeguard": "4.4.2",
+    "typing-extensions": "4.13.2"
+  }
+}

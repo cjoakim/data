@@ -1,0 +1,17 @@
+{
+  "libname": "crochet",
+  "libvers": "2.1.1",
+  "infile": "data/pip/crochet.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "automat": "25.4.16",
+    "constantly": "23.10.4",
+    "hyperlink": "21.0.0",
+    "idna": "3.10",
+    "incremental": "24.7.2",
+    "twisted": "24.11.0",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2",
+    "zope-interface": "7.2"
+  }
+}

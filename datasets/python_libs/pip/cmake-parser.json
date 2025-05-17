@@ -1,0 +1,8 @@
+{
+  "libname": "cmake-parser",
+  "libvers": "0.9.2",
+  "infile": "data/pip/cmake-parser.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

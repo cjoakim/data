@@ -1,0 +1,6 @@
+{
+  "libname": "vcversioner",
+  "libvers": "2.16.0.0",
+  "infile": "data/pip/vcversioner.txt",
+  "dependencies": {}
+}

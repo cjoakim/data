@@ -1,0 +1,8 @@
+{
+  "libname": "vhacdx",
+  "libvers": "0.0.8.post2",
+  "infile": "data/pip/vhacdx.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

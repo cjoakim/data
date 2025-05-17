@@ -1,0 +1,6 @@
+{
+  "libname": "nanoid",
+  "libvers": "2.0.0",
+  "infile": "data/pip/nanoid.txt",
+  "dependencies": {}
+}

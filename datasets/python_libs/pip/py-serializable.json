@@ -1,0 +1,8 @@
+{
+  "libname": "py-serializable",
+  "libvers": "2.0.0",
+  "infile": "data/pip/py-serializable.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1"
+  }
+}

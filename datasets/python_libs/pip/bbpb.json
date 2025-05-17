@@ -1,0 +1,8 @@
+{
+  "libname": "bbpb",
+  "libvers": "1.4.2",
+  "infile": "data/pip/bbpb.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

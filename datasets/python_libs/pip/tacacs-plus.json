@@ -1,0 +1,8 @@
+{
+  "libname": "tacacs-plus",
+  "libvers": "2.6",
+  "infile": "data/pip/tacacs-plus.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

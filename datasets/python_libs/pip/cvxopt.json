@@ -1,0 +1,6 @@
+{
+  "libname": "cvxopt",
+  "libvers": "1.3.2",
+  "infile": "data/pip/cvxopt.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "tbgrep",
+  "libvers": "0.3.0",
+  "infile": "data/pip/tbgrep.txt",
+  "dependencies": {}
+}

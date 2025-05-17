@@ -1,0 +1,13 @@
+{
+  "libname": "pyink",
+  "libvers": "24.10.1",
+  "infile": "data/pip/pyink.txt",
+  "dependencies": {
+    "black": "24.10.0",
+    "click": "8.1.8",
+    "mypy-extensions": "1.1.0",
+    "packaging": "25.0",
+    "pathspec": "0.12.1",
+    "platformdirs": "4.3.7"
+  }
+}

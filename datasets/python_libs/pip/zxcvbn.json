@@ -1,0 +1,6 @@
+{
+  "libname": "zxcvbn",
+  "libvers": "4.5.0",
+  "infile": "data/pip/zxcvbn.txt",
+  "dependencies": {}
+}

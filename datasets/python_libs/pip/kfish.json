@@ -1,0 +1,6 @@
+{
+  "libname": "kfish",
+  "libvers": "99.0.202502031542",
+  "infile": "data/pip/kfish.txt",
+  "dependencies": {}
+}

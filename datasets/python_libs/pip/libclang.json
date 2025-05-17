@@ -1,0 +1,6 @@
+{
+  "libname": "libclang",
+  "libvers": "18.1.1",
+  "infile": "data/pip/libclang.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "jsonschema2md",
+  "libvers": "1.5.2",
+  "infile": "data/pip/jsonschema2md.txt",
+  "dependencies": {
+    "markdown": "3.7",
+    "pyyaml": "6.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "airflow-powerbi-plugin",
+  "libvers": "1.0.1",
+  "infile": "data/pip/airflow-powerbi-plugin.txt",
+  "dependencies": {}
+}

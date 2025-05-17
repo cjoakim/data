@@ -1,0 +1,17 @@
+{
+  "libname": "drf-jsonschema-serializer",
+  "libvers": "3.0.0",
+  "infile": "data/pip/drf-jsonschema-serializer.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "attrs": "25.3.0",
+    "django": "5.2",
+    "djangorestframework": "3.16.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "sqlparse": "0.5.3",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "logz",
+  "libvers": "0.19",
+  "infile": "data/pip/logz.txt",
+  "dependencies": {}
+}

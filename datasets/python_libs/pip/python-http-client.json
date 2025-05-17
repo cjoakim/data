@@ -1,0 +1,6 @@
+{
+  "libname": "python-http-client",
+  "libvers": "3.3.7",
+  "infile": "data/pip/python-http-client.txt",
+  "dependencies": {}
+}

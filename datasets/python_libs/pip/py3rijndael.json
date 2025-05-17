@@ -1,0 +1,6 @@
+{
+  "libname": "py3rijndael",
+  "libvers": "0.3.3",
+  "infile": "data/pip/py3rijndael.txt",
+  "dependencies": {}
+}

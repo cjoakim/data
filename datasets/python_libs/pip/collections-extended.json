@@ -1,0 +1,6 @@
+{
+  "libname": "collections-extended",
+  "libvers": "2.0.2",
+  "infile": "data/pip/collections-extended.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "orderly-set",
+  "libvers": "5.4.1",
+  "infile": "data/pip/orderly-set.txt",
+  "dependencies": {}
+}

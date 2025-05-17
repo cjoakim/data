@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-backup",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-backup.txt",
+  "dependencies": {}
+}

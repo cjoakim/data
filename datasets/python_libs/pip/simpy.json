@@ -1,0 +1,6 @@
+{
+  "libname": "simpy",
+  "libvers": "4.1.1",
+  "infile": "data/pip/simpy.txt",
+  "dependencies": {}
+}

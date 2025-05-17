@@ -1,0 +1,24 @@
+{
+  "libname": "astrapy",
+  "libvers": "2.0.1",
+  "infile": "data/pip/astrapy.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "certifi": "2025.4.26",
+    "deprecation": "2.1.0",
+    "dnspython": "2.7.0",
+    "h11": "0.16.0",
+    "h2": "4.2.0",
+    "hpack": "4.1.0",
+    "httpcore": "1.0.9",
+    "httpx[http2]": "0.28.1",
+    "hyperframe": "6.1.0",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "pymongo": "4.12.1",
+    "sniffio": "1.3.1",
+    "toml": "0.10.2",
+    "typing-extensions": "4.13.2",
+    "uuid6": "2024.7.10"
+  }
+}

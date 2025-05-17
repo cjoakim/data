@@ -1,0 +1,6 @@
+{
+  "libname": "rarfile",
+  "libvers": "4.2",
+  "infile": "data/pip/rarfile.txt",
+  "dependencies": {}
+}

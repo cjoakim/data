@@ -1,0 +1,9 @@
+{
+  "libname": "probeinterface",
+  "libvers": "0.2.28",
+  "infile": "data/pip/probeinterface.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0"
+  }
+}

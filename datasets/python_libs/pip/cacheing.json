@@ -1,0 +1,6 @@
+{
+  "libname": "cacheing",
+  "libvers": "0.1.1",
+  "infile": "data/pip/cacheing.txt",
+  "dependencies": {}
+}

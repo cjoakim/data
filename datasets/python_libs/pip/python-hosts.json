@@ -1,0 +1,6 @@
+{
+  "libname": "python-hosts",
+  "libvers": "1.0.7",
+  "infile": "data/pip/python-hosts.txt",
+  "dependencies": {}
+}

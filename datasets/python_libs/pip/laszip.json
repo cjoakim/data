@@ -1,0 +1,6 @@
+{
+  "libname": "laszip",
+  "libvers": "0.2.3",
+  "infile": "data/pip/laszip.txt",
+  "dependencies": {}
+}

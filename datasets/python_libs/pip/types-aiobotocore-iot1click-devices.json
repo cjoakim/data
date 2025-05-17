@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-iot1click-devices",
+  "libvers": "2.17.0",
+  "infile": "data/pip/types-aiobotocore-iot1click-devices.txt",
+  "dependencies": {}
+}

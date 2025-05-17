@@ -1,0 +1,6 @@
+{
+  "libname": "unicode-rbnf",
+  "libvers": "2.3.0",
+  "infile": "data/pip/unicode-rbnf.txt",
+  "dependencies": {}
+}

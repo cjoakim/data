@@ -1,0 +1,9 @@
+{
+  "libname": "pytool",
+  "libvers": "5.0.1",
+  "infile": "data/pip/pytool.txt",
+  "dependencies": {
+    "simplejson": "3.20.1",
+    "six": "1.17.0"
+  }
+}

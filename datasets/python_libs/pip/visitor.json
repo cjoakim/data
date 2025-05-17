@@ -1,0 +1,6 @@
+{
+  "libname": "visitor",
+  "libvers": "0.1.3",
+  "infile": "data/pip/visitor.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "mysql-replication",
+  "libvers": "1.0.9",
+  "infile": "data/pip/mysql-replication.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "pymysql": "1.1.1"
+  }
+}

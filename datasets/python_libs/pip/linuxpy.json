@@ -1,0 +1,6 @@
+{
+  "libname": "linuxpy",
+  "libvers": "0.21.0",
+  "infile": "data/pip/linuxpy.txt",
+  "dependencies": {}
+}

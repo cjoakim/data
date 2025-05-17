@@ -1,0 +1,15 @@
+{
+  "libname": "kagglehub",
+  "libvers": "0.3.12",
+  "infile": "data/pip/kagglehub.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "tqdm": "4.67.1",
+    "urllib3": "2.4.0"
+  }
+}

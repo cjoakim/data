@@ -1,0 +1,9 @@
+{
+  "libname": "dissect-btrfs",
+  "libvers": "1.7",
+  "infile": "data/pip/dissect-btrfs.txt",
+  "dependencies": {
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

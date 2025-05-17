@@ -1,0 +1,6 @@
+{
+  "libname": "litellm-proxy-extras",
+  "libvers": "0.1.15",
+  "infile": "data/pip/litellm-proxy-extras.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "cucumber-tag-expressions",
+  "libvers": "6.1.2",
+  "infile": "data/pip/cucumber-tag-expressions.txt",
+  "dependencies": {}
+}

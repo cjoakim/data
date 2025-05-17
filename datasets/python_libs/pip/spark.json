@@ -1,0 +1,6 @@
+{
+  "libname": "spark",
+  "libvers": "0.2.1",
+  "infile": "data/pip/spark.txt",
+  "dependencies": {}
+}

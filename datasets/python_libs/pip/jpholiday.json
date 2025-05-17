@@ -1,0 +1,6 @@
+{
+  "libname": "jpholiday",
+  "libvers": "1.0.2",
+  "infile": "data/pip/jpholiday.txt",
+  "dependencies": {}
+}

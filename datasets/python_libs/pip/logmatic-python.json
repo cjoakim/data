@@ -1,0 +1,8 @@
+{
+  "libname": "logmatic-python",
+  "libvers": "0.1.7",
+  "infile": "data/pip/logmatic-python.txt",
+  "dependencies": {
+    "python-json-logger": "3.3.0"
+  }
+}

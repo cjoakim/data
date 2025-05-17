@@ -1,0 +1,13 @@
+{
+  "libname": "betterproto",
+  "libvers": "1.2.5",
+  "infile": "data/pip/betterproto.txt",
+  "dependencies": {
+    "grpclib": "0.4.8",
+    "h2": "4.2.0",
+    "hpack": "4.1.0",
+    "hyperframe": "6.1.0",
+    "multidict": "6.4.3",
+    "stringcase": "1.2.0"
+  }
+}

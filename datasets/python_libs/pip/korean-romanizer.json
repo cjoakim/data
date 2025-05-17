@@ -1,0 +1,6 @@
+{
+  "libname": "korean-romanizer",
+  "libvers": "0.25.1",
+  "infile": "data/pip/korean-romanizer.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "zhinst-timing-models",
+  "libvers": "25.4.0",
+  "infile": "data/pip/zhinst-timing-models.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pyyaml": "6.0.2"
+  }
+}

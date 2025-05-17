@@ -1,0 +1,6 @@
+{
+  "libname": "tree-sitter-c-sharp",
+  "libvers": "0.23.1",
+  "infile": "data/pip/tree-sitter-c-sharp.txt",
+  "dependencies": {}
+}

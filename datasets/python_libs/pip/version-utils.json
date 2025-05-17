@@ -1,0 +1,6 @@
+{
+  "libname": "version-utils",
+  "libvers": "0.3.2",
+  "infile": "data/pip/version-utils.txt",
+  "dependencies": {}
+}

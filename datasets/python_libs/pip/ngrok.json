@@ -1,0 +1,6 @@
+{
+  "libname": "ngrok",
+  "libvers": "1.4.0",
+  "infile": "data/pip/ngrok.txt",
+  "dependencies": {}
+}

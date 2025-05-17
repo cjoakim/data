@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-firehose",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-firehose.txt",
+  "dependencies": {}
+}

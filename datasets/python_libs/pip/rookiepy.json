@@ -1,0 +1,6 @@
+{
+  "libname": "rookiepy",
+  "libvers": "0.5.6",
+  "infile": "data/pip/rookiepy.txt",
+  "dependencies": {}
+}

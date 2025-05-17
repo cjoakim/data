@@ -1,0 +1,10 @@
+{
+  "libname": "pqdm",
+  "libvers": "0.2.0",
+  "infile": "data/pip/pqdm.txt",
+  "dependencies": {
+    "bounded-pool-executor": "0.0.3",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2"
+  }
+}

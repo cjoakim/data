@@ -1,0 +1,6 @@
+{
+  "libname": "crcmod",
+  "libvers": "1.7",
+  "infile": "data/pip/crcmod.txt",
+  "dependencies": {}
+}

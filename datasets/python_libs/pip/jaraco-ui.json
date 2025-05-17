@@ -1,0 +1,22 @@
+{
+  "libname": "jaraco-ui",
+  "libvers": "2.4.0",
+  "infile": "data/pip/jaraco-ui.txt",
+  "dependencies": {
+    "autocommand": "2.2.2",
+    "click": "8.1.8",
+    "jaraco-classes": "3.4.0",
+    "jaraco-context": "6.0.1",
+    "jaraco-functools": "4.1.0",
+    "jaraco-text": "4.0.0",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "more-itertools": "10.7.0",
+    "named": "1.4.2",
+    "pygments": "2.19.1",
+    "rich": "14.0.0",
+    "shellingham": "1.5.4",
+    "typer": "0.15.3",
+    "typing-extensions": "4.13.2"
+  }
+}

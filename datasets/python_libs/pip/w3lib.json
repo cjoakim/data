@@ -1,0 +1,6 @@
+{
+  "libname": "w3lib",
+  "libvers": "2.3.1",
+  "infile": "data/pip/w3lib.txt",
+  "dependencies": {}
+}

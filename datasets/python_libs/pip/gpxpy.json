@@ -1,0 +1,6 @@
+{
+  "libname": "gpxpy",
+  "libvers": "1.6.2",
+  "infile": "data/pip/gpxpy.txt",
+  "dependencies": {}
+}

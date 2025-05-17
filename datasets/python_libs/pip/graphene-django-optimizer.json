@@ -1,0 +1,6 @@
+{
+  "libname": "graphene-django-optimizer",
+  "libvers": "0.10.0",
+  "infile": "data/pip/graphene-django-optimizer.txt",
+  "dependencies": {}
+}

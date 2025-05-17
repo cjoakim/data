@@ -1,0 +1,6 @@
+{
+  "libname": "vulture",
+  "libvers": "2.14",
+  "infile": "data/pip/vulture.txt",
+  "dependencies": {}
+}

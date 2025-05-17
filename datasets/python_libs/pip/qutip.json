@@ -1,0 +1,10 @@
+{
+  "libname": "qutip",
+  "libvers": "5.1.1",
+  "infile": "data/pip/qutip.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "scipy": "1.15.2"
+  }
+}

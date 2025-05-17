@@ -1,0 +1,8 @@
+{
+  "libname": "userpath",
+  "libvers": "1.9.2",
+  "infile": "data/pip/userpath.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

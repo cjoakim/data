@@ -1,0 +1,9 @@
+{
+  "libname": "sarif-om",
+  "libvers": "1.0.4",
+  "infile": "data/pip/sarif-om.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "pbr": "6.1.1"
+  }
+}

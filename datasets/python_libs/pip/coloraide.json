@@ -1,0 +1,6 @@
+{
+  "libname": "coloraide",
+  "libvers": "4.6",
+  "infile": "data/pip/coloraide.txt",
+  "dependencies": {}
+}

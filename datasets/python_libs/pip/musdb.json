@@ -1,0 +1,14 @@
+{
+  "libname": "musdb",
+  "libvers": "0.4.2",
+  "infile": "data/pip/musdb.txt",
+  "dependencies": {
+    "ffmpeg-python": "0.2.0",
+    "future": "1.0.0",
+    "numpy": "2.2.5",
+    "pyaml": "25.1.0",
+    "pyyaml": "6.0.2",
+    "stempeg": "0.2.3",
+    "tqdm": "4.67.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "marshmallow-jsonschema",
+  "libvers": "0.13.0",
+  "infile": "data/pip/marshmallow-jsonschema.txt",
+  "dependencies": {
+    "marshmallow": "4.0.0"
+  }
+}

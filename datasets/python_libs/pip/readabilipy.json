@@ -1,0 +1,15 @@
+{
+  "libname": "readabilipy",
+  "libvers": "0.3.0",
+  "infile": "data/pip/readabilipy.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "html5lib": "1.1",
+    "lxml": "5.4.0",
+    "regex": "2024.11.6",
+    "six": "1.17.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "webencodings": "0.5.1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "libname": "pyshacl",
+  "libvers": "0.30.1",
+  "infile": "data/pip/pyshacl.txt",
+  "dependencies": {
+    "html5rdf": "1.2.1",
+    "owlrl": "7.1.3",
+    "packaging": "25.0",
+    "prettytable": "3.16.0",
+    "pyparsing": "3.2.3",
+    "rdflib[html]": "7.1.4",
+    "wcwidth": "0.2.13"
+  }
+}

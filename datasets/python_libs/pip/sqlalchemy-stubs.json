@@ -1,0 +1,10 @@
+{
+  "libname": "sqlalchemy-stubs",
+  "libvers": "0.4",
+  "infile": "data/pip/sqlalchemy-stubs.txt",
+  "dependencies": {
+    "mypy": "1.15.0",
+    "mypy-extensions": "1.1.0",
+    "typing-extensions": "4.13.2"
+  }
+}

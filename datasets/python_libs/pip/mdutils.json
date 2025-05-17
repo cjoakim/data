@@ -1,0 +1,6 @@
+{
+  "libname": "mdutils",
+  "libvers": "1.6.0",
+  "infile": "data/pip/mdutils.txt",
+  "dependencies": {}
+}

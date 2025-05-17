@@ -1,0 +1,8 @@
+{
+  "libname": "versioningit",
+  "libvers": "3.1.2",
+  "infile": "data/pip/versioningit.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pyjarowinkler",
+  "libvers": "2.0.0",
+  "infile": "data/pip/pyjarowinkler.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "sentry-dramatiq",
+  "libvers": "0.3.3",
+  "infile": "data/pip/sentry-dramatiq.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "dramatiq": "1.17.1",
+    "prometheus-client": "0.21.1",
+    "sentry-sdk": "2.27.0",
+    "urllib3": "2.4.0"
+  }
+}

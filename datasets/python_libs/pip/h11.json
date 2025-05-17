@@ -1,0 +1,6 @@
+{
+  "libname": "h11",
+  "libvers": "0.16.0",
+  "infile": "data/pip/h11.txt",
+  "dependencies": {}
+}

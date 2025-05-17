@@ -1,0 +1,6 @@
+{
+  "libname": "ipaddress",
+  "libvers": "1.0.23",
+  "infile": "data/pip/ipaddress.txt",
+  "dependencies": {}
+}

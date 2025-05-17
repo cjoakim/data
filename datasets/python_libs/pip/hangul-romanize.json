@@ -1,0 +1,6 @@
+{
+  "libname": "hangul-romanize",
+  "libvers": "0.1.0",
+  "infile": "data/pip/hangul-romanize.txt",
+  "dependencies": {}
+}

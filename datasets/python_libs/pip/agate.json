@@ -1,0 +1,14 @@
+{
+  "libname": "agate",
+  "libvers": "1.13.0",
+  "infile": "data/pip/agate.txt",
+  "dependencies": {
+    "babel": "2.17.0",
+    "isodate": "0.7.2",
+    "leather": "0.4.0",
+    "parsedatetime": "2.6",
+    "python-slugify": "8.0.4",
+    "pytimeparse": "1.1.8",
+    "text-unidecode": "1.3"
+  }
+}

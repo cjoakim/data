@@ -1,0 +1,6 @@
+{
+  "libname": "multiprocessing-logging",
+  "libvers": "0.3.4",
+  "infile": "data/pip/multiprocessing-logging.txt",
+  "dependencies": {}
+}

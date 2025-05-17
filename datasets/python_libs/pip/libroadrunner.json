@@ -1,0 +1,8 @@
+{
+  "libname": "libroadrunner",
+  "libvers": "2.8.0",
+  "infile": "data/pip/libroadrunner.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

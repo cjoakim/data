@@ -1,0 +1,6 @@
+{
+  "libname": "cloud-tpu-diagnostics",
+  "libvers": "0.1.5",
+  "infile": "data/pip/cloud-tpu-diagnostics.txt",
+  "dependencies": {}
+}

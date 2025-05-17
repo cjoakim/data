@@ -1,0 +1,13 @@
+{
+  "libname": "async-asgi-testclient",
+  "libvers": "1.4.11",
+  "infile": "data/pip/async-asgi-testclient.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "multidict": "6.4.3",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

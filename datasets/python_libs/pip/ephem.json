@@ -1,0 +1,6 @@
+{
+  "libname": "ephem",
+  "libvers": "4.2",
+  "infile": "data/pip/ephem.txt",
+  "dependencies": {}
+}

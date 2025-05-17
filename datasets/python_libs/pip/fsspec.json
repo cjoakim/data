@@ -1,0 +1,6 @@
+{
+  "libname": "fsspec",
+  "libvers": "2025.3.2",
+  "infile": "data/pip/fsspec.txt",
+  "dependencies": {}
+}

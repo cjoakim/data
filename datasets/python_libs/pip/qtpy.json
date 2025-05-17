@@ -1,0 +1,8 @@
+{
+  "libname": "qtpy",
+  "libvers": "2.4.3",
+  "infile": "data/pip/qtpy.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

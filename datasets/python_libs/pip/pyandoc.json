@@ -1,0 +1,6 @@
+{
+  "libname": "pyandoc",
+  "libvers": "0.2.0",
+  "infile": "data/pip/pyandoc.txt",
+  "dependencies": {}
+}

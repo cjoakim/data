@@ -1,0 +1,6 @@
+{
+  "libname": "enzyme",
+  "libvers": "0.5.2",
+  "infile": "data/pip/enzyme.txt",
+  "dependencies": {}
+}

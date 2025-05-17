@@ -1,0 +1,8 @@
+{
+  "libname": "pyproject-metadata",
+  "libvers": "0.9.1",
+  "infile": "data/pip/pyproject-metadata.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

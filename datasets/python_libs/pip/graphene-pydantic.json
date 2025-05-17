@@ -1,0 +1,17 @@
+{
+  "libname": "graphene-pydantic",
+  "libvers": "0.6.1",
+  "infile": "data/pip/graphene-pydantic.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "graphene": "3.4.3",
+    "graphql-core": "3.2.6",
+    "graphql-relay": "3.2.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

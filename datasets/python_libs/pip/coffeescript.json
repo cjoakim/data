@@ -1,0 +1,9 @@
+{
+  "libname": "coffeescript",
+  "libvers": "2.0.3",
+  "infile": "data/pip/coffeescript.txt",
+  "dependencies": {
+    "pyexecjs": "1.5.1",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "hatch-nodejs-version",
+  "libvers": "0.3.2",
+  "infile": "data/pip/hatch-nodejs-version.txt",
+  "dependencies": {
+    "hatchling": "1.27.0",
+    "packaging": "25.0",
+    "pathspec": "0.12.1",
+    "pluggy": "1.5.0",
+    "trove-classifiers": "2025.5.1.12"
+  }
+}

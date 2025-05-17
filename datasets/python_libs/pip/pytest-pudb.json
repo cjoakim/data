@@ -1,0 +1,18 @@
+{
+  "libname": "pytest-pudb",
+  "libvers": "0.7.0",
+  "infile": "data/pip/pytest-pudb.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "jedi": "0.19.2",
+    "packaging": "25.0",
+    "parso": "0.8.4",
+    "pluggy": "1.5.0",
+    "pudb": "2025.1",
+    "pygments": "2.19.1",
+    "pytest": "8.3.5",
+    "urwid": "3.0.2",
+    "urwid-readline": "0.15.1",
+    "wcwidth": "0.2.13"
+  }
+}

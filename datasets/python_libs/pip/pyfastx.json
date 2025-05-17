@@ -1,0 +1,6 @@
+{
+  "libname": "pyfastx",
+  "libvers": "2.2.0",
+  "infile": "data/pip/pyfastx.txt",
+  "dependencies": {}
+}

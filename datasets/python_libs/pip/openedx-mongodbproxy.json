@@ -1,0 +1,9 @@
+{
+  "libname": "openedx-mongodbproxy",
+  "libvers": "0.2.2",
+  "infile": "data/pip/openedx-mongodbproxy.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "pymongo": "4.12.1"
+  }
+}

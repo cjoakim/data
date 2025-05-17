@@ -1,0 +1,18 @@
+{
+  "libname": "biotite",
+  "libvers": "1.2.0",
+  "infile": "data/pip/biotite.txt",
+  "dependencies": {
+    "biotraj": "1.2.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "msgpack": "1.1.0",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "requests": "2.32.3",
+    "scipy": "1.15.2",
+    "urllib3": "2.4.0"
+  }
+}

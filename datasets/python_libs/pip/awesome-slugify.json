@@ -1,0 +1,9 @@
+{
+  "libname": "awesome-slugify",
+  "libvers": "1.6.5",
+  "infile": "data/pip/awesome-slugify.txt",
+  "dependencies": {
+    "regex": "2024.11.6",
+    "unidecode": "0.4.21"
+  }
+}

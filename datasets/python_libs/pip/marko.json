@@ -1,0 +1,6 @@
+{
+  "libname": "marko",
+  "libvers": "2.1.3",
+  "infile": "data/pip/marko.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-kms",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-kms.txt",
+  "dependencies": {}
+}

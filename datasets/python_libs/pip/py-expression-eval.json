@@ -1,0 +1,6 @@
+{
+  "libname": "py-expression-eval",
+  "libvers": "0.3.14",
+  "infile": "data/pip/py-expression-eval.txt",
+  "dependencies": {}
+}

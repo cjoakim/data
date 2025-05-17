@@ -1,0 +1,12 @@
+{
+  "libname": "sshpubkeys",
+  "libvers": "3.3.1",
+  "infile": "data/pip/sshpubkeys.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "ecdsa": "0.19.1",
+    "pycparser": "2.22",
+    "six": "1.17.0"
+  }
+}

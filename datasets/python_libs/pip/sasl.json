@@ -1,0 +1,8 @@
+{
+  "libname": "sasl",
+  "libvers": "0.3.1",
+  "infile": "data/pip/sasl.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

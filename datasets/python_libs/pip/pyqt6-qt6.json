@@ -1,0 +1,6 @@
+{
+  "libname": "pyqt6-qt6",
+  "libvers": "6.9.0",
+  "infile": "data/pip/pyqt6-qt6.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,15 @@
+{
+  "libname": "qwen-vl-utils",
+  "libvers": "0.0.11",
+  "infile": "data/pip/qwen-vl-utils.txt",
+  "dependencies": {
+    "av": "14.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

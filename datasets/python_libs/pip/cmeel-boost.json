@@ -1,0 +1,9 @@
+{
+  "libname": "cmeel-boost",
+  "libvers": "1.88.0",
+  "infile": "data/pip/cmeel-boost.txt",
+  "dependencies": {
+    "cmeel": "0.57.3",
+    "numpy": "2.2.5"
+  }
+}

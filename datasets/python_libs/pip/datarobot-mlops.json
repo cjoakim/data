@@ -1,0 +1,16 @@
+{
+  "libname": "datarobot-mlops",
+  "libvers": "11.0.0",
+  "infile": "data/pip/datarobot-mlops.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "orjson": "3.10.18",
+    "pandas": "2.2.3",
+    "py4j": "0.10.9.9",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "six": "1.17.0",
+    "tzdata": "2025.2"
+  }
+}

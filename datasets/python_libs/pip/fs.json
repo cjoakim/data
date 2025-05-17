@@ -1,0 +1,9 @@
+{
+  "libname": "fs",
+  "libvers": "2.4.16",
+  "infile": "data/pip/fs.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "six": "1.17.0"
+  }
+}

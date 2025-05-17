@@ -1,0 +1,6 @@
+{
+  "libname": "legacy-cgi",
+  "libvers": "2.6.3",
+  "infile": "data/pip/legacy-cgi.txt",
+  "dependencies": {}
+}

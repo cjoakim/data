@@ -1,0 +1,6 @@
+{
+  "libname": "clickhouse-cityhash",
+  "libvers": "1.0.2.4",
+  "infile": "data/pip/clickhouse-cityhash.txt",
+  "dependencies": {}
+}

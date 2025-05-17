@@ -1,0 +1,24 @@
+{
+  "libname": "sweeps",
+  "libvers": "0.2.0",
+  "infile": "data/pip/sweeps.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "attrs": "25.3.0",
+    "joblib": "1.5.0",
+    "jsonref": "1.1.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "numpy": "2.2.5",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pyyaml": "6.0.2",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "threadpoolctl": "3.6.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

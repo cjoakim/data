@@ -1,0 +1,9 @@
+{
+  "libname": "oathtool",
+  "libvers": "2.4.0",
+  "infile": "data/pip/oathtool.txt",
+  "dependencies": {
+    "autocommand": "2.2.2",
+    "path": "17.1.0"
+  }
+}

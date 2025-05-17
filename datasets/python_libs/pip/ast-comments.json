@@ -1,0 +1,6 @@
+{
+  "libname": "ast-comments",
+  "libvers": "1.2.2",
+  "infile": "data/pip/ast-comments.txt",
+  "dependencies": {}
+}

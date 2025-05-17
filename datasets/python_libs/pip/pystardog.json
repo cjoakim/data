@@ -1,0 +1,16 @@
+{
+  "libname": "pystardog",
+  "libvers": "0.18.1",
+  "infile": "data/pip/pystardog.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "contextlib2": "21.6.0",
+    "idna": "3.10",
+    "pyparsing": "3.2.3",
+    "rdflib": "7.1.4",
+    "requests": "2.32.3",
+    "requests-toolbelt": "1.0.0",
+    "urllib3": "2.4.0"
+  }
+}

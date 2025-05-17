@@ -1,0 +1,6 @@
+{
+  "libname": "pyzipcode",
+  "libvers": "3.0.1",
+  "infile": "data/pip/pyzipcode.txt",
+  "dependencies": {}
+}

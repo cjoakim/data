@@ -1,0 +1,8 @@
+{
+  "libname": "pyinstaller-hooks-contrib",
+  "libvers": "2025.4",
+  "infile": "data/pip/pyinstaller-hooks-contrib.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

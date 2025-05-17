@@ -1,0 +1,18 @@
+{
+  "libname": "django-opensearch-dsl",
+  "libvers": "0.7.0",
+  "infile": "data/pip/django-opensearch-dsl.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "dateutils": "0.6.12",
+    "events": "0.5",
+    "idna": "3.10",
+    "opensearch-py": "2.8.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

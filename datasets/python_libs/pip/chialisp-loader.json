@@ -1,0 +1,9 @@
+{
+  "libname": "chialisp-loader",
+  "libvers": "0.1.2",
+  "infile": "data/pip/chialisp-loader.txt",
+  "dependencies": {
+    "clvm-rs": "0.13.1",
+    "importlib-resources": "6.5.2"
+  }
+}

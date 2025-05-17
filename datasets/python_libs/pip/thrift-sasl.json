@@ -1,0 +1,10 @@
+{
+  "libname": "thrift-sasl",
+  "libvers": "0.4.3",
+  "infile": "data/pip/thrift-sasl.txt",
+  "dependencies": {
+    "pure-sasl": "0.6.2",
+    "six": "1.17.0",
+    "thrift": "0.21.0"
+  }
+}

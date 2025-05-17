@@ -1,0 +1,6 @@
+{
+  "libname": "datatable",
+  "libvers": "1.1.0",
+  "infile": "data/pip/datatable.txt",
+  "dependencies": {}
+}

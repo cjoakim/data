@@ -1,0 +1,6 @@
+{
+  "libname": "dbus-fast",
+  "libvers": "2.44.1",
+  "infile": "data/pip/dbus-fast.txt",
+  "dependencies": {}
+}

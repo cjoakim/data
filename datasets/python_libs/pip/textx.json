@@ -1,0 +1,8 @@
+{
+  "libname": "textx",
+  "libvers": "4.1.0",
+  "infile": "data/pip/textx.txt",
+  "dependencies": {
+    "arpeggio": "2.0.2"
+  }
+}

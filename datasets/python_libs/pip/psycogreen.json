@@ -1,0 +1,6 @@
+{
+  "libname": "psycogreen",
+  "libvers": "1.0.2",
+  "infile": "data/pip/psycogreen.txt",
+  "dependencies": {}
+}

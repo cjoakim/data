@@ -1,0 +1,9 @@
+{
+  "libname": "grimp",
+  "libvers": "3.9",
+  "infile": "data/pip/grimp.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "typing-extensions": "4.13.2"
+  }
+}

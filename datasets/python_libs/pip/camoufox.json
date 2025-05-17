@@ -1,0 +1,32 @@
+{
+  "libname": "camoufox",
+  "libvers": "0.4.11",
+  "infile": "data/pip/camoufox.txt",
+  "dependencies": {
+    "browserforge": "1.2.3",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "cython": "3.0.12",
+    "greenlet": "3.2.1",
+    "idna": "3.10",
+    "language-tags": "1.2.0",
+    "lxml": "5.4.0",
+    "numpy": "2.2.5",
+    "orjson": "3.10.18",
+    "platformdirs": "4.3.7",
+    "playwright": "1.52.0",
+    "pyee": "13.0.0",
+    "pyobjc-core": "11.0",
+    "pyobjc-framework-cocoa": "11.0",
+    "pysocks": "1.7.1",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "screeninfo": "0.8.1",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "ua-parser": "1.0.1",
+    "ua-parser-builtins": "0.18.0.post1",
+    "urllib3": "2.4.0"
+  }
+}

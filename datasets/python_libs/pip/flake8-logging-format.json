@@ -1,0 +1,6 @@
+{
+  "libname": "flake8-logging-format",
+  "libvers": "2024.24.12",
+  "infile": "data/pip/flake8-logging-format.txt",
+  "dependencies": {}
+}

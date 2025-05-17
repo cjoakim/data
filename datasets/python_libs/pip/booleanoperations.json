@@ -1,0 +1,9 @@
+{
+  "libname": "booleanoperations",
+  "libvers": "0.9.0",
+  "infile": "data/pip/booleanoperations.txt",
+  "dependencies": {
+    "fonttools": "4.57.0",
+    "pyclipper": "1.3.0.post6"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "codeintel",
+  "libvers": "2.0.0",
+  "infile": "data/pip/codeintel.txt",
+  "dependencies": {
+    "3to2": "1.1.1",
+    "appdirs": "1.4.4",
+    "applib": "1.2",
+    "chardet": "5.2.0",
+    "cmdln": "2.0.0",
+    "esprima": "4.0.1",
+    "inflector": "3.1.1",
+    "libclang-py3": "3.9.0",
+    "six": "1.17.0",
+    "zope-cachedescriptors": "5.1"
+  }
+}

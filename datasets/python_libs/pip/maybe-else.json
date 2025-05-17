@@ -1,0 +1,6 @@
+{
+  "libname": "maybe-else",
+  "libvers": "0.2.1",
+  "infile": "data/pip/maybe-else.txt",
+  "dependencies": {}
+}

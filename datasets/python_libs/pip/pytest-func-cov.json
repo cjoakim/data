@@ -1,0 +1,11 @@
+{
+  "libname": "pytest-func-cov",
+  "libvers": "0.2.3",
+  "infile": "data/pip/pytest-func-cov.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5"
+  }
+}

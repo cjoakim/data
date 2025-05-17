@@ -1,0 +1,8 @@
+{
+  "libname": "decopatch",
+  "libvers": "1.4.10",
+  "infile": "data/pip/decopatch.txt",
+  "dependencies": {
+    "makefun": "1.15.6"
+  }
+}

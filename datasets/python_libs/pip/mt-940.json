@@ -1,0 +1,6 @@
+{
+  "libname": "mt-940",
+  "libvers": "4.30.0",
+  "infile": "data/pip/mt-940.txt",
+  "dependencies": {}
+}

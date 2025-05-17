@@ -1,0 +1,6 @@
+{
+  "libname": "lazy-imports",
+  "libvers": "0.4.0",
+  "infile": "data/pip/lazy-imports.txt",
+  "dependencies": {}
+}

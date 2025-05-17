@@ -1,0 +1,6 @@
+{
+  "libname": "mwparserfromhell",
+  "libvers": "0.6.6",
+  "infile": "data/pip/mwparserfromhell.txt",
+  "dependencies": {}
+}

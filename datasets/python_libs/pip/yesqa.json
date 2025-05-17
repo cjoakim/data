@@ -1,0 +1,12 @@
+{
+  "libname": "yesqa",
+  "libvers": "1.5.0",
+  "infile": "data/pip/yesqa.txt",
+  "dependencies": {
+    "flake8": "7.2.0",
+    "mccabe": "0.7.0",
+    "pycodestyle": "2.13.0",
+    "pyflakes": "3.3.2",
+    "tokenize-rt": "6.1.0"
+  }
+}

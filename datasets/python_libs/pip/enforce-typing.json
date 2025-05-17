@@ -1,0 +1,6 @@
+{
+  "libname": "enforce-typing",
+  "libvers": "1.0.0.post1",
+  "infile": "data/pip/enforce-typing.txt",
+  "dependencies": {}
+}

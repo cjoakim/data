@@ -1,0 +1,6 @@
+{
+  "libname": "timeago",
+  "libvers": "1.0.16",
+  "infile": "data/pip/timeago.txt",
+  "dependencies": {}
+}

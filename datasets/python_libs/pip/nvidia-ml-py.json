@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-ml-py",
+  "libvers": "12.575.51",
+  "infile": "data/pip/nvidia-ml-py.txt",
+  "dependencies": {}
+}

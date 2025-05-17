@@ -1,0 +1,10 @@
+{
+  "libname": "onnx-weekly",
+  "libvers": "1.19.0.dev20250505",
+  "infile": "data/pip/onnx-weekly.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "protobuf": "6.30.2",
+    "typing-extensions": "4.13.2"
+  }
+}

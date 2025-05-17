@@ -1,0 +1,8 @@
+{
+  "libname": "rstl",
+  "libvers": "0.1.3",
+  "infile": "data/pip/rstl.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

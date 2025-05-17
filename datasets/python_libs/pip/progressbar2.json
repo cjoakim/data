@@ -1,0 +1,9 @@
+{
+  "libname": "progressbar2",
+  "libvers": "4.5.0",
+  "infile": "data/pip/progressbar2.txt",
+  "dependencies": {
+    "python-utils": "3.9.1",
+    "typing-extensions": "4.13.2"
+  }
+}

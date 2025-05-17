@@ -1,0 +1,11 @@
+{
+  "libname": "phantom-types",
+  "libvers": "3.0.2",
+  "infile": "data/pip/phantom-types.txt",
+  "dependencies": {
+    "beartype": "0.20.2",
+    "numerary": "0.4.4",
+    "typeguard": "4.4.2",
+    "typing-extensions": "4.13.2"
+  }
+}

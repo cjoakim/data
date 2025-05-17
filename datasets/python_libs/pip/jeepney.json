@@ -1,0 +1,6 @@
+{
+  "libname": "jeepney",
+  "libvers": "0.9.0",
+  "infile": "data/pip/jeepney.txt",
+  "dependencies": {}
+}

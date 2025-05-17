@@ -1,0 +1,6 @@
+{
+  "libname": "types-attrs",
+  "libvers": "19.1.0",
+  "infile": "data/pip/types-attrs.txt",
+  "dependencies": {}
+}

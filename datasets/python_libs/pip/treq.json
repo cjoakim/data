@@ -1,0 +1,27 @@
+{
+  "libname": "treq",
+  "libvers": "24.9.1",
+  "infile": "data/pip/treq.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "automat": "25.4.16",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "constantly": "23.10.4",
+    "cryptography": "44.0.3",
+    "hyperlink": "21.0.0",
+    "idna": "3.10",
+    "incremental": "24.7.2",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pycparser": "2.22",
+    "pyopenssl": "25.0.0",
+    "requests": "2.32.3",
+    "service-identity": "24.2.0",
+    "twisted[tls]": "24.11.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "zope-interface": "7.2"
+  }
+}

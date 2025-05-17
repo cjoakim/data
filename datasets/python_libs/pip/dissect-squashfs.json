@@ -1,0 +1,9 @@
+{
+  "libname": "dissect-squashfs",
+  "libvers": "1.9",
+  "infile": "data/pip/dissect-squashfs.txt",
+  "dependencies": {
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

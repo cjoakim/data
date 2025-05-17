@@ -1,0 +1,12 @@
+{
+  "libname": "django-python3-ldap",
+  "libvers": "0.15.8",
+  "infile": "data/pip/django-python3-ldap.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "ldap3": "2.9.1",
+    "pyasn1": "0.5.1",
+    "sqlparse": "0.5.3"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-cufft-cu11",
+  "libvers": "10.9.0.58",
+  "infile": "data/pip/nvidia-cufft-cu11.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "fluent-logger",
+  "libvers": "0.11.1",
+  "infile": "data/pip/fluent-logger.txt",
+  "dependencies": {
+    "msgpack": "1.1.0"
+  }
+}

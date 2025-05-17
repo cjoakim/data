@@ -1,0 +1,16 @@
+{
+  "libname": "large-image-source-openslide",
+  "libvers": "1.32.3",
+  "infile": "data/pip/large-image-source-openslide.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "large-image": "1.32.3",
+    "numpy": "2.2.5",
+    "openslide-bin": "4.0.0.8",
+    "openslide-python": "1.4.2",
+    "palettable": "3.3.3",
+    "pillow": "11.2.1",
+    "tifftools": "1.6.0",
+    "typing-extensions": "4.13.2"
+  }
+}

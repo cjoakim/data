@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-sdb",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-sdb.txt",
+  "dependencies": {}
+}

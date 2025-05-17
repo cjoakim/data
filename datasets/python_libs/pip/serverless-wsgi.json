@@ -1,0 +1,9 @@
+{
+  "libname": "serverless-wsgi",
+  "libvers": "3.0.5",
+  "infile": "data/pip/serverless-wsgi.txt",
+  "dependencies": {
+    "markupsafe": "3.0.2",
+    "werkzeug": "3.1.3"
+  }
+}

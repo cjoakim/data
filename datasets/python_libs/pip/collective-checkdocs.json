@@ -1,0 +1,8 @@
+{
+  "libname": "collective-checkdocs",
+  "libvers": "0.2",
+  "infile": "data/pip/collective-checkdocs.txt",
+  "dependencies": {
+    "docutils": "0.21.2"
+  }
+}

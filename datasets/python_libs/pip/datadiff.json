@@ -1,0 +1,6 @@
+{
+  "libname": "datadiff",
+  "libvers": "2.2.0",
+  "infile": "data/pip/datadiff.txt",
+  "dependencies": {}
+}

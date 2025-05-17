@@ -1,0 +1,6 @@
+{
+  "libname": "recordclass",
+  "libvers": "0.23.1",
+  "infile": "data/pip/recordclass.txt",
+  "dependencies": {}
+}

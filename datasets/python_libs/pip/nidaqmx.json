@@ -1,0 +1,19 @@
+{
+  "libname": "nidaqmx",
+  "libvers": "1.0.2",
+  "infile": "data/pip/nidaqmx.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "deprecation": "2.1.0",
+    "hightime": "0.2.2",
+    "idna": "3.10",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "python-decouple": "3.8",
+    "requests": "2.32.3",
+    "tzlocal": "5.3.1",
+    "urllib3": "2.4.0"
+  }
+}

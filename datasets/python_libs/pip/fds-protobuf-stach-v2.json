@@ -1,0 +1,8 @@
+{
+  "libname": "fds-protobuf-stach-v2",
+  "libvers": "1.0.2",
+  "infile": "data/pip/fds-protobuf-stach-v2.txt",
+  "dependencies": {
+    "protobuf": "3.20.3"
+  }
+}

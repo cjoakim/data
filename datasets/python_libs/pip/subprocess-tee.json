@@ -1,0 +1,6 @@
+{
+  "libname": "subprocess-tee",
+  "libvers": "0.4.2",
+  "infile": "data/pip/subprocess-tee.txt",
+  "dependencies": {}
+}

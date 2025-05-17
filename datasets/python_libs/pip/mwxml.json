@@ -1,0 +1,18 @@
+{
+  "libname": "mwxml",
+  "libvers": "0.3.6",
+  "infile": "data/pip/mwxml.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "docopt": "0.6.2",
+    "jsonable": "0.3.1",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "mwcli": "0.0.3",
+    "mwtypes": "0.4.0",
+    "para": "0.0.8",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2"
+  }
+}

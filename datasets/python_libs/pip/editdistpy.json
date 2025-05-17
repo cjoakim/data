@@ -1,0 +1,6 @@
+{
+  "libname": "editdistpy",
+  "libvers": "0.1.5",
+  "infile": "data/pip/editdistpy.txt",
+  "dependencies": {}
+}

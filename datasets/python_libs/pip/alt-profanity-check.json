@@ -1,0 +1,12 @@
+{
+  "libname": "alt-profanity-check",
+  "libvers": "1.6.1",
+  "infile": "data/pip/alt-profanity-check.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "numpy": "2.2.5",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "threadpoolctl": "3.6.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "parse",
+  "libvers": "1.20.2",
+  "infile": "data/pip/parse.txt",
+  "dependencies": {}
+}

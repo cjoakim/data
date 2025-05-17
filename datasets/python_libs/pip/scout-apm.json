@@ -1,0 +1,12 @@
+{
+  "libname": "scout-apm",
+  "libvers": "3.3.0",
+  "infile": "data/pip/scout-apm.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "certifi": "2025.4.26",
+    "psutil": "7.0.0",
+    "urllib3": "2.2.3",
+    "wrapt": "1.17.2"
+  }
+}

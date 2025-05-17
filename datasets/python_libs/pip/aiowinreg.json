@@ -1,0 +1,13 @@
+{
+  "libname": "aiowinreg",
+  "libvers": "0.0.12",
+  "infile": "data/pip/aiowinreg.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "prompt-toolkit": "3.0.51",
+    "pycparser": "2.22",
+    "wcwidth": "0.2.13",
+    "winacl": "0.1.9"
+  }
+}

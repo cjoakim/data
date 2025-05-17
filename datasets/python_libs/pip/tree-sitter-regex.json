@@ -1,0 +1,6 @@
+{
+  "libname": "tree-sitter-regex",
+  "libvers": "0.24.3",
+  "infile": "data/pip/tree-sitter-regex.txt",
+  "dependencies": {}
+}

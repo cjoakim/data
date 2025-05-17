@@ -1,0 +1,6 @@
+{
+  "libname": "darkdetect",
+  "libvers": "0.8.0",
+  "infile": "data/pip/darkdetect.txt",
+  "dependencies": {}
+}

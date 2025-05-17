@@ -1,0 +1,6 @@
+{
+  "libname": "pylev",
+  "libvers": "1.4.0",
+  "infile": "data/pip/pylev.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "camel-converter",
+  "libvers": "4.0.1",
+  "infile": "data/pip/camel-converter.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-appsync",
+  "libvers": "1.38.2",
+  "infile": "data/pip/mypy-boto3-appsync.txt",
+  "dependencies": {}
+}

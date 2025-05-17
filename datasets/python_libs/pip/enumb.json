@@ -1,0 +1,9 @@
+{
+  "libname": "enumb",
+  "libvers": "0.1.5",
+  "infile": "data/pip/enumb.txt",
+  "dependencies": {
+    "cassidy": "0.1.4",
+    "expo": "0.1.2"
+  }
+}

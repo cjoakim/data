@@ -1,0 +1,6 @@
+{
+  "libname": "extensionclass",
+  "libvers": "6.0",
+  "infile": "data/pip/extensionclass.txt",
+  "dependencies": {}
+}

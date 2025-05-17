@@ -1,0 +1,9 @@
+{
+  "libname": "argon2-cffi-bindings",
+  "libvers": "21.2.0",
+  "infile": "data/pip/argon2-cffi-bindings.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

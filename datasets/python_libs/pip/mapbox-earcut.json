@@ -1,0 +1,8 @@
+{
+  "libname": "mapbox-earcut",
+  "libvers": "1.0.3",
+  "infile": "data/pip/mapbox-earcut.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

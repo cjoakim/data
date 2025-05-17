@@ -1,0 +1,6 @@
+{
+  "libname": "tensorboard-data-server",
+  "libvers": "0.7.2",
+  "infile": "data/pip/tensorboard-data-server.txt",
+  "dependencies": {}
+}

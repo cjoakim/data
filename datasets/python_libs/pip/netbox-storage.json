@@ -1,0 +1,6 @@
+{
+  "libname": "netbox-storage",
+  "libvers": "0.0.0.0.946",
+  "infile": "data/pip/netbox-storage.txt",
+  "dependencies": {}
+}

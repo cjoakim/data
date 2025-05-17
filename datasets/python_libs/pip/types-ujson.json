@@ -1,0 +1,6 @@
+{
+  "libname": "types-ujson",
+  "libvers": "5.10.0.20250326",
+  "infile": "data/pip/types-ujson.txt",
+  "dependencies": {}
+}

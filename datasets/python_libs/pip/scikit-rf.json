@@ -1,0 +1,15 @@
+{
+  "libname": "scikit-rf",
+  "libvers": "1.6.2",
+  "infile": "data/pip/scikit-rf.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

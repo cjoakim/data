@@ -1,0 +1,9 @@
+{
+  "libname": "python-louvain",
+  "libvers": "0.16",
+  "infile": "data/pip/python-louvain.txt",
+  "dependencies": {
+    "networkx": "3.4.2",
+    "numpy": "2.2.5"
+  }
+}

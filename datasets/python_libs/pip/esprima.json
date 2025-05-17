@@ -1,0 +1,6 @@
+{
+  "libname": "esprima",
+  "libvers": "4.0.1",
+  "infile": "data/pip/esprima.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "expiring-dict",
+  "libvers": "1.1.2",
+  "infile": "data/pip/expiring-dict.txt",
+  "dependencies": {
+    "sortedcontainers": "2.4.0"
+  }
+}

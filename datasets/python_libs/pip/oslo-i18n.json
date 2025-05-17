@@ -1,0 +1,8 @@
+{
+  "libname": "oslo-i18n",
+  "libvers": "6.5.1",
+  "infile": "data/pip/oslo-i18n.txt",
+  "dependencies": {
+    "pbr": "6.1.1"
+  }
+}

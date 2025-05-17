@@ -1,0 +1,12 @@
+{
+  "libname": "robotframework-datetime-tz",
+  "libvers": "1.0.6",
+  "infile": "data/pip/robotframework-datetime-tz.txt",
+  "dependencies": {
+    "babel": "2.17.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "robotframework": "7.2.2",
+    "six": "1.17.0"
+  }
+}

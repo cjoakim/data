@@ -1,0 +1,9 @@
+{
+  "libname": "flippernested",
+  "libvers": "2.3.5",
+  "infile": "data/pip/flippernested.txt",
+  "dependencies": {
+    "protobuf": "6.30.2",
+    "pyserial": "3.5"
+  }
+}

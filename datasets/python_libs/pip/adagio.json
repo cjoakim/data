@@ -1,0 +1,18 @@
+{
+  "libname": "adagio",
+  "libvers": "0.2.6",
+  "infile": "data/pip/adagio.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "fs": "2.4.16",
+    "fsspec": "2025.3.2",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "pyarrow": "20.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "triad": "0.9.8",
+    "tzdata": "2025.2"
+  }
+}

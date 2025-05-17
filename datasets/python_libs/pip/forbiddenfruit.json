@@ -1,0 +1,6 @@
+{
+  "libname": "forbiddenfruit",
+  "libvers": "0.1.4",
+  "infile": "data/pip/forbiddenfruit.txt",
+  "dependencies": {}
+}

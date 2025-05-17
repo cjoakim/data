@@ -1,0 +1,8 @@
+{
+  "libname": "confuse",
+  "libvers": "2.0.1",
+  "infile": "data/pip/confuse.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "marshmallow-jsonapi",
+  "libvers": "0.24.0",
+  "infile": "data/pip/marshmallow-jsonapi.txt",
+  "dependencies": {
+    "marshmallow": "4.0.0"
+  }
+}

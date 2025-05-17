@@ -1,0 +1,22 @@
+{
+  "libname": "insights-core",
+  "libvers": "3.5.13",
+  "infile": "data/pip/insights-core.txt",
+  "dependencies": {
+    "cachecontrol[filecache,redis]": "0.14.3",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "defusedxml": "0.7.1",
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "jinja2": "3.1.6",
+    "lockfile": "0.12.2",
+    "markupsafe": "3.0.2",
+    "msgpack": "1.1.0",
+    "pyyaml": "6.0.2",
+    "redis": "6.0.0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

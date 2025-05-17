@@ -1,0 +1,8 @@
+{
+  "libname": "warcio",
+  "libvers": "1.7.5",
+  "infile": "data/pip/warcio.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

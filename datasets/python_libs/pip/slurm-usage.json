@@ -1,0 +1,11 @@
+{
+  "libname": "slurm-usage",
+  "libvers": "2.0.0",
+  "infile": "data/pip/slurm-usage.txt",
+  "dependencies": {
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "pygments": "2.19.1",
+    "rich": "14.0.0"
+  }
+}

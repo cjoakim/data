@@ -1,0 +1,6 @@
+{
+  "libname": "dvc-render",
+  "libvers": "1.0.2",
+  "infile": "data/pip/dvc-render.txt",
+  "dependencies": {}
+}

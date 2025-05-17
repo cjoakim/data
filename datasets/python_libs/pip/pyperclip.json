@@ -1,0 +1,6 @@
+{
+  "libname": "pyperclip",
+  "libvers": "1.9.0",
+  "infile": "data/pip/pyperclip.txt",
+  "dependencies": {}
+}

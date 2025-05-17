@@ -1,0 +1,6 @@
+{
+  "libname": "bpylist2",
+  "libvers": "4.1.1",
+  "infile": "data/pip/bpylist2.txt",
+  "dependencies": {}
+}

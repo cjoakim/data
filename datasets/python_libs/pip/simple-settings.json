@@ -1,0 +1,6 @@
+{
+  "libname": "simple-settings",
+  "libvers": "1.2.0",
+  "infile": "data/pip/simple-settings.txt",
+  "dependencies": {}
+}

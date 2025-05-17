@@ -1,0 +1,14 @@
+{
+  "libname": "twirp",
+  "libvers": "0.0.7",
+  "infile": "data/pip/twirp.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "protobuf": "6.30.2",
+    "requests": "2.32.3",
+    "structlog": "25.3.0",
+    "urllib3": "2.4.0"
+  }
+}

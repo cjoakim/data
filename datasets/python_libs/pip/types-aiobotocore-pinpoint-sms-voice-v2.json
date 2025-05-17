@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-pinpoint-sms-voice-v2",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-pinpoint-sms-voice-v2.txt",
+  "dependencies": {}
+}

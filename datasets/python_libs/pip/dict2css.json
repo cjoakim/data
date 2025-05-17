@@ -1,0 +1,12 @@
+{
+  "libname": "dict2css",
+  "libvers": "0.3.0.post1",
+  "infile": "data/pip/dict2css.txt",
+  "dependencies": {
+    "cssutils": "2.11.1",
+    "domdf-python-tools": "3.10.0",
+    "more-itertools": "10.7.0",
+    "natsort": "8.4.0",
+    "typing-extensions": "4.13.2"
+  }
+}

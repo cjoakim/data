@@ -1,0 +1,8 @@
+{
+  "libname": "cfractions",
+  "libvers": "2.4.1",
+  "infile": "data/pip/cfractions.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

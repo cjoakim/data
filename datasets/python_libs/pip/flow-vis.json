@@ -1,0 +1,8 @@
+{
+  "libname": "flow-vis",
+  "libvers": "0.1",
+  "infile": "data/pip/flow-vis.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

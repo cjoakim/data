@@ -1,0 +1,8 @@
+{
+  "libname": "pycloudflared",
+  "libvers": "0.2.0",
+  "infile": "data/pip/pycloudflared.txt",
+  "dependencies": {
+    "tqdm": "4.67.1"
+  }
+}

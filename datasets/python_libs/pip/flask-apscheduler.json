@@ -1,0 +1,18 @@
+{
+  "libname": "flask-apscheduler",
+  "libvers": "1.13.1",
+  "infile": "data/pip/flask-apscheduler.txt",
+  "dependencies": {
+    "apscheduler": "3.11.0",
+    "blinker": "1.9.0",
+    "click": "8.1.8",
+    "flask": "3.1.0",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "tzlocal": "5.3.1",
+    "werkzeug": "3.1.3"
+  }
+}

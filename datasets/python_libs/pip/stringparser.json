@@ -1,0 +1,8 @@
+{
+  "libname": "stringparser",
+  "libvers": "0.7",
+  "infile": "data/pip/stringparser.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

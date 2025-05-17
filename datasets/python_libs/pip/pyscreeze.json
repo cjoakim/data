@@ -1,0 +1,6 @@
+{
+  "libname": "pyscreeze",
+  "libvers": "1.0.1",
+  "infile": "data/pip/pyscreeze.txt",
+  "dependencies": {}
+}

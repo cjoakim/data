@@ -1,0 +1,6 @@
+{
+  "libname": "async-generator",
+  "libvers": "1.10",
+  "infile": "data/pip/async-generator.txt",
+  "dependencies": {}
+}

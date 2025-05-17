@@ -1,0 +1,16 @@
+{
+  "libname": "umap-learn",
+  "libvers": "0.5.7",
+  "infile": "data/pip/umap-learn.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "llvmlite": "0.44.0",
+    "numba": "0.61.2",
+    "numpy": "2.2.5",
+    "pynndescent": "0.5.13",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "threadpoolctl": "3.6.0",
+    "tqdm": "4.67.1"
+  }
+}

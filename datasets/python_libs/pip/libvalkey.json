@@ -1,0 +1,6 @@
+{
+  "libname": "libvalkey",
+  "libvers": "4.0.1",
+  "infile": "data/pip/libvalkey.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,25 @@
+{
+  "libname": "gymnasium-robotics",
+  "libvers": "1.3.1",
+  "infile": "data/pip/gymnasium-robotics.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "cloudpickle": "3.1.1",
+    "etils[epath,epy]": "1.12.2",
+    "farama-notifications": "0.0.4",
+    "fsspec": "2025.3.2",
+    "glfw": "2.9.0",
+    "gymnasium": "1.1.1",
+    "imageio": "2.37.0",
+    "importlib-resources": "6.5.2",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "mujoco": "3.1.6",
+    "numpy": "2.2.5",
+    "pettingzoo": "1.25.0",
+    "pillow": "11.2.1",
+    "pyopengl": "3.1.9",
+    "typing-extensions": "4.13.2",
+    "zipp": "3.21.0"
+  }
+}

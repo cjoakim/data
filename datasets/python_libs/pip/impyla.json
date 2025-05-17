@@ -1,0 +1,12 @@
+{
+  "libname": "impyla",
+  "libvers": "0.21.0",
+  "infile": "data/pip/impyla.txt",
+  "dependencies": {
+    "bitarray": "2.9.3",
+    "pure-sasl": "0.6.2",
+    "six": "1.17.0",
+    "thrift": "0.16.0",
+    "thrift-sasl": "0.4.3"
+  }
+}

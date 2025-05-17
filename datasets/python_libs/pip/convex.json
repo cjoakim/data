@@ -1,0 +1,6 @@
+{
+  "libname": "convex",
+  "libvers": "0.7.0",
+  "infile": "data/pip/convex.txt",
+  "dependencies": {}
+}

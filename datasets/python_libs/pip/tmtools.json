@@ -1,0 +1,8 @@
+{
+  "libname": "tmtools",
+  "libvers": "0.2.0",
+  "infile": "data/pip/tmtools.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

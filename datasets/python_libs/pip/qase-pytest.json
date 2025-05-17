@@ -1,0 +1,26 @@
+{
+  "libname": "qase-pytest",
+  "libvers": "6.3.0",
+  "infile": "data/pip/qase-pytest.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "filelock": "3.12.4",
+    "iniconfig": "2.1.0",
+    "more-itertools": "10.7.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pytest": "8.3.5",
+    "python-dateutil": "2.9.0.post0",
+    "qase-api-client": "1.2.0",
+    "qase-api-v2-client": "1.2.0",
+    "qase-python-commons": "3.4.2",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "urllib3": "2.2.3"
+  }
+}

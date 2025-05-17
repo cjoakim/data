@@ -1,0 +1,6 @@
+{
+  "libname": "attrdictionary",
+  "libvers": "1.0.0",
+  "infile": "data/pip/attrdictionary.txt",
+  "dependencies": {}
+}

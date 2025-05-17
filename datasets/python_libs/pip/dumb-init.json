@@ -1,0 +1,6 @@
+{
+  "libname": "dumb-init",
+  "libvers": "1.2.5.post1",
+  "infile": "data/pip/dumb-init.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,19 @@
+{
+  "libname": "lycoris-lora",
+  "libvers": "3.2.0.post2",
+  "infile": "data/pip/lycoris-lora.txt",
+  "dependencies": {
+    "einops": "0.8.1",
+    "filelock": "3.18.0",
+    "fsspec": "2025.3.2",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "mpmath": "1.3.0",
+    "networkx": "3.4.2",
+    "sympy": "1.14.0",
+    "toml": "0.10.2",
+    "torch": "2.7.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2"
+  }
+}

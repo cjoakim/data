@@ -1,0 +1,6 @@
+{
+  "libname": "bounded-pool-executor",
+  "libvers": "0.0.3",
+  "infile": "data/pip/bounded-pool-executor.txt",
+  "dependencies": {}
+}

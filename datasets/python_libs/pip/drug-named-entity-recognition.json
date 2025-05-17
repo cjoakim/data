@@ -1,0 +1,12 @@
+{
+  "libname": "drug-named-entity-recognition",
+  "libvers": "2.0.8",
+  "infile": "data/pip/drug-named-entity-recognition.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

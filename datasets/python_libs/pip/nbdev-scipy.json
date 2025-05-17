@@ -1,0 +1,8 @@
+{
+  "libname": "nbdev-scipy",
+  "libvers": "0.0.1826",
+  "infile": "data/pip/nbdev-scipy.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

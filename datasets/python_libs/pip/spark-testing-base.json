@@ -1,0 +1,12 @@
+{
+  "libname": "spark-testing-base",
+  "libvers": "0.11.1",
+  "infile": "data/pip/spark-testing-base.txt",
+  "dependencies": {
+    "findspark": "2.0.1",
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pathable",
+  "libvers": "0.4.4",
+  "infile": "data/pip/pathable.txt",
+  "dependencies": {}
+}

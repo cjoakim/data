@@ -1,0 +1,6 @@
+{
+  "libname": "aiosql",
+  "libvers": "13.4",
+  "infile": "data/pip/aiosql.txt",
+  "dependencies": {}
+}

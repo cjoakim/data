@@ -1,0 +1,10 @@
+{
+  "libname": "google",
+  "libvers": "3.0.0",
+  "infile": "data/pip/google.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2"
+  }
+}

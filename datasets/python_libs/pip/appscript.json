@@ -1,0 +1,8 @@
+{
+  "libname": "appscript",
+  "libvers": "1.3.0",
+  "infile": "data/pip/appscript.txt",
+  "dependencies": {
+    "lxml": "5.4.0"
+  }
+}

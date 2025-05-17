@@ -1,0 +1,6 @@
+{
+  "libname": "pyjsparser",
+  "libvers": "2.7.1",
+  "infile": "data/pip/pyjsparser.txt",
+  "dependencies": {}
+}

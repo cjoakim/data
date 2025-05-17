@@ -1,0 +1,8 @@
+{
+  "libname": "click-loglevel",
+  "libvers": "0.6.0",
+  "infile": "data/pip/click-loglevel.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

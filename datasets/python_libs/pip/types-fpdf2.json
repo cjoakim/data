@@ -1,0 +1,8 @@
+{
+  "libname": "types-fpdf2",
+  "libvers": "2.8.3.20250426",
+  "infile": "data/pip/types-fpdf2.txt",
+  "dependencies": {
+    "pillow": "11.2.1"
+  }
+}

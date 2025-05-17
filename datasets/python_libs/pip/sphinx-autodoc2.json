@@ -1,0 +1,9 @@
+{
+  "libname": "sphinx-autodoc2",
+  "libvers": "0.5.0",
+  "infile": "data/pip/sphinx-autodoc2.txt",
+  "dependencies": {
+    "astroid": "3.3.9",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "labelimg",
+  "libvers": "1.8.6",
+  "infile": "data/pip/labelimg.txt",
+  "dependencies": {
+    "lxml": "5.4.0",
+    "pyqt5": "5.15.11",
+    "pyqt5-qt5": "5.15.16",
+    "pyqt5-sip": "12.17.0"
+  }
+}

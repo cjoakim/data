@@ -1,0 +1,6 @@
+{
+  "libname": "pyunormalize",
+  "libvers": "16.0.0",
+  "infile": "data/pip/pyunormalize.txt",
+  "dependencies": {}
+}

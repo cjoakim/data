@@ -1,0 +1,12 @@
+{
+  "libname": "intersight",
+  "libvers": "1.0.11.2025041004",
+  "infile": "data/pip/intersight.txt",
+  "dependencies": {
+    "pem": "23.1.0",
+    "pycryptodome": "3.22.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

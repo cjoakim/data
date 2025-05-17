@@ -1,0 +1,6 @@
+{
+  "libname": "appdynamics-proxysupport-linux-x64",
+  "libvers": "11.72.3",
+  "infile": "data/pip/appdynamics-proxysupport-linux-x64.txt",
+  "dependencies": {}
+}

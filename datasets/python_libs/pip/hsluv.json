@@ -1,0 +1,6 @@
+{
+  "libname": "hsluv",
+  "libvers": "5.0.4",
+  "infile": "data/pip/hsluv.txt",
+  "dependencies": {}
+}

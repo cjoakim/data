@@ -1,0 +1,6 @@
+{
+  "libname": "jaro-winkler",
+  "libvers": "2.0.3",
+  "infile": "data/pip/jaro-winkler.txt",
+  "dependencies": {}
+}

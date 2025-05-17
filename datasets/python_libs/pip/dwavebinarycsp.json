@@ -1,0 +1,13 @@
+{
+  "libname": "dwavebinarycsp",
+  "libvers": "0.3.1",
+  "infile": "data/pip/dwavebinarycsp.txt",
+  "dependencies": {
+    "dimod": "0.12.20",
+    "homebase": "1.0.1",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "penaltymodel": "1.2.0",
+    "scipy": "1.15.2"
+  }
+}

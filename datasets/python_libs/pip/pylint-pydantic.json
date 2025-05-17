@@ -1,0 +1,20 @@
+{
+  "libname": "pylint-pydantic",
+  "libvers": "0.3.5",
+  "infile": "data/pip/pylint-pydantic.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "astroid": "3.3.9",
+    "dill": "0.4.0",
+    "isort": "6.0.1",
+    "mccabe": "0.7.0",
+    "platformdirs": "4.3.7",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pylint": "3.3.7",
+    "pylint-plugin-utils": "0.8.2",
+    "tomlkit": "0.13.2",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

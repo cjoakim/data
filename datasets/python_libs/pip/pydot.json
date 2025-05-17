@@ -1,0 +1,8 @@
+{
+  "libname": "pydot",
+  "libvers": "4.0.0",
+  "infile": "data/pip/pydot.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

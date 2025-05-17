@@ -1,0 +1,6 @@
+{
+  "libname": "contrast-fireball",
+  "libvers": "0.1.11",
+  "infile": "data/pip/contrast-fireball.txt",
+  "dependencies": {}
+}

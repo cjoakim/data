@@ -1,0 +1,6 @@
+{
+  "libname": "textract-trp",
+  "libvers": "0.1.3",
+  "infile": "data/pip/textract-trp.txt",
+  "dependencies": {}
+}

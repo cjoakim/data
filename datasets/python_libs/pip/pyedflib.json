@@ -1,0 +1,8 @@
+{
+  "libname": "pyedflib",
+  "libvers": "0.1.40",
+  "infile": "data/pip/pyedflib.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

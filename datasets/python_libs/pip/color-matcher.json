@@ -1,0 +1,21 @@
+{
+  "libname": "color-matcher",
+  "libvers": "0.6.0",
+  "infile": "data/pip/color-matcher.txt",
+  "dependencies": {
+    "contourpy": "1.3.2",
+    "cycler": "0.12.1",
+    "ddt": "1.7.2",
+    "docutils": "0.21.2",
+    "fonttools": "4.57.0",
+    "imageio": "2.37.0",
+    "kiwisolver": "1.4.8",
+    "matplotlib": "3.10.1",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "pyparsing": "3.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

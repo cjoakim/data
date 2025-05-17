@@ -1,0 +1,6 @@
+{
+  "libname": "pem",
+  "libvers": "23.1.0",
+  "infile": "data/pip/pem.txt",
+  "dependencies": {}
+}

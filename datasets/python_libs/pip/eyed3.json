@@ -1,0 +1,10 @@
+{
+  "libname": "eyed3",
+  "libvers": "0.9.8",
+  "infile": "data/pip/eyed3.txt",
+  "dependencies": {
+    "deprecation": "2.1.0",
+    "filetype": "1.2.0",
+    "packaging": "25.0"
+  }
+}

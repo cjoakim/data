@@ -1,0 +1,12 @@
+{
+  "libname": "solnlib",
+  "libvers": "6.3.0",
+  "infile": "data/pip/solnlib.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1",
+    "deprecation": "2.1.0",
+    "packaging": "25.0",
+    "sortedcontainers": "2.4.0",
+    "splunk-sdk": "2.1.0"
+  }
+}

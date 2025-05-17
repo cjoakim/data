@@ -1,0 +1,6 @@
+{
+  "libname": "strct",
+  "libvers": "0.0.34",
+  "infile": "data/pip/strct.txt",
+  "dependencies": {}
+}

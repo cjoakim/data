@@ -1,0 +1,8 @@
+{
+  "libname": "partsegcore-compiled-backend",
+  "libvers": "0.15.12",
+  "infile": "data/pip/partsegcore-compiled-backend.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "libname": "autobahn",
+  "libvers": "24.4.2",
+  "infile": "data/pip/autobahn.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "hyperlink": "21.0.0",
+    "idna": "3.10",
+    "pycparser": "2.22",
+    "txaio": "23.1.1"
+  }
+}

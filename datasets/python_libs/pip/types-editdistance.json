@@ -1,0 +1,6 @@
+{
+  "libname": "types-editdistance",
+  "libvers": "0.8.0.20250401",
+  "infile": "data/pip/types-editdistance.txt",
+  "dependencies": {}
+}

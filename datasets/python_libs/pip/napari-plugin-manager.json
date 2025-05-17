@@ -1,0 +1,29 @@
+{
+  "libname": "napari-plugin-manager",
+  "libvers": "0.1.6",
+  "infile": "data/pip/napari-plugin-manager.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "appdirs": "1.4.4",
+    "build": "1.2.2.post1",
+    "click": "8.1.8",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "npe2": "0.7.8",
+    "packaging": "25.0",
+    "psygnal": "0.13.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pygments": "2.19.1",
+    "pyproject-hooks": "1.2.0",
+    "pyyaml": "6.0.2",
+    "qtpy": "2.4.3",
+    "rich": "14.0.0",
+    "shellingham": "1.5.4",
+    "superqt": "0.7.3",
+    "tomli-w": "1.2.0",
+    "typer": "0.15.3",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

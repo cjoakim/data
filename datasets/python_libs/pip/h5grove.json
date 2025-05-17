@@ -1,0 +1,12 @@
+{
+  "libname": "h5grove",
+  "libvers": "2.3.0",
+  "infile": "data/pip/h5grove.txt",
+  "dependencies": {
+    "h5py": "3.13.0",
+    "numpy": "2.2.5",
+    "orjson": "3.10.18",
+    "tifffile": "2025.3.30",
+    "typing-extensions": "4.13.2"
+  }
+}

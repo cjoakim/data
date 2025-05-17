@@ -1,0 +1,6 @@
+{
+  "libname": "pymaybe",
+  "libvers": "0.1.6",
+  "infile": "data/pip/pymaybe.txt",
+  "dependencies": {}
+}

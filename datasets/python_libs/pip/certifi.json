@@ -1,0 +1,6 @@
+{
+  "libname": "certifi",
+  "libvers": "2025.4.26",
+  "infile": "data/pip/certifi.txt",
+  "dependencies": {}
+}

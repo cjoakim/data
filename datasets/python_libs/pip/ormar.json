@@ -1,0 +1,13 @@
+{
+  "libname": "ormar",
+  "libvers": "0.20.2",
+  "infile": "data/pip/ormar.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "databases": "0.7.0",
+    "pydantic": "2.8.2",
+    "pydantic-core": "2.20.1",
+    "sqlalchemy": "1.4.54",
+    "typing-extensions": "4.13.2"
+  }
+}

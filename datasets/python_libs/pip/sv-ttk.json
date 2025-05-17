@@ -1,0 +1,6 @@
+{
+  "libname": "sv-ttk",
+  "libvers": "2.6.0",
+  "infile": "data/pip/sv-ttk.txt",
+  "dependencies": {}
+}

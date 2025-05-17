@@ -1,0 +1,6 @@
+{
+  "libname": "nodeenv",
+  "libvers": "1.9.1",
+  "infile": "data/pip/nodeenv.txt",
+  "dependencies": {}
+}

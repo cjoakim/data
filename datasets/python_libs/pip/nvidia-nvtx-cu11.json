@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-nvtx-cu11",
+  "libvers": "11.8.86",
+  "infile": "data/pip/nvidia-nvtx-cu11.txt",
+  "dependencies": {}
+}

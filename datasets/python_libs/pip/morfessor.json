@@ -1,0 +1,6 @@
+{
+  "libname": "morfessor",
+  "libvers": "2.0.6",
+  "infile": "data/pip/morfessor.txt",
+  "dependencies": {}
+}

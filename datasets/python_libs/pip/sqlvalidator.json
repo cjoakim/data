@@ -1,0 +1,6 @@
+{
+  "libname": "sqlvalidator",
+  "libvers": "0.0.20",
+  "infile": "data/pip/sqlvalidator.txt",
+  "dependencies": {}
+}

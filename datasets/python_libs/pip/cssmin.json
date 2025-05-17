@@ -1,0 +1,6 @@
+{
+  "libname": "cssmin",
+  "libvers": "0.2.0",
+  "infile": "data/pip/cssmin.txt",
+  "dependencies": {}
+}

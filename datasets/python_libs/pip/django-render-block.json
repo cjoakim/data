@@ -1,0 +1,10 @@
+{
+  "libname": "django-render-block",
+  "libvers": "0.10",
+  "infile": "data/pip/django-render-block.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "sqlparse": "0.5.3"
+  }
+}

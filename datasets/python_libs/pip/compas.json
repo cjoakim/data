@@ -1,0 +1,17 @@
+{
+  "libname": "compas",
+  "libvers": "2.11.0",
+  "infile": "data/pip/compas.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "scipy": "1.15.2",
+    "typing-extensions": "4.13.2",
+    "watchdog": "6.0.0"
+  }
+}

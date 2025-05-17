@@ -1,0 +1,6 @@
+{
+  "libname": "scan-build",
+  "libvers": "2.0.20",
+  "infile": "data/pip/scan-build.txt",
+  "dependencies": {}
+}

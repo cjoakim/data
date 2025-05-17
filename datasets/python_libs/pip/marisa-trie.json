@@ -1,0 +1,6 @@
+{
+  "libname": "marisa-trie",
+  "libvers": "1.2.1",
+  "infile": "data/pip/marisa-trie.txt",
+  "dependencies": {}
+}

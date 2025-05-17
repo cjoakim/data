@@ -1,0 +1,27 @@
+{
+  "libname": "tweakwcs",
+  "libvers": "0.8.10",
+  "infile": "data/pip/tweakwcs.txt",
+  "dependencies": {
+    "asdf": "4.1.0",
+    "asdf-astropy": "0.7.1",
+    "asdf-coordinates-schemas": "0.3.0",
+    "asdf-standard": "1.1.1",
+    "asdf-transform-schemas": "0.5.0",
+    "asdf-wcs-schemas": "0.4.0",
+    "astropy": "7.0.1",
+    "astropy-iers-data": "0.2025.5.5.0.38.14",
+    "attrs": "25.3.0",
+    "gwcs": "0.24.0",
+    "jmespath": "1.0.1",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pyerfa": "2.0.1.5",
+    "pyyaml": "6.0.2",
+    "scipy": "1.15.2",
+    "semantic-version": "2.10.0",
+    "spherical-geometry": "1.3.3",
+    "stsci-imagestats": "1.8.3",
+    "stsci-stimage": "0.3.0"
+  }
+}

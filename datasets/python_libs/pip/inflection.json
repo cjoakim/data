@@ -1,0 +1,6 @@
+{
+  "libname": "inflection",
+  "libvers": "0.5.1",
+  "infile": "data/pip/inflection.txt",
+  "dependencies": {}
+}

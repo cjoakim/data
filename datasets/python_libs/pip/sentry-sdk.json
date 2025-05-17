@@ -1,0 +1,9 @@
+{
+  "libname": "sentry-sdk",
+  "libvers": "2.27.0",
+  "infile": "data/pip/sentry-sdk.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "urllib3": "2.4.0"
+  }
+}

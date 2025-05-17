@@ -1,0 +1,8 @@
+{
+  "libname": "pyad",
+  "libvers": "0.6.0",
+  "infile": "data/pip/pyad.txt",
+  "dependencies": {
+    "future": "1.0.0"
+  }
+}

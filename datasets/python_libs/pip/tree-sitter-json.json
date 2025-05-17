@@ -1,0 +1,6 @@
+{
+  "libname": "tree-sitter-json",
+  "libvers": "0.24.8",
+  "infile": "data/pip/tree-sitter-json.txt",
+  "dependencies": {}
+}

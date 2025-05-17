@@ -1,0 +1,8 @@
+{
+  "libname": "rustworkx",
+  "libvers": "0.16.0",
+  "infile": "data/pip/rustworkx.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

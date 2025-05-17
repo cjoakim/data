@@ -1,0 +1,6 @@
+{
+  "libname": "astor",
+  "libvers": "0.8.1",
+  "infile": "data/pip/astor.txt",
+  "dependencies": {}
+}

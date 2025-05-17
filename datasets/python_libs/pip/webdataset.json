@@ -1,0 +1,10 @@
+{
+  "libname": "webdataset",
+  "libvers": "0.2.111",
+  "infile": "data/pip/webdataset.txt",
+  "dependencies": {
+    "braceexpand": "0.1.7",
+    "numpy": "2.2.5",
+    "pyyaml": "6.0.2"
+  }
+}

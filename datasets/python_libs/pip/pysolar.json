@@ -1,0 +1,8 @@
+{
+  "libname": "pysolar",
+  "libvers": "0.13",
+  "infile": "data/pip/pysolar.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "drain3",
+  "libvers": "0.9.11",
+  "infile": "data/pip/drain3.txt",
+  "dependencies": {
+    "cachetools": "4.2.1",
+    "jsonpickle": "1.5.1"
+  }
+}

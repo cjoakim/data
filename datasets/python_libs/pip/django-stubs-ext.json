@@ -1,0 +1,11 @@
+{
+  "libname": "django-stubs-ext",
+  "libvers": "5.2.0",
+  "infile": "data/pip/django-stubs-ext.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "sqlparse": "0.5.3",
+    "typing-extensions": "4.13.2"
+  }
+}

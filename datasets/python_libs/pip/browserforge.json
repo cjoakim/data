@@ -1,0 +1,8 @@
+{
+  "libname": "browserforge",
+  "libvers": "1.2.3",
+  "infile": "data/pip/browserforge.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

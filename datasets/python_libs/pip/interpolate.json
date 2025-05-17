@@ -1,0 +1,6 @@
+{
+  "libname": "interpolate",
+  "libvers": "0.5.2",
+  "infile": "data/pip/interpolate.txt",
+  "dependencies": {}
+}

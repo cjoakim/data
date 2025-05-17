@@ -1,0 +1,15 @@
+{
+  "libname": "open-radar-data",
+  "libvers": "0.4.3",
+  "infile": "data/pip/open-radar-data.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "platformdirs": "4.3.7",
+    "pooch": "1.8.2",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

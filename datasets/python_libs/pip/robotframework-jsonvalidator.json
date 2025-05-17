@@ -1,0 +1,22 @@
+{
+  "libname": "robotframework-jsonvalidator",
+  "libvers": "2.0.0",
+  "infile": "data/pip/robotframework-jsonvalidator.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "decorator": "5.2.1",
+    "jsonpath-rw": "1.4.0",
+    "jsonpath-rw-ext": "1.2.2",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "objectpath": "0.6.1",
+    "pbr": "6.1.1",
+    "ply": "3.11",
+    "pyjsonselect": "0.2.2",
+    "referencing": "0.36.2",
+    "robotframework": "7.2.2",
+    "rpds-py": "0.24.0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2"
+  }
+}

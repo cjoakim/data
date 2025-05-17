@@ -1,0 +1,6 @@
+{
+  "libname": "quantlib",
+  "libvers": "1.38",
+  "infile": "data/pip/quantlib.txt",
+  "dependencies": {}
+}

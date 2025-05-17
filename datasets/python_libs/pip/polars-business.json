@@ -1,0 +1,6 @@
+{
+  "libname": "polars-business",
+  "libvers": "0.3.21",
+  "infile": "data/pip/polars-business.txt",
+  "dependencies": {}
+}

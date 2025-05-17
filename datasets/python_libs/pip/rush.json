@@ -1,0 +1,8 @@
+{
+  "libname": "rush",
+  "libvers": "2021.4.0",
+  "infile": "data/pip/rush.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

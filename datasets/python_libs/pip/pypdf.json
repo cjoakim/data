@@ -1,0 +1,6 @@
+{
+  "libname": "pypdf",
+  "libvers": "5.4.0",
+  "infile": "data/pip/pypdf.txt",
+  "dependencies": {}
+}

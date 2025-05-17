@@ -1,0 +1,6 @@
+{
+  "libname": "pathlib-mate",
+  "libvers": "1.3.2",
+  "infile": "data/pip/pathlib-mate.txt",
+  "dependencies": {}
+}

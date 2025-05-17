@@ -1,0 +1,12 @@
+{
+  "libname": "pytest-assume",
+  "libvers": "2.4.3",
+  "infile": "data/pip/pytest-assume.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "six": "1.17.0"
+  }
+}

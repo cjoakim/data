@@ -1,0 +1,6 @@
+{
+  "libname": "msvc-runtime",
+  "libvers": "14.42.34433",
+  "infile": "data/pip/msvc-runtime.txt",
+  "dependencies": {}
+}

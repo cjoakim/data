@@ -1,0 +1,6 @@
+{
+  "libname": "boto",
+  "libvers": "2.49.0",
+  "infile": "data/pip/boto.txt",
+  "dependencies": {}
+}

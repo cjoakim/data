@@ -1,0 +1,6 @@
+{
+  "libname": "pypdfium2",
+  "libvers": "4.30.1",
+  "infile": "data/pip/pypdfium2.txt",
+  "dependencies": {}
+}

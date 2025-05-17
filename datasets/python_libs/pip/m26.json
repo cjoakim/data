@@ -1,0 +1,6 @@
+{
+  "libname": "m26",
+  "libvers": "0.3.2",
+  "infile": "data/pip/m26.txt",
+  "dependencies": {}
+}

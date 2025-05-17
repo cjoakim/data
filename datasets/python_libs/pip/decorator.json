@@ -1,0 +1,6 @@
+{
+  "libname": "decorator",
+  "libvers": "5.2.1",
+  "infile": "data/pip/decorator.txt",
+  "dependencies": {}
+}

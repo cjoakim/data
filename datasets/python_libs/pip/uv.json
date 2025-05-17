@@ -1,0 +1,6 @@
+{
+  "libname": "uv",
+  "libvers": "0.7.2",
+  "infile": "data/pip/uv.txt",
+  "dependencies": {}
+}

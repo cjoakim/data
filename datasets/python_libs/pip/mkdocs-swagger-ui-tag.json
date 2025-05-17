@@ -1,0 +1,10 @@
+{
+  "libname": "mkdocs-swagger-ui-tag",
+  "libvers": "0.7.1",
+  "infile": "data/pip/mkdocs-swagger-ui-tag.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2"
+  }
+}

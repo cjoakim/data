@@ -1,0 +1,6 @@
+{
+  "libname": "bazel-runfiles",
+  "libvers": "1.4.0",
+  "infile": "data/pip/bazel-runfiles.txt",
+  "dependencies": {}
+}

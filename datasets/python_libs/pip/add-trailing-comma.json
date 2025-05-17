@@ -1,0 +1,8 @@
+{
+  "libname": "add-trailing-comma",
+  "libvers": "3.1.0",
+  "infile": "data/pip/add-trailing-comma.txt",
+  "dependencies": {
+    "tokenize-rt": "6.1.0"
+  }
+}

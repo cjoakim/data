@@ -1,0 +1,6 @@
+{
+  "libname": "tls-client",
+  "libvers": "1.0.1",
+  "infile": "data/pip/tls-client.txt",
+  "dependencies": {}
+}

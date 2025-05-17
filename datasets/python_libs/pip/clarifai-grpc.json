@@ -1,0 +1,10 @@
+{
+  "libname": "clarifai-grpc",
+  "libvers": "11.3.4",
+  "infile": "data/pip/clarifai-grpc.txt",
+  "dependencies": {
+    "googleapis-common-protos": "1.70.0",
+    "grpcio": "1.71.0",
+    "protobuf": "6.30.2"
+  }
+}

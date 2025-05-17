@@ -1,0 +1,9 @@
+{
+  "libname": "potpourri3d",
+  "libvers": "1.2.1",
+  "infile": "data/pip/potpourri3d.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "libname": "basepair",
+  "libvers": "2.2.9",
+  "infile": "data/pip/basepair.txt",
+  "dependencies": {
+    "awscli": "1.40.9",
+    "boto3": "1.38.10",
+    "botocore": "1.38.10",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "colorama": "0.4.6",
+    "docutils": "0.19",
+    "future": "1.0.0",
+    "idna": "3.10",
+    "jmespath": "1.0.1",
+    "logbook": "1.8.1",
+    "pyasn1": "0.6.1",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "rsa": "4.7.2",
+    "s3transfer": "0.12.0",
+    "six": "1.17.0",
+    "tabulate": "0.9.0",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "sqlparams",
+  "libvers": "6.2.0",
+  "infile": "data/pip/sqlparams.txt",
+  "dependencies": {}
+}

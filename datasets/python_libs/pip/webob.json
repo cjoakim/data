@@ -1,0 +1,6 @@
+{
+  "libname": "webob",
+  "libvers": "1.8.9",
+  "infile": "data/pip/webob.txt",
+  "dependencies": {}
+}

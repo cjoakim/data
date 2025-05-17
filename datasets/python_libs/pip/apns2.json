@@ -1,0 +1,15 @@
+{
+  "libname": "apns2",
+  "libvers": "0.7.2",
+  "infile": "data/pip/apns2.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "h2": "2.6.2",
+    "hpack": "3.0.0",
+    "hyper": "0.7.0",
+    "hyperframe": "3.2.0",
+    "pycparser": "2.22",
+    "pyjwt": "1.7.1"
+  }
+}

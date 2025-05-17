@@ -1,0 +1,10 @@
+{
+  "libname": "pytest-cases",
+  "libvers": "3.8.6",
+  "infile": "data/pip/pytest-cases.txt",
+  "dependencies": {
+    "decopatch": "1.4.10",
+    "makefun": "1.15.6",
+    "packaging": "25.0"
+  }
+}

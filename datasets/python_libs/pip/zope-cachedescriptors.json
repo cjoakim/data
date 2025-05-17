@@ -1,0 +1,6 @@
+{
+  "libname": "zope-cachedescriptors",
+  "libvers": "5.1",
+  "infile": "data/pip/zope-cachedescriptors.txt",
+  "dependencies": {}
+}

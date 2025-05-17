@@ -1,0 +1,6 @@
+{
+  "libname": "futures",
+  "libvers": "3.0.5",
+  "infile": "data/pip/futures.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "pytest-examples",
+  "libvers": "0.0.18",
+  "infile": "data/pip/pytest-examples.txt",
+  "dependencies": {
+    "black": "25.1.0",
+    "click": "8.1.8",
+    "iniconfig": "2.1.0",
+    "mypy-extensions": "1.1.0",
+    "packaging": "25.0",
+    "pathspec": "0.12.1",
+    "platformdirs": "4.3.7",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "ruff": "0.11.8"
+  }
+}

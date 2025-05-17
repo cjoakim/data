@@ -1,0 +1,24 @@
+{
+  "libname": "prefab-cloud-python",
+  "libvers": "0.12.0",
+  "infile": "data/pip/prefab-cloud-python.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "isodate": "0.6.1",
+    "mmh3": "4.1.0",
+    "protobuf": "6.30.2",
+    "pycparser": "2.22",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "sseclient-py": "1.8.0",
+    "structlog": "25.3.0",
+    "tenacity": "9.1.2",
+    "urllib3": "2.4.0"
+  }
+}

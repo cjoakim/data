@@ -1,0 +1,6 @@
+{
+  "libname": "pympler",
+  "libvers": "1.1",
+  "infile": "data/pip/pympler.txt",
+  "dependencies": {}
+}

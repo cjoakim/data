@@ -1,0 +1,29 @@
+{
+  "libname": "qiskit-ionq",
+  "libvers": "0.5.13",
+  "infile": "data/pip/qiskit-ionq.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "decorator": "5.2.1",
+    "dill": "0.4.0",
+    "idna": "3.10",
+    "importlib-metadata": "8.7.0",
+    "mpmath": "1.3.0",
+    "numpy": "2.2.5",
+    "pbr": "6.1.1",
+    "python-dateutil": "2.9.0.post0",
+    "python-dotenv": "1.1.0",
+    "qiskit": "1.4.2",
+    "requests": "2.32.3",
+    "rustworkx": "0.16.0",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "stevedore": "5.4.1",
+    "symengine": "0.13.0",
+    "sympy": "1.14.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "zipp": "3.21.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "country-list",
+  "libvers": "1.1.0",
+  "infile": "data/pip/country-list.txt",
+  "dependencies": {}
+}

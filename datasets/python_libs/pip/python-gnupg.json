@@ -1,0 +1,6 @@
+{
+  "libname": "python-gnupg",
+  "libvers": "0.5.4",
+  "infile": "data/pip/python-gnupg.txt",
+  "dependencies": {}
+}

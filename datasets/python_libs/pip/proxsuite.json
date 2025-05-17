@@ -1,0 +1,10 @@
+{
+  "libname": "proxsuite",
+  "libvers": "0.7.2",
+  "infile": "data/pip/proxsuite.txt",
+  "dependencies": {
+    "cmeel": "0.57.3",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

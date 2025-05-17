@@ -1,0 +1,12 @@
+{
+  "libname": "trufflehog",
+  "libvers": "2.2.1",
+  "infile": "data/pip/trufflehog.txt",
+  "dependencies": {
+    "gitdb": "4.0.12",
+    "gitdb2": "4.0.2",
+    "gitpython": "3.0.6",
+    "smmap": "5.0.2",
+    "trufflehogregexes": "0.0.7"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "libname": "warlock",
+  "libvers": "2.0.1",
+  "infile": "data/pip/warlock.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonpatch": "1.33",
+    "jsonpointer": "3.0.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2"
+  }
+}

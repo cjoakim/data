@@ -1,0 +1,10 @@
+{
+  "libname": "acryl-pyhive",
+  "libvers": "0.6.16",
+  "infile": "data/pip/acryl-pyhive.txt",
+  "dependencies": {
+    "future": "1.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

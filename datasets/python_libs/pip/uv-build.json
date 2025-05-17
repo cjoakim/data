@@ -1,0 +1,6 @@
+{
+  "libname": "uv-build",
+  "libvers": "0.7.2",
+  "infile": "data/pip/uv-build.txt",
+  "dependencies": {}
+}

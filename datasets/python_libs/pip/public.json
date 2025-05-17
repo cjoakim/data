@@ -1,0 +1,6 @@
+{
+  "libname": "public",
+  "libvers": "2020.12.3",
+  "infile": "data/pip/public.txt",
+  "dependencies": {}
+}

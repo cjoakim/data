@@ -1,0 +1,16 @@
+{
+  "libname": "robotframework-httplibrary",
+  "libvers": "0.4.2",
+  "infile": "data/pip/robotframework-httplibrary.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "jsonpatch": "1.33",
+    "jsonpointer": "3.0.0",
+    "robotframework": "7.2.2",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "waitress": "3.0.2",
+    "webob": "1.8.9",
+    "webtest": "3.0.4"
+  }
+}

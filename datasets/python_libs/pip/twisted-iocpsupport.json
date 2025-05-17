@@ -1,0 +1,6 @@
+{
+  "libname": "twisted-iocpsupport",
+  "libvers": "25.2.0",
+  "infile": "data/pip/twisted-iocpsupport.txt",
+  "dependencies": {}
+}

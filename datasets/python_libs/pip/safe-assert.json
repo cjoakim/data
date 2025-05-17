@@ -1,0 +1,6 @@
+{
+  "libname": "safe-assert",
+  "libvers": "0.5.0",
+  "infile": "data/pip/safe-assert.txt",
+  "dependencies": {}
+}

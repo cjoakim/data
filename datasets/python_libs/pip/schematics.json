@@ -1,0 +1,6 @@
+{
+  "libname": "schematics",
+  "libvers": "2.1.1",
+  "infile": "data/pip/schematics.txt",
+  "dependencies": {}
+}

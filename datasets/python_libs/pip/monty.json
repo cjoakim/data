@@ -1,0 +1,10 @@
+{
+  "libname": "monty",
+  "libvers": "2025.3.3",
+  "infile": "data/pip/monty.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12"
+  }
+}

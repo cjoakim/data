@@ -1,0 +1,10 @@
+{
+  "libname": "behave",
+  "libvers": "1.2.6",
+  "infile": "data/pip/behave.txt",
+  "dependencies": {
+    "parse": "1.20.2",
+    "parse-type": "0.6.4",
+    "six": "1.17.0"
+  }
+}

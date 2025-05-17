@@ -1,0 +1,6 @@
+{
+  "libname": "entry-points-txt",
+  "libvers": "0.2.1",
+  "infile": "data/pip/entry-points-txt.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "fast-histogram",
+  "libvers": "0.14",
+  "infile": "data/pip/fast-histogram.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

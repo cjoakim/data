@@ -1,0 +1,6 @@
+{
+  "libname": "validators",
+  "libvers": "0.35.0",
+  "infile": "data/pip/validators.txt",
+  "dependencies": {}
+}

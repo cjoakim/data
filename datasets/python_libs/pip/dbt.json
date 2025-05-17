@@ -1,0 +1,6 @@
+{
+  "libname": "dbt",
+  "libvers": "1.0.0.40.0",
+  "infile": "data/pip/dbt.txt",
+  "dependencies": {}
+}

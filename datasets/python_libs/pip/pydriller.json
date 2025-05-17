@@ -1,0 +1,15 @@
+{
+  "libname": "pydriller",
+  "libvers": "2.7",
+  "infile": "data/pip/pydriller.txt",
+  "dependencies": {
+    "gitdb": "4.0.12",
+    "gitpython": "3.1.44",
+    "lizard": "1.17.28",
+    "pathspec": "0.12.1",
+    "pygments": "2.19.1",
+    "pytz": "2025.2",
+    "smmap": "5.0.2",
+    "types-pytz": "2025.2.0.20250326"
+  }
+}

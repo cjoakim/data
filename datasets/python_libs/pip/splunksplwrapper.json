@@ -1,0 +1,13 @@
+{
+  "libname": "splunksplwrapper",
+  "libvers": "1.1.4",
+  "infile": "data/pip/splunksplwrapper.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1",
+    "deprecation": "2.1.0",
+    "httplib2": "0.22.0",
+    "packaging": "25.0",
+    "pyparsing": "3.2.3",
+    "splunk-sdk": "2.1.0"
+  }
+}

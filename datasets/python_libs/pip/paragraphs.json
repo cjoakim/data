@@ -1,0 +1,6 @@
+{
+  "libname": "paragraphs",
+  "libvers": "1.0.1",
+  "infile": "data/pip/paragraphs.txt",
+  "dependencies": {}
+}

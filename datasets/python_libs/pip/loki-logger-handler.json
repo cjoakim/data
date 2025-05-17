@@ -1,0 +1,6 @@
+{
+  "libname": "loki-logger-handler",
+  "libvers": "1.1.1",
+  "infile": "data/pip/loki-logger-handler.txt",
+  "dependencies": {}
+}

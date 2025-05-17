@@ -1,0 +1,6 @@
+{
+  "libname": "crashtest",
+  "libvers": "0.4.1",
+  "infile": "data/pip/crashtest.txt",
+  "dependencies": {}
+}

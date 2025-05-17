@@ -1,0 +1,6 @@
+{
+  "libname": "spark-nlp",
+  "libvers": "6.0.0",
+  "infile": "data/pip/spark-nlp.txt",
+  "dependencies": {}
+}

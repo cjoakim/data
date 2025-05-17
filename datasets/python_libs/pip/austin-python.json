@@ -1,0 +1,10 @@
+{
+  "libname": "austin-python",
+  "libvers": "1.7.1",
+  "infile": "data/pip/austin-python.txt",
+  "dependencies": {
+    "protobuf": "3.20.3",
+    "psutil": "7.0.0",
+    "toml": "0.10.2"
+  }
+}

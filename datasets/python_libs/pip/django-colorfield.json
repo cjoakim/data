@@ -1,0 +1,8 @@
+{
+  "libname": "django-colorfield",
+  "libvers": "0.14.0",
+  "infile": "data/pip/django-colorfield.txt",
+  "dependencies": {
+    "pillow": "11.2.1"
+  }
+}

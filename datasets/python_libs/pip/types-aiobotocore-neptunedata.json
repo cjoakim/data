@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-neptunedata",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-neptunedata.txt",
+  "dependencies": {}
+}

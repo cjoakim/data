@@ -1,0 +1,10 @@
+{
+  "libname": "gpudb",
+  "libvers": "7.2.2.7",
+  "infile": "data/pip/gpudb.txt",
+  "dependencies": {
+    "future": "1.0.0",
+    "pyzmq": "26.4.0",
+    "sqlparse": "0.5.3"
+  }
+}

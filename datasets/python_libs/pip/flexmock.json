@@ -1,0 +1,6 @@
+{
+  "libname": "flexmock",
+  "libvers": "0.12.2",
+  "infile": "data/pip/flexmock.txt",
+  "dependencies": {}
+}

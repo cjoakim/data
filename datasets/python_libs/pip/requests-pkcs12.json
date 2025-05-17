@@ -1,0 +1,15 @@
+{
+  "libname": "requests-pkcs12",
+  "libvers": "1.25",
+  "infile": "data/pip/requests-pkcs12.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "pycparser": "2.22",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

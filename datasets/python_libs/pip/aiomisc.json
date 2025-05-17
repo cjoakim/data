@@ -1,0 +1,8 @@
+{
+  "libname": "aiomisc",
+  "libvers": "17.7.7",
+  "infile": "data/pip/aiomisc.txt",
+  "dependencies": {
+    "colorlog": "6.9.0"
+  }
+}

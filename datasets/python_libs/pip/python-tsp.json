@@ -1,0 +1,19 @@
+{
+  "libname": "python-tsp",
+  "libvers": "0.5.0",
+  "infile": "data/pip/python-tsp.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "deprecated": "1.2.18",
+    "idna": "3.10",
+    "networkx": "2.8.8",
+    "numpy": "2.2.5",
+    "requests": "2.32.3",
+    "tabulate": "0.8.10",
+    "tsplib95": "0.7.1",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2"
+  }
+}

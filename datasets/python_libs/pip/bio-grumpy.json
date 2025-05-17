@@ -1,0 +1,6 @@
+{
+  "libname": "bio-grumpy",
+  "libvers": "0.2.5",
+  "infile": "data/pip/bio-grumpy.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "rpm",
+  "libvers": "0.4.0",
+  "infile": "data/pip/rpm.txt",
+  "dependencies": {}
+}

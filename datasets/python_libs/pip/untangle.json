@@ -1,0 +1,8 @@
+{
+  "libname": "untangle",
+  "libvers": "1.2.1",
+  "infile": "data/pip/untangle.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "css-inline",
+  "libvers": "0.14.6",
+  "infile": "data/pip/css-inline.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "click-completion",
+  "libvers": "0.5.2",
+  "infile": "data/pip/click-completion.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "shellingham": "1.5.4",
+    "six": "1.17.0"
+  }
+}

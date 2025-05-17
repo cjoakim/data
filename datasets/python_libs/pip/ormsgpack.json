@@ -1,0 +1,6 @@
+{
+  "libname": "ormsgpack",
+  "libvers": "1.9.1",
+  "infile": "data/pip/ormsgpack.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "foxglove-sdk",
+  "libvers": "0.7.1",
+  "infile": "data/pip/foxglove-sdk.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "asyncmock",
+  "libvers": "0.4.2",
+  "infile": "data/pip/asyncmock.txt",
+  "dependencies": {
+    "mock": "5.2.0"
+  }
+}

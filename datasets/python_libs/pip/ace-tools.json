@@ -1,0 +1,6 @@
+{
+  "libname": "ace-tools",
+  "libvers": "0.0",
+  "infile": "data/pip/ace-tools.txt",
+  "dependencies": {}
+}

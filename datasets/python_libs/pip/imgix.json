@@ -1,0 +1,6 @@
+{
+  "libname": "imgix",
+  "libvers": "4.0.0",
+  "infile": "data/pip/imgix.txt",
+  "dependencies": {}
+}

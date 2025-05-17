@@ -1,0 +1,6 @@
+{
+  "libname": "django-fieldsignals",
+  "libvers": "0.7.0",
+  "infile": "data/pip/django-fieldsignals.txt",
+  "dependencies": {}
+}

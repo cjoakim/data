@@ -1,0 +1,9 @@
+{
+  "libname": "docformatter",
+  "libvers": "1.7.5",
+  "infile": "data/pip/docformatter.txt",
+  "dependencies": {
+    "charset-normalizer": "3.4.2",
+    "untokenize": "0.1.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pynrfjprog",
+  "libvers": "10.24.2",
+  "infile": "data/pip/pynrfjprog.txt",
+  "dependencies": {
+    "future": "1.0.0",
+    "tomli-w": "1.2.0"
+  }
+}

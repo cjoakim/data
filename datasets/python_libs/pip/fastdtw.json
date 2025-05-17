@@ -1,0 +1,8 @@
+{
+  "libname": "fastdtw",
+  "libvers": "0.3.4",
+  "infile": "data/pip/fastdtw.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

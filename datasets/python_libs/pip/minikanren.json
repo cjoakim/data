@@ -1,0 +1,12 @@
+{
+  "libname": "minikanren",
+  "libvers": "1.0.3",
+  "infile": "data/pip/minikanren.txt",
+  "dependencies": {
+    "cons": "0.4.6",
+    "etuples": "0.3.9",
+    "logical-unification": "0.4.6",
+    "multipledispatch": "1.0.0",
+    "toolz": "1.0.0"
+  }
+}

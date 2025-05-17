@@ -1,0 +1,6 @@
+{
+  "libname": "reclass-rs",
+  "libvers": "0.8.0",
+  "infile": "data/pip/reclass-rs.txt",
+  "dependencies": {}
+}

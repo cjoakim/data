@@ -1,0 +1,6 @@
+{
+  "libname": "pydub",
+  "libvers": "0.25.1",
+  "infile": "data/pip/pydub.txt",
+  "dependencies": {}
+}

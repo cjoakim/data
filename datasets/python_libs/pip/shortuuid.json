@@ -1,0 +1,6 @@
+{
+  "libname": "shortuuid",
+  "libvers": "1.0.13",
+  "infile": "data/pip/shortuuid.txt",
+  "dependencies": {}
+}

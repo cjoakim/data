@@ -1,0 +1,6 @@
+{
+  "libname": "openvino-telemetry",
+  "libvers": "2025.1.0",
+  "infile": "data/pip/openvino-telemetry.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-psycopg2",
+  "libvers": "2.9.21.20250318",
+  "infile": "data/pip/types-psycopg2.txt",
+  "dependencies": {}
+}

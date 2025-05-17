@@ -1,0 +1,9 @@
+{
+  "libname": "traitsui",
+  "libvers": "8.0.0",
+  "infile": "data/pip/traitsui.txt",
+  "dependencies": {
+    "pyface": "8.0.0",
+    "traits": "7.0.2"
+  }
+}

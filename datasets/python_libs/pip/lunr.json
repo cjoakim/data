@@ -1,0 +1,6 @@
+{
+  "libname": "lunr",
+  "libvers": "0.8.0",
+  "infile": "data/pip/lunr.txt",
+  "dependencies": {}
+}

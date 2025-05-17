@@ -1,0 +1,11 @@
+{
+  "libname": "assisted-service-client",
+  "libvers": "2.40.1.post6",
+  "infile": "data/pip/assisted-service-client.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

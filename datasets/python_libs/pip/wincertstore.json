@@ -1,0 +1,6 @@
+{
+  "libname": "wincertstore",
+  "libvers": "0.2.1",
+  "infile": "data/pip/wincertstore.txt",
+  "dependencies": {}
+}

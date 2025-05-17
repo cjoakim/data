@@ -1,0 +1,6 @@
+{
+  "libname": "lazy-object-proxy",
+  "libvers": "1.11.0",
+  "infile": "data/pip/lazy-object-proxy.txt",
+  "dependencies": {}
+}

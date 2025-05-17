@@ -1,0 +1,13 @@
+{
+  "libname": "flake8-eradicate",
+  "libvers": "1.5.0",
+  "infile": "data/pip/flake8-eradicate.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "eradicate": "2.3.0",
+    "flake8": "7.2.0",
+    "mccabe": "0.7.0",
+    "pycodestyle": "2.13.0",
+    "pyflakes": "3.3.2"
+  }
+}

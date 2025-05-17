@@ -1,0 +1,8 @@
+{
+  "libname": "pyang",
+  "libvers": "2.6.1",
+  "infile": "data/pip/pyang.txt",
+  "dependencies": {
+    "lxml": "5.4.0"
+  }
+}

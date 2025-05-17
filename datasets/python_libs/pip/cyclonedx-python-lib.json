@@ -1,0 +1,13 @@
+{
+  "libname": "cyclonedx-python-lib",
+  "libvers": "10.0.0",
+  "infile": "data/pip/cyclonedx-python-lib.txt",
+  "dependencies": {
+    "boolean-py": "5.0",
+    "defusedxml": "0.7.1",
+    "license-expression": "30.4.1",
+    "packageurl-python": "0.16.0",
+    "py-serializable": "2.0.0",
+    "sortedcontainers": "2.4.0"
+  }
+}

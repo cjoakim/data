@@ -1,0 +1,13 @@
+{
+  "libname": "alembic-autogen-check",
+  "libvers": "1.1.1",
+  "infile": "data/pip/alembic-autogen-check.txt",
+  "dependencies": {
+    "alembic": "1.15.2",
+    "click": "8.1.8",
+    "mako": "1.3.10",
+    "markupsafe": "3.0.2",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

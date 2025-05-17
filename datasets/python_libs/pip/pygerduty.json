@@ -1,0 +1,8 @@
+{
+  "libname": "pygerduty",
+  "libvers": "0.38.3",
+  "infile": "data/pip/pygerduty.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

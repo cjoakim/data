@@ -1,0 +1,9 @@
+{
+  "libname": "robotframework-assertion-engine",
+  "libvers": "3.0.3",
+  "infile": "data/pip/robotframework-assertion-engine.txt",
+  "dependencies": {
+    "robotframework": "7.2.2",
+    "robotframework-pythonlibcore": "4.4.1"
+  }
+}

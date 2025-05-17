@@ -1,0 +1,13 @@
+{
+  "libname": "huawei-solar",
+  "libvers": "2.4.4",
+  "infile": "data/pip/huawei-solar.txt",
+  "dependencies": {
+    "backoff": "2.2.1",
+    "pymodbus": "3.8.4",
+    "pyserial": "3.5",
+    "pyserial-asyncio": "0.6",
+    "pytz": "2025.2",
+    "typing-extensions": "4.13.2"
+  }
+}

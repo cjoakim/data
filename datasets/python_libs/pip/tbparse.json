@@ -1,0 +1,22 @@
+{
+  "libname": "tbparse",
+  "libvers": "0.0.9",
+  "infile": "data/pip/tbparse.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "grpcio": "1.71.0",
+    "markdown": "3.8",
+    "markupsafe": "3.0.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "protobuf": "6.30.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tensorboard": "2.19.0",
+    "tensorboard-data-server": "0.7.2",
+    "tzdata": "2025.2",
+    "werkzeug": "3.1.3"
+  }
+}

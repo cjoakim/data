@@ -1,0 +1,8 @@
+{
+  "libname": "json-stream",
+  "libvers": "2.3.3",
+  "infile": "data/pip/json-stream.txt",
+  "dependencies": {
+    "json-stream-rs-tokenizer": "0.4.29"
+  }
+}

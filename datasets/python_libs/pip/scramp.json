@@ -1,0 +1,8 @@
+{
+  "libname": "scramp",
+  "libvers": "1.4.5",
+  "infile": "data/pip/scramp.txt",
+  "dependencies": {
+    "asn1crypto": "1.5.1"
+  }
+}

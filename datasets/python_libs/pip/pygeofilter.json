@@ -1,0 +1,16 @@
+{
+  "libname": "pygeofilter",
+  "libvers": "0.3.1",
+  "infile": "data/pip/pygeofilter.txt",
+  "dependencies": {
+    "dateparser": "1.2.1",
+    "lark": "1.2.2",
+    "pygeoif": "1.5.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "regex": "2024.11.6",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "tzlocal": "5.3.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "keras-applications",
+  "libvers": "1.0.8",
+  "infile": "data/pip/keras-applications.txt",
+  "dependencies": {
+    "h5py": "3.13.0",
+    "numpy": "2.2.5"
+  }
+}

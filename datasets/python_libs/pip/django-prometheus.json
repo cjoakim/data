@@ -1,0 +1,8 @@
+{
+  "libname": "django-prometheus",
+  "libvers": "2.3.1",
+  "infile": "data/pip/django-prometheus.txt",
+  "dependencies": {
+    "prometheus-client": "0.21.1"
+  }
+}

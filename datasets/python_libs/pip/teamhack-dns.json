@@ -1,0 +1,11 @@
+{
+  "libname": "teamhack-dns",
+  "libvers": "0.0.1398",
+  "infile": "data/pip/teamhack-dns.txt",
+  "dependencies": {
+    "argparse": "1.4.0",
+    "dnslib": "0.9.26",
+    "psycopg2": "2.9.10",
+    "teamhack-db": "0.0.732"
+  }
+}

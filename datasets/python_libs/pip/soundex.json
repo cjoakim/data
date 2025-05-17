@@ -1,0 +1,8 @@
+{
+  "libname": "soundex",
+  "libvers": "1.1.3",
+  "infile": "data/pip/soundex.txt",
+  "dependencies": {
+    "silpa-common": "0.3"
+  }
+}

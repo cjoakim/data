@@ -1,0 +1,8 @@
+{
+  "libname": "milvus-lite",
+  "libvers": "2.4.12",
+  "infile": "data/pip/milvus-lite.txt",
+  "dependencies": {
+    "tqdm": "4.67.1"
+  }
+}

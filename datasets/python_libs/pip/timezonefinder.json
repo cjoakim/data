@@ -1,0 +1,11 @@
+{
+  "libname": "timezonefinder",
+  "libvers": "6.5.9",
+  "infile": "data/pip/timezonefinder.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "h3": "4.2.2",
+    "numpy": "2.2.5",
+    "pycparser": "2.22"
+  }
+}

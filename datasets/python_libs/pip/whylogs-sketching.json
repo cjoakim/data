@@ -1,0 +1,6 @@
+{
+  "libname": "whylogs-sketching",
+  "libvers": "3.4.1.dev3",
+  "infile": "data/pip/whylogs-sketching.txt",
+  "dependencies": {}
+}

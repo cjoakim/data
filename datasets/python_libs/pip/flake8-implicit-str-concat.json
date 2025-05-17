@@ -1,0 +1,6 @@
+{
+  "libname": "flake8-implicit-str-concat",
+  "libvers": "0.5.0",
+  "infile": "data/pip/flake8-implicit-str-concat.txt",
+  "dependencies": {}
+}

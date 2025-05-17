@@ -1,0 +1,9 @@
+{
+  "libname": "mediafile",
+  "libvers": "0.13.0",
+  "infile": "data/pip/mediafile.txt",
+  "dependencies": {
+    "filetype": "1.2.0",
+    "mutagen": "1.47.0"
+  }
+}

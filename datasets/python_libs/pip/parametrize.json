@@ -1,0 +1,6 @@
+{
+  "libname": "parametrize",
+  "libvers": "0.1.1",
+  "infile": "data/pip/parametrize.txt",
+  "dependencies": {}
+}

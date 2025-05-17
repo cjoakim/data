@@ -1,0 +1,17 @@
+{
+  "libname": "txredisapi",
+  "libvers": "1.4.11",
+  "infile": "data/pip/txredisapi.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "automat": "25.4.16",
+    "constantly": "23.10.4",
+    "hyperlink": "21.0.0",
+    "idna": "3.10",
+    "incremental": "24.7.2",
+    "six": "1.17.0",
+    "twisted": "24.11.0",
+    "typing-extensions": "4.13.2",
+    "zope-interface": "7.2"
+  }
+}

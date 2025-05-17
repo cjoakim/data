@@ -1,0 +1,6 @@
+{
+  "libname": "debugpy",
+  "libvers": "1.8.14",
+  "infile": "data/pip/debugpy.txt",
+  "dependencies": {}
+}

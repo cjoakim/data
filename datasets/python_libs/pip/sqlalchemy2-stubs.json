@@ -1,0 +1,8 @@
+{
+  "libname": "sqlalchemy2-stubs",
+  "libvers": "0.0.2a38",
+  "infile": "data/pip/sqlalchemy2-stubs.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "demjson3",
+  "libvers": "3.0.6",
+  "infile": "data/pip/demjson3.txt",
+  "dependencies": {}
+}

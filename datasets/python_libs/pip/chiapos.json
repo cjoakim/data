@@ -1,0 +1,6 @@
+{
+  "libname": "chiapos",
+  "libvers": "2.0.10",
+  "infile": "data/pip/chiapos.txt",
+  "dependencies": {}
+}

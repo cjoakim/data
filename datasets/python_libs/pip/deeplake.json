@@ -1,0 +1,8 @@
+{
+  "libname": "deeplake",
+  "libvers": "4.2.1",
+  "infile": "data/pip/deeplake.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

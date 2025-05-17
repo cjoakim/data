@@ -1,0 +1,15 @@
+{
+  "libname": "jsii",
+  "libvers": "1.111.0",
+  "infile": "data/pip/jsii.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "cattrs": "24.1.3",
+    "importlib-resources": "6.5.2",
+    "publication": "0.0.3",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "typeguard": "4.4.2",
+    "typing-extensions": "4.13.2"
+  }
+}

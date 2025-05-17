@@ -1,0 +1,6 @@
+{
+  "libname": "webcolors",
+  "libvers": "24.11.1",
+  "infile": "data/pip/webcolors.txt",
+  "dependencies": {}
+}

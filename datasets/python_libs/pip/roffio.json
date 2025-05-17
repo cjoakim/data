@@ -1,0 +1,8 @@
+{
+  "libname": "roffio",
+  "libvers": "1.1.1",
+  "infile": "data/pip/roffio.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

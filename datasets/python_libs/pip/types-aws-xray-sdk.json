@@ -1,0 +1,6 @@
+{
+  "libname": "types-aws-xray-sdk",
+  "libvers": "2.14.0.20250428",
+  "infile": "data/pip/types-aws-xray-sdk.txt",
+  "dependencies": {}
+}

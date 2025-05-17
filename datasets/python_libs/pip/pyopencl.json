@@ -1,0 +1,12 @@
+{
+  "libname": "pyopencl",
+  "libvers": "2025.1",
+  "infile": "data/pip/pyopencl.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "platformdirs": "4.3.7",
+    "pytools": "2025.1.3",
+    "siphash24": "1.7",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "envparse",
+  "libvers": "0.2.0",
+  "infile": "data/pip/envparse.txt",
+  "dependencies": {}
+}

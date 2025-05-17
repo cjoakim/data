@@ -1,0 +1,9 @@
+{
+  "libname": "cryosparc-tools",
+  "libvers": "4.7.0",
+  "infile": "data/pip/cryosparc-tools.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,1207 @@
+{"schoolID,name_full,city,state,country":"abilchrist,Abilene Christian University,Abilene,TX,USA"}
+{"schoolID,name_full,city,state,country":"adelphi,Adelphi University,Garden City,NY,USA"}
+{"schoolID,name_full,city,state,country":"adrianmi,Adrian College,Adrian,MI,USA"}
+{"schoolID,name_full,city,state,country":"akron,University of Akron,Akron,OH,USA"}
+{"schoolID,name_full,city,state,country":"alabama,University of Alabama,Tuscaloosa,AL,USA"}
+{"schoolID,name_full,city,state,country":"alabamaam,Alabama A&M University,Normal,AL,USA"}
+{"schoolID,name_full,city,state,country":"alabamast,Alabama State University,Montgomery,AL,USA"}
+{"schoolID,name_full,city,state,country":"albanyst,Albany State University,Albany,GA,USA"}
+{"schoolID,name_full,city,state,country":"albertsnid,Albertson College,Caldwell,ID,USA"}
+{"schoolID,name_full,city,state,country":"albevil,Bevill State Community College,Sumiton,AL,USA"}
+{"schoolID,name_full,city,state,country":"albionmi,Albion College,Albion,MI,USA"}
+{"schoolID,name_full,city,state,country":"albrightpa,Albright College,Reading,PA,USA"}
+{"schoolID,name_full,city,state,country":"alcalho,Calhoun Community College,Decatur,AL,USA"}
+{"schoolID,name_full,city,state,country":"alchatt,Chattahoochee Valley Community College,Phenix City,AL,USA"}
+{"schoolID,name_full,city,state,country":"alcornst,Alcorn State University,Lorman,MS,USA"}
+{"schoolID,name_full,city,state,country":"alenter,Enterprise-Ozark Community College,Enterprise,AL,USA"}
+{"schoolID,name_full,city,state,country":"alfaulk,Faulkner University,Montgomery,AL,USA"}
+{"schoolID,name_full,city,state,country":"alfscco,Faulkner State College,Bay Minette,AL,USA"}
+{"schoolID,name_full,city,state,country":"algadsd,Gadsden State Community College,Gadsden,AL,USA"}
+{"schoolID,name_full,city,state,country":"aljeffd,Jefferson Davis Community College,Brewton,AL,USA"}
+{"schoolID,name_full,city,state,country":"allegheny,Allegheny College,Meadville,PA,USA"}
+{"schoolID,name_full,city,state,country":"allurle,Lurleen B Wallace Community College,Andalusia,AL,USA"}
+{"schoolID,name_full,city,state,country":"almami,Alma College,Alma,MI,USA"}
+{"schoolID,name_full,city,state,country":"almario,Marion Military Institute,Marion,AL,USA"}
+{"schoolID,name_full,city,state,country":"almiles,Miles College,Fairfield,AL,USA"}
+{"schoolID,name_full,city,state,country":"alnorth,Northwest-Shoals Community College,Muscle Shoals,AL,USA"}
+{"schoolID,name_full,city,state,country":"alsuscc,Southern Union State Community College,Wadley,AL,USA"}
+{"schoolID,name_full,city,state,country":"alverniapa,Alvernia College,Reading,PA,USA"}
+{"schoolID,name_full,city,state,country":"alwsdot,Wallace State Community College (Dothan),Dothan,AL,USA"}
+{"schoolID,name_full,city,state,country":"alwshan,Wallace State Community College (Hanceville),Hanceville,AL,USA"}
+{"schoolID,name_full,city,state,country":"american,American University,Washington,DC,USA"}
+{"schoolID,name_full,city,state,country":"amerintl,American International University,Springfield,MA,USA"}
+{"schoolID,name_full,city,state,country":"amherstma,Amherst College,Amherst,MA,USA"}
+{"schoolID,name_full,city,state,country":"andersonsc,Anderson College,Anderson,SC,USA"}
+{"schoolID,name_full,city,state,country":"appalst,Appalachian State University,Boone,NC,USA"}
+{"schoolID,name_full,city,state,country":"aquinasmi,Aquinas College,Grand Rapids,MI,USA"}
+{"schoolID,name_full,city,state,country":"arftsmi,University of Arkansas-Fort Smith,Fort Smith,AR,USA"}
+{"schoolID,name_full,city,state,country":"arizona,University of Arizona,Tucson,AZ,USA"}
+{"schoolID,name_full,city,state,country":"arizonast,Arizona State University,Tempe,AZ,USA"}
+{"schoolID,name_full,city,state,country":"arkansas,University of Arkansas,Fayetteville,AR,USA"}
+{"schoolID,name_full,city,state,country":"arkansaslr,University of Arkansas at Little Rock,Little Rock,AR,USA"}
+{"schoolID,name_full,city,state,country":"arkansaspb,University of Arkansas at Pine Bluff,Pine Bluff,AR,USA"}
+{"schoolID,name_full,city,state,country":"arkansasst,Arkansas State University,Jonesboro,AR,USA"}
+{"schoolID,name_full,city,state,country":"arkmont,University of Arkansas at Monticello,Monticello,AR,USA"}
+{"schoolID,name_full,city,state,country":"arktech,Arkansas Tech University,Russellville,AR,USA"}
+{"schoolID,name_full,city,state,country":"armstratl,Armstrong Atlantic State University,Savannah,GA,USA"}
+{"schoolID,name_full,city,state,country":"army,United States Military Academy,West Point,NY,USA"}
+{"schoolID,name_full,city,state,country":"arnorth,North Arkansas College,Bentonville,AR,USA"}
+{"schoolID,name_full,city,state,country":"ashland,Ashland University,Ashland,OH,USA"}
+{"schoolID,name_full,city,state,country":"athensst,Athens State University,Athens,AL,USA"}
+{"schoolID,name_full,city,state,country":"auburn,Auburn University,Auburn,AL,USA"}
+{"schoolID,name_full,city,state,country":"auburnmont,Auburn University at Montgomery,Montgomery,AL,USA"}
+{"schoolID,name_full,city,state,country":"augsburgmn,Augsburg College,Minneapolis,MN,USA"}
+{"schoolID,name_full,city,state,country":"austincol,Austin College,Sherman,TX,USA"}
+{"schoolID,name_full,city,state,country":"austinpeay,Austin Peay State University,Clarksville,TN,USA"}
+{"schoolID,name_full,city,state,country":"azcentr,Central Arizona College,Coolidge,AZ,USA"}
+{"schoolID,name_full,city,state,country":"azchand,Chandler-Gilbert Community College,Chandler,AZ,USA"}
+{"schoolID,name_full,city,state,country":"azcochi,Cochise Community College,Douglas,AZ,USA"}
+{"schoolID,name_full,city,state,country":"azmescc,Mesa Community College,Mesa,AZ,USA"}
+{"schoolID,name_full,city,state,country":"azphoen,Phoenix College,Phoenix,AZ,USA"}
+{"schoolID,name_full,city,state,country":"azpimcc,Pima Community College,Tucson,AZ,USA"}
+{"schoolID,name_full,city,state,country":"azscott,Scottsdale Community College,Scottsdale,AZ,USA"}
+{"schoolID,name_full,city,state,country":"azsouth,South Mountain Community College,Phoenix,AZ,USA"}
+{"schoolID,name_full,city,state,country":"azusapac,Azusa Pacific University,Azusa,CA,USA"}
+{"schoolID,name_full,city,state,country":"azweste,Arizona Western College,Yuma,AZ,USA"}
+{"schoolID,name_full,city,state,country":"azyavap,Yavapai College,Prescott,AZ,USA"}
+{"schoolID,name_full,city,state,country":"baconeok,Bacone College,Muskogee,OK,USA"}
+{"schoolID,name_full,city,state,country":"bakerks,Baker University,Baldwin City,KS,USA"}
+{"schoolID,name_full,city,state,country":"baldwalloh,Baldwin-Wallace College,Berea,OH,USA"}
+{"schoolID,name_full,city,state,country":"ballst,Ball State University,Muncie,IN,USA"}
+{"schoolID,name_full,city,state,country":"bartonnc,Barton College,Wilson,NC,USA"}
+{"schoolID,name_full,city,state,country":"baruchcuny,Bernard M Baruch College,New York,NY,USA"}
+{"schoolID,name_full,city,state,country":"batesme,Bates College,Lewiston,ME,USA"}
+{"schoolID,name_full,city,state,country":"baylor,Baylor University,Waco,TX,USA"}
+{"schoolID,name_full,city,state,country":"belmont,Belmont University,Nashville,TN,USA"}
+{"schoolID,name_full,city,state,country":"belmontab,Belmont Abbey College,Belmont,NC,USA"}
+{"schoolID,name_full,city,state,country":"beloitwi,Beloit College,Beloit,WI,USA"}
+{"schoolID,name_full,city,state,country":"benedctnks,Benedictine College,Atchison,KS,USA"}
+{"schoolID,name_full,city,state,country":"bethanywv,Bethany College,Bethany,WV,USA"}
+{"schoolID,name_full,city,state,country":"bethcook,Bethune-Cookman College,Daytona Beach,FL,USA"}
+{"schoolID,name_full,city,state,country":"betheltn,Bethel College,McKenzie,TN,USA"}
+{"schoolID,name_full,city,state,country":"biolaca,Biola University,La Mirada,CA,USA"}
+{"schoolID,name_full,city,state,country":"birmsouth,Birmingham-Southern College,Birmingham,AL,USA"}
+{"schoolID,name_full,city,state,country":"blackbrnil,Blackburn College,Carlinville,IL,USA"}
+{"schoolID,name_full,city,state,country":"bloomsburg,Bloomsburg University of Pennsylvania,Bloomsburg,PA,USA"}
+{"schoolID,name_full,city,state,country":"bluefield,Bluefield College,Bluefield,VA,USA"}
+{"schoolID,name_full,city,state,country":"boisest,Boise State University,Boise,ID,USA"}
+{"schoolID,name_full,city,state,country":"bostoncoll,Boston College,Chestnut Hill,MA,USA"}
+{"schoolID,name_full,city,state,country":"bostonuniv,Boston University,Boston,MA,USA"}
+{"schoolID,name_full,city,state,country":"bowdoinme,Bowdoin College,Brunswick,ME,USA"}
+{"schoolID,name_full,city,state,country":"bowlgreen,Bowling Green State University,Bowling Green,OH,USA"}
+{"schoolID,name_full,city,state,country":"bradley,Bradley University,Peoria,IL,USA"}
+{"schoolID,name_full,city,state,country":"brandeisma,Brandeis University,Waltham,MA,USA"}
+{"schoolID,name_full,city,state,country":"brdgwatrva,Bridgewater College,Bridgewater,VA,USA"}
+{"schoolID,name_full,city,state,country":"brewparker,Brewton-Parker College,Mount Vernon,GA,USA"}
+{"schoolID,name_full,city,state,country":"bridgeport,University of Bridgeport,Bridgeport,CT,USA"}
+{"schoolID,name_full,city,state,country":"bridgwtrst,Bridgewater State College,Bridgewater,MA,USA"}
+{"schoolID,name_full,city,state,country":"brklyncuny,Brooklyn College, The City University of New York,Brooklyn,NY,USA"}
+{"schoolID,name_full,city,state,country":"brown,Brown University,Providence,RI,USA"}
+{"schoolID,name_full,city,state,country":"bryant,Bryant College,Smithfield,RI,USA"}
+{"schoolID,name_full,city,state,country":"bucknell,Bucknell University,Lewisburg,PA,USA"}
+{"schoolID,name_full,city,state,country":"buenavista,Buena Vista University,Storm Lake,IA,USA"}
+{"schoolID,name_full,city,state,country":"buffalost,Buffalo State College,Buffalo,NY,USA"}
+{"schoolID,name_full,city,state,country":"butler,Butler University,Indianapolis,IN,USA"}
+{"schoolID,name_full,city,state,country":"byu,Brigham Young University,Provo,UT,USA"}
+{"schoolID,name_full,city,state,country":"caallan,Allan Hancock College,Santa Maria,CA,USA"}
+{"schoolID,name_full,city,state,country":"caameri,American River College,Sacramento,CA,USA"}
+{"schoolID,name_full,city,state,country":"caantel,Antelope Valley College,Lancaster,CA,USA"}
+{"schoolID,name_full,city,state,country":"cabakjc,Bakersfield College,Bakersfield,CA,USA"}
+{"schoolID,name_full,city,state,country":"cabarst,Barstow Community College,Barstow,CA,USA"}
+{"schoolID,name_full,city,state,country":"cabutte,Butte College,Oroville,CA,USA"}
+{"schoolID,name_full,city,state,country":"cacabri,Cabrillo College,Aptos,CA,USA"}
+{"schoolID,name_full,city,state,country":"cacanad,Canada College,Redwood City,CA,USA"}
+{"schoolID,name_full,city,state,country":"cacanyo,College of the Canyons,Santa Clarita,CA,USA"}
+{"schoolID,name_full,city,state,country":"cacerri,Cerritos College,Norwalk,CA,USA"}
+{"schoolID,name_full,city,state,country":"cachabo,Chabot College,Hayward,CA,USA"}
+{"schoolID,name_full,city,state,country":"cachaff,Chaffey College,Rancho Cucamonga,CA,USA"}
+{"schoolID,name_full,city,state,country":"cacitru,Citrus College,Glendora,CA,USA"}
+{"schoolID,name_full,city,state,country":"cacompt,Compton Community College,Compton,CA,USA"}
+{"schoolID,name_full,city,state,country":"cacontr,Contra Costa College,San Pablo,CA,USA"}
+{"schoolID,name_full,city,state,country":"cacosum,Cosumnes River College,Sacramento,CA,USA"}
+{"schoolID,name_full,city,state,country":"cacsmat,College of San Mateo,San Mateo,CA,USA"}
+{"schoolID,name_full,city,state,country":"cacuest,Cuesta College,San Luis Obispo,CA,USA"}
+{"schoolID,name_full,city,state,country":"cacypre,Cypress College,Cypress,CA,USA"}
+{"schoolID,name_full,city,state,country":"cadeanz,DeAnza College,Cupertino,CA,USA"}
+{"schoolID,name_full,city,state,country":"cadiabl,Diablo Valley College,Pleasant Hill,CA,USA"}
+{"schoolID,name_full,city,state,country":"caelajc,East Los Angeles College,Monterey Park,CA,USA"}
+{"schoolID,name_full,city,state,country":"caelcam,El Camino College,Torrance,CA,USA"}
+{"schoolID,name_full,city,state,country":"cafeath,Feather River College,Quincy,CA,USA"}
+{"schoolID,name_full,city,state,country":"cafooth,Foothill College,Los Altos Hills,CA,USA"}
+{"schoolID,name_full,city,state,country":"cafrecc,Fresno City College,Fresno,CA,USA"}
+{"schoolID,name_full,city,state,country":"cafrepa,Fresno Pacific University,Fresno,CA,USA"}
+{"schoolID,name_full,city,state,country":"cafulle,Fullerton College,Fullerton,CA,USA"}
+{"schoolID,name_full,city,state,country":"cagavil,Gavilan College,Gilroy,CA,USA"}
+{"schoolID,name_full,city,state,country":"caglend,Glendale Community College,Glendale,CA,USA"}
+{"schoolID,name_full,city,state,country":"cagolde,Golden West College,Huntington Beach,CA,USA"}
+{"schoolID,name_full,city,state,country":"caharbo,Los Angeles Harbor College,Wilmington,CA,USA"}
+{"schoolID,name_full,city,state,country":"cahartn,Hartnell College,Salinas,CA,USA"}
+{"schoolID,name_full,city,state,country":"caimper,Imperial Valley College,Imperial,CA,USA"}
+{"schoolID,name_full,city,state,country":"calacco,Los Angeles City College,Los Angeles,CA,USA"}
+{"schoolID,name_full,city,state,country":"calamjc,Los Angeles Mission College,Sylmar,CA,USA"}
+{"schoolID,name_full,city,state,country":"calaney,Laney College,Oakland,CA,USA"}
+{"schoolID,name_full,city,state,country":"calasse,Lassen College,Susanville,CA,USA"}
+{"schoolID,name_full,city,state,country":"calavco,Los Angeles Valley College,Los Angeles,CA,USA"}
+{"schoolID,name_full,city,state,country":"california,University of California, Berkeley,Berkeley,CA,USA"}
+{"schoolID,name_full,city,state,country":"calipa,California University of Pennsylvania,California,PA,USA"}
+{"schoolID,name_full,city,state,country":"calobcc,Long Beach City College,Long Beach,CA,USA"}
+{"schoolID,name_full,city,state,country":"calpoly,California Polytechnic State University, San Luis Obispo,San Luis Obispo,CA,USA"}
+{"schoolID,name_full,city,state,country":"calpolypom,California Polytechnic State University, Pomona,Pomona,CA,USA"}
+{"schoolID,name_full,city,state,country":"calstfull,California State University Fullerton,Fullerton,CA,USA"}
+{"schoolID,name_full,city,state,country":"calstla,California State University Los Angeles,Los Angeles,CA,USA"}
+{"schoolID,name_full,city,state,country":"calstnorth,California State University Northridge,Los Angeles,CA,USA"}
+{"schoolID,name_full,city,state,country":"calutheran,California Lutheran University,Thousand Oaks,CA,USA"}
+{"schoolID,name_full,city,state,country":"camarin,College of Marin,Kentfield,CA,USA"}
+{"schoolID,name_full,city,state,country":"camendo,Mendocino College,Ukiah,CA,USA"}
+{"schoolID,name_full,city,state,country":"camenlo,Menlo College,Atherton,CA,USA"}
+{"schoolID,name_full,city,state,country":"camerce,Merced College,Merced,CA,USA"}
+{"schoolID,name_full,city,state,country":"cameronok,Cameron University,Lawton,OK,USA"}
+{"schoolID,name_full,city,state,country":"camerri,Merritt College,Oakland,CA,USA"}
+{"schoolID,name_full,city,state,country":"camirac,MiraCosta College,Oceanside,CA,USA"}
+{"schoolID,name_full,city,state,country":"camissi,Mission College,Santa Clara,CA,USA"}
+{"schoolID,name_full,city,state,country":"camodes,Modesto Junior College,Modesto,CA,USA"}
+{"schoolID,name_full,city,state,country":"camoorp,Moorpark College,Moorpark,CA,USA"}
+{"schoolID,name_full,city,state,country":"campbell,Campbell University,Buies Creek,NC,USA"}
+{"schoolID,name_full,city,state,country":"campjco,Monterey Peninsula College,Monterey,CA,USA"}
+{"schoolID,name_full,city,state,country":"camsajc,Mount San Antonio College,Walnut,CA,USA"}
+{"schoolID,name_full,city,state,country":"camsjjc,Mount San Jacinto College,San Jacinto,CA,USA"}
+{"schoolID,name_full,city,state,country":"canapav,Napa Valley College,Napa,CA,USA"}
+{"schoolID,name_full,city,state,country":"canisius,Canisius College,Buffalo,NY,USA"}
+{"schoolID,name_full,city,state,country":"caorang,Orange Coast College,Costa Mesa,CA,USA"}
+{"schoolID,name_full,city,state,country":"capalom,Palomar College,San Marcos,CA,USA"}
+{"schoolID,name_full,city,state,country":"capasad,Pasadena City College,Pasadena,CA,USA"}
+{"schoolID,name_full,city,state,country":"capierc,Los Angeles Pierce College,Woodland Hills,CA,USA"}
+{"schoolID,name_full,city,state,country":"caporte,Porterville College,Porterville,CA,USA"}
+{"schoolID,name_full,city,state,country":"caranch,Rancho Santiago College,Santa Ana,CA,USA"}
+{"schoolID,name_full,city,state,country":"caredwo,College of the Redwoods,Eureka,CA,USA"}
+{"schoolID,name_full,city,state,country":"careedl,Reedley College,Reedley,CA,USA"}
+{"schoolID,name_full,city,state,country":"carioho,Rio Hondo College,Whittier,CA,USA"}
+{"schoolID,name_full,city,state,country":"carivcc,Riverside Community College,Riverside,CA,USA"}
+{"schoolID,name_full,city,state,country":"carkansas,University of Central Arkansas,Conway,AR,USA"}
+{"schoolID,name_full,city,state,country":"carsnewm,Carson-Newman College,Jefferson City,TN,USA"}
+{"schoolID,name_full,city,state,country":"carthagewi,Carthage College,Kenosha,WI,USA"}
+{"schoolID,name_full,city,state,country":"casacra,Sacramento City College,Sacramento,CA,USA"}
+{"schoolID,name_full,city,state,country":"casaddl,Saddleback College,Mission Viejo,CA,USA"}
+{"schoolID,name_full,city,state,country":"casajco,Santa Ana College,Santa Ana,CA,USA"}
+{"schoolID,name_full,city,state,country":"casanbe,California State University San Bernardino,San Bernardino,CA,USA"}
+{"schoolID,name_full,city,state,country":"casbcco,Santa Barbara City College,Santa Barbara,CA,USA"}
+{"schoolID,name_full,city,state,country":"casbvjc,San Bernardino Valley College,San Bernardino,CA,USA"}
+{"schoolID,name_full,city,state,country":"casdmjc,San Diego Mesa College,San Diego,CA,USA"}
+{"schoolID,name_full,city,state,country":"casequo,College of the Sequoias,Visalia,CA,USA"}
+{"schoolID,name_full,city,state,country":"casewestrn,Case Western Reserve University,Cleveland,OH,USA"}
+{"schoolID,name_full,city,state,country":"casfcco,City College of San Francisco,San Francisco,CA,USA"}
+{"schoolID,name_full,city,state,country":"cashast,Shasta College,Redding,CA,USA"}
+{"schoolID,name_full,city,state,country":"casierr,Sierra College,Rocklin,CA,USA"}
+{"schoolID,name_full,city,state,country":"casiski,College of the Siskiyous,Weed,CA,USA"}
+{"schoolID,name_full,city,state,country":"casjcco,San Jose City College,San Jose,CA,USA"}
+{"schoolID,name_full,city,state,country":"casjdjc,San Joaquin Delta College,Stockton,CA,USA"}
+{"schoolID,name_full,city,state,country":"caskyli,Skyline JC,San Bruno,CA,USA"}
+{"schoolID,name_full,city,state,country":"casmjco,Santa Monica College,Santa Monica,CA,USA"}
+{"schoolID,name_full,city,state,country":"casolan,Solano Community College,Fairfield,CA,USA"}
+{"schoolID,name_full,city,state,country":"casrjco,Santa Rosa Junior College,Santa Rosa,CA,USA"}
+{"schoolID,name_full,city,state,country":"caswjco,Southwestern College,Chula Vista,CA,USA"}
+{"schoolID,name_full,city,state,country":"catafjc,Taft College,Taft,CA,USA"}
+{"schoolID,name_full,city,state,country":"catawba,Catawba College,Salisbury,NC,USA"}
+{"schoolID,name_full,city,state,country":"catholic,Catholic University of America,Washington,DC,USA"}
+{"schoolID,name_full,city,state,country":"caventu,Ventura College,Ventura,CA,USA"}
+{"schoolID,name_full,city,state,country":"cawhjco,West Hills College,Coalinga,CA,USA"}
+{"schoolID,name_full,city,state,country":"cawlajc,West Los Angeles College,Culver City,CA,USA"}
+{"schoolID,name_full,city,state,country":"cawvjco,West Valley College,Saratoga,CA,USA"}
+{"schoolID,name_full,city,state,country":"cconnst,Central Connecticut State University,New Britain,CT,USA"}
+{"schoolID,name_full,city,state,country":"ccri,Community College of Rhode Island,Warwick,RI,USA"}
+{"schoolID,name_full,city,state,country":"centenary,Centenary College of Louisiana,Shreveport,LA,USA"}
+{"schoolID,name_full,city,state,country":"centok,University of Central Oklahoma,Edmond,OK,USA"}
+{"schoolID,name_full,city,state,country":"centralst,Central State University,Wilberforce,OH,USA"}
+{"schoolID,name_full,city,state,country":"centreky,Centre College,Danville,KY,USA"}
+{"schoolID,name_full,city,state,country":"cflorida,University of Central Florida,Orlando,FL,USA"}
+{"schoolID,name_full,city,state,country":"chapmanca,Chapman University,Orange,CA,USA"}
+{"schoolID,name_full,city,state,country":"charleston,College of Charleston,Charleston,SC,USA"}
+{"schoolID,name_full,city,state,country":"charleswv,University of Charleston,Charleston,WV,USA"}
+{"schoolID,name_full,city,state,country":"charlotte,University of North Carolina at Charlotte,Charlotte,NC,USA"}
+{"schoolID,name_full,city,state,country":"charlsouth,Charleston Southern University,Charleston,SC,USA"}
+{"schoolID,name_full,city,state,country":"chicago,University of Chicago,Chicago,IL,USA"}
+{"schoolID,name_full,city,state,country":"chicagost,Chicago State University,Chicago,IL,USA"}
+{"schoolID,name_full,city,state,country":"chicost,California State University Chico,Chico,CA,USA"}
+{"schoolID,name_full,city,state,country":"cincy,University of Cincinnati,Cincinnati,OH,USA"}
+{"schoolID,name_full,city,state,country":"citadel,The Citadel,Charleston,SC,USA"}
+{"schoolID,name_full,city,state,country":"clarion,Clarion University of Pennsylvania,Clarion,PA,USA"}
+{"schoolID,name_full,city,state,country":"clarksonny,Clarkson University,Potsdam,NY,USA"}
+{"schoolID,name_full,city,state,country":"clemson,Clemson University,Clemson,SC,USA"}
+{"schoolID,name_full,city,state,country":"clevst,Cleveland State University,Cleveland,OH,USA"}
+{"schoolID,name_full,city,state,country":"clrmuddscr,Claremont McKenna College,Claremont,CA,USA"}
+{"schoolID,name_full,city,state,country":"cmichigan,Central Michigan University,Mount Pleasant,MI,USA"}
+{"schoolID,name_full,city,state,country":"cmissouri,University of Central Missouri,Warrensburg,MO,USA"}
+{"schoolID,name_full,city,state,country":"cncrdiacol,Concordia College-Moorhead,Moorhead,MN,USA"}
+{"schoolID,name_full,city,state,country":"coastcar,Coastal Carolina University,Conway,SC,USA"}
+{"schoolID,name_full,city,state,country":"coftlew,Fort Lewis College,Durango,CO,USA"}
+{"schoolID,name_full,city,state,country":"colamar,Lamar Community College,Lamar,CO,USA"}
+{"schoolID,name_full,city,state,country":"colbyme,Colby College,Waterville,ME,USA"}
+{"schoolID,name_full,city,state,country":"colgate,Colgate University,Hamilton,NY,USA"}
+{"schoolID,name_full,city,state,country":"colocollege,Colorado College,Colorado Springs,CO,USA"}
+{"schoolID,name_full,city,state,country":"colorado,University of Colorado,Boulder,CO,USA"}
+{"schoolID,name_full,city,state,country":"coloradost,Colorado State University,Fort Collins,CO,USA"}
+{"schoolID,name_full,city,state,country":"columbia,Columbia University,New York,NY,USA"}
+{"schoolID,name_full,city,state,country":"comines,Colorado School of Mines,Golden,CO,USA"}
+{"schoolID,name_full,city,state,country":"concordny,Concordia College-Bronxville,Bronxville,NY,USA"}
+{"schoolID,name_full,city,state,country":"concrdiamn,Concordia University-St. Paul,St. Paul,MN,USA"}
+{"schoolID,name_full,city,state,country":"concrdiatx,Concordia University at Austin,Austin,TX,USA"}
+{"schoolID,name_full,city,state,country":"cornell,Cornell University,Ithaca,NY,USA"}
+{"schoolID,name_full,city,state,country":"cornellia,Cornell College,Mount Vernon,IA,USA"}
+{"schoolID,name_full,city,state,country":"costpue,Colorado State University-Pueblo,Pueblo,CO,USA"}
+{"schoolID,name_full,city,state,country":"cotrini,Trinidad State Junior College,Trinidad,CO,USA"}
+{"schoolID,name_full,city,state,country":"crdstritch,Cardinal Stritch University,Milwaukee,WI,USA"}
+{"schoolID,name_full,city,state,country":"creighton,Creighton University,Omaha,NE,USA"}
+{"schoolID,name_full,city,state,country":"crngmellon,Carnegie Mellon University,Pittsburgh,PA,USA"}
+{"schoolID,name_full,city,state,country":"csdomhills,California State University Dominguez Hills,Carson,CA,USA"}
+{"schoolID,name_full,city,state,country":"cshayward,California State University East Bay,Hayward,CA,USA"}
+{"schoolID,name_full,city,state,country":"csstanisl,California State University Stanislaus,Turlock,CA,USA"}
+{"schoolID,name_full,city,state,country":"ctconap,University of Connecticut at Avery Point,Groton,CT,USA"}
+{"schoolID,name_full,city,state,country":"ctmitch,Mitchell College,New London,CT,USA"}
+{"schoolID,name_full,city,state,country":"ctnorwa,Norwalk Community College,Norwalk,CT,USA"}
+{"schoolID,name_full,city,state,country":"cumbrlndtn,Cumberland University,Lebanon,TN,USA"}
+{"schoolID,name_full,city,state,country":"cwashngton,Central Washington University,Ellensburg,WA,USA"}
+{"schoolID,name_full,city,state,country":"cwpost,Long Island University, C W Post Campus,Brookville,NY,USA"}
+{"schoolID,name_full,city,state,country":"dallasbapt,Dallas Baptist University,Dallas,TX,USA"}
+{"schoolID,name_full,city,state,country":"dartmouth,Dartmouth College,Hanover,NH,USA"}
+{"schoolID,name_full,city,state,country":"davidson,Davidson College,Davidson,NC,USA"}
+{"schoolID,name_full,city,state,country":"daviselkins,Davis and Elkins College,Elkins,WV,USA"}
+{"schoolID,name_full,city,state,country":"dayton,University of Dayton,Dayton,OH,USA"}
+{"schoolID,name_full,city,state,country":"dcbenfr,Benjamin Franklin University,Washington,DC,USA"}
+{"schoolID,name_full,city,state,country":"debrand,Brandywine Junior College,Wilmington,DE,USA"}
+{"schoolID,name_full,city,state,country":"dedelaw,Delaware Technical and Community College,Dover,DE,USA"}
+{"schoolID,name_full,city,state,country":"delaware,University of Delaware,Newark,DE,USA"}
+{"schoolID,name_full,city,state,country":"delawarest,Delaware State University,Dover,DE,USA"}
+{"schoolID,name_full,city,state,country":"deltast,Delta State University,Cleveland,MS,USA"}
+{"schoolID,name_full,city,state,country":"denisonoh,Denison University,Granville,OH,USA"}
+{"schoolID,name_full,city,state,country":"denver,University of Denver,Denver,CO,USA"}
+{"schoolID,name_full,city,state,country":"depaul,DePaul University,Chicago,IL,USA"}
+{"schoolID,name_full,city,state,country":"depauwin,DePauw University,Greencastle,IN,USA"}
+{"schoolID,name_full,city,state,country":"detroit,University of Detroit Mercy,Detroit,MI,USA"}
+{"schoolID,name_full,city,state,country":"dickinson,Dickinson College,Carlisle,PA,USA"}
+{"schoolID,name_full,city,state,country":"dominican,Dominican College,Orangeburg,NY,USA"}
+{"schoolID,name_full,city,state,country":"drake,Drake University,Des Moines,IA,USA"}
+{"schoolID,name_full,city,state,country":"dubuque,University of Dubuque,Dubuque,IA,USA"}
+{"schoolID,name_full,city,state,country":"duke,Duke University,Durham,NC,USA"}
+{"schoolID,name_full,city,state,country":"duquesne,Duquesne University,Pittsburgh,PA,USA"}
+{"schoolID,name_full,city,state,country":"ecarolina,East Carolina University,Greenville,NC,USA"}
+{"schoolID,name_full,city,state,country":"ecentralok,East Central University,Ada,OK,USA"}
+{"schoolID,name_full,city,state,country":"eckerd,Eckerd College,St. Petersburg,FL,USA"}
+{"schoolID,name_full,city,state,country":"econnst,Eastern Connecticut State University,Willimantic,CT,USA"}
+{"schoolID,name_full,city,state,country":"edinboro,Edinboro University of Pennsylvania,Edinboro,PA,USA"}
+{"schoolID,name_full,city,state,country":"eillinois,Eastern Illinois University,Charleston,IL,USA"}
+{"schoolID,name_full,city,state,country":"ekentucky,Eastern Kentucky University,Richmond,KY,USA"}
+{"schoolID,name_full,city,state,country":"elizbthtwn,Elizabethtown College,Elizabethtown,PA,USA"}
+{"schoolID,name_full,city,state,country":"elon,Elon University,Elon,NC,USA"}
+{"schoolID,name_full,city,state,country":"emichigan,Eastern Michigan University,Ypsilanti,MI,USA"}
+{"schoolID,name_full,city,state,country":"emoryga,Emory University,Atlanta,GA,USA"}
+{"schoolID,name_full,city,state,country":"emoryhenry,Emory and Henry College,Emory,VA,USA"}
+{"schoolID,name_full,city,state,country":"emporiast,Emporia State University,Emporia,KS,USA"}
+{"schoolID,name_full,city,state,country":"erskine,Erskine College,Due West,SC,USA"}
+{"schoolID,name_full,city,state,country":"estroud,East Stroudsburg University of Pennsylvania,East Stroudsburg,PA,USA"}
+{"schoolID,name_full,city,state,country":"etennst,East Tennessee State University,Johnson City,TN,USA"}
+{"schoolID,name_full,city,state,country":"etxbaptist,East Texas Baptist University,Marshall,TX,USA"}
+{"schoolID,name_full,city,state,country":"eurekail,Eureka College,Eureka,IL,USA"}
+{"schoolID,name_full,city,state,country":"eutah,College of Eastern Utah,Price,UT,USA"}
+{"schoolID,name_full,city,state,country":"evansville,University of Evansville,Evansville,IN,USA"}
+{"schoolID,name_full,city,state,country":"fairfield,Fairfield University,Fairfield,CT,USA"}
+{"schoolID,name_full,city,state,country":"fairldick,Fairleigh Dickinson University, Metropolitan Campus,Teaneck,NJ,USA"}
+{"schoolID,name_full,city,state,country":"fayetvilst,Fayetteville State University,Fayetteville,NC,USA"}
+{"schoolID,name_full,city,state,country":"ferrisst,Ferris State University,Big Rapids,MI,USA"}
+{"schoolID,name_full,city,state,country":"ferrumva,Ferrum College,Ferrum,VA,USA"}
+{"schoolID,name_full,city,state,country":"flagler,Flagler College,St. Augustine,FL,USA"}
+{"schoolID,name_full,city,state,country":"flatlantic,Florida Atlantic University,Boca Raton,FL,USA"}
+{"schoolID,name_full,city,state,country":"flbarry,Barry University,Miami Shores,FL,USA"}
+{"schoolID,name_full,city,state,country":"flbreva,Brevard Community College,Cocoa,FL,USA"}
+{"schoolID,name_full,city,state,country":"flbrowa,Broward Community College,Fort Lauderdale,FL,USA"}
+{"schoolID,name_full,city,state,country":"flcentr,Central Florida Community College,Ocala,FL,USA"}
+{"schoolID,name_full,city,state,country":"flchipo,Chipola College,Marianna,FL,USA"}
+{"schoolID,name_full,city,state,country":"fldayto,Daytona Beach Community College,Daytona Beach,FL,USA"}
+{"schoolID,name_full,city,state,country":"flediso,Edison College,Fort Myers,FL,USA"}
+{"schoolID,name_full,city,state,country":"flflajc,Florida College,Jacksonville,FL,USA"}
+{"schoolID,name_full,city,state,country":"flgateway,Florida Gateway College,Lake City,FL,USA"}
+{"schoolID,name_full,city,state,country":"flgccco,Gulf Coast Community College,Panama City,FL,USA"}
+{"schoolID,name_full,city,state,country":"flgulfc,Florida Gulf Coast University,Fort Myers,FL,USA"}
+{"schoolID,name_full,city,state,country":"flhills,Hillsborough Community College,Tampa,FL,USA"}
+{"schoolID,name_full,city,state,country":"flindia,Indian River Community College,Fort Pierce,FL,USA"}
+{"schoolID,name_full,city,state,country":"flinternat,Florida International University,Miami,FL,USA"}
+{"schoolID,name_full,city,state,country":"fllynnu,Lynn University,Boca Raton,FL,USA"}
+{"schoolID,name_full,city,state,country":"flmanat,State College of Florida, Manatee-Sarasota,Bradenton,FL,USA"}
+{"schoolID,name_full,city,state,country":"flmdkjc,Miami-Dade College, Kendall Campus,Miami,FL,USA"}
+{"schoolID,name_full,city,state,country":"flmdnjc,Miami-Dade College, North Campus,Miami,FL,USA"}
+{"schoolID,name_full,city,state,country":"flmdwjc,Miami-Dade College, Wolfson Campus,Miami,FL,USA"}
+{"schoolID,name_full,city,state,country":"flnfcco,North Florida Community College,Madison,FL,USA"}
+{"schoolID,name_full,city,state,country":"flnovas,Nova Southeastern University,Fort Lauderdale,FL,USA"}
+{"schoolID,name_full,city,state,country":"flnwfsc,Northwest Florida State College,Niceville,FL,USA"}
+{"schoolID,name_full,city,state,country":"flokalo,Okaloosa-Walton College,Niceville,FL,USA"}
+{"schoolID,name_full,city,state,country":"florida,University of Florida,Gainesville,FL,USA"}
+{"schoolID,name_full,city,state,country":"floridaam,Florida Agricultural and Mechanical University,Tallahassee,FL,USA"}
+{"schoolID,name_full,city,state,country":"floridast,Florida State University,Tallahassee,FL,USA"}
+{"schoolID,name_full,city,state,country":"flpalme,Palmer College,DeFuniak Springs,FL,USA"}
+{"schoolID,name_full,city,state,country":"flpasco,Pasco-Hernando Community College,New Port Richey,FL,USA"}
+{"schoolID,name_full,city,state,country":"flpbaun,Palm Beach Atlantic University,West Palm Beach,FL,USA"}
+{"schoolID,name_full,city,state,country":"flpensa,Pensacola Junior College,Pensacola,FL,USA"}
+{"schoolID,name_full,city,state,country":"flpolkc,Polk Community College,Winter Haven,FL,USA"}
+{"schoolID,name_full,city,state,country":"flsanta,Santa Fe Community College,Gainesville,FL,USA"}
+{"schoolID,name_full,city,state,country":"flsjrcc,St. Johns River Community College,Palatka,FL,USA"}
+{"schoolID,name_full,city,state,country":"flsouthern,Florida Southern College,Lakeland,FL,USA"}
+{"schoolID,name_full,city,state,country":"flstpet,St. Petersburg College,St. Petersburg,FL,USA"}
+{"schoolID,name_full,city,state,country":"fltalla,Tallahassee Community College,Tallahassee,FL,USA"}
+{"schoolID,name_full,city,state,country":"fltech,Florida Institute of Technology,Melbourne,FL,USA"}
+{"schoolID,name_full,city,state,country":"flvalen,Valencia Community College,Orlando,FL,USA"}
+{"schoolID,name_full,city,state,country":"fordham,Fordham University,New York,NY,USA"}
+{"schoolID,name_full,city,state,country":"forthays,Fort Hays State University,Hays,KS,USA"}
+{"schoolID,name_full,city,state,country":"franklinin,Franklin College,Franklin,IN,USA"}
+{"schoolID,name_full,city,state,country":"frankmarsh,Franklin and Marshall College,Lancaster,PA,USA"}
+{"schoolID,name_full,city,state,country":"freedhrdmn,Freed-Hardeman University,Henderson,TN,USA"}
+{"schoolID,name_full,city,state,country":"fresnost,California State University Fresno,Fresno,CA,USA"}
+{"schoolID,name_full,city,state,country":"friendsks,Friends University,Wichita,KS,USA"}
+{"schoolID,name_full,city,state,country":"furman,Furman University,Greenville,SC,USA"}
+{"schoolID,name_full,city,state,country":"gaberry,Berry College,Mount Berry,GA,USA"}
+{"schoolID,name_full,city,state,country":"gacoast,Coastal Georgia Community College,Brunswick,GA,USA"}
+{"schoolID,name_full,city,state,country":"gacollege,Georgia College and State University,Milledgeville,GA,USA"}
+{"schoolID,name_full,city,state,country":"gacolum,Columbus State University,Columbus,GA,USA"}
+{"schoolID,name_full,city,state,country":"gagpjco,Georgia Perimeter College,Covington,GA,USA"}
+{"schoolID,name_full,city,state,country":"gallaudet,Gallaudet University,Washington,DC,USA"}
+{"schoolID,name_full,city,state,country":"gamiddl,Middle Georgia College,Cochran,GA,USA"}
+{"schoolID,name_full,city,state,country":"gannon,Gannon University,Erie,PA,USA"}
+{"schoolID,name_full,city,state,country":"gardwebb,Gardner-Webb University,Boiling Springs,NC,USA"}
+{"schoolID,name_full,city,state,country":"gasgajc,South Georgia College,Douglas,GA,USA"}
+{"schoolID,name_full,city,state,country":"gaswestern,Georgia Southwestern State University,Americus,GA,USA"}
+{"schoolID,name_full,city,state,country":"gatech,Georgia Institute of Technology,Atlanta,GA,USA"}
+{"schoolID,name_full,city,state,country":"genevapa,Geneva College,Beaver Falls,PA,USA"}
+{"schoolID,name_full,city,state,country":"georgefox,George Fox University,Newberg,OR,USA"}
+{"schoolID,name_full,city,state,country":"georgemas,George Mason University,Fairfax,VA,USA"}
+{"schoolID,name_full,city,state,country":"georgetown,Georgetown University,Washington,DC,USA"}
+{"schoolID,name_full,city,state,country":"georgewash,George Washington University,Washington,DC,USA"}
+{"schoolID,name_full,city,state,country":"georgia,University of Georgia,Athens,GA,USA"}
+{"schoolID,name_full,city,state,country":"georgiasou,Georgia Southern University,Statesboro,GA,USA"}
+{"schoolID,name_full,city,state,country":"georgiast,Georgia State University,Atlanta,GA,USA"}
+{"schoolID,name_full,city,state,country":"georgtwnky,Georgetown College,Georgetown,KY,USA"}
+{"schoolID,name_full,city,state,country":"gettysburg,Gettysburg College,Gettysburg,PA,USA"}
+{"schoolID,name_full,city,state,country":"glenvilst,Glenville State College,Glenville,WV,USA"}
+{"schoolID,name_full,city,state,country":"gonzaga,Gonzaga University,Spokane,WA,USA"}
+{"schoolID,name_full,city,state,country":"grambling,Grambling State University,Grambling,LA,USA"}
+{"schoolID,name_full,city,state,country":"grandview,Grand View College,Des Moines,IA,USA"}
+{"schoolID,name_full,city,state,country":"grcanyon,Grand Canyon University,Phoenix,AZ,USA"}
+{"schoolID,name_full,city,state,country":"grinnellia,Grinnell College,Grinnell,IA,USA"}
+{"schoolID,name_full,city,state,country":"grossmont,Grossmont College,El Cajon,CA,USA"}
+{"schoolID,name_full,city,state,country":"grovecity,Grove City College,Grove City,PA,USA"}
+{"schoolID,name_full,city,state,country":"grvalleyst,Grand Valley State University,Allendale,MI,USA"}
+{"schoolID,name_full,city,state,country":"guilfordnc,Guilford College,Greensboro,NC,USA"}
+{"schoolID,name_full,city,state,country":"hamlinemn,Hamline University,St. Paul,MN,USA"}
+{"schoolID,name_full,city,state,country":"hampsydney,Hampden-Sydney College,Hampden-Sydney,VA,USA"}
+{"schoolID,name_full,city,state,country":"harding,Harding University,Searcy,AR,USA"}
+{"schoolID,name_full,city,state,country":"hardinsimm,Hardin-Simmons University,Abilene,TX,USA"}
+{"schoolID,name_full,city,state,country":"hartford,University of Hartford,West Hartford,CT,USA"}
+{"schoolID,name_full,city,state,country":"hartwickny,Hartwick College,Oneonta,NY,USA"}
+{"schoolID,name_full,city,state,country":"harvard,Harvard University,Cambridge,MA,USA"}
+{"schoolID,name_full,city,state,country":"haskellks,Haskell Indian Nations University,Lawrence,KS,USA"}
+{"schoolID,name_full,city,state,country":"hawaii,University of Hawaii at Manoa,Honolulu,HI,USA"}
+{"schoolID,name_full,city,state,country":"hawaiihilo,University of Hawaii at Hilo,Hilo,HI,USA"}
+{"schoolID,name_full,city,state,country":"hawaiipac,Hawaii Pacific University,Honolulu,HI,USA"}
+{"schoolID,name_full,city,state,country":"heidelberg,Heidelberg College,Tiffin,OH,USA"}
+{"schoolID,name_full,city,state,country":"hendrixar,Hendrix College,Conway,AR,USA"}
+{"schoolID,name_full,city,state,country":"hendrsonst,Henderson State University,Arkadelphia,AR,USA"}
+{"schoolID,name_full,city,state,country":"highpoint,High Point University,High Point,NC,USA"}
+{"schoolID,name_full,city,state,country":"hillsdale,Hillsdale College,Hillsdale,MI,USA"}
+{"schoolID,name_full,city,state,country":"hiramoh,Hiram College,Hiram,OH,USA"}
+{"schoolID,name_full,city,state,country":"hobartny,Hobart and William Smith Colleges,Geneva,NY,USA"}
+{"schoolID,name_full,city,state,country":"hofstra,Hofstra University,Hempstead,NY,USA"}
+{"schoolID,name_full,city,state,country":"holycross,College of the Holy Cross,Worcester,MA,USA"}
+{"schoolID,name_full,city,state,country":"hopemi,Hope College,Holland,MI,USA"}
+{"schoolID,name_full,city,state,country":"houstnbapt,Houston Baptist University,Houston,TX,USA"}
+{"schoolID,name_full,city,state,country":"houston,University of Houston,Houston,TX,USA"}
+{"schoolID,name_full,city,state,country":"howard,Howard University,Washington,DC,USA"}
+{"schoolID,name_full,city,state,country":"howrdpayne,Howard Payne University,Brownwood,TX,USA"}
+{"schoolID,name_full,city,state,country":"humboldtst,Humboldt State University,Arcata,CA,USA"}
+{"schoolID,name_full,city,state,country":"huntercuny,Hunter College, The City University of New York,New York,NY,USA"}
+{"schoolID,name_full,city,state,country":"iadesmo,Des Moines University,Des Moines,IA,USA"}
+{"schoolID,name_full,city,state,country":"iadmacc,Des Moines Area Community College,Boone,IA,USA"}
+{"schoolID,name_full,city,state,country":"iaellsw,Ellsworth College,Iowa Falls,IA,USA"}
+{"schoolID,name_full,city,state,country":"iahighl,Highland Park College,Des Moines,IA,USA"}
+{"schoolID,name_full,city,state,country":"iaindia,Indian Hills Community College,Centerville,IA,USA"}
+{"schoolID,name_full,city,state,country":"iakirkw,Kirkwood Community College,Cedar Rapids,IA,USA"}
+{"schoolID,name_full,city,state,country":"iaparso,Parsons College,Fairfield,IA,USA"}
+{"schoolID,name_full,city,state,country":"iaseccs,Southeastern Iowa Community College, Keokuk Campus,Keokuk,IA,USA"}
+{"schoolID,name_full,city,state,country":"iasimps,Simpson College,Indianola,IA,USA"}
+{"schoolID,name_full,city,state,country":"iawescc,Iowa Western Community College,Council Bluffs,IA,USA"}
+{"schoolID,name_full,city,state,country":"iawesleyan,Iowa Wesleyan College,Mount Pleasant,IA,USA"}
+{"schoolID,name_full,city,state,country":"idaho,University of Idaho,Moscow,ID,USA"}
+{"schoolID,name_full,city,state,country":"idahost,Idaho State University,Pocatello,ID,USA"}
+{"schoolID,name_full,city,state,country":"idbyuid,Brigham Young University-Idaho,Rexburg,ID,USA"}
+{"schoolID,name_full,city,state,country":"idcosid,College of Southern Idaho,Twin Falls,ID,USA"}
+{"schoolID,name_full,city,state,country":"idnidjc,North Idaho College,Coeur d'Alene,ID,USA"}
+{"schoolID,name_full,city,state,country":"ilaugus,Augustana College,Rock Island,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilcenjc,Illinois Central College,East Peoria,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilcollege,Illinois College,Jacksonville,IL,USA"}
+{"schoolID,name_full,city,state,country":"ildixon,Dixon College,Dixon,IL,USA"}
+{"schoolID,name_full,city,state,country":"ildupag,College of DuPage,Glen Ellyn,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilelmhu,Elmhurst College,Elmhurst,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilharpe,William Rainey Harper College,Palatine,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilkanka,Kankakee Community College,Kankakee,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilkaska,Kaskaskia College,Arcola,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilkenne,Kennedy-King College,Chicago,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilkishw,Kishwaukee College,Malta,IL,USA"}
+{"schoolID,name_full,city,state,country":"illakel,Lake Land College,Mattoon,IL,USA"}
+{"schoolID,name_full,city,state,country":"illchicago,University of Illinois at Chicago,Chicago,IL,USA"}
+{"schoolID,name_full,city,state,country":"illewis,Lewis & Clark Community College,Godfrey,IL,USA"}
+{"schoolID,name_full,city,state,country":"illinco,Lincoln College,Lincoln,IL,USA"}
+{"schoolID,name_full,city,state,country":"illinois,University of Illinois at Urbana-Champaign,Champaign,IL,USA"}
+{"schoolID,name_full,city,state,country":"illinoisst,Illinois State University,Normal,IL,USA"}
+{"schoolID,name_full,city,state,country":"illogan,John A Logan College,Carterville,IL,USA"}
+{"schoolID,name_full,city,state,country":"illomba,Lombard College,Galesburg,IL,USA"}
+{"schoolID,name_full,city,state,country":"illtjco,Lincoln Trail College,Robinson,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilmcken,McKendree University,Lebanon,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilmorai,Moraine Valley Community College,Palos Hills,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilmount,Mount Morris College,Mount Morris,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilolney,Olney Central College,Olney,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilparkl,Parkland College,Champaign,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilseijc,Southeastern Illinois College,Harrisburg,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilshurt,Shurtleff College,Alton,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilssjco,South Suburban College,South Holland,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilstvia,St. Viator College,Bourbonnais,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilsvcco,Sauk Valley Community College,Dixon,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilswijc,Southwestern Illinois College,Belleville,IL,USA"}
+{"schoolID,name_full,city,state,country":"iltrito,Triton College,River Grove,IL,USA"}
+{"schoolID,name_full,city,state,country":"iltruma,Harry S Truman College,Chicago,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilwabas,Wabash Valley College,Mount Carmel,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilwesleyan,Illinois Wesleyan University,Bloomington,IL,USA"}
+{"schoolID,name_full,city,state,country":"ilwrigh,Wilbur Wright College,Chicago,IL,USA"}
+{"schoolID,name_full,city,state,country":"inander,Anderson University,Anderson,IN,USA"}
+{"schoolID,name_full,city,state,country":"inbethel,Bethel College,Mishawaka,IN,USA"}
+{"schoolID,name_full,city,state,country":"incante,Canterbury College,Danville,IN,USA"}
+{"schoolID,name_full,city,state,country":"inconco,Concordia Theological Seminary,Fort Wayne,IN,USA"}
+{"schoolID,name_full,city,state,country":"indiana,Indiana University-Bloomington,Bloomington,IN,USA"}
+{"schoolID,name_full,city,state,country":"indianapa,Indiana University of Pennsylvania,Indiana,PA,USA"}
+{"schoolID,name_full,city,state,country":"indianast,Indiana State University,Terre Haute,IN,USA"}
+{"schoolID,name_full,city,state,country":"indpolis,University of Indianapolis,Indianapolis,IN,USA"}
+{"schoolID,name_full,city,state,country":"inhanov,Hanover College,Hanover,IN,USA"}
+{"schoolID,name_full,city,state,country":"inindwe,Indiana Wesleyan University,Marion,IN,USA"}
+{"schoolID,name_full,city,state,country":"inintec,Indiana Institute of Technology,Fort Wayne,IN,USA"}
+{"schoolID,name_full,city,state,country":"invince,Vincennes University,Vincennes,IN,USA"}
+{"schoolID,name_full,city,state,country":"iona,Iona College,New Rochelle,NY,USA"}
+{"schoolID,name_full,city,state,country":"iowa,University of Iowa,Iowa City,IA,USA"}
+{"schoolID,name_full,city,state,country":"iowast,Iowa State University,Ames,IA,USA"}
+{"schoolID,name_full,city,state,country":"ithacany,Ithaca College,Ithaca,NY,USA"}
+{"schoolID,name_full,city,state,country":"jacksonst,Jackson State University,Jackson,MS,USA"}
+{"schoolID,name_full,city,state,country":"jacksonvil,Jacksonville University,Jacksonville,FL,USA"}
+{"schoolID,name_full,city,state,country":"jamesmad,James Madison University,Harrisonburg,VA,USA"}
+{"schoolID,name_full,city,state,country":"jksonvilst,Jacksonville State University,Jacksonville,AL,USA"}
+{"schoolID,name_full,city,state,country":"johnbrwnar,John Brown University,Siloam Springs,AR,USA"}
+{"schoolID,name_full,city,state,country":"johnshpkns,Johns Hopkins University,Baltimore,MD,USA"}
+{"schoolID,name_full,city,state,country":"juniatapa,Juniata College,Huntingdon,PA,USA"}
+{"schoolID,name_full,city,state,country":"kalamazoo,Kalamazoo College,Kalamazoo,MI,USA"}
+{"schoolID,name_full,city,state,country":"kansas,University of Kansas,Lawrence,KS,USA"}
+{"schoolID,name_full,city,state,country":"kansasst,Kansas State University,Manhattan,KS,USA"}
+{"schoolID,name_full,city,state,country":"keenest,Keene State College,Keene,NH,USA"}
+{"schoolID,name_full,city,state,country":"kennesawst,Kennesaw State University,Kennesaw,GA,USA"}
+{"schoolID,name_full,city,state,country":"kentst,Kent State University,Kent,OH,USA"}
+{"schoolID,name_full,city,state,country":"kentucky,University of Kentucky,Lexington,KY,USA"}
+{"schoolID,name_full,city,state,country":"kentuckyst,Kentucky State University,Frankfort,KY,USA"}
+{"schoolID,name_full,city,state,country":"kenyonoh,Kenyon College,Gambier,OH,USA"}
+{"schoolID,name_full,city,state,country":"knoxil,Knox College,Galesburg,IL,USA"}
+{"schoolID,name_full,city,state,country":"ksbarto,Barton County Community College,Great Bend,KS,USA"}
+{"schoolID,name_full,city,state,country":"ksbutle,Butler County Community College,El Dorado,KS,USA"}
+{"schoolID,name_full,city,state,country":"kscloud,Cloud County Community College,Concordia,KS,USA"}
+{"schoolID,name_full,city,state,country":"kscowle,Cowley County Community College,Arkansas City,KS,USA"}
+{"schoolID,name_full,city,state,country":"ksftsco,Fort Scott Community College,Fort Scott,KS,USA"}
+{"schoolID,name_full,city,state,country":"ksgarde,Garden City Community College,Garden City,KS,USA"}
+{"schoolID,name_full,city,state,country":"kshutch,Hutchinson Community College,Hutchinson,KS,USA"}
+{"schoolID,name_full,city,state,country":"ksindep,Independence Community College,Independence,KS,USA"}
+{"schoolID,name_full,city,state,country":"ksjohns,Johnson County Community College,Overland Park,KS,USA"}
+{"schoolID,name_full,city,state,country":"kskccco,Kansas City Kansas Community College,Kansas City,KS,USA"}
+{"schoolID,name_full,city,state,country":"kslabet,Labette Community College,Parsons,KS,USA"}
+{"schoolID,name_full,city,state,country":"ksneosh,Neosho County Community College,Chanute,KS,USA"}
+{"schoolID,name_full,city,state,country":"kspratt,Pratt Community College,Pratt,KS,USA"}
+{"schoolID,name_full,city,state,country":"ksstmaC,St. Mary's College,St. Mary's,KS,USA"}
+{"schoolID,name_full,city,state,country":"kutztown,Kutztown University of Pennsylvania,Kutztown,PA,USA"}
+{"schoolID,name_full,city,state,country":"kybella,Bellarmine College,Louisville,KY,USA"}
+{"schoolID,name_full,city,state,country":"kysomer,Somerset Community College,Somerset,KY,USA"}
+{"schoolID,name_full,city,state,country":"kystcat,St. Catherine College,St. Catherine,KY,USA"}
+{"schoolID,name_full,city,state,country":"kywesleyan,Kentucky Wesleyan College,Owensboro,KY,USA"}
+{"schoolID,name_full,city,state,country":"kywkycc,West Kentucky Community and Technical College,Paducah,KY,USA"}
+{"schoolID,name_full,city,state,country":"labossi,Bossier Parish Community College,Bossier City,LA,USA"}
+{"schoolID,name_full,city,state,country":"lacollege,Louisiana College,Pineville,LA,USA"}
+{"schoolID,name_full,city,state,country":"ladelga,Delgado Community College,New Orleans,LA,USA"}
+{"schoolID,name_full,city,state,country":"lafayette,Lafayette College,Easton,PA,USA"}
+{"schoolID,name_full,city,state,country":"lakeforest,Lake Forest College,Lake Forest,IL,USA"}
+{"schoolID,name_full,city,state,country":"lamar,Lamar University,Beaumont,TX,USA"}
+{"schoolID,name_full,city,state,country":"lambuthtn,Lambuth University,Jackson,TN,USA"}
+{"schoolID,name_full,city,state,country":"lanecol,Lane College,Jackson,TN,USA"}
+{"schoolID,name_full,city,state,country":"lasalle,LaSalle University,Philadelphia,PA,USA"}
+{"schoolID,name_full,city,state,country":"latech,Louisiana Tech University,Ruston,LA,USA"}
+{"schoolID,name_full,city,state,country":"laverneca,University of La Verne,La Verne,CA,USA"}
+{"schoolID,name_full,city,state,country":"lebvalley,Lebanon Valley College,Annville,PA,USA"}
+{"schoolID,name_full,city,state,country":"lee,Lee University,Cleveland,TN,USA"}
+{"schoolID,name_full,city,state,country":"lehigh,Lehigh University,Bethlehem,PA,USA"}
+{"schoolID,name_full,city,state,country":"lemoyne,LeMoyne College,Syracuse,NY,USA"}
+{"schoolID,name_full,city,state,country":"lemoynowen,LeMoyne-Owen College,Memphis,TN,USA"}
+{"schoolID,name_full,city,state,country":"lenoirrhyn,Lenoir-Rhyne College,Hickory,NC,USA"}
+{"schoolID,name_full,city,state,country":"lewclarkor,Lewis and Clark College,Portland,OR,USA"}
+{"schoolID,name_full,city,state,country":"lewclarkst,Lewis-Clark State College,Lewiston,ID,USA"}
+{"schoolID,name_full,city,state,country":"lewisil,Lewis University,Romeoville,IL,USA"}
+{"schoolID,name_full,city,state,country":"liberty,Liberty University,Lynchburg,VA,USA"}
+{"schoolID,name_full,city,state,country":"lincolnlandcc,Lincoln Land Community College,Springfield,IL,USA"}
+{"schoolID,name_full,city,state,country":"lincolnmem,Lincoln Memorial University,Harrogate,TN,USA"}
+{"schoolID,name_full,city,state,country":"lincolnmo,Lincoln University,Jefferson City,MO,USA"}
+{"schoolID,name_full,city,state,country":"linfieldor,Linfield College,McMinnville,OR,USA"}
+{"schoolID,name_full,city,state,country":"lipscomb,Lipscomb University,Nashville,TN,USA"}
+{"schoolID,name_full,city,state,country":"lockhaven,Lock Haven University of Pennsylvania,Lock Haven,PA,USA"}
+{"schoolID,name_full,city,state,country":"longbeach,California State University Long Beach,Long Beach,CA,USA"}
+{"schoolID,name_full,city,state,country":"longisland,Long Island University, Brooklyn Campus,Brooklyn,NY,USA"}
+{"schoolID,name_full,city,state,country":"longwoodva,Longwood University,Farmville,VA,USA"}
+{"schoolID,name_full,city,state,country":"lorasia,Loras College,Dubuque,IA,USA"}
+{"schoolID,name_full,city,state,country":"louisville,University of Louisville,Louisville,KY,USA"}
+{"schoolID,name_full,city,state,country":"loyolachi,Loyola University Chicago,Chicago,IL,USA"}
+{"schoolID,name_full,city,state,country":"loyolamary,Loyola Marymount University,Los Angeles,CA,USA"}
+{"schoolID,name_full,city,state,country":"loyolamd,Loyola College in Maryland,Baltimore,MD,USA"}
+{"schoolID,name_full,city,state,country":"loyolano,Loyola University New Orleans,New Orleans,LA,USA"}
+{"schoolID,name_full,city,state,country":"lsu,Louisiana State University,Baton Rouge,LA,USA"}
+{"schoolID,name_full,city,state,country":"lubbchrist,Lubbock Christian University,Lubbock,TX,USA"}
+{"schoolID,name_full,city,state,country":"lutheria,Luther College,Decorah,IA,USA"}
+{"schoolID,name_full,city,state,country":"lycomingpa,Lycoming College,Williamsport,PA,USA"}
+{"schoolID,name_full,city,state,country":"lynchbrgva,Lynchburg College,Lynchburg,VA,USA"}
+{"schoolID,name_full,city,state,country":"maassum,Assumption College,Worcester,MA,USA"}
+{"schoolID,name_full,city,state,country":"macmurryil,MacMurray College,Jacksonville,IL,USA"}
+{"schoolID,name_full,city,state,country":"macollege,Massachusetts College of Liberal Arts,North Adams,MA,USA"}
+{"schoolID,name_full,city,state,country":"madeajc,Dean College,Franklin,MA,USA"}
+{"schoolID,name_full,city,state,country":"maemers,Emerson College,Boston,MA,USA"}
+{"schoolID,name_full,city,state,country":"maine,University of Maine at Orono,Orono,ME,USA"}
+{"schoolID,name_full,city,state,country":"malowete,Lowell Technological Institute,Lowell,MA,USA"}
+{"schoolID,name_full,city,state,country":"mamassa,Massasoit Community College,Brockton,MA,USA"}
+{"schoolID,name_full,city,state,country":"mamerri,Merrimack College,North Andover,MA,USA"}
+{"schoolID,name_full,city,state,country":"mamiddl,Middlesex Community College,Bedford,MA,USA"}
+{"schoolID,name_full,city,state,country":"manchester,Manchester College,North Manchester,IN,USA"}
+{"schoolID,name_full,city,state,country":"manecco,Northern Essex Community College,Haverhill,MA,USA"}
+{"schoolID,name_full,city,state,country":"manhattan,Manhattan College,New York,NY,USA"}
+{"schoolID,name_full,city,state,country":"mankatost,Minnesota State University, Mankato,Mankato,MN,USA"}
+{"schoolID,name_full,city,state,country":"manscco,North Shore Community College,Danvers,MA,USA"}
+{"schoolID,name_full,city,state,country":"mansfield,Mansfield University of Pennsylvania,Mansfield,PA,USA"}
+{"schoolID,name_full,city,state,country":"maquins,Quinsigamond Community College,Worcester,MA,USA"}
+{"schoolID,name_full,city,state,country":"mariettaoh,Marietta College,Marietta,OH,USA"}
+{"schoolID,name_full,city,state,country":"marquette,Marquette University,Milwaukee,WI,USA"}
+{"schoolID,name_full,city,state,country":"marshall,Marshall University,Huntington,WV,USA"}
+{"schoolID,name_full,city,state,country":"maryhrdbay,University of Mary Hardin-Baylor,Belton,TX,USA"}
+{"schoolID,name_full,city,state,country":"maryland,University of Maryland,College Park,MD,USA"}
+{"schoolID,name_full,city,state,country":"masslowell,University of Massachusetts Lowell,Lowell,MA,USA"}
+{"schoolID,name_full,city,state,country":"mastersca,The Master's College,Santa Clarita,CA,USA"}
+{"schoolID,name_full,city,state,country":"mcdaniel,McDaniel College,Westminster,MD,USA"}
+{"schoolID,name_full,city,state,country":"mcmgccc,Mississippi Gulf Coast Community College,Perkinston,MS,USA"}
+{"schoolID,name_full,city,state,country":"mcneese,McNeese State University,Lake Charles,LA,USA"}
+{"schoolID,name_full,city,state,country":"mdaacco,Anne Arundel Community College,Arnold,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdbalcc,Baltimore City Community College,Baltimore,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdbalti,University of Baltimore,Baltimore,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdccbcc,Community College of Baltimore County, Catonsville Campus,Catonsville,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdccbce,Community College of Baltimore County, Essex Campus,Essex,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdcecil,Cecil Community College,North East,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdcolsm,College of Southern Maryland,La Plata,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdfrost,Frostburg State University,Frostburg,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdgarre,Garrett Community College,McHenry,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdhager,Hagerstown Community College,Hagerstown,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdmdbal,University of Maryland Baltimore,Baltimore,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdmontg,Montgomery College, Rockville Campus,Rockville,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdrockh,Rock Hill College,Ellicott City,MD,USA"}
+{"schoolID,name_full,city,state,country":"mdstjoh,St. John's College,Annapolis,MD,USA"}
+{"schoolID,name_full,city,state,country":"memphis,University of Memphis,Memphis,TN,USA"}
+{"schoolID,name_full,city,state,country":"meramec,St. Louis Community College, Meramec Campus,Kirkwood,MO,USA"}
+{"schoolID,name_full,city,state,country":"mercer,Mercer University,Macon,GA,USA"}
+{"schoolID,name_full,city,state,country":"mercyhurst,Mercyhurst College,Erie,PA,USA"}
+{"schoolID,name_full,city,state,country":"mericke,Ricker College,Houlton,ME,USA"}
+{"schoolID,name_full,city,state,country":"mesast,Mesa State College,Grand Junction,CO,USA"}
+{"schoolID,name_full,city,state,country":"messiah,Messiah College,Grantham,PA,USA"}
+{"schoolID,name_full,city,state,country":"mestjos,St. Joseph's College,Standish,ME,USA"}
+{"schoolID,name_full,city,state,country":"mewestb,Westbrook College,Portland,ME,USA"}
+{"schoolID,name_full,city,state,country":"miamidade,Miami-Dade College,Miami,FL,USA"}
+{"schoolID,name_full,city,state,country":"miamifl,University of Miami,Coral Gables,FL,USA"}
+{"schoolID,name_full,city,state,country":"miamioh,Miami University of Ohio,Oxford,OH,USA"}
+{"schoolID,name_full,city,state,country":"michigan,University of Michigan,Ann Arbor,MI,USA"}
+{"schoolID,name_full,city,state,country":"michiganst,Michigan State University,East Lansing,MI,USA"}
+{"schoolID,name_full,city,state,country":"middlbryvt,Middlebury College,Middlebury,VT,USA"}
+{"schoolID,name_full,city,state,country":"midetrte,Detroit Institute of Technology,Detroit,MI,USA"}
+{"schoolID,name_full,city,state,country":"midlndluth,Midland Lutheran College,Fremont,NE,USA"}
+{"schoolID,name_full,city,state,country":"migocco,Glen Oaks Community College,Centreville,MI,USA"}
+{"schoolID,name_full,city,state,country":"migrand,Grand Rapids Community College,Grand Rapids,MI,USA"}
+{"schoolID,name_full,city,state,country":"mihenry,Henry Ford Community College,Dearborn,MI,USA"}
+{"schoolID,name_full,city,state,country":"mikalam,Kalamazoo Valley Community College,Kalamazoo,MI,USA"}
+{"schoolID,name_full,city,state,country":"millersvil,Millersville University of Pennsylvania,Millersville,PA,USA"}
+{"schoolID,name_full,city,state,country":"milligantn,Milligan College,Milligan College,TN,USA"}
+{"schoolID,name_full,city,state,country":"millikin,Millikin University,Decatur,IL,USA"}
+{"schoolID,name_full,city,state,country":"millsapsms,Millsaps College,Jackson,MS,USA"}
+{"schoolID,name_full,city,state,country":"milmich,Lake Michigan College,Benton Harbor,MI,USA"}
+{"schoolID,name_full,city,state,country":"mimacom,Macomb Community College,Warren,MI,USA"}
+{"schoolID,name_full,city,state,country":"mimuske,Muskegon Community College,Muskegon,MI,USA"}
+{"schoolID,name_full,city,state,country":"minnesota,University of Minnesota,Minneapolis,MN,USA"}
+{"schoolID,name_full,city,state,country":"minorth,Northern Michigan University,Marquette,MI,USA"}
+{"schoolID,name_full,city,state,country":"mioakla,Oakland Community College,Farmington Hills,MI,USA"}
+{"schoolID,name_full,city,state,country":"missouri,University of Missouri Columbia,Columbia,MO,USA"}
+{"schoolID,name_full,city,state,country":"missst,Mississippi State University,Mississippi State,MS,USA"}
+{"schoolID,name_full,city,state,country":"mistcla,St. Clair County Community College,Port Huron,MI,USA"}
+{"schoolID,name_full,city,state,country":"mit,Massachusetts Institute of Technology,Cambridge,MA,USA"}
+{"schoolID,name_full,city,state,country":"mnbemid,Bemidji State University,Bemidji,MN,USA"}
+{"schoolID,name_full,city,state,country":"mnmesabi,Mesabi Range Community and Technical College,Virginia,MN,USA"}
+{"schoolID,name_full,city,state,country":"mnmoorh,Minnesota State University, Moorhead,Moorhead,MN,USA"}
+{"schoolID,name_full,city,state,country":"mnmorris,University of Minnesota, Morris,Morris,MN,USA"}
+{"schoolID,name_full,city,state,country":"mnnorma,Normandale Community College,Bloomington,MN,USA"}
+{"schoolID,name_full,city,state,country":"mnparke,Parker College,Winnebago,MN,USA"}
+{"schoolID,name_full,city,state,country":"mntclairst,Montclair State University,Montclair,NJ,USA"}
+{"schoolID,name_full,city,state,country":"mobileal,University of Mobile,Mobile,AL,USA"}
+{"schoolID,name_full,city,state,country":"moconco,Concordia Seminary-St. Louis,St. Louis,MO,USA"}
+{"schoolID,name_full,city,state,country":"mocrowd,Crowder College,Neosho,MO,USA"}
+{"schoolID,name_full,city,state,country":"moculve,Culver-Stockton College,Canton,MO,USA"}
+{"schoolID,name_full,city,state,country":"modrury,Drury University,Springfield,MO,USA"}
+{"schoolID,name_full,city,state,country":"moeastc,East Central College,Union,MO,USA"}
+{"schoolID,name_full,city,state,country":"mofores,St. Louis Community College, Forest Park Campus,St. Louis,MO,USA"}
+{"schoolID,name_full,city,state,country":"moharri,Harris-Stowe State College,St. Louis,MO,USA"}
+{"schoolID,name_full,city,state,country":"mojcjco,Jefferson City Junior College,Jefferson City,MO,USA"}
+{"schoolID,name_full,city,state,country":"mojeffe,Jefferson College,Hillsboro,MO,USA"}
+{"schoolID,name_full,city,state,country":"molongv,Longview Community College,Kansas City,MO,USA"}
+{"schoolID,name_full,city,state,country":"momaple,Maple Woods Community College,Kansas City,MO,USA"}
+{"schoolID,name_full,city,state,country":"mominer,Mineral Area College,Park Hills,MO,USA"}
+{"schoolID,name_full,city,state,country":"monmouth,Monmouth University,West Long Branch,NJ,USA"}
+{"schoolID,name_full,city,state,country":"monroecc,Monroe Community College,Rochester,NY,USA"}
+{"schoolID,name_full,city,state,country":"montevallo,University of Montevallo,Montevallo,AL,USA"}
+{"schoolID,name_full,city,state,country":"montreatnc,Montreat College,Montreat,NC,USA"}
+{"schoolID,name_full,city,state,country":"morehead,Morehead State University,Morehead,KY,USA"}
+{"schoolID,name_full,city,state,country":"morehouse,Morehouse College,Atlanta,GA,USA"}
+{"schoolID,name_full,city,state,country":"morganst,Morgan State University,Baltimore,MD,USA"}
+{"schoolID,name_full,city,state,country":"morolla,Missouri University of Science and Technology,Rolla,MO,USA"}
+{"schoolID,name_full,city,state,country":"mosouthern,Missouri Southern State University,Joplin,MO,USA"}
+{"schoolID,name_full,city,state,country":"motarki,Tarkio College,Tarkio,MO,USA"}
+{"schoolID,name_full,city,state,country":"mothree,Three Rivers Community College,Poplar Bluff,MO,USA"}
+{"schoolID,name_full,city,state,country":"movalley,Missouri Valley College,Marshall,MO,USA"}
+{"schoolID,name_full,city,state,country":"mowestern,Missouri Western State University,St. Joseph,MO,USA"}
+{"schoolID,name_full,city,state,country":"mrningside,Morningside College,Sioux City,IA,USA"}
+{"schoolID,name_full,city,state,country":"mryvilletn,Maryville College,Maryville,TN,USA"}
+{"schoolID,name_full,city,state,country":"mscollege,Mississippi College,Clinton,MS,USA"}
+{"schoolID,name_full,city,state,country":"mscopia,Copiah-Lincoln Community College,Wesson,MS,USA"}
+{"schoolID,name_full,city,state,country":"mseccco,East Central Community College,Decatur,MS,USA"}
+{"schoolID,name_full,city,state,country":"msgcmac,Gulf Coast Military Academy,Gulfport,MS,USA"}
+{"schoolID,name_full,city,state,country":"mshinds,Hinds Community College,Raymond,MS,USA"}
+{"schoolID,name_full,city,state,country":"msholme,Holmes Community College,Ridgeland,MS,USA"}
+{"schoolID,name_full,city,state,country":"msitawa,Itawamba Community College,Fulton,MS,USA"}
+{"schoolID,name_full,city,state,country":"msmdcco,Mississippi Delta Community College,Moorhead,MS,USA"}
+{"schoolID,name_full,city,state,country":"msmerid,Meridian Community College,Meridian,MS,USA"}
+{"schoolID,name_full,city,state,country":"msnwmcc,Northwest Mississippi Community College,Senatobia,MS,USA"}
+{"schoolID,name_full,city,state,country":"mspearl,Pearl River Community College,Poplarville,MS,USA"}
+{"schoolID,name_full,city,state,country":"msswmcc,Southwest Mississippi Community College,Summit,MS,USA"}
+{"schoolID,name_full,city,state,country":"mstupel,Tupelo Military Institute,Tupelo,MS,USA"}
+{"schoolID,name_full,city,state,country":"mtennst,Middle Tennessee State University,Murfreesboro,TN,USA"}
+{"schoolID,name_full,city,state,country":"mtolive,Mount Olive College,Mount Olive,NC,USA"}
+{"schoolID,name_full,city,state,country":"mtstmarys,Mount St. Mary's University,Emmitsburg,MD,USA"}
+{"schoolID,name_full,city,state,country":"mtunionoh,Mount Union College,Alliance,OH,USA"}
+{"schoolID,name_full,city,state,country":"mtvernnaz,Mount Vernon Nazarene University,Mount Vernon,OH,USA"}
+{"schoolID,name_full,city,state,country":"muhlenberg,Muhlenberg College,Allentown,PA,USA"}
+{"schoolID,name_full,city,state,country":"murrayst,Murray State University,Murray,KY,USA"}
+{"schoolID,name_full,city,state,country":"muskingum,Muskingum College,New Concord,OH,USA"}
+{"schoolID,name_full,city,state,country":"nalabama,University of North Alabama,Florence,AL,USA"}
+{"schoolID,name_full,city,state,country":"narizona,Northern Arizona University,Flagstaff,AZ,USA"}
+{"schoolID,name_full,city,state,country":"navy,United States Naval Academy,Annapolis,MD,USA"}
+{"schoolID,name_full,city,state,country":"ncat,North Carolina A&T State University,Greensboro,NC,USA"}
+{"schoolID,name_full,city,state,country":"ncbreva,Brevard College,Brevard,NC,USA"}
+{"schoolID,name_full,city,state,country":"ncchowa,Chowan College,Murfreesboro,NC,USA"}
+{"schoolID,name_full,city,state,country":"ncentralil,North Central College,Naperville,IL,USA"}
+{"schoolID,name_full,city,state,country":"nclouis,Louisburg College,Louisburg,NC,USA"}
+{"schoolID,name_full,city,state,country":"ncmarsh,Mars Hill College,Mars Hill,NC,USA"}
+{"schoolID,name_full,city,state,country":"ncolorado,University of Northern Colorado,Greeley,CO,USA"}
+{"schoolID,name_full,city,state,country":"ncpitcc,Pitt Community College,Winterville,NC,USA"}
+{"schoolID,name_full,city,state,country":"ncruthe,Rutherford College,Rutherford College,NC,USA"}
+{"schoolID,name_full,city,state,country":"ncstand,St. Andrews Presbyterian College,Laurinburg,NC,USA"}
+{"schoolID,name_full,city,state,country":"ncstate,North Carolina State University,Raleigh,NC,USA"}
+{"schoolID,name_full,city,state,country":"ncuncpe,University of North Carolina at Pembroke,Pembroke,NC,USA"}
+{"schoolID,name_full,city,state,country":"ncweave,Weaver College,Weaverville,NC,USA"}
+{"schoolID,name_full,city,state,country":"ndstate,North Dakota State University,Fargo,ND,USA"}
+{"schoolID,name_full,city,state,country":"ndunind,University of North Dakota,Grand Forks,ND,USA"}
+{"schoolID,name_full,city,state,country":"neastern,Northeastern University,Boston,MA,USA"}
+{"schoolID,name_full,city,state,country":"nebellevue,Bellevue University,Bellevue,NE,USA"}
+{"schoolID,name_full,city,state,country":"nebkearney,University of Nebraska at Kearney,Kearney,NE,USA"}
+{"schoolID,name_full,city,state,country":"nebomaha,University of Nebraska at Omaha,Omaha,NE,USA"}
+{"schoolID,name_full,city,state,country":"nebraska,University of Nebraska at Lincoln,Lincoln,NE,USA"}
+{"schoolID,name_full,city,state,country":"nedoane,Doane College,Crete,NE,USA"}
+{"schoolID,name_full,city,state,country":"nehasti,Hastings College,Hastings,NE,USA"}
+{"schoolID,name_full,city,state,country":"neillinois,Northeastern Illinois University,Chicago,IL,USA"}
+{"schoolID,name_full,city,state,country":"nepersh,John J Pershing College,Beatrice,NE,USA"}
+{"schoolID,name_full,city,state,country":"nevada,University of Nevada-Reno,Reno,NV,USA"}
+{"schoolID,name_full,city,state,country":"newberry,Newberry College,Newberry,SC,USA"}
+{"schoolID,name_full,city,state,country":"newesleyan,Nebraska Wesleyan University,Lincoln,NE,USA"}
+{"schoolID,name_full,city,state,country":"neweste,Western Nebraska Community College,Scottsbluff,NE,USA"}
+{"schoolID,name_full,city,state,country":"newhamp,University of New Hampshire,Durham,NH,USA"}
+{"schoolID,name_full,city,state,country":"newhaven,University of New Haven,West Haven,CT,USA"}
+{"schoolID,name_full,city,state,country":"newyorku,New York University,New York,NY,USA"}
+{"schoolID,name_full,city,state,country":"nflorida,University of North Florida,Jacksonville,FL,USA"}
+{"schoolID,name_full,city,state,country":"niagara,Niagara University,Lewiston,NY,USA"}
+{"schoolID,name_full,city,state,country":"nicholls,Nicholls State University,Thibodaux,LA,USA"}
+{"schoolID,name_full,city,state,country":"nillinois,Northern Illinois University,DeKalb,IL,USA"}
+{"schoolID,name_full,city,state,country":"niowa,University of Northern Iowa,Cedar Falls,IA,USA"}
+{"schoolID,name_full,city,state,country":"njberge,Bergen Community College,Paramus,NJ,USA"}
+{"schoolID,name_full,city,state,country":"njborde,Bordentown Military Institute,Bordentown,NJ,USA"}
+{"schoolID,name_full,city,state,country":"njbrook,Brookdale Community College,Lincroft,NJ,USA"}
+{"schoolID,name_full,city,state,country":"njburli,Burlington County College,Pemberton,NJ,USA"}
+{"schoolID,name_full,city,state,country":"njcamde,Camden County College,Blackwood,NJ,USA"}
+{"schoolID,name_full,city,state,country":"njccmor,County College of Morris,Randolph,NJ,USA"}
+{"schoolID,name_full,city,state,country":"njcente,Centenary College,Hackettstown,NJ,USA"}
+{"schoolID,name_full,city,state,country":"njcity,New Jersey City University,Jersey City,NJ,USA"}
+{"schoolID,name_full,city,state,country":"njglouc,Gloucester County College,Sewell,NJ,USA"}
+{"schoolID,name_full,city,state,country":"njmerce,Mercer County Community College,West Windsor,NJ,USA"}
+{"schoolID,name_full,city,state,country":"njmiddl,Middlesex County Community College,Edison,NJ,USA"}
+{"schoolID,name_full,city,state,country":"njricha,Richard Stockton College of New Jersey,Pomona,NJ,USA"}
+{"schoolID,name_full,city,state,country":"njupsal,Upsala College,East Orange,NJ,USA"}
+{"schoolID,name_full,city,state,country":"nkentucky,Northern Kentucky University,Highland Heights,KY,USA"}
+{"schoolID,name_full,city,state,country":"nmeaste,Eastern New Mexico University,Portales,NM,USA"}
+{"schoolID,name_full,city,state,country":"nmexico,University of New Mexico,Albuquerque,NM,USA"}
+{"schoolID,name_full,city,state,country":"nmhighland,New Mexico Highlands University,Las Vegas,NM,USA"}
+{"schoolID,name_full,city,state,country":"nmmilin,New Mexico Military Institute,Roswell,NM,USA"}
+{"schoolID,name_full,city,state,country":"nmnmjco,New Mexico Junior College,Hobbs,NM,USA"}
+{"schoolID,name_full,city,state,country":"nmsouth,College of the Southwest,Hobbs,NM,USA"}
+{"schoolID,name_full,city,state,country":"nmstate,New Mexico State University,Las Cruces,NM,USA"}
+{"schoolID,name_full,city,state,country":"norfolkst,Norfolk State University,Norfolk,VA,USA"}
+{"schoolID,name_full,city,state,country":"norleans,University of New Orleans,New Orleans,LA,USA"}
+{"schoolID,name_full,city,state,country":"northwood,Northwood University,Midland,MI,USA"}
+{"schoolID,name_full,city,state,country":"norwichvt,Norwich University,Northfield,VT,USA"}
+{"schoolID,name_full,city,state,country":"notredame,University of Notre Dame,South Bend,IN,USA"}
+{"schoolID,name_full,city,state,country":"ntexas,University of North Texas,Denton,TX,USA"}
+{"schoolID,name_full,city,state,country":"nvsouth,College of Southern Nevada,Henderson,NV,USA"}
+{"schoolID,name_full,city,state,country":"nwestern,Northwestern University,Evanston,IL,USA"}
+{"schoolID,name_full,city,state,country":"nwmost,Northwest Missouri State University,Maryville,MO,USA"}
+{"schoolID,name_full,city,state,country":"nwokstate,Northwestern Oklahoma State University,Alva,OK,USA"}
+{"schoolID,name_full,city,state,country":"nwstate,Northwestern State University of Louisiana,Natchitoches,LA,USA"}
+{"schoolID,name_full,city,state,country":"nybrock,State University of New York at Brockport,Brockport,NY,USA"}
+{"schoolID,name_full,city,state,country":"nycortland,State University of New York at Cortland,Cortland,NY,USA"}
+{"schoolID,name_full,city,state,country":"nydutch,Dutchess Community College,Poughkeepsie,NY,USA"}
+{"schoolID,name_full,city,state,country":"nyeriec,Erie Community College,Buffalo,NY,USA"}
+{"schoolID,name_full,city,state,country":"nyfredonia,State University of New York at Fredonia,Fredonia,NY,USA"}
+{"schoolID,name_full,city,state,country":"nykbcco,Kingsborough Community College,Brooklyn,NY,USA"}
+{"schoolID,name_full,city,state,country":"nylehma,Lehman College,Bronx,NY,USA"}
+{"schoolID,name_full,city,state,country":"nymarit,Maritime College,Throggs Neck,NY,USA"}
+{"schoolID,name_full,city,state,country":"nymercy,Mercy College,Dobbs Ferry,NY,USA"}
+{"schoolID,name_full,city,state,country":"nymohaw,Mohawk Valley Community College,Utica,NY,USA"}
+{"schoolID,name_full,city,state,country":"nynassa,Nassau Community College,Garden City,NY,USA"}
+{"schoolID,name_full,city,state,country":"nyoneonta,State University of New York at Oneonta,Oneonta,NY,USA"}
+{"schoolID,name_full,city,state,country":"nyonond,Onondaga Community College,Syracuse,NY,USA"}
+{"schoolID,name_full,city,state,country":"nyrockl,Rockland Community College,Suffern,NY,USA"}
+{"schoolID,name_full,city,state,country":"nysuffo,Suffolk County Community College,Brentwood,NY,USA"}
+{"schoolID,name_full,city,state,country":"nytech,New York Institute of Technology,Old Westbury,NY,USA"}
+{"schoolID,name_full,city,state,country":"nyuroch,University of Rochester,Rochester,NY,USA"}
+{"schoolID,name_full,city,state,country":"oakland,Oakland University,Rochester,MI,USA"}
+{"schoolID,name_full,city,state,country":"oberlinoh,Oberlin College,Oberlin,OH,USA"}
+{"schoolID,name_full,city,state,country":"occidental,Occidental College,Los Angeles,CA,USA"}
+{"schoolID,name_full,city,state,country":"oglethrpga,Oglethorpe University,Atlanta,GA,USA"}
+{"schoolID,name_full,city,state,country":"ohcapit,Capital University,Bexley,OH,USA"}
+{"schoolID,name_full,city,state,country":"ohcaset,Case Institute of Applied Sciences,Cleveland,OH,USA"}
+{"schoolID,name_full,city,state,country":"ohcuyah,Cuyahoga Community College,Cleveland,OH,USA"}
+{"schoolID,name_full,city,state,country":"ohdominican,Ohio Dominican University,Columbus,OH,USA"}
+{"schoolID,name_full,city,state,country":"ohgiffi,Giffin Junior College,Van Wert,OH,USA"}
+{"schoolID,name_full,city,state,country":"ohio,Ohio University,Athens,OH,USA"}
+{"schoolID,name_full,city,state,country":"ohiost,The Ohio State University,Columbus,OH,USA"}
+{"schoolID,name_full,city,state,country":"ohjohnc,John Carroll University,University Heights,OH,USA"}
+{"schoolID,name_full,city,state,country":"ohlakel,Lakeland Community College,Kirtland,OH,USA"}
+{"schoolID,name_full,city,state,country":"ohlerie,Lake Erie College,Painesville,OH,USA"}
+{"schoolID,name_full,city,state,country":"ohnorth,Ohio Northern University,Ada,OH,USA"}
+{"schoolID,name_full,city,state,country":"ohsincl,Sinclair Community College,Dayton,OH,USA"}
+{"schoolID,name_full,city,state,country":"ohvalley,Ohio Valley College,Vienna,WV,USA"}
+{"schoolID,name_full,city,state,country":"ohwesleyan,Ohio Wesleyan University,Delaware,OH,USA"}
+{"schoolID,name_full,city,state,country":"okbapti,Oklahoma Baptist University,Shawnee,OK,USA"}
+{"schoolID,name_full,city,state,country":"okcity,Oklahoma City University,Oklahoma City,OK,USA"}
+{"schoolID,name_full,city,state,country":"okconno,Connors State College,Warner,OK,USA"}
+{"schoolID,name_full,city,state,country":"okeaste,East Oklahoma State College,Wilburton,OK,USA"}
+{"schoolID,name_full,city,state,country":"oklahoma,University of Oklahoma,Norman,OK,USA"}
+{"schoolID,name_full,city,state,country":"okmurra,Murray State College,Tishomingo,OK,USA"}
+{"schoolID,name_full,city,state,country":"okneoam,Northeast Oklahoma A&M College,Miami,OK,USA"}
+{"schoolID,name_full,city,state,country":"oknestu,Northeastern State University,Tahlequah,OK,USA"}
+{"schoolID,name_full,city,state,country":"okocsw,Oklahoma City Southwestern College,Oklahoma City,OK,USA"}
+{"schoolID,name_full,city,state,country":"okroger,Rogers State University,Claremore,OK,USA"}
+{"schoolID,name_full,city,state,country":"oksemin,Seminole State College,Seminole,OK,USA"}
+{"schoolID,name_full,city,state,country":"okstate,Oklahoma State University,Stillwater,OK,USA"}
+{"schoolID,name_full,city,state,country":"okwesle,Oklahoma Wesleyan University,Bartlesville,OK,USA"}
+{"schoolID,name_full,city,state,country":"okweste,Western Oklahoma State College,Altus,OK,USA"}
+{"schoolID,name_full,city,state,country":"olddom,Old Dominion University,Norfolk,VA,USA"}
+{"schoolID,name_full,city,state,country":"olemiss,University of Mississippi,Oxford,MS,USA"}
+{"schoolID,name_full,city,state,country":"olivetmi,Olivet College,Olivet,MI,USA"}
+{"schoolID,name_full,city,state,country":"olivetnaz,Olivet Nazarene University,Bourbonnais,IL,USA"}
+{"schoolID,name_full,city,state,country":"oralrob,Oral Roberts University,Tulsa,OK,USA"}
+{"schoolID,name_full,city,state,country":"orbluem,Blue Mountain Community College,Pendleton,OR,USA"}
+{"schoolID,name_full,city,state,country":"orcheme,Chemeketa Community College,Salem,OR,USA"}
+{"schoolID,name_full,city,state,country":"orcorba,Corban College,Salem,OR,USA"}
+{"schoolID,name_full,city,state,country":"oregon,University of Oregon,Eugene,OR,USA"}
+{"schoolID,name_full,city,state,country":"oregonst,Oregon State University,Corvallis,OR,USA"}
+{"schoolID,name_full,city,state,country":"orlinnb,Linn-Benton Community College,Albany,OR,USA"}
+{"schoolID,name_full,city,state,country":"ormount,Mount Hood Community College,Gresham,OR,USA"}
+{"schoolID,name_full,city,state,country":"ortreas,Treasure Valley Community College,Ontario,OR,USA"}
+{"schoolID,name_full,city,state,country":"orweste,Western Oregon University,Monmouth,OR,USA"}
+{"schoolID,name_full,city,state,country":"otterbein,Otterbein College,Westerville,OH,USA"}
+{"schoolID,name_full,city,state,country":"ouachitab,Ouachita Baptist University,Arkadelphia,AR,USA"}
+{"schoolID,name_full,city,state,country":"oxnard,Oxnard College,Oxnard,CA,USA"}
+{"schoolID,name_full,city,state,country":"ozarks,University of the Ozarks,Clarksville,AR,USA"}
+{"schoolID,name_full,city,state,country":"paalleb,Community College of Allegheny County, Boyce Campus,Monroeville,PA,USA"}
+{"schoolID,name_full,city,state,country":"paalles,Community College of Allegheny County, South Campus,West Mifflin,PA,USA"}
+{"schoolID,name_full,city,state,country":"pabeave,Community College of Beaver County,Monaca,PA,USA"}
+{"schoolID,name_full,city,state,country":"pabucks,Bucks County Community College,Lewisburg,PA,USA"}
+{"schoolID,name_full,city,state,country":"pabutle,Butler County Community College,Butler,PA,USA"}
+{"schoolID,name_full,city,state,country":"pacarli,Carlisle Indian Industrial School,Carlisle,PA,USA"}
+{"schoolID,name_full,city,state,country":"paccphi,Community College of Philadelphia,Philadelphia,PA,USA"}
+{"schoolID,name_full,city,state,country":"pacheyn,Cheyney University,Cheyney,PA,USA"}
+{"schoolID,name_full,city,state,country":"pacific,University of the Pacific,Stockton,CA,USA"}
+{"schoolID,name_full,city,state,country":"pacificor,Pacific University,Forest Grove,OR,USA"}
+{"schoolID,name_full,city,state,country":"padelaw,Delaware County Community College,Marple,PA,USA"}
+{"schoolID,name_full,city,state,country":"padesal,DeSales University,Center Valley,PA,USA"}
+{"schoolID,name_full,city,state,country":"pahahne,Hahnemann University,Philadelphia,PA,USA"}
+{"schoolID,name_full,city,state,country":"pahaver,Haverford College in Pennsylvania,Haverford,PA,USA"}
+{"schoolID,name_full,city,state,country":"palaroc,LaRoche College,Pittsburgh,PA,USA"}
+{"schoolID,name_full,city,state,country":"palinco,Lincoln University,Lincoln University,PA,USA"}
+{"schoolID,name_full,city,state,country":"paschuy,Schuylkill College,Reading,PA,USA"}
+{"schoolID,name_full,city,state,country":"pavolan,Volant College,Volant,PA,USA"}
+{"schoolID,name_full,city,state,country":"pbsc,Palm Beach Community College,Lake Worth,FL,USA"}
+{"schoolID,name_full,city,state,country":"pennst,Pennsylvania State University,State College,PA,USA"}
+{"schoolID,name_full,city,state,country":"pepperdine,Pepperdine University,Malibu,CA,USA"}
+{"schoolID,name_full,city,state,country":"pfeiffer,Pfeiffer University,Misenheimer,NC,USA"}
+{"schoolID,name_full,city,state,country":"philly,Philadelphia University,Philadelphia,PA,USA"}
+{"schoolID,name_full,city,state,country":"philsmith,Philander Smith College,Little Rock,AR,USA"}
+{"schoolID,name_full,city,state,country":"piedmontga,Piedmont College,Demorest,GA,USA"}
+{"schoolID,name_full,city,state,country":"pittsbst,Pittsburg State University,Pittsburg,KS,USA"}
+{"schoolID,name_full,city,state,country":"pittsburgh,University of Pittsburgh,Pittsburgh,PA,USA"}
+{"schoolID,name_full,city,state,country":"plymouth,Plymouth State College,Plymouth,NH,USA"}
+{"schoolID,name_full,city,state,country":"pompitzer,Pomona College/Pitzer College,Claremont,CA,USA"}
+{"schoolID,name_full,city,state,country":"portland,University of Portland,Portland,OR,USA"}
+{"schoolID,name_full,city,state,country":"portlandst,Portland State University,Portland,OR,USA"}
+{"schoolID,name_full,city,state,country":"prairview,Prairie View A&M University,Prairie View,TX,USA"}
+{"schoolID,name_full,city,state,country":"presbytrn,Presbyterian College,Clinton,SC,USA"}
+{"schoolID,name_full,city,state,country":"princeton,Princeton University,Princeton,NJ,USA"}
+{"schoolID,name_full,city,state,country":"providence,Providence College,Providence,RI,USA"}
+{"schoolID,name_full,city,state,country":"psubehrend,Penn State Erie, the Behrend College of Pennsylvania State University,Erie,PA,USA"}
+{"schoolID,name_full,city,state,country":"ptlomanaz,Point Loma Nazarene University,San Diego,CA,USA"}
+{"schoolID,name_full,city,state,country":"ptparkpa,Point Park University,Pittsburgh,PA,USA"}
+{"schoolID,name_full,city,state,country":"pugetsound,University of Puget Sound,Tacoma,WA,USA"}
+{"schoolID,name_full,city,state,country":"purdue,Purdue University,West Lafayette,IN,USA"}
+{"schoolID,name_full,city,state,country":"quincy,Quincy University,Quincy,IL,USA"}
+{"schoolID,name_full,city,state,country":"quinnipiac,Quinnipiac College,Hamden,CT,USA"}
+{"schoolID,name_full,city,state,country":"radford,Radford University,Radford,VA,USA"}
+{"schoolID,name_full,city,state,country":"ramaponj,Ramapo College,Mahwah,NJ,USA"}
+{"schoolID,name_full,city,state,country":"randmacon,Randolph-Macon College,Ashland,VA,USA"}
+{"schoolID,name_full,city,state,country":"rhodeisle,University of Rhode Island,Kingston,RI,USA"}
+{"schoolID,name_full,city,state,country":"rhodestn,Rhodes College,Memphis,TN,USA"}
+{"schoolID,name_full,city,state,country":"ric,Rhode Island College,Providence,RI,USA"}
+{"schoolID,name_full,city,state,country":"rice,Rice University,Houston,TX,USA"}
+{"schoolID,name_full,city,state,country":"richmond,University of Richmond,Richmond,VA,USA"}
+{"schoolID,name_full,city,state,country":"rider,Rider University,Lawrenceville,NJ,USA"}
+{"schoolID,name_full,city,state,country":"riogrande,University of Rio Grande,Rio Grande,OH,USA"}
+{"schoolID,name_full,city,state,country":"riponwi,Ripon College,Ripon,WI,USA"}
+{"schoolID,name_full,city,state,country":"riroger,Roger Williams University,Bristol,RI,USA"}
+{"schoolID,name_full,city,state,country":"roanokeva,Roanoke College,Salem,VA,USA"}
+{"schoolID,name_full,city,state,country":"robertmor,Robert Morris University,Moon Township,PA,USA"}
+{"schoolID,name_full,city,state,country":"rockhurst,Rockhurst University,Kansas City,MO,USA"}
+{"schoolID,name_full,city,state,country":"rollins,Rollins College,Winter Park,FL,USA"}
+{"schoolID,name_full,city,state,country":"rosehulman,Rose-Hulman Institute of Technology,Terre Haute,IN,USA"}
+{"schoolID,name_full,city,state,country":"rowannj,Rowan University,Glassboro,NJ,USA"}
+{"schoolID,name_full,city,state,country":"rutgers,Rutgers, the State University of New Jersey,New Brunswick,NJ,USA"}
+{"schoolID,name_full,city,state,country":"sacstate,California State University Sacramento,Sacramento,CA,USA"}
+{"schoolID,name_full,city,state,country":"saginawval,Saginaw Valley State University,Saginaw,MI,USA"}
+{"schoolID,name_full,city,state,country":"salabama,University of South Alabama,Mobile,AL,USA"}
+{"schoolID,name_full,city,state,country":"salemintl,Salem International University,Salem,WV,USA"}
+{"schoolID,name_full,city,state,country":"samford,Samford University,Birmingham,AL,USA"}
+{"schoolID,name_full,city,state,country":"samhouston,Sam Houston State University,Huntsville,TX,USA"}
+{"schoolID,name_full,city,state,country":"sandiego,University of San Diego,San Diego,CA,USA"}
+{"schoolID,name_full,city,state,country":"sandiegost,San Diego State University,San Diego,CA,USA"}
+{"schoolID,name_full,city,state,country":"sanfran,University of San Francisco,San Francisco,CA,USA"}
+{"schoolID,name_full,city,state,country":"sanfranst,San Francisco State University,San Francisco,CA,USA"}
+{"schoolID,name_full,city,state,country":"sanjosest,San Jose State University,San Jose,CA,USA"}
+{"schoolID,name_full,city,state,country":"santaclara,Santa Clara University,Santa Clara,CA,USA"}
+{"schoolID,name_full,city,state,country":"sarkansas,Southern Arkansas University,Magnolia,AR,USA"}
+{"schoolID,name_full,city,state,country":"savcolad,Savannah College of Arts and Design,Savannah,GA,USA"}
+{"schoolID,name_full,city,state,country":"scarolina,University of South Carolina,Columbia,SC,USA"}
+{"schoolID,name_full,city,state,country":"scfranc,Francis Marion University,Florence,SC,USA"}
+{"schoolID,name_full,city,state,country":"schreiner,Schreiner University,Kerrville,TX,USA"}
+{"schoolID,name_full,city,state,country":"sclimes,Limestone College,Gaffney,SC,USA"}
+{"schoolID,name_full,city,state,country":"scranton,University of Scranton,Scranton,PA,USA"}
+{"schoolID,name_full,city,state,country":"scspart,Spartanburg Methodist College,Spartanburg,SC,USA"}
+{"schoolID,name_full,city,state,country":"scstate,South Carolina State University,Orangeburg,SC,USA"}
+{"schoolID,name_full,city,state,country":"scupsta,University of South Carolina Upstate,Spartanburg,SC,USA"}
+{"schoolID,name_full,city,state,country":"sdakotast,South Dakota State University,Brookings,SD,USA"}
+{"schoolID,name_full,city,state,country":"sdcity,San Diego City College,San Diego,CA,USA"}
+{"schoolID,name_full,city,state,country":"seattle,Seattle University,Seattle,WA,USA"}
+{"schoolID,name_full,city,state,country":"sefl,Southeastern University,Lakeland,FL,USA"}
+{"schoolID,name_full,city,state,country":"sela,Southeastern Louisiana University,Hammond,LA,USA"}
+{"schoolID,name_full,city,state,country":"seminolecc,Seminole Community College,Sanford,FL,USA"}
+{"schoolID,name_full,city,state,country":"semost,Southeast Missouri State University,Cape Girardeau,MO,USA"}
+{"schoolID,name_full,city,state,country":"seoklahoma,Southeastern Oklahoma State University,Durant,OK,USA"}
+{"schoolID,name_full,city,state,country":"setonhall,Seton Hall University,South Orange,NJ,USA"}
+{"schoolID,name_full,city,state,country":"sfaustin,Stephen F Austin State University,Nacogdoches,TX,USA"}
+{"schoolID,name_full,city,state,country":"sfcc,South Florida Community College,Avon Park,FL,USA"}
+{"schoolID,name_full,city,state,country":"sflorida,University of South Florida,Tampa,FL,USA"}
+{"schoolID,name_full,city,state,country":"shaw,Shaw University,Raleigh,NC,USA"}
+{"schoolID,name_full,city,state,country":"shenandoah,Shenandoah University,Winchester,VA,USA"}
+{"schoolID,name_full,city,state,country":"shepherdwv,Shepherd College,Shepherdstown,WV,USA"}
+{"schoolID,name_full,city,state,country":"shipnsburg,Shippensburg University of Pennsylvania,Shippensburg,PA,USA"}
+{"schoolID,name_full,city,state,country":"shorterga,Shorter College,Rome,GA,USA"}
+{"schoolID,name_full,city,state,country":"siena,Siena College,Loudonville,NY,USA"}
+{"schoolID,name_full,city,state,country":"silledward,Southern Illinois University Edwardsville,Edwardsville,IL,USA"}
+{"schoolID,name_full,city,state,country":"sillinois,Southern Illinois University Carbondale,Carbondale,IL,USA"}
+{"schoolID,name_full,city,state,country":"sindiana,University of Southern Indiana,Evansville,IN,USA"}
+{"schoolID,name_full,city,state,country":"sliprock,Slippery Rock University of Pennsylvania,Slippery Rock,PA,USA"}
+{"schoolID,name_full,city,state,country":"smaine,University of Southern Maine,Gorham,ME,USA"}
+{"schoolID,name_full,city,state,country":"smethodist,Southern Methodist University,Dallas,TX,USA"}
+{"schoolID,name_full,city,state,country":"smiss,University of Southern Mississippi,Hattiesburg,MS,USA"}
+{"schoolID,name_full,city,state,country":"sonomast,Sonoma State University,Rohnert Park,CA,USA"}
+{"schoolID,name_full,city,state,country":"southernu,Southern University and A&M College,Baton Rouge,LA,USA"}
+{"schoolID,name_full,city,state,country":"springhill,Spring Hill College,Mobile,AL,USA"}
+{"schoolID,name_full,city,state,country":"sprngfldma,Springfield College,Springfield,MA,USA"}
+{"schoolID,name_full,city,state,country":"stambrseia,St. Ambrose University,Davenport,IA,USA"}
+{"schoolID,name_full,city,state,country":"stanford,Stanford University,Palo Alto,CA,USA"}
+{"schoolID,name_full,city,state,country":"stanselm,St. Anselm College,Manchester,NH,USA"}
+{"schoolID,name_full,city,state,country":"staugustne,St. Augustine's College,Raleigh,NC,USA"}
+{"schoolID,name_full,city,state,country":"stbonny,St. Bonaventure University,St. Bonaventure,NY,USA"}
+{"schoolID,name_full,city,state,country":"stcloudst,St.Cloud State University,St. Cloud,MN,USA"}
+{"schoolID,name_full,city,state,country":"stedwardtx,St. Edward's University,Austin,TX,USA"}
+{"schoolID,name_full,city,state,country":"sterlingks,Sterling University,Sterling,KS,USA"}
+{"schoolID,name_full,city,state,country":"stetson,Stetson University,DeLand,FL,USA"}
+{"schoolID,name_full,city,state,country":"stfranny,St. Francis University,Brooklyn,NY,USA"}
+{"schoolID,name_full,city,state,country":"stfranpa,St. Francis University,Loretto,PA,USA"}
+{"schoolID,name_full,city,state,country":"stfrncisil,University of St. Francis,Joliet,IL,USA"}
+{"schoolID,name_full,city,state,country":"stjohns,St. John's University,Queens,NY,USA"}
+{"schoolID,name_full,city,state,country":"stjosephin,St. Joseph's College,Rensselaer,IN,USA"}
+{"schoolID,name_full,city,state,country":"stjosephs,St. Joseph's University,Philadelphia,PA,USA"}
+{"schoolID,name_full,city,state,country":"stlawrence,St. Lawrence University,Canton,NY,USA"}
+{"schoolID,name_full,city,state,country":"stleo,St. Leo College,St. Leo,FL,USA"}
+{"schoolID,name_full,city,state,country":"stlouis,St. Louis University,St. Louis,MO,USA"}
+{"schoolID,name_full,city,state,country":"stmartinwa,St. Martin's College,Lacey,WA,USA"}
+{"schoolID,name_full,city,state,country":"stmarysca,St. Mary's College of California,Moraga,CA,USA"}
+{"schoolID,name_full,city,state,country":"stmarysmn,St. Mary's University of Minnesota,Winona,MN,USA"}
+{"schoolID,name_full,city,state,country":"stmarytx,St. Mary's University,San Antonio,TX,USA"}
+{"schoolID,name_full,city,state,country":"stmichaels,St. Michael's College,Colchester,VT,USA"}
+{"schoolID,name_full,city,state,country":"stonybrook,Stony Brook University,Stony Brook,NY,USA"}
+{"schoolID,name_full,city,state,country":"stpeters,St. Peter's College,Jersey City,NJ,USA"}
+{"schoolID,name_full,city,state,country":"strose,College of St. Rose,Albany,NY,USA"}
+{"schoolID,name_full,city,state,country":"stthomasfl,St. Thomas University,Miami Gardens,FL,USA"}
+{"schoolID,name_full,city,state,country":"stthomasmn,University of St. Thomas,St. Paul,MN,USA"}
+{"schoolID,name_full,city,state,country":"stxavieril,St. Xavier University,Orland Park,IL,USA"}
+{"schoolID,name_full,city,state,country":"sulrossst,Sul Ross State University,Alpine,TX,USA"}
+{"schoolID,name_full,city,state,country":"sunybing,State University of New York at Binghamton,Binghamton,NY,USA"}
+{"schoolID,name_full,city,state,country":"sunybuff,University at Buffalo, State University of New York,Buffalo,NY,USA"}
+{"schoolID,name_full,city,state,country":"susquehnna,Susquehanna University,Selinsgrove,PA,USA"}
+{"schoolID,name_full,city,state,country":"sutah,Southern Utah University,Cedar City,UT,USA"}
+{"schoolID,name_full,city,state,country":"swarthmore,Swarthmore College,Swarthmore,PA,USA"}
+{"schoolID,name_full,city,state,country":"swesternks,Southwestern College,Winfield,KS,USA"}
+{"schoolID,name_full,city,state,country":"swesterntx,Southwestern University,Georgetown,TX,USA"}
+{"schoolID,name_full,city,state,country":"swmost,Missouri State University,Springfield,MO,USA"}
+{"schoolID,name_full,city,state,country":"swoklahoma,Southwestern Oklahoma State University,Weatherford,OK,USA"}
+{"schoolID,name_full,city,state,country":"swtexas,Texas State University,San Marcos,TX,USA"}
+{"schoolID,name_full,city,state,country":"syracuse,Syracuse University,Syracuse,NY,USA"}
+{"schoolID,name_full,city,state,country":"tampa,University of Tampa,Tampa,FL,USA"}
+{"schoolID,name_full,city,state,country":"tamucomm,Texas A&M University-Commerce,Commerce,TX,USA"}
+{"schoolID,name_full,city,state,country":"tamukvill,Texas A&M University-Kingsville,Kingsville,TX,USA"}
+{"schoolID,name_full,city,state,country":"tarletonst,Tarleton State University,Stephenville,TX,USA"}
+{"schoolID,name_full,city,state,country":"temple,Temple University,Philadelphia,PA,USA"}
+{"schoolID,name_full,city,state,country":"tennessee,University of Tennessee,Knoxville,TN,USA"}
+{"schoolID,name_full,city,state,country":"tennst,Tennessee State University,Nashville,TN,USA"}
+{"schoolID,name_full,city,state,country":"texas,University of Texas at Austin,Austin,TX,USA"}
+{"schoolID,name_full,city,state,country":"texasam,Texas A&M University,College Station,TX,USA"}
+{"schoolID,name_full,city,state,country":"thielpa,Thiel College,Greenville,PA,USA"}
+{"schoolID,name_full,city,state,country":"thomasmore,Thomas More College,Crestview Hills,KY,USA"}
+{"schoolID,name_full,city,state,country":"tnchatt,Chattanooga State Technical Community College,Chattanooga,TN,USA"}
+{"schoolID,name_full,city,state,country":"tnchris,Christian Brothers University,Memphis,TN,USA"}
+{"schoolID,name_full,city,state,country":"tncleve,Cleveland State Community College,Cleveland,TN,USA"}
+{"schoolID,name_full,city,state,country":"tncolum,Columbia State Community College,Columbia,TN,USA"}
+{"schoolID,name_full,city,state,country":"tnhiwas,Hiwassee College,Madisonville,TN,USA"}
+{"schoolID,name_full,city,state,country":"tnjacks,Jackson State Community College,Jackson,TN,USA"}
+{"schoolID,name_full,city,state,country":"tnkingc,King College,Bristol,TN,USA"}
+{"schoolID,name_full,city,state,country":"tnmotlo,Motlow State Community College,Lynchburg,TN,USA"}
+{"schoolID,name_full,city,state,country":"tnswten,Southwest Tennessee Community College,Memphis,TN,USA"}
+{"schoolID,name_full,city,state,country":"tntech,Tennessee Technological University,Cookeville,TN,USA"}
+{"schoolID,name_full,city,state,country":"tntenme,University of Tennessee Health Science Center,Memphis,TN,USA"}
+{"schoolID,name_full,city,state,country":"tnvolun,Volunteer State Community College,Gallatin,TN,USA"}
+{"schoolID,name_full,city,state,country":"tnwesleyan,Tennessee Wesleyan College,Athens,TN,USA"}
+{"schoolID,name_full,city,state,country":"toledo,University of Toledo,Toledo,OH,USA"}
+{"schoolID,name_full,city,state,country":"towson,Towson University,Towson,MD,USA"}
+{"schoolID,name_full,city,state,country":"trinityct,Trinity College,Hartford,CT,USA"}
+{"schoolID,name_full,city,state,country":"trinitytx,Trinity University,San Antonio,TX,USA"}
+{"schoolID,name_full,city,state,country":"trnsylvnia,Transylvania University,Lexington,KY,USA"}
+{"schoolID,name_full,city,state,country":"troyst,Troy University,Troy,AL,USA"}
+{"schoolID,name_full,city,state,country":"trumanst,Truman State University,Kirksville,MO,USA"}
+{"schoolID,name_full,city,state,country":"tuftsma,Tufts University,Medford,MA,USA"}
+{"schoolID,name_full,city,state,country":"tulane,Tulane University,New Orleans,LA,USA"}
+{"schoolID,name_full,city,state,country":"tulsa,University of Tulsa,Tulsa,OK,USA"}
+{"schoolID,name_full,city,state,country":"tusculum,Tusculum College,Greenville,TN,USA"}
+{"schoolID,name_full,city,state,country":"tuskegee,Tuskegee University,Tuskegee,AL,USA"}
+{"schoolID,name_full,city,state,country":"txalvin,Alvin Community College,Alvin,TX,USA"}
+{"schoolID,name_full,city,state,country":"txangel,Angelo State University,San Angelo,TX,USA"}
+{"schoolID,name_full,city,state,country":"txangjc,Angelina College,Lufkin,TX,USA"}
+{"schoolID,name_full,city,state,country":"txausti,Austin Community College,Austin,TX,USA"}
+{"schoolID,name_full,city,state,country":"txblinn,Blinn College,Brenham,TX,USA"}
+{"schoolID,name_full,city,state,country":"txburne,Burnetta College,Venus,TX,USA"}
+{"schoolID,name_full,city,state,country":"txchrist,Texas Christian University,Fort Worth,TX,USA"}
+{"schoolID,name_full,city,state,country":"txclare,Clarendon College,Clarendon,TX,USA"}
+{"schoolID,name_full,city,state,country":"txcoast,Coastal Bend College,Beeville,TX,USA"}
+{"schoolID,name_full,city,state,country":"txcolli,Collin College,Dallas,TX,USA"}
+{"schoolID,name_full,city,state,country":"txeastf,Eastfield College,Mesquite,TX,USA"}
+{"schoolID,name_full,city,state,country":"txelpas,El Paso Community College,El Paso,TX,USA"}
+{"schoolID,name_full,city,state,country":"txfrank,Frank Phillips College,Borger,TX,USA"}
+{"schoolID,name_full,city,state,country":"txgalve,Galveston College,Galveston,TX,USA"}
+{"schoolID,name_full,city,state,country":"txgrays,Grayson County College,Denison,TX,USA"}
+{"schoolID,name_full,city,state,country":"txhillj,Hill College,Hillsboro,TX,USA"}
+{"schoolID,name_full,city,state,country":"txhowar,Howard College,Big Spring,TX,USA"}
+{"schoolID,name_full,city,state,country":"txkilgo,Kilgore College,Kilgore,TX,USA"}
+{"schoolID,name_full,city,state,country":"txleejc,Lee College,Baytown,TX,USA"}
+{"schoolID,name_full,city,state,country":"txlonmo,Lon Morris College,Jacksonville,TX,USA"}
+{"schoolID,name_full,city,state,country":"txmclen,McLennan Community College,Waco,TX,USA"}
+{"schoolID,name_full,city,state,country":"txmcmur,McMurry University,Abilene,TX,USA"}
+{"schoolID,name_full,city,state,country":"txmerid,Meridian Junior College,Meridian,TX,USA"}
+{"schoolID,name_full,city,state,country":"txmidla,Midland College,Midland,TX,USA"}
+{"schoolID,name_full,city,state,country":"txnavar,Navarro College,Corsicana,TX,USA"}
+{"schoolID,name_full,city,state,country":"txnctjc,North Central Texas College,Gainesville,TX,USA"}
+{"schoolID,name_full,city,state,country":"txnetex,Northeast Texas Community College,Mount Pleasant,TX,USA"}
+{"schoolID,name_full,city,state,country":"txodess,Odessa College,Odessa,TX,USA"}
+{"schoolID,name_full,city,state,country":"txpanol,Panola College,Carthage,TX,USA"}
+{"schoolID,name_full,city,state,country":"txparis,Paris Junior College,Paris,TX,USA"}
+{"schoolID,name_full,city,state,country":"txpaulq,Paul Quinn College,Dallas,TX,USA"}
+{"schoolID,name_full,city,state,country":"txsajco,San Antonio College,San Antonio,TX,USA"}
+{"schoolID,name_full,city,state,country":"txsjjcn,San Jacinto College, North Campus,Houston,TX,USA"}
+{"schoolID,name_full,city,state,country":"txsjjco,San Jacinto College,Pasadena,TX,USA"}
+{"schoolID,name_full,city,state,country":"txswtex,Southwest Texas Junior College,Uvalde,TX,USA"}
+{"schoolID,name_full,city,state,country":"txtech,Texas Tech University,Lubbock,TX,USA"}
+{"schoolID,name_full,city,state,country":"txtempl,Temple College,Temple,TX,USA"}
+{"schoolID,name_full,city,state,country":"txtexar,Texarkana College,Texarkana,TX,USA"}
+{"schoolID,name_full,city,state,country":"txtyler,Tyler Junior College,Tyler,TX,USA"}
+{"schoolID,name_full,city,state,country":"txverno,Vernon College,Vernon,TX,USA"}
+{"schoolID,name_full,city,state,country":"txweath,Weatherford College,Weatherford,TX,USA"}
+{"schoolID,name_full,city,state,country":"txwesle,Wesley College,Greenville,TX,USA"}
+{"schoolID,name_full,city,state,country":"txwesleyan,Texas Wesleyan University,Fort Worth,TX,USA"}
+{"schoolID,name_full,city,state,country":"txwestt,West Texas A&M University,Canyon,TX,USA"}
+{"schoolID,name_full,city,state,country":"txwhart,Wharton County Junior College,Wharton,TX,USA"}
+{"schoolID,name_full,city,state,country":"uab,University of Alabama at Birmingham,Birmingham,AL,USA"}
+{"schoolID,name_full,city,state,country":"ucdavis,University of California, Davis,Davis,CA,USA"}
+{"schoolID,name_full,city,state,country":"ucirvine,University of California, Irvine,Irvine,CA,USA"}
+{"schoolID,name_full,city,state,country":"ucla,University of California, Los Angeles,Los Angeles,CA,USA"}
+{"schoolID,name_full,city,state,country":"uconn,University of Connecticut,Storrs,CT,USA"}
+{"schoolID,name_full,city,state,country":"ucriver,University of California, Riverside,Riverside,CA,USA"}
+{"schoolID,name_full,city,state,country":"ucsb,University of California, Santa Barbara,Santa Barbara,CA,USA"}
+{"schoolID,name_full,city,state,country":"ucsd,University of California, San Diego,La Jolla,CA,USA"}
+{"schoolID,name_full,city,state,country":"ulala,University of Louisiana at Lafayette,Lafayette,LA,USA"}
+{"schoolID,name_full,city,state,country":"ulamo,University of Louisiana at Monroe,Monroe,LA,USA"}
+{"schoolID,name_full,city,state,country":"umass,University of Massachusetts Amherst,Amherst,MA,USA"}
+{"schoolID,name_full,city,state,country":"umassdartm,University of Massachusetts Dartmouth,North Dartmouth,MA,USA"}
+{"schoolID,name_full,city,state,country":"umbc,University of Maryland, Baltimore County,Baltimore,MD,USA"}
+{"schoolID,name_full,city,state,country":"umes,University of Maryland Eastern Shore,Princess Anne,MD,USA"}
+{"schoolID,name_full,city,state,country":"umkc,University of Missouri Kansas City,Kansas City,MO,USA"}
+{"schoolID,name_full,city,state,country":"unc,University of North Carolina at Chapel Hill,Chapel Hill,NC,USA"}
+{"schoolID,name_full,city,state,country":"uncashe,University of North Carolina at Asheville,Asheville,NC,USA"}
+{"schoolID,name_full,city,state,country":"uncgreen,University of North Carolina at Greensboro,Greensboro,NC,USA"}
+{"schoolID,name_full,city,state,country":"uncwilm,University of North Carolina at Wilmington,Wilmington,NC,USA"}
+{"schoolID,name_full,city,state,country":"unionny,Union College,Schenectady,NY,USA"}
+{"schoolID,name_full,city,state,country":"uniontn,Union University,Jackson,TN,USA"}
+{"schoolID,name_full,city,state,country":"unlv,University of Nevada-Las Vegas,Las Vegas,NV,USA"}
+{"schoolID,name_full,city,state,country":"uofsouth,University of the South,Sewanee,TN,USA"}
+{"schoolID,name_full,city,state,country":"upenn,University of Pennsylvania,Philadelphia,PA,USA"}
+{"schoolID,name_full,city,state,country":"upperiowa,Upper Iowa University,Fayette,IA,USA"}
+{"schoolID,name_full,city,state,country":"ursinus,Ursinus College,Collegeville,PA,USA"}
+{"schoolID,name_full,city,state,country":"usc,University of Southern California,Los Angeles,CA,USA"}
+{"schoolID,name_full,city,state,country":"uscaiken,University of South Carolina Aiken,Aiken,SC,USA"}
+{"schoolID,name_full,city,state,country":"utah,University of Utah,Salt Lake City,UT,USA"}
+{"schoolID,name_full,city,state,country":"utahst,Utah State University,Logan,UT,USA"}
+{"schoolID,name_full,city,state,country":"utahvalley,Utah Valley State University,Orem,UT,USA"}
+{"schoolID,name_full,city,state,country":"utarl,University of Texas at Arlington,Arlington,TX,USA"}
+{"schoolID,name_full,city,state,country":"utchat,University of Tennessee at Chattanooga,Chattanooga,TN,USA"}
+{"schoolID,name_full,city,state,country":"utdixie,Dixie State College of Utah,St. George,UT,USA"}
+{"schoolID,name_full,city,state,country":"utep,University of Texas at El Paso,El Paso,TX,USA"}
+{"schoolID,name_full,city,state,country":"utpanam,University of Texas Pan American,Edinburg,TX,USA"}
+{"schoolID,name_full,city,state,country":"utslxxo,Salt Lake Community College,Salt Lake City,UT,USA"}
+{"schoolID,name_full,city,state,country":"utsnojc,Snow College,Ephraim,UT,USA"}
+{"schoolID,name_full,city,state,country":"vaappre,Newport News Apprentice School,Newport News,VA,USA"}
+{"schoolID,name_full,city,state,country":"vaemenn,Eastern Mennonite University,Harrisonburg,VA,USA"}
+{"schoolID,name_full,city,state,country":"valdostast,Valdosta State University,Valdosta,GA,USA"}
+{"schoolID,name_full,city,state,country":"valpo,Valparaiso University,Valparaiso,IN,USA"}
+{"schoolID,name_full,city,state,country":"vamedic,Medical College of Virginia,Richmond,VA,USA"}
+{"schoolID,name_full,city,state,country":"vandy,Vanderbilt University,Nashville,TN,USA"}
+{"schoolID,name_full,city,state,country":"vanguardca,Vanguard University of Southern California,Costa Mesa,CA,USA"}
+{"schoolID,name_full,city,state,country":"vatech,Virginia Polytechnic Institute and State University,Blacksburg,VA,USA"}
+{"schoolID,name_full,city,state,country":"vcu,Virginia Commonwealth University,Richmond,VA,USA"}
+{"schoolID,name_full,city,state,country":"vermont,University of Vermont,Burlington,VT,USA"}
+{"schoolID,name_full,city,state,country":"villanova,Villanova University,Villanova,PA,USA"}
+{"schoolID,name_full,city,state,country":"virginia,University of Virginia,Charlottesville,VA,USA"}
+{"schoolID,name_full,city,state,country":"virginiast,Virginia State University,Petersburg,VA,USA"}
+{"schoolID,name_full,city,state,country":"viterbowi,Viterbo University,La Crosse,WI,USA"}
+{"schoolID,name_full,city,state,country":"vmi,Virginia Military Institute,Lexington,VA,USA"}
+{"schoolID,name_full,city,state,country":"wabashin,Wabash College,Crawfordsville,IN,USA"}
+{"schoolID,name_full,city,state,country":"wabelle,Bellevue Community College,Bellevue,WA,USA"}
+{"schoolID,name_full,city,state,country":"wacentr,Centralia College,Centralia,WA,USA"}
+{"schoolID,name_full,city,state,country":"waclark,Clark College,Vancouver,WA,USA"}
+{"schoolID,name_full,city,state,country":"wacolum,Columbia Basin College,Pasco,WA,USA"}
+{"schoolID,name_full,city,state,country":"waedmon,Edmonds Community College,Lynnwood,WA,USA"}
+{"schoolID,name_full,city,state,country":"waevere,Everett Community College,Everett,WA,USA"}
+{"schoolID,name_full,city,state,country":"wagner,Wagner College,Staten Island,NY,USA"}
+{"schoolID,name_full,city,state,country":"wagreen,Green River Community College,Auburn,WA,USA"}
+{"schoolID,name_full,city,state,country":"wake,Wake Forest University,Winston-Salem,NC,USA"}
+{"schoolID,name_full,city,state,country":"walabama,University of West Alabama,Livingston,AL,USA"}
+{"schoolID,name_full,city,state,country":"walower,Lower Columbia College,Longview,WA,USA"}
+{"schoolID,name_full,city,state,country":"waolymp,Olympic College,Bremerton,WA,USA"}
+{"schoolID,name_full,city,state,country":"warnerpac,Warner Pacific College,Portland,OR,USA"}
+{"schoolID,name_full,city,state,country":"wasfcco,Spokane Falls Community College,Spokane,WA,USA"}
+{"schoolID,name_full,city,state,country":"washburn,Washburn University,Topeka,KS,USA"}
+{"schoolID,name_full,city,state,country":"washcollmd,Washington College,Chestertown,MD,USA"}
+{"schoolID,name_full,city,state,country":"washcolltn,Washington College,Jonesborough,TN,USA"}
+{"schoolID,name_full,city,state,country":"washington,University of Washington,Seattle,WA,USA"}
+{"schoolID,name_full,city,state,country":"washjeffpa,Washington and Jefferson College,Washington,PA,USA"}
+{"schoolID,name_full,city,state,country":"washleeva,Washington and Lee University,Lexington,VA,USA"}
+{"schoolID,name_full,city,state,country":"washore,Shoreline Community College,Shoreline,WA,USA"}
+{"schoolID,name_full,city,state,country":"washst,Washington State University,Pullman,WA,USA"}
+{"schoolID,name_full,city,state,country":"watacom,Tacoma Community College,Tacoma,WA,USA"}
+{"schoolID,name_full,city,state,country":"wawalla,Walla Walla Community College,Walla Walla,WA,USA"}
+{"schoolID,name_full,city,state,country":"wawenat,Wenatchee Valley College,Wenatchee,WA,USA"}
+{"schoolID,name_full,city,state,country":"wayakim,Yakima Valley Community College,Yakima,WA,USA"}
+{"schoolID,name_full,city,state,country":"waynesburg,Waynesburg College,Waynesburg,PA,USA"}
+{"schoolID,name_full,city,state,country":"waynest,Wayne State University,Detroit,MI,USA"}
+{"schoolID,name_full,city,state,country":"waynestne,Wayne State College,Wayne,NE,USA"}
+{"schoolID,name_full,city,state,country":"wcarolina,Western Carolina University,Cullowhee,NC,USA"}
+{"schoolID,name_full,city,state,country":"wchester,West Chester University of Pennsylvania,West Chester,PA,USA"}
+{"schoolID,name_full,city,state,country":"wconnst,Western Connecticut State University,Danbury,CT,USA"}
+{"schoolID,name_full,city,state,country":"weberst,Weber State College,Ogden,UT,USA"}
+{"schoolID,name_full,city,state,country":"wesleyanct,Wesleyan University,Middletown,CT,USA"}
+{"schoolID,name_full,city,state,country":"westmontca,Westmont College,Santa Barbara,CA,USA"}
+{"schoolID,name_full,city,state,country":"wflorida,University of West Florida,Pensacola,FL,USA"}
+{"schoolID,name_full,city,state,country":"wgeorgia,State University of West Georgia,Carrollton,GA,USA"}
+{"schoolID,name_full,city,state,country":"wheatonma,Wheaton College,Wheaton,MA,USA"}
+{"schoolID,name_full,city,state,country":"whitmanwa,Whitman College,Walla Walla,WA,USA"}
+{"schoolID,name_full,city,state,country":"whittierca,Whittier College,Whittier,CA,USA"}
+{"schoolID,name_full,city,state,country":"whitwrthwa,Whitworth College,Spokane,WA,USA"}
+{"schoolID,name_full,city,state,country":"wicarro,Carroll College,Waukesha,WI,USA"}
+{"schoolID,name_full,city,state,country":"wichitast,Wichita State University,Wichita,KS,USA"}
+{"schoolID,name_full,city,state,country":"widenerpa,Widener University,Chester,PA,USA"}
+{"schoolID,name_full,city,state,country":"wilacrosse,University of Wisconsin at La Crosse,La Crosse,WI,USA"}
+{"schoolID,name_full,city,state,country":"wilawre,Lawrence University,Appleton,WI,USA"}
+{"schoolID,name_full,city,state,country":"wilbrforce,Wilberforce University,Wilberforce,OH,USA"}
+{"schoolID,name_full,city,state,country":"wileytx,Wiley College,Marshall,TX,USA"}
+{"schoolID,name_full,city,state,country":"wilkespa,Wilkes University,Wilkes-Barre,PA,USA"}
+{"schoolID,name_full,city,state,country":"willamette,Willamette University,Salem,OR,USA"}
+{"schoolID,name_full,city,state,country":"williamsma,Williams College,Williamstown,MA,USA"}
+{"schoolID,name_full,city,state,country":"willinois,Western Illinois University,Macomb,IL,USA"}
+{"schoolID,name_full,city,state,country":"willmary,College of William and Mary,Williamsburg,VA,USA"}
+{"schoolID,name_full,city,state,country":"wingate,Wingate University,Wingate,NC,USA"}
+{"schoolID,name_full,city,state,country":"winstsalst,Winston-Salem State University,Winston-Salem,NC,USA"}
+{"schoolID,name_full,city,state,country":"winthrop,Winthrop University,Rock Hill,SC,USA"}
+{"schoolID,name_full,city,state,country":"wioshkosh,University of Wisconsin at Oshkosh,Oshkosh,WI,USA"}
+{"schoolID,name_full,city,state,country":"wisacre,Sacred Heart College,Watertown,WI,USA"}
+{"schoolID,name_full,city,state,country":"wisconsin,University of Wisconsin at Madison,Madison,WI,USA"}
+{"schoolID,name_full,city,state,country":"wistnor,St. Norbert College,De Pere,WI,USA"}
+{"schoolID,name_full,city,state,country":"wistvnspt,University of Wisconsin at Stevens Point,Stevens Point,WI,USA"}
+{"schoolID,name_full,city,state,country":"wisuperior,University of Wisconsin at Superior,Superior,WI,USA"}
+{"schoolID,name_full,city,state,country":"wittnbrgoh,Wittenberg University,Springfield,OH,USA"}
+{"schoolID,name_full,city,state,country":"wiwhitewtr,University of Wisconsin at Whitewater,Whitewater,WI,USA"}
+{"schoolID,name_full,city,state,country":"wkentucky,Western Kentucky University,Bowling Green,KY,USA"}
+{"schoolID,name_full,city,state,country":"wlibertyst,West Liberty State College,West Liberty,WV,USA"}
+{"schoolID,name_full,city,state,country":"wlmcarey,William Carey College,Hattiesburg,MS,USA"}
+{"schoolID,name_full,city,state,country":"wlmjewell,William Jewell College,Liberty,MO,USA"}
+{"schoolID,name_full,city,state,country":"wlmpennia,William Penn University,Oskaloosa,IA,USA"}
+{"schoolID,name_full,city,state,country":"wmichigan,Western Michigan University,Kalamazoo,MI,USA"}
+{"schoolID,name_full,city,state,country":"wminstermo,Westminster College,Fulton,MO,USA"}
+{"schoolID,name_full,city,state,country":"wminsterpa,Westminster College,New Wilmington,PA,USA"}
+{"schoolID,name_full,city,state,country":"wofford,Wofford College,Spartanburg,SC,USA"}
+{"schoolID,name_full,city,state,country":"woosteroh,College of Wooster,Wooster,OH,USA"}
+{"schoolID,name_full,city,state,country":"wpaterson,William Paterson University,Wayne,NJ,USA"}
+{"schoolID,name_full,city,state,country":"wrightst,Wright State University,Dayton,OH,USA"}
+{"schoolID,name_full,city,state,country":"wshngtonmo,Washington University in St. Louis,St. Louis,MO,USA"}
+{"schoolID,name_full,city,state,country":"wvirginia,West Virginia University,Morgantown,WV,USA"}
+{"schoolID,name_full,city,state,country":"wvpotom,Potomac State College,Keyser,WV,USA"}
+{"schoolID,name_full,city,state,country":"wvstate,West Virginia State University,Institute,WV,USA"}
+{"schoolID,name_full,city,state,country":"wvwesleyan,West Virginia Wesleyan College,Buckhannon,WV,USA"}
+{"schoolID,name_full,city,state,country":"wwashngton,Western Washington University,Bellingham,WA,USA"}
+{"schoolID,name_full,city,state,country":"wyoming,University of Wyoming,Laramie,WY,USA"}
+{"schoolID,name_full,city,state,country":"xavier,Xavier University,Cincinnati,OH,USA"}
+{"schoolID,name_full,city,state,country":"yale,Yale University,New Haven,CT,USA"}
+{"schoolID,name_full,city,state,country":"youngst,Youngstown State University,Youngstown,OH,USA"}

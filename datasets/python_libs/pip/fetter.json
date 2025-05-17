@@ -1,0 +1,6 @@
+{
+  "libname": "fetter",
+  "libvers": "1.19.0",
+  "infile": "data/pip/fetter.txt",
+  "dependencies": {}
+}

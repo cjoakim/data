@@ -1,0 +1,6 @@
+{
+  "libname": "webencodings",
+  "libvers": "0.5.1",
+  "infile": "data/pip/webencodings.txt",
+  "dependencies": {}
+}

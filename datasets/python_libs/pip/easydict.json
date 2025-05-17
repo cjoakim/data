@@ -1,0 +1,6 @@
+{
+  "libname": "easydict",
+  "libvers": "1.13",
+  "infile": "data/pip/easydict.txt",
+  "dependencies": {}
+}

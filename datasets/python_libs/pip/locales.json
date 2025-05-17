@@ -1,0 +1,6 @@
+{
+  "libname": "locales",
+  "libvers": "0.0.2",
+  "infile": "data/pip/locales.txt",
+  "dependencies": {}
+}

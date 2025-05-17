@@ -1,0 +1,6 @@
+{
+  "libname": "pytest-runner",
+  "libvers": "6.0.1",
+  "infile": "data/pip/pytest-runner.txt",
+  "dependencies": {}
+}

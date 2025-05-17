@@ -1,0 +1,9 @@
+{
+  "libname": "home-assistant-chip-clusters",
+  "libvers": "2025.4.0",
+  "infile": "data/pip/home-assistant-chip-clusters.txt",
+  "dependencies": {
+    "aenum": "3.1.16",
+    "dacite": "1.9.2"
+  }
+}

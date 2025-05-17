@@ -1,0 +1,8 @@
+{
+  "libname": "rank-bm25",
+  "libvers": "0.2.2",
+  "infile": "data/pip/rank-bm25.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

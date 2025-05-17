@@ -1,0 +1,6 @@
+{
+  "libname": "django-admin-multiple-choice-list-filter",
+  "libvers": "0.1.1",
+  "infile": "data/pip/django-admin-multiple-choice-list-filter.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,26 @@
+{
+  "libname": "ats-case",
+  "libvers": "2.1.73",
+  "infile": "data/pip/ats-case.txt",
+  "dependencies": {
+    "ats-base": "1.3.3",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "colorlog": "6.9.0",
+    "gevent": "25.4.2",
+    "greenlet": "3.2.1",
+    "idna": "3.10",
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "psutil": "7.0.0",
+    "pytest": "8.3.5",
+    "pytest-ordering": "0.6",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0",
+    "zope-event": "5.0",
+    "zope-interface": "7.2"
+  }
+}

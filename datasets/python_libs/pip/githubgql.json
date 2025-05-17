@@ -1,0 +1,6 @@
+{
+  "libname": "githubgql",
+  "libvers": "0.0.8.0",
+  "infile": "data/pip/githubgql.txt",
+  "dependencies": {}
+}

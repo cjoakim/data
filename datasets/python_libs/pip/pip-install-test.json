@@ -1,0 +1,6 @@
+{
+  "libname": "pip-install-test",
+  "libvers": "0.5",
+  "infile": "data/pip/pip-install-test.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pycapnp",
+  "libvers": "2.0.0",
+  "infile": "data/pip/pycapnp.txt",
+  "dependencies": {}
+}

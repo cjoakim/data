@@ -1,0 +1,8 @@
+{
+  "libname": "types-cffi",
+  "libvers": "1.17.0.20250326",
+  "infile": "data/pip/types-cffi.txt",
+  "dependencies": {
+    "types-setuptools": "80.3.0.20250505"
+  }
+}

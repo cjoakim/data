@@ -1,0 +1,6 @@
+{
+  "libname": "source-distribution",
+  "libvers": "0.0.3",
+  "infile": "data/pip/source-distribution.txt",
+  "dependencies": {}
+}

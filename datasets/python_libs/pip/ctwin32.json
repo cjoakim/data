@@ -1,0 +1,6 @@
+{
+  "libname": "ctwin32",
+  "libvers": "3.0.0",
+  "infile": "data/pip/ctwin32.txt",
+  "dependencies": {}
+}

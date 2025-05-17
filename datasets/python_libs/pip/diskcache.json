@@ -1,0 +1,6 @@
+{
+  "libname": "diskcache",
+  "libvers": "5.6.3",
+  "infile": "data/pip/diskcache.txt",
+  "dependencies": {}
+}

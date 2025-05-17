@@ -1,0 +1,10 @@
+{
+  "libname": "sparse",
+  "libvers": "0.16.0",
+  "infile": "data/pip/sparse.txt",
+  "dependencies": {
+    "llvmlite": "0.44.0",
+    "numba": "0.61.2",
+    "numpy": "2.2.5"
+  }
+}

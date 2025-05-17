@@ -1,0 +1,10 @@
+{
+  "libname": "hypothesis-fspaths",
+  "libvers": "0.1",
+  "infile": "data/pip/hypothesis-fspaths.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "hypothesis": "6.131.13",
+    "sortedcontainers": "2.4.0"
+  }
+}

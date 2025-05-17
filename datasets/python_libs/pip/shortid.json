@@ -1,0 +1,6 @@
+{
+  "libname": "shortid",
+  "libvers": "0.1.2",
+  "infile": "data/pip/shortid.txt",
+  "dependencies": {}
+}

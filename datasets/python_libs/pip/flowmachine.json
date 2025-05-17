@@ -1,0 +1,32 @@
+{
+  "libname": "flowmachine",
+  "libvers": "1.32.0",
+  "infile": "data/pip/flowmachine.txt",
+  "dependencies": {
+    "apispec": "6.8.1",
+    "apispec-oneofschema": "3.0.1",
+    "cachetools": "5.5.2",
+    "finist": "0.1.2",
+    "get-secret-or-env-var": "0.0.2",
+    "marshmallow": "3.26.1",
+    "marshmallow-oneofschema": "3.1.1",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "pglast": "6.3",
+    "psycopg2-binary": "2.9.10",
+    "python-dateutil": "2.9.0.post0",
+    "python-louvain": "0.16",
+    "python-rapidjson": "1.20",
+    "pytz": "2025.2",
+    "pyzmq": "26.4.0",
+    "redis": "6.0.0",
+    "shapely": "2.1.0",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "structlog": "25.3.0",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

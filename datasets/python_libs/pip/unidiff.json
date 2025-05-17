@@ -1,0 +1,6 @@
+{
+  "libname": "unidiff",
+  "libvers": "0.7.5",
+  "infile": "data/pip/unidiff.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "izulu",
+  "libvers": "0.50.0",
+  "infile": "data/pip/izulu.txt",
+  "dependencies": {}
+}

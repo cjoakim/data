@@ -1,0 +1,6 @@
+{
+  "libname": "libtorrent",
+  "libvers": "2.0.11",
+  "infile": "data/pip/libtorrent.txt",
+  "dependencies": {}
+}

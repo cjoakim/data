@@ -1,0 +1,6 @@
+{
+  "libname": "backports-ssl-match-hostname",
+  "libvers": "3.7.0.1",
+  "infile": "data/pip/backports-ssl-match-hostname.txt",
+  "dependencies": {}
+}

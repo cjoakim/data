@@ -1,0 +1,13 @@
+{
+  "libname": "kucoin-python",
+  "libvers": "1.0.26",
+  "infile": "data/pip/kucoin-python.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0",
+    "websockets": "15.0.1"
+  }
+}

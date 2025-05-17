@@ -1,0 +1,9 @@
+{
+  "libname": "methodtools",
+  "libvers": "0.4.7",
+  "infile": "data/pip/methodtools.txt",
+  "dependencies": {
+    "six": "1.17.0",
+    "wirerope": "1.0.0"
+  }
+}

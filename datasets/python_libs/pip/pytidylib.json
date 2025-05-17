@@ -1,0 +1,6 @@
+{
+  "libname": "pytidylib",
+  "libvers": "0.3.2",
+  "infile": "data/pip/pytidylib.txt",
+  "dependencies": {}
+}

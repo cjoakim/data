@@ -1,0 +1,6 @@
+{
+  "libname": "py-ballisticcalc-exts",
+  "libvers": "2.0.7",
+  "infile": "data/pip/py-ballisticcalc-exts.txt",
+  "dependencies": {}
+}

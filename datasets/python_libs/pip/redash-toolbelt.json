@@ -1,0 +1,13 @@
+{
+  "libname": "redash-toolbelt",
+  "libvers": "0.1.9",
+  "infile": "data/pip/redash-toolbelt.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "autocfg",
+  "libvers": "0.0.8",
+  "infile": "data/pip/autocfg.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

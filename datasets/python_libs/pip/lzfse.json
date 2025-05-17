@@ -1,0 +1,6 @@
+{
+  "libname": "lzfse",
+  "libvers": "0.4.2",
+  "infile": "data/pip/lzfse.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "flaky",
+  "libvers": "3.8.1",
+  "infile": "data/pip/flaky.txt",
+  "dependencies": {}
+}

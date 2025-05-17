@@ -1,0 +1,20 @@
+{
+  "libname": "whylogs",
+  "libvers": "1.6.4",
+  "infile": "data/pip/whylogs.txt",
+  "dependencies": {
+    "backoff": "2.2.1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "platformdirs": "3.11.0",
+    "protobuf": "6.30.2",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "whylabs-client": "0.6.16",
+    "whylogs-sketching": "3.4.1.dev3"
+  }
+}

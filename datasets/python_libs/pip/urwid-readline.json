@@ -1,0 +1,9 @@
+{
+  "libname": "urwid-readline",
+  "libvers": "0.15.1",
+  "infile": "data/pip/urwid-readline.txt",
+  "dependencies": {
+    "urwid": "3.0.2",
+    "wcwidth": "0.2.13"
+  }
+}

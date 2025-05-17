@@ -1,0 +1,14 @@
+{
+  "libname": "tplinkrouterc6u",
+  "libvers": "5.8.0",
+  "infile": "data/pip/tplinkrouterc6u.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "macaddress": "2.0.2",
+    "pycryptodome": "3.22.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "tensorflow-metadata",
+  "libvers": "1.17.1",
+  "infile": "data/pip/tensorflow-metadata.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "googleapis-common-protos": "1.70.0",
+    "protobuf": "5.29.4"
+  }
+}

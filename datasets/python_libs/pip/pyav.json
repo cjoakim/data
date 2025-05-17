@@ -1,0 +1,6 @@
+{
+  "libname": "pyav",
+  "libvers": "14.2.1",
+  "infile": "data/pip/pyav.txt",
+  "dependencies": {}
+}

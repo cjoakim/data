@@ -1,0 +1,10 @@
+{
+  "libname": "symbolic",
+  "libvers": "12.15.5",
+  "infile": "data/pip/symbolic.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "milksnake": "0.1.6",
+    "pycparser": "2.22"
+  }
+}

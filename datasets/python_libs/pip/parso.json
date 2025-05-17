@@ -1,0 +1,6 @@
+{
+  "libname": "parso",
+  "libvers": "0.8.4",
+  "infile": "data/pip/parso.txt",
+  "dependencies": {}
+}

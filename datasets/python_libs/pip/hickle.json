@@ -1,0 +1,9 @@
+{
+  "libname": "hickle",
+  "libvers": "5.0.3",
+  "infile": "data/pip/hickle.txt",
+  "dependencies": {
+    "h5py": "3.13.0",
+    "numpy": "2.2.5"
+  }
+}

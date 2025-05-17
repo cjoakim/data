@@ -1,0 +1,21 @@
+{
+  "libname": "acid-xblock",
+  "libvers": "0.4.1",
+  "infile": "data/pip/acid-xblock.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "fs": "2.4.16",
+    "lazy": "1.6",
+    "lxml": "5.4.0",
+    "mako": "1.3.10",
+    "markupsafe": "3.0.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "simplejson": "3.20.1",
+    "six": "1.17.0",
+    "web-fragments": "3.0.0",
+    "webob": "1.8.9",
+    "xblock": "5.2.0"
+  }
+}

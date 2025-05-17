@@ -1,0 +1,6 @@
+{
+  "libname": "kwonly-args",
+  "libvers": "1.0.10",
+  "infile": "data/pip/kwonly-args.txt",
+  "dependencies": {}
+}

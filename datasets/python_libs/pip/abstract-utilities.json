@@ -1,0 +1,11 @@
+{
+  "libname": "abstract-utilities",
+  "libvers": "0.2.2.185",
+  "infile": "data/pip/abstract-utilities.txt",
+  "dependencies": {
+    "abstract-security": "0.63",
+    "pexpect": "4.9.0",
+    "ptyprocess": "0.7.0",
+    "python-dotenv": "1.1.0"
+  }
+}

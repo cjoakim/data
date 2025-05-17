@@ -1,0 +1,10 @@
+{
+  "libname": "doit",
+  "libvers": "0.36.0",
+  "infile": "data/pip/doit.txt",
+  "dependencies": {
+    "cloudpickle": "3.1.1",
+    "importlib-metadata": "8.7.0",
+    "zipp": "3.21.0"
+  }
+}

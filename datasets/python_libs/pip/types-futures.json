@@ -1,0 +1,6 @@
+{
+  "libname": "types-futures",
+  "libvers": "3.3.8",
+  "infile": "data/pip/types-futures.txt",
+  "dependencies": {}
+}

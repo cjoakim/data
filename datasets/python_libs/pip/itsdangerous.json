@@ -1,0 +1,6 @@
+{
+  "libname": "itsdangerous",
+  "libvers": "2.2.0",
+  "infile": "data/pip/itsdangerous.txt",
+  "dependencies": {}
+}

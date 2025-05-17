@@ -1,0 +1,6 @@
+{
+  "libname": "arro3-core",
+  "libvers": "0.4.6",
+  "infile": "data/pip/arro3-core.txt",
+  "dependencies": {}
+}

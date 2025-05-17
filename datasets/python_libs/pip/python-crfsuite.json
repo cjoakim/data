@@ -1,0 +1,6 @@
+{
+  "libname": "python-crfsuite",
+  "libvers": "0.9.11",
+  "infile": "data/pip/python-crfsuite.txt",
+  "dependencies": {}
+}

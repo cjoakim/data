@@ -1,0 +1,6 @@
+{
+  "libname": "ephemeral-port-reserve",
+  "libvers": "1.1.4",
+  "infile": "data/pip/ephemeral-port-reserve.txt",
+  "dependencies": {}
+}

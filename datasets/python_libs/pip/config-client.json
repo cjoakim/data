@@ -1,0 +1,16 @@
+{
+  "libname": "config-client",
+  "libvers": "1.4.0",
+  "infile": "data/pip/config-client.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "boltons": "25.0.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "face": "24.0.0",
+    "glom": "24.11.0",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

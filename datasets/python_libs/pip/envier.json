@@ -1,0 +1,6 @@
+{
+  "libname": "envier",
+  "libvers": "0.6.1",
+  "infile": "data/pip/envier.txt",
+  "dependencies": {}
+}

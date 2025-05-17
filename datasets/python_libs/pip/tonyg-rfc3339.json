@@ -1,0 +1,6 @@
+{
+  "libname": "tonyg-rfc3339",
+  "libvers": "0.1",
+  "infile": "data/pip/tonyg-rfc3339.txt",
+  "dependencies": {}
+}

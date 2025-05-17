@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-cuda-nvcc-cu12",
+  "libvers": "12.9.41",
+  "infile": "data/pip/nvidia-cuda-nvcc-cu12.txt",
+  "dependencies": {}
+}

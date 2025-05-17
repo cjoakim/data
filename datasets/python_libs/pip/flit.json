@@ -1,0 +1,15 @@
+{
+  "libname": "flit",
+  "libvers": "3.12.0",
+  "infile": "data/pip/flit.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "docutils": "0.21.2",
+    "flit-core": "3.12.0",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "tomli-w": "1.2.0",
+    "urllib3": "2.4.0"
+  }
+}

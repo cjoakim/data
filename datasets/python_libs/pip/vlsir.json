@@ -1,0 +1,8 @@
+{
+  "libname": "vlsir",
+  "libvers": "7.0.0",
+  "infile": "data/pip/vlsir.txt",
+  "dependencies": {
+    "protobuf": "4.25.7"
+  }
+}

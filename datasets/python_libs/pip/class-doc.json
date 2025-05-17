@@ -1,0 +1,8 @@
+{
+  "libname": "class-doc",
+  "libvers": "0.2.6",
+  "infile": "data/pip/class-doc.txt",
+  "dependencies": {
+    "more-itertools": "10.7.0"
+  }
+}

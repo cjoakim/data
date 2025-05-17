@@ -1,0 +1,8 @@
+{
+  "libname": "pygrok",
+  "libvers": "1.0.0",
+  "infile": "data/pip/pygrok.txt",
+  "dependencies": {
+    "regex": "2024.11.6"
+  }
+}

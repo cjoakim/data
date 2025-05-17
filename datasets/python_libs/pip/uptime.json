@@ -1,0 +1,6 @@
+{
+  "libname": "uptime",
+  "libvers": "3.0.1",
+  "infile": "data/pip/uptime.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "zxing-cpp",
+  "libvers": "2.3.0",
+  "infile": "data/pip/zxing-cpp.txt",
+  "dependencies": {}
+}

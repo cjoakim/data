@@ -1,0 +1,9 @@
+{
+  "libname": "python-etcd",
+  "libvers": "0.4.5",
+  "infile": "data/pip/python-etcd.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "urllib3": "2.4.0"
+  }
+}

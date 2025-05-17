@@ -1,0 +1,9 @@
+{
+  "libname": "ecos",
+  "libvers": "2.0.14",
+  "infile": "data/pip/ecos.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

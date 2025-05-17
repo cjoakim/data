@@ -1,0 +1,6 @@
+{
+  "libname": "opengeode-core",
+  "libvers": "15.18.0",
+  "infile": "data/pip/opengeode-core.txt",
+  "dependencies": {}
+}

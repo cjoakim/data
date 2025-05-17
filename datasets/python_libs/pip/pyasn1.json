@@ -1,0 +1,6 @@
+{
+  "libname": "pyasn1",
+  "libvers": "0.6.1",
+  "infile": "data/pip/pyasn1.txt",
+  "dependencies": {}
+}

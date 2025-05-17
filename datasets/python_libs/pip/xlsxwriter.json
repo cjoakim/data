@@ -1,0 +1,6 @@
+{
+  "libname": "xlsxwriter",
+  "libvers": "3.2.3",
+  "infile": "data/pip/xlsxwriter.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "httpcore",
+  "libvers": "1.0.9",
+  "infile": "data/pip/httpcore.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "h11": "0.16.0"
+  }
+}

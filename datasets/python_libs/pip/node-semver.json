@@ -1,0 +1,6 @@
+{
+  "libname": "node-semver",
+  "libvers": "0.9.0",
+  "infile": "data/pip/node-semver.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "urllib3-mock",
+  "libvers": "0.3.3",
+  "infile": "data/pip/urllib3-mock.txt",
+  "dependencies": {}
+}

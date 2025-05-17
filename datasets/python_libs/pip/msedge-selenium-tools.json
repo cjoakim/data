@@ -1,0 +1,9 @@
+{
+  "libname": "msedge-selenium-tools",
+  "libvers": "3.141.4",
+  "infile": "data/pip/msedge-selenium-tools.txt",
+  "dependencies": {
+    "selenium": "3.141.0",
+    "urllib3": "2.4.0"
+  }
+}

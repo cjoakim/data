@@ -1,0 +1,6 @@
+{
+  "libname": "panzi-json-logic",
+  "libvers": "1.0.1",
+  "infile": "data/pip/panzi-json-logic.txt",
+  "dependencies": {}
+}

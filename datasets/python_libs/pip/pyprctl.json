@@ -1,0 +1,6 @@
+{
+  "libname": "pyprctl",
+  "libvers": "0.1.3",
+  "infile": "data/pip/pyprctl.txt",
+  "dependencies": {}
+}

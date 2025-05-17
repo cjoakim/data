@@ -1,0 +1,6 @@
+{
+  "libname": "fastecdsa",
+  "libvers": "3.0.1",
+  "infile": "data/pip/fastecdsa.txt",
+  "dependencies": {}
+}

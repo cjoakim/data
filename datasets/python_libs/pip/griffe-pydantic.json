@@ -1,0 +1,9 @@
+{
+  "libname": "griffe-pydantic",
+  "libvers": "1.1.4",
+  "infile": "data/pip/griffe-pydantic.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "griffe": "1.7.3"
+  }
+}

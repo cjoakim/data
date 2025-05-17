@@ -1,0 +1,6 @@
+{
+  "libname": "evalidate",
+  "libvers": "2.0.5",
+  "infile": "data/pip/evalidate.txt",
+  "dependencies": {}
+}

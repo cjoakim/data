@@ -1,0 +1,6 @@
+{
+  "libname": "usb-devices",
+  "libvers": "0.4.5",
+  "infile": "data/pip/usb-devices.txt",
+  "dependencies": {}
+}

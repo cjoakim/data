@@ -1,0 +1,9 @@
+{
+  "libname": "h2",
+  "libvers": "4.2.0",
+  "infile": "data/pip/h2.txt",
+  "dependencies": {
+    "hpack": "4.1.0",
+    "hyperframe": "6.1.0"
+  }
+}

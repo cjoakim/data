@@ -1,0 +1,10 @@
+{
+  "libname": "mo-parsing",
+  "libvers": "8.675.25037",
+  "infile": "data/pip/mo-parsing.txt",
+  "dependencies": {
+    "mo-dots": "10.672.25036",
+    "mo-future": "7.672.25036",
+    "mo-imports": "7.672.25036"
+  }
+}

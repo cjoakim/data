@@ -1,0 +1,8 @@
+{
+  "libname": "esp-idf-panic-decoder",
+  "libvers": "1.3.0",
+  "infile": "data/pip/esp-idf-panic-decoder.txt",
+  "dependencies": {
+    "pyelftools": "0.32"
+  }
+}

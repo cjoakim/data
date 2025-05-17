@@ -1,0 +1,6 @@
+{
+  "libname": "f90nml",
+  "libvers": "1.4.5",
+  "infile": "data/pip/f90nml.txt",
+  "dependencies": {}
+}

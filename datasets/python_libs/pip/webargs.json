@@ -1,0 +1,9 @@
+{
+  "libname": "webargs",
+  "libvers": "8.7.0",
+  "infile": "data/pip/webargs.txt",
+  "dependencies": {
+    "marshmallow": "4.0.0",
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "python-keycloak-client",
+  "libvers": "0.2.3",
+  "infile": "data/pip/python-keycloak-client.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "ecdsa": "0.19.1",
+    "idna": "3.10",
+    "pyasn1": "0.4.8",
+    "python-jose": "3.4.0",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

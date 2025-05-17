@@ -1,0 +1,6 @@
+{
+  "libname": "profilehooks",
+  "libvers": "1.13.0",
+  "infile": "data/pip/profilehooks.txt",
+  "dependencies": {}
+}

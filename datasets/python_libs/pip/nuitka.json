@@ -1,0 +1,9 @@
+{
+  "libname": "nuitka",
+  "libvers": "2.7",
+  "infile": "data/pip/nuitka.txt",
+  "dependencies": {
+    "ordered-set": "4.1.0",
+    "zstandard": "0.23.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "connection-pool",
+  "libvers": "0.0.3",
+  "infile": "data/pip/connection-pool.txt",
+  "dependencies": {}
+}

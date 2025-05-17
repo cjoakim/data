@@ -1,0 +1,9 @@
+{
+  "libname": "pycaw",
+  "libvers": "20240210",
+  "infile": "data/pip/pycaw.txt",
+  "dependencies": {
+    "comtypes": "1.4.10",
+    "psutil": "7.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "libname": "pytest-ansible",
+  "libvers": "25.4.1",
+  "infile": "data/pip/pytest-ansible.txt",
+  "dependencies": {
+    "ansible-compat": "25.1.5",
+    "ansible-core": "2.18.5",
+    "attrs": "25.3.0",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "iniconfig": "2.1.0",
+    "jinja2": "3.1.6",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "markupsafe": "3.0.2",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pycparser": "2.22",
+    "pytest": "8.3.5",
+    "pyyaml": "6.0.2",
+    "referencing": "0.36.2",
+    "resolvelib": "1.0.1",
+    "rpds-py": "0.24.0",
+    "subprocess-tee": "0.4.2",
+    "typing-extensions": "4.13.2"
+  }
+}

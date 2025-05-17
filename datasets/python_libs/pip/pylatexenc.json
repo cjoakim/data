@@ -1,0 +1,6 @@
+{
+  "libname": "pylatexenc",
+  "libvers": "2.10",
+  "infile": "data/pip/pylatexenc.txt",
+  "dependencies": {}
+}

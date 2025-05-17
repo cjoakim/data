@@ -1,0 +1,32 @@
+{
+  "libname": "qiskit-ibm-provider",
+  "libvers": "0.11.0",
+  "infile": "data/pip/qiskit-ibm-provider.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "dill": "0.4.0",
+    "idna": "3.10",
+    "mpmath": "1.3.0",
+    "numpy": "2.2.5",
+    "pbr": "6.1.1",
+    "pycparser": "2.22",
+    "pyspnego": "0.11.2",
+    "python-dateutil": "2.9.0.post0",
+    "qiskit": "2.0.0",
+    "requests": "2.32.3",
+    "requests-ntlm": "1.3.0",
+    "rustworkx": "0.16.0",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "stevedore": "5.4.1",
+    "symengine": "0.13.0",
+    "sympy": "1.14.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "websocket-client": "1.8.0",
+    "websockets": "15.0.1"
+  }
+}

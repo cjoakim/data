@@ -1,0 +1,10 @@
+{
+  "libname": "miscreant",
+  "libvers": "0.3.0",
+  "infile": "data/pip/miscreant.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22"
+  }
+}

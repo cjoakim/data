@@ -1,0 +1,6 @@
+{
+  "libname": "lameenc",
+  "libvers": "1.8.1",
+  "infile": "data/pip/lameenc.txt",
+  "dependencies": {}
+}

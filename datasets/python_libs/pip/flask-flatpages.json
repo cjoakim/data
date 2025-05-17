@@ -1,0 +1,17 @@
+{
+  "libname": "flask-flatpages",
+  "libvers": "0.8.3",
+  "infile": "data/pip/flask-flatpages.txt",
+  "dependencies": {
+    "blinker": "1.9.0",
+    "click": "8.1.8",
+    "flask": "3.1.0",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "markdown": "3.8",
+    "markupsafe": "3.0.2",
+    "pyyaml": "6.0.2",
+    "six": "1.17.0",
+    "werkzeug": "3.1.3"
+  }
+}

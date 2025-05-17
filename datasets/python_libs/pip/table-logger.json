@@ -1,0 +1,8 @@
+{
+  "libname": "table-logger",
+  "libvers": "0.3.6",
+  "infile": "data/pip/table-logger.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

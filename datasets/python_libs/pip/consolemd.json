@@ -1,0 +1,11 @@
+{
+  "libname": "consolemd",
+  "libvers": "0.5.1",
+  "infile": "data/pip/consolemd.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "commonmark": "0.9.1",
+    "pygments": "2.19.1",
+    "setproctitle": "1.3.6"
+  }
+}

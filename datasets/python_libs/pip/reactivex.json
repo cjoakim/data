@@ -1,0 +1,8 @@
+{
+  "libname": "reactivex",
+  "libvers": "4.0.4",
+  "infile": "data/pip/reactivex.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

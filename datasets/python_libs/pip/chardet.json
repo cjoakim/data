@@ -1,0 +1,6 @@
+{
+  "libname": "chardet",
+  "libvers": "5.2.0",
+  "infile": "data/pip/chardet.txt",
+  "dependencies": {}
+}

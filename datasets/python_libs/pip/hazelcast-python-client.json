@@ -1,0 +1,6 @@
+{
+  "libname": "hazelcast-python-client",
+  "libvers": "5.5.0",
+  "infile": "data/pip/hazelcast-python-client.txt",
+  "dependencies": {}
+}

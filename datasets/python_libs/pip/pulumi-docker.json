@@ -1,0 +1,17 @@
+{
+  "libname": "pulumi-docker",
+  "libvers": "4.6.2",
+  "infile": "data/pip/pulumi-docker.txt",
+  "dependencies": {
+    "arpeggio": "2.0.2",
+    "attrs": "25.3.0",
+    "debugpy": "1.8.14",
+    "dill": "0.4.0",
+    "grpcio": "1.66.2",
+    "parver": "0.5",
+    "protobuf": "4.25.7",
+    "pulumi": "3.167.0",
+    "pyyaml": "6.0.2",
+    "semver": "3.0.4"
+  }
+}

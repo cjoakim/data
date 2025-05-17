@@ -1,0 +1,11 @@
+{
+  "libname": "pyinstaller",
+  "libvers": "6.13.0",
+  "infile": "data/pip/pyinstaller.txt",
+  "dependencies": {
+    "altgraph": "0.17.4",
+    "macholib": "1.16.3",
+    "packaging": "25.0",
+    "pyinstaller-hooks-contrib": "2025.4"
+  }
+}

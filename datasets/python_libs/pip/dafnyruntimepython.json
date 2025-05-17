@@ -1,0 +1,6 @@
+{
+  "libname": "dafnyruntimepython",
+  "libvers": "4.10.0",
+  "infile": "data/pip/dafnyruntimepython.txt",
+  "dependencies": {}
+}

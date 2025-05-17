@@ -1,0 +1,10 @@
+{
+  "libname": "radon",
+  "libvers": "6.0.1",
+  "infile": "data/pip/radon.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "mando": "0.7.1",
+    "six": "1.17.0"
+  }
+}

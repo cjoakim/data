@@ -1,0 +1,10 @@
+{
+  "libname": "referencing",
+  "libvers": "0.36.2",
+  "infile": "data/pip/referencing.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2"
+  }
+}

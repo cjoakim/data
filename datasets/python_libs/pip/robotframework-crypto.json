@@ -1,0 +1,14 @@
+{
+  "libname": "robotframework-crypto",
+  "libvers": "0.4.2",
+  "infile": "data/pip/robotframework-crypto.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "prompt-toolkit": "3.0.51",
+    "pycparser": "2.22",
+    "pynacl": "1.5.0",
+    "questionary": "2.1.0",
+    "robotframework": "7.2.2",
+    "wcwidth": "0.2.13"
+  }
+}

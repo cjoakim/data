@@ -1,0 +1,8 @@
+{
+  "libname": "backports-tempfile",
+  "libvers": "1.0",
+  "infile": "data/pip/backports-tempfile.txt",
+  "dependencies": {
+    "backports-weakref": "1.0.post1"
+  }
+}

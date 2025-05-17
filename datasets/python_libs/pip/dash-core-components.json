@@ -1,0 +1,6 @@
+{
+  "libname": "dash-core-components",
+  "libvers": "2.0.0",
+  "infile": "data/pip/dash-core-components.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,23 @@
+{
+  "libname": "objaverse",
+  "libvers": "0.1.7",
+  "infile": "data/pip/objaverse.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "fsspec": "2025.3.2",
+    "gputil": "1.4.0",
+    "idna": "3.10",
+    "loguru": "0.7.3",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "pyarrow": "20.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "tqdm": "4.67.1",
+    "tzdata": "2025.2",
+    "urllib3": "2.4.0"
+  }
+}

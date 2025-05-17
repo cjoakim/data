@@ -1,0 +1,6 @@
+{
+  "libname": "simplejson",
+  "libvers": "3.20.1",
+  "infile": "data/pip/simplejson.txt",
+  "dependencies": {}
+}

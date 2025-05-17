@@ -1,0 +1,8 @@
+{
+  "libname": "vokativ",
+  "libvers": "1.2.1",
+  "infile": "data/pip/vokativ.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

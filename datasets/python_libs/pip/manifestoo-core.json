@@ -1,0 +1,8 @@
+{
+  "libname": "manifestoo-core",
+  "libvers": "1.8.2",
+  "infile": "data/pip/manifestoo-core.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

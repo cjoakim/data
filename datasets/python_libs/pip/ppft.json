@@ -1,0 +1,6 @@
+{
+  "libname": "ppft",
+  "libvers": "1.7.7",
+  "infile": "data/pip/ppft.txt",
+  "dependencies": {}
+}

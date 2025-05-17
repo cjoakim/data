@@ -1,0 +1,6 @@
+{
+  "libname": "backports-datetime-fromisoformat",
+  "libvers": "2.0.3",
+  "infile": "data/pip/backports-datetime-fromisoformat.txt",
+  "dependencies": {}
+}

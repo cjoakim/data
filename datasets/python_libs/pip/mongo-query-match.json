@@ -1,0 +1,6 @@
+{
+  "libname": "mongo-query-match",
+  "libvers": "2.0.0",
+  "infile": "data/pip/mongo-query-match.txt",
+  "dependencies": {}
+}

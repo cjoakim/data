@@ -1,0 +1,6 @@
+{
+  "libname": "dlib",
+  "libvers": "19.24.8",
+  "infile": "data/pip/dlib.txt",
+  "dependencies": {}
+}

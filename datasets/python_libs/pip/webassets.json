@@ -1,0 +1,6 @@
+{
+  "libname": "webassets",
+  "libvers": "2.0",
+  "infile": "data/pip/webassets.txt",
+  "dependencies": {}
+}

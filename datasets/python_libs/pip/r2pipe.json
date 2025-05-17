@@ -1,0 +1,6 @@
+{
+  "libname": "r2pipe",
+  "libvers": "1.9.4",
+  "infile": "data/pip/r2pipe.txt",
+  "dependencies": {}
+}

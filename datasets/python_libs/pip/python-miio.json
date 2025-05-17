@@ -1,0 +1,33 @@
+{
+  "libname": "python-miio",
+  "libvers": "0.5.12",
+  "infile": "data/pip/python-miio.txt",
+  "dependencies": {
+    "android-backup": "0.2.0",
+    "appdirs": "1.4.4",
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "construct": "2.10.70",
+    "croniter": "6.0.0",
+    "cryptography": "44.0.3",
+    "defusedxml": "0.7.1",
+    "idna": "3.10",
+    "ifaddr": "0.2.0",
+    "micloud": "0.6",
+    "netifaces": "0.11.0",
+    "pycparser": "2.22",
+    "pycryptodome": "3.22.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "tqdm": "4.67.1",
+    "tzlocal": "5.3.1",
+    "urllib3": "2.4.0",
+    "zeroconf": "0.147.0"
+  }
+}

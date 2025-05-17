@@ -1,0 +1,8 @@
+{
+  "libname": "aicspylibczi",
+  "libvers": "3.3.1",
+  "infile": "data/pip/aicspylibczi.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

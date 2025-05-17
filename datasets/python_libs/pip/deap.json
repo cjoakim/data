@@ -1,0 +1,8 @@
+{
+  "libname": "deap",
+  "libvers": "1.4.3",
+  "infile": "data/pip/deap.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

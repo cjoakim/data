@@ -1,0 +1,6 @@
+{
+  "libname": "mock",
+  "libvers": "5.2.0",
+  "infile": "data/pip/mock.txt",
+  "dependencies": {}
+}

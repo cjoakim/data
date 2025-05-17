@@ -1,0 +1,9 @@
+{
+  "libname": "solders",
+  "libvers": "0.26.0",
+  "infile": "data/pip/solders.txt",
+  "dependencies": {
+    "jsonalias": "0.1.1",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "py3dmol",
+  "libvers": "2.4.2",
+  "infile": "data/pip/py3dmol.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "neo4j",
+  "libvers": "5.28.1",
+  "infile": "data/pip/neo4j.txt",
+  "dependencies": {
+    "pytz": "2025.2"
+  }
+}

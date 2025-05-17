@@ -1,0 +1,6 @@
+{
+  "libname": "confusable-homoglyphs",
+  "libvers": "3.3.1",
+  "infile": "data/pip/confusable-homoglyphs.txt",
+  "dependencies": {}
+}

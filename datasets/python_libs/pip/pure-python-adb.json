@@ -1,0 +1,6 @@
+{
+  "libname": "pure-python-adb",
+  "libvers": "0.3.0.dev0",
+  "infile": "data/pip/pure-python-adb.txt",
+  "dependencies": {}
+}

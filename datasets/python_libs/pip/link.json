@@ -1,0 +1,16 @@
+{
+  "libname": "link",
+  "libvers": "2.1.4",
+  "infile": "data/pip/link.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "oauthlib": "3.2.2",
+    "requests": "2.32.3",
+    "requests-oauthlib": "2.0.0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0",
+    "xmltodict": "0.14.2"
+  }
+}

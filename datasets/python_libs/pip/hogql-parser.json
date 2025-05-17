@@ -1,0 +1,6 @@
+{
+  "libname": "hogql-parser",
+  "libvers": "1.1.2",
+  "infile": "data/pip/hogql-parser.txt",
+  "dependencies": {}
+}

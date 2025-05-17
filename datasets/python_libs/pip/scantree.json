@@ -1,0 +1,9 @@
+{
+  "libname": "scantree",
+  "libvers": "0.0.4",
+  "infile": "data/pip/scantree.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "pathspec": "0.12.1"
+  }
+}

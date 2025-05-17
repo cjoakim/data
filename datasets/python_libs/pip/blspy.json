@@ -1,0 +1,8 @@
+{
+  "libname": "blspy",
+  "libvers": "2.0.3",
+  "infile": "data/pip/blspy.txt",
+  "dependencies": {
+    "wheel": "0.45.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "psycopgbinary",
+  "libvers": "0.0.1",
+  "infile": "data/pip/psycopgbinary.txt",
+  "dependencies": {
+    "psycopg2-binary": "2.9.10"
+  }
+}

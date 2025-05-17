@@ -1,0 +1,17 @@
+{
+  "libname": "jedi-language-server",
+  "libvers": "0.45.1",
+  "infile": "data/pip/jedi-language-server.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "cattrs": "24.1.3",
+    "docstring-to-markdown": "0.17",
+    "importlib-metadata": "8.7.0",
+    "jedi": "0.19.2",
+    "lsprotocol": "2023.0.1",
+    "parso": "0.8.4",
+    "pygls": "1.3.1",
+    "typing-extensions": "4.13.2",
+    "zipp": "3.21.0"
+  }
+}

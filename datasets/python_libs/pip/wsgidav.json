@@ -1,0 +1,12 @@
+{
+  "libname": "wsgidav",
+  "libvers": "4.3.3",
+  "infile": "data/pip/wsgidav.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1",
+    "jinja2": "3.1.6",
+    "json5": "0.12.0",
+    "markupsafe": "3.0.2",
+    "pyyaml": "6.0.2"
+  }
+}

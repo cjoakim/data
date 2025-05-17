@@ -1,0 +1,9 @@
+{
+  "libname": "bcdoc",
+  "libvers": "0.16.0",
+  "infile": "data/pip/bcdoc.txt",
+  "dependencies": {
+    "docutils": "0.21.2",
+    "six": "1.17.0"
+  }
+}

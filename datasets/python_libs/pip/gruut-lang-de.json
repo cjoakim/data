@@ -1,0 +1,6 @@
+{
+  "libname": "gruut-lang-de",
+  "libvers": "2.0.1",
+  "infile": "data/pip/gruut-lang-de.txt",
+  "dependencies": {}
+}

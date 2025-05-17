@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-ds",
+  "libvers": "1.38.8",
+  "infile": "data/pip/mypy-boto3-ds.txt",
+  "dependencies": {}
+}

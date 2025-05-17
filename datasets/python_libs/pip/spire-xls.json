@@ -1,0 +1,8 @@
+{
+  "libname": "spire-xls",
+  "libvers": "14.12.0",
+  "infile": "data/pip/spire-xls.txt",
+  "dependencies": {
+    "plum-dispatch": "1.7.4"
+  }
+}

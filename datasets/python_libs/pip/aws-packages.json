@@ -1,0 +1,6 @@
+{
+  "libname": "aws-packages",
+  "libvers": "0.0.25",
+  "infile": "data/pip/aws-packages.txt",
+  "dependencies": {}
+}

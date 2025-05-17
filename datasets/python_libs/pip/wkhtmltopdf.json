@@ -1,0 +1,6 @@
+{
+  "libname": "wkhtmltopdf",
+  "libvers": "0.2",
+  "infile": "data/pip/wkhtmltopdf.txt",
+  "dependencies": {}
+}

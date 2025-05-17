@@ -1,0 +1,15 @@
+{
+  "libname": "pytest-embedded-serial",
+  "libvers": "1.16.1",
+  "infile": "data/pip/pytest-embedded-serial.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pexpect": "4.9.0",
+    "pluggy": "1.5.0",
+    "ptyprocess": "0.7.0",
+    "pyserial": "3.5",
+    "pytest": "8.3.5",
+    "pytest-embedded": "1.16.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "superlance",
+  "libvers": "2.0.0",
+  "infile": "data/pip/superlance.txt",
+  "dependencies": {
+    "supervisor": "4.2.5"
+  }
+}

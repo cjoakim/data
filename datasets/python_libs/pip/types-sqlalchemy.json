@@ -1,0 +1,6 @@
+{
+  "libname": "types-sqlalchemy",
+  "libvers": "1.4.53.38",
+  "infile": "data/pip/types-sqlalchemy.txt",
+  "dependencies": {}
+}

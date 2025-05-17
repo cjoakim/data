@@ -1,0 +1,8 @@
+{
+  "libname": "pynvml",
+  "libvers": "12.0.0",
+  "infile": "data/pip/pynvml.txt",
+  "dependencies": {
+    "nvidia-ml-py": "12.575.51"
+  }
+}

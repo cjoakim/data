@@ -1,0 +1,21 @@
+{
+  "libname": "coveo-stew",
+  "libvers": "3.1.28",
+  "infile": "data/pip/coveo-stew.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "coveo-functools": "2.0.34",
+    "coveo-itertools": "2.0.11",
+    "coveo-styles": "2.1.10",
+    "coveo-systools": "2.0.18",
+    "emoji": "2.14.1",
+    "importlib-resources": "6.5.2",
+    "inflection": "0.5.1",
+    "junit-xml": "1.9",
+    "packaging": "25.0",
+    "six": "1.17.0",
+    "toml": "0.10.2",
+    "tomlkit": "0.13.2",
+    "typing-extensions": "4.13.2"
+  }
+}

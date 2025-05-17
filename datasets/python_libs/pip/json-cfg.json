@@ -1,0 +1,8 @@
+{
+  "libname": "json-cfg",
+  "libvers": "0.4.2",
+  "infile": "data/pip/json-cfg.txt",
+  "dependencies": {
+    "kwonly-args": "1.0.10"
+  }
+}

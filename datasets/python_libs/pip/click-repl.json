@@ -1,0 +1,10 @@
+{
+  "libname": "click-repl",
+  "libvers": "0.3.0",
+  "infile": "data/pip/click-repl.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "prompt-toolkit": "3.0.51",
+    "wcwidth": "0.2.13"
+  }
+}

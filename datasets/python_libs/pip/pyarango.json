@@ -1,0 +1,16 @@
+{
+  "libname": "pyarango",
+  "libvers": "2.1.1",
+  "infile": "data/pip/pyarango.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "datetime": "5.5",
+    "future": "1.0.0",
+    "idna": "3.10",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0",
+    "zope-interface": "7.2"
+  }
+}

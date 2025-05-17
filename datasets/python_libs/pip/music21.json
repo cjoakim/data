@@ -1,0 +1,28 @@
+{
+  "libname": "music21",
+  "libvers": "9.5.0",
+  "infile": "data/pip/music21.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "chardet": "5.2.0",
+    "charset-normalizer": "3.4.2",
+    "contourpy": "1.3.2",
+    "cycler": "0.12.1",
+    "fonttools": "4.57.0",
+    "idna": "3.10",
+    "joblib": "1.5.0",
+    "jsonpickle": "4.0.5",
+    "kiwisolver": "1.4.8",
+    "matplotlib": "3.10.1",
+    "more-itertools": "10.7.0",
+    "numpy": "1.26.4",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "pyparsing": "3.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0",
+    "webcolors": "24.11.1"
+  }
+}

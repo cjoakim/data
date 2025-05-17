@@ -1,0 +1,6 @@
+{
+  "libname": "couchbase",
+  "libvers": "4.3.5",
+  "infile": "data/pip/couchbase.txt",
+  "dependencies": {}
+}

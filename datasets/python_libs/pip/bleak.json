@@ -1,0 +1,11 @@
+{
+  "libname": "bleak",
+  "libvers": "0.22.3",
+  "infile": "data/pip/bleak.txt",
+  "dependencies": {
+    "pyobjc-core": "10.3.2",
+    "pyobjc-framework-cocoa": "10.3.2",
+    "pyobjc-framework-corebluetooth": "10.3.2",
+    "pyobjc-framework-libdispatch": "10.3.2"
+  }
+}

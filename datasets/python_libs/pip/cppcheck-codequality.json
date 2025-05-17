@@ -1,0 +1,8 @@
+{
+  "libname": "cppcheck-codequality",
+  "libvers": "1.4.2",
+  "infile": "data/pip/cppcheck-codequality.txt",
+  "dependencies": {
+    "xmltodict": "0.13.0"
+  }
+}

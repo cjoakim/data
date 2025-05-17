@@ -1,0 +1,8 @@
+{
+  "libname": "mozfile",
+  "libvers": "3.0.0",
+  "infile": "data/pip/mozfile.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

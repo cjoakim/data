@@ -1,0 +1,20 @@
+{
+  "libname": "authzed",
+  "libvers": "1.21.1",
+  "infile": "data/pip/authzed.txt",
+  "dependencies": {
+    "cel-python": "0.2.0",
+    "googleapis-common-protos": "1.70.0",
+    "grpc-interceptor": "0.15.4",
+    "grpcio": "1.71.0",
+    "jmespath": "1.0.1",
+    "lark": "0.12.0",
+    "protobuf": "5.29.4",
+    "protovalidate": "0.7.1",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "six": "1.17.0",
+    "types-python-dateutil": "2.9.0.20241206",
+    "types-pyyaml": "6.0.12.20250402"
+  }
+}

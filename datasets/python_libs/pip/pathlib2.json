@@ -1,0 +1,8 @@
+{
+  "libname": "pathlib2",
+  "libvers": "2.3.7.post1",
+  "infile": "data/pip/pathlib2.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

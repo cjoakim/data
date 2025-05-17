@@ -1,0 +1,6 @@
+{
+  "libname": "more-itertools",
+  "libvers": "10.7.0",
+  "infile": "data/pip/more-itertools.txt",
+  "dependencies": {}
+}

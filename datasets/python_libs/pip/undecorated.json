@@ -1,0 +1,6 @@
+{
+  "libname": "undecorated",
+  "libvers": "0.3.0",
+  "infile": "data/pip/undecorated.txt",
+  "dependencies": {}
+}

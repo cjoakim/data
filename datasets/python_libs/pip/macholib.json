@@ -1,0 +1,8 @@
+{
+  "libname": "macholib",
+  "libvers": "1.16.3",
+  "infile": "data/pip/macholib.txt",
+  "dependencies": {
+    "altgraph": "0.17.4"
+  }
+}

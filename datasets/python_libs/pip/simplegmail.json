@@ -1,0 +1,33 @@
+{
+  "libname": "simplegmail",
+  "libvers": "4.1.1",
+  "infile": "data/pip/simplegmail.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "google-api-core": "2.24.2",
+    "google-api-python-client": "2.169.0",
+    "google-auth": "2.40.1",
+    "google-auth-httplib2": "0.2.0",
+    "googleapis-common-protos": "1.70.0",
+    "httplib2": "0.22.0",
+    "idna": "3.10",
+    "lxml": "5.4.0",
+    "oauth2client": "4.1.3",
+    "proto-plus": "1.26.1",
+    "protobuf": "6.30.2",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pyparsing": "3.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "six": "1.17.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "uritemplate": "4.1.1",
+    "urllib3": "2.4.0"
+  }
+}

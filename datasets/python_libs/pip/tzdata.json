@@ -1,0 +1,6 @@
+{
+  "libname": "tzdata",
+  "libvers": "2025.2",
+  "infile": "data/pip/tzdata.txt",
+  "dependencies": {}
+}

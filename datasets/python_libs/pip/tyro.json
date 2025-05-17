@@ -1,0 +1,15 @@
+{
+  "libname": "tyro",
+  "libvers": "0.9.19",
+  "infile": "data/pip/tyro.txt",
+  "dependencies": {
+    "docstring-parser": "0.16",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "pygments": "2.19.1",
+    "rich": "14.0.0",
+    "shtab": "1.7.2",
+    "typeguard": "4.4.2",
+    "typing-extensions": "4.13.2"
+  }
+}

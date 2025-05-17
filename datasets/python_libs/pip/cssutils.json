@@ -1,0 +1,8 @@
+{
+  "libname": "cssutils",
+  "libvers": "2.11.1",
+  "infile": "data/pip/cssutils.txt",
+  "dependencies": {
+    "more-itertools": "10.7.0"
+  }
+}

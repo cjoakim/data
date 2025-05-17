@@ -1,0 +1,6 @@
+{
+  "libname": "ndeflib",
+  "libvers": "0.3.3",
+  "infile": "data/pip/ndeflib.txt",
+  "dependencies": {}
+}

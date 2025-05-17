@@ -1,0 +1,6 @@
+{
+  "libname": "pymqi",
+  "libvers": "1.12.11",
+  "infile": "data/pip/pymqi.txt",
+  "dependencies": {}
+}

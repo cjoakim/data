@@ -1,0 +1,6 @@
+{
+  "libname": "fnc",
+  "libvers": "0.5.3",
+  "infile": "data/pip/fnc.txt",
+  "dependencies": {}
+}

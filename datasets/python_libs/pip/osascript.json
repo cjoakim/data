@@ -1,0 +1,9 @@
+{
+  "libname": "osascript",
+  "libvers": "2020.12.3",
+  "infile": "data/pip/osascript.txt",
+  "dependencies": {
+    "psutil": "7.0.0",
+    "runcmd": "2020.12.3"
+  }
+}

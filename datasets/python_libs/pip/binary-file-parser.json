@@ -1,0 +1,10 @@
+{
+  "libname": "binary-file-parser",
+  "libvers": "0.2.2",
+  "infile": "data/pip/binary-file-parser.txt",
+  "dependencies": {
+    "about-time": "4.2.1",
+    "alive-progress": "3.2.0",
+    "grapheme": "0.6.0"
+  }
+}

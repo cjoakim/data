@@ -1,0 +1,9 @@
+{
+  "libname": "editor",
+  "libvers": "1.6.6",
+  "infile": "data/pip/editor.txt",
+  "dependencies": {
+    "runs": "1.2.2",
+    "xmod": "1.8.1"
+  }
+}

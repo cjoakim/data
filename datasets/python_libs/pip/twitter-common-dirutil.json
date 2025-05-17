@@ -1,0 +1,8 @@
+{
+  "libname": "twitter-common-dirutil",
+  "libvers": "0.3.11",
+  "infile": "data/pip/twitter-common-dirutil.txt",
+  "dependencies": {
+    "twitter-common-lang": "0.3.11"
+  }
+}

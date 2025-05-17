@@ -1,0 +1,17 @@
+{
+  "libname": "keystoneauth1",
+  "libvers": "5.10.0",
+  "infile": "data/pip/keystoneauth1.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "iso8601": "2.1.0",
+    "os-service-types": "1.7.0",
+    "pbr": "6.1.1",
+    "requests": "2.32.3",
+    "stevedore": "5.4.1",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

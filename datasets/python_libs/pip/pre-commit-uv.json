@@ -1,0 +1,17 @@
+{
+  "libname": "pre-commit-uv",
+  "libvers": "4.1.4",
+  "infile": "data/pip/pre-commit-uv.txt",
+  "dependencies": {
+    "cfgv": "3.4.0",
+    "distlib": "0.3.9",
+    "filelock": "3.18.0",
+    "identify": "2.6.10",
+    "nodeenv": "1.9.1",
+    "platformdirs": "4.3.7",
+    "pre-commit": "4.2.0",
+    "pyyaml": "6.0.2",
+    "uv": "0.7.2",
+    "virtualenv": "20.31.1"
+  }
+}

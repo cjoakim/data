@@ -1,0 +1,6 @@
+{
+  "libname": "func-args",
+  "libvers": "1.0.0",
+  "infile": "data/pip/func-args.txt",
+  "dependencies": {}
+}

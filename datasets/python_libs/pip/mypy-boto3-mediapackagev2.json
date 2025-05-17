@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-mediapackagev2",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-mediapackagev2.txt",
+  "dependencies": {}
+}

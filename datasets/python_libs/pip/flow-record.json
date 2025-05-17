@@ -1,0 +1,8 @@
+{
+  "libname": "flow-record",
+  "libvers": "3.19",
+  "infile": "data/pip/flow-record.txt",
+  "dependencies": {
+    "msgpack": "1.1.0"
+  }
+}

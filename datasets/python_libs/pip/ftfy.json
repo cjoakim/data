@@ -1,0 +1,8 @@
+{
+  "libname": "ftfy",
+  "libvers": "6.3.1",
+  "infile": "data/pip/ftfy.txt",
+  "dependencies": {
+    "wcwidth": "0.2.13"
+  }
+}

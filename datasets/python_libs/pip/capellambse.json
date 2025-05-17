@@ -1,0 +1,21 @@
+{
+  "libname": "capellambse",
+  "libvers": "0.6.16",
+  "infile": "data/pip/capellambse.txt",
+  "dependencies": {
+    "awesomeversion": "24.6.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "diskcache": "5.6.3",
+    "idna": "3.10",
+    "lxml": "5.4.0",
+    "markupsafe": "3.0.2",
+    "pillow": "11.2.1",
+    "platformdirs": "4.3.7",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "svgwrite": "1.4.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

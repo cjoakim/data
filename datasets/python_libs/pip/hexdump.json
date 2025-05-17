@@ -1,0 +1,6 @@
+{
+  "libname": "hexdump",
+  "libvers": "3.3",
+  "infile": "data/pip/hexdump.txt",
+  "dependencies": {}
+}

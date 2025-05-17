@@ -1,0 +1,8 @@
+{
+  "libname": "wasmtime",
+  "libvers": "32.0.0",
+  "infile": "data/pip/wasmtime.txt",
+  "dependencies": {
+    "importlib-resources": "6.5.2"
+  }
+}

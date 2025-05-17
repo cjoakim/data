@@ -1,0 +1,27 @@
+{
+  "libname": "databricks-sqlalchemy",
+  "libvers": "2.0.6",
+  "infile": "data/pip/databricks-sqlalchemy.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "databricks-sql-connector": "4.0.3",
+    "et-xmlfile": "2.0.0",
+    "idna": "3.10",
+    "lz4": "4.4.4",
+    "numpy": "2.2.5",
+    "oauthlib": "3.2.2",
+    "openpyxl": "3.1.5",
+    "pandas": "2.2.3",
+    "pyarrow": "20.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "sqlalchemy": "2.0.40",
+    "thrift": "0.20.0",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "nothing",
+  "libvers": "0.0.3",
+  "infile": "data/pip/nothing.txt",
+  "dependencies": {}
+}

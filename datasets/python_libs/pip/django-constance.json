@@ -1,0 +1,6 @@
+{
+  "libname": "django-constance",
+  "libvers": "4.3.2",
+  "infile": "data/pip/django-constance.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,13 @@
+{
+  "libname": "pytest-profiling",
+  "libvers": "1.8.1",
+  "infile": "data/pip/pytest-profiling.txt",
+  "dependencies": {
+    "gprof2dot": "2025.4.14",
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5",
+    "six": "1.17.0"
+  }
+}

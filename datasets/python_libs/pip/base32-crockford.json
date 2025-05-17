@@ -1,0 +1,6 @@
+{
+  "libname": "base32-crockford",
+  "libvers": "0.3.0",
+  "infile": "data/pip/base32-crockford.txt",
+  "dependencies": {}
+}

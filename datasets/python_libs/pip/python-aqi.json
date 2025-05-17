@@ -1,0 +1,6 @@
+{
+  "libname": "python-aqi",
+  "libvers": "0.6.1",
+  "infile": "data/pip/python-aqi.txt",
+  "dependencies": {}
+}

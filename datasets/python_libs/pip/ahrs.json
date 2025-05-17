@@ -1,0 +1,8 @@
+{
+  "libname": "ahrs",
+  "libvers": "0.3.1",
+  "infile": "data/pip/ahrs.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

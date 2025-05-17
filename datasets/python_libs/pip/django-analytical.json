@@ -1,0 +1,6 @@
+{
+  "libname": "django-analytical",
+  "libvers": "3.1.0",
+  "infile": "data/pip/django-analytical.txt",
+  "dependencies": {}
+}

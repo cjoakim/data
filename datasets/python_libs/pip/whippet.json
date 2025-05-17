@@ -1,0 +1,6 @@
+{
+  "libname": "whippet",
+  "libvers": "0.3.2",
+  "infile": "data/pip/whippet.txt",
+  "dependencies": {}
+}

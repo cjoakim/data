@@ -1,0 +1,8 @@
+{
+  "libname": "pygetwindow",
+  "libvers": "0.0.9",
+  "infile": "data/pip/pygetwindow.txt",
+  "dependencies": {
+    "pyrect": "0.2.0"
+  }
+}

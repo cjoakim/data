@@ -1,0 +1,6 @@
+{
+  "libname": "llm-runner",
+  "libvers": "0.2.10",
+  "infile": "data/pip/llm-runner.txt",
+  "dependencies": {}
+}

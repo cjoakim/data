@@ -1,0 +1,9 @@
+{
+  "libname": "zope-testrunner",
+  "libvers": "7.2",
+  "infile": "data/pip/zope-testrunner.txt",
+  "dependencies": {
+    "zope-exceptions": "5.2",
+    "zope-interface": "7.2"
+  }
+}

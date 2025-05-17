@@ -1,0 +1,20 @@
+{
+  "libname": "apiflask",
+  "libvers": "2.4.0",
+  "infile": "data/pip/apiflask.txt",
+  "dependencies": {
+    "apispec": "6.8.1",
+    "blinker": "1.9.0",
+    "click": "8.1.8",
+    "flask": "3.1.0",
+    "flask-httpauth": "4.8.0",
+    "flask-marshmallow": "1.3.0",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "marshmallow": "4.0.0",
+    "packaging": "25.0",
+    "webargs": "8.7.0",
+    "werkzeug": "3.1.3"
+  }
+}

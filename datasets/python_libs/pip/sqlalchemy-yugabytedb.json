@@ -1,0 +1,10 @@
+{
+  "libname": "sqlalchemy-yugabytedb",
+  "libvers": "1.0.0.1",
+  "infile": "data/pip/sqlalchemy-yugabytedb.txt",
+  "dependencies": {
+    "psycopg2-yugabytedb": "2.9.3.5",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "canmatrix",
+  "libvers": "1.2",
+  "infile": "data/pip/canmatrix.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "click": "8.1.8"
+  }
+}

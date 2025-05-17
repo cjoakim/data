@@ -1,0 +1,6 @@
+{
+  "libname": "colored",
+  "libvers": "2.3.0",
+  "infile": "data/pip/colored.txt",
+  "dependencies": {}
+}

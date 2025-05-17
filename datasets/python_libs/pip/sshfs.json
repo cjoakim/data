@@ -1,0 +1,13 @@
+{
+  "libname": "sshfs",
+  "libvers": "2025.2.0",
+  "infile": "data/pip/sshfs.txt",
+  "dependencies": {
+    "asyncssh": "2.21.0",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "fsspec": "2025.3.2",
+    "pycparser": "2.22",
+    "typing-extensions": "4.13.2"
+  }
+}

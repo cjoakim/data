@@ -1,0 +1,6 @@
+{
+  "libname": "plum-py",
+  "libvers": "0.8.7",
+  "infile": "data/pip/plum-py.txt",
+  "dependencies": {}
+}

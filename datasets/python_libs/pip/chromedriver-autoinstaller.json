@@ -1,0 +1,8 @@
+{
+  "libname": "chromedriver-autoinstaller",
+  "libvers": "0.6.4",
+  "infile": "data/pip/chromedriver-autoinstaller.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "gender-guesser",
+  "libvers": "0.4.0",
+  "infile": "data/pip/gender-guesser.txt",
+  "dependencies": {}
+}

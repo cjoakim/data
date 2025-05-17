@@ -1,0 +1,6 @@
+{
+  "libname": "grpcio",
+  "libvers": "1.71.0",
+  "infile": "data/pip/grpcio.txt",
+  "dependencies": {}
+}

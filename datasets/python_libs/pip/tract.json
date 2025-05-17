@@ -1,0 +1,8 @@
+{
+  "libname": "tract",
+  "libvers": "0.21.12",
+  "infile": "data/pip/tract.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

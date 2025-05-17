@@ -1,0 +1,8 @@
+{
+  "libname": "grpcio-gcp",
+  "libvers": "0.2.2",
+  "infile": "data/pip/grpcio-gcp.txt",
+  "dependencies": {
+    "grpcio": "1.71.0"
+  }
+}

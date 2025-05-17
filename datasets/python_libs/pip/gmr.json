@@ -1,0 +1,9 @@
+{
+  "libname": "gmr",
+  "libvers": "1.6.2",
+  "infile": "data/pip/gmr.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

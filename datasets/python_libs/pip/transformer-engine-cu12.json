@@ -1,0 +1,6 @@
+{
+  "libname": "transformer-engine-cu12",
+  "libvers": "0.0.0",
+  "infile": "data/pip/transformer-engine-cu12.txt",
+  "dependencies": {}
+}

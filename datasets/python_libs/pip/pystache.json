@@ -1,0 +1,6 @@
+{
+  "libname": "pystache",
+  "libvers": "0.6.8",
+  "infile": "data/pip/pystache.txt",
+  "dependencies": {}
+}

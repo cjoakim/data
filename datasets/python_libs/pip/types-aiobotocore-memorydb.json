@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-memorydb",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-memorydb.txt",
+  "dependencies": {}
+}

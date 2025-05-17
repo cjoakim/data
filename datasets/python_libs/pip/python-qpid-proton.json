@@ -1,0 +1,9 @@
+{
+  "libname": "python-qpid-proton",
+  "libvers": "0.39.0",
+  "infile": "data/pip/python-qpid-proton.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

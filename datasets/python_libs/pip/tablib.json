@@ -1,0 +1,6 @@
+{
+  "libname": "tablib",
+  "libvers": "3.8.0",
+  "infile": "data/pip/tablib.txt",
+  "dependencies": {}
+}

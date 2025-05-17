@@ -1,0 +1,6 @@
+{
+  "libname": "zope-interface",
+  "libvers": "7.2",
+  "infile": "data/pip/zope-interface.txt",
+  "dependencies": {}
+}

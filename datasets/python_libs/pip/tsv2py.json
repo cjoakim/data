@@ -1,0 +1,6 @@
+{
+  "libname": "tsv2py",
+  "libvers": "0.7.1",
+  "infile": "data/pip/tsv2py.txt",
+  "dependencies": {}
+}

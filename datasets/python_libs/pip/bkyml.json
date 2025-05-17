@@ -1,0 +1,9 @@
+{
+  "libname": "bkyml",
+  "libvers": "1.4.3",
+  "infile": "data/pip/bkyml.txt",
+  "dependencies": {
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12"
+  }
+}

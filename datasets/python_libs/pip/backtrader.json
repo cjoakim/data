@@ -1,0 +1,6 @@
+{
+  "libname": "backtrader",
+  "libvers": "1.9.78.123",
+  "infile": "data/pip/backtrader.txt",
+  "dependencies": {}
+}

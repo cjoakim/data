@@ -1,0 +1,8 @@
+{
+  "libname": "quantities",
+  "libvers": "0.16.2",
+  "infile": "data/pip/quantities.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "python-chess",
+  "libvers": "1.999",
+  "infile": "data/pip/python-chess.txt",
+  "dependencies": {
+    "chess": "1.11.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pymysqllock",
+  "libvers": "0.2.0",
+  "infile": "data/pip/pymysqllock.txt",
+  "dependencies": {}
+}

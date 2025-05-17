@@ -1,0 +1,12 @@
+{
+  "libname": "tsplib95",
+  "libvers": "0.7.1",
+  "infile": "data/pip/tsplib95.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "deprecated": "1.2.18",
+    "networkx": "2.8.8",
+    "tabulate": "0.8.10",
+    "wrapt": "1.17.2"
+  }
+}

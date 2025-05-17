@@ -1,0 +1,6 @@
+{
+  "libname": "asyncio",
+  "libvers": "3.4.3",
+  "infile": "data/pip/asyncio.txt",
+  "dependencies": {}
+}

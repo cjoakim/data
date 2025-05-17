@@ -1,0 +1,16 @@
+{
+  "libname": "robotframework-jsonlibrary",
+  "libvers": "0.5",
+  "infile": "data/pip/robotframework-jsonlibrary.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonpath-ng": "1.7.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "ply": "3.11",
+    "referencing": "0.36.2",
+    "robotframework": "7.2.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2"
+  }
+}

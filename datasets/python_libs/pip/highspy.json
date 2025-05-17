@@ -1,0 +1,8 @@
+{
+  "libname": "highspy",
+  "libvers": "1.10.0",
+  "infile": "data/pip/highspy.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

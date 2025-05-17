@@ -1,0 +1,6 @@
+{
+  "libname": "expo",
+  "libvers": "0.1.2",
+  "infile": "data/pip/expo.txt",
+  "dependencies": {}
+}

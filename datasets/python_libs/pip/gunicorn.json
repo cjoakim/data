@@ -1,0 +1,8 @@
+{
+  "libname": "gunicorn",
+  "libvers": "23.0.0",
+  "infile": "data/pip/gunicorn.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "olefileio-pl",
+  "libvers": "0.31",
+  "infile": "data/pip/olefileio-pl.txt",
+  "dependencies": {}
+}

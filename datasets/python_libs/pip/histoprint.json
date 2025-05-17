@@ -1,0 +1,10 @@
+{
+  "libname": "histoprint",
+  "libvers": "2.6.0",
+  "infile": "data/pip/histoprint.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "numpy": "2.2.5",
+    "uhi": "0.5.0"
+  }
+}

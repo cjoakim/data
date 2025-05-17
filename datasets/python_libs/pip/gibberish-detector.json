@@ -1,0 +1,6 @@
+{
+  "libname": "gibberish-detector",
+  "libvers": "0.1.1",
+  "infile": "data/pip/gibberish-detector.txt",
+  "dependencies": {}
+}

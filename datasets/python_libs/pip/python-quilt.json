@@ -1,0 +1,8 @@
+{
+  "libname": "python-quilt",
+  "libvers": "1.0",
+  "infile": "data/pip/python-quilt.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

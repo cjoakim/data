@@ -1,0 +1,17 @@
+{
+  "libname": "graphene-sqlalchemy-filter",
+  "libvers": "1.13.0",
+  "infile": "data/pip/graphene-sqlalchemy-filter.txt",
+  "dependencies": {
+    "aniso8601": "7.0.0",
+    "graphene": "2.1.9",
+    "graphene-sqlalchemy": "2.3.0",
+    "graphql-core": "2.3.2",
+    "graphql-relay": "2.0.1",
+    "promise": "2.3",
+    "rx": "1.6.3",
+    "singledispatch": "3.7.0",
+    "six": "1.17.0",
+    "sqlalchemy": "1.4.54"
+  }
+}

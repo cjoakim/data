@@ -1,0 +1,8 @@
+{
+  "libname": "pilkit",
+  "libvers": "3.0",
+  "infile": "data/pip/pilkit.txt",
+  "dependencies": {
+    "pillow": "11.2.1"
+  }
+}

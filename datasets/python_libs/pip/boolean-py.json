@@ -1,0 +1,6 @@
+{
+  "libname": "boolean-py",
+  "libvers": "5.0",
+  "infile": "data/pip/boolean-py.txt",
+  "dependencies": {}
+}

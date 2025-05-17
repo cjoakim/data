@@ -1,0 +1,17 @@
+{
+  "libname": "python-freeipa",
+  "libvers": "1.0.9",
+  "infile": "data/pip/python-freeipa.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "decorator": "5.2.1",
+    "dnspython": "2.7.0",
+    "gssapi": "1.9.0",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "requests-gssapi": "1.3.0",
+    "srvlookup": "3.0.0",
+    "urllib3": "2.4.0"
+  }
+}

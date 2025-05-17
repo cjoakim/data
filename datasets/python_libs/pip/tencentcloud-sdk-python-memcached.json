@@ -1,0 +1,13 @@
+{
+  "libname": "tencentcloud-sdk-python-memcached",
+  "libvers": "3.0.1373",
+  "infile": "data/pip/tencentcloud-sdk-python-memcached.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "tencentcloud-sdk-python-common": "3.0.1373",
+    "urllib3": "2.4.0"
+  }
+}

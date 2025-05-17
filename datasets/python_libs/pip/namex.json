@@ -1,0 +1,6 @@
+{
+  "libname": "namex",
+  "libvers": "0.0.9",
+  "infile": "data/pip/namex.txt",
+  "dependencies": {}
+}

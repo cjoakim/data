@@ -1,0 +1,9 @@
+{
+  "libname": "nosexcover",
+  "libvers": "1.0.11",
+  "infile": "data/pip/nosexcover.txt",
+  "dependencies": {
+    "coverage": "7.8.0",
+    "nose": "1.3.7"
+  }
+}

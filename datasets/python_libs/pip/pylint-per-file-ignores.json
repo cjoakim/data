@@ -1,0 +1,6 @@
+{
+  "libname": "pylint-per-file-ignores",
+  "libvers": "1.4.0",
+  "infile": "data/pip/pylint-per-file-ignores.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "multidict",
+  "libvers": "6.4.3",
+  "infile": "data/pip/multidict.txt",
+  "dependencies": {}
+}

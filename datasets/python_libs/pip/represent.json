@@ -1,0 +1,6 @@
+{
+  "libname": "represent",
+  "libvers": "2.1",
+  "infile": "data/pip/represent.txt",
+  "dependencies": {}
+}

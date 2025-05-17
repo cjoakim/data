@@ -1,0 +1,17 @@
+{
+  "libname": "lightkube",
+  "libvers": "0.17.1",
+  "infile": "data/pip/lightkube.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "certifi": "2025.4.26",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.10",
+    "lightkube-models": "1.32.0.8",
+    "pyyaml": "6.0.2",
+    "sniffio": "1.3.1",
+    "typing-extensions": "4.13.2"
+  }
+}

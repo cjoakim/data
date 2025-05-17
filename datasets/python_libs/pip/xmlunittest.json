@@ -1,0 +1,8 @@
+{
+  "libname": "xmlunittest",
+  "libvers": "1.0.1",
+  "infile": "data/pip/xmlunittest.txt",
+  "dependencies": {
+    "lxml": "5.4.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "climage",
+  "libvers": "0.2.2",
+  "infile": "data/pip/climage.txt",
+  "dependencies": {
+    "kdtree": "0.16",
+    "pillow": "11.2.1"
+  }
+}

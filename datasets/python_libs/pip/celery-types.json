@@ -1,0 +1,8 @@
+{
+  "libname": "celery-types",
+  "libvers": "0.23.0",
+  "infile": "data/pip/celery-types.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

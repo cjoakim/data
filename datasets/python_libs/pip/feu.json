@@ -1,0 +1,8 @@
+{
+  "libname": "feu",
+  "libvers": "0.3.3",
+  "infile": "data/pip/feu.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

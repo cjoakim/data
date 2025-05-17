@@ -1,0 +1,10 @@
+{
+  "libname": "presidio-anonymizer",
+  "libvers": "2.2.358",
+  "infile": "data/pip/presidio-anonymizer.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22"
+  }
+}

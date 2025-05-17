@@ -1,0 +1,10 @@
+{
+  "libname": "stempeg",
+  "libvers": "0.2.3",
+  "infile": "data/pip/stempeg.txt",
+  "dependencies": {
+    "ffmpeg-python": "0.2.0",
+    "future": "1.0.0",
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "keyname",
+  "libvers": "0.6.0",
+  "infile": "data/pip/keyname.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "decorator": "5.2.1",
+    "more-itertools": "10.7.0",
+    "py": "1.11.0",
+    "retry": "0.9.2"
+  }
+}

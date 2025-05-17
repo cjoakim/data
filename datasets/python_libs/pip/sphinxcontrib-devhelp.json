@@ -1,0 +1,6 @@
+{
+  "libname": "sphinxcontrib-devhelp",
+  "libvers": "2.0.0",
+  "infile": "data/pip/sphinxcontrib-devhelp.txt",
+  "dependencies": {}
+}

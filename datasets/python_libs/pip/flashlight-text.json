@@ -1,0 +1,6 @@
+{
+  "libname": "flashlight-text",
+  "libvers": "0.0.7",
+  "infile": "data/pip/flashlight-text.txt",
+  "dependencies": {}
+}

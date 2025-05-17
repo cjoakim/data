@@ -1,0 +1,6 @@
+{
+  "libname": "sarge",
+  "libvers": "0.1.7.post1",
+  "infile": "data/pip/sarge.txt",
+  "dependencies": {}
+}

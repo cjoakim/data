@@ -1,0 +1,12 @@
+{
+  "libname": "pyastronomy",
+  "libvers": "0.22.0",
+  "infile": "data/pip/pyastronomy.txt",
+  "dependencies": {
+    "bidict": "0.23.1",
+    "numpy": "1.26.4",
+    "quantities": "0.16.2",
+    "scipy": "1.15.2",
+    "six": "1.17.0"
+  }
+}

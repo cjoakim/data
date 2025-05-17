@@ -1,0 +1,15 @@
+{
+  "libname": "py2neo-history",
+  "libvers": "2021.2.3",
+  "infile": "data/pip/py2neo-history.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "interchange": "2021.0.4",
+    "monotonic": "1.6",
+    "packaging": "25.0",
+    "pygments": "2.19.1",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

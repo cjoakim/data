@@ -1,0 +1,8 @@
+{
+  "libname": "validate-pyproject",
+  "libvers": "0.24.1",
+  "infile": "data/pip/validate-pyproject.txt",
+  "dependencies": {
+    "fastjsonschema": "2.21.1"
+  }
+}

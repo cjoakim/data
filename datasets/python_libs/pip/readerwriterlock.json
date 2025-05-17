@@ -1,0 +1,8 @@
+{
+  "libname": "readerwriterlock",
+  "libvers": "1.0.9",
+  "infile": "data/pip/readerwriterlock.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

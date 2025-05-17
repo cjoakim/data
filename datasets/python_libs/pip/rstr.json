@@ -1,0 +1,6 @@
+{
+  "libname": "rstr",
+  "libvers": "3.2.2",
+  "infile": "data/pip/rstr.txt",
+  "dependencies": {}
+}

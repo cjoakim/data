@@ -1,0 +1,6 @@
+{
+  "libname": "packaging",
+  "libvers": "25.0",
+  "infile": "data/pip/packaging.txt",
+  "dependencies": {}
+}

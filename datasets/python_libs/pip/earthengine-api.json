@@ -1,0 +1,30 @@
+{
+  "libname": "earthengine-api",
+  "libvers": "1.5.14",
+  "infile": "data/pip/earthengine-api.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "google-api-core": "2.24.2",
+    "google-api-python-client": "2.169.0",
+    "google-auth": "2.40.0",
+    "google-auth-httplib2": "0.2.0",
+    "google-cloud-core": "2.4.3",
+    "google-cloud-storage": "3.1.0",
+    "google-crc32c": "1.7.1",
+    "google-resumable-media": "2.7.2",
+    "googleapis-common-protos": "1.70.0",
+    "httplib2": "0.22.0",
+    "idna": "3.10",
+    "proto-plus": "1.26.1",
+    "protobuf": "6.30.2",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pyparsing": "3.2.3",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "uritemplate": "4.1.1",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "antimeridian",
+  "libvers": "0.4.1",
+  "infile": "data/pip/antimeridian.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "shapely": "2.1.0"
+  }
+}

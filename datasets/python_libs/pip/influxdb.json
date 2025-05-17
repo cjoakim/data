@@ -1,0 +1,16 @@
+{
+  "libname": "influxdb",
+  "libvers": "5.3.2",
+  "infile": "data/pip/influxdb.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "msgpack": "1.1.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

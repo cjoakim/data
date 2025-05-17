@@ -1,0 +1,8 @@
+{
+  "libname": "object-storage-proxy",
+  "libvers": "0.3.11",
+  "infile": "data/pip/object-storage-proxy.txt",
+  "dependencies": {
+    "python-dotenv": "1.1.0"
+  }
+}

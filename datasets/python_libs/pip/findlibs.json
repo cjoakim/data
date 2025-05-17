@@ -1,0 +1,6 @@
+{
+  "libname": "findlibs",
+  "libvers": "0.1.1",
+  "infile": "data/pip/findlibs.txt",
+  "dependencies": {}
+}

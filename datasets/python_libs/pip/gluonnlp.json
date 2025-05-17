@@ -1,0 +1,10 @@
+{
+  "libname": "gluonnlp",
+  "libvers": "0.10.0",
+  "infile": "data/pip/gluonnlp.txt",
+  "dependencies": {
+    "cython": "3.0.12",
+    "numpy": "2.2.5",
+    "packaging": "25.0"
+  }
+}

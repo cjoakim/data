@@ -1,0 +1,9 @@
+{
+  "libname": "awslambdaric",
+  "libvers": "3.0.2",
+  "infile": "data/pip/awslambdaric.txt",
+  "dependencies": {
+    "simplejson": "3.20.1",
+    "snapshot-restore-py": "1.0.0"
+  }
+}

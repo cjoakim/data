@@ -1,0 +1,6 @@
+{
+  "libname": "simplegeneric",
+  "libvers": "0.8.1",
+  "infile": "data/pip/simplegeneric.txt",
+  "dependencies": {}
+}

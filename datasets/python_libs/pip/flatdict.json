@@ -1,0 +1,6 @@
+{
+  "libname": "flatdict",
+  "libvers": "4.0.1",
+  "infile": "data/pip/flatdict.txt",
+  "dependencies": {}
+}

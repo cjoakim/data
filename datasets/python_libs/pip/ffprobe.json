@@ -1,0 +1,6 @@
+{
+  "libname": "ffprobe",
+  "libvers": "0.5",
+  "infile": "data/pip/ffprobe.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "asyncpg-stubs",
+  "libvers": "0.30.1",
+  "infile": "data/pip/asyncpg-stubs.txt",
+  "dependencies": {
+    "asyncpg": "0.30.0",
+    "typing-extensions": "4.13.2"
+  }
+}

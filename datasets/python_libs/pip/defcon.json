@@ -1,0 +1,12 @@
+{
+  "libname": "defcon",
+  "libvers": "0.12.1",
+  "infile": "data/pip/defcon.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "fonttools[ufo,unicode]": "4.57.0",
+    "fs": "2.4.16",
+    "six": "1.17.0",
+    "unicodedata2": "16.0.0"
+  }
+}

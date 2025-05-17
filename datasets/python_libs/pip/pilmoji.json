@@ -1,0 +1,9 @@
+{
+  "libname": "pilmoji",
+  "libvers": "2.0.4",
+  "infile": "data/pip/pilmoji.txt",
+  "dependencies": {
+    "emoji": "2.14.1",
+    "pillow": "11.2.1"
+  }
+}

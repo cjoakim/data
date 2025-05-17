@@ -1,0 +1,6 @@
+{
+  "libname": "applescript",
+  "libvers": "2021.2.9",
+  "infile": "data/pip/applescript.txt",
+  "dependencies": {}
+}

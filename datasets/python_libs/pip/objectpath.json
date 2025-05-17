@@ -1,0 +1,6 @@
+{
+  "libname": "objectpath",
+  "libvers": "0.6.1",
+  "infile": "data/pip/objectpath.txt",
+  "dependencies": {}
+}

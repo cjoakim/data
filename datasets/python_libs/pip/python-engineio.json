@@ -1,0 +1,10 @@
+{
+  "libname": "python-engineio",
+  "libvers": "4.12.0",
+  "infile": "data/pip/python-engineio.txt",
+  "dependencies": {
+    "h11": "0.16.0",
+    "simple-websocket": "1.1.0",
+    "wsproto": "1.2.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "aider-install",
+  "libvers": "0.1.3",
+  "infile": "data/pip/aider-install.txt",
+  "dependencies": {
+    "uv": "0.7.2"
+  }
+}

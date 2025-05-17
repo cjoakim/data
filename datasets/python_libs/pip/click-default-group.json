@@ -1,0 +1,8 @@
+{
+  "libname": "click-default-group",
+  "libvers": "1.2.4",
+  "infile": "data/pip/click-default-group.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

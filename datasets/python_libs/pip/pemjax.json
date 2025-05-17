@@ -1,0 +1,8 @@
+{
+  "libname": "pemjax",
+  "libvers": "0.2.1",
+  "infile": "data/pip/pemjax.txt",
+  "dependencies": {
+    "find-libpython": "0.4.0"
+  }
+}

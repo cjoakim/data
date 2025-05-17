@@ -1,0 +1,9 @@
+{
+  "libname": "html5lib",
+  "libvers": "1.1",
+  "infile": "data/pip/html5lib.txt",
+  "dependencies": {
+    "six": "1.17.0",
+    "webencodings": "0.5.1"
+  }
+}

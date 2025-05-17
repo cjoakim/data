@@ -1,0 +1,16 @@
+{
+  "libname": "strawberry-graphql-django",
+  "libvers": "0.59.1",
+  "infile": "data/pip/strawberry-graphql-django.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2.1",
+    "graphql-core": "3.2.6",
+    "packaging": "25.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "sqlparse": "0.5.3",
+    "strawberry-graphql": "0.266.1",
+    "typing-extensions": "4.13.2"
+  }
+}

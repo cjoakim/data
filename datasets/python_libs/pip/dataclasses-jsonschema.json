@@ -1,0 +1,15 @@
+{
+  "libname": "dataclasses-jsonschema",
+  "libvers": "2.16.0",
+  "infile": "data/pip/dataclasses-jsonschema.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "python-dateutil": "2.9.0.post0",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2"
+  }
+}

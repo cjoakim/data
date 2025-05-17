@@ -1,0 +1,10 @@
+{
+  "libname": "chialisp-builder",
+  "libvers": "0.1.2",
+  "infile": "data/pip/chialisp-builder.txt",
+  "dependencies": {
+    "clvm-tools-rs": "0.2.0",
+    "importlib-resources": "6.5.2",
+    "runtime-builder": "0.1.5"
+  }
+}

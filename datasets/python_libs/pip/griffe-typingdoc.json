@@ -1,0 +1,10 @@
+{
+  "libname": "griffe-typingdoc",
+  "libvers": "0.2.8",
+  "infile": "data/pip/griffe-typingdoc.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "griffe": "1.7.3",
+    "typing-extensions": "4.13.2"
+  }
+}

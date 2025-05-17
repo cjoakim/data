@@ -1,0 +1,15 @@
+{
+  "libname": "webexteamssdk",
+  "libvers": "1.7",
+  "infile": "data/pip/webexteamssdk.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "future": "1.0.0",
+    "idna": "3.10",
+    "pyjwt": "1.7.1",
+    "requests": "2.32.3",
+    "requests-toolbelt": "1.0.0",
+    "urllib3": "2.4.0"
+  }
+}

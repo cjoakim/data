@@ -1,0 +1,24 @@
+{
+  "libname": "google-gax",
+  "libvers": "0.16.0",
+  "infile": "data/pip/google-gax.txt",
+  "dependencies": {
+    "cachetools": "4.2.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "dill": "0.2.9",
+    "future": "0.16.0",
+    "google-auth": "1.35.0",
+    "googleapis-common-protos": "1.70.0",
+    "grpcio": "1.72.0rc1",
+    "idna": "3.10",
+    "ply": "3.8",
+    "protobuf": "3.20.3",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pybcj",
+  "libvers": "1.0.6",
+  "infile": "data/pip/pybcj.txt",
+  "dependencies": {}
+}

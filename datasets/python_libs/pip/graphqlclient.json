@@ -1,0 +1,8 @@
+{
+  "libname": "graphqlclient",
+  "libvers": "0.2.4",
+  "infile": "data/pip/graphqlclient.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

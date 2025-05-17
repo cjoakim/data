@@ -1,0 +1,27 @@
+{
+  "libname": "microsoft-kiota-http",
+  "libvers": "1.9.3",
+  "infile": "data/pip/microsoft-kiota-http.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "certifi": "2025.4.26",
+    "deprecated": "1.2.18",
+    "h11": "0.16.0",
+    "h2": "4.2.0",
+    "hpack": "4.1.0",
+    "httpcore": "1.0.9",
+    "httpx[http2]": "0.28.1",
+    "hyperframe": "6.1.0",
+    "idna": "3.10",
+    "importlib-metadata": "8.6.1",
+    "microsoft-kiota-abstractions": "1.9.3",
+    "opentelemetry-api": "1.32.1",
+    "opentelemetry-sdk": "1.32.1",
+    "opentelemetry-semantic-conventions": "0.53b1",
+    "sniffio": "1.3.1",
+    "std-uritemplate": "2.0.3",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2",
+    "zipp": "3.21.0"
+  }
+}

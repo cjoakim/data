@@ -1,0 +1,11 @@
+{
+  "libname": "pint",
+  "libvers": "0.24.4",
+  "infile": "data/pip/pint.txt",
+  "dependencies": {
+    "flexcache": "0.3",
+    "flexparser": "0.4",
+    "platformdirs": "4.3.7",
+    "typing-extensions": "4.13.2"
+  }
+}

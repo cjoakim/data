@@ -1,0 +1,6 @@
+{
+  "libname": "google-trans-new",
+  "libvers": "1.1.9",
+  "infile": "data/pip/google-trans-new.txt",
+  "dependencies": {}
+}

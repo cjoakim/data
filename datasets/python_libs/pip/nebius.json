@@ -1,0 +1,17 @@
+{
+  "libname": "nebius",
+  "libvers": "0.2.28",
+  "infile": "data/pip/nebius.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "googleapis-common-protos": "1.70.0",
+    "grpcio": "1.71.0",
+    "grpcio-status": "1.71.0",
+    "protobuf": "5.29.4",
+    "pycparser": "2.22",
+    "pyjwt": "2.10.1",
+    "pyyaml": "6.0.2"
+  }
+}

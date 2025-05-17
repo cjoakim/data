@@ -1,0 +1,8 @@
+{
+  "libname": "dora-rs",
+  "libvers": "0.3.11",
+  "infile": "data/pip/dora-rs.txt",
+  "dependencies": {
+    "pyarrow": "20.0.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "dbf",
+  "libvers": "0.99.10",
+  "infile": "data/pip/dbf.txt",
+  "dependencies": {
+    "aenum": "3.1.16"
+  }
+}

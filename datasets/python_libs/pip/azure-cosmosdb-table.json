@@ -1,0 +1,20 @@
+{
+  "libname": "azure-cosmosdb-table",
+  "libvers": "1.0.6",
+  "infile": "data/pip/azure-cosmosdb-table.txt",
+  "dependencies": {
+    "azure-common": "1.1.28",
+    "azure-cosmosdb-nspkg": "2.0.2",
+    "azure-nspkg": "3.0.2",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "pycparser": "2.22",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

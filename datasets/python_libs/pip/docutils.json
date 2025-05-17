@@ -1,0 +1,6 @@
+{
+  "libname": "docutils",
+  "libvers": "0.21.2",
+  "infile": "data/pip/docutils.txt",
+  "dependencies": {}
+}

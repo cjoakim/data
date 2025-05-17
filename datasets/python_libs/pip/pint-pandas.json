@@ -1,0 +1,18 @@
+{
+  "libname": "pint-pandas",
+  "libvers": "0.7.1",
+  "infile": "data/pip/pint-pandas.txt",
+  "dependencies": {
+    "flexcache": "0.3",
+    "flexparser": "0.4",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "pint": "0.24.4",
+    "platformdirs": "4.3.7",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "napari-plugin-engine",
+  "libvers": "0.2.0",
+  "infile": "data/pip/napari-plugin-engine.txt",
+  "dependencies": {}
+}

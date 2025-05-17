@@ -1,0 +1,6 @@
+{
+  "libname": "pysubs2",
+  "libvers": "1.8.0",
+  "infile": "data/pip/pysubs2.txt",
+  "dependencies": {}
+}

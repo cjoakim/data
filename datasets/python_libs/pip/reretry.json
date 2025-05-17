@@ -1,0 +1,6 @@
+{
+  "libname": "reretry",
+  "libvers": "0.11.8",
+  "infile": "data/pip/reretry.txt",
+  "dependencies": {}
+}

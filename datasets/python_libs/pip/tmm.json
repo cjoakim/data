@@ -1,0 +1,6 @@
+{
+  "libname": "tmm",
+  "libvers": "0.2.0",
+  "infile": "data/pip/tmm.txt",
+  "dependencies": {}
+}

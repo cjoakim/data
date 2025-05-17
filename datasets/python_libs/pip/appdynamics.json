@@ -1,0 +1,6 @@
+{
+  "libname": "appdynamics",
+  "libvers": "25.1.0.7425",
+  "infile": "data/pip/appdynamics.txt",
+  "dependencies": {}
+}

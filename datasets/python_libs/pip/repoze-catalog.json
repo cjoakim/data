@@ -1,0 +1,26 @@
+{
+  "libname": "repoze-catalog",
+  "libvers": "0.9.0",
+  "infile": "data/pip/repoze-catalog.txt",
+  "dependencies": {
+    "btrees": "6.1",
+    "cffi": "1.17.1",
+    "persistent": "6.1.1",
+    "pycparser": "2.22",
+    "transaction": "5.0",
+    "zc-lockfile": "3.0.post1",
+    "zconfig": "4.2",
+    "zdaemon": "5.1",
+    "zeo": "6.0.0",
+    "zodb": "6.0.1",
+    "zodb3": "3.11.0",
+    "zodbpickle": "4.2",
+    "zope-component": "6.0",
+    "zope-deferredimport": "5.0",
+    "zope-event": "5.0",
+    "zope-hookable": "7.0",
+    "zope-index": "7.0",
+    "zope-interface": "7.2",
+    "zope-proxy": "6.1"
+  }
+}

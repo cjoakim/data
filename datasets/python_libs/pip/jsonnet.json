@@ -1,0 +1,6 @@
+{
+  "libname": "jsonnet",
+  "libvers": "0.20.0",
+  "infile": "data/pip/jsonnet.txt",
+  "dependencies": {}
+}

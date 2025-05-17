@@ -1,0 +1,9 @@
+{
+  "libname": "argbind",
+  "libvers": "0.3.9",
+  "infile": "data/pip/argbind.txt",
+  "dependencies": {
+    "docstring-parser": "0.16",
+    "pyyaml": "6.0.2"
+  }
+}

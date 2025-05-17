@@ -1,0 +1,26 @@
+{
+  "libname": "ldaptor",
+  "libvers": "21.2.0",
+  "infile": "data/pip/ldaptor.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "automat": "25.4.16",
+    "cffi": "1.17.1",
+    "constantly": "23.10.4",
+    "cryptography": "44.0.3",
+    "hyperlink": "21.0.0",
+    "idna": "3.10",
+    "incremental": "24.7.2",
+    "passlib": "1.7.4",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pycparser": "2.22",
+    "pyopenssl": "25.0.0",
+    "pyparsing": "3.2.3",
+    "service-identity": "24.2.0",
+    "six": "1.17.0",
+    "twisted[tls]": "24.11.0",
+    "typing-extensions": "4.13.2",
+    "zope-interface": "7.2"
+  }
+}

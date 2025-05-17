@@ -1,0 +1,6 @@
+{
+  "libname": "types-pymysql",
+  "libvers": "1.1.0.20241103",
+  "infile": "data/pip/types-pymysql.txt",
+  "dependencies": {}
+}

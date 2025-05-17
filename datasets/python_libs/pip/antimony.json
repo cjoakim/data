@@ -1,0 +1,6 @@
+{
+  "libname": "antimony",
+  "libvers": "2.15.0",
+  "infile": "data/pip/antimony.txt",
+  "dependencies": {}
+}

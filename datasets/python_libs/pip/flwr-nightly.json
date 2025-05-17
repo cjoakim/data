@@ -1,0 +1,32 @@
+{
+  "libname": "flwr-nightly",
+  "libvers": "1.19.0.dev20250505",
+  "infile": "data/pip/flwr-nightly.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "cryptography": "44.0.3",
+    "grpcio": "1.71.0",
+    "idna": "3.10",
+    "iterators": "0.0.2",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "numpy": "2.2.5",
+    "pathspec": "0.12.1",
+    "protobuf": "4.25.7",
+    "pycparser": "2.22",
+    "pycryptodome": "3.22.0",
+    "pygments": "2.19.1",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "rich": "13.9.4",
+    "shellingham": "1.5.4",
+    "tomli": "2.2.1",
+    "tomli-w": "1.2.0",
+    "typer": "0.12.5",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

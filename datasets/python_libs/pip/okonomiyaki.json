@@ -1,0 +1,6 @@
+{
+  "libname": "okonomiyaki",
+  "libvers": "3.0.0",
+  "infile": "data/pip/okonomiyaki.txt",
+  "dependencies": {}
+}

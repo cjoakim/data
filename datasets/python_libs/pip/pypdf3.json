@@ -1,0 +1,8 @@
+{
+  "libname": "pypdf3",
+  "libvers": "1.0.6",
+  "infile": "data/pip/pypdf3.txt",
+  "dependencies": {
+    "tqdm": "4.67.1"
+  }
+}

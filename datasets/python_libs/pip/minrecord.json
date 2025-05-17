@@ -1,0 +1,8 @@
+{
+  "libname": "minrecord",
+  "libvers": "0.1.0",
+  "infile": "data/pip/minrecord.txt",
+  "dependencies": {
+    "coola": "0.8.7"
+  }
+}

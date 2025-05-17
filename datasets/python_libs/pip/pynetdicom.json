@@ -1,0 +1,8 @@
+{
+  "libname": "pynetdicom",
+  "libvers": "2.1.1",
+  "infile": "data/pip/pynetdicom.txt",
+  "dependencies": {
+    "pydicom": "2.4.4"
+  }
+}

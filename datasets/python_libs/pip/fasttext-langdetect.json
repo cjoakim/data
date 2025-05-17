@@ -1,0 +1,15 @@
+{
+  "libname": "fasttext-langdetect",
+  "libvers": "1.0.5",
+  "infile": "data/pip/fasttext-langdetect.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "fasttext": "0.9.3",
+    "idna": "3.10",
+    "numpy": "2.2.5",
+    "pybind11": "2.13.6",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

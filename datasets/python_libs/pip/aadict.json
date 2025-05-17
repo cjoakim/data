@@ -1,0 +1,8 @@
+{
+  "libname": "aadict",
+  "libvers": "0.2.3",
+  "infile": "data/pip/aadict.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

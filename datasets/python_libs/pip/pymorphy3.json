@@ -1,0 +1,9 @@
+{
+  "libname": "pymorphy3",
+  "libvers": "2.0.3",
+  "infile": "data/pip/pymorphy3.txt",
+  "dependencies": {
+    "dawg2-python": "0.9.0",
+    "pymorphy3-dicts-ru": "2.4.417150.4580142"
+  }
+}

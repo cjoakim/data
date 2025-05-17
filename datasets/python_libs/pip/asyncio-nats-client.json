@@ -1,0 +1,6 @@
+{
+  "libname": "asyncio-nats-client",
+  "libvers": "0.11.5",
+  "infile": "data/pip/asyncio-nats-client.txt",
+  "dependencies": {}
+}

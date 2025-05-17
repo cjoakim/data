@@ -1,0 +1,6 @@
+{
+  "libname": "pyxirr",
+  "libvers": "0.10.6",
+  "infile": "data/pip/pyxirr.txt",
+  "dependencies": {}
+}

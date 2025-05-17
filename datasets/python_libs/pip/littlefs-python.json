@@ -1,0 +1,6 @@
+{
+  "libname": "littlefs-python",
+  "libvers": "0.13.3",
+  "infile": "data/pip/littlefs-python.txt",
+  "dependencies": {}
+}

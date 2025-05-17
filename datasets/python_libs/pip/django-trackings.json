@@ -1,0 +1,11 @@
+{
+  "libname": "django-trackings",
+  "libvers": "0.7.0a1",
+  "infile": "data/pip/django-trackings.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "django-filter": "25.1",
+    "sqlparse": "0.5.3"
+  }
+}

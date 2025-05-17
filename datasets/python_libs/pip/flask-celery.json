@@ -1,0 +1,28 @@
+{
+  "libname": "flask-celery",
+  "libvers": "2.4.3",
+  "infile": "data/pip/flask-celery.txt",
+  "dependencies": {
+    "amqp": "5.3.1",
+    "billiard": "4.2.1",
+    "blinker": "1.9.0",
+    "celery": "5.5.2",
+    "click": "8.1.8",
+    "click-didyoumean": "0.3.1",
+    "click-plugins": "1.1.1",
+    "click-repl": "0.3.0",
+    "flask": "3.1.0",
+    "flask-script": "2.0.6",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "kombu": "5.5.3",
+    "markupsafe": "3.0.2",
+    "prompt-toolkit": "3.0.51",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "tzdata": "2025.2",
+    "vine": "5.1.0",
+    "wcwidth": "0.2.13",
+    "werkzeug": "3.1.3"
+  }
+}

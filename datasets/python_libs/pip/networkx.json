@@ -1,0 +1,6 @@
+{
+  "libname": "networkx",
+  "libvers": "3.4.2",
+  "infile": "data/pip/networkx.txt",
+  "dependencies": {}
+}

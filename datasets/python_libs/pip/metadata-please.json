@@ -1,0 +1,9 @@
+{
+  "libname": "metadata-please",
+  "libvers": "0.2.1",
+  "infile": "data/pip/metadata-please.txt",
+  "dependencies": {
+    "configparser": "7.2.0",
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "libname": "grep-ast",
+  "libvers": "0.8.1",
+  "infile": "data/pip/grep-ast.txt",
+  "dependencies": {
+    "pathspec": "0.12.1",
+    "tree-sitter": "0.24.0",
+    "tree-sitter-c-sharp": "0.23.1",
+    "tree-sitter-embedded-template": "0.23.2",
+    "tree-sitter-language-pack": "0.7.2",
+    "tree-sitter-yaml": "0.7.0"
+  }
+}

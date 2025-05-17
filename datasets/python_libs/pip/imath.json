@@ -1,0 +1,6 @@
+{
+  "libname": "imath",
+  "libvers": "0.0.2",
+  "infile": "data/pip/imath.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "jiter",
+  "libvers": "0.9.0",
+  "infile": "data/pip/jiter.txt",
+  "dependencies": {}
+}

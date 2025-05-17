@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-apprunner",
+  "libvers": "1.38.2",
+  "infile": "data/pip/mypy-boto3-apprunner.txt",
+  "dependencies": {}
+}

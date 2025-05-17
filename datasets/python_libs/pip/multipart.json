@@ -1,0 +1,6 @@
+{
+  "libname": "multipart",
+  "libvers": "1.2.1",
+  "infile": "data/pip/multipart.txt",
+  "dependencies": {}
+}

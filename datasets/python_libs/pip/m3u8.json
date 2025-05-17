@@ -1,0 +1,6 @@
+{
+  "libname": "m3u8",
+  "libvers": "6.0.0",
+  "infile": "data/pip/m3u8.txt",
+  "dependencies": {}
+}

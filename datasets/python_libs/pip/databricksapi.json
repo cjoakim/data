@@ -1,0 +1,6 @@
+{
+  "libname": "databricksapi",
+  "libvers": "1.1.8",
+  "infile": "data/pip/databricksapi.txt",
+  "dependencies": {}
+}

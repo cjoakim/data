@@ -1,0 +1,6 @@
+{
+  "libname": "xvfbwrapper",
+  "libvers": "0.2.13",
+  "infile": "data/pip/xvfbwrapper.txt",
+  "dependencies": {}
+}

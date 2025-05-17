@@ -1,0 +1,8 @@
+{
+  "libname": "pyspin",
+  "libvers": "1.1.1",
+  "infile": "data/pip/pyspin.txt",
+  "dependencies": {
+    "futures": "3.0.5"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "case-conversion",
+  "libvers": "2.1.0",
+  "infile": "data/pip/case-conversion.txt",
+  "dependencies": {
+    "regex": "2024.11.6"
+  }
+}

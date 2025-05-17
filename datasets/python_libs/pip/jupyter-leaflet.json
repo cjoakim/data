@@ -1,0 +1,6 @@
+{
+  "libname": "jupyter-leaflet",
+  "libvers": "0.19.2",
+  "infile": "data/pip/jupyter-leaflet.txt",
+  "dependencies": {}
+}

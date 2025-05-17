@@ -1,0 +1,12 @@
+{
+  "libname": "aws-lambda-env-modeler",
+  "libvers": "2.0.0",
+  "infile": "data/pip/aws-lambda-env-modeler.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

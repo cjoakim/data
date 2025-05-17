@@ -1,0 +1,6 @@
+{
+  "libname": "delta",
+  "libvers": "0.4.2",
+  "infile": "data/pip/delta.txt",
+  "dependencies": {}
+}

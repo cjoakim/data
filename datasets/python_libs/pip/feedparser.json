@@ -1,0 +1,8 @@
+{
+  "libname": "feedparser",
+  "libvers": "6.0.11",
+  "infile": "data/pip/feedparser.txt",
+  "dependencies": {
+    "sgmllib3k": "1.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "robotframework",
+  "libvers": "7.2.2",
+  "infile": "data/pip/robotframework.txt",
+  "dependencies": {}
+}

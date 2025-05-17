@@ -1,0 +1,12 @@
+{
+  "libname": "pytest-cache",
+  "libvers": "1.0",
+  "infile": "data/pip/pytest-cache.txt",
+  "dependencies": {
+    "execnet": "2.1.1",
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5"
+  }
+}

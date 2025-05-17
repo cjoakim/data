@@ -1,0 +1,6 @@
+{
+  "libname": "ruamel-yaml-clib",
+  "libvers": "0.2.12",
+  "infile": "data/pip/ruamel-yaml-clib.txt",
+  "dependencies": {}
+}

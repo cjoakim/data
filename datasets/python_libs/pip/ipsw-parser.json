@@ -1,0 +1,26 @@
+{
+  "libname": "ipsw-parser",
+  "libvers": "1.4.1",
+  "infile": "data/pip/ipsw-parser.txt",
+  "dependencies": {
+    "apple-compress": "0.2.3",
+    "asn1": "2.8.0",
+    "cached-property": "2.0.1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "coloredlogs": "15.0.1",
+    "construct": "2.10.70",
+    "enum-compat": "0.0.3",
+    "humanfriendly": "10.0",
+    "idna": "3.10",
+    "loguru": "0.7.3",
+    "plumbum": "1.9.0",
+    "pycryptodome": "3.22.0",
+    "pyimg4": "0.8.8",
+    "pylzss": "0.3.4",
+    "remotezip2": "0.0.2",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

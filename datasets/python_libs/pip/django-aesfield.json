@@ -1,0 +1,14 @@
+{
+  "libname": "django-aesfield",
+  "libvers": "4.0.0",
+  "infile": "data/pip/django-aesfield.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "django": "4.2.20",
+    "m2secret-py3": "1.3",
+    "pycparser": "2.22",
+    "sqlparse": "0.5.3"
+  }
+}

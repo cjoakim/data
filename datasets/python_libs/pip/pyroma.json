@@ -1,0 +1,18 @@
+{
+  "libname": "pyroma",
+  "libvers": "4.2",
+  "infile": "data/pip/pyroma.txt",
+  "dependencies": {
+    "build": "1.2.2.post1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "docutils": "0.21.2",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "pygments": "2.19.1",
+    "pyproject-hooks": "1.2.0",
+    "requests": "2.32.3",
+    "trove-classifiers": "2025.5.1.12",
+    "urllib3": "2.4.0"
+  }
+}

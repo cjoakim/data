@@ -1,0 +1,6 @@
+{
+  "libname": "git-filter-repo",
+  "libvers": "2.47.0",
+  "infile": "data/pip/git-filter-repo.txt",
+  "dependencies": {}
+}

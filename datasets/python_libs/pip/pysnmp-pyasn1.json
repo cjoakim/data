@@ -1,0 +1,6 @@
+{
+  "libname": "pysnmp-pyasn1",
+  "libvers": "1.1.3",
+  "infile": "data/pip/pysnmp-pyasn1.txt",
+  "dependencies": {}
+}

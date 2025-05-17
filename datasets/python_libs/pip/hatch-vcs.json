@@ -1,0 +1,13 @@
+{
+  "libname": "hatch-vcs",
+  "libvers": "0.4.0",
+  "infile": "data/pip/hatch-vcs.txt",
+  "dependencies": {
+    "hatchling": "1.27.0",
+    "packaging": "25.0",
+    "pathspec": "0.12.1",
+    "pluggy": "1.5.0",
+    "setuptools-scm": "8.3.1",
+    "trove-classifiers": "2025.5.1.12"
+  }
+}

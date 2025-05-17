@@ -1,0 +1,6 @@
+{
+  "libname": "simsimd",
+  "libvers": "6.2.1",
+  "infile": "data/pip/simsimd.txt",
+  "dependencies": {}
+}

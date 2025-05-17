@@ -1,0 +1,8 @@
+{
+  "libname": "wquantiles",
+  "libvers": "0.6",
+  "infile": "data/pip/wquantiles.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

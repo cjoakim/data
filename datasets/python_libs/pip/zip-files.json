@@ -1,0 +1,8 @@
+{
+  "libname": "zip-files",
+  "libvers": "0.4.1",
+  "infile": "data/pip/zip-files.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

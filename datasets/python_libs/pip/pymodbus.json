@@ -1,0 +1,6 @@
+{
+  "libname": "pymodbus",
+  "libvers": "3.9.2",
+  "infile": "data/pip/pymodbus.txt",
+  "dependencies": {}
+}

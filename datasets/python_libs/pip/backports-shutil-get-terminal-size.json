@@ -1,0 +1,6 @@
+{
+  "libname": "backports-shutil-get-terminal-size",
+  "libvers": "1.0.0",
+  "infile": "data/pip/backports-shutil-get-terminal-size.txt",
+  "dependencies": {}
+}

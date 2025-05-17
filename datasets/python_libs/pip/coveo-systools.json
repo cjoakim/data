@@ -1,0 +1,10 @@
+{
+  "libname": "coveo-systools",
+  "libvers": "2.0.18",
+  "infile": "data/pip/coveo-systools.txt",
+  "dependencies": {
+    "coveo-functools": "2.0.34",
+    "inflection": "0.5.1",
+    "typing-extensions": "4.13.2"
+  }
+}

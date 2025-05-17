@@ -1,0 +1,6 @@
+{
+  "libname": "toml-fmt-common",
+  "libvers": "1.0.1",
+  "infile": "data/pip/toml-fmt-common.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "backports-strenum",
+  "libvers": "1.2.8",
+  "infile": "data/pip/backports-strenum.txt",
+  "dependencies": {}
+}

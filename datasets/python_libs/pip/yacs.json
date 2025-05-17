@@ -1,0 +1,8 @@
+{
+  "libname": "yacs",
+  "libvers": "0.1.8",
+  "infile": "data/pip/yacs.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

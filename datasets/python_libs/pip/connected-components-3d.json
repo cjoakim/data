@@ -1,0 +1,8 @@
+{
+  "libname": "connected-components-3d",
+  "libvers": "3.23.0",
+  "infile": "data/pip/connected-components-3d.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

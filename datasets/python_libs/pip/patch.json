@@ -1,0 +1,6 @@
+{
+  "libname": "patch",
+  "libvers": "1.16",
+  "infile": "data/pip/patch.txt",
+  "dependencies": {}
+}

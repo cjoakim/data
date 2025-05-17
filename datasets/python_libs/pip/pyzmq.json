@@ -1,0 +1,6 @@
+{
+  "libname": "pyzmq",
+  "libvers": "26.4.0",
+  "infile": "data/pip/pyzmq.txt",
+  "dependencies": {}
+}

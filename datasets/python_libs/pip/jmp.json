@@ -1,0 +1,8 @@
+{
+  "libname": "jmp",
+  "libvers": "0.0.4",
+  "infile": "data/pip/jmp.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

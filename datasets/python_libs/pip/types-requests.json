@@ -1,0 +1,8 @@
+{
+  "libname": "types-requests",
+  "libvers": "2.32.0.20250328",
+  "infile": "data/pip/types-requests.txt",
+  "dependencies": {
+    "urllib3": "2.4.0"
+  }
+}

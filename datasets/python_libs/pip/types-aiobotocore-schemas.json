@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-schemas",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-schemas.txt",
+  "dependencies": {}
+}

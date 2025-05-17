@@ -1,0 +1,17 @@
+{
+  "libname": "aioesphomeapi",
+  "libvers": "30.2.0",
+  "infile": "data/pip/aioesphomeapi.txt",
+  "dependencies": {
+    "aiohappyeyeballs": "2.6.1",
+    "async-interrupt": "1.2.2",
+    "cffi": "1.17.1",
+    "chacha20poly1305-reuseable": "0.13.2",
+    "cryptography": "44.0.3",
+    "ifaddr": "0.2.0",
+    "noiseprotocol": "0.3.1",
+    "protobuf": "6.30.2",
+    "pycparser": "2.22",
+    "zeroconf": "0.147.0"
+  }
+}

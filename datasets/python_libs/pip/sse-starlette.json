@@ -1,0 +1,12 @@
+{
+  "libname": "sse-starlette",
+  "libvers": "2.3.4",
+  "infile": "data/pip/sse-starlette.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "idna": "3.10",
+    "sniffio": "1.3.1",
+    "starlette": "0.46.2",
+    "typing-extensions": "4.13.2"
+  }
+}

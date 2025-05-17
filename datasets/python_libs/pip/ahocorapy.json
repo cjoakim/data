@@ -1,0 +1,8 @@
+{
+  "libname": "ahocorapy",
+  "libvers": "1.6.2",
+  "infile": "data/pip/ahocorapy.txt",
+  "dependencies": {
+    "future": "1.0.0"
+  }
+}

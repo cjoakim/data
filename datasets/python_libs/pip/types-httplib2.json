@@ -1,0 +1,6 @@
+{
+  "libname": "types-httplib2",
+  "libvers": "0.22.0.20250401",
+  "infile": "data/pip/types-httplib2.txt",
+  "dependencies": {}
+}

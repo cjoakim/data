@@ -1,0 +1,14 @@
+{
+  "libname": "hal9",
+  "libvers": "2.8.16",
+  "infile": "data/pip/hal9.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "configparser": "7.1.0",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

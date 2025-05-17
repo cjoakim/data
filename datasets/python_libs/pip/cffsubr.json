@@ -1,0 +1,8 @@
+{
+  "libname": "cffsubr",
+  "libvers": "0.3.0",
+  "infile": "data/pip/cffsubr.txt",
+  "dependencies": {
+    "fonttools": "4.57.0"
+  }
+}

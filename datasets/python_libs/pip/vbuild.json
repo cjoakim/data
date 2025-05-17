@@ -1,0 +1,8 @@
+{
+  "libname": "vbuild",
+  "libvers": "0.8.2",
+  "infile": "data/pip/vbuild.txt",
+  "dependencies": {
+    "pscript": "0.7.7"
+  }
+}

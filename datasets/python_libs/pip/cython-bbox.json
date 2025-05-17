@@ -1,0 +1,9 @@
+{
+  "libname": "cython-bbox",
+  "libvers": "0.1.5",
+  "infile": "data/pip/cython-bbox.txt",
+  "dependencies": {
+    "cython": "3.0.12",
+    "numpy": "2.2.5"
+  }
+}

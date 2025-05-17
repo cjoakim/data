@@ -1,0 +1,6 @@
+{
+  "libname": "bracex",
+  "libvers": "2.5.post1",
+  "infile": "data/pip/bracex.txt",
+  "dependencies": {}
+}

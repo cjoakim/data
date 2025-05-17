@@ -1,0 +1,12 @@
+{
+  "libname": "dist-meta",
+  "libvers": "0.9.0",
+  "infile": "data/pip/dist-meta.txt",
+  "dependencies": {
+    "domdf-python-tools": "3.10.0",
+    "handy-archives": "0.2.0",
+    "natsort": "8.4.0",
+    "packaging": "25.0",
+    "typing-extensions": "4.13.2"
+  }
+}

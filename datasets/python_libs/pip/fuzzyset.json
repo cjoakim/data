@@ -1,0 +1,10 @@
+{
+  "libname": "fuzzyset",
+  "libvers": "0.1.2",
+  "infile": "data/pip/fuzzyset.txt",
+  "dependencies": {
+    "levenshtein": "0.21.1",
+    "python-levenshtein": "0.21.1",
+    "rapidfuzz": "3.13.0"
+  }
+}

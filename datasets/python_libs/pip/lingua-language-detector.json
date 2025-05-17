@@ -1,0 +1,6 @@
+{
+  "libname": "lingua-language-detector",
+  "libvers": "2.1.0",
+  "infile": "data/pip/lingua-language-detector.txt",
+  "dependencies": {}
+}

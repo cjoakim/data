@@ -1,0 +1,6 @@
+{
+  "libname": "blkinfo",
+  "libvers": "0.2.0",
+  "infile": "data/pip/blkinfo.txt",
+  "dependencies": {}
+}

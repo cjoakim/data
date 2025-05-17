@@ -1,0 +1,13 @@
+{
+  "libname": "odc-geo",
+  "libvers": "0.4.10",
+  "infile": "data/pip/odc-geo.txt",
+  "dependencies": {
+    "affine": "2.4.0",
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "numpy": "2.2.5",
+    "pyproj": "3.7.1",
+    "shapely": "2.1.0"
+  }
+}

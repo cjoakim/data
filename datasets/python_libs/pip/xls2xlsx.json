@@ -1,0 +1,28 @@
+{
+  "libname": "xls2xlsx",
+  "libvers": "0.2.0",
+  "infile": "data/pip/xls2xlsx.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "certifi": "2025.4.26",
+    "chardet": "5.2.0",
+    "charset-normalizer": "3.4.2",
+    "cssutils": "2.11.1",
+    "currency-symbols": "2.0.3",
+    "et-xmlfile": "2.0.0",
+    "fonttools": "4.57.0",
+    "idna": "3.10",
+    "more-itertools": "10.7.0",
+    "openpyxl": "3.1.5",
+    "pillow": "11.2.1",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "webcolors": "24.11.1",
+    "xlrd": "2.0.1"
+  }
+}

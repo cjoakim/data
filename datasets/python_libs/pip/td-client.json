@@ -1,0 +1,11 @@
+{
+  "libname": "td-client",
+  "libvers": "1.3.0",
+  "infile": "data/pip/td-client.txt",
+  "dependencies": {
+    "msgpack": "1.1.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

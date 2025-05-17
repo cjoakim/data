@@ -1,0 +1,15 @@
+{
+  "libname": "ciscoconfparse",
+  "libvers": "1.9.52",
+  "infile": "data/pip/ciscoconfparse.txt",
+  "dependencies": {
+    "deprecated": "1.2.18",
+    "dnspython": "2.7.0",
+    "hier-config": "2.2.3",
+    "loguru": "0.7.2",
+    "passlib": "1.7.4",
+    "pyyaml": "6.0.2",
+    "toml": "0.10.2",
+    "wrapt": "1.17.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "aiojobs",
+  "libvers": "1.4.0",
+  "infile": "data/pip/aiojobs.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "superqt",
+  "libvers": "0.7.3",
+  "infile": "data/pip/superqt.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "pygments": "2.19.1",
+    "qtpy": "2.4.3",
+    "typing-extensions": "4.13.2"
+  }
+}

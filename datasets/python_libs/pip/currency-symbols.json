@@ -1,0 +1,6 @@
+{
+  "libname": "currency-symbols",
+  "libvers": "2.0.3",
+  "infile": "data/pip/currency-symbols.txt",
+  "dependencies": {}
+}

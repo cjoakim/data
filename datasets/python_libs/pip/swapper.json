@@ -1,0 +1,6 @@
+{
+  "libname": "swapper",
+  "libvers": "1.4.0",
+  "infile": "data/pip/swapper.txt",
+  "dependencies": {}
+}

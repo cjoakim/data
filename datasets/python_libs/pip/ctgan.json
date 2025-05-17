@@ -1,0 +1,29 @@
+{
+  "libname": "ctgan",
+  "libvers": "0.11.0",
+  "infile": "data/pip/ctgan.txt",
+  "dependencies": {
+    "faker": "37.1.0",
+    "filelock": "3.18.0",
+    "fsspec": "2025.3.2",
+    "jinja2": "3.1.6",
+    "joblib": "1.5.0",
+    "markupsafe": "3.0.2",
+    "mpmath": "1.3.0",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "rdt": "1.16.0",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "sympy": "1.14.0",
+    "threadpoolctl": "3.6.0",
+    "torch": "2.7.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-ecr-public",
+  "libvers": "1.38.6",
+  "infile": "data/pip/mypy-boto3-ecr-public.txt",
+  "dependencies": {}
+}

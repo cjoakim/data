@@ -1,0 +1,16 @@
+{
+  "libname": "pyvi",
+  "libvers": "0.1.1",
+  "infile": "data/pip/pyvi.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "numpy": "2.2.5",
+    "python-crfsuite": "0.9.11",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "sklearn-crfsuite": "0.5.0",
+    "tabulate": "0.9.0",
+    "threadpoolctl": "3.6.0",
+    "tqdm": "4.67.1"
+  }
+}

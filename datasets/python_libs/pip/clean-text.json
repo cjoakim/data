@@ -1,0 +1,10 @@
+{
+  "libname": "clean-text",
+  "libvers": "0.6.0",
+  "infile": "data/pip/clean-text.txt",
+  "dependencies": {
+    "emoji": "1.7.0",
+    "ftfy": "6.3.1",
+    "wcwidth": "0.2.13"
+  }
+}

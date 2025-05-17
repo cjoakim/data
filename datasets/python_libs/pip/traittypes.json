@@ -1,0 +1,8 @@
+{
+  "libname": "traittypes",
+  "libvers": "0.2.1",
+  "infile": "data/pip/traittypes.txt",
+  "dependencies": {
+    "traitlets": "5.14.3"
+  }
+}

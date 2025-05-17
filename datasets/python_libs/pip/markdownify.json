@@ -1,0 +1,11 @@
+{
+  "libname": "markdownify",
+  "libvers": "1.1.0",
+  "infile": "data/pip/markdownify.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "six": "1.17.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2"
+  }
+}

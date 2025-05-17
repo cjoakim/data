@@ -1,0 +1,13 @@
+{
+  "libname": "igittigitt",
+  "libvers": "2.1.5",
+  "infile": "data/pip/igittigitt.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "bracex": "2.5.post1",
+    "cli-exit-tools": "1.2.7",
+    "click": "8.1.8",
+    "lib-detect-testenv": "2.0.8",
+    "wcmatch": "10.0"
+  }
+}

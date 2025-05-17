@@ -1,0 +1,6 @@
+{
+  "libname": "termcolor",
+  "libvers": "3.1.0",
+  "infile": "data/pip/termcolor.txt",
+  "dependencies": {}
+}

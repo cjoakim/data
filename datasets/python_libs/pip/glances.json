@@ -1,0 +1,10 @@
+{
+  "libname": "glances",
+  "libvers": "4.3.1",
+  "infile": "data/pip/glances.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1",
+    "packaging": "25.0",
+    "psutil": "7.0.0"
+  }
+}

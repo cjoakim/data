@@ -1,0 +1,6 @@
+{
+  "libname": "awsipranges",
+  "libvers": "0.3.3",
+  "infile": "data/pip/awsipranges.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,14 @@
+{
+  "libname": "ringcentral",
+  "libvers": "0.9.1",
+  "infile": "data/pip/ringcentral.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "observable": "0.3.2",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0",
+    "websockets": "12.0"
+  }
+}

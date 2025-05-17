@@ -1,0 +1,6 @@
+{
+  "libname": "attributes-doc",
+  "libvers": "0.4.0",
+  "infile": "data/pip/attributes-doc.txt",
+  "dependencies": {}
+}

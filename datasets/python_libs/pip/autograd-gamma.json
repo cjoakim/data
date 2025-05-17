@@ -1,0 +1,10 @@
+{
+  "libname": "autograd-gamma",
+  "libvers": "0.5.0",
+  "infile": "data/pip/autograd-gamma.txt",
+  "dependencies": {
+    "autograd": "1.8.0",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

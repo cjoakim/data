@@ -1,0 +1,6 @@
+{
+  "libname": "tkinterdnd2",
+  "libvers": "0.4.3",
+  "infile": "data/pip/tkinterdnd2.txt",
+  "dependencies": {}
+}

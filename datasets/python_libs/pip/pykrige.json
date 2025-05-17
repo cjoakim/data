@@ -1,0 +1,9 @@
+{
+  "libname": "pykrige",
+  "libvers": "1.7.2",
+  "infile": "data/pip/pykrige.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

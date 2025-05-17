@@ -1,0 +1,6 @@
+{
+  "libname": "typos",
+  "libvers": "1.32.0",
+  "infile": "data/pip/typos.txt",
+  "dependencies": {}
+}

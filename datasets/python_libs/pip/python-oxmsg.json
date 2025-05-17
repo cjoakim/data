@@ -1,0 +1,10 @@
+{
+  "libname": "python-oxmsg",
+  "libvers": "0.0.2",
+  "infile": "data/pip/python-oxmsg.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "olefile": "0.47",
+    "typing-extensions": "4.13.2"
+  }
+}

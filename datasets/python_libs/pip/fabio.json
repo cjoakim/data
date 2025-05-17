@@ -1,0 +1,12 @@
+{
+  "libname": "fabio",
+  "libvers": "2024.9.0",
+  "infile": "data/pip/fabio.txt",
+  "dependencies": {
+    "h5py": "3.13.0",
+    "hdf5plugin": "5.1.0",
+    "lxml": "5.4.0",
+    "numpy": "2.2.5",
+    "pillow": "11.2.1"
+  }
+}

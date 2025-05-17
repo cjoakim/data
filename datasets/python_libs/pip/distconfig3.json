@@ -1,0 +1,6 @@
+{
+  "libname": "distconfig3",
+  "libvers": "1.0.1",
+  "infile": "data/pip/distconfig3.txt",
+  "dependencies": {}
+}

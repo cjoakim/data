@@ -1,0 +1,11 @@
+{
+  "libname": "sknw",
+  "libvers": "0.15",
+  "infile": "data/pip/sknw.txt",
+  "dependencies": {
+    "llvmlite": "0.44.0",
+    "networkx": "3.4.2",
+    "numba": "0.61.2",
+    "numpy": "2.2.5"
+  }
+}

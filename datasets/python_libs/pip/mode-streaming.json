@@ -1,0 +1,13 @@
+{
+  "libname": "mode-streaming",
+  "libvers": "0.4.1",
+  "infile": "data/pip/mode-streaming.txt",
+  "dependencies": {
+    "colorlog": "6.9.0",
+    "croniter": "2.0.7",
+    "mypy-extensions": "1.1.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0"
+  }
+}

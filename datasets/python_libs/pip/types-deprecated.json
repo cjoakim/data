@@ -1,0 +1,6 @@
+{
+  "libname": "types-deprecated",
+  "libvers": "1.2.15.20250304",
+  "infile": "data/pip/types-deprecated.txt",
+  "dependencies": {}
+}

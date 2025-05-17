@@ -1,0 +1,8 @@
+{
+  "libname": "eql",
+  "libvers": "0.9.19",
+  "infile": "data/pip/eql.txt",
+  "dependencies": {
+    "lark-parser": "0.12.0"
+  }
+}

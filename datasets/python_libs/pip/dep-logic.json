@@ -1,0 +1,8 @@
+{
+  "libname": "dep-logic",
+  "libvers": "0.5.0",
+  "infile": "data/pip/dep-logic.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

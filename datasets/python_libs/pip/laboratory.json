@@ -1,0 +1,6 @@
+{
+  "libname": "laboratory",
+  "libvers": "1.0.2",
+  "infile": "data/pip/laboratory.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "kfp-dsl",
+  "libvers": "2.1.2",
+  "infile": "data/pip/kfp-dsl.txt",
+  "dependencies": {}
+}

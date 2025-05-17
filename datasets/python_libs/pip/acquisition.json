@@ -1,0 +1,9 @@
+{
+  "libname": "acquisition",
+  "libvers": "6.1",
+  "infile": "data/pip/acquisition.txt",
+  "dependencies": {
+    "extensionclass": "6.0",
+    "zope-interface": "7.2"
+  }
+}

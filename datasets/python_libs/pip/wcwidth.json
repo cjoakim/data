@@ -1,0 +1,6 @@
+{
+  "libname": "wcwidth",
+  "libvers": "0.2.13",
+  "infile": "data/pip/wcwidth.txt",
+  "dependencies": {}
+}

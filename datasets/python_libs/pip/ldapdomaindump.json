@@ -1,0 +1,10 @@
+{
+  "libname": "ldapdomaindump",
+  "libvers": "0.10.0",
+  "infile": "data/pip/ldapdomaindump.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "ldap3": "2.9.1",
+    "pyasn1": "0.6.1"
+  }
+}

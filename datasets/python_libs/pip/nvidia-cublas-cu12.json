@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-cublas-cu12",
+  "libvers": "12.9.0.13",
+  "infile": "data/pip/nvidia-cublas-cu12.txt",
+  "dependencies": {}
+}

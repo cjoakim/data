@@ -1,0 +1,6 @@
+{
+  "libname": "pyaes",
+  "libvers": "1.6.1",
+  "infile": "data/pip/pyaes.txt",
+  "dependencies": {}
+}

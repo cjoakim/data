@@ -1,0 +1,8 @@
+{
+  "libname": "oyaml",
+  "libvers": "1.0",
+  "infile": "data/pip/oyaml.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

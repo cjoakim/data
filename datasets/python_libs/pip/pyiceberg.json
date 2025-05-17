@@ -1,0 +1,31 @@
+{
+  "libname": "pyiceberg",
+  "libvers": "0.9.1",
+  "infile": "data/pip/pyiceberg.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "fsspec": "2025.3.2",
+    "idna": "3.10",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "mmh3": "5.1.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pygments": "2.19.1",
+    "pyparsing": "3.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "rich": "13.9.4",
+    "six": "1.17.0",
+    "sortedcontainers": "2.4.0",
+    "strictyaml": "1.7.3",
+    "tenacity": "9.1.2",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "urllib3": "2.4.0"
+  }
+}

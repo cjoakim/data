@@ -1,0 +1,6 @@
+{
+  "libname": "fixtures",
+  "libvers": "4.2.5",
+  "infile": "data/pip/fixtures.txt",
+  "dependencies": {}
+}

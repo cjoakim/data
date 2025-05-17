@@ -1,0 +1,25 @@
+{
+  "libname": "parsl",
+  "libvers": "2025.5.5",
+  "infile": "data/pip/parsl.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "dill": "0.4.0",
+    "filelock": "3.18.0",
+    "globus-sdk": "3.56.0",
+    "idna": "3.10",
+    "psutil": "7.0.0",
+    "pycparser": "2.22",
+    "pyjwt[crypto]": "2.10.1",
+    "pyzmq": "26.4.0",
+    "requests": "2.32.3",
+    "setproctitle": "1.3.6",
+    "tblib": "3.1.0",
+    "typeguard": "4.4.2",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

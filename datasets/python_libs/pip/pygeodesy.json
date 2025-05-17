@@ -1,0 +1,6 @@
+{
+  "libname": "pygeodesy",
+  "libvers": "25.5.5",
+  "infile": "data/pip/pygeodesy.txt",
+  "dependencies": {}
+}

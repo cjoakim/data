@@ -1,0 +1,17 @@
+{
+  "libname": "sqladmin",
+  "libvers": "0.20.1",
+  "infile": "data/pip/sqladmin.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "idna": "3.10",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "python-multipart": "0.0.20",
+    "sniffio": "1.3.1",
+    "sqlalchemy": "2.0.40",
+    "starlette": "0.46.2",
+    "typing-extensions": "4.13.2",
+    "wtforms": "3.1.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "logmuse",
+  "libvers": "0.2.8",
+  "infile": "data/pip/logmuse.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,13 @@
+{
+  "libname": "dockq",
+  "libvers": "2.1.3",
+  "infile": "data/pip/dockq.txt",
+  "dependencies": {
+    "biopython": "1.85",
+    "colorama": "0.4.6",
+    "networkx": "3.4.2",
+    "numpy": "1.26.4",
+    "parallelbar": "2.5",
+    "tqdm": "4.67.1"
+  }
+}

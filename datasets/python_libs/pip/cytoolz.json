@@ -1,0 +1,8 @@
+{
+  "libname": "cytoolz",
+  "libvers": "1.0.1",
+  "infile": "data/pip/cytoolz.txt",
+  "dependencies": {
+    "toolz": "1.0.0"
+  }
+}

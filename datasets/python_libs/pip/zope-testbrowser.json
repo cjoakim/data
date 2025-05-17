@@ -1,0 +1,19 @@
+{
+  "libname": "zope-testbrowser",
+  "libvers": "7.0.1",
+  "infile": "data/pip/zope-testbrowser.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "pytz": "2025.2",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2",
+    "waitress": "3.0.2",
+    "webob": "1.8.9",
+    "webtest": "3.0.4",
+    "wsgiproxy2": "0.5.1",
+    "zope-cachedescriptors": "5.1",
+    "zope-event": "5.0",
+    "zope-interface": "7.2",
+    "zope-schema": "7.0.1"
+  }
+}

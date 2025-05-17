@@ -1,0 +1,6 @@
+{
+  "libname": "minify-html",
+  "libvers": "0.16.4",
+  "infile": "data/pip/minify-html.txt",
+  "dependencies": {}
+}

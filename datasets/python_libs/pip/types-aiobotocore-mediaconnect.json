@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-mediaconnect",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-mediaconnect.txt",
+  "dependencies": {}
+}

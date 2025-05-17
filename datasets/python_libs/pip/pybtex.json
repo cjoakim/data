@@ -1,0 +1,10 @@
+{
+  "libname": "pybtex",
+  "libvers": "0.24.0",
+  "infile": "data/pip/pybtex.txt",
+  "dependencies": {
+    "latexcodec": "3.0.0",
+    "pyyaml": "6.0.2",
+    "six": "1.17.0"
+  }
+}

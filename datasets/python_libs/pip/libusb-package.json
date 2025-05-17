@@ -1,0 +1,8 @@
+{
+  "libname": "libusb-package",
+  "libvers": "1.0.26.3",
+  "infile": "data/pip/libusb-package.txt",
+  "dependencies": {
+    "importlib-resources": "6.5.2"
+  }
+}

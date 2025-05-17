@@ -1,0 +1,16 @@
+{
+  "libname": "pyqldb",
+  "libvers": "3.2.4",
+  "infile": "data/pip/pyqldb.txt",
+  "dependencies": {
+    "amazon-ion": "0.9.3",
+    "boto3": "1.38.10",
+    "botocore": "1.38.10",
+    "ionhash": "1.2.1",
+    "jmespath": "1.0.1",
+    "python-dateutil": "2.9.0.post0",
+    "s3transfer": "0.12.0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

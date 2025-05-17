@@ -1,0 +1,10 @@
+{
+  "libname": "colour-runner",
+  "libvers": "0.1.1",
+  "infile": "data/pip/colour-runner.txt",
+  "dependencies": {
+    "blessings": "1.7",
+    "pygments": "2.19.1",
+    "six": "1.17.0"
+  }
+}

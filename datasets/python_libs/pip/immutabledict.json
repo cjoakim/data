@@ -1,0 +1,6 @@
+{
+  "libname": "immutabledict",
+  "libvers": "4.2.1",
+  "infile": "data/pip/immutabledict.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,19 @@
+{
+  "libname": "openedx-django-wiki",
+  "libvers": "3.1.0",
+  "infile": "data/pip/openedx-django-wiki.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "bleach[css]": "6.2.0",
+    "django": "5.2",
+    "django-classy-tags": "4.1.0",
+    "django-js-asset": "3.1.2",
+    "django-mptt": "0.17.0",
+    "django-sekizai": "4.1.0",
+    "markdown": "3.8",
+    "sorl-thumbnail": "12.11.0",
+    "sqlparse": "0.5.3",
+    "tinycss2": "1.4.0",
+    "webencodings": "0.5.1"
+  }
+}

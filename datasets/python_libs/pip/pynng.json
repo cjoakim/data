@@ -1,0 +1,10 @@
+{
+  "libname": "pynng",
+  "libvers": "0.8.1",
+  "infile": "data/pip/pynng.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22",
+    "sniffio": "1.3.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pyrogram",
+  "libvers": "2.0.106",
+  "infile": "data/pip/pyrogram.txt",
+  "dependencies": {
+    "pyaes": "1.6.1",
+    "pysocks": "1.7.1"
+  }
+}

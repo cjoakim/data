@@ -1,0 +1,8 @@
+{
+  "libname": "promise",
+  "libvers": "2.3",
+  "infile": "data/pip/promise.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

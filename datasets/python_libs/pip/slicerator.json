@@ -1,0 +1,6 @@
+{
+  "libname": "slicerator",
+  "libvers": "1.1.0",
+  "infile": "data/pip/slicerator.txt",
+  "dependencies": {}
+}

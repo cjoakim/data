@@ -1,0 +1,6 @@
+{
+  "libname": "json-log-formatter",
+  "libvers": "1.1.1",
+  "infile": "data/pip/json-log-formatter.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,13 @@
+{
+  "libname": "statsig-python-core",
+  "libvers": "0.3.1",
+  "infile": "data/pip/statsig-python-core.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

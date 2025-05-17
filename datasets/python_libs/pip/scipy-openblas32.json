@@ -1,0 +1,6 @@
+{
+  "libname": "scipy-openblas32",
+  "libvers": "0.3.29.0.0",
+  "infile": "data/pip/scipy-openblas32.txt",
+  "dependencies": {}
+}

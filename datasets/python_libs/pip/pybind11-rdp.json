@@ -1,0 +1,8 @@
+{
+  "libname": "pybind11-rdp",
+  "libvers": "0.1.4",
+  "infile": "data/pip/pybind11-rdp.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "aniso8601",
+  "libvers": "10.0.1",
+  "infile": "data/pip/aniso8601.txt",
+  "dependencies": {}
+}

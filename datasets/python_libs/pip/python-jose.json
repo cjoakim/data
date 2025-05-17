@@ -1,0 +1,11 @@
+{
+  "libname": "python-jose",
+  "libvers": "3.4.0",
+  "infile": "data/pip/python-jose.txt",
+  "dependencies": {
+    "ecdsa": "0.19.1",
+    "pyasn1": "0.4.8",
+    "rsa": "4.9.1",
+    "six": "1.17.0"
+  }
+}

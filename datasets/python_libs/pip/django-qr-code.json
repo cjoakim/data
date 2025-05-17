@@ -1,0 +1,16 @@
+{
+  "libname": "django-qr-code",
+  "libvers": "4.1.0",
+  "infile": "data/pip/django-qr-code.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "segno": "1.6.6",
+    "sqlparse": "0.5.3",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

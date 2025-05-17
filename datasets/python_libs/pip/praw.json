@@ -1,0 +1,15 @@
+{
+  "libname": "praw",
+  "libvers": "7.8.1",
+  "infile": "data/pip/praw.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "prawcore": "2.4.0",
+    "requests": "2.32.3",
+    "update-checker": "0.18.0",
+    "urllib3": "2.4.0",
+    "websocket-client": "1.8.0"
+  }
+}

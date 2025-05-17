@@ -1,0 +1,6 @@
+{
+  "libname": "topk-sdk",
+  "libvers": "0.2.0",
+  "infile": "data/pip/topk-sdk.txt",
+  "dependencies": {}
+}

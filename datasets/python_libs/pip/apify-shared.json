@@ -1,0 +1,6 @@
+{
+  "libname": "apify-shared",
+  "libvers": "1.4.1",
+  "infile": "data/pip/apify-shared.txt",
+  "dependencies": {}
+}

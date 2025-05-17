@@ -1,0 +1,13 @@
+{
+  "libname": "tpu-info",
+  "libvers": "0.2.2",
+  "infile": "data/pip/tpu-info.txt",
+  "dependencies": {
+    "grpcio": "1.71.0",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "protobuf": "6.30.2",
+    "pygments": "2.19.1",
+    "rich": "14.0.0"
+  }
+}

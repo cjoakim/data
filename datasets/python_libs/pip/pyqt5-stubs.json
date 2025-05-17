@@ -1,0 +1,6 @@
+{
+  "libname": "pyqt5-stubs",
+  "libvers": "5.15.6.0",
+  "infile": "data/pip/pyqt5-stubs.txt",
+  "dependencies": {}
+}

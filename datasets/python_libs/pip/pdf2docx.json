@@ -1,0 +1,16 @@
+{
+  "libname": "pdf2docx",
+  "libvers": "0.5.8",
+  "infile": "data/pip/pdf2docx.txt",
+  "dependencies": {
+    "fire": "0.7.0",
+    "fonttools": "4.57.0",
+    "lxml": "5.4.0",
+    "numpy": "2.2.5",
+    "opencv-python-headless": "4.11.0.86",
+    "pymupdf": "1.25.5",
+    "python-docx": "1.1.2",
+    "termcolor": "3.1.0",
+    "typing-extensions": "4.13.2"
+  }
+}

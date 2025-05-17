@@ -1,0 +1,6 @@
+{
+  "libname": "confusables",
+  "libvers": "1.2.0",
+  "infile": "data/pip/confusables.txt",
+  "dependencies": {}
+}

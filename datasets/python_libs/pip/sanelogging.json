@@ -1,0 +1,11 @@
+{
+  "libname": "sanelogging",
+  "libvers": "1.1.0",
+  "infile": "data/pip/sanelogging.txt",
+  "dependencies": {
+    "colorlog": "6.9.0",
+    "datetime": "5.5",
+    "pytz": "2025.2",
+    "zope-interface": "7.2"
+  }
+}

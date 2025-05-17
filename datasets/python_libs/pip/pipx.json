@@ -1,0 +1,12 @@
+{
+  "libname": "pipx",
+  "libvers": "1.7.1",
+  "infile": "data/pip/pipx.txt",
+  "dependencies": {
+    "argcomplete": "3.6.2",
+    "click": "8.1.8",
+    "packaging": "25.0",
+    "platformdirs": "4.3.7",
+    "userpath": "1.9.2"
+  }
+}

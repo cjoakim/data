@@ -1,0 +1,8 @@
+{
+  "libname": "nptdms",
+  "libvers": "1.10.0",
+  "infile": "data/pip/nptdms.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "libname": "docxtpl",
+  "libvers": "0.20.0",
+  "infile": "data/pip/docxtpl.txt",
+  "dependencies": {
+    "babel": "2.17.0",
+    "docxcompose": "1.4.0",
+    "jinja2": "3.1.6",
+    "lxml": "5.4.0",
+    "markupsafe": "3.0.2",
+    "python-docx": "1.1.2",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2"
+  }
+}

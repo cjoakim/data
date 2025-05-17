@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-sagemaker-featurestore-runtime",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-sagemaker-featurestore-runtime.txt",
+  "dependencies": {}
+}

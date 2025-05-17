@@ -1,0 +1,13 @@
+{
+  "libname": "qbittorrent-api",
+  "libvers": "2025.5.0",
+  "infile": "data/pip/qbittorrent-api.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

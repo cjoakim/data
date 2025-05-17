@@ -1,0 +1,6 @@
+{
+  "libname": "diff-match-patch",
+  "libvers": "20241021",
+  "infile": "data/pip/diff-match-patch.txt",
+  "dependencies": {}
+}

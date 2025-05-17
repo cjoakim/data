@@ -1,0 +1,6 @@
+{
+  "libname": "filemagic",
+  "libvers": "1.6",
+  "infile": "data/pip/filemagic.txt",
+  "dependencies": {}
+}

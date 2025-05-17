@@ -1,0 +1,6 @@
+{
+  "libname": "types-pathlib2",
+  "libvers": "2.3.0",
+  "infile": "data/pip/types-pathlib2.txt",
+  "dependencies": {}
+}

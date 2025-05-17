@@ -1,0 +1,8 @@
+{
+  "libname": "pywinauto",
+  "libvers": "0.6.9",
+  "infile": "data/pip/pywinauto.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

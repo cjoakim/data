@@ -1,0 +1,8 @@
+{
+  "libname": "flake8-pytest-style",
+  "libvers": "2.1.0",
+  "infile": "data/pip/flake8-pytest-style.txt",
+  "dependencies": {
+    "flake8-plugin-utils": "1.3.3"
+  }
+}

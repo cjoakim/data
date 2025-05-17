@@ -1,0 +1,6 @@
+{
+  "libname": "sentry-cli",
+  "libvers": "2.44.0",
+  "infile": "data/pip/sentry-cli.txt",
+  "dependencies": {}
+}

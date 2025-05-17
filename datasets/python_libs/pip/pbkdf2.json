@@ -1,0 +1,6 @@
+{
+  "libname": "pbkdf2",
+  "libvers": "1.3",
+  "infile": "data/pip/pbkdf2.txt",
+  "dependencies": {}
+}

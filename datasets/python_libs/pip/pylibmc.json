@@ -1,0 +1,6 @@
+{
+  "libname": "pylibmc",
+  "libvers": "1.6.3",
+  "infile": "data/pip/pylibmc.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "python-ipmi",
+  "libvers": "0.5.7",
+  "infile": "data/pip/python-ipmi.txt",
+  "dependencies": {}
+}

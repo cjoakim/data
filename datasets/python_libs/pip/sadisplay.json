@@ -1,0 +1,9 @@
+{
+  "libname": "sadisplay",
+  "libvers": "0.4.9",
+  "infile": "data/pip/sadisplay.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

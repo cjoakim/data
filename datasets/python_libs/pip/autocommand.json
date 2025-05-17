@@ -1,0 +1,6 @@
+{
+  "libname": "autocommand",
+  "libvers": "2.2.2",
+  "infile": "data/pip/autocommand.txt",
+  "dependencies": {}
+}

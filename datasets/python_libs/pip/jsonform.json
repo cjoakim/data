@@ -1,0 +1,13 @@
+{
+  "libname": "jsonform",
+  "libvers": "0.0.2",
+  "infile": "data/pip/jsonform.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2"
+  }
+}

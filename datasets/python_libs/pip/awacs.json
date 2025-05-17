@@ -1,0 +1,6 @@
+{
+  "libname": "awacs",
+  "libvers": "2.5.0",
+  "infile": "data/pip/awacs.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "nanobind",
+  "libvers": "2.7.0",
+  "infile": "data/pip/nanobind.txt",
+  "dependencies": {}
+}

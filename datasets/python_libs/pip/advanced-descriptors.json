@@ -1,0 +1,6 @@
+{
+  "libname": "advanced-descriptors",
+  "libvers": "4.0.3",
+  "infile": "data/pip/advanced-descriptors.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,27 @@
+{
+  "libname": "opentelemetry-exporter-otlp",
+  "libvers": "1.32.1",
+  "infile": "data/pip/opentelemetry-exporter-otlp.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "deprecated": "1.2.18",
+    "googleapis-common-protos": "1.70.0",
+    "grpcio": "1.71.0",
+    "idna": "3.10",
+    "importlib-metadata": "8.6.1",
+    "opentelemetry-api": "1.32.1",
+    "opentelemetry-exporter-otlp-proto-common": "1.32.1",
+    "opentelemetry-exporter-otlp-proto-grpc": "1.32.1",
+    "opentelemetry-exporter-otlp-proto-http": "1.32.1",
+    "opentelemetry-proto": "1.32.1",
+    "opentelemetry-sdk": "1.32.1",
+    "opentelemetry-semantic-conventions": "0.53b1",
+    "protobuf": "5.29.4",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2",
+    "zipp": "3.21.0"
+  }
+}

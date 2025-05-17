@@ -1,0 +1,9 @@
+{
+  "libname": "pysdfgen",
+  "libvers": "0.2.0",
+  "infile": "data/pip/pysdfgen.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "trimesh": "4.6.8"
+  }
+}

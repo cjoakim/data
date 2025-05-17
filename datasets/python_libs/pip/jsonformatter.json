@@ -1,0 +1,6 @@
+{
+  "libname": "jsonformatter",
+  "libvers": "0.3.4",
+  "infile": "data/pip/jsonformatter.txt",
+  "dependencies": {}
+}

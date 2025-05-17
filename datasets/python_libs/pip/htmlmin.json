@@ -1,0 +1,6 @@
+{
+  "libname": "htmlmin",
+  "libvers": "0.1.12",
+  "infile": "data/pip/htmlmin.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "bapy",
+  "libvers": "2.0.5",
+  "infile": "data/pip/bapy.txt",
+  "dependencies": {}
+}

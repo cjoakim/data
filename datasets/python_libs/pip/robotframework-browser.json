@@ -1,0 +1,18 @@
+{
+  "libname": "robotframework-browser",
+  "libvers": "19.5.0",
+  "infile": "data/pip/robotframework-browser.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "grpcio": "1.71.0",
+    "grpcio-tools": "1.71.0",
+    "natsort": "8.4.0",
+    "overrides": "7.7.0",
+    "protobuf": "5.29.3",
+    "robotframework": "7.2.2",
+    "robotframework-assertion-engine": "3.0.3",
+    "robotframework-pythonlibcore": "4.4.1",
+    "seedir": "0.5.0",
+    "wrapt": "1.17.2"
+  }
+}

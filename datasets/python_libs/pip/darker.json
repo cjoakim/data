@@ -1,0 +1,16 @@
+{
+  "libname": "darker",
+  "libvers": "2.1.1",
+  "infile": "data/pip/darker.txt",
+  "dependencies": {
+    "black": "25.1.0",
+    "click": "8.1.8",
+    "darkgraylib": "1.2.1",
+    "graylint": "1.1.1",
+    "mypy-extensions": "1.1.0",
+    "packaging": "25.0",
+    "pathspec": "0.12.1",
+    "platformdirs": "4.3.7",
+    "toml": "0.10.2"
+  }
+}

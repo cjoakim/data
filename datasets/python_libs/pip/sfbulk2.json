@@ -1,0 +1,6 @@
+{
+  "libname": "sfbulk2",
+  "libvers": "0.8.0",
+  "infile": "data/pip/sfbulk2.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "argparse-logging",
+  "libvers": "2020.11.26",
+  "infile": "data/pip/argparse-logging.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "capi-param-builder",
+  "libvers": "5.1.0",
+  "infile": "data/pip/capi-param-builder.txt",
+  "dependencies": {}
+}

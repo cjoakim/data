@@ -1,0 +1,9 @@
+{
+  "libname": "repartipy",
+  "libvers": "0.1.8",
+  "infile": "data/pip/repartipy.txt",
+  "dependencies": {
+    "packaging": "23.2",
+    "typing-extensions": "4.13.2"
+  }
+}

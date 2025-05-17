@@ -1,0 +1,10 @@
+{
+  "libname": "alibabacloud-darabonba-signature-util",
+  "libvers": "0.0.4",
+  "infile": "data/pip/alibabacloud-darabonba-signature-util.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22"
+  }
+}

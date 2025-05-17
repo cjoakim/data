@@ -1,0 +1,8 @@
+{
+  "libname": "zope-tales",
+  "libvers": "6.1",
+  "infile": "data/pip/zope-tales.txt",
+  "dependencies": {
+    "zope-interface": "7.2"
+  }
+}

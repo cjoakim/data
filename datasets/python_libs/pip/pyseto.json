@@ -1,0 +1,14 @@
+{
+  "libname": "pyseto",
+  "libvers": "1.8.3",
+  "infile": "data/pip/pyseto.txt",
+  "dependencies": {
+    "argon2-cffi": "23.1.0",
+    "argon2-cffi-bindings": "21.2.0",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "iso8601": "2.1.0",
+    "pycparser": "2.22",
+    "pycryptodomex": "3.22.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "libname": "docspec",
+  "libvers": "2.2.2",
+  "infile": "data/pip/docspec.txt",
+  "dependencies": {
+    "databind": "4.5.2",
+    "databind-core": "4.5.2",
+    "databind-json": "4.5.2",
+    "deprecated": "1.2.18",
+    "nr-date": "2.1.0",
+    "nr-stream": "1.1.5",
+    "typeapi": "2.2.4",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2"
+  }
+}

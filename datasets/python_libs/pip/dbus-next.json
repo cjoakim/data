@@ -1,0 +1,6 @@
+{
+  "libname": "dbus-next",
+  "libvers": "0.2.3",
+  "infile": "data/pip/dbus-next.txt",
+  "dependencies": {}
+}

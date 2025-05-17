@@ -1,0 +1,8 @@
+{
+  "libname": "stsci-stimage",
+  "libvers": "0.3.0",
+  "infile": "data/pip/stsci-stimage.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

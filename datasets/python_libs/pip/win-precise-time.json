@@ -1,0 +1,6 @@
+{
+  "libname": "win-precise-time",
+  "libvers": "1.4.2",
+  "infile": "data/pip/win-precise-time.txt",
+  "dependencies": {}
+}

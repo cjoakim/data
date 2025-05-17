@@ -1,0 +1,6 @@
+{
+  "libname": "html-slacker",
+  "libvers": "0.1.6",
+  "infile": "data/pip/html-slacker.txt",
+  "dependencies": {}
+}

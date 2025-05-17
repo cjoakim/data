@@ -1,0 +1,8 @@
+{
+  "libname": "dateformat",
+  "libvers": "0.9.7",
+  "infile": "data/pip/dateformat.txt",
+  "dependencies": {
+    "pytz": "2025.2"
+  }
+}

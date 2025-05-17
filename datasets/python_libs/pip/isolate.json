@@ -1,0 +1,11 @@
+{
+  "libname": "isolate",
+  "libvers": "0.16.2",
+  "infile": "data/pip/isolate.txt",
+  "dependencies": {
+    "grpcio": "1.64.0",
+    "platformdirs": "4.3.7",
+    "protobuf": "6.30.2",
+    "tblib": "3.1.0"
+  }
+}

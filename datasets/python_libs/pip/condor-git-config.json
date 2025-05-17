@@ -1,0 +1,8 @@
+{
+  "libname": "condor-git-config",
+  "libvers": "0.1.5",
+  "infile": "data/pip/condor-git-config.txt",
+  "dependencies": {
+    "filelock": "3.18.0"
+  }
+}

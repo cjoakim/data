@@ -1,0 +1,6 @@
+{
+  "libname": "django-test-without-migrations",
+  "libvers": "0.6",
+  "infile": "data/pip/django-test-without-migrations.txt",
+  "dependencies": {}
+}

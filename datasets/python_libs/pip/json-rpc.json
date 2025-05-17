@@ -1,0 +1,6 @@
+{
+  "libname": "json-rpc",
+  "libvers": "1.15.0",
+  "infile": "data/pip/json-rpc.txt",
+  "dependencies": {}
+}

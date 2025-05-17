@@ -1,0 +1,6 @@
+{
+  "libname": "configparser2",
+  "libvers": "4.0.0",
+  "infile": "data/pip/configparser2.txt",
+  "dependencies": {}
+}

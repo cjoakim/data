@@ -1,0 +1,10 @@
+{
+  "libname": "mcap-ros2-support",
+  "libvers": "0.5.5",
+  "infile": "data/pip/mcap-ros2-support.txt",
+  "dependencies": {
+    "lz4": "4.4.4",
+    "mcap": "1.2.2",
+    "zstandard": "0.23.0"
+  }
+}

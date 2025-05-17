@@ -1,0 +1,6 @@
+{
+  "libname": "infi-systray",
+  "libvers": "0.1.12.1",
+  "infile": "data/pip/infi-systray.txt",
+  "dependencies": {}
+}

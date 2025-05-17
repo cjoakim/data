@@ -1,0 +1,6 @@
+{
+  "libname": "python-string-utils",
+  "libvers": "1.0.0",
+  "infile": "data/pip/python-string-utils.txt",
+  "dependencies": {}
+}

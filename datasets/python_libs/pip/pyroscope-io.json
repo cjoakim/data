@@ -1,0 +1,9 @@
+{
+  "libname": "pyroscope-io",
+  "libvers": "0.8.11",
+  "infile": "data/pip/pyroscope-io.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

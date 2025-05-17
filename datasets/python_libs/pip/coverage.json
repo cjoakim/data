@@ -1,0 +1,6 @@
+{
+  "libname": "coverage",
+  "libvers": "7.8.0",
+  "infile": "data/pip/coverage.txt",
+  "dependencies": {}
+}

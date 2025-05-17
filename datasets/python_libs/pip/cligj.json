@@ -1,0 +1,8 @@
+{
+  "libname": "cligj",
+  "libvers": "0.7.2",
+  "infile": "data/pip/cligj.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

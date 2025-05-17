@@ -1,0 +1,20 @@
+{
+  "libname": "pyzotero",
+  "libvers": "1.6.11",
+  "infile": "data/pip/pyzotero.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "bibtexparser": "1.4.3",
+    "certifi": "2025.4.26",
+    "feedparser": "6.0.11",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.10",
+    "pyparsing": "3.2.3",
+    "pytz": "2025.2",
+    "sgmllib3k": "1.0.0",
+    "sniffio": "1.3.1",
+    "typing-extensions": "4.13.2"
+  }
+}

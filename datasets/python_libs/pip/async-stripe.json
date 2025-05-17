@@ -1,0 +1,15 @@
+{
+  "libname": "async-stripe",
+  "libvers": "6.1.0",
+  "infile": "data/pip/async-stripe.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "stripe": "6.1.0",
+    "tornado": "6.4.2",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

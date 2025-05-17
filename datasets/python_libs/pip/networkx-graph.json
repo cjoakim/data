@@ -1,0 +1,6 @@
+{
+  "libname": "networkx-graph",
+  "libvers": "0.2.5",
+  "infile": "data/pip/networkx-graph.txt",
+  "dependencies": {}
+}

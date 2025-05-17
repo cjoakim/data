@@ -1,0 +1,8 @@
+{
+  "libname": "tensorflowonspark",
+  "libvers": "2.2.5",
+  "infile": "data/pip/tensorflowonspark.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

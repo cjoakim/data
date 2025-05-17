@@ -1,0 +1,6 @@
+{
+  "libname": "types-pyfarmhash",
+  "libvers": "0.4.0.20240902",
+  "infile": "data/pip/types-pyfarmhash.txt",
+  "dependencies": {}
+}

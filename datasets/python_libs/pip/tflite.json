@@ -1,0 +1,9 @@
+{
+  "libname": "tflite",
+  "libvers": "2.18.0",
+  "infile": "data/pip/tflite.txt",
+  "dependencies": {
+    "flatbuffers": "25.2.10",
+    "numpy": "2.2.5"
+  }
+}

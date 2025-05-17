@@ -1,0 +1,11 @@
+{
+  "libname": "pyseeyou",
+  "libvers": "1.0.2",
+  "infile": "data/pip/pyseeyou.txt",
+  "dependencies": {
+    "future": "1.0.0",
+    "parsimonious": "0.10.0",
+    "regex": "2024.11.6",
+    "toolz": "1.0.0"
+  }
+}

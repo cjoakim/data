@@ -1,0 +1,8 @@
+{
+  "libname": "convertdate",
+  "libvers": "2.4.0",
+  "infile": "data/pip/convertdate.txt",
+  "dependencies": {
+    "pymeeus": "0.5.12"
+  }
+}

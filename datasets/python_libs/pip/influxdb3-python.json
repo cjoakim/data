@@ -1,0 +1,14 @@
+{
+  "libname": "influxdb3-python",
+  "libvers": "0.12.0",
+  "infile": "data/pip/influxdb3-python.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "pyarrow": "20.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "reactivex": "4.0.4",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

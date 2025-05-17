@@ -1,0 +1,6 @@
+{
+  "libname": "annotated-types",
+  "libvers": "0.7.0",
+  "infile": "data/pip/annotated-types.txt",
+  "dependencies": {}
+}

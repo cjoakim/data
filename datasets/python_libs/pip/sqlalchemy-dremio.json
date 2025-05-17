@@ -1,0 +1,10 @@
+{
+  "libname": "sqlalchemy-dremio",
+  "libvers": "3.0.4",
+  "infile": "data/pip/sqlalchemy-dremio.txt",
+  "dependencies": {
+    "pyarrow": "20.0.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

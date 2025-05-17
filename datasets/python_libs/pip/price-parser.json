@@ -1,0 +1,8 @@
+{
+  "libname": "price-parser",
+  "libvers": "0.4.0",
+  "infile": "data/pip/price-parser.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

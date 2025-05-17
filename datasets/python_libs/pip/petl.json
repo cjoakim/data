@@ -1,0 +1,6 @@
+{
+  "libname": "petl",
+  "libvers": "1.7.16",
+  "infile": "data/pip/petl.txt",
+  "dependencies": {}
+}

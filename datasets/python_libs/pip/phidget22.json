@@ -1,0 +1,6 @@
+{
+  "libname": "phidget22",
+  "libvers": "1.22.20250422",
+  "infile": "data/pip/phidget22.txt",
+  "dependencies": {}
+}

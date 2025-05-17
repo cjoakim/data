@@ -1,0 +1,6 @@
+{
+  "libname": "phx-class-registry",
+  "libvers": "5.1.1",
+  "infile": "data/pip/phx-class-registry.txt",
+  "dependencies": {}
+}

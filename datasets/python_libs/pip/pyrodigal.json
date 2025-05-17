@@ -1,0 +1,8 @@
+{
+  "libname": "pyrodigal",
+  "libvers": "3.6.3.post1",
+  "infile": "data/pip/pyrodigal.txt",
+  "dependencies": {
+    "archspec": "0.2.5"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "license-expression",
+  "libvers": "30.4.1",
+  "infile": "data/pip/license-expression.txt",
+  "dependencies": {
+    "boolean-py": "5.0"
+  }
+}

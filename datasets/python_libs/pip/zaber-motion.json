@@ -1,0 +1,9 @@
+{
+  "libname": "zaber-motion",
+  "libvers": "7.7.0",
+  "infile": "data/pip/zaber-motion.txt",
+  "dependencies": {
+    "reactivex": "4.0.4",
+    "typing-extensions": "4.13.2"
+  }
+}

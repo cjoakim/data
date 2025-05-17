@@ -1,0 +1,8 @@
+{
+  "libname": "warp-lang",
+  "libvers": "1.7.1",
+  "infile": "data/pip/warp-lang.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "avro-validator",
+  "libvers": "1.2.1",
+  "infile": "data/pip/avro-validator.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "mysql-mimic",
+  "libvers": "2.6.4",
+  "infile": "data/pip/mysql-mimic.txt",
+  "dependencies": {
+    "sqlglot": "26.16.4"
+  }
+}

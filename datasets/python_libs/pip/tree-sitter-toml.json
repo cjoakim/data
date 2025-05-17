@@ -1,0 +1,6 @@
+{
+  "libname": "tree-sitter-toml",
+  "libvers": "0.7.0",
+  "infile": "data/pip/tree-sitter-toml.txt",
+  "dependencies": {}
+}

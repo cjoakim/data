@@ -1,0 +1,6 @@
+{
+  "libname": "django-admin-tools",
+  "libvers": "0.9.3",
+  "infile": "data/pip/django-admin-tools.txt",
+  "dependencies": {}
+}

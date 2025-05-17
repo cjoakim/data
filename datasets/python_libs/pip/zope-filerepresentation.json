@@ -1,0 +1,10 @@
+{
+  "libname": "zope-filerepresentation",
+  "libvers": "6.1",
+  "infile": "data/pip/zope-filerepresentation.txt",
+  "dependencies": {
+    "zope-event": "5.0",
+    "zope-interface": "7.2",
+    "zope-schema": "7.0.1"
+  }
+}

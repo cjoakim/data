@@ -1,0 +1,8 @@
+{
+  "libname": "tqdm-loggable",
+  "libvers": "0.2",
+  "infile": "data/pip/tqdm-loggable.txt",
+  "dependencies": {
+    "tqdm": "4.67.1"
+  }
+}

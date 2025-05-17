@@ -1,0 +1,9 @@
+{
+  "libname": "asn1tools",
+  "libvers": "0.167.0",
+  "infile": "data/pip/asn1tools.txt",
+  "dependencies": {
+    "bitstruct": "8.20.0",
+    "pyparsing": "3.2.3"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "teamcity-messages",
+  "libvers": "1.33",
+  "infile": "data/pip/teamcity-messages.txt",
+  "dependencies": {}
+}

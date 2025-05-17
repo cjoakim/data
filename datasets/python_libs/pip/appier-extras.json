@@ -1,0 +1,8 @@
+{
+  "libname": "appier-extras",
+  "libvers": "0.26.1",
+  "infile": "data/pip/appier-extras.txt",
+  "dependencies": {
+    "appier": "1.34.6"
+  }
+}

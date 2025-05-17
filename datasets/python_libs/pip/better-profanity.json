@@ -1,0 +1,6 @@
+{
+  "libname": "better-profanity",
+  "libvers": "0.7.0",
+  "infile": "data/pip/better-profanity.txt",
+  "dependencies": {}
+}

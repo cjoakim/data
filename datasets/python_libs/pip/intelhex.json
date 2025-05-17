@@ -1,0 +1,6 @@
+{
+  "libname": "intelhex",
+  "libvers": "2.3.0",
+  "infile": "data/pip/intelhex.txt",
+  "dependencies": {}
+}

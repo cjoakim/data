@@ -1,0 +1,8 @@
+{
+  "libname": "tinyhtml5",
+  "libvers": "2.0.0",
+  "infile": "data/pip/tinyhtml5.txt",
+  "dependencies": {
+    "webencodings": "0.5.1"
+  }
+}

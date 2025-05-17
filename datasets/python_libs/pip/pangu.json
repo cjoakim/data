@@ -1,0 +1,6 @@
+{
+  "libname": "pangu",
+  "libvers": "4.0.6.1",
+  "infile": "data/pip/pangu.txt",
+  "dependencies": {}
+}

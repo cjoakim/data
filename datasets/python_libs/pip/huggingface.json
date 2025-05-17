@@ -1,0 +1,6 @@
+{
+  "libname": "huggingface",
+  "libvers": "0.0.1",
+  "infile": "data/pip/huggingface.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "tdqm",
+  "libvers": "0.0.1",
+  "infile": "data/pip/tdqm.txt",
+  "dependencies": {
+    "tqdm": "4.67.1"
+  }
+}

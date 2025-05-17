@@ -1,0 +1,6 @@
+{
+  "libname": "pydoop",
+  "libvers": "2.0.0",
+  "infile": "data/pip/pydoop.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pygohcl",
+  "libvers": "1.2.4",
+  "infile": "data/pip/pygohcl.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "python-gflags",
+  "libvers": "3.1.2",
+  "infile": "data/pip/python-gflags.txt",
+  "dependencies": {}
+}

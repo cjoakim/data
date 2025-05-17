@@ -1,0 +1,6 @@
+{
+  "libname": "tzlocal",
+  "libvers": "5.3.1",
+  "infile": "data/pip/tzlocal.txt",
+  "dependencies": {}
+}

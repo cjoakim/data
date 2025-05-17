@@ -1,0 +1,22 @@
+{
+  "libname": "app-store-server-library",
+  "libvers": "1.8.0",
+  "infile": "data/pip/app-store-server-library.txt",
+  "dependencies": {
+    "asn1": "2.8.0",
+    "attrs": "25.3.0",
+    "cattrs": "24.1.3",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "enum-compat": "0.0.3",
+    "idna": "3.10",
+    "pycparser": "2.22",
+    "pyjwt": "2.10.1",
+    "pyopenssl": "25.0.0",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

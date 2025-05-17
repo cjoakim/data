@@ -1,0 +1,6 @@
+{
+  "libname": "dawg-python",
+  "libvers": "0.7.2",
+  "infile": "data/pip/dawg-python.txt",
+  "dependencies": {}
+}

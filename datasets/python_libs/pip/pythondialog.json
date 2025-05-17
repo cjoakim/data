@@ -1,0 +1,6 @@
+{
+  "libname": "pythondialog",
+  "libvers": "3.5.3",
+  "infile": "data/pip/pythondialog.txt",
+  "dependencies": {}
+}

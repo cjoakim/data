@@ -1,0 +1,9 @@
+{
+  "libname": "directsearch",
+  "libvers": "1.0",
+  "infile": "data/pip/directsearch.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

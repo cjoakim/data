@@ -1,0 +1,11 @@
+{
+  "libname": "normality",
+  "libvers": "2.6.1",
+  "infile": "data/pip/normality.txt",
+  "dependencies": {
+    "banal": "1.0.6",
+    "chardet": "5.2.0",
+    "charset-normalizer": "3.4.2",
+    "text-unidecode": "1.3"
+  }
+}

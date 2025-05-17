@@ -1,0 +1,11 @@
+{
+  "libname": "xdeps",
+  "libvers": "0.10.5",
+  "infile": "data/pip/xdeps.txt",
+  "dependencies": {
+    "cython": "3.0.12",
+    "lark": "1.2.2",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

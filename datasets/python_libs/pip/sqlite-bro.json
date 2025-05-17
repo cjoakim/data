@@ -1,0 +1,6 @@
+{
+  "libname": "sqlite-bro",
+  "libvers": "0.13.1",
+  "infile": "data/pip/sqlite-bro.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,16 @@
+{
+  "libname": "zi-api-auth-client",
+  "libvers": "2.0.2",
+  "infile": "data/pip/zi-api-auth-client.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "41.0.6",
+    "idna": "3.10",
+    "pycparser": "2.22",
+    "pyjwt": "2.6.0",
+    "requests": "2.31.0",
+    "urllib3": "2.4.0"
+  }
+}

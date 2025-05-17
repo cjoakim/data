@@ -1,0 +1,30 @@
+{
+  "libname": "googleads",
+  "libvers": "45.0.0",
+  "infile": "data/pip/googleads.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "google-auth": "2.40.1",
+    "google-auth-oauthlib": "1.2.2",
+    "idna": "3.10",
+    "isodate": "0.7.2",
+    "lxml": "5.4.0",
+    "oauthlib": "3.2.2",
+    "platformdirs": "4.3.7",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "requests-file": "2.1.0",
+    "requests-oauthlib": "2.0.0",
+    "requests-toolbelt": "1.0.0",
+    "rsa": "4.9.1",
+    "urllib3": "2.4.0",
+    "xmltodict": "0.14.2",
+    "zeep": "4.3.1"
+  }
+}

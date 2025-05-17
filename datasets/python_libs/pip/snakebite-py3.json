@@ -1,0 +1,9 @@
+{
+  "libname": "snakebite-py3",
+  "libvers": "3.0.6",
+  "infile": "data/pip/snakebite-py3.txt",
+  "dependencies": {
+    "argparse": "1.4.0",
+    "protobuf": "3.20.3"
+  }
+}

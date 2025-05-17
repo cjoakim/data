@@ -1,0 +1,16 @@
+{
+  "libname": "starlette-testclient",
+  "libvers": "0.4.1",
+  "infile": "data/pip/starlette-testclient.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "sniffio": "1.3.1",
+    "starlette": "0.46.2",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

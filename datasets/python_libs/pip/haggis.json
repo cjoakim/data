@@ -1,0 +1,8 @@
+{
+  "libname": "haggis",
+  "libvers": "0.14.1",
+  "infile": "data/pip/haggis.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

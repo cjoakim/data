@@ -1,0 +1,8 @@
+{
+  "libname": "jaraco-classes",
+  "libvers": "3.4.0",
+  "infile": "data/pip/jaraco-classes.txt",
+  "dependencies": {
+    "more-itertools": "10.7.0"
+  }
+}

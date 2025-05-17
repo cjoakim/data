@@ -1,0 +1,15 @@
+{
+  "libname": "mujoco-py",
+  "libvers": "2.1.2.14",
+  "infile": "data/pip/mujoco-py.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cython": "3.0.12",
+    "fasteners": "0.19",
+    "glfw": "2.9.0",
+    "imageio": "2.37.0",
+    "numpy": "2.2.5",
+    "pillow": "11.2.1",
+    "pycparser": "2.22"
+  }
+}

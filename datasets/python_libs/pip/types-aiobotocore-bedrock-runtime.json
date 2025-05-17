@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-bedrock-runtime",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-bedrock-runtime.txt",
+  "dependencies": {}
+}

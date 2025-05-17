@@ -1,0 +1,12 @@
+{
+  "libname": "django-summernote",
+  "libvers": "0.8.20.0",
+  "infile": "data/pip/django-summernote.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "bleach": "6.2.0",
+    "django": "5.2",
+    "sqlparse": "0.5.3",
+    "webencodings": "0.5.1"
+  }
+}

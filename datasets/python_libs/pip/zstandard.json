@@ -1,0 +1,6 @@
+{
+  "libname": "zstandard",
+  "libvers": "0.23.0",
+  "infile": "data/pip/zstandard.txt",
+  "dependencies": {}
+}

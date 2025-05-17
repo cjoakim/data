@@ -1,0 +1,9 @@
+{
+  "libname": "reverse-geocode",
+  "libvers": "1.6.5",
+  "infile": "data/pip/reverse-geocode.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

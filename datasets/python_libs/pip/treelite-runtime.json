@@ -1,0 +1,9 @@
+{
+  "libname": "treelite-runtime",
+  "libvers": "3.9.1",
+  "infile": "data/pip/treelite-runtime.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

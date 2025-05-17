@@ -1,0 +1,9 @@
+{
+  "libname": "scikit-spatial",
+  "libvers": "9.0.1",
+  "infile": "data/pip/scikit-spatial.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "csscompressor",
+  "libvers": "0.9.5",
+  "infile": "data/pip/csscompressor.txt",
+  "dependencies": {}
+}

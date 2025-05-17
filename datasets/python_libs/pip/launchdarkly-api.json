@@ -1,0 +1,10 @@
+{
+  "libname": "launchdarkly-api",
+  "libvers": "17.2.0",
+  "infile": "data/pip/launchdarkly-api.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

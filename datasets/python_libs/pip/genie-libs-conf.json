@@ -1,0 +1,6 @@
+{
+  "libname": "genie-libs-conf",
+  "libvers": "25.4",
+  "infile": "data/pip/genie-libs-conf.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "async-property",
+  "libvers": "0.2.2",
+  "infile": "data/pip/async-property.txt",
+  "dependencies": {}
+}

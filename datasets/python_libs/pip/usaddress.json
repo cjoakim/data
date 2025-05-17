@@ -1,0 +1,9 @@
+{
+  "libname": "usaddress",
+  "libvers": "0.5.13",
+  "infile": "data/pip/usaddress.txt",
+  "dependencies": {
+    "probableparsing": "0.0.1",
+    "python-crfsuite": "0.9.11"
+  }
+}

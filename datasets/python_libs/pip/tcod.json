@@ -1,0 +1,11 @@
+{
+  "libname": "tcod",
+  "libvers": "18.1.0",
+  "infile": "data/pip/tcod.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "numpy": "2.2.5",
+    "pycparser": "2.22",
+    "typing-extensions": "4.13.2"
+  }
+}

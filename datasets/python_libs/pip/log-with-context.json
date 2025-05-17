@@ -1,0 +1,8 @@
+{
+  "libname": "log-with-context",
+  "libvers": "0.6.0",
+  "infile": "data/pip/log-with-context.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

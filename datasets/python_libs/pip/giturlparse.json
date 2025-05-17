@@ -1,0 +1,6 @@
+{
+  "libname": "giturlparse",
+  "libvers": "0.12.0",
+  "infile": "data/pip/giturlparse.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "peakrdl-systemrdl",
+  "libvers": "0.3.0",
+  "infile": "data/pip/peakrdl-systemrdl.txt",
+  "dependencies": {
+    "antlr4-python3-runtime": "4.13.2",
+    "colorama": "0.4.6",
+    "markdown": "3.8",
+    "systemrdl-compiler": "1.29.3",
+    "typing-extensions": "4.13.2"
+  }
+}

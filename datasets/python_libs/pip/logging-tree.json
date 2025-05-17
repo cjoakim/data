@@ -1,0 +1,6 @@
+{
+  "libname": "logging-tree",
+  "libvers": "1.10",
+  "infile": "data/pip/logging-tree.txt",
+  "dependencies": {}
+}

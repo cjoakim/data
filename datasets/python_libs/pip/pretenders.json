@@ -1,0 +1,9 @@
+{
+  "libname": "pretenders",
+  "libvers": "1.4.5",
+  "infile": "data/pip/pretenders.txt",
+  "dependencies": {
+    "argparse": "1.4.0",
+    "bottle": "0.13.3"
+  }
+}

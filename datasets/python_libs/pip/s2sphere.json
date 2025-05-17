@@ -1,0 +1,8 @@
+{
+  "libname": "s2sphere",
+  "libvers": "0.2.5",
+  "infile": "data/pip/s2sphere.txt",
+  "dependencies": {
+    "future": "1.0.0"
+  }
+}

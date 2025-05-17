@@ -1,0 +1,6 @@
+{
+  "libname": "threadpoolctl",
+  "libvers": "3.6.0",
+  "infile": "data/pip/threadpoolctl.txt",
+  "dependencies": {}
+}

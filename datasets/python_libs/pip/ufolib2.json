@@ -1,0 +1,12 @@
+{
+  "libname": "ufolib2",
+  "libvers": "0.17.1",
+  "infile": "data/pip/ufolib2.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "attrs": "25.3.0",
+    "fonttools[ufo]": "4.57.0",
+    "fs": "2.4.16",
+    "six": "1.17.0"
+  }
+}

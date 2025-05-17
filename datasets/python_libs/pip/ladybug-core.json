@@ -1,0 +1,9 @@
+{
+  "libname": "ladybug-core",
+  "libvers": "0.44.9",
+  "infile": "data/pip/ladybug-core.txt",
+  "dependencies": {
+    "click": "8.1.7",
+    "ladybug-geometry": "1.34.2"
+  }
+}

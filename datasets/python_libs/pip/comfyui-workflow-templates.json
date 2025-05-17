@@ -1,0 +1,6 @@
+{
+  "libname": "comfyui-workflow-templates",
+  "libvers": "0.1.11",
+  "infile": "data/pip/comfyui-workflow-templates.txt",
+  "dependencies": {}
+}

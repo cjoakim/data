@@ -1,0 +1,6 @@
+{
+  "libname": "htmlminf",
+  "libvers": "0.1.13",
+  "infile": "data/pip/htmlminf.txt",
+  "dependencies": {}
+}

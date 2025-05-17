@@ -1,0 +1,8 @@
+{
+  "libname": "autoflake",
+  "libvers": "2.3.1",
+  "infile": "data/pip/autoflake.txt",
+  "dependencies": {
+    "pyflakes": "3.3.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "cdflib",
+  "libvers": "1.3.4",
+  "infile": "data/pip/cdflib.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

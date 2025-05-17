@@ -1,0 +1,10 @@
+{
+  "libname": "glom",
+  "libvers": "24.11.0",
+  "infile": "data/pip/glom.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "boltons": "25.0.0",
+    "face": "24.0.0"
+  }
+}

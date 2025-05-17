@@ -1,0 +1,6 @@
+{
+  "libname": "sphinxcontrib-serializinghtml",
+  "libvers": "2.0.0",
+  "infile": "data/pip/sphinxcontrib-serializinghtml.txt",
+  "dependencies": {}
+}

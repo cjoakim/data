@@ -1,0 +1,6 @@
+{
+  "libname": "ordered-set",
+  "libvers": "4.1.0",
+  "infile": "data/pip/ordered-set.txt",
+  "dependencies": {}
+}

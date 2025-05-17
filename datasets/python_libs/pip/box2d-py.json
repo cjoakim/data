@@ -1,0 +1,6 @@
+{
+  "libname": "box2d-py",
+  "libvers": "2.3.8",
+  "infile": "data/pip/box2d-py.txt",
+  "dependencies": {}
+}

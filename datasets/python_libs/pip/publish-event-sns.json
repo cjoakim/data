@@ -1,0 +1,6 @@
+{
+  "libname": "publish-event-sns",
+  "libvers": "0.0.3",
+  "infile": "data/pip/publish-event-sns.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "human-eval",
+  "libvers": "1.0.3",
+  "infile": "data/pip/human-eval.txt",
+  "dependencies": {
+    "fire": "0.7.0",
+    "numpy": "2.2.5",
+    "termcolor": "3.1.0",
+    "tqdm": "4.67.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "jieba",
+  "libvers": "0.42.1",
+  "infile": "data/pip/jieba.txt",
+  "dependencies": {}
+}

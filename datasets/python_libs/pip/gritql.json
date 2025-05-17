@@ -1,0 +1,6 @@
+{
+  "libname": "gritql",
+  "libvers": "0.2.0",
+  "infile": "data/pip/gritql.txt",
+  "dependencies": {}
+}

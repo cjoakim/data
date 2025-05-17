@@ -1,0 +1,8 @@
+{
+  "libname": "flake8-breakpoint",
+  "libvers": "1.1.0",
+  "infile": "data/pip/flake8-breakpoint.txt",
+  "dependencies": {
+    "flake8-plugin-utils": "1.3.3"
+  }
+}

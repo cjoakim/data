@@ -1,0 +1,6 @@
+{
+  "libname": "django-admin-rangefilter",
+  "libvers": "0.13.2",
+  "infile": "data/pip/django-admin-rangefilter.txt",
+  "dependencies": {}
+}

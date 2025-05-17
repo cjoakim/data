@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-license-manager-linux-subscriptions",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-license-manager-linux-subscriptions.txt",
+  "dependencies": {}
+}

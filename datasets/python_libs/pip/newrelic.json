@@ -1,0 +1,6 @@
+{
+  "libname": "newrelic",
+  "libvers": "10.11.0",
+  "infile": "data/pip/newrelic.txt",
+  "dependencies": {}
+}

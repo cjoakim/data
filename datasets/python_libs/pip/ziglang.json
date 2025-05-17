@@ -1,0 +1,6 @@
+{
+  "libname": "ziglang",
+  "libvers": "0.14.0",
+  "infile": "data/pip/ziglang.txt",
+  "dependencies": {}
+}

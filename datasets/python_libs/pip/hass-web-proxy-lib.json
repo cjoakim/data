@@ -1,0 +1,6 @@
+{
+  "libname": "hass-web-proxy-lib",
+  "libvers": "0.0.7",
+  "infile": "data/pip/hass-web-proxy-lib.txt",
+  "dependencies": {}
+}

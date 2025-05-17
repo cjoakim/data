@@ -1,0 +1,20 @@
+{
+  "libname": "mink",
+  "libvers": "0.0.10",
+  "infile": "data/pip/mink.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "daqp": "0.7.0",
+    "etils[epath,epy]": "1.12.2",
+    "fsspec": "2025.3.2",
+    "glfw": "2.9.0",
+    "importlib-resources": "6.5.2",
+    "mujoco": "3.3.2",
+    "numpy": "2.2.5",
+    "pyopengl": "3.1.9",
+    "qpsolvers[daqp]": "4.6.0",
+    "scipy": "1.15.2",
+    "typing-extensions": "4.13.2",
+    "zipp": "3.21.0"
+  }
+}

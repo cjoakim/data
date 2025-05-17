@@ -1,0 +1,8 @@
+{
+  "libname": "accessible-pygments",
+  "libvers": "0.0.5",
+  "infile": "data/pip/accessible-pygments.txt",
+  "dependencies": {
+    "pygments": "2.19.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "protoc-gen-swagger",
+  "libvers": "0.1.0",
+  "infile": "data/pip/protoc-gen-swagger.txt",
+  "dependencies": {
+    "protobuf": "6.30.2"
+  }
+}

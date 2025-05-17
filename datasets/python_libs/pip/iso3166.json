@@ -1,0 +1,6 @@
+{
+  "libname": "iso3166",
+  "libvers": "2.1.1",
+  "infile": "data/pip/iso3166.txt",
+  "dependencies": {}
+}

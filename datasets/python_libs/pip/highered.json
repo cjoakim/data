@@ -1,0 +1,10 @@
+{
+  "libname": "highered",
+  "libvers": "0.2.1",
+  "infile": "data/pip/highered.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pyhacrf-datamade": "0.2.8",
+    "pylbfgs": "0.2.0.16"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "m2r",
+  "libvers": "0.3.1",
+  "infile": "data/pip/m2r.txt",
+  "dependencies": {
+    "docutils": "0.21.2",
+    "mistune": "0.8.4"
+  }
+}

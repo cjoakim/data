@@ -1,0 +1,6 @@
+{
+  "libname": "cbor2",
+  "libvers": "5.6.5",
+  "infile": "data/pip/cbor2.txt",
+  "dependencies": {}
+}

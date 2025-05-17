@@ -1,0 +1,11 @@
+{
+  "libname": "translation-finder",
+  "libvers": "2.19",
+  "infile": "data/pip/translation-finder.txt",
+  "dependencies": {
+    "charset-normalizer": "3.4.2",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "weblate-language-data": "2025.5"
+  }
+}

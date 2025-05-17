@@ -1,0 +1,15 @@
+{
+  "libname": "boxdetect",
+  "libvers": "1.0.2",
+  "infile": "data/pip/boxdetect.txt",
+  "dependencies": {
+    "imutils": "0.5.4",
+    "joblib": "1.5.0",
+    "numpy": "2.2.5",
+    "opencv-python": "4.11.0.86",
+    "pyyaml": "6.0.2",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "threadpoolctl": "3.6.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "djade",
+  "libvers": "1.4.0",
+  "infile": "data/pip/djade.txt",
+  "dependencies": {}
+}

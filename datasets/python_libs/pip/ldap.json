@@ -1,0 +1,6 @@
+{
+  "libname": "ldap",
+  "libvers": "2.0.0.404",
+  "infile": "data/pip/ldap.txt",
+  "dependencies": {}
+}

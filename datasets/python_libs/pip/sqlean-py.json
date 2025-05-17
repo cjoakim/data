@@ -1,0 +1,6 @@
+{
+  "libname": "sqlean-py",
+  "libvers": "3.49.1",
+  "infile": "data/pip/sqlean-py.txt",
+  "dependencies": {}
+}

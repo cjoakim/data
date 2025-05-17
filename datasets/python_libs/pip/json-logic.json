@@ -1,0 +1,6 @@
+{
+  "libname": "json-logic",
+  "libvers": "0.6.3",
+  "infile": "data/pip/json-logic.txt",
+  "dependencies": {}
+}

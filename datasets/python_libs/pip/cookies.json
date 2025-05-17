@@ -1,0 +1,6 @@
+{
+  "libname": "cookies",
+  "libvers": "2.2.1",
+  "infile": "data/pip/cookies.txt",
+  "dependencies": {}
+}

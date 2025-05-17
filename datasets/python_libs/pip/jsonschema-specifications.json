@@ -1,0 +1,11 @@
+{
+  "libname": "jsonschema-specifications",
+  "libvers": "2025.4.1",
+  "infile": "data/pip/jsonschema-specifications.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2"
+  }
+}

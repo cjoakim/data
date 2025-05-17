@@ -1,0 +1,6 @@
+{
+  "libname": "flpc",
+  "libvers": "0.2.5",
+  "infile": "data/pip/flpc.txt",
+  "dependencies": {}
+}

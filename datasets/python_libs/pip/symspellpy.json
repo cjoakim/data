@@ -1,0 +1,8 @@
+{
+  "libname": "symspellpy",
+  "libvers": "6.9.0",
+  "infile": "data/pip/symspellpy.txt",
+  "dependencies": {
+    "editdistpy": "0.1.5"
+  }
+}

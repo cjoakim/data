@@ -1,0 +1,8 @@
+{
+  "libname": "pyarrow-stubs",
+  "libvers": "19.2",
+  "infile": "data/pip/pyarrow-stubs.txt",
+  "dependencies": {
+    "pyarrow": "20.0.0"
+  }
+}

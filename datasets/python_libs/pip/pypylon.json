@@ -1,0 +1,6 @@
+{
+  "libname": "pypylon",
+  "libvers": "4.1.0",
+  "infile": "data/pip/pypylon.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "quickjs",
+  "libvers": "1.19.4",
+  "infile": "data/pip/quickjs.txt",
+  "dependencies": {}
+}

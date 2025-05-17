@@ -1,0 +1,6 @@
+{
+  "libname": "json-spec",
+  "libvers": "0.12.0",
+  "infile": "data/pip/json-spec.txt",
+  "dependencies": {}
+}

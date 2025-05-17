@@ -1,0 +1,28 @@
+{
+  "libname": "async-substrate-interface",
+  "libvers": "1.1.1",
+  "infile": "data/pip/async-substrate-interface.txt",
+  "dependencies": {
+    "asyncstdlib": "3.13.1",
+    "base58": "2.1.1",
+    "bittensor-wallet": "3.0.9",
+    "bt-decode": "0.6.0",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "43.0.3",
+    "idna": "3.10",
+    "more-itertools": "10.7.0",
+    "password-strength": "0.0.3.post2",
+    "py-bip39-bindings": "0.1.11",
+    "pycparser": "2.22",
+    "requests": "2.32.3",
+    "scalecodec": "1.2.11",
+    "six": "1.17.0",
+    "toml": "0.10.0",
+    "urllib3": "2.4.0",
+    "websockets": "15.0.1",
+    "wheel": "0.45.1",
+    "xxhash": "3.5.0"
+  }
+}

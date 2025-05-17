@@ -1,0 +1,24 @@
+{
+  "libname": "drissionpage",
+  "libvers": "4.1.0.18",
+  "infile": "data/pip/drissionpage.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "cssselect": "1.3.0",
+    "datarecorder": "3.6.2",
+    "downloadkit": "2.0.7",
+    "et-xmlfile": "2.0.0",
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "lxml": "5.4.0",
+    "openpyxl": "3.1.5",
+    "psutil": "7.0.0",
+    "requests": "2.32.3",
+    "requests-file": "2.1.0",
+    "tldextract": "5.3.0",
+    "urllib3": "2.4.0",
+    "websocket-client": "1.8.0"
+  }
+}

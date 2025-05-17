@@ -1,0 +1,6 @@
+{
+  "libname": "rfc3986-validator",
+  "libvers": "0.1.1",
+  "infile": "data/pip/rfc3986-validator.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "progressbar",
+  "libvers": "2.5",
+  "infile": "data/pip/progressbar.txt",
+  "dependencies": {}
+}

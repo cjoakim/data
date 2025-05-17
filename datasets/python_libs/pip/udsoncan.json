@@ -1,0 +1,6 @@
+{
+  "libname": "udsoncan",
+  "libvers": "1.25.0",
+  "infile": "data/pip/udsoncan.txt",
+  "dependencies": {}
+}

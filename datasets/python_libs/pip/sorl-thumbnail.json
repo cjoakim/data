@@ -1,0 +1,6 @@
+{
+  "libname": "sorl-thumbnail",
+  "libvers": "12.11.0",
+  "infile": "data/pip/sorl-thumbnail.txt",
+  "dependencies": {}
+}

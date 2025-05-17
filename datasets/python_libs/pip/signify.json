@@ -1,0 +1,12 @@
+{
+  "libname": "signify",
+  "libvers": "0.7.1",
+  "infile": "data/pip/signify.txt",
+  "dependencies": {
+    "asn1crypto": "1.5.1",
+    "certvalidator": "0.11.1",
+    "mscerts": "2025.2.26",
+    "oscrypto": "1.3.0",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "ovs",
+  "libvers": "3.5.0",
+  "infile": "data/pip/ovs.txt",
+  "dependencies": {
+    "sortedcontainers": "2.4.0"
+  }
+}

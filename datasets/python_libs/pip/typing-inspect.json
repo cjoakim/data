@@ -1,0 +1,9 @@
+{
+  "libname": "typing-inspect",
+  "libvers": "0.9.0",
+  "infile": "data/pip/typing-inspect.txt",
+  "dependencies": {
+    "mypy-extensions": "1.1.0",
+    "typing-extensions": "4.13.2"
+  }
+}

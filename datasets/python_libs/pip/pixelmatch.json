@@ -1,0 +1,6 @@
+{
+  "libname": "pixelmatch",
+  "libvers": "0.3.0",
+  "infile": "data/pip/pixelmatch.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-frozendict",
+  "libvers": "2.0.9",
+  "infile": "data/pip/types-frozendict.txt",
+  "dependencies": {}
+}

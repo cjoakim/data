@@ -1,0 +1,14 @@
+{
+  "libname": "wrapt-timeout-decorator",
+  "libvers": "1.5.1",
+  "infile": "data/pip/wrapt-timeout-decorator.txt",
+  "dependencies": {
+    "cli-exit-tools": "1.2.7",
+    "click": "8.1.8",
+    "dill": "0.4.0",
+    "lib-detect-testenv": "2.0.8",
+    "multiprocess": "0.70.18",
+    "psutil": "7.0.0",
+    "wrapt": "1.17.2"
+  }
+}

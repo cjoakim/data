@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-resource-explorer-2",
+  "libvers": "1.38.1",
+  "infile": "data/pip/mypy-boto3-resource-explorer-2.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pyspark-stubs",
+  "libvers": "3.0.0.post3",
+  "infile": "data/pip/pyspark-stubs.txt",
+  "dependencies": {
+    "py4j": "0.10.9",
+    "pyspark": "3.0.3"
+  }
+}

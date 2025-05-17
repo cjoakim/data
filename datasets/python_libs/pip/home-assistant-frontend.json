@@ -1,0 +1,6 @@
+{
+  "libname": "home-assistant-frontend",
+  "libvers": "20250109.2",
+  "infile": "data/pip/home-assistant-frontend.txt",
+  "dependencies": {}
+}

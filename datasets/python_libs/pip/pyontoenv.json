@@ -1,0 +1,6 @@
+{
+  "libname": "pyontoenv",
+  "libvers": "0.1.10",
+  "infile": "data/pip/pyontoenv.txt",
+  "dependencies": {}
+}

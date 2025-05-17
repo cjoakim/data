@@ -1,0 +1,6 @@
+{
+  "libname": "robotremoteserver",
+  "libvers": "1.1.1",
+  "infile": "data/pip/robotremoteserver.txt",
+  "dependencies": {}
+}

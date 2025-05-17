@@ -1,0 +1,6 @@
+{
+  "libname": "airportsdata",
+  "libvers": "20250224",
+  "infile": "data/pip/airportsdata.txt",
+  "dependencies": {}
+}

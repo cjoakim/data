@@ -1,0 +1,8 @@
+{
+  "libname": "pylatex",
+  "libvers": "1.4.2",
+  "infile": "data/pip/pylatex.txt",
+  "dependencies": {
+    "ordered-set": "4.1.0"
+  }
+}

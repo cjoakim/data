@@ -1,0 +1,6 @@
+{
+  "libname": "xunitparser",
+  "libvers": "1.3.4",
+  "infile": "data/pip/xunitparser.txt",
+  "dependencies": {}
+}

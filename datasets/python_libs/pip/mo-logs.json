@@ -1,0 +1,11 @@
+{
+  "libname": "mo-logs",
+  "libvers": "8.678.25061",
+  "infile": "data/pip/mo-logs.txt",
+  "dependencies": {
+    "mo-dots": "10.678.25061",
+    "mo-future": "7.678.25061",
+    "mo-imports": "7.678.25061",
+    "mo-kwargs": "7.678.25061"
+  }
+}

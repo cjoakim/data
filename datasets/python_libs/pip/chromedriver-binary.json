@@ -1,0 +1,6 @@
+{
+  "libname": "chromedriver-binary",
+  "libvers": "138.0.7158.0.0",
+  "infile": "data/pip/chromedriver-binary.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "cigam",
+  "libvers": "0.0.3",
+  "infile": "data/pip/cigam.txt",
+  "dependencies": {}
+}

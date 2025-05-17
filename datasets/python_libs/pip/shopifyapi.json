@@ -1,0 +1,11 @@
+{
+  "libname": "shopifyapi",
+  "libvers": "12.7.0",
+  "infile": "data/pip/shopifyapi.txt",
+  "dependencies": {
+    "pyactiveresource": "2.2.2",
+    "pyjwt": "2.10.1",
+    "pyyaml": "6.0.2",
+    "six": "1.17.0"
+  }
+}

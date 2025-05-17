@@ -1,0 +1,6 @@
+{
+  "libname": "autopage",
+  "libvers": "0.5.2",
+  "infile": "data/pip/autopage.txt",
+  "dependencies": {}
+}

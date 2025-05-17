@@ -1,0 +1,17 @@
+{
+  "libname": "pingparsing",
+  "libvers": "1.4.2",
+  "infile": "data/pip/pingparsing.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "humanreadable": "0.4.1",
+    "mbstrdecoder": "1.1.4",
+    "packaging": "25.0",
+    "pyparsing": "3.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "subprocrunner": "2.0.1",
+    "typepy[datetime]": "1.3.4"
+  }
+}

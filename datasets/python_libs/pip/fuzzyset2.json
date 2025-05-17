@@ -1,0 +1,8 @@
+{
+  "libname": "fuzzyset2",
+  "libvers": "0.2.5",
+  "infile": "data/pip/fuzzyset2.txt",
+  "dependencies": {
+    "rapidfuzz": "3.13.0"
+  }
+}

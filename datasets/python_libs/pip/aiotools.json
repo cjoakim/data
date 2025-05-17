@@ -1,0 +1,8 @@
+{
+  "libname": "aiotools",
+  "libvers": "1.8.2",
+  "infile": "data/pip/aiotools.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

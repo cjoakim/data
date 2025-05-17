@@ -1,0 +1,6 @@
+{
+  "libname": "fsrs-rs-python",
+  "libvers": "0.8.1",
+  "infile": "data/pip/fsrs-rs-python.txt",
+  "dependencies": {}
+}

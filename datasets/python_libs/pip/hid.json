@@ -1,0 +1,6 @@
+{
+  "libname": "hid",
+  "libvers": "1.0.7",
+  "infile": "data/pip/hid.txt",
+  "dependencies": {}
+}

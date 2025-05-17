@@ -1,0 +1,22 @@
+{
+  "libname": "relstorage",
+  "libvers": "4.1.1",
+  "infile": "data/pip/relstorage.txt",
+  "dependencies": {
+    "btrees": "6.1",
+    "cffi": "1.17.1",
+    "packaging": "25.0",
+    "perfmetrics": "4.1.0",
+    "persistent": "6.1.1",
+    "pycparser": "2.22",
+    "transaction": "5.0",
+    "zc-lockfile": "3.0.post1",
+    "zconfig": "4.2",
+    "zodb": "6.0.1",
+    "zodbpickle": "4.2",
+    "zope-deferredimport": "5.0",
+    "zope-dottedname": "6.0",
+    "zope-interface": "7.2",
+    "zope-proxy": "6.1"
+  }
+}

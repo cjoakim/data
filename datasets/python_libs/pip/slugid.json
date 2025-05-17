@@ -1,0 +1,6 @@
+{
+  "libname": "slugid",
+  "libvers": "2.0.0",
+  "infile": "data/pip/slugid.txt",
+  "dependencies": {}
+}

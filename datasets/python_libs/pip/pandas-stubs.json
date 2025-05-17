@@ -1,0 +1,9 @@
+{
+  "libname": "pandas-stubs",
+  "libvers": "2.2.3.250308",
+  "infile": "data/pip/pandas-stubs.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "types-pytz": "2025.2.0.20250326"
+  }
+}

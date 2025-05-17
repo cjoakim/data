@@ -1,0 +1,6 @@
+{
+  "libname": "aws-lambda-typing",
+  "libvers": "2.20.0",
+  "infile": "data/pip/aws-lambda-typing.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "cmeel-console-bridge",
+  "libvers": "1.0.2.3",
+  "infile": "data/pip/cmeel-console-bridge.txt",
+  "dependencies": {
+    "cmeel": "0.57.3"
+  }
+}

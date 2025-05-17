@@ -1,0 +1,6 @@
+{
+  "libname": "pika-stubs",
+  "libvers": "0.1.3",
+  "infile": "data/pip/pika-stubs.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "pyu2f",
+  "libvers": "0.1.5",
+  "infile": "data/pip/pyu2f.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

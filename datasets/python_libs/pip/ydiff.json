@@ -1,0 +1,6 @@
+{
+  "libname": "ydiff",
+  "libvers": "1.4.2",
+  "infile": "data/pip/ydiff.txt",
+  "dependencies": {}
+}

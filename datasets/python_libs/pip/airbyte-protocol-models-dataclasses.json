@@ -1,0 +1,6 @@
+{
+  "libname": "airbyte-protocol-models-dataclasses",
+  "libvers": "0.15.0",
+  "infile": "data/pip/airbyte-protocol-models-dataclasses.txt",
+  "dependencies": {}
+}

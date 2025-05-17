@@ -1,0 +1,6 @@
+{
+  "libname": "zipstream",
+  "libvers": "1.1.4",
+  "infile": "data/pip/zipstream.txt",
+  "dependencies": {}
+}

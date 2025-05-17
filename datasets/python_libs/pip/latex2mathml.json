@@ -1,0 +1,6 @@
+{
+  "libname": "latex2mathml",
+  "libvers": "3.78.0",
+  "infile": "data/pip/latex2mathml.txt",
+  "dependencies": {}
+}

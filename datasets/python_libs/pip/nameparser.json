@@ -1,0 +1,6 @@
+{
+  "libname": "nameparser",
+  "libvers": "1.1.3",
+  "infile": "data/pip/nameparser.txt",
+  "dependencies": {}
+}

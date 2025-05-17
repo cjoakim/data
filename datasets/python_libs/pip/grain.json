@@ -1,0 +1,21 @@
+{
+  "libname": "grain",
+  "libvers": "0.2.9",
+  "infile": "data/pip/grain.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "array-record": "0.7.2",
+    "attrs": "25.3.0",
+    "cloudpickle": "3.1.1",
+    "dm-tree": "0.1.9",
+    "etils[epath,epy]": "1.12.2",
+    "fsspec": "2025.3.2",
+    "importlib-resources": "6.5.2",
+    "more-itertools": "10.7.0",
+    "numpy": "2.2.5",
+    "protobuf": "6.30.2",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2",
+    "zipp": "3.21.0"
+  }
+}

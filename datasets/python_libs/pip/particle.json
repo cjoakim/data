@@ -1,0 +1,10 @@
+{
+  "libname": "particle",
+  "libvers": "0.25.3",
+  "infile": "data/pip/particle.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "hepunits": "2.3.5",
+    "typing-extensions": "4.13.2"
+  }
+}

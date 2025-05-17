@@ -1,0 +1,6 @@
+{
+  "libname": "logging-journald",
+  "libvers": "0.6.11",
+  "infile": "data/pip/logging-journald.txt",
+  "dependencies": {}
+}

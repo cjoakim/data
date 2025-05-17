@@ -1,0 +1,8 @@
+{
+  "libname": "pyro4",
+  "libvers": "4.82",
+  "infile": "data/pip/pyro4.txt",
+  "dependencies": {
+    "serpent": "1.41"
+  }
+}

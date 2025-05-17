@@ -1,0 +1,6 @@
+{
+  "libname": "random-user-agent",
+  "libvers": "1.0.1",
+  "infile": "data/pip/random-user-agent.txt",
+  "dependencies": {}
+}

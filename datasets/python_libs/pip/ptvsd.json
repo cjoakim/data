@@ -1,0 +1,6 @@
+{
+  "libname": "ptvsd",
+  "libvers": "4.3.2",
+  "infile": "data/pip/ptvsd.txt",
+  "dependencies": {}
+}

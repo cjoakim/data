@@ -1,0 +1,6 @@
+{
+  "libname": "flake8-copyright",
+  "libvers": "0.2.4",
+  "infile": "data/pip/flake8-copyright.txt",
+  "dependencies": {}
+}

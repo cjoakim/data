@@ -1,0 +1,6 @@
+{
+  "libname": "fields",
+  "libvers": "5.0.0",
+  "infile": "data/pip/fields.txt",
+  "dependencies": {}
+}

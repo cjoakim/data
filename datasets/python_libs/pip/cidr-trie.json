@@ -1,0 +1,6 @@
+{
+  "libname": "cidr-trie",
+  "libvers": "3.1.2",
+  "infile": "data/pip/cidr-trie.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pot",
+  "libvers": "0.9.5",
+  "infile": "data/pip/pot.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

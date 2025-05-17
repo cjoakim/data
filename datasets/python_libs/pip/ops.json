@@ -1,0 +1,14 @@
+{
+  "libname": "ops",
+  "libvers": "2.21.1",
+  "infile": "data/pip/ops.txt",
+  "dependencies": {
+    "deprecated": "1.2.18",
+    "importlib-metadata": "8.6.1",
+    "opentelemetry-api": "1.32.1",
+    "pyyaml": "6.0.2",
+    "websocket-client": "1.8.0",
+    "wrapt": "1.17.2",
+    "zipp": "3.21.0"
+  }
+}

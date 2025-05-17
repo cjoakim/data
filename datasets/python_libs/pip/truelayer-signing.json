@@ -1,0 +1,10 @@
+{
+  "libname": "truelayer-signing",
+  "libvers": "0.3.7",
+  "infile": "data/pip/truelayer-signing.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "43.0.3",
+    "pycparser": "2.22"
+  }
+}

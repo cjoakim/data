@@ -1,0 +1,8 @@
+{
+  "libname": "config-parser",
+  "libvers": "0.0.1",
+  "infile": "data/pip/config-parser.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

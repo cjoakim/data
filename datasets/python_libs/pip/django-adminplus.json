@@ -1,0 +1,6 @@
+{
+  "libname": "django-adminplus",
+  "libvers": "0.6",
+  "infile": "data/pip/django-adminplus.txt",
+  "dependencies": {}
+}

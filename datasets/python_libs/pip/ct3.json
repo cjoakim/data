@@ -1,0 +1,6 @@
+{
+  "libname": "ct3",
+  "libvers": "3.4.0",
+  "infile": "data/pip/ct3.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,16 @@
+{
+  "libname": "demoparser2",
+  "libvers": "0.38.0",
+  "infile": "data/pip/demoparser2.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "polars": "1.29.0",
+    "pyarrow": "20.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tqdm": "4.67.1",
+    "tzdata": "2025.2"
+  }
+}

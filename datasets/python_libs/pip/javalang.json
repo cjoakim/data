@@ -1,0 +1,8 @@
+{
+  "libname": "javalang",
+  "libvers": "0.13.0",
+  "infile": "data/pip/javalang.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

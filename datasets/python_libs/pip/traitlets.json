@@ -1,0 +1,6 @@
+{
+  "libname": "traitlets",
+  "libvers": "5.14.3",
+  "infile": "data/pip/traitlets.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "iso-639",
+  "libvers": "0.4.5",
+  "infile": "data/pip/iso-639.txt",
+  "dependencies": {}
+}

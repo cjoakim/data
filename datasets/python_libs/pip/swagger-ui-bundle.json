@@ -1,0 +1,9 @@
+{
+  "libname": "swagger-ui-bundle",
+  "libvers": "1.1.0",
+  "infile": "data/pip/swagger-ui-bundle.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

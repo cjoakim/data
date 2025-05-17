@@ -1,0 +1,6 @@
+{
+  "libname": "zc-lockfile",
+  "libvers": "3.0.post1",
+  "infile": "data/pip/zc-lockfile.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,16 @@
+{
+  "libname": "v3iofs",
+  "libvers": "0.1.18",
+  "infile": "data/pip/v3iofs.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "fsspec": "2025.3.2",
+    "future": "1.0.0",
+    "idna": "3.10",
+    "orjson": "3.10.18",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0",
+    "v3io": "0.6.12"
+  }
+}

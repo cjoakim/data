@@ -1,0 +1,11 @@
+{
+  "libname": "pykdebugparser",
+  "libvers": "1.2.7",
+  "infile": "data/pip/pykdebugparser.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "construct": "2.10.70",
+    "pygments": "2.19.1",
+    "termcolor": "3.1.0"
+  }
+}

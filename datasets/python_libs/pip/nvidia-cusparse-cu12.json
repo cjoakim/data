@@ -1,0 +1,8 @@
+{
+  "libname": "nvidia-cusparse-cu12",
+  "libvers": "12.5.9.5",
+  "infile": "data/pip/nvidia-cusparse-cu12.txt",
+  "dependencies": {
+    "nvidia-nvjitlink-cu12": "12.9.41"
+  }
+}

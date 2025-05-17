@@ -1,0 +1,14 @@
+{
+  "libname": "google-auth-httplib2",
+  "libvers": "0.2.0",
+  "infile": "data/pip/google-auth-httplib2.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "google-auth": "2.40.1",
+    "httplib2": "0.22.0",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pyparsing": "3.2.3",
+    "rsa": "4.9.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "django-smtp-ssl",
+  "libvers": "1.0",
+  "infile": "data/pip/django-smtp-ssl.txt",
+  "dependencies": {}
+}

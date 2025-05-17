@@ -1,0 +1,9 @@
+{
+  "libname": "dtw-python",
+  "libvers": "1.5.3",
+  "infile": "data/pip/dtw-python.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "django-reverse-admin",
+  "libvers": "2.9.6",
+  "infile": "data/pip/django-reverse-admin.txt",
+  "dependencies": {}
+}

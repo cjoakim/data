@@ -1,0 +1,6 @@
+{
+  "libname": "pynmeagps",
+  "libvers": "1.0.50",
+  "infile": "data/pip/pynmeagps.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "calver",
+  "libvers": "2025.4.17",
+  "infile": "data/pip/calver.txt",
+  "dependencies": {}
+}

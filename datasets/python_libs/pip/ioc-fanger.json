@@ -1,0 +1,8 @@
+{
+  "libname": "ioc-fanger",
+  "libvers": "4.2.1",
+  "infile": "data/pip/ioc-fanger.txt",
+  "dependencies": {
+    "click": "8.1.8"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "bkmr",
+  "libvers": "4.20.5",
+  "infile": "data/pip/bkmr.txt",
+  "dependencies": {}
+}

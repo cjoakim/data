@@ -1,0 +1,6 @@
+{
+  "libname": "sybil",
+  "libvers": "9.1.0",
+  "infile": "data/pip/sybil.txt",
+  "dependencies": {}
+}

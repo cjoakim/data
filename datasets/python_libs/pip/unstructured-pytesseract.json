@@ -1,0 +1,9 @@
+{
+  "libname": "unstructured-pytesseract",
+  "libvers": "0.3.15",
+  "infile": "data/pip/unstructured-pytesseract.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "pillow": "11.2.1"
+  }
+}

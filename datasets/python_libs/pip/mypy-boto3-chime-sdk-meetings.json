@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-chime-sdk-meetings",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-chime-sdk-meetings.txt",
+  "dependencies": {}
+}

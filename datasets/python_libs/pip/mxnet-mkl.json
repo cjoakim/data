@@ -1,0 +1,14 @@
+{
+  "libname": "mxnet-mkl",
+  "libvers": "1.5.0",
+  "infile": "data/pip/mxnet-mkl.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "chardet": "3.0.4",
+    "graphviz": "0.8.4",
+    "idna": "2.6",
+    "numpy": "1.16.6",
+    "requests": "2.18.4",
+    "urllib3": "1.22"
+  }
+}

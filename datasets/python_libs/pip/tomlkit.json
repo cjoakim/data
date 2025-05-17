@@ -1,0 +1,6 @@
+{
+  "libname": "tomlkit",
+  "libvers": "0.13.2",
+  "infile": "data/pip/tomlkit.txt",
+  "dependencies": {}
+}

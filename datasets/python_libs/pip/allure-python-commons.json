@@ -1,0 +1,9 @@
+{
+  "libname": "allure-python-commons",
+  "libvers": "2.14.2",
+  "infile": "data/pip/allure-python-commons.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "pluggy": "1.5.0"
+  }
+}

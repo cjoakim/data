@@ -1,0 +1,10 @@
+{
+  "libname": "pycollada",
+  "libvers": "0.9",
+  "infile": "data/pip/pycollada.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

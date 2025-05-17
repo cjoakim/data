@@ -1,0 +1,6 @@
+{
+  "libname": "pypeg2",
+  "libvers": "2.15.2",
+  "infile": "data/pip/pypeg2.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "comment-parser",
+  "libvers": "1.2.4",
+  "infile": "data/pip/comment-parser.txt",
+  "dependencies": {
+    "python-magic": "0.4.24"
+  }
+}

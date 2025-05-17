@@ -1,0 +1,6 @@
+{
+  "libname": "wheel-stub",
+  "libvers": "0.4.2",
+  "infile": "data/pip/wheel-stub.txt",
+  "dependencies": {}
+}

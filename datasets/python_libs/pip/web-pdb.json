@@ -1,0 +1,9 @@
+{
+  "libname": "web-pdb",
+  "libvers": "1.6.3",
+  "infile": "data/pip/web-pdb.txt",
+  "dependencies": {
+    "asyncore-wsgi": "0.0.11",
+    "bottle": "0.13.3"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "unzip",
+  "libvers": "1.0.0",
+  "infile": "data/pip/unzip.txt",
+  "dependencies": {}
+}

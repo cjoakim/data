@@ -1,0 +1,8 @@
+{
+  "libname": "pyte",
+  "libvers": "0.8.2",
+  "infile": "data/pip/pyte.txt",
+  "dependencies": {
+    "wcwidth": "0.2.13"
+  }
+}

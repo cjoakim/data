@@ -1,0 +1,8 @@
+{
+  "libname": "django-coverage-plugin",
+  "libvers": "3.1.0",
+  "infile": "data/pip/django-coverage-plugin.txt",
+  "dependencies": {
+    "coverage": "7.8.0"
+  }
+}

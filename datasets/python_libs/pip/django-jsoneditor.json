@@ -1,0 +1,8 @@
+{
+  "libname": "django-jsoneditor",
+  "libvers": "0.2.4",
+  "infile": "data/pip/django-jsoneditor.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

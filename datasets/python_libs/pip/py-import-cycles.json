@@ -1,0 +1,9 @@
+{
+  "libname": "py-import-cycles",
+  "libvers": "0.3.1",
+  "infile": "data/pip/py-import-cycles.txt",
+  "dependencies": {
+    "graphviz": "0.20.3",
+    "networkx": "3.4.2"
+  }
+}

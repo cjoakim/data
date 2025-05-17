@@ -1,0 +1,6 @@
+{
+  "libname": "pylibmagic",
+  "libvers": "0.5.0",
+  "infile": "data/pip/pylibmagic.txt",
+  "dependencies": {}
+}

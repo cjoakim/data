@@ -1,0 +1,9 @@
+{
+  "libname": "ll-xist",
+  "libvers": "5.79",
+  "infile": "data/pip/ll-xist.txt",
+  "dependencies": {
+    "cssutils": "2.11.1",
+    "more-itertools": "10.7.0"
+  }
+}

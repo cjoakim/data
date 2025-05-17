@@ -1,0 +1,9 @@
+{
+  "libname": "passagemath-objects",
+  "libvers": "10.5.30",
+  "infile": "data/pip/passagemath-objects.txt",
+  "dependencies": {
+    "cysignals": "1.12.0rc2",
+    "gmpy2": "2.2.1"
+  }
+}

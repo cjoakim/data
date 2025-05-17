@@ -1,0 +1,15 @@
+{
+  "libname": "hyppo",
+  "libvers": "0.5.1",
+  "infile": "data/pip/hyppo.txt",
+  "dependencies": {
+    "autograd": "1.8.0",
+    "joblib": "1.5.0",
+    "llvmlite": "0.44.0",
+    "numba": "0.61.2",
+    "numpy": "2.2.5",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "threadpoolctl": "3.6.0"
+  }
+}

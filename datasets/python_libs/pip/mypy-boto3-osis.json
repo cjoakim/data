@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-osis",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-osis.txt",
+  "dependencies": {}
+}

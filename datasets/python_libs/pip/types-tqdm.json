@@ -1,0 +1,9 @@
+{
+  "libname": "types-tqdm",
+  "libvers": "4.67.0.20250417",
+  "infile": "data/pip/types-tqdm.txt",
+  "dependencies": {
+    "types-requests": "2.32.0.20250328",
+    "urllib3": "2.4.0"
+  }
+}

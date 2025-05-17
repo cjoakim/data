@@ -1,0 +1,8 @@
+{
+  "libname": "tsdownsample",
+  "libvers": "0.1.4.1",
+  "infile": "data/pip/tsdownsample.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

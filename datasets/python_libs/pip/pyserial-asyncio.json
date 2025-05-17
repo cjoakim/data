@@ -1,0 +1,8 @@
+{
+  "libname": "pyserial-asyncio",
+  "libvers": "0.6",
+  "infile": "data/pip/pyserial-asyncio.txt",
+  "dependencies": {
+    "pyserial": "3.5"
+  }
+}

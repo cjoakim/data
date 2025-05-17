@@ -1,0 +1,6 @@
+{
+  "libname": "imageio-ffmpeg",
+  "libvers": "0.6.0",
+  "infile": "data/pip/imageio-ffmpeg.txt",
+  "dependencies": {}
+}

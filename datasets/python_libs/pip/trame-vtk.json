@@ -1,0 +1,9 @@
+{
+  "libname": "trame-vtk",
+  "libvers": "2.8.15",
+  "infile": "data/pip/trame-vtk.txt",
+  "dependencies": {
+    "trame-client": "3.8.2",
+    "trame-common": "0.2.0"
+  }
+}

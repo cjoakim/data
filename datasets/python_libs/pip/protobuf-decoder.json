@@ -1,0 +1,6 @@
+{
+  "libname": "protobuf-decoder",
+  "libvers": "0.4.0",
+  "infile": "data/pip/protobuf-decoder.txt",
+  "dependencies": {}
+}

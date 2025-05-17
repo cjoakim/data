@@ -1,0 +1,6 @@
+{
+  "libname": "xmljson",
+  "libvers": "0.2.1",
+  "infile": "data/pip/xmljson.txt",
+  "dependencies": {}
+}

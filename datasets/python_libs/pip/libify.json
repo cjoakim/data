@@ -1,0 +1,6 @@
+{
+  "libname": "libify",
+  "libvers": "0.78",
+  "infile": "data/pip/libify.txt",
+  "dependencies": {}
+}

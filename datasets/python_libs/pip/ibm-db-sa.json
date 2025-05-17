@@ -1,0 +1,10 @@
+{
+  "libname": "ibm-db-sa",
+  "libvers": "0.4.1",
+  "infile": "data/pip/ibm-db-sa.txt",
+  "dependencies": {
+    "ibm-db": "3.2.6",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

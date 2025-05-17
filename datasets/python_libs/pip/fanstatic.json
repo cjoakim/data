@@ -1,0 +1,9 @@
+{
+  "libname": "fanstatic",
+  "libvers": "1.5",
+  "infile": "data/pip/fanstatic.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "webob": "1.8.9"
+  }
+}

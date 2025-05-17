@@ -1,0 +1,9 @@
+{
+  "libname": "reportlab",
+  "libvers": "4.4.0",
+  "infile": "data/pip/reportlab.txt",
+  "dependencies": {
+    "chardet": "5.2.0",
+    "pillow": "11.2.1"
+  }
+}

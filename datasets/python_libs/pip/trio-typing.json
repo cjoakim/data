@@ -1,0 +1,19 @@
+{
+  "libname": "trio-typing",
+  "libvers": "0.10.0",
+  "infile": "data/pip/trio-typing.txt",
+  "dependencies": {
+    "async-generator": "1.10",
+    "attrs": "25.3.0",
+    "idna": "3.10",
+    "importlib-metadata": "8.7.0",
+    "mypy-extensions": "1.1.0",
+    "outcome": "1.3.0.post0",
+    "packaging": "25.0",
+    "sniffio": "1.3.1",
+    "sortedcontainers": "2.4.0",
+    "trio": "0.30.0",
+    "typing-extensions": "4.13.2",
+    "zipp": "3.21.0"
+  }
+}

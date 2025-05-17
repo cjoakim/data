@@ -1,0 +1,8 @@
+{
+  "libname": "djangorestframework-api-key",
+  "libvers": "3.1.0",
+  "infile": "data/pip/djangorestframework-api-key.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

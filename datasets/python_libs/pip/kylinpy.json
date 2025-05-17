@@ -1,0 +1,6 @@
+{
+  "libname": "kylinpy",
+  "libvers": "2.8.4",
+  "infile": "data/pip/kylinpy.txt",
+  "dependencies": {}
+}

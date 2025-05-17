@@ -1,0 +1,13 @@
+{
+  "libname": "tiktoken",
+  "libvers": "0.9.0",
+  "infile": "data/pip/tiktoken.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "regex": "2024.11.6",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

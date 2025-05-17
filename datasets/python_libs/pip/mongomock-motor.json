@@ -1,0 +1,11 @@
+{
+  "libname": "mongomock-motor",
+  "libvers": "0.0.35",
+  "infile": "data/pip/mongomock-motor.txt",
+  "dependencies": {
+    "mongomock": "4.3.0",
+    "packaging": "25.0",
+    "pytz": "2025.2",
+    "sentinels": "1.0.0"
+  }
+}

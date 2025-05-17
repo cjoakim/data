@@ -1,0 +1,6 @@
+{
+  "libname": "s3urls",
+  "libvers": "0.0.3",
+  "infile": "data/pip/s3urls.txt",
+  "dependencies": {}
+}

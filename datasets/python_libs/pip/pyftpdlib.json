@@ -1,0 +1,9 @@
+{
+  "libname": "pyftpdlib",
+  "libvers": "2.0.1",
+  "infile": "data/pip/pyftpdlib.txt",
+  "dependencies": {
+    "pyasynchat": "1.0.4",
+    "pyasyncore": "1.0.4"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-first",
+  "libvers": "2.0.5.20240806",
+  "infile": "data/pip/types-first.txt",
+  "dependencies": {}
+}

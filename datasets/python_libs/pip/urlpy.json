@@ -1,0 +1,8 @@
+{
+  "libname": "urlpy",
+  "libvers": "0.5",
+  "infile": "data/pip/urlpy.txt",
+  "dependencies": {
+    "publicsuffix2": "2.20191221"
+  }
+}

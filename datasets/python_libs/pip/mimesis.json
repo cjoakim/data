@@ -1,0 +1,6 @@
+{
+  "libname": "mimesis",
+  "libvers": "18.0.0",
+  "infile": "data/pip/mimesis.txt",
+  "dependencies": {}
+}

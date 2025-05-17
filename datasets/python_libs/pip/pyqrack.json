@@ -1,0 +1,6 @@
+{
+  "libname": "pyqrack",
+  "libvers": "1.40.2",
+  "infile": "data/pip/pyqrack.txt",
+  "dependencies": {}
+}

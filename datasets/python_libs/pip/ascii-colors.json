@@ -1,0 +1,6 @@
+{
+  "libname": "ascii-colors",
+  "libvers": "0.11.2",
+  "infile": "data/pip/ascii-colors.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "django-nmb",
+  "libvers": "0.0.2",
+  "infile": "data/pip/django-nmb.txt",
+  "dependencies": {}
+}

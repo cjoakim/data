@@ -1,0 +1,9 @@
+{
+  "libname": "taskgroup",
+  "libvers": "0.2.2",
+  "infile": "data/pip/taskgroup.txt",
+  "dependencies": {
+    "exceptiongroup": "1.2.2",
+    "typing-extensions": "4.13.2"
+  }
+}

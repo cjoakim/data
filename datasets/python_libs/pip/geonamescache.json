@@ -1,0 +1,6 @@
+{
+  "libname": "geonamescache",
+  "libvers": "2.0.0",
+  "infile": "data/pip/geonamescache.txt",
+  "dependencies": {}
+}

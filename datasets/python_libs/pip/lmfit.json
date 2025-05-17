@@ -1,0 +1,12 @@
+{
+  "libname": "lmfit",
+  "libvers": "1.3.3",
+  "infile": "data/pip/lmfit.txt",
+  "dependencies": {
+    "asteval": "1.0.6",
+    "dill": "0.4.0",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "uncertainties": "3.2.3"
+  }
+}

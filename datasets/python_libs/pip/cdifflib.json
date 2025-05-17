@@ -1,0 +1,6 @@
+{
+  "libname": "cdifflib",
+  "libvers": "1.2.9",
+  "infile": "data/pip/cdifflib.txt",
+  "dependencies": {}
+}

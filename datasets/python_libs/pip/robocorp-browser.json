@@ -1,0 +1,16 @@
+{
+  "libname": "robocorp-browser",
+  "libvers": "2.3.5",
+  "infile": "data/pip/robocorp-browser.txt",
+  "dependencies": {
+    "docstring-parser-fork": "0.0.5",
+    "greenlet": "3.2.1",
+    "packaging": "24.2",
+    "playwright": "1.52.0",
+    "psutil": "5.9.8",
+    "pyee": "13.0.0",
+    "robocorp-log": "3.0.0",
+    "robocorp-tasks": "4.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

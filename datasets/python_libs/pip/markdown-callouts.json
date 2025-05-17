@@ -1,0 +1,8 @@
+{
+  "libname": "markdown-callouts",
+  "libvers": "0.4.0",
+  "infile": "data/pip/markdown-callouts.txt",
+  "dependencies": {
+    "markdown": "3.8"
+  }
+}

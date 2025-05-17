@@ -1,0 +1,10 @@
+{
+  "libname": "py-vapid",
+  "libvers": "1.9.2",
+  "infile": "data/pip/py-vapid.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22"
+  }
+}

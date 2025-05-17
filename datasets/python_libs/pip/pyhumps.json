@@ -1,0 +1,6 @@
+{
+  "libname": "pyhumps",
+  "libvers": "3.8.0",
+  "infile": "data/pip/pyhumps.txt",
+  "dependencies": {}
+}

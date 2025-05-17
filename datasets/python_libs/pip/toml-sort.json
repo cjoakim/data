@@ -1,0 +1,8 @@
+{
+  "libname": "toml-sort",
+  "libvers": "0.24.2",
+  "infile": "data/pip/toml-sort.txt",
+  "dependencies": {
+    "tomlkit": "0.13.2"
+  }
+}

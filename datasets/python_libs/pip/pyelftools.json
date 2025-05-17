@@ -1,0 +1,6 @@
+{
+  "libname": "pyelftools",
+  "libvers": "0.32",
+  "infile": "data/pip/pyelftools.txt",
+  "dependencies": {}
+}

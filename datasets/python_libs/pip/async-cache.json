@@ -1,0 +1,6 @@
+{
+  "libname": "async-cache",
+  "libvers": "1.1.1",
+  "infile": "data/pip/async-cache.txt",
+  "dependencies": {}
+}

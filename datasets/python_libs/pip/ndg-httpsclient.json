@@ -1,0 +1,13 @@
+{
+  "libname": "ndg-httpsclient",
+  "libvers": "0.5.1",
+  "infile": "data/pip/ndg-httpsclient.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pyasn1": "0.6.1",
+    "pycparser": "2.22",
+    "pyopenssl": "25.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

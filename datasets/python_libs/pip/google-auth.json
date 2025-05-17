@@ -1,0 +1,11 @@
+{
+  "libname": "google-auth",
+  "libvers": "2.40.1",
+  "infile": "data/pip/google-auth.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "rsa": "4.9.1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "libname": "flake8-formatter-junit-xml",
+  "libvers": "0.0.6",
+  "infile": "data/pip/flake8-formatter-junit-xml.txt",
+  "dependencies": {
+    "flake8": "7.2.0",
+    "junit-xml": "1.9",
+    "mccabe": "0.7.0",
+    "pycodestyle": "2.13.0",
+    "pyflakes": "3.3.2",
+    "six": "1.17.0"
+  }
+}

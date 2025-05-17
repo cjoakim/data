@@ -1,0 +1,8 @@
+{
+  "libname": "notify-py",
+  "libvers": "0.3.43",
+  "infile": "data/pip/notify-py.txt",
+  "dependencies": {
+    "loguru": "0.6.0"
+  }
+}

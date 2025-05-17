@@ -1,0 +1,8 @@
+{
+  "libname": "ppk2-api",
+  "libvers": "0.9.2",
+  "infile": "data/pip/ppk2-api.txt",
+  "dependencies": {
+    "pyserial": "3.5"
+  }
+}

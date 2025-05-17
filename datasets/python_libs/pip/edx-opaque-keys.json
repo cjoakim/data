@@ -1,0 +1,12 @@
+{
+  "libname": "edx-opaque-keys",
+  "libvers": "3.0.0",
+  "infile": "data/pip/edx-opaque-keys.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "pbr": "6.1.1",
+    "pymongo": "4.12.1",
+    "stevedore": "5.4.1",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "implicit",
+  "libvers": "0.7.2",
+  "infile": "data/pip/implicit.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "threadpoolctl": "3.6.0",
+    "tqdm": "4.67.1"
+  }
+}

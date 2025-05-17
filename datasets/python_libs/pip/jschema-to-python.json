@@ -1,0 +1,10 @@
+{
+  "libname": "jschema-to-python",
+  "libvers": "1.2.3",
+  "infile": "data/pip/jschema-to-python.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonpickle": "4.0.5",
+    "pbr": "6.1.1"
+  }
+}

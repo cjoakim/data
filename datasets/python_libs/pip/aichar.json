@@ -1,0 +1,6 @@
+{
+  "libname": "aichar",
+  "libvers": "1.0.4",
+  "infile": "data/pip/aichar.txt",
+  "dependencies": {}
+}

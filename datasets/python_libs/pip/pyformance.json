@@ -1,0 +1,8 @@
+{
+  "libname": "pyformance",
+  "libvers": "0.4",
+  "infile": "data/pip/pyformance.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "wtforms-validators",
+  "libvers": "1.0.0",
+  "infile": "data/pip/wtforms-validators.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "is-disposable-email": "1.0.0",
+    "markupsafe": "3.0.2",
+    "wtforms": "3.2.1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "pydeck",
+  "libvers": "0.9.1",
+  "infile": "data/pip/pydeck.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "numpy": "2.2.5"
+  }
+}

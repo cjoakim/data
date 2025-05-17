@@ -1,0 +1,8 @@
+{
+  "libname": "mrcfile",
+  "libvers": "1.5.4",
+  "infile": "data/pip/mrcfile.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

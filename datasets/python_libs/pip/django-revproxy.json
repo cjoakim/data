@@ -1,0 +1,11 @@
+{
+  "libname": "django-revproxy",
+  "libvers": "0.13.0",
+  "infile": "data/pip/django-revproxy.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "sqlparse": "0.5.3",
+    "urllib3": "2.4.0"
+  }
+}

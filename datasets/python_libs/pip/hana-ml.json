@@ -1,0 +1,28 @@
+{
+  "libname": "hana-ml",
+  "libvers": "2.24.25042500",
+  "infile": "data/pip/hana-ml.txt",
+  "dependencies": {
+    "deprecated": "1.2.18",
+    "hdbcli": "2.24.24",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "narwhals": "1.38.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "plotly": "6.0.1",
+    "prettytable": "3.16.0",
+    "pydotplus": "2.0.2",
+    "pyparsing": "3.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "schedule": "1.2.2",
+    "shapely": "2.1.0",
+    "six": "1.17.0",
+    "tqdm": "4.67.1",
+    "tzdata": "2025.2",
+    "wcwidth": "0.2.13",
+    "wrapt": "1.17.2"
+  }
+}

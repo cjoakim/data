@@ -1,0 +1,6 @@
+{
+  "libname": "types-s3transfer",
+  "libvers": "0.12.0",
+  "infile": "data/pip/types-s3transfer.txt",
+  "dependencies": {}
+}

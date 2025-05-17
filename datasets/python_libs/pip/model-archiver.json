@@ -1,0 +1,9 @@
+{
+  "libname": "model-archiver",
+  "libvers": "1.0.3",
+  "infile": "data/pip/model-archiver.txt",
+  "dependencies": {
+    "enum-compat": "0.0.3",
+    "future": "1.0.0"
+  }
+}

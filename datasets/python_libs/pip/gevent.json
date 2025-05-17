@@ -1,0 +1,10 @@
+{
+  "libname": "gevent",
+  "libvers": "25.4.2",
+  "infile": "data/pip/gevent.txt",
+  "dependencies": {
+    "greenlet": "3.2.1",
+    "zope-event": "5.0",
+    "zope-interface": "7.2"
+  }
+}

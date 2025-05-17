@@ -1,0 +1,6 @@
+{
+  "libname": "jsonseq",
+  "libvers": "1.0.0",
+  "infile": "data/pip/jsonseq.txt",
+  "dependencies": {}
+}

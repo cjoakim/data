@@ -1,0 +1,6 @@
+{
+  "libname": "tinynumpy",
+  "libvers": "1.2.1",
+  "infile": "data/pip/tinynumpy.txt",
+  "dependencies": {}
+}

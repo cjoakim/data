@@ -1,0 +1,6 @@
+{
+  "libname": "nvtx",
+  "libvers": "0.2.11",
+  "infile": "data/pip/nvtx.txt",
+  "dependencies": {}
+}

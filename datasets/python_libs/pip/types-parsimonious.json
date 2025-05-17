@@ -1,0 +1,6 @@
+{
+  "libname": "types-parsimonious",
+  "libvers": "0.10.0.20240331",
+  "infile": "data/pip/types-parsimonious.txt",
+  "dependencies": {}
+}

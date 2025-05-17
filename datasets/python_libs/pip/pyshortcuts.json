@@ -1,0 +1,8 @@
+{
+  "libname": "pyshortcuts",
+  "libvers": "1.9.5",
+  "infile": "data/pip/pyshortcuts.txt",
+  "dependencies": {
+    "charset-normalizer": "3.4.2"
+  }
+}

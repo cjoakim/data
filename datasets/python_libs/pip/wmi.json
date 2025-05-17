@@ -1,0 +1,6 @@
+{
+  "libname": "wmi",
+  "libvers": "1.4.9",
+  "infile": "data/pip/wmi.txt",
+  "dependencies": {}
+}

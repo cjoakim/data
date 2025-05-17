@@ -1,0 +1,14 @@
+{
+  "libname": "redlines",
+  "libvers": "0.5.1",
+  "infile": "data/pip/redlines.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "pygments": "2.19.1",
+    "rich": "13.9.4",
+    "rich-click": "1.8.8",
+    "typing-extensions": "4.13.2"
+  }
+}

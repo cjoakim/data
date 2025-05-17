@@ -1,0 +1,6 @@
+{
+  "libname": "s5cmd",
+  "libvers": "0.2.0",
+  "infile": "data/pip/s5cmd.txt",
+  "dependencies": {}
+}

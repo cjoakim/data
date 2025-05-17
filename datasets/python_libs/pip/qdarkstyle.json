@@ -1,0 +1,9 @@
+{
+  "libname": "qdarkstyle",
+  "libvers": "3.2.3",
+  "infile": "data/pip/qdarkstyle.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "qtpy": "2.4.3"
+  }
+}

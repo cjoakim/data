@@ -1,0 +1,6 @@
+{
+  "libname": "pyprind",
+  "libvers": "2.11.3",
+  "infile": "data/pip/pyprind.txt",
+  "dependencies": {}
+}

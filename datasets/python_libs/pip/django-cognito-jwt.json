@@ -1,0 +1,20 @@
+{
+  "libname": "django-cognito-jwt",
+  "libvers": "0.0.4",
+  "infile": "data/pip/django-cognito-jwt.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "django": "5.2",
+    "djangorestframework": "3.16.0",
+    "idna": "3.10",
+    "pycparser": "2.22",
+    "pyjwt": "2.10.1",
+    "requests": "2.32.3",
+    "sqlparse": "0.5.3",
+    "urllib3": "2.4.0"
+  }
+}

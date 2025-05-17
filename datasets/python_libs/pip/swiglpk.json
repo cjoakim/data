@@ -1,0 +1,6 @@
+{
+  "libname": "swiglpk",
+  "libvers": "5.0.12",
+  "infile": "data/pip/swiglpk.txt",
+  "dependencies": {}
+}

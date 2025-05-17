@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-route53-recovery-cluster",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-route53-recovery-cluster.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "vtracer",
+  "libvers": "0.6.11",
+  "infile": "data/pip/vtracer.txt",
+  "dependencies": {}
+}

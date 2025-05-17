@@ -1,0 +1,8 @@
+{
+  "libname": "pyignite",
+  "libvers": "0.6.1",
+  "infile": "data/pip/pyignite.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

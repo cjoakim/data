@@ -1,0 +1,6 @@
+{
+  "libname": "urlobject",
+  "libvers": "2.4.3",
+  "infile": "data/pip/urlobject.txt",
+  "dependencies": {}
+}

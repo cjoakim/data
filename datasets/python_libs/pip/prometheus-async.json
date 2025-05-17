@@ -1,0 +1,9 @@
+{
+  "libname": "prometheus-async",
+  "libvers": "25.1.0",
+  "infile": "data/pip/prometheus-async.txt",
+  "dependencies": {
+    "prometheus-client": "0.21.1",
+    "wrapt": "1.17.2"
+  }
+}

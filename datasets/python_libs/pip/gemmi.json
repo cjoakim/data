@@ -1,0 +1,6 @@
+{
+  "libname": "gemmi",
+  "libvers": "0.7.1",
+  "infile": "data/pip/gemmi.txt",
+  "dependencies": {}
+}

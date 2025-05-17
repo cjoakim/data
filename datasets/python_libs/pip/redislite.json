@@ -1,0 +1,9 @@
+{
+  "libname": "redislite",
+  "libvers": "6.2.912183",
+  "infile": "data/pip/redislite.txt",
+  "dependencies": {
+    "psutil": "7.0.0",
+    "redis": "6.0.0"
+  }
+}

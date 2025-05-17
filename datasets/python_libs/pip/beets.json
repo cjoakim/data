@@ -1,0 +1,17 @@
+{
+  "libname": "beets",
+  "libvers": "2.2.0",
+  "infile": "data/pip/beets.txt",
+  "dependencies": {
+    "confuse": "2.0.1",
+    "filetype": "1.2.0",
+    "jellyfish": "1.2.0",
+    "mediafile": "0.13.0",
+    "munkres": "1.1.4",
+    "musicbrainzngs": "0.7.1",
+    "mutagen": "1.47.0",
+    "platformdirs": "4.3.7",
+    "pyyaml": "6.0.2",
+    "unidecode": "1.4.0"
+  }
+}

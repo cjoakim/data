@@ -1,0 +1,6 @@
+{
+  "libname": "cronsim",
+  "libvers": "2.6",
+  "infile": "data/pip/cronsim.txt",
+  "dependencies": {}
+}

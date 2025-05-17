@@ -1,0 +1,6 @@
+{
+  "libname": "zipstream-ng",
+  "libvers": "1.8.0",
+  "infile": "data/pip/zipstream-ng.txt",
+  "dependencies": {}
+}

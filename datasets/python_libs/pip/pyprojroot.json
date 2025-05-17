@@ -1,0 +1,8 @@
+{
+  "libname": "pyprojroot",
+  "libvers": "0.3.0",
+  "infile": "data/pip/pyprojroot.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "jupyterlab-unfold",
+  "libvers": "0.3.3",
+  "infile": "data/pip/jupyterlab-unfold.txt",
+  "dependencies": {}
+}

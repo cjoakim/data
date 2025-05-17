@@ -1,0 +1,6 @@
+{
+  "libname": "pyarmor-cli-core",
+  "libvers": "7.6.6",
+  "infile": "data/pip/pyarmor-cli-core.txt",
+  "dependencies": {}
+}

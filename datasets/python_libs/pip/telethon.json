@@ -1,0 +1,10 @@
+{
+  "libname": "telethon",
+  "libvers": "1.40.0",
+  "infile": "data/pip/telethon.txt",
+  "dependencies": {
+    "pyaes": "1.6.1",
+    "pyasn1": "0.6.1",
+    "rsa": "4.9.1"
+  }
+}

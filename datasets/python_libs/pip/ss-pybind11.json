@@ -1,0 +1,9 @@
+{
+  "libname": "ss-pybind11",
+  "libvers": "0.8.40",
+  "infile": "data/pip/ss-pybind11.txt",
+  "dependencies": {
+    "importlib-metadata": "8.7.0",
+    "zipp": "3.21.0"
+  }
+}

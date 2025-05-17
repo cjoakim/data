@@ -1,0 +1,9 @@
+{
+  "libname": "datarecorder",
+  "libvers": "3.6.2",
+  "infile": "data/pip/datarecorder.txt",
+  "dependencies": {
+    "et-xmlfile": "2.0.0",
+    "openpyxl": "3.1.5"
+  }
+}

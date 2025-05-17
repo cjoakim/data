@@ -1,0 +1,20 @@
+{
+  "libname": "behave-django",
+  "libvers": "1.5.0",
+  "infile": "data/pip/behave-django.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "beautifulsoup4": "4.13.4",
+    "behave[toml]": "1.2.7.dev6",
+    "colorama": "0.4.6",
+    "cucumber-expressions": "18.0.1",
+    "cucumber-tag-expressions": "6.1.2",
+    "django": "5.2",
+    "parse": "1.20.2",
+    "parse-type": "0.6.4",
+    "six": "1.17.0",
+    "soupsieve": "2.7",
+    "sqlparse": "0.5.3",
+    "typing-extensions": "4.13.2"
+  }
+}

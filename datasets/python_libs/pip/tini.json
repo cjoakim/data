@@ -1,0 +1,9 @@
+{
+  "libname": "tini",
+  "libvers": "4.0.0",
+  "infile": "data/pip/tini.txt",
+  "dependencies": {
+    "configparser": "7.2.0",
+    "six": "1.17.0"
+  }
+}

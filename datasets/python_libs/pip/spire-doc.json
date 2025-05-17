@@ -1,0 +1,8 @@
+{
+  "libname": "spire-doc",
+  "libvers": "13.4.6",
+  "infile": "data/pip/spire-doc.txt",
+  "dependencies": {
+    "plum-dispatch": "1.7.4"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pysqlite3",
+  "libvers": "0.5.4",
+  "infile": "data/pip/pysqlite3.txt",
+  "dependencies": {}
+}

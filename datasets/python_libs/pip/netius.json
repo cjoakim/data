@@ -1,0 +1,6 @@
+{
+  "libname": "netius",
+  "libvers": "1.20.5",
+  "infile": "data/pip/netius.txt",
+  "dependencies": {}
+}

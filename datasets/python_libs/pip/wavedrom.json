@@ -1,0 +1,10 @@
+{
+  "libname": "wavedrom",
+  "libvers": "2.0.3.post3",
+  "infile": "data/pip/wavedrom.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2",
+    "six": "1.17.0",
+    "svgwrite": "1.4.3"
+  }
+}

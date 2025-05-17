@@ -1,0 +1,6 @@
+{
+  "libname": "libnacl",
+  "libvers": "2.1.0",
+  "infile": "data/pip/libnacl.txt",
+  "dependencies": {}
+}

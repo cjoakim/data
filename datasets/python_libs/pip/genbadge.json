@@ -1,0 +1,14 @@
+{
+  "libname": "genbadge",
+  "libvers": "1.1.2",
+  "infile": "data/pip/genbadge.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "idna": "3.10",
+    "pillow": "11.2.1",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

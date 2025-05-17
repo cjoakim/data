@@ -1,0 +1,21 @@
+{
+  "libname": "large-image-source-zarr",
+  "libvers": "1.32.3",
+  "infile": "data/pip/large-image-source-zarr.txt",
+  "dependencies": {
+    "asciitree": "0.3.3",
+    "cachetools": "5.5.2",
+    "deprecated": "1.2.18",
+    "fasteners": "0.19",
+    "imagecodecs": "2025.3.30",
+    "imagecodecs-numcodecs": "2025.3.30",
+    "large-image": "1.32.3",
+    "numcodecs": "0.15.1",
+    "numpy": "2.2.5",
+    "palettable": "3.3.3",
+    "pillow": "11.2.1",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2",
+    "zarr": "2.18.7"
+  }
+}

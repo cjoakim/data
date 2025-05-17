@@ -1,0 +1,18 @@
+{
+  "libname": "discord-py-self",
+  "libvers": "2.0.1",
+  "infile": "data/pip/discord-py-self.txt",
+  "dependencies": {
+    "aiohappyeyeballs": "2.6.1",
+    "aiohttp": "3.11.18",
+    "aiosignal": "1.3.2",
+    "attrs": "25.3.0",
+    "discord-protos": "0.0.2",
+    "frozenlist": "1.6.0",
+    "idna": "3.10",
+    "multidict": "6.4.3",
+    "propcache": "0.3.1",
+    "protobuf": "6.30.2",
+    "yarl": "1.20.0"
+  }
+}

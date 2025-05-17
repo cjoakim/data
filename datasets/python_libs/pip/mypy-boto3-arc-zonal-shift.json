@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-arc-zonal-shift",
+  "libvers": "1.38.0",
+  "infile": "data/pip/mypy-boto3-arc-zonal-shift.txt",
+  "dependencies": {}
+}

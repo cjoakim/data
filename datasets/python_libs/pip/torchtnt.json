@@ -1,0 +1,32 @@
+{
+  "libname": "torchtnt",
+  "libvers": "0.2.4",
+  "infile": "data/pip/torchtnt.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "filelock": "3.18.0",
+    "fsspec": "2025.3.2",
+    "grpcio": "1.71.0",
+    "jinja2": "3.1.6",
+    "markdown": "3.8",
+    "markupsafe": "3.0.2",
+    "mpmath": "1.3.0",
+    "mypy-extensions": "1.1.0",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "protobuf": "6.30.2",
+    "psutil": "7.0.0",
+    "pyre-extensions": "0.0.32",
+    "six": "1.17.0",
+    "sympy": "1.14.0",
+    "tabulate": "0.9.0",
+    "tensorboard": "2.19.0",
+    "tensorboard-data-server": "0.7.2",
+    "torch": "2.7.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "typing-inspect": "0.9.0",
+    "werkzeug": "3.1.3"
+  }
+}

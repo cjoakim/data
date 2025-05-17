@@ -1,0 +1,11 @@
+{
+  "libname": "skyfield",
+  "libvers": "1.53",
+  "infile": "data/pip/skyfield.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "jplephem": "2.22",
+    "numpy": "2.2.5",
+    "sgp4": "2.24"
+  }
+}

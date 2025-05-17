@@ -1,0 +1,12 @@
+{
+  "libname": "jwskate",
+  "libvers": "0.12.2",
+  "infile": "data/pip/jwskate.txt",
+  "dependencies": {
+    "binapy": "0.8.0",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22",
+    "typing-extensions": "4.13.2"
+  }
+}

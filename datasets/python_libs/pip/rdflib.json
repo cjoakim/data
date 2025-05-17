@@ -1,0 +1,8 @@
+{
+  "libname": "rdflib",
+  "libvers": "7.1.4",
+  "infile": "data/pip/rdflib.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

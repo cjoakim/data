@@ -1,0 +1,8 @@
+{
+  "libname": "npm",
+  "libvers": "0.1.1",
+  "infile": "data/pip/npm.txt",
+  "dependencies": {
+    "optional-django": "0.1.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "sqlalchemy-cockroachdb",
+  "libvers": "2.0.2",
+  "infile": "data/pip/sqlalchemy-cockroachdb.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

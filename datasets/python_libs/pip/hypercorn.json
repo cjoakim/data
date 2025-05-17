@@ -1,0 +1,13 @@
+{
+  "libname": "hypercorn",
+  "libvers": "0.17.3",
+  "infile": "data/pip/hypercorn.txt",
+  "dependencies": {
+    "h11": "0.16.0",
+    "h2": "4.2.0",
+    "hpack": "4.1.0",
+    "hyperframe": "6.1.0",
+    "priority": "2.0.0",
+    "wsproto": "1.2.0"
+  }
+}

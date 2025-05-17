@@ -1,0 +1,8 @@
+{
+  "libname": "django-test-migrations",
+  "libvers": "1.5.0",
+  "infile": "data/pip/django-test-migrations.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

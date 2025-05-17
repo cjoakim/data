@@ -1,0 +1,8 @@
+{
+  "libname": "aiomysql",
+  "libvers": "0.2.0",
+  "infile": "data/pip/aiomysql.txt",
+  "dependencies": {
+    "pymysql": "1.1.1"
+  }
+}

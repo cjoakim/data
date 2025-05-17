@@ -1,0 +1,15 @@
+{
+  "libname": "napari-svg",
+  "libvers": "0.2.1",
+  "infile": "data/pip/napari-svg.txt",
+  "dependencies": {
+    "freetype-py": "2.5.1",
+    "hsluv": "5.0.4",
+    "imageio": "2.37.0",
+    "kiwisolver": "1.4.8",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "vispy": "0.15.0"
+  }
+}

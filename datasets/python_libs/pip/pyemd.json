@@ -1,0 +1,8 @@
+{
+  "libname": "pyemd",
+  "libvers": "1.0.0",
+  "infile": "data/pip/pyemd.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

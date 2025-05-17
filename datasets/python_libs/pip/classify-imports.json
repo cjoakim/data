@@ -1,0 +1,6 @@
+{
+  "libname": "classify-imports",
+  "libvers": "4.2.0",
+  "infile": "data/pip/classify-imports.txt",
+  "dependencies": {}
+}

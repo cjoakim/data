@@ -1,0 +1,6 @@
+{
+  "libname": "xkcdpass",
+  "libvers": "1.20.0",
+  "infile": "data/pip/xkcdpass.txt",
+  "dependencies": {}
+}

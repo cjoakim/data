@@ -1,0 +1,9 @@
+{
+  "libname": "pymcubes",
+  "libvers": "0.1.6",
+  "infile": "data/pip/pymcubes.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

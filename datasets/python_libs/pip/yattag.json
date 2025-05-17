@@ -1,0 +1,6 @@
+{
+  "libname": "yattag",
+  "libvers": "1.16.1",
+  "infile": "data/pip/yattag.txt",
+  "dependencies": {}
+}

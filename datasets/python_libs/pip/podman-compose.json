@@ -1,0 +1,9 @@
+{
+  "libname": "podman-compose",
+  "libvers": "1.3.0",
+  "infile": "data/pip/podman-compose.txt",
+  "dependencies": {
+    "python-dotenv": "1.1.0",
+    "pyyaml": "6.0.2"
+  }
+}

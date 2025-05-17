@@ -1,0 +1,13 @@
+{
+  "libname": "pulumi",
+  "libvers": "3.167.0",
+  "infile": "data/pip/pulumi.txt",
+  "dependencies": {
+    "debugpy": "1.8.14",
+    "dill": "0.4.0",
+    "grpcio": "1.66.2",
+    "protobuf": "4.25.7",
+    "pyyaml": "6.0.2",
+    "semver": "3.0.4"
+  }
+}

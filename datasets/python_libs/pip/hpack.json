@@ -1,0 +1,6 @@
+{
+  "libname": "hpack",
+  "libvers": "4.1.0",
+  "infile": "data/pip/hpack.txt",
+  "dependencies": {}
+}

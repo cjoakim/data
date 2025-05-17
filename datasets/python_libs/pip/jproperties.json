@@ -1,0 +1,8 @@
+{
+  "libname": "jproperties",
+  "libvers": "2.1.2",
+  "infile": "data/pip/jproperties.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

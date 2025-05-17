@@ -1,0 +1,6 @@
+{
+  "libname": "in-place",
+  "libvers": "1.0.1",
+  "infile": "data/pip/in-place.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "multimethod",
+  "libvers": "2.0",
+  "infile": "data/pip/multimethod.txt",
+  "dependencies": {}
+}

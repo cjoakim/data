@@ -1,0 +1,11 @@
+{
+  "libname": "cyrk",
+  "libvers": "0.13.5",
+  "infile": "data/pip/cyrk.txt",
+  "dependencies": {
+    "llvmlite": "0.44.0",
+    "numba": "0.61.2",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

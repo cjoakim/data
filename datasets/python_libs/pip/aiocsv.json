@@ -1,0 +1,8 @@
+{
+  "libname": "aiocsv",
+  "libvers": "1.3.2",
+  "infile": "data/pip/aiocsv.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

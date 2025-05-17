@@ -1,0 +1,9 @@
+{
+  "libname": "bm25s",
+  "libvers": "0.2.12",
+  "infile": "data/pip/bm25s.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

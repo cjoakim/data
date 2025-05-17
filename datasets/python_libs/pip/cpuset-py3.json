@@ -1,0 +1,6 @@
+{
+  "libname": "cpuset-py3",
+  "libvers": "1.0.2",
+  "infile": "data/pip/cpuset-py3.txt",
+  "dependencies": {}
+}

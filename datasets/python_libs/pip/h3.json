@@ -1,0 +1,6 @@
+{
+  "libname": "h3",
+  "libvers": "4.2.2",
+  "infile": "data/pip/h3.txt",
+  "dependencies": {}
+}

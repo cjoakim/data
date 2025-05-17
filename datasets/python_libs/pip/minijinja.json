@@ -1,0 +1,6 @@
+{
+  "libname": "minijinja",
+  "libvers": "2.10.2",
+  "infile": "data/pip/minijinja.txt",
+  "dependencies": {}
+}

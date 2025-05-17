@@ -1,0 +1,6 @@
+{
+  "libname": "mss",
+  "libvers": "10.0.0",
+  "infile": "data/pip/mss.txt",
+  "dependencies": {}
+}

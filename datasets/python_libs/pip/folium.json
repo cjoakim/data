@@ -1,0 +1,17 @@
+{
+  "libname": "folium",
+  "libvers": "0.19.5",
+  "infile": "data/pip/folium.txt",
+  "dependencies": {
+    "branca": "0.8.1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "numpy": "2.2.5",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0",
+    "xyzservices": "2025.4.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "tableauhyperapi",
+  "libvers": "0.0.22106",
+  "infile": "data/pip/tableauhyperapi.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

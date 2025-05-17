@@ -1,0 +1,6 @@
+{
+  "libname": "sort-lines",
+  "libvers": "0.3.0",
+  "infile": "data/pip/sort-lines.txt",
+  "dependencies": {}
+}

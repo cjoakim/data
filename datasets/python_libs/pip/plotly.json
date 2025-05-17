@@ -1,0 +1,9 @@
+{
+  "libname": "plotly",
+  "libvers": "6.0.1",
+  "infile": "data/pip/plotly.txt",
+  "dependencies": {
+    "narwhals": "1.38.0",
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "wadler-lindig",
+  "libvers": "0.1.5",
+  "infile": "data/pip/wadler-lindig.txt",
+  "dependencies": {}
+}

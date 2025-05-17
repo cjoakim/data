@@ -1,0 +1,6 @@
+{
+  "libname": "apache-flink-libraries",
+  "libvers": "2.0.0",
+  "infile": "data/pip/apache-flink-libraries.txt",
+  "dependencies": {}
+}

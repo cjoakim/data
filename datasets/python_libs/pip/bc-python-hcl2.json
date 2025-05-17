@@ -1,0 +1,8 @@
+{
+  "libname": "bc-python-hcl2",
+  "libvers": "0.4.2",
+  "infile": "data/pip/bc-python-hcl2.txt",
+  "dependencies": {
+    "lark": "1.2.2"
+  }
+}

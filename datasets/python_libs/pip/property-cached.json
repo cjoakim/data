@@ -1,0 +1,6 @@
+{
+  "libname": "property-cached",
+  "libvers": "1.6.4",
+  "infile": "data/pip/property-cached.txt",
+  "dependencies": {}
+}

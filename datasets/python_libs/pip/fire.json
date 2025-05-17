@@ -1,0 +1,8 @@
+{
+  "libname": "fire",
+  "libvers": "0.7.0",
+  "infile": "data/pip/fire.txt",
+  "dependencies": {
+    "termcolor": "3.1.0"
+  }
+}

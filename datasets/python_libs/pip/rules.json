@@ -1,0 +1,6 @@
+{
+  "libname": "rules",
+  "libvers": "3.5",
+  "infile": "data/pip/rules.txt",
+  "dependencies": {}
+}

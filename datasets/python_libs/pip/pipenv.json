@@ -1,0 +1,13 @@
+{
+  "libname": "pipenv",
+  "libvers": "2025.0.2",
+  "infile": "data/pip/pipenv.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "distlib": "0.3.9",
+    "filelock": "3.18.0",
+    "packaging": "25.0",
+    "platformdirs": "4.3.7",
+    "virtualenv": "20.31.1"
+  }
+}

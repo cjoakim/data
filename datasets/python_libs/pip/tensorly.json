@@ -1,0 +1,9 @@
+{
+  "libname": "tensorly",
+  "libvers": "0.9.0",
+  "infile": "data/pip/tensorly.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

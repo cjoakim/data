@@ -1,0 +1,6 @@
+{
+  "libname": "cymem",
+  "libvers": "2.0.11",
+  "infile": "data/pip/cymem.txt",
+  "dependencies": {}
+}

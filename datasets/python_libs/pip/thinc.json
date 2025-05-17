@@ -1,0 +1,22 @@
+{
+  "libname": "thinc",
+  "libvers": "9.1.1",
+  "infile": "data/pip/thinc.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "blis": "1.0.2",
+    "catalogue": "2.0.10",
+    "confection": "0.1.5",
+    "cymem": "2.0.11",
+    "murmurhash": "1.0.12",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "preshed": "3.0.9",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "srsly": "2.5.1",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "wasabi": "1.1.3"
+  }
+}

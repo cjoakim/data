@@ -1,0 +1,6 @@
+{
+  "libname": "python-box",
+  "libvers": "7.3.2",
+  "infile": "data/pip/python-box.txt",
+  "dependencies": {}
+}

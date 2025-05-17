@@ -1,0 +1,13 @@
+{
+  "libname": "imgtool",
+  "libvers": "2.1.0",
+  "infile": "data/pip/imgtool.txt",
+  "dependencies": {
+    "cbor2": "5.6.5",
+    "cffi": "1.17.1",
+    "click": "8.1.8",
+    "cryptography": "44.0.3",
+    "intelhex": "2.3.0",
+    "pycparser": "2.22"
+  }
+}

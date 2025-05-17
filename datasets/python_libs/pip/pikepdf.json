@@ -1,0 +1,12 @@
+{
+  "libname": "pikepdf",
+  "libvers": "9.7.0",
+  "infile": "data/pip/pikepdf.txt",
+  "dependencies": {
+    "deprecated": "1.2.18",
+    "lxml": "5.4.0",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "wrapt": "1.17.2"
+  }
+}

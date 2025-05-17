@@ -1,0 +1,6 @@
+{
+  "libname": "types-pytest-lazy-fixture",
+  "libvers": "0.6.3.20240707",
+  "infile": "data/pip/types-pytest-lazy-fixture.txt",
+  "dependencies": {}
+}

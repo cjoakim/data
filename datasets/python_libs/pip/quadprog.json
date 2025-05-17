@@ -1,0 +1,8 @@
+{
+  "libname": "quadprog",
+  "libvers": "0.1.13",
+  "infile": "data/pip/quadprog.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "py-cpuinfo",
+  "libvers": "9.0.0",
+  "infile": "data/pip/py-cpuinfo.txt",
+  "dependencies": {}
+}

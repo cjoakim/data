@@ -1,0 +1,12 @@
+{
+  "libname": "vispy",
+  "libvers": "0.15.0",
+  "infile": "data/pip/vispy.txt",
+  "dependencies": {
+    "freetype-py": "2.5.1",
+    "hsluv": "5.0.4",
+    "kiwisolver": "1.4.8",
+    "numpy": "2.2.5",
+    "packaging": "25.0"
+  }
+}

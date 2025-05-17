@@ -1,0 +1,31 @@
+{
+  "libname": "hydra-optuna-sweeper",
+  "libvers": "1.2.0",
+  "infile": "data/pip/hydra-optuna-sweeper.txt",
+  "dependencies": {
+    "alembic": "1.15.2",
+    "autopage": "0.5.2",
+    "cliff": "4.9.1",
+    "cmaes": "0.11.1",
+    "cmd2": "2.5.11",
+    "colorlog": "6.9.0",
+    "gnureadline": "8.2.13",
+    "hydra-core": "1.4.0.dev1",
+    "mako": "1.3.10",
+    "markupsafe": "3.0.2",
+    "numpy": "2.2.5",
+    "omegaconf": "2.4.0.dev3",
+    "optuna": "2.10.1",
+    "packaging": "25.0",
+    "pbr": "6.1.1",
+    "prettytable": "3.16.0",
+    "pyperclip": "1.9.0",
+    "pyyaml": "6.0.2",
+    "scipy": "1.15.2",
+    "sqlalchemy": "2.0.40",
+    "stevedore": "5.4.1",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "wcwidth": "0.2.13"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "tftest",
+  "libvers": "1.8.5",
+  "infile": "data/pip/tftest.txt",
+  "dependencies": {}
+}

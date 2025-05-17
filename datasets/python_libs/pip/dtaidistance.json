@@ -1,0 +1,8 @@
+{
+  "libname": "dtaidistance",
+  "libvers": "2.3.13",
+  "infile": "data/pip/dtaidistance.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "dvc-objects",
+  "libvers": "5.1.0",
+  "infile": "data/pip/dvc-objects.txt",
+  "dependencies": {
+    "fsspec": "2025.3.2"
+  }
+}

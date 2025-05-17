@@ -1,0 +1,6 @@
+{
+  "libname": "tox-ignore-env-name-mismatch",
+  "libvers": "0.2.0.post2",
+  "infile": "data/pip/tox-ignore-env-name-mismatch.txt",
+  "dependencies": {}
+}

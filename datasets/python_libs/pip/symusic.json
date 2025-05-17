@@ -1,0 +1,10 @@
+{
+  "libname": "symusic",
+  "libvers": "0.5.7",
+  "infile": "data/pip/symusic.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "platformdirs": "4.3.7",
+    "pysmartdl": "1.3.4"
+  }
+}

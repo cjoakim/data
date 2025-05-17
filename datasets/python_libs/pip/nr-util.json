@@ -1,0 +1,10 @@
+{
+  "libname": "nr-util",
+  "libvers": "0.8.12",
+  "infile": "data/pip/nr-util.txt",
+  "dependencies": {
+    "deprecated": "1.2.18",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2"
+  }
+}

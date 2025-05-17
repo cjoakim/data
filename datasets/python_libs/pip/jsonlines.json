@@ -1,0 +1,8 @@
+{
+  "libname": "jsonlines",
+  "libvers": "4.0.0",
+  "infile": "data/pip/jsonlines.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

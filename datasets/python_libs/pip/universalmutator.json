@@ -1,0 +1,20 @@
+{
+  "libname": "universalmutator",
+  "libvers": "1.1.12",
+  "infile": "data/pip/universalmutator.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "comby": "0.0.3",
+    "idna": "3.10",
+    "levenshtein": "0.27.1",
+    "loguru": "0.7.3",
+    "python-levenshtein": "0.27.1",
+    "rapidfuzz": "3.13.0",
+    "requests": "2.32.3",
+    "tabulate": "0.9.0",
+    "typing": "3.7.4.3",
+    "urllib3": "2.4.0"
+  }
+}

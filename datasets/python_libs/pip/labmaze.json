@@ -1,0 +1,9 @@
+{
+  "libname": "labmaze",
+  "libvers": "1.0.6",
+  "infile": "data/pip/labmaze.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "numpy": "2.2.5"
+  }
+}

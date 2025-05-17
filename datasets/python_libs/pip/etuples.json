@@ -1,0 +1,11 @@
+{
+  "libname": "etuples",
+  "libvers": "0.3.9",
+  "infile": "data/pip/etuples.txt",
+  "dependencies": {
+    "cons": "0.4.6",
+    "logical-unification": "0.4.6",
+    "multipledispatch": "1.0.0",
+    "toolz": "1.0.0"
+  }
+}

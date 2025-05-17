@@ -1,0 +1,18 @@
+{
+  "libname": "resource",
+  "libvers": "0.2.1",
+  "infile": "data/pip/resource.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonform": "0.0.2",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "jsonsir": "0.0.2",
+    "python-easyconfig": "0.1.7",
+    "pyyaml": "6.0.2",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2"
+  }
+}

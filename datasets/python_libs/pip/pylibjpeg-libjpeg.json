@@ -1,0 +1,8 @@
+{
+  "libname": "pylibjpeg-libjpeg",
+  "libvers": "2.3.0",
+  "infile": "data/pip/pylibjpeg-libjpeg.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "empy",
+  "libvers": "4.2",
+  "infile": "data/pip/empy.txt",
+  "dependencies": {}
+}

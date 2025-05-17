@@ -1,0 +1,6 @@
+{
+  "libname": "sqlite-vec",
+  "libvers": "0.1.6",
+  "infile": "data/pip/sqlite-vec.txt",
+  "dependencies": {}
+}

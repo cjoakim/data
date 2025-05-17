@@ -1,0 +1,6 @@
+{
+  "libname": "perspective-python",
+  "libvers": "3.6.1",
+  "infile": "data/pip/perspective-python.txt",
+  "dependencies": {}
+}

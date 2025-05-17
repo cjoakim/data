@@ -1,0 +1,9 @@
+{
+  "libname": "tdigest",
+  "libvers": "0.5.2.2",
+  "infile": "data/pip/tdigest.txt",
+  "dependencies": {
+    "accumulation-tree": "0.6.4",
+    "pyudorandom": "1.0.0"
+  }
+}

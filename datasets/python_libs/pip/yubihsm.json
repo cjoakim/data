@@ -1,0 +1,10 @@
+{
+  "libname": "yubihsm",
+  "libvers": "3.1.0",
+  "infile": "data/pip/yubihsm.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22"
+  }
+}

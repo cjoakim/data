@@ -1,0 +1,15 @@
+{
+  "libname": "python-amazon-sp-api",
+  "libvers": "1.9.28",
+  "infile": "data/pip/python-amazon-sp-api.txt",
+  "dependencies": {
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "confuse": "2.0.1",
+    "idna": "3.10",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

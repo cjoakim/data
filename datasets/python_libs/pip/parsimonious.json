@@ -1,0 +1,8 @@
+{
+  "libname": "parsimonious",
+  "libvers": "0.10.0",
+  "infile": "data/pip/parsimonious.txt",
+  "dependencies": {
+    "regex": "2024.11.6"
+  }
+}

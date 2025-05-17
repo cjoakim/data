@@ -1,0 +1,12 @@
+{
+  "libname": "textstat",
+  "libvers": "0.7.5",
+  "infile": "data/pip/textstat.txt",
+  "dependencies": {
+    "cmudict": "1.0.32",
+    "importlib-metadata": "8.7.0",
+    "importlib-resources": "6.5.2",
+    "pyphen": "0.17.2",
+    "zipp": "3.21.0"
+  }
+}

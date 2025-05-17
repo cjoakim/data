@@ -1,0 +1,6 @@
+{
+  "libname": "trove-classifiers",
+  "libvers": "2025.5.1.12",
+  "infile": "data/pip/trove-classifiers.txt",
+  "dependencies": {}
+}

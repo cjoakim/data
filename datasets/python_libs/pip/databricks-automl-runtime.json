@@ -1,0 +1,6 @@
+{
+  "libname": "databricks-automl-runtime",
+  "libvers": "0.2.21",
+  "infile": "data/pip/databricks-automl-runtime.txt",
+  "dependencies": {}
+}

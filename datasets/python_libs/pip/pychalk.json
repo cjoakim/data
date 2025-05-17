@@ -1,0 +1,8 @@
+{
+  "libname": "pychalk",
+  "libvers": "2.0.1",
+  "infile": "data/pip/pychalk.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

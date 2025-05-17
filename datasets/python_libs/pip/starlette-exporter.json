@@ -1,0 +1,13 @@
+{
+  "libname": "starlette-exporter",
+  "libvers": "0.23.0",
+  "infile": "data/pip/starlette-exporter.txt",
+  "dependencies": {
+    "anyio": "4.9.0",
+    "idna": "3.10",
+    "prometheus-client": "0.21.1",
+    "sniffio": "1.3.1",
+    "starlette": "0.46.2",
+    "typing-extensions": "4.13.2"
+  }
+}

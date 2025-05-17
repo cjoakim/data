@@ -1,0 +1,9 @@
+{
+  "libname": "splunk-sdk",
+  "libvers": "2.1.0",
+  "infile": "data/pip/splunk-sdk.txt",
+  "dependencies": {
+    "deprecation": "2.1.0",
+    "packaging": "25.0"
+  }
+}

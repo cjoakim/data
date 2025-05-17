@@ -1,0 +1,9 @@
+{
+  "libname": "jsbeautifier",
+  "libvers": "1.15.4",
+  "infile": "data/pip/jsbeautifier.txt",
+  "dependencies": {
+    "editorconfig": "0.17.0",
+    "six": "1.17.0"
+  }
+}

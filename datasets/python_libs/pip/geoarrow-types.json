@@ -1,0 +1,6 @@
+{
+  "libname": "geoarrow-types",
+  "libvers": "0.2.0",
+  "infile": "data/pip/geoarrow-types.txt",
+  "dependencies": {}
+}

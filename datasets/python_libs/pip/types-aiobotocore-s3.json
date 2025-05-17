@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-s3",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-s3.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "nested-lookup",
+  "libvers": "0.2.25",
+  "infile": "data/pip/nested-lookup.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "ofxparse",
+  "libvers": "0.21",
+  "infile": "data/pip/ofxparse.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.13.4",
+    "lxml": "5.4.0",
+    "six": "1.17.0",
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2"
+  }
+}

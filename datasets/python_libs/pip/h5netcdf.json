@@ -1,0 +1,10 @@
+{
+  "libname": "h5netcdf",
+  "libvers": "1.6.1",
+  "infile": "data/pip/h5netcdf.txt",
+  "dependencies": {
+    "h5py": "3.13.0",
+    "numpy": "2.2.5",
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "mkdocs-get-deps",
+  "libvers": "0.2.0",
+  "infile": "data/pip/mkdocs-get-deps.txt",
+  "dependencies": {
+    "mergedeep": "1.3.4",
+    "platformdirs": "4.3.7",
+    "pyyaml": "6.0.2"
+  }
+}

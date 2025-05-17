@@ -1,0 +1,6 @@
+{
+  "libname": "geomdl",
+  "libvers": "5.3.1",
+  "infile": "data/pip/geomdl.txt",
+  "dependencies": {}
+}

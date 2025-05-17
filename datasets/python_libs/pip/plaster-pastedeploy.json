@@ -1,0 +1,9 @@
+{
+  "libname": "plaster-pastedeploy",
+  "libvers": "1.0.1",
+  "infile": "data/pip/plaster-pastedeploy.txt",
+  "dependencies": {
+    "pastedeploy": "3.1.0",
+    "plaster": "1.1.2"
+  }
+}

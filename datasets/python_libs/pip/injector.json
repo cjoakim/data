@@ -1,0 +1,6 @@
+{
+  "libname": "injector",
+  "libvers": "0.22.0",
+  "infile": "data/pip/injector.txt",
+  "dependencies": {}
+}

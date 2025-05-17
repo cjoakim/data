@@ -1,0 +1,6 @@
+{
+  "libname": "pure25519",
+  "libvers": "0.0.1",
+  "infile": "data/pip/pure25519.txt",
+  "dependencies": {}
+}

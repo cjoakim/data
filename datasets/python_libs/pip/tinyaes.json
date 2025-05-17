@@ -1,0 +1,6 @@
+{
+  "libname": "tinyaes",
+  "libvers": "1.1.1",
+  "infile": "data/pip/tinyaes.txt",
+  "dependencies": {}
+}

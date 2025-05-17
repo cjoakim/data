@@ -1,0 +1,6 @@
+{
+  "libname": "emoji-country-flag",
+  "libvers": "2.0.1",
+  "infile": "data/pip/emoji-country-flag.txt",
+  "dependencies": {}
+}

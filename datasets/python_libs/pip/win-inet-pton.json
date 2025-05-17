@@ -1,0 +1,6 @@
+{
+  "libname": "win-inet-pton",
+  "libvers": "1.1.0",
+  "infile": "data/pip/win-inet-pton.txt",
+  "dependencies": {}
+}

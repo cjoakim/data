@@ -1,0 +1,25 @@
+{
+  "libname": "flower",
+  "libvers": "2.0.1",
+  "infile": "data/pip/flower.txt",
+  "dependencies": {
+    "amqp": "5.3.1",
+    "billiard": "4.2.1",
+    "celery": "5.5.2",
+    "click": "8.1.8",
+    "click-didyoumean": "0.3.1",
+    "click-plugins": "1.1.1",
+    "click-repl": "0.3.0",
+    "humanize": "4.12.3",
+    "kombu": "5.5.3",
+    "prometheus-client": "0.21.1",
+    "prompt-toolkit": "3.0.51",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tornado": "6.4.2",
+    "tzdata": "2025.2",
+    "vine": "5.1.0",
+    "wcwidth": "0.2.13"
+  }
+}

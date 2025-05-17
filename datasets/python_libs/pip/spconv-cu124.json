@@ -1,0 +1,25 @@
+{
+  "libname": "spconv-cu124",
+  "libvers": "2.3.8",
+  "infile": "data/pip/spconv-cu124.txt",
+  "dependencies": {
+    "ccimport": "0.4.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "cumm-cu124": "0.7.11",
+    "fire": "0.7.0",
+    "idna": "3.10",
+    "lark": "1.2.2",
+    "mpmath": "1.3.0",
+    "ninja": "1.11.1.4",
+    "numpy": "2.2.5",
+    "pccm": "0.4.16",
+    "portalocker": "3.1.1",
+    "pybind11": "2.13.6",
+    "pywin32": "310",
+    "requests": "2.32.3",
+    "sympy": "1.14.0",
+    "termcolor": "3.1.0",
+    "urllib3": "2.4.0"
+  }
+}

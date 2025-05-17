@@ -1,0 +1,15 @@
+{
+  "libname": "opensearch-py",
+  "libvers": "2.8.0",
+  "infile": "data/pip/opensearch-py.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "events": "0.5",
+    "idna": "3.10",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

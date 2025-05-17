@@ -1,0 +1,6 @@
+{
+  "libname": "execnet",
+  "libvers": "2.1.1",
+  "infile": "data/pip/execnet.txt",
+  "dependencies": {}
+}

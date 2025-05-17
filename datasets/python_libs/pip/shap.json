@@ -1,0 +1,24 @@
+{
+  "libname": "shap",
+  "libvers": "0.47.2",
+  "infile": "data/pip/shap.txt",
+  "dependencies": {
+    "cloudpickle": "3.1.1",
+    "joblib": "1.5.0",
+    "llvmlite": "0.44.0",
+    "numba": "0.61.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "slicer": "0.0.8",
+    "threadpoolctl": "3.6.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "tzdata": "2025.2"
+  }
+}

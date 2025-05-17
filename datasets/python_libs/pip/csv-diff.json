@@ -1,0 +1,9 @@
+{
+  "libname": "csv-diff",
+  "libvers": "1.2",
+  "infile": "data/pip/csv-diff.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "dictdiffer": "0.9.0"
+  }
+}

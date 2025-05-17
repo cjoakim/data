@@ -1,0 +1,6 @@
+{
+  "libname": "pwinput",
+  "libvers": "1.0.3",
+  "infile": "data/pip/pwinput.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "scons",
+  "libvers": "4.9.1",
+  "infile": "data/pip/scons.txt",
+  "dependencies": {}
+}

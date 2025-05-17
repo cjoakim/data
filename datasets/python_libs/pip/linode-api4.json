@@ -1,0 +1,15 @@
+{
+  "libname": "linode-api4",
+  "libvers": "5.29.1",
+  "infile": "data/pip/linode-api4.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "deprecated": "1.2.18",
+    "idna": "3.10",
+    "polling": "0.3.2",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0",
+    "wrapt": "1.17.2"
+  }
+}

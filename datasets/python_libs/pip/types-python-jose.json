@@ -1,0 +1,8 @@
+{
+  "libname": "types-python-jose",
+  "libvers": "3.4.0.20250224",
+  "infile": "data/pip/types-python-jose.txt",
+  "dependencies": {
+    "types-pyasn1": "0.6.0.20250208"
+  }
+}

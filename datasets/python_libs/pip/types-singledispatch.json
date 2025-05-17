@@ -1,0 +1,6 @@
+{
+  "libname": "types-singledispatch",
+  "libvers": "4.1.0.20250326",
+  "infile": "data/pip/types-singledispatch.txt",
+  "dependencies": {}
+}

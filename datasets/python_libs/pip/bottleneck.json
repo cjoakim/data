@@ -1,0 +1,8 @@
+{
+  "libname": "bottleneck",
+  "libvers": "1.4.2",
+  "infile": "data/pip/bottleneck.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "filesplit",
+  "libvers": "4.1.0",
+  "infile": "data/pip/filesplit.txt",
+  "dependencies": {}
+}

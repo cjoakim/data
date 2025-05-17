@@ -1,0 +1,10 @@
+{
+  "libname": "jupyter-server-terminals",
+  "libvers": "0.5.3",
+  "infile": "data/pip/jupyter-server-terminals.txt",
+  "dependencies": {
+    "ptyprocess": "0.7.0",
+    "terminado": "0.18.1",
+    "tornado": "6.4.2"
+  }
+}

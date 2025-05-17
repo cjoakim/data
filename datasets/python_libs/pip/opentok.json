@@ -1,0 +1,20 @@
+{
+  "libname": "opentok",
+  "libvers": "3.11.0",
+  "infile": "data/pip/opentok.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "pyasn1": "0.6.1",
+    "pycparser": "2.22",
+    "pyjwt[crypto]": "2.10.1",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

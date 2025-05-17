@@ -1,0 +1,9 @@
+{
+  "libname": "numdifftools",
+  "libvers": "0.9.41",
+  "infile": "data/pip/numdifftools.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

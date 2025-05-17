@@ -1,0 +1,9 @@
+{
+  "libname": "pystan",
+  "libvers": "2.19.1.1",
+  "infile": "data/pip/pystan.txt",
+  "dependencies": {
+    "cython": "3.0.12",
+    "numpy": "2.2.5"
+  }
+}

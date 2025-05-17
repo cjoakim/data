@@ -1,0 +1,9 @@
+{
+  "libname": "ruamel-yaml-jinja2",
+  "libvers": "0.2.7",
+  "infile": "data/pip/ruamel-yaml-jinja2.txt",
+  "dependencies": {
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12"
+  }
+}

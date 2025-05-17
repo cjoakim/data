@@ -1,0 +1,8 @@
+{
+  "libname": "later",
+  "libvers": "23.11.30",
+  "infile": "data/pip/later.txt",
+  "dependencies": {
+    "async-timeout": "4.0.3"
+  }
+}

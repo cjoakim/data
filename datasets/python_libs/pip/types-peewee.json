@@ -1,0 +1,6 @@
+{
+  "libname": "types-peewee",
+  "libvers": "3.18.0.20250501",
+  "infile": "data/pip/types-peewee.txt",
+  "dependencies": {}
+}

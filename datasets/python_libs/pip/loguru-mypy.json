@@ -1,0 +1,8 @@
+{
+  "libname": "loguru-mypy",
+  "libvers": "0.0.4",
+  "infile": "data/pip/loguru-mypy.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

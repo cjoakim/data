@@ -1,0 +1,6 @@
+{
+  "libname": "pymonad",
+  "libvers": "2.4.0",
+  "infile": "data/pip/pymonad.txt",
+  "dependencies": {}
+}

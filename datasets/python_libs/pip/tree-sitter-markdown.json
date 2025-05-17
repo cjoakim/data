@@ -1,0 +1,6 @@
+{
+  "libname": "tree-sitter-markdown",
+  "libvers": "0.3.2",
+  "infile": "data/pip/tree-sitter-markdown.txt",
+  "dependencies": {}
+}

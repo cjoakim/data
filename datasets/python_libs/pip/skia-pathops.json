@@ -1,0 +1,6 @@
+{
+  "libname": "skia-pathops",
+  "libvers": "0.8.0.post2",
+  "infile": "data/pip/skia-pathops.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "class-resolver",
+  "libvers": "0.6.0",
+  "infile": "data/pip/class-resolver.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "schedula",
+  "libvers": "1.5.62",
+  "infile": "data/pip/schedula.txt",
+  "dependencies": {}
+}

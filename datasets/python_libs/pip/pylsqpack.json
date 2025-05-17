@@ -1,0 +1,6 @@
+{
+  "libname": "pylsqpack",
+  "libvers": "0.3.20",
+  "infile": "data/pip/pylsqpack.txt",
+  "dependencies": {}
+}

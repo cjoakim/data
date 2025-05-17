@@ -1,0 +1,8 @@
+{
+  "libname": "mozilla-version",
+  "libvers": "4.1.0",
+  "infile": "data/pip/mozilla-version.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "fspath",
+  "libvers": "20230629",
+  "infile": "data/pip/fspath.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

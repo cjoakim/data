@@ -1,0 +1,6 @@
+{
+  "libname": "pyjq",
+  "libvers": "2.6.0",
+  "infile": "data/pip/pyjq.txt",
+  "dependencies": {}
+}

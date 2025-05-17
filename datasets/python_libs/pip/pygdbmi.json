@@ -1,0 +1,6 @@
+{
+  "libname": "pygdbmi",
+  "libvers": "0.11.0.0",
+  "infile": "data/pip/pygdbmi.txt",
+  "dependencies": {}
+}

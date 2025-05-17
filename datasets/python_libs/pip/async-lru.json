@@ -1,0 +1,6 @@
+{
+  "libname": "async-lru",
+  "libvers": "2.0.5",
+  "infile": "data/pip/async-lru.txt",
+  "dependencies": {}
+}

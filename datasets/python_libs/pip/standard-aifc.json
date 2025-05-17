@@ -1,0 +1,6 @@
+{
+  "libname": "standard-aifc",
+  "libvers": "3.13.0",
+  "infile": "data/pip/standard-aifc.txt",
+  "dependencies": {}
+}

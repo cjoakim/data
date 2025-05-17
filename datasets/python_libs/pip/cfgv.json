@@ -1,0 +1,6 @@
+{
+  "libname": "cfgv",
+  "libvers": "3.4.0",
+  "infile": "data/pip/cfgv.txt",
+  "dependencies": {}
+}

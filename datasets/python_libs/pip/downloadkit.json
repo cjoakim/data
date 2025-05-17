@@ -1,0 +1,15 @@
+{
+  "libname": "downloadkit",
+  "libvers": "2.0.7",
+  "infile": "data/pip/downloadkit.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "datarecorder": "3.6.2",
+    "et-xmlfile": "2.0.0",
+    "idna": "3.10",
+    "openpyxl": "3.1.5",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

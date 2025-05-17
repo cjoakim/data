@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-marketplace-deployment",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-marketplace-deployment.txt",
+  "dependencies": {}
+}

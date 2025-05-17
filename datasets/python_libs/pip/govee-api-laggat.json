@@ -1,0 +1,27 @@
+{
+  "libname": "govee-api-laggat",
+  "libvers": "0.2.2",
+  "infile": "data/pip/govee-api-laggat.txt",
+  "dependencies": {
+    "aiohappyeyeballs": "2.6.1",
+    "aiohttp": "3.11.18",
+    "aiosignal": "1.3.2",
+    "attrs": "25.3.0",
+    "bios": "0.1.2",
+    "certifi": "2025.4.26",
+    "dacite": "1.9.2",
+    "enum-compat": "0.0.3",
+    "events": "0.5",
+    "frozenlist": "1.6.0",
+    "idna": "3.10",
+    "multidict": "6.4.3",
+    "oyaml": "1.0",
+    "pexpect": "4.9.0",
+    "propcache": "0.3.1",
+    "ptyprocess": "0.7.0",
+    "pygatt": "5.0.0",
+    "pyserial": "3.5",
+    "pyyaml": "6.0.2",
+    "yarl": "1.20.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "jsonquerylang",
+  "libvers": "1.1.1",
+  "infile": "data/pip/jsonquerylang.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "cn2an",
+  "libvers": "0.5.23",
+  "infile": "data/pip/cn2an.txt",
+  "dependencies": {
+    "proces": "0.1.7"
+  }
+}

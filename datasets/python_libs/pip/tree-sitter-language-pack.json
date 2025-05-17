@@ -1,0 +1,11 @@
+{
+  "libname": "tree-sitter-language-pack",
+  "libvers": "0.7.3",
+  "infile": "data/pip/tree-sitter-language-pack.txt",
+  "dependencies": {
+    "tree-sitter": "0.24.0",
+    "tree-sitter-c-sharp": "0.23.1",
+    "tree-sitter-embedded-template": "0.23.2",
+    "tree-sitter-yaml": "0.7.0"
+  }
+}

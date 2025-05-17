@@ -1,0 +1,9 @@
+{
+  "libname": "pygit2",
+  "libvers": "1.18.0",
+  "infile": "data/pip/pygit2.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

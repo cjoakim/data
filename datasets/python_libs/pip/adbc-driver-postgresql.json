@@ -1,0 +1,10 @@
+{
+  "libname": "adbc-driver-postgresql",
+  "libvers": "1.6.0",
+  "infile": "data/pip/adbc-driver-postgresql.txt",
+  "dependencies": {
+    "adbc-driver-manager": "1.6.0",
+    "importlib-resources": "6.5.2",
+    "typing-extensions": "4.13.2"
+  }
+}

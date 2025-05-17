@@ -1,0 +1,8 @@
+{
+  "libname": "ansible-pygments",
+  "libvers": "0.1.1",
+  "infile": "data/pip/ansible-pygments.txt",
+  "dependencies": {
+    "pygments": "2.19.1"
+  }
+}

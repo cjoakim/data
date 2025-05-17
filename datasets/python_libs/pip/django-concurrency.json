@@ -1,0 +1,6 @@
+{
+  "libname": "django-concurrency",
+  "libvers": "2.7",
+  "infile": "data/pip/django-concurrency.txt",
+  "dependencies": {}
+}

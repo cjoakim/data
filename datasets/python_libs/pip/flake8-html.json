@@ -1,0 +1,14 @@
+{
+  "libname": "flake8-html",
+  "libvers": "0.4.3",
+  "infile": "data/pip/flake8-html.txt",
+  "dependencies": {
+    "flake8": "7.2.0",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "mccabe": "0.7.0",
+    "pycodestyle": "2.13.0",
+    "pyflakes": "3.3.2",
+    "pygments": "2.19.1"
+  }
+}

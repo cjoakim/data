@@ -1,0 +1,6 @@
+{
+  "libname": "objgraph",
+  "libvers": "3.6.2",
+  "infile": "data/pip/objgraph.txt",
+  "dependencies": {}
+}

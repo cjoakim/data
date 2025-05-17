@@ -1,0 +1,6 @@
+{
+  "libname": "timing-asgi",
+  "libvers": "0.3.1",
+  "infile": "data/pip/timing-asgi.txt",
+  "dependencies": {}
+}

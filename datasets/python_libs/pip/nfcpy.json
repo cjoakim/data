@@ -1,0 +1,11 @@
+{
+  "libname": "nfcpy",
+  "libvers": "1.0.4",
+  "infile": "data/pip/nfcpy.txt",
+  "dependencies": {
+    "libusb1": "3.3.1",
+    "ndeflib": "0.3.3",
+    "pydes": "2.0.1",
+    "pyserial": "3.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pynini",
+  "libvers": "2.1.6.post1",
+  "infile": "data/pip/pynini.txt",
+  "dependencies": {}
+}

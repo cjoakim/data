@@ -1,0 +1,6 @@
+{
+  "libname": "modal-client",
+  "libvers": "1.0.0",
+  "infile": "data/pip/modal-client.txt",
+  "dependencies": {}
+}

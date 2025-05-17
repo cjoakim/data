@@ -1,0 +1,6 @@
+{
+  "libname": "gprof2dot",
+  "libvers": "2025.4.14",
+  "infile": "data/pip/gprof2dot.txt",
+  "dependencies": {}
+}

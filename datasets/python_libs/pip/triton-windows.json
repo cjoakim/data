@@ -1,0 +1,6 @@
+{
+  "libname": "triton-windows",
+  "libvers": "3.3.0.post19",
+  "infile": "data/pip/triton-windows.txt",
+  "dependencies": {}
+}

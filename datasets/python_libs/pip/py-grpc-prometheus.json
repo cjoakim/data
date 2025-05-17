@@ -1,0 +1,9 @@
+{
+  "libname": "py-grpc-prometheus",
+  "libvers": "0.8.0",
+  "infile": "data/pip/py-grpc-prometheus.txt",
+  "dependencies": {
+    "grpcio": "1.71.0",
+    "prometheus-client": "0.21.1"
+  }
+}

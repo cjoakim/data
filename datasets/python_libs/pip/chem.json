@@ -1,0 +1,16 @@
+{
+  "libname": "chem",
+  "libvers": "2.0.0",
+  "infile": "data/pip/chem.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "joblib": "1.5.0",
+    "markupsafe": "3.0.2",
+    "nltk": "3.9.1",
+    "numpy": "2.2.5",
+    "pyparsing": "3.2.3",
+    "regex": "2024.11.6",
+    "scipy": "1.15.2",
+    "tqdm": "4.67.1"
+  }
+}

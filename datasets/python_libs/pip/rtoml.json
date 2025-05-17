@@ -1,0 +1,6 @@
+{
+  "libname": "rtoml",
+  "libvers": "0.12.0",
+  "infile": "data/pip/rtoml.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "deltalake",
+  "libvers": "0.25.5",
+  "infile": "data/pip/deltalake.txt",
+  "dependencies": {
+    "pyarrow": "20.0.0"
+  }
+}

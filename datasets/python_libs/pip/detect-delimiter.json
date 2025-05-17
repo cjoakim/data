@@ -1,0 +1,6 @@
+{
+  "libname": "detect-delimiter",
+  "libvers": "0.1.1",
+  "infile": "data/pip/detect-delimiter.txt",
+  "dependencies": {}
+}

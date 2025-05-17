@@ -1,0 +1,8 @@
+{
+  "libname": "pyasn1-modules",
+  "libvers": "0.4.2",
+  "infile": "data/pip/pyasn1-modules.txt",
+  "dependencies": {
+    "pyasn1": "0.6.1"
+  }
+}

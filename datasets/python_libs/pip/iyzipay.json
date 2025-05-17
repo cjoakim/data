@@ -1,0 +1,6 @@
+{
+  "libname": "iyzipay",
+  "libvers": "1.0.45",
+  "infile": "data/pip/iyzipay.txt",
+  "dependencies": {}
+}

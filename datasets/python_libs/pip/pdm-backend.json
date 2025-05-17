@@ -1,0 +1,6 @@
+{
+  "libname": "pdm-backend",
+  "libvers": "2.4.4",
+  "infile": "data/pip/pdm-backend.txt",
+  "dependencies": {}
+}

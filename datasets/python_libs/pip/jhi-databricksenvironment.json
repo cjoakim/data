@@ -1,0 +1,6 @@
+{
+  "libname": "jhi-databricksenvironment",
+  "libvers": "0.1",
+  "infile": "data/pip/jhi-databricksenvironment.txt",
+  "dependencies": {}
+}

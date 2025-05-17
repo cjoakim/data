@@ -1,0 +1,6 @@
+{
+  "libname": "persisting-theory",
+  "libvers": "1.0",
+  "infile": "data/pip/persisting-theory.txt",
+  "dependencies": {}
+}

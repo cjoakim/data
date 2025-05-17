@@ -1,0 +1,15 @@
+{
+  "libname": "pylint-protobuf",
+  "libvers": "0.22.0",
+  "infile": "data/pip/pylint-protobuf.txt",
+  "dependencies": {
+    "astroid": "3.3.9",
+    "dill": "0.4.0",
+    "isort": "6.0.1",
+    "mccabe": "0.7.0",
+    "platformdirs": "4.3.7",
+    "protobuf": "6.30.2",
+    "pylint": "3.3.7",
+    "tomlkit": "0.13.2"
+  }
+}

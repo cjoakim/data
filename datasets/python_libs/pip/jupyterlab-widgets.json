@@ -1,0 +1,6 @@
+{
+  "libname": "jupyterlab-widgets",
+  "libvers": "3.0.15",
+  "infile": "data/pip/jupyterlab-widgets.txt",
+  "dependencies": {}
+}

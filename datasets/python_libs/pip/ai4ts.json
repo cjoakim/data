@@ -1,0 +1,6 @@
+{
+  "libname": "ai4ts",
+  "libvers": "0.0.3",
+  "infile": "data/pip/ai4ts.txt",
+  "dependencies": {}
+}

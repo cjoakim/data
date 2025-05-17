@@ -1,0 +1,6 @@
+{
+  "libname": "phone-iso3166",
+  "libvers": "0.4.1",
+  "infile": "data/pip/phone-iso3166.txt",
+  "dependencies": {}
+}

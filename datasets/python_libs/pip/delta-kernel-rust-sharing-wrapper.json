@@ -1,0 +1,6 @@
+{
+  "libname": "delta-kernel-rust-sharing-wrapper",
+  "libvers": "0.2.2",
+  "infile": "data/pip/delta-kernel-rust-sharing-wrapper.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "py-trees",
+  "libvers": "2.3.0",
+  "infile": "data/pip/py-trees.txt",
+  "dependencies": {
+    "py": "1.11.0",
+    "pydot": "4.0.0",
+    "pyparsing": "3.2.3"
+  }
+}

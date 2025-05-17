@@ -1,0 +1,8 @@
+{
+  "libname": "spiceypy",
+  "libvers": "6.0.0",
+  "infile": "data/pip/spiceypy.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

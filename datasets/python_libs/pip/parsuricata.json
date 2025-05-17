@@ -1,0 +1,8 @@
+{
+  "libname": "parsuricata",
+  "libvers": "0.4.1",
+  "infile": "data/pip/parsuricata.txt",
+  "dependencies": {
+    "lark-parser": "0.12.0"
+  }
+}

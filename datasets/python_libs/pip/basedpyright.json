@@ -1,0 +1,8 @@
+{
+  "libname": "basedpyright",
+  "libvers": "1.29.1",
+  "infile": "data/pip/basedpyright.txt",
+  "dependencies": {
+    "nodejs-wheel-binaries": "22.15.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "libname": "tb-nightly",
+  "libvers": "2.20.0a20250507",
+  "infile": "data/pip/tb-nightly.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "grpcio": "1.71.0",
+    "markdown": "3.8",
+    "markupsafe": "3.0.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "protobuf": "6.30.2",
+    "six": "1.17.0",
+    "tensorboard-data-server": "0.7.2",
+    "werkzeug": "3.1.3"
+  }
+}

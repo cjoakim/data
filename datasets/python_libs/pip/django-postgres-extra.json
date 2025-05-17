@@ -1,0 +1,12 @@
+{
+  "libname": "django-postgres-extra",
+  "libvers": "2.0.8",
+  "infile": "data/pip/django-postgres-extra.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "4.2.20",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "sqlparse": "0.5.3"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "libname": "azure-functions-devops-build",
+  "libvers": "0.0.22",
+  "infile": "data/pip/azure-functions-devops-build.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "isodate": "0.7.2",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "msrest": "0.6.21",
+    "oauthlib": "3.2.2",
+    "requests": "2.32.3",
+    "requests-oauthlib": "2.0.0",
+    "urllib3": "2.4.0",
+    "vsts": "0.1.25"
+  }
+}

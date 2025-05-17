@@ -1,0 +1,6 @@
+{
+  "libname": "httpretty",
+  "libvers": "1.1.4",
+  "infile": "data/pip/httpretty.txt",
+  "dependencies": {}
+}

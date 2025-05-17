@@ -1,0 +1,6 @@
+{
+  "libname": "sqlparse",
+  "libvers": "0.5.3",
+  "infile": "data/pip/sqlparse.txt",
+  "dependencies": {}
+}

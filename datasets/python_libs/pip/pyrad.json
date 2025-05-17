@@ -1,0 +1,9 @@
+{
+  "libname": "pyrad",
+  "libvers": "2.4",
+  "infile": "data/pip/pyrad.txt",
+  "dependencies": {
+    "netaddr": "1.3.0",
+    "six": "1.17.0"
+  }
+}

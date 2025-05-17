@@ -1,0 +1,9 @@
+{
+  "libname": "hive-metastore-client",
+  "libvers": "1.0.9",
+  "infile": "data/pip/hive-metastore-client.txt",
+  "dependencies": {
+    "six": "1.17.0",
+    "thrift": "0.13.0"
+  }
+}

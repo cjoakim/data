@@ -1,0 +1,11 @@
+{
+  "libname": "xmlsig",
+  "libvers": "1.0.1",
+  "infile": "data/pip/xmlsig.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "lxml": "5.4.0",
+    "pycparser": "2.22"
+  }
+}

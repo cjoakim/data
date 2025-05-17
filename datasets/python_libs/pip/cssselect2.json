@@ -1,0 +1,9 @@
+{
+  "libname": "cssselect2",
+  "libvers": "0.8.0",
+  "infile": "data/pip/cssselect2.txt",
+  "dependencies": {
+    "tinycss2": "1.4.0",
+    "webencodings": "0.5.1"
+  }
+}

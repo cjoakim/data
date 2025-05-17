@@ -1,0 +1,10 @@
+{
+  "libname": "zcbor",
+  "libvers": "0.9.1",
+  "infile": "data/pip/zcbor.txt",
+  "dependencies": {
+    "cbor2": "5.6.5",
+    "pyyaml": "6.0.2",
+    "regex": "2024.11.6"
+  }
+}

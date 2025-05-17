@@ -1,0 +1,10 @@
+{
+  "libname": "blockdiag",
+  "libvers": "3.0.0",
+  "infile": "data/pip/blockdiag.txt",
+  "dependencies": {
+    "funcparserlib": "2.0.0a0",
+    "pillow": "11.2.1",
+    "webcolors": "24.11.1"
+  }
+}

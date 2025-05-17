@@ -1,0 +1,14 @@
+{
+  "libname": "prov",
+  "libvers": "2.0.1",
+  "infile": "data/pip/prov.txt",
+  "dependencies": {
+    "isodate": "0.6.1",
+    "lxml": "5.4.0",
+    "networkx": "3.4.2",
+    "pyparsing": "3.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "rdflib": "6.3.2",
+    "six": "1.17.0"
+  }
+}

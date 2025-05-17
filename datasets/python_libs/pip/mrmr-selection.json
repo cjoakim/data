@@ -1,0 +1,25 @@
+{
+  "libname": "mrmr-selection",
+  "libvers": "0.2.8",
+  "infile": "data/pip/mrmr-selection.txt",
+  "dependencies": {
+    "category-encoders": "2.8.1",
+    "jinja2": "3.1.6",
+    "joblib": "1.5.0",
+    "markupsafe": "3.0.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "patsy": "1.0.1",
+    "polars": "1.29.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "statsmodels": "0.14.4",
+    "threadpoolctl": "3.6.0",
+    "tqdm": "4.67.1",
+    "tzdata": "2025.2"
+  }
+}

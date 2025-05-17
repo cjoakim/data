@@ -1,0 +1,12 @@
+{
+  "libname": "bx-django-utils",
+  "libvers": "87",
+  "infile": "data/pip/bx-django-utils.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "bx-py-utils": "108",
+    "django": "5.2",
+    "python-stdnum": "2.0",
+    "sqlparse": "0.5.3"
+  }
+}

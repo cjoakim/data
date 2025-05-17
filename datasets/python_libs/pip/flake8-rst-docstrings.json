@@ -1,0 +1,14 @@
+{
+  "libname": "flake8-rst-docstrings",
+  "libvers": "0.3.1",
+  "infile": "data/pip/flake8-rst-docstrings.txt",
+  "dependencies": {
+    "docutils": "0.21.2",
+    "flake8": "7.2.0",
+    "mccabe": "0.7.0",
+    "pycodestyle": "2.13.0",
+    "pyflakes": "3.3.2",
+    "pygments": "2.19.1",
+    "restructuredtext-lint": "1.4.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "pyeapi",
+  "libvers": "1.0.4",
+  "infile": "data/pip/pyeapi.txt",
+  "dependencies": {
+    "netaddr": "1.3.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "py-async-grpc-prometheus",
+  "libvers": "0.2.0",
+  "infile": "data/pip/py-async-grpc-prometheus.txt",
+  "dependencies": {
+    "grpcio": "1.71.0",
+    "prometheus-client": "0.21.1"
+  }
+}

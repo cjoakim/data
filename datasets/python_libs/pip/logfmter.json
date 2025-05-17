@@ -1,0 +1,6 @@
+{
+  "libname": "logfmter",
+  "libvers": "0.0.9",
+  "infile": "data/pip/logfmter.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "junit2html",
+  "libvers": "31.0.2",
+  "infile": "data/pip/junit2html.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

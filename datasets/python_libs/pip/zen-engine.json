@@ -1,0 +1,6 @@
+{
+  "libname": "zen-engine",
+  "libvers": "0.42.0",
+  "infile": "data/pip/zen-engine.txt",
+  "dependencies": {}
+}

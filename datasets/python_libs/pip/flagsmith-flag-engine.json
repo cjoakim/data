@@ -1,0 +1,14 @@
+{
+  "libname": "flagsmith-flag-engine",
+  "libvers": "5.3.0",
+  "infile": "data/pip/flagsmith-flag-engine.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "pydantic": "2.11.4",
+    "pydantic-collections": "0.6.0",
+    "pydantic-core": "2.33.2",
+    "semver": "3.0.4",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

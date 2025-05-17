@@ -1,0 +1,9 @@
+{
+  "libname": "construct-typing",
+  "libvers": "0.6.2",
+  "infile": "data/pip/construct-typing.txt",
+  "dependencies": {
+    "construct": "2.10.68",
+    "typing-extensions": "4.13.2"
+  }
+}

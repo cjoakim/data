@@ -1,0 +1,6 @@
+{
+  "libname": "teradata",
+  "libvers": "15.10.0.21",
+  "infile": "data/pip/teradata.txt",
+  "dependencies": {}
+}

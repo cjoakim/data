@@ -1,0 +1,245 @@
+{"Name":"Aerospatiale (Sud Aviation) Se.210 Caravelle","IataCode":"CRV","IcaoCode":"S210"}
+{"Name":"Aerospatiale SN.601 Corvette","IataCode":"NDC","IcaoCode":"S601"}
+{"Name":"Aerospatiale/Alenia ATR 42-300","IataCode":"AT4","IcaoCode":"AT43"}
+{"Name":"Aerospatiale/Alenia ATR 42-500","IataCode":"AT5","IcaoCode":"AT45"}
+{"Name":"Aerospatiale/Alenia ATR 42-600","IataCode":"ATR","IcaoCode":"AT46"}
+{"Name":"Aerospatiale/Alenia ATR 72","IataCode":"AT7","IcaoCode":"AT72"}
+{"Name":"Airbus A300","IataCode":"AB3","IcaoCode":"A30B"}
+{"Name":"Airbus A300-600","IataCode":"AB6","IcaoCode":"A306"}
+{"Name":"Airbus A300-600ST Super Transporter / Beluga","IataCode":"ABB","IcaoCode":"A3ST"}
+{"Name":"Airbus A310","IataCode":"310","IcaoCode":"A310"}
+{"Name":"Airbus A318","IataCode":"318","IcaoCode":"A318"}
+{"Name":"Airbus A319","IataCode":"319","IcaoCode":"A319"}
+{"Name":"Airbus A319neo","IataCode":"31N","IcaoCode":"A19N"}
+{"Name":"Airbus A320","IataCode":"320","IcaoCode":"A320"}
+{"Name":"Airbus A320neo","IataCode":"32N","IcaoCode":"A20N"}
+{"Name":"Airbus A321","IataCode":"321","IcaoCode":"A321"}
+{"Name":"Airbus A321neo","IataCode":"32Q","IcaoCode":"A21N"}
+{"Name":"Airbus A330","IataCode":"330","IcaoCode":"\\N"}
+{"Name":"Airbus A330-200","IataCode":"332","IcaoCode":"A332"}
+{"Name":"Airbus A330-300","IataCode":"333","IcaoCode":"A333"}
+{"Name":"Airbus A330-700 Beluga XL","IataCode":"\\N","IcaoCode":"A337"}
+{"Name":"Airbus A330-800neo","IataCode":"338","IcaoCode":"A338"}
+{"Name":"Airbus A330-900neo","IataCode":"339","IcaoCode":"A339"}
+{"Name":"Airbus A340","IataCode":"340","IcaoCode":"\\N"}
+{"Name":"Airbus A340-200","IataCode":"342","IcaoCode":"A342"}
+{"Name":"Airbus A340-300","IataCode":"343","IcaoCode":"A343"}
+{"Name":"Airbus A340-500","IataCode":"345","IcaoCode":"A345"}
+{"Name":"Airbus A340-600","IataCode":"346","IcaoCode":"A346"}
+{"Name":"Airbus A350","IataCode":"350","IcaoCode":"\\N"}
+{"Name":"Airbus A350-1000","IataCode":"351","IcaoCode":"A35K"}
+{"Name":"Airbus A350-900","IataCode":"359","IcaoCode":"A359"}
+{"Name":"Airbus A380","IataCode":"380","IcaoCode":"\\N"}
+{"Name":"Airbus A380-800","IataCode":"388","IcaoCode":"A388"}
+{"Name":"Antonov AN-12","IataCode":"ANF","IcaoCode":"AN12"}
+{"Name":"Antonov AN-124 Ruslan","IataCode":"A4F","IcaoCode":"A124"}
+{"Name":"Antonov AN-140","IataCode":"A40","IcaoCode":"A140"}
+{"Name":"Antonov An-148","IataCode":"A81","IcaoCode":"A148"}
+{"Name":"Antonov An-158","IataCode":"A58","IcaoCode":"A158"}
+{"Name":"Antonov An-225 Mriya","IataCode":"A25","IcaoCode":"A225"}
+{"Name":"Antonov AN-24","IataCode":"AN4","IcaoCode":"AN24"}
+{"Name":"Antonov AN-26","IataCode":"A26","IcaoCode":"AN26"}
+{"Name":"Antonov AN-28","IataCode":"A28","IcaoCode":"AN28"}
+{"Name":"Antonov AN-30","IataCode":"A30","IcaoCode":"AN30"}
+{"Name":"Antonov AN-32","IataCode":"A32","IcaoCode":"AN32"}
+{"Name":"Antonov AN-72","IataCode":"AN7","IcaoCode":"AN72"}
+{"Name":"Avro RJ100","IataCode":"AR1","IcaoCode":"RJ1H"}
+{"Name":"Avro RJ70","IataCode":"AR7","IcaoCode":"RJ70"}
+{"Name":"Avro RJ85","IataCode":"AR8","IcaoCode":"RJ85"}
+{"Name":"BAe 146","IataCode":"146","IcaoCode":"\\N"}
+{"Name":"BAe 146-100","IataCode":"141","IcaoCode":"B461"}
+{"Name":"BAe 146-200","IataCode":"142","IcaoCode":"B462"}
+{"Name":"BAe 146-300","IataCode":"143","IcaoCode":"B463"}
+{"Name":"Beechcraft 1900","IataCode":"BEH","IcaoCode":"B190"}
+{"Name":"Beechcraft Baron","IataCode":"\\N","IcaoCode":"BE58"}
+{"Name":"Beechcraft Baron / 55 Baron","IataCode":"\\N","IcaoCode":"BE55"}
+{"Name":"Bell 212","IataCode":"BH2","IcaoCode":"B212"}
+{"Name":"Boeing 707","IataCode":"703","IcaoCode":"B703"}
+{"Name":"Boeing 717","IataCode":"717","IcaoCode":"B712"}
+{"Name":"Boeing 720B","IataCode":"B72","IcaoCode":"B720"}
+{"Name":"Boeing 727","IataCode":"727","IcaoCode":"\\N"}
+{"Name":"Boeing 727-100","IataCode":"721","IcaoCode":"B721"}
+{"Name":"Boeing 727-200","IataCode":"722","IcaoCode":"B722"}
+{"Name":"Boeing 737","IataCode":"737","IcaoCode":"\\N"}
+{"Name":"Boeing 737 MAX 10","IataCode":"7MJ","IcaoCode":"\\N"}
+{"Name":"Boeing 737 MAX 7","IataCode":"7M7","IcaoCode":"B37M"}
+{"Name":"Boeing 737 MAX 8","IataCode":"7M8","IcaoCode":"B38M"}
+{"Name":"Boeing 737 MAX 9","IataCode":"7M9","IcaoCode":"B39M"}
+{"Name":"Boeing 737-200","IataCode":"732","IcaoCode":"B732"}
+{"Name":"Boeing 737-300","IataCode":"733","IcaoCode":"B733"}
+{"Name":"Boeing 737-400","IataCode":"734","IcaoCode":"B734"}
+{"Name":"Boeing 737-500","IataCode":"735","IcaoCode":"B735"}
+{"Name":"Boeing 737-600","IataCode":"736","IcaoCode":"B736"}
+{"Name":"Boeing 737-700","IataCode":"73G","IcaoCode":"B737"}
+{"Name":"Boeing 737-800","IataCode":"738","IcaoCode":"B738"}
+{"Name":"Boeing 737-900","IataCode":"739","IcaoCode":"B739"}
+{"Name":"Boeing 747","IataCode":"747","IcaoCode":"\\N"}
+{"Name":"Boeing 747 LCF Dreamlifter","IataCode":"74B","IcaoCode":"BLCF"}
+{"Name":"Boeing 747-100","IataCode":"741","IcaoCode":"B741"}
+{"Name":"Boeing 747-200","IataCode":"742","IcaoCode":"B742"}
+{"Name":"Boeing 747-300","IataCode":"743","IcaoCode":"B743"}
+{"Name":"Boeing 747-400","IataCode":"744","IcaoCode":"B744"}
+{"Name":"Boeing 747-400D","IataCode":"74J","IcaoCode":"B74D"}
+{"Name":"Boeing 747-8","IataCode":"748","IcaoCode":"B748"}
+{"Name":"Boeing 747SP","IataCode":"74L","IcaoCode":"B74S"}
+{"Name":"Boeing 747SR","IataCode":"74R","IcaoCode":"B74R"}
+{"Name":"Boeing 757","IataCode":"757","IcaoCode":"\\N"}
+{"Name":"Boeing 757-200","IataCode":"752","IcaoCode":"B752"}
+{"Name":"Boeing 757-300","IataCode":"753","IcaoCode":"B753"}
+{"Name":"Boeing 767","IataCode":"767","IcaoCode":"\\N"}
+{"Name":"Boeing 767-200","IataCode":"762","IcaoCode":"B762"}
+{"Name":"Boeing 767-300","IataCode":"763","IcaoCode":"B763"}
+{"Name":"Boeing 767-400","IataCode":"764","IcaoCode":"B764"}
+{"Name":"Boeing 777","IataCode":"777","IcaoCode":"\\N"}
+{"Name":"Boeing 777-200","IataCode":"772","IcaoCode":"B772"}
+{"Name":"Boeing 777-200LR","IataCode":"77L","IcaoCode":"B77L"}
+{"Name":"Boeing 777-300","IataCode":"773","IcaoCode":"B773"}
+{"Name":"Boeing 777-300ER","IataCode":"77W","IcaoCode":"B77W"}
+{"Name":"Boeing 777-8","IataCode":"778","IcaoCode":"B778"}
+{"Name":"Boeing 777-9","IataCode":"779","IcaoCode":"B779"}
+{"Name":"Boeing 787","IataCode":"787","IcaoCode":"\\N"}
+{"Name":"Boeing 787-10","IataCode":"78J","IcaoCode":"B78X"}
+{"Name":"Boeing 787-8","IataCode":"788","IcaoCode":"B788"}
+{"Name":"Boeing 787-9","IataCode":"789","IcaoCode":"B789"}
+{"Name":"Bombardier 415","IataCode":"\\N","IcaoCode":"CL2T"}
+{"Name":"Bombardier BD-100 Challenger 300","IataCode":"\\N","IcaoCode":"CL30"}
+{"Name":"Bombardier CS100","IataCode":"CS1","IcaoCode":"BCS1"}
+{"Name":"Bombardier CS300","IataCode":"CS3","IcaoCode":"BCS3"}
+{"Name":"Bombardier Global Express","IataCode":"CCX","IcaoCode":"GLEX"}
+{"Name":"British Aerospace (BAC) One Eleven","IataCode":"B11","IcaoCode":"BA11"}
+{"Name":"British Aerospace 125 series / Hawker/Raytheon 700/800/800XP/850/900","IataCode":"H25","IcaoCode":"H25B"}
+{"Name":"British Aerospace 125-1000 series / Hawker/Raytheon 1000","IataCode":"H25","IcaoCode":"H25C"}
+{"Name":"British Aerospace ATP","IataCode":"ATP","IcaoCode":"ATP"}
+{"Name":"British Aerospace Jetstream 31","IataCode":"J31","IcaoCode":"JS31"}
+{"Name":"British Aerospace Jetstream 32","IataCode":"J32","IcaoCode":"JS32"}
+{"Name":"British Aerospace Jetstream 41","IataCode":"J41","IcaoCode":"JS41"}
+{"Name":"Canadair Challenger","IataCode":"CCJ","IcaoCode":"CL60"}
+{"Name":"Canadair CL-44","IataCode":"CL4","IcaoCode":"CL44"}
+{"Name":"Canadair Regional Jet 100","IataCode":"CR1","IcaoCode":"CRJ1"}
+{"Name":"Canadair Regional Jet 1000","IataCode":"CRK","IcaoCode":"CRJX"}
+{"Name":"Canadair Regional Jet 200","IataCode":"CR2","IcaoCode":"CRJ2"}
+{"Name":"Canadair Regional Jet 700","IataCode":"CR7","IcaoCode":"CRJ7"}
+{"Name":"Canadair Regional Jet 900","IataCode":"CR9","IcaoCode":"CRJ9"}
+{"Name":"Cessna 152","IataCode":"\\N","IcaoCode":"C152"}
+{"Name":"Cessna 172","IataCode":"CN1","IcaoCode":"C172"}
+{"Name":"Cessna 182 Skylane","IataCode":"CN1","IcaoCode":"C182"}
+{"Name":"Cessna 208 Caravan","IataCode":"CN1","IcaoCode":"C208"}
+{"Name":"Cessna 210 Centurion","IataCode":"CN1","IcaoCode":"C210"}
+{"Name":"Cessna Citation CJ3","IataCode":"CNJ","IcaoCode":"C25B"}
+{"Name":"Cessna Citation CJ4","IataCode":"CNJ","IcaoCode":"C25C"}
+{"Name":"Cessna Citation Excel","IataCode":"CNJ","IcaoCode":"C56X"}
+{"Name":"Cessna Citation I","IataCode":"CNJ","IcaoCode":"C500"}
+{"Name":"Cessna Citation II","IataCode":"CNJ","IcaoCode":"C550"}
+{"Name":"Cessna Citation Mustang","IataCode":"CNJ","IcaoCode":"C510"}
+{"Name":"Cessna Citation Sovereign","IataCode":"CNJ","IcaoCode":"C680"}
+{"Name":"Cessna Citation X","IataCode":"CNJ","IcaoCode":"C750"}
+{"Name":"COMAC C-919","IataCode":"\\N","IcaoCode":"C919"}
+{"Name":"Concorde","IataCode":"SSC","IcaoCode":"CONC"}
+{"Name":"Dassault Falcon 2000","IataCode":"D20","IcaoCode":"F2TH"}
+{"Name":"Dassault Falcon 50","IataCode":"DF3","IcaoCode":"FA50"}
+{"Name":"Dassault Falcon 7X","IataCode":"DF7","IcaoCode":"FA7X"}
+{"Name":"Dassault Falcon 900","IataCode":"DF9","IcaoCode":"F900"}
+{"Name":"De Havilland Canada DHC-2 Beaver","IataCode":"DHP","IcaoCode":"DHC2"}
+{"Name":"De Havilland Canada DHC-2 Turbo-Beaver","IataCode":"DHR","IcaoCode":"DH2T"}
+{"Name":"De Havilland Canada DHC-3 Otter","IataCode":"DHL","IcaoCode":"DHC3"}
+{"Name":"De Havilland Canada DHC-4 Caribou","IataCode":"DHC","IcaoCode":"DHC4"}
+{"Name":"De Havilland Canada DHC-6 Twin Otter","IataCode":"DHT","IcaoCode":"DHC6"}
+{"Name":"De Havilland Canada DHC-7 Dash 7","IataCode":"DH7","IcaoCode":"DHC7"}
+{"Name":"De Havilland Canada DHC-8-100 Dash 8 / 8Q","IataCode":"DH1","IcaoCode":"DH8A"}
+{"Name":"De Havilland Canada DHC-8-200 Dash 8 / 8Q","IataCode":"DH2","IcaoCode":"DH8B"}
+{"Name":"De Havilland Canada DHC-8-300 Dash 8","IataCode":"DH3","IcaoCode":"DH8C"}
+{"Name":"De Havilland Canada DHC-8-400 Dash 8Q","IataCode":"DH4","IcaoCode":"DH8D"}
+{"Name":"De Havilland DH.104 Dove","IataCode":"DHD","IcaoCode":"DOVE"}
+{"Name":"De Havilland DH.114 Heron","IataCode":"DHH","IcaoCode":"HERN"}
+{"Name":"Douglas DC-10","IataCode":"D10","IcaoCode":"DC10"}
+{"Name":"Douglas DC-3","IataCode":"D3F","IcaoCode":"DC3"}
+{"Name":"Douglas DC-6","IataCode":"D6F","IcaoCode":"DC6"}
+{"Name":"Douglas DC-8-50","IataCode":"D8T","IcaoCode":"DC85"}
+{"Name":"Douglas DC-8-62","IataCode":"D8L","IcaoCode":"DC86"}
+{"Name":"Douglas DC-8-72","IataCode":"D8Q","IcaoCode":"DC87"}
+{"Name":"Douglas DC-9-10","IataCode":"D91","IcaoCode":"DC91"}
+{"Name":"Douglas DC-9-20","IataCode":"D92","IcaoCode":"DC92"}
+{"Name":"Douglas DC-9-30","IataCode":"D93","IcaoCode":"DC93"}
+{"Name":"Douglas DC-9-40","IataCode":"D94","IcaoCode":"DC94"}
+{"Name":"Douglas DC-9-50","IataCode":"D95","IcaoCode":"DC95"}
+{"Name":"Embraer 170","IataCode":"E70","IcaoCode":"E170"}
+{"Name":"Embraer 175","IataCode":"E75","IcaoCode":"\\N"}
+{"Name":"Embraer 175 (long wing)","IataCode":"E7W","IcaoCode":"E75L"}
+{"Name":"Embraer 175 (short wing)","IataCode":"E7W","IcaoCode":"E75S"}
+{"Name":"Embraer 190","IataCode":"E90","IcaoCode":"E190"}
+{"Name":"Embraer 195","IataCode":"E95","IcaoCode":"E195"}
+{"Name":"Embraer E190-E2","IataCode":"290","IcaoCode":"E290"}
+{"Name":"Embraer E195-E2","IataCode":"295","IcaoCode":"E295"}
+{"Name":"Embraer EMB 110 Bandeirante","IataCode":"EMB","IcaoCode":"E110"}
+{"Name":"Embraer EMB 120 Brasilia","IataCode":"EM2","IcaoCode":"E120"}
+{"Name":"Embraer Legacy 450","IataCode":"\\N","IcaoCode":"E545"}
+{"Name":"Embraer Legacy 600","IataCode":"ER3","IcaoCode":"E35L"}
+{"Name":"Embraer Phenom 100","IataCode":"EP1","IcaoCode":"E50P"}
+{"Name":"Embraer Phenom 300","IataCode":"EP3","IcaoCode":"E55P"}
+{"Name":"Embraer RJ135","IataCode":"ER3","IcaoCode":"E135"}
+{"Name":"Embraer RJ140","IataCode":"ERD","IcaoCode":"E135"}
+{"Name":"Embraer RJ145","IataCode":"ER4","IcaoCode":"E145"}
+{"Name":"Fairchild Dornier 328JET","IataCode":"FRJ","IcaoCode":"J328"}
+{"Name":"Fairchild Dornier Do.228","IataCode":"D28","IcaoCode":"D228"}
+{"Name":"Fairchild Dornier Do.328","IataCode":"D38","IcaoCode":"D328"}
+{"Name":"Fokker 100","IataCode":"100","IcaoCode":"F100"}
+{"Name":"Fokker 50","IataCode":"F50","IcaoCode":"F50"}
+{"Name":"Fokker 70","IataCode":"F70","IcaoCode":"F70"}
+{"Name":"Fokker F27 Friendship","IataCode":"F27","IcaoCode":"F27"}
+{"Name":"Fokker F28 Fellowship","IataCode":"F21","IcaoCode":"F28"}
+{"Name":"Gulfstream Aerospace G-159 Gulfstream I","IataCode":"GRS","IcaoCode":"G159"}
+{"Name":"Gulfstream G280","IataCode":"GR3","IcaoCode":"G280"}
+{"Name":"Gulfstream G650","IataCode":"GJ6","IcaoCode":"GLF6"}
+{"Name":"Gulfstream IV","IataCode":"GJ4","IcaoCode":"GLF4"}
+{"Name":"Gulfstream V","IataCode":"GJ5","IcaoCode":"GLF5"}
+{"Name":"Gulfstream/Rockwell (Aero) Commander","IataCode":"ACP","IcaoCode":"AC68"}
+{"Name":"Gulfstream/Rockwell (Aero) Turbo Commander","IataCode":"ACT","IcaoCode":"AC90"}
+{"Name":"Harbin Yunshuji Y12","IataCode":"YN2","IcaoCode":"Y12"}
+{"Name":"Hawker Siddeley HS 748","IataCode":"HS7","IcaoCode":"A748"}
+{"Name":"Ilyushin IL114","IataCode":"I14","IcaoCode":"I114"}
+{"Name":"Ilyushin IL18","IataCode":"IL8","IcaoCode":"IL18"}
+{"Name":"Ilyushin IL62","IataCode":"IL6","IcaoCode":"IL62"}
+{"Name":"Ilyushin IL76","IataCode":"IL7","IcaoCode":"IL76"}
+{"Name":"Ilyushin IL86","IataCode":"ILW","IcaoCode":"IL86"}
+{"Name":"Ilyushin IL96","IataCode":"I93","IcaoCode":"IL96"}
+{"Name":"Learjet 35","IataCode":"LRJ","IcaoCode":"LJ35"}
+{"Name":"Learjet 60","IataCode":"LRJ","IcaoCode":"LJ60"}
+{"Name":"Lockheed L-1011 Tristar","IataCode":"L10","IcaoCode":"L101"}
+{"Name":"Lockheed L-1049 Super Constellation","IataCode":"L49","IcaoCode":"CONI"}
+{"Name":"Lockheed L-182 / 282 / 382 (L-100) Hercules","IataCode":"LOH","IcaoCode":"C130"}
+{"Name":"Lockheed L-188 Electra","IataCode":"LOE","IcaoCode":"L188"}
+{"Name":"McDonnell Douglas MD-11","IataCode":"M11","IcaoCode":"MD11"}
+{"Name":"McDonnell Douglas MD-81","IataCode":"M81","IcaoCode":"MD81"}
+{"Name":"McDonnell Douglas MD-82","IataCode":"M82","IcaoCode":"MD82"}
+{"Name":"McDonnell Douglas MD-83","IataCode":"M83","IcaoCode":"MD83"}
+{"Name":"McDonnell Douglas MD-87","IataCode":"M87","IcaoCode":"MD87"}
+{"Name":"McDonnell Douglas MD-88","IataCode":"M88","IcaoCode":"MD88"}
+{"Name":"McDonnell Douglas MD-90","IataCode":"M90","IcaoCode":"MD90"}
+{"Name":"NAMC YS-11","IataCode":"YS1","IcaoCode":"YS11"}
+{"Name":"Partenavia P.68","IataCode":"PN6","IcaoCode":"P68"}
+{"Name":"Pilatus Britten-Norman BN-2A Mk III Trislander","IataCode":"BNT","IcaoCode":"TRIS"}
+{"Name":"Pilatus Britten-Norman BN-2A/B Islander","IataCode":"BNI","IcaoCode":"BN2P"}
+{"Name":"Pilatus PC-12","IataCode":"PL2","IcaoCode":"PC12"}
+{"Name":"Pilatus PC-6 Turbo Porter","IataCode":"PL6","IcaoCode":"PC6T"}
+{"Name":"Piper PA-28 (above 200 hp)","IataCode":"\\N","IcaoCode":"P28B"}
+{"Name":"Piper PA-28 (up to 180 hp)","IataCode":"\\N","IcaoCode":"P28A"}
+{"Name":"Piper PA-31 Navajo","IataCode":"PA2","IcaoCode":"PA31"}
+{"Name":"Piper PA-44 Seminole","IataCode":"\\N","IcaoCode":"PA44"}
+{"Name":"Piper PA-46","IataCode":"PAG","IcaoCode":"PA46"}
+{"Name":"Saab 2000","IataCode":"S20","IcaoCode":"SB20"}
+{"Name":"Saab SF340A/B","IataCode":"SF3","IcaoCode":"SF34"}
+{"Name":"Shorts SC-5 Belfast","IataCode":"SHB","IcaoCode":"BELF"}
+{"Name":"Shorts SC-7 Skyvan","IataCode":"SHS","IcaoCode":"SC7"}
+{"Name":"Shorts SD.330","IataCode":"SH3","IcaoCode":"SH33"}
+{"Name":"Shorts SD.360","IataCode":"SH6","IcaoCode":"SH36"}
+{"Name":"Sikorsky S-58T","IataCode":"S58","IcaoCode":"S58T"}
+{"Name":"Sikorsky S-61","IataCode":"S61","IcaoCode":"S61"}
+{"Name":"Sikorsky S-76","IataCode":"S76","IcaoCode":"S76"}
+{"Name":"Sikorsky S-92","IataCode":"S92","IcaoCode":"S92"}
+{"Name":"Sukhoi Superjet 100-95","IataCode":"SU9","IcaoCode":"SU95"}
+{"Name":"Tupolev Tu-134","IataCode":"TU3","IcaoCode":"T134"}
+{"Name":"Tupolev Tu-144","IataCode":"\\N","IcaoCode":"T144"}
+{"Name":"Tupolev Tu-154","IataCode":"TU5","IcaoCode":"T154"}
+{"Name":"Tupolev Tu-204","IataCode":"T20","IcaoCode":"T204"}
+{"Name":"Yakovlev Yak-40","IataCode":"YK4","IcaoCode":"YK40"}
+{"Name":"Yakovlev Yak-42","IataCode":"YK2","IcaoCode":"YK42"}

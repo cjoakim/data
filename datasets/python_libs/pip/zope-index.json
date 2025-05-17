@@ -1,0 +1,14 @@
+{
+  "libname": "zope-index",
+  "libvers": "7.0",
+  "infile": "data/pip/zope-index.txt",
+  "dependencies": {
+    "btrees": "6.1",
+    "cffi": "1.17.1",
+    "persistent": "6.1.1",
+    "pycparser": "2.22",
+    "zope-deferredimport": "5.0",
+    "zope-interface": "7.2",
+    "zope-proxy": "6.1"
+  }
+}

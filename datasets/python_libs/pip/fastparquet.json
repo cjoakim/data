@@ -1,0 +1,16 @@
+{
+  "libname": "fastparquet",
+  "libvers": "2024.11.0",
+  "infile": "data/pip/fastparquet.txt",
+  "dependencies": {
+    "cramjam": "2.10.0",
+    "fsspec": "2025.3.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "tzdata": "2025.2"
+  }
+}

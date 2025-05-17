@@ -1,0 +1,6 @@
+{
+  "libname": "protoc-wheel-0",
+  "libvers": "30.2",
+  "infile": "data/pip/protoc-wheel-0.txt",
+  "dependencies": {}
+}

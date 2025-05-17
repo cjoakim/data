@@ -1,0 +1,6 @@
+{
+  "libname": "asyncpg",
+  "libvers": "0.30.0",
+  "infile": "data/pip/asyncpg.txt",
+  "dependencies": {}
+}

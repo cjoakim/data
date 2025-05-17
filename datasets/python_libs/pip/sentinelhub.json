@@ -1,0 +1,33 @@
+{
+  "libname": "sentinelhub",
+  "libvers": "3.11.1",
+  "infile": "data/pip/sentinelhub.txt",
+  "dependencies": {
+    "aenum": "3.1.16",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "dataclasses-json": "0.6.7",
+    "idna": "3.10",
+    "marshmallow": "3.26.1",
+    "mypy-extensions": "1.1.0",
+    "numpy": "2.2.5",
+    "oauthlib": "3.2.2",
+    "packaging": "25.0",
+    "pillow": "11.2.1",
+    "pyproj": "3.7.1",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "requests-oauthlib": "2.0.0",
+    "shapely": "2.1.0",
+    "six": "1.17.0",
+    "tifffile": "2025.3.30",
+    "tomli": "2.2.1",
+    "tomli-w": "1.2.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.13.2",
+    "typing-inspect": "0.9.0",
+    "urllib3": "2.4.0",
+    "utm": "0.8.1"
+  }
+}

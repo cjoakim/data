@@ -1,0 +1,8 @@
+{
+  "libname": "yelp-encodings",
+  "libvers": "2.0.0",
+  "infile": "data/pip/yelp-encodings.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

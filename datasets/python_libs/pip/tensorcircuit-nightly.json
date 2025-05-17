@@ -1,0 +1,14 @@
+{
+  "libname": "tensorcircuit-nightly",
+  "libvers": "1.2.0.dev20250403",
+  "infile": "data/pip/tensorcircuit-nightly.txt",
+  "dependencies": {
+    "graphviz": "0.20.3",
+    "h5py": "3.13.0",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "opt-einsum": "3.4.0",
+    "scipy": "1.15.2",
+    "tensornetwork": "0.4.6"
+  }
+}

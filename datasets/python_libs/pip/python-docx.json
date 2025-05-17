@@ -1,0 +1,9 @@
+{
+  "libname": "python-docx",
+  "libvers": "1.1.2",
+  "infile": "data/pip/python-docx.txt",
+  "dependencies": {
+    "lxml": "5.4.0",
+    "typing-extensions": "4.13.2"
+  }
+}

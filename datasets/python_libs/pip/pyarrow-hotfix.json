@@ -1,0 +1,6 @@
+{
+  "libname": "pyarrow-hotfix",
+  "libvers": "0.7",
+  "infile": "data/pip/pyarrow-hotfix.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "tobiko-cloud-helpers",
+  "libvers": "202519.11.0",
+  "infile": "data/pip/tobiko-cloud-helpers.txt",
+  "dependencies": {}
+}

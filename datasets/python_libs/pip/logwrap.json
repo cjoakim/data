@@ -1,0 +1,6 @@
+{
+  "libname": "logwrap",
+  "libvers": "11.1.1",
+  "infile": "data/pip/logwrap.txt",
+  "dependencies": {}
+}

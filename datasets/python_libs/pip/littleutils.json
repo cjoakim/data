@@ -1,0 +1,6 @@
+{
+  "libname": "littleutils",
+  "libvers": "0.2.4",
+  "infile": "data/pip/littleutils.txt",
+  "dependencies": {}
+}

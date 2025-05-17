@@ -1,0 +1,6 @@
+{
+  "libname": "fake-useragent",
+  "libvers": "2.2.0",
+  "infile": "data/pip/fake-useragent.txt",
+  "dependencies": {}
+}

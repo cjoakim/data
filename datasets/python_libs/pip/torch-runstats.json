@@ -1,0 +1,6 @@
+{
+  "libname": "torch-runstats",
+  "libvers": "0.2.0",
+  "infile": "data/pip/torch-runstats.txt",
+  "dependencies": {}
+}

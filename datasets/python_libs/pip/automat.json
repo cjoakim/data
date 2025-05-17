@@ -1,0 +1,6 @@
+{
+  "libname": "automat",
+  "libvers": "25.4.16",
+  "infile": "data/pip/automat.txt",
+  "dependencies": {}
+}

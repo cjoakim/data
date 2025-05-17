@@ -1,0 +1,18 @@
+{
+  "libname": "vncdotool",
+  "libvers": "1.2.0",
+  "infile": "data/pip/vncdotool.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "automat": "25.4.16",
+    "constantly": "23.10.4",
+    "hyperlink": "21.0.0",
+    "idna": "3.10",
+    "incremental": "24.7.2",
+    "pillow": "11.2.1",
+    "pycryptodomex": "3.22.0",
+    "twisted": "24.11.0",
+    "typing-extensions": "4.13.2",
+    "zope-interface": "7.2"
+  }
+}

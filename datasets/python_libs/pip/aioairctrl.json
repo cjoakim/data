@@ -1,0 +1,9 @@
+{
+  "libname": "aioairctrl",
+  "libvers": "0.2.5",
+  "infile": "data/pip/aioairctrl.txt",
+  "dependencies": {
+    "aiocoap": "0.4.14",
+    "pycryptodomex": "3.22.0"
+  }
+}

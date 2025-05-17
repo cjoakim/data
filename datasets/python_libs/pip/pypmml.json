@@ -1,0 +1,10 @@
+{
+  "libname": "pypmml",
+  "libvers": "1.5.6",
+  "infile": "data/pip/pypmml.txt",
+  "dependencies": {
+    "jpype1": "1.5.2",
+    "packaging": "25.0",
+    "py4j": "0.10.9.9"
+  }
+}

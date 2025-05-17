@@ -1,0 +1,8 @@
+{
+  "libname": "clustershell",
+  "libvers": "1.9.3",
+  "infile": "data/pip/clustershell.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

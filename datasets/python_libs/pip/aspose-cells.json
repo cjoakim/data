@@ -1,0 +1,9 @@
+{
+  "libname": "aspose-cells",
+  "libvers": "25.4.0",
+  "infile": "data/pip/aspose-cells.txt",
+  "dependencies": {
+    "jpype1": "1.5.2",
+    "packaging": "25.0"
+  }
+}

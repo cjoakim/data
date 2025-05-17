@@ -1,0 +1,6 @@
+{
+  "libname": "pbs-installer",
+  "libvers": "2025.4.9",
+  "infile": "data/pip/pbs-installer.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "scikit-build-core",
+  "libvers": "0.11.2",
+  "infile": "data/pip/scikit-build-core.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "pathspec": "0.12.1"
+  }
+}

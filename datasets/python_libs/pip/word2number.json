@@ -1,0 +1,6 @@
+{
+  "libname": "word2number",
+  "libvers": "1.1",
+  "infile": "data/pip/word2number.txt",
+  "dependencies": {}
+}

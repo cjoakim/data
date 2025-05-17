@@ -1,0 +1,6 @@
+{
+  "libname": "couchdb",
+  "libvers": "1.2",
+  "infile": "data/pip/couchdb.txt",
+  "dependencies": {}
+}

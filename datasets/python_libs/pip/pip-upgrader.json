@@ -1,0 +1,16 @@
+{
+  "libname": "pip-upgrader",
+  "libvers": "1.4.15",
+  "infile": "data/pip/pip-upgrader.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "colorclass": "2.2.2",
+    "docopt": "0.6.2",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "requests": "2.32.3",
+    "terminaltables": "3.1.10",
+    "urllib3": "2.4.0"
+  }
+}

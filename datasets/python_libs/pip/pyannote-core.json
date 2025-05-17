@@ -1,0 +1,11 @@
+{
+  "libname": "pyannote-core",
+  "libvers": "5.0.0",
+  "infile": "data/pip/pyannote-core.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "sortedcontainers": "2.4.0",
+    "typing-extensions": "4.13.2"
+  }
+}

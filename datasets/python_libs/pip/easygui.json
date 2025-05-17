@@ -1,0 +1,6 @@
+{
+  "libname": "easygui",
+  "libvers": "0.98.3",
+  "infile": "data/pip/easygui.txt",
+  "dependencies": {}
+}

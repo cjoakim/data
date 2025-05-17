@@ -1,0 +1,12 @@
+{
+  "libname": "collectfasta",
+  "libvers": "3.2.1",
+  "infile": "data/pip/collectfasta.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "django-storages": "1.14.6",
+    "sqlparse": "0.5.3",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "aiomqtt",
+  "libvers": "2.4.0",
+  "infile": "data/pip/aiomqtt.txt",
+  "dependencies": {
+    "paho-mqtt": "2.1.0"
+  }
+}

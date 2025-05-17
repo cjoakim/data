@@ -1,0 +1,6 @@
+{
+  "libname": "baize",
+  "libvers": "0.22.2",
+  "infile": "data/pip/baize.txt",
+  "dependencies": {}
+}

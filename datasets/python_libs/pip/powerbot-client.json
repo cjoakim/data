@@ -1,0 +1,11 @@
+{
+  "libname": "powerbot-client",
+  "libvers": "2.22.1",
+  "infile": "data/pip/powerbot-client.txt",
+  "dependencies": {
+    "certifi": "2024.12.14",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

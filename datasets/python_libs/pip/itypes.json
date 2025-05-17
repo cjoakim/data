@@ -1,0 +1,6 @@
+{
+  "libname": "itypes",
+  "libvers": "1.2.0",
+  "infile": "data/pip/itypes.txt",
+  "dependencies": {}
+}

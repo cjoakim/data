@@ -1,0 +1,9 @@
+{
+  "libname": "esp-bool-parser",
+  "libvers": "0.1.2",
+  "infile": "data/pip/esp-bool-parser.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "pyparsing": "3.2.3"
+  }
+}

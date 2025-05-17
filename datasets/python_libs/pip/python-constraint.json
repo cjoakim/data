@@ -1,0 +1,6 @@
+{
+  "libname": "python-constraint",
+  "libvers": "1.4.0",
+  "infile": "data/pip/python-constraint.txt",
+  "dependencies": {}
+}

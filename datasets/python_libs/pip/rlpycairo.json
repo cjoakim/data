@@ -1,0 +1,9 @@
+{
+  "libname": "rlpycairo",
+  "libvers": "0.3.0",
+  "infile": "data/pip/rlpycairo.txt",
+  "dependencies": {
+    "freetype-py": "2.5.1",
+    "pycairo": "1.28.0"
+  }
+}

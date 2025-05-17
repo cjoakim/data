@@ -1,0 +1,9 @@
+{
+  "libname": "aiosmtpd",
+  "libvers": "1.4.6",
+  "infile": "data/pip/aiosmtpd.txt",
+  "dependencies": {
+    "atpublic": "5.1",
+    "attrs": "25.3.0"
+  }
+}

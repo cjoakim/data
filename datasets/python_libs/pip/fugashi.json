@@ -1,0 +1,6 @@
+{
+  "libname": "fugashi",
+  "libvers": "1.4.0",
+  "infile": "data/pip/fugashi.txt",
+  "dependencies": {}
+}

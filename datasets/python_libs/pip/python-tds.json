@@ -1,0 +1,6 @@
+{
+  "libname": "python-tds",
+  "libvers": "1.16.1",
+  "infile": "data/pip/python-tds.txt",
+  "dependencies": {}
+}

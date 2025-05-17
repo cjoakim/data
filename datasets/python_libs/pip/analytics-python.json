@@ -1,0 +1,16 @@
+{
+  "libname": "analytics-python",
+  "libvers": "1.4.post1",
+  "infile": "data/pip/analytics-python.txt",
+  "dependencies": {
+    "backoff": "1.10.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "monotonic": "1.6",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

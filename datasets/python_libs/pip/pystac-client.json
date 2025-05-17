@@ -1,0 +1,21 @@
+{
+  "libname": "pystac-client",
+  "libvers": "0.8.6",
+  "infile": "data/pip/pystac-client.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "pystac[validation]": "1.13.0",
+    "python-dateutil": "2.9.0.post0",
+    "referencing": "0.36.2",
+    "requests": "2.32.3",
+    "rpds-py": "0.24.0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

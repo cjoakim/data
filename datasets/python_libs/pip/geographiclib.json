@@ -1,0 +1,6 @@
+{
+  "libname": "geographiclib",
+  "libvers": "2.0",
+  "infile": "data/pip/geographiclib.txt",
+  "dependencies": {}
+}

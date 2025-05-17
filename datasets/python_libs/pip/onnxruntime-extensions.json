@@ -1,0 +1,6 @@
+{
+  "libname": "onnxruntime-extensions",
+  "libvers": "0.14.0",
+  "infile": "data/pip/onnxruntime-extensions.txt",
+  "dependencies": {}
+}

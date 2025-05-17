@@ -1,0 +1,6 @@
+{
+  "libname": "pyprof2calltree",
+  "libvers": "1.4.5",
+  "infile": "data/pip/pyprof2calltree.txt",
+  "dependencies": {}
+}

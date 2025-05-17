@@ -1,0 +1,10 @@
+{
+  "libname": "feedgen",
+  "libvers": "1.0.0",
+  "infile": "data/pip/feedgen.txt",
+  "dependencies": {
+    "lxml": "5.4.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

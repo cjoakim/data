@@ -1,0 +1,6 @@
+{
+  "libname": "pymorphy2-dicts-ru",
+  "libvers": "2.4.417127.4579844",
+  "infile": "data/pip/pymorphy2-dicts-ru.txt",
+  "dependencies": {}
+}

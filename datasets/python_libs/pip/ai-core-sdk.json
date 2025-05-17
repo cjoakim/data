@@ -1,0 +1,16 @@
+{
+  "libname": "ai-core-sdk",
+  "libvers": "2.5.7",
+  "infile": "data/pip/ai-core-sdk.txt",
+  "dependencies": {
+    "aenum": "3.1.16",
+    "ai-api-client-sdk": "2.4.6",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "idna": "3.10",
+    "pyhumps": "3.8.0",
+    "requests": "2.32.3",
+    "urllib3": "2.4.0"
+  }
+}

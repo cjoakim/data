@@ -1,0 +1,6 @@
+{
+  "libname": "saxonche",
+  "libvers": "12.6.0",
+  "infile": "data/pip/saxonche.txt",
+  "dependencies": {}
+}

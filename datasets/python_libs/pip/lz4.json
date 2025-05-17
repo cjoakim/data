@@ -1,0 +1,6 @@
+{
+  "libname": "lz4",
+  "libvers": "4.4.4",
+  "infile": "data/pip/lz4.txt",
+  "dependencies": {}
+}

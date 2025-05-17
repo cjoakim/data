@@ -1,0 +1,8 @@
+{
+  "libname": "winrt-runtime",
+  "libvers": "3.1.0",
+  "infile": "data/pip/winrt-runtime.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

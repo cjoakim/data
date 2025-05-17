@@ -1,0 +1,11 @@
+{
+  "libname": "yq",
+  "libvers": "3.4.3",
+  "infile": "data/pip/yq.txt",
+  "dependencies": {
+    "argcomplete": "3.6.2",
+    "pyyaml": "6.0.2",
+    "tomlkit": "0.13.2",
+    "xmltodict": "0.14.2"
+  }
+}

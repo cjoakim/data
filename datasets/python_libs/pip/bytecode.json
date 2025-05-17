@@ -1,0 +1,6 @@
+{
+  "libname": "bytecode",
+  "libvers": "0.16.2",
+  "infile": "data/pip/bytecode.txt",
+  "dependencies": {}
+}

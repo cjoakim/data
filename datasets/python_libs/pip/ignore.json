@@ -1,0 +1,6 @@
+{
+  "libname": "ignore",
+  "libvers": "0.1.4",
+  "infile": "data/pip/ignore.txt",
+  "dependencies": {}
+}

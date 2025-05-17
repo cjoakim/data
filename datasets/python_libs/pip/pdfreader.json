@@ -1,0 +1,12 @@
+{
+  "libname": "pdfreader",
+  "libvers": "0.1.15",
+  "infile": "data/pip/pdfreader.txt",
+  "dependencies": {
+    "bitarray": "3.4.0",
+    "pillow": "11.2.1",
+    "pycryptodome": "3.22.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

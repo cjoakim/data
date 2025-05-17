@@ -1,0 +1,9 @@
+{
+  "libname": "dmgbuild",
+  "libvers": "1.6.5",
+  "infile": "data/pip/dmgbuild.txt",
+  "dependencies": {
+    "ds-store": "1.3.1",
+    "mac-alias": "2.2.2"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "libname": "array-record",
+  "libvers": "0.7.2",
+  "infile": "data/pip/array-record.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "etils[epath,epy]": "1.12.2",
+    "fsspec": "2025.3.2",
+    "importlib-resources": "6.5.2",
+    "typing-extensions": "4.13.2",
+    "zipp": "3.21.0"
+  }
+}

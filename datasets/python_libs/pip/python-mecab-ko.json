@@ -1,0 +1,8 @@
+{
+  "libname": "python-mecab-ko",
+  "libvers": "1.3.7",
+  "infile": "data/pip/python-mecab-ko.txt",
+  "dependencies": {
+    "python-mecab-ko-dic": "2.1.1.post2"
+  }
+}

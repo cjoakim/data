@@ -1,0 +1,6 @@
+{
+  "libname": "types-aiobotocore-cloudwatch",
+  "libvers": "2.22.0",
+  "infile": "data/pip/types-aiobotocore-cloudwatch.txt",
+  "dependencies": {}
+}

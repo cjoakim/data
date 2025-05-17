@@ -1,0 +1,11 @@
+{
+  "libname": "blobfile",
+  "libvers": "3.0.0",
+  "infile": "data/pip/blobfile.txt",
+  "dependencies": {
+    "filelock": "3.18.0",
+    "lxml": "5.4.0",
+    "pycryptodomex": "3.22.0",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "libname": "pycel",
+  "libvers": "1.0b30",
+  "infile": "data/pip/pycel.txt",
+  "dependencies": {
+    "et-xmlfile": "2.0.0",
+    "networkx": "2.6.3",
+    "numpy": "2.2.5",
+    "openpyxl": "3.1.5",
+    "python-dateutil": "2.9.0.post0",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "six": "1.17.0"
+  }
+}

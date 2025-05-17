@@ -1,0 +1,6 @@
+{
+  "libname": "cabarchive",
+  "libvers": "0.2.4",
+  "infile": "data/pip/cabarchive.txt",
+  "dependencies": {}
+}

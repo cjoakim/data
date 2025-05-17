@@ -1,0 +1,6 @@
+{
+  "libname": "jcs",
+  "libvers": "0.2.1",
+  "infile": "data/pip/jcs.txt",
+  "dependencies": {}
+}

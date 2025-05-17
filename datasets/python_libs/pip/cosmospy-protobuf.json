@@ -1,0 +1,8 @@
+{
+  "libname": "cosmospy-protobuf",
+  "libvers": "0.4.0",
+  "infile": "data/pip/cosmospy-protobuf.txt",
+  "dependencies": {
+    "protobuf": "6.30.2"
+  }
+}

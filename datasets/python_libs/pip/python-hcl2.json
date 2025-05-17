@@ -1,0 +1,8 @@
+{
+  "libname": "python-hcl2",
+  "libvers": "7.2.0",
+  "infile": "data/pip/python-hcl2.txt",
+  "dependencies": {
+    "lark": "1.2.2"
+  }
+}

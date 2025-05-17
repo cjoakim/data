@@ -1,0 +1,10 @@
+{
+  "libname": "pyobjc-framework-iobluetoothui",
+  "libvers": "11.0",
+  "infile": "data/pip/pyobjc-framework-iobluetoothui.txt",
+  "dependencies": {
+    "pyobjc-core": "11.0",
+    "pyobjc-framework-cocoa": "11.0",
+    "pyobjc-framework-iobluetooth": "11.0"
+  }
+}

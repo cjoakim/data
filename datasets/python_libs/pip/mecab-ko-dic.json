@@ -1,0 +1,6 @@
+{
+  "libname": "mecab-ko-dic",
+  "libvers": "1.0.0",
+  "infile": "data/pip/mecab-ko-dic.txt",
+  "dependencies": {}
+}

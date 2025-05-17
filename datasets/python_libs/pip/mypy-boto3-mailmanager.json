@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-mailmanager",
+  "libvers": "1.38.6",
+  "infile": "data/pip/mypy-boto3-mailmanager.txt",
+  "dependencies": {}
+}

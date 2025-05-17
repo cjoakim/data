@@ -1,0 +1,6 @@
+{
+  "libname": "venusian",
+  "libvers": "3.1.1",
+  "infile": "data/pip/venusian.txt",
+  "dependencies": {}
+}

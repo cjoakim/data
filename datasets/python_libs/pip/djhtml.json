@@ -1,0 +1,6 @@
+{
+  "libname": "djhtml",
+  "libvers": "3.0.7",
+  "infile": "data/pip/djhtml.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,23 @@
+{
+  "libname": "usaddress-scourgify",
+  "libvers": "0.6.0",
+  "infile": "data/pip/usaddress-scourgify.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "decorator": "5.2.1",
+    "future": "1.0.0",
+    "geocoder": "1.38.1",
+    "idna": "3.10",
+    "probableparsing": "0.0.1",
+    "python-crfsuite": "0.9.11",
+    "pyyaml": "6.0.2",
+    "ratelim": "0.1.6",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0",
+    "usaddress": "0.5.13",
+    "yaml-config": "0.1.5"
+  }
+}

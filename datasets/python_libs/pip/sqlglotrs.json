@@ -1,0 +1,6 @@
+{
+  "libname": "sqlglotrs",
+  "libvers": "0.4.0",
+  "infile": "data/pip/sqlglotrs.txt",
+  "dependencies": {}
+}

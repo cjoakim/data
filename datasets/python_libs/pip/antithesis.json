@@ -1,0 +1,9 @@
+{
+  "libname": "antithesis",
+  "libvers": "0.1.17",
+  "infile": "data/pip/antithesis.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

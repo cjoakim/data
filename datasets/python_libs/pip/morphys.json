@@ -1,0 +1,6 @@
+{
+  "libname": "morphys",
+  "libvers": "1.0",
+  "infile": "data/pip/morphys.txt",
+  "dependencies": {}
+}

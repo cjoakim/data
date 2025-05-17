@@ -1,0 +1,6 @@
+{
+  "libname": "fasttext-predict",
+  "libvers": "0.9.2.4",
+  "infile": "data/pip/fasttext-predict.txt",
+  "dependencies": {}
+}

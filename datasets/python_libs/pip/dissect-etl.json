@@ -1,0 +1,10 @@
+{
+  "libname": "dissect-etl",
+  "libvers": "3.11",
+  "infile": "data/pip/dissect-etl.txt",
+  "dependencies": {
+    "defusedxml": "0.7.1",
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

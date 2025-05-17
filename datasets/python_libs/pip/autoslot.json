@@ -1,0 +1,6 @@
+{
+  "libname": "autoslot",
+  "libvers": "2024.12.1",
+  "infile": "data/pip/autoslot.txt",
+  "dependencies": {}
+}

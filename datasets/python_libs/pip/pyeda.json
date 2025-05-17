@@ -1,0 +1,6 @@
+{
+  "libname": "pyeda",
+  "libvers": "0.29.0",
+  "infile": "data/pip/pyeda.txt",
+  "dependencies": {}
+}

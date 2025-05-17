@@ -1,0 +1,6 @@
+{
+  "libname": "python-statemachine",
+  "libvers": "2.5.0",
+  "infile": "data/pip/python-statemachine.txt",
+  "dependencies": {}
+}

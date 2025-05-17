@@ -1,0 +1,9 @@
+{
+  "libname": "furl",
+  "libvers": "2.1.4",
+  "infile": "data/pip/furl.txt",
+  "dependencies": {
+    "orderedmultidict": "1.0.1",
+    "six": "1.17.0"
+  }
+}

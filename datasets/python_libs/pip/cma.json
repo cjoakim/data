@@ -1,0 +1,8 @@
+{
+  "libname": "cma",
+  "libvers": "4.0.0",
+  "infile": "data/pip/cma.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

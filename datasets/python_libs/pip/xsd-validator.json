@@ -1,0 +1,6 @@
+{
+  "libname": "xsd-validator",
+  "libvers": "0.0.3",
+  "infile": "data/pip/xsd-validator.txt",
+  "dependencies": {}
+}

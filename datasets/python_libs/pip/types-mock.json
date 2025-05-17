@@ -1,0 +1,6 @@
+{
+  "libname": "types-mock",
+  "libvers": "5.2.0.20250306",
+  "infile": "data/pip/types-mock.txt",
+  "dependencies": {}
+}

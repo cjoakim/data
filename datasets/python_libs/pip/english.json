@@ -1,0 +1,8 @@
+{
+  "libname": "english",
+  "libvers": "2020.7.0",
+  "infile": "data/pip/english.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

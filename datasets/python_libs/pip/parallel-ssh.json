@@ -1,0 +1,13 @@
+{
+  "libname": "parallel-ssh",
+  "libvers": "2.14.0",
+  "infile": "data/pip/parallel-ssh.txt",
+  "dependencies": {
+    "gevent": "25.4.2",
+    "greenlet": "3.2.1",
+    "ssh-python": "1.1.1",
+    "ssh2-python": "1.1.2.post1",
+    "zope-event": "5.0",
+    "zope-interface": "7.2"
+  }
+}

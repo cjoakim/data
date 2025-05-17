@@ -1,0 +1,15 @@
+{
+  "libname": "pulp-deb-client",
+  "libvers": "3.5.2",
+  "infile": "data/pip/pulp-deb-client.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0",
+    "urllib3": "2.4.0"
+  }
+}

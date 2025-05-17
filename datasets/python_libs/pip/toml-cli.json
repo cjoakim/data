@@ -1,0 +1,17 @@
+{
+  "libname": "toml-cli",
+  "libvers": "0.7.0",
+  "infile": "data/pip/toml-cli.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "pygments": "2.19.1",
+    "regex": "2024.11.6",
+    "rich": "14.0.0",
+    "shellingham": "1.5.4",
+    "tomlkit": "0.13.2",
+    "typer": "0.15.3",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "portend",
+  "libvers": "3.2.0",
+  "infile": "data/pip/portend.txt",
+  "dependencies": {
+    "jaraco-functools": "4.1.0",
+    "more-itertools": "10.7.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "tempora": "5.8.0"
+  }
+}

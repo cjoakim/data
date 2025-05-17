@@ -1,0 +1,6 @@
+{
+  "libname": "django-grappelli",
+  "libvers": "4.0.2",
+  "infile": "data/pip/django-grappelli.txt",
+  "dependencies": {}
+}

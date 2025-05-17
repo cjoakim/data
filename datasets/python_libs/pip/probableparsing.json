@@ -1,0 +1,6 @@
+{
+  "libname": "probableparsing",
+  "libvers": "0.0.1",
+  "infile": "data/pip/probableparsing.txt",
+  "dependencies": {}
+}

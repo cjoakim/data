@@ -1,0 +1,6 @@
+{
+  "libname": "dirtyjson",
+  "libvers": "1.0.8",
+  "infile": "data/pip/dirtyjson.txt",
+  "dependencies": {}
+}

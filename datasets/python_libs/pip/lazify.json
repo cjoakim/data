@@ -1,0 +1,6 @@
+{
+  "libname": "lazify",
+  "libvers": "0.4.0",
+  "infile": "data/pip/lazify.txt",
+  "dependencies": {}
+}

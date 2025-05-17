@@ -1,0 +1,12 @@
+{
+  "libname": "open-space-toolkit-astrodynamics",
+  "libvers": "8.2.0",
+  "infile": "data/pip/open-space-toolkit-astrodynamics.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "open-space-toolkit-core": "2.1.2",
+    "open-space-toolkit-io": "2.0.2",
+    "open-space-toolkit-mathematics": "2.0.4",
+    "open-space-toolkit-physics": "5.1.1"
+  }
+}

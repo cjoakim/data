@@ -1,0 +1,9 @@
+{
+  "libname": "wetextprocessing",
+  "libvers": "1.0.4.1",
+  "infile": "data/pip/wetextprocessing.txt",
+  "dependencies": {
+    "importlib-resources": "6.5.2",
+    "pynini": "2.1.6"
+  }
+}

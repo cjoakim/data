@@ -1,0 +1,9 @@
+{
+  "libname": "clr-loader",
+  "libvers": "0.2.7.post0",
+  "infile": "data/pip/clr-loader.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

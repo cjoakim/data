@@ -1,0 +1,9 @@
+{
+  "libname": "pyright",
+  "libvers": "1.1.400",
+  "infile": "data/pip/pyright.txt",
+  "dependencies": {
+    "nodeenv": "1.9.1",
+    "typing-extensions": "4.13.2"
+  }
+}

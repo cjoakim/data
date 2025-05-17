@@ -1,0 +1,6 @@
+{
+  "libname": "greenery",
+  "libvers": "4.2.2",
+  "infile": "data/pip/greenery.txt",
+  "dependencies": {}
+}

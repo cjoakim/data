@@ -1,0 +1,26 @@
+{
+  "libname": "ccxt",
+  "libvers": "4.4.78",
+  "infile": "data/pip/ccxt.txt",
+  "dependencies": {
+    "aiodns": "3.3.0",
+    "aiohappyeyeballs": "2.6.1",
+    "aiohttp": "3.10.11",
+    "aiosignal": "1.3.2",
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "frozenlist": "1.6.0",
+    "idna": "3.10",
+    "multidict": "6.4.3",
+    "propcache": "0.3.1",
+    "pycares": "4.8.0",
+    "pycparser": "2.22",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0",
+    "yarl": "1.20.0"
+  }
+}

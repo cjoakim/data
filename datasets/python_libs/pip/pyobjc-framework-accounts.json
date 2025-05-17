@@ -1,0 +1,9 @@
+{
+  "libname": "pyobjc-framework-accounts",
+  "libvers": "11.0",
+  "infile": "data/pip/pyobjc-framework-accounts.txt",
+  "dependencies": {
+    "pyobjc-core": "11.0",
+    "pyobjc-framework-cocoa": "11.0"
+  }
+}

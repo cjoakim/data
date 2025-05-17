@@ -1,0 +1,6 @@
+{
+  "libname": "gdbmongo",
+  "libvers": "0.16.0",
+  "infile": "data/pip/gdbmongo.txt",
+  "dependencies": {}
+}

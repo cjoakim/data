@@ -1,0 +1,6 @@
+{
+  "libname": "janus",
+  "libvers": "2.0.0",
+  "infile": "data/pip/janus.txt",
+  "dependencies": {}
+}

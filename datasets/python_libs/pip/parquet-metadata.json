@@ -1,0 +1,6 @@
+{
+  "libname": "parquet-metadata",
+  "libvers": "0.0.1",
+  "infile": "data/pip/parquet-metadata.txt",
+  "dependencies": {}
+}

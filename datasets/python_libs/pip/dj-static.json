@@ -1,0 +1,8 @@
+{
+  "libname": "dj-static",
+  "libvers": "0.0.6",
+  "infile": "data/pip/dj-static.txt",
+  "dependencies": {
+    "static3": "0.7.0"
+  }
+}

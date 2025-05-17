@@ -1,0 +1,6 @@
+{
+  "libname": "pyluach",
+  "libvers": "2.2.0",
+  "infile": "data/pip/pyluach.txt",
+  "dependencies": {}
+}

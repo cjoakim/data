@@ -1,0 +1,8 @@
+{
+  "libname": "basehash",
+  "libvers": "3.0.10",
+  "infile": "data/pip/basehash.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

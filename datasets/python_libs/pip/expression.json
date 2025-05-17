@@ -1,0 +1,8 @@
+{
+  "libname": "expression",
+  "libvers": "5.6.0",
+  "infile": "data/pip/expression.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

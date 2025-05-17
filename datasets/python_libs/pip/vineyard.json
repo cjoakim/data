@@ -1,0 +1,24 @@
+{
+  "libname": "vineyard",
+  "libvers": "0.21.5",
+  "infile": "data/pip/vineyard.txt",
+  "dependencies": {
+    "argcomplete": "3.6.2",
+    "click": "8.1.8",
+    "etcd-distro": "3.5.1",
+    "lazy-import": "0.2.2",
+    "makefun": "1.15.6",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "psutil": "7.0.0",
+    "pyarrow": "20.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "six": "1.17.0",
+    "sortedcontainers": "2.4.0",
+    "treelib": "1.7.1",
+    "tzdata": "2025.2",
+    "vineyard-bdist": "0.21.5"
+  }
+}

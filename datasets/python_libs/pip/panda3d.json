@@ -1,0 +1,6 @@
+{
+  "libname": "panda3d",
+  "libvers": "1.10.15",
+  "infile": "data/pip/panda3d.txt",
+  "dependencies": {}
+}

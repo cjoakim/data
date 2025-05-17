@@ -1,0 +1,9 @@
+{
+  "libname": "winrt-windows-foundation-collections",
+  "libvers": "3.1.0",
+  "infile": "data/pip/winrt-windows-foundation-collections.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2",
+    "winrt-runtime": "3.1.0"
+  }
+}

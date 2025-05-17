@@ -1,0 +1,10 @@
+{
+  "libname": "patchright",
+  "libvers": "1.52.0",
+  "infile": "data/pip/patchright.txt",
+  "dependencies": {
+    "greenlet": "3.2.1",
+    "pyee": "13.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

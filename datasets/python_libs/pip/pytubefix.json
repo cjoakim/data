@@ -1,0 +1,6 @@
+{
+  "libname": "pytubefix",
+  "libvers": "8.13.1",
+  "infile": "data/pip/pytubefix.txt",
+  "dependencies": {}
+}

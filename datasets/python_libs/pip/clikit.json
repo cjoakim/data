@@ -1,0 +1,10 @@
+{
+  "libname": "clikit",
+  "libvers": "0.6.2",
+  "infile": "data/pip/clikit.txt",
+  "dependencies": {
+    "crashtest": "0.3.1",
+    "pastel": "0.2.1",
+    "pylev": "1.4.0"
+  }
+}

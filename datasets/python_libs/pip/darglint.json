@@ -1,0 +1,6 @@
+{
+  "libname": "darglint",
+  "libvers": "1.8.1",
+  "infile": "data/pip/darglint.txt",
+  "dependencies": {}
+}

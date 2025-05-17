@@ -1,0 +1,8 @@
+{
+  "libname": "jacobi",
+  "libvers": "0.9.2",
+  "infile": "data/pip/jacobi.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

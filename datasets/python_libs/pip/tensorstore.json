@@ -1,0 +1,9 @@
+{
+  "libname": "tensorstore",
+  "libvers": "0.1.74",
+  "infile": "data/pip/tensorstore.txt",
+  "dependencies": {
+    "ml-dtypes": "0.5.1",
+    "numpy": "2.2.5"
+  }
+}

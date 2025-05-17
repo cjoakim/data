@@ -1,0 +1,6 @@
+{
+  "libname": "standard-chunk",
+  "libvers": "3.13.0",
+  "infile": "data/pip/standard-chunk.txt",
+  "dependencies": {}
+}

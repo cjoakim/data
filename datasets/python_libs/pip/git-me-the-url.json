@@ -1,0 +1,10 @@
+{
+  "libname": "git-me-the-url",
+  "libvers": "2.1.0",
+  "infile": "data/pip/git-me-the-url.txt",
+  "dependencies": {
+    "gitdb": "4.0.12",
+    "gitpython": "3.1.44",
+    "smmap": "5.0.2"
+  }
+}

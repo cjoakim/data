@@ -1,0 +1,6 @@
+{
+  "libname": "httptools",
+  "libvers": "0.6.4",
+  "infile": "data/pip/httptools.txt",
+  "dependencies": {}
+}

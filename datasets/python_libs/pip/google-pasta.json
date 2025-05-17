@@ -1,0 +1,8 @@
+{
+  "libname": "google-pasta",
+  "libvers": "0.2.0",
+  "infile": "data/pip/google-pasta.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

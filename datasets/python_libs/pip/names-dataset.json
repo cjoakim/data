@@ -1,0 +1,9 @@
+{
+  "libname": "names-dataset",
+  "libvers": "3.3.1",
+  "infile": "data/pip/names-dataset.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pycountry": "24.6.1"
+  }
+}

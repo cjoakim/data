@@ -1,0 +1,6 @@
+{
+  "libname": "sanitize-filename",
+  "libvers": "1.2.0",
+  "infile": "data/pip/sanitize-filename.txt",
+  "dependencies": {}
+}

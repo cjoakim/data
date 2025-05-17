@@ -1,0 +1,9 @@
+{
+  "libname": "protobuf3-to-dict",
+  "libvers": "0.1.5",
+  "infile": "data/pip/protobuf3-to-dict.txt",
+  "dependencies": {
+    "protobuf": "6.30.2",
+    "six": "1.17.0"
+  }
+}

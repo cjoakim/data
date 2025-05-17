@@ -1,0 +1,8 @@
+{
+  "libname": "types-maxminddb",
+  "libvers": "1.5.0",
+  "infile": "data/pip/types-maxminddb.txt",
+  "dependencies": {
+    "types-ipaddress": "1.0.8"
+  }
+}

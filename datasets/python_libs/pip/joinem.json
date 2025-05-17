@@ -1,0 +1,9 @@
+{
+  "libname": "joinem",
+  "libvers": "0.9.3",
+  "infile": "data/pip/joinem.txt",
+  "dependencies": {
+    "polars": "1.29.0",
+    "tqdm": "4.67.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "zlib-state",
+  "libvers": "0.1.9",
+  "infile": "data/pip/zlib-state.txt",
+  "dependencies": {}
+}

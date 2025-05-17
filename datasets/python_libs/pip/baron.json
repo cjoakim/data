@@ -1,0 +1,9 @@
+{
+  "libname": "baron",
+  "libvers": "0.10.1",
+  "infile": "data/pip/baron.txt",
+  "dependencies": {
+    "appdirs": "1.4.4",
+    "rply": "0.7.8"
+  }
+}

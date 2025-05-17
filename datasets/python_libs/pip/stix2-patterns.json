@@ -1,0 +1,9 @@
+{
+  "libname": "stix2-patterns",
+  "libvers": "2.0.0",
+  "infile": "data/pip/stix2-patterns.txt",
+  "dependencies": {
+    "antlr4-python3-runtime": "4.9.3",
+    "six": "1.17.0"
+  }
+}

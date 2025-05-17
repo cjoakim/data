@@ -1,0 +1,9 @@
+{
+  "libname": "pymunk",
+  "libvers": "6.11.1",
+  "infile": "data/pip/pymunk.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

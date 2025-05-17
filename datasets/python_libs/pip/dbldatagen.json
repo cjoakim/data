@@ -1,0 +1,6 @@
+{
+  "libname": "dbldatagen",
+  "libvers": "0.4.0.post1",
+  "infile": "data/pip/dbldatagen.txt",
+  "dependencies": {}
+}

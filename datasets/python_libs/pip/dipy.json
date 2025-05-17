@@ -1,0 +1,18 @@
+{
+  "libname": "dipy",
+  "libvers": "1.11.0",
+  "infile": "data/pip/dipy.txt",
+  "dependencies": {
+    "deepdiff": "8.4.2",
+    "h5py": "3.13.0",
+    "nibabel": "5.3.2",
+    "numpy": "2.2.5",
+    "orderly-set": "5.4.0",
+    "packaging": "25.0",
+    "scipy": "1.15.2",
+    "setuptools-scm": "8.3.1",
+    "tqdm": "4.67.1",
+    "trx-python": "0.3",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "django-floppyforms",
+  "libvers": "1.9.0",
+  "infile": "data/pip/django-floppyforms.txt",
+  "dependencies": {}
+}

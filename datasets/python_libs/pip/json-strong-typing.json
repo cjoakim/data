@@ -1,0 +1,13 @@
+{
+  "libname": "json-strong-typing",
+  "libvers": "0.3.8",
+  "infile": "data/pip/json-strong-typing.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2"
+  }
+}

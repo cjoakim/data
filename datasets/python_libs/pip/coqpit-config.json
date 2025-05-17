@@ -1,0 +1,8 @@
+{
+  "libname": "coqpit-config",
+  "libvers": "0.2.0",
+  "infile": "data/pip/coqpit-config.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

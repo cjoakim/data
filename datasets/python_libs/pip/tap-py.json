@@ -1,0 +1,6 @@
+{
+  "libname": "tap-py",
+  "libvers": "3.2.1",
+  "infile": "data/pip/tap-py.txt",
+  "dependencies": {}
+}

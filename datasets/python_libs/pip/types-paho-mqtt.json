@@ -1,0 +1,6 @@
+{
+  "libname": "types-paho-mqtt",
+  "libvers": "1.6.0.20240321",
+  "infile": "data/pip/types-paho-mqtt.txt",
+  "dependencies": {}
+}

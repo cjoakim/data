@@ -1,0 +1,6 @@
+{
+  "libname": "no-manylinux",
+  "libvers": "3.0.0",
+  "infile": "data/pip/no-manylinux.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-werkzeug",
+  "libvers": "1.0.9",
+  "infile": "data/pip/types-werkzeug.txt",
+  "dependencies": {}
+}

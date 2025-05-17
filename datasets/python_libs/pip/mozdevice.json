@@ -1,0 +1,13 @@
+{
+  "libname": "mozdevice",
+  "libvers": "4.2.0",
+  "infile": "data/pip/mozdevice.txt",
+  "dependencies": {
+    "blessed": "1.21.0",
+    "mozfile": "3.0.0",
+    "mozlog": "8.0.0",
+    "mozterm": "1.0.0",
+    "six": "1.17.0",
+    "wcwidth": "0.2.13"
+  }
+}

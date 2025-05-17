@@ -1,0 +1,15 @@
+{
+  "libname": "radish-bdd",
+  "libvers": "0.18.2",
+  "infile": "data/pip/radish-bdd.txt",
+  "dependencies": {
+    "colorful": "0.5.6",
+    "docopt": "0.6.2",
+    "humanize": "4.12.3",
+    "parse": "1.20.2",
+    "parse-type": "0.6.4",
+    "pysingleton": "0.2.1",
+    "six": "1.17.0",
+    "tag-expressions": "2.0.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "bitstruct",
+  "libvers": "8.20.0",
+  "infile": "data/pip/bitstruct.txt",
+  "dependencies": {}
+}

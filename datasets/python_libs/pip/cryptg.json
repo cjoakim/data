@@ -1,0 +1,6 @@
+{
+  "libname": "cryptg",
+  "libvers": "0.5.0.post0",
+  "infile": "data/pip/cryptg.txt",
+  "dependencies": {}
+}

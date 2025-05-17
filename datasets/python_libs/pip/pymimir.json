@@ -1,0 +1,8 @@
+{
+  "libname": "pymimir",
+  "libvers": "0.13.2",
+  "infile": "data/pip/pymimir.txt",
+  "dependencies": {
+    "cmake": "4.0.0"
+  }
+}

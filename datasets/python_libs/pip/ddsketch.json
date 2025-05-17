@@ -1,0 +1,8 @@
+{
+  "libname": "ddsketch",
+  "libvers": "3.0.1",
+  "infile": "data/pip/ddsketch.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

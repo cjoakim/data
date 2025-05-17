@@ -1,0 +1,8 @@
+{
+  "libname": "xmlschema",
+  "libvers": "4.0.1",
+  "infile": "data/pip/xmlschema.txt",
+  "dependencies": {
+    "elementpath": "5.0.0"
+  }
+}

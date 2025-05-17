@@ -1,0 +1,8 @@
+{
+  "libname": "boost-histogram",
+  "libvers": "1.5.2",
+  "infile": "data/pip/boost-histogram.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

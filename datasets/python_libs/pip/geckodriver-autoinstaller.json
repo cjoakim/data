@@ -1,0 +1,6 @@
+{
+  "libname": "geckodriver-autoinstaller",
+  "libvers": "0.1.0",
+  "infile": "data/pip/geckodriver-autoinstaller.txt",
+  "dependencies": {}
+}

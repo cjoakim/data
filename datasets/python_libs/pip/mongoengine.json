@@ -1,0 +1,9 @@
+{
+  "libname": "mongoengine",
+  "libvers": "0.29.1",
+  "infile": "data/pip/mongoengine.txt",
+  "dependencies": {
+    "dnspython": "2.7.0",
+    "pymongo": "4.12.1"
+  }
+}

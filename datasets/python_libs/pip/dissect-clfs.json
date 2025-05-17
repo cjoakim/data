@@ -1,0 +1,8 @@
+{
+  "libname": "dissect-clfs",
+  "libvers": "1.10",
+  "infile": "data/pip/dissect-clfs.txt",
+  "dependencies": {
+    "dissect-cstruct": "4.4"
+  }
+}

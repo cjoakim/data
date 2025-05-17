@@ -1,0 +1,8 @@
+{
+  "libname": "datatile",
+  "libvers": "1.0.3",
+  "infile": "data/pip/datatile.txt",
+  "dependencies": {
+    "traceml": "1.0.8"
+  }
+}

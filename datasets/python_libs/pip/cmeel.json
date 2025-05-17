@@ -1,0 +1,6 @@
+{
+  "libname": "cmeel",
+  "libvers": "0.57.3",
+  "infile": "data/pip/cmeel.txt",
+  "dependencies": {}
+}

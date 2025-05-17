@@ -1,0 +1,6 @@
+{
+  "libname": "boa-str",
+  "libvers": "1.1.0",
+  "infile": "data/pip/boa-str.txt",
+  "dependencies": {}
+}

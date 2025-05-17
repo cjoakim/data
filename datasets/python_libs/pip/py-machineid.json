@@ -1,0 +1,6 @@
+{
+  "libname": "py-machineid",
+  "libvers": "0.7.0",
+  "infile": "data/pip/py-machineid.txt",
+  "dependencies": {}
+}

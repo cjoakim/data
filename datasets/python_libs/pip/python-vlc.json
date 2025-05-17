@@ -1,0 +1,6 @@
+{
+  "libname": "python-vlc",
+  "libvers": "3.0.21203",
+  "infile": "data/pip/python-vlc.txt",
+  "dependencies": {}
+}

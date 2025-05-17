@@ -1,0 +1,14 @@
+{
+  "libname": "minorminer",
+  "libvers": "0.2.18",
+  "infile": "data/pip/minorminer.txt",
+  "dependencies": {
+    "dimod": "0.12.20",
+    "dwave-networkx": "0.8.17",
+    "fasteners": "0.19",
+    "homebase": "1.0.1",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

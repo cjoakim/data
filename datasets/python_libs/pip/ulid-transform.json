@@ -1,0 +1,6 @@
+{
+  "libname": "ulid-transform",
+  "libvers": "1.4.0",
+  "infile": "data/pip/ulid-transform.txt",
+  "dependencies": {}
+}

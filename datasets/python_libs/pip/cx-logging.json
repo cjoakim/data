@@ -1,0 +1,6 @@
+{
+  "libname": "cx-logging",
+  "libvers": "3.2.1",
+  "infile": "data/pip/cx-logging.txt",
+  "dependencies": {}
+}

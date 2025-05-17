@@ -1,0 +1,8 @@
+{
+  "libname": "nbdev-apl",
+  "libvers": "0.0.1833",
+  "infile": "data/pip/nbdev-apl.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

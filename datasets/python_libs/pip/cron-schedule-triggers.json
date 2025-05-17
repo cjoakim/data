@@ -1,0 +1,8 @@
+{
+  "libname": "cron-schedule-triggers",
+  "libvers": "0.0.11",
+  "infile": "data/pip/cron-schedule-triggers.txt",
+  "dependencies": {
+    "pytz": "2019.3"
+  }
+}

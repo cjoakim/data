@@ -1,0 +1,6 @@
+{
+  "libname": "py-sr25519-bindings",
+  "libvers": "0.2.2",
+  "infile": "data/pip/py-sr25519-bindings.txt",
+  "dependencies": {}
+}

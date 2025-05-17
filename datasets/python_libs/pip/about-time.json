@@ -1,0 +1,6 @@
+{
+  "libname": "about-time",
+  "libvers": "4.2.1",
+  "infile": "data/pip/about-time.txt",
+  "dependencies": {}
+}

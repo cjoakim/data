@@ -1,0 +1,8 @@
+{
+  "libname": "blend-modes",
+  "libvers": "2.2.0",
+  "infile": "data/pip/blend-modes.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

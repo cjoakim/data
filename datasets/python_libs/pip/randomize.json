@@ -1,0 +1,6 @@
+{
+  "libname": "randomize",
+  "libvers": "0.14",
+  "infile": "data/pip/randomize.txt",
+  "dependencies": {}
+}

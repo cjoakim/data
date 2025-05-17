@@ -1,0 +1,9 @@
+{
+  "libname": "cvxpy-base",
+  "libvers": "1.6.5",
+  "infile": "data/pip/cvxpy-base.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

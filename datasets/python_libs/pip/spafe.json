@@ -1,0 +1,10 @@
+{
+  "libname": "spafe",
+  "libvers": "0.3.3",
+  "infile": "data/pip/spafe.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "typing-extensions": "4.13.2"
+  }
+}

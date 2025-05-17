@@ -1,0 +1,12 @@
+{
+  "libname": "doc8",
+  "libvers": "1.1.2",
+  "infile": "data/pip/doc8.txt",
+  "dependencies": {
+    "docutils": "0.21.2",
+    "pbr": "6.1.1",
+    "pygments": "2.19.1",
+    "restructuredtext-lint": "1.4.0",
+    "stevedore": "5.4.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "dunamai",
+  "libvers": "1.23.2",
+  "infile": "data/pip/dunamai.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

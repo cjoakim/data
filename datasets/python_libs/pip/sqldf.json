@@ -1,0 +1,6 @@
+{
+  "libname": "sqldf",
+  "libvers": "0.4.2",
+  "infile": "data/pip/sqldf.txt",
+  "dependencies": {}
+}

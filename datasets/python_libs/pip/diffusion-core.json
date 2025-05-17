@@ -1,0 +1,6 @@
+{
+  "libname": "diffusion-core",
+  "libvers": "0.0.71",
+  "infile": "data/pip/diffusion-core.txt",
+  "dependencies": {}
+}

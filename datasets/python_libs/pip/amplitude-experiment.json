@@ -1,0 +1,15 @@
+{
+  "libname": "amplitude-experiment",
+  "libvers": "1.8.1",
+  "infile": "data/pip/amplitude-experiment.txt",
+  "dependencies": {
+    "amplitude-analytics": "1.1.5",
+    "dataclasses-json": "0.6.7",
+    "marshmallow": "3.26.1",
+    "mypy-extensions": "1.1.0",
+    "packaging": "25.0",
+    "sseclient-py": "1.8.0",
+    "typing-extensions": "4.13.2",
+    "typing-inspect": "0.9.0"
+  }
+}

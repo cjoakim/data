@@ -1,0 +1,6 @@
+{
+  "libname": "pylibdmtx",
+  "libvers": "0.1.10",
+  "infile": "data/pip/pylibdmtx.txt",
+  "dependencies": {}
+}

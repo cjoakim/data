@@ -1,0 +1,6 @@
+{
+  "libname": "cobs",
+  "libvers": "1.2.1",
+  "infile": "data/pip/cobs.txt",
+  "dependencies": {}
+}

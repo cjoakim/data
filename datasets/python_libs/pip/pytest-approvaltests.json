@@ -1,0 +1,28 @@
+{
+  "libname": "pytest-approvaltests",
+  "libvers": "0.2.4",
+  "infile": "data/pip/pytest-approvaltests.txt",
+  "dependencies": {
+    "allpairspy": "2.5.1",
+    "approval-utilities": "14.5.0",
+    "approvaltests": "14.5.0",
+    "beautifulsoup4": "4.13.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "empty-files": "0.0.9",
+    "idna": "3.10",
+    "iniconfig": "2.1.0",
+    "mock": "5.2.0",
+    "mrjob": "0.7.4",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pyperclip": "1.9.0",
+    "pytest": "8.3.5",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "soupsieve": "2.7",
+    "testfixtures": "8.3.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

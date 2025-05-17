@@ -1,0 +1,32 @@
+{
+  "libname": "tirex-tracker",
+  "libvers": "0.2.13",
+  "infile": "data/pip/tirex-tracker.txt",
+  "dependencies": {
+    "asttokens": "3.0.0",
+    "decorator": "5.2.1",
+    "executing": "2.2.0",
+    "gitdb": "4.0.12",
+    "gitpython": "3.1.44",
+    "importlib-metadata": "8.7.0",
+    "importlib-resources": "6.5.2",
+    "ipython": "9.2.0",
+    "ipython-pygments-lexers": "1.1.1",
+    "jedi": "0.19.2",
+    "matplotlib-inline": "0.1.7",
+    "parso": "0.8.4",
+    "pexpect": "4.9.0",
+    "prompt-toolkit": "3.0.51",
+    "ptyprocess": "0.7.0",
+    "pure-eval": "0.2.3",
+    "pygments": "2.19.1",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12",
+    "smmap": "5.0.2",
+    "stack-data": "0.6.3",
+    "traitlets": "5.14.3",
+    "typing-extensions": "4.13.2",
+    "wcwidth": "0.2.13",
+    "zipp": "3.21.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "libname": "backoff-utils",
+  "libvers": "1.0.1",
+  "infile": "data/pip/backoff-utils.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "typing-extensions": "4.13.2",
+    "validator-collection": "1.5.0"
+  }
+}

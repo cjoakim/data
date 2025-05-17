@@ -1,0 +1,6 @@
+{
+  "libname": "types-psutil",
+  "libvers": "7.0.0.20250401",
+  "infile": "data/pip/types-psutil.txt",
+  "dependencies": {}
+}

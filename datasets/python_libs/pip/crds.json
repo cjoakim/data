@@ -1,0 +1,26 @@
+{
+  "libname": "crds",
+  "libvers": "12.1.5",
+  "infile": "data/pip/crds.txt",
+  "dependencies": {
+    "asdf": "4.1.0",
+    "asdf-standard": "1.1.1",
+    "asdf-transform-schemas": "0.5.0",
+    "astropy": "7.0.1",
+    "astropy-iers-data": "0.2025.5.5.0.38.14",
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "filelock": "3.18.0",
+    "idna": "3.10",
+    "jmespath": "1.0.1",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "parsley": "1.3",
+    "pyerfa": "2.0.1.5",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "semantic-version": "2.10.0",
+    "urllib3": "2.4.0"
+  }
+}

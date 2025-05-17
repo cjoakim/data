@@ -1,0 +1,6 @@
+{
+  "libname": "codespell",
+  "libvers": "2.4.1",
+  "infile": "data/pip/codespell.txt",
+  "dependencies": {}
+}

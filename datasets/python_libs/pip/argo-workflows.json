@@ -1,0 +1,10 @@
+{
+  "libname": "argo-workflows",
+  "libvers": "6.6.7",
+  "infile": "data/pip/argo-workflows.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

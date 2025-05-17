@@ -1,0 +1,6 @@
+{
+  "libname": "tesserocr",
+  "libvers": "2.8.0",
+  "infile": "data/pip/tesserocr.txt",
+  "dependencies": {}
+}

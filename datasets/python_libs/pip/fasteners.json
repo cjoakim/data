@@ -1,0 +1,6 @@
+{
+  "libname": "fasteners",
+  "libvers": "0.19",
+  "infile": "data/pip/fasteners.txt",
+  "dependencies": {}
+}

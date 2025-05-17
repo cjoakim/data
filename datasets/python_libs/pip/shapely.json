@@ -1,0 +1,8 @@
+{
+  "libname": "shapely",
+  "libvers": "2.1.0",
+  "infile": "data/pip/shapely.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

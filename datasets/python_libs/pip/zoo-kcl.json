@@ -1,0 +1,6 @@
+{
+  "libname": "zoo-kcl",
+  "libvers": "0.3.66",
+  "infile": "data/pip/zoo-kcl.txt",
+  "dependencies": {}
+}

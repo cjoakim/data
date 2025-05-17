@@ -1,0 +1,6 @@
+{
+  "libname": "openinference-semantic-conventions",
+  "libvers": "0.1.17",
+  "infile": "data/pip/openinference-semantic-conventions.txt",
+  "dependencies": {}
+}

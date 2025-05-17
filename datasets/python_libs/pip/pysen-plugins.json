@@ -1,0 +1,15 @@
+{
+  "libname": "pysen-plugins",
+  "libvers": "2025.2.17",
+  "infile": "data/pip/pysen-plugins.txt",
+  "dependencies": {
+    "colorlog": "4.8.0",
+    "dacite": "1.9.2",
+    "gitdb": "4.0.12",
+    "gitpython": "3.1.44",
+    "pysen": "0.11.0",
+    "smmap": "5.0.2",
+    "tomlkit": "0.13.2",
+    "unidiff": "0.7.5"
+  }
+}

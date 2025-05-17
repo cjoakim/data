@@ -1,0 +1,6 @@
+{
+  "libname": "query-string",
+  "libvers": "2020.12.3",
+  "infile": "data/pip/query-string.txt",
+  "dependencies": {}
+}

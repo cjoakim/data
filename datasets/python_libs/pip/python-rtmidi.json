@@ -1,0 +1,6 @@
+{
+  "libname": "python-rtmidi",
+  "libvers": "1.5.8",
+  "infile": "data/pip/python-rtmidi.txt",
+  "dependencies": {}
+}

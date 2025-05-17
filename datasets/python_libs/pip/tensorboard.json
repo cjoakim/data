@@ -1,0 +1,17 @@
+{
+  "libname": "tensorboard",
+  "libvers": "2.19.0",
+  "infile": "data/pip/tensorboard.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "grpcio": "1.71.0",
+    "markdown": "3.8",
+    "markupsafe": "3.0.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "protobuf": "6.30.2",
+    "six": "1.17.0",
+    "tensorboard-data-server": "0.7.2",
+    "werkzeug": "3.1.3"
+  }
+}

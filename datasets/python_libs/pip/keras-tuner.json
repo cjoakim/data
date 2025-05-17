@@ -1,0 +1,26 @@
+{
+  "libname": "keras-tuner",
+  "libvers": "1.4.7",
+  "infile": "data/pip/keras-tuner.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "h5py": "3.13.0",
+    "idna": "3.10",
+    "keras": "3.9.2",
+    "kt-legacy": "1.0.5",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "ml-dtypes": "0.5.1",
+    "namex": "0.0.9",
+    "numpy": "2.2.5",
+    "optree": "0.15.0",
+    "packaging": "25.0",
+    "pygments": "2.19.1",
+    "requests": "2.32.3",
+    "rich": "14.0.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "frida",
+  "libvers": "16.7.14",
+  "infile": "data/pip/frida.txt",
+  "dependencies": {}
+}

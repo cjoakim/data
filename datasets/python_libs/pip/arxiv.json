@@ -1,0 +1,14 @@
+{
+  "libname": "arxiv",
+  "libvers": "2.2.0",
+  "infile": "data/pip/arxiv.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "feedparser": "6.0.11",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "sgmllib3k": "1.0.0",
+    "urllib3": "2.4.0"
+  }
+}

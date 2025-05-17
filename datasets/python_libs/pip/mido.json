@@ -1,0 +1,8 @@
+{
+  "libname": "mido",
+  "libvers": "1.3.3",
+  "infile": "data/pip/mido.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

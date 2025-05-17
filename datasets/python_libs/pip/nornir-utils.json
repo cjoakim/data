@@ -1,0 +1,11 @@
+{
+  "libname": "nornir-utils",
+  "libvers": "0.2.0",
+  "infile": "data/pip/nornir-utils.txt",
+  "dependencies": {
+    "colorama": "0.4.6",
+    "nornir": "3.5.0",
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12"
+  }
+}

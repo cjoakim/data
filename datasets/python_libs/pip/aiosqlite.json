@@ -1,0 +1,8 @@
+{
+  "libname": "aiosqlite",
+  "libvers": "0.21.0",
+  "infile": "data/pip/aiosqlite.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

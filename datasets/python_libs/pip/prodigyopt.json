@@ -1,0 +1,6 @@
+{
+  "libname": "prodigyopt",
+  "libvers": "1.1.2",
+  "infile": "data/pip/prodigyopt.txt",
+  "dependencies": {}
+}

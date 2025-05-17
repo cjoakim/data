@@ -1,0 +1,15 @@
+{
+  "libname": "workflow",
+  "libvers": "2.1.6",
+  "infile": "data/pip/workflow.txt",
+  "dependencies": {
+    "autosemver": "0.5.5",
+    "blinker": "1.9.0",
+    "certifi": "2025.4.26",
+    "configobj": "5.0.9",
+    "dulwich": "0.19.16",
+    "enum34": "1.1.10",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

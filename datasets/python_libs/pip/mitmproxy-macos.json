@@ -1,0 +1,6 @@
+{
+  "libname": "mitmproxy-macos",
+  "libvers": "0.12.3",
+  "infile": "data/pip/mitmproxy-macos.txt",
+  "dependencies": {}
+}

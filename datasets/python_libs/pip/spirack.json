@@ -1,0 +1,9 @@
+{
+  "libname": "spirack",
+  "libvers": "0.2.5",
+  "infile": "data/pip/spirack.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pyserial": "3.5"
+  }
+}

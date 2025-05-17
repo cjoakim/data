@@ -1,0 +1,11 @@
+{
+  "libname": "model-index",
+  "libvers": "0.1.11",
+  "infile": "data/pip/model-index.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "markdown": "3.8",
+    "ordered-set": "4.1.0",
+    "pyyaml": "6.0.2"
+  }
+}

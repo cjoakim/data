@@ -1,0 +1,6 @@
+{
+  "libname": "databricks-dbapi",
+  "libvers": "0.6.0",
+  "infile": "data/pip/databricks-dbapi.txt",
+  "dependencies": {}
+}

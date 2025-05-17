@@ -1,0 +1,9 @@
+{
+  "libname": "tensorflow-metal",
+  "libvers": "1.2.0",
+  "infile": "data/pip/tensorflow-metal.txt",
+  "dependencies": {
+    "six": "1.17.0",
+    "wheel": "0.45.1"
+  }
+}

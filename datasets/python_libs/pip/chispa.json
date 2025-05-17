@@ -1,0 +1,9 @@
+{
+  "libname": "chispa",
+  "libvers": "0.11.1",
+  "infile": "data/pip/chispa.txt",
+  "dependencies": {
+    "prettytable": "3.16.0",
+    "wcwidth": "0.2.13"
+  }
+}

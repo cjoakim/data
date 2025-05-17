@@ -1,0 +1,6 @@
+{
+  "libname": "pysubnettree",
+  "libvers": "0.37",
+  "infile": "data/pip/pysubnettree.txt",
+  "dependencies": {}
+}

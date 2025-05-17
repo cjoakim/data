@@ -1,0 +1,8 @@
+{
+  "libname": "retrying",
+  "libvers": "1.3.4",
+  "infile": "data/pip/retrying.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

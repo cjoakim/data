@@ -1,0 +1,6 @@
+{
+  "libname": "static3",
+  "libvers": "0.7.0",
+  "infile": "data/pip/static3.txt",
+  "dependencies": {}
+}

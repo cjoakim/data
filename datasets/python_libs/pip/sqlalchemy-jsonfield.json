@@ -1,0 +1,9 @@
+{
+  "libname": "sqlalchemy-jsonfield",
+  "libvers": "1.0.2",
+  "infile": "data/pip/sqlalchemy-jsonfield.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

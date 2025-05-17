@@ -1,0 +1,6 @@
+{
+  "libname": "pytricia",
+  "libvers": "1.0.2",
+  "infile": "data/pip/pytricia.txt",
+  "dependencies": {}
+}

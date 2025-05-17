@@ -1,0 +1,15 @@
+{
+  "libname": "lm-format-enforcer",
+  "libvers": "0.10.11",
+  "infile": "data/pip/lm-format-enforcer.txt",
+  "dependencies": {
+    "annotated-types": "0.7.0",
+    "interegular": "0.3.3",
+    "packaging": "25.0",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pyyaml": "6.0.2",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

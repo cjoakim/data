@@ -1,0 +1,8 @@
+{
+  "libname": "blessed",
+  "libvers": "1.21.0",
+  "infile": "data/pip/blessed.txt",
+  "dependencies": {
+    "wcwidth": "0.2.13"
+  }
+}

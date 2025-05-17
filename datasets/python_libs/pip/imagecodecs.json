@@ -1,0 +1,8 @@
+{
+  "libname": "imagecodecs",
+  "libvers": "2025.3.30",
+  "infile": "data/pip/imagecodecs.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

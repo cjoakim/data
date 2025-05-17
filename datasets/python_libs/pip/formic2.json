@@ -1,0 +1,6 @@
+{
+  "libname": "formic2",
+  "libvers": "1.0.3",
+  "infile": "data/pip/formic2.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "nunavut",
+  "libvers": "2.3.1",
+  "infile": "data/pip/nunavut.txt",
+  "dependencies": {
+    "importlib-resources": "6.5.2",
+    "pydsdl": "1.22.2",
+    "pyyaml": "6.0.2"
+  }
+}

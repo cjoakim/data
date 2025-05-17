@@ -1,0 +1,15 @@
+{
+  "libname": "artifactory",
+  "libvers": "0.1.17",
+  "infile": "data/pip/artifactory.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "pathlib": "1.0.1",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

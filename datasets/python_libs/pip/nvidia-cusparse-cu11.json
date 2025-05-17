@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-cusparse-cu11",
+  "libvers": "11.7.5.86",
+  "infile": "data/pip/nvidia-cusparse-cu11.txt",
+  "dependencies": {}
+}

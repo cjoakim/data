@@ -1,0 +1,25 @@
+{
+  "libname": "asyncpraw",
+  "libvers": "7.8.1",
+  "infile": "data/pip/asyncpraw.txt",
+  "dependencies": {
+    "aiofiles": "24.1.0",
+    "aiohappyeyeballs": "2.6.1",
+    "aiohttp": "3.11.18",
+    "aiosignal": "1.3.2",
+    "aiosqlite": "0.17.0",
+    "asyncprawcore": "2.4.0",
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "frozenlist": "1.6.0",
+    "idna": "3.10",
+    "multidict": "6.4.3",
+    "propcache": "0.3.1",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "update-checker": "0.18.0",
+    "urllib3": "2.4.0",
+    "yarl": "1.20.0"
+  }
+}

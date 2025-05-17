@@ -1,0 +1,13 @@
+{
+  "libname": "filestack-python",
+  "libvers": "4.0.0",
+  "infile": "data/pip/filestack-python.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "trafaret": "2.0.2",
+    "urllib3": "2.4.0"
+  }
+}

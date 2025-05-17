@@ -1,0 +1,6 @@
+{
+  "libname": "kt-legacy",
+  "libvers": "1.0.5",
+  "infile": "data/pip/kt-legacy.txt",
+  "dependencies": {}
+}

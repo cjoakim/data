@@ -1,0 +1,10 @@
+{
+  "libname": "readme-renderer",
+  "libvers": "44.0",
+  "infile": "data/pip/readme-renderer.txt",
+  "dependencies": {
+    "docutils": "0.21.2",
+    "nh3": "0.2.21",
+    "pygments": "2.19.1"
+  }
+}

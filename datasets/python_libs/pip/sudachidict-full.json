@@ -1,0 +1,8 @@
+{
+  "libname": "sudachidict-full",
+  "libvers": "20250129",
+  "infile": "data/pip/sudachidict-full.txt",
+  "dependencies": {
+    "sudachipy": "0.6.10"
+  }
+}

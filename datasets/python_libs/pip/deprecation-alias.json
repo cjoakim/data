@@ -1,0 +1,9 @@
+{
+  "libname": "deprecation-alias",
+  "libvers": "0.4.0",
+  "infile": "data/pip/deprecation-alias.txt",
+  "dependencies": {
+    "deprecation": "2.1.0",
+    "packaging": "25.0"
+  }
+}

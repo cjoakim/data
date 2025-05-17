@@ -1,0 +1,11 @@
+{
+  "libname": "xero-python",
+  "libvers": "8.1.0",
+  "infile": "data/pip/xero-python.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

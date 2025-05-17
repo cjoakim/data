@@ -1,0 +1,6 @@
+{
+  "libname": "tensorrt-cu12-bindings",
+  "libvers": "10.10.0.31",
+  "infile": "data/pip/tensorrt-cu12-bindings.txt",
+  "dependencies": {}
+}

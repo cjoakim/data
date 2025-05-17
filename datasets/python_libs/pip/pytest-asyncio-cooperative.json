@@ -1,0 +1,6 @@
+{
+  "libname": "pytest-asyncio-cooperative",
+  "libvers": "0.39.0",
+  "infile": "data/pip/pytest-asyncio-cooperative.txt",
+  "dependencies": {}
+}

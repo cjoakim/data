@@ -1,0 +1,10 @@
+{
+  "libname": "jinja2-ansible-filters",
+  "libvers": "1.3.2",
+  "infile": "data/pip/jinja2-ansible-filters.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "pyyaml": "6.0.2"
+  }
+}

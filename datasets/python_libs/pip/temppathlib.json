@@ -1,0 +1,6 @@
+{
+  "libname": "temppathlib",
+  "libvers": "1.2.0",
+  "infile": "data/pip/temppathlib.txt",
+  "dependencies": {}
+}

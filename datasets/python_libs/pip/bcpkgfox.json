@@ -1,0 +1,28 @@
+{
+  "libname": "bcpkgfox",
+  "libvers": "0.15.142",
+  "infile": "data/pip/bcpkgfox.txt",
+  "dependencies": {
+    "altgraph": "0.17.4",
+    "attrs": "25.3.0",
+    "certifi": "2025.4.26",
+    "h11": "0.16.0",
+    "idna": "3.10",
+    "macholib": "1.16.3",
+    "outcome": "1.3.0.post0",
+    "packaging": "25.0",
+    "pyinstaller": "6.13.0",
+    "pyinstaller-hooks-contrib": "2025.4",
+    "pyperclip": "1.9.0",
+    "pysocks": "1.7.1",
+    "selenium": "4.32.0",
+    "sniffio": "1.3.1",
+    "sortedcontainers": "2.4.0",
+    "trio": "0.30.0",
+    "trio-websocket": "0.12.2",
+    "typing-extensions": "4.13.2",
+    "urllib3[socks]": "2.4.0",
+    "websocket-client": "1.8.0",
+    "wsproto": "1.2.0"
+  }
+}

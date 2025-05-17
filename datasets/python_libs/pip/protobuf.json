@@ -1,0 +1,6 @@
+{
+  "libname": "protobuf",
+  "libvers": "6.30.2",
+  "infile": "data/pip/protobuf.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "data-science-types",
+  "libvers": "0.2.23",
+  "infile": "data/pip/data-science-types.txt",
+  "dependencies": {}
+}

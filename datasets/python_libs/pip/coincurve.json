@@ -1,0 +1,6 @@
+{
+  "libname": "coincurve",
+  "libvers": "21.0.0",
+  "infile": "data/pip/coincurve.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "mip",
+  "libvers": "1.14.2",
+  "infile": "data/pip/mip.txt",
+  "dependencies": {
+    "cffi": "1.15.0",
+    "pycparser": "2.22"
+  }
+}

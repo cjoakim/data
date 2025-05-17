@@ -1,0 +1,6 @@
+{
+  "libname": "optional-django",
+  "libvers": "0.3.0",
+  "infile": "data/pip/optional-django.txt",
+  "dependencies": {}
+}

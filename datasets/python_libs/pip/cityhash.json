@@ -1,0 +1,6 @@
+{
+  "libname": "cityhash",
+  "libvers": "0.4.8",
+  "infile": "data/pip/cityhash.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "py-memoize",
+  "libvers": "3.1.1",
+  "infile": "data/pip/py-memoize.txt",
+  "dependencies": {}
+}

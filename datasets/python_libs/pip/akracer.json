@@ -1,0 +1,6 @@
+{
+  "libname": "akracer",
+  "libvers": "0.0.13",
+  "infile": "data/pip/akracer.txt",
+  "dependencies": {}
+}

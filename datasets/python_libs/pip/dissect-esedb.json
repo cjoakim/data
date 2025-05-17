@@ -1,0 +1,9 @@
+{
+  "libname": "dissect-esedb",
+  "libvers": "3.15",
+  "infile": "data/pip/dissect-esedb.txt",
+  "dependencies": {
+    "dissect-cstruct": "4.4",
+    "dissect-util": "3.20"
+  }
+}

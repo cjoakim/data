@@ -1,0 +1,9 @@
+{
+  "libname": "python-whois",
+  "libvers": "0.9.5",
+  "infile": "data/pip/python-whois.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "pytest-lazy-fixture",
+  "libvers": "0.6.3",
+  "infile": "data/pip/pytest-lazy-fixture.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5"
+  }
+}

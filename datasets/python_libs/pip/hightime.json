@@ -1,0 +1,6 @@
+{
+  "libname": "hightime",
+  "libvers": "0.2.2",
+  "infile": "data/pip/hightime.txt",
+  "dependencies": {}
+}

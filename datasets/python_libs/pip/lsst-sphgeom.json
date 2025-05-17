@@ -1,0 +1,9 @@
+{
+  "libname": "lsst-sphgeom",
+  "libvers": "29.2025.1600",
+  "infile": "data/pip/lsst-sphgeom.txt",
+  "dependencies": {
+    "hpgeom": "1.4.0",
+    "numpy": "2.2.5"
+  }
+}

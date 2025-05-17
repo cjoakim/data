@@ -1,0 +1,19 @@
+{
+  "libname": "asyauth",
+  "libvers": "0.0.21",
+  "infile": "data/pip/asyauth.txt",
+  "dependencies": {
+    "asn1crypto": "1.5.1",
+    "asysocks": "0.2.13",
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "h11": "0.16.0",
+    "minikerberos": "0.4.4",
+    "oscrypto": "1.3.0",
+    "pycparser": "2.22",
+    "pycryptodomex": "3.22.0",
+    "six": "1.17.0",
+    "tqdm": "4.67.1",
+    "unicrypto": "0.0.10"
+  }
+}

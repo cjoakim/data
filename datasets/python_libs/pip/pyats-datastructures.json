@@ -1,0 +1,6 @@
+{
+  "libname": "pyats-datastructures",
+  "libvers": "25.4",
+  "infile": "data/pip/pyats-datastructures.txt",
+  "dependencies": {}
+}

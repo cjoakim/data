@@ -1,0 +1,11 @@
+{
+  "libname": "tl2cgen",
+  "libvers": "1.0.0",
+  "infile": "data/pip/tl2cgen.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "scipy": "1.15.2",
+    "treelite": "4.4.1"
+  }
+}

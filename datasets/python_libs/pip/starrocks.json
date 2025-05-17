@@ -1,0 +1,14 @@
+{
+  "libname": "starrocks",
+  "libvers": "1.2.2",
+  "infile": "data/pip/starrocks.txt",
+  "dependencies": {
+    "alembic": "1.15.2",
+    "mako": "1.3.10",
+    "markupsafe": "3.0.2",
+    "pymysql": "1.1.1",
+    "sqlalchemy": "2.0.40",
+    "sqlalchemy-utils": "0.41.2",
+    "typing-extensions": "4.13.2"
+  }
+}

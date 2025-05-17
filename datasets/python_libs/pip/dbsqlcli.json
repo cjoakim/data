@@ -1,0 +1,24 @@
+{
+  "libname": "dbsqlcli",
+  "libvers": "0.1.1",
+  "infile": "data/pip/dbsqlcli.txt",
+  "dependencies": {
+    "cli-helpers[styles]": "2.4.0",
+    "click": "8.1.8",
+    "configobj": "5.0.9",
+    "databricks-sql-connector": "2.0.0b1",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "prompt-toolkit": "2.0.10",
+    "pyarrow": "20.0.0",
+    "pygments": "2.19.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "six": "1.17.0",
+    "sqlparse": "0.3.1",
+    "tabulate[widechars]": "0.9.0",
+    "thrift": "0.21.0",
+    "tzdata": "2025.2",
+    "wcwidth": "0.2.13"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "scripts",
+  "libvers": "3.0",
+  "infile": "data/pip/scripts.txt",
+  "dependencies": {
+    "stua": "0.3"
+  }
+}

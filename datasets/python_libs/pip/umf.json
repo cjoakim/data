@@ -1,0 +1,8 @@
+{
+  "libname": "umf",
+  "libvers": "0.10.0",
+  "infile": "data/pip/umf.txt",
+  "dependencies": {
+    "tcmlib": "1.3.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "meson",
+  "libvers": "1.8.0",
+  "infile": "data/pip/meson.txt",
+  "dependencies": {}
+}

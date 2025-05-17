@@ -1,0 +1,6 @@
+{
+  "libname": "remotezip2",
+  "libvers": "0.0.2",
+  "infile": "data/pip/remotezip2.txt",
+  "dependencies": {}
+}

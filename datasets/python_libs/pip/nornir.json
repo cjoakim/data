@@ -1,0 +1,9 @@
+{
+  "libname": "nornir",
+  "libvers": "3.5.0",
+  "infile": "data/pip/nornir.txt",
+  "dependencies": {
+    "ruamel-yaml": "0.18.10",
+    "ruamel-yaml-clib": "0.2.12"
+  }
+}

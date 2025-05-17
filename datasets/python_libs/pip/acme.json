@@ -1,0 +1,20 @@
+{
+  "libname": "acme",
+  "libvers": "4.0.0",
+  "infile": "data/pip/acme.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "josepy": "2.0.0",
+    "pycparser": "2.22",
+    "pyopenssl": "25.0.0",
+    "pyrfc3339": "2.0.1",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

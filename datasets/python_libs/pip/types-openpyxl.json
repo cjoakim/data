@@ -1,0 +1,6 @@
+{
+  "libname": "types-openpyxl",
+  "libvers": "3.1.5.20250506",
+  "infile": "data/pip/types-openpyxl.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "aws-lambda-powertools",
+  "libvers": "3.12.0",
+  "infile": "data/pip/aws-lambda-powertools.txt",
+  "dependencies": {
+    "jmespath": "1.0.1",
+    "typing-extensions": "4.13.2"
+  }
+}

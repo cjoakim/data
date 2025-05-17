@@ -1,0 +1,25 @@
+{
+  "libname": "grafana-django-saml2-auth",
+  "libvers": "3.20.0",
+  "infile": "data/pip/grafana-django-saml2-auth.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "cryptography": "43.0.3",
+    "defusedxml": "0.7.1",
+    "dictor": "0.1.12",
+    "elementpath": "4.8.0",
+    "idna": "3.10",
+    "pycparser": "2.22",
+    "pyjwt": "2.10.1",
+    "pyopenssl": "24.2.1",
+    "pysaml2": "7.5.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0",
+    "xmlschema": "2.5.1"
+  }
+}

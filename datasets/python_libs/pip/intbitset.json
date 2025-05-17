@@ -1,0 +1,6 @@
+{
+  "libname": "intbitset",
+  "libvers": "4.0.0",
+  "infile": "data/pip/intbitset.txt",
+  "dependencies": {}
+}

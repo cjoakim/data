@@ -1,0 +1,6 @@
+{
+  "libname": "stdlibs",
+  "libvers": "2025.4.4",
+  "infile": "data/pip/stdlibs.txt",
+  "dependencies": {}
+}

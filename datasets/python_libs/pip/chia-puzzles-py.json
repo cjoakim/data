@@ -1,0 +1,13 @@
+{
+  "libname": "chia-puzzles-py",
+  "libvers": "0.20.1",
+  "infile": "data/pip/chia-puzzles-py.txt",
+  "dependencies": {
+    "clvm-rs": "0.2.7",
+    "clvm-tools-rs": "0.1.48",
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pytest": "8.3.5"
+  }
+}

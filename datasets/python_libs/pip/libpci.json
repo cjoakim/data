@@ -1,0 +1,8 @@
+{
+  "libname": "libpci",
+  "libvers": "0.2",
+  "infile": "data/pip/libpci.txt",
+  "dependencies": {
+    "guacamole": "0.9.2"
+  }
+}

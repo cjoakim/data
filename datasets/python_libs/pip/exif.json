@@ -1,0 +1,8 @@
+{
+  "libname": "exif",
+  "libvers": "1.6.1",
+  "infile": "data/pip/exif.txt",
+  "dependencies": {
+    "plum-py": "0.8.7"
+  }
+}

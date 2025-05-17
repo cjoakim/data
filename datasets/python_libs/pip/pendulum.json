@@ -1,0 +1,10 @@
+{
+  "libname": "pendulum",
+  "libvers": "3.1.0",
+  "infile": "data/pip/pendulum.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "tzdata": "2025.2"
+  }
+}

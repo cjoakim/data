@@ -1,0 +1,6 @@
+{
+  "libname": "pycryptodome",
+  "libvers": "3.22.0",
+  "infile": "data/pip/pycryptodome.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "outlines-core",
+  "libvers": "0.2.9",
+  "infile": "data/pip/outlines-core.txt",
+  "dependencies": {}
+}

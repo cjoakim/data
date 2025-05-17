@@ -1,0 +1,17 @@
+{
+  "libname": "dj-stripe",
+  "libvers": "2.9.1",
+  "infile": "data/pip/dj-stripe.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "django": "5.2",
+    "idna": "3.10",
+    "requests": "2.32.3",
+    "sqlparse": "0.5.3",
+    "stripe": "11.6.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

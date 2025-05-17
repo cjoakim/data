@@ -1,0 +1,16 @@
+{
+  "libname": "pytest-clarity",
+  "libvers": "1.0.1",
+  "infile": "data/pip/pytest-clarity.txt",
+  "dependencies": {
+    "iniconfig": "2.1.0",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "packaging": "25.0",
+    "pluggy": "1.5.0",
+    "pprintpp": "0.4.0",
+    "pygments": "2.19.1",
+    "pytest": "8.3.5",
+    "rich": "14.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "mysql-connector-python",
+  "libvers": "9.3.0",
+  "infile": "data/pip/mysql-connector-python.txt",
+  "dependencies": {}
+}

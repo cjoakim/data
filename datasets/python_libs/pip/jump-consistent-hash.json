@@ -1,0 +1,6 @@
+{
+  "libname": "jump-consistent-hash",
+  "libvers": "3.5.1",
+  "infile": "data/pip/jump-consistent-hash.txt",
+  "dependencies": {}
+}

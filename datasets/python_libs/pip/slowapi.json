@@ -1,0 +1,12 @@
+{
+  "libname": "slowapi",
+  "libvers": "0.1.9",
+  "infile": "data/pip/slowapi.txt",
+  "dependencies": {
+    "deprecated": "1.2.18",
+    "limits": "5.1.0",
+    "packaging": "25.0",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2"
+  }
+}

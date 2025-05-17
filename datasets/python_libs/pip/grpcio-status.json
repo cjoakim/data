@@ -1,0 +1,10 @@
+{
+  "libname": "grpcio-status",
+  "libvers": "1.71.0",
+  "infile": "data/pip/grpcio-status.txt",
+  "dependencies": {
+    "googleapis-common-protos": "1.70.0",
+    "grpcio": "1.71.0",
+    "protobuf": "5.29.4"
+  }
+}

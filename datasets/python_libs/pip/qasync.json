@@ -1,0 +1,6 @@
+{
+  "libname": "qasync",
+  "libvers": "0.27.1",
+  "infile": "data/pip/qasync.txt",
+  "dependencies": {}
+}

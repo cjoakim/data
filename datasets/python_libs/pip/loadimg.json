@@ -1,0 +1,6 @@
+{
+  "libname": "loadimg",
+  "libvers": "0.4.0",
+  "infile": "data/pip/loadimg.txt",
+  "dependencies": {}
+}

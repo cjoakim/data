@@ -1,0 +1,22 @@
+{
+  "libname": "sonar-tools",
+  "libvers": "3.11",
+  "infile": "data/pip/sonar-tools.txt",
+  "dependencies": {
+    "argparse": "1.4.0",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "datetime": "5.5",
+    "idna": "3.10",
+    "jprops": "2.0.2",
+    "levenshtein": "0.27.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pyyaml": "6.0.2",
+    "rapidfuzz": "3.13.0",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0",
+    "zope-interface": "7.2"
+  }
+}

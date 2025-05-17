@@ -1,0 +1,8 @@
+{
+  "libname": "drizzle",
+  "libvers": "2.0.1",
+  "infile": "data/pip/drizzle.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "itk-core",
+  "libvers": "5.4.3",
+  "infile": "data/pip/itk-core.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

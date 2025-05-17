@@ -1,0 +1,6 @@
+{
+  "libname": "lintrunner",
+  "libvers": "0.12.7",
+  "infile": "data/pip/lintrunner.txt",
+  "dependencies": {}
+}

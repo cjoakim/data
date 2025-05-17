@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-verifiedpermissions",
+  "libvers": "1.38.7",
+  "infile": "data/pip/mypy-boto3-verifiedpermissions.txt",
+  "dependencies": {}
+}

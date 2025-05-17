@@ -1,0 +1,10 @@
+{
+  "libname": "dwave-networkx",
+  "libvers": "0.8.17",
+  "infile": "data/pip/dwave-networkx.txt",
+  "dependencies": {
+    "dimod": "0.12.20",
+    "networkx": "3.4.2",
+    "numpy": "2.2.5"
+  }
+}

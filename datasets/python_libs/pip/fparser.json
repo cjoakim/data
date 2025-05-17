@@ -1,0 +1,9 @@
+{
+  "libname": "fparser",
+  "libvers": "0.2.0",
+  "infile": "data/pip/fparser.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "setuptools-scm": "8.3.1"
+  }
+}

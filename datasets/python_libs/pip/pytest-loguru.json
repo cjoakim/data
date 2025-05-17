@@ -1,0 +1,8 @@
+{
+  "libname": "pytest-loguru",
+  "libvers": "0.4.0",
+  "infile": "data/pip/pytest-loguru.txt",
+  "dependencies": {
+    "loguru": "0.7.3"
+  }
+}

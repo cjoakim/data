@@ -1,0 +1,9 @@
+{
+  "libname": "python-fcl",
+  "libvers": "0.7.0.8",
+  "infile": "data/pip/python-fcl.txt",
+  "dependencies": {
+    "cython": "3.0.12",
+    "numpy": "2.2.5"
+  }
+}

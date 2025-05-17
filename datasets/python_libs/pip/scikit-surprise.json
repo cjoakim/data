@@ -1,0 +1,10 @@
+{
+  "libname": "scikit-surprise",
+  "libvers": "1.1.4",
+  "infile": "data/pip/scikit-surprise.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

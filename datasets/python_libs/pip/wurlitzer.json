@@ -1,0 +1,6 @@
+{
+  "libname": "wurlitzer",
+  "libvers": "3.1.1",
+  "infile": "data/pip/wurlitzer.txt",
+  "dependencies": {}
+}

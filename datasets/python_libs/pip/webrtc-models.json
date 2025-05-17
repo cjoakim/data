@@ -1,0 +1,10 @@
+{
+  "libname": "webrtc-models",
+  "libvers": "0.3.0",
+  "infile": "data/pip/webrtc-models.txt",
+  "dependencies": {
+    "mashumaro": "3.15",
+    "orjson": "3.10.18",
+    "typing-extensions": "4.13.2"
+  }
+}

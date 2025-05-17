@@ -1,0 +1,9 @@
+{
+  "libname": "jinja2-simple-tags",
+  "libvers": "0.6.1",
+  "infile": "data/pip/jinja2-simple-tags.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

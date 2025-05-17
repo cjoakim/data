@@ -1,0 +1,6 @@
+{
+  "libname": "wordsegment",
+  "libvers": "1.3.1",
+  "infile": "data/pip/wordsegment.txt",
+  "dependencies": {}
+}

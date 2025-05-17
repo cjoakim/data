@@ -1,0 +1,8 @@
+{
+  "libname": "pypiserver",
+  "libvers": "2.3.2",
+  "infile": "data/pip/pypiserver.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "eventsourcing",
+  "libvers": "9.4.1",
+  "infile": "data/pip/eventsourcing.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

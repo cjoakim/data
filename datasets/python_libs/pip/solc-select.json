@@ -1,0 +1,9 @@
+{
+  "libname": "solc-select",
+  "libvers": "1.1.0",
+  "infile": "data/pip/solc-select.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "pycryptodome": "3.22.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "types-ipaddress",
+  "libvers": "1.0.8",
+  "infile": "data/pip/types-ipaddress.txt",
+  "dependencies": {}
+}

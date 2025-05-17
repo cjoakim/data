@@ -1,0 +1,6 @@
+{
+  "libname": "perlin-noise",
+  "libvers": "1.14",
+  "infile": "data/pip/perlin-noise.txt",
+  "dependencies": {}
+}

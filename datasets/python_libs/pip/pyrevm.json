@@ -1,0 +1,6 @@
+{
+  "libname": "pyrevm",
+  "libvers": "0.3.3",
+  "infile": "data/pip/pyrevm.txt",
+  "dependencies": {}
+}

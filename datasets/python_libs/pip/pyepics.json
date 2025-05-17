@@ -1,0 +1,9 @@
+{
+  "libname": "pyepics",
+  "libvers": "3.5.7",
+  "infile": "data/pip/pyepics.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pyparsing": "3.2.3"
+  }
+}

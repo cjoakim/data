@@ -1,0 +1,6 @@
+{
+  "libname": "quantile-python",
+  "libvers": "1.1",
+  "infile": "data/pip/quantile-python.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "awsglue3-local",
+  "libvers": "1.0.0",
+  "infile": "data/pip/awsglue3-local.txt",
+  "dependencies": {}
+}

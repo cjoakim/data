@@ -1,0 +1,6 @@
+{
+  "libname": "psutil",
+  "libvers": "7.0.0",
+  "infile": "data/pip/psutil.txt",
+  "dependencies": {}
+}

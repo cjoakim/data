@@ -1,0 +1,8 @@
+{
+  "libname": "idna-ssl",
+  "libvers": "1.1.0",
+  "infile": "data/pip/idna-ssl.txt",
+  "dependencies": {
+    "idna": "3.10"
+  }
+}

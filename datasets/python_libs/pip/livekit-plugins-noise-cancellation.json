@@ -1,0 +1,12 @@
+{
+  "libname": "livekit-plugins-noise-cancellation",
+  "libvers": "0.2.3",
+  "infile": "data/pip/livekit-plugins-noise-cancellation.txt",
+  "dependencies": {
+    "aiofiles": "24.1.0",
+    "livekit": "1.0.6",
+    "numpy": "2.2.5",
+    "protobuf": "6.30.2",
+    "types-protobuf": "6.30.2.20250506"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "morefs",
+  "libvers": "0.2.2",
+  "infile": "data/pip/morefs.txt",
+  "dependencies": {
+    "fsspec": "2025.3.2"
+  }
+}

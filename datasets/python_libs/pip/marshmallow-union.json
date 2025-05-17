@@ -1,0 +1,8 @@
+{
+  "libname": "marshmallow-union",
+  "libvers": "0.1.15.post1",
+  "infile": "data/pip/marshmallow-union.txt",
+  "dependencies": {
+    "marshmallow": "4.0.0"
+  }
+}

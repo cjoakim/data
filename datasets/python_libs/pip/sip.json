@@ -1,0 +1,8 @@
+{
+  "libname": "sip",
+  "libvers": "6.10.0",
+  "infile": "data/pip/sip.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

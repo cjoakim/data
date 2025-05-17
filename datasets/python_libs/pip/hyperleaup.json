@@ -1,0 +1,21 @@
+{
+  "libname": "hyperleaup",
+  "libvers": "0.1.2",
+  "infile": "data/pip/hyperleaup.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "defusedxml": "0.7.1",
+    "idna": "3.10",
+    "packaging": "25.0",
+    "py4j": "0.10.9.7",
+    "pycparser": "2.22",
+    "pyspark": "3.5.5",
+    "requests": "2.32.3",
+    "tableauhyperapi": "0.0.22106",
+    "tableauserverclient": "0.37",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

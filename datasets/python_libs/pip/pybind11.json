@@ -1,0 +1,6 @@
+{
+  "libname": "pybind11",
+  "libvers": "2.13.6",
+  "infile": "data/pip/pybind11.txt",
+  "dependencies": {}
+}

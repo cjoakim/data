@@ -1,0 +1,6 @@
+{
+  "libname": "pylzss",
+  "libvers": "0.3.8",
+  "infile": "data/pip/pylzss.txt",
+  "dependencies": {}
+}

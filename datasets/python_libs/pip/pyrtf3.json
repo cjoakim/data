@@ -1,0 +1,8 @@
+{
+  "libname": "pyrtf3",
+  "libvers": "0.47.5",
+  "infile": "data/pip/pyrtf3.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

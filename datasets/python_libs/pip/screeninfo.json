@@ -1,0 +1,10 @@
+{
+  "libname": "screeninfo",
+  "libvers": "0.8.1",
+  "infile": "data/pip/screeninfo.txt",
+  "dependencies": {
+    "cython": "3.0.12",
+    "pyobjc-core": "11.0",
+    "pyobjc-framework-cocoa": "11.0"
+  }
+}

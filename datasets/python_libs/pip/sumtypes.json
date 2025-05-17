@@ -1,0 +1,8 @@
+{
+  "libname": "sumtypes",
+  "libvers": "0.1a6",
+  "infile": "data/pip/sumtypes.txt",
+  "dependencies": {
+    "attrs": "25.3.0"
+  }
+}

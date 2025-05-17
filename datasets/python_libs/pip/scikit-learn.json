@@ -1,0 +1,11 @@
+{
+  "libname": "scikit-learn",
+  "libvers": "1.6.1",
+  "infile": "data/pip/scikit-learn.txt",
+  "dependencies": {
+    "joblib": "1.5.0",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "threadpoolctl": "3.6.0"
+  }
+}

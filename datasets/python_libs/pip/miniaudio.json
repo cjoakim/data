@@ -1,0 +1,9 @@
+{
+  "libname": "miniaudio",
+  "libvers": "1.61",
+  "infile": "data/pip/miniaudio.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

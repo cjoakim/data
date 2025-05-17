@@ -1,0 +1,24 @@
+{
+  "libname": "pyldavis",
+  "libvers": "3.4.1",
+  "infile": "data/pip/pyldavis.txt",
+  "dependencies": {
+    "funcy": "2.0",
+    "gensim": "4.3.3",
+    "jinja2": "3.1.6",
+    "joblib": "1.5.0",
+    "markupsafe": "3.0.2",
+    "numexpr": "2.10.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.13.1",
+    "six": "1.17.0",
+    "smart-open": "7.1.0",
+    "threadpoolctl": "3.6.0",
+    "tzdata": "2025.2",
+    "wrapt": "1.17.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "objprint",
+  "libvers": "0.3.0",
+  "infile": "data/pip/objprint.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "jschon",
+  "libvers": "0.11.1",
+  "infile": "data/pip/jschon.txt",
+  "dependencies": {
+    "rfc3986": "2.0.0"
+  }
+}

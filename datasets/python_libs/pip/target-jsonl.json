@@ -1,0 +1,16 @@
+{
+  "libname": "target-jsonl",
+  "libvers": "0.1.4",
+  "infile": "data/pip/target-jsonl.txt",
+  "dependencies": {
+    "adjust-precision-for-schema": "0.3.3",
+    "backoff": "1.8.0",
+    "ciso8601": "2.3.2",
+    "jsonschema": "2.6.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2018.4",
+    "simplejson": "3.11.1",
+    "singer-python": "5.8.0",
+    "six": "1.17.0"
+  }
+}

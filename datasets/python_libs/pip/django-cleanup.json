@@ -1,0 +1,6 @@
+{
+  "libname": "django-cleanup",
+  "libvers": "9.0.0",
+  "infile": "data/pip/django-cleanup.txt",
+  "dependencies": {}
+}

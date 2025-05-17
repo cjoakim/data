@@ -1,0 +1,6 @@
+{
+  "libname": "parsy",
+  "libvers": "2.1",
+  "infile": "data/pip/parsy.txt",
+  "dependencies": {}
+}

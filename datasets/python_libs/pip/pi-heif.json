@@ -1,0 +1,8 @@
+{
+  "libname": "pi-heif",
+  "libvers": "0.22.0",
+  "infile": "data/pip/pi-heif.txt",
+  "dependencies": {
+    "pillow": "11.2.1"
+  }
+}

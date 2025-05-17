@@ -1,0 +1,6 @@
+{
+  "libname": "dissect-cstruct",
+  "libvers": "4.4",
+  "infile": "data/pip/dissect-cstruct.txt",
+  "dependencies": {}
+}

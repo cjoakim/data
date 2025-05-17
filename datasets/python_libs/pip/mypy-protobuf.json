@@ -1,0 +1,9 @@
+{
+  "libname": "mypy-protobuf",
+  "libvers": "3.6.0",
+  "infile": "data/pip/mypy-protobuf.txt",
+  "dependencies": {
+    "protobuf": "6.30.2",
+    "types-protobuf": "6.30.2.20250506"
+  }
+}

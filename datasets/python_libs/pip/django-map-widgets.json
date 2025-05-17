@@ -1,0 +1,6 @@
+{
+  "libname": "django-map-widgets",
+  "libvers": "0.5.1",
+  "infile": "data/pip/django-map-widgets.txt",
+  "dependencies": {}
+}

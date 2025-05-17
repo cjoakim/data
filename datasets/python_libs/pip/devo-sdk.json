@@ -1,0 +1,21 @@
+{
+  "libname": "devo-sdk",
+  "libvers": "6.0.3",
+  "infile": "data/pip/devo-sdk.txt",
+  "dependencies": {
+    "certifi": "2025.1.31",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "cryptography": "44.0.3",
+    "idna": "3.10",
+    "pem": "21.2.0",
+    "pycparser": "2.22",
+    "pyopenssl": "25.0.0",
+    "pytz": "2024.2",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

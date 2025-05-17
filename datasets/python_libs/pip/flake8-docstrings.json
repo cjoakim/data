@@ -1,0 +1,13 @@
+{
+  "libname": "flake8-docstrings",
+  "libvers": "1.7.0",
+  "infile": "data/pip/flake8-docstrings.txt",
+  "dependencies": {
+    "flake8": "7.2.0",
+    "mccabe": "0.7.0",
+    "pycodestyle": "2.13.0",
+    "pydocstyle": "6.3.0",
+    "pyflakes": "3.3.2",
+    "snowballstemmer": "2.2.0"
+  }
+}

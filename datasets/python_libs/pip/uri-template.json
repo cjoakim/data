@@ -1,0 +1,6 @@
+{
+  "libname": "uri-template",
+  "libvers": "1.3.0",
+  "infile": "data/pip/uri-template.txt",
+  "dependencies": {}
+}

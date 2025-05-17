@@ -1,0 +1,17 @@
+{
+  "libname": "tf2onnx",
+  "libvers": "1.16.1",
+  "infile": "data/pip/tf2onnx.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "flatbuffers": "25.2.10",
+    "idna": "3.10",
+    "numpy": "2.2.5",
+    "onnx": "1.17.0",
+    "protobuf": "3.20.3",
+    "requests": "2.32.3",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

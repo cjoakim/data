@@ -1,0 +1,6 @@
+{
+  "libname": "compress-json",
+  "libvers": "1.1.1",
+  "infile": "data/pip/compress-json.txt",
+  "dependencies": {}
+}

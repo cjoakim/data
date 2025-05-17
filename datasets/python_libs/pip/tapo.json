@@ -1,0 +1,6 @@
+{
+  "libname": "tapo",
+  "libvers": "0.8.1",
+  "infile": "data/pip/tapo.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "pyexcel-ods3",
+  "libvers": "0.6.1",
+  "infile": "data/pip/pyexcel-ods3.txt",
+  "dependencies": {
+    "lml": "0.2.0",
+    "lxml": "5.4.0",
+    "pyexcel-ezodf": "0.3.4",
+    "pyexcel-io": "0.6.7"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "libcst",
+  "libvers": "1.7.0",
+  "infile": "data/pip/libcst.txt",
+  "dependencies": {
+    "pyyaml": "6.0.2"
+  }
+}

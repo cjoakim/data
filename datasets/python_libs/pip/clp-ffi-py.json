@@ -1,0 +1,14 @@
+{
+  "libname": "clp-ffi-py",
+  "libvers": "0.0.14",
+  "infile": "data/pip/clp-ffi-py.txt",
+  "dependencies": {
+    "deprecated": "1.2.18",
+    "msgpack": "1.0.5",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2",
+    "wrapt": "1.17.2",
+    "zstandard": "0.23.0"
+  }
+}

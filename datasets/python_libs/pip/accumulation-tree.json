@@ -1,0 +1,6 @@
+{
+  "libname": "accumulation-tree",
+  "libvers": "0.6.4",
+  "infile": "data/pip/accumulation-tree.txt",
+  "dependencies": {}
+}

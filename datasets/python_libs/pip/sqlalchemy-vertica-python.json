@@ -1,0 +1,10 @@
+{
+  "libname": "sqlalchemy-vertica-python",
+  "libvers": "0.6.3",
+  "infile": "data/pip/sqlalchemy-vertica-python.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "vertica-python": "1.4.0"
+  }
+}

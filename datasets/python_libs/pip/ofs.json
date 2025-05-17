@@ -1,0 +1,10 @@
+{
+  "libname": "ofs",
+  "libvers": "0.4.3",
+  "infile": "data/pip/ofs.txt",
+  "dependencies": {
+    "argparse": "1.4.0",
+    "boto": "2.49.0",
+    "six": "1.17.0"
+  }
+}

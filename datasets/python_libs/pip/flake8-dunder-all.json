@@ -1,0 +1,22 @@
+{
+  "libname": "flake8-dunder-all",
+  "libvers": "0.4.1",
+  "infile": "data/pip/flake8-dunder-all.txt",
+  "dependencies": {
+    "astatine": "0.3.3",
+    "asttokens": "3.0.0",
+    "click": "8.1.8",
+    "consolekit": "1.7.2",
+    "deprecation": "2.1.0",
+    "deprecation-alias": "0.4.0",
+    "domdf-python-tools": "3.10.0",
+    "flake8": "7.2.0",
+    "mccabe": "0.7.0",
+    "mistletoe": "1.4.0",
+    "natsort": "8.4.0",
+    "packaging": "25.0",
+    "pycodestyle": "2.13.0",
+    "pyflakes": "3.3.2",
+    "typing-extensions": "4.13.2"
+  }
+}

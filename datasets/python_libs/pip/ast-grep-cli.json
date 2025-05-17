@@ -1,0 +1,6 @@
+{
+  "libname": "ast-grep-cli",
+  "libvers": "0.37.0",
+  "infile": "data/pip/ast-grep-cli.txt",
+  "dependencies": {}
+}

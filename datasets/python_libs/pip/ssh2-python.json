@@ -1,0 +1,6 @@
+{
+  "libname": "ssh2-python",
+  "libvers": "1.1.2.post1",
+  "infile": "data/pip/ssh2-python.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "typing",
+  "libvers": "3.7.4.3",
+  "infile": "data/pip/typing.txt",
+  "dependencies": {}
+}

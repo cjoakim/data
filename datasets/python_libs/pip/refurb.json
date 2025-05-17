@@ -1,0 +1,10 @@
+{
+  "libname": "refurb",
+  "libvers": "2.0.0",
+  "infile": "data/pip/refurb.txt",
+  "dependencies": {
+    "mypy": "1.15.0",
+    "mypy-extensions": "1.1.0",
+    "typing-extensions": "4.13.2"
+  }
+}

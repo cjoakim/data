@@ -1,0 +1,8 @@
+{
+  "libname": "robotframework-archivelibrary",
+  "libvers": "0.4.3",
+  "infile": "data/pip/robotframework-archivelibrary.txt",
+  "dependencies": {
+    "robotframework": "7.2.2"
+  }
+}

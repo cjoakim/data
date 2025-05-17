@@ -1,0 +1,6 @@
+{
+  "libname": "xonsh",
+  "libvers": "0.19.3",
+  "infile": "data/pip/xonsh.txt",
+  "dependencies": {}
+}

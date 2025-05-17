@@ -1,0 +1,8 @@
+{
+  "libname": "srptools",
+  "libvers": "1.0.1",
+  "infile": "data/pip/srptools.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

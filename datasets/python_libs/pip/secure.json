@@ -1,0 +1,6 @@
+{
+  "libname": "secure",
+  "libvers": "1.0.1",
+  "infile": "data/pip/secure.txt",
+  "dependencies": {}
+}

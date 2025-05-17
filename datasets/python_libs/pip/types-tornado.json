@@ -1,0 +1,6 @@
+{
+  "libname": "types-tornado",
+  "libvers": "5.1.1",
+  "infile": "data/pip/types-tornado.txt",
+  "dependencies": {}
+}

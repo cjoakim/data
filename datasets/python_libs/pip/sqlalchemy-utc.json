@@ -1,0 +1,9 @@
+{
+  "libname": "sqlalchemy-utc",
+  "libvers": "0.14.0",
+  "infile": "data/pip/sqlalchemy-utc.txt",
+  "dependencies": {
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "simplification",
+  "libvers": "0.7.13",
+  "infile": "data/pip/simplification.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

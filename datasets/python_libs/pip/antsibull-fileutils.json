@@ -1,0 +1,9 @@
+{
+  "libname": "antsibull-fileutils",
+  "libvers": "1.2.0",
+  "infile": "data/pip/antsibull-fileutils.txt",
+  "dependencies": {
+    "aiofiles": "24.1.0",
+    "pyyaml": "6.0.2"
+  }
+}

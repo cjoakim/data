@@ -1,0 +1,6 @@
+{
+  "libname": "commonregex",
+  "libvers": "1.5.4",
+  "infile": "data/pip/commonregex.txt",
+  "dependencies": {}
+}

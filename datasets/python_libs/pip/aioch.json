@@ -1,0 +1,10 @@
+{
+  "libname": "aioch",
+  "libvers": "0.0.2",
+  "infile": "data/pip/aioch.txt",
+  "dependencies": {
+    "clickhouse-driver": "0.2.9",
+    "pytz": "2025.2",
+    "tzlocal": "5.3.1"
+  }
+}

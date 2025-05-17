@@ -1,0 +1,10 @@
+{
+  "libname": "glymur",
+  "libvers": "0.14.1.post1",
+  "infile": "data/pip/glymur.txt",
+  "dependencies": {
+    "lxml": "5.4.0",
+    "numpy": "2.2.5",
+    "pillow": "11.2.1"
+  }
+}

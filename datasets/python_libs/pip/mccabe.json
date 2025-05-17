@@ -1,0 +1,6 @@
+{
+  "libname": "mccabe",
+  "libvers": "0.7.0",
+  "infile": "data/pip/mccabe.txt",
+  "dependencies": {}
+}

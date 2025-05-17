@@ -1,0 +1,6 @@
+{
+  "libname": "python-geohash",
+  "libvers": "0.8.5",
+  "infile": "data/pip/python-geohash.txt",
+  "dependencies": {}
+}

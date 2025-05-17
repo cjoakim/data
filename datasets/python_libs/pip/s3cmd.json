@@ -1,0 +1,10 @@
+{
+  "libname": "s3cmd",
+  "libvers": "2.4.0",
+  "infile": "data/pip/s3cmd.txt",
+  "dependencies": {
+    "python-dateutil": "2.9.0.post0",
+    "python-magic": "0.4.27",
+    "six": "1.17.0"
+  }
+}

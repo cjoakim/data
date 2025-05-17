@@ -1,0 +1,6 @@
+{
+  "libname": "niltype",
+  "libvers": "1.0.2",
+  "infile": "data/pip/niltype.txt",
+  "dependencies": {}
+}

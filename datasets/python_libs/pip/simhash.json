@@ -1,0 +1,8 @@
+{
+  "libname": "simhash",
+  "libvers": "2.1.2",
+  "infile": "data/pip/simhash.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

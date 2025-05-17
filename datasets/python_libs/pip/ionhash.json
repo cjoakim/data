@@ -1,0 +1,9 @@
+{
+  "libname": "ionhash",
+  "libvers": "1.2.1",
+  "infile": "data/pip/ionhash.txt",
+  "dependencies": {
+    "amazon-ion": "0.13.0",
+    "six": "1.17.0"
+  }
+}

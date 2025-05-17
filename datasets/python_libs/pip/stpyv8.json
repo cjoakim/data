@@ -1,0 +1,6 @@
+{
+  "libname": "stpyv8",
+  "libvers": "13.1.201.22",
+  "infile": "data/pip/stpyv8.txt",
+  "dependencies": {}
+}

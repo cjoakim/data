@@ -1,0 +1,31 @@
+{
+  "libname": "tsfresh",
+  "libvers": "0.21.0",
+  "infile": "data/pip/tsfresh.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "cloudpickle": "3.1.1",
+    "idna": "3.10",
+    "joblib": "1.5.0",
+    "llvmlite": "0.44.0",
+    "numba": "0.61.2",
+    "numpy": "2.2.5",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "patsy": "1.0.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2025.2",
+    "pywavelets": "1.8.0",
+    "requests": "2.32.3",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.2",
+    "six": "1.17.0",
+    "statsmodels": "0.14.4",
+    "stumpy": "1.13.0",
+    "threadpoolctl": "3.6.0",
+    "tqdm": "4.67.1",
+    "tzdata": "2025.2",
+    "urllib3": "2.4.0"
+  }
+}

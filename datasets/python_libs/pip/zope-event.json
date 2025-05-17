@@ -1,0 +1,6 @@
+{
+  "libname": "zope-event",
+  "libvers": "5.0",
+  "infile": "data/pip/zope-event.txt",
+  "dependencies": {}
+}

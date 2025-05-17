@@ -1,0 +1,6 @@
+{
+  "libname": "lib",
+  "libvers": "4.0.0",
+  "infile": "data/pip/lib.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "chialisp-stdlib",
+  "libvers": "0.1.1",
+  "infile": "data/pip/chialisp-stdlib.txt",
+  "dependencies": {
+    "importlib-resources": "6.5.2"
+  }
+}

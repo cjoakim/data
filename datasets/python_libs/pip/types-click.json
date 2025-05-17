@@ -1,0 +1,6 @@
+{
+  "libname": "types-click",
+  "libvers": "7.1.8",
+  "infile": "data/pip/types-click.txt",
+  "dependencies": {}
+}

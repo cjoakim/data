@@ -1,0 +1,6 @@
+{
+  "libname": "json5",
+  "libvers": "0.12.0",
+  "infile": "data/pip/json5.txt",
+  "dependencies": {}
+}

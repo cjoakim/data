@@ -1,0 +1,6 @@
+{
+  "libname": "python-monkey-business",
+  "libvers": "1.1.0",
+  "infile": "data/pip/python-monkey-business.txt",
+  "dependencies": {}
+}

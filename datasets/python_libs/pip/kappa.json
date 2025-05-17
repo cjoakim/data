@@ -1,0 +1,17 @@
+{
+  "libname": "kappa",
+  "libvers": "0.7.0",
+  "infile": "data/pip/kappa.txt",
+  "dependencies": {
+    "boto3": "1.38.10",
+    "botocore": "1.38.10",
+    "click": "8.1.8",
+    "jmespath": "1.0.1",
+    "placebo": "0.10.0",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.2",
+    "s3transfer": "0.12.0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

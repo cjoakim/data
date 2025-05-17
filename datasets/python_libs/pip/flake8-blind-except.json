@@ -1,0 +1,6 @@
+{
+  "libname": "flake8-blind-except",
+  "libvers": "0.2.1",
+  "infile": "data/pip/flake8-blind-except.txt",
+  "dependencies": {}
+}

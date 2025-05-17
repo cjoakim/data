@@ -1,0 +1,13 @@
+{
+  "libname": "elasticsearch-dbapi",
+  "libvers": "0.2.11",
+  "infile": "data/pip/elasticsearch-dbapi.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "elasticsearch": "7.13.4",
+    "packaging": "25.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2",
+    "urllib3": "1.26.20"
+  }
+}

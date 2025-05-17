@@ -1,0 +1,6 @@
+{
+  "libname": "pycurl",
+  "libvers": "7.45.6",
+  "infile": "data/pip/pycurl.txt",
+  "dependencies": {}
+}

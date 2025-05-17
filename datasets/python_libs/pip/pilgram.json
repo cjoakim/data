@@ -1,0 +1,8 @@
+{
+  "libname": "pilgram",
+  "libvers": "1.2.1",
+  "infile": "data/pip/pilgram.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

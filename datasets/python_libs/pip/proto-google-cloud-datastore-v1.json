@@ -1,0 +1,16 @@
+{
+  "libname": "proto-google-cloud-datastore-v1",
+  "libvers": "0.90.4",
+  "infile": "data/pip/proto-google-cloud-datastore-v1.txt",
+  "dependencies": {
+    "googleapis-common-protos": "1.70.0",
+    "httplib2": "0.22.0",
+    "oauth2client": "3.0.0",
+    "protobuf": "6.30.2",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pyparsing": "3.2.3",
+    "rsa": "4.9.1",
+    "six": "1.17.0"
+  }
+}

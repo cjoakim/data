@@ -1,0 +1,14 @@
+{
+  "libname": "fixit",
+  "libvers": "2.1.0",
+  "infile": "data/pip/fixit.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "libcst": "1.7.0",
+    "moreorless": "0.5.0",
+    "packaging": "25.0",
+    "pathspec": "0.12.1",
+    "pyyaml": "6.0.2",
+    "trailrunner": "1.4.0"
+  }
+}

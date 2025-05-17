@@ -1,0 +1,6 @@
+{
+  "libname": "listcrunch",
+  "libvers": "1.0.1",
+  "infile": "data/pip/listcrunch.txt",
+  "dependencies": {}
+}

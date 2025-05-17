@@ -1,0 +1,8 @@
+{
+  "libname": "segtok",
+  "libvers": "1.5.11",
+  "infile": "data/pip/segtok.txt",
+  "dependencies": {
+    "regex": "2024.11.6"
+  }
+}

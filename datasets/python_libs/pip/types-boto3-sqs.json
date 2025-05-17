@@ -1,0 +1,6 @@
+{
+  "libname": "types-boto3-sqs",
+  "libvers": "1.38.0",
+  "infile": "data/pip/types-boto3-sqs.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,12 @@
+{
+  "libname": "clickhouse-connect",
+  "libvers": "0.8.17",
+  "infile": "data/pip/clickhouse-connect.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "lz4": "4.4.4",
+    "pytz": "2025.2",
+    "urllib3": "2.4.0",
+    "zstandard": "0.23.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "duckdb-engine",
+  "libvers": "0.17.0",
+  "infile": "data/pip/duckdb-engine.txt",
+  "dependencies": {
+    "duckdb": "1.2.2",
+    "packaging": "25.0",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

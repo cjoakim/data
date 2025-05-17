@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-pyindex",
+  "libvers": "1.0.9",
+  "infile": "data/pip/nvidia-pyindex.txt",
+  "dependencies": {}
+}

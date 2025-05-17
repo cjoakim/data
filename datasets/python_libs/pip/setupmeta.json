@@ -1,0 +1,6 @@
+{
+  "libname": "setupmeta",
+  "libvers": "3.8.0",
+  "infile": "data/pip/setupmeta.txt",
+  "dependencies": {}
+}

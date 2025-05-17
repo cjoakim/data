@@ -1,0 +1,9 @@
+{
+  "libname": "pymavlink",
+  "libvers": "2.4.43",
+  "infile": "data/pip/pymavlink.txt",
+  "dependencies": {
+    "future": "1.0.0",
+    "lxml": "5.4.0"
+  }
+}

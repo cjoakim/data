@@ -1,0 +1,8 @@
+{
+  "libname": "aws-kinesis-agg",
+  "libvers": "1.2.3",
+  "infile": "data/pip/aws-kinesis-agg.txt",
+  "dependencies": {
+    "protobuf": "6.30.2"
+  }
+}

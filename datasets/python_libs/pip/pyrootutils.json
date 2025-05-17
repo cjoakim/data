@@ -1,0 +1,8 @@
+{
+  "libname": "pyrootutils",
+  "libvers": "1.0.4",
+  "infile": "data/pip/pyrootutils.txt",
+  "dependencies": {
+    "python-dotenv": "1.1.0"
+  }
+}

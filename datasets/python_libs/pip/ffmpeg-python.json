@@ -1,0 +1,8 @@
+{
+  "libname": "ffmpeg-python",
+  "libvers": "0.2.0",
+  "infile": "data/pip/ffmpeg-python.txt",
+  "dependencies": {
+    "future": "1.0.0"
+  }
+}

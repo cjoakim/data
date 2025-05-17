@@ -1,0 +1,6 @@
+{
+  "libname": "nh3",
+  "libvers": "0.2.21",
+  "infile": "data/pip/nh3.txt",
+  "dependencies": {}
+}

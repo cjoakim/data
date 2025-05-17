@@ -1,0 +1,6 @@
+{
+  "libname": "libretranslatepy",
+  "libvers": "2.1.4",
+  "infile": "data/pip/libretranslatepy.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "sqlalchemy-hana",
+  "libvers": "3.0.2",
+  "infile": "data/pip/sqlalchemy-hana.txt",
+  "dependencies": {
+    "hdbcli": "2.24.24",
+    "sqlalchemy": "2.0.40",
+    "typing-extensions": "4.13.2"
+  }
+}

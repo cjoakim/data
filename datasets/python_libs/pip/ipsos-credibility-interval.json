@@ -1,0 +1,9 @@
+{
+  "libname": "ipsos-credibility-interval",
+  "libvers": "0.0.3",
+  "infile": "data/pip/ipsos-credibility-interval.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "murmurhash",
+  "libvers": "1.0.12",
+  "infile": "data/pip/murmurhash.txt",
+  "dependencies": {}
+}

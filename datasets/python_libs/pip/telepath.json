@@ -1,0 +1,6 @@
+{
+  "libname": "telepath",
+  "libvers": "0.3.1",
+  "infile": "data/pip/telepath.txt",
+  "dependencies": {}
+}

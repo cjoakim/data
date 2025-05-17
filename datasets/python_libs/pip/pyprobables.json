@@ -1,0 +1,6 @@
+{
+  "libname": "pyprobables",
+  "libvers": "0.6.1",
+  "infile": "data/pip/pyprobables.txt",
+  "dependencies": {}
+}

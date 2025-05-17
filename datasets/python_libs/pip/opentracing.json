@@ -1,0 +1,6 @@
+{
+  "libname": "opentracing",
+  "libvers": "2.4.0",
+  "infile": "data/pip/opentracing.txt",
+  "dependencies": {}
+}

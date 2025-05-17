@@ -1,0 +1,9 @@
+{
+  "libname": "pyamg",
+  "libvers": "5.2.1",
+  "infile": "data/pip/pyamg.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

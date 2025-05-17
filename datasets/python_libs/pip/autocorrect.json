@@ -1,0 +1,6 @@
+{
+  "libname": "autocorrect",
+  "libvers": "2.6.1",
+  "infile": "data/pip/autocorrect.txt",
+  "dependencies": {}
+}

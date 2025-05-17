@@ -1,0 +1,8 @@
+{
+  "libname": "iniparse",
+  "libvers": "0.5",
+  "infile": "data/pip/iniparse.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

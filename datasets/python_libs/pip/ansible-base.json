@@ -1,0 +1,14 @@
+{
+  "libname": "ansible-base",
+  "libvers": "2.10.17",
+  "infile": "data/pip/ansible-base.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2",
+    "packaging": "25.0",
+    "pycparser": "2.22",
+    "pyyaml": "6.0.2"
+  }
+}

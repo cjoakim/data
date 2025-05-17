@@ -1,0 +1,6 @@
+{
+  "libname": "bagit",
+  "libvers": "1.8.1",
+  "infile": "data/pip/bagit.txt",
+  "dependencies": {}
+}

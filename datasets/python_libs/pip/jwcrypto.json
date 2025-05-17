@@ -1,0 +1,11 @@
+{
+  "libname": "jwcrypto",
+  "libvers": "1.5.6",
+  "infile": "data/pip/jwcrypto.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "cryptography": "44.0.3",
+    "pycparser": "2.22",
+    "typing-extensions": "4.13.2"
+  }
+}

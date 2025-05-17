@@ -1,0 +1,6 @@
+{
+  "libname": "iso-week-date",
+  "libvers": "1.6.0",
+  "infile": "data/pip/iso-week-date.txt",
+  "dependencies": {}
+}

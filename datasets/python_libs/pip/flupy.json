@@ -1,0 +1,8 @@
+{
+  "libname": "flupy",
+  "libvers": "1.2.1",
+  "infile": "data/pip/flupy.txt",
+  "dependencies": {
+    "typing-extensions": "4.13.2"
+  }
+}

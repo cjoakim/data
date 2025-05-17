@@ -1,0 +1,9 @@
+{
+  "libname": "pyunpack",
+  "libvers": "0.3",
+  "infile": "data/pip/pyunpack.txt",
+  "dependencies": {
+    "easyprocess": "1.1",
+    "entrypoint2": "1.1"
+  }
+}

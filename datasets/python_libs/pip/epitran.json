@@ -1,0 +1,21 @@
+{
+  "libname": "epitran",
+  "libvers": "1.26.0",
+  "infile": "data/pip/epitran.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "editdistance": "0.8.1",
+    "idna": "3.10",
+    "jamo": "0.4.1",
+    "marisa-trie": "1.2.1",
+    "munkres": "1.1.4",
+    "numpy": "2.2.5",
+    "panphon": "0.21.2",
+    "pyyaml": "6.0.2",
+    "regex": "2024.11.6",
+    "requests": "2.32.3",
+    "unicodecsv": "0.14.1",
+    "urllib3": "2.4.0"
+  }
+}

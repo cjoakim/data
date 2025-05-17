@@ -1,0 +1,6 @@
+{
+  "libname": "pypi",
+  "libvers": "2.1",
+  "infile": "data/pip/pypi.txt",
+  "dependencies": {}
+}

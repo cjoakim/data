@@ -1,0 +1,13 @@
+{
+  "libname": "cybox",
+  "libvers": "2.1.0.21",
+  "infile": "data/pip/cybox.txt",
+  "dependencies": {
+    "lxml": "5.4.0",
+    "mixbox": "1.0.5",
+    "ordered-set": "4.1.0",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "weakrefmethod": "1.0.3"
+  }
+}

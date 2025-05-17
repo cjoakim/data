@@ -1,0 +1,12 @@
+{
+  "libname": "ovsdbapp",
+  "libvers": "2.11.0",
+  "infile": "data/pip/ovsdbapp.txt",
+  "dependencies": {
+    "fixtures": "4.2.5",
+    "netaddr": "1.3.0",
+    "ovs": "3.5.0",
+    "pbr": "6.1.1",
+    "sortedcontainers": "2.4.0"
+  }
+}

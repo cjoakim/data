@@ -1,0 +1,17 @@
+{
+  "libname": "pyobvector",
+  "libvers": "0.2.11",
+  "infile": "data/pip/pyobvector.txt",
+  "dependencies": {
+    "aiomysql": "0.2.0",
+    "annotated-types": "0.7.0",
+    "numpy": "1.26.4",
+    "pydantic": "2.11.4",
+    "pydantic-core": "2.33.2",
+    "pymysql": "1.1.1",
+    "sqlalchemy": "2.0.40",
+    "sqlglot": "26.16.4",
+    "typing-extensions": "4.13.2",
+    "typing-inspection": "0.4.0"
+  }
+}

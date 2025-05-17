@@ -1,0 +1,9 @@
+{
+  "libname": "cheroot",
+  "libvers": "10.0.1",
+  "infile": "data/pip/cheroot.txt",
+  "dependencies": {
+    "jaraco-functools": "4.1.0",
+    "more-itertools": "10.7.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "libname": "django-heroku",
+  "libvers": "0.3.1",
+  "infile": "data/pip/django-heroku.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "dj-database-url": "2.3.0",
+    "django": "5.2",
+    "psycopg2": "2.9.10",
+    "sqlparse": "0.5.3",
+    "typing-extensions": "4.13.2",
+    "whitenoise": "6.9.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "icmplib",
+  "libvers": "3.0.4",
+  "infile": "data/pip/icmplib.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "markdown-inline-graphviz-extension",
+  "libvers": "1.1.2",
+  "infile": "data/pip/markdown-inline-graphviz-extension.txt",
+  "dependencies": {
+    "markdown": "3.8"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "regex",
+  "libvers": "2024.11.6",
+  "infile": "data/pip/regex.txt",
+  "dependencies": {}
+}

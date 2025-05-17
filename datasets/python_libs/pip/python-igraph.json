@@ -1,0 +1,9 @@
+{
+  "libname": "python-igraph",
+  "libvers": "0.11.8",
+  "infile": "data/pip/python-igraph.txt",
+  "dependencies": {
+    "igraph": "0.11.8",
+    "texttable": "1.7.0"
+  }
+}

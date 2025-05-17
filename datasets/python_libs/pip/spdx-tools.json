@@ -1,0 +1,18 @@
+{
+  "libname": "spdx-tools",
+  "libvers": "0.8.3",
+  "infile": "data/pip/spdx-tools.txt",
+  "dependencies": {
+    "beartype": "0.20.2",
+    "boolean-py": "5.0",
+    "click": "8.1.8",
+    "license-expression": "30.4.1",
+    "ply": "3.11",
+    "pyparsing": "3.2.3",
+    "pyyaml": "6.0.2",
+    "rdflib": "7.1.4",
+    "semantic-version": "2.10.0",
+    "uritools": "5.0.0",
+    "xmltodict": "0.14.2"
+  }
+}

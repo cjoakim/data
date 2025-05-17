@@ -1,0 +1,17 @@
+{
+  "libname": "python-arango",
+  "libvers": "8.1.6",
+  "infile": "data/pip/python-arango.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "idna": "3.10",
+    "importlib-metadata": "8.7.0",
+    "packaging": "25.0",
+    "pyjwt": "2.10.1",
+    "requests": "2.32.3",
+    "requests-toolbelt": "1.0.0",
+    "urllib3": "2.4.0",
+    "zipp": "3.21.0"
+  }
+}

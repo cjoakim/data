@@ -1,0 +1,18 @@
+{
+  "libname": "stups-zign",
+  "libvers": "1.2",
+  "infile": "data/pip/stups-zign.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "clickclick": "20.10.2",
+    "dnspython": "2.7.0",
+    "idna": "3.10",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.3",
+    "stups-cli-support": "1.1.22",
+    "stups-tokens": "1.1.19",
+    "urllib3": "2.4.0"
+  }
+}

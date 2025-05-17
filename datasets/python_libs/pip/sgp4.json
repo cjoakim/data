@@ -1,0 +1,6 @@
+{
+  "libname": "sgp4",
+  "libvers": "2.24",
+  "infile": "data/pip/sgp4.txt",
+  "dependencies": {}
+}

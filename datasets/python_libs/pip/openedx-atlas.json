@@ -1,0 +1,6 @@
+{
+  "libname": "openedx-atlas",
+  "libvers": "0.7.0",
+  "infile": "data/pip/openedx-atlas.txt",
+  "dependencies": {}
+}

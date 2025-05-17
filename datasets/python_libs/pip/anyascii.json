@@ -1,0 +1,6 @@
+{
+  "libname": "anyascii",
+  "libvers": "0.3.2",
+  "infile": "data/pip/anyascii.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "base64io",
+  "libvers": "1.0.3",
+  "infile": "data/pip/base64io.txt",
+  "dependencies": {}
+}

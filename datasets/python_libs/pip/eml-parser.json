@@ -1,0 +1,11 @@
+{
+  "libname": "eml-parser",
+  "libvers": "2.0.0",
+  "infile": "data/pip/eml-parser.txt",
+  "dependencies": {
+    "charset-normalizer": "3.4.2",
+    "publicsuffixlist": "1.0.2.20250503",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

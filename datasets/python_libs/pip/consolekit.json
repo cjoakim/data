@@ -1,0 +1,15 @@
+{
+  "libname": "consolekit",
+  "libvers": "1.7.2",
+  "infile": "data/pip/consolekit.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "deprecation": "2.1.0",
+    "deprecation-alias": "0.4.0",
+    "domdf-python-tools": "3.10.0",
+    "mistletoe": "1.4.0",
+    "natsort": "8.4.0",
+    "packaging": "25.0",
+    "typing-extensions": "4.13.2"
+  }
+}

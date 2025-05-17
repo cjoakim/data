@@ -1,0 +1,6 @@
+{
+  "libname": "gamsapi",
+  "libvers": "49.5.0",
+  "infile": "data/pip/gamsapi.txt",
+  "dependencies": {}
+}

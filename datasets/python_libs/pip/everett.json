@@ -1,0 +1,6 @@
+{
+  "libname": "everett",
+  "libvers": "3.4.0",
+  "infile": "data/pip/everett.txt",
+  "dependencies": {}
+}

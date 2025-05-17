@@ -1,0 +1,9 @@
+{
+  "libname": "marshmallow-oneofschema",
+  "libvers": "3.1.1",
+  "infile": "data/pip/marshmallow-oneofschema.txt",
+  "dependencies": {
+    "marshmallow": "3.26.1",
+    "packaging": "25.0"
+  }
+}

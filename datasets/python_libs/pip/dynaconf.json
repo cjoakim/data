@@ -1,0 +1,6 @@
+{
+  "libname": "dynaconf",
+  "libvers": "3.2.11",
+  "infile": "data/pip/dynaconf.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "polyline",
+  "libvers": "2.0.2",
+  "infile": "data/pip/polyline.txt",
+  "dependencies": {}
+}

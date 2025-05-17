@@ -1,0 +1,12 @@
+{
+  "libname": "recognizers-text-choice",
+  "libvers": "1.0.2a2",
+  "infile": "data/pip/recognizers-text-choice.txt",
+  "dependencies": {
+    "emoji": "2.14.1",
+    "grapheme": "0.6.0",
+    "multipledispatch": "1.0.0",
+    "recognizers-text": "1.0.2a2",
+    "regex": "2024.11.6"
+  }
+}

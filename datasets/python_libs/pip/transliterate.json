@@ -1,0 +1,8 @@
+{
+  "libname": "transliterate",
+  "libvers": "1.10.2",
+  "infile": "data/pip/transliterate.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "uuid-utils",
+  "libvers": "0.10.0",
+  "infile": "data/pip/uuid-utils.txt",
+  "dependencies": {}
+}

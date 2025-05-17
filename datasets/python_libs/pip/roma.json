@@ -1,0 +1,6 @@
+{
+  "libname": "roma",
+  "libvers": "1.5.2.1",
+  "infile": "data/pip/roma.txt",
+  "dependencies": {}
+}

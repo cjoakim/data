@@ -1,0 +1,8 @@
+{
+  "libname": "setuptools-markdown",
+  "libvers": "0.4.1",
+  "infile": "data/pip/setuptools-markdown.txt",
+  "dependencies": {
+    "pypandoc": "1.15"
+  }
+}

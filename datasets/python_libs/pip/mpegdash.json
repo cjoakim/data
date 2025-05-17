@@ -1,0 +1,6 @@
+{
+  "libname": "mpegdash",
+  "libvers": "0.4.0",
+  "infile": "data/pip/mpegdash.txt",
+  "dependencies": {}
+}

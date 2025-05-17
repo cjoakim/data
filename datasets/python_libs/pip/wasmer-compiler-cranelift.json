@@ -1,0 +1,6 @@
+{
+  "libname": "wasmer-compiler-cranelift",
+  "libvers": "1.1.0",
+  "infile": "data/pip/wasmer-compiler-cranelift.txt",
+  "dependencies": {}
+}

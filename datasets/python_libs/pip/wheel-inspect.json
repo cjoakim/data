@@ -1,0 +1,18 @@
+{
+  "libname": "wheel-inspect",
+  "libvers": "1.7.2",
+  "infile": "data/pip/wheel-inspect.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "deprecated": "1.2.18",
+    "docutils": "0.21.2",
+    "entry-points-txt": "0.2.1",
+    "headerparser": "0.5.2",
+    "nh3": "0.2.21",
+    "packaging": "25.0",
+    "pygments": "2.19.1",
+    "readme-renderer": "44.0",
+    "wheel-filename": "1.4.2",
+    "wrapt": "1.17.2"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pylink-square",
+  "libvers": "1.6.0",
+  "infile": "data/pip/pylink-square.txt",
+  "dependencies": {
+    "psutil": "7.0.0",
+    "six": "1.17.0"
+  }
+}

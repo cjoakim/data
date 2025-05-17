@@ -1,0 +1,9 @@
+{
+  "libname": "raylib",
+  "libvers": "5.5.0.2",
+  "infile": "data/pip/raylib.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "pycparser": "2.22"
+  }
+}

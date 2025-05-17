@@ -1,0 +1,9 @@
+{
+  "libname": "sure",
+  "libvers": "2.0.1",
+  "infile": "data/pip/sure.txt",
+  "dependencies": {
+    "mock": "5.2.0",
+    "six": "1.17.0"
+  }
+}

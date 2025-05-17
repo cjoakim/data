@@ -1,0 +1,6 @@
+{
+  "libname": "pymem",
+  "libvers": "1.14.0",
+  "infile": "data/pip/pymem.txt",
+  "dependencies": {}
+}

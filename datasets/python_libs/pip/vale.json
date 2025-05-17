@@ -1,0 +1,6 @@
+{
+  "libname": "vale",
+  "libvers": "3.11.2.0",
+  "infile": "data/pip/vale.txt",
+  "dependencies": {}
+}

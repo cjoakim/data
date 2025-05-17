@@ -1,0 +1,6 @@
+{
+  "libname": "nvidia-nvtiff-cu12",
+  "libvers": "0.5.0.67",
+  "infile": "data/pip/nvidia-nvtiff-cu12.txt",
+  "dependencies": {}
+}

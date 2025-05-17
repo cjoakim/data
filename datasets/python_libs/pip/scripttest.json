@@ -1,0 +1,6 @@
+{
+  "libname": "scripttest",
+  "libvers": "2.0.post1",
+  "infile": "data/pip/scripttest.txt",
+  "dependencies": {}
+}

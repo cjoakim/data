@@ -1,0 +1,8 @@
+{
+  "libname": "arraykit",
+  "libvers": "0.10.0",
+  "infile": "data/pip/arraykit.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

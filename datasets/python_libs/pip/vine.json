@@ -1,0 +1,6 @@
+{
+  "libname": "vine",
+  "libvers": "5.1.0",
+  "infile": "data/pip/vine.txt",
+  "dependencies": {}
+}

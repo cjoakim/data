@@ -1,0 +1,6 @@
+{
+  "libname": "raven",
+  "libvers": "6.10.0",
+  "infile": "data/pip/raven.txt",
+  "dependencies": {}
+}

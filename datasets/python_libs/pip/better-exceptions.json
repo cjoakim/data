@@ -1,0 +1,6 @@
+{
+  "libname": "better-exceptions",
+  "libvers": "0.3.3",
+  "infile": "data/pip/better-exceptions.txt",
+  "dependencies": {}
+}

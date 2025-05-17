@@ -1,0 +1,6 @@
+{
+  "libname": "duet",
+  "libvers": "0.2.9",
+  "infile": "data/pip/duet.txt",
+  "dependencies": {}
+}

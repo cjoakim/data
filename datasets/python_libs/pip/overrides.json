@@ -1,0 +1,6 @@
+{
+  "libname": "overrides",
+  "libvers": "7.7.0",
+  "infile": "data/pip/overrides.txt",
+  "dependencies": {}
+}

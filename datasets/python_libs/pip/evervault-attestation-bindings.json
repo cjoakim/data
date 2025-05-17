@@ -1,0 +1,6 @@
+{
+  "libname": "evervault-attestation-bindings",
+  "libvers": "0.4.0",
+  "infile": "data/pip/evervault-attestation-bindings.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "kdepy",
+  "libvers": "1.1.12",
+  "infile": "data/pip/kdepy.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}

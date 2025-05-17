@@ -1,0 +1,20 @@
+{
+  "libname": "mypyllant",
+  "libvers": "0.9.0",
+  "infile": "data/pip/mypyllant.txt",
+  "dependencies": {
+    "aiohappyeyeballs": "2.6.1",
+    "aiohttp": "3.11.18",
+    "aiosignal": "1.3.2",
+    "annotated-types": "0.7.0",
+    "attrs": "25.3.0",
+    "frozenlist": "1.6.0",
+    "idna": "3.10",
+    "multidict": "6.4.3",
+    "propcache": "0.3.1",
+    "pydantic": "2.10.6",
+    "pydantic-core": "2.27.2",
+    "typing-extensions": "4.13.2",
+    "yarl": "1.20.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "pid",
+  "libvers": "3.0.4",
+  "infile": "data/pip/pid.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "libname": "svgpathtools",
+  "libvers": "1.6.1",
+  "infile": "data/pip/svgpathtools.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "svgwrite": "1.4.3"
+  }
+}

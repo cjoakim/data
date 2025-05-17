@@ -1,0 +1,12 @@
+{
+  "libname": "zhinst-utils",
+  "libvers": "0.7.0",
+  "infile": "data/pip/zhinst-utils.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pyyaml": "6.0.2",
+    "typing-extensions": "4.13.2",
+    "zhinst-core": "25.4.0.628",
+    "zhinst-timing-models": "25.4.0"
+  }
+}

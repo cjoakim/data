@@ -1,0 +1,9 @@
+{
+  "libname": "liquidpy",
+  "libvers": "0.8.4",
+  "infile": "data/pip/liquidpy.txt",
+  "dependencies": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.2"
+  }
+}

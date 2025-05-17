@@ -1,0 +1,13 @@
+{
+  "libname": "aws-s3-access-grants-boto3-plugin",
+  "libvers": "1.2.0",
+  "infile": "data/pip/aws-s3-access-grants-boto3-plugin.txt",
+  "dependencies": {
+    "botocore": "1.38.10",
+    "cacheout": "0.16.0",
+    "jmespath": "1.0.1",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

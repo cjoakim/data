@@ -1,0 +1,6 @@
+{
+  "libname": "types-cryptography",
+  "libvers": "3.3.23.2",
+  "infile": "data/pip/types-cryptography.txt",
+  "dependencies": {}
+}

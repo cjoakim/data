@@ -1,0 +1,6 @@
+{
+  "libname": "ip2location",
+  "libvers": "8.10.5",
+  "infile": "data/pip/ip2location.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,14 @@
+{
+  "libname": "ifcopenshell",
+  "libvers": "0.8.2",
+  "infile": "data/pip/ifcopenshell.txt",
+  "dependencies": {
+    "isodate": "0.7.2",
+    "lark": "1.2.2",
+    "numpy": "2.2.5",
+    "python-dateutil": "2.9.0.post0",
+    "shapely": "2.1.0",
+    "six": "1.17.0",
+    "typing-extensions": "4.13.2"
+  }
+}

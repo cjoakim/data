@@ -1,0 +1,8 @@
+{
+  "libname": "azure-cosmosdb-nspkg",
+  "libvers": "2.0.2",
+  "infile": "data/pip/azure-cosmosdb-nspkg.txt",
+  "dependencies": {
+    "azure-nspkg": "3.0.2"
+  }
+}

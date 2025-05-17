@@ -1,0 +1,6 @@
+{
+  "libname": "piccata",
+  "libvers": "2.0.3",
+  "infile": "data/pip/piccata.txt",
+  "dependencies": {}
+}

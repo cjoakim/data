@@ -1,0 +1,9 @@
+{
+  "libname": "beautifulsoup4",
+  "libvers": "4.13.4",
+  "infile": "data/pip/beautifulsoup4.txt",
+  "dependencies": {
+    "soupsieve": "2.7",
+    "typing-extensions": "4.13.2"
+  }
+}

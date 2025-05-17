@@ -1,0 +1,10 @@
+{
+  "libname": "rchitect",
+  "libvers": "0.4.8",
+  "infile": "data/pip/rchitect.txt",
+  "dependencies": {
+    "cffi": "1.17.1",
+    "packaging": "25.0",
+    "pycparser": "2.22"
+  }
+}

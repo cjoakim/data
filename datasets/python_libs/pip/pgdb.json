@@ -1,0 +1,8 @@
+{
+  "libname": "pgdb",
+  "libvers": "0.0.11",
+  "infile": "data/pip/pgdb.txt",
+  "dependencies": {
+    "psycopg2-binary": "2.9.10"
+  }
+}

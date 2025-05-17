@@ -1,0 +1,8 @@
+{
+  "libname": "patsy",
+  "libvers": "1.0.1",
+  "infile": "data/pip/patsy.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

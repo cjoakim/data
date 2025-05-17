@@ -1,0 +1,8 @@
+{
+  "libname": "fastexcel",
+  "libvers": "0.14.0",
+  "infile": "data/pip/fastexcel.txt",
+  "dependencies": {
+    "pyarrow": "20.0.0"
+  }
+}

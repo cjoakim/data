@@ -1,0 +1,8 @@
+{
+  "libname": "jpype1",
+  "libvers": "1.5.2",
+  "infile": "data/pip/jpype1.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

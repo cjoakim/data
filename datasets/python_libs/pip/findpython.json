@@ -1,0 +1,8 @@
+{
+  "libname": "findpython",
+  "libvers": "0.6.3",
+  "infile": "data/pip/findpython.txt",
+  "dependencies": {
+    "packaging": "25.0"
+  }
+}

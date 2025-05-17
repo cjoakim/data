@@ -1,0 +1,9 @@
+{
+  "libname": "graphframes-latest",
+  "libvers": "0.8.3",
+  "infile": "data/pip/graphframes-latest.txt",
+  "dependencies": {
+    "nose": "1.3.7",
+    "numpy": "2.2.5"
+  }
+}

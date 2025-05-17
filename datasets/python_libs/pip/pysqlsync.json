@@ -1,0 +1,15 @@
+{
+  "libname": "pysqlsync",
+  "libvers": "0.8.2",
+  "infile": "data/pip/pysqlsync.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "json-strong-typing": "0.3.8",
+    "jsonschema": "4.23.0",
+    "jsonschema-specifications": "2025.4.1",
+    "referencing": "0.36.2",
+    "rpds-py": "0.24.0",
+    "truststore": "0.10.1",
+    "typing-extensions": "4.13.2"
+  }
+}

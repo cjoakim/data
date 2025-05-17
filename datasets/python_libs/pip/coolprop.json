@@ -1,0 +1,6 @@
+{
+  "libname": "coolprop",
+  "libvers": "6.8.0",
+  "infile": "data/pip/coolprop.txt",
+  "dependencies": {}
+}

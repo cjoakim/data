@@ -1,0 +1,8 @@
+{
+  "libname": "uniplot",
+  "libvers": "0.19.0",
+  "infile": "data/pip/uniplot.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "salt",
+  "libvers": "3007.1",
+  "infile": "data/pip/salt.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "mdit-plain",
+  "libvers": "1.0.1",
+  "infile": "data/pip/mdit-plain.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "langcodes",
+  "libvers": "3.5.0",
+  "infile": "data/pip/langcodes.txt",
+  "dependencies": {
+    "language-data": "1.3.0",
+    "marisa-trie": "1.2.1"
+  }
+}

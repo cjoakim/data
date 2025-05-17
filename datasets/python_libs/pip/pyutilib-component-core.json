@@ -1,0 +1,8 @@
+{
+  "libname": "pyutilib-component-core",
+  "libvers": "4.6.4",
+  "infile": "data/pip/pyutilib-component-core.txt",
+  "dependencies": {
+    "six": "1.17.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "setuptools-odoo",
+  "libvers": "3.3",
+  "infile": "data/pip/setuptools-odoo.txt",
+  "dependencies": {
+    "packaging": "25.0",
+    "setuptools-scm": "8.3.1"
+  }
+}

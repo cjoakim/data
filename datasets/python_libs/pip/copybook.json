@@ -1,0 +1,8 @@
+{
+  "libname": "copybook",
+  "libvers": "1.0.16",
+  "infile": "data/pip/copybook.txt",
+  "dependencies": {
+    "pyparsing": "3.2.3"
+  }
+}

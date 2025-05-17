@@ -1,0 +1,8 @@
+{
+  "libname": "git-url-parse",
+  "libvers": "1.2.2",
+  "infile": "data/pip/git-url-parse.txt",
+  "dependencies": {
+    "pbr": "6.1.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "libname": "positional-encodings",
+  "libvers": "6.0.4",
+  "infile": "data/pip/positional-encodings.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

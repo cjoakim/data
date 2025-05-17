@@ -1,0 +1,6 @@
+{
+  "libname": "django-admin-env-notice",
+  "libvers": "1.0.1",
+  "infile": "data/pip/django-admin-env-notice.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "sudachipy",
+  "libvers": "0.6.10",
+  "infile": "data/pip/sudachipy.txt",
+  "dependencies": {}
+}

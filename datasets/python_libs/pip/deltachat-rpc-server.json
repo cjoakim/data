@@ -1,0 +1,6 @@
+{
+  "libname": "deltachat-rpc-server",
+  "libvers": "1.159.3",
+  "infile": "data/pip/deltachat-rpc-server.txt",
+  "dependencies": {}
+}

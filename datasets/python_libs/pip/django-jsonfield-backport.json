@@ -1,0 +1,10 @@
+{
+  "libname": "django-jsonfield-backport",
+  "libvers": "1.0.5",
+  "infile": "data/pip/django-jsonfield-backport.txt",
+  "dependencies": {
+    "asgiref": "3.8.1",
+    "django": "5.2",
+    "sqlparse": "0.5.3"
+  }
+}

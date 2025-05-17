@@ -1,0 +1,8 @@
+{
+  "libname": "robotpy-cppheaderparser",
+  "libvers": "5.1.2",
+  "infile": "data/pip/robotpy-cppheaderparser.txt",
+  "dependencies": {
+    "ply": "3.11"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "libname": "cyvcf2",
+  "libvers": "0.31.1",
+  "infile": "data/pip/cyvcf2.txt",
+  "dependencies": {
+    "click": "8.1.8",
+    "coloredlogs": "15.0.1",
+    "humanfriendly": "10.0",
+    "numpy": "2.2.5"
+  }
+}

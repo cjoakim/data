@@ -1,0 +1,6 @@
+{
+  "libname": "distance",
+  "libvers": "0.1.3",
+  "infile": "data/pip/distance.txt",
+  "dependencies": {}
+}

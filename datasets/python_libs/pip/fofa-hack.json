@@ -1,0 +1,6 @@
+{
+  "libname": "fofa-hack",
+  "libvers": "2.5.2",
+  "infile": "data/pip/fofa-hack.txt",
+  "dependencies": {}
+}

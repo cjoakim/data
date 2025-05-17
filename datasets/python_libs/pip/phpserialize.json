@@ -1,0 +1,6 @@
+{
+  "libname": "phpserialize",
+  "libvers": "1.3",
+  "infile": "data/pip/phpserialize.txt",
+  "dependencies": {}
+}

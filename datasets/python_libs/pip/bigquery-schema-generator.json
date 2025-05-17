@@ -1,0 +1,6 @@
+{
+  "libname": "bigquery-schema-generator",
+  "libvers": "1.6.1",
+  "infile": "data/pip/bigquery-schema-generator.txt",
+  "dependencies": {}
+}

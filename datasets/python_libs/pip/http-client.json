@@ -1,0 +1,9 @@
+{
+  "libname": "http-client",
+  "libvers": "0.1.22",
+  "infile": "data/pip/http-client.txt",
+  "dependencies": {
+    "pycurl": "7.45.6",
+    "six": "1.17.0"
+  }
+}

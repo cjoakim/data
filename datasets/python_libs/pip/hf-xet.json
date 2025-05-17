@@ -1,0 +1,6 @@
+{
+  "libname": "hf-xet",
+  "libvers": "1.1.0",
+  "infile": "data/pip/hf-xet.txt",
+  "dependencies": {}
+}

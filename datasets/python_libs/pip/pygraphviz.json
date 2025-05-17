@@ -1,0 +1,6 @@
+{
+  "libname": "pygraphviz",
+  "libvers": "1.14",
+  "infile": "data/pip/pygraphviz.txt",
+  "dependencies": {}
+}

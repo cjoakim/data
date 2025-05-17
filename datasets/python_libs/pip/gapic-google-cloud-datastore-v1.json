@@ -1,0 +1,29 @@
+{
+  "libname": "gapic-google-cloud-datastore-v1",
+  "libvers": "0.90.4",
+  "infile": "data/pip/gapic-google-cloud-datastore-v1.txt",
+  "dependencies": {
+    "cachetools": "4.2.4",
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "dill": "0.2.9",
+    "future": "0.16.0",
+    "google-auth": "1.35.0",
+    "google-gax": "0.15.16",
+    "googleapis-common-protos[grpc]": "1.70.0",
+    "grpcio": "1.72.0rc1",
+    "httplib2": "0.22.0",
+    "idna": "3.10",
+    "oauth2client": "3.0.0",
+    "ply": "3.8",
+    "proto-google-cloud-datastore-v1[grpc]": "0.90.4",
+    "protobuf": "3.20.3",
+    "pyasn1": "0.6.1",
+    "pyasn1-modules": "0.4.2",
+    "pyparsing": "3.2.3",
+    "requests": "2.32.3",
+    "rsa": "4.9.1",
+    "six": "1.17.0",
+    "urllib3": "2.4.0"
+  }
+}

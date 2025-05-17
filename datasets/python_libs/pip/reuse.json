@@ -1,0 +1,18 @@
+{
+  "libname": "reuse",
+  "libvers": "5.0.2",
+  "infile": "data/pip/reuse.txt",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "binaryornot": "0.4.4",
+    "boolean-py": "5.0",
+    "chardet": "5.2.0",
+    "charset-normalizer": "3.4.2",
+    "click": "8.1.8",
+    "jinja2": "3.1.6",
+    "license-expression": "30.4.1",
+    "markupsafe": "3.0.2",
+    "python-debian": "1.0.1",
+    "tomlkit": "0.13.2"
+  }
+}

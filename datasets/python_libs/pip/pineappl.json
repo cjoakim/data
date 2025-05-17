@@ -1,0 +1,8 @@
+{
+  "libname": "pineappl",
+  "libvers": "0.8.7",
+  "infile": "data/pip/pineappl.txt",
+  "dependencies": {
+    "numpy": "2.2.5"
+  }
+}

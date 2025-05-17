@@ -1,0 +1,9 @@
+{
+  "libname": "opentelemetry-exporter-otlp-proto-common",
+  "libvers": "1.32.1",
+  "infile": "data/pip/opentelemetry-exporter-otlp-proto-common.txt",
+  "dependencies": {
+    "opentelemetry-proto": "1.32.1",
+    "protobuf": "5.29.4"
+  }
+}

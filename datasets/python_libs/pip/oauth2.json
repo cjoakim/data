@@ -1,0 +1,9 @@
+{
+  "libname": "oauth2",
+  "libvers": "1.9.0.post1",
+  "infile": "data/pip/oauth2.txt",
+  "dependencies": {
+    "httplib2": "0.22.0",
+    "pyparsing": "3.2.3"
+  }
+}

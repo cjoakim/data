@@ -1,0 +1,21 @@
+{
+  "libname": "blackjax",
+  "libvers": "1.2.5",
+  "infile": "data/pip/blackjax.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "chex": "0.1.89",
+    "etils[epy]": "1.12.2",
+    "fastprogress": "1.0.3",
+    "jax": "0.6.0",
+    "jaxlib": "0.6.0",
+    "jaxopt": "0.8.5",
+    "ml-dtypes": "0.5.1",
+    "numpy": "2.2.5",
+    "opt-einsum": "3.4.0",
+    "optax": "0.2.4",
+    "scipy": "1.15.2",
+    "toolz": "1.0.0",
+    "typing-extensions": "4.13.2"
+  }
+}

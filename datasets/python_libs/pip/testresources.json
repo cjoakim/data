@@ -1,0 +1,8 @@
+{
+  "libname": "testresources",
+  "libvers": "2.0.2",
+  "infile": "data/pip/testresources.txt",
+  "dependencies": {
+    "pbr": "6.1.1"
+  }
+}

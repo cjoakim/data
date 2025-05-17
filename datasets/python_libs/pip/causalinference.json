@@ -1,0 +1,6 @@
+{
+  "libname": "causalinference",
+  "libvers": "0.1.3",
+  "infile": "data/pip/causalinference.txt",
+  "dependencies": {}
+}

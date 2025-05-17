@@ -1,0 +1,6 @@
+{
+  "libname": "mypy-boto3-marketplace-deployment",
+  "libvers": "1.38.3",
+  "infile": "data/pip/mypy-boto3-marketplace-deployment.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "text2num",
+  "libvers": "2.5.2",
+  "infile": "data/pip/text2num.txt",
+  "dependencies": {}
+}

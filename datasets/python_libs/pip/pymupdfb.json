@@ -1,0 +1,6 @@
+{
+  "libname": "pymupdfb",
+  "libvers": "1.24.10",
+  "infile": "data/pip/pymupdfb.txt",
+  "dependencies": {}
+}

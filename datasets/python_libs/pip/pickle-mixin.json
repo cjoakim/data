@@ -1,0 +1,6 @@
+{
+  "libname": "pickle-mixin",
+  "libvers": "1.0.2",
+  "infile": "data/pip/pickle-mixin.txt",
+  "dependencies": {}
+}

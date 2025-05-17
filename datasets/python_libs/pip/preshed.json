@@ -1,0 +1,9 @@
+{
+  "libname": "preshed",
+  "libvers": "3.0.9",
+  "infile": "data/pip/preshed.txt",
+  "dependencies": {
+    "cymem": "2.0.11",
+    "murmurhash": "1.0.12"
+  }
+}

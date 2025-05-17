@@ -1,0 +1,6 @@
+{
+  "libname": "poyo",
+  "libvers": "0.5.0",
+  "infile": "data/pip/poyo.txt",
+  "dependencies": {}
+}

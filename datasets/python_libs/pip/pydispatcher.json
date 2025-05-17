@@ -1,0 +1,6 @@
+{
+  "libname": "pydispatcher",
+  "libvers": "2.0.7",
+  "infile": "data/pip/pydispatcher.txt",
+  "dependencies": {}
+}

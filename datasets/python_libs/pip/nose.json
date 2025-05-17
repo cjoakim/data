@@ -1,0 +1,6 @@
+{
+  "libname": "nose",
+  "libvers": "1.3.7",
+  "infile": "data/pip/nose.txt",
+  "dependencies": {}
+}

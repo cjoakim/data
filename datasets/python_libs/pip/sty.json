@@ -1,0 +1,6 @@
+{
+  "libname": "sty",
+  "libvers": "1.0.6",
+  "infile": "data/pip/sty.txt",
+  "dependencies": {}
+}

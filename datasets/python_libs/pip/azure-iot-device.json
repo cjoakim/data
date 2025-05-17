@@ -1,0 +1,19 @@
+{
+  "libname": "azure-iot-device",
+  "libvers": "2.14.0",
+  "infile": "data/pip/azure-iot-device.txt",
+  "dependencies": {
+    "certifi": "2025.4.26",
+    "charset-normalizer": "3.4.2",
+    "deprecation": "2.1.0",
+    "idna": "3.10",
+    "janus": "2.0.0",
+    "packaging": "25.0",
+    "paho-mqtt": "1.6.1",
+    "pysocks": "1.7.1",
+    "requests": "2.32.3",
+    "requests-unixsocket2": "1.0.0",
+    "typing-extensions": "4.13.2",
+    "urllib3": "2.4.0"
+  }
+}

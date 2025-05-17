@@ -1,0 +1,12 @@
+{
+  "libname": "pylama",
+  "libvers": "8.4.1",
+  "infile": "data/pip/pylama.txt",
+  "dependencies": {
+    "mccabe": "0.7.0",
+    "pycodestyle": "2.13.0",
+    "pydocstyle": "6.3.0",
+    "pyflakes": "3.3.2",
+    "snowballstemmer": "2.2.0"
+  }
+}

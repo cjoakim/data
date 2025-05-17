@@ -1,0 +1,6 @@
+{
+  "libname": "pytest-integration",
+  "libvers": "0.2.3",
+  "infile": "data/pip/pytest-integration.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "ply",
+  "libvers": "3.11",
+  "infile": "data/pip/ply.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+{
+  "libname": "backports-functools-lru-cache",
+  "libvers": "2.0.0",
+  "infile": "data/pip/backports-functools-lru-cache.txt",
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "libname": "pyhacrf-datamade",
+  "libvers": "0.2.8",
+  "infile": "data/pip/pyhacrf-datamade.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "pylbfgs": "0.2.0.16"
+  }
+}

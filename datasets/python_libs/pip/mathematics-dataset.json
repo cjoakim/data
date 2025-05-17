@@ -1,0 +1,12 @@
+{
+  "libname": "mathematics-dataset",
+  "libvers": "1.0.1",
+  "infile": "data/pip/mathematics-dataset.txt",
+  "dependencies": {
+    "absl-py": "2.2.2",
+    "mpmath": "1.3.0",
+    "numpy": "2.2.5",
+    "six": "1.17.0",
+    "sympy": "1.14.0"
+  }
+}

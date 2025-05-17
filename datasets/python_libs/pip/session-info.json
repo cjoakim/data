@@ -1,0 +1,8 @@
+{
+  "libname": "session-info",
+  "libvers": "1.0.1",
+  "infile": "data/pip/session-info.txt",
+  "dependencies": {
+    "stdlib-list": "0.11.1"
+  }
+}

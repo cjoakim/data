@@ -1,0 +1,9 @@
+{
+  "libname": "datasketch",
+  "libvers": "1.6.5",
+  "infile": "data/pip/datasketch.txt",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.2"
+  }
+}
