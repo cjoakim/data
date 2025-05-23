@@ -1,0 +1,6 @@
+# This file lists the Python libraries used in the virtual enviroment.
+# See the venv.ps1 and venv.sh scripts in this directory.
+# Chris Joakim, 2025
+
+datasets
+docopt
