@@ -1,0 +1,914 @@
+[
+  {
+    "currentValue": 0.0,
+    "limit": 0.0,
+    "name": {
+      "localizedValue": "Provisioned Managed Throughput Unit",
+      "value": "OpenAI.ProvisionedManaged"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 0.0,
+    "name": {
+      "localizedValue": "Global Provisioned Managed Throughput Unit",
+      "value": "OpenAI.GlobalProvisionedManaged"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - code-cushman-fine-tune-002",
+      "value": "OpenAI.Standard.code-cushman-fine-tune-002"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 1.0,
+    "name": {
+      "localizedValue": "Capacity Unit - Dalle",
+      "value": "OpenAI.Standard.Dalle"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 1.0,
+    "name": {
+      "localizedValue": "Capacity Unit - Dalle-2",
+      "value": "OpenAI.Standard.Dalle-2"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 1.0,
+    "limit": 30.0,
+    "name": {
+      "localizedValue": "Maximum resources for OpenAI S0 sku.",
+      "value": "OpenAI.S0.AccountCount"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 0.0,
+    "name": {
+      "localizedValue": "Data Zone Provisioned Managed Throughput Unit",
+      "value": "OpenAI.DataZoneProvisionedManaged"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 10.0,
+    "limit": 200.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - GPT-35-Turbo",
+      "value": "OpenAI.Standard.gpt-35-turbo"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 30.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - GPT-35-Turbo-Instruct",
+      "value": "OpenAI.Standard.gpt-35-turbo-instruct"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 100000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - gpt-35-turbo",
+      "value": "OpenAI.GlobalBatch.gpt-35-turbo"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - GPT-4",
+      "value": "OpenAI.Standard.gpt-4"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 8.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - GPT-4-Turbo",
+      "value": "OpenAI.Standard.gpt-4-turbo"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 8.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - GPT-4-Turbo - GlobalStandard",
+      "value": "OpenAI.GlobalStandard.gpt-4-turbo-2024-0409"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 8.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - GPT-4o - finetune",
+      "value": "OpenAI.Standard.gpt-4o-finetune"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 5000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - GPT-4",
+      "value": "OpenAI.GlobalBatch.gpt-4"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 40000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - GPT-4-Turbo",
+      "value": "OpenAI.GlobalBatch.gpt-4-turbo"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - GPT-4o",
+      "value": "OpenAI.GlobalBatch.gpt-4o"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - GPT-4o-mini",
+      "value": "OpenAI.GlobalBatch.gpt-4o-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 0.0,
+    "name": {
+      "localizedValue": "Provisioned Throughput Unit - GPT-4o audio preview",
+      "value": "OpenAI.Provisioned.gpt-4o-audio-preview"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - gpt-4o",
+      "value": "OpenAI.Standard.gpt-4o"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 200.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - gpt-4o-mini",
+      "value": "OpenAI.Standard.gpt-4o-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - gpt-4o - GlobalStandard",
+      "value": "OpenAI.GlobalStandard.gpt-4o"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 200.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - gpt-4o-mini - GlobalStandard",
+      "value": "OpenAI.GlobalStandard.gpt-4o-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 3000.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - gpt-4o-mini-audio-preview - GlobalStandard",
+      "value": "OpenAI.GlobalStandard.gpt-4o-mini-audio-preview"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - gpt-4o - DataZoneStandard",
+      "value": "OpenAI.DataZoneStandard.gpt-4o"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 200.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - gpt-4o-mini - DataZoneStandard",
+      "value": "OpenAI.DataZoneStandard.gpt-4o-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 30000.0,
+    "name": {
+      "localizedValue": "Enqueued prompt tokens (thousands) - gpt-4o - DataZoneBatch",
+      "value": "OpenAI.DataZoneBatch.gpt-4o"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50000.0,
+    "name": {
+      "localizedValue": "Enqueued prompt tokens (thousands) - gpt-4o-mini - DataZoneBatch",
+      "value": "OpenAI.DataZoneBatch.gpt-4o-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - 4.1 - DataZoneStandard",
+      "value": "OpenAI.DataZoneStandard.gpt4.1"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 250.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - 4.1 - GlobalStandard - FineTune",
+      "value": "OpenAI.GlobalStandard.gpt4.1-finetune"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 250.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - 4.1 - DeveloperTier - FineTune",
+      "value": "OpenAI.DeveloperTier.gpt4.1-finetune"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 500.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - 4.1-mini - GlobalStandard - FineTune",
+      "value": "OpenAI.GlobalStandard.gpt4.1-mini-finetune"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 500.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - 4.1-mini - DeveloperTier - FineTune",
+      "value": "OpenAI.DeveloperTier.gpt4.1-mini-finetune"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 10.0,
+    "limit": 200.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - 4.1-mini - GlobalStandard",
+      "value": "OpenAI.GlobalStandard.gpt4.1-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - GPT-4.1-mini - GlobalBatch",
+      "value": "OpenAI.GlobalBatch.gpt-4.1-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 200.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - 4.1-mini - DataZoneStandard",
+      "value": "OpenAI.DataZoneStandard.gpt4.1-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 200.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - 4.1-nano - DataZoneStandard",
+      "value": "OpenAI.DataZoneStandard.gpt4.1-nano"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - GPT-4.1 - GlobalBatch",
+      "value": "OpenAI.GlobalBatch.gpt-4.1"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 30000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - GPT-4.1 - DataZoneBatch",
+      "value": "OpenAI.DataZoneBatch.gpt-4.1"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - GPT-4.1-nano - GlobalBatch",
+      "value": "OpenAI.GlobalBatch.gpt-4.1-nano"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - GPT-4.1-mini - DataZoneBatch",
+      "value": "OpenAI.DataZoneBatch.gpt-4.1-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 30000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - GPT-4.1-nano - DataZoneBatch",
+      "value": "OpenAI.DataZoneBatch.gpt-4.1-nano"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 0.0,
+    "name": {
+      "localizedValue": "Six Thousand Tokens Per Minute - o1 - GlobalStandard",
+      "value": "OpenAI.GlobalStandard.o1"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 0.0,
+    "name": {
+      "localizedValue": "Ten Thousand Tokens Per Minute - o1-mini - GlobalStandard",
+      "value": "OpenAI.GlobalStandard.o1-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 0.0,
+    "name": {
+      "localizedValue": "Six Thousand Tokens Per Minute - o1 - DataZoneStandard",
+      "value": "OpenAI.DataZoneStandard.o1"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 20.0,
+    "name": {
+      "localizedValue": "Ten Thousand Tokens Per Minute - o3-mini - GlobalStandard",
+      "value": "OpenAI.GlobalStandard.o3-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50000.0,
+    "name": {
+      "localizedValue": "Enqueued Ten Thousand Tokens Per Minute - o3-mini",
+      "value": "OpenAI.GlobalBatch.o3-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50000.0,
+    "name": {
+      "localizedValue": "Enqueued prompt Ten Thousand Tokens Per Minute - o3-mini - DataZoneBatch",
+      "value": "OpenAI.DataZoneBatch.o3-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 200.0,
+    "name": {
+      "localizedValue": "Ten Thousand Tokens Per Minute - o3-mini - DataZoneStandard",
+      "value": "OpenAI.DataZoneStandard.o3-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 0.0,
+    "name": {
+      "localizedValue": "Provisioned Managed Throughput Unit - o4-mini-2025-04-16",
+      "value": "OpenAI.ProvisionedManaged.o4-mini-2025-04-16"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 50000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - o4-mini - GlobalBatch",
+      "value": "OpenAI.GlobalBatch.o4-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 30000.0,
+    "name": {
+      "localizedValue": "Enqueued tokens (thousands) - o4-mini - DataZoneBatch",
+      "value": "OpenAI.DataZoneBatch.o4-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 0.0,
+    "name": {
+      "localizedValue": "Thousand Tokens Per Minute - o4-mini - DataZoneStandard",
+      "value": "OpenAI.DataZoneStandard.o4-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 350.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Ada",
+      "value": "OpenAI.Standard.ada"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 350.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Text-Ada-001",
+      "value": "OpenAI.Standard.text-ada-001"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Text-Embedding-Ada-002",
+      "value": "OpenAI.Standard.text-embedding-ada-002"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 10.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Text-Embedding-Ada-002",
+      "value": "OpenAI.GlobalStandard.text-embedding-ada-002"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 350.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Text-Similarity-Ada-001",
+      "value": "OpenAI.Standard.text-similarity-ada-001"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Babbage",
+      "value": "OpenAI.Standard.babbage"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Text-Babbage-001",
+      "value": "OpenAI.Standard.text-babbage-001"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Curie",
+      "value": "OpenAI.Standard.curie"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Text-Curie-001",
+      "value": "OpenAI.Standard.text-curie-001"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Text-Similarity-Curie-001",
+      "value": "OpenAI.Standard.text-similarity-curie-001"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Code-Davinci-002",
+      "value": "OpenAI.Standard.code-davinci-002"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Code-Davinci-Fine-Tune-002",
+      "value": "OpenAI.Standard.code-davinci-fine-tune-002"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Davinci",
+      "value": "OpenAI.Standard.davinci"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Text-Davinci-002",
+      "value": "OpenAI.Standard.text-davinci-002"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 120.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Text-Davinci-003",
+      "value": "OpenAI.Standard.text-davinci-003"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 240.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - Text-Davinci-Fine-Tune-002",
+      "value": "OpenAI.Standard.text-davinci-fine-tune-002"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 350.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - text-embedding-3-small",
+      "value": "OpenAI.Standard.text-embedding-3-small"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 350.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - text-embedding-3-large",
+      "value": "OpenAI.Standard.text-embedding-3-large"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 1000.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - text-embedding-3-small",
+      "value": "OpenAI.GlobalStandard.text-embedding-3-small"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 1000.0,
+    "name": {
+      "localizedValue": "Tokens Per Minute (thousands) - text-embedding-3-large",
+      "value": "OpenAI.GlobalStandard.text-embedding-3-large"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 2.0,
+    "limit": 50.0,
+    "name": {
+      "localizedValue": "Maximum resources for AIServices S0 sku.",
+      "value": "AIServices.S0.AccountCount"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 0.0,
+    "limit": 600.0,
+    "name": {
+      "localizedValue": "Default Quota for Model-as-a-Service Models",
+      "value": "AIServices.GlobalStandard.MaaS"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  },
+  {
+    "currentValue": 3.0,
+    "limit": 200.0,
+    "name": {
+      "localizedValue": "Maximum Resources per Region",
+      "value": "AccountCount"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "unit": "Count"
+  }
+]
