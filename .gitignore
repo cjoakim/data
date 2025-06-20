@@ -23,6 +23,7 @@
 **/tmp/
 **/Scripts/
 **/venv/
+**/.venv/
 
 **/*.class
 **/*.jar
