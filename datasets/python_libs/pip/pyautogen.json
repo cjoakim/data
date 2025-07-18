@@ -1,7 +1,7 @@
 {
-  "libname": "pyautogen",
+  "libname": "ag2",
   "libvers": "0.9.0",
-  "infile": "data/pip/pyautogen.txt",
+  "infile": "data/pip/ag2.txt",
   "dependencies": {
     "annotated-types": "0.7.0",
     "anyio": "4.9.0",
