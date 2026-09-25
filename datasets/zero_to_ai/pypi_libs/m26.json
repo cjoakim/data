@@ -1,0 +1,295 @@
+{
+  "info": {
+    "author": null,
+    "author_email": "Chris Joakim <christopher.joakim@gmail.com>",
+    "bugtrack_url": null,
+    "classifiers": [
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3"
+    ],
+    "description": "# m26\n\nm26 - calculations for sports like running, cycling, and swimming\n\n## Urls\n\n- GitHub: https://github.com/cjoakim/m26-py\n- PyPi: https://pypi.org/project/m26/\n\n## Features\n\n- Create Distances in either miles, kilometers, or yards.\n- Translates Distances to the other units of measure.\n- Specify ElapsedTime either in 'hh:mm:ss' strings, or int second values.\n- Calculates Speed from a given Distance and ElapsedTime - per mile, per kilometer, and per yard.\n- Calculates pace_per_mile and seconds_per_mile for a given Speed.\n- Projects one Speed to another Distance with either a simple or algorithmic formula.\n- RunWalkCalculator calculates pace and mph from given time intervals and paces.\n- Calculates the Age of person, and age_graded times.\n- Calculates five standard heart-rate training zones based on Age.\n\n\n## Quick start\n\n\n### Installation\n\n```\n$ pip install m26\n```\n\n### Use\n\n\n#### Sample Program\n\nSee sample-program.py in the GitHub repo.\n\n```\nimport json\n\nimport m26\n\nif __name__ == \"__main__\":\n\n    d1 = m26.Distance(26.2)\n    print(d1)\n    print(\"d1, as_miles:      {0}\".format(d1.as_miles()))\n    print(\"d1, as_kilometers: {0}\".format(d1.as_kilometers()))\n    print(\"d1, as_yards:      {0}\".format(d1.as_yards()))\n\n    print(\"\")\n    d2 = m26.Distance(50.0, m26.Constants.uom_kilometers())\n    print(d2)\n\n    print(\"\")\n    d3 = m26.Distance(7040, m26.Constants.uom_yards())\n    print(d3)\n\n    print(\"\")\n    d4 = m26.Distance(10.0, m26.Constants.uom_kilometers())\n    print(d4)\n\n    print(\"\")\n    d4.add(d1)\n    print(d4)\n\n    print(\"\")\n    d4.subtract(d3)\n    print(d4)\n\n    print(\"\")\n    t1 = m26.ElapsedTime(\"3:47:30\")\n    print(t1)\n    print(\"t1 hours: {0}\".format(t1.hours()))\n\n    print(\"\")\n    t2 = m26.ElapsedTime(3662)\n    print(t2)\n    print(\"t2 hours: {0}\".format(t2.hours()))\n\n    print(\"\")\n    s = m26.Speed(d1, t1)\n    print(s)\n    print(\"s, mph: {0}\".format(s.mph()))\n    print(\"s, kph: {0}\".format(s.kph()))\n    print(\"s, yph: {0}\".format(s.yph()))\n    print(\"s, spm: {0}\".format(s.seconds_per_mile()))\n    print(\"s, ppm: {0}\".format(s.pace_per_mile()))\n\n    hhmmss_simple = s.projected_time(d2, \"simple\")\n    hhmmss_riegel = s.projected_time(d2, \"riegel\")\n    print(\"projected_time, simple: {0}\".format(hhmmss_simple))\n    print(\"projected_time, riegel: {0}\".format(hhmmss_riegel))\n\n    print(\"\")\n    result = m26.RunWalkCalculator.calculate(\"2:30\", \"9:16\", \"0:45\", \"17:00\", 31.0)\n    print(json.dumps(result, sort_keys=True, indent=2))\n\n    print(\"\")\n    a = m26.AgeCalculator.calculate(\"1960-10-01\", \"2015-10-18\")\n    print(a)\n\n    print(\"\")\n    a2 = m26.Age(58.1)\n    graded = s.age_graded(a, a2)\n    print(graded)\n\n    zones = a2.training_zones()\n    print(json.dumps(zones, sort_keys=True, indent=2))\n    print(\"\")\n```\n\n#### Sample Program Output\n\n```\n<Distance value:26.2 uom:m>\nd1, as_miles:      26.2\nd1, as_kilometers: 42.1648128\nd1, as_yards:      46112.0\n\n<Distance value:50.0 uom:k>\n\n<Distance value:7040.0 uom:y>\n\n<Distance value:10.0 uom:k>\n\n<Distance value:52.1648128 uom:k>\n\n<Distance value:45.7274368 uom:k>\n\n<ElapsedTime hh:3.0 mm:47.0 ss:30.0 secs:13650.0>\nt1 hours: 3.7916666666666665\n\n<ElapsedTime hh:1 mm:1 ss:2.0 secs:3662.0>\nt2 hours: 1.0172222222222222\n\n<Speed dist:<Distance value:26.2 uom:m> etime:<ElapsedTime hh:3.0 mm:47.0 ss:30.0 secs:13650.0>>\ns, mph: 6.90989010989011\ns, kph: 11.120390189010989\ns, yph: 12161.406593406595\ns, spm: 520.9923664122138\ns, ppm: 8:40.99\nprojected_time, simple: 04:29:46\nprojected_time, riegel: 04:32:32\n\n{\n  \"avg_mph\": 5.4292343387471,\n  \"avg_ppm\": \"11:03.07\",\n  \"miles\": 31.0,\n  \"proj_miles\": 31.0,\n  \"proj_time\": \"05:42:35\",\n  \"run_hhmmss\": \"2:30\",\n  \"run_ppm\": \"9:16\",\n  \"walk_hhmmss\": \"0:45\",\n  \"walk_ppm\": \"17:00\"\n}\n\n<Age value:55.044490075290895>\n\n<Speed dist:<Distance value:26.2 uom:m> etime:<ElapsedTime hh:3 mm:51 ss:47.61402391772026 secs:13907.61402391772>>\n\n[\n  {\n    \"age\": 58.1,\n    \"max\": 161.9,\n    \"pct_max\": 0.95,\n    \"pulse\": 153.805,\n    \"zone\": 1\n  },\n  {\n    \"age\": 58.1,\n    \"max\": 161.9,\n    \"pct_max\": 0.9,\n    \"pulse\": 145.71,\n    \"zone\": 2\n  },\n  {\n    \"age\": 58.1,\n    \"max\": 161.9,\n    \"pct_max\": 0.85,\n    \"pulse\": 137.615,\n    \"zone\": 3\n  },\n  {\n    \"age\": 58.1,\n    \"max\": 161.9,\n    \"pct_max\": 0.8,\n    \"pulse\": 129.52,\n    \"zone\": 4\n  },\n  {\n    \"age\": 58.1,\n    \"max\": 161.9,\n    \"pct_max\": 0.75,\n    \"pulse\": 121.42500000000001,\n    \"zone\": 5\n  }\n]\n```\n\n---\n\n## Changelog\n\nCurrent version: 0.3.2\n\n-  2024/09/24, version 0.3.2, python 3.11 support\n-  2024/09/23, version 0.3.1, Class AgeCalculator modified to use datetime delta for mac/win consistency\n-  2024/09/21, version 0.3.0, Removed arrow dependency, upgraded to python 3.12\n-  2020/02/19, version 0.2.1, Jinja2 upgrade\n-  2017/09/27, version 0.2.0, Converted to the pytest testing framework; coverage at 100%.\n-  2015/10/31, version 0.1.0, Initial Production release.\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": null,
+    "keywords": "calculator, cycling, pace per mile, running, swimming",
+    "license": "MIT License  Copyright (c) 2024 Chris Joakim  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+    "license_expression": null,
+    "license_files": null,
+    "maintainer": null,
+    "maintainer_email": "Chris Joakim <christopher.joakim@gmail.com>",
+    "name": "m26",
+    "package_url": "https://pypi.org/project/m26/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/m26/",
+    "project_urls": {
+      "Homepage": "https://github.com/cjoakim/m26-py",
+      "Issues": "https://github.com/cjoakim/m26-py/issues",
+      "Repository": "https://github.com/cjoakim/m26-py.git"
+    },
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/m26/0.3.2/",
+    "requires_dist": null,
+    "requires_python": ">=3.11",
+    "summary": "m26 - calculations for sports like running, cycling, and swimming",
+    "version": "0.3.2",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 25178439,
+  "releases": {
+    "0.1.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "e0576cba907ec4fa871feae11675ac892f6608bec7458346add7762ed15f4851",
+          "md5": "aab3ea0b8e907015d9137d765c37568a",
+          "sha256": "45f516cae1941b38bcbcd740b66f75f2efd6dcd59e8296efaeaad9e5a2bf8847"
+        },
+        "downloads": -1,
+        "filename": "m26-0.1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "aab3ea0b8e907015d9137d765c37568a",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 9265,
+        "upload_time": "2015-10-31T19:06:38",
+        "upload_time_iso_8601": "2015-10-31T19:06:38.546725Z",
+        "url": "https://files.pythonhosted.org/packages/e0/57/6cba907ec4fa871feae11675ac892f6608bec7458346add7762ed15f4851/m26-0.1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "9b90c8e68b691a880494b012c2b20f058e7e3ddfbdc032f42971ab30ab352124",
+          "md5": "7d880ad3a9afd8e21a3b90a5176f602d",
+          "sha256": "cb09e14d02f402ea90c6f6a699aa48e08bc9ff35f10a159af08a720f429e843a"
+        },
+        "downloads": -1,
+        "filename": "m26-0.2.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "7d880ad3a9afd8e21a3b90a5176f602d",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 9440,
+        "upload_time": "2017-09-28T11:04:46",
+        "upload_time_iso_8601": "2017-09-28T11:04:46.181149Z",
+        "url": "https://files.pythonhosted.org/packages/9b/90/c8e68b691a880494b012c2b20f058e7e3ddfbdc032f42971ab30ab352124/m26-0.2.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "90ccfd31884142881c2066c850290e4e0922807a01840a0c5a7be01c47007722",
+          "md5": "5f91680a13f8f3d471f85a116414e078",
+          "sha256": "3ec9ee225abdff89b8638b8246745cfbdb0c1144c7fa75523e4c6d3f68835a81"
+        },
+        "downloads": -1,
+        "filename": "m26-0.2.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5f91680a13f8f3d471f85a116414e078",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 9519,
+        "upload_time": "2020-02-19T11:21:45",
+        "upload_time_iso_8601": "2020-02-19T11:21:45.940499Z",
+        "url": "https://files.pythonhosted.org/packages/90/cc/fd31884142881c2066c850290e4e0922807a01840a0c5a7be01c47007722/m26-0.2.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "98afb1b13200deb4c05c9b1c5ce5394c345202f5a49ed7a2d0a780ee41f62111",
+          "md5": "252fdb0e8327a94a09fb69d3de2778ad",
+          "sha256": "e9c66c1d78a8cd1e5dd153ec835ccd771470830e65f45f8f56482a73b0ff23d6"
+        },
+        "downloads": -1,
+        "filename": "m26-0.3.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "252fdb0e8327a94a09fb69d3de2778ad",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.12",
+        "size": 8762,
+        "upload_time": "2024-09-22T16:24:54",
+        "upload_time_iso_8601": "2024-09-22T16:24:54.473098Z",
+        "url": "https://files.pythonhosted.org/packages/98/af/b1b13200deb4c05c9b1c5ce5394c345202f5a49ed7a2d0a780ee41f62111/m26-0.3.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "025bf8ef664511c87b590c000041751666e1a103987ec47d93f6a26c3a3ab1a5",
+          "md5": "29083bf4c5a4fcccd2792f090c79abcc",
+          "sha256": "010cfffca63c8e75126870f69af399b6f4bc80c35c9ecdf37281130a0a19cf55"
+        },
+        "downloads": -1,
+        "filename": "m26-0.3.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "29083bf4c5a4fcccd2792f090c79abcc",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.12",
+        "size": 9349,
+        "upload_time": "2024-09-22T16:24:55",
+        "upload_time_iso_8601": "2024-09-22T16:24:55.779268Z",
+        "url": "https://files.pythonhosted.org/packages/02/5b/f8ef664511c87b590c000041751666e1a103987ec47d93f6a26c3a3ab1a5/m26-0.3.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "489cc260e1071ecb5f81948b0b98b98d67e14dad28e78b68e8128b7be8b08448",
+          "md5": "9341dde21c4f11e1160043ad86ae04d9",
+          "sha256": "0647c655850441722676d8c1eeabd50f7137d96086ac373423519b308ca558f8"
+        },
+        "downloads": -1,
+        "filename": "m26-0.3.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "9341dde21c4f11e1160043ad86ae04d9",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.12",
+        "size": 8874,
+        "upload_time": "2024-09-23T14:31:10",
+        "upload_time_iso_8601": "2024-09-23T14:31:10.575021Z",
+        "url": "https://files.pythonhosted.org/packages/48/9c/c260e1071ecb5f81948b0b98b98d67e14dad28e78b68e8128b7be8b08448/m26-0.3.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "e4aa8b76ea8c39f25b81d245bd81edc7eea41badaeb6b36d3d65110821d18bf9",
+          "md5": "4036c2751e031c0b152462363ef62bd2",
+          "sha256": "bc45b9499681751139986d8250d1a29792a866e0ed59c237eebaa44827457556"
+        },
+        "downloads": -1,
+        "filename": "m26-0.3.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4036c2751e031c0b152462363ef62bd2",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.12",
+        "size": 9370,
+        "upload_time": "2024-09-23T14:31:11",
+        "upload_time_iso_8601": "2024-09-23T14:31:11.831798Z",
+        "url": "https://files.pythonhosted.org/packages/e4/aa/8b76ea8c39f25b81d245bd81edc7eea41badaeb6b36d3d65110821d18bf9/m26-0.3.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.2": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "920c273faf699d33afae6cfd80ddcce741ea5ddf0fc892a10a6931d3a3ebf6fc",
+          "md5": "81756ab0cdc830e4a688b16a39e49d43",
+          "sha256": "58dc8231862b3d141dcd8d343c2f26d7441103c2aca67605a5a0ddf7c9ed84c1"
+        },
+        "downloads": -1,
+        "filename": "m26-0.3.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "81756ab0cdc830e4a688b16a39e49d43",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.11",
+        "size": 8887,
+        "upload_time": "2024-09-24T20:43:29",
+        "upload_time_iso_8601": "2024-09-24T20:43:29.584861Z",
+        "url": "https://files.pythonhosted.org/packages/92/0c/273faf699d33afae6cfd80ddcce741ea5ddf0fc892a10a6931d3a3ebf6fc/m26-0.3.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "a27053240b69ca9a1ab3821b7971e137c0c2008b375de20106459dd2f4211df3",
+          "md5": "0e3eba9fd38e81fb1daefda886938314",
+          "sha256": "1c5bb2b88bfd05b4a2b12c74a0fe632aefa89e9064c32f6d86d53e1f31d45575"
+        },
+        "downloads": -1,
+        "filename": "m26-0.3.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0e3eba9fd38e81fb1daefda886938314",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.11",
+        "size": 9385,
+        "upload_time": "2024-09-24T20:43:31",
+        "upload_time_iso_8601": "2024-09-24T20:43:31.141049Z",
+        "url": "https://files.pythonhosted.org/packages/a2/70/53240b69ca9a1ab3821b7971e137c0c2008b375de20106459dd2f4211df3/m26-0.3.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": "",
+      "digests": {
+        "blake2b_256": "920c273faf699d33afae6cfd80ddcce741ea5ddf0fc892a10a6931d3a3ebf6fc",
+        "md5": "81756ab0cdc830e4a688b16a39e49d43",
+        "sha256": "58dc8231862b3d141dcd8d343c2f26d7441103c2aca67605a5a0ddf7c9ed84c1"
+      },
+      "downloads": -1,
+      "filename": "m26-0.3.2-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "81756ab0cdc830e4a688b16a39e49d43",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.11",
+      "size": 8887,
+      "upload_time": "2024-09-24T20:43:29",
+      "upload_time_iso_8601": "2024-09-24T20:43:29.584861Z",
+      "url": "https://files.pythonhosted.org/packages/92/0c/273faf699d33afae6cfd80ddcce741ea5ddf0fc892a10a6931d3a3ebf6fc/m26-0.3.2-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": "",
+      "digests": {
+        "blake2b_256": "a27053240b69ca9a1ab3821b7971e137c0c2008b375de20106459dd2f4211df3",
+        "md5": "0e3eba9fd38e81fb1daefda886938314",
+        "sha256": "1c5bb2b88bfd05b4a2b12c74a0fe632aefa89e9064c32f6d86d53e1f31d45575"
+      },
+      "downloads": -1,
+      "filename": "m26-0.3.2.tar.gz",
+      "has_sig": false,
+      "md5_digest": "0e3eba9fd38e81fb1daefda886938314",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.11",
+      "size": 9385,
+      "upload_time": "2024-09-24T20:43:31",
+      "upload_time_iso_8601": "2024-09-24T20:43:31.141049Z",
+      "url": "https://files.pythonhosted.org/packages/a2/70/53240b69ca9a1ab3821b7971e137c0c2008b375de20106459dd2f4211df3/m26-0.3.2.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

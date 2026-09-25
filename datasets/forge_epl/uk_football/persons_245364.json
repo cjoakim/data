@@ -1,0 +1,43 @@
+{
+    "id": 245364,
+    "name": "Benjamin Fredrick",
+    "firstName": "Benjamin",
+    "lastName": "Fredrick",
+    "dateOfBirth": "2005-05-28",
+    "nationality": "Nigeria",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 48,
+    "lastUpdated": "2026-07-15T09:25:43Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png",
+        "address": "Braemar Road Brentford TW8 0NT",
+        "website": "http://www.brentfordfc.co.uk",
+        "founded": 1889,
+        "clubColors": "Red / White / Black",
+        "venue": "Griffin Park",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2030-06"
+        }
+    }
+}

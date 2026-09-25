@@ -1,0 +1,43 @@
+{
+    "id": 8642,
+    "name": "Rayan A\u00eft Nouri",
+    "firstName": "Rayan",
+    "lastName": "A\u00eft Nouri",
+    "dateOfBirth": "2001-06-06",
+    "nationality": "Algeria",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 15,
+    "lastUpdated": "2026-06-01T11:09:21Z",
+    "currentTeam": {
+        "area": {
+            "id": 2004,
+            "name": "Algeria",
+            "code": "ALG",
+            "flag": "https://crests.football-data.org/algeria.svg"
+        },
+        "id": 778,
+        "name": "Algeria",
+        "shortName": "Algeria",
+        "tla": "ALG",
+        "crest": "https://crests.football-data.org/algeria.svg",
+        "address": "Chemin Ahmed Ouaked, BP 39 Dely-Ibrahim Alger 16000",
+        "website": "http://www.faf.dz",
+        "founded": 1962,
+        "clubColors": "White / Green",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2193,
+                "name": "Africa Cup Of Nations - Qualification",
+                "code": "ACQ",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

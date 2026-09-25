@@ -1,0 +1,50 @@
+{
+    "id": 230364,
+    "name": "Alex Murphy",
+    "firstName": "Alex",
+    "lastName": "Murphy",
+    "dateOfBirth": "2004-06-25",
+    "nationality": "Ireland",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 3,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2088,
+            "name": "Germany",
+            "code": "DEU",
+            "flag": "https://crests.football-data.org/759.svg"
+        },
+        "id": 13,
+        "name": "1. FC Kaiserslautern",
+        "shortName": "Kaiserslautern",
+        "tla": "FCK",
+        "crest": "https://crests.football-data.org/13.png",
+        "address": "Fritz-Walter-Stra\u00dfe 1 Kaiserslautern 67663",
+        "website": "http://www.fck.de",
+        "founded": 1900,
+        "clubColors": "Red / White",
+        "venue": "Fritz-Walter-Stadion",
+        "runningCompetitions": [
+            {
+                "id": 2011,
+                "name": "DFB-Pokal",
+                "code": "DFB",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/DFB_CUP.png"
+            },
+            {
+                "id": 2004,
+                "name": "2. Bundesliga",
+                "code": "BL2",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/BL2.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-08",
+            "until": "2027-06"
+        }
+    }
+}

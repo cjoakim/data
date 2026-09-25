@@ -1,0 +1,201 @@
+{
+  "info": {
+    "author": "Jan Kowalleck",
+    "author_email": "Will Riley <wanderingwill@gmail.com>",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "Intended Audience :: Developers",
+      "Intended Audience :: Education",
+      "Intended Audience :: Information Technology",
+      "Intended Audience :: Science/Research",
+      "Intended Audience :: System Administrators",
+      "License :: OSI Approved :: Apache Software License",
+      "Natural Language :: English",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.9",
+      "Topic :: Scientific/Engineering",
+      "Topic :: Software Development",
+      "Topic :: Utilities"
+    ],
+    "description": "# rfc3987-syntax\n\nHelper functions to parse and validate the **syntax** of terms defined in **[RFC 3987](https://www.rfc-editor.org/info/rfc3987)** — the IETF standard for Internationalized Resource Identifiers (IRIs).\n\n\n## 🎯 Purpose\n\nThe goal of `rfc3987-syntax` is to provide a **lightweight, permissively licensed Python module** for validating that strings conform to the **ABNF grammar defined in RFC 3987**. These helpers are:\n\n- ✅ Strictly aligned with the **syntax rules of RFC 3987**\n- ✅ Built using a **permissive MIT license**\n- ✅ Designed for both **open source and proprietary use**\n- ✅ Powered by [Lark](https://github.com/lark-parser/lark), a fast, EBNF-based parser\n\n> 🧠 **Note:** This project focuses on **syntax validation only**. RFC 3987 specifies **additional semantic rules** (e.g., Unicode normalization, BiDi constraints, percent-encoding requirements) that must be enforced separately.\n\n\n## 📄 License, Attribution, and Citation\n\n**`rfc3987-syntax`** is licensed under the [MIT License](LICENSE), which allows reuse in both open source and commercial software.\n\nThis project:\n\n- ❌ Does **not** depend on the `rfc3987` Python package (GPL-licensed)\n- ✅ Uses [`lark`](https://github.com/lark-parser/lark), licensed under MIT\n- ✅ Implements grammar from **[RFC 3987](https://datatracker.ietf.org/doc/html/rfc3987)**, using **[RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986)** where RFC 3987 delegates syntax\n\n> ⚠️ This project is **not affiliated with or endorsed by** the authors of RFC 3987 or the `rfc3987` Python package.\n\nPlease cite this software in accordance with the enclosed CITATION.cff file.\n\n\n## ⚠️ Limitations\n\nThe grammar and parser enforce **only the ABNF syntax** defined in RFC 3987. The following are **not validated** and must be handled separately for full compliance:\n\n- ✅ Unicode **Normalization Form C (NFC)**\n- ✅ Bidirectional text (**BiDi**) constraints (RFC 3987 §4.1)\n- ✅ **Port number ranges** (must be 0–65535)\n- ✅ Valid **IPv6 compression** (only one `::`, max segments)\n- ✅ Context-aware **percent-encoding** requirements\n\nChatGPT 40 was used during the original development process. Errors may exist due to this assistance. Additional review, testing, and bug fixes by human experts is welcome.\n\n\n## 📦 Installation\n\n```bash\npip install rfc3987-syntax\n```\n\n## 🛠 Usage\n\n### List all supported \"terms\" (i.e., non-terminals and terminals within ABNF production rules) used to validate the syntax of an IRI according to RFC 3987\n\n```python\nfrom rfc3987_syntax import RFC3987_SYNTAX_TERMS\n\nprint(\"Supported terms:\")\nfor term in RFC3987_SYNTAX_TERMS:\n    print(term)\n```\n\n### Syntactically validate a string using the general-purpose validator\n\n```python\nfrom rfc3987_syntax import is_valid_syntax\n\nif is_valid_syntax(term='iri', value='http://github.com'):\n    print(\"✓ Valid IRI syntax\")\n\nif not is_valid_syntax(term='iri', value='bob'):\n    print(\"✗ Invalid IRI syntax\")\n\nif not is_valid_syntax(term='iri_reference', value='bob'):\n    print(\"✓ Valid IRI-reference syntax\")\n```\n\n### Alternatively, use term-specific helpers to validate RFC 3987 syntax.\n\n```python\nfrom rfc3987_syntax import is_valid_syntax_iri\nfrom rfc3987_syntax import is_valid_syntax_iri_reference\n\nif is_valid_syntax_iri('http://github.com'):\n    print(\"✓ Valid IRI syntax\")\n\nif not is_valid_syntax_iri('bob'):\n    print(\"✗ Invalid IRI syntax\")\n    \nif is_valid_syntax_iri_reference('bob'):\n    print(\"✓ Valid IRI-reference syntax\")\n```\n\n### Get the Lark parse tree for a syntax validation (useful for additional semantic validation)\n\n```python\nfrom rfc3987_syntax import parse\n\nptree: ParseTree = parse(term=\"iri\", value=\"http://github.com\")\n\nprint(ptree)\n```\n\n## 📚 Sources\n\nThis grammar was derived from:\n\n- **[RFC 3987 – Internationalized Resource Identifiers (IRIs)]**  \n  → Defines IRI syntax and extensions to URI (e.g. Unicode characters, `ucschar`)  \n  → https://datatracker.ietf.org/doc/html/rfc3987\n\n- **[RFC 3986 – Uniform Resource Identifier (URI): Generic Syntax)]**  \n  → Provides reusable components like `scheme`, `authority`, `ipv4address`, etc.  \n  → https://datatracker.ietf.org/doc/html/rfc3986\n\n> 📝 When `RFC 3986` is listed as the source, it is **used in accordance with RFC 3987**, which explicitly references it for foundational elements.\n\n### Rule-to-Source Mapping\n\n| Rule/Component       | Source     | Notes |\n|----------------------|------------|-------|\n| `iri`                | RFC 3987   | Top-level IRI rule |\n| `iri_reference`      | RFC 3987   | Top-level IRI Reference rule |\n| `absolute_iri`       | RFC 3987   | Top-level Absolute IRI rule |\n| `scheme`             | RFC 3986   | Referenced by RFC 3987 §2.2 |\n| `ihier_part`         | RFC 3987   | IRI-specific hierarchy |\n| `irelative_ref`      | RFC 3987   | IRI-specific relative ref |\n| `irelative_part`     | RFC 3987   | IRI-specific relative part |\n| `iauthority`         | RFC 3986   | Standard URI authority |\n| `ipath_abempty`      | RFC 3986   | Path format variant |\n| `ipath_absolute`     | RFC 3986   | Absolute path |\n| `ipath_noscheme`     | RFC 3986   | Path disallowing scheme prefix |\n| `ipath_rootless`     | RFC 3986   | Used in non-scheme contexts |\n| `iquery`             | RFC 3987   | Query extension to URI |\n| `ifragment`          | RFC 3987   | Fragment extension to URI |\n| `ipchar`, `isegment` | RFC 3986   | Path characters and segments |\n| `isegment_nz_nc`     | RFC 3987   | IRI-specific path constraint |\n| `iunreserved`        | RFC 3987   | Includes `ucschar` |\n| `ucschar`, `iprivate`| RFC 3987   | Unicode support |\n| `sub_delims`         | RFC 3986   | Reserved characters |\n| `ip_literal`         | RFC 3986   | IPv6 or IPvFuture in `[]` |\n| `ipv6address`        | RFC 3986   | Expanded forms only |\n| `ipvfuture`          | RFC 3986   | Forward-compatible |\n| `ipv4address`        | RFC 3986   | Dotted-decimal IPv4 |\n| `ls32`               | RFC 3986   | Final 32 bits of IPv6 |\n| `h16`, `dec_octet`   | RFC 3986   | Hex and decimal chunks |\n| `port`               | RFC 3986   | Optional numeric |\n| `pct_encoded`        | RFC 3986   | Percent encoding (e.g. `%20`) |\n| `alpha`, `digit`, `hexdig` | RFC 3986 | Character classes |\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": null,
+    "keywords": "RFC 3987, RFC3987, parser, syntax, validator",
+    "license": null,
+    "license_expression": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "rfc3987-syntax",
+    "package_url": "https://pypi.org/project/rfc3987-syntax/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/rfc3987-syntax/",
+    "project_urls": {
+      "Documentation": "https://github.com/willynilly/rfc3987-syntax#readme",
+      "Homepage": "https://github.com/willynilly/rfc3987-syntax",
+      "Issues": "https://github.com/willynilly/rfc3987-syntax/issues",
+      "Source": "https://github.com/willynilly/rfc3987-syntax"
+    },
+    "provides_extra": [
+      "testing"
+    ],
+    "release_url": "https://pypi.org/project/rfc3987-syntax/1.1.0/",
+    "requires_dist": [
+      "lark>=1.2.2",
+      "pytest>=8.3.5; extra == \"testing\""
+    ],
+    "requires_python": ">=3.9",
+    "summary": "Helper functions to syntactically validate strings according to RFC 3987.",
+    "version": "1.1.0",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 30206274,
+  "releases": {
+    "1.0.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a050e5bb77c42da1b6fe9abf8f83d9d78f9097da7e655024c437c34e7027c510",
+          "md5": "26558a3ae6211d7d289faf36fe72b97b",
+          "sha256": "c2af77e856f6044c05cc05c27ade3b3a3c6125f7a3fdaa173c14ba3aedaef5d9"
+        },
+        "downloads": -1,
+        "filename": "rfc3987_syntax-1.0.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "26558a3ae6211d7d289faf36fe72b97b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 7829,
+        "upload_time": "2025-05-18T20:23:49",
+        "upload_time_iso_8601": "2025-05-18T20:23:49.651666Z",
+        "url": "https://files.pythonhosted.org/packages/a0/50/e5bb77c42da1b6fe9abf8f83d9d78f9097da7e655024c437c34e7027c510/rfc3987_syntax-1.0.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "377355a0fb307106338a5a1d0582cd6485e839f8dbc53feb1a4d8b89d8052567",
+          "md5": "f803a8bd52b782ca12f59355dde937bc",
+          "sha256": "340e60ccc4d9485d26c51779175fc989bd09ed774bc5f03986c6cd40b15090ab"
+        },
+        "downloads": -1,
+        "filename": "rfc3987_syntax-1.0.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f803a8bd52b782ca12f59355dde937bc",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 13676,
+        "upload_time": "2025-05-18T20:23:51",
+        "upload_time_iso_8601": "2025-05-18T20:23:51.253190Z",
+        "url": "https://files.pythonhosted.org/packages/37/73/55a0fb307106338a5a1d0582cd6485e839f8dbc53feb1a4d8b89d8052567/rfc3987_syntax-1.0.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7e7144ce230e1b7fadd372515a97e32a83011f906ddded8d03e3c6aafbdedbb7",
+          "md5": "7fddc63551c99ee6e9f096903fcbb79d",
+          "sha256": "6c3d97604e4c5ce9f714898e05401a0445a641cfa276432b0a648c80856f6a3f"
+        },
+        "downloads": -1,
+        "filename": "rfc3987_syntax-1.1.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7fddc63551c99ee6e9f096903fcbb79d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 8046,
+        "upload_time": "2025-07-18T01:05:03",
+        "upload_time_iso_8601": "2025-07-18T01:05:03.843605Z",
+        "url": "https://files.pythonhosted.org/packages/7e/71/44ce230e1b7fadd372515a97e32a83011f906ddded8d03e3c6aafbdedbb7/rfc3987_syntax-1.1.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2c0637c1a5557acf449e8e406a830a05bf885ac47d33270aec454ef78675008d",
+          "md5": "b12f9966a7f15414812eb7c55ac13201",
+          "sha256": "717a62cbf33cffdd16dfa3a497d81ce48a660ea691b1ddd7be710c22f00b4a0d"
+        },
+        "downloads": -1,
+        "filename": "rfc3987_syntax-1.1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b12f9966a7f15414812eb7c55ac13201",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 14239,
+        "upload_time": "2025-07-18T01:05:05",
+        "upload_time_iso_8601": "2025-07-18T01:05:05.015375Z",
+        "url": "https://files.pythonhosted.org/packages/2c/06/37c1a5557acf449e8e406a830a05bf885ac47d33270aec454ef78675008d/rfc3987_syntax-1.1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "7e7144ce230e1b7fadd372515a97e32a83011f906ddded8d03e3c6aafbdedbb7",
+        "md5": "7fddc63551c99ee6e9f096903fcbb79d",
+        "sha256": "6c3d97604e4c5ce9f714898e05401a0445a641cfa276432b0a648c80856f6a3f"
+      },
+      "downloads": -1,
+      "filename": "rfc3987_syntax-1.1.0-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "7fddc63551c99ee6e9f096903fcbb79d",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.9",
+      "size": 8046,
+      "upload_time": "2025-07-18T01:05:03",
+      "upload_time_iso_8601": "2025-07-18T01:05:03.843605Z",
+      "url": "https://files.pythonhosted.org/packages/7e/71/44ce230e1b7fadd372515a97e32a83011f906ddded8d03e3c6aafbdedbb7/rfc3987_syntax-1.1.0-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "2c0637c1a5557acf449e8e406a830a05bf885ac47d33270aec454ef78675008d",
+        "md5": "b12f9966a7f15414812eb7c55ac13201",
+        "sha256": "717a62cbf33cffdd16dfa3a497d81ce48a660ea691b1ddd7be710c22f00b4a0d"
+      },
+      "downloads": -1,
+      "filename": "rfc3987_syntax-1.1.0.tar.gz",
+      "has_sig": false,
+      "md5_digest": "b12f9966a7f15414812eb7c55ac13201",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.9",
+      "size": 14239,
+      "upload_time": "2025-07-18T01:05:05",
+      "upload_time_iso_8601": "2025-07-18T01:05:05.015375Z",
+      "url": "https://files.pythonhosted.org/packages/2c/06/37c1a5557acf449e8e406a830a05bf885ac47d33270aec454ef78675008d/rfc3987_syntax-1.1.0.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

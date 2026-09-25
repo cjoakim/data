@@ -1,0 +1,43 @@
+{
+    "id": 289557,
+    "name": "Shea Lacey",
+    "firstName": "Shea",
+    "lastName": "Lacey",
+    "dateOfBirth": "2007-04-14",
+    "nationality": "England",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 46,
+    "lastUpdated": "2025-11-25T09:42:57Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png",
+        "address": "Sir Matt Busby Way Manchester M16 0RA",
+        "website": "http://www.manutd.com",
+        "founded": 1878,
+        "clubColors": "Red / White",
+        "venue": "Old Trafford",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2029-06"
+        }
+    }
+}

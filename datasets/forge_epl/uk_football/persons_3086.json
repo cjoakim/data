@@ -1,0 +1,43 @@
+{
+    "id": 3086,
+    "name": "Guglielmo Vicario",
+    "firstName": "Guglielmo",
+    "lastName": "Vicario",
+    "dateOfBirth": "1996-10-07",
+    "nationality": "Italy",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 1,
+    "lastUpdated": "2023-07-30T17:01:19Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png",
+        "address": "Bill Nicholson Way, 748 High Road London N17 0AP",
+        "website": "http://www.tottenhamhotspur.com",
+        "founded": 1882,
+        "clubColors": "Navy Blue / White",
+        "venue": "Tottenham Hotspur Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2023-07",
+            "until": "2028-06"
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "id": 97249,
+    "name": "Anthony Patterson",
+    "firstName": "Anthony",
+    "lastName": "Patterson",
+    "dateOfBirth": "2000-05-10",
+    "nationality": "England",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": null,
+    "lastUpdated": "2024-05-24T09:47:50Z",
+    "currentTeam": {
+        "area": {
+            "id": 2264,
+            "name": "Wales",
+            "code": "WAL",
+            "flag": "https://crests.football-data.org/833.svg"
+        },
+        "id": 404,
+        "name": "Wrexham AFC",
+        "shortName": "Wrexham",
+        "tla": "WRE",
+        "crest": "https://crests.football-data.org/404.png",
+        "address": "Racecourse Ground, Mold Road Wrexham LL11 2AH",
+        "website": "http://www.wrexhamafc.co.uk",
+        "founded": 1864,
+        "clubColors": "Red / White",
+        "venue": "Racecourse Ground",
+        "runningCompetitions": [
+            {
+                "id": 2016,
+                "name": "Championship",
+                "code": "ELC",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/ELC.png"
+            },
+            {
+                "id": 2139,
+                "name": "Football League Cup",
+                "code": "FLC",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/carabao.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-08",
+            "until": "2030-06"
+        }
+    }
+}

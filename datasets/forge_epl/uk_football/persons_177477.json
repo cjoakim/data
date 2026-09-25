@@ -1,0 +1,43 @@
+{
+    "id": 177477,
+    "name": "Omari Hutchinson",
+    "firstName": "Omari",
+    "lastName": "Hutchinson",
+    "dateOfBirth": "2003-10-29",
+    "nationality": "England",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 20,
+    "lastUpdated": "2026-07-20T14:04:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png",
+        "address": "Pavilion Road, West Bridgeford Nottingham NG2 5GJ",
+        "website": "http://www.nottinghamforest.co.uk",
+        "founded": 1865,
+        "clubColors": "Red / White",
+        "venue": "The City Ground",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2025-08",
+            "until": "2030-06"
+        }
+    }
+}

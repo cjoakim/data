@@ -1,0 +1,43 @@
+{
+    "id": 612,
+    "name": "Yoane Wissa",
+    "firstName": "Yoane",
+    "lastName": "Wissa",
+    "dateOfBirth": "1996-09-03",
+    "nationality": "Congo DR",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 20,
+    "lastUpdated": "2026-06-05T10:50:55Z",
+    "currentTeam": {
+        "area": {
+            "id": 2052,
+            "name": "Congo DR",
+            "code": "COD",
+            "flag": "https://crests.football-data.org/congo_dr.svg"
+        },
+        "id": 1934,
+        "name": "Congo DR",
+        "shortName": "Congo DR",
+        "tla": "COD",
+        "crest": "https://crests.football-data.org/congo_dr.svg",
+        "address": "31, Avenue de la Justice / BP 1284 Kinshasa 1",
+        "website": "http://www.fecofa.cd",
+        "founded": 1919,
+        "clubColors": "Blue / Yellow / Red",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2193,
+                "name": "Africa Cup Of Nations - Qualification",
+                "code": "ACQ",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

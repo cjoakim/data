@@ -1,0 +1,43 @@
+{
+    "id": 114024,
+    "name": "Amadou Onana",
+    "firstName": "Amadou",
+    "lastName": "Onana",
+    "dateOfBirth": "2001-08-16",
+    "nationality": "Belgium",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 24,
+    "lastUpdated": "2026-06-01T11:16:30Z",
+    "currentTeam": {
+        "area": {
+            "id": 2023,
+            "name": "Belgium",
+            "code": "BEL",
+            "flag": "https://crests.football-data.org/805.svg"
+        },
+        "id": 805,
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg",
+        "address": "145, avenue Houba de Strooper Brussels 1020",
+        "website": "https://www.rbfa.be",
+        "founded": 1895,
+        "clubColors": "Red / Black / Yellow",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

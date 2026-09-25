@@ -1,0 +1,43 @@
+{
+    "id": 8224,
+    "name": "Ben Johnson",
+    "firstName": "Ben",
+    "lastName": "Johnson",
+    "dateOfBirth": "2000-01-24",
+    "nationality": "England",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 18,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png",
+        "address": "Portman Road Ipswich IP1 2DA",
+        "website": "http://www.itfc.co.uk",
+        "founded": 1887,
+        "clubColors": "Blue / White",
+        "venue": "Portman Road Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2024-07",
+            "until": "2028-06"
+        }
+    }
+}

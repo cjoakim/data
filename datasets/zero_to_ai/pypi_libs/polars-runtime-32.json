@@ -1,0 +1,2619 @@
+{
+  "info": {
+    "author": null,
+    "author_email": "Ritchie Vink <ritchie46@gmail.com>",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Intended Audience :: Science/Research",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Rust",
+      "Topic :: Scientific/Engineering",
+      "Typing :: Typed"
+    ],
+    "description": "# Polars Runtime\n\nPackages that contain the binary shared libraries that back the polars python package. Not meant for\ngeneral consumption and just meant as dependencies for the polars main package.\n\n",
+    "description_content_type": "text/markdown; charset=UTF-8; variant=GFM",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": null,
+    "keywords": "dataframe, arrow, out-of-core",
+    "license": null,
+    "license_expression": null,
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "polars-runtime-32",
+    "package_url": "https://pypi.org/project/polars-runtime-32/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/polars-runtime-32/",
+    "project_urls": {
+      "Changelog": "https://github.com/pola-rs/polars/releases",
+      "Documentation": "https://docs.pola.rs/api/python/stable/reference/index.html",
+      "Homepage": "https://www.pola.rs/",
+      "Repository": "https://github.com/pola-rs/polars"
+    },
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/polars-runtime-32/1.37.1/",
+    "requires_dist": null,
+    "requires_python": ">=3.10",
+    "summary": "Blazingly fast DataFrame library",
+    "version": "1.37.1",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 33515446,
+  "releases": {
+    "0.0.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1b022a1bd2184ed9c5da83a958bd832a018bff9794007e0ef69d66285d83e663",
+          "md5": "e18031ceccdbc109a8b89e3477ded35b",
+          "sha256": "a391b542b290ae3d2a9c7848ee3822938a036e03567ae826e9f0a48ecf35cd58"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-0.0.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e18031ceccdbc109a8b89e3477ded35b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 1286,
+        "upload_time": "2025-09-26T14:17:28",
+        "upload_time_iso_8601": "2025-09-26T14:17:28.594110Z",
+        "url": "https://files.pythonhosted.org/packages/1b/02/2a1bd2184ed9c5da83a958bd832a018bff9794007e0ef69d66285d83e663/polars_runtime_32-0.0.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "822286ee8337d6c74d4384d1c1900591484f9338bb2c39b3e3b1b4de7b608e0c",
+          "md5": "50c09daeb8e8c0aa66b5421544c0eb79",
+          "sha256": "0af8d2dc8c488f32cf372d0dceb880497f3dbc9cb7c7cbf90c7f130f882caa8c"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-0.0.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "50c09daeb8e8c0aa66b5421544c0eb79",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 903,
+        "upload_time": "2025-09-26T14:17:30",
+        "upload_time_iso_8601": "2025-09-26T14:17:30.139326Z",
+        "url": "https://files.pythonhosted.org/packages/82/22/86ee8337d6c74d4384d1c1900591484f9338bb2c39b3e3b1b4de7b608e0c/polars_runtime_32-0.0.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.34.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9735bc4f1a9dcef61845e8e4e5d2318470b002b93a3564026f0643f562761ecb",
+          "md5": "982f368c5c478d8e12043e04716d8468",
+          "sha256": "2878f9951e91121afe60c25433ef270b9a221e6ebf3de5f6642346b38cab3f03"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "982f368c5c478d8e12043e04716d8468",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 39655423,
+        "upload_time": "2025-10-02T18:30:02",
+        "upload_time_iso_8601": "2025-10-02T18:30:02.846846Z",
+        "url": "https://files.pythonhosted.org/packages/97/35/bc4f1a9dcef61845e8e4e5d2318470b002b93a3564026f0643f562761ecb/polars_runtime_32-1.34.0-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a6bbd655a103e75b7c81c47a3c2d276be0200c0c15cfb6fd47f17932ddcf7519",
+          "md5": "a63426fbb7cd5bcb17444d4cc80e5665",
+          "sha256": "fbc329c7d34a924228cc5dcdbbd4696d94411a3a5b15ad8bb868634c204e1951"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "a63426fbb7cd5bcb17444d4cc80e5665",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 35986049,
+        "upload_time": "2025-10-02T18:30:05",
+        "upload_time_iso_8601": "2025-10-02T18:30:05.848816Z",
+        "url": "https://files.pythonhosted.org/packages/a6/bb/d655a103e75b7c81c47a3c2d276be0200c0c15cfb6fd47f17932ddcf7519/polars_runtime_32-1.34.0-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9ece11ca850b7862cb43605e5d86cdf655614376e0a059871cf8305af5406554",
+          "md5": "423cf23bda6cfff4e5395d81ac050262",
+          "sha256": "93fa51d88a2d12ea996a5747aad5647d22a86cce73c80f208e61f487b10bc448"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "423cf23bda6cfff4e5395d81ac050262",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40261269,
+        "upload_time": "2025-10-02T18:30:08",
+        "upload_time_iso_8601": "2025-10-02T18:30:08.480376Z",
+        "url": "https://files.pythonhosted.org/packages/9e/ce/11ca850b7862cb43605e5d86cdf655614376e0a059871cf8305af5406554/polars_runtime_32-1.34.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d82577d12018c35489e19f7650b40679714a834effafc25d61e8dcee7c4fafce",
+          "md5": "8c01a7d81181778671de66423634d6c6",
+          "sha256": "79e4d696392c6d8d51f4347f0b167c52eef303c9d87093c0c68e8651198735b7"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "8c01a7d81181778671de66423634d6c6",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 37049077,
+        "upload_time": "2025-10-02T18:30:11",
+        "upload_time_iso_8601": "2025-10-02T18:30:11.162069Z",
+        "url": "https://files.pythonhosted.org/packages/d8/25/77d12018c35489e19f7650b40679714a834effafc25d61e8dcee7c4fafce/polars_runtime_32-1.34.0-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e275c30049d45ea1365151f86f650ed5354124ff3209f0abe588664c8eb13a31",
+          "md5": "d9898a3a7670aa976e83c2d7ea4f48ba",
+          "sha256": "2501d6b29d9001ea5ea2fd9b598787e10ddf45d8c4a87c2bead75159e8a15711"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "d9898a3a7670aa976e83c2d7ea4f48ba",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40105782,
+        "upload_time": "2025-10-02T18:30:14",
+        "upload_time_iso_8601": "2025-10-02T18:30:14.597740Z",
+        "url": "https://files.pythonhosted.org/packages/e2/75/c30049d45ea1365151f86f650ed5354124ff3209f0abe588664c8eb13a31/polars_runtime_32-1.34.0-cp39-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a33184efa27aa3478c8670bac1a720c8b1aee5c58c9c657c980e5e5c47fde883",
+          "md5": "5e28f090d6b12012bdf2028d8e80017e",
+          "sha256": "f9ed1765378dfe0bcd1ac5ec570dd9eab27ea728bbc980cc9a76eebc55586559"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "5e28f090d6b12012bdf2028d8e80017e",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 35873216,
+        "upload_time": "2025-10-02T18:30:17",
+        "upload_time_iso_8601": "2025-10-02T18:30:17.439365Z",
+        "url": "https://files.pythonhosted.org/packages/a3/31/84efa27aa3478c8670bac1a720c8b1aee5c58c9c657c980e5e5c47fde883/polars_runtime_32-1.34.0-cp39-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "02101189afb14cc47ed215ccf7fbd00ed21c48edfd89e51c16f8628a33ae4b1b",
+          "md5": "fcaae2e9606641826a656f9f6cbc8f59",
+          "sha256": "ebe6f865128a0d833f53a3f6828360761ad86d1698bceb22bef9fd999500dc1c"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "fcaae2e9606641826a656f9f6cbc8f59",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2634491,
+        "upload_time": "2025-10-02T18:31:05",
+        "upload_time_iso_8601": "2025-10-02T18:31:05.502145Z",
+        "url": "https://files.pythonhosted.org/packages/02/10/1189afb14cc47ed215ccf7fbd00ed21c48edfd89e51c16f8628a33ae4b1b/polars_runtime_32-1.34.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.34.0b2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d817b88c2a9769462ec7f5a699ac8af9ae91569176abbc01de63e5192d89de1d",
+          "md5": "1ea361fc876cab217e554d53706f91a5",
+          "sha256": "c14c04ff39325a6da082b16eda831477f861d7947c2d1fa0a2b7fae6bd49d658"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b2-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "1ea361fc876cab217e554d53706f91a5",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40333958,
+        "upload_time": "2025-09-26T14:38:19",
+        "upload_time_iso_8601": "2025-09-26T14:38:19.711194Z",
+        "url": "https://files.pythonhosted.org/packages/d8/17/b88c2a9769462ec7f5a699ac8af9ae91569176abbc01de63e5192d89de1d/polars_runtime_32-1.34.0b2-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8120ef41ed1c5e495642be5944673cb3732fc47a1eb7022cd4647500d8a7ccef",
+          "md5": "8d6fa2005f458684461d76f352b6a187",
+          "sha256": "218c6f1f919b8266ee4989c7562c2d66794eddc38dfb42ac37f8f0dca63e849a"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b2-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "8d6fa2005f458684461d76f352b6a187",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 36657161,
+        "upload_time": "2025-09-26T14:38:23",
+        "upload_time_iso_8601": "2025-09-26T14:38:23.914393Z",
+        "url": "https://files.pythonhosted.org/packages/81/20/ef41ed1c5e495642be5944673cb3732fc47a1eb7022cd4647500d8a7ccef/polars_runtime_32-1.34.0b2-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bd5b2e30b62292e6f9383e94390ef0b2e24022cdc65a9ac991361a16f4f1d52d",
+          "md5": "a69b914834eea5f0d4f80b3d3b2bd472",
+          "sha256": "7cccdbf4e3c6e96ab2e7b7fadaabf3585ebc00a22b89211bb2356bf0e7ab514a"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "a69b914834eea5f0d4f80b3d3b2bd472",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40934921,
+        "upload_time": "2025-09-26T14:38:27",
+        "upload_time_iso_8601": "2025-09-26T14:38:27.528688Z",
+        "url": "https://files.pythonhosted.org/packages/bd/5b/2e30b62292e6f9383e94390ef0b2e24022cdc65a9ac991361a16f4f1d52d/polars_runtime_32-1.34.0b2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3ee01a1dfd74eabf30bf54be2639d3adb56461711803cd06f40a31ca3604dabb",
+          "md5": "5eff0423558bb88c78b6dafd029ad424",
+          "sha256": "90c514287c0d4dc78c17fa05e99e68735b256af7e6f50f8fee81701f33cef1f6"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b2-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "5eff0423558bb88c78b6dafd029ad424",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 37716246,
+        "upload_time": "2025-09-26T14:38:30",
+        "upload_time_iso_8601": "2025-09-26T14:38:30.766664Z",
+        "url": "https://files.pythonhosted.org/packages/3e/e0/1a1dfd74eabf30bf54be2639d3adb56461711803cd06f40a31ca3604dabb/polars_runtime_32-1.34.0b2-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "336024fe87ae4b3afd49dad2e71f7b8c4676b780553f2758a7f5fe95f39fffbe",
+          "md5": "03368455f47bc7abdd04a8c5eed4c187",
+          "sha256": "f95704ed55ab27c4a2edbbf1b403f6ea21a96bf20fdad1ae83e2825aa1affa9f"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b2-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "03368455f47bc7abdd04a8c5eed4c187",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40787016,
+        "upload_time": "2025-09-26T14:38:34",
+        "upload_time_iso_8601": "2025-09-26T14:38:34.424285Z",
+        "url": "https://files.pythonhosted.org/packages/33/60/24fe87ae4b3afd49dad2e71f7b8c4676b780553f2758a7f5fe95f39fffbe/polars_runtime_32-1.34.0b2-cp39-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "494a7e911abf0cfc00427c9d75098bb2b392ab33288195f723be76c06c3f5656",
+          "md5": "550b8a5bc1a0213973442e72f4672c20",
+          "sha256": "e1eb502b0a129d09805bf2ac0597cca39f67f657ad6d054d06c323c4b3611518"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b2-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "550b8a5bc1a0213973442e72f4672c20",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 36557596,
+        "upload_time": "2025-09-26T14:38:37",
+        "upload_time_iso_8601": "2025-09-26T14:38:37.842667Z",
+        "url": "https://files.pythonhosted.org/packages/49/4a/7e911abf0cfc00427c9d75098bb2b392ab33288195f723be76c06c3f5656/polars_runtime_32-1.34.0b2-cp39-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "cebb3cb819f52a343aa380147d33da50a680daba57a14f2fa4c99e63dd40e186",
+          "md5": "9c6d3dc735941d596275cd579af0119e",
+          "sha256": "8da3aedf31b423e044cc7bd9262b97d3c3dc008a5b308f2523ed637de83dd62e"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9c6d3dc735941d596275cd579af0119e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 4873569,
+        "upload_time": "2025-09-26T14:39:26",
+        "upload_time_iso_8601": "2025-09-26T14:39:26.975366Z",
+        "url": "https://files.pythonhosted.org/packages/ce/bb/3cb819f52a343aa380147d33da50a680daba57a14f2fa4c99e63dd40e186/polars_runtime_32-1.34.0b2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.34.0b3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "230da0c0005847c1aff5aebb8d5b50b99125fee8faa6eda586c0fc55640f7d5e",
+          "md5": "3e7a7f4d3c43b47d9ebbd7eaf723cce0",
+          "sha256": "51deb2e42ee4f839e03655ef27f6158279309e430776928c5b8edde2ddd51ee3"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b3-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "3e7a7f4d3c43b47d9ebbd7eaf723cce0",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40334387,
+        "upload_time": "2025-09-27T13:13:26",
+        "upload_time_iso_8601": "2025-09-27T13:13:26.723380Z",
+        "url": "https://files.pythonhosted.org/packages/23/0d/a0c0005847c1aff5aebb8d5b50b99125fee8faa6eda586c0fc55640f7d5e/polars_runtime_32-1.34.0b3-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "012c5dd44e623593433d5fe5987f8e21651edfdf6d5a8fb849960d6ec09e9180",
+          "md5": "69b65db0ac60c41b374c9bd648d76595",
+          "sha256": "cfc6001ec26063ea1919249963f66d42acb12dbf93da9ddbfbaa36aaa0913b15"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b3-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "69b65db0ac60c41b374c9bd648d76595",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 36656975,
+        "upload_time": "2025-09-27T13:13:29",
+        "upload_time_iso_8601": "2025-09-27T13:13:29.906667Z",
+        "url": "https://files.pythonhosted.org/packages/01/2c/5dd44e623593433d5fe5987f8e21651edfdf6d5a8fb849960d6ec09e9180/polars_runtime_32-1.34.0b3-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4a0c0eb3c6872ebc462194cecb0c2af01a3c58711516aeee1b039887dcad5819",
+          "md5": "460226a89711b3d5049fe0eddc11c6b3",
+          "sha256": "09899a2321ba28efa39f56355af360c0b6ee9f0b5142a5d5278e181b3a402e14"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b3-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "460226a89711b3d5049fe0eddc11c6b3",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40934981,
+        "upload_time": "2025-09-27T13:13:32",
+        "upload_time_iso_8601": "2025-09-27T13:13:32.961719Z",
+        "url": "https://files.pythonhosted.org/packages/4a/0c/0eb3c6872ebc462194cecb0c2af01a3c58711516aeee1b039887dcad5819/polars_runtime_32-1.34.0b3-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "787da705a122d9a73a77582d8715c65d851f2c17a116cc72ea256400554584ff",
+          "md5": "9c9e481adff9013daaa28df4e5f30bf2",
+          "sha256": "c5f59b1685263c0ce3d5d0a7beea9056bb42e4fbfe5497ab590d8b9c93f923ff"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b3-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "9c9e481adff9013daaa28df4e5f30bf2",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 37716328,
+        "upload_time": "2025-09-27T13:13:36",
+        "upload_time_iso_8601": "2025-09-27T13:13:36.398585Z",
+        "url": "https://files.pythonhosted.org/packages/78/7d/a705a122d9a73a77582d8715c65d851f2c17a116cc72ea256400554584ff/polars_runtime_32-1.34.0b3-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "09bf5adb16a58b7c352bae51ede37a7feabf8375d5d6e1c50d9dd319e93c960a",
+          "md5": "93ad81a57a74ed5fdc499014e3596c73",
+          "sha256": "862defbb4304981c3fa22782574c34d234c12fc08d371ea30207fece2bf1e812"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b3-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "93ad81a57a74ed5fdc499014e3596c73",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40787073,
+        "upload_time": "2025-09-27T13:13:39",
+        "upload_time_iso_8601": "2025-09-27T13:13:39.053541Z",
+        "url": "https://files.pythonhosted.org/packages/09/bf/5adb16a58b7c352bae51ede37a7feabf8375d5d6e1c50d9dd319e93c960a/polars_runtime_32-1.34.0b3-cp39-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f98ad0c9ddd45c5d788cf0b0a421e50ad005e7241d964c8fc2c6904b8ed11cdb",
+          "md5": "9c2cb8ad3ffecb27900b8dce752bc8ef",
+          "sha256": "4ee623b9444a1d78fa92a9da1492aa231370bb19c630932e689dd150e923c00c"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b3-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "9c2cb8ad3ffecb27900b8dce752bc8ef",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 36557653,
+        "upload_time": "2025-09-27T13:13:42",
+        "upload_time_iso_8601": "2025-09-27T13:13:42.500495Z",
+        "url": "https://files.pythonhosted.org/packages/f9/8a/d0c9ddd45c5d788cf0b0a421e50ad005e7241d964c8fc2c6904b8ed11cdb/polars_runtime_32-1.34.0b3-cp39-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "02477c770623fe25b4ba4b1fd617c1b3a2c9324104845a62da4d4750c5586ece",
+          "md5": "a6ceaa6663c198b0d81b40c9689a71cb",
+          "sha256": "e7036b82f3769d5b9d18485675847fde6ff258e07cf77fa602c277990bac8f04"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a6ceaa6663c198b0d81b40c9689a71cb",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 4874039,
+        "upload_time": "2025-09-27T13:14:21",
+        "upload_time_iso_8601": "2025-09-27T13:14:21.156321Z",
+        "url": "https://files.pythonhosted.org/packages/02/47/7c770623fe25b4ba4b1fd617c1b3a2c9324104845a62da4d4750c5586ece/polars_runtime_32-1.34.0b3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.34.0b4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1249169808f6c44ea3211d04e619adbb285fd9b6ce65ef781363569ace2a56e6",
+          "md5": "6b5a7a11c83499dd46abba11d286db61",
+          "sha256": "3949324281072749bccdd606a1da3d7e7d0ffc15b8ba249909f7ba87f6d52e93"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b4-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "6b5a7a11c83499dd46abba11d286db61",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 39568485,
+        "upload_time": "2025-09-28T12:45:33",
+        "upload_time_iso_8601": "2025-09-28T12:45:33.261494Z",
+        "url": "https://files.pythonhosted.org/packages/12/49/169808f6c44ea3211d04e619adbb285fd9b6ce65ef781363569ace2a56e6/polars_runtime_32-1.34.0b4-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bc5b8a1f9850f3e3545c03afdef5a4a12b7d64e543fb072c091ec95f8b1a863c",
+          "md5": "46c5abc180f38a47f19f6d359ff279f3",
+          "sha256": "1568592551ffdfc2501a1bf5ae28ea232d99655ce5fc5a065e1befe354e285e4"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b4-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "46c5abc180f38a47f19f6d359ff279f3",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 35891040,
+        "upload_time": "2025-09-28T12:45:36",
+        "upload_time_iso_8601": "2025-09-28T12:45:36.487366Z",
+        "url": "https://files.pythonhosted.org/packages/bc/5b/8a1f9850f3e3545c03afdef5a4a12b7d64e543fb072c091ec95f8b1a863c/polars_runtime_32-1.34.0b4-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "65a8f6e2991e0fd5d18c8430b5a0262467cac858e36286ef90b35488915d7dd6",
+          "md5": "bba75c680481b707e8baaead4af3d40f",
+          "sha256": "b4853009d9b016019b4f798b7b33d6d5ffacd31e92a3ef08892cfcfccec4a3ca"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "bba75c680481b707e8baaead4af3d40f",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40169227,
+        "upload_time": "2025-09-28T12:45:39",
+        "upload_time_iso_8601": "2025-09-28T12:45:39.717952Z",
+        "url": "https://files.pythonhosted.org/packages/65/a8/f6e2991e0fd5d18c8430b5a0262467cac858e36286ef90b35488915d7dd6/polars_runtime_32-1.34.0b4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "30bc3d5785e4f0ceb4074afad4580ffcd1d648c796d493b9429929c386d57efc",
+          "md5": "cab96cd5e07c4122dfecfd8f126f37fd",
+          "sha256": "77962112152ffb4b6c67dc27242a882f6c492cd218539a5e57ccbaf083d269b0"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b4-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "cab96cd5e07c4122dfecfd8f126f37fd",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 36950459,
+        "upload_time": "2025-09-28T12:45:42",
+        "upload_time_iso_8601": "2025-09-28T12:45:42.786366Z",
+        "url": "https://files.pythonhosted.org/packages/30/bc/3d5785e4f0ceb4074afad4580ffcd1d648c796d493b9429929c386d57efc/polars_runtime_32-1.34.0b4-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "22e160155cf4b6460a18ad852b66f5174913a9cb2f00056b3b349ba8a232701b",
+          "md5": "fd740b4d64b0ca41e295179212a80078",
+          "sha256": "9dd0ea6a32123d1607e2b00ccd4a692ac2cb7501c0a17c59c39a1a9abf213f8c"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b4-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "fd740b4d64b0ca41e295179212a80078",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40015971,
+        "upload_time": "2025-09-28T12:45:45",
+        "upload_time_iso_8601": "2025-09-28T12:45:45.493519Z",
+        "url": "https://files.pythonhosted.org/packages/22/e1/60155cf4b6460a18ad852b66f5174913a9cb2f00056b3b349ba8a232701b/polars_runtime_32-1.34.0b4-cp39-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c5db84d7d77433639ae5d1c3b5bb1f5329c6086c08b8fd38987b325258d1499d",
+          "md5": "211d0965252e0f3ceb000260323a2c29",
+          "sha256": "30624ac22e3c09f88d27fab62dc1966d312d3bd54750c67c98a950830ea13cb5"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b4-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "211d0965252e0f3ceb000260323a2c29",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 35786538,
+        "upload_time": "2025-09-28T12:45:48",
+        "upload_time_iso_8601": "2025-09-28T12:45:48.584655Z",
+        "url": "https://files.pythonhosted.org/packages/c5/db/84d7d77433639ae5d1c3b5bb1f5329c6086c08b8fd38987b325258d1499d/polars_runtime_32-1.34.0b4-cp39-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3a234f4dfb9c0c2664cf171cef859f57e547f6740593d8baa9e2c8ca308890cc",
+          "md5": "bc43dd81d9686baf546d15e25c00a490",
+          "sha256": "a893f7fec52e3c5fb18f7e64877188e2b7b045d28269c85cc9955a226fe59802"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bc43dd81d9686baf546d15e25c00a490",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 4874290,
+        "upload_time": "2025-09-28T12:46:27",
+        "upload_time_iso_8601": "2025-09-28T12:46:27.684753Z",
+        "url": "https://files.pythonhosted.org/packages/3a/23/4f4dfb9c0c2664cf171cef859f57e547f6740593d8baa9e2c8ca308890cc/polars_runtime_32-1.34.0b4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.34.0b5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c5220dda1e7af16fedf57c7db5fcbf00e6f2dc8f2cfab75d3816ebf89f7a0206",
+          "md5": "646ea7d8e4304f692a97587031e52ae2",
+          "sha256": "60acdac925e5b926313e0a9b71120ef3920414963fd0ee28dc9be1e73d7c6ffb"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b5-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "646ea7d8e4304f692a97587031e52ae2",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 39634533,
+        "upload_time": "2025-10-01T16:24:08",
+        "upload_time_iso_8601": "2025-10-01T16:24:08.223136Z",
+        "url": "https://files.pythonhosted.org/packages/c5/22/0dda1e7af16fedf57c7db5fcbf00e6f2dc8f2cfab75d3816ebf89f7a0206/polars_runtime_32-1.34.0b5-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2f3de0aefd49f37784dc3ad9df88a5e7babea2d770a68f91e8d19d17b722e32b",
+          "md5": "55ae6af78a2dad691335b70a072f84e1",
+          "sha256": "824f8a46eab1742e940cdaa217bf8a9955ee994b07102eb3590cb7afa6e14e9a"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b5-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "55ae6af78a2dad691335b70a072f84e1",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 35952429,
+        "upload_time": "2025-10-01T16:24:10",
+        "upload_time_iso_8601": "2025-10-01T16:24:10.924317Z",
+        "url": "https://files.pythonhosted.org/packages/2f/3d/e0aefd49f37784dc3ad9df88a5e7babea2d770a68f91e8d19d17b722e32b/polars_runtime_32-1.34.0b5-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "40cbced3dff68aad72902c7eab02b9f59f9cb44cc26ccfae25473ded90061f05",
+          "md5": "c6a73c8a9d25fbb68d607df714b43e28",
+          "sha256": "590f0e2ea1abf0992927fcad04395092abbb60b675970889842d8d7c18a2f01a"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b5-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "c6a73c8a9d25fbb68d607df714b43e28",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40239516,
+        "upload_time": "2025-10-01T16:24:13",
+        "upload_time_iso_8601": "2025-10-01T16:24:13.583790Z",
+        "url": "https://files.pythonhosted.org/packages/40/cb/ced3dff68aad72902c7eab02b9f59f9cb44cc26ccfae25473ded90061f05/polars_runtime_32-1.34.0b5-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b6cc16e9dcecfb81a923127b3d07621596ac90429231ebcd68cd32a63a9b63f4",
+          "md5": "ae0fc7458579135bb4f45ccb6dfb45a2",
+          "sha256": "87aabaea44bee101f8277bd5c254dea50bcc58f0eedf3ab1314cb4d9405e3357"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b5-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "ae0fc7458579135bb4f45ccb6dfb45a2",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 37015633,
+        "upload_time": "2025-10-01T16:24:17",
+        "upload_time_iso_8601": "2025-10-01T16:24:17.258437Z",
+        "url": "https://files.pythonhosted.org/packages/b6/cc/16e9dcecfb81a923127b3d07621596ac90429231ebcd68cd32a63a9b63f4/polars_runtime_32-1.34.0b5-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fb008a28b517ca7936224a1d8cf2c3d5e3adf77a74dd581e83f47c43f1bf5f6d",
+          "md5": "7d85faa0974f0993bb0be8b17b912e2d",
+          "sha256": "ecd750f0addb4360e375aa44cb4dcef602a3ad1eb716042d67b41cbd0b93ac40"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b5-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "7d85faa0974f0993bb0be8b17b912e2d",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40077727,
+        "upload_time": "2025-10-01T16:24:20",
+        "upload_time_iso_8601": "2025-10-01T16:24:20.077458Z",
+        "url": "https://files.pythonhosted.org/packages/fb/00/8a28b517ca7936224a1d8cf2c3d5e3adf77a74dd581e83f47c43f1bf5f6d/polars_runtime_32-1.34.0b5-cp39-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c0580e4c6c5ea59be4c66cf3d4385e62f82bf775b93813fd265b707598d53a4b",
+          "md5": "10b1321332ba5dfdcdc852711d0d4acd",
+          "sha256": "e29ceee5571ca311797345cac7311ae978d159558e1492783ef605053d2ba4ed"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b5-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "10b1321332ba5dfdcdc852711d0d4acd",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 35844551,
+        "upload_time": "2025-10-01T16:24:23",
+        "upload_time_iso_8601": "2025-10-01T16:24:23.071861Z",
+        "url": "https://files.pythonhosted.org/packages/c0/58/0e4c6c5ea59be4c66cf3d4385e62f82bf775b93813fd265b707598d53a4b/polars_runtime_32-1.34.0b5-cp39-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c66abe28ba7cabd8a98232fa79494aeebfeecadac548327763cb1034a24e8965",
+          "md5": "25b5905601bbc7e80ef9ff801ea75d41",
+          "sha256": "a957c7cfa7a6040b6353dac718c7938fbaf26201c88375cd036558f6e8bfa6a6"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.34.0b5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "25b5905601bbc7e80ef9ff801ea75d41",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2634461,
+        "upload_time": "2025-10-01T16:25:04",
+        "upload_time_iso_8601": "2025-10-01T16:25:04.050394Z",
+        "url": "https://files.pythonhosted.org/packages/c6/6a/be28ba7cabd8a98232fa79494aeebfeecadac548327763cb1034a24e8965/polars_runtime_32-1.34.0b5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.35.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8a5e0c8419e429be52714b120d71c6042311ad1fd61a22acd0d7e499b18fb267",
+          "md5": "41fa6e45d3a0c07705ebdef24d943541",
+          "sha256": "e34a07f610c69e1ffd0598ce02c166cfd0db442a4e72474cbb8c7b9ded4407b1"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "41fa6e45d3a0c07705ebdef24d943541",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40681352,
+        "upload_time": "2025-10-26T20:04:14",
+        "upload_time_iso_8601": "2025-10-26T20:04:14.363603Z",
+        "url": "https://files.pythonhosted.org/packages/8a/5e/0c8419e429be52714b120d71c6042311ad1fd61a22acd0d7e499b18fb267/polars_runtime_32-1.35.0-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": true,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "664f6d66077c552720bf56410b831d365863e0b4f3794392e55a08fc7bd2a6c0",
+          "md5": "c4693f1eed970201881434c7461f5b65",
+          "sha256": "d1c5006c033bb63821eb7e2f0c805d6412bd4b92fcf45483528f7a82b66f7d30"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "c4693f1eed970201881434c7461f5b65",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 36943744,
+        "upload_time": "2025-10-26T20:04:17",
+        "upload_time_iso_8601": "2025-10-26T20:04:17.166780Z",
+        "url": "https://files.pythonhosted.org/packages/66/4f/6d66077c552720bf56410b831d365863e0b4f3794392e55a08fc7bd2a6c0/polars_runtime_32-1.35.0-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": true,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "508dfc7afb147631dc8e44303cc2a6b102a61ae8870f6aac5cd30eecc6e97dec",
+          "md5": "bce4873406a02ea1b91de8111f339a79",
+          "sha256": "a72fdfd4e51114d4b99583246487959004a5ad59be3798e7ef59041e94d2ba58"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "bce4873406a02ea1b91de8111f339a79",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 41453143,
+        "upload_time": "2025-10-26T20:04:20",
+        "upload_time_iso_8601": "2025-10-26T20:04:20.215015Z",
+        "url": "https://files.pythonhosted.org/packages/50/8d/fc7afb147631dc8e44303cc2a6b102a61ae8870f6aac5cd30eecc6e97dec/polars_runtime_32-1.35.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": true,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6df1e47b11e01f3c74dadb5cd6e770014e302a99b842e4b8322a5bcc455c63e0",
+          "md5": "eaa0350e3fb3a9915150a277eb4b06bb",
+          "sha256": "2ac8a5d13a115b421e39d880b7d786252d6bd31cbcd89a2e4f8a261847f428ed"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "eaa0350e3fb3a9915150a277eb4b06bb",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 37959755,
+        "upload_time": "2025-10-26T20:04:23",
+        "upload_time_iso_8601": "2025-10-26T20:04:23.186952Z",
+        "url": "https://files.pythonhosted.org/packages/6d/f1/e47b11e01f3c74dadb5cd6e770014e302a99b842e4b8322a5bcc455c63e0/polars_runtime_32-1.35.0-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": true,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c46ae90c35a8d18666907b2d0d0ad904ff01a5742c1687f31abcf2e60a0a01dd",
+          "md5": "7e0a73ed78ce96ce7e0f356a394ba318",
+          "sha256": "c15ef252d1ab8f6679ef53078650d6ef919dcf44cbd08ec0b3a9f1b38d51bd2d"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "7e0a73ed78ce96ce7e0f356a394ba318",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 41374043,
+        "upload_time": "2025-10-26T20:04:26",
+        "upload_time_iso_8601": "2025-10-26T20:04:26.824438Z",
+        "url": "https://files.pythonhosted.org/packages/c4/6a/e90c35a8d18666907b2d0d0ad904ff01a5742c1687f31abcf2e60a0a01dd/polars_runtime_32-1.35.0-cp39-abi3-win_amd64.whl",
+        "yanked": true,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "84af819eab57fdad2e2d2c1b56643028b07219946f1c004b3251b4e013b40b16",
+          "md5": "b145b9104466707d193ecba314d7461a",
+          "sha256": "4929085b40d8f0ba3f29e33ee37e2f01be00498d110677be38202f9fcf984a57"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "b145b9104466707d193ecba314d7461a",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 37034957,
+        "upload_time": "2025-10-26T20:04:29",
+        "upload_time_iso_8601": "2025-10-26T20:04:29.333003Z",
+        "url": "https://files.pythonhosted.org/packages/84/af/819eab57fdad2e2d2c1b56643028b07219946f1c004b3251b4e013b40b16/polars_runtime_32-1.35.0-cp39-abi3-win_arm64.whl",
+        "yanked": true,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e98792c043153fe55f9487ad994f2af926ce9b09d3ea08181a08d1be525feb5a",
+          "md5": "9dfad15d2c5dec2246829b6c7f1b8c86",
+          "sha256": "4c3e494c23191e30b5da9e4e297b1b292bd3b1d2d1bd08fc5a71ad739751bc4a"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9dfad15d2c5dec2246829b6c7f1b8c86",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2696034,
+        "upload_time": "2025-10-26T20:05:09",
+        "upload_time_iso_8601": "2025-10-26T20:05:09.254363Z",
+        "url": "https://files.pythonhosted.org/packages/e9/87/92c043153fe55f9487ad994f2af926ce9b09d3ea08181a08d1be525feb5a/polars_runtime_32-1.35.0.tar.gz",
+        "yanked": true,
+        "yanked_reason": null
+      }
+    ],
+    "1.35.0b1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a224233c912db62f063d6ba6e612d8e2ab546af2a70c2b15878b94302b4fc60d",
+          "md5": "2aa7a9aee193497bae5dfbc4b2370ff9",
+          "sha256": "655cbdbdb19439ea532ad1b7991c9cb5140e4b9c3e10679768b54faef9fd186d"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0b1-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "2aa7a9aee193497bae5dfbc4b2370ff9",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40099090,
+        "upload_time": "2025-10-19T15:16:46",
+        "upload_time_iso_8601": "2025-10-19T15:16:46.178445Z",
+        "url": "https://files.pythonhosted.org/packages/a2/24/233c912db62f063d6ba6e612d8e2ab546af2a70c2b15878b94302b4fc60d/polars_runtime_32-1.35.0b1-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4d6db3c473e7d670a4f9f0a4d0574292b9b4440a60bfb98ed6b0923e80f39455",
+          "md5": "ba6680680718c54266034cd10dc41911",
+          "sha256": "ca6dba8149fd14f5cc0413a6bed66d4115493289cb79ab2bcd6701848b1b4e09"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0b1-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "ba6680680718c54266034cd10dc41911",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 36366879,
+        "upload_time": "2025-10-19T15:16:49",
+        "upload_time_iso_8601": "2025-10-19T15:16:49.305164Z",
+        "url": "https://files.pythonhosted.org/packages/4d/6d/b3c473e7d670a4f9f0a4d0574292b9b4440a60bfb98ed6b0923e80f39455/polars_runtime_32-1.35.0b1-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d6ad9f0c762154a366f9022667f6b15481df368500a5f5da4e65b9a73f419a9d",
+          "md5": "7c086b85e6a1657c7952e939aa80fd51",
+          "sha256": "616fcc9e52c9c9312d773acfe3c121f63a91aa80580adac3c0b57c993efd3143"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0b1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "7c086b85e6a1657c7952e939aa80fd51",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40706784,
+        "upload_time": "2025-10-19T15:16:52",
+        "upload_time_iso_8601": "2025-10-19T15:16:52.051937Z",
+        "url": "https://files.pythonhosted.org/packages/d6/ad/9f0c762154a366f9022667f6b15481df368500a5f5da4e65b9a73f419a9d/polars_runtime_32-1.35.0b1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1f67609f8cecff66541ae3c068800c9b7cbbe5699ebcef94a14ad5b5c9c460d6",
+          "md5": "ab9b25264b963d787d2fd66f4fcd636d",
+          "sha256": "fe05b6b2b84ef80f46e781eb7c45363586f184835cbb8cb6acd521a0bc8b55d6"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0b1-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "ab9b25264b963d787d2fd66f4fcd636d",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 37422718,
+        "upload_time": "2025-10-19T15:16:55",
+        "upload_time_iso_8601": "2025-10-19T15:16:55.174204Z",
+        "url": "https://files.pythonhosted.org/packages/1f/67/609f8cecff66541ae3c068800c9b7cbbe5699ebcef94a14ad5b5c9c460d6/polars_runtime_32-1.35.0b1-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b712396401bd8f6cf9275b7e806e4007764c1e0cce8b63fe97baff09b405152e",
+          "md5": "9680f11bfaaebdf26db9c1e29126e6db",
+          "sha256": "1749acbd75496166d2765ec15cf5c9202d723b8b725966829132d55abaf1cd94"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0b1-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "9680f11bfaaebdf26db9c1e29126e6db",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40703201,
+        "upload_time": "2025-10-19T15:16:58",
+        "upload_time_iso_8601": "2025-10-19T15:16:58.144928Z",
+        "url": "https://files.pythonhosted.org/packages/b7/12/396401bd8f6cf9275b7e806e4007764c1e0cce8b63fe97baff09b405152e/polars_runtime_32-1.35.0b1-cp39-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f49e19de4e0475c9ca17a1889a47b430928339bdcfae9bb015bfba90d0e1bc13",
+          "md5": "b212b9795a837fae530d355fb18e5228",
+          "sha256": "3c8a031de4b8c9369428b74bceea71f250fa8d81d951accab4bf7f54e80dfa92"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0b1-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "b212b9795a837fae530d355fb18e5228",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 36346633,
+        "upload_time": "2025-10-19T15:17:00",
+        "upload_time_iso_8601": "2025-10-19T15:17:00.762765Z",
+        "url": "https://files.pythonhosted.org/packages/f4/9e/19de4e0475c9ca17a1889a47b430928339bdcfae9bb015bfba90d0e1bc13/polars_runtime_32-1.35.0b1-cp39-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "30584ea600b096e7c41bce3992039d17b40e736aaa2e6fa21d0ea3cba4802616",
+          "md5": "7d7d66557b23d3ad257c35098c35f0e7",
+          "sha256": "4ebe9e32d63f017206751bb97dae88b630f533d579466b368aad25db096624be"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.0b1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "7d7d66557b23d3ad257c35098c35f0e7",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2679893,
+        "upload_time": "2025-10-19T15:17:41",
+        "upload_time_iso_8601": "2025-10-19T15:17:41.439843Z",
+        "url": "https://files.pythonhosted.org/packages/30/58/4ea600b096e7c41bce3992039d17b40e736aaa2e6fa21d0ea3cba4802616/polars_runtime_32-1.35.0b1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.35.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "082cda339459805a26105e9d9c2f07e43ca5b8baeee55acd5457e6881487a79a",
+          "md5": "8f31f629f3ae9e2a263cf46b625bce0d",
+          "sha256": "6f051a42f6ae2f26e3bc2cf1f170f2120602976e2a3ffb6cfba742eecc7cc620"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.1-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "8f31f629f3ae9e2a263cf46b625bce0d",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40525100,
+        "upload_time": "2025-10-30T12:11:58",
+        "upload_time_iso_8601": "2025-10-30T12:11:58.098089Z",
+        "url": "https://files.pythonhosted.org/packages/08/2c/da339459805a26105e9d9c2f07e43ca5b8baeee55acd5457e6881487a79a/polars_runtime_32-1.35.1-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2770a0733568b3533481924d2ce68b279ab3d7334e5fa6ed259f671f650b7c5e",
+          "md5": "d34ebf2480997d64d901e29bcedf409a",
+          "sha256": "c2232f9cf05ba59efc72d940b86c033d41fd2d70bf2742e8115ed7112a766aa9"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.1-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "d34ebf2480997d64d901e29bcedf409a",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 36701908,
+        "upload_time": "2025-10-30T12:12:02",
+        "upload_time_iso_8601": "2025-10-30T12:12:02.166763Z",
+        "url": "https://files.pythonhosted.org/packages/27/70/a0733568b3533481924d2ce68b279ab3d7334e5fa6ed259f671f650b7c5e/polars_runtime_32-1.35.1-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "46546c09137bef9da72fd891ba58c2962cc7c6c5cad4649c0e668d6b344a9d7b",
+          "md5": "0df4b9fab7f297229241b2889a5bd609",
+          "sha256": "42f9837348557fd674477ea40a6ac8a7e839674f6dd0a199df24be91b026024c"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "0df4b9fab7f297229241b2889a5bd609",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 41317692,
+        "upload_time": "2025-10-30T12:12:04",
+        "upload_time_iso_8601": "2025-10-30T12:12:04.928650Z",
+        "url": "https://files.pythonhosted.org/packages/46/54/6c09137bef9da72fd891ba58c2962cc7c6c5cad4649c0e668d6b344a9d7b/polars_runtime_32-1.35.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "225581c5b266a947c339edd7fbaa9e1d9614012d02418453f48b76cc177d3dd9",
+          "md5": "c12a8a1e1cb4ebc8dd7141e434b161aa",
+          "sha256": "c873aeb36fed182d5ebc35ca17c7eb193fe83ae2ea551ee8523ec34776731390"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.1-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "c12a8a1e1cb4ebc8dd7141e434b161aa",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 37853058,
+        "upload_time": "2025-10-30T12:12:08",
+        "upload_time_iso_8601": "2025-10-30T12:12:08.342909Z",
+        "url": "https://files.pythonhosted.org/packages/22/55/81c5b266a947c339edd7fbaa9e1d9614012d02418453f48b76cc177d3dd9/polars_runtime_32-1.35.1-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6c58be8b034d559eac515f52408fd6537be9bea095bc0388946a4e38910d3d50",
+          "md5": "3ab8ca9d3b9bf2cf27fe6987e9cc38ee",
+          "sha256": "35cde9453ca7032933f0e58e9ed4388f5a1e415dd0db2dd1e442c81d815e630c"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.1-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "3ab8ca9d3b9bf2cf27fe6987e9cc38ee",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 41289554,
+        "upload_time": "2025-10-30T12:12:11",
+        "upload_time_iso_8601": "2025-10-30T12:12:11.104882Z",
+        "url": "https://files.pythonhosted.org/packages/6c/58/be8b034d559eac515f52408fd6537be9bea095bc0388946a4e38910d3d50/polars_runtime_32-1.35.1-cp39-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f47fe0111b9e2a1169ea82cde3ded9c92683e93c26dfccd72aee727996a1ac5b",
+          "md5": "d18412bf753a91f599fc6997c5f813eb",
+          "sha256": "fd77757a6c9eb9865c4bfb7b07e22225207c6b7da382bd0b9bd47732f637105d"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.1-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "d18412bf753a91f599fc6997c5f813eb",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 36958878,
+        "upload_time": "2025-10-30T12:12:15",
+        "upload_time_iso_8601": "2025-10-30T12:12:15.206427Z",
+        "url": "https://files.pythonhosted.org/packages/f4/7f/e0111b9e2a1169ea82cde3ded9c92683e93c26dfccd72aee727996a1ac5b/polars_runtime_32-1.35.1-cp39-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "df3e19c252e8eb4096300c1a36ec3e50a27e5fa9a1ccaf32d3927793c16abaee",
+          "md5": "b59825e05b86cae77b6d28b948028a42",
+          "sha256": "f6b4ec9cd58b31c87af1b8c110c9c986d82345f1d50d7f7595b5d447a19dc365"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b59825e05b86cae77b6d28b948028a42",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2696218,
+        "upload_time": "2025-10-30T12:12:53",
+        "upload_time_iso_8601": "2025-10-30T12:12:53.479246Z",
+        "url": "https://files.pythonhosted.org/packages/df/3e/19c252e8eb4096300c1a36ec3e50a27e5fa9a1ccaf32d3927793c16abaee/polars_runtime_32-1.35.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.35.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "66dea532b81e68e636483a5dd764d72e106215543f3ef49a142272b277ada8fe",
+          "md5": "dd19733f873cd03a16345ea52091af35",
+          "sha256": "e465d12a29e8df06ea78947e50bd361cdf77535cd904fd562666a8a9374e7e3a"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.2-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "dd19733f873cd03a16345ea52091af35",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40524507,
+        "upload_time": "2025-11-09T13:18:55",
+        "upload_time_iso_8601": "2025-11-09T13:18:55.727864Z",
+        "url": "https://files.pythonhosted.org/packages/66/de/a532b81e68e636483a5dd764d72e106215543f3ef49a142272b277ada8fe/polars_runtime_32-1.35.2-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2d0b679751ea6aeaa7b3e33a70ba17f9c8150310792583f3ecf9bb1ce15fe15c",
+          "md5": "2edb01c11a727cc945a4145b7f445d07",
+          "sha256": "ef2b029b78f64fb53f126654c0bfa654045c7546bd0de3009d08bd52d660e8cc"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.2-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "2edb01c11a727cc945a4145b7f445d07",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 36700154,
+        "upload_time": "2025-11-09T13:18:59",
+        "upload_time_iso_8601": "2025-11-09T13:18:59.780383Z",
+        "url": "https://files.pythonhosted.org/packages/2d/0b/679751ea6aeaa7b3e33a70ba17f9c8150310792583f3ecf9bb1ce15fe15c/polars_runtime_32-1.35.2-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e2c8fd9f48dd6b89ae9cff53d896b51d08579ef9c739e46ea87a647b376c8ca2",
+          "md5": "35bd81615289c5eafb123cc2334a16cb",
+          "sha256": "85dda0994b5dff7f456bb2f4bbd22be9a9e5c5e28670e23fedb13601ec99a46d"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "35bd81615289c5eafb123cc2334a16cb",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 41317788,
+        "upload_time": "2025-11-09T13:19:03",
+        "upload_time_iso_8601": "2025-11-09T13:19:03.949348Z",
+        "url": "https://files.pythonhosted.org/packages/e2/c8/fd9f48dd6b89ae9cff53d896b51d08579ef9c739e46ea87a647b376c8ca2/polars_runtime_32-1.35.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6789e09d9897a70b607e22a36c9eae85a5b829581108fd1e3d4292e5c0f52939",
+          "md5": "f006bb318a173cc36a07bb15181792dd",
+          "sha256": "3b9006902fc51b768ff747c0f74bd4ce04005ee8aeb290ce9c07ce1cbe1b58a9"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.2-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "f006bb318a173cc36a07bb15181792dd",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 37850590,
+        "upload_time": "2025-11-09T13:19:08",
+        "upload_time_iso_8601": "2025-11-09T13:19:08.154574Z",
+        "url": "https://files.pythonhosted.org/packages/67/89/e09d9897a70b607e22a36c9eae85a5b829581108fd1e3d4292e5c0f52939/polars_runtime_32-1.35.2-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dc4096a808ca5cc8707894e196315227f04a0c82136b7fb25570bc51ea33b88d",
+          "md5": "64aefbc2320a6ccb1a325deb610d2b53",
+          "sha256": "ddc015fac39735592e2e7c834c02193ba4d257bb4c8c7478b9ebe440b0756b84"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.2-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "64aefbc2320a6ccb1a325deb610d2b53",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 41290019,
+        "upload_time": "2025-11-09T13:19:12",
+        "upload_time_iso_8601": "2025-11-09T13:19:12.214622Z",
+        "url": "https://files.pythonhosted.org/packages/dc/40/96a808ca5cc8707894e196315227f04a0c82136b7fb25570bc51ea33b88d/polars_runtime_32-1.35.2-cp39-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f4d18d1b28d007da43c750367c8bf5cb0f22758c16b1104b2b73b9acadb2d17a",
+          "md5": "7a742d3a371f20e0dfa290713b8afb85",
+          "sha256": "6861145aa321a44eda7cc6694fb7751cb7aa0f21026df51b5faa52e64f9dc39b"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.2-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "7a742d3a371f20e0dfa290713b8afb85",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 36955684,
+        "upload_time": "2025-11-09T13:19:15",
+        "upload_time_iso_8601": "2025-11-09T13:19:15.666761Z",
+        "url": "https://files.pythonhosted.org/packages/f4/d1/8d1b28d007da43c750367c8bf5cb0f22758c16b1104b2b73b9acadb2d17a/polars_runtime_32-1.35.2-cp39-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "cb75ac1256ace28c832a0997b20ba9d10a9d3739bd4d457c1eb1e7d196b6f88b",
+          "md5": "a31edb89938ccb9851ab6b392201a702",
+          "sha256": "6e6e35733ec52abe54b7d30d245e6586b027d433315d20edfb4a5d162c79fe90"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.35.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a31edb89938ccb9851ab6b392201a702",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2694387,
+        "upload_time": "2025-11-09T13:20:07",
+        "upload_time_iso_8601": "2025-11-09T13:20:07.624822Z",
+        "url": "https://files.pythonhosted.org/packages/cb/75/ac1256ace28c832a0997b20ba9d10a9d3739bd4d457c1eb1e7d196b6f88b/polars_runtime_32-1.35.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.36.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9806f18703120e8656f0852710a70f301204c8531f5dd7aa4b57e3e4498c1b04",
+          "md5": "4258fb3c4bff653b31c420bea9aa8315",
+          "sha256": "6060d6ca990ee76d7f56aa5377c323e842b2c5f2a3eb98422670e393908a3569"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "4258fb3c4bff653b31c420bea9aa8315",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 42514626,
+        "upload_time": "2025-12-08T17:10:56",
+        "upload_time_iso_8601": "2025-12-08T17:10:56.601720Z",
+        "url": "https://files.pythonhosted.org/packages/98/06/f18703120e8656f0852710a70f301204c8531f5dd7aa4b57e3e4498c1b04/polars_runtime_32-1.36.0-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": true,
+        "yanked_reason": "regression in unpivot"
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "735196a4129d8754a49c1a3aae550a25859432338899ed522e7bd34902c6493d",
+          "md5": "099760a3d470822a762a1d5545162b76",
+          "sha256": "ab2f15b9de1b2ea78d421703b829a9ffb0b65889a4e6e1dec75c785cebef45f9"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "099760a3d470822a762a1d5545162b76",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 38370421,
+        "upload_time": "2025-12-08T17:10:59",
+        "upload_time_iso_8601": "2025-12-08T17:10:59.639902Z",
+        "url": "https://files.pythonhosted.org/packages/73/51/96a4129d8754a49c1a3aae550a25859432338899ed522e7bd34902c6493d/polars_runtime_32-1.36.0-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": true,
+        "yanked_reason": "regression in unpivot"
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9ed23d47a9904ac4d71fa1110594dd99de7c298e5bd6f6a602a42f35c81bebf5",
+          "md5": "98b625df9297a992cddaddebac9fcfee",
+          "sha256": "be0aedf1e2c37b2463923f356d688459843e9436fc47e55fa281ce474ddefacc"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "98b625df9297a992cddaddebac9fcfee",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 43489077,
+        "upload_time": "2025-12-08T17:11:02",
+        "upload_time_iso_8601": "2025-12-08T17:11:02.273690Z",
+        "url": "https://files.pythonhosted.org/packages/9e/d2/3d47a9904ac4d71fa1110594dd99de7c298e5bd6f6a602a42f35c81bebf5/polars_runtime_32-1.36.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": true,
+        "yanked_reason": "regression in unpivot"
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0045ebd063d4d41500cf8140feb49fce9f3b2386103df2ff2cc34569273b9196",
+          "md5": "0f8d13d21e64271eecd2903ca29a8bf2",
+          "sha256": "2cf5dee05322394fbff6b1e66e9f2653abee1c067a94a3ac5bd1ea389df28b40"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "0f8d13d21e64271eecd2903ca29a8bf2",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 39710563,
+        "upload_time": "2025-12-08T17:11:04",
+        "upload_time_iso_8601": "2025-12-08T17:11:04.956178Z",
+        "url": "https://files.pythonhosted.org/packages/00/45/ebd063d4d41500cf8140feb49fce9f3b2386103df2ff2cc34569273b9196/polars_runtime_32-1.36.0-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": true,
+        "yanked_reason": "regression in unpivot"
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "cc30ddcce6b988f88b445f365ec793e54bc8f843a175eb3b580aebfa6c732976",
+          "md5": "feaf6d7e40819b6a8858d49f1934a9ce",
+          "sha256": "cf2be8e2fe2a89e8985845cf25a67e233211c7b6a29256b647df6a261b987374"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "feaf6d7e40819b6a8858d49f1934a9ce",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 43547512,
+        "upload_time": "2025-12-08T17:11:08",
+        "upload_time_iso_8601": "2025-12-08T17:11:08.286451Z",
+        "url": "https://files.pythonhosted.org/packages/cc/30/ddcce6b988f88b445f365ec793e54bc8f843a175eb3b580aebfa6c732976/polars_runtime_32-1.36.0-cp39-abi3-win_amd64.whl",
+        "yanked": true,
+        "yanked_reason": "regression in unpivot"
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "924fb2350a98a767de31b7872bd1511530cb7eefe68132f64ba1105679346ca4",
+          "md5": "b556dc63cb146cb0e55d067f9eaf6df1",
+          "sha256": "b21cb377c86fe5d0b4de6010dfc3f62c65c4b3b34dcbca77cd1a47548f0f1cba"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "b556dc63cb146cb0e55d067f9eaf6df1",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 38938352,
+        "upload_time": "2025-12-08T17:11:10",
+        "upload_time_iso_8601": "2025-12-08T17:11:10.922056Z",
+        "url": "https://files.pythonhosted.org/packages/92/4f/b2350a98a767de31b7872bd1511530cb7eefe68132f64ba1105679346ca4/polars_runtime_32-1.36.0-cp39-abi3-win_arm64.whl",
+        "yanked": true,
+        "yanked_reason": "regression in unpivot"
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a60b7e3b4c3845a994f8bd471b66ec505f053f88cad47a1d6aec2a16dc15707b",
+          "md5": "47b9638e214bd4b36b17c68cc4e4b82c",
+          "sha256": "29d3b3282f3c6ca54b147053d8c0da9c7ae23a7cd80c08ecbefa4f1c266310d3"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "47b9638e214bd4b36b17c68cc4e4b82c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2786015,
+        "upload_time": "2025-12-08T17:11:51",
+        "upload_time_iso_8601": "2025-12-08T17:11:51.780420Z",
+        "url": "https://files.pythonhosted.org/packages/a6/0b/7e3b4c3845a994f8bd471b66ec505f053f88cad47a1d6aec2a16dc15707b/polars_runtime_32-1.36.0.tar.gz",
+        "yanked": true,
+        "yanked_reason": "regression in unpivot"
+      }
+    ],
+    "1.36.0b1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6e51b6199d6e57ae5841660162e3d524872547349468d0d75d63a723e84d3c42",
+          "md5": "fa86eb9f4a2195786a32f481b70fece6",
+          "sha256": "ca7bc0d336afa6ea85b43e8da99926db71e7f4473c5fcd0b7343e798f7fb8d28"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b1-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "fa86eb9f4a2195786a32f481b70fece6",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 42188075,
+        "upload_time": "2025-12-01T16:19:26",
+        "upload_time_iso_8601": "2025-12-01T16:19:26.866434Z",
+        "url": "https://files.pythonhosted.org/packages/6e/51/b6199d6e57ae5841660162e3d524872547349468d0d75d63a723e84d3c42/polars_runtime_32-1.36.0b1-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2ab6475c1d97da760e0e84ae00b7584e940102fb9ff4b02c718acb9f0e98a4b8",
+          "md5": "8bc1a92094de05775c73cfb0412cf70d",
+          "sha256": "e8edf2bd9a88ddd1cd71a79cd302451e9fccd80ff5065fa5d0f9db9cc29e1f32"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b1-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "8bc1a92094de05775c73cfb0412cf70d",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 38044672,
+        "upload_time": "2025-12-01T16:19:31",
+        "upload_time_iso_8601": "2025-12-01T16:19:31.046344Z",
+        "url": "https://files.pythonhosted.org/packages/2a/b6/475c1d97da760e0e84ae00b7584e940102fb9ff4b02c718acb9f0e98a4b8/polars_runtime_32-1.36.0b1-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b0eb5cff9ed3df225f3a35077a14188da49bef9a710ee5404a4deaa87867e823",
+          "md5": "4304d729d59f5f1188b847cfae1640a1",
+          "sha256": "87520eb26fafe9b7edabcb6a53249f67554d40e37d98de49294a6ab38233e1bb"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "4304d729d59f5f1188b847cfae1640a1",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 43131217,
+        "upload_time": "2025-12-01T16:19:34",
+        "upload_time_iso_8601": "2025-12-01T16:19:34.692359Z",
+        "url": "https://files.pythonhosted.org/packages/b0/eb/5cff9ed3df225f3a35077a14188da49bef9a710ee5404a4deaa87867e823/polars_runtime_32-1.36.0b1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bf8351c241ac7437a8abc98988fccc13e8a1678f6c33042f0a7061aaf95abdde",
+          "md5": "8321b82534c4ed1c04fef99066dfb8ae",
+          "sha256": "ae427236d16d16a36e4f62681273eb6f5ebc49a36e2a2fa23949ecccff10568e"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b1-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "8321b82534c4ed1c04fef99066dfb8ae",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 39359469,
+        "upload_time": "2025-12-01T16:19:38",
+        "upload_time_iso_8601": "2025-12-01T16:19:38.477727Z",
+        "url": "https://files.pythonhosted.org/packages/bf/83/51c241ac7437a8abc98988fccc13e8a1678f6c33042f0a7061aaf95abdde/polars_runtime_32-1.36.0b1-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f2ffbb5714f4b66ca524d3669ac5c4a2520b315abb84006221d253c8dbc892b0",
+          "md5": "8715092a3b4d694c7a5aea67fb12cafa",
+          "sha256": "6a14bcffe269c29fe9b6b3e2c67b7fc3f034398334bc3314c822160915b40b2a"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b1-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "8715092a3b4d694c7a5aea67fb12cafa",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 43180362,
+        "upload_time": "2025-12-01T16:19:42",
+        "upload_time_iso_8601": "2025-12-01T16:19:42.209471Z",
+        "url": "https://files.pythonhosted.org/packages/f2/ff/bb5714f4b66ca524d3669ac5c4a2520b315abb84006221d253c8dbc892b0/polars_runtime_32-1.36.0b1-cp39-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0ca1f7b6bdec63a8a8941c950d483a54196597c481fb99f0d2d105f8c1dbe75c",
+          "md5": "462cc73c777684c89ee28fc84cbb3901",
+          "sha256": "0f98a18da947b69bec3ea41e968fde6500ca268a1dc29ff9986890cda82bea55"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b1-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "462cc73c777684c89ee28fc84cbb3901",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 38589880,
+        "upload_time": "2025-12-01T16:19:45",
+        "upload_time_iso_8601": "2025-12-01T16:19:45.507408Z",
+        "url": "https://files.pythonhosted.org/packages/0c/a1/f7b6bdec63a8a8941c950d483a54196597c481fb99f0d2d105f8c1dbe75c/polars_runtime_32-1.36.0b1-cp39-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bc310db4444cc9c4bea5b3a053ad42f8137318f37ed0c4ae415f4ee6f17195f3",
+          "md5": "93894f56f5c396f5726292c48dac6ca3",
+          "sha256": "6069d7db5f509e18ccc95388c429addf8fe1691a87676232342f863c32bd9604"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "93894f56f5c396f5726292c48dac6ca3",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2754341,
+        "upload_time": "2025-12-01T16:20:36",
+        "upload_time_iso_8601": "2025-12-01T16:20:36.788995Z",
+        "url": "https://files.pythonhosted.org/packages/bc/31/0db4444cc9c4bea5b3a053ad42f8137318f37ed0c4ae415f4ee6f17195f3/polars_runtime_32-1.36.0b1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.36.0b2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "85636a80779810ed420a638114e75e18da5de20faad32c829863da563aad337f",
+          "md5": "007185882daab16c80efb7c04cde2c3a",
+          "sha256": "58e3ef6ce36f4c839813d827f2e3f8618106ac2d73b37c4bae1de290b9ceb535"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b2-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "007185882daab16c80efb7c04cde2c3a",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 42208380,
+        "upload_time": "2025-12-02T12:41:03",
+        "upload_time_iso_8601": "2025-12-02T12:41:03.680720Z",
+        "url": "https://files.pythonhosted.org/packages/85/63/6a80779810ed420a638114e75e18da5de20faad32c829863da563aad337f/polars_runtime_32-1.36.0b2-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1863f456cea0bda40cc4b8f5aea68fe78839098186a86fdeafcb73f38ff3385b",
+          "md5": "ee873540c9aa84bab9504659570ce69a",
+          "sha256": "ed47cf109af1f33a48c2a1b16149b4cec3467ccd8924ea46316aa1d27ef127cc"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b2-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "ee873540c9aa84bab9504659570ce69a",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 38051614,
+        "upload_time": "2025-12-02T12:41:07",
+        "upload_time_iso_8601": "2025-12-02T12:41:07.366637Z",
+        "url": "https://files.pythonhosted.org/packages/18/63/f456cea0bda40cc4b8f5aea68fe78839098186a86fdeafcb73f38ff3385b/polars_runtime_32-1.36.0b2-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "abfcc3d9c505f4512bbdf6aca5a827189db8befda4cd50058480d7a51b38ccd9",
+          "md5": "90f626c18bd2b955e00da4cf0760d770",
+          "sha256": "17434410a6a5f9ad3b16e582e4d7205e825ee8ff4c6bb7952a8d5f9befd1c9e4"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "90f626c18bd2b955e00da4cf0760d770",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 43160599,
+        "upload_time": "2025-12-02T12:41:11",
+        "upload_time_iso_8601": "2025-12-02T12:41:11.013364Z",
+        "url": "https://files.pythonhosted.org/packages/ab/fc/c3d9c505f4512bbdf6aca5a827189db8befda4cd50058480d7a51b38ccd9/polars_runtime_32-1.36.0b2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "34aa8e9ba6f0f6d2febe8eb710daa7b63b8bfe03a81ce2532252e8eff6d48f1c",
+          "md5": "456e284f484101c3df9eebcdd713a289",
+          "sha256": "80a3afc949c60e2da20106254dbd94b38e7ac698ae0c437ed4d41a5cec78430f"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b2-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "456e284f484101c3df9eebcdd713a289",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 39376308,
+        "upload_time": "2025-12-02T12:41:14",
+        "upload_time_iso_8601": "2025-12-02T12:41:14.735748Z",
+        "url": "https://files.pythonhosted.org/packages/34/aa/8e9ba6f0f6d2febe8eb710daa7b63b8bfe03a81ce2532252e8eff6d48f1c/polars_runtime_32-1.36.0b2-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7b202a486af2c07172798d794c5283d9affa0eb852c3457e3a9cff44dcba2b16",
+          "md5": "23c543491509e628b3a25d55b8d7da14",
+          "sha256": "f0991a6592eb900d0c8e0c1ea65ff5fbbca81209e14bf991b704639ca0727a1c"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b2-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "23c543491509e628b3a25d55b8d7da14",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 43192081,
+        "upload_time": "2025-12-02T12:41:20",
+        "upload_time_iso_8601": "2025-12-02T12:41:20.020540Z",
+        "url": "https://files.pythonhosted.org/packages/7b/20/2a486af2c07172798d794c5283d9affa0eb852c3457e3a9cff44dcba2b16/polars_runtime_32-1.36.0b2-cp39-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "405372507dec8b8db1a4ab5bd0b46c3f63ef1680505931a7ba1b81cc911cfe41",
+          "md5": "0999201a9adfcab84f02e7d796603a99",
+          "sha256": "72bd16694f9d43a1cf1dbef9fb62735d45b6ccf969a19e2cc67a9f59154f0beb"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b2-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "0999201a9adfcab84f02e7d796603a99",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 38605857,
+        "upload_time": "2025-12-02T12:41:24",
+        "upload_time_iso_8601": "2025-12-02T12:41:24.544866Z",
+        "url": "https://files.pythonhosted.org/packages/40/53/72507dec8b8db1a4ab5bd0b46c3f63ef1680505931a7ba1b81cc911cfe41/polars_runtime_32-1.36.0b2-cp39-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d7c6fbdfa43bfae6971a121bd9c5efb2ccd80f05bfefc21bfdbc53b83625c153",
+          "md5": "ccf86227a3cd07bd4c08a86e89a1fd1d",
+          "sha256": "094a4848a25406444613c1d59d0a55b93db98866d14b6b178883936dcd2d30a5"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.0b2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "ccf86227a3cd07bd4c08a86e89a1fd1d",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2753526,
+        "upload_time": "2025-12-02T12:42:16",
+        "upload_time_iso_8601": "2025-12-02T12:42:16.780173Z",
+        "url": "https://files.pythonhosted.org/packages/d7/c6/fbdfa43bfae6971a121bd9c5efb2ccd80f05bfefc21bfdbc53b83625c153/polars_runtime_32-1.36.0b2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.36.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e1ea871129a2d296966c0925b078a9a93c6c5e7facb1c5eebfcd3d5811aeddc1",
+          "md5": "775e78b8c37727fb2c852056b4070dd0",
+          "sha256": "327b621ca82594f277751f7e23d4b939ebd1be18d54b4cdf7a2f8406cecc18b2"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.1-cp39-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "775e78b8c37727fb2c852056b4070dd0",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 43494311,
+        "upload_time": "2025-12-10T01:13:56",
+        "upload_time_iso_8601": "2025-12-10T01:13:56.096120Z",
+        "url": "https://files.pythonhosted.org/packages/e1/ea/871129a2d296966c0925b078a9a93c6c5e7facb1c5eebfcd3d5811aeddc1/polars_runtime_32-1.36.1-cp39-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d8760038210ad1e526ce5bb2933b13760d6b986b3045eccc1338e661bd656f77",
+          "md5": "363813ba1c5553668ab1971db30f0e22",
+          "sha256": "ab0d1f23084afee2b97de8c37aa3e02ec3569749ae39571bd89e7a8b11ae9e83"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.1-cp39-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "363813ba1c5553668ab1971db30f0e22",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 39300602,
+        "upload_time": "2025-12-10T01:13:59",
+        "upload_time_iso_8601": "2025-12-10T01:13:59.366171Z",
+        "url": "https://files.pythonhosted.org/packages/d8/76/0038210ad1e526ce5bb2933b13760d6b986b3045eccc1338e661bd656f77/polars_runtime_32-1.36.1-cp39-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "541e2707bee75a780a953a77a2c59829ee90ef55708f02fc4add761c579bf76e",
+          "md5": "97a3776d29fc683a9a8f21ce99e8f2e1",
+          "sha256": "899b9ad2e47ceb31eb157f27a09dbc2047efbf4969a923a6b1ba7f0412c3e64c"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "97a3776d29fc683a9a8f21ce99e8f2e1",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 44511780,
+        "upload_time": "2025-12-10T01:14:02",
+        "upload_time_iso_8601": "2025-12-10T01:14:02.285274Z",
+        "url": "https://files.pythonhosted.org/packages/54/1e/2707bee75a780a953a77a2c59829ee90ef55708f02fc4add761c579bf76e/polars_runtime_32-1.36.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "11b23fede95feee441be64b4bcb32444679a8fbb7a453a10251583053f6efe52",
+          "md5": "be4b969991577bfa9d20781548a60d07",
+          "sha256": "d9d077bb9df711bc635a86540df48242bb91975b353e53ef261c6fae6cb0948f"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.1-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "be4b969991577bfa9d20781548a60d07",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 40688448,
+        "upload_time": "2025-12-10T01:14:05",
+        "upload_time_iso_8601": "2025-12-10T01:14:05.131027Z",
+        "url": "https://files.pythonhosted.org/packages/11/b2/3fede95feee441be64b4bcb32444679a8fbb7a453a10251583053f6efe52/polars_runtime_32-1.36.1-cp39-abi3-manylinux_2_24_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "050fe629713a72999939b7b4bfdbf030a32794db588b04fdf3dc977dd8ea6c53",
+          "md5": "da1b3f55486d62a37f3f62bdaf1d346d",
+          "sha256": "cc17101f28c9a169ff8b5b8d4977a3683cd403621841623825525f440b564cf0"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.1-cp39-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "da1b3f55486d62a37f3f62bdaf1d346d",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 44464898,
+        "upload_time": "2025-12-10T01:14:08",
+        "upload_time_iso_8601": "2025-12-10T01:14:08.296147Z",
+        "url": "https://files.pythonhosted.org/packages/05/0f/e629713a72999939b7b4bfdbf030a32794db588b04fdf3dc977dd8ea6c53/polars_runtime_32-1.36.1-cp39-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d1d8a12e6aa14f63784cead437083319ec7cece0d5bb9a5bfe7678cc6578b52a",
+          "md5": "07067cafb82e6f3bdf94ef3029f52bb7",
+          "sha256": "809e73857be71250141225ddd5d2b30c97e6340aeaa0d445f930e01bef6888dc"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.1-cp39-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "07067cafb82e6f3bdf94ef3029f52bb7",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 39798896,
+        "upload_time": "2025-12-10T01:14:11",
+        "upload_time_iso_8601": "2025-12-10T01:14:11.568676Z",
+        "url": "https://files.pythonhosted.org/packages/d1/d8/a12e6aa14f63784cead437083319ec7cece0d5bb9a5bfe7678cc6578b52a/polars_runtime_32-1.36.1-cp39-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "31df597c0ef5eb8d761a16d72327846599b57c5d40d7f9e74306fc154aba8c37",
+          "md5": "41077dfd81534bd4b12af8982711aedc",
+          "sha256": "201c2cfd80ceb5d5cd7b63085b5fd08d6ae6554f922bcb941035e39638528a09"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.36.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "41077dfd81534bd4b12af8982711aedc",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2788751,
+        "upload_time": "2025-12-10T01:14:54",
+        "upload_time_iso_8601": "2025-12-10T01:14:54.172387Z",
+        "url": "https://files.pythonhosted.org/packages/31/df/597c0ef5eb8d761a16d72327846599b57c5d40d7f9e74306fc154aba8c37/polars_runtime_32-1.36.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.37.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f06776162c9fcc71b917bdfd2804eaf0ab7cdb264a89b89af4f195a918f9f97d",
+          "md5": "5f2ae166ac0530eaa209d50d4e0418e3",
+          "sha256": "3591f4b8e734126d713a12869d3727360acbbcd1d440b45d830497a317a5a8b3"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.0-cp310-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "5f2ae166ac0530eaa209d50d4e0418e3",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 43518436,
+        "upload_time": "2026-01-10T12:26:51",
+        "upload_time_iso_8601": "2026-01-10T12:26:51.442527Z",
+        "url": "https://files.pythonhosted.org/packages/f0/67/76162c9fcc71b917bdfd2804eaf0ab7cdb264a89b89af4f195a918f9f97d/polars_runtime_32-1.37.0-cp310-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "cbec56f328e8fa4ebea453f5bc10c579774dff774a873ff224b3108d53c514f9",
+          "md5": "1567d997269492a1a3ffb05b06097bb1",
+          "sha256": "47849420859159681e94589daad3a04ff66a2379c116ccd812d043f7ffe0094c"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.0-cp310-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "1567d997269492a1a3ffb05b06097bb1",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 39663939,
+        "upload_time": "2026-01-10T12:26:54",
+        "upload_time_iso_8601": "2026-01-10T12:26:54.664432Z",
+        "url": "https://files.pythonhosted.org/packages/cb/ec/56f328e8fa4ebea453f5bc10c579774dff774a873ff224b3108d53c514f9/polars_runtime_32-1.37.0-cp310-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4cb2f1ea0edba327a92ce0158b7a0e4abe21f541e44c9fb8ec932cc47592ca5c",
+          "md5": "3d7fd755327abbc6bade858beff7ec3f",
+          "sha256": "4648ea1e821b9a841b2a562f27bcf54ff1ad21f9c217adcf0f7d0b3c33dc6400"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.0-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "3d7fd755327abbc6bade858beff7ec3f",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 41481348,
+        "upload_time": "2026-01-10T12:26:57",
+        "upload_time_iso_8601": "2026-01-10T12:26:57.598571Z",
+        "url": "https://files.pythonhosted.org/packages/4c/b2/f1ea0edba327a92ce0158b7a0e4abe21f541e44c9fb8ec932cc47592ca5c/polars_runtime_32-1.37.0-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3b21788a3dd724bb21cf42e2f4daa6510a47787e8b30dd535aa6cae20ea968d0",
+          "md5": "661fe4ecd51e2cb375faa43a4b6000fa",
+          "sha256": "5272b6f1680a3e0d77c9f07cb5a54f307079eb5d519c71aa3c37b9af0ee03a9e"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "661fe4ecd51e2cb375faa43a4b6000fa",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 45168069,
+        "upload_time": "2026-01-10T12:27:00",
+        "upload_time_iso_8601": "2026-01-10T12:27:00.980454Z",
+        "url": "https://files.pythonhosted.org/packages/3b/21/788a3dd724bb21cf42e2f4daa6510a47787e8b30dd535aa6cae20ea968d0/polars_runtime_32-1.37.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8a73823d6534a20ebdcec4b7706ab2b3f2cfb8e07571305f4e7381cc22d83e31",
+          "md5": "b6d45ec6950fae33afbdc947e805048a",
+          "sha256": "73301ef4fe80d8d748085259a4063ac52ff058088daa702e2a75e7d1ab7f14fc"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.0-cp310-abi3-musllinux_1_2_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "b6d45ec6950fae33afbdc947e805048a",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 41675645,
+        "upload_time": "2026-01-10T12:27:04",
+        "upload_time_iso_8601": "2026-01-10T12:27:04.334211Z",
+        "url": "https://files.pythonhosted.org/packages/8a/73/823d6534a20ebdcec4b7706ab2b3f2cfb8e07571305f4e7381cc22d83e31/polars_runtime_32-1.37.0-cp310-abi3-musllinux_1_2_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "30541bacad96dc2b67d33b886a45b249777212782561493718785cb27c7c362a",
+          "md5": "86bbeae366015e1f7d73b3d51e178e75",
+          "sha256": "c60d523d738a7b3660d9abdfaff798f7602488f469d427865965b0bd2e40473a"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.0-cp310-abi3-musllinux_1_2_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "86bbeae366015e1f7d73b3d51e178e75",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 44737715,
+        "upload_time": "2026-01-10T12:27:08",
+        "upload_time_iso_8601": "2026-01-10T12:27:08.152768Z",
+        "url": "https://files.pythonhosted.org/packages/30/54/1bacad96dc2b67d33b886a45b249777212782561493718785cb27c7c362a/polars_runtime_32-1.37.0-cp310-abi3-musllinux_1_2_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "38e3aad525d8d89b903fcfa2bd0b4cb66b8a6e83e80b3d1348c5a428092d2983",
+          "md5": "0ced3c24b390b13dcaa9bd89f8e466aa",
+          "sha256": "f87f76f16e8030d277ecca0c0976aca62ec2b6ba2099ee9c6f75dfc97e7dc1b1"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.0-cp310-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "0ced3c24b390b13dcaa9bd89f8e466aa",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 45018403,
+        "upload_time": "2026-01-10T12:27:11",
+        "upload_time_iso_8601": "2026-01-10T12:27:11.292549Z",
+        "url": "https://files.pythonhosted.org/packages/38/e3/aad525d8d89b903fcfa2bd0b4cb66b8a6e83e80b3d1348c5a428092d2983/polars_runtime_32-1.37.0-cp310-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0e4dddcaa5f2e18763e02e66d0fd2efca049a42fe96fbeda188e89aeb38dd6fa",
+          "md5": "6d61f9071e67af383d73e3e28e26c884",
+          "sha256": "7ffbd9487e3668b0a57519f7ab5ab53ab656086db9f62dceaab41393a07be721"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.0-cp310-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "6d61f9071e67af383d73e3e28e26c884",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 41026243,
+        "upload_time": "2026-01-10T12:27:14",
+        "upload_time_iso_8601": "2026-01-10T12:27:14.563030Z",
+        "url": "https://files.pythonhosted.org/packages/0e/4d/ddcaa5f2e18763e02e66d0fd2efca049a42fe96fbeda188e89aeb38dd6fa/polars_runtime_32-1.37.0-cp310-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3092b818590a5ebcc55657f5483f26133174bd2b9ca88457b60c93669a9d0c75",
+          "md5": "4e4efdb4971f296091f9d884d45d6dac",
+          "sha256": "954ddb056e3a2db2cbcaae501225ac5604d1599b6debd9c6dbdf8efbac0e6511"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4e4efdb4971f296091f9d884d45d6dac",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2820371,
+        "upload_time": "2026-01-10T12:28:08",
+        "upload_time_iso_8601": "2026-01-10T12:28:08.195824Z",
+        "url": "https://files.pythonhosted.org/packages/30/92/b818590a5ebcc55657f5483f26133174bd2b9ca88457b60c93669a9d0c75/polars_runtime_32-1.37.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.37.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2aa2e828ea9f845796de02d923edb790e408ca0b560cd68dbd74bb99a1b3c461",
+          "md5": "2b463c4c0609ec6c768338f29ff894b7",
+          "sha256": "0b8d4d73ea9977d3731927740e59d814647c5198bdbe359bcf6a8bfce2e79771"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.1-cp310-abi3-macosx_10_12_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "2b463c4c0609ec6c768338f29ff894b7",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 43499912,
+        "upload_time": "2026-01-12T23:25:51",
+        "upload_time_iso_8601": "2026-01-12T23:25:51.182906Z",
+        "url": "https://files.pythonhosted.org/packages/2a/a2/e828ea9f845796de02d923edb790e408ca0b560cd68dbd74bb99a1b3c461/polars_runtime_32-1.37.1-cp310-abi3-macosx_10_12_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7e4681b71b7aa9e3703ee6e4ef1f69a87e40f58ea7c99212bf49a95071e99c8c",
+          "md5": "a384216a86c82e3eb4bd122aff158e2d",
+          "sha256": "c682bf83f5f352e5e02f5c16c652c48ca40442f07b236f30662b22217320ce76"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.1-cp310-abi3-macosx_11_0_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "a384216a86c82e3eb4bd122aff158e2d",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 39695707,
+        "upload_time": "2026-01-12T23:25:54",
+        "upload_time_iso_8601": "2026-01-12T23:25:54.289768Z",
+        "url": "https://files.pythonhosted.org/packages/7e/46/81b71b7aa9e3703ee6e4ef1f69a87e40f58ea7c99212bf49a95071e99c8c/polars_runtime_32-1.37.1-cp310-abi3-macosx_11_0_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "812e20009d1fde7ee919e24040f5c87cb9d0e4f8e3f109b74ba06bc10c02459c",
+          "md5": "d3d61da163de48547d3922029bf87e6d",
+          "sha256": "fc82b5bbe70ca1a4b764eed1419f6336752d6ba9fc1245388d7f8b12438afa2c"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.1-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "d3d61da163de48547d3922029bf87e6d",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 41467034,
+        "upload_time": "2026-01-12T23:25:56",
+        "upload_time_iso_8601": "2026-01-12T23:25:56.925525Z",
+        "url": "https://files.pythonhosted.org/packages/81/2e/20009d1fde7ee919e24040f5c87cb9d0e4f8e3f109b74ba06bc10c02459c/polars_runtime_32-1.37.1-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "eb219b55bea940524324625b1e8fd96233290303eb1bf2c23b54573487bbbc25",
+          "md5": "5a67225386da71dfea77e71d397cdb57",
+          "sha256": "a8362d11ac5193b994c7e9048ffe22ccfb976699cfbf6e128ce0302e06728894"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "5a67225386da71dfea77e71d397cdb57",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 45142711,
+        "upload_time": "2026-01-12T23:26:00",
+        "upload_time_iso_8601": "2026-01-12T23:26:00.817625Z",
+        "url": "https://files.pythonhosted.org/packages/eb/21/9b55bea940524324625b1e8fd96233290303eb1bf2c23b54573487bbbc25/polars_runtime_32-1.37.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8c25c5f64461aeccdac6834a89f826d051ccd3b4ce204075e562c87a06ed2619",
+          "md5": "4f0ef7f9af3510fb882e79f3179ce2a6",
+          "sha256": "04f5d5a2f013dca7391b7d8e7672fa6d37573a87f1d45d3dd5f0d9b5565a4b0f"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.1-cp310-abi3-musllinux_1_2_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "4f0ef7f9af3510fb882e79f3179ce2a6",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 41638564,
+        "upload_time": "2026-01-12T23:26:04",
+        "upload_time_iso_8601": "2026-01-12T23:26:04.186743Z",
+        "url": "https://files.pythonhosted.org/packages/8c/25/c5f64461aeccdac6834a89f826d051ccd3b4ce204075e562c87a06ed2619/polars_runtime_32-1.37.1-cp310-abi3-musllinux_1_2_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "35af509d3cf6c45e764ccf856beaae26fc34352f16f10f94a7839b1042920a73",
+          "md5": "c35bb72ec35b70c733bed197885a9420",
+          "sha256": "fbfde7c0ca8209eeaed546e4a32cca1319189aa61c5f0f9a2b4494262bd0c689"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.1-cp310-abi3-musllinux_1_2_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "c35bb72ec35b70c733bed197885a9420",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 44721136,
+        "upload_time": "2026-01-12T23:26:07",
+        "upload_time_iso_8601": "2026-01-12T23:26:07.088554Z",
+        "url": "https://files.pythonhosted.org/packages/35/af/509d3cf6c45e764ccf856beaae26fc34352f16f10f94a7839b1042920a73/polars_runtime_32-1.37.1-cp310-abi3-musllinux_1_2_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "afd15c0a83a625f72beef59394bebc57d12637997632a4f9d3ab2ffc2cc62bbf",
+          "md5": "be1d374a47d89bdac4f05535d3dea886",
+          "sha256": "da3d3642ae944e18dd17109d2a3036cb94ce50e5495c5023c77b1599d4c861bc"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.1-cp310-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "be1d374a47d89bdac4f05535d3dea886",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 44948288,
+        "upload_time": "2026-01-12T23:26:10",
+        "upload_time_iso_8601": "2026-01-12T23:26:10.214341Z",
+        "url": "https://files.pythonhosted.org/packages/af/d1/5c0a83a625f72beef59394bebc57d12637997632a4f9d3ab2ffc2cc62bbf/polars_runtime_32-1.37.1-cp310-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "10f3061bb702465904b6502f7c9081daee34b09ccbaa4f8c94cf43a2a3b6dd6f",
+          "md5": "c7ef3e8665cbbd5f725ed6dceb673c37",
+          "sha256": "55f2c4847a8d2e267612f564de7b753a4bde3902eaabe7b436a0a4abf75949a0"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.1-cp310-abi3-win_arm64.whl",
+        "has_sig": false,
+        "md5_digest": "c7ef3e8665cbbd5f725ed6dceb673c37",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.10",
+        "size": 41001914,
+        "upload_time": "2026-01-12T23:26:12",
+        "upload_time_iso_8601": "2026-01-12T23:26:12.997132Z",
+        "url": "https://files.pythonhosted.org/packages/10/f3/061bb702465904b6502f7c9081daee34b09ccbaa4f8c94cf43a2a3b6dd6f/polars_runtime_32-1.37.1-cp310-abi3-win_arm64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "400baddabe5e8d28a5a4c9887a08907be7ddc3fce892dc38f37d14b055438a57",
+          "md5": "e6f7e5aa8e23236af4df40f034eac60b",
+          "sha256": "68779d4a691da20a5eb767d74165a8f80a2bdfbde4b54acf59af43f7fa028d8f"
+        },
+        "downloads": -1,
+        "filename": "polars_runtime_32-1.37.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e6f7e5aa8e23236af4df40f034eac60b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2818945,
+        "upload_time": "2026-01-12T23:27:04",
+        "upload_time_iso_8601": "2026-01-12T23:27:04.653000Z",
+        "url": "https://files.pythonhosted.org/packages/40/0b/addabe5e8d28a5a4c9887a08907be7ddc3fce892dc38f37d14b055438a57/polars_runtime_32-1.37.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "2aa2e828ea9f845796de02d923edb790e408ca0b560cd68dbd74bb99a1b3c461",
+        "md5": "2b463c4c0609ec6c768338f29ff894b7",
+        "sha256": "0b8d4d73ea9977d3731927740e59d814647c5198bdbe359bcf6a8bfce2e79771"
+      },
+      "downloads": -1,
+      "filename": "polars_runtime_32-1.37.1-cp310-abi3-macosx_10_12_x86_64.whl",
+      "has_sig": false,
+      "md5_digest": "2b463c4c0609ec6c768338f29ff894b7",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp310",
+      "requires_python": ">=3.10",
+      "size": 43499912,
+      "upload_time": "2026-01-12T23:25:51",
+      "upload_time_iso_8601": "2026-01-12T23:25:51.182906Z",
+      "url": "https://files.pythonhosted.org/packages/2a/a2/e828ea9f845796de02d923edb790e408ca0b560cd68dbd74bb99a1b3c461/polars_runtime_32-1.37.1-cp310-abi3-macosx_10_12_x86_64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "7e4681b71b7aa9e3703ee6e4ef1f69a87e40f58ea7c99212bf49a95071e99c8c",
+        "md5": "a384216a86c82e3eb4bd122aff158e2d",
+        "sha256": "c682bf83f5f352e5e02f5c16c652c48ca40442f07b236f30662b22217320ce76"
+      },
+      "downloads": -1,
+      "filename": "polars_runtime_32-1.37.1-cp310-abi3-macosx_11_0_arm64.whl",
+      "has_sig": false,
+      "md5_digest": "a384216a86c82e3eb4bd122aff158e2d",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp310",
+      "requires_python": ">=3.10",
+      "size": 39695707,
+      "upload_time": "2026-01-12T23:25:54",
+      "upload_time_iso_8601": "2026-01-12T23:25:54.289768Z",
+      "url": "https://files.pythonhosted.org/packages/7e/46/81b71b7aa9e3703ee6e4ef1f69a87e40f58ea7c99212bf49a95071e99c8c/polars_runtime_32-1.37.1-cp310-abi3-macosx_11_0_arm64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "812e20009d1fde7ee919e24040f5c87cb9d0e4f8e3f109b74ba06bc10c02459c",
+        "md5": "d3d61da163de48547d3922029bf87e6d",
+        "sha256": "fc82b5bbe70ca1a4b764eed1419f6336752d6ba9fc1245388d7f8b12438afa2c"
+      },
+      "downloads": -1,
+      "filename": "polars_runtime_32-1.37.1-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "has_sig": false,
+      "md5_digest": "d3d61da163de48547d3922029bf87e6d",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp310",
+      "requires_python": ">=3.10",
+      "size": 41467034,
+      "upload_time": "2026-01-12T23:25:56",
+      "upload_time_iso_8601": "2026-01-12T23:25:56.925525Z",
+      "url": "https://files.pythonhosted.org/packages/81/2e/20009d1fde7ee919e24040f5c87cb9d0e4f8e3f109b74ba06bc10c02459c/polars_runtime_32-1.37.1-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "eb219b55bea940524324625b1e8fd96233290303eb1bf2c23b54573487bbbc25",
+        "md5": "5a67225386da71dfea77e71d397cdb57",
+        "sha256": "a8362d11ac5193b994c7e9048ffe22ccfb976699cfbf6e128ce0302e06728894"
+      },
+      "downloads": -1,
+      "filename": "polars_runtime_32-1.37.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "has_sig": false,
+      "md5_digest": "5a67225386da71dfea77e71d397cdb57",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp310",
+      "requires_python": ">=3.10",
+      "size": 45142711,
+      "upload_time": "2026-01-12T23:26:00",
+      "upload_time_iso_8601": "2026-01-12T23:26:00.817625Z",
+      "url": "https://files.pythonhosted.org/packages/eb/21/9b55bea940524324625b1e8fd96233290303eb1bf2c23b54573487bbbc25/polars_runtime_32-1.37.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "8c25c5f64461aeccdac6834a89f826d051ccd3b4ce204075e562c87a06ed2619",
+        "md5": "4f0ef7f9af3510fb882e79f3179ce2a6",
+        "sha256": "04f5d5a2f013dca7391b7d8e7672fa6d37573a87f1d45d3dd5f0d9b5565a4b0f"
+      },
+      "downloads": -1,
+      "filename": "polars_runtime_32-1.37.1-cp310-abi3-musllinux_1_2_aarch64.whl",
+      "has_sig": false,
+      "md5_digest": "4f0ef7f9af3510fb882e79f3179ce2a6",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp310",
+      "requires_python": ">=3.10",
+      "size": 41638564,
+      "upload_time": "2026-01-12T23:26:04",
+      "upload_time_iso_8601": "2026-01-12T23:26:04.186743Z",
+      "url": "https://files.pythonhosted.org/packages/8c/25/c5f64461aeccdac6834a89f826d051ccd3b4ce204075e562c87a06ed2619/polars_runtime_32-1.37.1-cp310-abi3-musllinux_1_2_aarch64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "35af509d3cf6c45e764ccf856beaae26fc34352f16f10f94a7839b1042920a73",
+        "md5": "c35bb72ec35b70c733bed197885a9420",
+        "sha256": "fbfde7c0ca8209eeaed546e4a32cca1319189aa61c5f0f9a2b4494262bd0c689"
+      },
+      "downloads": -1,
+      "filename": "polars_runtime_32-1.37.1-cp310-abi3-musllinux_1_2_x86_64.whl",
+      "has_sig": false,
+      "md5_digest": "c35bb72ec35b70c733bed197885a9420",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp310",
+      "requires_python": ">=3.10",
+      "size": 44721136,
+      "upload_time": "2026-01-12T23:26:07",
+      "upload_time_iso_8601": "2026-01-12T23:26:07.088554Z",
+      "url": "https://files.pythonhosted.org/packages/35/af/509d3cf6c45e764ccf856beaae26fc34352f16f10f94a7839b1042920a73/polars_runtime_32-1.37.1-cp310-abi3-musllinux_1_2_x86_64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "afd15c0a83a625f72beef59394bebc57d12637997632a4f9d3ab2ffc2cc62bbf",
+        "md5": "be1d374a47d89bdac4f05535d3dea886",
+        "sha256": "da3d3642ae944e18dd17109d2a3036cb94ce50e5495c5023c77b1599d4c861bc"
+      },
+      "downloads": -1,
+      "filename": "polars_runtime_32-1.37.1-cp310-abi3-win_amd64.whl",
+      "has_sig": false,
+      "md5_digest": "be1d374a47d89bdac4f05535d3dea886",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp310",
+      "requires_python": ">=3.10",
+      "size": 44948288,
+      "upload_time": "2026-01-12T23:26:10",
+      "upload_time_iso_8601": "2026-01-12T23:26:10.214341Z",
+      "url": "https://files.pythonhosted.org/packages/af/d1/5c0a83a625f72beef59394bebc57d12637997632a4f9d3ab2ffc2cc62bbf/polars_runtime_32-1.37.1-cp310-abi3-win_amd64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "10f3061bb702465904b6502f7c9081daee34b09ccbaa4f8c94cf43a2a3b6dd6f",
+        "md5": "c7ef3e8665cbbd5f725ed6dceb673c37",
+        "sha256": "55f2c4847a8d2e267612f564de7b753a4bde3902eaabe7b436a0a4abf75949a0"
+      },
+      "downloads": -1,
+      "filename": "polars_runtime_32-1.37.1-cp310-abi3-win_arm64.whl",
+      "has_sig": false,
+      "md5_digest": "c7ef3e8665cbbd5f725ed6dceb673c37",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp310",
+      "requires_python": ">=3.10",
+      "size": 41001914,
+      "upload_time": "2026-01-12T23:26:12",
+      "upload_time_iso_8601": "2026-01-12T23:26:12.997132Z",
+      "url": "https://files.pythonhosted.org/packages/10/f3/061bb702465904b6502f7c9081daee34b09ccbaa4f8c94cf43a2a3b6dd6f/polars_runtime_32-1.37.1-cp310-abi3-win_arm64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "400baddabe5e8d28a5a4c9887a08907be7ddc3fce892dc38f37d14b055438a57",
+        "md5": "e6f7e5aa8e23236af4df40f034eac60b",
+        "sha256": "68779d4a691da20a5eb767d74165a8f80a2bdfbde4b54acf59af43f7fa028d8f"
+      },
+      "downloads": -1,
+      "filename": "polars_runtime_32-1.37.1.tar.gz",
+      "has_sig": false,
+      "md5_digest": "e6f7e5aa8e23236af4df40f034eac60b",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.10",
+      "size": 2818945,
+      "upload_time": "2026-01-12T23:27:04",
+      "upload_time_iso_8601": "2026-01-12T23:27:04.653000Z",
+      "url": "https://files.pythonhosted.org/packages/40/0b/addabe5e8d28a5a4c9887a08907be7ddc3fce892dc38f37d14b055438a57/polars_runtime_32-1.37.1.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

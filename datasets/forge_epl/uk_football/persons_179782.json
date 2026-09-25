@@ -1,0 +1,43 @@
+{
+    "id": 179782,
+    "name": "Jair Paula",
+    "firstName": "",
+    "lastName": "Jair Cunha",
+    "dateOfBirth": "2005-03-07",
+    "nationality": "Brazil",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 23,
+    "lastUpdated": "2024-07-04T09:43:01Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png",
+        "address": "Pavilion Road, West Bridgeford Nottingham NG2 5GJ",
+        "website": "http://www.nottinghamforest.co.uk",
+        "founded": 1865,
+        "clubColors": "Red / White",
+        "venue": "The City Ground",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2025-07",
+            "until": "2030-06"
+        }
+    }
+}

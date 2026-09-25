@@ -1,0 +1,35 @@
+{
+    "id": 3927,
+    "name": "Antonee Robinson",
+    "firstName": "Antonee",
+    "lastName": "Robinson",
+    "dateOfBirth": "1997-08-08",
+    "nationality": "USA",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 5,
+    "lastUpdated": "2026-06-01T11:16:31Z",
+    "currentTeam": {
+        "area": {
+            "id": 2256,
+            "name": "United States",
+            "code": "USA",
+            "flag": "https://crests.football-data.org/usa.svg"
+        },
+        "id": 771,
+        "name": "United States",
+        "shortName": "USA",
+        "tla": "USA",
+        "crest": "https://crests.football-data.org/usa.svg",
+        "address": "1801 South Prairie Ave Chicago, IL 90266",
+        "website": "http://www.ussoccer.com",
+        "founded": 1913,
+        "clubColors": "White / Navy Blue / Red",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

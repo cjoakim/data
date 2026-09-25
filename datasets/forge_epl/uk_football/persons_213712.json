@@ -1,0 +1,43 @@
+{
+    "id": 213712,
+    "name": "Sidiki Cherif",
+    "firstName": "Sidiki",
+    "lastName": "Ch\u00e9rif",
+    "dateOfBirth": "2006-12-15",
+    "nationality": "Guinea",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 26,
+    "lastUpdated": "2026-07-14T15:48:58Z",
+    "currentTeam": {
+        "area": {
+            "id": 2247,
+            "name": "Turkey",
+            "code": "TUR",
+            "flag": "https://crests.football-data.org/803.svg"
+        },
+        "id": 613,
+        "name": "Fenerbah\u00e7e SK",
+        "shortName": "Fenerbah\u00e7e",
+        "tla": "FEN",
+        "crest": "https://crests.football-data.org/613.png",
+        "address": "Fenerbah\u00e7e \u015e\u00fckr\u00fc Saraco\u011flu Stadyumu, Ba\u011fdat Caddesi, Kad\u0131k\u00f6y \u0130stanbul 34724",
+        "website": "http://www.fenerbahce.org",
+        "founded": 1907,
+        "clubColors": "Yellow / Blue",
+        "venue": "\u00dclker Stadyumu Fenerbah\u00e7e \u015e\u00fckr\u00fc Saraco\u011flu Spor Kompleksi",
+        "runningCompetitions": [
+            {
+                "id": 2070,
+                "name": "S\u00fcper Lig",
+                "code": "TSL",
+                "type": "LEAGUE",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

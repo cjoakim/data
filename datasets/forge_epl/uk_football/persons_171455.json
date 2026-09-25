@@ -1,0 +1,50 @@
+{
+    "id": 171455,
+    "name": "Tommy Setford",
+    "firstName": "Tommy",
+    "lastName": "Setford",
+    "dateOfBirth": "2006-03-13",
+    "nationality": "England",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 35,
+    "lastUpdated": "2023-11-08T09:41:39Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png",
+        "address": "75 Drayton Park London N5 1BU",
+        "website": "http://www.arsenal.com",
+        "founded": 1886,
+        "clubColors": "Red / White",
+        "venue": "Emirates Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2056,
+                "name": "FA Community Shield",
+                "code": "COM",
+                "type": "SUPER_CUP",
+                "emblem": "https://crests.football-data.org/com.png"
+            },
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2028-06"
+        }
+    }
+}

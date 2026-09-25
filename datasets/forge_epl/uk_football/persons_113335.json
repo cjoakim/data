@@ -1,0 +1,43 @@
+{
+    "id": 113335,
+    "name": "Julian Araujo",
+    "firstName": "Juli\u00e1n",
+    "lastName": "Araujo",
+    "dateOfBirth": "2001-08-13",
+    "nationality": "USA",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 2,
+    "lastUpdated": "2026-07-15T09:25:43Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png",
+        "address": "Dean Court, Kings Park Bournemouth BH7 7AF",
+        "website": "http://www.afcb.co.uk",
+        "founded": 1890,
+        "clubColors": "Red / Black",
+        "venue": "Vitality Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2024-08",
+            "until": "2029-06"
+        }
+    }
+}

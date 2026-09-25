@@ -1,0 +1,43 @@
+{
+    "id": 1331,
+    "name": "Lucas Perri",
+    "firstName": "",
+    "lastName": "Lucas Perri",
+    "dateOfBirth": "1997-12-10",
+    "nationality": "Brazil",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 1,
+    "lastUpdated": "2023-07-30T23:15:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "tla": "LEE",
+        "crest": "https://crests.football-data.org/341.png",
+        "address": "Elland Road Leeds LS11 0ES",
+        "website": "http://www.leedsunited.com",
+        "founded": 1904,
+        "clubColors": "White / Blue",
+        "venue": "Elland Road",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2025-07",
+            "until": "2029-06"
+        }
+    }
+}

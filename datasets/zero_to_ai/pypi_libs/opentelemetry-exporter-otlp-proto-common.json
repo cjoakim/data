@@ -1,0 +1,1381 @@
+{
+  "info": {
+    "author": null,
+    "author_email": "OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Framework :: OpenTelemetry",
+      "Framework :: OpenTelemetry :: Exporters",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.9"
+    ],
+    "description": "OpenTelemetry Protobuf Encoding\n===============================\n\n|pypi|\n\n.. |pypi| image:: https://badge.fury.io/py/opentelemetry-exporter-otlp-proto-common.svg\n   :target: https://pypi.org/project/opentelemetry-exporter-otlp-proto-common/\n\nThis library is provided as a convenience to encode to Protobuf. Currently used by:\n\n* opentelemetry-exporter-otlp-proto-grpc\n* opentelemetry-exporter-otlp-proto-http\n\n\nInstallation\n------------\n\n::\n\n     pip install opentelemetry-exporter-otlp-proto-common\n\n\nReferences\n----------\n\n* `OpenTelemetry <https://opentelemetry.io/>`_\n* `OpenTelemetry Protocol Specification <https://github.com/open-telemetry/oteps/blob/main/text/0035-opentelemetry-protocol.md>`_\n",
+    "description_content_type": "text/x-rst",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": null,
+    "keywords": null,
+    "license": null,
+    "license_expression": "Apache-2.0",
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "opentelemetry-exporter-otlp-proto-common",
+    "package_url": "https://pypi.org/project/opentelemetry-exporter-otlp-proto-common/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/opentelemetry-exporter-otlp-proto-common/",
+    "project_urls": {
+      "Homepage": "https://github.com/open-telemetry/opentelemetry-python/tree/main/exporter/opentelemetry-exporter-otlp-proto-common",
+      "Repository": "https://github.com/open-telemetry/opentelemetry-python"
+    },
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/opentelemetry-exporter-otlp-proto-common/1.39.1/",
+    "requires_dist": [
+      "opentelemetry-proto==1.39.1"
+    ],
+    "requires_python": ">=3.9",
+    "summary": "OpenTelemetry Protobuf encoding",
+    "version": "1.39.1",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 32934895,
+  "releases": {
+    "1.18.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "23155a486b209f1220d46fff47d4244220b03426c6bfdc6d699b1eb84b85c2ae",
+          "md5": "7be5c9632bafde39b3c85d6b3f6de284",
+          "sha256": "276073ccc8c6e6570fe05ca8ca0de77d662bc89bc614ec8bfbc855112f7e25e3"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.18.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7be5c9632bafde39b3c85d6b3f6de284",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.7",
+        "size": 17013,
+        "upload_time": "2023-05-19T21:38:38",
+        "upload_time_iso_8601": "2023-05-19T21:38:38.374629Z",
+        "url": "https://files.pythonhosted.org/packages/23/15/5a486b209f1220d46fff47d4244220b03426c6bfdc6d699b1eb84b85c2ae/opentelemetry_exporter_otlp_proto_common-1.18.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "e1c70b15c04612f01c73212f0d76881ba2cb9ca6af395094a0166ff0366278e7",
+          "md5": "c85689688b1f08b663e0b0a380e2d223",
+          "sha256": "4d9883d6929aabe75e485950bbe8b149a14d95e50b1570426832daa6913b0871"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.18.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c85689688b1f08b663e0b0a380e2d223",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.7",
+        "size": 15902,
+        "upload_time": "2023-05-19T21:39:11",
+        "upload_time_iso_8601": "2023-05-19T21:39:11.980312Z",
+        "url": "https://files.pythonhosted.org/packages/e1/c7/0b15c04612f01c73212f0d76881ba2cb9ca6af395094a0166ff0366278e7/opentelemetry_exporter_otlp_proto_common-1.18.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.19.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "1eab161b8bdc79aff22d7ed3883677e0c3ed8ad359537e33b09039c92f104372",
+          "md5": "59079646cc5981455684e10d0de1e264",
+          "sha256": "792d5496ecfebaf4f56b2c434c5e2823f88ffaeb5dcd272ea423b249fd52bded"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.19.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "59079646cc5981455684e10d0de1e264",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.7",
+        "size": 17032,
+        "upload_time": "2023-07-13T14:43:01",
+        "upload_time_iso_8601": "2023-07-13T14:43:01.720974Z",
+        "url": "https://files.pythonhosted.org/packages/1e/ab/161b8bdc79aff22d7ed3883677e0c3ed8ad359537e33b09039c92f104372/opentelemetry_exporter_otlp_proto_common-1.19.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "dd67ad6bc32569d47358eb28d7a956c2b2b8da30462e29d254acdb66463ef6c8",
+          "md5": "49c346f5bdfe84f3fc0120a36cd13bd3",
+          "sha256": "c13d02a31dec161f8910d96db6b58309af17d92b827c64284bf85eec3f2d7297"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.19.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "49c346f5bdfe84f3fc0120a36cd13bd3",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.7",
+        "size": 16057,
+        "upload_time": "2023-07-13T14:43:26",
+        "upload_time_iso_8601": "2023-07-13T14:43:26.710171Z",
+        "url": "https://files.pythonhosted.org/packages/dd/67/ad6bc32569d47358eb28d7a956c2b2b8da30462e29d254acdb66463ef6c8/opentelemetry_exporter_otlp_proto_common-1.19.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.20.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "89131c6f7f1d81839ecfd4b61f8648c3d1843362e9c927a9b4e59fe4c29cec14",
+          "md5": "f30ef0a1c187beb1fe252200a7d755bc",
+          "sha256": "dd63209b40702636ab6ae76a06b401b646ad7b008a906ecb41222d4af24fbdef"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.20.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "f30ef0a1c187beb1fe252200a7d755bc",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.7",
+        "size": 17255,
+        "upload_time": "2023-09-04T19:01:05",
+        "upload_time_iso_8601": "2023-09-04T19:01:05.632272Z",
+        "url": "https://files.pythonhosted.org/packages/89/13/1c6f7f1d81839ecfd4b61f8648c3d1843362e9c927a9b4e59fe4c29cec14/opentelemetry_exporter_otlp_proto_common-1.20.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "d058ca95171d4104e4ea9c33bd6418e37f19a3d53552ec4c899c6efef4e22718",
+          "md5": "bbb926e639dcf76c443d2680b3fd997c",
+          "sha256": "df60c681bd61812e50b3a39a7a1afeeb6d4066117583249fcc262269374e7a49"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.20.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bbb926e639dcf76c443d2680b3fd997c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.7",
+        "size": 16305,
+        "upload_time": "2023-09-04T19:01:34",
+        "upload_time_iso_8601": "2023-09-04T19:01:34.085814Z",
+        "url": "https://files.pythonhosted.org/packages/d0/58/ca95171d4104e4ea9c33bd6418e37f19a3d53552ec4c899c6efef4e22718/opentelemetry_exporter_otlp_proto_common-1.20.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.21.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "2a60ec618caf8fd8a4ac50500565eb49038ec42b7b168df9a316494085a740a6",
+          "md5": "7183a67321b14a2a3601f7cebb55903b",
+          "sha256": "97b1022b38270ec65d11fbfa348e0cd49d12006485c2321ea3b1b7037d42b6ec"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.21.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7183a67321b14a2a3601f7cebb55903b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.7",
+        "size": 17251,
+        "upload_time": "2023-11-07T23:15:57",
+        "upload_time_iso_8601": "2023-11-07T23:15:57.610608Z",
+        "url": "https://files.pythonhosted.org/packages/2a/60/ec618caf8fd8a4ac50500565eb49038ec42b7b168df9a316494085a740a6/opentelemetry_exporter_otlp_proto_common-1.21.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "e42cbff2b288a374e744872ce22c9e46761296a41fb519e22df8442908f20803",
+          "md5": "0e32dfc18306e492e5c4510ccb85c87a",
+          "sha256": "61db274d8a68d636fb2ec2a0f281922949361cdd8236e25ff5539edf942b3226"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.21.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0e32dfc18306e492e5c4510ccb85c87a",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.7",
+        "size": 16331,
+        "upload_time": "2023-11-07T23:16:29",
+        "upload_time_iso_8601": "2023-11-07T23:16:29.908321Z",
+        "url": "https://files.pythonhosted.org/packages/e4/2c/bff2b288a374e744872ce22c9e46761296a41fb519e22df8442908f20803/opentelemetry_exporter_otlp_proto_common-1.21.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.22.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "ee750972205c139695ff3b21a58063e0e0440a81eaa2c5dd6ef4c1f22f58fdd5",
+          "md5": "5d72a525ebb3aec2ca901a404d729b18",
+          "sha256": "3f2538bec5312587f8676c332b3747f54c89fe6364803a807e217af4603201fa"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.22.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5d72a525ebb3aec2ca901a404d729b18",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.7",
+        "size": 17264,
+        "upload_time": "2023-12-15T22:59:16",
+        "upload_time_iso_8601": "2023-12-15T22:59:16.515544Z",
+        "url": "https://files.pythonhosted.org/packages/ee/75/0972205c139695ff3b21a58063e0e0440a81eaa2c5dd6ef4c1f22f58fdd5/opentelemetry_exporter_otlp_proto_common-1.22.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "bd0d3bce16aab34a293c5ceaf8f924d4656abf6c41fc7d1225729b833977a16b",
+          "md5": "3bb1fc3f1e8501367d216e1242fc0775",
+          "sha256": "71ae2f81bc6d6fe408d06388826edc8933759b2ca3a97d24054507dc7cfce52d"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.22.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "3bb1fc3f1e8501367d216e1242fc0775",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.7",
+        "size": 16371,
+        "upload_time": "2023-12-15T22:59:44",
+        "upload_time_iso_8601": "2023-12-15T22:59:44.625389Z",
+        "url": "https://files.pythonhosted.org/packages/bd/0d/3bce16aab34a293c5ceaf8f924d4656abf6c41fc7d1225729b833977a16b/opentelemetry_exporter_otlp_proto_common-1.22.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.23.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "13ecb0f12fb97b940ff2977ff77dc913242e2a577179b7f5b276487459a2749e",
+          "md5": "9fabba2d9fc5774af80f76a7cb1a82bf",
+          "sha256": "2a9e7e9d5a8b026b572684b6b24dcdefcaa58613d5ce3d644130b0c373c056c1"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.23.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "9fabba2d9fc5774af80f76a7cb1a82bf",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 17632,
+        "upload_time": "2024-02-23T17:01:33",
+        "upload_time_iso_8601": "2024-02-23T17:01:33.767651Z",
+        "url": "https://files.pythonhosted.org/packages/13/ec/b0f12fb97b940ff2977ff77dc913242e2a577179b7f5b276487459a2749e/opentelemetry_exporter_otlp_proto_common-1.23.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "5e420b6e37b44fa08f4aacd8e008b691daf3e8dbf329093eaddc1931bd3a687e",
+          "md5": "bd102f93e4461576e8426729e36e101b",
+          "sha256": "35e4ea909e7a0b24235bd0aaf17fba49676527feb1823b46565ff246d5a1ab18"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.23.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bd102f93e4461576e8426729e36e101b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 16932,
+        "upload_time": "2024-02-23T17:02:01",
+        "upload_time_iso_8601": "2024-02-23T17:02:01.189320Z",
+        "url": "https://files.pythonhosted.org/packages/5e/42/0b6e37b44fa08f4aacd8e008b691daf3e8dbf329093eaddc1931bd3a687e/opentelemetry_exporter_otlp_proto_common-1.23.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.24.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "46d3b344cb181a525f7e4519c27de17d721c504e01063520b9003569ef9bf692",
+          "md5": "94a4f71601c1ee1cec5cd640b2937b58",
+          "sha256": "e51f2c9735054d598ad2df5d3eca830fecfb5b0bda0a2fa742c9c7718e12f641"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.24.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "94a4f71601c1ee1cec5cd640b2937b58",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 17619,
+        "upload_time": "2024-03-28T19:25:46",
+        "upload_time_iso_8601": "2024-03-28T19:25:46.204649Z",
+        "url": "https://files.pythonhosted.org/packages/46/d3/b344cb181a525f7e4519c27de17d721c504e01063520b9003569ef9bf692/opentelemetry_exporter_otlp_proto_common-1.24.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "1f8ecd1087d2cf8efc5dfca813c87856ac7ecaeb14078c2bdffc51d6e2a734d9",
+          "md5": "bd4dc18d38adb7c5f5e61716223230f0",
+          "sha256": "5d31fa1ff976cacc38be1ec4e3279a3f88435c75b38b1f7a099a1faffc302461"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.24.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bd4dc18d38adb7c5f5e61716223230f0",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 16903,
+        "upload_time": "2024-03-28T19:26:18",
+        "upload_time_iso_8601": "2024-03-28T19:26:18.739946Z",
+        "url": "https://files.pythonhosted.org/packages/1f/8e/cd1087d2cf8efc5dfca813c87856ac7ecaeb14078c2bdffc51d6e2a734d9/opentelemetry_exporter_otlp_proto_common-1.24.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.25.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "050274ac6619eec78c82a923324f916d3eccd2f2254cf4270b669e96b76bf717",
+          "md5": "3a5d8e2198d70aa9018e05e45972ca5b",
+          "sha256": "15637b7d580c2675f70246563363775b4e6de947871e01d0f4e3881d1848d693"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.25.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "3a5d8e2198d70aa9018e05e45972ca5b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 17762,
+        "upload_time": "2024-05-31T01:40:13",
+        "upload_time_iso_8601": "2024-05-31T01:40:13.172449Z",
+        "url": "https://files.pythonhosted.org/packages/05/02/74ac6619eec78c82a923324f916d3eccd2f2254cf4270b669e96b76bf717/opentelemetry_exporter_otlp_proto_common-1.25.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "37a785ffaaacd712e4634fa1c56cbf79a02cf90b8a178fe1eee2cabfb0b7f44d",
+          "md5": "0fbd656634c131491ae6ff17f817366b",
+          "sha256": "c93f4e30da4eee02bacd1e004eb82ce4da143a2f8e15b987a9f603e0a85407d3"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.25.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0fbd656634c131491ae6ff17f817366b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 17152,
+        "upload_time": "2024-05-31T01:40:42",
+        "upload_time_iso_8601": "2024-05-31T01:40:42.259349Z",
+        "url": "https://files.pythonhosted.org/packages/37/a7/85ffaaacd712e4634fa1c56cbf79a02cf90b8a178fe1eee2cabfb0b7f44d/opentelemetry_exporter_otlp_proto_common-1.25.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.26.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "252f0f7e0a73fd901c9abc6ea680d7f19a803dac830c450f21e1123d3a3ec488",
+          "md5": "ad0694fdee145e2dca6d8d7d85f03766",
+          "sha256": "ee4d8f8891a1b9c372abf8d109409e5b81947cf66423fd998e56880057afbc71"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.26.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ad0694fdee145e2dca6d8d7d85f03766",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 17837,
+        "upload_time": "2024-07-25T04:01:42",
+        "upload_time_iso_8601": "2024-07-25T04:01:42.942631Z",
+        "url": "https://files.pythonhosted.org/packages/25/2f/0f7e0a73fd901c9abc6ea680d7f19a803dac830c450f21e1123d3a3ec488/opentelemetry_exporter_otlp_proto_common-1.26.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "84cded9eaa1d80facb6609d02af6c393b02ce3797a15742361be4859db6fdc17",
+          "md5": "47c825a3e66c77abe7381a349fbf6635",
+          "sha256": "bdbe50e2e22a1c71acaa0c8ba6efaadd58882e5a5978737a44a4c4b10d304c92"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.26.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "47c825a3e66c77abe7381a349fbf6635",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 17815,
+        "upload_time": "2024-07-25T04:02:06",
+        "upload_time_iso_8601": "2024-07-25T04:02:06.537524Z",
+        "url": "https://files.pythonhosted.org/packages/84/cd/ed9eaa1d80facb6609d02af6c393b02ce3797a15742361be4859db6fdc17/opentelemetry_exporter_otlp_proto_common-1.26.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.27.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "41274610ab3d9bb3cde4309b6505f98b3aabca04a26aa480aa18cede23149837",
+          "md5": "22b08ff56b66586800ad6b006a465d9d",
+          "sha256": "675db7fffcb60946f3a5c43e17d1168a3307a94a930ecf8d2ea1f286f3d4f79a"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.27.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "22b08ff56b66586800ad6b006a465d9d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 17848,
+        "upload_time": "2024-08-28T21:35:05",
+        "upload_time_iso_8601": "2024-08-28T21:35:05.412814Z",
+        "url": "https://files.pythonhosted.org/packages/41/27/4610ab3d9bb3cde4309b6505f98b3aabca04a26aa480aa18cede23149837/opentelemetry_exporter_otlp_proto_common-1.27.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "cd2e7eaf4ba595fb5213cf639c9158dfb64aacb2e4c7d74bfa664af89fa111f4",
+          "md5": "28ec3e2b2909cd6f076e88d36b7f12c9",
+          "sha256": "159d27cf49f359e3798c4c3eb8da6ef4020e292571bd8c5604a2a573231dd5c8"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.27.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "28ec3e2b2909cd6f076e88d36b7f12c9",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 17860,
+        "upload_time": "2024-08-28T21:35:34",
+        "upload_time_iso_8601": "2024-08-28T21:35:34.896426Z",
+        "url": "https://files.pythonhosted.org/packages/cd/2e/7eaf4ba595fb5213cf639c9158dfb64aacb2e4c7d74bfa664af89fa111f4/opentelemetry_exporter_otlp_proto_common-1.27.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.28.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "e1723c44aabc74db325aaba09361b6a0d80f6d601f0ff86ecea8ee655c9538fc",
+          "md5": "dbd8a40d0a721eea7da9a88cbdb25356",
+          "sha256": "467e6437d24e020156dffecece8c0a4471a8a60f6a34afeda7386df31a092410"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.28.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "dbd8a40d0a721eea7da9a88cbdb25356",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18403,
+        "upload_time": "2024-11-05T19:14:25",
+        "upload_time_iso_8601": "2024-11-05T19:14:25.798855Z",
+        "url": "https://files.pythonhosted.org/packages/e1/72/3c44aabc74db325aaba09361b6a0d80f6d601f0ff86ecea8ee655c9538fc/opentelemetry_exporter_otlp_proto_common-1.28.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "c28d5d411084ac441052f4c9bae03a1aec65ae5d16b439fea7b9c5ac3842c013",
+          "md5": "0229a2502d81dc27eb7399090e45140f",
+          "sha256": "5fa0419b0c8e291180b0fc8430a20dd44a3f3236f8e0827992145914f273ec4f"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.28.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0229a2502d81dc27eb7399090e45140f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 18505,
+        "upload_time": "2024-11-05T19:14:48",
+        "upload_time_iso_8601": "2024-11-05T19:14:48.204739Z",
+        "url": "https://files.pythonhosted.org/packages/c2/8d/5d411084ac441052f4c9bae03a1aec65ae5d16b439fea7b9c5ac3842c013/opentelemetry_exporter_otlp_proto_common-1.28.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.28.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "2ab133d69035e87fbd7c962be00315c3ea2567a6a45be71946d2b3bf008719b3",
+          "md5": "c0be981fe0e6f1c28abf548d759ad0c9",
+          "sha256": "56ea6cf28c90f767733f046a54525dc7271a25faff86b1955e5252b55f4e007f"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.28.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "c0be981fe0e6f1c28abf548d759ad0c9",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18452,
+        "upload_time": "2024-11-08T19:24:57",
+        "upload_time_iso_8601": "2024-11-08T19:24:57.795908Z",
+        "url": "https://files.pythonhosted.org/packages/2a/b1/33d69035e87fbd7c962be00315c3ea2567a6a45be71946d2b3bf008719b3/opentelemetry_exporter_otlp_proto_common-1.28.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "47ff99803ddffb90bc895b2f665fa9d79efee8fa9a0fe3cc6d318c19ce18b4d9",
+          "md5": "4365ebca942f4a0b9f0759c9bf2bdfc0",
+          "sha256": "6e55e7f5d59296cc87a74c08b8e0ddf87403f73a62302ec7ee042c1a1f4a8f70"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.28.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4365ebca942f4a0b9f0759c9bf2bdfc0",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 19040,
+        "upload_time": "2024-11-08T19:25:24",
+        "upload_time_iso_8601": "2024-11-08T19:25:24.794811Z",
+        "url": "https://files.pythonhosted.org/packages/47/ff/99803ddffb90bc895b2f665fa9d79efee8fa9a0fe3cc6d318c19ce18b4d9/opentelemetry_exporter_otlp_proto_common-1.28.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.28.2": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "2a4d769f3b1b1c6af5e603da50349ba31af757897540a75d666de22d39461055",
+          "md5": "4f82b9fbb6ac1615310e12602c85c4ad",
+          "sha256": "545b1943b574f666c35b3d6cc67cb0b111060727e93a1e2866e346b33bff2a12"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.28.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "4f82b9fbb6ac1615310e12602c85c4ad",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18460,
+        "upload_time": "2024-11-18T18:29:22",
+        "upload_time_iso_8601": "2024-11-18T18:29:22.790930Z",
+        "url": "https://files.pythonhosted.org/packages/2a/4d/769f3b1b1c6af5e603da50349ba31af757897540a75d666de22d39461055/opentelemetry_exporter_otlp_proto_common-1.28.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "60cdcd990f891b64e7698b8a6b6ab90dfac7f957db5a3d06788acd52f73ad4c0",
+          "md5": "f9d17d47e59845de935bb872516fc524",
+          "sha256": "7aebaa5fc9ff6029374546df1f3a62616fda07fccd9c6a8b7892ec130dd8baca"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.28.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f9d17d47e59845de935bb872516fc524",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 19136,
+        "upload_time": "2024-11-18T18:29:46",
+        "upload_time_iso_8601": "2024-11-18T18:29:46.870661Z",
+        "url": "https://files.pythonhosted.org/packages/60/cd/cd990f891b64e7698b8a6b6ab90dfac7f957db5a3d06788acd52f73ad4c0/opentelemetry_exporter_otlp_proto_common-1.28.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.29.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "9e757609bda3d72bf307839570b226180513e854c01443ebe265ed732a4980fc",
+          "md5": "effddd725cc677a6226d95a61fadbdf0",
+          "sha256": "a9d7376c06b4da9cf350677bcddb9618ed4b8255c3f6476975f5e38274ecd3aa"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.29.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "effddd725cc677a6226d95a61fadbdf0",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18459,
+        "upload_time": "2024-12-11T17:01:54",
+        "upload_time_iso_8601": "2024-12-11T17:01:54.817092Z",
+        "url": "https://files.pythonhosted.org/packages/9e/75/7609bda3d72bf307839570b226180513e854c01443ebe265ed732a4980fc/opentelemetry_exporter_otlp_proto_common-1.29.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "b158f7fd7eaf592b2521999a4271ab3ce1c82fe37fe9b0dc25c348398d95d66a",
+          "md5": "d1c45f4e5d60cf0e3f3cc221d8158472",
+          "sha256": "e7c39b5dbd1b78fe199e40ddfe477e6983cb61aa74ba836df09c3869a3e3e163"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.29.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "d1c45f4e5d60cf0e3f3cc221d8158472",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 19133,
+        "upload_time": "2024-12-11T17:02:27",
+        "upload_time_iso_8601": "2024-12-11T17:02:27.092101Z",
+        "url": "https://files.pythonhosted.org/packages/b1/58/f7fd7eaf592b2521999a4271ab3ce1c82fe37fe9b0dc25c348398d95d66a/opentelemetry_exporter_otlp_proto_common-1.29.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.30.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ee54f4b3de49f8d7d3a78fd6e6e1a6fd27dd342eb4d82c088b9078c6a32c3808",
+          "md5": "7a2a0c16a50d411c860f2dea61cbe422",
+          "sha256": "5468007c81aa9c44dc961ab2cf368a29d3475977df83b4e30aeed42aa7bc3b38"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.30.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7a2a0c16a50d411c860f2dea61cbe422",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18747,
+        "upload_time": "2025-02-04T18:16:51",
+        "upload_time_iso_8601": "2025-02-04T18:16:51.512174Z",
+        "url": "https://files.pythonhosted.org/packages/ee/54/f4b3de49f8d7d3a78fd6e6e1a6fd27dd342eb4d82c088b9078c6a32c3808/opentelemetry_exporter_otlp_proto_common-1.30.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a2d744098bf1ef89fc5810cdbda05faa2ae9322a0dbda4921cdc965dc68a9856",
+          "md5": "e029723890bd5778b728312c84c64ee0",
+          "sha256": "ddbfbf797e518411857d0ca062c957080279320d6235a279f7b64ced73c13897"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.30.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e029723890bd5778b728312c84c64ee0",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 19640,
+        "upload_time": "2025-02-04T18:17:16",
+        "upload_time_iso_8601": "2025-02-04T18:17:16.234808Z",
+        "url": "https://files.pythonhosted.org/packages/a2/d7/44098bf1ef89fc5810cdbda05faa2ae9322a0dbda4921cdc965dc68a9856/opentelemetry_exporter_otlp_proto_common-1.30.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.31.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "58493441ab55fac1ba75f720eccd5a34640c7b451a10eaf34384e506250a8e01",
+          "md5": "3c4588b0f34f81cbe8db00862dc01b77",
+          "sha256": "42b402f2340c0612907799d91d13b928314f06c57c362dfa0c074e20b673f43d"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.31.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "3c4588b0f34f81cbe8db00862dc01b77",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18824,
+        "upload_time": "2025-03-12T17:18:04",
+        "upload_time_iso_8601": "2025-03-12T17:18:04.390904Z",
+        "url": "https://files.pythonhosted.org/packages/58/49/3441ab55fac1ba75f720eccd5a34640c7b451a10eaf34384e506250a8e01/opentelemetry_exporter_otlp_proto_common-1.31.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dea8d9c27ba8c9b27fd776320d51942e33c4d6636bf8b109f16302b11b583053",
+          "md5": "8874efc18910f47c0308d419ca4951dc",
+          "sha256": "e7fa0fe8cf2f87c190a59d820b6ba0821234178bc1227b5bd40ca057622d4ddc"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.31.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8874efc18910f47c0308d419ca4951dc",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 20623,
+        "upload_time": "2025-03-12T17:18:24",
+        "upload_time_iso_8601": "2025-03-12T17:18:24.633899Z",
+        "url": "https://files.pythonhosted.org/packages/de/a8/d9c27ba8c9b27fd776320d51942e33c4d6636bf8b109f16302b11b583053/opentelemetry_exporter_otlp_proto_common-1.31.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.31.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8270134282413000a3fc02e6b4e301b8c5d7127c43b50bd23cddbaf406ab33ff",
+          "md5": "c4ca7aa94a890ca33240db83218ab3e9",
+          "sha256": "7cadf89dbab12e217a33c5d757e67c76dd20ce173f8203e7370c4996f2e9efd8"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.31.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "c4ca7aa94a890ca33240db83218ab3e9",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18823,
+        "upload_time": "2025-03-20T14:44:01",
+        "upload_time_iso_8601": "2025-03-20T14:44:01.783740Z",
+        "url": "https://files.pythonhosted.org/packages/82/70/134282413000a3fc02e6b4e301b8c5d7127c43b50bd23cddbaf406ab33ff/opentelemetry_exporter_otlp_proto_common-1.31.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "53e548662d9821d28f05ab8350a9a986ab99d9c0e8b23f8ff391c8df82742a9c",
+          "md5": "23c5a6b8054ecae8eb2872bc861e1526",
+          "sha256": "c748e224c01f13073a2205397ba0e415dcd3be9a0f95101ba4aace5fc730e0da"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.31.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "23c5a6b8054ecae8eb2872bc861e1526",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 20627,
+        "upload_time": "2025-03-20T14:44:23",
+        "upload_time_iso_8601": "2025-03-20T14:44:23.788293Z",
+        "url": "https://files.pythonhosted.org/packages/53/e5/48662d9821d28f05ab8350a9a986ab99d9c0e8b23f8ff391c8df82742a9c/opentelemetry_exporter_otlp_proto_common-1.31.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.32.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6254b5fd2489edc26280b3065afb2bfa2b3ebfda224af94d5d560cb5e38eba4c",
+          "md5": "8dc209e5cab7adeddc686a31d90d0108",
+          "sha256": "277a63a18768b3b460d082a489f6f80d4ae2c1e6b185bb701c6bd4e91405e4bd"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.32.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "8dc209e5cab7adeddc686a31d90d0108",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18814,
+        "upload_time": "2025-04-10T13:09:27",
+        "upload_time_iso_8601": "2025-04-10T13:09:27.629790Z",
+        "url": "https://files.pythonhosted.org/packages/62/54/b5fd2489edc26280b3065afb2bfa2b3ebfda224af94d5d560cb5e38eba4c/opentelemetry_exporter_otlp_proto_common-1.32.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "23d117cae7d133d9e826050f999e282650c7aa7a45cc44e2bab9ca25b65a9bb7",
+          "md5": "518a5a77809ee82d97d601bd3f5bfb85",
+          "sha256": "2bca672f2a279c4f517115e635c0cc1269d07b2982a36681c521f7e56179a222"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.32.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "518a5a77809ee82d97d601bd3f5bfb85",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 20624,
+        "upload_time": "2025-04-10T13:09:47",
+        "upload_time_iso_8601": "2025-04-10T13:09:47.492305Z",
+        "url": "https://files.pythonhosted.org/packages/23/d1/17cae7d133d9e826050f999e282650c7aa7a45cc44e2bab9ca25b65a9bb7/opentelemetry_exporter_otlp_proto_common-1.32.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.32.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "721aa51584a8b13cd9d4cb0d8f14f2164d0cf1a1bd1e5d7c81b7974fde2fb47b",
+          "md5": "ac8441b3579c24e5f568f6d5dcacb978",
+          "sha256": "a1e9ad3d0d9a9405c7ff8cdb54ba9b265da16da9844fe36b8c9661114b56c5d9"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.32.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ac8441b3579c24e5f568f6d5dcacb978",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18816,
+        "upload_time": "2025-04-15T16:01:53",
+        "upload_time_iso_8601": "2025-04-15T16:01:53.353060Z",
+        "url": "https://files.pythonhosted.org/packages/72/1a/a51584a8b13cd9d4cb0d8f14f2164d0cf1a1bd1e5d7c81b7974fde2fb47b/opentelemetry_exporter_otlp_proto_common-1.32.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "10a1466fad0e6a21709f0502ff346545a3d81bc8121b2d87357f74c8a3bc856e",
+          "md5": "08fdbac7d0be5daf72447a025252010c",
+          "sha256": "da4edee4f24aaef109bfe924efad3a98a2e27c91278115505b298ee61da5d68e"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.32.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "08fdbac7d0be5daf72447a025252010c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 20623,
+        "upload_time": "2025-04-15T16:02:16",
+        "upload_time_iso_8601": "2025-04-15T16:02:16.105254Z",
+        "url": "https://files.pythonhosted.org/packages/10/a1/466fad0e6a21709f0502ff346545a3d81bc8121b2d87357f74c8a3bc856e/opentelemetry_exporter_otlp_proto_common-1.32.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.33.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "15eea8a2a0c965a8ac53d31a3d5b5582de16d27ece4108c152f42adeb11a6455",
+          "md5": "323d1b663bec0f5dd6d019ec8732ee3e",
+          "sha256": "5c282fc752e4ebdf484c6af2f22d0af2048a5685400d59524e8a3dbcee315014"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.33.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "323d1b663bec0f5dd6d019ec8732ee3e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18840,
+        "upload_time": "2025-05-09T14:55:42",
+        "upload_time_iso_8601": "2025-05-09T14:55:42.378042Z",
+        "url": "https://files.pythonhosted.org/packages/15/ee/a8a2a0c965a8ac53d31a3d5b5582de16d27ece4108c152f42adeb11a6455/opentelemetry_exporter_otlp_proto_common-1.33.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e23170add0d54358ea5007f687b931a1f980e6c977299897cce763e968ffc4a5",
+          "md5": "df60bde82390218cdeb5c978aa50aca4",
+          "sha256": "2f43679dab68ce7708db18cb145b59a7e9184d46608ef037c9c22f47c5beb320"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.33.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "df60bde82390218cdeb5c978aa50aca4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 20830,
+        "upload_time": "2025-05-09T14:56:03",
+        "upload_time_iso_8601": "2025-05-09T14:56:03.176009Z",
+        "url": "https://files.pythonhosted.org/packages/e2/31/70add0d54358ea5007f687b931a1f980e6c977299897cce763e968ffc4a5/opentelemetry_exporter_otlp_proto_common-1.33.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.33.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "09529bcb17e2c29c1194a28e521b9d3f2ced09028934c3c52a8205884c94b2df",
+          "md5": "2ce2ddb4d3db55a74ae16c44266bef28",
+          "sha256": "b81c1de1ad349785e601d02715b2d29d6818aed2c809c20219f3d1f20b038c36"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.33.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2ce2ddb4d3db55a74ae16c44266bef28",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18839,
+        "upload_time": "2025-05-16T18:52:22",
+        "upload_time_iso_8601": "2025-05-16T18:52:22.447129Z",
+        "url": "https://files.pythonhosted.org/packages/09/52/9bcb17e2c29c1194a28e521b9d3f2ced09028934c3c52a8205884c94b2df/opentelemetry_exporter_otlp_proto_common-1.33.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7a18a1ec9dcb6713a48b4bdd10f1c1e4d5d2489d3912b80d2bcc059a9a842836",
+          "md5": "e774cc575241ab1d5bbe740cb66f49a4",
+          "sha256": "c57b3fa2d0595a21c4ed586f74f948d259d9949b58258f11edb398f246bec131"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.33.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e774cc575241ab1d5bbe740cb66f49a4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 20828,
+        "upload_time": "2025-05-16T18:52:43",
+        "upload_time_iso_8601": "2025-05-16T18:52:43.795689Z",
+        "url": "https://files.pythonhosted.org/packages/7a/18/a1ec9dcb6713a48b4bdd10f1c1e4d5d2489d3912b80d2bcc059a9a842836/opentelemetry_exporter_otlp_proto_common-1.33.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.34.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e9787bfd2d027aa36a68fff4019950569f8cda27793441098cda0a82ea2ecb89",
+          "md5": "e17d3e4df6ddd1869e2bf1bd3ab6938e",
+          "sha256": "a5ab7a9b7c3c7ba957c8ddcb08c0c93b1d732e066f544682a250ecf4d7a9ceef"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.34.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e17d3e4df6ddd1869e2bf1bd3ab6938e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 18835,
+        "upload_time": "2025-06-04T13:31:05",
+        "upload_time_iso_8601": "2025-06-04T13:31:05.797279Z",
+        "url": "https://files.pythonhosted.org/packages/e9/78/7bfd2d027aa36a68fff4019950569f8cda27793441098cda0a82ea2ecb89/opentelemetry_exporter_otlp_proto_common-1.34.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "81120d549f53e70a8297c1817705febe2bdb81479dc74c5b2496014f35f74455",
+          "md5": "2798697004f60d34defa49762aa1e817",
+          "sha256": "5916d9ceda8c733adbec5e9cecf654fbf359e9f619ff43214277076fba888557"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.34.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2798697004f60d34defa49762aa1e817",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 20818,
+        "upload_time": "2025-06-04T13:31:28",
+        "upload_time_iso_8601": "2025-06-04T13:31:28.136979Z",
+        "url": "https://files.pythonhosted.org/packages/81/12/0d549f53e70a8297c1817705febe2bdb81479dc74c5b2496014f35f74455/opentelemetry_exporter_otlp_proto_common-1.34.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.34.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "72e88b292a11cc8d8d87ec0c4089ae21b6a58af49ca2e51fa916435bc922fdc7",
+          "md5": "ccc33f0e6c61dc08a183a7ffb3d71dde",
+          "sha256": "8e2019284bf24d3deebbb6c59c71e6eef3307cd88eff8c633e061abba33f7e87"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.34.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ccc33f0e6c61dc08a183a7ffb3d71dde",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 18834,
+        "upload_time": "2025-06-10T08:55:00",
+        "upload_time_iso_8601": "2025-06-10T08:55:00.806327Z",
+        "url": "https://files.pythonhosted.org/packages/72/e8/8b292a11cc8d8d87ec0c4089ae21b6a58af49ca2e51fa916435bc922fdc7/opentelemetry_exporter_otlp_proto_common-1.34.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "86f0ff235936ee40db93360233b62da932d4fd9e8d103cd090c6bcb9afaf5f01",
+          "md5": "e4b6cbaa369f4b7832c23655a40c2977",
+          "sha256": "b59a20a927facd5eac06edaf87a07e49f9e4a13db487b7d8a52b37cb87710f8b"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.34.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e4b6cbaa369f4b7832c23655a40c2977",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 20817,
+        "upload_time": "2025-06-10T08:55:22",
+        "upload_time_iso_8601": "2025-06-10T08:55:22.550745Z",
+        "url": "https://files.pythonhosted.org/packages/86/f0/ff235936ee40db93360233b62da932d4fd9e8d103cd090c6bcb9afaf5f01/opentelemetry_exporter_otlp_proto_common-1.34.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.35.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5a2ce31dd3c719bff87fa77391eb7f38b1430d22868c52312cba8aad60f280e5",
+          "md5": "7e9ffcf07e3879e1f91a7aee2856fe35",
+          "sha256": "863465de697ae81279ede660f3918680b4480ef5f69dcdac04f30722ed7b74cc"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.35.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7e9ffcf07e3879e1f91a7aee2856fe35",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 18349,
+        "upload_time": "2025-07-11T12:23:11",
+        "upload_time_iso_8601": "2025-07-11T12:23:11.713418Z",
+        "url": "https://files.pythonhosted.org/packages/5a/2c/e31dd3c719bff87fa77391eb7f38b1430d22868c52312cba8aad60f280e5/opentelemetry_exporter_otlp_proto_common-1.35.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "56d1887f860529cba7fc3aba2f6a3597fefec010a17bd1b126810724707d9b51",
+          "md5": "35db8c6f14bae0a65ffc7ba37248b0ba",
+          "sha256": "6f6d8c39f629b9fa5c79ce19a2829dbd93034f8ac51243cdf40ed2196f00d7eb"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.35.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "35db8c6f14bae0a65ffc7ba37248b0ba",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 20299,
+        "upload_time": "2025-07-11T12:23:31",
+        "upload_time_iso_8601": "2025-07-11T12:23:31.046362Z",
+        "url": "https://files.pythonhosted.org/packages/56/d1/887f860529cba7fc3aba2f6a3597fefec010a17bd1b126810724707d9b51/opentelemetry_exporter_otlp_proto_common-1.35.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.36.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d0ed22290dca7db78eb32e0101738366b5bbda00d0407f00feffb9bf8c3fdf87",
+          "md5": "8ec80ce8df9b48dee573713624e82807",
+          "sha256": "0fc002a6ed63eac235ada9aa7056e5492e9a71728214a61745f6ad04b923f840"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.36.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "8ec80ce8df9b48dee573713624e82807",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 18349,
+        "upload_time": "2025-07-29T15:11:51",
+        "upload_time_iso_8601": "2025-07-29T15:11:51.327371Z",
+        "url": "https://files.pythonhosted.org/packages/d0/ed/22290dca7db78eb32e0101738366b5bbda00d0407f00feffb9bf8c3fdf87/opentelemetry_exporter_otlp_proto_common-1.36.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "34da7747e57eb341c59886052d733072bc878424bf20f1d8cf203d508bbece5b",
+          "md5": "c5807f62446d86ba9c0c3baf2f07c7ad",
+          "sha256": "6c496ccbcbe26b04653cecadd92f73659b814c6e3579af157d8716e5f9f25cbf"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.36.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c5807f62446d86ba9c0c3baf2f07c7ad",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 20302,
+        "upload_time": "2025-07-29T15:12:07",
+        "upload_time_iso_8601": "2025-07-29T15:12:07.710085Z",
+        "url": "https://files.pythonhosted.org/packages/34/da/7747e57eb341c59886052d733072bc878424bf20f1d8cf203d508bbece5b/opentelemetry_exporter_otlp_proto_common-1.36.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.37.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0813b4ef09837409a777f3c0af2a5b4ba9b7af34872bc43609dda0c209e4060d",
+          "md5": "b1949ec5aa07f0df101530623dc894a0",
+          "sha256": "53038428449c559b0c564b8d718df3314da387109c4d36bd1b94c9a641b0292e"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.37.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "b1949ec5aa07f0df101530623dc894a0",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 18359,
+        "upload_time": "2025-09-11T10:28:44",
+        "upload_time_iso_8601": "2025-09-11T10:28:44.939296Z",
+        "url": "https://files.pythonhosted.org/packages/08/13/b4ef09837409a777f3c0af2a5b4ba9b7af34872bc43609dda0c209e4060d/opentelemetry_exporter_otlp_proto_common-1.37.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dc6c10018cbcc1e6fff23aac67d7fd977c3d692dbe5f9ef9bb4db5c1268726cc",
+          "md5": "68d96236984b3b479353a6bd11cbc62e",
+          "sha256": "c87a1bdd9f41fdc408d9cc9367bb53f8d2602829659f2b90be9f9d79d0bfe62c"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.37.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "68d96236984b3b479353a6bd11cbc62e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 20430,
+        "upload_time": "2025-09-11T10:29:03",
+        "upload_time_iso_8601": "2025-09-11T10:29:03.605708Z",
+        "url": "https://files.pythonhosted.org/packages/dc/6c/10018cbcc1e6fff23aac67d7fd977c3d692dbe5f9ef9bb4db5c1268726cc/opentelemetry_exporter_otlp_proto_common-1.37.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.38.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a79e55a41c9601191e8cd8eb626b54ee6827b9c9d4a46d736f32abc80d8039fc",
+          "md5": "f96719ebc3ac03243f62023544fe7d6a",
+          "sha256": "03cb76ab213300fe4f4c62b7d8f17d97fcfd21b89f0b5ce38ea156327ddda74a"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.38.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "f96719ebc3ac03243f62023544fe7d6a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 18359,
+        "upload_time": "2025-10-16T08:35:34",
+        "upload_time_iso_8601": "2025-10-16T08:35:34.099363Z",
+        "url": "https://files.pythonhosted.org/packages/a7/9e/55a41c9601191e8cd8eb626b54ee6827b9c9d4a46d736f32abc80d8039fc/opentelemetry_exporter_otlp_proto_common-1.38.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1983dd4660f2956ff88ed071e9e0e36e830df14b8c5dc06722dbde1841accbe8",
+          "md5": "41d473253969573a408c978d45e5c014",
+          "sha256": "e333278afab4695aa8114eeb7bf4e44e65c6607d54968271a249c180b2cb605c"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.38.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "41d473253969573a408c978d45e5c014",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 20431,
+        "upload_time": "2025-10-16T08:35:53",
+        "upload_time_iso_8601": "2025-10-16T08:35:53.285406Z",
+        "url": "https://files.pythonhosted.org/packages/19/83/dd4660f2956ff88ed071e9e0e36e830df14b8c5dc06722dbde1841accbe8/opentelemetry_exporter_otlp_proto_common-1.38.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.39.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "efc6215edba62d13a3948c718b289539f70e40965bc37fc82ecd55bb0b749c1a",
+          "md5": "5138f6349a38409c830d2b41915ae00a",
+          "sha256": "3d77be7c4bdf90f1a76666c934368b8abed730b5c6f0547a2ec57feb115849ac"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.39.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5138f6349a38409c830d2b41915ae00a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 18367,
+        "upload_time": "2025-12-03T13:19:36",
+        "upload_time_iso_8601": "2025-12-03T13:19:36.906766Z",
+        "url": "https://files.pythonhosted.org/packages/ef/c6/215edba62d13a3948c718b289539f70e40965bc37fc82ecd55bb0b749c1a/opentelemetry_exporter_otlp_proto_common-1.39.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "11cb3a29ce606b10c76d413d6edd42d25a654af03e73e50696611e757d2602f3",
+          "md5": "29d301922b078c1528c033c55aec84ed",
+          "sha256": "a135fceed1a6d767f75be65bd2845da344dd8b9258eeed6bc48509d02b184409"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.39.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "29d301922b078c1528c033c55aec84ed",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 20407,
+        "upload_time": "2025-12-03T13:19:59",
+        "upload_time_iso_8601": "2025-12-03T13:19:59.003481Z",
+        "url": "https://files.pythonhosted.org/packages/11/cb/3a29ce606b10c76d413d6edd42d25a654af03e73e50696611e757d2602f3/opentelemetry_exporter_otlp_proto_common-1.39.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.39.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8c02ffc3e143d89a27ac21fd557365b98bd0653b98de8a101151d5805b5d4c33",
+          "md5": "99283eb1871ca5aec5baead503dce70f",
+          "sha256": "08f8a5862d64cc3435105686d0216c1365dc5701f86844a8cd56597d0c764fde"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.39.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "99283eb1871ca5aec5baead503dce70f",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 18366,
+        "upload_time": "2025-12-11T13:32:20",
+        "upload_time_iso_8601": "2025-12-11T13:32:20.200139Z",
+        "url": "https://files.pythonhosted.org/packages/8c/02/ffc3e143d89a27ac21fd557365b98bd0653b98de8a101151d5805b5d4c33/opentelemetry_exporter_otlp_proto_common-1.39.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e99d22d241b66f7bbde88a3bfa6847a351d2c46b84de23e71222c6aae25c7050",
+          "md5": "3aab9aa536cc20138fa610d6be91e984",
+          "sha256": "763370d4737a59741c89a67b50f9e39271639ee4afc999dadfe768541c027464"
+        },
+        "downloads": -1,
+        "filename": "opentelemetry_exporter_otlp_proto_common-1.39.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "3aab9aa536cc20138fa610d6be91e984",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 20409,
+        "upload_time": "2025-12-11T13:32:40",
+        "upload_time_iso_8601": "2025-12-11T13:32:40.885534Z",
+        "url": "https://files.pythonhosted.org/packages/e9/9d/22d241b66f7bbde88a3bfa6847a351d2c46b84de23e71222c6aae25c7050/opentelemetry_exporter_otlp_proto_common-1.39.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "8c02ffc3e143d89a27ac21fd557365b98bd0653b98de8a101151d5805b5d4c33",
+        "md5": "99283eb1871ca5aec5baead503dce70f",
+        "sha256": "08f8a5862d64cc3435105686d0216c1365dc5701f86844a8cd56597d0c764fde"
+      },
+      "downloads": -1,
+      "filename": "opentelemetry_exporter_otlp_proto_common-1.39.1-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "99283eb1871ca5aec5baead503dce70f",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.9",
+      "size": 18366,
+      "upload_time": "2025-12-11T13:32:20",
+      "upload_time_iso_8601": "2025-12-11T13:32:20.200139Z",
+      "url": "https://files.pythonhosted.org/packages/8c/02/ffc3e143d89a27ac21fd557365b98bd0653b98de8a101151d5805b5d4c33/opentelemetry_exporter_otlp_proto_common-1.39.1-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "e99d22d241b66f7bbde88a3bfa6847a351d2c46b84de23e71222c6aae25c7050",
+        "md5": "3aab9aa536cc20138fa610d6be91e984",
+        "sha256": "763370d4737a59741c89a67b50f9e39271639ee4afc999dadfe768541c027464"
+      },
+      "downloads": -1,
+      "filename": "opentelemetry_exporter_otlp_proto_common-1.39.1.tar.gz",
+      "has_sig": false,
+      "md5_digest": "3aab9aa536cc20138fa610d6be91e984",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.9",
+      "size": 20409,
+      "upload_time": "2025-12-11T13:32:40",
+      "upload_time_iso_8601": "2025-12-11T13:32:40.885534Z",
+      "url": "https://files.pythonhosted.org/packages/e9/9d/22d241b66f7bbde88a3bfa6847a351d2c46b84de23e71222c6aae25c7050/opentelemetry_exporter_otlp_proto_common-1.39.1.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

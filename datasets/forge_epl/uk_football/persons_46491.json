@@ -1,0 +1,35 @@
+{
+    "id": 46491,
+    "name": "Omar Alderete",
+    "firstName": "Omar",
+    "lastName": "Alderete",
+    "dateOfBirth": "1996-12-26",
+    "nationality": "Paraguay",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 3,
+    "lastUpdated": "2026-06-01T11:16:31Z",
+    "currentTeam": {
+        "area": {
+            "id": 2183,
+            "name": "Paraguay",
+            "code": "PRY",
+            "flag": "https://crests.football-data.org/761.svg"
+        },
+        "id": 761,
+        "name": "Paraguay",
+        "shortName": "Paraguay",
+        "tla": "PAR",
+        "crest": "https://crests.football-data.org/761.svg",
+        "address": "Calle Mayor Mart\u00ednez 1393 Asunci\u00f3n null",
+        "website": "http://www.apf.org.py",
+        "founded": 1906,
+        "clubColors": "Red / White / Blue",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

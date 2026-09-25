@@ -1,0 +1,43 @@
+{
+    "id": 99775,
+    "name": "Jeremy Doku",
+    "firstName": "J\u00e9r\u00e9my",
+    "lastName": "Doku",
+    "dateOfBirth": "2002-05-27",
+    "nationality": "Belgium",
+    "section": "Offence",
+    "position": "Midfield",
+    "shirtNumber": 11,
+    "lastUpdated": "2026-07-15T09:25:43Z",
+    "currentTeam": {
+        "area": {
+            "id": 2023,
+            "name": "Belgium",
+            "code": "BEL",
+            "flag": "https://crests.football-data.org/805.svg"
+        },
+        "id": 805,
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg",
+        "address": "145, avenue Houba de Strooper Brussels 1020",
+        "website": "https://www.rbfa.be",
+        "founded": 1895,
+        "clubColors": "Red / Black / Yellow",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

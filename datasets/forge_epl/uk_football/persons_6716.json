@@ -1,0 +1,35 @@
+{
+    "id": 6716,
+    "name": "Daichi Kamada",
+    "firstName": "Daichi",
+    "lastName": "Kamada",
+    "dateOfBirth": "1996-08-05",
+    "nationality": "Japan",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 15,
+    "lastUpdated": "2026-06-01T11:16:31Z",
+    "currentTeam": {
+        "area": {
+            "id": 2116,
+            "name": "Japan",
+            "code": "JPN",
+            "flag": "https://crests.football-data.org/JAP.svg"
+        },
+        "id": 766,
+        "name": "Japan",
+        "shortName": "Japan",
+        "tla": "JPN",
+        "crest": "https://crests.football-data.org/766.svg",
+        "address": "JFA House Football Avenue, Bunkyo-ku T\u014dky\u014d 113-8311",
+        "website": "http://www.jfa.or.jp",
+        "founded": 1921,
+        "clubColors": "Blue / White",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

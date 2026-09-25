@@ -1,0 +1,382 @@
+[
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Arsenal",
+        "city": "London",
+        "stadium": "Emirates Stadium",
+        "lc_team": "arsenal",
+        "lc_city": "london",
+        "lc_stadium": "emirates stadium",
+        "latitude": 51.5549,
+        "longitude": -0.1084,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -0.1084,
+                51.5549
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Aston Villa",
+        "city": "Birmingham",
+        "stadium": "Villa Park",
+        "lc_team": "aston villa",
+        "lc_city": "birmingham",
+        "lc_stadium": "villa park",
+        "latitude": 52.5092,
+        "longitude": -1.8848,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -1.8848,
+                52.5092
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Bournemouth",
+        "city": "Bournemouth",
+        "stadium": "Vitality Stadium",
+        "lc_team": "bournemouth",
+        "lc_city": "bournemouth",
+        "lc_stadium": "vitality stadium",
+        "latitude": 50.7352,
+        "longitude": -1.8384,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -1.8384,
+                50.7352
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Brentford",
+        "city": "London",
+        "stadium": "Griffin Park",
+        "lc_team": "brentford",
+        "lc_city": "london",
+        "lc_stadium": "griffin park",
+        "latitude": 51.4907,
+        "longitude": -0.2886,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -0.2886,
+                51.4907
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Brighton Hove",
+        "city": "Brighton",
+        "stadium": "The American Express Community Stadium",
+        "lc_team": "brighton hove",
+        "lc_city": "brighton",
+        "lc_stadium": "the american express community stadium",
+        "latitude": 50.8619,
+        "longitude": -0.0837,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -0.0837,
+                50.8619
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Chelsea",
+        "city": "London",
+        "stadium": "Stamford Bridge",
+        "lc_team": "chelsea",
+        "lc_city": "london",
+        "lc_stadium": "stamford bridge",
+        "latitude": 51.4817,
+        "longitude": -0.191,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -0.191,
+                51.4817
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Coventry City",
+        "city": "Coventry",
+        "stadium": "Coventry Building Society Arena",
+        "lc_team": "coventry city",
+        "lc_city": "coventry",
+        "lc_stadium": "coventry building society arena",
+        "latitude": 52.4482,
+        "longitude": -1.4956,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -1.4956,
+                52.4482
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Crystal Palace",
+        "city": "London",
+        "stadium": "Selhurst Park",
+        "lc_team": "crystal palace",
+        "lc_city": "london",
+        "lc_stadium": "selhurst park",
+        "latitude": 51.3983,
+        "longitude": -0.0855,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -0.0855,
+                51.3983
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Everton",
+        "city": "Liverpool",
+        "stadium": "Hill Dickinson Stadium",
+        "lc_team": "everton",
+        "lc_city": "liverpool",
+        "lc_stadium": "hill dickinson stadium",
+        "latitude": 53.4443,
+        "longitude": -2.9958,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -2.9958,
+                53.4443
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Fulham",
+        "city": "London",
+        "stadium": "Craven Cottage",
+        "lc_team": "fulham",
+        "lc_city": "london",
+        "lc_stadium": "craven cottage",
+        "latitude": 51.4749,
+        "longitude": -0.2217,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -0.2217,
+                51.4749
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Hull City",
+        "city": "Hull",
+        "stadium": "Kingston Communications Stadium",
+        "lc_team": "hull city",
+        "lc_city": "hull",
+        "lc_stadium": "kingston communications stadium",
+        "latitude": 53.7461,
+        "longitude": -0.3663,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -0.3663,
+                53.7461
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Ipswich Town",
+        "city": "Ipswich",
+        "stadium": "Portman Road Stadium",
+        "lc_team": "ipswich town",
+        "lc_city": "ipswich",
+        "lc_stadium": "portman road stadium",
+        "latitude": 52.0552,
+        "longitude": 1.1451,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                1.1451,
+                52.0552
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Leeds United",
+        "city": "Leeds",
+        "stadium": "Elland Road",
+        "lc_team": "leeds united",
+        "lc_city": "leeds",
+        "lc_stadium": "elland road",
+        "latitude": 53.7778,
+        "longitude": -1.5722,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -1.5722,
+                53.7778
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Liverpool",
+        "city": "Liverpool",
+        "stadium": "Anfield",
+        "lc_team": "liverpool",
+        "lc_city": "liverpool",
+        "lc_stadium": "anfield",
+        "latitude": 53.4308,
+        "longitude": -2.9608,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -2.9608,
+                53.4308
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Man City",
+        "city": "Manchester",
+        "stadium": "Etihad Stadium",
+        "lc_team": "man city",
+        "lc_city": "manchester",
+        "lc_stadium": "etihad stadium",
+        "latitude": 53.4831,
+        "longitude": -2.2004,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -2.2004,
+                53.4831
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Man United",
+        "city": "Manchester",
+        "stadium": "Old Trafford",
+        "lc_team": "man united",
+        "lc_city": "manchester",
+        "lc_stadium": "old trafford",
+        "latitude": 53.4631,
+        "longitude": -2.2913,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -2.2913,
+                53.4631
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Newcastle",
+        "city": "Newcastle upon Tyne",
+        "stadium": "St James Park",
+        "lc_team": "newcastle",
+        "lc_city": "newcastle upon tyne",
+        "lc_stadium": "st james park",
+        "latitude": 54.9756,
+        "longitude": -1.6217,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -1.6217,
+                54.9756
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Nottingham",
+        "city": "Nottingham",
+        "stadium": "The City Ground",
+        "lc_team": "nottingham",
+        "lc_city": "nottingham",
+        "lc_stadium": "the city ground",
+        "latitude": 52.94,
+        "longitude": -1.1328,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -1.1328,
+                52.94
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Sunderland",
+        "city": "Sunderland",
+        "stadium": "Stadium of Light",
+        "lc_team": "sunderland",
+        "lc_city": "sunderland",
+        "lc_stadium": "stadium of light",
+        "latitude": 54.9144,
+        "longitude": -1.3883,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -1.3883,
+                54.9144
+            ]
+        }
+    },
+    {
+        "doctype": "stadium",
+        "pk": "stadium",
+        "team": "Tottenham",
+        "city": "London",
+        "stadium": "Tottenham Hotspur Stadium",
+        "lc_team": "tottenham",
+        "lc_city": "london",
+        "lc_stadium": "tottenham hotspur stadium",
+        "latitude": 51.6043,
+        "longitude": -0.0664,
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                -0.0664,
+                51.6043
+            ]
+        }
+    }
+]

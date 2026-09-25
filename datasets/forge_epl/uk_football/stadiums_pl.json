@@ -1,0 +1,162 @@
+[
+  {
+    "team_name": "Arsenal",
+    "team_matches_name": "Arsenal",
+    "team_city": "London",
+    "team_stadium_name": "Emirates Stadium",
+    "team_stadium_latitude": 51.5549,
+    "team_stadium_longitude": -0.1084
+  },
+  {
+    "team_name": "Aston Villa",
+    "team_matches_name": "Aston Villa",
+    "team_city": "Birmingham",
+    "team_stadium_name": "Villa Park",
+    "team_stadium_latitude": 52.5092,
+    "team_stadium_longitude": -1.8848
+  },
+  {
+    "team_name": "AFC Bournemouth",
+    "team_matches_name": "Bournemouth",
+    "team_city": "Bournemouth",
+    "team_stadium_name": "Vitality Stadium",
+    "team_stadium_latitude": 50.7352,
+    "team_stadium_longitude": -1.8384
+  },
+  {
+    "team_name": "Brentford",
+    "team_matches_name": "Brentford",
+    "team_city": "London",
+    "team_stadium_name": "Griffin Park",
+    "team_stadium_latitude": 51.4907,
+    "team_stadium_longitude": -0.2886
+  },
+  {
+    "team_name": "Brighton & Hove Albion",
+    "team_matches_name": "Brighton Hove",
+    "team_city": "Brighton",
+    "team_stadium_name": "The American Express Community Stadium",
+    "team_stadium_latitude": 50.8619,
+    "team_stadium_longitude": -0.0837
+  },
+  {
+    "team_name": "Chelsea",
+    "team_matches_name": "Chelsea",
+    "team_city": "London",
+    "team_stadium_name": "Stamford Bridge",
+    "team_stadium_latitude": 51.4817,
+    "team_stadium_longitude": -0.191
+  },
+  {
+    "team_name": "Coventry City",
+    "team_matches_name": "Coventry City",
+    "team_city": "Coventry",
+    "team_stadium_name": "Coventry Building Society Arena",
+    "team_stadium_latitude": 52.4482,
+    "team_stadium_longitude": -1.4956
+  },
+  {
+    "team_name": "Crystal Palace",
+    "team_matches_name": "Crystal Palace",
+    "team_city": "London",
+    "team_stadium_name": "Selhurst Park",
+    "team_stadium_latitude": 51.3983,
+    "team_stadium_longitude": -0.0855
+  },
+  {
+    "team_name": "Everton",
+    "team_matches_name": "Everton",
+    "team_city": "Liverpool",
+    "team_stadium_name": "Hill Dickinson Stadium",
+    "team_stadium_latitude": 53.4443,
+    "team_stadium_longitude": -2.9958
+  },
+  {
+    "team_name": "Fulham",
+    "team_matches_name": "Fulham",
+    "team_city": "London",
+    "team_stadium_name": "Craven Cottage",
+    "team_stadium_latitude": 51.4749,
+    "team_stadium_longitude": -0.2217
+  },
+  {
+    "team_name": "Hull City",
+    "team_matches_name": "Hull City",
+    "team_city": "Hull",
+    "team_stadium_name": "Kingston Communications Stadium",
+    "team_stadium_latitude": 53.7461,
+    "team_stadium_longitude": -0.3663
+  },
+  {
+    "team_name": "Ipswich Town",
+    "team_matches_name": "Ipswich Town",
+    "team_city": "Ipswich",
+    "team_stadium_name": "Portman Road Stadium",
+    "team_stadium_latitude": 52.0552,
+    "team_stadium_longitude": 1.1451
+  },
+  {
+    "team_name": "Leeds United",
+    "team_matches_name": "Leeds United",
+    "team_city": "Leeds",
+    "team_stadium_name": "Elland Road",
+    "team_stadium_latitude": 53.7778,
+    "team_stadium_longitude": -1.5722
+  },
+  {
+    "team_name": "Liverpool",
+    "team_matches_name": "Liverpool",
+    "team_city": "Liverpool",
+    "team_stadium_name": "Anfield",
+    "team_stadium_latitude": 53.4308,
+    "team_stadium_longitude": -2.9608
+  },
+  {
+    "team_name": "Manchester City",
+    "team_matches_name": "Man City",
+    "team_city": "Manchester",
+    "team_stadium_name": "Etihad Stadium",
+    "team_stadium_latitude": 53.4831,
+    "team_stadium_longitude": -2.2004
+  },
+  {
+    "team_name": "Manchester United",
+    "team_matches_name": "Man United",
+    "team_city": "Manchester",
+    "team_stadium_name": "Old Trafford",
+    "team_stadium_latitude": 53.4631,
+    "team_stadium_longitude": -2.2913
+  },
+  {
+    "team_name": "Newcastle United",
+    "team_matches_name": "Newcastle",
+    "team_city": "Newcastle upon Tyne",
+    "team_stadium_name": "St James Park",
+    "team_stadium_latitude": 54.9756,
+    "team_stadium_longitude": -1.6217
+  },
+  {
+    "team_name": "Nottingham Forest",
+    "team_matches_name": "Nottingham",
+    "team_city": "Nottingham",
+    "team_stadium_name": "The City Ground",
+    "team_stadium_latitude": 52.94,
+    "team_stadium_longitude": -1.1328
+  },
+  {
+    "team_name": "Sunderland",
+    "team_matches_name": "Sunderland",
+    "team_city": "Sunderland",
+    "team_stadium_name": "Stadium of Light",
+    "team_stadium_latitude": 54.9144,
+    "team_stadium_longitude": -1.3883
+  },
+  {
+    "team_name": "Tottenham Hotspur",
+    "team_matches_name": "Tottenham",
+    "team_city": "London",
+    "team_stadium_name": "Tottenham Hotspur Stadium",
+    "team_stadium_latitude": 51.6043,
+    "team_stadium_longitude": -0.0664
+  }
+]

@@ -1,0 +1,50 @@
+{
+    "id": 151241,
+    "name": "Matteo Ruggeri",
+    "firstName": "Matteo",
+    "lastName": "Ruggeri",
+    "dateOfBirth": "2002-07-11",
+    "nationality": "Italy",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 13,
+    "lastUpdated": "2026-08-21T10:27:51Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png",
+        "address": "Villa Park Birmingham B6 6HE",
+        "website": "http://www.avfc.co.uk",
+        "founded": 1872,
+        "clubColors": "Claret / Sky Blue",
+        "venue": "Villa Park",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            },
+            {
+                "id": 2157,
+                "name": "UEFA Super Cup",
+                "code": "ESC",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/esc.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-08",
+            "until": null
+        }
+    }
+}

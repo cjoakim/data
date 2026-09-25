@@ -1,0 +1,43 @@
+{
+    "id": 184747,
+    "name": "Ousmane Diomande",
+    "firstName": null,
+    "lastName": null,
+    "dateOfBirth": "2004-11-16",
+    "nationality": "Cote d'Ivoire",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 2,
+    "lastUpdated": "2026-07-21T23:16:39Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png",
+        "address": "Pavilion Road, West Bridgeford Nottingham NG2 5GJ",
+        "website": "http://www.nottinghamforest.co.uk",
+        "founded": 1865,
+        "clubColors": "Red / White",
+        "venue": "The City Ground",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-08",
+            "until": "2030-06"
+        }
+    }
+}

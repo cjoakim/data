@@ -1,0 +1,43 @@
+{
+    "id": 179603,
+    "name": "Lucas Gourna-Douath",
+    "firstName": "Lucas",
+    "lastName": "Gourna-Douath",
+    "dateOfBirth": "2003-08-05",
+    "nationality": "France",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 29,
+    "lastUpdated": "2026-01-24T10:06:00Z",
+    "currentTeam": {
+        "area": {
+            "id": 2016,
+            "name": "Austria",
+            "code": "AUT",
+            "flag": "https://crests.football-data.org/816.svg"
+        },
+        "id": 1877,
+        "name": "FC Red Bull Salzburg",
+        "shortName": "RB Salzburg",
+        "tla": "RBS",
+        "crest": "https://crests.football-data.org/1877.png",
+        "address": "Stadionstr. 2/3 Wals-Siezenheim 5071",
+        "website": "http://www.redbulls.com/de",
+        "founded": 1933,
+        "clubColors": "White / Red",
+        "venue": "Red Bull Arena",
+        "runningCompetitions": [
+            {
+                "id": 2012,
+                "name": "Bundesliga",
+                "code": "ABL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/abl.png"
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "id": 187162,
+    "name": "Abdul Issahaku",
+    "firstName": "Issahaku",
+    "lastName": "Fatawu",
+    "dateOfBirth": "2004-03-08",
+    "nationality": "Ghana",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 7,
+    "lastUpdated": "2026-06-01T11:16:29Z",
+    "currentTeam": {
+        "area": {
+            "id": 2089,
+            "name": "Ghana",
+            "code": "GHA",
+            "flag": "https://crests.football-data.org/ghana.svg"
+        },
+        "id": 763,
+        "name": "Ghana",
+        "shortName": "Ghana",
+        "tla": "GHA",
+        "crest": "https://crests.football-data.org/ghana.svg",
+        "address": "South East Ridge Accra 19338",
+        "website": "http://www.ghanafa.org",
+        "founded": 1957,
+        "clubColors": "White / Black",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2193,
+                "name": "Africa Cup Of Nations - Qualification",
+                "code": "ACQ",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "id": 135555,
+    "name": "Robert S\u00e1nchez",
+    "firstName": "",
+    "lastName": "Robert S\u00e1nchez",
+    "dateOfBirth": "1997-11-18",
+    "nationality": "Spain",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 1,
+    "lastUpdated": "2023-09-26T08:09:53Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png",
+        "address": "Fulham Road London SW6 1HS",
+        "website": "http://www.chelseafc.com",
+        "founded": 1905,
+        "clubColors": "Royal Blue / White",
+        "venue": "Stamford Bridge",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2023-08",
+            "until": "2030-06"
+        }
+    }
+}

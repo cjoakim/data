@@ -1,0 +1,35 @@
+{
+    "id": 3141,
+    "name": "Emiliano Mart\u00ednez",
+    "firstName": "Emiliano",
+    "lastName": "Mart\u00ednez",
+    "dateOfBirth": "1992-09-02",
+    "nationality": "Argentina",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 23,
+    "lastUpdated": "2023-07-30T17:01:15Z",
+    "currentTeam": {
+        "area": {
+            "id": 2011,
+            "name": "Argentina",
+            "code": "ARG",
+            "flag": "https://crests.football-data.org/ar.svg"
+        },
+        "id": 762,
+        "name": "Argentina",
+        "shortName": "Argentina",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png",
+        "address": "Viamonte 1366/76 Buenos Aires, Buenos Aires 1053",
+        "website": "http://www.afa.org.ar",
+        "founded": 1893,
+        "clubColors": "Sky Blue / White / Black",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

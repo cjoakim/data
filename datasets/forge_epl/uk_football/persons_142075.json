@@ -1,0 +1,43 @@
+{
+    "id": 142075,
+    "name": "Maxim De Cuyper",
+    "firstName": "Maxim",
+    "lastName": "De Cuyper",
+    "dateOfBirth": "2000-12-22",
+    "nationality": "Belgium",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 29,
+    "lastUpdated": "2024-06-12T17:56:51Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 397,
+        "name": "Brighton & Hove Albion FC",
+        "shortName": "Brighton Hove",
+        "tla": "BHA",
+        "crest": "https://crests.football-data.org/397.png",
+        "address": "44 North Road Brighton & Hove BN1 1YR",
+        "website": "http://www.seagulls.co.uk",
+        "founded": 1898,
+        "clubColors": "Blue / White",
+        "venue": "The American Express Community Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2025-07",
+            "until": "2030-06"
+        }
+    }
+}

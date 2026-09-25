@@ -1,0 +1,43 @@
+{
+    "id": 213518,
+    "name": "Kaye Furo",
+    "firstName": "Kaye",
+    "lastName": "Furo",
+    "dateOfBirth": "2007-02-06",
+    "nationality": "Belgium",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 47,
+    "lastUpdated": "2024-10-24T09:41:12Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png",
+        "address": "Braemar Road Brentford TW8 0NT",
+        "website": "http://www.brentfordfc.co.uk",
+        "founded": 1889,
+        "clubColors": "Red / White / Black",
+        "venue": "Griffin Park",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-01",
+            "until": "2031-06"
+        }
+    }
+}

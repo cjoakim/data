@@ -1,0 +1,43 @@
+{
+    "id": 30298,
+    "name": "Abd\u00fclkadir \u00d6m\u00fcr",
+    "firstName": "Abd\u00fclkadir",
+    "lastName": "\u00d6m\u00fcr",
+    "dateOfBirth": "1999-06-25",
+    "nationality": "Turkey",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 33,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 322,
+        "name": "Hull City AFC",
+        "shortName": "Hull City",
+        "tla": "HUL",
+        "crest": "https://crests.football-data.org/322.png",
+        "address": "Walton Street Hull HU3 6HU",
+        "website": "http://www.hullcitytigers.com",
+        "founded": 1904,
+        "clubColors": "Orange / Black",
+        "venue": "Kingston Communications Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2024-02",
+            "until": "2027-06"
+        }
+    }
+}

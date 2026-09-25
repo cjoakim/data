@@ -1,0 +1,43 @@
+{
+    "id": 8273,
+    "name": "Pascal Gro\u00df",
+    "firstName": "Pascal",
+    "lastName": "Gro\u00df",
+    "dateOfBirth": "1991-06-15",
+    "nationality": "Germany",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 13,
+    "lastUpdated": "2026-06-01T11:16:31Z",
+    "currentTeam": {
+        "area": {
+            "id": 2088,
+            "name": "Germany",
+            "code": "DEU",
+            "flag": "https://crests.football-data.org/759.svg"
+        },
+        "id": 759,
+        "name": "Germany",
+        "shortName": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg",
+        "address": "Otto-Fleck-Schneise 6 / Postfach 710265 Frankfurt am Main 60492",
+        "website": "http://www.dfb.de",
+        "founded": 1900,
+        "clubColors": "White / Black",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

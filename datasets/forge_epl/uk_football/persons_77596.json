@@ -1,0 +1,43 @@
+{
+    "id": 77596,
+    "name": "Tyler Adams",
+    "firstName": "Tyler",
+    "lastName": "Adams",
+    "dateOfBirth": "1999-02-14",
+    "nationality": "USA",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 12,
+    "lastUpdated": "2026-06-03T09:51:29Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png",
+        "address": "Dean Court, Kings Park Bournemouth BH7 7AF",
+        "website": "http://www.afcb.co.uk",
+        "founded": 1890,
+        "clubColors": "Red / Black",
+        "venue": "Vitality Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2023-08",
+            "until": "2028-06"
+        }
+    }
+}

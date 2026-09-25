@@ -1,0 +1,43 @@
+{
+    "id": 153828,
+    "name": "Filip J\u00f6rgensen",
+    "firstName": "Filip",
+    "lastName": "J\u00f6rgensen",
+    "dateOfBirth": "2002-04-16",
+    "nationality": "Denmark",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 1,
+    "lastUpdated": "2025-05-29T09:42:46Z",
+    "currentTeam": {
+        "area": {
+            "id": 2081,
+            "name": "France",
+            "code": "FRA",
+            "flag": "https://crests.football-data.org/773.svg"
+        },
+        "id": 576,
+        "name": "RC Strasbourg Alsace",
+        "shortName": "Strasbourg",
+        "tla": "RC ",
+        "crest": "https://crests.football-data.org/576.png",
+        "address": "12 Rue Extenwoerth Strasbourg 67000",
+        "website": "http://www.rcstrasbourgalsace.fr",
+        "founded": 1906,
+        "clubColors": "Blue / White",
+        "venue": "Stade de la Meinau",
+        "runningCompetitions": [
+            {
+                "id": 2015,
+                "name": "Ligue 1",
+                "code": "FL1",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/FL1.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-08",
+            "until": "2027-06"
+        }
+    }
+}

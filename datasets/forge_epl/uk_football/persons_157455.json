@@ -1,0 +1,43 @@
+{
+    "id": 157455,
+    "name": "Leo Fuhr Hjelde",
+    "firstName": "Leo Fuhr",
+    "lastName": null,
+    "dateOfBirth": "2003-08-26",
+    "nationality": "Norway",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 33,
+    "lastUpdated": "2026-07-15T09:25:43Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png",
+        "address": "The Sunderland Stadium of Light Sunderland SR5 1SU",
+        "website": "http://www.safc.com",
+        "founded": 1879,
+        "clubColors": "Red / White",
+        "venue": "Stadium of Light",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2024-01",
+            "until": "2028-06"
+        }
+    }
+}

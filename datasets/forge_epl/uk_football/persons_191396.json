@@ -1,0 +1,43 @@
+{
+    "id": 191396,
+    "name": "Adam Wharton",
+    "firstName": null,
+    "lastName": null,
+    "dateOfBirth": "2004-06-02",
+    "nationality": "England",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 20,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png",
+        "address": "Whitehorse Lane London SE25 6PU",
+        "website": "http://www.cpfc.co.uk",
+        "founded": 1905,
+        "clubColors": "Red / Blue",
+        "venue": "Selhurst Park",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2024-02",
+            "until": "2029-06"
+        }
+    }
+}

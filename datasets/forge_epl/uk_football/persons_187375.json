@@ -1,0 +1,35 @@
+{
+    "id": 187375,
+    "name": "Nilson Angulo",
+    "firstName": "Nilson",
+    "lastName": "Angulo",
+    "dateOfBirth": "2003-06-19",
+    "nationality": "Ecuador",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 20,
+    "lastUpdated": "2026-06-03T10:05:04Z",
+    "currentTeam": {
+        "area": {
+            "id": 2069,
+            "name": "Ecuador",
+            "code": "ECU",
+            "flag": "https://crests.football-data.org/791.svg"
+        },
+        "id": 791,
+        "name": "Ecuador",
+        "shortName": "Ecuador",
+        "tla": "ECU",
+        "crest": "https://crests.football-data.org/791.svg",
+        "address": "Avenida Las Aguas y Calle Alianza Guayaquil 593",
+        "website": "http://www.ecuafutbol.org",
+        "founded": 1925,
+        "clubColors": "Yellow / Blue / Red",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

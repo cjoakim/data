@@ -1,0 +1,43 @@
+{
+    "id": 66896,
+    "name": "Omar Marmoush",
+    "firstName": "Omar",
+    "lastName": "Marmoush",
+    "dateOfBirth": "1999-02-07",
+    "nationality": "Egypt",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 22,
+    "lastUpdated": "2026-06-01T11:16:30Z",
+    "currentTeam": {
+        "area": {
+            "id": 2070,
+            "name": "Egypt",
+            "code": "EGY",
+            "flag": "https://crests.football-data.org/825.svg"
+        },
+        "id": 825,
+        "name": "Egypt",
+        "shortName": "Egypt",
+        "tla": "EGY",
+        "crest": "https://crests.football-data.org/825.svg",
+        "address": "5, Gabalaya Street, El Gezira Cairo null",
+        "website": "http://www.efa.com.eg",
+        "founded": 1921,
+        "clubColors": "Red / White / Black",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2193,
+                "name": "Africa Cup Of Nations - Qualification",
+                "code": "ACQ",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

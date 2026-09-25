@@ -1,0 +1,3601 @@
+{
+  "info": {
+    "author": "Jeremiah Lowin",
+    "author_email": null,
+    "bugtrack_url": null,
+    "classifiers": [
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Apache Software License",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Topic :: Scientific/Engineering :: Artificial Intelligence",
+      "Typing :: Typed"
+    ],
+    "description": "<div align=\"center\">\n\n<!-- omit in toc -->\n\n<picture>\n  <source width=\"550\" media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/brand/wordmark-watercolor-waves-dark.png\">\n  <source width=\"550\" media=\"(prefers-color-scheme: light)\" srcset=\"docs/assets/brand/wordmark-watercolor-waves.png\">\n  <img width=\"550\" alt=\"FastMCP Logo\" src=\"docs/assets/brand/wordmark-watercolor-waves.png\">\n</picture>\n\n# FastMCP v2 🚀\n\n<strong>The fast, Pythonic way to build MCP servers and clients.</strong>\n\n*Made with ☕️ by [Prefect](https://www.prefect.io/)*\n\n[![Docs](https://img.shields.io/badge/docs-gofastmcp.com-blue)](https://gofastmcp.com)\n[![Discord](https://img.shields.io/badge/community-discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/uu8dJCgttd)\n[![PyPI - Version](https://img.shields.io/pypi/v/fastmcp.svg)](https://pypi.org/project/fastmcp)\n[![Tests](https://github.com/jlowin/fastmcp/actions/workflows/run-tests.yml/badge.svg)](https://github.com/jlowin/fastmcp/actions/workflows/run-tests.yml)\n[![License](https://img.shields.io/github/license/jlowin/fastmcp.svg)](https://github.com/jlowin/fastmcp/blob/main/LICENSE)\n\n<a href=\"https://trendshift.io/repositories/13266\" target=\"_blank\"><img src=\"https://trendshift.io/api/badge/repositories/13266\" alt=\"jlowin%2Ffastmcp | Trendshift\" style=\"width: 250px; height: 55px;\" width=\"250\" height=\"55\"/></a>\n</div>\n\n> [!Note]\n>\n> #### FastMCP 2.0: The Standard Framework\n>\n> FastMCP pioneered Python MCP development, and FastMCP 1.0 was incorporated into the [official MCP SDK](https://github.com/modelcontextprotocol/python-sdk) in 2024.\n>\n> **This is FastMCP 2.0** — the actively maintained, production-ready framework that extends far beyond basic protocol implementation. While the SDK provides core functionality, FastMCP 2.0 delivers everything needed for production: advanced MCP patterns (server composition, proxying, OpenAPI/FastAPI generation, tool transformation), enterprise auth (Google, GitHub, WorkOS, Azure, Auth0, and more), deployment tools, testing utilities, and comprehensive client libraries.\n>\n> **For production MCP applications, install FastMCP:** `pip install fastmcp`\n\n> [!Important]\n> FastMCP 3.0 is in development and may include breaking changes. To avoid unexpected issues, pin your dependency to v2: `fastmcp<3`\n\n---\n\n**FastMCP is the standard framework for building MCP applications**, providing the fastest path from idea to production.\n\nThe [Model Context Protocol (MCP)](https://modelcontextprotocol.io) is a standardized way to provide context and tools to LLMs. FastMCP makes building production-ready MCP servers simple, with enterprise auth, deployment tools, and a complete ecosystem built in.\n\n```python\n# server.py\nfrom fastmcp import FastMCP\n\nmcp = FastMCP(\"Demo 🚀\")\n\n@mcp.tool\ndef add(a: int, b: int) -> int:\n    \"\"\"Add two numbers\"\"\"\n    return a + b\n\nif __name__ == \"__main__\":\n    mcp.run()\n```\n\nRun the server locally:\n\n```bash\nfastmcp run server.py\n```\n\n### 📚 Documentation\n\nFastMCP's complete documentation is available at **[gofastmcp.com](https://gofastmcp.com)**, including detailed guides, API references, and advanced patterns. This readme provides only a high-level overview.\n\nDocumentation is also available in [llms.txt format](https://llmstxt.org/), which is a simple markdown standard that LLMs can consume easily.\n\nThere are two ways to access the LLM-friendly documentation:\n\n- [`llms.txt`](https://gofastmcp.com/llms.txt) is essentially a sitemap, listing all the pages in the documentation.\n- [`llms-full.txt`](https://gofastmcp.com/llms-full.txt) contains the entire documentation. Note this may exceed the context window of your LLM.\n\n**Community:** Join our [Discord server](https://discord.gg/uu8dJCgttd) to connect with other FastMCP developers and share what you're building.\n\n---\n\n<!-- omit in toc -->\n## Table of Contents\n\n- [FastMCP v2 🚀](#fastmcp-v2-)\n  - [📚 Documentation](#-documentation)\n  - [What is MCP?](#what-is-mcp)\n  - [Why FastMCP?](#why-fastmcp)\n  - [Installation](#installation)\n  - [Core Concepts](#core-concepts)\n    - [The `FastMCP` Server](#the-fastmcp-server)\n    - [Tools](#tools)\n    - [Resources \\& Templates](#resources--templates)\n    - [Prompts](#prompts)\n    - [Context](#context)\n    - [MCP Clients](#mcp-clients)\n  - [Authentication](#authentication)\n    - [Enterprise Authentication, Zero Configuration](#enterprise-authentication-zero-configuration)\n  - [Deployment](#deployment)\n    - [From Development to Production](#from-development-to-production)\n  - [Advanced Features](#advanced-features)\n    - [Proxy Servers](#proxy-servers)\n    - [Composing MCP Servers](#composing-mcp-servers)\n    - [OpenAPI \\& FastAPI Generation](#openapi--fastapi-generation)\n  - [Running Your Server](#running-your-server)\n  - [Contributing](#contributing)\n    - [Prerequisites](#prerequisites)\n    - [Setup](#setup)\n    - [Unit Tests](#unit-tests)\n    - [Static Checks](#static-checks)\n    - [Pull Requests](#pull-requests)\n\n---\n\n## What is MCP?\n\nThe [Model Context Protocol (MCP)](https://modelcontextprotocol.io) lets you build servers that expose data and functionality to LLM applications in a secure, standardized way. It is often described as \"the USB-C port for AI\", providing a uniform way to connect LLMs to resources they can use. It may be easier to think of it as an API, but specifically designed for LLM interactions. MCP servers can:\n\n- Expose data through **Resources** (think of these sort of like GET endpoints; they are used to load information into the LLM's context)\n- Provide functionality through **Tools** (sort of like POST endpoints; they are used to execute code or otherwise produce a side effect)\n- Define interaction patterns through **Prompts** (reusable templates for LLM interactions)\n- And more!\n\nFastMCP provides a high-level, Pythonic interface for building, managing, and interacting with these servers.\n\n## Why FastMCP?\n\nFastMCP handles all the complex protocol details so you can focus on building. In most cases, decorating a Python function is all you need — FastMCP handles the rest.\n\n🚀 **Fast:** High-level interface means less code and faster development\n\n🍀 **Simple:** Build MCP servers with minimal boilerplate\n\n🐍 **Pythonic:** Feels natural to Python developers\n\n🔍 **Complete:** Everything for production — enterprise auth (Google, GitHub, Azure, Auth0, WorkOS), deployment tools, testing frameworks, client libraries, and more\n\nFastMCP provides the shortest path from idea to production. Deploy locally, to the cloud with [FastMCP Cloud](https://fastmcp.cloud), or to your own infrastructure.\n\n## Installation\n\nWe recommend installing FastMCP with [uv](https://docs.astral.sh/uv/):\n\n```bash\nuv pip install fastmcp\n```\n\nFor full installation instructions, including verification, upgrading from the official MCPSDK, and developer setup, see the [**Installation Guide**](https://gofastmcp.com/getting-started/installation).\n\n**Dependency Licensing:** FastMCP depends on Cyclopts for CLI functionality. Cyclopts v4 includes docutils as a transitive dependency, which has complex licensing that may trigger compliance reviews in some organizations. If this is a concern, you can install Cyclopts v5 alpha (`pip install \"cyclopts>=5.0.0a1\"`) which removes this dependency, or wait for the stable v5 release. See [this issue](https://github.com/BrianPugh/cyclopts/issues/672) for details.\n\n## Core Concepts\n\nThese are the building blocks for creating MCP servers and clients with FastMCP.\n\n### The `FastMCP` Server\n\nThe central object representing your MCP application. It holds your tools, resources, and prompts, manages connections, and can be configured with settings like authentication.\n\n```python\nfrom fastmcp import FastMCP\n\n# Create a server instance\nmcp = FastMCP(name=\"MyAssistantServer\")\n```\n\nLearn more in the [**FastMCP Server Documentation**](https://gofastmcp.com/servers/server).\n\n### Tools\n\nTools allow LLMs to perform actions by executing your Python functions (sync or async). Ideal for computations, API calls, or side effects (like `POST`/`PUT`). FastMCP handles schema generation from type hints and docstrings. Tools can return various types, including text, JSON-serializable objects, and even images or audio aided by the FastMCP media helper classes.\n\n```python\n@mcp.tool\ndef multiply(a: float, b: float) -> float:\n    \"\"\"Multiplies two numbers.\"\"\"\n    return a * b\n```\n\nLearn more in the [**Tools Documentation**](https://gofastmcp.com/servers/tools).\n\n### Resources & Templates\n\nResources expose read-only data sources (like `GET` requests). Use `@mcp.resource(\"your://uri\")`. Use `{placeholders}` in the URI to create dynamic templates that accept parameters, allowing clients to request specific data subsets.\n\n```python\n# Static resource\n@mcp.resource(\"config://version\")\ndef get_version(): \n    return \"2.0.1\"\n\n# Dynamic resource template\n@mcp.resource(\"users://{user_id}/profile\")\ndef get_profile(user_id: int):\n    # Fetch profile for user_id...\n    return {\"name\": f\"User {user_id}\", \"status\": \"active\"}\n```\n\nLearn more in the [**Resources & Templates Documentation**](https://gofastmcp.com/servers/resources).\n\n### Prompts\n\nPrompts define reusable message templates to guide LLM interactions. Decorate functions with `@mcp.prompt`. Return strings or `Message` objects.\n\n```python\n@mcp.prompt\ndef summarize_request(text: str) -> str:\n    \"\"\"Generate a prompt asking for a summary.\"\"\"\n    return f\"Please summarize the following text:\\n\\n{text}\"\n```\n\nLearn more in the [**Prompts Documentation**](https://gofastmcp.com/servers/prompts).\n\n### Context\n\nAccess MCP session capabilities within your tools, resources, or prompts by adding a `ctx: Context` parameter. Context provides methods for:\n\n- **Logging:** Log messages to MCP clients with `ctx.info()`, `ctx.error()`, etc.\n- **LLM Sampling:** Use `ctx.sample()` to request completions from the client's LLM.\n- **Resource Access:** Use `ctx.read_resource()` to access resources on the server\n- **Progress Reporting:** Use `ctx.report_progress()` to report progress to the client.\n- and more...\n\nTo access the context, add a parameter annotated as `Context` to any mcp-decorated function. FastMCP will automatically inject the correct context object when the function is called.\n\n```python\nfrom fastmcp import FastMCP, Context\n\nmcp = FastMCP(\"My MCP Server\")\n\n@mcp.tool\nasync def process_data(uri: str, ctx: Context):\n    # Log a message to the client\n    await ctx.info(f\"Processing {uri}...\")\n\n    # Read a resource from the server\n    data = await ctx.read_resource(uri)\n\n    # Ask client LLM to summarize the data\n    summary = await ctx.sample(f\"Summarize: {data.content[:500]}\")\n\n    # Return the summary\n    return summary.text\n```\n\nLearn more in the [**Context Documentation**](https://gofastmcp.com/servers/context).\n\n### MCP Clients\n\nInteract with *any* MCP server programmatically using the `fastmcp.Client`. It supports various transports (Stdio, SSE, In-Memory) and often auto-detects the correct one. The client can also handle advanced patterns like server-initiated **LLM sampling requests** if you provide an appropriate handler.\n\nCritically, the client allows for efficient **in-memory testing** of your servers by connecting directly to a `FastMCP` server instance via the `FastMCPTransport`, eliminating the need for process management or network calls during tests.\n\n```python\nfrom fastmcp import Client\n\nasync def main():\n    # Connect via stdio to a local script\n    async with Client(\"my_server.py\") as client:\n        tools = await client.list_tools()\n        print(f\"Available tools: {tools}\")\n        result = await client.call_tool(\"add\", {\"a\": 5, \"b\": 3})\n        print(f\"Result: {result.content[0].text}\")\n\n    # Connect via SSE\n    async with Client(\"http://localhost:8000/sse\") as client:\n        # ... use the client\n        pass\n```\n\nTo use clients to test servers, use the following pattern:\n\n```python\nfrom fastmcp import FastMCP, Client\n\nmcp = FastMCP(\"My MCP Server\")\n\nasync def main():\n    # Connect via in-memory transport\n    async with Client(mcp) as client:\n        # ... use the client\n```\n\nFastMCP also supports connecting to multiple servers through a single unified client using the standard MCP configuration format:\n\n```python\nfrom fastmcp import Client\n\n# Standard MCP configuration with multiple servers\nconfig = {\n    \"mcpServers\": {\n        \"weather\": {\"url\": \"https://weather-api.example.com/mcp\"},\n        \"assistant\": {\"command\": \"python\", \"args\": [\"./assistant_server.py\"]}\n    }\n}\n\n# Create a client that connects to all servers\nclient = Client(config)\n\nasync def main():\n    async with client:\n        # Access tools and resources with server prefixes\n        forecast = await client.call_tool(\"weather_get_forecast\", {\"city\": \"London\"})\n        answer = await client.call_tool(\"assistant_answer_question\", {\"query\": \"What is MCP?\"})\n```\n\nLearn more in the [**Client Documentation**](https://gofastmcp.com/clients/client) and [**Transports Documentation**](https://gofastmcp.com/clients/transports).\n\n## Authentication\n\n### Enterprise Authentication, Zero Configuration\n\nFastMCP provides comprehensive authentication support that sets it apart from basic MCP implementations. Secure your servers and authenticate your clients with the same enterprise-grade providers used by major corporations.\n\n**Built-in OAuth Providers:**\n\n- **Google**\n- **GitHub**\n- **Microsoft Azure**\n- **Auth0**\n- **WorkOS**\n- **Descope**\n- **Discord**\n- **JWT/Custom**\n- **API Keys**\n\nProtecting a server takes just two lines:\n\n```python\nfrom fastmcp.server.auth.providers.google import GoogleProvider\n\nauth = GoogleProvider(client_id=\"...\", client_secret=\"...\", base_url=\"https://myserver.com\")\nmcp = FastMCP(\"Protected Server\", auth=auth)\n```\n\nConnecting to protected servers is even simpler:\n\n```python\nasync with Client(\"https://protected-server.com/mcp\", auth=\"oauth\") as client:\n    # Automatic browser-based OAuth flow\n    result = await client.call_tool(\"protected_tool\")\n```\n\n**Why FastMCP Auth Matters:**\n\n- **Production-Ready:** Persistent storage, token refresh, comprehensive error handling\n- **Zero-Config OAuth:** Just pass `auth=\"oauth\"` for automatic setup\n- **Enterprise Integration:** WorkOS SSO, Azure Active Directory, Auth0 tenants\n- **Developer Experience:** Automatic browser launch, local callback server, environment variable support\n- **Advanced Architecture:** Full OIDC support, Dynamic Client Registration (DCR), and unique OAuth proxy pattern that enables DCR with any provider\n\n*Authentication this comprehensive is unique to FastMCP 2.0.*\n\nLearn more in the **Authentication Documentation** for [servers](https://gofastmcp.com/servers/auth) and [clients](https://gofastmcp.com/clients/auth).\n\n## Deployment\n\n### From Development to Production\n\nFastMCP supports every deployment scenario from local development to global scale:\n\n**Development:** Run locally with a single command\n\n```bash\nfastmcp run server.py\n```\n\n**Production:** Deploy to [**FastMCP Cloud**](https://fastmcp.cloud) — Remote MCP that just works\n\n- Instant HTTPS endpoints\n- Built-in authentication\n- Zero configuration\n- Free for personal servers\n\n**Self-Hosted:** Use HTTP or SSE transports for your own infrastructure\n\n```python\nmcp.run(transport=\"http\", host=\"0.0.0.0\", port=8000)\n```\n\nLearn more in the [**Deployment Documentation**](https://gofastmcp.com/deployment).\n\n## Advanced Features\n\nFastMCP introduces powerful ways to structure and compose your MCP applications.\n\n### Proxy Servers\n\nCreate a FastMCP server that acts as an intermediary for another local or remote MCP server using `FastMCP.as_proxy()`. This is especially useful for bridging transports (e.g., remote SSE to local Stdio) or adding a layer of logic to a server you don't control.\n\nLearn more in the [**Proxying Documentation**](https://gofastmcp.com/patterns/proxy).\n\n### Composing MCP Servers\n\nBuild modular applications by mounting multiple `FastMCP` instances onto a parent server using `mcp.mount()` (live link) or `mcp.import_server()` (static copy).\n\nLearn more in the [**Composition Documentation**](https://gofastmcp.com/patterns/composition).\n\n### OpenAPI & FastAPI Generation\n\nAutomatically generate FastMCP servers from existing OpenAPI specifications (`FastMCP.from_openapi()`) or FastAPI applications (`FastMCP.from_fastapi()`), instantly bringing your web APIs to the MCP ecosystem.\n\nLearn more: [**OpenAPI Integration**](https://gofastmcp.com/integrations/openapi) | [**FastAPI Integration**](https://gofastmcp.com/integrations/fastapi).\n\n## Running Your Server\n\nThe main way to run a FastMCP server is by calling the `run()` method on your server instance:\n\n```python\n# server.py\nfrom fastmcp import FastMCP\n\nmcp = FastMCP(\"Demo 🚀\")\n\n@mcp.tool\ndef hello(name: str) -> str:\n    return f\"Hello, {name}!\"\n\nif __name__ == \"__main__\":\n    mcp.run()  # Default: uses STDIO transport\n```\n\nFastMCP supports three transport protocols:\n\n**STDIO (Default)**: Best for local tools and command-line scripts.\n\n```python\nmcp.run(transport=\"stdio\")  # Default, so transport argument is optional\n```\n\n**Streamable HTTP**: Recommended for web deployments.\n\n```python\nmcp.run(transport=\"http\", host=\"127.0.0.1\", port=8000, path=\"/mcp\")\n```\n\n**SSE**: For compatibility with existing SSE clients.\n\n```python\nmcp.run(transport=\"sse\", host=\"127.0.0.1\", port=8000)\n```\n\nSee the [**Running Server Documentation**](https://gofastmcp.com/deployment/running-server) for more details.\n\n## Contributing\n\nContributions are the core of open source! We welcome improvements and features.\n\n### Prerequisites\n\n- Python 3.10+\n- [uv](https://docs.astral.sh/uv/) (Recommended for environment management)\n\n### Setup\n\n1. Clone the repository:\n\n   ```bash\n   git clone https://github.com/jlowin/fastmcp.git \n   cd fastmcp\n   ```\n\n2. Create and sync the environment:\n\n   ```bash\n   uv sync\n   ```\n\n   This installs all dependencies, including dev tools.\n\n3. Activate the virtual environment (e.g., `source .venv/bin/activate` or via your IDE).\n\n### Unit Tests\n\nFastMCP has a comprehensive unit test suite. All PRs must introduce or update tests as appropriate and pass the full suite.\n\nRun tests using pytest:\n\n```bash\npytest\n```\n\nor if you want an overview of the code coverage\n\n```bash\nuv run pytest --cov=src --cov=examples --cov-report=html\n```\n\n### Static Checks\n\nFastMCP uses `prek` for code formatting, linting, and type-checking. All PRs must pass these checks (they run automatically in CI).\n\nInstall the hooks locally:\n\n```bash\nuv run prek install\n```\n\nThe hooks will now run automatically on `git commit`. You can also run them manually at any time:\n\n```bash\nprek run --all-files\n# or via uv\nuv run prek run --all-files\n```\n\n### Pull Requests\n\n1. Fork the repository on GitHub.\n2. Create a feature branch from `main`.\n3. Make your changes, including tests and documentation updates.\n4. Ensure tests and prek hooks pass.\n5. Commit your changes and push to your fork.\n6. Open a pull request against the `main` branch of `jlowin/fastmcp`.\n\nPlease open an issue or discussion for questions or suggestions before starting significant work!\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": null,
+    "keywords": "agent, fastmcp, llm, mcp, mcp client, mcp server, model context protocol",
+    "license": null,
+    "license_expression": "Apache-2.0",
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "fastmcp",
+    "package_url": "https://pypi.org/project/fastmcp/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/fastmcp/",
+    "project_urls": {
+      "Documentation": "https://gofastmcp.com",
+      "Homepage": "https://gofastmcp.com",
+      "Repository": "https://github.com/jlowin/fastmcp"
+    },
+    "provides_extra": [
+      "anthropic",
+      "openai"
+    ],
+    "release_url": "https://pypi.org/project/fastmcp/2.14.4/",
+    "requires_dist": [
+      "authlib>=1.6.5",
+      "cyclopts>=4.0.0",
+      "exceptiongroup>=1.2.2",
+      "httpx>=0.28.1",
+      "jsonref>=1.1.0",
+      "jsonschema-path>=0.3.4",
+      "mcp<2.0,>=1.24.0",
+      "openapi-pydantic>=0.5.1",
+      "packaging>=20.0",
+      "platformdirs>=4.0.0",
+      "py-key-value-aio[disk,keyring,memory]<0.4.0,>=0.3.0",
+      "pydantic[email]>=2.11.7",
+      "pydocket<0.17.0,>=0.16.6",
+      "pyperclip>=1.9.0",
+      "python-dotenv>=1.1.0",
+      "rich>=13.9.4",
+      "uvicorn>=0.35",
+      "websockets>=15.0.1",
+      "anthropic>=0.40.0; extra == \"anthropic\"",
+      "openai>=1.102.0; extra == \"openai\""
+    ],
+    "requires_python": ">=3.10",
+    "summary": "The fast, Pythonic way to build MCP servers and clients.",
+    "version": "2.14.4",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 33737387,
+  "releases": {
+    "0.1.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "f507bc69e65b45d638822190bce0defb497a50d240291b8467cb79078d0064b7",
+          "md5": "7771a18566ce9ac3d91287959f60b167",
+          "sha256": "55d4af4dcbd6543fd4df45ac6c82b148126f1883772ba66c2d25616ad0305db2"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.1.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7771a18566ce9ac3d91287959f60b167",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 14055,
+        "upload_time": "2024-11-30T02:11:15",
+        "upload_time_iso_8601": "2024-11-30T02:11:15.425569Z",
+        "url": "https://files.pythonhosted.org/packages/f5/07/bc69e65b45d638822190bce0defb497a50d240291b8467cb79078d0064b7/fastmcp-0.1.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "71ef351d0f953de706adb89c21f0fac150955eda2eb240196f5dca1c569a5053",
+          "md5": "fa233c803cdc873fe3dc27325a787004",
+          "sha256": "5c18220961e717eb8cec30e12c5ebd9f240d4c830dc53a8404752bee777d064b"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "fa233c803cdc873fe3dc27325a787004",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 54997,
+        "upload_time": "2024-11-30T02:11:25",
+        "upload_time_iso_8601": "2024-11-30T02:11:25.471920Z",
+        "url": "https://files.pythonhosted.org/packages/71/ef/351d0f953de706adb89c21f0fac150955eda2eb240196f5dca1c569a5053/fastmcp-0.1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "adfe663d64698289bc54860b54f65984f066e47e690acaa8d7ae88b537092f20",
+          "md5": "5435dae246dd27f5dc046615b5820350",
+          "sha256": "ba6c53a6e5d7415992f6c0940fb5626c864ca8c2c310abf0e8f0951142aee3d9"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.2.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5435dae246dd27f5dc046615b5820350",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 15757,
+        "upload_time": "2024-11-30T03:59:47",
+        "upload_time_iso_8601": "2024-11-30T03:59:47.041798Z",
+        "url": "https://files.pythonhosted.org/packages/ad/fe/663d64698289bc54860b54f65984f066e47e690acaa8d7ae88b537092f20/fastmcp-0.2.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "df5fc8ef9277767c8f99c01ddf03ba8faa199f7e4fe2138c4bf715b61cc8a56a",
+          "md5": "69b227fa02ec1a219ee1ccbf5f4b6aff",
+          "sha256": "41a7ac4dff38abfb7b695cdddf551908e54ae36f9bd761d49cb1945ccc106f61"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.2.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "69b227fa02ec1a219ee1ccbf5f4b6aff",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 57579,
+        "upload_time": "2024-11-30T03:59:57",
+        "upload_time_iso_8601": "2024-11-30T03:59:57.525242Z",
+        "url": "https://files.pythonhosted.org/packages/df/5f/c8ef9277767c8f99c01ddf03ba8faa199f7e4fe2138c4bf715b61cc8a56a/fastmcp-0.2.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "919ba4c1c9dedd9aeddc79681245631a4183244861d6fb9898cab7d81bef7539",
+          "md5": "d98e77450ad47468790b6ebac9bb6f98",
+          "sha256": "ebc64791eebf4952807949a75a8eaec8ef31017419ef33dd8bd19ff4ed3499b3"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.3.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "d98e77450ad47468790b6ebac9bb6f98",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 32403,
+        "upload_time": "2024-12-01T00:55:39",
+        "upload_time_iso_8601": "2024-12-01T00:55:39.865636Z",
+        "url": "https://files.pythonhosted.org/packages/91/9b/a4c1c9dedd9aeddc79681245631a4183244861d6fb9898cab7d81bef7539/fastmcp-0.3.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5c3f3116d28a7c1199943668857f12271e014e20fa858c2f1be3b105bedeeae6",
+          "md5": "ff6c4969513efacef0d70d2bf1f9a3d3",
+          "sha256": "67c766603446a78f1489558578923175408b5ec37b920eec757fe9c331ab8add"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.3.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "ff6c4969513efacef0d70d2bf1f9a3d3",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 770456,
+        "upload_time": "2024-12-01T00:55:49",
+        "upload_time_iso_8601": "2024-12-01T00:55:49.166658Z",
+        "url": "https://files.pythonhosted.org/packages/5c/3f/3116d28a7c1199943668857f12271e014e20fa858c2f1be3b105bedeeae6/fastmcp-0.3.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bd82eedcbc8c8df63e30ed3240e61b49d05dbcbfa5a72d18d1ff10029bc1f53d",
+          "md5": "b4c0f2010a34b90486d18550313ec308",
+          "sha256": "25aa488ee0956c3fb5c960780247b81edfd3ad25fc72928f4d32ea014776b538"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.3.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "b4c0f2010a34b90486d18550313ec308",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 32647,
+        "upload_time": "2024-12-01T01:33:18",
+        "upload_time_iso_8601": "2024-12-01T01:33:18.301603Z",
+        "url": "https://files.pythonhosted.org/packages/bd/82/eedcbc8c8df63e30ed3240e61b49d05dbcbfa5a72d18d1ff10029bc1f53d/fastmcp-0.3.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d7cf10bb87b794423feec202f3905efae1d47f2b0f0b05eb9917f97a1ee8f4c2",
+          "md5": "b09804a219014b4d95cf06c7af3f74c6",
+          "sha256": "15c0f7d0b50de05b6f2f621532833f590b6009453b90fe298dde1cba31f0f1c6"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.3.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b09804a219014b4d95cf06c7af3f74c6",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 770706,
+        "upload_time": "2024-12-01T01:33:20",
+        "upload_time_iso_8601": "2024-12-01T01:33:20.139900Z",
+        "url": "https://files.pythonhosted.org/packages/d7/cf/10bb87b794423feec202f3905efae1d47f2b0f0b05eb9917f97a1ee8f4c2/fastmcp-0.3.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8e40bf3820977b7df443c80dc4d3db1a20078d565c106b358c4a13ed3a612c8d",
+          "md5": "198573907298ee0a518948e60849a144",
+          "sha256": "3a65adb574439a6106a42b15049c47472fcbcc6d64bf3a70bdc08ce8abc01551"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.3.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "198573907298ee0a518948e60849a144",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 33565,
+        "upload_time": "2024-12-01T03:30:59",
+        "upload_time_iso_8601": "2024-12-01T03:30:59.618018Z",
+        "url": "https://files.pythonhosted.org/packages/8e/40/bf3820977b7df443c80dc4d3db1a20078d565c106b358c4a13ed3a612c8d/fastmcp-0.3.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dcaac8f995e9ef642dbf882ccac1884b8630fa7baba6760db2fd934db62629f1",
+          "md5": "822aca75bb7563bba648fb536625b74d",
+          "sha256": "cc89583fd791c9d568d7f12c898ff484b48d84189a31858131c63b4e9593a866"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.3.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "822aca75bb7563bba648fb536625b74d",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 772755,
+        "upload_time": "2024-12-01T03:31:22",
+        "upload_time_iso_8601": "2024-12-01T03:31:22.761314Z",
+        "url": "https://files.pythonhosted.org/packages/dc/aa/c8f995e9ef642dbf882ccac1884b8630fa7baba6760db2fd934db62629f1/fastmcp-0.3.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4315d8f409de53602194770b2b00bf00ba1d6d25aed0aba25e19d5093c754856",
+          "md5": "3b1ddd3b5d49c8a62b199bb900f16c18",
+          "sha256": "2b19f0e98b61f430a4c97901b0b53e2feb680320c36b301fba09f0fe8c2b892e"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.3.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "3b1ddd3b5d49c8a62b199bb900f16c18",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 34553,
+        "upload_time": "2024-12-02T02:04:12",
+        "upload_time_iso_8601": "2024-12-02T02:04:12.688678Z",
+        "url": "https://files.pythonhosted.org/packages/43/15/d8f409de53602194770b2b00bf00ba1d6d25aed0aba25e19d5093c754856/fastmcp-0.3.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c864b158acbb8b72a0b1a67837a54660bc230cd43a91d989ff13e1e9c4221be4",
+          "md5": "e65b3c39fcbb0d5d3d2d0081aaf5cc5b",
+          "sha256": "263360d3865b6dc8dbe70b2221c0ddcbc969c9708de53f26b9ac8d6ae61a3c7d"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.3.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e65b3c39fcbb0d5d3d2d0081aaf5cc5b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 774887,
+        "upload_time": "2024-12-02T02:04:14",
+        "upload_time_iso_8601": "2024-12-02T02:04:14.301592Z",
+        "url": "https://files.pythonhosted.org/packages/c8/64/b158acbb8b72a0b1a67837a54660bc230cd43a91d989ff13e1e9c4221be4/fastmcp-0.3.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ed4940d4ba219dee7152356ceef0d7fde13b8d779fa2f7918833f41dbc60b79f",
+          "md5": "4141f0432023134ea41078e3814cc48e",
+          "sha256": "4ba557c2d428b1820c76e13f8f3eb274d6b0ebf07af9f537c3b22f992fa7d116"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.3.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "4141f0432023134ea41078e3814cc48e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 34670,
+        "upload_time": "2024-12-02T17:58:51",
+        "upload_time_iso_8601": "2024-12-02T17:58:51.666095Z",
+        "url": "https://files.pythonhosted.org/packages/ed/49/40d4ba219dee7152356ceef0d7fde13b8d779fa2f7918833f41dbc60b79f/fastmcp-0.3.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "aa3ed9743cd1e720ec36fd4305dcd15f8c2639db3903465cffc23d98f8ec39df",
+          "md5": "bf0018ef96bade420fe0a13179cd4b46",
+          "sha256": "71c3aad6fc4ccd8858581e09156a3bbe3c893bee5635698fe955c8808b7c385f"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.3.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bf0018ef96bade420fe0a13179cd4b46",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 774975,
+        "upload_time": "2024-12-02T17:58:52",
+        "upload_time_iso_8601": "2024-12-02T17:58:52.706339Z",
+        "url": "https://files.pythonhosted.org/packages/aa/3e/d9743cd1e720ec36fd4305dcd15f8c2639db3903465cffc23d98f8ec39df/fastmcp-0.3.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e5c74cdce430b3e53c4af1917bbeee664947ed9b6f36e787bd11547c6ee8c7dc",
+          "md5": "11e16ebcd07ec098a6850ed56a9d2574",
+          "sha256": "8c04c0a56e08d77c882ff211ca8d3a5d7ec1d4f01008fa223886dd9e3d063586"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.3.5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "11e16ebcd07ec098a6850ed56a9d2574",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 38108,
+        "upload_time": "2024-12-03T01:54:24",
+        "upload_time_iso_8601": "2024-12-03T01:54:24.261556Z",
+        "url": "https://files.pythonhosted.org/packages/e5/c7/4cdce430b3e53c4af1917bbeee664947ed9b6f36e787bd11547c6ee8c7dc/fastmcp-0.3.5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d1e242461e95a93607c81b800fc4638d49173f3f30f94b7ab65b757861f3c315",
+          "md5": "088ac3ebe27af7e7d2677b511ba4df82",
+          "sha256": "ad9950fd9dec418496b8926feca5f39761cba17c75313c6edf77c4d74f058aab"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.3.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "088ac3ebe27af7e7d2677b511ba4df82",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 784322,
+        "upload_time": "2024-12-03T01:54:25",
+        "upload_time_iso_8601": "2024-12-03T01:54:25.562236Z",
+        "url": "https://files.pythonhosted.org/packages/d1/e2/42461e95a93607c81b800fc4638d49173f3f30f94b7ab65b757861f3c315/fastmcp-0.3.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.4.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6967969883326d2d401f1abd07a8d74b6d980575cdedba594afc952e9dd7a0f2",
+          "md5": "b4171d4de1bce9e0475194d34c32dfb4",
+          "sha256": "2e77ca185a05289ffa4811970840704c536e1bf21fd27bb6ac37b0631e1d9883"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.4.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "b4171d4de1bce9e0475194d34c32dfb4",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 35129,
+        "upload_time": "2024-12-05T00:55:12",
+        "upload_time_iso_8601": "2024-12-05T00:55:12.460173Z",
+        "url": "https://files.pythonhosted.org/packages/69/67/969883326d2d401f1abd07a8d74b6d980575cdedba594afc952e9dd7a0f2/fastmcp-0.4.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "799cfb61f279bfe7b15f4b091cb47d58d3e9b2ea579955fa1f9c1612f1ff4575",
+          "md5": "d7647009c7c4c4f434986abd41b64aaf",
+          "sha256": "c81d2e1b6eb261d362f594ca66dafa64c670cdb4b3a9184e14e92f51996fd45e"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.4.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "d7647009c7c4c4f434986abd41b64aaf",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 785416,
+        "upload_time": "2024-12-05T00:55:14",
+        "upload_time_iso_8601": "2024-12-05T00:55:14.140687Z",
+        "url": "https://files.pythonhosted.org/packages/79/9c/fb61f279bfe7b15f4b091cb47d58d3e9b2ea579955fa1f9c1612f1ff4575/fastmcp-0.4.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.4.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "790b008a340435fe8f0879e9d608f48af2737ad48440e09bd33b83b3fd03798b",
+          "md5": "674ae0e7853db29aa73db1b61f9bc50e",
+          "sha256": "664b42c376fb89ec90a50c9433f5a1f4d24f36696d6c41b024b427ae545f9619"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.4.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "674ae0e7853db29aa73db1b61f9bc50e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 35282,
+        "upload_time": "2024-12-09T13:33:09",
+        "upload_time_iso_8601": "2024-12-09T13:33:09.469450Z",
+        "url": "https://files.pythonhosted.org/packages/79/0b/008a340435fe8f0879e9d608f48af2737ad48440e09bd33b83b3fd03798b/fastmcp-0.4.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6f8417b549133263d7ee77141970769bbc401525526bf1af043ea6842bce1a55",
+          "md5": "f28946480f57d34729f6148c07e54020",
+          "sha256": "713ad3b8e4e04841c9e2f3ca022b053adb89a286ceffad0d69ae7b56f31cbe64"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-0.4.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f28946480f57d34729f6148c07e54020",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 785575,
+        "upload_time": "2024-12-09T13:33:11",
+        "upload_time_iso_8601": "2024-12-09T13:33:11.101040Z",
+        "url": "https://files.pythonhosted.org/packages/6f/84/17b549133263d7ee77141970769bbc401525526bf1af043ea6842bce1a55/fastmcp-0.4.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b9bf0a77688242f30f81e3633d3765289966d9c7e408f9dcb4928a85852b9fde",
+          "md5": "4e07d7fe2b8a08fb608ead950b1d079d",
+          "sha256": "88f0c5acc2af06f22cf46dd26c1a1c4c54f1479ef09e5f871fdfbade6defe3a6"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-1.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "4e07d7fe2b8a08fb608ead950b1d079d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 35376,
+        "upload_time": "2025-04-11T15:16:22",
+        "upload_time_iso_8601": "2025-04-11T15:16:22.855657Z",
+        "url": "https://files.pythonhosted.org/packages/b9/bf/0a77688242f30f81e3633d3765289966d9c7e408f9dcb4928a85852b9fde/fastmcp-1.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "af21747cf7181ff6028e6d57bf2deb54fda1bd09c19098dc4bb2d11f8e4443de",
+          "md5": "b65b1040857ed9472ecf5e2257a5370f",
+          "sha256": "202f454e82cb68460a2b7372f975901e78e03b27734ce3a16c4d1d3e3cdbc519"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b65b1040857ed9472ecf5e2257a5370f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 785693,
+        "upload_time": "2025-04-11T15:16:24",
+        "upload_time_iso_8601": "2025-04-11T15:16:24.623007Z",
+        "url": "https://files.pythonhosted.org/packages/af/21/747cf7181ff6028e6d57bf2deb54fda1bd09c19098dc4bb2d11f8e4443de/fastmcp-1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.0.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "91112eab423e80d827a13fd7c7c96d1dd1021a0da5c9e2376d84338e34eebd06",
+          "md5": "a8d1e9c67170c87be0f0977d3c8c7e30",
+          "sha256": "d5c4111233a6a29fa92ed5acdbfe4feae922191a1d1c1543f0a85efeef31fbb9"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.0.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a8d1e9c67170c87be0f0977d3c8c7e30",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 69073,
+        "upload_time": "2025-04-11T16:07:49",
+        "upload_time_iso_8601": "2025-04-11T16:07:49.635014Z",
+        "url": "https://files.pythonhosted.org/packages/91/11/2eab423e80d827a13fd7c7c96d1dd1021a0da5c9e2376d84338e34eebd06/fastmcp-2.0.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1da08890b194d5cf5a3b5b17a14b9083a328f356ede2d302030f988cd58714ca",
+          "md5": "5a7257d570799756771ae6241ff56144",
+          "sha256": "fa10e3db4c177d10f452f98d546a0ab001cad698bc8e9d57824706c190b06b55"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.0.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5a7257d570799756771ae6241ff56144",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 839706,
+        "upload_time": "2025-04-11T16:07:51",
+        "upload_time_iso_8601": "2025-04-11T16:07:51.297432Z",
+        "url": "https://files.pythonhosted.org/packages/1d/a0/8890b194d5cf5a3b5b17a14b9083a328f356ede2d302030f988cd58714ca/fastmcp-2.0.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.1.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "03d16024f4a169f6e73d3b923ebd5b51f117d4c079a8026647e275f718035fdc",
+          "md5": "5672368c1fc61a45b86462a9f4a5b837",
+          "sha256": "7e75345b3551f21e3d3d4bcbcb84d61a2f41a5e90f897416aae95e07afeb20d1"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.1.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5672368c1fc61a45b86462a9f4a5b837",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 71639,
+        "upload_time": "2025-04-13T02:14:44",
+        "upload_time_iso_8601": "2025-04-13T02:14:44.352545Z",
+        "url": "https://files.pythonhosted.org/packages/03/d1/6024f4a169f6e73d3b923ebd5b51f117d4c079a8026647e275f718035fdc/fastmcp-2.1.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9e7bf5370bc1cd3a94a5f0677dcffc7dd72e56d5ac3e845e4b6c63afd6c1da8b",
+          "md5": "c2d759affc88fb24d9773844324a03e4",
+          "sha256": "955f684e9f3155823a31e14dffb729370f3bd27a974dc31e0215430f2ac982cc"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c2d759affc88fb24d9773844324a03e4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 845734,
+        "upload_time": "2025-04-13T02:14:46",
+        "upload_time_iso_8601": "2025-04-13T02:14:46.050510Z",
+        "url": "https://files.pythonhosted.org/packages/9e/7b/f5370bc1cd3a94a5f0677dcffc7dd72e56d5ac3e845e4b6c63afd6c1da8b/fastmcp-2.1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.1.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d39e1235f32ad616d48d0db9f9be273aae42d1ba783bdbc1745b7442851a0b8d",
+          "md5": "37c833333006d320e3c448f21d713a5a",
+          "sha256": "33fc734ccd76a69f2b7c8f42041fa0995bfde8f973a888aac7633f9df4f372e6"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.1.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "37c833333006d320e3c448f21d713a5a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 74513,
+        "upload_time": "2025-04-14T02:45:02",
+        "upload_time_iso_8601": "2025-04-14T02:45:02.667753Z",
+        "url": "https://files.pythonhosted.org/packages/d3/9e/1235f32ad616d48d0db9f9be273aae42d1ba783bdbc1745b7442851a0b8d/fastmcp-2.1.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7b090f4d7fa1d9dc0ff61ef82946b47ffc3d62b3667042a0a52169c17e9337dc",
+          "md5": "f3de5a6680e841f045e6b9b3800f6888",
+          "sha256": "6d8503614e8f6697625c7282ae12e9f921a188de06e5caedc51997a13f5fd70a"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.1.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f3de5a6680e841f045e6b9b3800f6888",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 908933,
+        "upload_time": "2025-04-14T02:45:04",
+        "upload_time_iso_8601": "2025-04-14T02:45:04.335615Z",
+        "url": "https://files.pythonhosted.org/packages/7b/09/0f4d7fa1d9dc0ff61ef82946b47ffc3d62b3667042a0a52169c17e9337dc/fastmcp-2.1.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.1.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6735f7a312e5b2a5637b4a62777cf72f3c29a3a149f2ecdb7fbba916b74c22cd",
+          "md5": "7c9141ba708252b4a630a515fa59afd2",
+          "sha256": "24584059ec5b6dabacb273aca4ccb852bd184ca87c495fdce50376a6eb28faaf"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.1.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7c9141ba708252b4a630a515fa59afd2",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 74289,
+        "upload_time": "2025-04-14T20:44:56",
+        "upload_time_iso_8601": "2025-04-14T20:44:56.226201Z",
+        "url": "https://files.pythonhosted.org/packages/67/35/f7a312e5b2a5637b4a62777cf72f3c29a3a149f2ecdb7fbba916b74c22cd/fastmcp-2.1.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ae7cbc08df6967b58f1ebf403618c69aa88425757a28190877943c4720bb1a7d",
+          "md5": "4899dc46b78ee090a02bf71d7c369752",
+          "sha256": "0098eb57ce9862582c30c619da4c5d8f52757e433baa18407743c2e9c48f32aa"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.1.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4899dc46b78ee090a02bf71d7c369752",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 911145,
+        "upload_time": "2025-04-14T20:44:57",
+        "upload_time_iso_8601": "2025-04-14T20:44:57.974373Z",
+        "url": "https://files.pythonhosted.org/packages/ae/7c/bc08df6967b58f1ebf403618c69aa88425757a28190877943c4720bb1a7d/fastmcp-2.1.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.10.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fa23507b34f78146972943477b6f599044c82ba318570de0960d49b4ad165626",
+          "md5": "82ddc04a6cc56d6cfd6c81a12e9352e2",
+          "sha256": "dc407fc9a4212b48479a07ae93d23e110384d61ad10351788f5af21f3609e4f0"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "82ddc04a6cc56d6cfd6c81a12e9352e2",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 183712,
+        "upload_time": "2025-07-01T23:24:56",
+        "upload_time_iso_8601": "2025-07-01T23:24:56.004514Z",
+        "url": "https://files.pythonhosted.org/packages/fa/23/507b34f78146972943477b6f599044c82ba318570de0960d49b4ad165626/fastmcp-2.10.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9f817abac9170776a1c5271a6fdd57af033cb7e1e32de5fdcc9bf4598109bf22",
+          "md5": "a56622525064d75ec81ef60699bb2cd1",
+          "sha256": "097a1eaa67378a0ebc2949a08afc70e7bb07e63bd8c737649266a91f3f4e5a79"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a56622525064d75ec81ef60699bb2cd1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2730415,
+        "upload_time": "2025-07-01T23:24:57",
+        "upload_time_iso_8601": "2025-07-01T23:24:57.278012Z",
+        "url": "https://files.pythonhosted.org/packages/9f/81/7abac9170776a1c5271a6fdd57af033cb7e1e32de5fdcc9bf4598109bf22/fastmcp-2.10.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.10.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "29a252ef74287ec5fe0e5a0ffedde7d0809da5ec3ac85f4e3f2ed5587b39471a",
+          "md5": "6666159612d8d0faebb253c692aaff2e",
+          "sha256": "17d0acea04eeb3464c9eca42b6774fb06b38b72cface9af6a7482b3aa561db13"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "6666159612d8d0faebb253c692aaff2e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 182108,
+        "upload_time": "2025-07-02T04:57:23",
+        "upload_time_iso_8601": "2025-07-02T04:57:23.529652Z",
+        "url": "https://files.pythonhosted.org/packages/29/a2/52ef74287ec5fe0e5a0ffedde7d0809da5ec3ac85f4e3f2ed5587b39471a/fastmcp-2.10.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "331f0031ea07bcad9f9b38d3500772d2749ca2b16335b92bd012f1d2f86a853e",
+          "md5": "19d22df791b9d2052bdbe8be89eeb373",
+          "sha256": "450c72e523926a2203c7eecdb4a8b0507506667bc8736b8b7bb44f6312424649"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "19d22df791b9d2052bdbe8be89eeb373",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2730387,
+        "upload_time": "2025-07-02T04:57:24",
+        "upload_time_iso_8601": "2025-07-02T04:57:24.981558Z",
+        "url": "https://files.pythonhosted.org/packages/33/1f/0031ea07bcad9f9b38d3500772d2749ca2b16335b92bd012f1d2f86a853e/fastmcp-2.10.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.10.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "44f6df91b178740108bcee4c6df732369dfa9250578a979caac4cbd1e5d8b42c",
+          "md5": "cfbae0b82b73ba8579b1fe521c56a323",
+          "sha256": "3e5929772d5d22bad03581c2c4db40e008926309180168d48f3a7eac678ae645"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "cfbae0b82b73ba8579b1fe521c56a323",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 185331,
+        "upload_time": "2025-07-05T17:30:58",
+        "upload_time_iso_8601": "2025-07-05T17:30:58.210960Z",
+        "url": "https://files.pythonhosted.org/packages/44/f6/df91b178740108bcee4c6df732369dfa9250578a979caac4cbd1e5d8b42c/fastmcp-2.10.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "adac4906336669a643b634b7ecde539c79126dff9f47b1e9e4b312dd170c1715",
+          "md5": "2e43a81e0eff0e288e193750a6807ad3",
+          "sha256": "1ad519fda8bfde1de7f54a7ed4be0b6353eb66230cc1e35eef29b47666a0027b"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2e43a81e0eff0e288e193750a6807ad3",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2738203,
+        "upload_time": "2025-07-05T17:30:59",
+        "upload_time_iso_8601": "2025-07-05T17:30:59.437502Z",
+        "url": "https://files.pythonhosted.org/packages/ad/ac/4906336669a643b634b7ecde539c79126dff9f47b1e9e4b312dd170c1715/fastmcp-2.10.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.10.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7ecd5d03b0e6950679dbda36449df377cb20406f289ec9a442786adb03ba4150",
+          "md5": "ceaabcfa9414983916f74c40079c667a",
+          "sha256": "935a81d7c8d158f9d1d93ec6f550ff56780dcae4a593eb5ad8bb65b2a0dfca0e"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ceaabcfa9414983916f74c40079c667a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 199193,
+        "upload_time": "2025-07-09T01:29:28",
+        "upload_time_iso_8601": "2025-07-09T01:29:28.563318Z",
+        "url": "https://files.pythonhosted.org/packages/7e/cd/5d03b0e6950679dbda36449df377cb20406f289ec9a442786adb03ba4150/fastmcp-2.10.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fca22cc6a33d7c5e1441291fc53fc83cba62d68612b70fa8abb1a4de8523f2e3",
+          "md5": "95e8ded358e7d4d1e1a8ec51682bfe19",
+          "sha256": "7846ad50e6b30d8e016ace30d66de3485f561c681dca87d20a90c8cf3cd4b832"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "95e8ded358e7d4d1e1a8ec51682bfe19",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1606107,
+        "upload_time": "2025-07-09T01:29:29",
+        "upload_time_iso_8601": "2025-07-09T01:29:29.868651Z",
+        "url": "https://files.pythonhosted.org/packages/fc/a2/2cc6a33d7c5e1441291fc53fc83cba62d68612b70fa8abb1a4de8523f2e3/fastmcp-2.10.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.10.4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9cf5e993b41858a90510930712af0fd9383ac0e3f6d1924c894252def38dc32a",
+          "md5": "0cf056cdce973bcddd38bbfa3e38b6d8",
+          "sha256": "a998882018806198fdcde57b06816a82028a23de24d647bc10e72c0866431e0f"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "0cf056cdce973bcddd38bbfa3e38b6d8",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 199193,
+        "upload_time": "2025-07-09T13:36:07",
+        "upload_time_iso_8601": "2025-07-09T13:36:07.606706Z",
+        "url": "https://files.pythonhosted.org/packages/9c/f5/e993b41858a90510930712af0fd9383ac0e3f6d1924c894252def38dc32a/fastmcp-2.10.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7421a2c3b6a0060add4350c3edcbede0335cebd09ddad79eed559f70c11fe55a",
+          "md5": "be0f6a7ed5dac0d94332f2b7edef50cb",
+          "sha256": "49c6de71fa2f7132af4592f278e003e83b86b15a187a26cf2502bf3dce8155ba"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "be0f6a7ed5dac0d94332f2b7edef50cb",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1606198,
+        "upload_time": "2025-07-09T13:36:10",
+        "upload_time_iso_8601": "2025-07-09T13:36:10.270376Z",
+        "url": "https://files.pythonhosted.org/packages/74/21/a2c3b6a0060add4350c3edcbede0335cebd09ddad79eed559f70c11fe55a/fastmcp-2.10.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.10.5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9e74453a1e6d7673b831a04ac0167d34a3c21cf2a17d55b4d242f262474fff1f",
+          "md5": "a6c7c5af309fcaaccf2855d63f781617",
+          "sha256": "ab218f6a66b61f6f83c413d37aa18f5c30882c44c8925f39ecd02dd855826540"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a6c7c5af309fcaaccf2855d63f781617",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 201275,
+        "upload_time": "2025-07-11T22:23:31",
+        "upload_time_iso_8601": "2025-07-11T22:23:31.314684Z",
+        "url": "https://files.pythonhosted.org/packages/9e/74/453a1e6d7673b831a04ac0167d34a3c21cf2a17d55b4d242f262474fff1f/fastmcp-2.10.5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ec087e9c8dc9c2712ccc6393383ef6d7999b84f658ee37cabc42f853e72f86e1",
+          "md5": "59f59a5b3bf680bf8d7ab89e5de92bf0",
+          "sha256": "f829e0b11c4d136db1d81e20e8acb19cf5108f64059482d1853f3c940326cf04"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "59f59a5b3bf680bf8d7ab89e5de92bf0",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1618410,
+        "upload_time": "2025-07-11T22:23:32",
+        "upload_time_iso_8601": "2025-07-11T22:23:32.968372Z",
+        "url": "https://files.pythonhosted.org/packages/ec/08/7e9c8dc9c2712ccc6393383ef6d7999b84f658ee37cabc42f853e72f86e1/fastmcp-2.10.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.10.6": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dc054958cccbe862958d862b6a15f2d10d2f5ec3c411268dcb131a433e5e7a0d",
+          "md5": "49eef8e5db31355efff77a3d85fb9b7e",
+          "sha256": "9782416a8848cc0f4cfcc578e5c17834da620bef8ecf4d0daabf5dd1272411a2"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.6-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "49eef8e5db31355efff77a3d85fb9b7e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 202613,
+        "upload_time": "2025-07-19T20:02:11",
+        "upload_time_iso_8601": "2025-07-19T20:02:11.470198Z",
+        "url": "https://files.pythonhosted.org/packages/dc/05/4958cccbe862958d862b6a15f2d10d2f5ec3c411268dcb131a433e5e7a0d/fastmcp-2.10.6-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "00a0eceb88277ef9e3a442e099377a9b9c29fb2fa724e234486e03a44ca1c677",
+          "md5": "a888bd369357b2b03b19372106ee1cd8",
+          "sha256": "5a7b3301f9f1b64610430caef743ac70175c4b812e1949f037e4db65b0a42c5a"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.10.6.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a888bd369357b2b03b19372106ee1cd8",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1640538,
+        "upload_time": "2025-07-19T20:02:12",
+        "upload_time_iso_8601": "2025-07-19T20:02:12.543061Z",
+        "url": "https://files.pythonhosted.org/packages/00/a0/eceb88277ef9e3a442e099377a9b9c29fb2fa724e234486e03a44ca1c677/fastmcp-2.10.6.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.11.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0c9a51108b68e77650a7289b5f1ceff8dc0929ab48a26d1d2015f22121a9d183",
+          "md5": "62b566329d2d3f3a9c14f7aa98aa598b",
+          "sha256": "8709a04522e66fda407b469fbe4d3290651aa7b06097b91c097e9a973c9b9bb3"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.11.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "62b566329d2d3f3a9c14f7aa98aa598b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 256193,
+        "upload_time": "2025-08-01T21:30:09",
+        "upload_time_iso_8601": "2025-08-01T21:30:09.905526Z",
+        "url": "https://files.pythonhosted.org/packages/0c/9a/51108b68e77650a7289b5f1ceff8dc0929ab48a26d1d2015f22121a9d183/fastmcp-2.11.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c2020701624e938fe4d1f13464de9bdc27be9aba2e4c4d41edab3ea496d31751",
+          "md5": "e12872f57fdabdf2d734416ac5ef861b",
+          "sha256": "af0c52988607d8e9197df300e91880169e8fe24fd6ca177dca6a9eb6b245ce3c"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.11.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e12872f57fdabdf2d734416ac5ef861b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2663877,
+        "upload_time": "2025-08-01T21:30:11",
+        "upload_time_iso_8601": "2025-08-01T21:30:11.629561Z",
+        "url": "https://files.pythonhosted.org/packages/c2/02/0701624e938fe4d1f13464de9bdc27be9aba2e4c4d41edab3ea496d31751/fastmcp-2.11.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.11.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a69ff3703867a8be93f2a139f6664fa7ff46c5c844e28998ce288f7b919ed197",
+          "md5": "29687ce771b2d690b039011fdad0c6f1",
+          "sha256": "9f0b6a3f61dcf6f688a0a24b8b507be24bfae051a00b7d590c01395d63da8c00"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.11.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "29687ce771b2d690b039011fdad0c6f1",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 256573,
+        "upload_time": "2025-08-04T15:39:27",
+        "upload_time_iso_8601": "2025-08-04T15:39:27.594364Z",
+        "url": "https://files.pythonhosted.org/packages/a6/9f/f3703867a8be93f2a139f6664fa7ff46c5c844e28998ce288f7b919ed197/fastmcp-2.11.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9289d100073d15cdfa5fa029107b44ef55916b04ed6010ff2b0f7bed92a35ed9",
+          "md5": "4516164b23a8ebc6dd279ccdc482f7c7",
+          "sha256": "2b5af21b093d4926fef17a9a162d5729a2fcb46f3b195699762fa01f61ac3c60"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.11.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4516164b23a8ebc6dd279ccdc482f7c7",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2672724,
+        "upload_time": "2025-08-04T15:39:29",
+        "upload_time_iso_8601": "2025-08-04T15:39:29.623428Z",
+        "url": "https://files.pythonhosted.org/packages/92/89/d100073d15cdfa5fa029107b44ef55916b04ed6010ff2b0f7bed92a35ed9/fastmcp-2.11.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.11.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3d78bf9ea9311e5bb0e64d2d480136ec29b22d43620eafcec756e9fa78a7ddd1",
+          "md5": "f248933d2c7e99d7768ca5b0288cc408",
+          "sha256": "3e358f65e41f5f85b8fb0303131cc1c8b122f43a7aff9b47b74157e615fe5484"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.11.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "f248933d2c7e99d7768ca5b0288cc408",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 257133,
+        "upload_time": "2025-08-06T17:19:38",
+        "upload_time_iso_8601": "2025-08-06T17:19:38.228605Z",
+        "url": "https://files.pythonhosted.org/packages/3d/78/bf9ea9311e5bb0e64d2d480136ec29b22d43620eafcec756e9fa78a7ddd1/fastmcp-2.11.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7d449957bf4373be797fa596a8a08c0e0c2ea255c0a02002aff06c29216484b6",
+          "md5": "dd4fc27091d54960aa6ceca1138f0927",
+          "sha256": "bb958010faf987ff158a75ee9950bb6ea4e7b01940dd9ec0e9f0f6a419c4f6b8"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.11.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "dd4fc27091d54960aa6ceca1138f0927",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2675200,
+        "upload_time": "2025-08-06T17:19:39",
+        "upload_time_iso_8601": "2025-08-06T17:19:39.744091Z",
+        "url": "https://files.pythonhosted.org/packages/7d/44/9957bf4373be797fa596a8a08c0e0c2ea255c0a02002aff06c29216484b6/fastmcp-2.11.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.11.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "610563f63ad5b6789a730d94b8cb3910679c5da1ed5b4e38c957140ac9edcf0e",
+          "md5": "deddd2b3a743743d055a8069c3cf23e4",
+          "sha256": "28f22126c90fd36e5de9cc68b9c271b6d832dcf322256f23d220b68afb3352cc"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.11.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "deddd2b3a743743d055a8069c3cf23e4",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 260231,
+        "upload_time": "2025-08-11T21:38:44",
+        "upload_time_iso_8601": "2025-08-11T21:38:44.746140Z",
+        "url": "https://files.pythonhosted.org/packages/61/05/63f63ad5b6789a730d94b8cb3910679c5da1ed5b4e38c957140ac9edcf0e/fastmcp-2.11.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "068013aec687ec21727b0fe6d26c6fe2febb33ae24e24c980929a706db3a8bc2",
+          "md5": "580fb57c046a168ec7feb35fad8b7d97",
+          "sha256": "e8e3834a3e0b513712b8e63a6f0d4cbe19093459a1da3f7fbf8ef2810cfd34e3"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.11.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "580fb57c046a168ec7feb35fad8b7d97",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2692092,
+        "upload_time": "2025-08-11T21:38:46",
+        "upload_time_iso_8601": "2025-08-11T21:38:46.493509Z",
+        "url": "https://files.pythonhosted.org/packages/06/80/13aec687ec21727b0fe6d26c6fe2febb33ae24e24c980929a706db3a8bc2/fastmcp-2.11.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.12.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "35e58fc0fbc6518469dbecbcc6e5f94f2d36f116c5dd9f2faf4100244b0b119c",
+          "md5": "e0937313fe20a37b34f04c03f41a7d5c",
+          "sha256": "f57d4a32b7761da3a4842ba8d70cf1b1a6c3791eda27fd3252780ecfa8f87cff"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e0937313fe20a37b34f04c03f41a7d5c",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 312676,
+        "upload_time": "2025-08-31T11:48:17",
+        "upload_time_iso_8601": "2025-08-31T11:48:17.366398Z",
+        "url": "https://files.pythonhosted.org/packages/35/e5/8fc0fbc6518469dbecbcc6e5f94f2d36f116c5dd9f2faf4100244b0b119c/fastmcp-2.12.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "60b0c3b6521e14d284e49729826f6add9ea3af7f35425d7de29727c08545d1c8",
+          "md5": "2a9a3d66156996ebbf5006915da3a3dc",
+          "sha256": "c7d6ec0fe3fa8d10061d08b40ebf6a4f916034a47ff3188dfd81c25e143ac18e"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2a9a3d66156996ebbf5006915da3a3dc",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 5241089,
+        "upload_time": "2025-08-31T11:48:18",
+        "upload_time_iso_8601": "2025-08-31T11:48:18.823258Z",
+        "url": "https://files.pythonhosted.org/packages/60/b0/c3b6521e14d284e49729826f6add9ea3af7f35425d7de29727c08545d1c8/fastmcp-2.12.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.12.0rc1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "43e5bf983cdb84116cc382e157cef67291419cf05924707d68741f59da2f3c77",
+          "md5": "fb51d12a731cee055d495115bef88959",
+          "sha256": "9f7d09b5fbbf3a8e69c6043299b9440fecd40bd6c2b5d519e46b51448d62990b"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.0rc1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "fb51d12a731cee055d495115bef88959",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 312711,
+        "upload_time": "2025-08-30T14:42:21",
+        "upload_time_iso_8601": "2025-08-30T14:42:21.140124Z",
+        "url": "https://files.pythonhosted.org/packages/43/e5/bf983cdb84116cc382e157cef67291419cf05924707d68741f59da2f3c77/fastmcp-2.12.0rc1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b88b2e738201cf15f7ca842df65a89194fa1d98da5e9b980ccdef230274b7101",
+          "md5": "b62c35c0cc29c5959ad4e633435d8444",
+          "sha256": "f169c54a0a2fc3444e79427b4b75f6b4e94f9fff6b33ef12754b7964d9ea5161"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.0rc1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b62c35c0cc29c5959ad4e633435d8444",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 5241142,
+        "upload_time": "2025-08-30T14:42:22",
+        "upload_time_iso_8601": "2025-08-30T14:42:22.553394Z",
+        "url": "https://files.pythonhosted.org/packages/b8/8b/2e738201cf15f7ca842df65a89194fa1d98da5e9b980ccdef230274b7101/fastmcp-2.12.0rc1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.12.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "afb9b10b67c95dec32d123274431d18cd4948214130c307866dae4ec4575c8c6",
+          "md5": "ed1c4465e79faf7ccdf46f1df9cdd668",
+          "sha256": "de8280262d2646a4639dc8a687ef6d0c5e57f66025afea235c8abf7db8fb5cf5"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ed1c4465e79faf7ccdf46f1df9cdd668",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 312032,
+        "upload_time": "2025-09-03T18:39:05",
+        "upload_time_iso_8601": "2025-09-03T18:39:05.926829Z",
+        "url": "https://files.pythonhosted.org/packages/af/b9/b10b67c95dec32d123274431d18cd4948214130c307866dae4ec4575c8c6/fastmcp-2.12.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c28b279c7ed77f99aef82c064345c6c05d624322fe39902fa36727698e05ccd2",
+          "md5": "9d6d50743c585e18c5b084297b818289",
+          "sha256": "0804428b26f601684e7ac1d650b46ab2b7b6c1e6c7ac77d51cdc7f58474d725f"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9d6d50743c585e18c5b084297b818289",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 5240512,
+        "upload_time": "2025-09-03T18:39:07",
+        "upload_time_iso_8601": "2025-09-03T18:39:07.998186Z",
+        "url": "https://files.pythonhosted.org/packages/c2/8b/279c7ed77f99aef82c064345c6c05d624322fe39902fa36727698e05ccd2/fastmcp-2.12.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.12.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5c0a7a8d564b1b9909dbfc36eb93d76410a4acfada6b1e13ee451a753bb6dbc2",
+          "md5": "bed39a1456490b37db62a65f50d8c355",
+          "sha256": "0b58d68e819c82078d1fd51989d3d81f2be7382d527308b06df55f4d0a4ec94f"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "bed39a1456490b37db62a65f50d8c355",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 312029,
+        "upload_time": "2025-09-03T21:28:08",
+        "upload_time_iso_8601": "2025-09-03T21:28:08.620471Z",
+        "url": "https://files.pythonhosted.org/packages/5c/0a/7a8d564b1b9909dbfc36eb93d76410a4acfada6b1e13ee451a753bb6dbc2/fastmcp-2.12.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "358ac46759bb41a53187191e5b3d963c0bde54783ecc89186a93c4947607b8e4",
+          "md5": "33cc235659846f067a56417d0cf1b46d",
+          "sha256": "6d13e2f9be57b99763fc22485f9f603daa23bfbca35a8172baa43b283d6fc1ff"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "33cc235659846f067a56417d0cf1b46d",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 5244547,
+        "upload_time": "2025-09-03T21:28:09",
+        "upload_time_iso_8601": "2025-09-03T21:28:09.869497Z",
+        "url": "https://files.pythonhosted.org/packages/35/8a/c46759bb41a53187191e5b3d963c0bde54783ecc89186a93c4947607b8e4/fastmcp-2.12.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.12.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "96790fd386e61819e205563d4eb15da76564b80dc2edd3c64b46f2706235daec",
+          "md5": "abbf79295d18ea12279db38d36efab43",
+          "sha256": "aee50872923a9cba731861fc0120e7dbe4642a2685ba251b2b202b82fb6c25a9"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "abbf79295d18ea12279db38d36efab43",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 314031,
+        "upload_time": "2025-09-12T12:28:05",
+        "upload_time_iso_8601": "2025-09-12T12:28:05.024590Z",
+        "url": "https://files.pythonhosted.org/packages/96/79/0fd386e61819e205563d4eb15da76564b80dc2edd3c64b46f2706235daec/fastmcp-2.12.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "995e035fdfa23646de8811776cd62d93440e334e8a4557b35c63c1bff125c08c",
+          "md5": "a8cac02dbcb37b24988a5cbadd2372d4",
+          "sha256": "541dd569d5b6c083140b04d997ba3dc47f7c10695cee700d0a733ce63b20bb65"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a8cac02dbcb37b24988a5cbadd2372d4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 5246812,
+        "upload_time": "2025-09-12T12:28:07",
+        "upload_time_iso_8601": "2025-09-12T12:28:07.136120Z",
+        "url": "https://files.pythonhosted.org/packages/99/5e/035fdfa23646de8811776cd62d93440e334e8a4557b35c63c1bff125c08c/fastmcp-2.12.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.12.4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e2c7562ff39f25de27caec01e4c1e88cbb5fcae5160802ba3d90be33165df24f",
+          "md5": "07f80410ec30a4125e309cfd8a215700",
+          "sha256": "56188fbbc1a9df58c537063f25958c57b5c4d715f73e395c41b51550b247d140"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "07f80410ec30a4125e309cfd8a215700",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 329090,
+        "upload_time": "2025-09-26T16:43:25",
+        "upload_time_iso_8601": "2025-09-26T16:43:25.314649Z",
+        "url": "https://files.pythonhosted.org/packages/e2/c7/562ff39f25de27caec01e4c1e88cbb5fcae5160802ba3d90be33165df24f/fastmcp-2.12.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a8b257845353a9bc63002995a982e66f3d0be4ec761e7bcb89e7d0638518d42a",
+          "md5": "1bcc0526ebd98aa741c60e918f4a0b71",
+          "sha256": "b55fe89537038f19d0f4476544f9ca5ac171033f61811cc8f12bdeadcbea5016"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "1bcc0526ebd98aa741c60e918f4a0b71",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 7167745,
+        "upload_time": "2025-09-26T16:43:27",
+        "upload_time_iso_8601": "2025-09-26T16:43:27.710589Z",
+        "url": "https://files.pythonhosted.org/packages/a8/b2/57845353a9bc63002995a982e66f3d0be4ec761e7bcb89e7d0638518d42a/fastmcp-2.12.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.12.5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d8c19fb98c9649e15ea8cc691b4b09558b61dafb3dc0345f7322f8c4a8991ade",
+          "md5": "bf877774e2b6ca24ffc0bfa7b68e5e03",
+          "sha256": "b1e542f9b83dbae7cecfdc9c73b062f77074785abda9f2306799116121344133"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "bf877774e2b6ca24ffc0bfa7b68e5e03",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 329099,
+        "upload_time": "2025-10-17T13:24:57",
+        "upload_time_iso_8601": "2025-10-17T13:24:57.518680Z",
+        "url": "https://files.pythonhosted.org/packages/d8/c1/9fb98c9649e15ea8cc691b4b09558b61dafb3dc0345f7322f8c4a8991ade/fastmcp-2.12.5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "00a6e3b46cd3e228635e0064c2648788b6f66a53bf0d0ddbf5fb44cca951f908",
+          "md5": "c7f4bd7b1902a4b9e88f7e52410074b9",
+          "sha256": "2dfd02e255705a4afe43d26caddbc864563036e233dbc6870f389ee523b39a6a"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.12.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c7f4bd7b1902a4b9e88f7e52410074b9",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 7190263,
+        "upload_time": "2025-10-17T13:24:58",
+        "upload_time_iso_8601": "2025-10-17T13:24:58.896575Z",
+        "url": "https://files.pythonhosted.org/packages/00/a6/e3b46cd3e228635e0064c2648788b6f66a53bf0d0ddbf5fb44cca951f908/fastmcp-2.12.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.13.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c07f09942135f506953fc61bb81b9e5eaf50a8eea923b83d9135bd959168ef2d",
+          "md5": "adab22d34756e1bb3af2596d03fd9bb4",
+          "sha256": "bdff1399d3b7ebb79286edfd43eb660182432514a5ab8e4cbfb45f1d841d2aa0"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "adab22d34756e1bb3af2596d03fd9bb4",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 367134,
+        "upload_time": "2025-10-25T12:54:09",
+        "upload_time_iso_8601": "2025-10-25T12:54:09.284304Z",
+        "url": "https://files.pythonhosted.org/packages/c0/7f/09942135f506953fc61bb81b9e5eaf50a8eea923b83d9135bd959168ef2d/fastmcp-2.13.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bc3bc30af894db2c3ec439d0e4168ba7ce705474cabdd0a599033ad9a19ad977",
+          "md5": "e80fe80e03341c5df1e72df814d821d1",
+          "sha256": "57f7b7503363e1babc0d1a13af18252b80366a409e1de85f1256cce66a4bee35"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e80fe80e03341c5df1e72df814d821d1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 7767346,
+        "upload_time": "2025-10-25T12:54:10",
+        "upload_time_iso_8601": "2025-10-25T12:54:10.957488Z",
+        "url": "https://files.pythonhosted.org/packages/bc/3b/c30af894db2c3ec439d0e4168ba7ce705474cabdd0a599033ad9a19ad977/fastmcp-2.13.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.13.0.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "900c7e966e01240f7a9347d22d09e9d60cb46eaad68ca2ba24830755dab2c55c",
+          "md5": "a198255e7e2de977633d0d29b58972ed",
+          "sha256": "60a8313b48803a2ddfad2d0fe8b9dd1f231aba7564c0551cad8447527ffe46e2"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.0.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a198255e7e2de977633d0d29b58972ed",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 367504,
+        "upload_time": "2025-10-26T15:42:58",
+        "upload_time_iso_8601": "2025-10-26T15:42:58.980110Z",
+        "url": "https://files.pythonhosted.org/packages/90/0c/7e966e01240f7a9347d22d09e9d60cb46eaad68ca2ba24830755dab2c55c/fastmcp-2.13.0.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f2bdad8a0cc9ea3e8bfe8fb63a00be985d4c887c3c0a454d26c712c160af489f",
+          "md5": "89b68bad2ca96771a9380d949ed43e5e",
+          "sha256": "d6dbd52a6b06fc1797db9fe0b487db966b4a4d34d9c7dd87b9918d5ec775dcb7"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.0.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "89b68bad2ca96771a9380d949ed43e5e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 7768846,
+        "upload_time": "2025-10-26T15:43:00",
+        "upload_time_iso_8601": "2025-10-26T15:43:00.567945Z",
+        "url": "https://files.pythonhosted.org/packages/f2/bd/ad8a0cc9ea3e8bfe8fb63a00be985d4c887c3c0a454d26c712c160af489f/fastmcp-2.13.0.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.13.0.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bdc695eacd687cfab64fec13bfb64e6c6e7da13d01ecd4cb7d7e991858a08119",
+          "md5": "6acaf362d17dd639c3ac4d6362ea0c88",
+          "sha256": "eb381eb073a101aabbc0ac44b05e23fef0cd1619344b7703115c825c8755fa1c"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.0.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "6acaf362d17dd639c3ac4d6362ea0c88",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 367511,
+        "upload_time": "2025-10-28T13:56:18",
+        "upload_time_iso_8601": "2025-10-28T13:56:18.830422Z",
+        "url": "https://files.pythonhosted.org/packages/bd/c6/95eacd687cfab64fec13bfb64e6c6e7da13d01ecd4cb7d7e991858a08119/fastmcp-2.13.0.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1b74584a152bcd174c99ddf3cfdd7e86ec4a6c696fb190a907c2a2ec9056bda2",
+          "md5": "8537715706e0541057f396884120e72c",
+          "sha256": "d35386561b6f3cde195ba2b5892dc89b8919a721e6b39b98e7a16f9a7c0b8e8b"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.0.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8537715706e0541057f396884120e72c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 7762083,
+        "upload_time": "2025-10-28T13:56:21",
+        "upload_time_iso_8601": "2025-10-28T13:56:21.702034Z",
+        "url": "https://files.pythonhosted.org/packages/1b/74/584a152bcd174c99ddf3cfdd7e86ec4a6c696fb190a907c2a2ec9056bda2/fastmcp-2.13.0.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.13.0rc1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "02641de12bff57f4317c440221f580b6a6340ccb4ffe37c5be3aa9f795d3aecd",
+          "md5": "93e724e671d9210efb6fe25822981f54",
+          "sha256": "dd7d0a10675be9d026dbf58c65e43723be37bc19229bbbdb203249b5c9343ff9"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.0rc1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "93e724e671d9210efb6fe25822981f54",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 356632,
+        "upload_time": "2025-10-19T21:25:12",
+        "upload_time_iso_8601": "2025-10-19T21:25:12.796365Z",
+        "url": "https://files.pythonhosted.org/packages/02/64/1de12bff57f4317c440221f580b6a6340ccb4ffe37c5be3aa9f795d3aecd/fastmcp-2.13.0rc1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e283c8807b1acb1ab3d8d87f02fcc2648b0a2761757a68f51a238c384c0c5011",
+          "md5": "2d4ac18043e4b75fd2c686e7f0d8d9ea",
+          "sha256": "199d412b0a82baa4833f7b9d2141d885a11399be60d7bc7771704e635d8c5e1a"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.0rc1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2d4ac18043e4b75fd2c686e7f0d8d9ea",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 7739365,
+        "upload_time": "2025-10-19T21:25:14",
+        "upload_time_iso_8601": "2025-10-19T21:25:14.744320Z",
+        "url": "https://files.pythonhosted.org/packages/e2/83/c8807b1acb1ab3d8d87f02fcc2648b0a2761757a68f51a238c384c0c5011/fastmcp-2.13.0rc1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.13.0rc2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7de535c08bb9f507d6d44a6406739a0f8f48a04a6b4981afc6a02f80603ba698",
+          "md5": "2bf76043e73983cd6a7e60154ea0a418",
+          "sha256": "0d1c02048dff69e1462b58f9bdd837ff4512eea090d568dc12bc8f5818ec7518"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.0rc2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2bf76043e73983cd6a7e60154ea0a418",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 356856,
+        "upload_time": "2025-10-21T01:11:49",
+        "upload_time_iso_8601": "2025-10-21T01:11:49.377746Z",
+        "url": "https://files.pythonhosted.org/packages/7d/e5/35c08bb9f507d6d44a6406739a0f8f48a04a6b4981afc6a02f80603ba698/fastmcp-2.13.0rc2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0f45873c1076ca994362c61e4ee082a3c7e58b5760ca919cdfced7e78fcb5a4b",
+          "md5": "9f646dc37f17a82a7bd7c378f5d93af1",
+          "sha256": "2ec8f49730aeddeee3fc0bcf9ab870d3568193679794639009b74188d2a0fad9"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.0rc2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9f646dc37f17a82a7bd7c378f5d93af1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 7744051,
+        "upload_time": "2025-10-21T01:11:51",
+        "upload_time_iso_8601": "2025-10-21T01:11:51.272296Z",
+        "url": "https://files.pythonhosted.org/packages/0f/45/873c1076ca994362c61e4ee082a3c7e58b5760ca919cdfced7e78fcb5a4b/fastmcp-2.13.0rc2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.13.0rc3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fa75fcecb9b52474e7bcc09704973661116ac95242a4ca4d4560407185b0a6f1",
+          "md5": "3cc2e091d94399ea3b68a360383cc680",
+          "sha256": "8866232382e88de99df2ede55a87273807073ad5132fa565e3ac0bae7ddcf03f"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.0rc3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "3cc2e091d94399ea3b68a360383cc680",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 367172,
+        "upload_time": "2025-10-24T23:33:40",
+        "upload_time_iso_8601": "2025-10-24T23:33:40.474066Z",
+        "url": "https://files.pythonhosted.org/packages/fa/75/fcecb9b52474e7bcc09704973661116ac95242a4ca4d4560407185b0a6f1/fastmcp-2.13.0rc3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dd0c804b9e7dd938d58d7f1a8eb6f9da55398939abe42e6dafce01ba9b38192f",
+          "md5": "8f74f1ea5814134d8545e3736a751d53",
+          "sha256": "34e3bb3739f3ddb14ff4de93859281888106b97052947eeef7b8b7b63fc65636"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.0rc3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8f74f1ea5814134d8545e3736a751d53",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 7764239,
+        "upload_time": "2025-10-24T23:33:42",
+        "upload_time_iso_8601": "2025-10-24T23:33:42.759704Z",
+        "url": "https://files.pythonhosted.org/packages/dd/0c/804b9e7dd938d58d7f1a8eb6f9da55398939abe42e6dafce01ba9b38192f/fastmcp-2.13.0rc3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.13.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9b4b7e36db0a90044be181319ff025be7cc57089ddb6ba8f3712dea543b9cf97",
+          "md5": "82ee61ecaf9c4eeeff962833beef2d20",
+          "sha256": "7a78b19785c4ec04a758d920c312769a497e3f6ab4c80feed504df1ed7de9f3c"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "82ee61ecaf9c4eeeff962833beef2d20",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 376750,
+        "upload_time": "2025-11-15T19:02:15",
+        "upload_time_iso_8601": "2025-11-15T19:02:15.748389Z",
+        "url": "https://files.pythonhosted.org/packages/9b/4b/7e36db0a90044be181319ff025be7cc57089ddb6ba8f3712dea543b9cf97/fastmcp-2.13.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d4a3c9eb28b5f0b979b0dd8aa9ba56e69298cdb2d72c15592165d042ccb20194",
+          "md5": "39e21caf072ea32a0885b508898172cb",
+          "sha256": "b9c664c51f1ff47c698225e7304267ae29a51913f681bd49e442b8682f9a5f90"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "39e21caf072ea32a0885b508898172cb",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 8170226,
+        "upload_time": "2025-11-15T19:02:17",
+        "upload_time_iso_8601": "2025-11-15T19:02:17.693157Z",
+        "url": "https://files.pythonhosted.org/packages/d4/a3/c9eb28b5f0b979b0dd8aa9ba56e69298cdb2d72c15592165d042ccb20194/fastmcp-2.13.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.13.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e54b73c68b0ae9e587f20c5aa13ba5bed9be2bb9248a598555dafcf17df87f70",
+          "md5": "5845adfe352133e23680fd1068cc20b1",
+          "sha256": "300c59eb970c235bb9d0575883322922e4f2e2468a3d45e90cbfd6b23b7be245"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5845adfe352133e23680fd1068cc20b1",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 385643,
+        "upload_time": "2025-12-01T18:48:18",
+        "upload_time_iso_8601": "2025-12-01T18:48:18.515493Z",
+        "url": "https://files.pythonhosted.org/packages/e5/4b/73c68b0ae9e587f20c5aa13ba5bed9be2bb9248a598555dafcf17df87f70/fastmcp-2.13.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c87a4c6375a56f7458a4a6af62f4c4838a2c957a665cf5edad26fe95395666f1",
+          "md5": "69decd273d13cf2001a6cb850eda7515",
+          "sha256": "2a206401a6579fea621974162674beba85b467ad72c70c1a3752a31951dff7f0"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "69decd273d13cf2001a6cb850eda7515",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 8185950,
+        "upload_time": "2025-12-01T18:48:16",
+        "upload_time_iso_8601": "2025-12-01T18:48:16.834039Z",
+        "url": "https://files.pythonhosted.org/packages/c8/7a/4c6375a56f7458a4a6af62f4c4838a2c957a665cf5edad26fe95395666f1/fastmcp-2.13.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.13.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dbbc56925f1202357dbfcfdfd0c75afc6c27ec1e6ef1d89b7e7410df3945ceb4",
+          "md5": "d4416f7f3215854562ebc66a519690dd",
+          "sha256": "5173d335f4e6aabcfb5a5131af3fa092f604b303130fd3a49226b7a844a48e65"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "d4416f7f3215854562ebc66a519690dd",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 385644,
+        "upload_time": "2025-12-03T23:58:02",
+        "upload_time_iso_8601": "2025-12-03T23:58:02.246790Z",
+        "url": "https://files.pythonhosted.org/packages/db/bc/56925f1202357dbfcfdfd0c75afc6c27ec1e6ef1d89b7e7410df3945ceb4/fastmcp-2.13.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "21a1a507bfb73f51983759cbbc3702b6f4780128cff68ebbc51db2f10170c950",
+          "md5": "a0639a05a08a671592ec0d5a9d32fc31",
+          "sha256": "ebca59e99412c596dd75ebdd5147800f6abc2490d025af76fa8ea4fc5f68781d"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.13.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a0639a05a08a671592ec0d5a9d32fc31",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 8185958,
+        "upload_time": "2025-12-03T23:58:00",
+        "upload_time_iso_8601": "2025-12-03T23:58:00.434340Z",
+        "url": "https://files.pythonhosted.org/packages/21/a1/a507bfb73f51983759cbbc3702b6f4780128cff68ebbc51db2f10170c950/fastmcp-2.13.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.14.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5473b5656172a6beb2eacec95f04403ddea1928e4b22066700fd14780f8f45d1",
+          "md5": "604b481b1f15db9d40394477a62f10a8",
+          "sha256": "7b374c0bcaf1ef1ef46b9255ea84c607f354291eaf647ff56a47c69f5ec0c204"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.14.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "604b481b1f15db9d40394477a62f10a8",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 398965,
+        "upload_time": "2025-12-11T23:04:25",
+        "upload_time_iso_8601": "2025-12-11T23:04:25.587762Z",
+        "url": "https://files.pythonhosted.org/packages/54/73/b5656172a6beb2eacec95f04403ddea1928e4b22066700fd14780f8f45d1/fastmcp-2.14.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "35509bb042a2d290ccadb35db3580ac507f192e1a39c489eb8faa167cd5e3b57",
+          "md5": "dd84ce3e9f4cf1f7692f0aa911acbbfc",
+          "sha256": "c1f487b36a3e4b043dbf3330e588830047df2e06f8ef0920d62dfb34d0905727"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.14.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "dd84ce3e9f4cf1f7692f0aa911acbbfc",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 8232562,
+        "upload_time": "2025-12-11T23:04:27",
+        "upload_time_iso_8601": "2025-12-11T23:04:27.134398Z",
+        "url": "https://files.pythonhosted.org/packages/35/50/9bb042a2d290ccadb35db3580ac507f192e1a39c489eb8faa167cd5e3b57/fastmcp-2.14.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.14.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1d8272401d09dc27c27fdf72ad6c2fe331e553e3c3646e01b5ff16473191033d",
+          "md5": "72b8247ad6e3074a8c701fca7086d4d7",
+          "sha256": "fb3e365cc1d52573ab89caeba9944dd4b056149097be169bce428e011f0a57e5"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.14.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "72b8247ad6e3074a8c701fca7086d4d7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 412176,
+        "upload_time": "2025-12-15T02:26:25",
+        "upload_time_iso_8601": "2025-12-15T02:26:25.356620Z",
+        "url": "https://files.pythonhosted.org/packages/1d/82/72401d09dc27c27fdf72ad6c2fe331e553e3c3646e01b5ff16473191033d/fastmcp-2.14.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9e50d38e4371bdc34e709f4731b1e882cb7bc50e51c1a224859d4cd381b3a79b",
+          "md5": "f2fd85501890bd148695d94cf3475994",
+          "sha256": "132725cbf77b68fa3c3d165eff0cfa47e40c1479457419e6a2cfda65bd84c8d6"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.14.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f2fd85501890bd148695d94cf3475994",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 8263331,
+        "upload_time": "2025-12-15T02:26:27",
+        "upload_time_iso_8601": "2025-12-15T02:26:27.102743Z",
+        "url": "https://files.pythonhosted.org/packages/9e/50/d38e4371bdc34e709f4731b1e882cb7bc50e51c1a224859d4cd381b3a79b/fastmcp-2.14.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.14.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0d678456d39484fcb7afd0defed21918e773ed59a98b39e5b633328527c88367",
+          "md5": "32826e24af141254c4389315f3200804",
+          "sha256": "e33cd622e1ebd5110af6a981804525b6cd41072e3c7d68268ed69ef3be651aca"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.14.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "32826e24af141254c4389315f3200804",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 413279,
+        "upload_time": "2025-12-31T15:26:11",
+        "upload_time_iso_8601": "2025-12-31T15:26:11.178858Z",
+        "url": "https://files.pythonhosted.org/packages/0d/67/8456d39484fcb7afd0defed21918e773ed59a98b39e5b633328527c88367/fastmcp-2.14.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d11ee3528227688c248283f6d86869b1e900563ffc223eff00f4f923d2750365",
+          "md5": "8bc17a2fdf836561073c0ef218d16e3f",
+          "sha256": "bd23d1b808b6f446444f10114dac468b11bfb9153ed78628f5619763d0cf573e"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.14.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8bc17a2fdf836561073c0ef218d16e3f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 8272966,
+        "upload_time": "2025-12-31T15:26:13",
+        "upload_time_iso_8601": "2025-12-31T15:26:13.433668Z",
+        "url": "https://files.pythonhosted.org/packages/d1/1e/e3528227688c248283f6d86869b1e900563ffc223eff00f4f923d2750365/fastmcp-2.14.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.14.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fcdcf7dd14213bf511690dccaa5094d436947c253b418c86c86211d1c76e6e44",
+          "md5": "d525f60d040d6433238a596e6dfb49cc",
+          "sha256": "103c6b4c6e97a9acc251c81d303f110fe4f2bdba31353df515d66272bf1b9414"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.14.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "d525f60d040d6433238a596e6dfb49cc",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 416220,
+        "upload_time": "2026-01-12T20:00:42",
+        "upload_time_iso_8601": "2026-01-12T20:00:42.543850Z",
+        "url": "https://files.pythonhosted.org/packages/fc/dc/f7dd14213bf511690dccaa5094d436947c253b418c86c86211d1c76e6e44/fastmcp-2.14.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "72b57c4744dc41390ed2c17fd462ef2d42f4448a1ec53dda8fe3a01ff2872313",
+          "md5": "1dd4d725a5d98fb97a1deff7dc91dd64",
+          "sha256": "abc9113d5fcf79dfb4c060a1e1c55fccb0d4bce4a2e3eab15ca352341eec8dd6"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.14.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "1dd4d725a5d98fb97a1deff7dc91dd64",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 8279206,
+        "upload_time": "2026-01-12T20:00:40",
+        "upload_time_iso_8601": "2026-01-12T20:00:40.789078Z",
+        "url": "https://files.pythonhosted.org/packages/72/b5/7c4744dc41390ed2c17fd462ef2d42f4448a1ec53dda8fe3a01ff2872313/fastmcp-2.14.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.14.4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3e41c4d407e2218fd60d84acb6cc5131d28ff876afecf325e3fd9d27b8318581",
+          "md5": "a74b640263e154f845fbcbd10c453f81",
+          "sha256": "5858cff5e4c8ea8107f9bca2609d71d6256e0fce74495912f6e51625e466c49a"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.14.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a74b640263e154f845fbcbd10c453f81",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 417788,
+        "upload_time": "2026-01-22T17:29:35",
+        "upload_time_iso_8601": "2026-01-22T17:29:35.159406Z",
+        "url": "https://files.pythonhosted.org/packages/3e/41/c4d407e2218fd60d84acb6cc5131d28ff876afecf325e3fd9d27b8318581/fastmcp-2.14.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fda9a57d5e5629ebd4ef82b495a7f8e346ce29ef80cc86b15c8c40570701b94d",
+          "md5": "c3643f4fbafc4fd90a3b7d640e06bdc8",
+          "sha256": "c01f19845c2adda0a70d59525c9193be64a6383014c8d40ce63345ac664053ff"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.14.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c3643f4fbafc4fd90a3b7d640e06bdc8",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 8302239,
+        "upload_time": "2026-01-22T17:29:37",
+        "upload_time_iso_8601": "2026-01-22T17:29:37.024595Z",
+        "url": "https://files.pythonhosted.org/packages/fd/a9/a57d5e5629ebd4ef82b495a7f8e346ce29ef80cc86b15c8c40570701b94d/fastmcp-2.14.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.2.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "691d266a86204e658d9133382e7f260d4cabb75fb18ac2e03efc953e25ebe20f",
+          "md5": "0f8c5d9e05242d0fbd6f672259364d0c",
+          "sha256": "077bdf3f37f423688f1356db0f6ed0864e001de712bce41ad4939fa8b38d7149"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "0f8c5d9e05242d0fbd6f672259364d0c",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 75793,
+        "upload_time": "2025-04-16T17:36:03",
+        "upload_time_iso_8601": "2025-04-16T17:36:03.727667Z",
+        "url": "https://files.pythonhosted.org/packages/69/1d/266a86204e658d9133382e7f260d4cabb75fb18ac2e03efc953e25ebe20f/fastmcp-2.2.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e85f0ad05fb3cca4529a994a7446da554c0ecf2a91bcf3a076261e29b5043ff1",
+          "md5": "2285154eb016bcffe0f0904c65948822",
+          "sha256": "4d9373705ebd9e3de807005ed732b8955c6eb74e4b47595752f461c1c689f231"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2285154eb016bcffe0f0904c65948822",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 918342,
+        "upload_time": "2025-04-16T17:36:05",
+        "upload_time_iso_8601": "2025-04-16T17:36:05.070225Z",
+        "url": "https://files.pythonhosted.org/packages/e8/5f/0ad05fb3cca4529a994a7446da554c0ecf2a91bcf3a076261e29b5043ff1/fastmcp-2.2.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.2.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4d9b63ab7f64440c39857b3229aa5de6bf5f0849f91a7be04160e22a96f0ca42",
+          "md5": "dc36d4abd12af56743a5c9ae2f760c49",
+          "sha256": "0e4071c290f5b00db3fd59068cc7d832981bc7458880ba4d59b8c515fef17545"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "dc36d4abd12af56743a5c9ae2f760c49",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 75906,
+        "upload_time": "2025-04-21T01:15:18",
+        "upload_time_iso_8601": "2025-04-21T01:15:18.583030Z",
+        "url": "https://files.pythonhosted.org/packages/4d/9b/63ab7f64440c39857b3229aa5de6bf5f0849f91a7be04160e22a96f0ca42/fastmcp-2.2.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a5bb5da870f11f5cfa6f2c573022e7ee0de9d9f4eef787ce95af3181b60d5f86",
+          "md5": "4af84b6e30883c676e7b2a22365f3260",
+          "sha256": "9c3e977349a324de011c3fcab7eec15de094e8189aef2745297cc5ca687632c2"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4af84b6e30883c676e7b2a22365f3260",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 925991,
+        "upload_time": "2025-04-21T01:15:20",
+        "upload_time_iso_8601": "2025-04-21T01:15:20.597977Z",
+        "url": "https://files.pythonhosted.org/packages/a5/bb/5da870f11f5cfa6f2c573022e7ee0de9d9f4eef787ce95af3181b60d5f86/fastmcp-2.2.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.2.10": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "906fcd56198cef31b4f7c51c6fa851884410242bd404c6e48cd205e1d50f9649",
+          "md5": "2a56214f7153656177d01cee23d2bd89",
+          "sha256": "87139e36c52ca2d5c1865c9cb928d8d3d868dae98b15a74f27a4564e3adc84c1"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.10-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2a56214f7153656177d01cee23d2bd89",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 87881,
+        "upload_time": "2025-05-06T17:33:15",
+        "upload_time_iso_8601": "2025-05-06T17:33:15.252954Z",
+        "url": "https://files.pythonhosted.org/packages/90/6f/cd56198cef31b4f7c51c6fa851884410242bd404c6e48cd205e1d50f9649/fastmcp-2.2.10-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f0ebb747c4cd899a6a08932af517d35d3672235e6892bbbe38022506fa6e0f4f",
+          "md5": "3894289e3b1047fbb2b9f48a44f5799c",
+          "sha256": "f62ba0fbcc96707bec2706f23eeea13c533af07f3134eb116970c28f2ebdae2c"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.10.tar.gz",
+        "has_sig": false,
+        "md5_digest": "3894289e3b1047fbb2b9f48a44f5799c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 971762,
+        "upload_time": "2025-05-06T17:33:16",
+        "upload_time_iso_8601": "2025-05-06T17:33:16.661054Z",
+        "url": "https://files.pythonhosted.org/packages/f0/eb/b747c4cd899a6a08932af517d35d3672235e6892bbbe38022506fa6e0f4f/fastmcp-2.2.10.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.2.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "11a1b998c46538f2e5f8e96a4e516545644cc696619798ac8b43af2bc03402a5",
+          "md5": "893f891c6630698419d671dd6de50e83",
+          "sha256": "7f53ad3e48de32f9c4f4d74e211da5693d47baa285b5bcc7874659422e263502"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "893f891c6630698419d671dd6de50e83",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 83180,
+        "upload_time": "2025-04-23T20:14:12",
+        "upload_time_iso_8601": "2025-04-23T20:14:12.818818Z",
+        "url": "https://files.pythonhosted.org/packages/11/a1/b998c46538f2e5f8e96a4e516545644cc696619798ac8b43af2bc03402a5/fastmcp-2.2.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "77734d47c17d05054d52f87617cbd6b8e117dc156e6566b2e09e32f9516fb6b2",
+          "md5": "09796342a4517a7a99db87d3f52c8d7e",
+          "sha256": "b0a49361844df42320c2f29470ec582bc67e98a1c06c40bc18cb9ed8838f0f02"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "09796342a4517a7a99db87d3f52c8d7e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 927108,
+        "upload_time": "2025-04-23T20:14:13",
+        "upload_time_iso_8601": "2025-04-23T20:14:13.906851Z",
+        "url": "https://files.pythonhosted.org/packages/77/73/4d47c17d05054d52f87617cbd6b8e117dc156e6566b2e09e32f9516fb6b2/fastmcp-2.2.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.2.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0438a223b68d3e93c8b5cd40497e288268b91fa4b67cdd022b4289b1eaf79f53",
+          "md5": "b6332bc0107b059a27d578af1a2fa4f7",
+          "sha256": "ee2eeef9a4d3d7a3f2d99d16f3fba0f03056e91835bc13bd8974e1a2a4ce8069"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "b6332bc0107b059a27d578af1a2fa4f7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 83224,
+        "upload_time": "2025-04-25T01:08:39",
+        "upload_time_iso_8601": "2025-04-25T01:08:39.772655Z",
+        "url": "https://files.pythonhosted.org/packages/04/38/a223b68d3e93c8b5cd40497e288268b91fa4b67cdd022b4289b1eaf79f53/fastmcp-2.2.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ecc25a156b21cb846811f694e75e39ec434e6b58cc6067a76dce4d9ad1da8aed",
+          "md5": "5ca06ebcd98c36044537064d877541bc",
+          "sha256": "15d1ff4b469a02df4c028500a7592c4e44c3259ac01b6222145fbf634edde2b8"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5ca06ebcd98c36044537064d877541bc",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 928509,
+        "upload_time": "2025-04-25T01:08:41",
+        "upload_time_iso_8601": "2025-04-25T01:08:41.265471Z",
+        "url": "https://files.pythonhosted.org/packages/ec/c2/5a156b21cb846811f694e75e39ec434e6b58cc6067a76dce4d9ad1da8aed/fastmcp-2.2.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.2.4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9dde044153a1195c4c595f3a99bbc02c97070b2a3c229dcebce50ec67a626fc2",
+          "md5": "701eb72882a94bee44a84019b597ec9a",
+          "sha256": "e0a22b9b107139a9e5227d91eaa7ab6ca5356215834e5899c91878740af2d252"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "701eb72882a94bee44a84019b597ec9a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 83335,
+        "upload_time": "2025-04-25T18:39:34",
+        "upload_time_iso_8601": "2025-04-25T18:39:34.181710Z",
+        "url": "https://files.pythonhosted.org/packages/9d/de/044153a1195c4c595f3a99bbc02c97070b2a3c229dcebce50ec67a626fc2/fastmcp-2.2.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6132bd23a3b4e0a7cfb48596301de1e9914eb0412dd7b88ab784a86ba1bdbd18",
+          "md5": "4018677424e5f33716fc0d054ec9e7f2",
+          "sha256": "b5ae49e9bdbea979527ca12d287482bdcc21e16b01b8529c291c18f99749722e"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4018677424e5f33716fc0d054ec9e7f2",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 930074,
+        "upload_time": "2025-04-25T18:39:36",
+        "upload_time_iso_8601": "2025-04-25T18:39:36.340321Z",
+        "url": "https://files.pythonhosted.org/packages/61/32/bd23a3b4e0a7cfb48596301de1e9914eb0412dd7b88ab784a86ba1bdbd18/fastmcp-2.2.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.2.5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "05f4172d7ad645a9d004a61459e1537cd3ac0a903fa3978236b23f5016f50594",
+          "md5": "634aa0cb760d9057c2e9ec416a6ba386",
+          "sha256": "52abd0bf180a32ab23e03046c4bc3c12c886127cac7ac02fd6cdda07c8958295"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "634aa0cb760d9057c2e9ec416a6ba386",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 85201,
+        "upload_time": "2025-04-26T01:19:13",
+        "upload_time_iso_8601": "2025-04-26T01:19:13.471622Z",
+        "url": "https://files.pythonhosted.org/packages/05/f4/172d7ad645a9d004a61459e1537cd3ac0a903fa3978236b23f5016f50594/fastmcp-2.2.5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4d4fa8296800ddea67d81e2a51a73d2fc8ab972fbaf716ad36a118548a4de59f",
+          "md5": "6ce53036d59daf6fc9e73da6194d2fde",
+          "sha256": "8a36ecdaae698a665403acf52faefb367fbdcbc2f5c34847710f34c6b374cbc6"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "6ce53036d59daf6fc9e73da6194d2fde",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 937263,
+        "upload_time": "2025-04-26T01:19:14",
+        "upload_time_iso_8601": "2025-04-26T01:19:14.918065Z",
+        "url": "https://files.pythonhosted.org/packages/4d/4f/a8296800ddea67d81e2a51a73d2fc8ab972fbaf716ad36a118548a4de59f/fastmcp-2.2.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.2.6": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b9592eadf92f5d3f6128a729a6d2ea4bc980e204b3d05f643f31494732fb8972",
+          "md5": "3ec03ba59f9c3feb4a3aaefbb2998589",
+          "sha256": "bb90590bcc408155912ffb96fd43d9939e5aa486dd35274f2c736f87d97f2125"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.6-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "3ec03ba59f9c3feb4a3aaefbb2998589",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 86320,
+        "upload_time": "2025-04-30T17:13:36",
+        "upload_time_iso_8601": "2025-04-30T17:13:36.557323Z",
+        "url": "https://files.pythonhosted.org/packages/b9/59/2eadf92f5d3f6128a729a6d2ea4bc980e204b3d05f643f31494732fb8972/fastmcp-2.2.6-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6bbe17c9bea3d1dd9eea293967ba8736d06b720ef9be7178a52f3402b99a2834",
+          "md5": "251e2ba2a8f7bf91c20ad1d2ca689c95",
+          "sha256": "88a371b7587658bc8911e2a0e29e9300b76fba91808c8d5283cd4796f7a88590"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.6.tar.gz",
+        "has_sig": false,
+        "md5_digest": "251e2ba2a8f7bf91c20ad1d2ca689c95",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 940585,
+        "upload_time": "2025-04-30T17:13:38",
+        "upload_time_iso_8601": "2025-04-30T17:13:38.391377Z",
+        "url": "https://files.pythonhosted.org/packages/6b/be/17c9bea3d1dd9eea293967ba8736d06b720ef9be7178a52f3402b99a2834/fastmcp-2.2.6.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.2.7": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dc65a68d6288963d89a43a880c6e6f38caf24d26eef9149200797891f56ae02a",
+          "md5": "dabdc7ce9aa04d76786eb81c81ef4f33",
+          "sha256": "0747427a4f51583e85adceeaed187a4032a6e27c705590d951b45f03ed85148b"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.7-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "dabdc7ce9aa04d76786eb81c81ef4f33",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 91678,
+        "upload_time": "2025-05-03T16:21:49",
+        "upload_time_iso_8601": "2025-05-03T16:21:49.139639Z",
+        "url": "https://files.pythonhosted.org/packages/dc/65/a68d6288963d89a43a880c6e6f38caf24d26eef9149200797891f56ae02a/fastmcp-2.2.7-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e05f89aa079c91780e83e4793720e6bc9b11ed75296aa7f9a463fa6b911628f0",
+          "md5": "2c42d3979cc5ec0a956abc0747feaf50",
+          "sha256": "09702459ff48616a4ff90b95d55d645f772929df853eed2f6236f8fb18f518f5"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.7.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2c42d3979cc5ec0a956abc0747feaf50",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 965394,
+        "upload_time": "2025-05-03T16:21:50",
+        "upload_time_iso_8601": "2025-05-03T16:21:50.827155Z",
+        "url": "https://files.pythonhosted.org/packages/e0/5f/89aa079c91780e83e4793720e6bc9b11ed75296aa7f9a463fa6b911628f0/fastmcp-2.2.7.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.2.8": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "67c9d30a7ba3f105f939b56ea241729bd2f6fa8a81116af79789819d86b9c8e9",
+          "md5": "5f974a2b5f31b2bfb4905a28a4f17628",
+          "sha256": "fca4814049c9b5e4c4eccfb8c5092d179f36e57ac5eef272fb82fc3eedc32f66"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.8-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5f974a2b5f31b2bfb4905a28a4f17628",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 86641,
+        "upload_time": "2025-05-05T16:42:44",
+        "upload_time_iso_8601": "2025-05-05T16:42:44.216670Z",
+        "url": "https://files.pythonhosted.org/packages/67/c9/d30a7ba3f105f939b56ea241729bd2f6fa8a81116af79789819d86b9c8e9/fastmcp-2.2.8-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0708580a24a9f7d804a86fff531af4cada3cedf060027388d64f7dd5ce3dad26",
+          "md5": "bdd04af3b6dfe63f04793237a8caf83e",
+          "sha256": "417c6894f4cefa271b990a0924ead152a014d5dc2e532be883d45c25e83b5f81"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.8.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bdd04af3b6dfe63f04793237a8caf83e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 963843,
+        "upload_time": "2025-05-05T16:42:45",
+        "upload_time_iso_8601": "2025-05-05T16:42:45.628126Z",
+        "url": "https://files.pythonhosted.org/packages/07/08/580a24a9f7d804a86fff531af4cada3cedf060027388d64f7dd5ce3dad26/fastmcp-2.2.8.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.2.9": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7affff6eb2d8e5a2c4efb174bb6a61ada05d2a59b392d95583276e0372a5d32d",
+          "md5": "b1321eebefe4dc4155af2584621544ff",
+          "sha256": "245b4985368a615bf8219c134da330dd5e58673b4ba989d36708f9058b59a920"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.9-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "b1321eebefe4dc4155af2584621544ff",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 86889,
+        "upload_time": "2025-05-06T14:45:35",
+        "upload_time_iso_8601": "2025-05-06T14:45:35.164273Z",
+        "url": "https://files.pythonhosted.org/packages/7a/ff/ff6eb2d8e5a2c4efb174bb6a61ada05d2a59b392d95583276e0372a5d32d/fastmcp-2.2.9-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1faa2d378da8e29d440f791d2f88315fdd19af7a8d5e17a7b751e7245d2fe0e2",
+          "md5": "284779e9df67c9d961eb866937ee155f",
+          "sha256": "20b5d2bf8edd83ba5997c55bcc3cb7e2e9d30c09a34f97e0e61fc44642e8a6c6"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.2.9.tar.gz",
+        "has_sig": false,
+        "md5_digest": "284779e9df67c9d961eb866937ee155f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 964322,
+        "upload_time": "2025-05-06T14:45:36",
+        "upload_time_iso_8601": "2025-05-06T14:45:36.626117Z",
+        "url": "https://files.pythonhosted.org/packages/1f/aa/2d378da8e29d440f791d2f88315fdd19af7a8d5e17a7b751e7245d2fe0e2/fastmcp-2.2.9.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.3.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7222494b4b037c87af874f932cc6810221738c0aaad044d58537e85d91f9a0ec",
+          "md5": "2d6ff5f6a90e2df83f5fbc2c71e4b016",
+          "sha256": "1634e88111adadd790e1d39a5f83248ef814643ac5643f9ad0a1986884e2bdad"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2d6ff5f6a90e2df83f5fbc2c71e4b016",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 90411,
+        "upload_time": "2025-05-08T20:29:16",
+        "upload_time_iso_8601": "2025-05-08T20:29:16.645701Z",
+        "url": "https://files.pythonhosted.org/packages/72/22/494b4b037c87af874f932cc6810221738c0aaad044d58537e85d91f9a0ec/fastmcp-2.3.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2fe7a37b7bf39ee9bcc01b51319b94759981be0fde84526e5c7c479d2abbbefd",
+          "md5": "2e6c48e67c6a0243499d7a5af3662825",
+          "sha256": "28c8799d1c28c2d10cca91dd2076c33ee459b69484e2e39d34de11f9a88b628f"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2e6c48e67c6a0243499d7a5af3662825",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 978654,
+        "upload_time": "2025-05-08T20:29:18",
+        "upload_time_iso_8601": "2025-05-08T20:29:18.112353Z",
+        "url": "https://files.pythonhosted.org/packages/2f/e7/a37b7bf39ee9bcc01b51319b94759981be0fde84526e5c7c479d2abbbefd/fastmcp-2.3.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.3.0rc1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2a7a246e5d7ca7d8f5f14b7f0d7ba7a191bfa689da043d3fa8507d5e1f0e6297",
+          "md5": "34541be8bfa8ef062c0a2f3df8f7c25b",
+          "sha256": "41ec5cc8b00c5ff58ed06435193dd50956bc43800e2e8b187690907bc055ca18"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.0rc1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "34541be8bfa8ef062c0a2f3df8f7c25b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 93063,
+        "upload_time": "2025-05-08T02:31:45",
+        "upload_time_iso_8601": "2025-05-08T02:31:45.978000Z",
+        "url": "https://files.pythonhosted.org/packages/2a/7a/246e5d7ca7d8f5f14b7f0d7ba7a191bfa689da043d3fa8507d5e1f0e6297/fastmcp-2.3.0rc1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ab7d04d58db3dd0dc0518dd253abcd381d0b3347a1f2c6b7ab5690baae228c4d",
+          "md5": "e842934facc83d455d940245de4d8112",
+          "sha256": "3f0fa6d6d433b094de388b6533a2b64a10562af82c2cfa20bed06aec6133698d"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.0rc1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e842934facc83d455d940245de4d8112",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 980389,
+        "upload_time": "2025-05-08T02:31:47",
+        "upload_time_iso_8601": "2025-05-08T02:31:47.349079Z",
+        "url": "https://files.pythonhosted.org/packages/ab/7d/04d58db3dd0dc0518dd253abcd381d0b3347a1f2c6b7ab5690baae228c4d/fastmcp-2.3.0rc1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.3.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6a2dad50340d6bc70e385a25754006bdd32e2f58de7d15c1265269622928a71d",
+          "md5": "6788e46472fb01a98a74b6fb76bd2464",
+          "sha256": "78562a1ec0b09581ff05faf05802582e6ddea76dac5a9be146c29e6174f35c7b"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "6788e46472fb01a98a74b6fb76bd2464",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 92227,
+        "upload_time": "2025-05-09T22:11:11",
+        "upload_time_iso_8601": "2025-05-09T22:11:11.879983Z",
+        "url": "https://files.pythonhosted.org/packages/6a/2d/ad50340d6bc70e385a25754006bdd32e2f58de7d15c1265269622928a71d/fastmcp-2.3.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a8ff4632edd70a9bab7c2bca88700eba92a7bdac6a7dc80e2cd5feda4b792cab",
+          "md5": "53ca6128c8f38d32bc489d1eaa778d9e",
+          "sha256": "82025d1c5520a931140ba75b47beed1e47f64f5c75d63e51f8ed1ad288bee6de"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "53ca6128c8f38d32bc489d1eaa778d9e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 984101,
+        "upload_time": "2025-05-09T22:11:13",
+        "upload_time_iso_8601": "2025-05-09T22:11:13.037487Z",
+        "url": "https://files.pythonhosted.org/packages/a8/ff/4632edd70a9bab7c2bca88700eba92a7bdac6a7dc80e2cd5feda4b792cab/fastmcp-2.3.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.3.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3148d6936c0379276f34df4709f599647979df62eec9cc4eba7a5f82797526c4",
+          "md5": "5ceea136a4155a47346b36261870ede3",
+          "sha256": "6c9f2315104c5b87330e1acb84af762c37374b9b915d7a86b86bd9cbcee888ce"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5ceea136a4155a47346b36261870ede3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 92716,
+        "upload_time": "2025-05-10T16:19:23",
+        "upload_time_iso_8601": "2025-05-10T16:19:23.059600Z",
+        "url": "https://files.pythonhosted.org/packages/31/48/d6936c0379276f34df4709f599647979df62eec9cc4eba7a5f82797526c4/fastmcp-2.3.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c43dacfec9525e439f024d1710e0ae273ecad571bee923a63b3936ccde82a981",
+          "md5": "f5faa8933f4a893e0fe9d8167735c7b8",
+          "sha256": "5cd0e400df42aae194319b0f40ed4c48c527b7a05dd63373fa0550f534043d46"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f5faa8933f4a893e0fe9d8167735c7b8",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 991602,
+        "upload_time": "2025-05-10T16:19:24",
+        "upload_time_iso_8601": "2025-05-10T16:19:24.413057Z",
+        "url": "https://files.pythonhosted.org/packages/c4/3d/acfec9525e439f024d1710e0ae273ecad571bee923a63b3936ccde82a981/fastmcp-2.3.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.3.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d325d49eb31b653f8f6fcd496e5abaedef9bdd5b71fac102cb9220d5df4d016e",
+          "md5": "dfdf49475d4b7998d162e7d16f5fffe1",
+          "sha256": "c4dcd809f4e058aea3fd158952ff51294f2392871de3a870183d61cde032787f"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "dfdf49475d4b7998d162e7d16f5fffe1",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 92749,
+        "upload_time": "2025-05-10T20:16:55",
+        "upload_time_iso_8601": "2025-05-10T20:16:55.227489Z",
+        "url": "https://files.pythonhosted.org/packages/d3/25/d49eb31b653f8f6fcd496e5abaedef9bdd5b71fac102cb9220d5df4d016e/fastmcp-2.3.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ef78fd9f82886ecf04826ed3f5bbfe8c5e400ba77d2cee66258f8a19e3ea01c8",
+          "md5": "8cd5de426ab2920b006daffc03f96cf8",
+          "sha256": "f13f87e180158e8176074c2a39a363bfd1ad4283a259377463c81c7735619106"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8cd5de426ab2920b006daffc03f96cf8",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 990228,
+        "upload_time": "2025-05-10T20:16:56",
+        "upload_time_iso_8601": "2025-05-10T20:16:56.724036Z",
+        "url": "https://files.pythonhosted.org/packages/ef/78/fd9f82886ecf04826ed3f5bbfe8c5e400ba77d2cee66258f8a19e3ea01c8/fastmcp-2.3.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.3.4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a0e6310d1fe6708b7338e1f48915a13d8bf00fd0599acdc7bf98da4fd20fcb66",
+          "md5": "7fe2b2431e7583bfe3caf87b5f910112",
+          "sha256": "12a45f72dd95aeaa1a6a56281fff96ca46929def3ccd9f9eb125cb97b722fbab"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7fe2b2431e7583bfe3caf87b5f910112",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 96393,
+        "upload_time": "2025-05-15T00:54:49",
+        "upload_time_iso_8601": "2025-05-15T00:54:49.714406Z",
+        "url": "https://files.pythonhosted.org/packages/a0/e6/310d1fe6708b7338e1f48915a13d8bf00fd0599acdc7bf98da4fd20fcb66/fastmcp-2.3.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "75d9cc3eb61c59fec834a9492ea21df134381b4be76c35faa18cd2b0249278b8",
+          "md5": "80cabd0620e86e80d56f01817410aa59",
+          "sha256": "f3fe004b8735b365a65ec2547eeb47db8352d5613697254854bc7c9c3c360eea"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "80cabd0620e86e80d56f01817410aa59",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 998315,
+        "upload_time": "2025-05-15T00:54:51",
+        "upload_time_iso_8601": "2025-05-15T00:54:51.399515Z",
+        "url": "https://files.pythonhosted.org/packages/75/d9/cc3eb61c59fec834a9492ea21df134381b4be76c35faa18cd2b0249278b8/fastmcp-2.3.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.3.5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d60f098a4c7891d8c6adb69fc4f421e879bed73a352b3c3562b6a0be989b29bd",
+          "md5": "703b8ec3eb42b3cafdfbff3e546d7651",
+          "sha256": "193e35a8d35a5c6a4af07e764873d8592aadc2f1e32dd8827b57869a83956088"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "703b8ec3eb42b3cafdfbff3e546d7651",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 97240,
+        "upload_time": "2025-05-20T14:53:09",
+        "upload_time_iso_8601": "2025-05-20T14:53:09.320365Z",
+        "url": "https://files.pythonhosted.org/packages/d6/0f/098a4c7891d8c6adb69fc4f421e879bed73a352b3c3562b6a0be989b29bd/fastmcp-2.3.5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "61301a70fce24dd0c9f7e7e2168adad1eb2c126e918128594a7bba06093b9263",
+          "md5": "37b64c4dcc63c562fb775cea9499c1d1",
+          "sha256": "09e11723c6588d8c13562d5eb04d42b13b91eb32f53cef77cc8c0ee121b2f907"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.3.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "37b64c4dcc63c562fb775cea9499c1d1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1004996,
+        "upload_time": "2025-05-20T14:53:10",
+        "upload_time_iso_8601": "2025-05-20T14:53:10.422079Z",
+        "url": "https://files.pythonhosted.org/packages/61/30/1a70fce24dd0c9f7e7e2168adad1eb2c126e918128594a7bba06093b9263/fastmcp-2.3.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.4.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "aba426396706c1b48ebd051da4f7d321594207364077a5c308827722536b927c",
+          "md5": "60e29dea8f13e7bfc3be73ee7d1c4b18",
+          "sha256": "fccd0768028a31eec488707fb6bbe4f8659f84ca0c206c4c32dd33947c0faae9"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.4.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "60e29dea8f13e7bfc3be73ee7d1c4b18",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 101108,
+        "upload_time": "2025-05-21T19:58:45",
+        "upload_time_iso_8601": "2025-05-21T19:58:45.738133Z",
+        "url": "https://files.pythonhosted.org/packages/ab/a4/26396706c1b48ebd051da4f7d321594207364077a5c308827722536b927c/fastmcp-2.4.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "50112ccd6219eb65692a298e764fa84a15fd756e03c811c7ea217129d6ca545f",
+          "md5": "02ede7bb7c0a8a552a0abb0ff4b0d47c",
+          "sha256": "a08d812939d16c0d4490bdbdaf17ab136f1bdaa8ddcc14a37e33335727343c05"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.4.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "02ede7bb7c0a8a552a0abb0ff4b0d47c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1020290,
+        "upload_time": "2025-05-21T19:58:46",
+        "upload_time_iso_8601": "2025-05-21T19:58:46.836717Z",
+        "url": "https://files.pythonhosted.org/packages/50/11/2ccd6219eb65692a298e764fa84a15fd756e03c811c7ea217129d6ca545f/fastmcp-2.4.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.5.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2854fc9a2b1dc6e1fd564f158e48550f9c2a5abfa0819d3aaf5e803e63fca284",
+          "md5": "041129d2f676c4854cd1e755626747e3",
+          "sha256": "9001227c3923b5a3a8138f5d78869e82c8f54f9184c52dde95bf719278861043"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.5.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "041129d2f676c4854cd1e755626747e3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 105797,
+        "upload_time": "2025-05-24T01:16:03",
+        "upload_time_iso_8601": "2025-05-24T01:16:03.620146Z",
+        "url": "https://files.pythonhosted.org/packages/28/54/fc9a2b1dc6e1fd564f158e48550f9c2a5abfa0819d3aaf5e803e63fca284/fastmcp-2.5.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "aa88fb6be09318d69792757545b39d88a2d918f1655fae442ada61559b3113ea",
+          "md5": "7e7e6fc530f2efba7bf60fabac75243a",
+          "sha256": "fcad2fd281cbcb883570116a1c68939b5e5b460f497f502336204280c8385a59"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.5.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "7e7e6fc530f2efba7bf60fabac75243a",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1035515,
+        "upload_time": "2025-05-24T01:16:05",
+        "upload_time_iso_8601": "2025-05-24T01:16:05.652406Z",
+        "url": "https://files.pythonhosted.org/packages/aa/88/fb6be09318d69792757545b39d88a2d918f1655fae442ada61559b3113ea/fastmcp-2.5.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.5.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "df4fe7ec7b63eadcd5b10978dbc472fc3c36de3fc8c91f60ad7642192ed78836",
+          "md5": "adfd0f04cccecc524fe8324fa7c8351d",
+          "sha256": "a6fe50693954a6aed89fc6e43f227dcd66e112e3d3a1d633ee22b4f435ee8aed"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.5.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "adfd0f04cccecc524fe8324fa7c8351d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 105789,
+        "upload_time": "2025-05-24T11:48:26",
+        "upload_time_iso_8601": "2025-05-24T11:48:26.371559Z",
+        "url": "https://files.pythonhosted.org/packages/df/4f/e7ec7b63eadcd5b10978dbc472fc3c36de3fc8c91f60ad7642192ed78836/fastmcp-2.5.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5dcc37ff3a96338234a697df31d2c70b50a1d0f5e20f045d9b7cbba052be36af",
+          "md5": "acc58e69839a90f5b215b11cae5a4cdd",
+          "sha256": "0d10ec65a362ae4f78bdf3b639faf35b36cc0a1c8f5461a54fac906fe821b84d"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.5.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "acc58e69839a90f5b215b11cae5a4cdd",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1035613,
+        "upload_time": "2025-05-24T11:48:27",
+        "upload_time_iso_8601": "2025-05-24T11:48:27.873280Z",
+        "url": "https://files.pythonhosted.org/packages/5d/cc/37ff3a96338234a697df31d2c70b50a1d0f5e20f045d9b7cbba052be36af/fastmcp-2.5.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.5.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3eaccaa94ff747e2136829ac2fea33b9583e086ca5431451751bcb2f773e087f",
+          "md5": "468084a9ac3c22651db22dd528aa0818",
+          "sha256": "4ea46ef35c1308b369eff7c8a10e4c9639bed046fd646449c1227ac7c3856d83"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.5.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "468084a9ac3c22651db22dd528aa0818",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 107502,
+        "upload_time": "2025-05-29T18:11:31",
+        "upload_time_iso_8601": "2025-05-29T18:11:31.577861Z",
+        "url": "https://files.pythonhosted.org/packages/3e/ac/caa94ff747e2136829ac2fea33b9583e086ca5431451751bcb2f773e087f/fastmcp-2.5.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "20ccd2c0e63d2b34681bef4e077611dae662ea722add13a83dc4ae08b6e0fd23",
+          "md5": "195fddae5f16348e414ad358962d7702",
+          "sha256": "761c92fb54f561136f631d7d98b4920152978f6f0a66a4cef689a7983fd05c8b"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.5.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "195fddae5f16348e414ad358962d7702",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1039189,
+        "upload_time": "2025-05-29T18:11:33",
+        "upload_time_iso_8601": "2025-05-29T18:11:33.088679Z",
+        "url": "https://files.pythonhosted.org/packages/20/cc/d2c0e63d2b34681bef4e077611dae662ea722add13a83dc4ae08b6e0fd23/fastmcp-2.5.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.6.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2235dadb94a8fafde637929ef876586857282ce5cc18ff1714a84dffe07cf220",
+          "md5": "a4d18f12e3ecb33002dfbcb510082982",
+          "sha256": "67124db82b7eeb7612e4a6858d051a3c03beb9c4375e4a4011798bce37c841f8"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.6.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a4d18f12e3ecb33002dfbcb510082982",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 125646,
+        "upload_time": "2025-06-02T22:21:47",
+        "upload_time_iso_8601": "2025-06-02T22:21:47.625633Z",
+        "url": "https://files.pythonhosted.org/packages/22/35/dadb94a8fafde637929ef876586857282ce5cc18ff1714a84dffe07cf220/fastmcp-2.6.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "54914810d01fc71e48d30e9cf832fb9222e939ff7d9cdcd3d93aaba00d51ba12",
+          "md5": "1d796404490e3971aa42b9ec39561524",
+          "sha256": "15ca75ab9b95c3683ada82d7403c82e8fbae74bbded44776990dd192454a8c38"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.6.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "1d796404490e3971aa42b9ec39561524",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1584748,
+        "upload_time": "2025-06-02T22:21:49",
+        "upload_time_iso_8601": "2025-06-02T22:21:49.432749Z",
+        "url": "https://files.pythonhosted.org/packages/54/91/4810d01fc71e48d30e9cf832fb9222e939ff7d9cdcd3d93aaba00d51ba12/fastmcp-2.6.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.6.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d733b452a453f62e9b7f6b3f0f263dffb2fa155bc1cab3c69902f7d32b11d9d1",
+          "md5": "1b4bef9c256430aefc18b3d23b841181",
+          "sha256": "d83a2fcffa721cbb91b29c738d39de20b54e1b1ebef5be652d6a4956ecac7ad3"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.6.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "1b4bef9c256430aefc18b3d23b841181",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 125910,
+        "upload_time": "2025-06-03T13:31:12",
+        "upload_time_iso_8601": "2025-06-03T13:31:12.315736Z",
+        "url": "https://files.pythonhosted.org/packages/d7/33/b452a453f62e9b7f6b3f0f263dffb2fa155bc1cab3c69902f7d32b11d9d1/fastmcp-2.6.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "add25bd3cf09b63e51c3e10ece07a1031cfe362cf080bb0155e6b894414301b5",
+          "md5": "134bead50a3cf24d911b9758aa99b581",
+          "sha256": "212f15a4edf8289e5c3c70796910dc612ef891f84df3257a277457bb761d1362"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.6.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "134bead50a3cf24d911b9758aa99b581",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1585121,
+        "upload_time": "2025-06-03T13:31:14",
+        "upload_time_iso_8601": "2025-06-03T13:31:14.354760Z",
+        "url": "https://files.pythonhosted.org/packages/ad/d2/5bd3cf09b63e51c3e10ece07a1031cfe362cf080bb0155e6b894414301b5/fastmcp-2.6.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.7.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "743f88fd54bbec9a3c619f94c61b84473a49c3af24582a9cc64059fdefeef98b",
+          "md5": "ba492b6113e26b425d1d1ef49998aba7",
+          "sha256": "5e0827a37bc71656edebb5f217423ce6f838d8f0e42f79c9f803349c0366fc80"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.7.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ba492b6113e26b425d1d1ef49998aba7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 127452,
+        "upload_time": "2025-06-05T19:03:50",
+        "upload_time_iso_8601": "2025-06-05T19:03:50.129351Z",
+        "url": "https://files.pythonhosted.org/packages/74/3f/88fd54bbec9a3c619f94c61b84473a49c3af24582a9cc64059fdefeef98b/fastmcp-2.7.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ada5d156051c08915c2ca7c97583dac4547f17fcbf09918727c36ca0e6cd6ea7",
+          "md5": "849d6ad687f9327e2f4638c8806beae4",
+          "sha256": "6a081400ed46e1b74fbda3f5b7f806180f4091b7bf36bd4c52d7074934767004"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.7.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "849d6ad687f9327e2f4638c8806beae4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1590831,
+        "upload_time": "2025-06-05T19:03:51",
+        "upload_time_iso_8601": "2025-06-05T19:03:51.778795Z",
+        "url": "https://files.pythonhosted.org/packages/ad/a5/d156051c08915c2ca7c97583dac4547f17fcbf09918727c36ca0e6cd6ea7/fastmcp-2.7.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.7.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "aeb8af0bb06d1388b680c64ec7b9767d3718e51e65d91e425c1296446f10a9fc",
+          "md5": "958f9d348b749bc4cb1b205215907786",
+          "sha256": "e75b4c7088338f2532d79f37a2ae654f47bfd7d3d15340233fda25bc168231b6"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.7.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "958f9d348b749bc4cb1b205215907786",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 127618,
+        "upload_time": "2025-06-08T01:50:00",
+        "upload_time_iso_8601": "2025-06-08T01:50:00.945561Z",
+        "url": "https://files.pythonhosted.org/packages/ae/b8/af0bb06d1388b680c64ec7b9767d3718e51e65d91e425c1296446f10a9fc/fastmcp-2.7.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5e698820d3c0e17ed2c7baed3e322191509285fc724c60f9cac5b28037feb5c9",
+          "md5": "9405837240eba894c5cc100253fd5843",
+          "sha256": "489b8480a3e3a96b9eb1847e77f0272b732ad397b2ddad3a25eb185cc99b6c9c"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.7.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9405837240eba894c5cc100253fd5843",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 1591616,
+        "upload_time": "2025-06-08T01:50:02",
+        "upload_time_iso_8601": "2025-06-08T01:50:02.349767Z",
+        "url": "https://files.pythonhosted.org/packages/5e/69/8820d3c0e17ed2c7baed3e322191509285fc724c60f9cac5b28037feb5c9/fastmcp-2.7.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.8.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2c05b9b0ee091578ff37da8ef0bee8fff80bed95daff61834982a6064e3e327f",
+          "md5": "b01ff774edbe3d39a5e6d8545d6faacb",
+          "sha256": "772468e98dacd55ab3381f49dd2583341c41b0e5ef0d9c7620fd43833d949c0c"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.8.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "b01ff774edbe3d39a5e6d8545d6faacb",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 137492,
+        "upload_time": "2025-06-11T01:31:22",
+        "upload_time_iso_8601": "2025-06-11T01:31:22.195625Z",
+        "url": "https://files.pythonhosted.org/packages/2c/05/b9b0ee091578ff37da8ef0bee8fff80bed95daff61834982a6064e3e327f/fastmcp-2.8.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8da3d5b2c47b25d13cca8108e077bf4a72b255b113fb525f4c22ce9ca5af9b08",
+          "md5": "df8f1647d61f797abf1df41f578490df",
+          "sha256": "8a6427ece23d0a324d4be2043598c8b89a91b2b5688873d8ae1e7aeaa7960513"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.8.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "df8f1647d61f797abf1df41f578490df",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2554559,
+        "upload_time": "2025-06-11T01:31:24",
+        "upload_time_iso_8601": "2025-06-11T01:31:24.069982Z",
+        "url": "https://files.pythonhosted.org/packages/8d/a3/d5b2c47b25d13cca8108e077bf4a72b255b113fb525f4c22ce9ca5af9b08/fastmcp-2.8.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.8.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0af9ecb902857d634e81287f205954ef1c69637f27b487b109bf3b4b62d3dbe7",
+          "md5": "522c72a6f75ccf019dfe7a40394dd1fc",
+          "sha256": "3b56a7bbab6bbac64d2a251a98b3dec5bb822ab1e4e9f20bb259add028b10d44"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.8.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "522c72a6f75ccf019dfe7a40394dd1fc",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 138191,
+        "upload_time": "2025-06-15T01:24:35",
+        "upload_time_iso_8601": "2025-06-15T01:24:35.964397Z",
+        "url": "https://files.pythonhosted.org/packages/0a/f9/ecb902857d634e81287f205954ef1c69637f27b487b109bf3b4b62d3dbe7/fastmcp-2.8.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0476d9b352dd632dbac9eea3255df7bba6d83b2def769b388ec332368d7b4638",
+          "md5": "87b3ba026b7f10fa9e6c45b175dadae4",
+          "sha256": "c89d8ce8bf53a166eda444cfdcb2c638170e62445487229fbaf340aed31beeaf"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.8.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "87b3ba026b7f10fa9e6c45b175dadae4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2559427,
+        "upload_time": "2025-06-15T01:24:37",
+        "upload_time_iso_8601": "2025-06-15T01:24:37.535618Z",
+        "url": "https://files.pythonhosted.org/packages/04/76/d9b352dd632dbac9eea3255df7bba6d83b2def769b388ec332368d7b4638/fastmcp-2.8.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.9.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dc431095c0cbcf9f3b25d048faaf361b81b4dec403c3f75990dc93eeb6f3c3af",
+          "md5": "480f761b8f60a144e339803ac45c71b8",
+          "sha256": "e5b00e5fcea2d216d96f7cfb8b67836bd58fc3cd57147e0d89043d905a84334f"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.9.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "480f761b8f60a144e339803ac45c71b8",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 159401,
+        "upload_time": "2025-06-23T14:35:58",
+        "upload_time_iso_8601": "2025-06-23T14:35:58.937327Z",
+        "url": "https://files.pythonhosted.org/packages/dc/43/1095c0cbcf9f3b25d048faaf361b81b4dec403c3f75990dc93eeb6f3c3af/fastmcp-2.9.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2d4331af92e392c8e28269599fe3228419fe4bbb829b04a61fac17ab8dd2a7a9",
+          "md5": "fb072a04f74363220cd6c391eaf1df34",
+          "sha256": "3f1dc97c409193729b4aa8ad240ad396fe767a982c55c3a3e788f422b1278dd6"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.9.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "fb072a04f74363220cd6c391eaf1df34",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2650412,
+        "upload_time": "2025-06-23T14:36:00",
+        "upload_time_iso_8601": "2025-06-23T14:36:00.371497Z",
+        "url": "https://files.pythonhosted.org/packages/2d/43/31af92e392c8e28269599fe3228419fe4bbb829b04a61fac17ab8dd2a7a9/fastmcp-2.9.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.9.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b30dace5fab5421e6534e3925fc4fa8d4bd1fe6eb4400030cf135d4e9ff906ec",
+          "md5": "e21529f90f366787b2255e39b1747d63",
+          "sha256": "bd60ba054d56885c5d5eb9cf524c62a5114ad2c6bcaf6da868479cb8b55a4a06"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.9.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e21529f90f366787b2255e39b1747d63",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 162691,
+        "upload_time": "2025-06-26T13:39:26",
+        "upload_time_iso_8601": "2025-06-26T13:39:26.128138Z",
+        "url": "https://files.pythonhosted.org/packages/b3/0d/ace5fab5421e6534e3925fc4fa8d4bd1fe6eb4400030cf135d4e9ff906ec/fastmcp-2.9.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "963938ceb15c76f13cd109eab6b7f318b3663827d8a2b21b069af1b17c7e6995",
+          "md5": "c1ae87ed65646119b045f5dc24d04935",
+          "sha256": "1cc74bb2a61f4cd38592e51b2105343243021740543a1a87edcfa0934fb854f8"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.9.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c1ae87ed65646119b045f5dc24d04935",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2663831,
+        "upload_time": "2025-06-26T13:39:27",
+        "upload_time_iso_8601": "2025-06-26T13:39:27.372923Z",
+        "url": "https://files.pythonhosted.org/packages/96/39/38ceb15c76f13cd109eab6b7f318b3663827d8a2b21b069af1b17c7e6995/fastmcp-2.9.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.9.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8960223e1975e65ed7c6cead0fda947d4cdb4f7ee5ec60a7c8ea3b3787868f67",
+          "md5": "9a71f5e2a500f25c98bb7db1b1d14741",
+          "sha256": "3626a3d9b1fa6325756273b6d1fe1ec610baafec957ac22f7aa1dc17c1db8b93"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.9.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "9a71f5e2a500f25c98bb7db1b1d14741",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 162690,
+        "upload_time": "2025-06-26T15:03:13",
+        "upload_time_iso_8601": "2025-06-26T15:03:13.553262Z",
+        "url": "https://files.pythonhosted.org/packages/89/60/223e1975e65ed7c6cead0fda947d4cdb4f7ee5ec60a7c8ea3b3787868f67/fastmcp-2.9.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6817d2b5981180717e6e689d0aaa6215d1ddcec6cb065c6f6b45c471ab7d2edb",
+          "md5": "f87b3d8c729dd8ae05fe1d9298abb13f",
+          "sha256": "c000eb0a2d50afcc7d26be4c867abf5c995ca0e0119f17417d50f61e2e17347c"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-2.9.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f87b3d8c729dd8ae05fe1d9298abb13f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 2663824,
+        "upload_time": "2025-06-26T15:03:15",
+        "upload_time_iso_8601": "2025-06-26T15:03:15.395528Z",
+        "url": "https://files.pythonhosted.org/packages/68/17/d2b5981180717e6e689d0aaa6215d1ddcec6cb065c6f6b45c471ab7d2edb/fastmcp-2.9.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "3.0.0b1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f2239836025d2b8070cae295c805f51d9fd9da9228584c85290d8fef44d1cb34",
+          "md5": "9238df77d844e11db4fd117f6f7f64e0",
+          "sha256": "e64dd54e94411ccc6ff63459eace8e55c79d15647917bc0c178414a642089750"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-3.0.0b1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "9238df77d844e11db4fd117f6f7f64e0",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 533457,
+        "upload_time": "2026-01-20T05:00:52",
+        "upload_time_iso_8601": "2026-01-20T05:00:52.153674Z",
+        "url": "https://files.pythonhosted.org/packages/f2/23/9836025d2b8070cae295c805f51d9fd9da9228584c85290d8fef44d1cb34/fastmcp-3.0.0b1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b6b48b44030f3697ed1d106c79eedcf640451b8060cb52cc4f079d8ad3a2ef76",
+          "md5": "4000c3189c386d94e40e5956ebf818bd",
+          "sha256": "adeda5562a23cde8b3607b73ebccfe27efa3c2955eb2c03b0cdd551128b7eaaf"
+        },
+        "downloads": -1,
+        "filename": "fastmcp-3.0.0b1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4000c3189c386d94e40e5956ebf818bd",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 11817449,
+        "upload_time": "2026-01-20T05:00:49",
+        "upload_time_iso_8601": "2026-01-20T05:00:49.872177Z",
+        "url": "https://files.pythonhosted.org/packages/b6/b4/8b44030f3697ed1d106c79eedcf640451b8060cb52cc4f079d8ad3a2ef76/fastmcp-3.0.0b1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "3e41c4d407e2218fd60d84acb6cc5131d28ff876afecf325e3fd9d27b8318581",
+        "md5": "a74b640263e154f845fbcbd10c453f81",
+        "sha256": "5858cff5e4c8ea8107f9bca2609d71d6256e0fce74495912f6e51625e466c49a"
+      },
+      "downloads": -1,
+      "filename": "fastmcp-2.14.4-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "a74b640263e154f845fbcbd10c453f81",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.10",
+      "size": 417788,
+      "upload_time": "2026-01-22T17:29:35",
+      "upload_time_iso_8601": "2026-01-22T17:29:35.159406Z",
+      "url": "https://files.pythonhosted.org/packages/3e/41/c4d407e2218fd60d84acb6cc5131d28ff876afecf325e3fd9d27b8318581/fastmcp-2.14.4-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "fda9a57d5e5629ebd4ef82b495a7f8e346ce29ef80cc86b15c8c40570701b94d",
+        "md5": "c3643f4fbafc4fd90a3b7d640e06bdc8",
+        "sha256": "c01f19845c2adda0a70d59525c9193be64a6383014c8d40ce63345ac664053ff"
+      },
+      "downloads": -1,
+      "filename": "fastmcp-2.14.4.tar.gz",
+      "has_sig": false,
+      "md5_digest": "c3643f4fbafc4fd90a3b7d640e06bdc8",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.10",
+      "size": 8302239,
+      "upload_time": "2026-01-22T17:29:37",
+      "upload_time_iso_8601": "2026-01-22T17:29:37.024595Z",
+      "url": "https://files.pythonhosted.org/packages/fd/a9/a57d5e5629ebd4ef82b495a7f8e346ce29ef80cc86b15c8c40570701b94d/fastmcp-2.14.4.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

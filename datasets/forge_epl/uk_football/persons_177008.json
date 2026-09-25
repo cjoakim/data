@@ -1,0 +1,35 @@
+{
+    "id": 177008,
+    "name": "Ali Al-Hamadi",
+    "firstName": "Ali",
+    "lastName": "Al Hamadi",
+    "dateOfBirth": "2002-03-01",
+    "nationality": "Iraq",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 9,
+    "lastUpdated": "2026-06-01T11:16:31Z",
+    "currentTeam": {
+        "area": {
+            "id": 2111,
+            "name": "Iraq",
+            "code": "IRQ",
+            "flag": "https://crests.football-data.org/iraq.svg"
+        },
+        "id": 8062,
+        "name": "Iraq",
+        "shortName": "Iraq",
+        "tla": "IRQ",
+        "crest": "https://crests.football-data.org/iraq.svg",
+        "address": "Al-Shaab Stadium, P.O. Box 484 Ba\u0121d\u0101d null",
+        "website": "http://www.ifa.iq",
+        "founded": 1948,
+        "clubColors": "White / Green",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

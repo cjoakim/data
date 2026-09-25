@@ -1,0 +1,43 @@
+{
+    "id": 126870,
+    "name": "Bart Verbruggen",
+    "firstName": "Bart",
+    "lastName": "Verbruggen",
+    "dateOfBirth": "2002-08-18",
+    "nationality": "Netherlands",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 1,
+    "lastUpdated": "2025-04-01T09:43:10Z",
+    "currentTeam": {
+        "area": {
+            "id": 2163,
+            "name": "Netherlands",
+            "code": "NLD",
+            "flag": "https://crests.football-data.org/8601.svg"
+        },
+        "id": 8601,
+        "name": "Netherlands",
+        "shortName": "Netherlands",
+        "tla": "NED",
+        "crest": "https://crests.football-data.org/8601.svg",
+        "address": "Woudenbergseweg 56-58 / Postbus 515 Zeist 3700 AM",
+        "website": "http://www.knvb.nl",
+        "founded": 1889,
+        "clubColors": "Orange / White / Blue",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

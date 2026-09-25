@@ -1,0 +1,35 @@
+{
+    "id": 1795,
+    "name": "Alisson Becker",
+    "firstName": "",
+    "lastName": "Alisson Becker",
+    "dateOfBirth": "1992-10-02",
+    "nationality": "Brazil",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 1,
+    "lastUpdated": "2026-05-22T09:41:02Z",
+    "currentTeam": {
+        "area": {
+            "id": 2032,
+            "name": "Brazil",
+            "code": "BRA",
+            "flag": "https://crests.football-data.org/764.svg"
+        },
+        "id": 764,
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "tla": "BRA",
+        "crest": "https://crests.football-data.org/764.svg",
+        "address": "Rua Victor Civita 66 Bloco 1, Edifico 5 Rio de Janeiro, RJ 22775-044",
+        "website": "http://www.cbf.com.br/",
+        "founded": 1914,
+        "clubColors": "Yellow / Green / Blue",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

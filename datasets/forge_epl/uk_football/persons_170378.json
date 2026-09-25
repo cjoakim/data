@@ -1,0 +1,43 @@
+{
+    "id": 170378,
+    "name": "Destiny Udogie",
+    "firstName": "Destiny",
+    "lastName": "Udogie",
+    "dateOfBirth": "2002-11-28",
+    "nationality": "Italy",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 13,
+    "lastUpdated": "2026-07-15T09:25:42Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png",
+        "address": "Bill Nicholson Way, 748 High Road London N17 0AP",
+        "website": "http://www.tottenhamhotspur.com",
+        "founded": 1882,
+        "clubColors": "Navy Blue / White",
+        "venue": "Tottenham Hotspur Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2022-08",
+            "until": "2030-06"
+        }
+    }
+}

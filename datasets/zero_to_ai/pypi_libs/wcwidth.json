@@ -1,0 +1,1588 @@
+{
+  "info": {
+    "author": null,
+    "author_email": "Jeff Quast <contact@jeffquast.com>",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "Natural Language :: English",
+      "Operating System :: POSIX",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Topic :: Software Development :: Internationalization",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Software Development :: Localization",
+      "Topic :: Terminals",
+      "Typing :: Typed"
+    ],
+    "description": "|pypi_downloads| |codecov| |license|\n\n============\nIntroduction\n============\n\nThis library is mainly for CLI/TUI programs that carefully produce output for Terminals.\n\nInstallation\n------------\n\nThe stable version of this package is maintained on pypi, install or upgrade, using pip::\n\n    pip install --upgrade wcwidth\n\nProblem\n-------\n\nAll Python string-formatting functions, `textwrap.wrap()`_, `str.ljust()`_, `str.rjust()`_, and\n`str.center()`_ **incorrectly** measure the displayed width of a string as equal to the number of\ntheir codepoints.\n\nSome examples of **incorrect results**:\n\n.. code-block:: python\n\n    >>> # result consumes 16 total cells, 11 expected,\n    >>> 'コンニチハ'.rjust(11, 'X')\n    'XXXXXXコンニチハ'\n\n    >>> # result consumes 5 total cells, 6 expected,\n    >>> 'café'.center(6, 'X')\n    'caféX'\n\nSolution\n--------\n\nThe lowest-level functions in this library are the POSIX.1-2001 and POSIX.1-2008 `wcwidth(3)`_ and\n`wcswidth(3)`_, which this library precisely copies by interface as `wcwidth()`_ and `wcswidth()`_.\nThese functions return -1 when C0 and C1 control codes are present.\n\nAn easy-to-use `width()`_ function is provided as a wrapper of `wcswidth()`_ that is also capable of\nmeasuring most terminal control codes and sequences, like colors, bold, tabstops, and horizontal\ncursor movement.\n\nText-justification is solved by the grapheme and sequence-aware functions `ljust()`_,\n`rjust()`_, `center()`_, and `wrap()`_, serving as drop-in replacements to python standard functions\nof the same names.\n\nThe iterator functions `iter_graphemes()`_ and `iter_sequences()`_ allow for careful navigation of\ngrapheme and terminal control sequence boundaries.  `iter_graphemes_reverse()`_, and\n`grapheme_boundary_before()`_ are useful for editing and searching of complex unicode.  The\n`clip()`_ function extracts substrings by display column positions, and `strip_sequences()`_ removes\nterminal escape sequences from text altogether.\n\nDiscrepancies\n-------------\n\nYou may find that support *varies* for complex unicode sequences or codepoints.\n\nA companion utility, `jquast/ucs-detect`_ was authored to gather and publish the results of Wide\ncharacter, language/grapheme clustering and complex script support, emojis and zero-width joiner,\nvariations, and regional indicator (flags) as a `General Tabulated Summary`_ by terminal emulator\nsoftware and version.\n\n========\nOverview\n========\n\nwcwidth()\n---------\n\nUse function ``wcwidth()`` to determine the length of a *single unicode\ncodepoint*.\n\nA brief overview, through examples, for all of the public API functions.\n\nFull API Documentation at https://wcwidth.readthedocs.io/en/latest/api.html\n\nwcwidth()\n---------\n\nMeasures width of a single codepoint,\n\n.. code-block:: python\n\n    >>> # '♀' narrow emoji\n    >>> wcwidth.wcwidth('\\u2640')\n    1\n\nUse function `wcwidth()`_ to determine the length of a *single unicode character*.\n\nSee specification_ of character measurements. Note that ``-1`` is returned for control codes.\n\nwcswidth()\n----------\n\nMeasures width of a string, returns -1 for control codes.\n\n.. code-block:: python\n\n    >>> # '♀️' emoji w/vs-16\n    >>> wcwidth.wcswidth('\\u2640\\ufe0f')\n    2\n\nUse function `wcswidth()`_ to determine the length of many, a *string of unicode characters*.\n\nSee specification_ of character measurements. Note that ``-1`` is returned if control codes occurs\nanywhere in the string.\n\nwidth()\n-------\n\nUse function `width()`_ to measure a string with improved handling of ``control_codes``.\n\n.. code-block:: python\n\n    >>> # same support as wcswidth(), eg. regional indicator flag:\n    >>> wcwidth.width('\\U0001F1FF\\U0001F1FC')\n    2\n    >>> # but also supports SGR colored text, 'WARN', followed by SGR reset\n    >>> wcwidth.width('\\x1b[38;2;255;150;100mWARN\\x1b[0m')\n    4\n    >>> # tabs,\n    >>> wcwidth.width('\\t', tabsize=4)\n    4\n    >>> # or, tab and all other control characters can be ignored\n    >>> wcwidth.width('\\t', control_codes='ignore')\n    0\n    >>> # \"vertical\" control characters are ignored\n    >>> wcwidth.width('\\n')\n    0\n    >>> # as well as sequences with \"indeterminate\" effects like Home + Clear\n    >>> wcwidth.width('\\x1b[H\\x1b[2J')\n    0\n    >>> # or, raise ValueError for \"indeterminate\" effects using control_codes='strict'\n    >>> wcwidth.width('\\n', control_codes='strict')\n    Traceback (most recent call last):\n    ...\n    ValueError: Vertical movement character 0xa at position 0\n\nUse ``control_codes='ignore'`` when the input is known not to contain any control characters or\nterminal sequences for slightly improved performance. Note that TAB (``'\\t'``) is a control\ncharacter and is also ignored, you may want to use `str.expandtabs()`_, first.\n\niter_sequences()\n----------------\n\nIterates through text, segmented by terminal sequence,\n\n.. code-block:: python\n\n    >>> list(wcwidth.iter_sequences('hello'))\n    [('hello', False)]\n    >>> list(wcwidth.iter_sequences('\\x1b[31mred\\x1b[0m'))\n    [('\\x1b[31m', True), ('red', False), ('\\x1b[0m', True)]\n\nUse `iter_sequences()`_ to split text into segments of plain text and escape sequences. Each tuple\ncontains the segment string and a boolean indicating whether it is an escape sequence (``True``) or\ntext (``False``).\n\niter_graphemes()\n----------------\n\nUse `iter_graphemes()`_ to iterate over *grapheme clusters* of a string.\n\n.. code-block:: python\n\n    >>> from wcwidth import iter_graphemes\n    >>> # ok + Regional Indicator 'Z', 'W' (Zimbabwe)\n    >>> list(wcwidth.iter_graphemes('ok\\U0001F1FF\\U0001F1FC'))\n    ['o', 'k', '🇿🇼']\n\n    >>> # cafe + combining acute accent\n    >>> list(wcwidth.iter_graphemes('cafe\\u0301'))\n    ['c', 'a', 'f', 'é']\n\n    >>> # ok + Emoji Man + ZWJ + Woman + ZWJ + Girl\n    >>> list(wcwidth.iter_graphemes('ok\\U0001F468\\u200D\\U0001F469\\u200D\\U0001F467'))\n    ['o', 'k', '👨\\u200d👩\\u200d👧']\n\nA grapheme cluster is what a user perceives as a single character, even if it is composed of\nmultiple Unicode codepoints. This function implements `Unicode Standard Annex #29`_ grapheme cluster\nboundary rules.\n\nljust()\n-------\n\nUse `ljust()`_ as replacement of `str.ljust()`_:\n\n.. code-block:: python\n\n    >>> 'コンニチハ'.ljust(11, '*')             # don't do this\n    'コンニチハ******'\n    >>> wcwidth.ljust('コンニチハ', 11, '*')    # do this!\n    'コンニチハ*'\n\nrjust()\n-------\n\nUse `rjust()`_ as replacement of `str.rjust()`_:\n\n.. code-block:: python\n\n    >>> 'コンニチハ'.rjust(11, '*')             # don't do this\n    '******コンニチハ'\n    >>> wcwidth.rjust('コンニチハ', 11, '*')    # do this!\n    '*コンニチハ'\n\ncenter()\n--------\n\nUse `center()`_ as replacement of `str.center()`_:\n\n.. code-block:: python\n\n    >>> 'cafe\\u0301'.center(6, '*')             # don't do this\n    'café*'\n    >>> wcwidth.center('cafe\\u0301', 6, '*')\n    '*café*'                                    # do this!\n\nwrap()\n------\n\nUse function `wrap()`_ to wrap text containing terminal sequences, Unicode grapheme\nclusters, and wide characters to a given display width.\n\n.. code-block:: python\n\n    >>> from wcwidth import wrap\n    >>> # Basic wrapping\n    >>> wrap('hello world', 5)\n    ['hello', 'world']\n\n    >>> # Wrapping CJK text (each character is 2 cells wide)\n    >>> wrap('コンニチハ', 4)\n    ['コン', 'ニチ', 'ハ']\n\n    >>> # Text with ANSI color sequences - SGR codes are propagated by default\n    >>> # Each line ends with reset, next line starts with restored style\n    >>> wrap('\\x1b[1;31mhello world\\x1b[0m', 5)\n    ['\\x1b[1;31mhello\\x1b[0m', '\\x1b[1;31mworld\\x1b[0m']\n\nclip()\n------\n\nUse `clip()`_ to extract a substring by column positions, preserving terminal sequences.\n\n.. code-block:: python\n\n    >>> from wcwidth import clip\n    >>> # Wide characters split to Narrow boundaries using fillchar=' '\n    >>> clip('中文字', 0, 3)\n    '中 '\n    >>> clip('中文字', 1, 5, fillchar='.')\n    '.文.'\n\n    >>> # SGR codes are propagated by default - result begins with active style\n    >>> # and ends with reset if styles are active\n    >>> clip('\\x1b[1;31mHello world\\x1b[0m', 6, 11)\n    '\\x1b[1;31mworld\\x1b[0m'\n\n    >>> # Disable SGR propagation to preserve original sequences as-is\n    >>> clip('\\x1b[31m中文\\x1b[0m', 0, 3, propagate_sgr=False)\n    '\\x1b[31m中 \\x1b[0m'\n\nstrip_sequences()\n-----------------\n\nUse `strip_sequences()`_ to remove all terminal escape sequences from text.\n\n.. code-block:: python\n\n    >>> from wcwidth import strip_sequences\n    >>> strip_sequences('\\x1b[31mred\\x1b[0m')\n    'red'\n\n.. _ambiguous_width:\n\nambiguous_width\n---------------\n\nSome Unicode characters have \"East Asian Ambiguous\" (A) width. These characters display as 1 cell by\ndefault, matching Western terminal contexts, but many CJK (Chinese, Japanese, Korean) environments\nmay have a preference for 2 cells.  This is often found as boolean option, \"Ambiguous width as wide\"\nin Terminal Emulator software preferences.\n\nBy default, wcwidth treats ambiguous characters as narrow (width 1). For CJK environments where your\nterminal is configured to display ambiguous characters as double-width, pass ``ambiguous_width=2``:\n\n.. code-block:: python\n\n    >>> # CIRCLED DIGIT ONE - ambiguous width\n    >>> wcwidth.width('\\u2460')\n    1\n    >>> wcwidth.width('\\u2460', ambiguous_width=2)\n    2\n\nThe ``ambiguous_width`` parameter is available on all width-measuring functions: `wcwidth()`_,\n`wcswidth()`_, `width()`_, `ljust()`_, `rjust()`_, `center()`_, `wrap()`_, and `clip()`_.\n\n**Terminal Detection**\n\nThe most reliable method to detect whether a terminal profile is set for \"Ambiguous width as wide\"\nmode is to display an ambiguous character surrounded by a pair of Cursor Position Report (CPR)\nqueries with a terminal in cooked or raw mode, and to parse the responses for their ``(y, x)``\nlocations and measure the difference ``x``.\n\nThis code should also be careful check whether it is attached to a terminal and be careful of\npossible timeout, slow network, or non-response when working with \"dumb terminals\" like a CI build.\n\n`jquast/blessed`_ library provides such a helping `Terminal.detect_ambiguous_width()`_ method:\n\n.. code-block:: python\n\n    >>> import blessed, functools\n    >>> # Detect terminal ambiguous width as wide (2) or narrow (1)\n    >>> ambiguous_width = blessed.Terminal().detect_ambiguous_width()\n    >>> # Define a new 'width' function with this argument\n    >>> awidth = functools.partial(wcwidth.width, ambiguous_width=ambiguous_width)\n    >>> # result depends on attached terminal mode\n    >>> awidth('\\u2460')\n    1\n\n==========\nDeveloping\n==========\n\nInstall wcwidth in editable mode::\n\n   pip install -e .\n\nExecute all code generation, autoformatters, linters and unit tests using tox::\n\n   tox\n\nOr execute individual tasks, see ``tox -lv`` for all available targets::\n\n   tox -e pylint,py36,py314\n\nTo run tests with detailed coverage reporting showing missing lines::\n\n   tox -epy314 -- --cov-report=term-missing\n\nUpdating Unicode Version\n------------------------\n\nRegenerate python code tables from latest Unicode Specification data files::\n\n   tox -e update\n\nThe script is located at ``bin/update-tables.py``, requires Python 3.9 or\nlater. It is recommended but not necessary to run this script with the newest\nPython, because the newest Python has the latest ``unicodedata`` for generating\ncomments.\n\nBuilding Documentation\n----------------------\n\nThis project is using `sphinx`_ 4.5 to build documentation::\n\n   tox -e sphinx\n\nThe output will be in ``docs/_build/html/``.\n\nUpdating Requirements\n---------------------\n\nThis project is using `pip-tools`_ to manage requirements.\n\nTo upgrade requirements for updating unicode version, run::\n\n   tox -e update_requirements_update\n\nTo upgrade requirements for testing, run::\n\n   tox -e update_requirements38,update_requirements39\n\nTo upgrade requirements for building documentation, run::\n\n   tox -e update_requirements_docs\n\nUtilities\n---------\n\nSupplementary tools for browsing and testing terminals for wide unicode\ncharacters are found in the `bin/`_ of this project's source code.  Just ensure\nto first ``pip install -r requirements-develop.txt`` from this projects main\nfolder. For example, an interactive browser for testing::\n\n  python ./bin/wcwidth-browser.py\n\n====\nUses\n====\n\nThis library is used in:\n\n- `jquast/blessed`_: a thin, practical wrapper around terminal capabilities in\n  Python.\n\n- `prompt-toolkit/python-prompt-toolkit`_: a Library for building powerful\n  interactive command lines in Python.\n\n- `dbcli/pgcli`_: Postgres CLI with autocompletion and syntax highlighting.\n\n- `thomasballinger/curtsies`_: a Curses-like terminal wrapper with a display\n  based on compositing 2d arrays of text.\n\n- `selectel/pyte`_: Simple VTXXX-compatible linux terminal emulator.\n\n- `astanin/python-tabulate`_: Pretty-print tabular data in Python, a library\n  and a command-line utility.\n\n- `rspeer/python-ftfy`_: Fixes mojibake and other glitches in Unicode\n  text.\n\n- `nbedos/termtosvg`_: Terminal recorder that renders sessions as SVG\n  animations.\n\n- `peterbrittain/asciimatics`_: Package to help people create full-screen text\n  UIs.\n\n- `python-cmd2/cmd2`_: A tool for building interactive command line apps\n\n- `stratis-storage/stratis-cli`_: CLI for the Stratis project\n\n- `ihabunek/toot`_: A Mastodon CLI/TUI client\n\n- `saulpw/visidata`_: Terminal spreadsheet multitool for discovering and\n  arranging data\n\n- `jquast/ucs-detect`_: Utility for unicode support detection.\n\n===============\nOther Languages\n===============\n\nThere are similar implementations of the `wcwidth()`_ and `wcswidth()`_ functions in other\nlanguages.\n\n- `timoxley/wcwidth`_: JavaScript\n- `janlelis/unicode-display_width`_: Ruby\n- `alecrabbit/php-wcwidth`_: PHP\n- `Text::CharWidth`_: Perl\n- `bluebear94/Terminal-WCWidth`_: Perl 6\n- `mattn/go-runewidth`_: Go\n- `grepsuzette/wcwidth`_: Haxe\n- `aperezdc/lua-wcwidth`_: Lua\n- `joachimschmidt557/zig-wcwidth`_: Zig\n- `fumiyas/wcwidth-cjk`_: `LD_PRELOAD` override\n- `joshuarubin/wcwidth9`_: Unicode version 9 in C\n- `spectreconsole/wcwidth`_: C#\n\n=======\nHistory\n=======\n\n0.5.3 *2026-01-30*\n  * **Bugfix** Brahmic using Virama conjunct formation. `Issue #155`_, `PR #204`_.\n\n0.5.2 *2026-01-29*\n  * **Bugfix** Measurement of category ``Mc`` (`Spacing Combining Mark`_), approx.  443, has a more\n    nuanced specification_, and may be categorized as either zero or wide. `PR #200`_.\n  * **Bugfix** Measurement of \"standalone\" modifiers and regional indicators, `PR #202`_.\n  * **Updated** Data files used in some automatic tests are no longer distributed. `PR #199`_\n\n0.5.1 *2026-01-27*\n  * **Updated** generated zero and wide code tables to length of 1 to complete the previously\n    announced removal of historical wide and zero tables. `PR #196`_.\n\n0.5.0 *2026-01-26*\n  * **Drop Support** of many historical versions of wide and zero unicode tables.  Only the latest\n    Unicode version (17.0.0) is now shipped. The related ``unicode_version='auto'`` keyword of the\n    `wcwidth()`_ family of functions are ignored. `list_versions()`_ always returns a tuple of only\n    a single element of the only unicode version supported. `PR #195`_.\n  * **Performance** improvement of most common call without version or ambiguous_width specified by\n    20%. `PR #195`_.\n  * **New** Function `propagate_sgr()`_ for applying SGR state propagation to a list of lines.\n    `PR #194`_.\n  * **Improved** `wrap()`_ and `clip()`_ with ``propagate_sgr=True``. `PR #194`_.\n  * **Bugfix** `clip()`_ zero-width characters at clipping boundaries. `PR #194`_.\n  * **Bugfix** OSC Hyperlinks when broken mid-text by `wrap()`_. `PR #193`_.\n\n0.4.0 *2026-01-25*\n  * **New** Functions `iter_graphemes_reverse()`_, `grapheme_boundary_before()`_. `PR #192`_.\n  * **Bugfix** OSC Hyperlinks should not be broken by `wrap()`_. `PR #191`_.\n\n0.3.5 *2026-01-24*\n  * **Bugfix** packaging of 0.3.4 contains a failing test.\n\n0.3.4 *2026-01-24*\n  * **Bugfix** `center()`_ should match the eccentric `parity padding`_.\n    of `str.center()`_. `PR #188`_.\n\n0.3.3 *2026-01-24*\n  * **Performance** improvement in `width()`_. `PR #185`_.\n  * **Bugfix** missing ``py.typed``, ``Typing :: Typed``. `PR #184`_.\n\n0.3.2 *2026-01-23*\n  * **Updated** type hinting for full ``mympy --strict`` compliance. `PR #183`_.\n\n0.3.1 *2026-01-22*\n  * **Performance** improvement up to 30% in `width()_`. `PR #181`_.\n\n0.3.0 *2026-01-21*\n  * **Drop Support** for Python 3.6 and 3.7. `PR #156`_.\n  * **New** Function `iter_graphemes()`_. `PR #165`_.\n  * **New** Functions `width()`_ and `iter_sequences()`_. `PR #166`_.\n  * **New** Functions `ljust()`_, `rjust()`_, `center()`_. `PR #168`_.\n  * **New** Function `wrap()`_. `PR #169`_.\n  * **Performance** improvement in `wcswidth()`_. `PR #171`_.\n  * **New** argument ``ambiguous_width`` to all functions. `PR #172`_.\n  * **New** Functions `clip()`_ and `strip_sequences()`_. `PR #173`_.\n  * **Bugfix** Characters with ``Default_Ignorable_Code_Point`` property now\n    return width 0. `PR #174`_.\n  * **Bugfix** Characters with ``Prepended_Concatenation_Mark`` property now\n    return width 1. `PR #175`_.\n\n0.2.14 *2025-09-22*\n  * **Drop Support** for Python 2.7 and 3.5. `PR #117`_.\n  * **Update** tables to include Unicode Specifications 16.0.0 and 17.0.0.\n    `PR #146`_.\n  * **Bugfix** U+00AD SOFT HYPHEN should measure as 1, versions 0.2.9 through\n    0.2.13 measured as 0. `PR #149`_.\n\n0.2.13 *2024-01-06*\n  * **Bugfix** zero-width support for Hangul Jamo (Korean)\n\n0.2.12 *2023-11-21*\n  * **Bugfix** Re-release to remove `.pyi` files misplaced in wheel `Issue #101`_.\n\n0.2.11 *2023-11-20*\n  * **Updated** Include tests files in the source distribution (`PR #98`_, `PR #100`_).\n\n0.2.10 *2023-11-13*\n  * **Bugfix** accounting of some kinds of emoji sequences using U+FE0F\n    Variation Selector 16 (`PR #97`_).\n  * **Updated** specification_.\n\n0.2.9 *2023-10-30*\n  * **Bugfix** zero-width characters used in Emoji ZWJ sequences, Balinese,\n    Jamo, Devanagari, Tamil, Kannada and others (`PR #91`_).\n  * **Updated** to include specification_ of character measurements.\n\n0.2.8 *2023-09-30*\n  * Include requirements files in the source distribution (`PR #82`_).\n\n0.2.7 *2023-09-28*\n  * **Updated** tables to include Unicode Specification 15.1.0.\n  * Include ``bin``, ``docs``, and ``tox.ini`` in the source distribution\n\n0.2.6 *2023-01-14*\n  * **Updated** tables to include Unicode Specification 14.0.0 and 15.0.0.\n  * **Changed** developer tools to use pip-compile, and to use jinja2 templates\n    for code generation in `bin/update-tables.py` to prepare for possible\n    compiler optimization release.\n\n0.2.1 .. 0.2.5 *2020-06-23*\n  * **Repository** changes to update tests and packaging issues, and\n    begin tagging repository with matching release versions.\n\n0.2.0 *2020-06-01*\n  * **Enhancement**: Unicode version may be selected by exporting the\n    Environment variable ``UNICODE_VERSION``, such as ``13.0``, or ``6.3.0``.\n    See the `jquast/ucs-detect`_ CLI utility for automatic detection.\n  * **Enhancement**:\n    API Documentation is published to readthedocs.io.\n  * **Updated** tables for *all* Unicode Specifications with files\n    published in a programmatically consumable format, versions 4.1.0\n    through 13.0\n\n0.1.9 *2020-03-22*\n  * **Performance** optimization by `Avram Lubkin`_, `PR #35`_.\n  * **Updated** tables to Unicode Specification 13.0.0.\n\n0.1.8 *2020-01-01*\n  * **Updated** tables to Unicode Specification 12.0.0. (`PR #30`_).\n\n0.1.7 *2016-07-01*\n  * **Updated** tables to Unicode Specification 9.0.0. (`PR #18`_).\n\n0.1.6 *2016-01-08 Production/Stable*\n  * ``LICENSE`` file now included with distribution.\n\n0.1.5 *2015-09-13 Alpha*\n  * **Bugfix**:\n    Resolution of \"combining_ character width\" issue, most especially\n    those that previously returned -1 now often (correctly) return 0.\n    resolved by `Philip Craig`_ via `PR #11`_.\n  * **Deprecated**:\n    The module path ``wcwidth.table_comb`` is no longer available,\n    it has been superseded by module path ``wcwidth.table_zero``.\n\n0.1.4 *2014-11-20 Pre-Alpha*\n  * **Feature**: ``wcswidth()`` now determines printable length\n    for (most) combining_ characters.  The developer's tool\n    `bin/wcwidth-browser.py`_ is improved to display combining_\n    characters when provided the ``--combining`` option\n    (`Thomas Ballinger`_ and `Leta Montopoli`_ `PR #5`_).\n  * **Feature**: added static analysis (prospector_) to testing\n    framework.\n\n0.1.3 *2014-10-29 Pre-Alpha*\n  * **Bugfix**: 2nd parameter of wcswidth was not honored.\n    (`Thomas Ballinger`_, `PR #4`_).\n\n0.1.2 *2014-10-28 Pre-Alpha*\n  * **Updated** tables to Unicode Specification 7.0.0.\n    (`Thomas Ballinger`_, `PR #3`_).\n\n0.1.1 *2014-05-14 Pre-Alpha*\n  * Initial release to pypi, Based on Unicode Specification 6.3.0\n\nThis code was originally derived directly from C code of the same name,\nwhose latest version is available at\nhttps://www.cl.cam.ac.uk/~mgk25/ucs/wcwidth.c::\n\n * Markus Kuhn -- 2007-05-26 (Unicode 5.0)\n *\n * Permission to use, copy, modify, and distribute this software\n * for any purpose and without fee is hereby granted. The author\n * disclaims all warranties with regard to this software.\n\n.. _`Spacing Combining Mark`: https://www.unicode.org/versions/latest/ch04.pdf#G134153\n.. _`specification`: https://wcwidth.readthedocs.io/en/latest/specs.html\n.. _`tox`: https://tox.wiki/en/latest/\n.. _`prospector`: https://github.com/landscapeio/prospector\n.. _`combining`: https://en.wikipedia.org/wiki/Combining_character\n.. _`bin/`: https://github.com/jquast/wcwidth/tree/master/bin\n.. _`bin/wcwidth-browser.py`: https://github.com/jquast/wcwidth/blob/master/bin/wcwidth-browser.py\n.. _`Thomas Ballinger`: https://github.com/thomasballinger\n.. _`Leta Montopoli`: https://github.com/lmontopo\n.. _`Philip Craig`: https://github.com/philipc\n.. _`PR #3`: https://github.com/jquast/wcwidth/pull/3\n.. _`PR #4`: https://github.com/jquast/wcwidth/pull/4\n.. _`PR #5`: https://github.com/jquast/wcwidth/pull/5\n.. _`PR #11`: https://github.com/jquast/wcwidth/pull/11\n.. _`PR #18`: https://github.com/jquast/wcwidth/pull/18\n.. _`PR #30`: https://github.com/jquast/wcwidth/pull/30\n.. _`PR #35`: https://github.com/jquast/wcwidth/pull/35\n.. _`PR #82`: https://github.com/jquast/wcwidth/pull/82\n.. _`PR #91`: https://github.com/jquast/wcwidth/pull/91\n.. _`PR #97`: https://github.com/jquast/wcwidth/pull/97\n.. _`PR #98`: https://github.com/jquast/wcwidth/pull/98\n.. _`PR #100`: https://github.com/jquast/wcwidth/pull/100\n.. _`PR #117`: https://github.com/jquast/wcwidth/pull/117\n.. _`PR #146`: https://github.com/jquast/wcwidth/pull/146\n.. _`PR #149`: https://github.com/jquast/wcwidth/pull/149\n.. _`PR #156`: https://github.com/jquast/wcwidth/pull/156\n.. _`PR #165`: https://github.com/jquast/wcwidth/pull/165\n.. _`PR #166`: https://github.com/jquast/wcwidth/pull/166\n.. _`PR #168`: https://github.com/jquast/wcwidth/pull/168\n.. _`PR #169`: https://github.com/jquast/wcwidth/pull/169\n.. _`PR #171`: https://github.com/jquast/wcwidth/pull/171\n.. _`PR #172`: https://github.com/jquast/wcwidth/pull/172\n.. _`PR #173`: https://github.com/jquast/wcwidth/pull/173\n.. _`PR #174`: https://github.com/jquast/wcwidth/pull/174\n.. _`PR #175`: https://github.com/jquast/wcwidth/pull/175\n.. _`PR #181`: https://github.com/jquast/wcwidth/pull/181\n.. _`PR #183`: https://github.com/jquast/wcwidth/pull/183\n.. _`PR #184`: https://github.com/jquast/wcwidth/pull/184\n.. _`PR #185`: https://github.com/jquast/wcwidth/pull/185\n.. _`PR #188`: https://github.com/jquast/wcwidth/pull/188\n.. _`PR #191`: https://github.com/jquast/wcwidth/pull/191\n.. _`PR #192`: https://github.com/jquast/wcwidth/pull/192\n.. _`PR #193`: https://github.com/jquast/wcwidth/pull/193\n.. _`PR #194`: https://github.com/jquast/wcwidth/pull/194\n.. _`PR #195`: https://github.com/jquast/wcwidth/pull/195\n.. _`PR #196`: https://github.com/jquast/wcwidth/pull/196\n.. _`PR #199`: https://github.com/jquast/wcwidth/pull/199\n.. _`PR #200`: https://github.com/jquast/wcwidth/pull/200\n.. _`PR #202`: https://github.com/jquast/wcwidth/pull/202\n.. _`PR #204`: https://github.com/jquast/wcwidth/pull/204\n.. _`Issue #101`: https://github.com/jquast/wcwidth/issues/101\n.. _`Issue #155`: https://github.com/jquast/wcwidth/issues/155\n.. _`Issue #190`: https://github.com/jquast/wcwidth/issues/190\n.. _`jquast/blessed`: https://github.com/jquast/blessed\n.. _`selectel/pyte`: https://github.com/selectel/pyte\n.. _`thomasballinger/curtsies`: https://github.com/thomasballinger/curtsies\n.. _`dbcli/pgcli`: https://github.com/dbcli/pgcli\n.. _`prompt-toolkit/python-prompt-toolkit`: https://github.com/prompt-toolkit/python-prompt-toolkit\n.. _`timoxley/wcwidth`: https://github.com/timoxley/wcwidth\n.. _`wcwidth(3)`:  https://man7.org/linux/man-pages/man3/wcwidth.3.html\n.. _`wcswidth(3)`: https://man7.org/linux/man-pages/man3/wcswidth.3.html\n.. _`astanin/python-tabulate`: https://github.com/astanin/python-tabulate\n.. _`janlelis/unicode-display_width`: https://github.com/janlelis/unicode-display_width\n.. _`rspeer/python-ftfy`: https://github.com/rspeer/python-ftfy\n.. _`alecrabbit/php-wcwidth`: https://github.com/alecrabbit/php-wcwidth\n.. _`Text::CharWidth`: https://metacpan.org/pod/Text::CharWidth\n.. _`bluebear94/Terminal-WCWidth`: https://github.com/bluebear94/Terminal-WCWidth\n.. _`mattn/go-runewidth`: https://github.com/mattn/go-runewidth\n.. _`grepsuzette/wcwidth`: https://github.com/grepsuzette/wcwidth\n.. _`jquast/ucs-detect`: https://github.com/jquast/ucs-detect\n.. _`Avram Lubkin`: https://github.com/avylove\n.. _`nbedos/termtosvg`: https://github.com/nbedos/termtosvg\n.. _`peterbrittain/asciimatics`: https://github.com/peterbrittain/asciimatics\n.. _`aperezdc/lua-wcwidth`: https://github.com/aperezdc/lua-wcwidth\n.. _`joachimschmidt557/zig-wcwidth`: https://github.com/joachimschmidt557/zig-wcwidth\n.. _`fumiyas/wcwidth-cjk`: https://github.com/fumiyas/wcwidth-cjk\n.. _`joshuarubin/wcwidth9`: https://github.com/joshuarubin/wcwidth9\n.. _`spectreconsole/wcwidth`: https://github.com/spectreconsole/wcwidth\n.. _`python-cmd2/cmd2`: https://github.com/python-cmd2/cmd2\n.. _`stratis-storage/stratis-cli`: https://github.com/stratis-storage/stratis-cli\n.. _`ihabunek/toot`: https://github.com/ihabunek/toot\n.. _`saulpw/visidata`: https://github.com/saulpw/visidata\n.. _`pip-tools`: https://pip-tools.readthedocs.io/\n.. _`sphinx`: https://www.sphinx-doc.org/\n.. _`textwrap.wrap()`: https://docs.python.org/3/library/textwrap.html#textwrap.wrap\n.. _`str.ljust()`: https://docs.python.org/3/library/stdtypes.html#str.ljust\n.. _`str.rjust()`: https://docs.python.org/3/library/stdtypes.html#str.rjust\n.. _`str.center()`: https://docs.python.org/3/library/stdtypes.html#str.center\n.. _`str.expandtabs()`: https://docs.python.org/3/library/stdtypes.html#str.expandtabs\n.. _`General Tabulated Summary`: https://ucs-detect.readthedocs.io/results.html#tabulated-results\n.. _`wcwidth()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.wcwidth\n.. _`wcswidth()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.wcswidth\n.. _`width()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.width\n.. _`iter_graphemes()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.iter_graphemes\n.. _`iter_graphemes_reverse()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.iter_graphemes_reverse\n.. _`grapheme_boundary_before()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.grapheme_boundary_before\n.. _`ljust()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.ljust\n.. _`rjust()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.rjust\n.. _`center()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.center\n.. _`wrap()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.wrap\n.. _`clip()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.clip\n.. _`strip_sequences()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.strip_sequences\n.. _`propagate_sgr()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.propagate_sgr\n.. _`iter_sequences()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.iter_sequences\n.. _`list_versions()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.list_versions\n.. _`Unicode Standard Annex #29`: https://www.unicode.org/reports/tr29/\n.. _`Terminal.detect_ambiguous_width()`: https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.detect_ambiguous_width\n.. _`parity padding`: https://jazcap53.github.io/pythons-eccentric-strcenter.html\n.. |pypi_downloads| image:: https://img.shields.io/pypi/dm/wcwidth.svg?logo=pypi\n    :alt: Downloads\n    :target: https://pypi.org/project/wcwidth/\n.. |codecov| image:: https://codecov.io/gh/jquast/wcwidth/branch/master/graph/badge.svg\n    :alt: codecov.io Code Coverage\n    :target: https://app.codecov.io/gh/jquast/wcwidth/\n.. |license| image:: https://img.shields.io/pypi/l/wcwidth.svg\n    :target: https://pypi.org/project/wcwidth/\n    :alt: MIT License\n",
+    "description_content_type": "text/x-rst",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": null,
+    "keywords": "cjk, combining, console, eastasian, emoji, emulator, terminal, unicode, wcswidth, wcwidth, xterm",
+    "license": null,
+    "license_expression": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "wcwidth",
+    "package_url": "https://pypi.org/project/wcwidth/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/wcwidth/",
+    "project_urls": {
+      "Homepage": "https://github.com/jquast/wcwidth"
+    },
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/wcwidth/0.5.3/",
+    "requires_dist": null,
+    "requires_python": ">=3.8",
+    "summary": "Measures the displayed width of unicode strings in a terminal",
+    "version": "0.5.3",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 33940266,
+  "releases": {
+    "0.0.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "1e87432c601218773d2dd202e5b8bf80ff457586974e566992869fadb7092ca1",
+          "md5": "0fd1ab9ad1d2021545dd4ef12da67fc0",
+          "sha256": "7e6f252e18af0d6fde002502e0fc4b83feaf0150d4bcc976c8b7f4fc1f57c84e"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.0.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0fd1ab9ad1d2021545dd4ef12da67fc0",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 15875,
+        "upload_time": "2014-05-05T02:00:07",
+        "upload_time_iso_8601": "2014-05-05T02:00:07.995917Z",
+        "url": "https://files.pythonhosted.org/packages/1e/87/432c601218773d2dd202e5b8bf80ff457586974e566992869fadb7092ca1/wcwidth-0.0.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "9db606ed83b4075fa4d93037716e8aafb59bc424161907ccf3080cede18b68eb",
+          "md5": "91ba55b2a4352c0b64e4cb3a7c711146",
+          "sha256": "d12d0f7ff79c68a4579928f52047bd5103c1b7ce0688b2848bb1998ea0c6011d"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "91ba55b2a4352c0b64e4cb3a7c711146",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 16151,
+        "upload_time": "2014-05-05T02:19:13",
+        "upload_time_iso_8601": "2014-05-05T02:19:13.603172Z",
+        "url": "https://files.pythonhosted.org/packages/9d/b6/06ed83b4075fa4d93037716e8aafb59bc424161907ccf3080cede18b68eb/wcwidth-0.1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "8de98e75232e75ff0fd1cfcb1af7a48467866d6cf8b845ff72b0c3e3e53f6019",
+          "md5": "073c52a65998eac6758db42878872d3e",
+          "sha256": "019b71c91209e44c50a2cc97f50a60ed9bc35ca37b6f3f8fe3a6fdaafe58fc55"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "073c52a65998eac6758db42878872d3e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 16349,
+        "upload_time": "2014-07-01T01:29:09",
+        "upload_time_iso_8601": "2014-07-01T01:29:09.798152Z",
+        "url": "https://files.pythonhosted.org/packages/8d/e9/8e75232e75ff0fd1cfcb1af7a48467866d6cf8b845ff72b0c3e3e53f6019/wcwidth-0.1.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.2": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "43cfcbebb348464a6a37185dd879684c36cce94b28cf1034f72705c5237fdd75",
+          "md5": "6e918df787498d3380ab07ca183739fa",
+          "sha256": "15aebf110eb927cff11d7147bb44cdda927687f06bc90e734f8dd51e74924451"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "6e918df787498d3380ab07ca183739fa",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 16883,
+        "upload_time": "2014-10-28T20:37:42",
+        "upload_time_iso_8601": "2014-10-28T20:37:42.925368Z",
+        "url": "https://files.pythonhosted.org/packages/43/cf/cbebb348464a6a37185dd879684c36cce94b28cf1034f72705c5237fdd75/wcwidth-0.1.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.3": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "c689d0ba712b61b2df03789d59527b3dbc9ada2c406bf2d12a718488269d13df",
+          "md5": "7c6ec21582096cd45050d169980e97a6",
+          "sha256": "9a60bcd4f9d3fdeb91bd1d24e5d3e9b56a4fba2f0e629c0bb8c760e873a956f8"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "7c6ec21582096cd45050d169980e97a6",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 17190,
+        "upload_time": "2014-10-29T16:45:01",
+        "upload_time_iso_8601": "2014-10-29T16:45:01.591920Z",
+        "url": "https://files.pythonhosted.org/packages/c6/89/d0ba712b61b2df03789d59527b3dbc9ada2c406bf2d12a718488269d13df/wcwidth-0.1.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.4": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "f4d259d085488e7ed8b4939de0ad6ed371b351aff557ef0d797c80e8c39735d6",
+          "md5": "01a6d0ae344d4cf2acf3de91dd6969d2",
+          "sha256": "c512afcc50c2c0c74c9fb26c0443d686c376c9a4551be969040bfdb390b077b0"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.4-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "01a6d0ae344d4cf2acf3de91dd6969d2",
+        "packagetype": "bdist_wheel",
+        "python_version": "3.4",
+        "requires_python": null,
+        "size": 20751,
+        "upload_time": "2014-11-20T19:08:52",
+        "upload_time_iso_8601": "2014-11-20T19:08:52.532561Z",
+        "url": "https://files.pythonhosted.org/packages/f4/d2/59d085488e7ed8b4939de0ad6ed371b351aff557ef0d797c80e8c39735d6/wcwidth-0.1.4-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "16c862ccd24e17b37a363e53190474a8fcd616903eb6e61afd42a874b187f167",
+          "md5": "4fb1d2481c5a849e57ad3fa7018ccbae",
+          "sha256": "906d3123045d77027b49fe912458e1a1e1d6ca1a51558a4bd9168d143b129d2b"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4fb1d2481c5a849e57ad3fa7018ccbae",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 19584,
+        "upload_time": "2014-11-20T19:08:48",
+        "upload_time_iso_8601": "2014-11-20T19:08:48.153897Z",
+        "url": "https://files.pythonhosted.org/packages/16/c8/62ccd24e17b37a363e53190474a8fcd616903eb6e61afd42a874b187f167/wcwidth-0.1.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.5": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "8b30f46badba94cedcd5ceb5918a7c5a34f3a1b9e902e045b7d8d39c1db3d99a",
+          "md5": "5b5b63d7d665feb56caedfa4f1032760",
+          "sha256": "edcb215f9cf144b1250787061a7b06cd84872b8b40f2a824c8cee1549e7bb472"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.5-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5b5b63d7d665feb56caedfa4f1032760",
+        "packagetype": "bdist_wheel",
+        "python_version": "2.7",
+        "requires_python": null,
+        "size": 18884,
+        "upload_time": "2015-09-14T06:25:51",
+        "upload_time_iso_8601": "2015-09-14T06:25:51.521445Z",
+        "url": "https://files.pythonhosted.org/packages/8b/30/f46badba94cedcd5ceb5918a7c5a34f3a1b9e902e045b7d8d39c1db3d99a/wcwidth-0.1.5-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "b2408a8223c30a0dd6af088c4785d6bed0a044091655ba20cce8154e4ee4967f",
+          "md5": "2282d853074f2f1f465a3387e524d99b",
+          "sha256": "66c7ce3199c87833aaaa1fe1241b63261ce53c1062597c189a16a54713e0919d"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2282d853074f2f1f465a3387e524d99b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 19553,
+        "upload_time": "2015-09-14T06:25:47",
+        "upload_time_iso_8601": "2015-09-14T06:25:47.424086Z",
+        "url": "https://files.pythonhosted.org/packages/b2/40/8a8223c30a0dd6af088c4785d6bed0a044091655ba20cce8154e4ee4967f/wcwidth-0.1.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.6": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "90c8d28358bffe21c93691cf90bb7231d9c7bb9686afb9fd8c84b7866a2a1004",
+          "md5": "4552a9b78a84730b781d14c07264da19",
+          "sha256": "ee6caad8dedc21dcab9fdda0125d2520ce49a8c90dd2c7930f8c591ab9f66900"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.6-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "4552a9b78a84730b781d14c07264da19",
+        "packagetype": "bdist_wheel",
+        "python_version": "3.5",
+        "requires_python": null,
+        "size": 19296,
+        "upload_time": "2016-01-08T21:34:38",
+        "upload_time_iso_8601": "2016-01-08T21:34:38.133442Z",
+        "url": "https://files.pythonhosted.org/packages/90/c8/d28358bffe21c93691cf90bb7231d9c7bb9686afb9fd8c84b7866a2a1004/wcwidth-0.1.6-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "c2d17689293086a8d5320025080cde0e3155b94ae0a7496fb89a3fbaa92c354a",
+          "md5": "53031c6d6490d65c1de601595cff835f",
+          "sha256": "dcb3ec4771066cc15cf6aab5d5c4a499a5f01c677ff5aeb46cf20500dccd920b"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.6.tar.gz",
+        "has_sig": false,
+        "md5_digest": "53031c6d6490d65c1de601595cff835f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 20483,
+        "upload_time": "2016-01-08T21:34:31",
+        "upload_time_iso_8601": "2016-01-08T21:34:31.946305Z",
+        "url": "https://files.pythonhosted.org/packages/c2/d1/7689293086a8d5320025080cde0e3155b94ae0a7496fb89a3fbaa92c354a/wcwidth-0.1.6.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.7": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "7e9f526a6947247599b084ee5232e4f9190a38f398d7300d866af3ab571a5bfe",
+          "md5": "9fb9f073e3560424296f3f2c745beac3",
+          "sha256": "f4ebe71925af7b40a864553f761ed559b43544f8f71746c2d756c7fe788ade7c"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.7-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "9fb9f073e3560424296f3f2c745beac3",
+        "packagetype": "bdist_wheel",
+        "python_version": "3.5",
+        "requires_python": null,
+        "size": 21014,
+        "upload_time": "2016-07-02T16:42:09",
+        "upload_time_iso_8601": "2016-07-02T16:42:09.398826Z",
+        "url": "https://files.pythonhosted.org/packages/7e/9f/526a6947247599b084ee5232e4f9190a38f398d7300d866af3ab571a5bfe/wcwidth-0.1.7-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "5511e4a2bb08bb450fdbd42cc709dd40de4ed2c472cf0ccb9e64af22279c5495",
+          "md5": "b3b6a0a08f0c8a34d1de8cf44150a4ad",
+          "sha256": "3df37372226d6e63e1b1e1eda15c594bca98a22d33a23832a90998faa96bc65e"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.7.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b3b6a0a08f0c8a34d1de8cf44150a4ad",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 22884,
+        "upload_time": "2016-07-02T16:42:04",
+        "upload_time_iso_8601": "2016-07-02T16:42:04.762292Z",
+        "url": "https://files.pythonhosted.org/packages/55/11/e4a2bb08bb450fdbd42cc709dd40de4ed2c472cf0ccb9e64af22279c5495/wcwidth-0.1.7.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.8": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "58b44850a0ccc6f567cc0ebe7060d20ffd4258b8210efadc259da62dc6ed9c65",
+          "md5": "ec7e2f8e42c85066edf6caae0f8a927b",
+          "sha256": "8fd29383f539be45b20bd4df0dc29c20ba48654a41e661925e612311e9f3c603"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.8-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ec7e2f8e42c85066edf6caae0f8a927b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 17980,
+        "upload_time": "2020-01-02T01:21:06",
+        "upload_time_iso_8601": "2020-01-02T01:21:06.466167Z",
+        "url": "https://files.pythonhosted.org/packages/58/b4/4850a0ccc6f567cc0ebe7060d20ffd4258b8210efadc259da62dc6ed9c65/wcwidth-0.1.8-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "5e3392333eb80be0c96385dee338f30b53e24a8b415d5785e225d789b3f90feb",
+          "md5": "dc6677d099e6f49c0f6fbc310de261e9",
+          "sha256": "f28b3e8a6483e5d49e7f8949ac1a78314e740333ae305b4ba5defd3e74fb37a8"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.8.tar.gz",
+        "has_sig": false,
+        "md5_digest": "dc6677d099e6f49c0f6fbc310de261e9",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 19957,
+        "upload_time": "2020-01-03T20:29:41",
+        "upload_time_iso_8601": "2020-01-03T20:29:41.575475Z",
+        "url": "https://files.pythonhosted.org/packages/5e/33/92333eb80be0c96385dee338f30b53e24a8b415d5785e225d789b3f90feb/wcwidth-0.1.8.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.9": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "f6d51ecdac957e3ea12c1b319fcdee8b6917ffaff8b4644d673c4d72d2f20b49",
+          "md5": "003327fdfbb7653dda1f3ce28fc57be1",
+          "sha256": "cafe2186b3c009a04067022ce1dcd79cb38d8d65ee4f4791b8888d6599d1bbe1"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.9-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "003327fdfbb7653dda1f3ce28fc57be1",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 19410,
+        "upload_time": "2020-03-23T06:21:31",
+        "upload_time_iso_8601": "2020-03-23T06:21:31.883482Z",
+        "url": "https://files.pythonhosted.org/packages/f6/d5/1ecdac957e3ea12c1b319fcdee8b6917ffaff8b4644d673c4d72d2f20b49/wcwidth-0.1.9-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "259d0acbed6e4a4be4fc99148f275488580968f44ddb5e69b8ceb53fc9df55a0",
+          "md5": "b32584cd6084b4a8c81df13a2a6b4351",
+          "sha256": "ee73862862a156bf77ff92b09034fc4825dd3af9cf81bc5b360668d425f3c5f1"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.1.9.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b32584cd6084b4a8c81df13a2a6b4351",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 24764,
+        "upload_time": "2020-03-23T06:21:33",
+        "upload_time_iso_8601": "2020-03-23T06:21:33.838443Z",
+        "url": "https://files.pythonhosted.org/packages/25/9d/0acbed6e4a4be4fc99148f275488580968f44ddb5e69b8ceb53fc9df55a0/wcwidth-0.1.9.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "60974db93e42c6c042ee68199682126649b5c059663f76bcd56b5d54c43b787d",
+          "md5": "22b0ecf21451f4946fe92e8da09b4a3d",
+          "sha256": "73be5d629d7e2e1f591837629afea5e8ee8b18052ac929c713c2dd90222dc1ae"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.0-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "22b0ecf21451f4946fe92e8da09b4a3d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 30060,
+        "upload_time": "2020-06-01T17:00:32",
+        "upload_time_iso_8601": "2020-06-01T17:00:32.102429Z",
+        "url": "https://files.pythonhosted.org/packages/60/97/4db93e42c6c042ee68199682126649b5c059663f76bcd56b5d54c43b787d/wcwidth-0.2.0-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "7b8cac865b66223c04239e548bc3bfd18c0f2b1a1975d9d9f6df8abf3b6bfb59",
+          "md5": "d309ee37aed2cc5d1882ff1623a12d3f",
+          "sha256": "70a7fd340fc54ad104b667c7f3c69cfdb52de0a9d2ad7dda94b93588efefb129"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "d309ee37aed2cc5d1882ff1623a12d3f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 32651,
+        "upload_time": "2020-06-01T17:00:35",
+        "upload_time_iso_8601": "2020-06-01T17:00:35.069303Z",
+        "url": "https://files.pythonhosted.org/packages/7b/8c/ac865b66223c04239e548bc3bfd18c0f2b1a1975d9d9f6df8abf3b6bfb59/wcwidth-0.2.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "6ca6cdb485093ad4017d874d7a2e6a736d02720258f57876548eea2bf04c76f0",
+          "md5": "6a0871607a1bbd228733fec35f8ec73a",
+          "sha256": "ddc2264e994328f927d6537bd2299e7f92af11b4b77a592d063bccf8d05c3f68"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.1-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "6a0871607a1bbd228733fec35f8ec73a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 40268,
+        "upload_time": "2020-06-01T17:05:41",
+        "upload_time_iso_8601": "2020-06-01T17:05:41.102161Z",
+        "url": "https://files.pythonhosted.org/packages/6c/a6/cdb485093ad4017d874d7a2e6a736d02720258f57876548eea2bf04c76f0/wcwidth-0.2.1-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "02fbace41b60d64a3105e4825086a38f11f8517c574288bda266c4dc59131775",
+          "md5": "7228357a84ae504d91d34a704e6e7368",
+          "sha256": "84e1a7efdafaa87fa6c62aec147a326027e3faa690bff12f10bd9595d6632148"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "7228357a84ae504d91d34a704e6e7368",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 32675,
+        "upload_time": "2020-06-01T17:05:48",
+        "upload_time_iso_8601": "2020-06-01T17:05:48.329161Z",
+        "url": "https://files.pythonhosted.org/packages/02/fb/ace41b60d64a3105e4825086a38f11f8517c574288bda266c4dc59131775/wcwidth-0.2.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.10": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "cdaffb045bb3d3daedf28e1bedd771674f73de9e06664a48b1579e14d4120158",
+          "md5": "7103cc02867a7e326f8dd239bf5e92ee",
+          "sha256": "aec5179002dd0f0d40c456026e74a729661c9d468e1ed64405e3a6c2176ca36f"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.10-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7103cc02867a7e326f8dd239bf5e92ee",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 105215,
+        "upload_time": "2023-11-13T21:53:02",
+        "upload_time_iso_8601": "2023-11-13T21:53:02.153539Z",
+        "url": "https://files.pythonhosted.org/packages/cd/af/fb045bb3d3daedf28e1bedd771674f73de9e06664a48b1579e14d4120158/wcwidth-0.2.10-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "2e1c21f2379555bba50b54e5a965d9274602fe2bada4778343d5385840f7ac34",
+          "md5": "a7a68c75ae80defce936b7808bf1299a",
+          "sha256": "390c7454101092a6a5e43baad8f83de615463af459201709556b6e4b1c861f97"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.10.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a7a68c75ae80defce936b7808bf1299a",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 73286,
+        "upload_time": "2023-11-13T21:53:04",
+        "upload_time_iso_8601": "2023-11-13T21:53:04.618533Z",
+        "url": "https://files.pythonhosted.org/packages/2e/1c/21f2379555bba50b54e5a965d9274602fe2bada4778343d5385840f7ac34/wcwidth-0.2.10.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.11": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "b41f40eeda714cdc71558431b16d335accaf21d1c3196ff1d790023e9ff2fcbf",
+          "md5": "1612e4670027e96fc4c5ee196d4280c2",
+          "sha256": "c4b153acf29f1f0d7fb1b00d097cce82b73de7a2016321c8d7ca71bd76dd848b"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.11-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "1612e4670027e96fc4c5ee196d4280c2",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 106357,
+        "upload_time": "2023-11-21T02:40:16",
+        "upload_time_iso_8601": "2023-11-21T02:40:16.114975Z",
+        "url": "https://files.pythonhosted.org/packages/b4/1f/40eeda714cdc71558431b16d335accaf21d1c3196ff1d790023e9ff2fcbf/wcwidth-0.2.11-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "aed01e5f254ca6e68057f938a9bdf95cc66536a3a005e93b5cf48003214a1a91",
+          "md5": "bd2f70bae27b9b4fa65421b4b8fa1735",
+          "sha256": "25eb3ecbec328cdb945f56f2a7cfe784bdf7a73a8197398c7a7c65e7fe93e9ae"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.11.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bd2f70bae27b9b4fa65421b4b8fa1735",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 99709,
+        "upload_time": "2023-11-21T02:40:18",
+        "upload_time_iso_8601": "2023-11-21T02:40:18.320212Z",
+        "url": "https://files.pythonhosted.org/packages/ae/d0/1e5f254ca6e68057f938a9bdf95cc66536a3a005e93b5cf48003214a1a91/wcwidth-0.2.11.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.12": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "31b1a59de0ad3aabb17523a39804f4c6df3ae87ead053a4e25362ae03d73d03a",
+          "md5": "be41760fa84475a7b85461d64f414ce6",
+          "sha256": "f26ec43d96c8cbfed76a5075dac87680124fa84e0855195a6184da9c187f133c"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.12-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "be41760fa84475a7b85461d64f414ce6",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 34110,
+        "upload_time": "2023-11-21T19:57:19",
+        "upload_time_iso_8601": "2023-11-21T19:57:19.052076Z",
+        "url": "https://files.pythonhosted.org/packages/31/b1/a59de0ad3aabb17523a39804f4c6df3ae87ead053a4e25362ae03d73d03a/wcwidth-0.2.12-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "d71263deef355537f290d5282a67bb7bdd165266e4eca93cd556707a325e5a24",
+          "md5": "c37cceb9d573adcce0b3e5167ecb1df9",
+          "sha256": "f01c104efdf57971bcb756f054dd58ddec5204dd15fa31d6503ea57947d97c02"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.12.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c37cceb9d573adcce0b3e5167ecb1df9",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 99898,
+        "upload_time": "2023-11-21T19:57:21",
+        "upload_time_iso_8601": "2023-11-21T19:57:21.527605Z",
+        "url": "https://files.pythonhosted.org/packages/d7/12/63deef355537f290d5282a67bb7bdd165266e4eca93cd556707a325e5a24/wcwidth-0.2.12.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.13": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "fd84fd2ba7aafacbad3c4201d395674fc6348826569da3c0937e75505ead3528",
+          "md5": "2b07fcb913ba83b534f09f3d1959d5d0",
+          "sha256": "3da69048e4540d84af32131829ff948f1e022c1c6bdb8d6102117aac784f6859"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.13-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2b07fcb913ba83b534f09f3d1959d5d0",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 34166,
+        "upload_time": "2024-01-06T02:10:55",
+        "upload_time_iso_8601": "2024-01-06T02:10:55.763669Z",
+        "url": "https://files.pythonhosted.org/packages/fd/84/fd2ba7aafacbad3c4201d395674fc6348826569da3c0937e75505ead3528/wcwidth-0.2.13-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "6c6353559446a878410fc5a5974feb13d31d78d752eb18aeba59c7fef1af7598",
+          "md5": "5ce8dd9e6993dae268142feb1e605cd8",
+          "sha256": "72ea0c06399eb286d978fdedb6923a9eb47e1c486ce63e9b4e64fc18303972b5"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.13.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5ce8dd9e6993dae268142feb1e605cd8",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 101301,
+        "upload_time": "2024-01-06T02:10:57",
+        "upload_time_iso_8601": "2024-01-06T02:10:57.829886Z",
+        "url": "https://files.pythonhosted.org/packages/6c/63/53559446a878410fc5a5974feb13d31d78d752eb18aeba59c7fef1af7598/wcwidth-0.2.13.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.14": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "afb5123f13c975e9f27ab9c0770f514345bd406d0e8d3b7a0723af9d43f710af",
+          "md5": "73ab4b7a94fe638ad4d59cb9d17ebc89",
+          "sha256": "a7bb560c8aee30f9957e5f9895805edd20602f2d7f720186dfd906e82b4982e1"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.14-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "73ab4b7a94fe638ad4d59cb9d17ebc89",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": ">=3.6",
+        "size": 37286,
+        "upload_time": "2025-09-22T16:29:51",
+        "upload_time_iso_8601": "2025-09-22T16:29:51.641375Z",
+        "url": "https://files.pythonhosted.org/packages/af/b5/123f13c975e9f27ab9c0770f514345bd406d0e8d3b7a0723af9d43f710af/wcwidth-0.2.14-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "24306b0809f4510673dc723187aeaf24c7f5459922d01e2f794277a3dfb90345",
+          "md5": "c179ab1aff6e3b48ac9617cf19f580d4",
+          "sha256": "4d478375d31bc5395a3c55c40ccdf3354688364cd61c4f6adacaa9215d0b3605"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.14.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c179ab1aff6e3b48ac9617cf19f580d4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.6",
+        "size": 102293,
+        "upload_time": "2025-09-22T16:29:53",
+        "upload_time_iso_8601": "2025-09-22T16:29:53.023228Z",
+        "url": "https://files.pythonhosted.org/packages/24/30/6b0809f4510673dc723187aeaf24c7f5459922d01e2f794277a3dfb90345/wcwidth-0.2.14.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.2": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "0b50893aff98482ca6d622bb7db1d0d9e91d0ec2a4b363460f9ba74016f1ccf1",
+          "md5": "4d526de17198d1fd94f097c3f01cc70d",
+          "sha256": "b651b6b081476420e4e9ae61239ac4c1b49d0c5ace42b2e81dc2ff49ed50c566"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.2-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "4d526de17198d1fd94f097c3f01cc70d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 30055,
+        "upload_time": "2020-06-01T17:11:03",
+        "upload_time_iso_8601": "2020-06-01T17:11:03.279595Z",
+        "url": "https://files.pythonhosted.org/packages/0b/50/893aff98482ca6d622bb7db1d0d9e91d0ec2a4b363460f9ba74016f1ccf1/wcwidth-0.2.2-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "bd93396f82ece739ca551c2c1c74938a016c44263173d3eb83693ae9dbc33557",
+          "md5": "150711bd025d86971cc1c2243553ee83",
+          "sha256": "3de2e41158cb650b91f9654cbf9a3e053cee0719c9df4ddc11e4b568669e9829"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "150711bd025d86971cc1c2243553ee83",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 32672,
+        "upload_time": "2020-06-01T17:11:21",
+        "upload_time_iso_8601": "2020-06-01T17:11:21.721674Z",
+        "url": "https://files.pythonhosted.org/packages/bd/93/396f82ece739ca551c2c1c74938a016c44263173d3eb83693ae9dbc33557/wcwidth-0.2.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.3": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "1b7bde30a3962d8fbebbf8d748bfbf20c05c0a7c495df6716e82af109143ba00",
+          "md5": "ab3c411d741ba276187771b0812e544d",
+          "sha256": "980fbf4f3c196c0f329cdcd1e84c554d6a211f18e252e525a0cf4223154a41d6"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.3-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ab3c411d741ba276187771b0812e544d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 30054,
+        "upload_time": "2020-06-02T16:28:52",
+        "upload_time_iso_8601": "2020-06-02T16:28:52.385530Z",
+        "url": "https://files.pythonhosted.org/packages/1b/7b/de30a3962d8fbebbf8d748bfbf20c05c0a7c495df6716e82af109143ba00/wcwidth-0.2.3-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "97233c0fde825b1c6a015e7360e105da2bdf3034fe670ede8f03d21194c1b910",
+          "md5": "a1db7aef2af050a3e433373dbac45d95",
+          "sha256": "edbc2b718b4db6cdf393eefe3a420183947d6aa312505ce6754516f458ff8830"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a1db7aef2af050a3e433373dbac45d95",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 34214,
+        "upload_time": "2020-06-02T16:28:53",
+        "upload_time_iso_8601": "2020-06-02T16:28:53.753570Z",
+        "url": "https://files.pythonhosted.org/packages/97/23/3c0fde825b1c6a015e7360e105da2bdf3034fe670ede8f03d21194c1b910/wcwidth-0.2.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.4": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "ef94a17155b400812f0558093c6fb99f92ba823e24757d5884e3ec60f5e81319",
+          "md5": "1523b3026dcef2aeeba4711cd24b539b",
+          "sha256": "79375666b9954d4a1a10739315816324c3e73110af9d0e102d906fdb0aec009f"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.4-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "1523b3026dcef2aeeba4711cd24b539b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 30316,
+        "upload_time": "2020-06-08T03:39:04",
+        "upload_time_iso_8601": "2020-06-08T03:39:04.127568Z",
+        "url": "https://files.pythonhosted.org/packages/ef/94/a17155b400812f0558093c6fb99f92ba823e24757d5884e3ec60f5e81319/wcwidth-0.2.4-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "2e30268d9d3ed18439b6983a8e630cd52d81fd7460a152d6e801d1b8394e51a1",
+          "md5": "5e6cd8cd008a7ad2c2578ac49a9d87a1",
+          "sha256": "8c6b5b6ee1360b842645f336d9e5d68c55817c26d3050f46b235ef2bc650e48f"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5e6cd8cd008a7ad2c2578ac49a9d87a1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 34511,
+        "upload_time": "2020-06-08T03:39:07",
+        "upload_time_iso_8601": "2020-06-08T03:39:07.635379Z",
+        "url": "https://files.pythonhosted.org/packages/2e/30/268d9d3ed18439b6983a8e630cd52d81fd7460a152d6e801d1b8394e51a1/wcwidth-0.2.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.5": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "597ce39aca596badaf1b78e8f547c807b04dae603a433d3e7a7e04d67f2ef3e5",
+          "md5": "8b664207c7e30fc97917d2ac444e2232",
+          "sha256": "beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.5-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "8b664207c7e30fc97917d2ac444e2232",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 30763,
+        "upload_time": "2020-06-23T16:10:28",
+        "upload_time_iso_8601": "2020-06-23T16:10:28.529454Z",
+        "url": "https://files.pythonhosted.org/packages/59/7c/e39aca596badaf1b78e8f547c807b04dae603a433d3e7a7e04d67f2ef3e5/wcwidth-0.2.5-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "8938459b727c381504f361832b9e5ace19966de1a235d73cdbdea91c771a1155",
+          "md5": "a07a75f99d316e14838ac760c831ea37",
+          "sha256": "c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a07a75f99d316e14838ac760c831ea37",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 34755,
+        "upload_time": "2020-06-23T16:10:29",
+        "upload_time_iso_8601": "2020-06-23T16:10:29.829128Z",
+        "url": "https://files.pythonhosted.org/packages/89/38/459b727c381504f361832b9e5ace19966de1a235d73cdbdea91c771a1155/wcwidth-0.2.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.6": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "20f4c0584a25144ce20bfcf1aecd041768b8c762c1eb0aa77502a3f0baa83f11",
+          "md5": "d7c8ae889093a1cdb6f4e00d2196ecdc",
+          "sha256": "795b138f6875577cd91bba52baf9e445cd5118fd32723b460e30a0af30ea230e"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.6-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "d7c8ae889093a1cdb6f4e00d2196ecdc",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 29995,
+        "upload_time": "2023-01-16T15:09:15",
+        "upload_time_iso_8601": "2023-01-16T15:09:15.814359Z",
+        "url": "https://files.pythonhosted.org/packages/20/f4/c0584a25144ce20bfcf1aecd041768b8c762c1eb0aa77502a3f0baa83f11/wcwidth-0.2.6-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "5e5f1e4bd82a9cc1f17b2c2361a2d876d4c38973a997003ba5eb400e8a932b6c",
+          "md5": "976b997f2ed155b5c2e9a4d50e528d90",
+          "sha256": "a5220780a404dbe3353789870978e472cfe477761f06ee55077256e509b156d0"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.6.tar.gz",
+        "has_sig": false,
+        "md5_digest": "976b997f2ed155b5c2e9a4d50e528d90",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 35452,
+        "upload_time": "2023-01-15T04:07:25",
+        "upload_time_iso_8601": "2023-01-15T04:07:25.071548Z",
+        "url": "https://files.pythonhosted.org/packages/5e/5f/1e4bd82a9cc1f17b2c2361a2d876d4c38973a997003ba5eb400e8a932b6c/wcwidth-0.2.6.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.7": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "91c33b3a1db90a21ddff1dbfb412d0ce00881d7820b01dfa47faf09d317ce51f",
+          "md5": "94c1fcb44fda5275cc034b4122d24c93",
+          "sha256": "fabf3e32999d9b0dab7d19d845149f326f04fe29bac67709ee071dbd92640a36"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.7-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "94c1fcb44fda5275cc034b4122d24c93",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 32794,
+        "upload_time": "2023-09-28T23:59:52",
+        "upload_time_iso_8601": "2023-09-28T23:59:52.833953Z",
+        "url": "https://files.pythonhosted.org/packages/91/c3/3b3a1db90a21ddff1dbfb412d0ce00881d7820b01dfa47faf09d317ce51f/wcwidth-0.2.7-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "7c6731b3c1411efeb4b95e0a1c63c263c07676c49f59375d31a21b11ff16f9dc",
+          "md5": "b9dbcb3e9eba0de1b4157f00a4f01fcc",
+          "sha256": "1b6d30a98ddd5ce9bbdb33658191fd2423fc9da203fe3ef1855407dcb7ee4e26"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.7.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b9dbcb3e9eba0de1b4157f00a4f01fcc",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 60652,
+        "upload_time": "2023-09-28T23:59:55",
+        "upload_time_iso_8601": "2023-09-28T23:59:55.396171Z",
+        "url": "https://files.pythonhosted.org/packages/7c/67/31b3c1411efeb4b95e0a1c63c263c07676c49f59375d31a21b11ff16f9dc/wcwidth-0.2.7.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.8": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "5819a9ce39f89cf58cf1e7ce01c8bb76ab7e2c7aadbc5a2136c3e192097344f5",
+          "md5": "54d60959ddd3e99278c7b8c0ccbbe6e1",
+          "sha256": "77f719e01648ed600dfa5402c347481c0992263b81a027344f3e1ba25493a704"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.8-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "54d60959ddd3e99278c7b8c0ccbbe6e1",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 31296,
+        "upload_time": "2023-09-30T05:29:57",
+        "upload_time_iso_8601": "2023-09-30T05:29:57.072786Z",
+        "url": "https://files.pythonhosted.org/packages/58/19/a9ce39f89cf58cf1e7ce01c8bb76ab7e2c7aadbc5a2136c3e192097344f5/wcwidth-0.2.8-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "cbee20850e9f388d8b52b481726d41234f67bc89a85eeade6e2d6e2965be04ba",
+          "md5": "b79ba96d19fa108980cf28d05ea2101c",
+          "sha256": "8705c569999ffbb4f6a87c6d1b80f324bd6db952f5eb0b95bc07517f4c1813d4"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.8.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b79ba96d19fa108980cf28d05ea2101c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 61713,
+        "upload_time": "2023-09-30T05:29:59",
+        "upload_time_iso_8601": "2023-09-30T05:29:59.245549Z",
+        "url": "https://files.pythonhosted.org/packages/cb/ee/20850e9f388d8b52b481726d41234f67bc89a85eeade6e2d6e2965be04ba/wcwidth-0.2.8.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.9": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "190b00728863778b14ececfc97e40850fd71529b6a1695907981cc3fdc085ba6",
+          "md5": "a979b949aa99ecfd268d4e7127ea26b5",
+          "sha256": "9a929bd8380f6cd9571a968a9c8f4353ca58d7cd812a4822bba831f8d685b223"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.9-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a979b949aa99ecfd268d4e7127ea26b5",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 102325,
+        "upload_time": "2023-10-30T20:58:32",
+        "upload_time_iso_8601": "2023-10-30T20:58:32.091374Z",
+        "url": "https://files.pythonhosted.org/packages/19/0b/00728863778b14ececfc97e40850fd71529b6a1695907981cc3fdc085ba6/wcwidth-0.2.9-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "a6ad428bc4ff924e66365c96994873e09a17bb5e8a1228be6e8d185bc2a11de9",
+          "md5": "1102f20452153d4447e9821d5a46750c",
+          "sha256": "a675d1a4a2d24ef67096a04b85b02deeecd8e226f57b5e3a72dbb9ed99d27da8"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.2.9.tar.gz",
+        "has_sig": false,
+        "md5_digest": "1102f20452153d4447e9821d5a46750c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 66133,
+        "upload_time": "2023-10-30T20:58:34",
+        "upload_time_iso_8601": "2023-10-30T20:58:34.407260Z",
+        "url": "https://files.pythonhosted.org/packages/a6/ad/428bc4ff924e66365c96994873e09a17bb5e8a1228be6e8d185bc2a11de9/wcwidth-0.2.9.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "180ea5f0257ab47492b7afb5fb60347d14ba19445e2773fc8352d4be6bd2f6f8",
+          "md5": "fa8998555da217fc9c97894b1928f8cd",
+          "sha256": "073a1acb250e4add96cfd5ef84e0036605cd6e0d0782c8c15c80e42202348458"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.3.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "fa8998555da217fc9c97894b1928f8cd",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 85520,
+        "upload_time": "2026-01-21T17:44:08",
+        "upload_time_iso_8601": "2026-01-21T17:44:08.002960Z",
+        "url": "https://files.pythonhosted.org/packages/18/0e/a5f0257ab47492b7afb5fb60347d14ba19445e2773fc8352d4be6bd2f6f8/wcwidth-0.3.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "38752144b65e4fba12a2d9868e9a3f99db7fa0760670d064603634bef9ff1709",
+          "md5": "e12383d89f2914de8770e06c6789ae17",
+          "sha256": "af1a2fb0b83ef4a7fc0682a4c95ca2576e14d0280bca2a9e67b7dc9f2733e123"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.3.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e12383d89f2914de8770e06c6789ae17",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 172238,
+        "upload_time": "2026-01-21T17:44:09",
+        "upload_time_iso_8601": "2026-01-21T17:44:09.508785Z",
+        "url": "https://files.pythonhosted.org/packages/38/75/2144b65e4fba12a2d9868e9a3f99db7fa0760670d064603634bef9ff1709/wcwidth-0.3.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d79c9d951691bf1224772f6082d3b2e8c110edfd9622627908ad75bb0f691979",
+          "md5": "2ebb81169ecc3663d25b95f309f7af1d",
+          "sha256": "b2d355df3ec5d51bfc973a22fb4ea9a03b12fdcbf00d0abd22a2c78b12ccc177"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.3.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2ebb81169ecc3663d25b95f309f7af1d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 85746,
+        "upload_time": "2026-01-22T22:08:23",
+        "upload_time_iso_8601": "2026-01-22T22:08:23.564129Z",
+        "url": "https://files.pythonhosted.org/packages/d7/9c/9d951691bf1224772f6082d3b2e8c110edfd9622627908ad75bb0f691979/wcwidth-0.3.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "256fe1ea6dcb21da43d581284d8d5a715c2affb906aa3ed301f77f7f5ae0e7d5",
+          "md5": "976a55eb7dfd1e04e17770e3d9e77a60",
+          "sha256": "5aedb626a9c0d941b990cfebda848d538d45c9493a3384d080aff809143bd3be"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.3.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "976a55eb7dfd1e04e17770e3d9e77a60",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 233057,
+        "upload_time": "2026-01-22T22:08:25",
+        "upload_time_iso_8601": "2026-01-22T22:08:25.231618Z",
+        "url": "https://files.pythonhosted.org/packages/25/6f/e1ea6dcb21da43d581284d8d5a715c2affb906aa3ed301f77f7f5ae0e7d5/wcwidth-0.3.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "72c61452e716c5af065c018f75d42ca97517a04ac6aae4133722e0424649a07c",
+          "md5": "dbfe85a87782902a307df48a8bb21af0",
+          "sha256": "817abc6a89e47242a349b5d100cbd244301690d6d8d2ec6335f26fe6640a6315"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.3.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "dbfe85a87782902a307df48a8bb21af0",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 86280,
+        "upload_time": "2026-01-23T21:08:51",
+        "upload_time_iso_8601": "2026-01-23T21:08:51.362155Z",
+        "url": "https://files.pythonhosted.org/packages/72/c6/1452e716c5af065c018f75d42ca97517a04ac6aae4133722e0424649a07c/wcwidth-0.3.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "05070b5bcc9812b1b2fd331cc88289ef4d47d428afdbbf0216bb7d53942d93d6",
+          "md5": "da4fef2db98251d116a72345145de4f5",
+          "sha256": "d469b3059dab6b1077def5923ed0a8bf5738bd4a1a87f686d5e2de455354c4ad"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.3.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "da4fef2db98251d116a72345145de4f5",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 233633,
+        "upload_time": "2026-01-23T21:08:52",
+        "upload_time_iso_8601": "2026-01-23T21:08:52.451629Z",
+        "url": "https://files.pythonhosted.org/packages/05/07/0b5bcc9812b1b2fd331cc88289ef4d47d428afdbbf0216bb7d53942d93d6/wcwidth-0.3.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4fbcab575ebf0254577034d23908299b0d13ea5d7ceb35f43a5c08acf2252826",
+          "md5": "ed679f11138d1cbf42246651c12b4a64",
+          "sha256": "8e9056c446f21c7393514946d143a748c56aad72476844d3f215f7915276508f"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.3.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ed679f11138d1cbf42246651c12b4a64",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 86509,
+        "upload_time": "2026-01-24T16:23:56",
+        "upload_time_iso_8601": "2026-01-24T16:23:56.966182Z",
+        "url": "https://files.pythonhosted.org/packages/4f/bc/ab575ebf0254577034d23908299b0d13ea5d7ceb35f43a5c08acf2252826/wcwidth-0.3.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b53ac63d2afd6dc2cad55a44bea48c7db75edde859e320bdceb9351ba63fceb6",
+          "md5": "0b2d76c3cc4836fa787939a018fff7af",
+          "sha256": "f8f7d42c8a067d909b80b425342d02c423c5edc546347475e1d402fe3d35bb63"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.3.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0b2d76c3cc4836fa787939a018fff7af",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 233784,
+        "upload_time": "2026-01-24T16:23:58",
+        "upload_time_iso_8601": "2026-01-24T16:23:58.578546Z",
+        "url": "https://files.pythonhosted.org/packages/b5/3a/c63d2afd6dc2cad55a44bea48c7db75edde859e320bdceb9351ba63fceb6/wcwidth-0.3.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "95291b5d7d370736d7d61111533f9beece5dc55fe997511b9ae2c29457363974",
+          "md5": "50bd82749286ef94bc5685b7e99cabad",
+          "sha256": "28bd19308af9e09e4132840740b99e39c04db5a8b8273644ee5eaa4baf928643"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.3.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "50bd82749286ef94bc5685b7e99cabad",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 86635,
+        "upload_time": "2026-01-25T01:06:32",
+        "upload_time_iso_8601": "2026-01-25T01:06:32.550774Z",
+        "url": "https://files.pythonhosted.org/packages/95/29/1b5d7d370736d7d61111533f9beece5dc55fe997511b9ae2c29457363974/wcwidth-0.3.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7d67e17c825c9908f6e517250e9bc5c4d6b4163af26ed99f098bba946023db9d",
+          "md5": "30cbf9d3247ed29e368df5d6ed5479d9",
+          "sha256": "73d05c07549b4639b7956cd65a9edd35245d8700c0d3467fa723ad4b16dfe815"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.3.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "30cbf9d3247ed29e368df5d6ed5479d9",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 234099,
+        "upload_time": "2026-01-25T01:06:34",
+        "upload_time_iso_8601": "2026-01-25T01:06:34.252683Z",
+        "url": "https://files.pythonhosted.org/packages/7d/67/e17c825c9908f6e517250e9bc5c4d6b4163af26ed99f098bba946023db9d/wcwidth-0.3.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7a867f461495625145a99d60f14cdac142a11db5d501c86d48aad165575d1e06",
+          "md5": "e48c8b55003773aeb801b80ff7276537",
+          "sha256": "b0a0245130566939a24ab8432e625b38272fbc62ecbe5aecbdcb50b8f02ce993"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.3.5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e48c8b55003773aeb801b80ff7276537",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 86681,
+        "upload_time": "2026-01-25T04:37:22",
+        "upload_time_iso_8601": "2026-01-25T04:37:22.585779Z",
+        "url": "https://files.pythonhosted.org/packages/7a/86/7f461495625145a99d60f14cdac142a11db5d501c86d48aad165575d1e06/wcwidth-0.3.5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "95fc44799c4a51ff0da0de0ff27e68c9dea3454f3d9bf15ffb606aeb6943e672",
+          "md5": "dadd2342ead7200d7b86f461c86815b6",
+          "sha256": "7c3463f312540cf21ddd527ea34f3ae95c057fa191aa7a9e043898d20d636e59"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.3.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "dadd2342ead7200d7b86f461c86815b6",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 234185,
+        "upload_time": "2026-01-25T04:37:23",
+        "upload_time_iso_8601": "2026-01-25T04:37:23.942476Z",
+        "url": "https://files.pythonhosted.org/packages/95/fc/44799c4a51ff0da0de0ff27e68c9dea3454f3d9bf15ffb606aeb6943e672/wcwidth-0.3.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.4.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b7f6da704c5e77281d71723bffbd926b754c0efd57cbcd02e74c2ca374c14cef",
+          "md5": "fd1a637b2aab004179298821f5288193",
+          "sha256": "8af2c81174b3aa17adf05058c543c267e4e5b6767a28e31a673a658c1d766783"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.4.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "fd1a637b2aab004179298821f5288193",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 88216,
+        "upload_time": "2026-01-26T02:35:57",
+        "upload_time_iso_8601": "2026-01-26T02:35:57.461769Z",
+        "url": "https://files.pythonhosted.org/packages/b7/f6/da704c5e77281d71723bffbd926b754c0efd57cbcd02e74c2ca374c14cef/wcwidth-0.4.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "980adc5110cc99c39df65bac29229c4b637a8304e0914850348d98974c8ecfff",
+          "md5": "863ac6e53ce677cf1167cffec77978ba",
+          "sha256": "46478e02cf7149ba150fb93c39880623ee7e5181c64eda167b6a1de51b7a7ba1"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.4.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "863ac6e53ce677cf1167cffec77978ba",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 237625,
+        "upload_time": "2026-01-26T02:35:58",
+        "upload_time_iso_8601": "2026-01-26T02:35:58.844392Z",
+        "url": "https://files.pythonhosted.org/packages/98/0a/dc5110cc99c39df65bac29229c4b637a8304e0914850348d98974c8ecfff/wcwidth-0.4.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.5.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f23e45583b67c2ff08ad5a582d316fcb2f11d6cf0a50c7707ac09d212d25bc98",
+          "md5": "6f1cece348c9330a49d8fbdac52f90d1",
+          "sha256": "1efe1361b83b0ff7877b81ba57c8562c99cf812158b778988ce17ec061095695"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.5.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "6f1cece348c9330a49d8fbdac52f90d1",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 93772,
+        "upload_time": "2026-01-27T01:31:43",
+        "upload_time_iso_8601": "2026-01-27T01:31:43.432017Z",
+        "url": "https://files.pythonhosted.org/packages/f2/3e/45583b67c2ff08ad5a582d316fcb2f11d6cf0a50c7707ac09d212d25bc98/wcwidth-0.5.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "646e62daec357285b927e82263a81f3b4c1790215bc77c42530ce4a69d501a43",
+          "md5": "0c1c4fc3a6fbf70d266f7e48e543e20a",
+          "sha256": "f89c103c949a693bf563377b2153082bf58e309919dfb7f27b04d862a0089333"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.5.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0c1c4fc3a6fbf70d266f7e48e543e20a",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 246585,
+        "upload_time": "2026-01-27T01:31:44",
+        "upload_time_iso_8601": "2026-01-27T01:31:44.942120Z",
+        "url": "https://files.pythonhosted.org/packages/64/6e/62daec357285b927e82263a81f3b4c1790215bc77c42530ce4a69d501a43/wcwidth-0.5.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.5.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6d72da5a6f511a8267f962a08637464a70409736ac72f9f75b069e0e96d69b64",
+          "md5": "436dbf2a1b4e1fb66c7bfd1e812ea77f",
+          "sha256": "46912178a64217749bf3426b21e36e849fbc46e05c949407b3e364d9f7ffcadf"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.5.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "436dbf2a1b4e1fb66c7bfd1e812ea77f",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 90088,
+        "upload_time": "2026-01-29T19:32:50",
+        "upload_time_iso_8601": "2026-01-29T19:32:50.592019Z",
+        "url": "https://files.pythonhosted.org/packages/6d/72/da5a6f511a8267f962a08637464a70409736ac72f9f75b069e0e96d69b64/wcwidth-0.5.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5f3e3d456efe55d2d5e7938b5f9abd68333dd8dceb14e829f51f9a8deed2217e",
+          "md5": "320de0f4c7647ee28c7a9168b03701a6",
+          "sha256": "c022c39a02a0134d1e10810da36d1f984c79648181efcc70a389f4569695f5ae"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.5.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "320de0f4c7647ee28c7a9168b03701a6",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 152817,
+        "upload_time": "2026-01-29T19:32:52",
+        "upload_time_iso_8601": "2026-01-29T19:32:52.220885Z",
+        "url": "https://files.pythonhosted.org/packages/5f/3e/3d456efe55d2d5e7938b5f9abd68333dd8dceb14e829f51f9a8deed2217e/wcwidth-0.5.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.5.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3cc1d73f12f8cdb1891334a2ccf7389eed244d3941e74d80dd220badb937f3fb",
+          "md5": "631fa516961e796c10a1ae84f924a901",
+          "sha256": "d584eff31cd4753e1e5ff6c12e1edfdb324c995713f75d26c29807bb84bf649e"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.5.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "631fa516961e796c10a1ae84f924a901",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 92981,
+        "upload_time": "2026-01-31T03:52:09",
+        "upload_time_iso_8601": "2026-01-31T03:52:09.140054Z",
+        "url": "https://files.pythonhosted.org/packages/3c/c1/d73f12f8cdb1891334a2ccf7389eed244d3941e74d80dd220badb937f3fb/wcwidth-0.5.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c262a7c072fbfefb2980a00f99ca994279cb9ecf310cb2e6b2a4d2a28fe192b3",
+          "md5": "05d1d1f90cc47a52eb51cc33bc3679f5",
+          "sha256": "53123b7af053c74e9fe2e92ac810301f6139e64379031f7124574212fb3b4091"
+        },
+        "downloads": -1,
+        "filename": "wcwidth-0.5.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "05d1d1f90cc47a52eb51cc33bc3679f5",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 157587,
+        "upload_time": "2026-01-31T03:52:10",
+        "upload_time_iso_8601": "2026-01-31T03:52:10.920040Z",
+        "url": "https://files.pythonhosted.org/packages/c2/62/a7c072fbfefb2980a00f99ca994279cb9ecf310cb2e6b2a4d2a28fe192b3/wcwidth-0.5.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "3cc1d73f12f8cdb1891334a2ccf7389eed244d3941e74d80dd220badb937f3fb",
+        "md5": "631fa516961e796c10a1ae84f924a901",
+        "sha256": "d584eff31cd4753e1e5ff6c12e1edfdb324c995713f75d26c29807bb84bf649e"
+      },
+      "downloads": -1,
+      "filename": "wcwidth-0.5.3-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "631fa516961e796c10a1ae84f924a901",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.8",
+      "size": 92981,
+      "upload_time": "2026-01-31T03:52:09",
+      "upload_time_iso_8601": "2026-01-31T03:52:09.140054Z",
+      "url": "https://files.pythonhosted.org/packages/3c/c1/d73f12f8cdb1891334a2ccf7389eed244d3941e74d80dd220badb937f3fb/wcwidth-0.5.3-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "c262a7c072fbfefb2980a00f99ca994279cb9ecf310cb2e6b2a4d2a28fe192b3",
+        "md5": "05d1d1f90cc47a52eb51cc33bc3679f5",
+        "sha256": "53123b7af053c74e9fe2e92ac810301f6139e64379031f7124574212fb3b4091"
+      },
+      "downloads": -1,
+      "filename": "wcwidth-0.5.3.tar.gz",
+      "has_sig": false,
+      "md5_digest": "05d1d1f90cc47a52eb51cc33bc3679f5",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.8",
+      "size": 157587,
+      "upload_time": "2026-01-31T03:52:10",
+      "upload_time_iso_8601": "2026-01-31T03:52:10.920040Z",
+      "url": "https://files.pythonhosted.org/packages/c2/62/a7c072fbfefb2980a00f99ca994279cb9ecf310cb2e6b2a4d2a28fe192b3/wcwidth-0.5.3.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

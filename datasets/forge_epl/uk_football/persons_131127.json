@@ -1,0 +1,43 @@
+{
+    "id": 131127,
+    "name": "Will Dennis",
+    "firstName": "Will",
+    "lastName": "Dennis",
+    "dateOfBirth": "2000-07-10",
+    "nationality": "England",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 40,
+    "lastUpdated": "2023-08-05T13:52:34Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png",
+        "address": "Dean Court, Kings Park Bournemouth BH7 7AF",
+        "website": "http://www.afcb.co.uk",
+        "founded": 1890,
+        "clubColors": "Red / Black",
+        "venue": "Vitality Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2021-07",
+            "until": "2028-06"
+        }
+    }
+}

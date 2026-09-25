@@ -1,0 +1,35 @@
+{
+    "id": 23128,
+    "name": "Gabriel Magalh\u00e3es",
+    "firstName": "",
+    "lastName": "Gabriel Magalh\u00e3es",
+    "dateOfBirth": "1997-12-19",
+    "nationality": "Brazil",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 3,
+    "lastUpdated": "2026-05-22T09:41:01Z",
+    "currentTeam": {
+        "area": {
+            "id": 2032,
+            "name": "Brazil",
+            "code": "BRA",
+            "flag": "https://crests.football-data.org/764.svg"
+        },
+        "id": 764,
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "tla": "BRA",
+        "crest": "https://crests.football-data.org/764.svg",
+        "address": "Rua Victor Civita 66 Bloco 1, Edifico 5 Rio de Janeiro, RJ 22775-044",
+        "website": "http://www.cbf.com.br/",
+        "founded": 1914,
+        "clubColors": "Yellow / Green / Blue",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

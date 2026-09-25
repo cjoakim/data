@@ -1,0 +1,50 @@
+{
+    "id": 81871,
+    "name": "Joe Gauci",
+    "firstName": "Joe",
+    "lastName": "Gauci",
+    "dateOfBirth": "2000-07-04",
+    "nationality": "Australia",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 46,
+    "lastUpdated": "2024-02-02T09:48:42Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 1126,
+        "name": "Lincoln City FC",
+        "shortName": "Lincoln City",
+        "tla": "LIN",
+        "crest": "https://crests.football-data.org/1126.png",
+        "address": "Sincil Bank Lincoln LN5 8LD",
+        "website": "http://www.redimps.com",
+        "founded": 1883,
+        "clubColors": "Red / White / Black",
+        "venue": "Sincil Bank Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2016,
+                "name": "Championship",
+                "code": "ELC",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/ELC.png"
+            },
+            {
+                "id": 2139,
+                "name": "Football League Cup",
+                "code": "FLC",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/carabao.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2027-06"
+        }
+    }
+}

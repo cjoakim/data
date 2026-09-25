@@ -1,0 +1,463 @@
+{
+  "info": {
+    "author": null,
+    "author_email": "Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>, Holger Krekel <holger.krekel@gmail.com>",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Intended Audience :: Developers",
+      "Operating System :: MacOS :: MacOS X",
+      "Operating System :: Microsoft :: Windows",
+      "Operating System :: POSIX",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Utilities"
+    ],
+    "description": "iniconfig: brain-dead simple parsing of ini files\n=======================================================\n\niniconfig is a small and simple INI-file parser module\nhaving a unique set of features:\n\n* maintains order of sections and entries\n* supports multi-line values with or without line-continuations\n* supports \"#\" comments everywhere\n* raises errors with proper line-numbers\n* no bells and whistles like automatic substitutions\n* iniconfig raises an Error if two sections have the same name.\n\nIf you encounter issues or have feature wishes please report them to:\n\n    https://github.com/RonnyPfannschmidt/iniconfig/issues\n\nBasic Example\n===================================\n\nIf you have an ini file like this:\n\n.. code-block:: ini\n\n    # content of example.ini\n    [section1] # comment\n    name1=value1  # comment\n    name1b=value1,value2  # comment\n\n    [section2]\n    name2=\n        line1\n        line2\n\nthen you can do:\n\n.. code-block:: pycon\n\n    >>> import iniconfig\n    >>> ini = iniconfig.IniConfig(\"example.ini\")\n    >>> ini['section1']['name1'] # raises KeyError if not exists\n    'value1'\n    >>> ini.get('section1', 'name1b', [], lambda x: x.split(\",\"))\n    ['value1', 'value2']\n    >>> ini.get('section1', 'notexist', [], lambda x: x.split(\",\"))\n    []\n    >>> [x.name for x in list(ini)]\n    ['section1', 'section2']\n    >>> list(list(ini)[0].items())\n    [('name1', 'value1'), ('name1b', 'value1,value2')]\n    >>> 'section1' in ini\n    True\n    >>> 'inexistendsection' in ini\n    False\n",
+    "description_content_type": "text/x-rst",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": [
+      "License-File"
+    ],
+    "home_page": null,
+    "keywords": null,
+    "license": null,
+    "license_expression": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "iniconfig",
+    "package_url": "https://pypi.org/project/iniconfig/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/iniconfig/",
+    "project_urls": {
+      "Homepage": "https://github.com/pytest-dev/iniconfig"
+    },
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/iniconfig/2.3.0/",
+    "requires_dist": null,
+    "requires_python": ">=3.10",
+    "summary": "brain-dead simple config-ini parsing",
+    "version": "2.3.0",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 31878540,
+  "releases": {
+    "0.0": [],
+    "0.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "47a65075a9c302cafbf63435556c70e209a0715eb92de86ea85e55dbb4282899",
+          "md5": "b8922b08e674df235a8c2e2730f91ff1",
+          "sha256": "f0a16b26d6439c6cf0841a1d77d8fe93c6bacdeff9e7d45dadf8fc83a2e56ae1"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-0.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b8922b08e674df235a8c2e2730f91ff1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 3948,
+        "upload_time": "2010-10-12T17:42:07",
+        "upload_time_iso_8601": "2010-10-12T17:42:07.038193Z",
+        "url": "https://files.pythonhosted.org/packages/47/a6/5075a9c302cafbf63435556c70e209a0715eb92de86ea85e55dbb4282899/iniconfig-0.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.dev0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "59af786e6cf4db2fe22427f7819db46ae194908eed48a9a35f2071a722e3c655",
+          "md5": "b575d98a890d4896a089b09f660c462b",
+          "sha256": "33fd6d8a36c45871e4fd56801d0549002c3c9fdc347cf90cf63b944303b24ad9"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-0.2.dev0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b575d98a890d4896a089b09f660c462b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 4013,
+        "upload_time": "2010-10-14T12:02:08",
+        "upload_time_iso_8601": "2010-10-14T12:02:08.177684Z",
+        "url": "https://files.pythonhosted.org/packages/59/af/786e6cf4db2fe22427f7819db46ae194908eed48a9a35f2071a722e3c655/iniconfig-0.2.dev0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "9d6f7187ac1996add14e220e565cad9867eb0b90b5fda523357f5ba52ee16d31",
+          "md5": "1b540c1e0c5648773e0950cdf84834a8",
+          "sha256": "aa0b40f50a00e72323cb5d41302f9c6165728fd764ac8822aa3fff00a40d56b4"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-1.0.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "1b540c1e0c5648773e0950cdf84834a8",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 7807,
+        "upload_time": "2016-09-23T17:05:09",
+        "upload_time_iso_8601": "2016-09-23T17:05:09.306367Z",
+        "url": "https://files.pythonhosted.org/packages/9d/6f/7187ac1996add14e220e565cad9867eb0b90b5fda523357f5ba52ee16d31/iniconfig-1.0.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "2046d2f4919cc48c39c2cb48b589ca9016aae6bad050b8023667eb86950d3da2",
+          "md5": "ad18af63810529a8992ce3482136c47d",
+          "sha256": "80cf40c597eb564e86346103f609d74efce0f6b4d4f30ec8ce9e2c26411ba437"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-1.0.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ad18af63810529a8992ce3482136c47d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": null,
+        "size": 4212,
+        "upload_time": "2020-07-31T08:58:57",
+        "upload_time_iso_8601": "2020-07-31T08:58:57.134781Z",
+        "url": "https://files.pythonhosted.org/packages/20/46/d2f4919cc48c39c2cb48b589ca9016aae6bad050b8023667eb86950d3da2/iniconfig-1.0.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "aa6e60dafce419de21f2f3f29319114808cac9f49b6c15117a419737a4ce3813",
+          "md5": "464179a74789d033b170101f6aa38c2a",
+          "sha256": "e5f92f89355a67de0595932a6c6c02ab4afddc6fcdc0bfc5becd0d60884d3f69"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-1.0.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "464179a74789d033b170101f6aa38c2a",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 7836,
+        "upload_time": "2020-07-31T08:58:58",
+        "upload_time_iso_8601": "2020-07-31T08:58:58.958919Z",
+        "url": "https://files.pythonhosted.org/packages/aa/6e/60dafce419de21f2f3f29319114808cac9f49b6c15117a419737a4ce3813/iniconfig-1.0.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "4439e96292c7f7068e58877f476908c5974dc76c37c623f1fa332fe4ed6dfbec",
+          "md5": "173c12e2c872bad5e0eac856798e087c",
+          "sha256": "150a59361017218f4621a68ea9984772675a7f6e074ff7d02e115152f1804dc6"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-1.1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "173c12e2c872bad5e0eac856798e087c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 8059,
+        "upload_time": "2020-10-14T08:25:37",
+        "upload_time_iso_8601": "2020-10-14T08:25:37.504560Z",
+        "url": "https://files.pythonhosted.org/packages/44/39/e96292c7f7068e58877f476908c5974dc76c37c623f1fa332fe4ed6dfbec/iniconfig-1.1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "9bddb3c12c6d707058fa947864b67f0c4e0c39ef8610988d7baea9578f3c48f3",
+          "md5": "90f3e1bb7ced782f2b04eb5af266ecb7",
+          "sha256": "011e24c64b7f47f6ebd835bb12a743f2fbe9a26d4cecaa7f53bc4f35ee9da8b3"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-1.1.1-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "90f3e1bb7ced782f2b04eb5af266ecb7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 4990,
+        "upload_time": "2020-10-16T17:37:23",
+        "upload_time_iso_8601": "2020-10-16T17:37:23.050185Z",
+        "url": "https://files.pythonhosted.org/packages/9b/dd/b3c12c6d707058fa947864b67f0c4e0c39ef8610988d7baea9578f3c48f3/iniconfig-1.1.1-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "23a297899f6bd0e873fed3a7e67ae8d3a08b21799430fb4da15cfedf10d6e2c2",
+          "md5": "0b7f3be87481211c183eae095bcea6f1",
+          "sha256": "bc3af051d7d14b2ee5ef9969666def0cd1a000e121eaea580d4a313df4b37f32"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-1.1.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0b7f3be87481211c183eae095bcea6f1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 8104,
+        "upload_time": "2020-10-14T10:20:18",
+        "upload_time_iso_8601": "2020-10-14T10:20:18.572379Z",
+        "url": "https://files.pythonhosted.org/packages/23/a2/97899f6bd0e873fed3a7e67ae8d3a08b21799430fb4da15cfedf10d6e2c2/iniconfig-1.1.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.0.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "efa662565a6e1cf69e10f5727360368e451d4b7f58beeac6173dc9db836a5b46",
+          "md5": "e423f20fe6712d80df7a23f9de303213",
+          "sha256": "b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-2.0.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e423f20fe6712d80df7a23f9de303213",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.7",
+        "size": 5892,
+        "upload_time": "2023-01-07T11:08:09",
+        "upload_time_iso_8601": "2023-01-07T11:08:09.864484Z",
+        "url": "https://files.pythonhosted.org/packages/ef/a6/62565a6e1cf69e10f5727360368e451d4b7f58beeac6173dc9db836a5b46/iniconfig-2.0.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "d74bcbd8e699e64a6f16ca3a8220661b5f83792b3017d0f79807cb8708d33913",
+          "md5": "3c030b3f51dcc3aca585de05635600e4",
+          "sha256": "2d91e135bf72d31a410b17c16da610a82cb55f6b0477d1a902134b24a455b8b3"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-2.0.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "3c030b3f51dcc3aca585de05635600e4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.7",
+        "size": 4646,
+        "upload_time": "2023-01-07T11:08:11",
+        "upload_time_iso_8601": "2023-01-07T11:08:11.254770Z",
+        "url": "https://files.pythonhosted.org/packages/d7/4b/cbd8e699e64a6f16ca3a8220661b5f83792b3017d0f79807cb8708d33913/iniconfig-2.0.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.1.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2ce1e6716421ea10d38022b952c159d5161ca1193197fb744506875fbb87ea7b",
+          "md5": "a3addcf2db108b0a2fd70a26e2504f22",
+          "sha256": "9deba5723312380e77435581c6bf4935c94cbfab9b1ed33ef8d238ea168eb760"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-2.1.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a3addcf2db108b0a2fd70a26e2504f22",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 6050,
+        "upload_time": "2025-03-19T20:10:01",
+        "upload_time_iso_8601": "2025-03-19T20:10:01.071471Z",
+        "url": "https://files.pythonhosted.org/packages/2c/e1/e6716421ea10d38022b952c159d5161ca1193197fb744506875fbb87ea7b/iniconfig-2.1.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f297ebf4da567aa6827c909642694d71c9fcf53e5b504f2d96afea02718862f3",
+          "md5": "437ede5b20b0ab2e76ca08f02b5c49dd",
+          "sha256": "3abbd2e30b36733fee78f9c7f7308f2d0050e88f0087fd25c2645f63c773e1c7"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-2.1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "437ede5b20b0ab2e76ca08f02b5c49dd",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 4793,
+        "upload_time": "2025-03-19T20:09:59",
+        "upload_time_iso_8601": "2025-03-19T20:09:59.721246Z",
+        "url": "https://files.pythonhosted.org/packages/f2/97/ebf4da567aa6827c909642694d71c9fcf53e5b504f2d96afea02718862f3/iniconfig-2.1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.2.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "13713970abe530a7a15e406874a30ed6cf1ead266444b4503ebb2f68b4d98f30",
+          "md5": "a6e96926f6896a63dc1113d24e12b96a",
+          "sha256": "eeea4a571b616cf2951fbeeda9490863f3d1882a21cf673cd3236545488d6f1e"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-2.2.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a6e96926f6896a63dc1113d24e12b96a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 6228,
+        "upload_time": "2025-10-18T20:23:57",
+        "upload_time_iso_8601": "2025-10-18T20:23:57.492796Z",
+        "url": "https://files.pythonhosted.org/packages/13/71/3970abe530a7a15e406874a30ed6cf1ead266444b4503ebb2f68b4d98f30/iniconfig-2.2.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8e112f7713979d561602e14b8fdd99a0e2e8ff2d901de1041c42a23a4c33f2c3",
+          "md5": "9b26b3dc5b58de889eb51e2a700280a4",
+          "sha256": "1807d2bc2eb4231a5e40e2ecee093fc25fc0eb0e2840f01ea50a1d15380adbff"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-2.2.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9b26b3dc5b58de889eb51e2a700280a4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 18227,
+        "upload_time": "2025-10-18T20:23:58",
+        "upload_time_iso_8601": "2025-10-18T20:23:58.576472Z",
+        "url": "https://files.pythonhosted.org/packages/8e/11/2f7713979d561602e14b8fdd99a0e2e8ff2d901de1041c42a23a4c33f2c3/iniconfig-2.2.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.3.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "cbb13846dd7f199d53cb17f49cba7e651e9ce294d8497c8c150530ed11865bb8",
+          "md5": "d3e156a9abd59ac8b5eb0c2e8b1c5dad",
+          "sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-2.3.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "d3e156a9abd59ac8b5eb0c2e8b1c5dad",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 7484,
+        "upload_time": "2025-10-18T21:55:41",
+        "upload_time_iso_8601": "2025-10-18T21:55:41.639305Z",
+        "url": "https://files.pythonhosted.org/packages/cb/b1/3846dd7f199d53cb17f49cba7e651e9ce294d8497c8c150530ed11865bb8/iniconfig-2.3.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "723414ca021ce8e5dfedc35312d08ba8bf51fdd999c576889fc2c24cb97f4f10",
+          "md5": "5c1d9c21275feb3da71400bf716edd72",
+          "sha256": "c76315c77db068650d49c5b56314774a7804df16fee4402c1f19d6d15d8c4730"
+        },
+        "downloads": -1,
+        "filename": "iniconfig-2.3.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5c1d9c21275feb3da71400bf716edd72",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 20503,
+        "upload_time": "2025-10-18T21:55:43",
+        "upload_time_iso_8601": "2025-10-18T21:55:43.219048Z",
+        "url": "https://files.pythonhosted.org/packages/72/34/14ca021ce8e5dfedc35312d08ba8bf51fdd999c576889fc2c24cb97f4f10/iniconfig-2.3.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "cbb13846dd7f199d53cb17f49cba7e651e9ce294d8497c8c150530ed11865bb8",
+        "md5": "d3e156a9abd59ac8b5eb0c2e8b1c5dad",
+        "sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12"
+      },
+      "downloads": -1,
+      "filename": "iniconfig-2.3.0-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "d3e156a9abd59ac8b5eb0c2e8b1c5dad",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.10",
+      "size": 7484,
+      "upload_time": "2025-10-18T21:55:41",
+      "upload_time_iso_8601": "2025-10-18T21:55:41.639305Z",
+      "url": "https://files.pythonhosted.org/packages/cb/b1/3846dd7f199d53cb17f49cba7e651e9ce294d8497c8c150530ed11865bb8/iniconfig-2.3.0-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "723414ca021ce8e5dfedc35312d08ba8bf51fdd999c576889fc2c24cb97f4f10",
+        "md5": "5c1d9c21275feb3da71400bf716edd72",
+        "sha256": "c76315c77db068650d49c5b56314774a7804df16fee4402c1f19d6d15d8c4730"
+      },
+      "downloads": -1,
+      "filename": "iniconfig-2.3.0.tar.gz",
+      "has_sig": false,
+      "md5_digest": "5c1d9c21275feb3da71400bf716edd72",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.10",
+      "size": 20503,
+      "upload_time": "2025-10-18T21:55:43",
+      "upload_time_iso_8601": "2025-10-18T21:55:43.219048Z",
+      "url": "https://files.pythonhosted.org/packages/72/34/14ca021ce8e5dfedc35312d08ba8bf51fdd999c576889fc2c24cb97f4f10/iniconfig-2.3.0.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

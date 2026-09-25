@@ -1,0 +1,43 @@
+{
+    "id": 185610,
+    "name": "Antonio Silva",
+    "firstName": "",
+    "lastName": "Ant\u00f3nio Silva",
+    "dateOfBirth": "2003-10-31",
+    "nationality": "Portugal",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 4,
+    "lastUpdated": "2026-07-14T18:17:01Z",
+    "currentTeam": {
+        "area": {
+            "id": 2187,
+            "name": "Portugal",
+            "code": "POR",
+            "flag": "https://crests.football-data.org/765.svg"
+        },
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "SL Benfica",
+        "tla": "BEN",
+        "crest": "https://crests.football-data.org/1903.png",
+        "address": "Avenida General Norton de Matos 1500 Lissabon null",
+        "website": "https://www.slbenfica.pt",
+        "founded": 1904,
+        "clubColors": null,
+        "venue": "Est\u00e1dio do Sport Lisboa e Benfica",
+        "runningCompetitions": [
+            {
+                "id": 2017,
+                "name": "Primeira Liga",
+                "code": "PPL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PPL.png"
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

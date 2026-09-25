@@ -1,0 +1,43 @@
+{
+    "id": 189153,
+    "name": "Tarik Muharemovi\u0107",
+    "firstName": "Tarik",
+    "lastName": "Muharemovi\u0107",
+    "dateOfBirth": "2003-02-28",
+    "nationality": "Bosnia-Herzegovina",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 4,
+    "lastUpdated": "2026-06-01T11:16:32Z",
+    "currentTeam": {
+        "area": {
+            "id": 2030,
+            "name": "Bosnia and Herzegovina",
+            "code": "BIH",
+            "flag": "https://crests.football-data.org/bosnia.svg"
+        },
+        "id": 1060,
+        "name": "Bosnia-Herzegovina",
+        "shortName": "Bosnia-H.",
+        "tla": "BIH",
+        "crest": "https://crests.football-data.org/bosnia.svg",
+        "address": "Ulica Ferhadija, 30 Sarajevo 71000",
+        "website": "http://www.nfsbih.ba",
+        "founded": 1992,
+        "clubColors": "White / Blue",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "id": 176241,
+    "name": "Matheus Franca",
+    "firstName": "",
+    "lastName": "Matheus Fran\u00e7a",
+    "dateOfBirth": "2004-04-01",
+    "nationality": "Brazil",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": null,
+    "lastUpdated": "2026-08-21T10:27:52Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png",
+        "address": "Whitehorse Lane London SE25 6PU",
+        "website": "http://www.cpfc.co.uk",
+        "founded": 1905,
+        "clubColors": "Red / Blue",
+        "venue": "Selhurst Park",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2023-08",
+            "until": "2028-06"
+        }
+    }
+}

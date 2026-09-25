@@ -1,0 +1,43 @@
+{
+    "id": 9869,
+    "name": "Ferdi Kad\u0131o\u011flu",
+    "firstName": "Ferdi",
+    "lastName": "Kad\u0131o\u011flu",
+    "dateOfBirth": "1999-10-07",
+    "nationality": "Turkey",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 20,
+    "lastUpdated": "2026-06-01T11:16:31Z",
+    "currentTeam": {
+        "area": {
+            "id": 2247,
+            "name": "Turkey",
+            "code": "TUR",
+            "flag": "https://crests.football-data.org/803.svg"
+        },
+        "id": 803,
+        "name": "Turkey",
+        "shortName": "Turkey",
+        "tla": "TUR",
+        "crest": "https://crests.football-data.org/803.svg",
+        "address": "Istinye Mahallesi, Dar\u00fc\u015f\u015fafaka Caddesi, 45 \u0130stanbul 34330",
+        "website": "http://www.tff.org",
+        "founded": 1923,
+        "clubColors": "Red / White",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "id": 6389,
+    "name": "Brandon Thomas-Asante",
+    "firstName": "Brandon",
+    "lastName": "Thomas-Asante",
+    "dateOfBirth": "1998-12-29",
+    "nationality": "Ghana",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 10,
+    "lastUpdated": "2026-06-03T11:27:01Z",
+    "currentTeam": {
+        "area": {
+            "id": 2089,
+            "name": "Ghana",
+            "code": "GHA",
+            "flag": "https://crests.football-data.org/ghana.svg"
+        },
+        "id": 763,
+        "name": "Ghana",
+        "shortName": "Ghana",
+        "tla": "GHA",
+        "crest": "https://crests.football-data.org/ghana.svg",
+        "address": "South East Ridge Accra 19338",
+        "website": "http://www.ghanafa.org",
+        "founded": 1957,
+        "clubColors": "White / Black",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2193,
+                "name": "Africa Cup Of Nations - Qualification",
+                "code": "ACQ",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

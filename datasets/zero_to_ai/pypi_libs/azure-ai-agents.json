@@ -1,0 +1,850 @@
+{
+  "info": {
+    "author": "Microsoft Corporation",
+    "author_email": "azpysdkhelp@microsoft.com",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.9"
+    ],
+    "description": "<!-- PIPY LONG DESCRIPTION BEGIN -->\n# Azure AI Agents client library for Python\n\nUse the AI Agents client library to:\n\n* **Develop Agents using the Azure AI Agents Service**, leveraging an extensive ecosystem of models, tools, and capabilities from OpenAI, Microsoft, and other LLM providers. The Azure AI Agents Service enables the building of Agents for a wide range of generative AI use cases.\n* **Note:** While this package can be used independently, we recommend using the Azure AI Projects client library (azure-ai-projects) for an enhanced experience. \nThe Projects library provides simplified access to advanced functionality, such as creating and managing agents, enumerating AI models, working with datasets and \nmanaging search indexes, evaluating generative AI performance, and enabling OpenTelemetry tracing.\n\n[Product documentation](https://aka.ms/azsdk/azure-ai-agents/product-doc)\n| [Samples][samples]\n| [API reference documentation](https://aka.ms/azsdk/azure-ai-agents/python/reference)\n| [Package (PyPI)](https://aka.ms/azsdk/azure-ai-agents/python/package)\n| [SDK source code](https://aka.ms/azsdk/azure-ai-agents/python/code)\n| [AI Starter Template](https://aka.ms/azsdk/azure-ai-agents/python/ai-starter-template)\n\n## Reporting issues\n\nTo report an issue with the client library, or request additional features, please open a GitHub issue [here](https://github.com/Azure/azure-sdk-for-python/issues). Mention the package name \"azure-ai-agents\" in the title or content.\n\n## Table of contents\n\n- [Getting started](#getting-started)\n  - [Prerequisite](#prerequisite)\n  - [Install the package](#install-the-package)\n- [Key concepts](#key-concepts)\n  - [Create and authenticate the client](#create-and-authenticate-the-client)\n- [Examples](#examples)\n  - [Create an Agent](#create-agent) with:\n    - [File Search](#create-agent-with-file-search)\n    - [Enterprise File Search](#create-agent-with-enterprise-file-search)\n    - [Code interpreter](#create-agent-with-code-interpreter)\n    - [Bing grounding](#create-agent-with-bing-grounding)\n    - [Azure AI Search](#create-agent-with-azure-ai-search)\n    - [Function call](#create-agent-with-function-call)\n    - [Azure Function Call](#create-agent-with-azure-function-call)\n    - [OpenAPI](#create-agent-with-openapi)\n  - [Create thread](#create-thread) with\n    - [Tool resource](#create-thread-with-tool-resource)\n  - [Create message](#create-message) with:\n    - [File search attachment](#create-message-with-file-search-attachment)\n    - [Code interpreter attachment](#create-message-with-code-interpreter-attachment)\n    - [Create Message with Image Inputs](#create-message-with-image-inputs)\n  - [Execute Run, Run_and_Process, or Stream](#execute-run-run_and_process-or-stream)\n  - [Retrieve message](#retrieve-message)\n  - [Retrieve file](#retrieve-file)\n  - [Tear down by deleting resource](#teardown)\n  - [Tracing](#tracing)\n    - [Installation](#installation)\n    - [How to enable tracing](#how-to-enable-tracing)\n    - [How to trace your own functions](#how-to-trace-your-own-functions)\n- [Troubleshooting](#troubleshooting)\n  - [Logging](#logging)\n  - [Reporting issues](#reporting-issues)\n- [Next steps](#next-steps)\n- [Contributing](#contributing)\n<!-- PIPY LONG DESCRIPTION END -->\n## Getting started\n\n### Prerequisite\n\n- Python 3.9 or later.\n- An [Azure subscription][azure_sub].\n- A [project in Azure AI Foundry](https://learn.microsoft.com/azure/ai-studio/how-to/create-projects).\n- The project endpoint string. It can be found in your Azure AI Foundry project overview page, under \"Project details\". Below we will assume the environment variable `PROJECT_ENDPOINT_STRING` was defined to hold this value.\n- Entra ID is needed to authenticate the client. Your application needs an object that implements the [TokenCredential](https://learn.microsoft.com/python/api/azure-core/azure.core.credentials.tokencredential) interface. Code samples here use [DefaultAzureCredential](https://learn.microsoft.com/python/api/azure-identity/azure.identity.defaultazurecredential). To get that working, you will need:\n  * An appropriate role assignment. see [Role-based access control in Azure AI Foundry portal](https://learn.microsoft.com/azure/ai-foundry/concepts/rbac-ai-foundry). Role assigned can be done via the \"Access Control (IAM)\" tab of your Azure AI Project resource in the Azure portal.\n  * [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) installed.\n  * You are logged into your Azure account by running `az login`.\n  * Note that if you have multiple Azure subscriptions, the subscription that contains your Azure AI Project resource must be your default subscription. Run `az account list --output table` to list all your subscription and see which one is the default. Run `az account set --subscription \"Your Subscription ID or Name\"` to change your default subscription.\n\n### Install the package\n\n```bash\npip install azure-ai-agents\n```\n\n## Key concepts\n\n### Create and authenticate the client\n\nTo construct a synchronous client:\n\n```python\nimport os\nfrom azure.ai.agents import AgentsClient\nfrom azure.identity import DefaultAzureCredential\n\nagents_client = AgentsClient(\n    endpoint=os.environ[\"PROJECT_ENDPOINT\"],\n    credential=DefaultAzureCredential(),\n)\n```\n\nTo construct an asynchronous client, Install the additional package [aiohttp](https://pypi.org/project/aiohttp/):\n\n```bash\npip install aiohttp\n```\n\nand update the code above to import `asyncio`, and import `AgentsClient` from the `azure.ai.agents.aio` namespace:\n\n```python\nimport os\nimport asyncio\nfrom azure.ai.agents.aio import AgentsClient\nfrom azure.core.credentials import AzureKeyCredential\n\nagent_client = AgentsClient(\n   endpoint=os.environ[\"PROJECT_ENDPOINT\"],\n   credential=DefaultAzureCredential(),\n)\n```\n\n## Examples\n\n### Create Agent\n\nBefore creating an Agent, you need to set up Azure resources to deploy your model. [Create a New Agent Quickstart](https://learn.microsoft.com/azure/ai-services/agents/quickstart?pivots=programming-language-python-azure) details selecting and deploying your Agent Setup.\n\nHere is an example of how to create an Agent:\n<!-- SNIPPET:sample_agents_basics.create_agent -->\n\n```python\n\n    agent = agents_client.create_agent(\n        model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n        name=\"my-agent\",\n        instructions=\"You are helpful agent\",\n    )\n```\n\n<!-- END SNIPPET -->\n\nTo allow Agents to access your resources or custom functions, you need tools. You can pass tools to `create_agent` by either `toolset` or combination of `tools` and `tool_resources`.\n\nHere is an example of `toolset`:\n<!-- SNIPPET:sample_agents_run_with_toolset.create_agent_toolset -->\n\n```python\nfunctions = FunctionTool(user_functions)\ncode_interpreter = CodeInterpreterTool()\n\ntoolset = ToolSet()\ntoolset.add(functions)\ntoolset.add(code_interpreter)\n\n# To enable tool calls executed automatically\nagents_client.enable_auto_function_calls(toolset)\n\nagent = agents_client.create_agent(\n    model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n    name=\"my-agent\",\n    instructions=\"You are a helpful agent\",\n    toolset=toolset,\n)\n```\n\n<!-- END SNIPPET -->\n\nAlso notices that if you use asynchronous client, you use `AsyncToolSet` instead.  Additional information related to `AsyncFunctionTool` be discussed in the later sections.\n\nHere is an example to use `tools` and `tool_resources`:\n<!-- SNIPPET:sample_agents_vector_store_batch_file_search.create_agent_with_tools_and_tool_resources -->\n\n```python\nfile_search_tool = FileSearchTool(vector_store_ids=[vector_store.id])\n\n# Notices that FileSearchTool as tool and tool_resources must be added or the agent unable to search the file\nagent = agents_client.create_agent(\n    model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n    name=\"my-agent\",\n    instructions=\"You are helpful agent\",\n    tools=file_search_tool.definitions,\n    tool_resources=file_search_tool.resources,\n)\n```\n\n<!-- END SNIPPET -->\n\nIn the following sections, we show you sample code in either `toolset` or combination of `tools` and `tool_resources`.\n\n### Create Agent with File Search\n\nTo perform file search by an Agent, we first need to upload a file, create a vector store, and associate the file to the vector store. Here is an example:\n\n<!-- SNIPPET:sample_agents_file_search.upload_file_create_vector_store_and_agent_with_file_search_tool -->\n\n```python\nfile = agents_client.files.upload_and_poll(file_path=asset_file_path, purpose=FilePurpose.AGENTS)\nprint(f\"Uploaded file, file ID: {file.id}\")\n\nvector_store = agents_client.vector_stores.create_and_poll(file_ids=[file.id], name=\"my_vectorstore\")\nprint(f\"Created vector store, vector store ID: {vector_store.id}\")\n\n# Create file search tool with resources followed by creating agent\nfile_search = FileSearchTool(vector_store_ids=[vector_store.id])\n\nagent = agents_client.create_agent(\n    model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n    name=\"my-agent\",\n    instructions=\"Hello, you are helpful agent and can search information from uploaded files\",\n    tools=file_search.definitions,\n    tool_resources=file_search.resources,\n)\n```\n\n<!-- END SNIPPET -->\n\n### Create Agent with Enterprise File Search\n\nWe can upload file to Azure as it is shown in the example, or use the existing Azure blob storage. In the code below we demonstrate how this can be achieved. First we upload file to azure and create `VectorStoreDataSource`, which then is used to create vector store. This vector store is then given to the `FileSearchTool` constructor.\n\n<!-- SNIPPET:sample_agents_enterprise_file_search.upload_file_and_create_agent_with_file_search -->\n\n```python\n# We will upload the local file to Azure and will use it for vector store creation.\nasset_uri = os.environ[\"AZURE_BLOB_URI\"]\n\n# Create a vector store with no file and wait for it to be processed\nds = VectorStoreDataSource(asset_identifier=asset_uri, asset_type=VectorStoreDataSourceAssetType.URI_ASSET)\nvector_store = agents_client.vector_stores.create_and_poll(data_sources=[ds], name=\"sample_vector_store\")\nprint(f\"Created vector store, vector store ID: {vector_store.id}\")\n\n# Create a file search tool\nfile_search_tool = FileSearchTool(vector_store_ids=[vector_store.id])\n\n# Notices that FileSearchTool as tool and tool_resources must be added or the agent unable to search the file\nagent = agents_client.create_agent(\n    model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n    name=\"my-agent\",\n    instructions=\"You are helpful agent\",\n    tools=file_search_tool.definitions,\n    tool_resources=file_search_tool.resources,\n)\n```\n\n<!-- END SNIPPET -->\n\nWe also can attach files to the existing vector store. In the code snippet below, we first create an empty vector store and add file to it.\n\n<!-- SNIPPET:sample_agents_vector_store_batch_enterprise_file_search.attach_files_to_store -->\n\n```python\n# Create a vector store with no file and wait for it to be processed\nvector_store = agents_client.vector_stores.create_and_poll(data_sources=[], name=\"sample_vector_store\")\nprint(f\"Created vector store, vector store ID: {vector_store.id}\")\n\nds = VectorStoreDataSource(asset_identifier=asset_uri, asset_type=VectorStoreDataSourceAssetType.URI_ASSET)\n# Add the file to the vector store or you can supply data sources in the vector store creation\nvector_store_file_batch = agents_client.vector_store_file_batches.create_and_poll(\n    vector_store_id=vector_store.id, data_sources=[ds]\n)\nprint(f\"Created vector store file batch, vector store file batch ID: {vector_store_file_batch.id}\")\n\n# Create a file search tool\nfile_search_tool = FileSearchTool(vector_store_ids=[vector_store.id])\n```\n\n<!-- END SNIPPET -->\n\n### Create Agent with Code Interpreter\n\nHere is an example to upload a file and use it for code interpreter by an Agent:\n\n<!-- SNIPPET:sample_agents_code_interpreter.upload_file_and_create_agent_with_code_interpreter -->\n\n```python\nfile = agents_client.files.upload_and_poll(file_path=asset_file_path, purpose=FilePurpose.AGENTS)\nprint(f\"Uploaded file, file ID: {file.id}\")\n\ncode_interpreter = CodeInterpreterTool(file_ids=[file.id])\n\n# Create agent with code interpreter tool and tools_resources\nagent = agents_client.create_agent(\n    model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n    name=\"my-agent\",\n    instructions=\"You are helpful agent\",\n    tools=code_interpreter.definitions,\n    tool_resources=code_interpreter.resources,\n)\n```\n\n<!-- END SNIPPET -->\n\n### Create Agent with Bing Grounding\n\nTo enable your Agent to perform search through Bing search API, you use `BingGroundingTool` along with a connection.\n\nHere is an example:\n\n<!-- SNIPPET:sample_agents_bing_grounding.create_agent_with_bing_grounding_tool -->\n\n```python\nconn_id = os.environ[\"AZURE_BING_CONNECTION_ID\"]\n\n# Initialize agent bing tool and add the connection id\nbing = BingGroundingTool(connection_id=conn_id)\n\n# Create agent with the bing tool and process agent run\nwith agents_client:\n    agent = agents_client.create_agent(\n        model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n        name=\"my-agent\",\n        instructions=\"You are a helpful agent\",\n        tools=bing.definitions,\n    )\n```\n\n<!-- END SNIPPET -->\n\n### Create Agent with Azure AI Search\n\nAzure AI Search is an enterprise search system for high-performance applications. It integrates with Azure OpenAI Service and Azure Machine Learning, offering advanced search technologies like vector search and full-text search. Ideal for knowledge base insights, information discovery, and automation. Creating an Agent with Azure AI Search requires an existing Azure AI Search Index. For more information and setup guides, see [Azure AI Search Tool Guide](https://learn.microsoft.com/azure/ai-services/agents/how-to/tools/azure-ai-search?tabs=azurecli%2Cpython&pivots=overview-azure-ai-search).\n\nHere is an example to integrate Azure AI Search:\n\n<!-- SNIPPET:sample_agents_azure_ai_search.create_agent_with_azure_ai_search_tool -->\n\n```python\nconn_id = os.environ[\"AI_AZURE_AI_CONNECTION_ID\"]\n\nprint(conn_id)\n\n# Initialize agent AI search tool and add the search index connection id\nai_search = AzureAISearchTool(\n    index_connection_id=conn_id, index_name=\"sample_index\", query_type=AzureAISearchQueryType.SIMPLE, top_k=3, filter=\"\"\n)\n\n# Create agent with AI search tool and process agent run\nwith agents_client:\n    agent = agents_client.create_agent(\n        model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n        name=\"my-agent\",\n        instructions=\"You are a helpful agent\",\n        tools=ai_search.definitions,\n        tool_resources=ai_search.resources,\n    )\n```\n\n<!-- END SNIPPET -->\n\nIf the agent has found the relevant information in the index, the reference\nand annotation will be provided in the message response. In the example above, we replace\nthe reference placeholder by the actual reference and url. Please note, that to\nget sensible result, the index needs to have \"embedding\", \"token\", \"category\" and \"title\" fields.\n\n<!-- SNIPPET:sample_agents_azure_ai_search.populate_references_agent_with_azure_ai_search_tool -->\n\n```python\n# Fetch and log all messages\nmessages = agents_client.messages.list(thread_id=thread.id, order=ListSortOrder.ASCENDING)\nfor message in messages:\n    if message.role == MessageRole.AGENT and message.url_citation_annotations:\n        placeholder_annotations = {\n            annotation.text: f\" [see {annotation.url_citation.title}] ({annotation.url_citation.url})\"\n            for annotation in message.url_citation_annotations\n        }\n        for message_text in message.text_messages:\n            message_str = message_text.text.value\n            for k, v in placeholder_annotations.items():\n                message_str = message_str.replace(k, v)\n            print(f\"{message.role}: {message_str}\")\n    else:\n        for message_text in message.text_messages:\n            print(f\"{message.role}: {message_text.text.value}\")\n```\n\n<!-- END SNIPPET -->\n\n### Create Agent with Function Call\n\nYou can enhance your Agents by defining callback functions as function tools. These can be provided to `create_agent` via either the `toolset` parameter or the combination of `tools` and `tool_resources`. Here are the distinctions:\n\nFor more details about requirements and specification of functions, refer to [Function Tool Specifications](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-agents/FunctionTool.md)\n\nHere is an example to use [user functions](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-agents/samples/utils/user_functions.py) in `toolset`:\n<!-- SNIPPET:sample_agents_stream_eventhandler_with_toolset.create_agent_with_function_tool -->\n\n```python\nfunctions = FunctionTool(user_functions)\ntoolset = ToolSet()\ntoolset.add(functions)\nagents_client.enable_auto_function_calls(toolset)\n\nagent = agents_client.create_agent(\n    model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n    name=\"my-agent\",\n    instructions=\"You are a helpful agent\",\n    toolset=toolset,\n)\n```\n\n<!-- END SNIPPET -->\n\nFor asynchronous functions, you must import `AgentsClient` from `azure.ai.agents.aio` and use `AsyncFunctionTool`.   Here is an example using [asynchronous user functions](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-agents/samples/agents_async/sample_agents_functions_async.py):\n\n```python\nfrom azure.ai.agents.aio import AgentsClient\n```\n\n<!-- SNIPPET:sample_agents_run_with_toolset_async.create_agent_with_async_function_tool -->\n\n```python\nfunctions = AsyncFunctionTool(user_async_functions)\n\ntoolset = AsyncToolSet()\ntoolset.add(functions)\nagents_client.enable_auto_function_calls(toolset)\n\nagent = await agents_client.create_agent(\n    model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n    name=\"my-agent\",\n    instructions=\"You are a helpful agent\",\n    toolset=toolset,\n)\n```\n\n<!-- END SNIPPET -->\n\nWhen `enable_auto_function_calls` is called, the SDK will automatically invoke functions during both `create_and_process` and streaming workflows. This simplifies agent logic by handling function execution internally.\n\n- For examples of automatic function calls in action, refer to [`sample_agents_auto_function_call.py`](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-agents/samples/agents_tools/sample_agents_auto_function_call.py) or [`sample_agents_auto_function_call_async.py`](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-agents/samples/agents_async/sample_agents_auto_function_call_async.py).\n- If you prefer to manage function execution manually, refer to [`sample_agents_stream_eventhandler_with_functions.py`](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-agents/samples/agents_streaming/sample_agents_stream_eventhandler_with_functions.py) or\n[`sample_agents_functions.py`](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-agents/samples/agents_tools/sample_agents_functions.py).\n\n\n### Create Agent With Azure Function Call\n\nThe AI agent leverages Azure Functions triggered asynchronously via Azure Storage Queues. To enable the agent to perform Azure Function calls, you must set up the corresponding `AzureFunctionTool`, specifying input and output queues as well as parameter definitions.\n\nExample Python snippet illustrating how you create an agent utilizing the Azure Function Tool:\n\n```python\nazure_function_tool = AzureFunctionTool(\n    name=\"foo\",\n    description=\"Get answers from the foo bot.\",\n    parameters={\n        \"type\": \"object\",\n        \"properties\": {\n            \"query\": {\"type\": \"string\", \"description\": \"The question to ask.\"},\n            \"outputqueueuri\": {\"type\": \"string\", \"description\": \"The full output queue uri.\"},\n        },\n    },\n    input_queue=AzureFunctionStorageQueue(\n        queue_name=\"azure-function-foo-input\",\n        storage_service_endpoint=storage_service_endpoint,\n    ),\n    output_queue=AzureFunctionStorageQueue(\n        queue_name=\"azure-function-tool-output\",\n        storage_service_endpoint=storage_service_endpoint,\n    ),\n)\n\nagent = agents_client.create_agent(\n    model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n    name=\"azure-function-agent-foo\",\n    instructions=f\"You are a helpful support agent. Use the provided function any time the prompt contains the string 'What would foo say?'. When you invoke the function, ALWAYS specify the output queue uri parameter as '{storage_service_endpoint}/azure-function-tool-output'. Always responds with \\\"Foo says\\\" and then the response from the tool.\",\n    tools=azure_function_tool.definitions,\n)\nprint(f\"Created agent, agent ID: {agent.id}\")\n```\n\n---\n\n**Limitations**\n\nCurrently, the Azure Function integration for the AI Agent has the following limitations:\n\n- Supported trigger for Azure Function is currently limited to **Queue triggers** only.\n  HTTP or other trigger types and streaming responses are not supported at this time.\n\n---\n\n**Create and Deploy Azure Function**\n\nBefore you can use the agent with AzureFunctionTool, you need to create and deploy Azure Function.\n\nBelow is an example Python Azure Function responding to queue-triggered messages and placing responses on the output queue:\n\n```python\nimport azure.functions as func\nimport logging\nimport json\n\napp = func.FunctionApp()\n\n@app.function_name(name=\"GetWeather\")\n@app.queue_trigger(arg_name=\"inputQueue\",\n                   queue_name=\"input\",\n                   connection=\"DEPLOYMENT_STORAGE_CONNECTION_STRING\")\n@app.queue_output(arg_name=\"outputQueue\",\n                  queue_name=\"output\",\n                  connection=\"DEPLOYMENT_STORAGE_CONNECTION_STRING\")\ndef queue_trigger(inputQueue: func.QueueMessage, outputQueue: func.Out[str]):\n    try:\n        messagepayload = json.loads(inputQueue.get_body().decode(\"utf-8\"))\n        location = messagepayload[\"location\"]\n        weather_result = f\"Weather is 82 degrees and sunny in {location}.\"\n\n        response_message = {\n            \"Value\": weather_result,\n            \"CorrelationId\": messagepayload[\"CorrelationId\"]\n        }\n\n        outputQueue.set(json.dumps(response_message))\n\n        logger.info(f\"Sent message to output queue with message {response_message}\")\n    except Exception as e:\n        logging.error(f\"Error processing message: {e}\")\n        return\n```\n\n> **Important:** Both input and output payloads must contain the `CorrelationId`, which must match in request and response.\n\n---\n\n**Azure Function Project Creation and Deployment**\n\nTo deploy your function to Azure properly, follow Microsoft's official documentation step by step:\n\n[Azure Functions Python Developer Guide](https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-python?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser)\n\n**Summary of required steps:**\n\n- Use the Azure CLI or Azure Portal to create an Azure Function App.\n- Enable System Managed Identity for your Azure Function App.\n- Assign appropriate permissions to your Azure Function App identity as outlined in the Role Assignments section below\n- Create input and output queues in Azure Storage.\n- Deploy your Function code.\n\n---\n\n**Verification and Testing Azure Function**\n\nTo ensure that your Azure Function deployment functions correctly:\n\n1. Place the following style message manually into the input queue (`input`):\n\n{\n  \"location\": \"Seattle\",\n  \"CorrelationId\": \"42\"\n}\n\nCheck the output queue (`output`) and validate the structured message response:\n\n{\n  \"Value\": \"The weather in Seattle is sunny and warm.\",\n  \"CorrelationId\": \"42\"\n}\n\n---\n\n**Required Role Assignments (IAM Configuration)**\n\nClearly assign the following Azure IAM roles to ensure correct permissions:\n\n1. **Azure Function App's identity:**\n   - Enable system managed identity through Azure Function App > Settings > Identity.\n   - Add permission to storage account:\n     - Go to **Storage Account > Access control (IAM)** and add role assignment:\n       - `Storage Queue Data Contributor` assigned to Azure Function managed identity\n\n2. **Azure AI Project Identity:**\n\nEnsure your Azure AI Project identity has the following storage account permissions:\n- `Storage Account Contributor`\n- `Storage Blob Data Contributor`\n- `Storage File Data Privileged Contributor`\n- `Storage Queue Data Contributor`\n- `Storage Table Data Contributor`\n\n---\n\n**Additional Important Configuration Notes**\n\n- The Azure Function configured above uses the `AzureWebJobsStorage` connection string for queue connectivity. You may alternatively use managed identity-based connections as described in the official Azure Functions Managed Identity documentation.\n- Storage queues you specify (`input` & `output`) should already exist in the storage account before the Function deployment or invocation, created manually via Azure portal or CLI.\n- When using Azure storage account connection strings, make sure the account has enabled storage account key access (`Storage Account > Settings > Configuration`).\n\n---\n\nWith the above steps complete, your Azure Function integration with your AI Agent is ready for use.\n\n\n### Create Agent With Logic Apps\n\nLogic Apps allow HTTP requests to trigger actions. For more information, refer to the guide [Logic App Workflows for Function Calling](https://learn.microsoft.com/azure/ai-services/openai/how-to/assistants-logic-apps).\n\nYour Logic App must be in the same resource group as your Azure AI Project, shown in the Azure Portal. Agents SDK accesses Logic Apps through Workflow URLs, which are fetched and called as requests in functions.\n\nBelow is an example of how to create an Azure Logic App utility tool and register a function with it.\n\n<!-- SNIPPET:sample_agents_logic_apps.register_logic_app -->\n\n```python\n\n# Create the agents client\nagents_client = AgentsClient(\n    endpoint=os.environ[\"PROJECT_ENDPOINT\"],\n    credential=DefaultAzureCredential(),\n)\n\n# Extract subscription and resource group from the project scope\nsubscription_id = os.environ[\"SUBSCRIPTION_ID\"]\nresource_group = os.environ[\"resource_group_name\"]\n\n# Logic App details\nlogic_app_name = \"<LOGIC_APP_NAME>\"\ntrigger_name = \"<TRIGGER_NAME>\"\n\n# Create and initialize AzureLogicAppTool utility\nlogic_app_tool = AzureLogicAppTool(subscription_id, resource_group)\nlogic_app_tool.register_logic_app(logic_app_name, trigger_name)\nprint(f\"Registered logic app '{logic_app_name}' with trigger '{trigger_name}'.\")\n\n# Create the specialized \"send_email_via_logic_app\" function for your agent tools\nsend_email_func = create_send_email_function(logic_app_tool, logic_app_name)\n\n# Prepare the function tools for the agent\nfunctions_to_use: Set = {\n    fetch_current_datetime,\n    send_email_func,  # This references the AzureLogicAppTool instance via closure\n}\n```\n\n<!-- END SNIPPET -->\n\nAfter this the functions can be incorporated normally into code using `FunctionTool`.\n\n\n### Create Agent With OpenAPI\n\nOpenAPI specifications describe REST operations against a specific endpoint. Agents SDK can read an OpenAPI spec, create a function from it, and call that function against the REST endpoint without additional client-side execution.\n\nHere is an example creating an OpenAPI tool (using anonymous authentication):\n\n<!-- SNIPPET:sample_agents_openapi.create_agent_with_openapi -->\n\n```python\n\nwith open(weather_asset_file_path, \"r\") as f:\n    openapi_weather = jsonref.loads(f.read())\n\nwith open(countries_asset_file_path, \"r\") as f:\n    openapi_countries = jsonref.loads(f.read())\n\n# Create Auth object for the OpenApiTool (note that connection or managed identity auth setup requires additional setup in Azure)\nauth = OpenApiAnonymousAuthDetails()\n\n# Initialize agent OpenApi tool using the read in OpenAPI spec\nopenapi_tool = OpenApiTool(\n    name=\"get_weather\", spec=openapi_weather, description=\"Retrieve weather information for a location\", auth=auth\n)\nopenapi_tool.add_definition(\n    name=\"get_countries\", spec=openapi_countries, description=\"Retrieve a list of countries\", auth=auth\n)\n\n# Create agent with OpenApi tool and process agent run\nwith agents_client:\n    agent = agents_client.create_agent(\n        model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n        name=\"my-agent\",\n        instructions=\"You are a helpful agent\",\n        tools=openapi_tool.definitions,\n    )\n```\n\n<!-- END SNIPPET -->\n\n\n### Create Thread\n\nFor each session or conversation, a thread is required.   Here is an example:\n\n<!-- SNIPPET:sample_agents_basics.create_thread -->\n\n```python\nthread = agents_client.threads.create()\n```\n\n<!-- END SNIPPET -->\n\n### Create Thread with Tool Resource\n\nIn some scenarios, you might need to assign specific resources to individual threads. To achieve this, you provide the `tool_resources` argument to `create_thread`. In the following example, you create a vector store and upload a file, enable an Agent for file search using the `tools` argument, and then associate the file with the thread using the `tool_resources` argument.\n\n<!-- SNIPPET:sample_agents_with_resources_in_thread.create_agent_and_thread_for_file_search -->\n\n```python\nfile = agents_client.files.upload_and_poll(file_path=asset_file_path, purpose=FilePurpose.AGENTS)\nprint(f\"Uploaded file, file ID: {file.id}\")\n\nvector_store = agents_client.vector_stores.create_and_poll(file_ids=[file.id], name=\"my_vectorstore\")\nprint(f\"Created vector store, vector store ID: {vector_store.id}\")\n\n# Create file search tool with resources followed by creating agent\nfile_search = FileSearchTool(vector_store_ids=[vector_store.id])\n\nagent = agents_client.create_agent(\n    model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n    name=\"my-agent\",\n    instructions=\"Hello, you are helpful agent and can search information from uploaded files\",\n    tools=file_search.definitions,\n)\n\nprint(f\"Created agent, ID: {agent.id}\")\n\n# Create thread with file resources.\n# If the agent has multiple threads, only this thread can search this file.\nthread = agents_client.threads.create(tool_resources=file_search.resources)\n```\n\n<!-- END SNIPPET -->\n\n#### List Threads\n\nTo list all threads attached to a given agent, use the list_threads API:\n\n```python\nthreads = agents_client.threads.list()\n```\n\n### Create Message\n\nTo create a message for agent to process, you pass `user` as `role` and a question as `content`:\n\n<!-- SNIPPET:sample_agents_basics.create_message -->\n\n```python\nmessage = agents_client.messages.create(thread_id=thread.id, role=\"user\", content=\"Hello, tell me a joke\")\n```\n\n<!-- END SNIPPET -->\n\n### Create Message with File Search Attachment\n\nTo attach a file to a message for content searching, you use `MessageAttachment` and `FileSearchTool`:\n\n<!-- SNIPPET:sample_agents_with_file_search_attachment.create_message_with_attachment -->\n\n```python\nattachment = MessageAttachment(file_id=file.id, tools=FileSearchTool().definitions)\nmessage = agents_client.messages.create(\n    thread_id=thread.id, role=\"user\", content=\"What feature does Smart Eyewear offer?\", attachments=[attachment]\n)\n```\n\n<!-- END SNIPPET -->\n\n### Create Message with Code Interpreter Attachment\n\nTo attach a file to a message for data analysis, use `MessageAttachment` and `CodeInterpreterTool` classes. You must pass `CodeInterpreterTool` as `tools` or `toolset` in `create_agent` call or the file attachment cannot be opened for code interpreter.\n\nHere is an example to pass `CodeInterpreterTool` as tool:\n\n<!-- SNIPPET:sample_agents_with_code_interpreter_file_attachment.create_agent_and_message_with_code_interpreter_file_attachment -->\n\n```python\n# Notice that CodeInterpreter must be enabled in the agent creation,\n# otherwise the agent will not be able to see the file attachment for code interpretation\nagent = agents_client.create_agent(\n    model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n    name=\"my-agent\",\n    instructions=\"You are helpful agent\",\n    tools=CodeInterpreterTool().definitions,\n)\nprint(f\"Created agent, agent ID: {agent.id}\")\n\nthread = agents_client.threads.create()\nprint(f\"Created thread, thread ID: {thread.id}\")\n\n# Create an attachment\nattachment = MessageAttachment(file_id=file.id, tools=CodeInterpreterTool().definitions)\n\n# Create a message\nmessage = agents_client.messages.create(\n    thread_id=thread.id,\n    role=\"user\",\n    content=\"Could you please create bar chart in TRANSPORTATION sector for the operating profit from the uploaded csv file and provide file to me?\",\n    attachments=[attachment],\n)\n```\n\n<!-- END SNIPPET -->\n\nAzure blob storage can be used as a message attachment. In this case, use `VectorStoreDataSource` as a data source:\n\n<!-- SNIPPET:sample_agents_code_interpreter_attachment_enterprise_search.upload_file_and_create_message_with_code_interpreter -->\n\n```python\n# We will upload the local file to Azure and will use it for vector store creation.\nasset_uri = os.environ[\"AZURE_BLOB_URI\"]\nds = VectorStoreDataSource(asset_identifier=asset_uri, asset_type=VectorStoreDataSourceAssetType.URI_ASSET)\n\n# Create a message with the attachment\nattachment = MessageAttachment(data_source=ds, tools=code_interpreter.definitions)\nmessage = agents_client.messages.create(\n    thread_id=thread.id, role=\"user\", content=\"What does the attachment say?\", attachments=[attachment]\n)\n```\n\n<!-- END SNIPPET -->\n\n### Create Message with Image Inputs\n\nYou can send messages to Azure agents with image inputs in following ways:\n\n- **Using an image stored as a uploaded file**\n- **Using a public image accessible via URL**\n- **Using a base64 encoded image string**\n\nThe following examples demonstrate each method:\n\n#### Create message using uploaded image file\n\n```python\n# Upload the local image file\nimage_file = agents_client.files.upload_and_poll(file_path=\"image_file.png\", purpose=\"assistants\")\n\n# Construct content using uploaded image\nfile_param = MessageImageFileParam(file_id=image_file.id, detail=\"high\")\ncontent_blocks = [\n    MessageInputTextBlock(text=\"Hello, what is in the image?\"),\n    MessageInputImageFileBlock(image_file=file_param),\n]\n\n# Create the message\nmessage = agents_client.messages.create(\n    thread_id=thread.id,\n    role=\"user\",\n    content=content_blocks\n)\n```\n\n#### Create message with an image URL input\n\n```python\n# Specify the public image URL\nimage_url = \"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg\"\n\n# Create content directly referencing image URL\nurl_param = MessageImageUrlParam(url=image_url, detail=\"high\")\ncontent_blocks = [\n    MessageInputTextBlock(text=\"Hello, what is in the image?\"),\n    MessageInputImageUrlBlock(image_url=url_param),\n]\n\n# Create the message\nmessage = agents_client.messages.create(\n    thread_id=thread.id,\n    role=\"user\",\n    content=content_blocks\n)\n```\n\n#### Create message with base64-encoded image input\n\n```python\nimport base64\n\ndef image_file_to_base64(path: str) -> str:\n    with open(path, \"rb\") as f:\n        return base64.b64encode(f.read()).decode(\"utf-8\")\n\n# Convert your image file to base64 format\nimage_base64 = image_file_to_base64(\"image_file.png\")\n\n# Prepare the data URL\nimg_data_url = f\"data:image/png;base64,{image_base64}\"\n\n# Use base64 encoded string as image URL parameter\nurl_param = MessageImageUrlParam(url=img_data_url, detail=\"high\")\ncontent_blocks = [\n    MessageInputTextBlock(text=\"Hello, what is in the image?\"),\n    MessageInputImageUrlBlock(image_url=url_param),\n]\n\n# Create the message\nmessage = agents_client.messages.create(\n    thread_id=thread.id,\n    role=\"user\",\n    content=content_blocks\n)\n```\n\n### Execute Run, Run_and_Process, or Stream\n\nTo process your message, you can use `runs.create`, `runs.create_and_process`, or `runs.stream`.\n\n`create_run` requests the Agent to process the message without polling for the result. If you are using `function tools` regardless as `toolset` or not, your code is responsible for polling for the result and acknowledging the status of `Run`. When the status is `requires_action`, your code is responsible for calling the function tools. For a code sample, visit [`sample_agents_functions.py`](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-agents/samples/agents_tools/sample_agents_functions.py).\n\nHere is an example of `runs.create` and poll until the run is completed:\n\n<!-- SNIPPET:sample_agents_basics.create_run -->\n\n```python\nrun = agents_client.runs.create(thread_id=thread.id, agent_id=agent.id)\n\n# Poll the run as long as run status is queued or in progress\nwhile run.status in [\"queued\", \"in_progress\", \"requires_action\"]:\n    # Wait for a second\n    time.sleep(1)\n    run = agents_client.runs.get(thread_id=thread.id, run_id=run.id)\n```\n\n<!-- END SNIPPET -->\n\nTo have the SDK poll on your behalf and call `function tools`, use the `create_and_process` method. Note that `function tools` will only be invoked if they are provided as `toolset` during the `create_agent` call.\n\nHere is an example:\n\n<!-- SNIPPET:sample_agents_run_with_toolset.create_and_process_run -->\n\n```python\nrun = agents_client.runs.create_and_process(thread_id=thread.id, agent_id=agent.id)\n```\n\n<!-- END SNIPPET -->\n\nWith streaming, polling need not be considered. If `function tools` are provided as `toolset` during the `create_agent` call, they will be invoked by the SDK.\n\nHere is an example of streaming:\n\n<!-- SNIPPET:sample_agents_basics_stream_iteration.iterate_stream -->\n\n```python\nwith agents_client.runs.stream(thread_id=thread.id, agent_id=agent.id) as stream:\n\n    for event_type, event_data, _ in stream:\n\n        if isinstance(event_data, MessageDeltaChunk):\n            print(f\"Text delta received: {event_data.text}\")\n\n        elif isinstance(event_data, ThreadMessage):\n            print(f\"ThreadMessage created. ID: {event_data.id}, Status: {event_data.status}\")\n\n        elif isinstance(event_data, ThreadRun):\n            print(f\"ThreadRun status: {event_data.status}\")\n\n        elif isinstance(event_data, RunStep):\n            print(f\"RunStep type: {event_data.type}, Status: {event_data.status}\")\n\n        elif event_type == AgentStreamEvent.ERROR:\n            print(f\"An error occurred. Data: {event_data}\")\n\n        elif event_type == AgentStreamEvent.DONE:\n            print(\"Stream completed.\")\n            break\n\n        else:\n            print(f\"Unhandled Event Type: {event_type}, Data: {event_data}\")\n```\n\n<!-- END SNIPPET -->\n\nIn the code above, because an `event_handler` object is not passed to the `stream` function, the SDK will instantiate `AgentEventHandler` or `AsyncAgentEventHandler` as the default event handler and produce an iterable object with `event_type` and `event_data`.  `AgentEventHandler` and `AsyncAgentEventHandler` are overridable.  Here is an example:\n\n<!-- SNIPPET:sample_agents_basics_stream_eventhandler.stream_event_handler -->\n\n```python\n# With AgentEventHandler[str], the return type for each event functions is optional string.\nclass MyEventHandler(AgentEventHandler[str]):\n\n    def on_message_delta(self, delta: \"MessageDeltaChunk\") -> Optional[str]:\n        return f\"Text delta received: {delta.text}\"\n\n    def on_thread_message(self, message: \"ThreadMessage\") -> Optional[str]:\n        return f\"ThreadMessage created. ID: {message.id}, Status: {message.status}\"\n\n    def on_thread_run(self, run: \"ThreadRun\") -> Optional[str]:\n        return f\"ThreadRun status: {run.status}\"\n\n    def on_run_step(self, step: \"RunStep\") -> Optional[str]:\n        return f\"RunStep type: {step.type}, Status: {step.status}\"\n\n    def on_error(self, data: str) -> Optional[str]:\n        return f\"An error occurred. Data: {data}\"\n\n    def on_done(self) -> Optional[str]:\n        return \"Stream completed.\"\n\n    def on_unhandled_event(self, event_type: str, event_data: Any) -> Optional[str]:\n        return f\"Unhandled Event Type: {event_type}, Data: {event_data}\"\n```\n\n<!-- END SNIPPET -->\n\n\n<!-- SNIPPET:sample_agents_basics_stream_eventhandler.create_stream -->\n\n```python\nwith agents_client.runs.stream(thread_id=thread.id, agent_id=agent.id, event_handler=MyEventHandler()) as stream:\n    for event_type, event_data, func_return in stream:\n        print(f\"Received data.\")\n        print(f\"Streaming receive Event Type: {event_type}\")\n        print(f\"Event Data: {str(event_data)[:100]}...\")\n        print(f\"Event Function return: {func_return}\\n\")\n```\n\n<!-- END SNIPPET -->\n\nAs you can see, this SDK parses the events and produces various event types similar to OpenAI agents. In your use case, you might not be interested in handling all these types and may decide to parse the events on your own. To achieve this, please refer to [override base event handler](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-agents/samples/agents_streaming/sample_agents_stream_with_base_override_eventhandler.py).\n\n```\nNote: Multiple streaming processes may be chained behind the scenes.\n\nWhen the SDK receives a `ThreadRun` event with the status `requires_action`, the next event will be `Done`, followed by termination. The SDK will submit the tool calls using the same event handler. The event handler will then chain the main stream with the tool stream.\n\nConsequently, when you iterate over the streaming using a for loop similar to the example above, the for loop will receive events from the main stream followed by events from the tool stream.\n```\n\n\n### Retrieve Message\n\nTo retrieve messages from agents, use the following example:\n\n<!-- SNIPPET:sample_agents_basics.list_messages -->\n\n```python\nmessages = agents_client.messages.list(thread_id=thread.id, order=ListSortOrder.ASCENDING)\nfor msg in messages:\n    if msg.text_messages:\n        last_text = msg.text_messages[-1]\n        print(f\"{msg.role}: {last_text.text.value}\")\n```\n\n<!-- END SNIPPET -->\n\nIn addition, `messages` and `messages.data[]` offer helper properties such as `text_messages`, `image_contents`, `file_citation_annotations`, and `file_path_annotations` to quickly retrieve content from one message or all messages.\n\n### Retrieve File\n\nFiles uploaded by Agents cannot be retrieved back. If your use case need to access the file content uploaded by the Agents, you are advised to keep an additional copy accessible by your application. However, files generated by Agents are retrievable by `save_file` or `get_file_content`.\n\nHere is an example retrieving file ids from messages and save to the local drive:\n\n<!-- SNIPPET:sample_agents_code_interpreter.get_messages_and_save_files -->\n\n```python\nmessages = agents_client.messages.list(thread_id=thread.id)\nprint(f\"Messages: {messages}\")\n\nfor msg in messages:\n    # Save every image file in the message\n    for img in msg.image_contents:\n        file_id = img.image_file.file_id\n        file_name = f\"{file_id}_image_file.png\"\n        agents_client.files.save(file_id=file_id, file_name=file_name)\n        print(f\"Saved image file to: {Path.cwd() / file_name}\")\n\n    # Print details of every file-path annotation\n    for ann in msg.file_path_annotations:\n        print(\"File Paths:\")\n        print(f\"  Type: {ann.type}\")\n        print(f\"  Text: {ann.text}\")\n        print(f\"  File ID: {ann.file_path.file_id}\")\n        print(f\"  Start Index: {ann.start_index}\")\n        print(f\"  End Index: {ann.end_index}\")\n```\n\n<!-- END SNIPPET -->\n\nHere is an example to use `get_file_content`:\n\n```python\nfrom pathlib import Path\n\nasync def save_file_content(client, file_id: str, file_name: str, target_dir: Optional[Union[str, Path]] = None):\n    # Determine the target directory\n    path = Path(target_dir).expanduser().resolve() if target_dir else Path.cwd()\n    path.mkdir(parents=True, exist_ok=True)\n\n    # Retrieve the file content\n    file_content_stream = await client.files.get_content(file_id)\n    if not file_content_stream:\n        raise RuntimeError(f\"No content retrievable for file ID '{file_id}'.\")\n\n    # Collect all chunks asynchronously\n    chunks = []\n    async for chunk in file_content_stream:\n        if isinstance(chunk, (bytes, bytearray)):\n            chunks.append(chunk)\n        else:\n            raise TypeError(f\"Expected bytes or bytearray, got {type(chunk).__name__}\")\n\n    target_file_path = path / file_name\n\n    # Write the collected content to the file synchronously\n    with open(target_file_path, \"wb\") as file:\n        for chunk in chunks:\n            file.write(chunk)\n```\n\n### Teardown\n\nTo remove resources after completing tasks, use the following functions:\n\n<!-- SNIPPET:sample_agents_file_search.teardown -->\n\n```python\n# Delete the file when done\nagents_client.vector_stores.delete(vector_store.id)\nprint(\"Deleted vector store\")\n\nagents_client.files.delete(file_id=file.id)\nprint(\"Deleted file\")\n\n# Delete the agent when done\nagents_client.delete_agent(agent.id)\nprint(\"Deleted agent\")\n```\n\n<!-- END SNIPPET -->\n\n## Tracing\n\nYou can add an Application Insights Azure resource to your Azure AI Foundry project. See the Tracing tab in your AI Foundry project. If one was enabled, you can get the Application Insights connection string, configure your Agents, and observe the full execution path through Azure Monitor. Typically, you might want to start tracing before you create an Agent.\n\n### Installation\n\nMake sure to install OpenTelemetry and the Azure SDK tracing plugin via\n\n```bash\npip install opentelemetry\npip install azure-ai-agents azure-identity opentelemetry-sdk azure-core-tracing-opentelemetry\n```\n\nYou will also need an exporter to send telemetry to your observability backend. You can print traces to the console or use a local viewer such as [Aspire Dashboard](https://learn.microsoft.com/dotnet/aspire/fundamentals/dashboard/standalone?tabs=bash).\n\nTo connect to Aspire Dashboard or another OpenTelemetry compatible backend, install OTLP exporter:\n\n```bash\npip install opentelemetry-exporter-otlp\n```\n\n### How to enable tracing\n\nHere is a code sample that shows how to enable Azure Monitor tracing:\n\n<!-- SNIPPET:sample_agents_basics_with_azure_monitor_tracing.enable_tracing -->\n\n```python\nfrom opentelemetry import trace\nfrom azure.monitor.opentelemetry import configure_azure_monitor\n\n# Enable Azure Monitor tracing\napplication_insights_connection_string = os.environ[\"APPLICATIONINSIGHTS_CONNECTION_STRING\"]\nconfigure_azure_monitor(connection_string=application_insights_connection_string)\n\nscenario = os.path.basename(__file__)\ntracer = trace.get_tracer(__name__)\n\nwith tracer.start_as_current_span(scenario):\n    with agents_client:\n```\n\n<!-- END SNIPPET -->\n\nIn addition, you might find helpful to see the tracing logs in console. You can achieve by the following code:\n\n```python\nfrom azure.ai.agents.telemetry import enable_telemetry\n\nenable_telemetry(destination=sys.stdout)\n```\n### How to trace your own functions\n\nThe decorator `trace_function` is provided for tracing your own function calls using OpenTelemetry. By default the function name is used as the name for the span. Alternatively you can provide the name for the span as a parameter to the decorator.\n\nThis decorator handles various data types for function parameters and return values, and records them as attributes in the trace span. The supported data types include:\n* Basic data types: str, int, float, bool\n* Collections: list, dict, tuple, set\n    * Special handling for collections:\n      - If a collection (list, dict, tuple, set) contains nested collections, the entire collection is converted to a string before being recorded as an attribute.\n      - Sets and dictionaries are always converted to strings to ensure compatibility with span attributes.\n\nObject types are omitted, and the corresponding parameter is not traced.\n\nThe parameters are recorded in attributes `code.function.parameter.<parameter_name>` and the return value is recorder in attribute `code.function.return.value`\n\n## Troubleshooting\n\n### Logging\n\nThe client uses the standard [Python logging library](https://docs.python.org/3/library/logging.html). The SDK logs HTTP request and response details, which may be useful in troubleshooting. To log to stdout, add the following:\n\n```python\nimport sys\nimport logging\n\n# Acquire the logger for this client library. Use 'azure' to affect both\n# 'azure.core` and `azure.ai.inference' libraries.\nlogger = logging.getLogger(\"azure\")\n\n# Set the desired logging level. logging.INFO or logging.DEBUG are good options.\nlogger.setLevel(logging.DEBUG)\n\n# Direct logging output to stdout:\nhandler = logging.StreamHandler(stream=sys.stdout)\n# Or direct logging output to a file:\n# handler = logging.FileHandler(filename=\"sample.log\")\nlogger.addHandler(handler)\n\n# Optional: change the default logging format. Here we add a timestamp.\n#formatter = logging.Formatter(\"%(asctime)s:%(levelname)s:%(name)s:%(message)s\")\n#handler.setFormatter(formatter)\n```\n\nBy default logs redact the values of URL query strings, the values of some HTTP request and response headers (including `Authorization` which holds the key or token), and the request and response payloads. To create logs without redaction, add `logging_enable = True` to the client constructor:\n\n```python\nagents_client = AgentsClient(\n    endpoint=os.environ[\"PROJECT_ENDPOINT\"],\n    credential=DefaultAzureCredential(),\n    logging_enable = True\n)\n```\n\nNote that the log level must be set to `logging.DEBUG` (see above code). Logs will be redacted with any other log level.\n\nBe sure to protect non redacted logs to avoid compromising security.\n\nFor more information, see [Configure logging in the Azure libraries for Python](https://aka.ms/azsdk/python/logging)\n\n### Reporting issues\n\nTo report an issue with the client library, or request additional features, please open a GitHub issue [here](https://github.com/Azure/azure-sdk-for-python/issues). Mention the package name \"azure-ai-agents\" in the title or content.\n\n\n## Next steps\n\nHave a look at the [Samples](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/ai/azure-ai-agents/samples) folder, containing fully runnable Python code for synchronous and asynchronous clients.\n\nExplore the [AI Starter Template](https://aka.ms/azsdk/azure-ai-agents/python/ai-starter-template). This template creates an Azure AI Foundry hub, project and connected resources including Azure OpenAI Service, AI Search and more. It also deploys a simple chat application to Azure Container Apps.\n\n## Contributing\n\nThis project welcomes contributions and suggestions. Most contributions require\nyou to agree to a Contributor License Agreement (CLA) declaring that you have\nthe right to, and actually do, grant us the rights to use your contribution.\nFor details, visit https://cla.microsoft.com.\n\nWhen you submit a pull request, a CLA-bot will automatically determine whether\nyou need to provide a CLA and decorate the PR appropriately (e.g., label,\ncomment). Simply follow the instructions provided by the bot. You will only\nneed to do this once across all repos using our CLA.\n\nThis project has adopted the\n[Microsoft Open Source Code of Conduct][code_of_conduct]. For more information,\nsee the Code of Conduct FAQ or contact opencode@microsoft.com with any\nadditional questions or comments.\n\n<!-- LINKS -->\n[samples]: https://aka.ms/azsdk/azure-ai-projects/python/samples/\n[code_of_conduct]: https://opensource.microsoft.com/codeofconduct/\n[entra_id]: https://learn.microsoft.com/azure/ai-services/authentication?tabs=powershell#authenticate-with-microsoft-entra-id\n[azure_identity_credentials]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity#credentials\n[azure_identity_pip]: https://pypi.org/project/azure-identity/\n[default_azure_credential]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity#defaultazurecredential\n[pip]: https://pypi.org/project/pip/\n[azure_sub]: https://azure.microsoft.com/free/\n[evaluators]: https://learn.microsoft.com/azure/ai-studio/how-to/develop/evaluate-sdk\n[azure_ai_evaluation]: https://learn.microsoft.com/python/api/overview/azure/ai-evaluation-readme\n[evaluator_library]: https://learn.microsoft.com/azure/ai-studio/how-to/evaluate-generative-ai-app#view-and-manage-the-evaluators-in-the-evaluator-library\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": "https://github.com/Azure/azure-sdk-for-python/tree/main/sdk",
+    "keywords": "azure, azure sdk",
+    "license": "MIT License",
+    "license_expression": null,
+    "license_files": null,
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "azure-ai-agents",
+    "package_url": "https://pypi.org/project/azure-ai-agents/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/azure-ai-agents/",
+    "project_urls": {
+      "Homepage": "https://github.com/Azure/azure-sdk-for-python/tree/main/sdk"
+    },
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/azure-ai-agents/1.1.0/",
+    "requires_dist": [
+      "isodate>=0.6.1",
+      "azure-core>=1.30.0",
+      "typing-extensions>=4.6.0"
+    ],
+    "requires_python": ">=3.9",
+    "summary": "Microsoft Corporation Azure AI Agents Client Library for Python",
+    "version": "1.1.0",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 31998751,
+  "releases": {
+    "1.0.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5d6e94aed845af9f2e6b1498cd5b43635ba6510c9260229e0700448bb24edfb0",
+          "md5": "db1041c17cf43c207de96c141cf5bd8b",
+          "sha256": "89a522b966380018c0f6a46ada62555a65b70d980ce9a22dee00d84efdf91f32"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.0.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "db1041c17cf43c207de96c141cf5bd8b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 187045,
+        "upload_time": "2025-05-16T01:38:58",
+        "upload_time_iso_8601": "2025-05-16T01:38:58.410424Z",
+        "url": "https://files.pythonhosted.org/packages/5d/6e/94aed845af9f2e6b1498cd5b43635ba6510c9260229e0700448bb24edfb0/azure_ai_agents-1.0.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fe653718f646fea42cac9a6120621d5ed067d6c00476d47bf329cf80331e965e",
+          "md5": "8266ce00737aefcf9d8b4dc4a983defc",
+          "sha256": "ccedf84bfafa59db79bb7adcfb0eb2970edc6dff58490d946bb3c0432b19b75f"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.0.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8266ce00737aefcf9d8b4dc4a983defc",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 298143,
+        "upload_time": "2025-05-16T01:38:56",
+        "upload_time_iso_8601": "2025-05-16T01:38:56.826969Z",
+        "url": "https://files.pythonhosted.org/packages/fe/65/3718f646fea42cac9a6120621d5ed067d6c00476d47bf329cf80331e965e/azure_ai_agents-1.0.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "75c06108e281adc467457e2f66e326081cf6fc48ee2f32d5d64596e36ba4ab97",
+          "md5": "daf1831a54c14a810066b055278cfae7",
+          "sha256": "96b900ee6e08add36599c8ff4c322e3d78fa39c2cf3132ff2ba140e63d3eb2ee"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.0.0b1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "daf1831a54c14a810066b055278cfae7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 189834,
+        "upload_time": "2025-05-09T22:28:01",
+        "upload_time_iso_8601": "2025-05-09T22:28:01.204717Z",
+        "url": "https://files.pythonhosted.org/packages/75/c0/6108e281adc467457e2f66e326081cf6fc48ee2f32d5d64596e36ba4ab97/azure_ai_agents-1.0.0b1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ebe2b49ae1df792b6339d5a1c8eb2dce204f2e13c5abf44223c1ca2a4675a4c4",
+          "md5": "86d8bfb9c387fa42df7b3060b156912b",
+          "sha256": "5f140d6cb9dba39144ff4f139e97fa6fab663fb58c5720f1448ab1e9c77f6d17"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.0.0b1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "86d8bfb9c387fa42df7b3060b156912b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 301998,
+        "upload_time": "2025-05-09T22:27:59",
+        "upload_time_iso_8601": "2025-05-09T22:27:59.330758Z",
+        "url": "https://files.pythonhosted.org/packages/eb/e2/b49ae1df792b6339d5a1c8eb2dce204f2e13c5abf44223c1ca2a4675a4c4/azure_ai_agents-1.0.0b1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "22a4fb5c4418d23c110a58acb16e21f21d29f64e2043f159237399ae99bf0eb9",
+          "md5": "5cc768dd980261ac17b462076ba56de5",
+          "sha256": "c477db801be594d282a17bfd3b80e8581bc3b5bf8ee9c00f8dbf72d0fce8ae52"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.0.0b2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5cc768dd980261ac17b462076ba56de5",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 193873,
+        "upload_time": "2025-05-13T22:14:29",
+        "upload_time_iso_8601": "2025-05-13T22:14:29.745572Z",
+        "url": "https://files.pythonhosted.org/packages/22/a4/fb5c4418d23c110a58acb16e21f21d29f64e2043f159237399ae99bf0eb9/azure_ai_agents-1.0.0b2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bf1203f45bc90d897612b39b90f28c8d6ddd833fad3226b203fbf79177172de5",
+          "md5": "97266d612269b02fdd6f955b8f58bdc5",
+          "sha256": "afb1d55dac755c29588cda1a1426d2a2885ad054ae184bc9ef88ed2f6582586e"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.0.0b2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "97266d612269b02fdd6f955b8f58bdc5",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 299663,
+        "upload_time": "2025-05-13T22:14:27",
+        "upload_time_iso_8601": "2025-05-13T22:14:27.826875Z",
+        "url": "https://files.pythonhosted.org/packages/bf/12/03f45bc90d897612b39b90f28c8d6ddd833fad3226b203fbf79177172de5/azure_ai_agents-1.0.0b2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "79f2f54d2d25d97c3e3eefa34f110a105365843bc0c3ae5b6cc8597ade6ccb60",
+          "md5": "7558e5007e868ffe012b80a096cb9875",
+          "sha256": "69518b8ecf1d2e3176168f7053601d3a499c639b4341e49f2164e843b84ab0b2"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.0.0b3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7558e5007e868ffe012b80a096cb9875",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 187224,
+        "upload_time": "2025-05-14T19:36:54",
+        "upload_time_iso_8601": "2025-05-14T19:36:54.265201Z",
+        "url": "https://files.pythonhosted.org/packages/79/f2/f54d2d25d97c3e3eefa34f110a105365843bc0c3ae5b6cc8597ade6ccb60/azure_ai_agents-1.0.0b3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bf0be8c433a59b058e28b379b3b82238e7bff7df427e563e09bc9983d17a13d0",
+          "md5": "e5e7c75f891f52ccc1d31c286073d0c9",
+          "sha256": "07ce9a5b5556ec7f8b2a911425a7245b06cba7d927943950f97227c724dbf303"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.0.0b3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e5e7c75f891f52ccc1d31c286073d0c9",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 297655,
+        "upload_time": "2025-05-14T19:36:52",
+        "upload_time_iso_8601": "2025-05-14T19:36:52.399925Z",
+        "url": "https://files.pythonhosted.org/packages/bf/0b/e8c433a59b058e28b379b3b82238e7bff7df427e563e09bc9983d17a13d0/azure_ai_agents-1.0.0b3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6fc97e310ed1348c30653693b1789db51f63f58e2e88166b90aee96ac396f89e",
+          "md5": "11e43fadf978b128ba47bb36e326ee83",
+          "sha256": "f3f4e68e18ffafbe4b30e91fa8931e427fdca42b90be6c32928d4f763ad0e3e7"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.0.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "11e43fadf978b128ba47bb36e326ee83",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 187279,
+        "upload_time": "2025-06-09T17:12:35",
+        "upload_time_iso_8601": "2025-06-09T17:12:35.729718Z",
+        "url": "https://files.pythonhosted.org/packages/6f/c9/7e310ed1348c30653693b1789db51f63f58e2e88166b90aee96ac396f89e/azure_ai_agents-1.0.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "13ecf9ad7e651ede0a1de61e8f45510f3a8fd6c1297e4e65375aa1197f0e5e1e",
+          "md5": "00cd1da6a9e5674b693f08d7ef4e3c83",
+          "sha256": "71da960f2441531a9ae1a163fff1279b08c6f9ce04748a2cf52a3b220166ae8d"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.0.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "00cd1da6a9e5674b693f08d7ef4e3c83",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 298380,
+        "upload_time": "2025-06-09T17:12:34",
+        "upload_time_iso_8601": "2025-06-09T17:12:34.000833Z",
+        "url": "https://files.pythonhosted.org/packages/13/ec/f9ad7e651ede0a1de61e8f45510f3a8fd6c1297e4e65375aa1197f0e5e1e/azure_ai_agents-1.0.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "82c83c511d1648eaf0fed577db2cbf67f39720a165921e7152b4c731c35b1943",
+          "md5": "673ac47c145f791623d7b1f0b1e479c3",
+          "sha256": "6d5a541b4cb91a3a3341b2f2b5063be898fb4d840d8a9193fe643765c7910d94"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.0.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "673ac47c145f791623d7b1f0b1e479c3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 189807,
+        "upload_time": "2025-07-01T19:38:05",
+        "upload_time_iso_8601": "2025-07-01T19:38:05.077172Z",
+        "url": "https://files.pythonhosted.org/packages/82/c8/3c511d1648eaf0fed577db2cbf67f39720a165921e7152b4c731c35b1943/azure_ai_agents-1.0.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d2e4aad4e2288134bc2efb44fbec3a219813b43bb07b206d6cb3a227ac08735a",
+          "md5": "0b11ef98c79f99cacbd9e0cb19072e30",
+          "sha256": "b9d349f42f5b944578b9e9428d5508935071cffa8a4cbe376fff62ecf8d07c23"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.0.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0b11ef98c79f99cacbd9e0cb19072e30",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 300772,
+        "upload_time": "2025-07-01T19:38:03",
+        "upload_time_iso_8601": "2025-07-01T19:38:03.504507Z",
+        "url": "https://files.pythonhosted.org/packages/d2/e4/aad4e2288134bc2efb44fbec3a219813b43bb07b206d6cb3a227ac08735a/azure_ai_agents-1.0.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e63143750555bf20d3d2d7589fcd775c96ce7c96e58e208b81c1ed6d4bad6c5f",
+          "md5": "89f409e540e81210dbe491b10573c6b3",
+          "sha256": "f660bb0d564aeb88e33140ebc1e4700d2e36e2e12ee60c3346915d702a9310a9"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.1.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "89f409e540e81210dbe491b10573c6b3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 191126,
+        "upload_time": "2025-08-05T19:02:28",
+        "upload_time_iso_8601": "2025-08-05T19:02:28.178500Z",
+        "url": "https://files.pythonhosted.org/packages/e6/31/43750555bf20d3d2d7589fcd775c96ce7c96e58e208b81c1ed6d4bad6c5f/azure_ai_agents-1.1.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3998bbe2e9e5b0a934be1930545025bf7018ebc4cc33b10134cc3314d6487076",
+          "md5": "a4a4c8bd818ec095e1ab16ca4f6496c3",
+          "sha256": "eb9d7226282d03206c3fab3f3ee0a2fc71e0ad38e52d2f4f19a92c56ed951aea"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a4a4c8bd818ec095e1ab16ca4f6496c3",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 303656,
+        "upload_time": "2025-08-05T19:02:26",
+        "upload_time_iso_8601": "2025-08-05T19:02:26.700933Z",
+        "url": "https://files.pythonhosted.org/packages/39/98/bbe2e9e5b0a934be1930545025bf7018ebc4cc33b10134cc3314d6487076/azure_ai_agents-1.1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0b1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "392a82258b6250728b17277298855db691be4b7dfcb9d15b34da89808c2a5ac7",
+          "md5": "af4e177681e9efc61f07b5e66c44a440",
+          "sha256": "d3ee4e596cad9ab3e239a988b5f4ddccc06fcde2c6e3d91e2c8b94bfa4c71844"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.1.0b1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "af4e177681e9efc61f07b5e66c44a440",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 189449,
+        "upload_time": "2025-05-21T18:57:09",
+        "upload_time_iso_8601": "2025-05-21T18:57:09.632595Z",
+        "url": "https://files.pythonhosted.org/packages/39/2a/82258b6250728b17277298855db691be4b7dfcb9d15b34da89808c2a5ac7/azure_ai_agents-1.1.0b1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c2a15013d9fbc465d6e98442f86576eda8055c42369d3db99a20a48899480738",
+          "md5": "59101d8adeabb1b949a5f6157376f1c8",
+          "sha256": "43e9f1b49d813ca9da843ae7e85488cc04413c3a1f59b60a971361850265fb69"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.1.0b1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "59101d8adeabb1b949a5f6157376f1c8",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 302260,
+        "upload_time": "2025-05-21T18:57:07",
+        "upload_time_iso_8601": "2025-05-21T18:57:07.757448Z",
+        "url": "https://files.pythonhosted.org/packages/c2/a1/5013d9fbc465d6e98442f86576eda8055c42369d3db99a20a48899480738/azure_ai_agents-1.1.0b1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0b2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2c343f47d9cb320b672c8482b15b0431fc546aea5b00104e405042e75d2f1397",
+          "md5": "1effeb124531098f93e901742338d81b",
+          "sha256": "4e48aba6ac2cdb4955adae5a5c94324b51005d2360ef5bc30a4d2ed86d7a9bde"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.1.0b2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "1effeb124531098f93e901742338d81b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 189945,
+        "upload_time": "2025-06-09T16:53:49",
+        "upload_time_iso_8601": "2025-06-09T16:53:49.721529Z",
+        "url": "https://files.pythonhosted.org/packages/2c/34/3f47d9cb320b672c8482b15b0431fc546aea5b00104e405042e75d2f1397/azure_ai_agents-1.1.0b2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "187bfa5452b4cf7559ac827140edf38097026da66bfe78df70783057aea68238",
+          "md5": "29cdcd36086b3c57d57a28be29ae05ac",
+          "sha256": "432ce359c3d02e05873d1d670bd91c1393bbe51f734ec4ce3f76fcafd8104c75"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.1.0b2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "29cdcd36086b3c57d57a28be29ae05ac",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 302724,
+        "upload_time": "2025-06-09T16:53:47",
+        "upload_time_iso_8601": "2025-06-09T16:53:47.994911Z",
+        "url": "https://files.pythonhosted.org/packages/18/7b/fa5452b4cf7559ac827140edf38097026da66bfe78df70783057aea68238/azure_ai_agents-1.1.0b2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0b3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6c0db27da01a73644d8e865938288bc01ef09caa69dfdb751b6a37d3cc9643e8",
+          "md5": "e43e27b0cdbe2600178ee623dfa0e40c",
+          "sha256": "0258350c0eb956c1e412f39d50d162e0fc0d046b2bb53f739a670457c6fbfc30"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.1.0b3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e43e27b0cdbe2600178ee623dfa0e40c",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 194171,
+        "upload_time": "2025-06-30T18:35:10",
+        "upload_time_iso_8601": "2025-06-30T18:35:10.918732Z",
+        "url": "https://files.pythonhosted.org/packages/6c/0d/b27da01a73644d8e865938288bc01ef09caa69dfdb751b6a37d3cc9643e8/azure_ai_agents-1.1.0b3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f167f25d1d73273fd434cbfdd8f9b28c37d4f47286550062a8d27f120146cdfb",
+          "md5": "a4aeca3d5460b2115e854a73fbfbf8f9",
+          "sha256": "63fe1e3d95162410f4f71a8a092291e26810ee39ab29ba543f41ac1d289fa150"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.1.0b3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a4aeca3d5460b2115e854a73fbfbf8f9",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 314534,
+        "upload_time": "2025-06-30T18:35:09",
+        "upload_time_iso_8601": "2025-06-30T18:35:09.200121Z",
+        "url": "https://files.pythonhosted.org/packages/f1/67/f25d1d73273fd434cbfdd8f9b28c37d4f47286550062a8d27f120146cdfb/azure_ai_agents-1.1.0b3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0b4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3f407a1bd4b98c7c16b863782b07c9c3e98a1b531068a3b5462c935a468db5ce",
+          "md5": "ce2cea855cc3e783f0cfabac11d2f726",
+          "sha256": "2256cdddd6176ac3855c9b1fb7174e156d1a2f7538cfb6bd80a743e2b205d775"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.1.0b4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ce2cea855cc3e783f0cfabac11d2f726",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 200368,
+        "upload_time": "2025-07-11T19:55:37",
+        "upload_time_iso_8601": "2025-07-11T19:55:37.512875Z",
+        "url": "https://files.pythonhosted.org/packages/3f/40/7a1bd4b98c7c16b863782b07c9c3e98a1b531068a3b5462c935a468db5ce/azure_ai_agents-1.1.0b4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "308f741c57202f4e4b6a7782f5a7ce7b18fd607696a154f5c9f2c716b207fa61",
+          "md5": "42b49cec096488c7f955ef2f78225afc",
+          "sha256": "126007543e3e9b9a4be017287e230e911fa126081f05b1c593e0d75702d01cd5"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.1.0b4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "42b49cec096488c7f955ef2f78225afc",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 331198,
+        "upload_time": "2025-07-11T19:55:35",
+        "upload_time_iso_8601": "2025-07-11T19:55:35.776427Z",
+        "url": "https://files.pythonhosted.org/packages/30/8f/741c57202f4e4b6a7782f5a7ce7b18fd607696a154f5c9f2c716b207fa61/azure_ai_agents-1.1.0b4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.2.0b1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "40c24824f3cd3980f976c4dace59cb25ab1891b22626be5c80c4a96f0b9c0ba5",
+          "md5": "9d9b694d2570e271df4291aba5f61c8e",
+          "sha256": "c6862f2e6655072ee3f1f1489be2dc2bf6c0ad636ec4e7f33a5fca9cb5c8eadb"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.2.0b1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "9d9b694d2570e271df4291aba5f61c8e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 202032,
+        "upload_time": "2025-08-05T22:21:08",
+        "upload_time_iso_8601": "2025-08-05T22:21:08.668302Z",
+        "url": "https://files.pythonhosted.org/packages/40/c2/4824f3cd3980f976c4dace59cb25ab1891b22626be5c80c4a96f0b9c0ba5/azure_ai_agents-1.2.0b1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ed700aa275a7eecead1691bd86474514bc28787f815c37d1d79ac78be03a7612",
+          "md5": "9163cdea1bff6db4920550bf45c19e40",
+          "sha256": "914e08e553ea4379d41ad60dbc8ea5468311d97f0ae1a362686229b8565ab8dd"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.2.0b1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9163cdea1bff6db4920550bf45c19e40",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 339933,
+        "upload_time": "2025-08-05T22:21:07",
+        "upload_time_iso_8601": "2025-08-05T22:21:07.262550Z",
+        "url": "https://files.pythonhosted.org/packages/ed/70/0aa275a7eecead1691bd86474514bc28787f815c37d1d79ac78be03a7612/azure_ai_agents-1.2.0b1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.2.0b2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "739d59688d265026e84dfff39b26d24cdbce0b2a2466a5bed06e0874a2a58e90",
+          "md5": "a1b5cb3768b7c8aef6cd7bdb71c5e381",
+          "sha256": "f82117029fcc1dbed24d6b6c94d7e60e6b75276c333329fcfd9238853c82020b"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.2.0b2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a1b5cb3768b7c8aef6cd7bdb71c5e381",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 204422,
+        "upload_time": "2025-08-12T21:35:48",
+        "upload_time_iso_8601": "2025-08-12T21:35:48.057120Z",
+        "url": "https://files.pythonhosted.org/packages/73/9d/59688d265026e84dfff39b26d24cdbce0b2a2466a5bed06e0874a2a58e90/azure_ai_agents-1.2.0b2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6e0797eb5d1355abbd572c187789ae6c17d36dfcb3a9a1fae002e660d2663bf6",
+          "md5": "4543ec53b259c496a302ce735d897e38",
+          "sha256": "4d9d220c12e2b7741f67bd7ef35e4faa60de7da32c0ab2526fa0ce1b978c2537"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.2.0b2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4543ec53b259c496a302ce735d897e38",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 353885,
+        "upload_time": "2025-08-12T21:35:46",
+        "upload_time_iso_8601": "2025-08-12T21:35:46.264872Z",
+        "url": "https://files.pythonhosted.org/packages/6e/07/97eb5d1355abbd572c187789ae6c17d36dfcb3a9a1fae002e660d2663bf6/azure_ai_agents-1.2.0b2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.2.0b3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "99a4c916745e150b5e157688da9a7965d62efb82ad940f2991260d1d2b79fcf1",
+          "md5": "6e8927d7e64e73b948154a9766a19575",
+          "sha256": "fec3e92fac5de2c18dee2d4def734825c2a4880bee39b3c237a7ad8079bfa8a7"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.2.0b3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "6e8927d7e64e73b948154a9766a19575",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 208129,
+        "upload_time": "2025-08-22T22:42:00",
+        "upload_time_iso_8601": "2025-08-22T22:42:00.249824Z",
+        "url": "https://files.pythonhosted.org/packages/99/a4/c916745e150b5e157688da9a7965d62efb82ad940f2991260d1d2b79fcf1/azure_ai_agents-1.2.0b3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "72523c1af9ed86582f09343f135d527ca26f0bf9659c01ccbddb650bbb952963",
+          "md5": "7941e79821295c56e193fb10d7961383",
+          "sha256": "440d7fca98c0b13654a57dcd159cdf64d1024f9baacd1a4354ce91a290d3741e"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.2.0b3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "7941e79821295c56e193fb10d7961383",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 362563,
+        "upload_time": "2025-08-22T22:41:58",
+        "upload_time_iso_8601": "2025-08-22T22:41:58.609612Z",
+        "url": "https://files.pythonhosted.org/packages/72/52/3c1af9ed86582f09343f135d527ca26f0bf9659c01ccbddb650bbb952963/azure_ai_agents-1.2.0b3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.2.0b4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3c08571e60c5f76c3ba20e6a99de636335e2480941816344dfad971a2e362c12",
+          "md5": "b0db33dc04f9eb93079d13c644886ba7",
+          "sha256": "8cfc4cd19d7d2087858148eba8b9b424a5d30fafbda87ca2d12ea5a066bec051"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.2.0b4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "b0db33dc04f9eb93079d13c644886ba7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 214705,
+        "upload_time": "2025-09-13T02:04:49",
+        "upload_time_iso_8601": "2025-09-13T02:04:49.171471Z",
+        "url": "https://files.pythonhosted.org/packages/3c/08/571e60c5f76c3ba20e6a99de636335e2480941816344dfad971a2e362c12/azure_ai_agents-1.2.0b4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "30dbcdf0ab3cf642ef766d193fadfee4cc8e70867a051c800f9e1091feb76337",
+          "md5": "7e667b64176066d3f724b75994a1cae0",
+          "sha256": "3da41c0f17282dd76bff7d370c714ef2d17140a119a1eb88d8653311835bbe85"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.2.0b4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "7e667b64176066d3f724b75994a1cae0",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 383620,
+        "upload_time": "2025-09-13T02:04:47",
+        "upload_time_iso_8601": "2025-09-13T02:04:47.301501Z",
+        "url": "https://files.pythonhosted.org/packages/30/db/cdf0ab3cf642ef766d193fadfee4cc8e70867a051c800f9e1091feb76337/azure_ai_agents-1.2.0b4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.2.0b5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6d6d15070d23d7a94833a210da09d5d7ed3c24838bb84f0463895e5d159f1695",
+          "md5": "801bb64b7dae8009a5d35169f91c7f3f",
+          "sha256": "257d0d24a6bf13eed4819cfa5c12fb222e5908deafb3cbfd5711d3a511cc4e88"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.2.0b5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "801bb64b7dae8009a5d35169f91c7f3f",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 217948,
+        "upload_time": "2025-09-30T01:55:04",
+        "upload_time_iso_8601": "2025-09-30T01:55:04.155022Z",
+        "url": "https://files.pythonhosted.org/packages/6d/6d/15070d23d7a94833a210da09d5d7ed3c24838bb84f0463895e5d159f1695/azure_ai_agents-1.2.0b5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ed578adeed578fa8984856c67b4229e93a58e3f6024417d448d0037aafa4ee9b",
+          "md5": "18e6df66baca8beb1aec086f322138ac",
+          "sha256": "1a16ef3f305898aac552269f01536c34a00473dedee0bca731a21fdb739ff9d5"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.2.0b5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "18e6df66baca8beb1aec086f322138ac",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 394876,
+        "upload_time": "2025-09-30T01:55:02",
+        "upload_time_iso_8601": "2025-09-30T01:55:02.328002Z",
+        "url": "https://files.pythonhosted.org/packages/ed/57/8adeed578fa8984856c67b4229e93a58e3f6024417d448d0037aafa4ee9b/azure_ai_agents-1.2.0b5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.2.0b6": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "96d0930c522f5fa9da163de057e57f8b44539424e13f46618c52624ebc712293",
+          "md5": "644a778efe53e3046d0853d99488034b",
+          "sha256": "ce23ad8fb9791118905be1ec8eae5c907cca2e536a455f1d3b830062c72cf2a7"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.2.0b6-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "644a778efe53e3046d0853d99488034b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 217950,
+        "upload_time": "2025-10-24T18:04:49",
+        "upload_time_iso_8601": "2025-10-24T18:04:49.720941Z",
+        "url": "https://files.pythonhosted.org/packages/96/d0/930c522f5fa9da163de057e57f8b44539424e13f46618c52624ebc712293/azure_ai_agents-1.2.0b6-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6832f4e534dc05dfb714705df56a190d690c5452cd4dd7e936612cb1adddc44f",
+          "md5": "c2694fc1c9544e21b4f0bdc467665d33",
+          "sha256": "d3c10848c3b19dec98a292f8c10cee4ba4aac1050d4faabf9c2e2456b727f528"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_agents-1.2.0b6.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c2694fc1c9544e21b4f0bdc467665d33",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 396865,
+        "upload_time": "2025-10-24T18:04:47",
+        "upload_time_iso_8601": "2025-10-24T18:04:47.877731Z",
+        "url": "https://files.pythonhosted.org/packages/68/32/f4e534dc05dfb714705df56a190d690c5452cd4dd7e936612cb1adddc44f/azure_ai_agents-1.2.0b6.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "e63143750555bf20d3d2d7589fcd775c96ce7c96e58e208b81c1ed6d4bad6c5f",
+        "md5": "89f409e540e81210dbe491b10573c6b3",
+        "sha256": "f660bb0d564aeb88e33140ebc1e4700d2e36e2e12ee60c3346915d702a9310a9"
+      },
+      "downloads": -1,
+      "filename": "azure_ai_agents-1.1.0-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "89f409e540e81210dbe491b10573c6b3",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.9",
+      "size": 191126,
+      "upload_time": "2025-08-05T19:02:28",
+      "upload_time_iso_8601": "2025-08-05T19:02:28.178500Z",
+      "url": "https://files.pythonhosted.org/packages/e6/31/43750555bf20d3d2d7589fcd775c96ce7c96e58e208b81c1ed6d4bad6c5f/azure_ai_agents-1.1.0-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "3998bbe2e9e5b0a934be1930545025bf7018ebc4cc33b10134cc3314d6487076",
+        "md5": "a4a4c8bd818ec095e1ab16ca4f6496c3",
+        "sha256": "eb9d7226282d03206c3fab3f3ee0a2fc71e0ad38e52d2f4f19a92c56ed951aea"
+      },
+      "downloads": -1,
+      "filename": "azure_ai_agents-1.1.0.tar.gz",
+      "has_sig": false,
+      "md5_digest": "a4a4c8bd818ec095e1ab16ca4f6496c3",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.9",
+      "size": 303656,
+      "upload_time": "2025-08-05T19:02:26",
+      "upload_time_iso_8601": "2025-08-05T19:02:26.700933Z",
+      "url": "https://files.pythonhosted.org/packages/39/98/bbe2e9e5b0a934be1930545025bf7018ebc4cc33b10134cc3314d6487076/azure_ai_agents-1.1.0.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

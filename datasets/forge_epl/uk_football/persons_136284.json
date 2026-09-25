@@ -1,0 +1,43 @@
+{
+    "id": 136284,
+    "name": "Hayden Hackney",
+    "firstName": "Hayden",
+    "lastName": "Hackney",
+    "dateOfBirth": "2002-06-26",
+    "nationality": "England",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 30,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png",
+        "address": "Goodison Park Liverpool L4 4EL",
+        "website": "http://www.evertonfc.com",
+        "founded": 1878,
+        "clubColors": "Blue / White",
+        "venue": "Goodison Park",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2031-06"
+        }
+    }
+}

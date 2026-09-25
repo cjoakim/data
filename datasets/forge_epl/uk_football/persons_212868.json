@@ -1,0 +1,35 @@
+{
+    "id": 212868,
+    "name": "Abdukodir Khusanov",
+    "firstName": "Abduqodir",
+    "lastName": "Khusanov",
+    "dateOfBirth": "2004-02-29",
+    "nationality": "Uzbekistan",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 2,
+    "lastUpdated": "2026-06-01T11:16:29Z",
+    "currentTeam": {
+        "area": {
+            "id": 2259,
+            "name": "Uzbekistan",
+            "code": "UZB",
+            "flag": "https://crests.football-data.org/8070.png"
+        },
+        "id": 8070,
+        "name": "Uzbekistan",
+        "shortName": "Uzbekistan",
+        "tla": "UZB",
+        "crest": "https://crests.football-data.org/8070.png",
+        "address": "C-15, 8/8a Toshkent 100011",
+        "website": "http://www.the-uff.com",
+        "founded": 1946,
+        "clubColors": "White / Blue / Green",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

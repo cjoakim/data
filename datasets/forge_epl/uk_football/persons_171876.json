@@ -1,0 +1,43 @@
+{
+    "id": 171876,
+    "name": "Habib Diarra",
+    "firstName": "Habib",
+    "lastName": "Diarra",
+    "dateOfBirth": "2004-01-03",
+    "nationality": "Senegal",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 19,
+    "lastUpdated": "2026-06-01T11:16:31Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png",
+        "address": "The Sunderland Stadium of Light Sunderland SR5 1SU",
+        "website": "http://www.safc.com",
+        "founded": 1879,
+        "clubColors": "Red / White",
+        "venue": "Stadium of Light",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2025-07",
+            "until": "2030-06"
+        }
+    }
+}

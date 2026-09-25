@@ -1,0 +1,43 @@
+{
+    "id": 189264,
+    "name": "Owen Goodman",
+    "firstName": "Owen",
+    "lastName": "Goodman",
+    "dateOfBirth": "2003-11-27",
+    "nationality": "Canada",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 1,
+    "lastUpdated": "2023-09-18T09:00:16Z",
+    "currentTeam": {
+        "area": {
+            "id": 2204,
+            "name": "Scotland",
+            "code": "SCO",
+            "flag": "https://crests.football-data.org/814.svg"
+        },
+        "id": 5369,
+        "name": "Dundee FC",
+        "shortName": "Dundee FC",
+        "tla": "DUN",
+        "crest": "https://crests.football-data.org/5369.png",
+        "address": "Sandeman Street Dundee DD3 7JY",
+        "website": "http://www.dundeefc.co.uk",
+        "founded": 1893,
+        "clubColors": "Dark Blue / White",
+        "venue": "Kilmac Stadium at Dens Park",
+        "runningCompetitions": [
+            {
+                "id": 2084,
+                "name": "Premier League",
+                "code": "SPL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SPL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2027-06"
+        }
+    }
+}

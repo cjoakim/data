@@ -1,0 +1,43 @@
+{
+    "id": 94091,
+    "name": "Iliman Ndiaye",
+    "firstName": "Iliman",
+    "lastName": "Ndiaye",
+    "dateOfBirth": "2000-03-06",
+    "nationality": "Senegal",
+    "section": "Offence",
+    "position": "Midfield",
+    "shirtNumber": 13,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2205,
+            "name": "Senegal",
+            "code": "SEN",
+            "flag": "https://crests.football-data.org/senegal.svg"
+        },
+        "id": 804,
+        "name": "Senegal",
+        "shortName": "Senegal",
+        "tla": "SEN",
+        "crest": "https://crests.football-data.org/senegal.svg",
+        "address": "VDN-Ouest-Foire en face du CICES, Boite postale 13021 Dakar null",
+        "website": "http://www.fsfoot.sn",
+        "founded": 1960,
+        "clubColors": "White / Green",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2193,
+                "name": "Africa Cup Of Nations - Qualification",
+                "code": "ACQ",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

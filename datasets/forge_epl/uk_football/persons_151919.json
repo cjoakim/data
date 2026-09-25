@@ -1,0 +1,50 @@
+{
+    "id": 151919,
+    "name": "Elkan Baggott",
+    "firstName": "Elkan",
+    "lastName": "Baggott",
+    "dateOfBirth": "2002-10-23",
+    "nationality": "Indonesia",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 12,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 384,
+        "name": "Millwall FC",
+        "shortName": "Millwall",
+        "tla": "MIL",
+        "crest": "https://crests.football-data.org/384.png",
+        "address": "Zampa Road London SE16 3LN",
+        "website": "http://www.millwallfc.co.uk",
+        "founded": 1885,
+        "clubColors": "Blue / White",
+        "venue": "The Den",
+        "runningCompetitions": [
+            {
+                "id": 2016,
+                "name": "Championship",
+                "code": "ELC",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/ELC.png"
+            },
+            {
+                "id": 2139,
+                "name": "Football League Cup",
+                "code": "FLC",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/carabao.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": null
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "id": 37560,
+    "name": "Florentino",
+    "firstName": "",
+    "lastName": "Florentino",
+    "dateOfBirth": "1999-08-19",
+    "nationality": "Portugal",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 16,
+    "lastUpdated": "2026-07-15T09:33:21Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 328,
+        "name": "Burnley FC",
+        "shortName": "Burnley",
+        "tla": "BUR",
+        "crest": "https://crests.football-data.org/328.png",
+        "address": "Harry Potts Way Burnley BB10 4BX",
+        "website": "http://www.burnleyfootballclub.com",
+        "founded": 1881,
+        "clubColors": "Claret / Sky Blue",
+        "venue": "Turf Moor",
+        "runningCompetitions": [
+            {
+                "id": 2016,
+                "name": "Championship",
+                "code": "ELC",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/ELC.png"
+            },
+            {
+                "id": 2139,
+                "name": "Football League Cup",
+                "code": "FLC",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/carabao.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": null
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "id": 8057,
+    "name": "Chris Wood",
+    "firstName": "Chris",
+    "lastName": "Wood",
+    "dateOfBirth": "1991-12-07",
+    "nationality": "New Zealand",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 9,
+    "lastUpdated": "2026-06-01T11:16:30Z",
+    "currentTeam": {
+        "area": {
+            "id": 2165,
+            "name": "New Zealand",
+            "code": "NZL",
+            "flag": "https://crests.football-data.org/783.svg"
+        },
+        "id": 783,
+        "name": "New Zealand",
+        "shortName": "New Zealand",
+        "tla": "NZL",
+        "crest": "https://crests.football-data.org/783.svg",
+        "address": "North Harbour Stadium, Stadium Drive Auckland null",
+        "website": "http://www.nzfootball.co.nz",
+        "founded": 1891,
+        "clubColors": "White / Black",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

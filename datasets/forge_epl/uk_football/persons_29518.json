@@ -1,0 +1,43 @@
+{
+    "id": 29518,
+    "name": "Altay Bay\u0131nd\u0131r",
+    "firstName": "Altay",
+    "lastName": "Bay\u0131nd\u0131r",
+    "dateOfBirth": "1998-04-14",
+    "nationality": "Turkey",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 12,
+    "lastUpdated": "2023-08-22T11:52:40Z",
+    "currentTeam": {
+        "area": {
+            "id": 2247,
+            "name": "Turkey",
+            "code": "TUR",
+            "flag": "https://crests.football-data.org/803.svg"
+        },
+        "id": 803,
+        "name": "Turkey",
+        "shortName": "Turkey",
+        "tla": "TUR",
+        "crest": "https://crests.football-data.org/803.svg",
+        "address": "Istinye Mahallesi, Dar\u00fc\u015f\u015fafaka Caddesi, 45 \u0130stanbul 34330",
+        "website": "http://www.tff.org",
+        "founded": 1923,
+        "clubColors": "Red / White",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

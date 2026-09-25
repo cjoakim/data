@@ -1,0 +1,43 @@
+{
+    "id": 271941,
+    "name": "Jack Fletcher",
+    "firstName": "Jack",
+    "lastName": "Fletcher",
+    "dateOfBirth": "2007-03-19",
+    "nationality": "England",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 38,
+    "lastUpdated": "2024-10-20T09:43:21Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png",
+        "address": "Sir Matt Busby Way Manchester M16 0RA",
+        "website": "http://www.manutd.com",
+        "founded": 1878,
+        "clubColors": "Red / White",
+        "venue": "Old Trafford",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2027-06"
+        }
+    }
+}

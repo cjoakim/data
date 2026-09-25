@@ -1,0 +1,43 @@
+{
+    "id": 152579,
+    "name": "V\u00edt\u011bzslav Jaro\u0161",
+    "firstName": "V\u00edt\u011bzslav",
+    "lastName": "Jaro\u0161",
+    "dateOfBirth": "2001-07-23",
+    "nationality": "Czech Republic",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 56,
+    "lastUpdated": "2024-04-18T09:50:20Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png",
+        "address": "Anfield Road Liverpool L4 0TH",
+        "website": "http://www.liverpoolfc.tv",
+        "founded": 1892,
+        "clubColors": "Red / White",
+        "venue": "Anfield",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2022-07",
+            "until": "2028-06"
+        }
+    }
+}

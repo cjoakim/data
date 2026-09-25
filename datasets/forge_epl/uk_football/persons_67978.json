@@ -1,0 +1,50 @@
+{
+    "id": 67978,
+    "name": "Jo\u00ebl Piroe",
+    "firstName": "Jo\u00ebl",
+    "lastName": "Piroe",
+    "dateOfBirth": "1999-08-02",
+    "nationality": "Netherlands",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 9,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 563,
+        "name": "West Ham United FC",
+        "shortName": "West Ham",
+        "tla": "WHU",
+        "crest": "https://crests.football-data.org/563.png",
+        "address": "Queen Elizabeth Olympic Park, London London E20 2ST",
+        "website": "http://www.whufc.com",
+        "founded": 1895,
+        "clubColors": "Claret / Sky Blue",
+        "venue": "London Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2016,
+                "name": "Championship",
+                "code": "ELC",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/ELC.png"
+            },
+            {
+                "id": 2139,
+                "name": "Football League Cup",
+                "code": "FLC",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/carabao.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-08",
+            "until": "2027-06"
+        }
+    }
+}

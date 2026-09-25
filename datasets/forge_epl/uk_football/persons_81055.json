@@ -1,0 +1,43 @@
+{
+    "id": 81055,
+    "name": "Steven Benda",
+    "firstName": "Steven",
+    "lastName": "Benda",
+    "dateOfBirth": "1998-10-01",
+    "nationality": "Germany",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 33,
+    "lastUpdated": "2023-07-30T19:41:16Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png",
+        "address": "Pavilion Road, West Bridgeford Nottingham NG2 5GJ",
+        "website": "http://www.nottinghamforest.co.uk",
+        "founded": 1865,
+        "clubColors": "Red / White",
+        "venue": "The City Ground",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-08",
+            "until": "2027-06"
+        }
+    }
+}

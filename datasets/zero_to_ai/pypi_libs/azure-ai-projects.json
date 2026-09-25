@@ -1,0 +1,986 @@
+{
+  "info": {
+    "author": "Microsoft Corporation",
+    "author_email": "azpysdkhelp@microsoft.com",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.9",
+      "Topic :: Scientific/Engineering :: Artificial Intelligence"
+    ],
+    "description": "# Azure AI Projects client library for Python\n\nThe AI Projects client library (in preview) is part of the Azure AI Foundry SDK, and provides easy access to\nresources in your Azure AI Foundry Project. Use it to:\n\n* **Create and run Agents** using methods on the `.agents` client property.\n* **Get an AzureOpenAI client** using the `.get_openai_client()` client method.\n* **Enumerate AI Models** deployed to your Foundry Project using methods on the `.deployments` client property.\n* **Enumerate connected Azure resources** in your Foundry project using methods on the `.connections` client property.\n* **Upload documents and create Datasets** to reference them using methods on the `.datasets` client property.\n* **Create and enumerate Search Indexes** using methods on the `.indexes` client property.\n\nThe client library uses version `v1` of the AI Foundry [data plane REST APIs](https://aka.ms/azsdk/azure-ai-projects/ga-rest-api-reference).\n\n[Product documentation](https://aka.ms/azsdk/azure-ai-projects/product-doc)\n| [Samples][samples]\n| [API reference documentation](https://aka.ms/azsdk/azure-ai-projects/python/reference)\n| [Package (PyPI)](https://aka.ms/azsdk/azure-ai-projects/python/package)\n| [SDK source code](https://aka.ms/azsdk/azure-ai-projects/python/code)\n\n## Reporting issues\n\nTo report an issue with the client library, or request additional features, please open a [GitHub issue here](https://github.com/Azure/azure-sdk-for-python/issues). Mention the package name \"azure-ai-projects\" in the title or content.\n\n## Getting started\n\n### Prerequisite\n\n- Python 3.9 or later.\n- An [Azure subscription][azure_sub].\n- A [project in Azure AI Foundry](https://learn.microsoft.com/azure/ai-studio/how-to/create-projects).\n- The project endpoint URL of the form `https://your-ai-services-account-name.services.ai.azure.com/api/projects/your-project-name`. It can be found in your Azure AI Foundry Project overview page. Below we will assume the environment variable `PROJECT_ENDPOINT` was defined to hold this value.\n- An Entra ID token for authentication. Your application needs an object that implements the [TokenCredential](https://learn.microsoft.com/python/api/azure-core/azure.core.credentials.tokencredential) interface. Code samples here use [DefaultAzureCredential](https://learn.microsoft.com/python/api/azure-identity/azure.identity.defaultazurecredential). To get that working, you will need:\n  * An appropriate role assignment. see [Role-based access control in Azure AI Foundry portal](https://learn.microsoft.com/azure/ai-foundry/concepts/rbac-ai-foundry). Role assigned can be done via the \"Access Control (IAM)\" tab of your Azure AI Project resource in the Azure portal.\n  * [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) installed.\n  * You are logged into your Azure account by running `az login`.\n\n### Install the package\n\n```bash\npip install azure-ai-projects\n```\n\nNote that the dependent package [azure-ai-agents](https://pypi.org/project/azure-ai-agents/) will be install as a result, if not already installed, to support `.agent` operations on the client.\n\n## Key concepts\n\n### Create and authenticate the client with Entra ID\n\nEntra ID is the only authentication method supported at the moment by the client.\n\nTo construct a synchronous client:\n\n```python\nimport os\nfrom azure.ai.projects import AIProjectClient\nfrom azure.identity import DefaultAzureCredential\n\nproject_client = AIProjectClient(\n    credential=DefaultAzureCredential(),\n    endpoint=os.environ[\"PROJECT_ENDPOINT\"],\n)\n```\n\nTo construct an asynchronous client, Install the additional package [aiohttp](https://pypi.org/project/aiohttp/):\n\n```bash\npip install aiohttp\n```\n\nand update the code above to import `asyncio`, import `AIProjectClient` from the `azure.ai.projects.aio` package, and import `DefaultAzureCredential` from the `azure.identity.aio` package:\n\n```python\nimport os\nimport asyncio\nfrom azure.ai.projects.aio import AIProjectClient\nfrom azure.identity.aio import DefaultAzureCredential\n\nproject_client = AIProjectClient(\n    credential=DefaultAzureCredential(),\n    endpoint=os.environ[\"PROJECT_ENDPOINT\"],\n)\n```\n\n**Note:** Support for project connection string and hub-based projects has been discontinued. We recommend creating a new Azure AI Foundry resource utilizing project endpoint. If this is not possible, please pin the version of `azure-ai-projects` to `1.0.0b10` or earlier.\n\n## Examples\n\n### Performing Agent operations\n\nThe `.agents` property on the `AIProjectsClient` gives you access to an authenticated `AgentsClient` from the `azure-ai-agents` package. Below we show how to create an Agent and delete it. To see what you can do with the Agent you created, see the [many samples](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/ai/azure-ai-agents/samples) and the [README.md](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/ai/azure-ai-agents) file of the dependent `azure-ai-agents` package.\n\nThe code below assumes the following:\n\n* `model_deployment_name` (a string) is defined. It's the deployment name of an AI model in your Foundry Project, as shown in the \"Models + endpoints\" tab, under the \"Name\" column.\n* `connection_name` (a string) is defined. It's the name of the connection to a resource of type \"Azure OpenAI\", as shown in the \"Connected resources\" tab, under the \"Name\" column, in the \"Management Center\" of your Foundry Project.\n\n<!-- SNIPPET:sample_agents.agents_sample -->\n\n```python\nagent = project_client.agents.create_agent(\n    model=model_deployment_name,\n    name=\"my-agent\",\n    instructions=\"You are helpful agent\",\n)\nprint(f\"Created agent, agent ID: {agent.id}\")\n\n# Do something with your Agent!\n# See samples here https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/ai/azure-ai-agents/samples\n\nproject_client.agents.delete_agent(agent.id)\nprint(\"Deleted agent\")\n```\n\n<!-- END SNIPPET -->\n\n### Get an authenticated AzureOpenAI client\n\nYour Azure AI Foundry project may have one or more AI models deployed that support chat completions or responses.\nThese could be OpenAI models, Microsoft models, or models from other providers.\nUse the code below to get an authenticated [AzureOpenAI](https://github.com/openai/openai-python?tab=readme-ov-file#microsoft-azure-openai)\nfrom the [openai](https://pypi.org/project/openai/) package, and execute a chat completions or responses calls.\n\nThe code below assumes `model_deployment_name` (a string) is defined. It's the deployment name of an AI model in your\nFoundry Project, or a connected Azure OpenAI resource. As shown in the \"Models + endpoints\" tab, under the \"Name\" column.\n\nUpdate the `api_version` value with one found in the \"Data plane - inference\" row [in this table](https://learn.microsoft.com/azure/ai-foundry/openai/reference#api-specs).\n\n#### Chat completions with AzureOpenAI client\n\n<!-- SNIPPET:sample_chat_completions_with_azure_openai_client.aoai_chat_completions_sample-->\n\n```python\nprint(\n    \"Get an authenticated Azure OpenAI client for the parent AI Services resource, and perform a chat completion operation:\"\n)\nwith project_client.get_openai_client(api_version=\"2024-10-21\") as client:\n\n    response = client.chat.completions.create(\n        model=model_deployment_name,\n        messages=[\n            {\n                \"role\": \"user\",\n                \"content\": \"How many feet are in a mile?\",\n            },\n        ],\n    )\n\n    print(response.choices[0].message.content)\n\nprint(\n    \"Get an authenticated Azure OpenAI client for a connected Azure OpenAI service, and perform a chat completion operation:\"\n)\nwith project_client.get_openai_client(api_version=\"2024-10-21\", connection_name=connection_name) as client:\n\n    response = client.chat.completions.create(\n        model=model_deployment_name,\n        messages=[\n            {\n                \"role\": \"user\",\n                \"content\": \"How many feet are in a mile?\",\n            },\n        ],\n    )\n\n    print(response.choices[0].message.content)\n```\n\n<!-- END SNIPPET -->\n\nSee the \"inference\" folder in the [package samples][samples] for additional samples.\n\n#### Responses with AzureOpenAI client\n\n<!-- SNIPPET:sample_responses_with_azure_openai_client.aoai_responses_sample-->\n\n```python\nprint(\n    \"Get an authenticated Azure OpenAI client for the parent AI Services resource, and perform a 'responses' operation:\"\n)\nwith project_client.get_openai_client(api_version=\"2025-04-01-preview\") as client:\n\n    response = client.responses.create(\n        model=model_deployment_name,\n        input=\"How many feet are in a mile?\",\n    )\n\n    print(response.output_text)\n\nprint(\n    \"Get an authenticated Azure OpenAI client for a connected Azure OpenAI service, and perform a 'responses' operation:\"\n)\nwith project_client.get_openai_client(\n    api_version=\"2025-04-01-preview\", connection_name=connection_name\n) as client:\n\n    response = client.responses.create(\n        model=model_deployment_name,\n        input=\"How many feet are in a mile?\",\n    )\n\n    print(response.output_text)\n```\n\n<!-- END SNIPPET -->\n\nSee the \"inference\" folder in the [package samples][samples] for additional samples.\n\n### Deployments operations\n\nThe code below shows some Deployments operations, which allow you to enumerate the AI models deployed to your AI Foundry Projects. These models can be seen in the \"Models + endpoints\" tab in your AI Foundry Project. Full samples can be found under the \"deployment\" folder in the [package samples][samples].\n\n<!-- SNIPPET:sample_deployments.deployments_sample-->\n\n```python\nprint(\"List all deployments:\")\nfor deployment in project_client.deployments.list():\n    print(deployment)\n\nprint(f\"List all deployments by the model publisher `{model_publisher}`:\")\nfor deployment in project_client.deployments.list(model_publisher=model_publisher):\n    print(deployment)\n\nprint(f\"List all deployments of model `{model_name}`:\")\nfor deployment in project_client.deployments.list(model_name=model_name):\n    print(deployment)\n\nprint(f\"Get a single deployment named `{model_deployment_name}`:\")\ndeployment = project_client.deployments.get(model_deployment_name)\nprint(deployment)\n\n# At the moment, the only deployment type supported is ModelDeployment\nif isinstance(deployment, ModelDeployment):\n    print(f\"Type: {deployment.type}\")\n    print(f\"Name: {deployment.name}\")\n    print(f\"Model Name: {deployment.model_name}\")\n    print(f\"Model Version: {deployment.model_version}\")\n    print(f\"Model Publisher: {deployment.model_publisher}\")\n    print(f\"Capabilities: {deployment.capabilities}\")\n    print(f\"SKU: {deployment.sku}\")\n    print(f\"Connection Name: {deployment.connection_name}\")\n```\n\n<!-- END SNIPPET -->\n\n### Connections operations\n\nThe code below shows some Connection operations, which allow you to enumerate the Azure Resources connected to your AI Foundry Projects. These connections can be seen in the \"Management Center\", in the \"Connected resources\" tab in your AI Foundry Project. Full samples can be found under the \"connections\" folder in the [package samples][samples].\n\n<!-- SNIPPET:sample_connections.connections_sample-->\n\n```python\nprint(\"List all connections:\")\nfor connection in project_client.connections.list():\n    print(connection)\n\nprint(\"List all connections of a particular type:\")\nfor connection in project_client.connections.list(\n    connection_type=ConnectionType.AZURE_OPEN_AI,\n):\n    print(connection)\n\nprint(\"Get the default connection of a particular type, without its credentials:\")\nconnection = project_client.connections.get_default(connection_type=ConnectionType.AZURE_OPEN_AI)\nprint(connection)\n\nprint(\"Get the default connection of a particular type, with its credentials:\")\nconnection = project_client.connections.get_default(\n    connection_type=ConnectionType.AZURE_OPEN_AI, include_credentials=True\n)\nprint(connection)\n\nprint(f\"Get the connection named `{connection_name}`, without its credentials:\")\nconnection = project_client.connections.get(connection_name)\nprint(connection)\n\nprint(f\"Get the connection named `{connection_name}`, with its credentials:\")\nconnection = project_client.connections.get(connection_name, include_credentials=True)\nprint(connection)\n```\n\n<!-- END SNIPPET -->\n\n### Dataset operations\n\nThe code below shows some Dataset operations. Full samples can be found under the \"datasets\"\nfolder in the [package samples][samples].\n\n<!-- SNIPPET:sample_datasets.datasets_sample-->\n\n```python\nprint(\n    f\"Upload a single file and create a new Dataset `{dataset_name}`, version `{dataset_version_1}`, to reference the file.\"\n)\ndataset: DatasetVersion = project_client.datasets.upload_file(\n    name=dataset_name,\n    version=dataset_version_1,\n    file_path=data_file,\n    connection_name=connection_name,\n)\nprint(dataset)\n\nprint(\n    f\"Upload files in a folder (including sub-folders) and create a new version `{dataset_version_2}` in the same Dataset, to reference the files.\"\n)\ndataset = project_client.datasets.upload_folder(\n    name=dataset_name,\n    version=dataset_version_2,\n    folder=data_folder,\n    connection_name=connection_name,\n    file_pattern=re.compile(r\"\\.(txt|csv|md)$\", re.IGNORECASE),\n)\nprint(dataset)\n\nprint(f\"Get an existing Dataset version `{dataset_version_1}`:\")\ndataset = project_client.datasets.get(name=dataset_name, version=dataset_version_1)\nprint(dataset)\n\nprint(f\"Get credentials of an existing Dataset version `{dataset_version_1}`:\")\ndataset_credential = project_client.datasets.get_credentials(name=dataset_name, version=dataset_version_1)\nprint(dataset_credential)\n\nprint(\"List latest versions of all Datasets:\")\nfor dataset in project_client.datasets.list():\n    print(dataset)\n\nprint(f\"Listing all versions of the Dataset named `{dataset_name}`:\")\nfor dataset in project_client.datasets.list_versions(name=dataset_name):\n    print(dataset)\n\nprint(\"Delete all Dataset versions created above:\")\nproject_client.datasets.delete(name=dataset_name, version=dataset_version_1)\nproject_client.datasets.delete(name=dataset_name, version=dataset_version_2)\n```\n\n<!-- END SNIPPET -->\n\n### Indexes operations\n\nThe code below shows some Indexes operations. Full samples can be found under the \"indexes\"\nfolder in the [package samples][samples].\n\n<!-- SNIPPET:sample_indexes.indexes_sample-->\n\n```python\nprint(\n    f\"Create Index `{index_name}` with version `{index_version}`, referencing an existing AI Search resource:\"\n)\nindex = project_client.indexes.create_or_update(\n    name=index_name,\n    version=index_version,\n    index=AzureAISearchIndex(connection_name=ai_search_connection_name, index_name=ai_search_index_name),\n)\nprint(index)\n\nprint(f\"Get Index `{index_name}` version `{index_version}`:\")\nindex = project_client.indexes.get(name=index_name, version=index_version)\nprint(index)\n\nprint(\"List latest versions of all Indexes:\")\nfor index in project_client.indexes.list():\n    print(index)\n\nprint(f\"Listing all versions of the Index named `{index_name}`:\")\nfor index in project_client.indexes.list_versions(name=index_name):\n    print(index)\n\nprint(f\"Delete Index `{index_name}` version `{index_version}`:\")\nproject_client.indexes.delete(name=index_name, version=index_version)\n```\n\n<!-- END SNIPPET -->\n\n## Tracing\n\nThe AI Projects client library can be configured to emit OpenTelemetry traces for all its REST API calls. These can be viewed in the \"Tracing\" tab in your AI Foundry Project page, once you add an Application Insights resource and configured your application appropriately. Agent operations (via the `.agents` property) can also be instrumented, as well as OpenAI client library operations (client created by calling `get_openai_client()` method). For local debugging purposes, traces can also be omitted to the console. For more information see:\n\n* [Trace AI applications using OpenAI SDK](https://learn.microsoft.com/azure/ai-foundry/how-to/develop/trace-application)\n* Chat-completion samples with console or Azure Monitor tracing enabled. See `samples\\inference\\azure-openai` folder.\n* The Tracing section in the [README.md file of the azure-ai-agents package](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-agents/README.md#tracing).\n\n## Troubleshooting\n\n### Exceptions\n\nClient methods that make service calls raise an [HttpResponseError](https://learn.microsoft.com/python/api/azure-core/azure.core.exceptions.httpresponseerror) exception for a non-success HTTP status code response from the service. The exception's `status_code` will hold the HTTP response status code (with `reason` showing the friendly name). The exception's `error.message` contains a detailed message that may be helpful in diagnosing the issue:\n\n```python\nfrom azure.core.exceptions import HttpResponseError\n\n...\n\ntry:\n    result = project_client.connections.list()\nexcept HttpResponseError as e:\n    print(f\"Status code: {e.status_code} ({e.reason})\")\n    print(e.message)\n```\n\nFor example, when you provide wrong credentials:\n\n```text\nStatus code: 401 (Unauthorized)\nOperation returned an invalid status 'Unauthorized'\n```\n\n### Logging\n\nThe client uses the standard [Python logging library](https://docs.python.org/3/library/logging.html). The SDK logs HTTP request and response details, which may be useful in troubleshooting. To log to stdout, add the following at the top of your Python script:\n\n```python\nimport sys\nimport logging\n\n# Acquire the logger for this client library. Use 'azure' to affect both\n# 'azure.core` and `azure.ai.inference' libraries.\nlogger = logging.getLogger(\"azure\")\n\n# Set the desired logging level. logging.INFO or logging.DEBUG are good options.\nlogger.setLevel(logging.DEBUG)\n\n# Direct logging output to stdout:\nhandler = logging.StreamHandler(stream=sys.stdout)\n# Or direct logging output to a file:\n# handler = logging.FileHandler(filename=\"sample.log\")\nlogger.addHandler(handler)\n\n# Optional: change the default logging format. Here we add a timestamp.\n#formatter = logging.Formatter(\"%(asctime)s:%(levelname)s:%(name)s:%(message)s\")\n#handler.setFormatter(formatter)\n```\n\nBy default logs redact the values of URL query strings, the values of some HTTP request and response headers (including `Authorization` which holds the key or token), and the request and response payloads. To create logs without redaction, add `logging_enable=True` to the client constructor:\n\n```python\nproject_client = AIProjectClient(\n    credential=DefaultAzureCredential(),\n    endpoint=os.environ[\"PROJECT_ENDPOINT\"],\n    logging_enable=True\n)\n```\n\nNote that the log level must be set to `logging.DEBUG` (see above code). Logs will be redacted with any other log level.\n\nBe sure to protect non redacted logs to avoid compromising security.\n\nFor more information, see [Configure logging in the Azure libraries for Python](https://aka.ms/azsdk/python/logging)\n\n### Reporting issues\n\nTo report an issue with the client library, or request additional features, please open a [GitHub issue here](https://github.com/Azure/azure-sdk-for-python/issues). Mention the package name \"azure-ai-projects\" in the title or content.\n\n## Next steps\n\nHave a look at the [Samples](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/ai/azure-ai-projects/samples) folder, containing fully runnable Python code for synchronous and asynchronous clients.\n\n## Contributing\n\nThis project welcomes contributions and suggestions. Most contributions require\nyou to agree to a Contributor License Agreement (CLA) declaring that you have\nthe right to, and actually do, grant us the rights to use your contribution.\nFor details, visit https://cla.microsoft.com.\n\nWhen you submit a pull request, a CLA-bot will automatically determine whether\nyou need to provide a CLA and decorate the PR appropriately (e.g., label,\ncomment). Simply follow the instructions provided by the bot. You will only\nneed to do this once across all repos using our CLA.\n\nThis project has adopted the\n[Microsoft Open Source Code of Conduct][code_of_conduct]. For more information,\nsee the Code of Conduct FAQ or contact opencode@microsoft.com with any\nadditional questions or comments.\n\n<!-- LINKS -->\n[samples]: https://aka.ms/azsdk/azure-ai-projects/python/samples/\n[code_of_conduct]: https://opensource.microsoft.com/codeofconduct/\n[azure_sub]: https://azure.microsoft.com/free/\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": "https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/ai/azure-ai-projects",
+    "keywords": "azure sdk, azure, ai, agents, foundry, inference, chat completion, project",
+    "license": "MIT License",
+    "license_expression": null,
+    "license_files": null,
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "azure-ai-projects",
+    "package_url": "https://pypi.org/project/azure-ai-projects/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/azure-ai-projects/",
+    "project_urls": {
+      "Homepage": "https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/ai/azure-ai-projects"
+    },
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/azure-ai-projects/1.0.0/",
+    "requires_dist": [
+      "isodate>=0.6.1",
+      "azure-core>=1.30.0",
+      "typing-extensions>=4.12.2",
+      "azure-storage-blob>=12.15.0",
+      "azure-ai-agents>=1.0.0"
+    ],
+    "requires_python": ">=3.9",
+    "summary": "Microsoft Azure AI Projects Client Library for Python",
+    "version": "1.0.0",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 33374540,
+  "releases": {
+    "1.0.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b5db7149cdf71e12d9737f186656176efc94943ead4f205671768c1549593efe",
+          "md5": "b64e8a4d9a415382e09c7369565259de",
+          "sha256": "81369ed7a2f84a65864f57d3fa153e16c30f411a1504d334e184fb070165a3fa"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "b64e8a4d9a415382e09c7369565259de",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 115188,
+        "upload_time": "2025-07-31T02:09:29",
+        "upload_time_iso_8601": "2025-07-31T02:09:29.362529Z",
+        "url": "https://files.pythonhosted.org/packages/b5/db/7149cdf71e12d9737f186656176efc94943ead4f205671768c1549593efe/azure_ai_projects-1.0.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dd959c04cb5f658c7f856026aa18432e0f0fa254ead2983a3574a0f5558a7234",
+          "md5": "78290872cd8e8490cd1372bc66578d2f",
+          "sha256": "b5f03024ccf0fd543fbe0f5abcc74e45b15eccc1c71ab87fc71c63061d9fd63c"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "78290872cd8e8490cd1372bc66578d2f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 130798,
+        "upload_time": "2025-07-31T02:09:27",
+        "upload_time_iso_8601": "2025-07-31T02:09:27.912694Z",
+        "url": "https://files.pythonhosted.org/packages/dd/95/9c04cb5f658c7f856026aa18432e0f0fa254ead2983a3574a0f5558a7234/azure_ai_projects-1.0.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d12f933c2aae01bd3defbadce459509bbb69d9c6c15263dda2a0878d28be0d17",
+          "md5": "20c80cb5e33b563446b33f5f3e2eabaf",
+          "sha256": "48c73cf30128923175af6bf18cf80a4bea3e9dfd37e1385e1f622ce90997bc1f"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "20c80cb5e33b563446b33f5f3e2eabaf",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 181813,
+        "upload_time": "2024-11-15T17:21:45",
+        "upload_time_iso_8601": "2024-11-15T17:21:45.972280Z",
+        "url": "https://files.pythonhosted.org/packages/d1/2f/933c2aae01bd3defbadce459509bbb69d9c6c15263dda2a0878d28be0d17/azure_ai_projects-1.0.0b1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c8d994dcecb4ff3941b9c6fdcbf4be6ae19182274cdd101c8ec6744b4d31d093",
+          "md5": "f0381c55ee0c9b9fc0920f857adc93ff",
+          "sha256": "cd1f6e94a49c9a46531ea7103ee81ca459c4d5341258bac18a844ef3d11e7ca3"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f0381c55ee0c9b9fc0920f857adc93ff",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 242971,
+        "upload_time": "2024-11-15T17:21:43",
+        "upload_time_iso_8601": "2024-11-15T17:21:43.914471Z",
+        "url": "https://files.pythonhosted.org/packages/c8/d9/94dcecb4ff3941b9c6fdcbf4be6ae19182274cdd101c8ec6744b4d31d093/azure_ai_projects-1.0.0b1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b10": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "967ce45b98dc298a706ac639064aec316730a534d0d49d27986d00ba4e23dced",
+          "md5": "70ea82d53e41f7241307e2c3c14f28db",
+          "sha256": "77cd7fdac5affc37c437e60f1e244a706c1151b1bf682c5a471b3d233978b647"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b10-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "70ea82d53e41f7241307e2c3c14f28db",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 200755,
+        "upload_time": "2025-04-23T21:56:58",
+        "upload_time_iso_8601": "2025-04-23T21:56:58.032671Z",
+        "url": "https://files.pythonhosted.org/packages/96/7c/e45b98dc298a706ac639064aec316730a534d0d49d27986d00ba4e23dced/azure_ai_projects-1.0.0b10-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "262ee6ab1f7c1b12fcef9549a797a575e3dd5a71297ce12b083a983311cd5069",
+          "md5": "bd9d8f82a05431657469537f92dae089",
+          "sha256": "cdc8055305cec762f09f7581796ea97599d2a2fb26f2c8486f34f728d5bdc98a"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b10.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bd9d8f82a05431657469537f92dae089",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 323251,
+        "upload_time": "2025-04-23T21:56:56",
+        "upload_time_iso_8601": "2025-04-23T21:56:56.832123Z",
+        "url": "https://files.pythonhosted.org/packages/26/2e/e6ab1f7c1b12fcef9549a797a575e3dd5a71297ce12b083a983311cd5069/azure_ai_projects-1.0.0b10.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b11": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3e2d5502377ecc07677365a1e86be64d8cb9959eb6e9b605fcc28f1f68d3777a",
+          "md5": "f7e5527a24f9b79e354ca39dce500881",
+          "sha256": "3572f2989627e896ecfebe2fa7326d5b940f920cc581e98809b244af7a38cbf0"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b11-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "f7e5527a24f9b79e354ca39dce500881",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 130983,
+        "upload_time": "2025-05-16T00:33:33",
+        "upload_time_iso_8601": "2025-05-16T00:33:33.789857Z",
+        "url": "https://files.pythonhosted.org/packages/3e/2d/5502377ecc07677365a1e86be64d8cb9959eb6e9b605fcc28f1f68d3777a/azure_ai_projects-1.0.0b11-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "014b0a879eb66b5d9a08ab09292ff9a36a4e9c855b458d0e843b5e838fc6f6fd",
+          "md5": "570dd1e203bc1414dc217a65263e6424",
+          "sha256": "68a115c48cde7d5f9c29aee61c7fbf0b6de69aecbd1dc749b847a1e1348216b5"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b11.tar.gz",
+        "has_sig": false,
+        "md5_digest": "570dd1e203bc1414dc217a65263e6424",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 133087,
+        "upload_time": "2025-05-16T00:33:32",
+        "upload_time_iso_8601": "2025-05-16T00:33:32.286487Z",
+        "url": "https://files.pythonhosted.org/packages/01/4b/0a879eb66b5d9a08ab09292ff9a36a4e9c855b458d0e843b5e838fc6f6fd/azure_ai_projects-1.0.0b11.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b12": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "73e450cd2c3bd5ab745e85a4a1bd591bf4343d6e3470580f1eadceed55fd57c0",
+          "md5": "d23a6126ece6fb5aa06dd9bf0b64896b",
+          "sha256": "4e3d3ef275f7409ea8030e474626968848055d4b3717ff7ef03681da809c096f"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b12-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "d23a6126ece6fb5aa06dd9bf0b64896b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 129783,
+        "upload_time": "2025-06-27T04:12:49",
+        "upload_time_iso_8601": "2025-06-27T04:12:49.837988Z",
+        "url": "https://files.pythonhosted.org/packages/73/e4/50cd2c3bd5ab745e85a4a1bd591bf4343d6e3470580f1eadceed55fd57c0/azure_ai_projects-1.0.0b12-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a5579a89c1978ec9ce29a3be454b83b66885982261762d7a436cad73c47c9225",
+          "md5": "63f203b7cbaccdce7febcc8aa9802597",
+          "sha256": "1a3784e4be6af3b0fc76e9e4a64158a38f6679fe3a1f8b9c33f12bc8914ae36c"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b12.tar.gz",
+        "has_sig": false,
+        "md5_digest": "63f203b7cbaccdce7febcc8aa9802597",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 144358,
+        "upload_time": "2025-06-27T04:12:48",
+        "upload_time_iso_8601": "2025-06-27T04:12:48.334477Z",
+        "url": "https://files.pythonhosted.org/packages/a5/57/9a89c1978ec9ce29a3be454b83b66885982261762d7a436cad73c47c9225/azure_ai_projects-1.0.0b12.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3916fe10ed71e3ce5612dff8968b2167de6c1580a32e78fabf3f4aead2437f9e",
+          "md5": "e4b4c581cb940fbd6f1710f6430b8c23",
+          "sha256": "5bdbc437817ff26582fb804e82cb23afd1b100d71a8cbd22e696d81916536fac"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e4b4c581cb940fbd6f1710f6430b8c23",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 182689,
+        "upload_time": "2024-12-03T22:31:08",
+        "upload_time_iso_8601": "2024-12-03T22:31:08.689679Z",
+        "url": "https://files.pythonhosted.org/packages/39/16/fe10ed71e3ce5612dff8968b2167de6c1580a32e78fabf3f4aead2437f9e/azure_ai_projects-1.0.0b2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d12a420f3df396494f36bd9cb659f0c4cda99ed9367a6b3c26ac388abcb087b9",
+          "md5": "4458a74bf2e155bb2ab85cabfc45be84",
+          "sha256": "6f3585efecf91cda4d6bdbedc019e975c2c5c2e0852691f1a4396d3183a46529"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4458a74bf2e155bb2ab85cabfc45be84",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 256919,
+        "upload_time": "2024-12-03T22:31:06",
+        "upload_time_iso_8601": "2024-12-03T22:31:06.361098Z",
+        "url": "https://files.pythonhosted.org/packages/d1/2a/420f3df396494f36bd9cb659f0c4cda99ed9367a6b3c26ac388abcb087b9/azure_ai_projects-1.0.0b2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "49fba335e362c155eeeb9ff687d7a09500626b6f984e2ea757a62f7125ab7bd2",
+          "md5": "cdc1e6ab369db95c1c963de80cfccf79",
+          "sha256": "d16e350a305f1bcee2e5681498a564dd3d2eb585c40bed78eabe71907cdfb001"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "cdc1e6ab369db95c1c963de80cfccf79",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 191774,
+        "upload_time": "2024-12-14T00:45:01",
+        "upload_time_iso_8601": "2024-12-14T00:45:01.458284Z",
+        "url": "https://files.pythonhosted.org/packages/49/fb/a335e362c155eeeb9ff687d7a09500626b6f984e2ea757a62f7125ab7bd2/azure_ai_projects-1.0.0b3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a52f6e66e3e95f73a658c17b1fd03cacf2c9a5417ca72162f1f635997b4aef64",
+          "md5": "b0d89af6f0cb638b5460da7cfceb327e",
+          "sha256": "da4d1b7488aa30605b2cbf7feeb6082fbf5cc0dae85ebd45ced420638ff434ed"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b0d89af6f0cb638b5460da7cfceb327e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 288506,
+        "upload_time": "2024-12-14T00:44:58",
+        "upload_time_iso_8601": "2024-12-14T00:44:58.801976Z",
+        "url": "https://files.pythonhosted.org/packages/a5/2f/6e66e3e95f73a658c17b1fd03cacf2c9a5417ca72162f1f635997b4aef64/azure_ai_projects-1.0.0b3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "750ef4db34d4a19cb69f0287307db2e2e1d9ed4364cfbfa5604efc25f8c9868a",
+          "md5": "ba15af04e1637158374b3f36e5708398",
+          "sha256": "e0bd5249eaa4876aa0738350d6b207801cc4068fa32587ee6966bedf18a26c7c"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ba15af04e1637158374b3f36e5708398",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 192573,
+        "upload_time": "2024-12-20T19:40:37",
+        "upload_time_iso_8601": "2024-12-20T19:40:37.968691Z",
+        "url": "https://files.pythonhosted.org/packages/75/0e/f4db34d4a19cb69f0287307db2e2e1d9ed4364cfbfa5604efc25f8c9868a/azure_ai_projects-1.0.0b4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fa36448945caa460d61f3c186f8aa0228dd17bf0a0851b1dcec11752491d8522",
+          "md5": "09055152551c45864012d4001004ee56",
+          "sha256": "71b67c7d517b720ac561bb62785fec7f0b8ac8b1d6012b58f972b935458a5078"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "09055152551c45864012d4001004ee56",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 294050,
+        "upload_time": "2024-12-20T19:40:33",
+        "upload_time_iso_8601": "2024-12-20T19:40:33.545241Z",
+        "url": "https://files.pythonhosted.org/packages/fa/36/448945caa460d61f3c186f8aa0228dd17bf0a0851b1dcec11752491d8522/azure_ai_projects-1.0.0b4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2f3b5ef0717685e4d3e3b537d7538e430199ab4c16665766ab3de90d5fedc8ef",
+          "md5": "3d3634eae3e95c4c22377c14b2e4e114",
+          "sha256": "7ed7a44e8d76bf108be7de6f33b9c54a63fc47193cd259770006a6862ce25ccd"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "3d3634eae3e95c4c22377c14b2e4e114",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 193481,
+        "upload_time": "2025-01-17T22:14:45",
+        "upload_time_iso_8601": "2025-01-17T22:14:45.033516Z",
+        "url": "https://files.pythonhosted.org/packages/2f/3b/5ef0717685e4d3e3b537d7538e430199ab4c16665766ab3de90d5fedc8ef/azure_ai_projects-1.0.0b5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "980f47600c1c3bb1b92913350c9878c517ccbd2630f4c5393cd4054dc71d5fbd",
+          "md5": "9419ff3a91f5e9498080915de800e954",
+          "sha256": "7bb068b38a8810c5a59a628e18f196c76af2a06cb774e725b97bfc8b61b3aaf0"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9419ff3a91f5e9498080915de800e954",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 303846,
+        "upload_time": "2025-01-17T22:14:42",
+        "upload_time_iso_8601": "2025-01-17T22:14:42.245940Z",
+        "url": "https://files.pythonhosted.org/packages/98/0f/47600c1c3bb1b92913350c9878c517ccbd2630f4c5393cd4054dc71d5fbd/azure_ai_projects-1.0.0b5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b6": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9dd914b31fc773072b63493d55a1a5b60e656f11aeea2b603fef2eb567686d96",
+          "md5": "95a9c025bc85b44c6ce2910db1b9d1ee",
+          "sha256": "b0689825065648b54b4405e9edd22b1de3ea0dfc1ca3baf99db5173fd6208692"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b6-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "95a9c025bc85b44c6ce2910db1b9d1ee",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 187221,
+        "upload_time": "2025-02-15T05:17:33",
+        "upload_time_iso_8601": "2025-02-15T05:17:33.851280Z",
+        "url": "https://files.pythonhosted.org/packages/9d/d9/14b31fc773072b63493d55a1a5b60e656f11aeea2b603fef2eb567686d96/azure_ai_projects-1.0.0b6-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1f725f9a78c913af66c55222ff912227b494707c4adfbdca27a78c3687a1b8ba",
+          "md5": "215a297b53f955128d3b2929a95d1e86",
+          "sha256": "ce6cfb2403eeb1a80e5dd84193fb2864953cd95a351f3d4572a5451bbb4c30d2"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b6.tar.gz",
+        "has_sig": false,
+        "md5_digest": "215a297b53f955128d3b2929a95d1e86",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 298737,
+        "upload_time": "2025-02-15T05:17:32",
+        "upload_time_iso_8601": "2025-02-15T05:17:32.334438Z",
+        "url": "https://files.pythonhosted.org/packages/1f/72/5f9a78c913af66c55222ff912227b494707c4adfbdca27a78c3687a1b8ba/azure_ai_projects-1.0.0b6.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b7": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a76853786f6a5e7496b01028bdb1de975a91d10a479aecb27e02231d3de6d131",
+          "md5": "9a0f503e642de1ac2e4b38692ecb5346",
+          "sha256": "14325a2419799451c03629c30fe72a560a07cac52b5dcba4bfb61a6de2f20ae7"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b7-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "9a0f503e642de1ac2e4b38692ecb5346",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 188889,
+        "upload_time": "2025-03-10T18:13:02",
+        "upload_time_iso_8601": "2025-03-10T18:13:02.519772Z",
+        "url": "https://files.pythonhosted.org/packages/a7/68/53786f6a5e7496b01028bdb1de975a91d10a479aecb27e02231d3de6d131/azure_ai_projects-1.0.0b7-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "851cb8011bf6feb72c103eaead5e529594fbf2c1269e9f97d0431f824f7dee43",
+          "md5": "1a6917cbc67b50d54e4a67041e30042c",
+          "sha256": "7e36addea17f3966f28ad82be8066fdc33743c71edd2dfd982d24630598fd9b1"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b7.tar.gz",
+        "has_sig": false,
+        "md5_digest": "1a6917cbc67b50d54e4a67041e30042c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 305362,
+        "upload_time": "2025-03-10T18:12:59",
+        "upload_time_iso_8601": "2025-03-10T18:12:59.789768Z",
+        "url": "https://files.pythonhosted.org/packages/85/1c/b8011bf6feb72c103eaead5e529594fbf2c1269e9f97d0431f824f7dee43/azure_ai_projects-1.0.0b7.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b8": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9cc39071dcf8e383cf193253baccbbcdd5eeab181a388628ce51f98a7fb4c104",
+          "md5": "b5a67bde10866f06931fb411c845e382",
+          "sha256": "9636aeaa573449d4cff6a38c44cfc16ad08a4f7a598e953654eece5a9f209ec2"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b8-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "b5a67bde10866f06931fb411c845e382",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 190835,
+        "upload_time": "2025-03-28T22:41:33",
+        "upload_time_iso_8601": "2025-03-28T22:41:33.248517Z",
+        "url": "https://files.pythonhosted.org/packages/9c/c3/9071dcf8e383cf193253baccbbcdd5eeab181a388628ce51f98a7fb4c104/azure_ai_projects-1.0.0b8-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "838566da3fe4affd182aa7788f212a1936a56a700bcbcafe157147a416f38e11",
+          "md5": "2cf28c67f6e5c3a353f10b60a2d810e5",
+          "sha256": "9e48bf15710cdf40dd3fa1ac0448266bf599dc10c6477aa69ac5c250daef236e"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b8.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2cf28c67f6e5c3a353f10b60a2d810e5",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 310017,
+        "upload_time": "2025-03-28T22:41:31",
+        "upload_time_iso_8601": "2025-03-28T22:41:31.902451Z",
+        "url": "https://files.pythonhosted.org/packages/83/85/66da3fe4affd182aa7788f212a1936a56a700bcbcafe157147a416f38e11/azure_ai_projects-1.0.0b8.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b9": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "74c70446b14f1d9ff4e91f868ffd3b3748f1300ef175f507ee870d24bc991b8c",
+          "md5": "0274e5c89a231241f2319a5bc063d4f7",
+          "sha256": "04cfbf3321facd02b5555096d945dcee8f7f5dc96311cb7b9730d329343c3154"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b9-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "0274e5c89a231241f2319a5bc063d4f7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 199130,
+        "upload_time": "2025-04-16T23:26:19",
+        "upload_time_iso_8601": "2025-04-16T23:26:19.596319Z",
+        "url": "https://files.pythonhosted.org/packages/74/c7/0446b14f1d9ff4e91f868ffd3b3748f1300ef175f507ee870d24bc991b8c/azure_ai_projects-1.0.0b9-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6ca07ab711c9f916c120828dcef8c144cf1cd61f859270cf4e9b00d2c5c8ffd8",
+          "md5": "8324296ed61bab697f7db594b78a1c4c",
+          "sha256": "37d24090969234d65a38b05e04c4c18178986f134bf273d4c9c7e2d753896cd0"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.0.0b9.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8324296ed61bab697f7db594b78a1c4c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 320201,
+        "upload_time": "2025-04-16T23:26:18",
+        "upload_time_iso_8601": "2025-04-16T23:26:18.022467Z",
+        "url": "https://files.pythonhosted.org/packages/6c/a0/7ab711c9f916c120828dcef8c144cf1cd61f859270cf4e9b00d2c5c8ffd8/azure_ai_projects-1.0.0b9.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0b1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "685333ff49f4b48e9df4dbc8d0cf4e6dea75c47ee7b98144efcea6b0d617f63e",
+          "md5": "ac31153579a5523cc3e7cabb9fb48d2e",
+          "sha256": "f39b62301d532c153f9d19b272427581313c73bd7feb2e5559d08c6863929552"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.1.0b1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ac31153579a5523cc3e7cabb9fb48d2e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 125301,
+        "upload_time": "2025-08-01T23:21:23",
+        "upload_time_iso_8601": "2025-08-01T23:21:23.990644Z",
+        "url": "https://files.pythonhosted.org/packages/68/53/33ff49f4b48e9df4dbc8d0cf4e6dea75c47ee7b98144efcea6b0d617f63e/azure_ai_projects-1.1.0b1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "eca69275619325b4ed96989a8afe37ea3289509ee5287385596934485282d24c",
+          "md5": "40c97e512a915a5e29b582773a6fa85f",
+          "sha256": "4ec77055d7f2647d1c5681dbf4202df1e3398c174ce3690b02f868e69e58c2a5"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.1.0b1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "40c97e512a915a5e29b582773a6fa85f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 144756,
+        "upload_time": "2025-08-01T23:21:22",
+        "upload_time_iso_8601": "2025-08-01T23:21:22.653518Z",
+        "url": "https://files.pythonhosted.org/packages/ec/a6/9275619325b4ed96989a8afe37ea3289509ee5287385596934485282d24c/azure_ai_projects-1.1.0b1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0b2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "262b98f928ea41c03c78c02e1a72fc5e9c900d2e6e472cb51f9272cb0d4ba3bf",
+          "md5": "0d46b71c059a74ba6ce01b56cde10f91",
+          "sha256": "3a4ecc6de6ab27a75b4c8228cd8162c9853fd1432e77746792b0ee2088c775db"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.1.0b2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "0d46b71c059a74ba6ce01b56cde10f91",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 125301,
+        "upload_time": "2025-08-05T22:18:46",
+        "upload_time_iso_8601": "2025-08-05T22:18:46.577921Z",
+        "url": "https://files.pythonhosted.org/packages/26/2b/98f928ea41c03c78c02e1a72fc5e9c900d2e6e472cb51f9272cb0d4ba3bf/azure_ai_projects-1.1.0b2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "261733664227381ff59690e16a8d3261c9edeb80d88acdb24b717733d63529bb",
+          "md5": "dc540b9ff3f8034cbef41d782d034857",
+          "sha256": "79432e2de8b27f01aaad6d3f12e1549396f1c2a022665a859c45b179bf6ff228"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.1.0b2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "dc540b9ff3f8034cbef41d782d034857",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 144848,
+        "upload_time": "2025-08-05T22:18:45",
+        "upload_time_iso_8601": "2025-08-05T22:18:45.351056Z",
+        "url": "https://files.pythonhosted.org/packages/26/17/33664227381ff59690e16a8d3261c9edeb80d88acdb24b717733d63529bb/azure_ai_projects-1.1.0b2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0b3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "648a92085213bdf90e6df93a4678b1ec84e2f9ef0857ab649c6034a574960ec7",
+          "md5": "356cf234445d59471f3d6a0a955b6c51",
+          "sha256": "6149e5b17f4cbd467eec812ae9b335be48b7e856d886e49c1c0cd55385a5fa78"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.1.0b3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "356cf234445d59471f3d6a0a955b6c51",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 125797,
+        "upload_time": "2025-08-26T23:16:07",
+        "upload_time_iso_8601": "2025-08-26T23:16:07.866706Z",
+        "url": "https://files.pythonhosted.org/packages/64/8a/92085213bdf90e6df93a4678b1ec84e2f9ef0857ab649c6034a574960ec7/azure_ai_projects-1.1.0b3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a7dd1dc533648c8cafe5b5fdf93ca2f1b681d5d718ff30b1d1aa8b90e87cbf9b",
+          "md5": "4aa9b7a344e9511eb943a64c1a7a8e6d",
+          "sha256": "f18397de1456e315c592e708a0c4af00d6b52f646f2d199b2f99554e8236d495"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.1.0b3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4aa9b7a344e9511eb943a64c1a7a8e6d",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 145568,
+        "upload_time": "2025-08-26T23:16:05",
+        "upload_time_iso_8601": "2025-08-26T23:16:05.836436Z",
+        "url": "https://files.pythonhosted.org/packages/a7/dd/1dc533648c8cafe5b5fdf93ca2f1b681d5d718ff30b1d1aa8b90e87cbf9b/azure_ai_projects-1.1.0b3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0b4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "db108b7bd070e3cc804343dab124ce66a3b7999a72d5be0e49232cbcd1d36e18",
+          "md5": "ca17c42352a8b39765ed6c476b05ceed",
+          "sha256": "d8aab84fd7cd7c5937e78141e37ca4473dc5ed6cce2c0490c634418abe14afea"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.1.0b4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ca17c42352a8b39765ed6c476b05ceed",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 126670,
+        "upload_time": "2025-09-12T17:35:10",
+        "upload_time_iso_8601": "2025-09-12T17:35:10.039516Z",
+        "url": "https://files.pythonhosted.org/packages/db/10/8b7bd070e3cc804343dab124ce66a3b7999a72d5be0e49232cbcd1d36e18/azure_ai_projects-1.1.0b4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bc167a7c978a79f545d62ab4327cd704c22b5d7ade8dcfb58ea193257aebabf9",
+          "md5": "21a58f8e5058436b0d0ab9386ea5f757",
+          "sha256": "39e2f1396270b375069c2d9c82ccfe91c11384eca9f61d59adbc12fb6d6a32ca"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-1.1.0b4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "21a58f8e5058436b0d0ab9386ea5f757",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 147568,
+        "upload_time": "2025-09-12T17:35:08",
+        "upload_time_iso_8601": "2025-09-12T17:35:08.520871Z",
+        "url": "https://files.pythonhosted.org/packages/bc/16/7a7c978a79f545d62ab4327cd704c22b5d7ade8dcfb58ea193257aebabf9/azure_ai_projects-1.1.0b4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.0.0b1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8269b0f93d40bf24ecf3785097e601e389f9d8b5d33b979db7eee6ec5b92df40",
+          "md5": "490f7be20db89ad4270963866d6abce8",
+          "sha256": "88eca153c63c8d93bc1776858ae036f1796ef0b9552b77736c446e575e3b132a"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-2.0.0b1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "490f7be20db89ad4270963866d6abce8",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 221008,
+        "upload_time": "2025-11-12T04:00:01",
+        "upload_time_iso_8601": "2025-11-12T04:00:01.281503Z",
+        "url": "https://files.pythonhosted.org/packages/82/69/b0f93d40bf24ecf3785097e601e389f9d8b5d33b979db7eee6ec5b92df40/azure_ai_projects-2.0.0b1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "913369b9db7f232a43216bf6fb58172335a269abdc923e78e7ecacc71590aa6e",
+          "md5": "bc73dc946bbd485aa9b6f351ed8a751b",
+          "sha256": "259413c5129b4f4902da335c36c2a0389b003953fa0116d9d054f54c3f42c3f4"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-2.0.0b1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bc73dc946bbd485aa9b6f351ed8a751b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 335085,
+        "upload_time": "2025-11-12T03:59:59",
+        "upload_time_iso_8601": "2025-11-12T03:59:59.652783Z",
+        "url": "https://files.pythonhosted.org/packages/91/33/69b9db7f232a43216bf6fb58172335a269abdc923e78e7ecacc71590aa6e/azure_ai_projects-2.0.0b1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.0.0b2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a941d9a2b3eb33b4ffd9acfaa115cfd456e32d0c754227d6d78ec5d039ff75c2",
+          "md5": "492aabeece61006c19a65e74bc2b60f3",
+          "sha256": "642496fdf9846c91f3557d39899d3893f0ce8f910334320686fc8f617492351d"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-2.0.0b2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "492aabeece61006c19a65e74bc2b60f3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 234023,
+        "upload_time": "2025-11-15T06:17:48",
+        "upload_time_iso_8601": "2025-11-15T06:17:48.141382Z",
+        "url": "https://files.pythonhosted.org/packages/a9/41/d9a2b3eb33b4ffd9acfaa115cfd456e32d0c754227d6d78ec5d039ff75c2/azure_ai_projects-2.0.0b2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f296ec17f99f5ced3d82876e89b4f950d8c7466c84d79016c5905b1c03b6c484",
+          "md5": "f3f32411008e12c7ec2aeeca0b53a17d",
+          "sha256": "4444cc49c799359b9c25d7f59c126862053cb591b63e69ffc640774b4ceb2b73"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-2.0.0b2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f3f32411008e12c7ec2aeeca0b53a17d",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 369393,
+        "upload_time": "2025-11-15T06:17:46",
+        "upload_time_iso_8601": "2025-11-15T06:17:46.312332Z",
+        "url": "https://files.pythonhosted.org/packages/f2/96/ec17f99f5ced3d82876e89b4f950d8c7466c84d79016c5905b1c03b6c484/azure_ai_projects-2.0.0b2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.0.0b3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4eb68fbd4786bb5c0dd19eaff86ddce0fbfb53a6f90d712038272161067a076a",
+          "md5": "6e23675beff5450de909f8e7c33899c1",
+          "sha256": "3b3048a3ba3904d556ba392b7bd20b6e84c93bb39df6d43a6470cdb0ad08af8c"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-2.0.0b3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "6e23675beff5450de909f8e7c33899c1",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 240717,
+        "upload_time": "2026-01-06T05:31:27",
+        "upload_time_iso_8601": "2026-01-06T05:31:27.716869Z",
+        "url": "https://files.pythonhosted.org/packages/4e/b6/8fbd4786bb5c0dd19eaff86ddce0fbfb53a6f90d712038272161067a076a/azure_ai_projects-2.0.0b3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "24e03512d3f07e9dd2eb4af684387c31598c435bd87833b6a81850972963cb9c",
+          "md5": "aecd6fada33d9cc4349e401ecb222711",
+          "sha256": "6d09ad110086e450a47b991ee8a3644f1be97fa3085d5981d543f900d78f4505"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_projects-2.0.0b3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "aecd6fada33d9cc4349e401ecb222711",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 431749,
+        "upload_time": "2026-01-06T05:31:25",
+        "upload_time_iso_8601": "2026-01-06T05:31:25.849186Z",
+        "url": "https://files.pythonhosted.org/packages/24/e0/3512d3f07e9dd2eb4af684387c31598c435bd87833b6a81850972963cb9c/azure_ai_projects-2.0.0b3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "b5db7149cdf71e12d9737f186656176efc94943ead4f205671768c1549593efe",
+        "md5": "b64e8a4d9a415382e09c7369565259de",
+        "sha256": "81369ed7a2f84a65864f57d3fa153e16c30f411a1504d334e184fb070165a3fa"
+      },
+      "downloads": -1,
+      "filename": "azure_ai_projects-1.0.0-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "b64e8a4d9a415382e09c7369565259de",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.9",
+      "size": 115188,
+      "upload_time": "2025-07-31T02:09:29",
+      "upload_time_iso_8601": "2025-07-31T02:09:29.362529Z",
+      "url": "https://files.pythonhosted.org/packages/b5/db/7149cdf71e12d9737f186656176efc94943ead4f205671768c1549593efe/azure_ai_projects-1.0.0-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "dd959c04cb5f658c7f856026aa18432e0f0fa254ead2983a3574a0f5558a7234",
+        "md5": "78290872cd8e8490cd1372bc66578d2f",
+        "sha256": "b5f03024ccf0fd543fbe0f5abcc74e45b15eccc1c71ab87fc71c63061d9fd63c"
+      },
+      "downloads": -1,
+      "filename": "azure_ai_projects-1.0.0.tar.gz",
+      "has_sig": false,
+      "md5_digest": "78290872cd8e8490cd1372bc66578d2f",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.9",
+      "size": 130798,
+      "upload_time": "2025-07-31T02:09:27",
+      "upload_time_iso_8601": "2025-07-31T02:09:27.912694Z",
+      "url": "https://files.pythonhosted.org/packages/dd/95/9c04cb5f658c7f856026aa18432e0f0fa254ead2983a3574a0f5558a7234/azure_ai_projects-1.0.0.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

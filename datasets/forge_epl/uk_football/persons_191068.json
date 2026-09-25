@@ -1,0 +1,43 @@
+{
+    "id": 191068,
+    "name": "Mike Penders",
+    "firstName": "Mike",
+    "lastName": "Penders",
+    "dateOfBirth": "2005-07-31",
+    "nationality": "Belgium",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 39,
+    "lastUpdated": "2025-10-15T09:41:57Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png",
+        "address": "Fulham Road London SW6 1HS",
+        "website": "http://www.chelseafc.com",
+        "founded": 1905,
+        "clubColors": "Royal Blue / White",
+        "venue": "Stamford Bridge",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2024-08",
+            "until": "2032-06"
+        }
+    }
+}

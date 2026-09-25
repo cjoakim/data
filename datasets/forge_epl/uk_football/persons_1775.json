@@ -1,0 +1,43 @@
+{
+    "id": 1775,
+    "name": "Nikola Milenkovi\u0107",
+    "firstName": "Nikola",
+    "lastName": "Milenkovi\u0107",
+    "dateOfBirth": "1997-10-12",
+    "nationality": "Serbia",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 31,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png",
+        "address": "Pavilion Road, West Bridgeford Nottingham NG2 5GJ",
+        "website": "http://www.nottinghamforest.co.uk",
+        "founded": 1865,
+        "clubColors": "Red / White",
+        "venue": "The City Ground",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2024-07",
+            "until": "2029-06"
+        }
+    }
+}

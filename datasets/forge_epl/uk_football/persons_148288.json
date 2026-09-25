@@ -1,0 +1,43 @@
+{
+    "id": 148288,
+    "name": "Timothee Pembele",
+    "firstName": "Timoth\u00e9e",
+    "lastName": "Pemb\u00e9l\u00e9",
+    "dateOfBirth": "2002-09-09",
+    "nationality": "France",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 32,
+    "lastUpdated": "2026-07-15T09:25:43Z",
+    "currentTeam": {
+        "area": {
+            "id": 2081,
+            "name": "France",
+            "code": "FRA",
+            "flag": "https://crests.football-data.org/773.svg"
+        },
+        "id": 533,
+        "name": "Le Havre AC",
+        "shortName": "Le Havre",
+        "tla": "HAC",
+        "crest": "https://crests.football-data.org/533.png",
+        "address": "2 route du ch\u00e2teau BP 90 Saint-Laurent-de-Br\u00e8vedent 76700",
+        "website": "http://www.hac-foot.com",
+        "founded": 1872,
+        "clubColors": "Sky Blue / Navy Blue",
+        "venue": "Stade Oc\u00e9ane",
+        "runningCompetitions": [
+            {
+                "id": 2015,
+                "name": "Ligue 1",
+                "code": "FL1",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/FL1.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2029-06"
+        }
+    }
+}

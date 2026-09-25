@@ -1,0 +1,50 @@
+{
+    "id": 191362,
+    "name": "James Beadle",
+    "firstName": "James",
+    "lastName": "Beadle",
+    "dateOfBirth": "2004-07-16",
+    "nationality": "England",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 1,
+    "lastUpdated": "2024-01-10T09:42:32Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 332,
+        "name": "Birmingham City FC",
+        "shortName": "Birmingham",
+        "tla": "BIR",
+        "crest": "https://crests.football-data.org/332.png",
+        "address": "St. Andrew's Stadium Birmingham B9 4RL",
+        "website": "http://www.bcfc.com",
+        "founded": 1875,
+        "clubColors": "Blue / White",
+        "venue": "St Andrew's Trillion Trophy Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2016,
+                "name": "Championship",
+                "code": "ELC",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/ELC.png"
+            },
+            {
+                "id": 2139,
+                "name": "Football League Cup",
+                "code": "FLC",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/carabao.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2027-05"
+        }
+    }
+}

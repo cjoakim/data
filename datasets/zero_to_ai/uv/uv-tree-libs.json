@@ -1,0 +1,6275 @@
+[
+  {
+    "index": 0,
+    "name": "agent-framework",
+    "version": "v1.0.0rc5",
+    "level": 1,
+    "indent": 2,
+    "suffix": "agent-framework v1.0.0rc5"
+  },
+  {
+    "index": 1,
+    "name": "agent-framework-core[all]",
+    "version": "v1.0.0rc5",
+    "level": 2,
+    "indent": 6,
+    "suffix": "agent-framework-core[all] v1.0.0rc5"
+  },
+  {
+    "index": 2,
+    "name": "azure-ai-projects",
+    "version": "v2.0.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "azure-ai-projects v2.0.1"
+  },
+  {
+    "index": 3,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 4,
+    "indent": 14,
+    "suffix": "azure-core v1.38.2"
+  },
+  {
+    "index": 4,
+    "name": "requests",
+    "version": "v2.32.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "requests v2.32.5"
+  },
+  {
+    "index": 5,
+    "name": "certifi",
+    "version": "v2025.11.12",
+    "level": 6,
+    "indent": 22,
+    "suffix": "certifi v2025.11.12"
+  },
+  {
+    "index": 6,
+    "name": "charset-normalizer",
+    "version": "v3.4.4",
+    "level": 6,
+    "indent": 22,
+    "suffix": "charset-normalizer v3.4.4"
+  },
+  {
+    "index": 7,
+    "name": "idna",
+    "version": "v3.11",
+    "level": 6,
+    "indent": 22,
+    "suffix": "idna v3.11"
+  },
+  {
+    "index": 8,
+    "name": "urllib3",
+    "version": "v2.6.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "urllib3 v2.6.2"
+  },
+  {
+    "index": 9,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 10,
+    "name": "azure-identity",
+    "version": "v1.25.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "azure-identity v1.25.1"
+  },
+  {
+    "index": 11,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 12,
+    "name": "cryptography",
+    "version": "v46.0.3",
+    "level": 5,
+    "indent": 18,
+    "suffix": "cryptography v46.0.3"
+  },
+  {
+    "index": 13,
+    "name": "cffi",
+    "version": "v2.0.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "cffi v2.0.0"
+  },
+  {
+    "index": 14,
+    "name": "pycparser",
+    "version": "v2.23",
+    "level": 7,
+    "indent": 26,
+    "suffix": "pycparser v2.23"
+  },
+  {
+    "index": 15,
+    "name": "msal",
+    "version": "v1.34.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "msal v1.34.0"
+  },
+  {
+    "index": 16,
+    "name": "cryptography",
+    "version": "v46.0.3",
+    "level": 6,
+    "indent": 22,
+    "suffix": "cryptography v46.0.3 (*)"
+  },
+  {
+    "index": 17,
+    "name": "pyjwt[crypto]",
+    "version": "v2.10.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "pyjwt[crypto] v2.10.1"
+  },
+  {
+    "index": 18,
+    "name": "cryptography",
+    "version": "v46.0.3",
+    "level": 7,
+    "indent": 26,
+    "suffix": "cryptography v46.0.3 (extra: crypto) (*)"
+  },
+  {
+    "index": 19,
+    "name": "requests",
+    "version": "v2.32.5",
+    "level": 6,
+    "indent": 22,
+    "suffix": "requests v2.32.5 (*)"
+  },
+  {
+    "index": 20,
+    "name": "msal-extensions",
+    "version": "v1.3.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "msal-extensions v1.3.1"
+  },
+  {
+    "index": 21,
+    "name": "msal",
+    "version": "v1.34.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "msal v1.34.0 (*)"
+  },
+  {
+    "index": 22,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 23,
+    "name": "azure-storage-blob",
+    "version": "v12.27.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "azure-storage-blob v12.27.1"
+  },
+  {
+    "index": 24,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 25,
+    "name": "cryptography",
+    "version": "v46.0.3",
+    "level": 5,
+    "indent": 18,
+    "suffix": "cryptography v46.0.3 (*)"
+  },
+  {
+    "index": 26,
+    "name": "isodate",
+    "version": "v0.7.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "isodate v0.7.2"
+  },
+  {
+    "index": 27,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 28,
+    "name": "isodate",
+    "version": "v0.7.2",
+    "level": 4,
+    "indent": 14,
+    "suffix": "isodate v0.7.2"
+  },
+  {
+    "index": 29,
+    "name": "openai",
+    "version": "v2.26.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "openai v2.26.0"
+  },
+  {
+    "index": 30,
+    "name": "anyio",
+    "version": "v4.12.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "anyio v4.12.0"
+  },
+  {
+    "index": 31,
+    "name": "idna",
+    "version": "v3.11",
+    "level": 6,
+    "indent": 22,
+    "suffix": "idna v3.11"
+  },
+  {
+    "index": 32,
+    "name": "distro",
+    "version": "v1.9.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "distro v1.9.0"
+  },
+  {
+    "index": 33,
+    "name": "httpx",
+    "version": "v0.28.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "httpx v0.28.1"
+  },
+  {
+    "index": 34,
+    "name": "anyio",
+    "version": "v4.12.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "anyio v4.12.0 (*)"
+  },
+  {
+    "index": 35,
+    "name": "certifi",
+    "version": "v2025.11.12",
+    "level": 6,
+    "indent": 22,
+    "suffix": "certifi v2025.11.12"
+  },
+  {
+    "index": 36,
+    "name": "httpcore",
+    "version": "v1.0.9",
+    "level": 6,
+    "indent": 22,
+    "suffix": "httpcore v1.0.9"
+  },
+  {
+    "index": 37,
+    "name": "certifi",
+    "version": "v2025.11.12",
+    "level": 7,
+    "indent": 26,
+    "suffix": "certifi v2025.11.12"
+  },
+  {
+    "index": 38,
+    "name": "h11",
+    "version": "v0.16.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "h11 v0.16.0"
+  },
+  {
+    "index": 39,
+    "name": "idna",
+    "version": "v3.11",
+    "level": 6,
+    "indent": 22,
+    "suffix": "idna v3.11"
+  },
+  {
+    "index": 40,
+    "name": "click",
+    "version": "v8.3.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "click v8.3.1 (extra: cli)"
+  },
+  {
+    "index": 41,
+    "name": "pygments",
+    "version": "v2.19.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "pygments v2.19.2 (extra: cli)"
+  },
+  {
+    "index": 42,
+    "name": "rich",
+    "version": "v13.9.4",
+    "level": 6,
+    "indent": 22,
+    "suffix": "rich v13.9.4 (extra: cli)"
+  },
+  {
+    "index": 43,
+    "name": "markdown-it-py",
+    "version": "v4.0.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "markdown-it-py v4.0.0"
+  },
+  {
+    "index": 44,
+    "name": "mdurl",
+    "version": "v0.1.2",
+    "level": 8,
+    "indent": 30,
+    "suffix": "mdurl v0.1.2"
+  },
+  {
+    "index": 45,
+    "name": "pygments",
+    "version": "v2.19.2",
+    "level": 7,
+    "indent": 26,
+    "suffix": "pygments v2.19.2"
+  },
+  {
+    "index": 46,
+    "name": "h2",
+    "version": "v4.3.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "h2 v4.3.0 (extra: http2)"
+  },
+  {
+    "index": 47,
+    "name": "hpack",
+    "version": "v4.1.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "hpack v4.1.0"
+  },
+  {
+    "index": 48,
+    "name": "hyperframe",
+    "version": "v6.1.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "hyperframe v6.1.0"
+  },
+  {
+    "index": 49,
+    "name": "jiter",
+    "version": "v0.12.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jiter v0.12.0"
+  },
+  {
+    "index": 50,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic v2.12.5"
+  },
+  {
+    "index": 51,
+    "name": "annotated-types",
+    "version": "v0.7.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "annotated-types v0.7.0"
+  },
+  {
+    "index": 52,
+    "name": "pydantic-core",
+    "version": "v2.41.5",
+    "level": 6,
+    "indent": 22,
+    "suffix": "pydantic-core v2.41.5"
+  },
+  {
+    "index": 53,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 54,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 55,
+    "name": "typing-inspection",
+    "version": "v0.4.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "typing-inspection v0.4.2"
+  },
+  {
+    "index": 56,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 57,
+    "name": "email-validator",
+    "version": "v2.3.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "email-validator v2.3.0 (extra: email)"
+  },
+  {
+    "index": 58,
+    "name": "dnspython",
+    "version": "v2.8.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "dnspython v2.8.0"
+  },
+  {
+    "index": 59,
+    "name": "idna",
+    "version": "v3.11",
+    "level": 7,
+    "indent": 26,
+    "suffix": "idna v3.11"
+  },
+  {
+    "index": 60,
+    "name": "sniffio",
+    "version": "v1.3.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "sniffio v1.3.1"
+  },
+  {
+    "index": 61,
+    "name": "tqdm",
+    "version": "v4.67.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "tqdm v4.67.1"
+  },
+  {
+    "index": 62,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 63,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 64,
+    "name": "azure-identity",
+    "version": "v1.25.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "azure-identity v1.25.1 (*)"
+  },
+  {
+    "index": 65,
+    "name": "mcp[ws]",
+    "version": "v1.25.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "mcp[ws] v1.25.0"
+  },
+  {
+    "index": 66,
+    "name": "anyio",
+    "version": "v4.12.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "anyio v4.12.0 (*)"
+  },
+  {
+    "index": 67,
+    "name": "httpx",
+    "version": "v0.28.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "httpx v0.28.1 (*)"
+  },
+  {
+    "index": 68,
+    "name": "httpx-sse",
+    "version": "v0.4.3",
+    "level": 4,
+    "indent": 14,
+    "suffix": "httpx-sse v0.4.3"
+  },
+  {
+    "index": 69,
+    "name": "jsonschema",
+    "version": "v4.25.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "jsonschema v4.25.1"
+  },
+  {
+    "index": 70,
+    "name": "attrs",
+    "version": "v25.4.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "attrs v25.4.0"
+  },
+  {
+    "index": 71,
+    "name": "jsonschema-specifications",
+    "version": "v2025.9.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jsonschema-specifications v2025.9.1"
+  },
+  {
+    "index": 72,
+    "name": "referencing",
+    "version": "v0.36.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "referencing v0.36.2"
+  },
+  {
+    "index": 73,
+    "name": "attrs",
+    "version": "v25.4.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "attrs v25.4.0"
+  },
+  {
+    "index": 74,
+    "name": "rpds-py",
+    "version": "v0.30.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "rpds-py v0.30.0"
+  },
+  {
+    "index": 75,
+    "name": "referencing",
+    "version": "v0.36.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "referencing v0.36.2 (*)"
+  },
+  {
+    "index": 76,
+    "name": "rpds-py",
+    "version": "v0.30.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "rpds-py v0.30.0"
+  },
+  {
+    "index": 77,
+    "name": "fqdn",
+    "version": "v1.5.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "fqdn v1.5.1 (extra: format-nongpl)"
+  },
+  {
+    "index": 78,
+    "name": "idna",
+    "version": "v3.11",
+    "level": 5,
+    "indent": 18,
+    "suffix": "idna v3.11 (extra: format-nongpl)"
+  },
+  {
+    "index": 79,
+    "name": "isoduration",
+    "version": "v20.11.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "isoduration v20.11.0 (extra: format-nongpl)"
+  },
+  {
+    "index": 80,
+    "name": "arrow",
+    "version": "v1.4.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "arrow v1.4.0"
+  },
+  {
+    "index": 81,
+    "name": "python-dateutil",
+    "version": "v2.9.0.post0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "python-dateutil v2.9.0.post0"
+  },
+  {
+    "index": 82,
+    "name": "six",
+    "version": "v1.17.0",
+    "level": 8,
+    "indent": 30,
+    "suffix": "six v1.17.0"
+  },
+  {
+    "index": 83,
+    "name": "tzdata",
+    "version": "v2025.3",
+    "level": 7,
+    "indent": 26,
+    "suffix": "tzdata v2025.3"
+  },
+  {
+    "index": 84,
+    "name": "jsonpointer",
+    "version": "v3.0.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jsonpointer v3.0.0 (extra: format-nongpl)"
+  },
+  {
+    "index": 85,
+    "name": "rfc3339-validator",
+    "version": "v0.1.4",
+    "level": 5,
+    "indent": 18,
+    "suffix": "rfc3339-validator v0.1.4 (extra: format-nongpl)"
+  },
+  {
+    "index": 86,
+    "name": "six",
+    "version": "v1.17.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "six v1.17.0"
+  },
+  {
+    "index": 87,
+    "name": "rfc3986-validator",
+    "version": "v0.1.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "rfc3986-validator v0.1.1 (extra: format-nongpl)"
+  },
+  {
+    "index": 88,
+    "name": "rfc3987-syntax",
+    "version": "v1.1.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "rfc3987-syntax v1.1.0 (extra: format-nongpl)"
+  },
+  {
+    "index": 89,
+    "name": "lark",
+    "version": "v1.3.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "lark v1.3.1"
+  },
+  {
+    "index": 90,
+    "name": "uri-template",
+    "version": "v1.3.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "uri-template v1.3.0 (extra: format-nongpl)"
+  },
+  {
+    "index": 91,
+    "name": "webcolors",
+    "version": "v25.10.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "webcolors v25.10.0 (extra: format-nongpl)"
+  },
+  {
+    "index": 92,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 93,
+    "name": "pydantic-settings",
+    "version": "v2.12.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "pydantic-settings v2.12.0"
+  },
+  {
+    "index": 94,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 95,
+    "name": "python-dotenv",
+    "version": "v1.2.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "python-dotenv v1.2.1"
+  },
+  {
+    "index": 96,
+    "name": "typing-inspection",
+    "version": "v0.4.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "typing-inspection v0.4.2 (*)"
+  },
+  {
+    "index": 97,
+    "name": "pyjwt[crypto]",
+    "version": "v2.10.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "pyjwt[crypto] v2.10.1 (*)"
+  },
+  {
+    "index": 98,
+    "name": "python-multipart",
+    "version": "v0.0.21",
+    "level": 4,
+    "indent": 14,
+    "suffix": "python-multipart v0.0.21"
+  },
+  {
+    "index": 99,
+    "name": "sse-starlette",
+    "version": "v3.1.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "sse-starlette v3.1.1"
+  },
+  {
+    "index": 100,
+    "name": "anyio",
+    "version": "v4.12.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "anyio v4.12.0 (*)"
+  },
+  {
+    "index": 101,
+    "name": "starlette",
+    "version": "v0.50.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "starlette v0.50.0"
+  },
+  {
+    "index": 102,
+    "name": "anyio",
+    "version": "v4.12.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "anyio v4.12.0 (*)"
+  },
+  {
+    "index": 103,
+    "name": "starlette",
+    "version": "v0.50.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "starlette v0.50.0 (*)"
+  },
+  {
+    "index": 104,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 105,
+    "name": "typing-inspection",
+    "version": "v0.4.2",
+    "level": 4,
+    "indent": 14,
+    "suffix": "typing-inspection v0.4.2 (*)"
+  },
+  {
+    "index": 106,
+    "name": "uvicorn",
+    "version": "v0.38.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "uvicorn v0.38.0"
+  },
+  {
+    "index": 107,
+    "name": "click",
+    "version": "v8.3.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "click v8.3.1"
+  },
+  {
+    "index": 108,
+    "name": "h11",
+    "version": "v0.16.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "h11 v0.16.0"
+  },
+  {
+    "index": 109,
+    "name": "httptools",
+    "version": "v0.7.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "httptools v0.7.1 (extra: standard)"
+  },
+  {
+    "index": 110,
+    "name": "python-dotenv",
+    "version": "v1.2.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "python-dotenv v1.2.1 (extra: standard)"
+  },
+  {
+    "index": 111,
+    "name": "pyyaml",
+    "version": "v6.0.3",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pyyaml v6.0.3 (extra: standard)"
+  },
+  {
+    "index": 112,
+    "name": "uvloop",
+    "version": "v0.22.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "uvloop v0.22.1 (extra: standard)"
+  },
+  {
+    "index": 113,
+    "name": "watchfiles",
+    "version": "v1.1.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "watchfiles v1.1.1 (extra: standard)"
+  },
+  {
+    "index": 114,
+    "name": "anyio",
+    "version": "v4.12.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "anyio v4.12.0 (*)"
+  },
+  {
+    "index": 115,
+    "name": "websockets",
+    "version": "v15.0.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "websockets v15.0.1 (extra: standard)"
+  },
+  {
+    "index": 116,
+    "name": "websockets",
+    "version": "v15.0.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "websockets v15.0.1 (extra: ws)"
+  },
+  {
+    "index": 117,
+    "name": "openai",
+    "version": "v2.26.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "openai v2.26.0 (*)"
+  },
+  {
+    "index": 118,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "opentelemetry-api v1.40.0"
+  },
+  {
+    "index": 119,
+    "name": "importlib-metadata",
+    "version": "v8.7.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "importlib-metadata v8.7.1"
+  },
+  {
+    "index": 120,
+    "name": "zipp",
+    "version": "v3.23.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "zipp v3.23.0"
+  },
+  {
+    "index": 121,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 122,
+    "name": "opentelemetry-sdk",
+    "version": "v1.40.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "opentelemetry-sdk v1.40.0"
+  },
+  {
+    "index": 123,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 124,
+    "name": "opentelemetry-semantic-conventions",
+    "version": "v0.61b0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "opentelemetry-semantic-conventions v0.61b0"
+  },
+  {
+    "index": 125,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 126,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 127,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 128,
+    "name": "opentelemetry-semantic-conventions-ai",
+    "version": "v0.4.13",
+    "level": 3,
+    "indent": 10,
+    "suffix": "opentelemetry-semantic-conventions-ai v0.4.13"
+  },
+  {
+    "index": 129,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 130,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 3,
+    "indent": 10,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 131,
+    "name": "python-dotenv",
+    "version": "v1.2.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "python-dotenv v1.2.1"
+  },
+  {
+    "index": 132,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 133,
+    "name": "agent-framework-a2a",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-a2a v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 134,
+    "name": "a2a-sdk",
+    "version": "v0.3.23",
+    "level": 4,
+    "indent": 14,
+    "suffix": "a2a-sdk v0.3.23"
+  },
+  {
+    "index": 135,
+    "name": "google-api-core",
+    "version": "v2.30.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "google-api-core v2.30.0"
+  },
+  {
+    "index": 136,
+    "name": "google-auth",
+    "version": "v2.49.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "google-auth v2.49.1"
+  },
+  {
+    "index": 137,
+    "name": "cryptography",
+    "version": "v46.0.3",
+    "level": 7,
+    "indent": 26,
+    "suffix": "cryptography v46.0.3 (*)"
+  },
+  {
+    "index": 138,
+    "name": "pyasn1-modules",
+    "version": "v0.4.2",
+    "level": 7,
+    "indent": 26,
+    "suffix": "pyasn1-modules v0.4.2"
+  },
+  {
+    "index": 139,
+    "name": "pyasn1",
+    "version": "v0.6.3",
+    "level": 8,
+    "indent": 30,
+    "suffix": "pyasn1 v0.6.3"
+  },
+  {
+    "index": 140,
+    "name": "googleapis-common-protos",
+    "version": "v1.72.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "googleapis-common-protos v1.72.0"
+  },
+  {
+    "index": 141,
+    "name": "protobuf",
+    "version": "v6.33.2",
+    "level": 7,
+    "indent": 26,
+    "suffix": "protobuf v6.33.2"
+  },
+  {
+    "index": 142,
+    "name": "proto-plus",
+    "version": "v1.27.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "proto-plus v1.27.1"
+  },
+  {
+    "index": 143,
+    "name": "protobuf",
+    "version": "v6.33.2",
+    "level": 7,
+    "indent": 26,
+    "suffix": "protobuf v6.33.2"
+  },
+  {
+    "index": 144,
+    "name": "protobuf",
+    "version": "v6.33.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "protobuf v6.33.2"
+  },
+  {
+    "index": 145,
+    "name": "requests",
+    "version": "v2.32.5",
+    "level": 6,
+    "indent": 22,
+    "suffix": "requests v2.32.5 (*)"
+  },
+  {
+    "index": 146,
+    "name": "httpx",
+    "version": "v0.28.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "httpx v0.28.1 (*)"
+  },
+  {
+    "index": 147,
+    "name": "httpx-sse",
+    "version": "v0.4.3",
+    "level": 5,
+    "indent": 18,
+    "suffix": "httpx-sse v0.4.3"
+  },
+  {
+    "index": 148,
+    "name": "protobuf",
+    "version": "v6.33.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "protobuf v6.33.2"
+  },
+  {
+    "index": 149,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 150,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 151,
+    "name": "agent-framework-ag-ui",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-ag-ui v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 152,
+    "name": "ag-ui-protocol",
+    "version": "v0.1.13",
+    "level": 4,
+    "indent": 14,
+    "suffix": "ag-ui-protocol v0.1.13"
+  },
+  {
+    "index": 153,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 154,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 155,
+    "name": "fastapi",
+    "version": "v0.128.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "fastapi v0.128.0"
+  },
+  {
+    "index": 156,
+    "name": "annotated-doc",
+    "version": "v0.0.4",
+    "level": 5,
+    "indent": 18,
+    "suffix": "annotated-doc v0.0.4"
+  },
+  {
+    "index": 157,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 158,
+    "name": "starlette",
+    "version": "v0.50.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "starlette v0.50.0 (*)"
+  },
+  {
+    "index": 159,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 160,
+    "name": "email-validator",
+    "version": "v2.3.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "email-validator v2.3.0 (extra: standard) (*)"
+  },
+  {
+    "index": 161,
+    "name": "fastapi-cli[standard]",
+    "version": "v0.0.20",
+    "level": 5,
+    "indent": 18,
+    "suffix": "fastapi-cli[standard] v0.0.20 (extra: standard)"
+  },
+  {
+    "index": 162,
+    "name": "rich-toolkit",
+    "version": "v0.17.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "rich-toolkit v0.17.1"
+  },
+  {
+    "index": 163,
+    "name": "click",
+    "version": "v8.3.1",
+    "level": 7,
+    "indent": 26,
+    "suffix": "click v8.3.1"
+  },
+  {
+    "index": 164,
+    "name": "rich",
+    "version": "v13.9.4",
+    "level": 7,
+    "indent": 26,
+    "suffix": "rich v13.9.4 (*)"
+  },
+  {
+    "index": 165,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 166,
+    "name": "typer",
+    "version": "v0.21.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "typer v0.21.1"
+  },
+  {
+    "index": 167,
+    "name": "click",
+    "version": "v8.3.1",
+    "level": 7,
+    "indent": 26,
+    "suffix": "click v8.3.1"
+  },
+  {
+    "index": 168,
+    "name": "rich",
+    "version": "v13.9.4",
+    "level": 7,
+    "indent": 26,
+    "suffix": "rich v13.9.4 (*)"
+  },
+  {
+    "index": 169,
+    "name": "shellingham",
+    "version": "v1.5.4",
+    "level": 7,
+    "indent": 26,
+    "suffix": "shellingham v1.5.4"
+  },
+  {
+    "index": 170,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 171,
+    "name": "uvicorn[standard]",
+    "version": "v0.38.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "uvicorn[standard] v0.38.0 (*)"
+  },
+  {
+    "index": 172,
+    "name": "fastapi-cloud-cli",
+    "version": "v0.11.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "fastapi-cloud-cli v0.11.0 (extra: standard)"
+  },
+  {
+    "index": 173,
+    "name": "fastar",
+    "version": "v0.8.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "fastar v0.8.0"
+  },
+  {
+    "index": 174,
+    "name": "httpx",
+    "version": "v0.28.1",
+    "level": 7,
+    "indent": 26,
+    "suffix": "httpx v0.28.1 (*)"
+  },
+  {
+    "index": 175,
+    "name": "pydantic[email]",
+    "version": "v2.12.5",
+    "level": 7,
+    "indent": 26,
+    "suffix": "pydantic[email] v2.12.5 (*)"
+  },
+  {
+    "index": 176,
+    "name": "rich-toolkit",
+    "version": "v0.17.1",
+    "level": 7,
+    "indent": 26,
+    "suffix": "rich-toolkit v0.17.1 (*)"
+  },
+  {
+    "index": 177,
+    "name": "rignore",
+    "version": "v0.7.6",
+    "level": 7,
+    "indent": 26,
+    "suffix": "rignore v0.7.6"
+  },
+  {
+    "index": 178,
+    "name": "sentry-sdk",
+    "version": "v2.50.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "sentry-sdk v2.50.0"
+  },
+  {
+    "index": 179,
+    "name": "certifi",
+    "version": "v2025.11.12",
+    "level": 8,
+    "indent": 30,
+    "suffix": "certifi v2025.11.12"
+  },
+  {
+    "index": 180,
+    "name": "urllib3",
+    "version": "v2.6.2",
+    "level": 8,
+    "indent": 30,
+    "suffix": "urllib3 v2.6.2"
+  },
+  {
+    "index": 181,
+    "name": "typer",
+    "version": "v0.21.1",
+    "level": 7,
+    "indent": 26,
+    "suffix": "typer v0.21.1 (*)"
+  },
+  {
+    "index": 182,
+    "name": "uvicorn[standard]",
+    "version": "v0.38.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "uvicorn[standard] v0.38.0 (*)"
+  },
+  {
+    "index": 183,
+    "name": "uvicorn[standard]",
+    "version": "v0.38.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "uvicorn[standard] v0.38.0 (extra: standard) (*)"
+  },
+  {
+    "index": 184,
+    "name": "httpx",
+    "version": "v0.28.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "httpx v0.28.1 (extra: standard) (*)"
+  },
+  {
+    "index": 185,
+    "name": "jinja2",
+    "version": "v3.1.6",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jinja2 v3.1.6 (extra: standard)"
+  },
+  {
+    "index": 186,
+    "name": "markupsafe",
+    "version": "v3.0.3",
+    "level": 6,
+    "indent": 22,
+    "suffix": "markupsafe v3.0.3"
+  },
+  {
+    "index": 187,
+    "name": "pydantic-extra-types",
+    "version": "v2.11.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic-extra-types v2.11.0 (extra: standard)"
+  },
+  {
+    "index": 188,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 6,
+    "indent": 22,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 189,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 190,
+    "name": "pydantic-settings",
+    "version": "v2.12.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic-settings v2.12.0 (extra: standard) (*)"
+  },
+  {
+    "index": 191,
+    "name": "python-multipart",
+    "version": "v0.0.21",
+    "level": 5,
+    "indent": 18,
+    "suffix": "python-multipart v0.0.21 (extra: standard)"
+  },
+  {
+    "index": 192,
+    "name": "uvicorn[standard]",
+    "version": "v0.38.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "uvicorn[standard] v0.38.0 (extra: standard) (*)"
+  },
+  {
+    "index": 193,
+    "name": "uvicorn[standard]",
+    "version": "v0.38.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "uvicorn[standard] v0.38.0 (*)"
+  },
+  {
+    "index": 194,
+    "name": "agent-framework-anthropic",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-anthropic v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 195,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 196,
+    "name": "anthropic",
+    "version": "v0.80.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "anthropic v0.80.0"
+  },
+  {
+    "index": 197,
+    "name": "anyio",
+    "version": "v4.12.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "anyio v4.12.0 (*)"
+  },
+  {
+    "index": 198,
+    "name": "distro",
+    "version": "v1.9.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "distro v1.9.0"
+  },
+  {
+    "index": 199,
+    "name": "docstring-parser",
+    "version": "v0.17.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "docstring-parser v0.17.0"
+  },
+  {
+    "index": 200,
+    "name": "httpx",
+    "version": "v0.28.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "httpx v0.28.1 (*)"
+  },
+  {
+    "index": 201,
+    "name": "jiter",
+    "version": "v0.12.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jiter v0.12.0"
+  },
+  {
+    "index": 202,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 203,
+    "name": "sniffio",
+    "version": "v1.3.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "sniffio v1.3.1"
+  },
+  {
+    "index": 204,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 205,
+    "name": "agent-framework-azure-ai",
+    "version": "v1.0.0rc5",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-azure-ai v1.0.0rc5 (extra: all)"
+  },
+  {
+    "index": 206,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 207,
+    "name": "aiohttp",
+    "version": "v3.13.2",
+    "level": 4,
+    "indent": 14,
+    "suffix": "aiohttp v3.13.2"
+  },
+  {
+    "index": 208,
+    "name": "aiohappyeyeballs",
+    "version": "v2.6.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "aiohappyeyeballs v2.6.1"
+  },
+  {
+    "index": 209,
+    "name": "aiosignal",
+    "version": "v1.4.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "aiosignal v1.4.0"
+  },
+  {
+    "index": 210,
+    "name": "frozenlist",
+    "version": "v1.8.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "frozenlist v1.8.0"
+  },
+  {
+    "index": 211,
+    "name": "attrs",
+    "version": "v25.4.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "attrs v25.4.0"
+  },
+  {
+    "index": 212,
+    "name": "frozenlist",
+    "version": "v1.8.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "frozenlist v1.8.0"
+  },
+  {
+    "index": 213,
+    "name": "multidict",
+    "version": "v6.7.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "multidict v6.7.0"
+  },
+  {
+    "index": 214,
+    "name": "propcache",
+    "version": "v0.4.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "propcache v0.4.1"
+  },
+  {
+    "index": 215,
+    "name": "yarl",
+    "version": "v1.22.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "yarl v1.22.0"
+  },
+  {
+    "index": 216,
+    "name": "idna",
+    "version": "v3.11",
+    "level": 6,
+    "indent": 22,
+    "suffix": "idna v3.11"
+  },
+  {
+    "index": 217,
+    "name": "multidict",
+    "version": "v6.7.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "multidict v6.7.0"
+  },
+  {
+    "index": 218,
+    "name": "propcache",
+    "version": "v0.4.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "propcache v0.4.1"
+  },
+  {
+    "index": 219,
+    "name": "azure-ai-agents",
+    "version": "v1.2.0b5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "azure-ai-agents v1.2.0b5"
+  },
+  {
+    "index": 220,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 221,
+    "name": "isodate",
+    "version": "v0.7.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "isodate v0.7.2"
+  },
+  {
+    "index": 222,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 223,
+    "name": "azure-ai-inference",
+    "version": "v1.0.0b9",
+    "level": 4,
+    "indent": 14,
+    "suffix": "azure-ai-inference v1.0.0b9"
+  },
+  {
+    "index": 224,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 225,
+    "name": "isodate",
+    "version": "v0.7.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "isodate v0.7.2"
+  },
+  {
+    "index": 226,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 227,
+    "name": "agent-framework-azure-ai-search",
+    "version": "v0.0.0a1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-azure-ai-search v0.0.0a1 (extra: all)"
+  },
+  {
+    "index": 228,
+    "name": "agent-framework-azurefunctions",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-azurefunctions v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 229,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 230,
+    "name": "agent-framework-durabletask",
+    "version": "v1.0.0b260319",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-durabletask v1.0.0b260319"
+  },
+  {
+    "index": 231,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 232,
+    "name": "durabletask",
+    "version": "v1.3.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "durabletask v1.3.0"
+  },
+  {
+    "index": 233,
+    "name": "asyncio",
+    "version": "v4.0.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "asyncio v4.0.0"
+  },
+  {
+    "index": 234,
+    "name": "grpcio",
+    "version": "v1.76.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "grpcio v1.76.0"
+  },
+  {
+    "index": 235,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 236,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 237,
+    "name": "protobuf",
+    "version": "v6.33.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "protobuf v6.33.2"
+  },
+  {
+    "index": 238,
+    "name": "durabletask-azuremanaged",
+    "version": "v1.3.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "durabletask-azuremanaged v1.3.0"
+  },
+  {
+    "index": 239,
+    "name": "azure-identity",
+    "version": "v1.25.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "azure-identity v1.25.1 (*)"
+  },
+  {
+    "index": 240,
+    "name": "durabletask",
+    "version": "v1.3.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "durabletask v1.3.0 (*)"
+  },
+  {
+    "index": 241,
+    "name": "python-dateutil",
+    "version": "v2.9.0.post0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "python-dateutil v2.9.0.post0 (*)"
+  },
+  {
+    "index": 242,
+    "name": "azure-functions",
+    "version": "v1.24.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "azure-functions v1.24.0"
+  },
+  {
+    "index": 243,
+    "name": "werkzeug",
+    "version": "v3.1.7",
+    "level": 5,
+    "indent": 18,
+    "suffix": "werkzeug v3.1.7"
+  },
+  {
+    "index": 244,
+    "name": "markupsafe",
+    "version": "v3.0.3",
+    "level": 6,
+    "indent": 22,
+    "suffix": "markupsafe v3.0.3"
+  },
+  {
+    "index": 245,
+    "name": "azure-functions-durable",
+    "version": "v1.4.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "azure-functions-durable v1.4.0"
+  },
+  {
+    "index": 246,
+    "name": "aiohttp",
+    "version": "v3.13.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "aiohttp v3.13.2 (*)"
+  },
+  {
+    "index": 247,
+    "name": "azure-functions",
+    "version": "v1.24.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "azure-functions v1.24.0 (*)"
+  },
+  {
+    "index": 248,
+    "name": "furl",
+    "version": "v2.1.4",
+    "level": 5,
+    "indent": 18,
+    "suffix": "furl v2.1.4"
+  },
+  {
+    "index": 249,
+    "name": "orderedmultidict",
+    "version": "v1.0.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "orderedmultidict v1.0.2"
+  },
+  {
+    "index": 250,
+    "name": "six",
+    "version": "v1.17.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "six v1.17.0"
+  },
+  {
+    "index": 251,
+    "name": "six",
+    "version": "v1.17.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "six v1.17.0"
+  },
+  {
+    "index": 252,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 253,
+    "name": "opentelemetry-sdk",
+    "version": "v1.40.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "opentelemetry-sdk v1.40.0 (*)"
+  },
+  {
+    "index": 254,
+    "name": "python-dateutil",
+    "version": "v2.9.0.post0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "python-dateutil v2.9.0.post0 (*)"
+  },
+  {
+    "index": 255,
+    "name": "requests",
+    "version": "v2.32.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "requests v2.32.5 (*)"
+  },
+  {
+    "index": 256,
+    "name": "agent-framework-bedrock",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-bedrock v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 257,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 258,
+    "name": "boto3",
+    "version": "v1.42.76",
+    "level": 4,
+    "indent": 14,
+    "suffix": "boto3 v1.42.76"
+  },
+  {
+    "index": 259,
+    "name": "botocore",
+    "version": "v1.42.76",
+    "level": 5,
+    "indent": 18,
+    "suffix": "botocore v1.42.76"
+  },
+  {
+    "index": 260,
+    "name": "jmespath",
+    "version": "v1.1.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "jmespath v1.1.0"
+  },
+  {
+    "index": 261,
+    "name": "python-dateutil",
+    "version": "v2.9.0.post0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "python-dateutil v2.9.0.post0 (*)"
+  },
+  {
+    "index": 262,
+    "name": "urllib3",
+    "version": "v2.6.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "urllib3 v2.6.2"
+  },
+  {
+    "index": 263,
+    "name": "jmespath",
+    "version": "v1.1.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jmespath v1.1.0"
+  },
+  {
+    "index": 264,
+    "name": "s3transfer",
+    "version": "v0.16.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "s3transfer v0.16.0"
+  },
+  {
+    "index": 265,
+    "name": "botocore",
+    "version": "v1.42.76",
+    "level": 6,
+    "indent": 22,
+    "suffix": "botocore v1.42.76 (*)"
+  },
+  {
+    "index": 266,
+    "name": "botocore",
+    "version": "v1.42.76",
+    "level": 4,
+    "indent": 14,
+    "suffix": "botocore v1.42.76 (*)"
+  },
+  {
+    "index": 267,
+    "name": "agent-framework-chatkit",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-chatkit v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 268,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 269,
+    "name": "openai-chatkit",
+    "version": "v1.6.3",
+    "level": 4,
+    "indent": 14,
+    "suffix": "openai-chatkit v1.6.3"
+  },
+  {
+    "index": 270,
+    "name": "jinja2",
+    "version": "v3.1.6",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jinja2 v3.1.6 (*)"
+  },
+  {
+    "index": 271,
+    "name": "openai",
+    "version": "v2.26.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "openai v2.26.0 (*)"
+  },
+  {
+    "index": 272,
+    "name": "openai-agents",
+    "version": "v0.13.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "openai-agents v0.13.1"
+  },
+  {
+    "index": 273,
+    "name": "griffe",
+    "version": "v1.15.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "griffe v1.15.0"
+  },
+  {
+    "index": 274,
+    "name": "colorama",
+    "version": "v0.4.6",
+    "level": 7,
+    "indent": 26,
+    "suffix": "colorama v0.4.6"
+  },
+  {
+    "index": 275,
+    "name": "mcp",
+    "version": "v1.25.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "mcp v1.25.0 (*)"
+  },
+  {
+    "index": 276,
+    "name": "openai",
+    "version": "v2.26.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "openai v2.26.0 (*)"
+  },
+  {
+    "index": 277,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 6,
+    "indent": 22,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 278,
+    "name": "requests",
+    "version": "v2.32.5",
+    "level": 6,
+    "indent": 22,
+    "suffix": "requests v2.32.5 (*)"
+  },
+  {
+    "index": 279,
+    "name": "types-requests",
+    "version": "v2.32.4.20260324",
+    "level": 6,
+    "indent": 22,
+    "suffix": "types-requests v2.32.4.20260324"
+  },
+  {
+    "index": 280,
+    "name": "urllib3",
+    "version": "v2.6.2",
+    "level": 7,
+    "indent": 26,
+    "suffix": "urllib3 v2.6.2"
+  },
+  {
+    "index": 281,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 282,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 283,
+    "name": "uvicorn",
+    "version": "v0.38.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "uvicorn v0.38.0 (*)"
+  },
+  {
+    "index": 284,
+    "name": "agent-framework-claude",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-claude v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 285,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 286,
+    "name": "claude-agent-sdk",
+    "version": "v0.1.48",
+    "level": 4,
+    "indent": 14,
+    "suffix": "claude-agent-sdk v0.1.48"
+  },
+  {
+    "index": 287,
+    "name": "anyio",
+    "version": "v4.12.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "anyio v4.12.0 (*)"
+  },
+  {
+    "index": 288,
+    "name": "mcp",
+    "version": "v1.25.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "mcp v1.25.0 (*)"
+  },
+  {
+    "index": 289,
+    "name": "agent-framework-copilotstudio",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-copilotstudio v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 290,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 291,
+    "name": "microsoft-agents-copilotstudio-client",
+    "version": "v0.3.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "microsoft-agents-copilotstudio-client v0.3.1"
+  },
+  {
+    "index": 292,
+    "name": "microsoft-agents-hosting-core",
+    "version": "v0.3.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "microsoft-agents-hosting-core v0.3.1"
+  },
+  {
+    "index": 293,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 294,
+    "name": "isodate",
+    "version": "v0.7.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "isodate v0.7.2"
+  },
+  {
+    "index": 295,
+    "name": "microsoft-agents-activity",
+    "version": "v0.3.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "microsoft-agents-activity v0.3.1"
+  },
+  {
+    "index": 296,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 7,
+    "indent": 26,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 297,
+    "name": "pyjwt",
+    "version": "v2.10.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "pyjwt v2.10.1 (*)"
+  },
+  {
+    "index": 298,
+    "name": "python-dotenv",
+    "version": "v1.2.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "python-dotenv v1.2.1"
+  },
+  {
+    "index": 299,
+    "name": "agent-framework-declarative",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-declarative v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 300,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 301,
+    "name": "pyyaml",
+    "version": "v6.0.3",
+    "level": 4,
+    "indent": 14,
+    "suffix": "pyyaml v6.0.3"
+  },
+  {
+    "index": 302,
+    "name": "agent-framework-devui",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-devui v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 303,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 304,
+    "name": "fastapi",
+    "version": "v0.128.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "fastapi v0.128.0 (*)"
+  },
+  {
+    "index": 305,
+    "name": "uvicorn[standard]",
+    "version": "v0.38.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "uvicorn[standard] v0.38.0 (*)"
+  },
+  {
+    "index": 306,
+    "name": "agent-framework-durabletask",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-durabletask v1.0.0b260319 (extra: all) (*)"
+  },
+  {
+    "index": 307,
+    "name": "agent-framework-foundry-local",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-foundry-local v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 308,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 309,
+    "name": "foundry-local-sdk",
+    "version": "v0.5.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "foundry-local-sdk v0.5.1"
+  },
+  {
+    "index": 310,
+    "name": "httpx",
+    "version": "v0.28.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "httpx v0.28.1 (*)"
+  },
+  {
+    "index": 311,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 312,
+    "name": "tqdm",
+    "version": "v4.67.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "tqdm v4.67.1"
+  },
+  {
+    "index": 313,
+    "name": "agent-framework-github-copilot",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-github-copilot v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 314,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 315,
+    "name": "github-copilot-sdk",
+    "version": "v0.1.32",
+    "level": 4,
+    "indent": 14,
+    "suffix": "github-copilot-sdk v0.1.32"
+  },
+  {
+    "index": 316,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 317,
+    "name": "python-dateutil",
+    "version": "v2.9.0.post0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "python-dateutil v2.9.0.post0 (*)"
+  },
+  {
+    "index": 318,
+    "name": "agent-framework-lab",
+    "version": "v1.0.0b251024",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-lab v1.0.0b251024 (extra: all)"
+  },
+  {
+    "index": 319,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 320,
+    "name": "agent-framework-mem0",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-mem0 v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 321,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 322,
+    "name": "mem0ai",
+    "version": "v1.0.7",
+    "level": 4,
+    "indent": 14,
+    "suffix": "mem0ai v1.0.7"
+  },
+  {
+    "index": 323,
+    "name": "openai",
+    "version": "v2.26.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "openai v2.26.0 (*)"
+  },
+  {
+    "index": 324,
+    "name": "posthog",
+    "version": "v7.9.12",
+    "level": 5,
+    "indent": 18,
+    "suffix": "posthog v7.9.12"
+  },
+  {
+    "index": 325,
+    "name": "backoff",
+    "version": "v2.2.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "backoff v2.2.1"
+  },
+  {
+    "index": 326,
+    "name": "distro",
+    "version": "v1.9.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "distro v1.9.0"
+  },
+  {
+    "index": 327,
+    "name": "python-dateutil",
+    "version": "v2.9.0.post0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "python-dateutil v2.9.0.post0 (*)"
+  },
+  {
+    "index": 328,
+    "name": "requests",
+    "version": "v2.32.5",
+    "level": 6,
+    "indent": 22,
+    "suffix": "requests v2.32.5 (*)"
+  },
+  {
+    "index": 329,
+    "name": "six",
+    "version": "v1.17.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "six v1.17.0"
+  },
+  {
+    "index": 330,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 331,
+    "name": "protobuf",
+    "version": "v6.33.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "protobuf v6.33.2"
+  },
+  {
+    "index": 332,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 333,
+    "name": "pytz",
+    "version": "v2025.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pytz v2025.2"
+  },
+  {
+    "index": 334,
+    "name": "qdrant-client",
+    "version": "v1.17.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "qdrant-client v1.17.1"
+  },
+  {
+    "index": 335,
+    "name": "grpcio",
+    "version": "v1.76.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "grpcio v1.76.0 (*)"
+  },
+  {
+    "index": 336,
+    "name": "httpx[http2]",
+    "version": "v0.28.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "httpx[http2] v0.28.1 (*)"
+  },
+  {
+    "index": 337,
+    "name": "numpy",
+    "version": "v2.4.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "numpy v2.4.0"
+  },
+  {
+    "index": 338,
+    "name": "portalocker",
+    "version": "v3.2.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "portalocker v3.2.0"
+  },
+  {
+    "index": 339,
+    "name": "protobuf",
+    "version": "v6.33.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "protobuf v6.33.2"
+  },
+  {
+    "index": 340,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 6,
+    "indent": 22,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 341,
+    "name": "urllib3",
+    "version": "v2.6.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "urllib3 v2.6.2"
+  },
+  {
+    "index": 342,
+    "name": "sqlalchemy",
+    "version": "v2.0.46",
+    "level": 5,
+    "indent": 18,
+    "suffix": "sqlalchemy v2.0.46"
+  },
+  {
+    "index": 343,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 344,
+    "name": "agent-framework-ollama",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-ollama v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 345,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 346,
+    "name": "ollama",
+    "version": "v0.5.3",
+    "level": 4,
+    "indent": 14,
+    "suffix": "ollama v0.5.3"
+  },
+  {
+    "index": 347,
+    "name": "httpx",
+    "version": "v0.28.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "httpx v0.28.1 (*)"
+  },
+  {
+    "index": 348,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 349,
+    "name": "agent-framework-orchestrations",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-orchestrations v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 350,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 351,
+    "name": "agent-framework-purview",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-purview v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 352,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 353,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 4,
+    "indent": 14,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 354,
+    "name": "httpx",
+    "version": "v0.28.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "httpx v0.28.1 (*)"
+  },
+  {
+    "index": 355,
+    "name": "agent-framework-redis",
+    "version": "v1.0.0b260319",
+    "level": 3,
+    "indent": 10,
+    "suffix": "agent-framework-redis v1.0.0b260319 (extra: all)"
+  },
+  {
+    "index": 356,
+    "name": "agent-framework-core",
+    "version": "v1.0.0rc5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "agent-framework-core v1.0.0rc5 (*)"
+  },
+  {
+    "index": 357,
+    "name": "numpy",
+    "version": "v2.4.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "numpy v2.4.0"
+  },
+  {
+    "index": 358,
+    "name": "redis",
+    "version": "v7.1.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "redis v7.1.0"
+  },
+  {
+    "index": 359,
+    "name": "redisvl",
+    "version": "v0.15.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "redisvl v0.15.0"
+  },
+  {
+    "index": 360,
+    "name": "jsonpath-ng",
+    "version": "v1.8.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jsonpath-ng v1.8.0"
+  },
+  {
+    "index": 361,
+    "name": "ml-dtypes",
+    "version": "v0.5.4",
+    "level": 5,
+    "indent": 18,
+    "suffix": "ml-dtypes v0.5.4"
+  },
+  {
+    "index": 362,
+    "name": "numpy",
+    "version": "v2.4.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "numpy v2.4.0"
+  },
+  {
+    "index": 363,
+    "name": "numpy",
+    "version": "v2.4.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "numpy v2.4.0"
+  },
+  {
+    "index": 364,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 365,
+    "name": "python-ulid",
+    "version": "v3.1.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "python-ulid v3.1.0"
+  },
+  {
+    "index": 366,
+    "name": "pyyaml",
+    "version": "v6.0.3",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pyyaml v6.0.3"
+  },
+  {
+    "index": 367,
+    "name": "redis",
+    "version": "v7.1.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "redis v7.1.0"
+  },
+  {
+    "index": 368,
+    "name": "tenacity",
+    "version": "v9.1.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "tenacity v9.1.2"
+  },
+  {
+    "index": 369,
+    "name": "aiohttp",
+    "version": "v3.13.2",
+    "level": 1,
+    "indent": 2,
+    "suffix": "aiohttp v3.13.2 (*)"
+  },
+  {
+    "index": 370,
+    "name": "alembic",
+    "version": "v1.18.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "alembic v1.18.1"
+  },
+  {
+    "index": 371,
+    "name": "mako",
+    "version": "v1.3.10",
+    "level": 2,
+    "indent": 6,
+    "suffix": "mako v1.3.10"
+  },
+  {
+    "index": 372,
+    "name": "markupsafe",
+    "version": "v3.0.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "markupsafe v3.0.3"
+  },
+  {
+    "index": 373,
+    "name": "sqlalchemy",
+    "version": "v2.0.46",
+    "level": 2,
+    "indent": 6,
+    "suffix": "sqlalchemy v2.0.46 (*)"
+  },
+  {
+    "index": 374,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 375,
+    "name": "av",
+    "version": "v16.0.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "av v16.0.1"
+  },
+  {
+    "index": 376,
+    "name": "azure-ai-agents",
+    "version": "v1.2.0b5",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-ai-agents v1.2.0b5 (*)"
+  },
+  {
+    "index": 377,
+    "name": "azure-ai-documentintelligence",
+    "version": "v1.0.2",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-ai-documentintelligence v1.0.2"
+  },
+  {
+    "index": 378,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 379,
+    "name": "isodate",
+    "version": "v0.7.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "isodate v0.7.2"
+  },
+  {
+    "index": 380,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 381,
+    "name": "azure-ai-evaluation",
+    "version": "v1.14.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-ai-evaluation v1.14.0"
+  },
+  {
+    "index": 382,
+    "name": "aiohttp",
+    "version": "v3.13.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "aiohttp v3.13.2 (*)"
+  },
+  {
+    "index": 383,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 384,
+    "name": "azure-identity",
+    "version": "v1.25.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-identity v1.25.1 (*)"
+  },
+  {
+    "index": 385,
+    "name": "azure-storage-blob",
+    "version": "v12.27.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-storage-blob v12.27.1 (*)"
+  },
+  {
+    "index": 386,
+    "name": "httpx",
+    "version": "v0.28.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "httpx v0.28.1 (*)"
+  },
+  {
+    "index": 387,
+    "name": "jinja2",
+    "version": "v3.1.6",
+    "level": 2,
+    "indent": 6,
+    "suffix": "jinja2 v3.1.6 (*)"
+  },
+  {
+    "index": 388,
+    "name": "msrest",
+    "version": "v0.7.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "msrest v0.7.1"
+  },
+  {
+    "index": 389,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 390,
+    "name": "certifi",
+    "version": "v2025.11.12",
+    "level": 3,
+    "indent": 10,
+    "suffix": "certifi v2025.11.12"
+  },
+  {
+    "index": 391,
+    "name": "isodate",
+    "version": "v0.7.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "isodate v0.7.2"
+  },
+  {
+    "index": 392,
+    "name": "requests",
+    "version": "v2.32.5",
+    "level": 3,
+    "indent": 10,
+    "suffix": "requests v2.32.5 (*)"
+  },
+  {
+    "index": 393,
+    "name": "requests-oauthlib",
+    "version": "v2.0.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "requests-oauthlib v2.0.0"
+  },
+  {
+    "index": 394,
+    "name": "oauthlib",
+    "version": "v3.3.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "oauthlib v3.3.1"
+  },
+  {
+    "index": 395,
+    "name": "requests",
+    "version": "v2.32.5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "requests v2.32.5 (*)"
+  },
+  {
+    "index": 396,
+    "name": "nltk",
+    "version": "v3.9.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "nltk v3.9.2"
+  },
+  {
+    "index": 397,
+    "name": "click",
+    "version": "v8.3.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "click v8.3.1"
+  },
+  {
+    "index": 398,
+    "name": "joblib",
+    "version": "v1.5.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "joblib v1.5.3"
+  },
+  {
+    "index": 399,
+    "name": "regex",
+    "version": "v2025.11.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "regex v2025.11.3"
+  },
+  {
+    "index": 400,
+    "name": "tqdm",
+    "version": "v4.67.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "tqdm v4.67.1"
+  },
+  {
+    "index": 401,
+    "name": "openai",
+    "version": "v2.26.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "openai v2.26.0 (*)"
+  },
+  {
+    "index": 402,
+    "name": "pandas",
+    "version": "v2.3.3",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pandas v2.3.3"
+  },
+  {
+    "index": 403,
+    "name": "numpy",
+    "version": "v2.4.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "numpy v2.4.0"
+  },
+  {
+    "index": 404,
+    "name": "python-dateutil",
+    "version": "v2.9.0.post0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "python-dateutil v2.9.0.post0 (*)"
+  },
+  {
+    "index": 405,
+    "name": "pytz",
+    "version": "v2025.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "pytz v2025.2"
+  },
+  {
+    "index": 406,
+    "name": "tzdata",
+    "version": "v2025.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "tzdata v2025.3"
+  },
+  {
+    "index": 407,
+    "name": "pyjwt",
+    "version": "v2.10.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pyjwt v2.10.1 (*)"
+  },
+  {
+    "index": 408,
+    "name": "ruamel-yaml",
+    "version": "v0.19.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "ruamel-yaml v0.19.1"
+  },
+  {
+    "index": 409,
+    "name": "azure-ai-projects",
+    "version": "v2.0.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-ai-projects v2.0.1 (*)"
+  },
+  {
+    "index": 410,
+    "name": "azure-ai-textanalytics",
+    "version": "v5.3.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-ai-textanalytics v5.3.0"
+  },
+  {
+    "index": 411,
+    "name": "azure-common",
+    "version": "v1.1.28",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-common v1.1.28"
+  },
+  {
+    "index": 412,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 413,
+    "name": "isodate",
+    "version": "v0.7.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "isodate v0.7.2"
+  },
+  {
+    "index": 414,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 415,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 416,
+    "name": "azure-core-tracing-opentelemetry",
+    "version": "v1.0.0b12",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-core-tracing-opentelemetry v1.0.0b12"
+  },
+  {
+    "index": 417,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 418,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 419,
+    "name": "azure-cosmos",
+    "version": "v4.15.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-cosmos v4.15.0"
+  },
+  {
+    "index": 420,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 421,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 422,
+    "name": "azure-identity",
+    "version": "v1.25.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-identity v1.25.1 (*)"
+  },
+  {
+    "index": 423,
+    "name": "azure-keyvault-secrets",
+    "version": "v4.10.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-keyvault-secrets v4.10.0"
+  },
+  {
+    "index": 424,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 425,
+    "name": "isodate",
+    "version": "v0.7.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "isodate v0.7.2"
+  },
+  {
+    "index": 426,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 427,
+    "name": "azure-mgmt-applicationinsights",
+    "version": "v4.1.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-mgmt-applicationinsights v4.1.0"
+  },
+  {
+    "index": 428,
+    "name": "azure-common",
+    "version": "v1.1.28",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-common v1.1.28"
+  },
+  {
+    "index": 429,
+    "name": "azure-mgmt-core",
+    "version": "v1.6.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-mgmt-core v1.6.0"
+  },
+  {
+    "index": 430,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 431,
+    "name": "isodate",
+    "version": "v0.7.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "isodate v0.7.2"
+  },
+  {
+    "index": 432,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 433,
+    "name": "azure-mgmt-cognitiveservices",
+    "version": "v14.1.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-mgmt-cognitiveservices v14.1.0"
+  },
+  {
+    "index": 434,
+    "name": "azure-mgmt-core",
+    "version": "v1.6.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-mgmt-core v1.6.0 (*)"
+  },
+  {
+    "index": 435,
+    "name": "msrest",
+    "version": "v0.7.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "msrest v0.7.1 (*)"
+  },
+  {
+    "index": 436,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 437,
+    "name": "azure-search-documents",
+    "version": "v11.5.2",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-search-documents v11.5.2"
+  },
+  {
+    "index": 438,
+    "name": "azure-common",
+    "version": "v1.1.28",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-common v1.1.28"
+  },
+  {
+    "index": 439,
+    "name": "azure-core",
+    "version": "v1.38.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "azure-core v1.38.2 (*)"
+  },
+  {
+    "index": 440,
+    "name": "isodate",
+    "version": "v0.7.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "isodate v0.7.2"
+  },
+  {
+    "index": 441,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 442,
+    "name": "azure-storage-blob",
+    "version": "v12.27.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "azure-storage-blob v12.27.1 (*)"
+  },
+  {
+    "index": 443,
+    "name": "beautifulsoup4",
+    "version": "v4.14.3",
+    "level": 1,
+    "indent": 2,
+    "suffix": "beautifulsoup4 v4.14.3"
+  },
+  {
+    "index": 444,
+    "name": "soupsieve",
+    "version": "v2.8.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "soupsieve v2.8.1"
+  },
+  {
+    "index": 445,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 446,
+    "name": "docopt",
+    "version": "v0.6.2",
+    "level": 1,
+    "indent": 2,
+    "suffix": "docopt v0.6.2"
+  },
+  {
+    "index": 447,
+    "name": "duckdb",
+    "version": "v1.5.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "duckdb v1.5.0"
+  },
+  {
+    "index": 448,
+    "name": "faker",
+    "version": "v39.0.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "faker v39.0.0"
+  },
+  {
+    "index": 449,
+    "name": "tzdata",
+    "version": "v2025.3",
+    "level": 2,
+    "indent": 6,
+    "suffix": "tzdata v2025.3"
+  },
+  {
+    "index": 450,
+    "name": "fastapi[standard]",
+    "version": "v0.128.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "fastapi[standard] v0.128.0 (*)"
+  },
+  {
+    "index": 451,
+    "name": "fastmcp",
+    "version": "v2.14.3",
+    "level": 1,
+    "indent": 2,
+    "suffix": "fastmcp v2.14.3"
+  },
+  {
+    "index": 452,
+    "name": "authlib",
+    "version": "v1.6.6",
+    "level": 2,
+    "indent": 6,
+    "suffix": "authlib v1.6.6"
+  },
+  {
+    "index": 453,
+    "name": "cryptography",
+    "version": "v46.0.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "cryptography v46.0.3 (*)"
+  },
+  {
+    "index": 454,
+    "name": "cyclopts",
+    "version": "v4.5.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "cyclopts v4.5.0"
+  },
+  {
+    "index": 455,
+    "name": "attrs",
+    "version": "v25.4.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "attrs v25.4.0"
+  },
+  {
+    "index": 456,
+    "name": "docstring-parser",
+    "version": "v0.17.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "docstring-parser v0.17.0"
+  },
+  {
+    "index": 457,
+    "name": "rich",
+    "version": "v13.9.4",
+    "level": 3,
+    "indent": 10,
+    "suffix": "rich v13.9.4 (*)"
+  },
+  {
+    "index": 458,
+    "name": "rich-rst",
+    "version": "v1.3.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "rich-rst v1.3.2"
+  },
+  {
+    "index": 459,
+    "name": "docutils",
+    "version": "v0.22.4",
+    "level": 4,
+    "indent": 14,
+    "suffix": "docutils v0.22.4"
+  },
+  {
+    "index": 460,
+    "name": "rich",
+    "version": "v13.9.4",
+    "level": 4,
+    "indent": 14,
+    "suffix": "rich v13.9.4 (*)"
+  },
+  {
+    "index": 461,
+    "name": "exceptiongroup",
+    "version": "v1.3.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "exceptiongroup v1.3.1"
+  },
+  {
+    "index": 462,
+    "name": "httpx",
+    "version": "v0.28.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "httpx v0.28.1 (*)"
+  },
+  {
+    "index": 463,
+    "name": "jsonschema-path",
+    "version": "v0.3.4",
+    "level": 2,
+    "indent": 6,
+    "suffix": "jsonschema-path v0.3.4"
+  },
+  {
+    "index": 464,
+    "name": "pathable",
+    "version": "v0.4.4",
+    "level": 3,
+    "indent": 10,
+    "suffix": "pathable v0.4.4"
+  },
+  {
+    "index": 465,
+    "name": "pyyaml",
+    "version": "v6.0.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "pyyaml v6.0.3"
+  },
+  {
+    "index": 466,
+    "name": "referencing",
+    "version": "v0.36.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "referencing v0.36.2 (*)"
+  },
+  {
+    "index": 467,
+    "name": "requests",
+    "version": "v2.32.5",
+    "level": 3,
+    "indent": 10,
+    "suffix": "requests v2.32.5 (*)"
+  },
+  {
+    "index": 468,
+    "name": "mcp",
+    "version": "v1.25.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "mcp v1.25.0 (*)"
+  },
+  {
+    "index": 469,
+    "name": "openapi-pydantic",
+    "version": "v0.5.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "openapi-pydantic v0.5.1"
+  },
+  {
+    "index": 470,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 3,
+    "indent": 10,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 471,
+    "name": "platformdirs",
+    "version": "v4.5.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "platformdirs v4.5.1"
+  },
+  {
+    "index": 472,
+    "name": "py-key-value-aio[disk,",
+    "version": "keyring,",
+    "level": 2,
+    "indent": 6,
+    "suffix": "py-key-value-aio[disk, keyring, memory] v0.3.0"
+  },
+  {
+    "index": 473,
+    "name": "beartype",
+    "version": "v0.22.9",
+    "level": 3,
+    "indent": 10,
+    "suffix": "beartype v0.22.9"
+  },
+  {
+    "index": 474,
+    "name": "py-key-value-shared",
+    "version": "v0.3.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "py-key-value-shared v0.3.0"
+  },
+  {
+    "index": 475,
+    "name": "beartype",
+    "version": "v0.22.9",
+    "level": 4,
+    "indent": 14,
+    "suffix": "beartype v0.22.9"
+  },
+  {
+    "index": 476,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 477,
+    "name": "diskcache",
+    "version": "v5.6.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "diskcache v5.6.3 (extra: disk)"
+  },
+  {
+    "index": 478,
+    "name": "pathvalidate",
+    "version": "v3.3.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "pathvalidate v3.3.1 (extra: disk)"
+  },
+  {
+    "index": 479,
+    "name": "keyring",
+    "version": "v25.7.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "keyring v25.7.0 (extra: keyring)"
+  },
+  {
+    "index": 480,
+    "name": "jaraco-classes",
+    "version": "v3.4.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "jaraco-classes v3.4.0"
+  },
+  {
+    "index": 481,
+    "name": "more-itertools",
+    "version": "v10.8.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "more-itertools v10.8.0"
+  },
+  {
+    "index": 482,
+    "name": "jaraco-context",
+    "version": "v6.1.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "jaraco-context v6.1.0"
+  },
+  {
+    "index": 483,
+    "name": "jaraco-functools",
+    "version": "v4.4.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "jaraco-functools v4.4.0"
+  },
+  {
+    "index": 484,
+    "name": "more-itertools",
+    "version": "v10.8.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "more-itertools v10.8.0"
+  },
+  {
+    "index": 485,
+    "name": "cachetools",
+    "version": "v6.2.4",
+    "level": 3,
+    "indent": 10,
+    "suffix": "cachetools v6.2.4 (extra: memory)"
+  },
+  {
+    "index": 486,
+    "name": "redis",
+    "version": "v7.1.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "redis v7.1.0 (extra: redis)"
+  },
+  {
+    "index": 487,
+    "name": "pydantic[email]",
+    "version": "v2.12.5",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pydantic[email] v2.12.5 (*)"
+  },
+  {
+    "index": 488,
+    "name": "pydocket",
+    "version": "v0.17.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pydocket v0.17.1"
+  },
+  {
+    "index": 489,
+    "name": "cloudpickle",
+    "version": "v3.1.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "cloudpickle v3.1.2"
+  },
+  {
+    "index": 490,
+    "name": "fakeredis[lua]",
+    "version": "v2.33.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "fakeredis[lua] v2.33.0"
+  },
+  {
+    "index": 491,
+    "name": "redis",
+    "version": "v7.1.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "redis v7.1.0"
+  },
+  {
+    "index": 492,
+    "name": "sortedcontainers",
+    "version": "v2.4.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "sortedcontainers v2.4.0"
+  },
+  {
+    "index": 493,
+    "name": "lupa",
+    "version": "v2.6",
+    "level": 4,
+    "indent": 14,
+    "suffix": "lupa v2.6 (extra: lua)"
+  },
+  {
+    "index": 494,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 495,
+    "name": "prometheus-client",
+    "version": "v0.23.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "prometheus-client v0.23.1"
+  },
+  {
+    "index": 496,
+    "name": "py-key-value-aio[memory,",
+    "version": "redis]",
+    "level": 3,
+    "indent": 10,
+    "suffix": "py-key-value-aio[memory, redis] v0.3.0 (*)"
+  },
+  {
+    "index": 497,
+    "name": "python-json-logger",
+    "version": "v4.0.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "python-json-logger v4.0.0"
+  },
+  {
+    "index": 498,
+    "name": "redis",
+    "version": "v7.1.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "redis v7.1.0"
+  },
+  {
+    "index": 499,
+    "name": "rich",
+    "version": "v13.9.4",
+    "level": 3,
+    "indent": 10,
+    "suffix": "rich v13.9.4 (*)"
+  },
+  {
+    "index": 500,
+    "name": "typer",
+    "version": "v0.21.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "typer v0.21.1 (*)"
+  },
+  {
+    "index": 501,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 502,
+    "name": "pyperclip",
+    "version": "v1.11.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pyperclip v1.11.0"
+  },
+  {
+    "index": 503,
+    "name": "python-dotenv",
+    "version": "v1.2.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "python-dotenv v1.2.1"
+  },
+  {
+    "index": 504,
+    "name": "rich",
+    "version": "v13.9.4",
+    "level": 2,
+    "indent": 6,
+    "suffix": "rich v13.9.4 (*)"
+  },
+  {
+    "index": 505,
+    "name": "uvicorn",
+    "version": "v0.38.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "uvicorn v0.38.0 (*)"
+  },
+  {
+    "index": 506,
+    "name": "websockets",
+    "version": "v15.0.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "websockets v15.0.1"
+  },
+  {
+    "index": 507,
+    "name": "geopy",
+    "version": "v2.4.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "geopy v2.4.1"
+  },
+  {
+    "index": 508,
+    "name": "geographiclib",
+    "version": "v2.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "geographiclib v2.1"
+  },
+  {
+    "index": 509,
+    "name": "h11",
+    "version": "v0.16.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "h11 v0.16.0"
+  },
+  {
+    "index": 510,
+    "name": "httpx[cli]",
+    "version": "v0.28.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "httpx[cli] v0.28.1 (*)"
+  },
+  {
+    "index": 511,
+    "name": "jinja2",
+    "version": "v3.1.6",
+    "level": 1,
+    "indent": 2,
+    "suffix": "jinja2 v3.1.6 (*)"
+  },
+  {
+    "index": 512,
+    "name": "jupyter",
+    "version": "v1.1.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "jupyter v1.1.1"
+  },
+  {
+    "index": 513,
+    "name": "ipykernel",
+    "version": "v7.1.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "ipykernel v7.1.0"
+  },
+  {
+    "index": 514,
+    "name": "appnope",
+    "version": "v0.1.4",
+    "level": 3,
+    "indent": 10,
+    "suffix": "appnope v0.1.4"
+  },
+  {
+    "index": 515,
+    "name": "comm",
+    "version": "v0.2.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "comm v0.2.3"
+  },
+  {
+    "index": 516,
+    "name": "debugpy",
+    "version": "v1.8.19",
+    "level": 3,
+    "indent": 10,
+    "suffix": "debugpy v1.8.19"
+  },
+  {
+    "index": 517,
+    "name": "ipython",
+    "version": "v9.8.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "ipython v9.8.0"
+  },
+  {
+    "index": 518,
+    "name": "decorator",
+    "version": "v5.2.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "decorator v5.2.1"
+  },
+  {
+    "index": 519,
+    "name": "ipython-pygments-lexers",
+    "version": "v1.1.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "ipython-pygments-lexers v1.1.1"
+  },
+  {
+    "index": 520,
+    "name": "pygments",
+    "version": "v2.19.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pygments v2.19.2"
+  },
+  {
+    "index": 521,
+    "name": "jedi",
+    "version": "v0.19.2",
+    "level": 4,
+    "indent": 14,
+    "suffix": "jedi v0.19.2"
+  },
+  {
+    "index": 522,
+    "name": "parso",
+    "version": "v0.8.5",
+    "level": 5,
+    "indent": 18,
+    "suffix": "parso v0.8.5"
+  },
+  {
+    "index": 523,
+    "name": "matplotlib-inline",
+    "version": "v0.2.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "matplotlib-inline v0.2.1"
+  },
+  {
+    "index": 524,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 5,
+    "indent": 18,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 525,
+    "name": "pexpect",
+    "version": "v4.9.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "pexpect v4.9.0"
+  },
+  {
+    "index": 526,
+    "name": "ptyprocess",
+    "version": "v0.7.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "ptyprocess v0.7.0"
+  },
+  {
+    "index": 527,
+    "name": "prompt-toolkit",
+    "version": "v3.0.52",
+    "level": 4,
+    "indent": 14,
+    "suffix": "prompt-toolkit v3.0.52"
+  },
+  {
+    "index": 528,
+    "name": "wcwidth",
+    "version": "v0.2.14",
+    "level": 5,
+    "indent": 18,
+    "suffix": "wcwidth v0.2.14"
+  },
+  {
+    "index": 529,
+    "name": "pygments",
+    "version": "v2.19.2",
+    "level": 4,
+    "indent": 14,
+    "suffix": "pygments v2.19.2"
+  },
+  {
+    "index": 530,
+    "name": "stack-data",
+    "version": "v0.6.3",
+    "level": 4,
+    "indent": 14,
+    "suffix": "stack-data v0.6.3"
+  },
+  {
+    "index": 531,
+    "name": "asttokens",
+    "version": "v3.0.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "asttokens v3.0.1"
+  },
+  {
+    "index": 532,
+    "name": "executing",
+    "version": "v2.2.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "executing v2.2.1"
+  },
+  {
+    "index": 533,
+    "name": "pure-eval",
+    "version": "v0.2.3",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pure-eval v0.2.3"
+  },
+  {
+    "index": 534,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 4,
+    "indent": 14,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 535,
+    "name": "jupyter-client",
+    "version": "v8.7.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jupyter-client v8.7.0"
+  },
+  {
+    "index": 536,
+    "name": "jupyter-core",
+    "version": "v5.9.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "jupyter-core v5.9.1"
+  },
+  {
+    "index": 537,
+    "name": "platformdirs",
+    "version": "v4.5.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "platformdirs v4.5.1"
+  },
+  {
+    "index": 538,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 5,
+    "indent": 18,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 539,
+    "name": "python-dateutil",
+    "version": "v2.9.0.post0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "python-dateutil v2.9.0.post0 (*)"
+  },
+  {
+    "index": 540,
+    "name": "pyzmq",
+    "version": "v27.1.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "pyzmq v27.1.0"
+  },
+  {
+    "index": 541,
+    "name": "tornado",
+    "version": "v6.5.4",
+    "level": 4,
+    "indent": 14,
+    "suffix": "tornado v6.5.4"
+  },
+  {
+    "index": 542,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 4,
+    "indent": 14,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 543,
+    "name": "jupyter-core",
+    "version": "v5.9.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jupyter-core v5.9.1 (*)"
+  },
+  {
+    "index": 544,
+    "name": "matplotlib-inline",
+    "version": "v0.2.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "matplotlib-inline v0.2.1 (*)"
+  },
+  {
+    "index": 545,
+    "name": "nest-asyncio",
+    "version": "v1.6.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "nest-asyncio v1.6.0"
+  },
+  {
+    "index": 546,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 547,
+    "name": "psutil",
+    "version": "v7.2.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "psutil v7.2.0"
+  },
+  {
+    "index": 548,
+    "name": "pyzmq",
+    "version": "v27.1.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "pyzmq v27.1.0"
+  },
+  {
+    "index": 549,
+    "name": "tornado",
+    "version": "v6.5.4",
+    "level": 3,
+    "indent": 10,
+    "suffix": "tornado v6.5.4"
+  },
+  {
+    "index": 550,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 551,
+    "name": "ipywidgets",
+    "version": "v8.1.8",
+    "level": 2,
+    "indent": 6,
+    "suffix": "ipywidgets v8.1.8"
+  },
+  {
+    "index": 552,
+    "name": "comm",
+    "version": "v0.2.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "comm v0.2.3"
+  },
+  {
+    "index": 553,
+    "name": "ipython",
+    "version": "v9.8.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "ipython v9.8.0 (*)"
+  },
+  {
+    "index": 554,
+    "name": "jupyterlab-widgets",
+    "version": "v3.0.16",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jupyterlab-widgets v3.0.16"
+  },
+  {
+    "index": 555,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 556,
+    "name": "widgetsnbextension",
+    "version": "v4.0.15",
+    "level": 3,
+    "indent": 10,
+    "suffix": "widgetsnbextension v4.0.15"
+  },
+  {
+    "index": 557,
+    "name": "jupyter-console",
+    "version": "v6.6.3",
+    "level": 2,
+    "indent": 6,
+    "suffix": "jupyter-console v6.6.3"
+  },
+  {
+    "index": 558,
+    "name": "ipykernel",
+    "version": "v7.1.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "ipykernel v7.1.0 (*)"
+  },
+  {
+    "index": 559,
+    "name": "ipython",
+    "version": "v9.8.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "ipython v9.8.0 (*)"
+  },
+  {
+    "index": 560,
+    "name": "jupyter-client",
+    "version": "v8.7.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jupyter-client v8.7.0 (*)"
+  },
+  {
+    "index": 561,
+    "name": "jupyter-core",
+    "version": "v5.9.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jupyter-core v5.9.1 (*)"
+  },
+  {
+    "index": 562,
+    "name": "prompt-toolkit",
+    "version": "v3.0.52",
+    "level": 3,
+    "indent": 10,
+    "suffix": "prompt-toolkit v3.0.52 (*)"
+  },
+  {
+    "index": 563,
+    "name": "pygments",
+    "version": "v2.19.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "pygments v2.19.2"
+  },
+  {
+    "index": 564,
+    "name": "pyzmq",
+    "version": "v27.1.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "pyzmq v27.1.0"
+  },
+  {
+    "index": 565,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 566,
+    "name": "jupyterlab",
+    "version": "v4.5.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "jupyterlab v4.5.1"
+  },
+  {
+    "index": 567,
+    "name": "async-lru",
+    "version": "v2.0.5",
+    "level": 3,
+    "indent": 10,
+    "suffix": "async-lru v2.0.5"
+  },
+  {
+    "index": 568,
+    "name": "httpx",
+    "version": "v0.28.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "httpx v0.28.1 (*)"
+  },
+  {
+    "index": 569,
+    "name": "ipykernel",
+    "version": "v7.1.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "ipykernel v7.1.0 (*)"
+  },
+  {
+    "index": 570,
+    "name": "jinja2",
+    "version": "v3.1.6",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jinja2 v3.1.6 (*)"
+  },
+  {
+    "index": 571,
+    "name": "jupyter-core",
+    "version": "v5.9.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jupyter-core v5.9.1 (*)"
+  },
+  {
+    "index": 572,
+    "name": "jupyter-lsp",
+    "version": "v2.3.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jupyter-lsp v2.3.0"
+  },
+  {
+    "index": 573,
+    "name": "jupyter-server",
+    "version": "v2.17.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "jupyter-server v2.17.0"
+  },
+  {
+    "index": 574,
+    "name": "anyio",
+    "version": "v4.12.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "anyio v4.12.0 (*)"
+  },
+  {
+    "index": 575,
+    "name": "argon2-cffi",
+    "version": "v25.1.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "argon2-cffi v25.1.0"
+  },
+  {
+    "index": 576,
+    "name": "argon2-cffi-bindings",
+    "version": "v25.1.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "argon2-cffi-bindings v25.1.0"
+  },
+  {
+    "index": 577,
+    "name": "cffi",
+    "version": "v2.0.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "cffi v2.0.0 (*)"
+  },
+  {
+    "index": 578,
+    "name": "jinja2",
+    "version": "v3.1.6",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jinja2 v3.1.6 (*)"
+  },
+  {
+    "index": 579,
+    "name": "jupyter-client",
+    "version": "v8.7.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jupyter-client v8.7.0 (*)"
+  },
+  {
+    "index": 580,
+    "name": "jupyter-core",
+    "version": "v5.9.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jupyter-core v5.9.1 (*)"
+  },
+  {
+    "index": 581,
+    "name": "jupyter-events",
+    "version": "v0.12.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jupyter-events v0.12.0"
+  },
+  {
+    "index": 582,
+    "name": "jsonschema[format-nongpl]",
+    "version": "v4.25.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "jsonschema[format-nongpl] v4.25.1 (*)"
+  },
+  {
+    "index": 583,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 584,
+    "name": "python-json-logger",
+    "version": "v4.0.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "python-json-logger v4.0.0"
+  },
+  {
+    "index": 585,
+    "name": "pyyaml",
+    "version": "v6.0.3",
+    "level": 6,
+    "indent": 22,
+    "suffix": "pyyaml v6.0.3"
+  },
+  {
+    "index": 586,
+    "name": "referencing",
+    "version": "v0.36.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "referencing v0.36.2 (*)"
+  },
+  {
+    "index": 587,
+    "name": "rfc3339-validator",
+    "version": "v0.1.4",
+    "level": 6,
+    "indent": 22,
+    "suffix": "rfc3339-validator v0.1.4 (*)"
+  },
+  {
+    "index": 588,
+    "name": "rfc3986-validator",
+    "version": "v0.1.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "rfc3986-validator v0.1.1"
+  },
+  {
+    "index": 589,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 6,
+    "indent": 22,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 590,
+    "name": "jupyter-server-terminals",
+    "version": "v0.5.3",
+    "level": 5,
+    "indent": 18,
+    "suffix": "jupyter-server-terminals v0.5.3"
+  },
+  {
+    "index": 591,
+    "name": "terminado",
+    "version": "v0.18.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "terminado v0.18.1"
+  },
+  {
+    "index": 592,
+    "name": "ptyprocess",
+    "version": "v0.7.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "ptyprocess v0.7.0"
+  },
+  {
+    "index": 593,
+    "name": "tornado",
+    "version": "v6.5.4",
+    "level": 7,
+    "indent": 26,
+    "suffix": "tornado v6.5.4"
+  },
+  {
+    "index": 594,
+    "name": "nbconvert",
+    "version": "v7.16.6",
+    "level": 5,
+    "indent": 18,
+    "suffix": "nbconvert v7.16.6"
+  },
+  {
+    "index": 595,
+    "name": "beautifulsoup4",
+    "version": "v4.14.3",
+    "level": 6,
+    "indent": 22,
+    "suffix": "beautifulsoup4 v4.14.3 (*)"
+  },
+  {
+    "index": 596,
+    "name": "bleach[css]",
+    "version": "v6.3.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "bleach[css] v6.3.0"
+  },
+  {
+    "index": 597,
+    "name": "webencodings",
+    "version": "v0.5.1",
+    "level": 7,
+    "indent": 26,
+    "suffix": "webencodings v0.5.1"
+  },
+  {
+    "index": 598,
+    "name": "tinycss2",
+    "version": "v1.4.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "tinycss2 v1.4.0 (extra: css)"
+  },
+  {
+    "index": 599,
+    "name": "webencodings",
+    "version": "v0.5.1",
+    "level": 8,
+    "indent": 30,
+    "suffix": "webencodings v0.5.1"
+  },
+  {
+    "index": 600,
+    "name": "defusedxml",
+    "version": "v0.7.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "defusedxml v0.7.1"
+  },
+  {
+    "index": 601,
+    "name": "jinja2",
+    "version": "v3.1.6",
+    "level": 6,
+    "indent": 22,
+    "suffix": "jinja2 v3.1.6 (*)"
+  },
+  {
+    "index": 602,
+    "name": "jupyter-core",
+    "version": "v5.9.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "jupyter-core v5.9.1 (*)"
+  },
+  {
+    "index": 603,
+    "name": "jupyterlab-pygments",
+    "version": "v0.3.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "jupyterlab-pygments v0.3.0"
+  },
+  {
+    "index": 604,
+    "name": "markupsafe",
+    "version": "v3.0.3",
+    "level": 6,
+    "indent": 22,
+    "suffix": "markupsafe v3.0.3"
+  },
+  {
+    "index": 605,
+    "name": "mistune",
+    "version": "v3.2.0",
+    "level": 6,
+    "indent": 22,
+    "suffix": "mistune v3.2.0"
+  },
+  {
+    "index": 606,
+    "name": "nbclient",
+    "version": "v0.10.4",
+    "level": 6,
+    "indent": 22,
+    "suffix": "nbclient v0.10.4"
+  },
+  {
+    "index": 607,
+    "name": "jupyter-client",
+    "version": "v8.7.0",
+    "level": 7,
+    "indent": 26,
+    "suffix": "jupyter-client v8.7.0 (*)"
+  },
+  {
+    "index": 608,
+    "name": "jupyter-core",
+    "version": "v5.9.1",
+    "level": 7,
+    "indent": 26,
+    "suffix": "jupyter-core v5.9.1 (*)"
+  },
+  {
+    "index": 609,
+    "name": "nbformat",
+    "version": "v5.10.4",
+    "level": 7,
+    "indent": 26,
+    "suffix": "nbformat v5.10.4"
+  },
+  {
+    "index": 610,
+    "name": "fastjsonschema",
+    "version": "v2.21.2",
+    "level": 8,
+    "indent": 30,
+    "suffix": "fastjsonschema v2.21.2"
+  },
+  {
+    "index": 611,
+    "name": "jsonschema",
+    "version": "v4.25.1",
+    "level": 8,
+    "indent": 30,
+    "suffix": "jsonschema v4.25.1 (*)"
+  },
+  {
+    "index": 612,
+    "name": "jupyter-core",
+    "version": "v5.9.1",
+    "level": 8,
+    "indent": 30,
+    "suffix": "jupyter-core v5.9.1 (*)"
+  },
+  {
+    "index": 613,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 8,
+    "indent": 30,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 614,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 7,
+    "indent": 26,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 615,
+    "name": "nbformat",
+    "version": "v5.10.4",
+    "level": 6,
+    "indent": 22,
+    "suffix": "nbformat v5.10.4 (*)"
+  },
+  {
+    "index": 616,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 617,
+    "name": "pandocfilters",
+    "version": "v1.5.1",
+    "level": 6,
+    "indent": 22,
+    "suffix": "pandocfilters v1.5.1"
+  },
+  {
+    "index": 618,
+    "name": "pygments",
+    "version": "v2.19.2",
+    "level": 6,
+    "indent": 22,
+    "suffix": "pygments v2.19.2"
+  },
+  {
+    "index": 619,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 6,
+    "indent": 22,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 620,
+    "name": "nbformat",
+    "version": "v5.10.4",
+    "level": 5,
+    "indent": 18,
+    "suffix": "nbformat v5.10.4 (*)"
+  },
+  {
+    "index": 621,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 5,
+    "indent": 18,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 622,
+    "name": "prometheus-client",
+    "version": "v0.23.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "prometheus-client v0.23.1"
+  },
+  {
+    "index": 623,
+    "name": "pyzmq",
+    "version": "v27.1.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "pyzmq v27.1.0"
+  },
+  {
+    "index": 624,
+    "name": "send2trash",
+    "version": "v1.8.3",
+    "level": 5,
+    "indent": 18,
+    "suffix": "send2trash v1.8.3"
+  },
+  {
+    "index": 625,
+    "name": "terminado",
+    "version": "v0.18.1",
+    "level": 5,
+    "indent": 18,
+    "suffix": "terminado v0.18.1 (*)"
+  },
+  {
+    "index": 626,
+    "name": "tornado",
+    "version": "v6.5.4",
+    "level": 5,
+    "indent": 18,
+    "suffix": "tornado v6.5.4"
+  },
+  {
+    "index": 627,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 5,
+    "indent": 18,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 628,
+    "name": "websocket-client",
+    "version": "v1.9.0",
+    "level": 5,
+    "indent": 18,
+    "suffix": "websocket-client v1.9.0"
+  },
+  {
+    "index": 629,
+    "name": "jupyter-server",
+    "version": "v2.17.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jupyter-server v2.17.0 (*)"
+  },
+  {
+    "index": 630,
+    "name": "jupyterlab-server",
+    "version": "v2.28.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jupyterlab-server v2.28.0"
+  },
+  {
+    "index": 631,
+    "name": "babel",
+    "version": "v2.17.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "babel v2.17.0"
+  },
+  {
+    "index": 632,
+    "name": "jinja2",
+    "version": "v3.1.6",
+    "level": 4,
+    "indent": 14,
+    "suffix": "jinja2 v3.1.6 (*)"
+  },
+  {
+    "index": 633,
+    "name": "json5",
+    "version": "v0.12.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "json5 v0.12.1"
+  },
+  {
+    "index": 634,
+    "name": "jsonschema",
+    "version": "v4.25.1",
+    "level": 4,
+    "indent": 14,
+    "suffix": "jsonschema v4.25.1 (*)"
+  },
+  {
+    "index": 635,
+    "name": "jupyter-server",
+    "version": "v2.17.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "jupyter-server v2.17.0 (*)"
+  },
+  {
+    "index": 636,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 4,
+    "indent": 14,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 637,
+    "name": "requests",
+    "version": "v2.32.5",
+    "level": 4,
+    "indent": 14,
+    "suffix": "requests v2.32.5 (*)"
+  },
+  {
+    "index": 638,
+    "name": "notebook-shim",
+    "version": "v0.2.4",
+    "level": 3,
+    "indent": 10,
+    "suffix": "notebook-shim v0.2.4"
+  },
+  {
+    "index": 639,
+    "name": "jupyter-server",
+    "version": "v2.17.0",
+    "level": 4,
+    "indent": 14,
+    "suffix": "jupyter-server v2.17.0 (*)"
+  },
+  {
+    "index": 640,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 641,
+    "name": "setuptools",
+    "version": "v80.9.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "setuptools v80.9.0"
+  },
+  {
+    "index": 642,
+    "name": "tornado",
+    "version": "v6.5.4",
+    "level": 3,
+    "indent": 10,
+    "suffix": "tornado v6.5.4"
+  },
+  {
+    "index": 643,
+    "name": "traitlets",
+    "version": "v5.14.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "traitlets v5.14.3"
+  },
+  {
+    "index": 644,
+    "name": "nbconvert",
+    "version": "v7.16.6",
+    "level": 2,
+    "indent": 6,
+    "suffix": "nbconvert v7.16.6 (*)"
+  },
+  {
+    "index": 645,
+    "name": "notebook",
+    "version": "v7.5.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "notebook v7.5.1"
+  },
+  {
+    "index": 646,
+    "name": "jupyter-server",
+    "version": "v2.17.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jupyter-server v2.17.0 (*)"
+  },
+  {
+    "index": 647,
+    "name": "jupyterlab",
+    "version": "v4.5.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jupyterlab v4.5.1 (*)"
+  },
+  {
+    "index": 648,
+    "name": "jupyterlab-server",
+    "version": "v2.28.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jupyterlab-server v2.28.0 (*)"
+  },
+  {
+    "index": 649,
+    "name": "notebook-shim",
+    "version": "v0.2.4",
+    "level": 3,
+    "indent": 10,
+    "suffix": "notebook-shim v0.2.4 (*)"
+  },
+  {
+    "index": 650,
+    "name": "tornado",
+    "version": "v6.5.4",
+    "level": 3,
+    "indent": 10,
+    "suffix": "tornado v6.5.4"
+  },
+  {
+    "index": 651,
+    "name": "m26",
+    "version": "v0.3.2",
+    "level": 1,
+    "indent": 2,
+    "suffix": "m26 v0.3.2"
+  },
+  {
+    "index": 652,
+    "name": "markdown",
+    "version": "v3.10.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "markdown v3.10.1"
+  },
+  {
+    "index": 653,
+    "name": "matplotlib",
+    "version": "v3.10.8",
+    "level": 1,
+    "indent": 2,
+    "suffix": "matplotlib v3.10.8"
+  },
+  {
+    "index": 654,
+    "name": "contourpy",
+    "version": "v1.3.3",
+    "level": 2,
+    "indent": 6,
+    "suffix": "contourpy v1.3.3"
+  },
+  {
+    "index": 655,
+    "name": "numpy",
+    "version": "v2.4.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "numpy v2.4.0"
+  },
+  {
+    "index": 656,
+    "name": "cycler",
+    "version": "v0.12.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "cycler v0.12.1"
+  },
+  {
+    "index": 657,
+    "name": "fonttools",
+    "version": "v4.61.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "fonttools v4.61.1"
+  },
+  {
+    "index": 658,
+    "name": "kiwisolver",
+    "version": "v1.4.9",
+    "level": 2,
+    "indent": 6,
+    "suffix": "kiwisolver v1.4.9"
+  },
+  {
+    "index": 659,
+    "name": "numpy",
+    "version": "v2.4.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "numpy v2.4.0"
+  },
+  {
+    "index": 660,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 661,
+    "name": "pillow",
+    "version": "v12.1.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pillow v12.1.0"
+  },
+  {
+    "index": 662,
+    "name": "pyparsing",
+    "version": "v3.3.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pyparsing v3.3.1"
+  },
+  {
+    "index": 663,
+    "name": "python-dateutil",
+    "version": "v2.9.0.post0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "python-dateutil v2.9.0.post0 (*)"
+  },
+  {
+    "index": 664,
+    "name": "networkx",
+    "version": "v3.6.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "networkx v3.6.1"
+  },
+  {
+    "index": 665,
+    "name": "openai",
+    "version": "v2.26.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "openai v2.26.0 (*)"
+  },
+  {
+    "index": 666,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 667,
+    "name": "opentelemetry-exporter-otlp-proto-grpc",
+    "version": "v1.40.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "opentelemetry-exporter-otlp-proto-grpc v1.40.0"
+  },
+  {
+    "index": 668,
+    "name": "googleapis-common-protos",
+    "version": "v1.72.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "googleapis-common-protos v1.72.0 (*)"
+  },
+  {
+    "index": 669,
+    "name": "grpcio",
+    "version": "v1.76.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "grpcio v1.76.0 (*)"
+  },
+  {
+    "index": 670,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 671,
+    "name": "opentelemetry-exporter-otlp-proto-common",
+    "version": "v1.40.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-exporter-otlp-proto-common v1.40.0"
+  },
+  {
+    "index": 672,
+    "name": "opentelemetry-proto",
+    "version": "v1.40.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "opentelemetry-proto v1.40.0"
+  },
+  {
+    "index": 673,
+    "name": "protobuf",
+    "version": "v6.33.2",
+    "level": 4,
+    "indent": 14,
+    "suffix": "protobuf v6.33.2"
+  },
+  {
+    "index": 674,
+    "name": "opentelemetry-proto",
+    "version": "v1.40.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-proto v1.40.0 (*)"
+  },
+  {
+    "index": 675,
+    "name": "opentelemetry-sdk",
+    "version": "v1.40.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-sdk v1.40.0 (*)"
+  },
+  {
+    "index": 676,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 677,
+    "name": "opentelemetry-instrumentation-httpx",
+    "version": "v0.61b0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "opentelemetry-instrumentation-httpx v0.61b0"
+  },
+  {
+    "index": 678,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 679,
+    "name": "opentelemetry-instrumentation",
+    "version": "v0.61b0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-instrumentation v0.61b0"
+  },
+  {
+    "index": 680,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 681,
+    "name": "opentelemetry-semantic-conventions",
+    "version": "v0.61b0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "opentelemetry-semantic-conventions v0.61b0 (*)"
+  },
+  {
+    "index": 682,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 683,
+    "name": "wrapt",
+    "version": "v1.17.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "wrapt v1.17.3"
+  },
+  {
+    "index": 684,
+    "name": "opentelemetry-semantic-conventions",
+    "version": "v0.61b0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-semantic-conventions v0.61b0 (*)"
+  },
+  {
+    "index": 685,
+    "name": "opentelemetry-util-http",
+    "version": "v0.61b0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-util-http v0.61b0"
+  },
+  {
+    "index": 686,
+    "name": "wrapt",
+    "version": "v1.17.3",
+    "level": 2,
+    "indent": 6,
+    "suffix": "wrapt v1.17.3"
+  },
+  {
+    "index": 687,
+    "name": "opentelemetry-instrumentation-logging",
+    "version": "v0.61b0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "opentelemetry-instrumentation-logging v0.61b0"
+  },
+  {
+    "index": 688,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 689,
+    "name": "opentelemetry-instrumentation",
+    "version": "v0.61b0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-instrumentation v0.61b0 (*)"
+  },
+  {
+    "index": 690,
+    "name": "opentelemetry-instrumentation-psycopg2",
+    "version": "v0.61b0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "opentelemetry-instrumentation-psycopg2 v0.61b0"
+  },
+  {
+    "index": 691,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 692,
+    "name": "opentelemetry-instrumentation",
+    "version": "v0.61b0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-instrumentation v0.61b0 (*)"
+  },
+  {
+    "index": 693,
+    "name": "opentelemetry-instrumentation-dbapi",
+    "version": "v0.61b0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-instrumentation-dbapi v0.61b0"
+  },
+  {
+    "index": 694,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 695,
+    "name": "opentelemetry-instrumentation",
+    "version": "v0.61b0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "opentelemetry-instrumentation v0.61b0 (*)"
+  },
+  {
+    "index": 696,
+    "name": "opentelemetry-semantic-conventions",
+    "version": "v0.61b0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "opentelemetry-semantic-conventions v0.61b0 (*)"
+  },
+  {
+    "index": 697,
+    "name": "wrapt",
+    "version": "v1.17.3",
+    "level": 3,
+    "indent": 10,
+    "suffix": "wrapt v1.17.3"
+  },
+  {
+    "index": 698,
+    "name": "opentelemetry-instrumentation-requests",
+    "version": "v0.61b0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "opentelemetry-instrumentation-requests v0.61b0"
+  },
+  {
+    "index": 699,
+    "name": "opentelemetry-api",
+    "version": "v1.40.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-api v1.40.0 (*)"
+  },
+  {
+    "index": 700,
+    "name": "opentelemetry-instrumentation",
+    "version": "v0.61b0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-instrumentation v0.61b0 (*)"
+  },
+  {
+    "index": 701,
+    "name": "opentelemetry-semantic-conventions",
+    "version": "v0.61b0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-semantic-conventions v0.61b0 (*)"
+  },
+  {
+    "index": 702,
+    "name": "opentelemetry-util-http",
+    "version": "v0.61b0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "opentelemetry-util-http v0.61b0"
+  },
+  {
+    "index": 703,
+    "name": "opentelemetry-sdk",
+    "version": "v1.40.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "opentelemetry-sdk v1.40.0 (*)"
+  },
+  {
+    "index": 704,
+    "name": "pandas",
+    "version": "v2.3.3",
+    "level": 1,
+    "indent": 2,
+    "suffix": "pandas v2.3.3 (*)"
+  },
+  {
+    "index": 705,
+    "name": "pgvector",
+    "version": "v0.4.2",
+    "level": 1,
+    "indent": 2,
+    "suffix": "pgvector v0.4.2"
+  },
+  {
+    "index": 706,
+    "name": "numpy",
+    "version": "v2.4.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "numpy v2.4.0"
+  },
+  {
+    "index": 707,
+    "name": "polars",
+    "version": "v1.37.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "polars v1.37.1"
+  },
+  {
+    "index": 708,
+    "name": "polars-runtime-32",
+    "version": "v1.37.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "polars-runtime-32 v1.37.1"
+  },
+  {
+    "index": 709,
+    "name": "psutil",
+    "version": "v7.2.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "psutil v7.2.0"
+  },
+  {
+    "index": 710,
+    "name": "psycopg2-binary",
+    "version": "v2.9.11",
+    "level": 1,
+    "indent": 2,
+    "suffix": "psycopg2-binary v2.9.11"
+  },
+  {
+    "index": 711,
+    "name": "pydantic",
+    "version": "v2.12.5",
+    "level": 1,
+    "indent": 2,
+    "suffix": "pydantic v2.12.5 (*)"
+  },
+  {
+    "index": 712,
+    "name": "pydantic-core",
+    "version": "v2.41.5",
+    "level": 1,
+    "indent": 2,
+    "suffix": "pydantic-core v2.41.5 (*)"
+  },
+  {
+    "index": 713,
+    "name": "pylint",
+    "version": "v4.0.4",
+    "level": 1,
+    "indent": 2,
+    "suffix": "pylint v4.0.4"
+  },
+  {
+    "index": 714,
+    "name": "astroid",
+    "version": "v4.0.3",
+    "level": 2,
+    "indent": 6,
+    "suffix": "astroid v4.0.3"
+  },
+  {
+    "index": 715,
+    "name": "dill",
+    "version": "v0.4.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "dill v0.4.0"
+  },
+  {
+    "index": 716,
+    "name": "isort",
+    "version": "v7.0.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "isort v7.0.0"
+  },
+  {
+    "index": 717,
+    "name": "mccabe",
+    "version": "v0.7.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "mccabe v0.7.0"
+  },
+  {
+    "index": 718,
+    "name": "platformdirs",
+    "version": "v4.5.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "platformdirs v4.5.1"
+  },
+  {
+    "index": 719,
+    "name": "tomlkit",
+    "version": "v0.14.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "tomlkit v0.14.0"
+  },
+  {
+    "index": 720,
+    "name": "pytest",
+    "version": "v9.0.2",
+    "level": 1,
+    "indent": 2,
+    "suffix": "pytest v9.0.2"
+  },
+  {
+    "index": 721,
+    "name": "iniconfig",
+    "version": "v2.3.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "iniconfig v2.3.0"
+  },
+  {
+    "index": 722,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 723,
+    "name": "pluggy",
+    "version": "v1.6.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pluggy v1.6.0"
+  },
+  {
+    "index": 724,
+    "name": "pygments",
+    "version": "v2.19.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pygments v2.19.2"
+  },
+  {
+    "index": 725,
+    "name": "pytest-asyncio",
+    "version": "v1.3.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "pytest-asyncio v1.3.0"
+  },
+  {
+    "index": 726,
+    "name": "pytest",
+    "version": "v9.0.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pytest v9.0.2 (*)"
+  },
+  {
+    "index": 727,
+    "name": "pytest-cov",
+    "version": "v7.0.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "pytest-cov v7.0.0"
+  },
+  {
+    "index": 728,
+    "name": "coverage",
+    "version": "v7.13.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "coverage v7.13.1"
+  },
+  {
+    "index": 729,
+    "name": "pluggy",
+    "version": "v1.6.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pluggy v1.6.0"
+  },
+  {
+    "index": 730,
+    "name": "pytest",
+    "version": "v9.0.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pytest v9.0.2 (*)"
+  },
+  {
+    "index": 731,
+    "name": "pytest-randomly",
+    "version": "v4.0.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "pytest-randomly v4.0.1"
+  },
+  {
+    "index": 732,
+    "name": "pytest",
+    "version": "v9.0.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pytest v9.0.2 (*)"
+  },
+  {
+    "index": 733,
+    "name": "python-dotenv",
+    "version": "v1.2.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "python-dotenv v1.2.1"
+  },
+  {
+    "index": 734,
+    "name": "python-json-logger",
+    "version": "v4.0.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "python-json-logger v4.0.0"
+  },
+  {
+    "index": 735,
+    "name": "python-multipart",
+    "version": "v0.0.21",
+    "level": 1,
+    "indent": 2,
+    "suffix": "python-multipart v0.0.21"
+  },
+  {
+    "index": 736,
+    "name": "python-toon",
+    "version": "v0.1.3",
+    "level": 1,
+    "indent": 2,
+    "suffix": "python-toon v0.1.3"
+  },
+  {
+    "index": 737,
+    "name": "pytz",
+    "version": "v2025.2",
+    "level": 1,
+    "indent": 2,
+    "suffix": "pytz v2025.2"
+  },
+  {
+    "index": 738,
+    "name": "pyvis",
+    "version": "v0.3.2",
+    "level": 1,
+    "indent": 2,
+    "suffix": "pyvis v0.3.2"
+  },
+  {
+    "index": 739,
+    "name": "ipython",
+    "version": "v9.8.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "ipython v9.8.0 (*)"
+  },
+  {
+    "index": 740,
+    "name": "jinja2",
+    "version": "v3.1.6",
+    "level": 2,
+    "indent": 6,
+    "suffix": "jinja2 v3.1.6 (*)"
+  },
+  {
+    "index": 741,
+    "name": "jsonpickle",
+    "version": "v4.1.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "jsonpickle v4.1.1"
+  },
+  {
+    "index": 742,
+    "name": "networkx",
+    "version": "v3.6.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "networkx v3.6.1"
+  },
+  {
+    "index": 743,
+    "name": "rdflib",
+    "version": "v7.5.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "rdflib v7.5.0"
+  },
+  {
+    "index": 744,
+    "name": "pyparsing",
+    "version": "v3.3.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pyparsing v3.3.1"
+  },
+  {
+    "index": 745,
+    "name": "reportlab",
+    "version": "v4.4.10",
+    "level": 1,
+    "indent": 2,
+    "suffix": "reportlab v4.4.10"
+  },
+  {
+    "index": 746,
+    "name": "charset-normalizer",
+    "version": "v3.4.4",
+    "level": 2,
+    "indent": 6,
+    "suffix": "charset-normalizer v3.4.4"
+  },
+  {
+    "index": 747,
+    "name": "pillow",
+    "version": "v12.1.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pillow v12.1.0"
+  },
+  {
+    "index": 748,
+    "name": "sqlalchemy",
+    "version": "v2.0.46",
+    "level": 1,
+    "indent": 2,
+    "suffix": "sqlalchemy v2.0.46 (*)"
+  },
+  {
+    "index": 749,
+    "name": "sqlalchemy-utils",
+    "version": "v0.42.1",
+    "level": 1,
+    "indent": 2,
+    "suffix": "sqlalchemy-utils v0.42.1"
+  },
+  {
+    "index": 750,
+    "name": "sqlalchemy",
+    "version": "v2.0.46",
+    "level": 2,
+    "indent": 6,
+    "suffix": "sqlalchemy v2.0.46 (*)"
+  },
+  {
+    "index": 751,
+    "name": "streamlit",
+    "version": "v1.52.2",
+    "level": 1,
+    "indent": 2,
+    "suffix": "streamlit v1.52.2"
+  },
+  {
+    "index": 752,
+    "name": "altair",
+    "version": "v6.0.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "altair v6.0.0"
+  },
+  {
+    "index": 753,
+    "name": "jinja2",
+    "version": "v3.1.6",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jinja2 v3.1.6 (*)"
+  },
+  {
+    "index": 754,
+    "name": "jsonschema",
+    "version": "v4.25.1",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jsonschema v4.25.1 (*)"
+  },
+  {
+    "index": 755,
+    "name": "narwhals",
+    "version": "v2.15.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "narwhals v2.15.0"
+  },
+  {
+    "index": 756,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 3,
+    "indent": 10,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 757,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 758,
+    "name": "blinker",
+    "version": "v1.9.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "blinker v1.9.0"
+  },
+  {
+    "index": 759,
+    "name": "cachetools",
+    "version": "v6.2.4",
+    "level": 2,
+    "indent": 6,
+    "suffix": "cachetools v6.2.4"
+  },
+  {
+    "index": 760,
+    "name": "click",
+    "version": "v8.3.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "click v8.3.1"
+  },
+  {
+    "index": 761,
+    "name": "gitpython",
+    "version": "v3.1.46",
+    "level": 2,
+    "indent": 6,
+    "suffix": "gitpython v3.1.46"
+  },
+  {
+    "index": 762,
+    "name": "gitdb",
+    "version": "v4.0.12",
+    "level": 3,
+    "indent": 10,
+    "suffix": "gitdb v4.0.12"
+  },
+  {
+    "index": 763,
+    "name": "smmap",
+    "version": "v5.0.2",
+    "level": 4,
+    "indent": 14,
+    "suffix": "smmap v5.0.2"
+  },
+  {
+    "index": 764,
+    "name": "numpy",
+    "version": "v2.4.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "numpy v2.4.0"
+  },
+  {
+    "index": 765,
+    "name": "packaging",
+    "version": "v24.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "packaging v24.2"
+  },
+  {
+    "index": 766,
+    "name": "pandas",
+    "version": "v2.3.3",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pandas v2.3.3 (*)"
+  },
+  {
+    "index": 767,
+    "name": "pillow",
+    "version": "v12.1.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pillow v12.1.0"
+  },
+  {
+    "index": 768,
+    "name": "protobuf",
+    "version": "v6.33.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "protobuf v6.33.2"
+  },
+  {
+    "index": 769,
+    "name": "pyarrow",
+    "version": "v22.0.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pyarrow v22.0.0"
+  },
+  {
+    "index": 770,
+    "name": "pydeck",
+    "version": "v0.9.1",
+    "level": 2,
+    "indent": 6,
+    "suffix": "pydeck v0.9.1"
+  },
+  {
+    "index": 771,
+    "name": "jinja2",
+    "version": "v3.1.6",
+    "level": 3,
+    "indent": 10,
+    "suffix": "jinja2 v3.1.6 (*)"
+  },
+  {
+    "index": 772,
+    "name": "numpy",
+    "version": "v2.4.0",
+    "level": 3,
+    "indent": 10,
+    "suffix": "numpy v2.4.0"
+  },
+  {
+    "index": 773,
+    "name": "requests",
+    "version": "v2.32.5",
+    "level": 2,
+    "indent": 6,
+    "suffix": "requests v2.32.5 (*)"
+  },
+  {
+    "index": 774,
+    "name": "tenacity",
+    "version": "v9.1.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "tenacity v9.1.2"
+  },
+  {
+    "index": 775,
+    "name": "toml",
+    "version": "v0.10.2",
+    "level": 2,
+    "indent": 6,
+    "suffix": "toml v0.10.2"
+  },
+  {
+    "index": 776,
+    "name": "tornado",
+    "version": "v6.5.4",
+    "level": 2,
+    "indent": 6,
+    "suffix": "tornado v6.5.4"
+  },
+  {
+    "index": 777,
+    "name": "typing-extensions",
+    "version": "v4.15.0",
+    "level": 2,
+    "indent": 6,
+    "suffix": "typing-extensions v4.15.0"
+  },
+  {
+    "index": 778,
+    "name": "tenacity",
+    "version": "v9.1.2",
+    "level": 1,
+    "indent": 2,
+    "suffix": "tenacity v9.1.2"
+  },
+  {
+    "index": 779,
+    "name": "tiktoken",
+    "version": "v0.12.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "tiktoken v0.12.0"
+  },
+  {
+    "index": 780,
+    "name": "regex",
+    "version": "v2025.11.3",
+    "level": 2,
+    "indent": 6,
+    "suffix": "regex v2025.11.3"
+  },
+  {
+    "index": 781,
+    "name": "requests",
+    "version": "v2.32.5",
+    "level": 2,
+    "indent": 6,
+    "suffix": "requests v2.32.5 (*)"
+  },
+  {
+    "index": 782,
+    "name": "uvicorn",
+    "version": "v0.38.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "uvicorn v0.38.0 (*)"
+  },
+  {
+    "index": 783,
+    "name": "watchdog",
+    "version": "v6.0.0",
+    "level": 1,
+    "indent": 2,
+    "suffix": "watchdog v6.0.0",
+    "dependencies": []
+  }
+]

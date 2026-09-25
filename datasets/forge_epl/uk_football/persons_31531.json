@@ -1,0 +1,43 @@
+{
+    "id": 31531,
+    "name": "Gabriel Gudmundsson",
+    "firstName": "Gabriel",
+    "lastName": "Gudmundsson",
+    "dateOfBirth": "1999-04-29",
+    "nationality": "Sweden",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 5,
+    "lastUpdated": "2026-06-01T11:16:31Z",
+    "currentTeam": {
+        "area": {
+            "id": 2233,
+            "name": "Sweden",
+            "code": "SWE",
+            "flag": "https://crests.football-data.org/792.svg"
+        },
+        "id": 792,
+        "name": "Sweden",
+        "shortName": "Sweden",
+        "tla": "SWE",
+        "crest": "https://crests.football-data.org/792.svg",
+        "address": "Evenemangsgatan 31 / Box 1216 Solna 17123",
+        "website": "http://www.svenskfotboll.se",
+        "founded": 1904,
+        "clubColors": "Yellow / Blue",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "id": 203356,
+    "name": "Rayan",
+    "firstName": "",
+    "lastName": "Rayan",
+    "dateOfBirth": "2006-08-03",
+    "nationality": "Brazil",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 26,
+    "lastUpdated": "2025-02-28T09:42:37Z",
+    "currentTeam": {
+        "area": {
+            "id": 2032,
+            "name": "Brazil",
+            "code": "BRA",
+            "flag": "https://crests.football-data.org/764.svg"
+        },
+        "id": 764,
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "tla": "BRA",
+        "crest": "https://crests.football-data.org/764.svg",
+        "address": "Rua Victor Civita 66 Bloco 1, Edifico 5 Rio de Janeiro, RJ 22775-044",
+        "website": "http://www.cbf.com.br/",
+        "founded": 1914,
+        "clubColors": "Yellow / Green / Blue",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

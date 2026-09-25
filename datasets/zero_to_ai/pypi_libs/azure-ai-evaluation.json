@@ -1,0 +1,1483 @@
+{
+  "info": {
+    "author": "Microsoft Corporation",
+    "author_email": "azuresdkengsysadmins@microsoft.com",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.9"
+    ],
+    "description": "# Azure AI Evaluation client library for Python\n\nUse Azure AI Evaluation SDK to assess the performance of your generative AI applications. Generative AI application generations are quantitatively measured with mathematical based metrics, AI-assisted quality and safety metrics. Metrics are defined as `evaluators`. Built-in or custom evaluators can provide comprehensive insights into the application's capabilities and limitations.\n\nUse Azure AI Evaluation SDK to:\n- Evaluate existing data from generative AI applications\n- Evaluate generative AI applications\n- Evaluate by generating mathematical, AI-assisted quality and safety metrics\n\nAzure AI SDK provides following to evaluate Generative AI Applications:\n- [Evaluators][evaluators] - Generate scores individually or when used together with `evaluate` API.\n- [Evaluate API][evaluate_api] - Python API to evaluate dataset or application using built-in or custom evaluators.\n\n[Source code][source_code]\n| [Package (PyPI)][evaluation_pypi]\n| [API reference documentation][evaluation_ref_docs]\n| [Product documentation][product_documentation]\n| [Samples][evaluation_samples]\n\n\n## Getting started\n\n### Prerequisites\n\n- Python 3.9 or later is required to use this package.\n- [Optional] You must have [Azure AI Foundry Project][ai_project] or [Azure Open AI][azure_openai] to use AI-assisted evaluators\n\n### Install the package\n\nInstall the Azure AI Evaluation SDK for Python with [pip][pip_link]:\n\n```bash\npip install azure-ai-evaluation\n```\n\n## Key concepts\n\n### Evaluators\n\nEvaluators are custom or prebuilt classes or functions that are designed to measure the quality of the outputs from language models or generative AI applications.\n\n#### Built-in evaluators\n\nBuilt-in evaluators are out of box evaluators provided by Microsoft:\n| Category  | Evaluator class                                                                                                                    |\n|-----------|------------------------------------------------------------------------------------------------------------------------------------|\n| [Performance and quality][performance_and_quality_evaluators] (AI-assisted)  | `GroundednessEvaluator`, `RelevanceEvaluator`, `CoherenceEvaluator`, `FluencyEvaluator`, `SimilarityEvaluator`, `RetrievalEvaluator` |\n| [Performance and quality][performance_and_quality_evaluators] (NLP)  | `F1ScoreEvaluator`, `RougeScoreEvaluator`, `GleuScoreEvaluator`, `BleuScoreEvaluator`, `MeteorScoreEvaluator`|\n| [Risk and safety][risk_and_safety_evaluators] (AI-assisted)    | `ViolenceEvaluator`, `SexualEvaluator`, `SelfHarmEvaluator`, `HateUnfairnessEvaluator`, `IndirectAttackEvaluator`, `ProtectedMaterialEvaluator`                                             |\n| [Composite][composite_evaluators] | `QAEvaluator`, `ContentSafetyEvaluator`                                             |\n\nFor more in-depth information on each evaluator definition and how it's calculated, see [Evaluation and monitoring metrics for generative AI][evaluation_metrics].\n\n```python\nimport os\n\nfrom azure.ai.evaluation import evaluate, RelevanceEvaluator, ViolenceEvaluator, BleuScoreEvaluator\n\n# NLP bleu score evaluator\nbleu_score_evaluator = BleuScoreEvaluator()\nresult = bleu_score(\n    response=\"Tokyo is the capital of Japan.\",\n    ground_truth=\"The capital of Japan is Tokyo.\"\n)\n\n# AI assisted quality evaluator\nmodel_config = {\n    \"azure_endpoint\": os.environ.get(\"AZURE_OPENAI_ENDPOINT\"),\n    \"api_key\": os.environ.get(\"AZURE_OPENAI_API_KEY\"),\n    \"azure_deployment\": os.environ.get(\"AZURE_OPENAI_DEPLOYMENT\"),\n}\n\nrelevance_evaluator = RelevanceEvaluator(model_config)\nresult = relevance_evaluator(\n    query=\"What is the capital of Japan?\",\n    response=\"The capital of Japan is Tokyo.\"\n)\n\n# There are two ways to provide Azure AI Project.\n# Option #1 : Using Azure AI Project Details \nazure_ai_project = {\n    \"subscription_id\": \"<subscription_id>\",\n    \"resource_group_name\": \"<resource_group_name>\",\n    \"project_name\": \"<project_name>\",\n}\n\nviolence_evaluator = ViolenceEvaluator(azure_ai_project)\nresult = violence_evaluator(\n    query=\"What is the capital of France?\",\n    response=\"Paris.\"\n)\n\n# Option # 2 : Using Azure AI Project Url \nazure_ai_project = \"https://{resource_name}.services.ai.azure.com/api/projects/{project_name}\"\n\nviolence_evaluator = ViolenceEvaluator(azure_ai_project)\nresult = violence_evaluator(\n    query=\"What is the capital of France?\",\n    response=\"Paris.\"\n)\n```\n\n#### Custom evaluators\n\nBuilt-in evaluators are great out of the box to start evaluating your application's generations. However you can build your own code-based or prompt-based evaluator to cater to your specific evaluation needs.\n\n```python\n\n# Custom evaluator as a function to calculate response length\ndef response_length(response, **kwargs):\n    return len(response)\n\n# Custom class based evaluator to check for blocked words\nclass BlocklistEvaluator:\n    def __init__(self, blocklist):\n        self._blocklist = blocklist\n\n    def __call__(self, *, response: str, **kwargs):\n        score = any([word in answer for word in self._blocklist])\n        return {\"score\": score}\n\nblocklist_evaluator = BlocklistEvaluator(blocklist=[\"bad, worst, terrible\"])\n\nresult = response_length(\"The capital of Japan is Tokyo.\")\nresult = blocklist_evaluator(answer=\"The capital of Japan is Tokyo.\")\n\n```\n\n### Evaluate API\nThe package provides an `evaluate` API which can be used to run multiple evaluators together to evaluate generative AI application response.\n\n#### Evaluate existing dataset\n\n```python\nfrom azure.ai.evaluation import evaluate\n\nresult = evaluate(\n    data=\"data.jsonl\", # provide your data here\n    evaluators={\n        \"blocklist\": blocklist_evaluator,\n        \"relevance\": relevance_evaluator\n    },\n    # column mapping\n    evaluator_config={\n        \"relevance\": {\n            \"column_mapping\": {\n                \"query\": \"${data.queries}\"\n                \"ground_truth\": \"${data.ground_truth}\"\n                \"response\": \"${outputs.response}\"\n            } \n        }\n    }\n    # Optionally provide your AI Foundry project information to track your evaluation results in your Azure AI Foundry project\n    azure_ai_project = azure_ai_project,\n    # Optionally provide an output path to dump a json of metric summary, row level data and metric and AI Foundry URL\n    output_path=\"./evaluation_results.json\"\n)\n```\nFor more details refer to [Evaluate on test dataset using evaluate()][evaluate_dataset]\n\n#### Evaluate generative AI application\n```python\nfrom askwiki import askwiki\n\nresult = evaluate(\n    data=\"data.jsonl\",\n    target=askwiki,\n    evaluators={\n        \"relevance\": relevance_eval\n    },\n    evaluator_config={\n        \"default\": {\n            \"column_mapping\": {\n                \"query\": \"${data.queries}\"\n                \"context\": \"${outputs.context}\"\n                \"response\": \"${outputs.response}\"\n            } \n        }\n    }\n)\n```\nAbove code snippet refers to askwiki application in this [sample][evaluate_app].\n\nFor more details refer to [Evaluate on a target][evaluate_target]\n\n### Simulator\n\n\nSimulators allow users to generate synthentic data using their application. Simulator expects the user to have a callback method that invokes their AI application. The intergration between your AI application and the simulator happens at the callback method. Here's how a sample callback would look like:\n\n\n```python\nasync def callback(\n    messages: Dict[str, List[Dict]],\n    stream: bool = False,\n    session_state: Any = None,\n    context: Optional[Dict[str, Any]] = None,\n) -> dict:\n    messages_list = messages[\"messages\"]\n    # Get the last message from the user\n    latest_message = messages_list[-1]\n    query = latest_message[\"content\"]\n    # Call your endpoint or AI application here\n    # response should be a string\n    response = call_to_your_application(query, messages_list, context)\n    formatted_response = {\n        \"content\": response,\n        \"role\": \"assistant\",\n        \"context\": \"\",\n    }\n    messages[\"messages\"].append(formatted_response)\n    return {\"messages\": messages[\"messages\"], \"stream\": stream, \"session_state\": session_state, \"context\": context}\n```\n\nThe simulator initialization and invocation looks like this:\n```python\nfrom azure.ai.evaluation.simulator import Simulator\nmodel_config = {\n    \"azure_endpoint\": os.environ.get(\"AZURE_ENDPOINT\"),\n    \"azure_deployment\": os.environ.get(\"AZURE_DEPLOYMENT_NAME\"),\n    \"api_version\": os.environ.get(\"AZURE_API_VERSION\"),\n}\ncustom_simulator = Simulator(model_config=model_config)\noutputs = asyncio.run(custom_simulator(\n    target=callback,\n    conversation_turns=[\n        [\n            \"What should I know about the public gardens in the US?\",\n        ],\n        [\n            \"How do I simulate data against LLMs\",\n        ],\n    ],\n    max_conversation_turns=2,\n))\nwith open(\"simulator_output.jsonl\", \"w\") as f:\n    for output in outputs:\n        f.write(output.to_eval_qr_json_lines())\n```\n\n#### Adversarial Simulator\n\n```python\nfrom azure.ai.evaluation.simulator import AdversarialSimulator, AdversarialScenario\nfrom azure.identity import DefaultAzureCredential\n\n# There are two ways to provide Azure AI Project.\n# Option #1 : Using Azure AI Project \nazure_ai_project = {\n    \"subscription_id\": <subscription_id>,\n    \"resource_group_name\": <resource_group_name>,\n    \"project_name\": <project_name>\n}\n\n# Option #2 : Using Azure AI Project Url \nazure_ai_project = \"https://{resource_name}.services.ai.azure.com/api/projects/{project_name}\"\n\nscenario = AdversarialScenario.ADVERSARIAL_QA\nsimulator = AdversarialSimulator(azure_ai_project=azure_ai_project, credential=DefaultAzureCredential())\n\noutputs = asyncio.run(\n    simulator(\n        scenario=scenario,\n        max_conversation_turns=1,\n        max_simulation_results=3,\n        target=callback\n    )\n)\n\nprint(outputs.to_eval_qr_json_lines())\n```\n\nFor more details about the simulator, visit the following links:\n- [Adversarial Simulation docs][adversarial_simulation_docs]\n- [Adversarial scenarios][adversarial_simulation_scenarios]\n- [Simulating jailbreak attacks][adversarial_jailbreak]\n\n## Examples\n\nIn following section you will find examples of:\n- [Evaluate an application][evaluate_app]\n- [Evaluate different models][evaluate_models]\n- [Custom Evaluators][custom_evaluators]\n- [Adversarial Simulation][adversarial_simulation]\n- [Simulate with conversation starter][simulate_with_conversation_starter]\n\nMore examples can be found [here][evaluate_samples].\n\n## Troubleshooting\n\n### General\n\nPlease refer to [troubleshooting][evaluation_tsg] for common issues.\n\n### Logging\n\nThis library uses the standard\n[logging][python_logging] library for logging.\nBasic information about HTTP sessions (URLs, headers, etc.) is logged at INFO\nlevel.\n\nDetailed DEBUG level logging, including request/response bodies and unredacted\nheaders, can be enabled on a client with the `logging_enable` argument.\n\nSee full SDK logging documentation with examples [here][sdk_logging_docs].\n\n## Next steps\n\n- View our [samples][evaluation_samples].\n- View our [documentation][product_documentation]\n\n## Contributing\n\nThis project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit [cla.microsoft.com][cla].\n\nWhen you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.\n\nThis project has adopted the [Microsoft Open Source Code of Conduct][code_of_conduct]. For more information see the [Code of Conduct FAQ][coc_faq] or contact [opencode@microsoft.com][coc_contact] with any additional questions or comments.\n\n<!-- LINKS -->\n\n[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/evaluation/azure-ai-evaluation\n[evaluation_pypi]: https://pypi.org/project/azure-ai-evaluation/\n[evaluation_ref_docs]: https://learn.microsoft.com/python/api/azure-ai-evaluation/azure.ai.evaluation?view=azure-python-preview\n[evaluation_samples]: https://github.com/Azure-Samples/azureai-samples/tree/main/scenarios\n[product_documentation]: https://learn.microsoft.com/azure/ai-studio/how-to/develop/evaluate-sdk\n[python_logging]: https://docs.python.org/3/library/logging.html\n[sdk_logging_docs]: https://docs.microsoft.com/azure/developer/python/azure-sdk-logging\n[azure_core_readme]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/core/azure-core/README.md\n[pip_link]: https://pypi.org/project/pip/\n[azure_core_ref_docs]: https://aka.ms/azsdk-python-core-policies\n[azure_core]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/core/azure-core/README.md\n[azure_identity]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity\n[cla]: https://cla.microsoft.com\n[code_of_conduct]: https://opensource.microsoft.com/codeofconduct/\n[coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/\n[coc_contact]: mailto:opencode@microsoft.com\n[evaluate_target]: https://learn.microsoft.com/azure/ai-studio/how-to/develop/evaluate-sdk#evaluate-on-a-target\n[evaluate_dataset]: https://learn.microsoft.com/azure/ai-studio/how-to/develop/evaluate-sdk#evaluate-on-test-dataset-using-evaluate\n[evaluators]: https://learn.microsoft.com/python/api/azure-ai-evaluation/azure.ai.evaluation?view=azure-python-preview\n[evaluate_api]: https://learn.microsoft.com/python/api/azure-ai-evaluation/azure.ai.evaluation?view=azure-python-preview#azure-ai-evaluation-evaluate\n[evaluate_app]: https://github.com/Azure-Samples/azureai-samples/tree/main/scenarios/evaluate/Supported_Evaluation_Targets/Evaluate_App_Endpoint\n[evaluation_tsg]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/evaluation/azure-ai-evaluation/TROUBLESHOOTING.md\n[ai_studio]: https://learn.microsoft.com/azure/ai-studio/what-is-ai-studio\n[ai_project]: https://learn.microsoft.com/azure/ai-studio/how-to/create-projects?tabs=ai-studio\n[azure_openai]: https://learn.microsoft.com/azure/ai-services/openai/\n[evaluate_models]: https://github.com/Azure-Samples/azureai-samples/tree/main/scenarios/evaluate/Supported_Evaluation_Targets/Evaluate_Base_Model_Endpoint\n[custom_evaluators]: https://github.com/Azure-Samples/azureai-samples/tree/main/scenarios/evaluate/Supported_Evaluation_Metrics/Custom_Evaluators\n[evaluate_samples]: https://github.com/Azure-Samples/azureai-samples/tree/main/scenarios/evaluate\n[evaluation_metrics]: https://learn.microsoft.com/azure/ai-studio/concepts/evaluation-metrics-built-in\n[performance_and_quality_evaluators]: https://learn.microsoft.com/azure/ai-studio/how-to/develop/evaluate-sdk#performance-and-quality-evaluators\n[risk_and_safety_evaluators]: https://learn.microsoft.com/azure/ai-studio/how-to/develop/evaluate-sdk#risk-and-safety-evaluators\n[composite_evaluators]: https://learn.microsoft.com/azure/ai-studio/how-to/develop/evaluate-sdk#composite-evaluators\n[adversarial_simulation_docs]: https://learn.microsoft.com/azure/ai-studio/how-to/develop/simulator-interaction-data#generate-adversarial-simulations-for-safety-evaluation\n[adversarial_simulation_scenarios]: https://learn.microsoft.com/azure/ai-studio/how-to/develop/simulator-interaction-data#supported-adversarial-simulation-scenarios\n[adversarial_simulation]: https://github.com/Azure-Samples/azureai-samples/tree/main/scenarios/evaluate/Simulators/Simulate_Adversarial_Data\n[simulate_with_conversation_starter]: https://github.com/Azure-Samples/azureai-samples/tree/main/scenarios/evaluate/Simulators/Simulate_Context-Relevant_Data/Simulate_From_Conversation_Starter\n[adversarial_jailbreak]: https://learn.microsoft.com/azure/ai-studio/how-to/develop/simulator-interaction-data#simulating-jailbreak-attacks\n\n\n# Release History\n\n## 1.14.0 (2026-01-05)\n\n### Bugs Fixed\n\n- Updated CodeVulnerability and UngroundedAttributes evaluators for RedTeam to use the binary true/false scoring pattern so their results align with service responses.\n- Fixed `GroundednessEvaluator` with `query` not honoring `is_reasoning_model` (and `credential`) when reloading the query prompty, which could cause `max_tokens` to be sent to reasoning models. [#44385](https://github.com/Azure/azure-sdk-for-python/issues/44385)\n\n## 1.13.7 (2025-11-14)\n\n### Bugs Fixed\n\n- Fixed NoneType error when generating usage summary in evaluation results.\n- Fixed results for f1_score.\n\n## 1.13.6 (2025-11-12)\n\n### Bugs Fixed\n\n- Added detection and retry handling for network errors wrapped in generic exceptions with \"Error sending prompt with conversation ID\" message\n- Fix results for ungrounded_attributes\n- score_mode grader improvements\n- fix for Red Team to ensure hate/unfairness evaluation rows populate when OneDP sync evaluators report results under the hate_unfairness metric name.\n\n## 1.13.5 (2025-11-10)\n\n### Bugs Fixed\n\n- **TaskAdherenceEvaluator:** treat tool definitions as optional so evaluations with only query/response inputs no longer raise “Either 'conversation' or individual inputs must be provided.”\n\n## 1.13.4 (2025-11-10)\n\n### Bugs Fixed\n\n- Handle input data for evaluation result when evaluators.\n\n## 1.13.3 (2025-11-08)\n\n### Other Changes\n\n- Added `scenario` property to red team evaluation request to align scores with red team concepts of attack success.\n\n## 1.13.2 (2025-11-07)\n\n### Bugs Fixed\n\n- Added App Insights redaction for agent safety run telemetry so adversarial prompts are not stored in collected logs.\n\n## 1.13.1 (2025-11-05)\n\n### Features Added\n\n- Improved RedTeam coverage across risk sub-categories to ensure comprehensive security testing\n- Made RedTeam's `AttackStrategy.Tense` seed prompts dynamic to allow use of this strategy with additional risk categories\n- Refactors error handling and result semantics in the RedTeam evaluation system to improve clarity and align with Attack Success Rate (ASR) conventions (passed=False means attack success)\n\n### Bugs Fixed\n\n- Fixed RedTeam evaluation error related to context handling for context-dependent risk categories\n- Fixed RedTeam prompt application for model targets during Indirect Jailbreak XPIA (Cross-Platform Indirect Attack)\n\n## 1.13.0 (2025-10-30)\n\n### Features Added\n\n- Updated `IndirectAttack` risk category for RedTeam to `IndirectJailbreak` to better reflect its purpose. This change allows users to apply cross-domain prompt injection (XPIA) attack strategies across all risk categories, enabling more comprehensive security testing of AI systems against indirect prompt injection attacks during red teaming.\n- Added `TaskAdherence`, `SensitiveDataLeakage`, and `ProhibitedActions` as cloud-only agent safety risk categories for red teaming. \n- Updated all evaluators' output to be of the following schema:\n  - `gpt_{evaluator_name}`, `{evaluator_name}`: float score,\n  - `{evaluator_name}_result`: pass/fail based on threshold,\n  - `{evaluator_name}_reason`, `{evaluator_name}_threshold`\n  - `{evaluator_name}_prompt_tokens`, `{evaluator_name}_completion_tokens`, `{evaluator_name}_total_tokens`, `{evaluator_name}_finish_reason`\n  - `{evaluator_name}_model`: model used for evaluation\n  - `{evaluator_name}_sample_input`, `{evaluator_name}_sample_output`: input and output used for evaluation\n  \n  This change standardizes the output format across all evaluators and follows OTel convention.\n\n### Bugs Fixed\n\n- `image_tag` parameter in `AzureOpenAIPythonGrader` is now optional.\n\n## 1.11.2 (2025-10-09)\n\n### Bugs Fixed\n\n- **kwargs in an evaluator signature receives input columns that are not otherwise named in the evaluator's signature\n\n## 1.12.0 (2025-10-02)\n\n### Features Added\n- AOAI Graders now accept a \"credential\" parameter that can be used for authentication with an AzureOpenAIModelConfiguration\n- Added `is_reasoning_model` parameter support to `CoherenceEvaluator`, `FluencyEvaluator`, `SimilarityEvaluator`, `GroundednessEvaluator`, `RetrievalEvaluator`, and `RelevanceEvaluator` to enable reasoning model configuration for o1/o3 models.\n\n### Bugs Fixed\n- Support for multi-level nesting in OpenAI grader (experimental)\n\n## 1.11.1 (2025-09-19)\n\n### Bugs Fixed\n- Pinning duckdb version to 1.3.2 for redteam extra to fix error `TypeError: unhashable type: '_duckdb.typing.DuckDBPyType'`\n\n## 1.11.0 (2025-09-03)\n\n### Features Added\n- Added support for user-supplied tags in the `evaluate` function. Tags are key-value pairs that can be used for experiment tracking, A/B testing, filtering, and organizing evaluation runs. The function accepts a `tags` parameter.\n- Added support for user-supplied TokenCredentials with LLM based evaluators.\n- Enhanced `GroundednessEvaluator` to support AI agent evaluation with tool calls. The evaluator now accepts agent response data containing tool calls and can extract context from `file_search` tool results for groundedness assessment. This enables evaluation of AI agents that use tools to retrieve information and generate responses. Note: Agent groundedness evaluation is currently supported only when the `file_search` tool is used.\n- Added `language` parameter to `RedTeam` class for multilingual red team scanning support. The parameter accepts values from `SupportedLanguages` enum including English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, and Simplified Chinese, enabling red team attacks to be generated and conducted in multiple languages.\n- Added support for IndirectAttack and UngroundedAttributes risk categories in `RedTeam` scanning. These new risk categories expand red team capabilities to detect cross-platform indirect attacks and evaluate ungrounded inferences about human attributes including emotional state and protected class information.\n\n### Bugs Fixed\n- Fixed issue where evaluation results were not properly aligned with input data, leading to incorrect metrics being reported.\n\n### Other Changes\n- Deprecating `AdversarialSimulator` in favor of the [AI Red Teaming Agent](https://aka.ms/airedteamingagent-sample). `AdversarialSimulator` will be removed in the next minor release. \n- Moved retry configuration constants (`MAX_RETRY_ATTEMPTS`, `MAX_RETRY_WAIT_SECONDS`, `MIN_RETRY_WAIT_SECONDS`) from `RedTeam` class to new `RetryManager` class for better code organization and configurability.\n\n## 1.10.0 (2025-07-31)\n\n### Breaking Changes\n\n- Added `evaluate_query` parameter to all RAI service evaluators that can be passed as a keyword argument. This parameter controls whether queries are included in evaluation data when evaluating query-response pairs. Previously, queries were always included in evaluations. When set to `True`, both query and response will be evaluated; when set to `False` (default), only the response will be evaluated. This parameter is available across all RAI service evaluators including `ContentSafetyEvaluator`, `ViolenceEvaluator`, `SexualEvaluator`, `SelfHarmEvaluator`, `HateUnfairnessEvaluator`, `ProtectedMaterialEvaluator`, `IndirectAttackEvaluator`, `CodeVulnerabilityEvaluator`, `UngroundedAttributesEvaluator`, `GroundednessProEvaluator`, and `EciEvaluator`.  Existing code that relies on queries being evaluated will need to explicitly set `evaluate_query=True` to maintain the previous behavior.\n\n### Features Added\n\n- Added support for Azure OpenAI Python grader via `AzureOpenAIPythonGrader` class, which serves as a wrapper around Azure Open AI Python grader configurations. This new grader object can be supplied to the main `evaluate` method as if it were a normal callable evaluator.\n- Added `attack_success_thresholds` parameter to `RedTeam` class for configuring custom thresholds that determine attack success. This allows users to set specific threshold values for each risk category, with scores greater than the threshold considered successful attacks (i.e. higher threshold means higher \ntolerance for harmful responses).\n- Enhanced threshold reporting in RedTeam results to include default threshold values when custom thresholds aren't specified, providing better transparency about the evaluation criteria used.\n\n\n### Bugs Fixed\n\n- Fixed red team scan `output_path` issue where individual evaluation results were overwriting each other instead of being preserved as separate files. Individual evaluations now create unique files while the user's `output_path` is reserved for final aggregated results.\n- Significant improvements to TaskAdherence evaluator. New version has less variance, is much faster and consumes fewer tokens.\n- Significant improvements to Relevance evaluator. New version has more concrete rubrics and has less variance, is much faster and consumes fewer tokens.\n\n\n### Other Changes\n\n- The default engine for evaluation was changed from `promptflow` (PFClient) to an in-SDK batch client (RunSubmitterClient)\n  - Note: We've temporarily kept an escape hatch to fall back to the legacy `promptflow` implementation by setting `_use_pf_client=True` when invoking `evaluate()`.\n    This is due to be removed in a future release.\n\n\n## 1.9.0 (2025-07-02)\n\n### Features Added\n\n- Added support for Azure Open AI evaluation via `AzureOpenAIScoreModelGrader` class, which serves as a wrapper around Azure Open AI score model configurations. This new grader object can be supplied to the main `evaluate` method as if it were a normal callable evaluator.\n- Added new experimental risk categories ProtectedMaterial and CodeVulnerability for redteam agent scan.\n\n\n### Bugs Fixed\n\n- Significant improvements to IntentResolution evaluator. New version has less variance, is nearly 2x faster and consumes fewer tokens.\n\n- Fixes and improvements to ToolCallAccuracy evaluator. New version has less variance. and now works on all tool calls that happen in a turn at once. Previously, it worked on each tool call independently without having context on the other tool calls that happen in the same turn, and then aggregated the results to a score in the range [0-1]. The score range is now [1-5].\n- Fixed MeteorScoreEvaluator and other threshold-based evaluators returning incorrect binary results due to integer conversion of decimal scores. Previously, decimal scores like 0.9375 were incorrectly converted to integers (0) before threshold comparison, causing them to fail even when above the threshold. [#41415](https://github.com/Azure/azure-sdk-for-python/issues/41415)\n- Added a new enum `ADVERSARIAL_QA_DOCUMENTS` which moves all the \"file_content\" type prompts away from `ADVERSARIAL_QA` to the new enum\n- `AzureOpenAIScoreModelGrader` evaluator now supports `pass_threshold` parameter to set the minimum score required for a response to be considered passing. This allows users to define custom thresholds for evaluation results, enhancing flexibility in grading AI model responses.\n\n## 1.8.0 (2025-05-29)\n\n### Features Added\n\n- Introduces `AttackStrategy.MultiTurn` and `AttackStrategy.Crescendo` to `RedTeam`. These strategies attack the target of a `RedTeam` scan over the course of multi-turn conversations. \n\n### Bugs Fixed\n- AdversarialSimulator in `ADVERSARIAL_CONVERSATION` mode was broken. It is now fixed.\n\n## 1.7.0 (2025-05-12)\n\n### Bugs Fixed\n- azure-ai-evaluation failed with module not found [#40992](https://github.com/Azure/azure-sdk-for-python/issues/40992)\n\n## 1.6.0 (2025-05-07)\n\n### Features Added\n- New `<evaluator>.binary_aggregate` field added to evaluation result metrics. This field contains the aggregated binary evaluation results for each evaluator, providing a summary of the evaluation outcomes.\n- Added support for Azure Open AI evaluation via 4 new 'grader' classes, which serve as wrappers around Azure Open AI grader configurations. These new grader objects can be supplied to the main `evaluate` method as if they were normal callable evaluators. The new classes are:\n    - AzureOpenAIGrader (general class for experienced users)\n    - AzureOpenAILabelGrader\n    - AzureOpenAIStringCheckGrader\n    - AzureOpenAITextSimilarityGrader\n\n### Breaking Changes\n- In the experimental RedTeam's scan method, the `data_only` param has been replaced with `skip_evals` and if you do not want data to be uploaded, use the `skip_upload` flag.\n\n### Bugs Fixed\n- Fixed error in `evaluate` where data fields could not contain numeric characters. Previously, a data file with schema:\n    ```\n    \"query1\": \"some query\", \"response\": \"some response\"\n    ```\n    throws error when passed into `evaluator_config` as `{\"evaluator_name\": {\"column_mapping\": {\"query\": \"${data.query1}\", \"response\": \"${data.response}\"}},}`.\n    Now, users may import data containing fields with numeric characters. \n\n\n## 1.5.0 (2025-04-04)\n\n### Features Added\n\n- New `RedTeam` agent functionality to assess the safety and resilience of AI systems against adversarial prompt attacks\n\n## 1.4.0 (2025-03-27)\n\n### Features Added\n- Enhanced binary evaluation results with customizable thresholds\n  - Added threshold support for QA and ContentSafety evaluators\n  - Evaluation results now include both the score and threshold values\n  - Configurable threshold parameter allows custom binary classification boundaries\n  - Default thresholds provided for backward compatibility\n  - Quality evaluators use \"higher is better\" scoring (score ≥ threshold is positive)\n  - Content safety evaluators use \"lower is better\" scoring (score ≤ threshold is positive)\n- New Built-in evaluator called CodeVulnerabilityEvaluator is added. \n  - It provides capabilities to identify the following code vulnerabilities.\n    - path-injection\n    - sql-injection\n    - code-injection\n    - stack-trace-exposure\n    - incomplete-url-substring-sanitization\n    - flask-debug\n    - clear-text-logging-sensitive-data\n    - incomplete-hostname-regexp\n    - server-side-unvalidated-url-redirection\n    - weak-cryptographic-algorithm\n    - full-ssrf\n    - bind-socket-all-network-interfaces\n    - client-side-unvalidated-url-redirection\n    - likely-bugs\n    - reflected-xss\n    - clear-text-storage-sensitive-data\n    - tarslip\n    - hardcoded-credentials\n    - insecure-randomness\n  - It also supports multiple coding languages such as (Python, Java, C++, C#, Go, Javascript, SQL)\n  \n- New Built-in evaluator called UngroundedAttributesEvaluator is added.\n  - It evaluates ungrounded inference of human attributes for a given query, response, and context for a single-turn evaluation only, \n  - where query represents the user query and response represents the AI system response given the provided context. \n \n  - Ungrounded Attributes checks for whether a response is first, ungrounded, and checks if it contains information about protected class \n  - or emotional state of a person.\n  \n  - It identifies the following attributes:\n    \n    - emotional_state\n    - protected_class\n    - groundedness\n- New Built-in evaluators for Agent Evaluation (Preview)\n  - IntentResolutionEvaluator - Evaluates the intent resolution of an agent's response to a user query.\n  - ResponseCompletenessEvaluator - Evaluates the response completeness of an agent's response to a user query.\n  - TaskAdherenceEvaluator - Evaluates the task adherence of an agent's response to a user query.\n  - ToolCallAccuracyEvaluator - Evaluates the accuracy of tool calls made by an agent in response to a user query.\n\n### Bugs Fixed\n- Fixed error in `GroundednessProEvaluator` when handling non-numeric values like \"n/a\" returned from the service.\n- Uploading local evaluation results from `evaluate` with the same run name will no longer result in each online run sharing (and bashing) result files.\n\n## 1.3.0 (2025-02-28)\n\n### Breaking Changes\n- Multimodal specific evaluators `ContentSafetyMultimodalEvaluator`, `ViolenceMultimodalEvaluator`, `SexualMultimodalEvaluator`, `SelfHarmMultimodalEvaluator`, `HateUnfairnessMultimodalEvaluator` and `ProtectedMaterialMultimodalEvaluator` has been removed. Please use `ContentSafetyEvaluator`, `ViolenceEvaluator`, `SexualEvaluator`, `SelfHarmEvaluator`, `HateUnfairnessEvaluator` and `ProtectedMaterialEvaluator` instead.\n- Metric name in ProtectedMaterialEvaluator's output is changed from `protected_material.fictional_characters_label` to `protected_material.fictional_characters_defect_rate`. It's now consistent with other evaluator's metric names (ending with `_defect_rate`).\n\n## 1.2.0 (2025-01-27)\n\n### Features Added\n- CSV files are now supported as data file inputs with `evaluate()` API. The CSV file should have a header row with column names that match the `data` and `target` fields in the `evaluate()` method and the filename should be passed as the `data` parameter. Column name 'Conversation' in CSV file is not fully supported yet.  \n\n### Breaking Changes\n- `ViolenceMultimodalEvaluator`, `SexualMultimodalEvaluator`, `SelfHarmMultimodalEvaluator`, `HateUnfairnessMultimodalEvaluator` and `ProtectedMaterialMultimodalEvaluator` will be removed in next release. \n\n### Bugs Fixed\n- Removed `[remote]` extra. This is no longer needed when tracking results in Azure AI Studio.\n- Fixed `AttributeError: 'NoneType' object has no attribute 'get'` while running simulator with 1000+ results\n- Fixed the non adversarial simulator to run in task-free mode\n- Content safety evaluators (violence, self harm, sexual, hate/unfairness) return the maximum result as the\n  main score when aggregating per-turn evaluations from a conversation into an overall\n  evaluation score. Other conversation-capable evaluators still default to a mean for aggregation.\n- Fixed bug in non adversarial simulator sample where `tasks` undefined\n\n### Other Changes\n- Changed minimum required python version to use this package from 3.8 to 3.9\n- Stop dependency on the local promptflow service. No promptflow service will automatically start when running evaluation.\n- Evaluators internally allow for custom aggregation. However, this causes serialization failures if evaluated while the\n  environment variable `AI_EVALS_BATCH_USE_ASYNC` is set to false.\n\n## 1.1.0 (2024-12-12)\n\n### Features Added\n- Added image support in `ContentSafetyEvaluator`, `ViolenceEvaluator`, `SexualEvaluator`, `SelfHarmEvaluator`, `HateUnfairnessEvaluator` and `ProtectedMaterialEvaluator`. Provide image URLs or base64 encoded images in `conversation` input for image evaluation. See below for an example:\n\n```python\nevaluator = ContentSafetyEvaluator(credential=azure_cred, azure_ai_project=project_scope)\nconversation = {\n    \"messages\": [\n        {\n            \"role\": \"system\",\n            \"content\": [\n                {\"type\": \"text\", \"text\": \"You are an AI assistant that understands images.\"}\n            ],\n        },\n        {\n            \"role\": \"user\",\n            \"content\": [\n                {\"type\": \"text\", \"text\": \"Can you describe this image?\"},\n                {\n                    \"type\": \"image_url\",\n                    \"image_url\": {\n                        \"url\": \"https://cdn.britannica.com/68/178268-050-5B4E7FB6/Tom-Cruise-2013.jpg\"\n                    },\n                },\n            ],\n        },\n        {\n            \"role\": \"assistant\",\n            \"content\": [\n                {\n                    \"type\": \"text\",\n                    \"text\": \"The image shows a man with short brown hair smiling, wearing a dark-colored shirt.\",\n                }\n            ],\n        },\n    ]\n}\nprint(\"Calling Content Safety Evaluator for multi-modal\")\nscore = evaluator(conversation=conversation)\n```\n\n- Please switch to generic evaluators for image evaluations as mentioned above. `ContentSafetyMultimodalEvaluator`, `ContentSafetyMultimodalEvaluatorBase`, `ViolenceMultimodalEvaluator`, `SexualMultimodalEvaluator`, `SelfHarmMultimodalEvaluator`, `HateUnfairnessMultimodalEvaluator` and `ProtectedMaterialMultimodalEvaluator` will be deprecated in the next release.\n\n### Bugs Fixed\n- Removed `[remote]` extra. This is no longer needed when tracking results in Azure AI Foundry portal.\n- Fixed `AttributeError: 'NoneType' object has no attribute 'get'` while running simulator with 1000+ results\n\n## 1.0.1 (2024-11-15)\n\n### Bugs Fixed\n- Removing `azure-ai-inference` as dependency.\n- Fixed `AttributeError: 'NoneType' object has no attribute 'get'` while running simulator with 1000+ results\n\n## 1.0.0 (2024-11-13)\n\n### Breaking Changes\n- The `parallel` parameter has been removed from composite evaluators: `QAEvaluator`, `ContentSafetyChatEvaluator`, and `ContentSafetyMultimodalEvaluator`. To control evaluator parallelism, you can now use the `_parallel` keyword argument, though please note that this private parameter may change in the future.\n- Parameters `query_response_generating_prompty_kwargs` and `user_simulator_prompty_kwargs` have been renamed to `query_response_generating_prompty_options` and `user_simulator_prompty_options` in the Simulator's __call__ method.\n\n### Bugs Fixed\n- Fixed an issue where the `output_path` parameter in the `evaluate` API did not support relative path.\n- Output of adversarial simulators are of type `JsonLineList` and the helper function `to_eval_qr_json_lines` now outputs context from both user and assistant turns along with `category` if it exists in the conversation\n- Fixed an issue where during long-running simulations, API token expires causing \"Forbidden\" error. Instead, users can now set an environment variable `AZURE_TOKEN_REFRESH_INTERVAL` to refresh the token more frequently to prevent expiration and ensure continuous operation of the simulation.\n- Fixed an issue with the `ContentSafetyEvaluator` that caused parallel execution of sub-evaluators to fail. Parallel execution is now enabled by default again, but can still be disabled via the '_parallel' boolean keyword argument during class initialization.\n- Fix `evaluate` function not producing aggregated metrics if ANY values to be aggregated were None, NaN, or\notherwise difficult to process. Such values are ignored fully, so the aggregated metric of `[1, 2, 3, NaN]`\nwould be 2, not 1.5.\n\n### Other Changes\n- Refined error messages for serviced-based evaluators and simulators.\n- Tracing has been disabled due to Cosmos DB initialization issue.\n- Introduced environment variable `AI_EVALS_DISABLE_EXPERIMENTAL_WARNING` to disable the warning message for experimental features.\n- Changed the randomization pattern for `AdversarialSimulator` such that there is an almost equal number of Adversarial harm categories (e.g. Hate + Unfairness, Self-Harm, Violence, Sex) represented in the  `AdversarialSimulator` outputs. Previously, for 200 `max_simulation_results` a user might see 140 results belonging to the 'Hate + Unfairness' category and 40 results belonging to the 'Self-Harm' category. Now, user will see 50 results for each of Hate + Unfairness, Self-Harm, Violence, and Sex.\n- For the `DirectAttackSimulator`, the prompt templates used to generate simulated outputs for each Adversarial harm category will no longer be in a randomized order by default. To override this behavior, pass `randomize_order=True` when you call the `DirectAttackSimulator`, for example:\n```python\nadversarial_simulator = DirectAttackSimulator(azure_ai_project=azure_ai_project, credential=DefaultAzureCredential())\noutputs = asyncio.run(\n    adversarial_simulator(\n        scenario=scenario,\n        target=callback,\n        randomize_order=True\n    )\n)\n```\n\n## 1.0.0b5 (2024-10-28)\n\n### Features Added\n- Added `GroundednessProEvaluator`, which is a service-based evaluator for determining response groundedness.\n- Groundedness detection in Non Adversarial Simulator via query/context pairs\n```python\nimport importlib.resources as pkg_resources\npackage = \"azure.ai.evaluation.simulator._data_sources\"\nresource_name = \"grounding.json\"\ncustom_simulator = Simulator(model_config=model_config)\nconversation_turns = []\nwith pkg_resources.path(package, resource_name) as grounding_file:\n    with open(grounding_file, \"r\") as file:\n        data = json.load(file)\nfor item in data:\n    conversation_turns.append([item])\noutputs = asyncio.run(custom_simulator(\n    target=callback,\n    conversation_turns=conversation_turns,\n    max_conversation_turns=1,\n))\n```\n- Adding evaluator for multimodal use cases\n\n### Breaking Changes\n- Renamed environment variable `PF_EVALS_BATCH_USE_ASYNC` to `AI_EVALS_BATCH_USE_ASYNC`.\n- `RetrievalEvaluator` now requires a `context` input in addition to `query` in single-turn evaluation.\n- `RelevanceEvaluator` no longer takes `context` as an input. It now only takes `query` and `response` in single-turn evaluation.\n- `FluencyEvaluator` no longer takes `query` as an input. It now only takes `response` in single-turn evaluation.\n- AdversarialScenario enum does not include `ADVERSARIAL_INDIRECT_JAILBREAK`, invoking IndirectJailbreak or XPIA should be done with `IndirectAttackSimulator`\n- Outputs of `Simulator` and `AdversarialSimulator` previously had `to_eval_qa_json_lines` and now has `to_eval_qr_json_lines`. Where `to_eval_qa_json_lines` had:\n```json\n{\"question\": <user_message>, \"answer\": <assistant_message>}\n```\n`to_eval_qr_json_lines` now has:\n```json\n{\"query\": <user_message>, \"response\": assistant_message}\n```\n\n### Bugs Fixed\n- Non adversarial simulator works with `gpt-4o` models using the `json_schema` response format\n- Fixed an issue where the `evaluate` API would fail with \"[WinError 32] The process cannot access the file because it is being used by another process\" when venv folder and target function file are in the same directory.\n- Fix evaluate API failure when `trace.destination` is set to `none`\n- Non adversarial simulator now accepts context from the callback\n\n### Other Changes\n- Improved error messages for the `evaluate` API by enhancing the validation of input parameters. This update provides more detailed and actionable error descriptions.\n- `GroundednessEvaluator` now supports `query` as an optional input in single-turn evaluation. If `query` is provided, a different prompt template will be used for the evaluation.\n- To align with our support of a diverse set of models, the following evaluators will now have a new key in their result output without the `gpt_` prefix. To maintain backwards compatibility, the old key with the `gpt_` prefix will still be present in the output; however, it is recommended to use the new key moving forward as the old key will be deprecated in the future.\n  - `CoherenceEvaluator`\n  - `RelevanceEvaluator`\n  - `FluencyEvaluator`\n  - `GroundednessEvaluator`\n  - `SimilarityEvaluator`\n  - `RetrievalEvaluator`\n- The following evaluators will now have a new key in their result output including LLM reasoning behind the score. The new key will follow the pattern \"<metric_name>_reason\". The reasoning is the result of a more detailed prompt template being used to generate the LLM response. Note that this requires the maximum number of tokens used to run these evaluators to be increased.\n\n    | Evaluator | New `max_token` for Generation |\n    | --- | --- |\n    | `CoherenceEvaluator` | 800 |\n    | `RelevanceEvaluator` | 800 |\n    | `FluencyEvaluator` | 800 |\n    | `GroundednessEvaluator` | 800 |\n    | `RetrievalEvaluator` | 1600 |\n- Improved the error message for storage access permission issues to provide clearer guidance for users.\n\n## 1.0.0b4 (2024-10-16)\n\n### Breaking Changes\n\n- Removed `numpy` dependency. All NaN values returned by the SDK have been changed to from `numpy.nan` to `math.nan`.\n- `credential` is now required to be passed in for all content safety evaluators and `ProtectedMaterialsEvaluator`. `DefaultAzureCredential` will no longer be chosen if a credential is not passed.\n- Changed package extra name from \"pf-azure\" to \"remote\".\n\n### Bugs Fixed\n- Adversarial Conversation simulations would fail with `Forbidden`. Added logic to re-fetch token in the exponential retry logic to retrive RAI Service response.\n- Fixed an issue where the Evaluate API did not fail due to missing inputs when the target did not return columns required by the evaluators.\n\n### Other Changes\n- Enhance the error message to provide clearer instruction when required packages for the remote tracking feature are missing.\n- Print the per-evaluator run summary at the end of the Evaluate API call to make troubleshooting row-level failures easier.\n\n## 1.0.0b3 (2024-10-01)\n\n### Features Added\n\n- Added `type` field to `AzureOpenAIModelConfiguration` and `OpenAIModelConfiguration`\n- The following evaluators now support `conversation` as an alternative input to their usual single-turn inputs:\n  - `ViolenceEvaluator`\n  - `SexualEvaluator`\n  - `SelfHarmEvaluator`\n  - `HateUnfairnessEvaluator`\n  - `ProtectedMaterialEvaluator`\n  - `IndirectAttackEvaluator`\n  - `CoherenceEvaluator`\n  - `RelevanceEvaluator`\n  - `FluencyEvaluator`\n  - `GroundednessEvaluator`\n- Surfaced `RetrievalScoreEvaluator`, formally an internal part of `ChatEvaluator` as a standalone conversation-only evaluator.\n\n### Breaking Changes\n\n- Removed `ContentSafetyChatEvaluator` and `ChatEvaluator`\n- The `evaluator_config` parameter of `evaluate` now maps in evaluator name to a dictionary `EvaluatorConfig`, which is a `TypedDict`. The\n`column_mapping` between `data` or `target` and evaluator field names should now be specified inside this new dictionary:\n\nBefore:\n```python\nevaluate(\n    ...,\n    evaluator_config={\n        \"hate_unfairness\": {\n            \"query\": \"${data.question}\",\n            \"response\": \"${data.answer}\",\n        }\n    },\n    ...\n)\n```\n\nAfter\n```python\nevaluate(\n    ...,\n    evaluator_config={\n        \"hate_unfairness\": {\n            \"column_mapping\": {\n                \"query\": \"${data.question}\",\n                \"response\": \"${data.answer}\",\n             }\n        }\n    },\n    ...\n)\n```\n\n- Simulator now requires a model configuration to call the prompty instead of an Azure AI project scope. This enables the usage of simulator with Entra ID based auth.\nBefore:\n```python\nazure_ai_project = {\n    \"subscription_id\": os.environ.get(\"AZURE_SUBSCRIPTION_ID\"),\n    \"resource_group_name\": os.environ.get(\"RESOURCE_GROUP\"),\n    \"project_name\": os.environ.get(\"PROJECT_NAME\"),\n}\nsim = Simulator(azure_ai_project=azure_ai_project, credentails=DefaultAzureCredentials())\n```\nAfter:\n```python\nmodel_config = {\n    \"azure_endpoint\": os.environ.get(\"AZURE_OPENAI_ENDPOINT\"),\n    \"azure_deployment\": os.environ.get(\"AZURE_DEPLOYMENT\"),\n}\nsim = Simulator(model_config=model_config)\n```\nIf `api_key` is not included in the `model_config`, the prompty runtime in `promptflow-core` will pick up `DefaultAzureCredential`.\n\n### Bugs Fixed\n\n- Fixed issue where Entra ID authentication was not working with `AzureOpenAIModelConfiguration`\n\n## 1.0.0b2 (2024-09-24)\n\n### Breaking Changes\n\n- `data` and `evaluators` are now required keywords in `evaluate`.\n\n## 1.0.0b1 (2024-09-20)\n\n### Breaking Changes\n\n- The `synthetic` namespace has been renamed to `simulator`, and sub-namespaces under this module have been removed\n- The `evaluate` and `evaluators` namespaces have been removed, and everything previously exposed in those modules has been added to the root namespace `azure.ai.evaluation`\n- The parameter name `project_scope` in content safety evaluators have been renamed to `azure_ai_project` for consistency with evaluate API and simulators.\n- Model configurations classes are now of type `TypedDict` and are exposed in the `azure.ai.evaluation` module instead of coming from `promptflow.core`.\n- Updated the parameter names for `question` and `answer` in built-in evaluators to more generic terms: `query` and `response`.\n\n### Features Added\n\n- First preview\n- This package is port of `promptflow-evals`. New features will be added only to this package moving forward.\n- Added a `TypedDict` for `AzureAIProject` that allows for better intellisense and type checking when passing in project information\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": "https://github.com/Azure/azure-sdk-for-python",
+    "keywords": "azure, azure sdk",
+    "license": "MIT License",
+    "license_expression": null,
+    "license_files": null,
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "azure-ai-evaluation",
+    "package_url": "https://pypi.org/project/azure-ai-evaluation/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/azure-ai-evaluation/",
+    "project_urls": {
+      "Bug Reports": "https://github.com/Azure/azure-sdk-for-python/issues",
+      "Homepage": "https://github.com/Azure/azure-sdk-for-python",
+      "Source": "https://github.com/Azure/azure-sdk-for-python"
+    },
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/azure-ai-evaluation/1.14.0/",
+    "requires_dist": [
+      "pyjwt>=2.8.0",
+      "azure-identity>=1.19.0",
+      "azure-core>=1.31.0",
+      "nltk>=3.9.1",
+      "azure-storage-blob>=12.19.0",
+      "httpx>=0.27.2",
+      "pandas<3.0.0,>=2.1.2; python_version < \"3.13\"",
+      "pandas<3.0.0,>=2.2.3; python_version == \"3.13\"",
+      "pandas<3.0.0,>=2.3.3; python_version >= \"3.14\"",
+      "openai>=1.108.0",
+      "ruamel.yaml<1.0.0,>=0.17.10",
+      "msrest>=0.6.21",
+      "Jinja2>=3.1.6",
+      "aiohttp>=3.0",
+      "pyrit==0.8.1; python_version >= \"3.10\" and extra == \"redteam\"",
+      "duckdb==1.3.2; python_version >= \"3.10\" and extra == \"redteam\"",
+      "opentelemetry-sdk>=1.17.0; extra == \"opentelemetry\"",
+      "azure-monitor-opentelemetry-exporter>=1.0.0b17; extra == \"opentelemetry\""
+    ],
+    "requires_python": ">=3.9",
+    "summary": "Microsoft Azure Evaluation Library for Python",
+    "version": "1.14.0",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 33461529,
+  "releases": {
+    "0.0.0b0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "a91bd339406cdbe96037de84a1b05a3c0eae3f1d9b584f810f9ee3c32cad6451",
+          "md5": "15647aa0b162ff9913b2eb28d80b5da2",
+          "sha256": "94375e72147ef99659f346964905fa4cf2aff224b611ceae3820e5f40b6eb106"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-0.0.0b0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "15647aa0b162ff9913b2eb28d80b5da2",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": null,
+        "size": 1181,
+        "upload_time": "2024-08-26T18:51:34",
+        "upload_time_iso_8601": "2024-08-26T18:51:34.495968Z",
+        "url": "https://files.pythonhosted.org/packages/a9/1b/d339406cdbe96037de84a1b05a3c0eae3f1d9b584f810f9ee3c32cad6451/azure_ai_evaluation-0.0.0b0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "e5edb09c4421d9c3712cf21de68e9678b93efbb58b3d6de80b00dc0a01266c1b",
+          "md5": "7ccb17216f44bf8ab4f2ec4c47988985",
+          "sha256": "42eca6fb9291b1921b23bbd3ce48e90154897e43a6606ed5715389bb6b9467a7"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-0.0.0b0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "7ccb17216f44bf8ab4f2ec4c47988985",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 854,
+        "upload_time": "2024-08-26T18:51:35",
+        "upload_time_iso_8601": "2024-08-26T18:51:35.569599Z",
+        "url": "https://files.pythonhosted.org/packages/e5/ed/b09c4421d9c3712cf21de68e9678b93efbb58b3d6de80b00dc0a01266c1b/azure_ai_evaluation-0.0.0b0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fcaf50dd3364954458991b02ebcf511a9b5225bd3b6b012d3dfb3f7b9bacad8d",
+          "md5": "3fbf2ab566558a02bc0d9b58c91239ae",
+          "sha256": "3b9dc2b0ea76232b8458d9470274784a0451fc503375211244617ac05f92b256"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "3fbf2ab566558a02bc0d9b58c91239ae",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 573272,
+        "upload_time": "2024-11-13T22:35:19",
+        "upload_time_iso_8601": "2024-11-13T22:35:19.278679Z",
+        "url": "https://files.pythonhosted.org/packages/fc/af/50dd3364954458991b02ebcf511a9b5225bd3b6b012d3dfb3f7b9bacad8d/azure_ai_evaluation-1.0.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ce571759b5c37dc898f9b8b3b26af9c3172a3d385201d716dc59e0915172d891",
+          "md5": "9df4b0ed9ae2fce6f18b86282f0ede1e",
+          "sha256": "b67119e7fd0cb749785a9b2e6dcf4add9e983a1e05f2a55df403e529cb625c1d"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9df4b0ed9ae2fce6f18b86282f0ede1e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 570427,
+        "upload_time": "2024-11-13T22:35:17",
+        "upload_time_iso_8601": "2024-11-13T22:35:17.700543Z",
+        "url": "https://files.pythonhosted.org/packages/ce/57/1759b5c37dc898f9b8b3b26af9c3172a3d385201d716dc59e0915172d891/azure_ai_evaluation-1.0.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "047a3598e1f8b4ca775a44c1e7cb7d47f94280df4d831d028a03eb84204a3902",
+          "md5": "63276a490ee157c1bc8e1d98bed4bb38",
+          "sha256": "ff092ce4c497216adb4c924b1223f20308b97bbcc5db6e26f626496a664a823c"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.0b1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "63276a490ee157c1bc8e1d98bed4bb38",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 143412,
+        "upload_time": "2024-09-20T21:12:10",
+        "upload_time_iso_8601": "2024-09-20T21:12:10.278410Z",
+        "url": "https://files.pythonhosted.org/packages/04/7a/3598e1f8b4ca775a44c1e7cb7d47f94280df4d831d028a03eb84204a3902/azure_ai_evaluation-1.0.0b1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "552466d1a66c97d9d9bd9f44660a3e32afadfbeed67148285c6e16b6607b57f5",
+          "md5": "6f22cceb3256ce46adc9a8739b3f6638",
+          "sha256": "ca8facac4edb4693404ecdd866b5363a162848cd81e3079bb349358db8bf5b45"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.0b1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "6f22cceb3256ce46adc9a8739b3f6638",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 131958,
+        "upload_time": "2024-09-20T21:12:08",
+        "upload_time_iso_8601": "2024-09-20T21:12:08.974716Z",
+        "url": "https://files.pythonhosted.org/packages/55/24/66d1a66c97d9d9bd9f44660a3e32afadfbeed67148285c6e16b6607b57f5/azure_ai_evaluation-1.0.0b1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0e5ef4439b7757fdb418f81b86d3a78bb96f594991f634c230fedcb5bf6c2f64",
+          "md5": "6ca7ae0ba5ac74a626b4cdccb5477eb6",
+          "sha256": "03ceb9a476941ee1261bb330765fecd93280d789e4a1011b153262b701d7c3c8"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.0b2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "6ca7ae0ba5ac74a626b4cdccb5477eb6",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 147891,
+        "upload_time": "2024-09-24T22:53:07",
+        "upload_time_iso_8601": "2024-09-24T22:53:07.384276Z",
+        "url": "https://files.pythonhosted.org/packages/0e/5e/f4439b7757fdb418f81b86d3a78bb96f594991f634c230fedcb5bf6c2f64/azure_ai_evaluation-1.0.0b2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "131f1d0ab1c979191f4d7c5cb4ca2e08f15cb4aa9ac8b09bc6ff1895cd71a21c",
+          "md5": "421006c75c20f1bd58e23fdcee0f1a11",
+          "sha256": "47e0da4b0ae2fd30c6e585b94aa9fbdae4894e2aea022fad7409e28c580304c7"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.0b2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "421006c75c20f1bd58e23fdcee0f1a11",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 138117,
+        "upload_time": "2024-09-24T22:53:06",
+        "upload_time_iso_8601": "2024-09-24T22:53:06.077447Z",
+        "url": "https://files.pythonhosted.org/packages/13/1f/1d0ab1c979191f4d7c5cb4ca2e08f15cb4aa9ac8b09bc6ff1895cd71a21c/azure_ai_evaluation-1.0.0b2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fda95b712d4fea341e778384d7466fd052ff11e040c50162c54961bb970f9e5e",
+          "md5": "5a2d19c6b25f5db6b80a72a0594e035e",
+          "sha256": "bcc26108e8bf142035e1834c3d78e7200a1a767763d3a9bd2040e1331563862e"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.0b3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5a2d19c6b25f5db6b80a72a0594e035e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 144767,
+        "upload_time": "2024-10-01T22:51:04",
+        "upload_time_iso_8601": "2024-10-01T22:51:04.477921Z",
+        "url": "https://files.pythonhosted.org/packages/fd/a9/5b712d4fea341e778384d7466fd052ff11e040c50162c54961bb970f9e5e/azure_ai_evaluation-1.0.0b3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "41f1a7ab790d10e9aedd263ee5a840e6de8f12de98d3cb521fb061d831b7f89c",
+          "md5": "66333d52f0af945ab198a74db50f2850",
+          "sha256": "84d15061f37068fbcdacc943d07fa5f3b1dd4ebeaa64265cb6d1ed0fcab21055"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.0b3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "66333d52f0af945ab198a74db50f2850",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 141999,
+        "upload_time": "2024-10-01T22:51:02",
+        "upload_time_iso_8601": "2024-10-01T22:51:02.924487Z",
+        "url": "https://files.pythonhosted.org/packages/41/f1/a7ab790d10e9aedd263ee5a840e6de8f12de98d3cb521fb061d831b7f89c/azure_ai_evaluation-1.0.0b3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e70d07441f8dec920364f5c6fe747a5ed74cc4489c340b3cacbc5963d348f71c",
+          "md5": "727a4514d3fe442a9557c1ddd5fb2a81",
+          "sha256": "49206ec1f0a68166e040180ffed32b4005be4f451cd1aea3fdac23be9468eeae"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.0b4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "727a4514d3fe442a9557c1ddd5fb2a81",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 159373,
+        "upload_time": "2024-10-16T20:59:49",
+        "upload_time_iso_8601": "2024-10-16T20:59:49.022632Z",
+        "url": "https://files.pythonhosted.org/packages/e7/0d/07441f8dec920364f5c6fe747a5ed74cc4489c340b3cacbc5963d348f71c/azure_ai_evaluation-1.0.0b4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "194c9813ca6f1f226b592f3e07d8bf6ece341d17d3103def83f09aa41dcb9972",
+          "md5": "6aa1e2542781f093c4a64df1404ad0c1",
+          "sha256": "460c19c55ab1b002ca05991e6711006292f05e3c52b9e4c851aed59aec795024"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.0b4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "6aa1e2542781f093c4a64df1404ad0c1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 154764,
+        "upload_time": "2024-10-16T20:59:45",
+        "upload_time_iso_8601": "2024-10-16T20:59:45.681406Z",
+        "url": "https://files.pythonhosted.org/packages/19/4c/9813ca6f1f226b592f3e07d8bf6ece341d17d3103def83f09aa41dcb9972/azure_ai_evaluation-1.0.0b4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7e692d76017524a59d10f92e2970ba49a1fbeab9f46e8edfec41b203ed3cac2c",
+          "md5": "d60908c670ea02691758ca5f3e86c32d",
+          "sha256": "5e65d4669f70d1fafbb7dcf2153e49e556315ce0a20d4ff843bd03ed20443cc1"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.0b5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "d60908c670ea02691758ca5f3e86c32d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 565768,
+        "upload_time": "2024-10-29T01:18:41",
+        "upload_time_iso_8601": "2024-10-29T01:18:41.761810Z",
+        "url": "https://files.pythonhosted.org/packages/7e/69/2d76017524a59d10f92e2970ba49a1fbeab9f46e8edfec41b203ed3cac2c/azure_ai_evaluation-1.0.0b5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4a0c28e0eecc52e771b0ba1f635fe907d1b03cbc6f36feff948e3b60af37056b",
+          "md5": "ba641c8ec33920a96abcd9a70e8ad17d",
+          "sha256": "70083ed55f448bf11ea5fc9d725a050b1b820cd12b9b7f6b0ad915be117e9f32"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.0b5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "ba641c8ec33920a96abcd9a70e8ad17d",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 557914,
+        "upload_time": "2024-10-29T01:18:39",
+        "upload_time_iso_8601": "2024-10-29T01:18:39.449516Z",
+        "url": "https://files.pythonhosted.org/packages/4a/0c/28e0eecc52e771b0ba1f635fe907d1b03cbc6f36feff948e3b60af37056b/azure_ai_evaluation-1.0.0b5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f0153a144b1791ea2ac299f7d87c2f3af1548f0e9c7d9f0019fa8c1afb6c70f3",
+          "md5": "dd7d5d9ad19e87ab051a378852783c8b",
+          "sha256": "bb766aa5302ef5af068fc85a9f927310d931e6d3f2aa67b753f6aba6be92aa80"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "dd7d5d9ad19e87ab051a378852783c8b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 573332,
+        "upload_time": "2024-11-15T22:22:52",
+        "upload_time_iso_8601": "2024-11-15T22:22:52.478611Z",
+        "url": "https://files.pythonhosted.org/packages/f0/15/3a144b1791ea2ac299f7d87c2f3af1548f0e9c7d9f0019fa8c1afb6c70f3/azure_ai_evaluation-1.0.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ed1485f137f03f2eb9da1a0c5119429223e734f204cc4e8a9d382b6e01286974",
+          "md5": "4bab9a8ecd6287f80023c74b2a18e491",
+          "sha256": "07399b3b1fd7dd4d9b810ef09f31972231b3f07d6dd506793b7de6ed0ffa5b53"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.0.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4bab9a8ecd6287f80023c74b2a18e491",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 570516,
+        "upload_time": "2024-11-15T22:22:50",
+        "upload_time_iso_8601": "2024-11-15T22:22:50.446790Z",
+        "url": "https://files.pythonhosted.org/packages/ed/14/85f137f03f2eb9da1a0c5119429223e734f204cc4e8a9d382b6e01286974/azure_ai_evaluation-1.0.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dd7b27737aaeddc58fbf12bd2c21439a39d2de2a398bc939e6b60a7858851ce7",
+          "md5": "bc94cc837c282d45695332d4f3e3a923",
+          "sha256": "88cf0840f5279cf695265c83d7332fa5d272b61b92ca90a51711dee9937b4113"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.1.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "bc94cc837c282d45695332d4f3e3a923",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 582466,
+        "upload_time": "2024-12-13T03:40:47",
+        "upload_time_iso_8601": "2024-12-13T03:40:47.094150Z",
+        "url": "https://files.pythonhosted.org/packages/dd/7b/27737aaeddc58fbf12bd2c21439a39d2de2a398bc939e6b60a7858851ce7/azure_ai_evaluation-1.1.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c23fb87945f62468d4de0ed994a14d3f8bae17d8b48a8c0cda7ca11f40b6b0e5",
+          "md5": "6dd19779665223529ef17dba16ac1f8b",
+          "sha256": "4fa6660fff59fab1281d227b30163c506f73d8d24508013787a28036aecb85b1"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "6dd19779665223529ef17dba16ac1f8b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 585453,
+        "upload_time": "2024-12-13T03:40:45",
+        "upload_time_iso_8601": "2024-12-13T03:40:45.222758Z",
+        "url": "https://files.pythonhosted.org/packages/c2/3f/b87945f62468d4de0ed994a14d3f8bae17d8b48a8c0cda7ca11f40b6b0e5/azure_ai_evaluation-1.1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.10.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d638a0ed945934833c0b3a679611351be0f1e7c8667af92a58a43da2ece512e5",
+          "md5": "f2b2276b15de05f8b1f8321b77724c95",
+          "sha256": "05bf98b29d8d0218180725d0db41f5a4d8fd394eceaacb87c79f9bca503206a9"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.10.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "f2b2276b15de05f8b1f8321b77724c95",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1000093,
+        "upload_time": "2025-07-31T23:46:32",
+        "upload_time_iso_8601": "2025-07-31T23:46:32.970258Z",
+        "url": "https://files.pythonhosted.org/packages/d6/38/a0ed945934833c0b3a679611351be0f1e7c8667af92a58a43da2ece512e5/azure_ai_evaluation-1.10.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f56e018e0bc3d7368fc6379373939d3ef29da75755e998545e67c660ad8efadd",
+          "md5": "63713123d23e3be4f11f5b1692983592",
+          "sha256": "58bdf2d2be9e2b94a881026b006104f64654bbe61dc101bff84c2d9fa8c575a2"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.10.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "63713123d23e3be4f11f5b1692983592",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 1058944,
+        "upload_time": "2025-07-31T23:46:31",
+        "upload_time_iso_8601": "2025-07-31T23:46:31.021624Z",
+        "url": "https://files.pythonhosted.org/packages/f5/6e/018e0bc3d7368fc6379373939d3ef29da75755e998545e67c660ad8efadd/azure_ai_evaluation-1.10.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.11.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "13fd477ed56cf10514b539c2de594f6179b7ecd1790728f85f23d26221d93c43",
+          "md5": "8fce87dc4049125aca981bb1fad5253e",
+          "sha256": "b357964dbb0f22de0d9281a75e21493b1ad807469572bc9630d47c6f91196f26"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.11.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "8fce87dc4049125aca981bb1fad5253e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1017876,
+        "upload_time": "2025-09-03T21:02:45",
+        "upload_time_iso_8601": "2025-09-03T21:02:45.359680Z",
+        "url": "https://files.pythonhosted.org/packages/13/fd/477ed56cf10514b539c2de594f6179b7ecd1790728f85f23d26221d93c43/azure_ai_evaluation-1.11.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9fb7586f18237fbb7e13d1dd53fb27fb668ade0f5a7e133636c61fc9a2d81939",
+          "md5": "3c6cb1a4c8a3f37e1aed53af20f2541f",
+          "sha256": "4cfaefd151deef1ef4c9021eaee9352d8817e5d2c9a654de2ff83106f21b47f8"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.11.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "3c6cb1a4c8a3f37e1aed53af20f2541f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 1087165,
+        "upload_time": "2025-09-03T21:02:43",
+        "upload_time_iso_8601": "2025-09-03T21:02:43.812291Z",
+        "url": "https://files.pythonhosted.org/packages/9f/b7/586f18237fbb7e13d1dd53fb27fb668ade0f5a7e133636c61fc9a2d81939/azure_ai_evaluation-1.11.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.11.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "60c36ffeb59e2a03a9fd1bd8a060bbeb79edcbd66da302981ab0952f9dd6c11f",
+          "md5": "8a65d9f5bcc64353643aa9cf7ec35374",
+          "sha256": "b2341c1b3662136f662f19d8d473a9afff0952d9cfab5db822bc4bb67ce05cd5"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.11.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "8a65d9f5bcc64353643aa9cf7ec35374",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1018156,
+        "upload_time": "2025-09-19T16:30:38",
+        "upload_time_iso_8601": "2025-09-19T16:30:38.720056Z",
+        "url": "https://files.pythonhosted.org/packages/60/c3/6ffeb59e2a03a9fd1bd8a060bbeb79edcbd66da302981ab0952f9dd6c11f/azure_ai_evaluation-1.11.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e96e56aaaf424ed2ef7ba7849f5e23a9081a52727fa2a00ddd6685fd5fee6213",
+          "md5": "eace730eee1bcb92f257e5494903f3a1",
+          "sha256": "9519372ac3102d22a13b9271b3e37d329fd940a300cde6b8ab2917559013dc05"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.11.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "eace730eee1bcb92f257e5494903f3a1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 1087633,
+        "upload_time": "2025-09-19T16:30:37",
+        "upload_time_iso_8601": "2025-09-19T16:30:37.054611Z",
+        "url": "https://files.pythonhosted.org/packages/e9/6e/56aaaf424ed2ef7ba7849f5e23a9081a52727fa2a00ddd6685fd5fee6213/azure_ai_evaluation-1.11.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.11.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fa45017b33bde41a9c80c173591203be5201d6c00a452a6244535745eedb3f48",
+          "md5": "2aa3b9855693b63a5d8a902952d7bd66",
+          "sha256": "28335f3352f1e98eda3b48c4767a7c3e6f98197cade66d0eeb1af27c85b3ad95"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.11.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2aa3b9855693b63a5d8a902952d7bd66",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1019700,
+        "upload_time": "2025-10-10T00:29:31",
+        "upload_time_iso_8601": "2025-10-10T00:29:31.874180Z",
+        "url": "https://files.pythonhosted.org/packages/fa/45/017b33bde41a9c80c173591203be5201d6c00a452a6244535745eedb3f48/azure_ai_evaluation-1.11.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a0f4da5553c84099c0097135fcaf30c5ca828219db7831ae374998c6f30e45e8",
+          "md5": "ce3d678dd8814c211b0d53eb41440ac8",
+          "sha256": "816fe3231046361abd9159938b9f1714c13b23f470f4efd45d6ed5d0033e93ae"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.11.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "ce3d678dd8814c211b0d53eb41440ac8",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 1090060,
+        "upload_time": "2025-10-10T00:29:30",
+        "upload_time_iso_8601": "2025-10-10T00:29:30.270853Z",
+        "url": "https://files.pythonhosted.org/packages/a0/f4/da5553c84099c0097135fcaf30c5ca828219db7831ae374998c6f30e45e8/azure_ai_evaluation-1.11.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.12.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e209c21cf0e52fa3f067938e11b54fb5aab7c8eeb76b5b5206f0db11e5d21268",
+          "md5": "a6964c94df64e9bad202f4f28c079c66",
+          "sha256": "01f932a2ace194f5fd003681adf7d6a0f5062a30f7ca8862b994934da9ffcaab"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.12.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a6964c94df64e9bad202f4f28c079c66",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1042146,
+        "upload_time": "2025-10-02T17:10:17",
+        "upload_time_iso_8601": "2025-10-02T17:10:17.241913Z",
+        "url": "https://files.pythonhosted.org/packages/e2/09/c21cf0e52fa3f067938e11b54fb5aab7c8eeb76b5b5206f0db11e5d21268/azure_ai_evaluation-1.12.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1e7e5c520eaa31cfb440819f8e127ad1df0a219dbbf18e8a2ee9069ee6ef6ad5",
+          "md5": "0e523ca5dfae9321ecd56678220e680f",
+          "sha256": "c2046de267b7810fb218aca1e0b819419a82129a378fb35ed681cbeb264f59e0"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.12.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0e523ca5dfae9321ecd56678220e680f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 1114747,
+        "upload_time": "2025-10-02T17:10:15",
+        "upload_time_iso_8601": "2025-10-02T17:10:15.257605Z",
+        "url": "https://files.pythonhosted.org/packages/1e/7e/5c520eaa31cfb440819f8e127ad1df0a219dbbf18e8a2ee9069ee6ef6ad5/azure_ai_evaluation-1.12.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.13.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8cd33cb75ec811206ca08582ba3b4bc299c421812f3a5cc992d0bcfcd2e05cb0",
+          "md5": "a4494ff37db1c99410213bbd8d7101a5",
+          "sha256": "6d6dfa527d4ec75355a2181e58fa2e682018868f56def15d437e6b835789b6bb"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a4494ff37db1c99410213bbd8d7101a5",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1133752,
+        "upload_time": "2025-10-31T16:19:21",
+        "upload_time_iso_8601": "2025-10-31T16:19:21.540953Z",
+        "url": "https://files.pythonhosted.org/packages/8c/d3/3cb75ec811206ca08582ba3b4bc299c421812f3a5cc992d0bcfcd2e05cb0/azure_ai_evaluation-1.13.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "477e03a4121f8162e8d1f318d8aed77202e6401af5865279f10bc0d3a3dfac1a",
+          "md5": "1f348858614e7eaac8e7c4feec201598",
+          "sha256": "81738c59f1b304a88509c580781338ac5d64da53d9633aefdbbe939fef44de62"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "1f348858614e7eaac8e7c4feec201598",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 1214366,
+        "upload_time": "2025-10-31T16:19:19",
+        "upload_time_iso_8601": "2025-10-31T16:19:19.505166Z",
+        "url": "https://files.pythonhosted.org/packages/47/7e/03a4121f8162e8d1f318d8aed77202e6401af5865279f10bc0d3a3dfac1a/azure_ai_evaluation-1.13.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.13.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7f0bf085f8d0ac3ef5eaf2ec899e945c6d0362add8eac63990e35d9db6321145",
+          "md5": "672accead1182414185e256ac4e5cbe7",
+          "sha256": "fa5e807b549580e43a06ba4cf41e868b7be70e91f1d1a563990162712cb0b1d7"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "672accead1182414185e256ac4e5cbe7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1137325,
+        "upload_time": "2025-11-06T04:34:45",
+        "upload_time_iso_8601": "2025-11-06T04:34:45.891691Z",
+        "url": "https://files.pythonhosted.org/packages/7f/0b/f085f8d0ac3ef5eaf2ec899e945c6d0362add8eac63990e35d9db6321145/azure_ai_evaluation-1.13.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bb09a06d71dee811574ebcd1e1fb37c26aa3e1e85cabfd8b1a006c60c4735112",
+          "md5": "5c8a35e4efee8f29d369f18e74ffa275",
+          "sha256": "04a9ea196600cf0431f1eef6b83110a4275a7bf64f618738ab10aace73a5812c"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5c8a35e4efee8f29d369f18e74ffa275",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 1220141,
+        "upload_time": "2025-11-06T04:34:43",
+        "upload_time_iso_8601": "2025-11-06T04:34:43.612842Z",
+        "url": "https://files.pythonhosted.org/packages/bb/09/a06d71dee811574ebcd1e1fb37c26aa3e1e85cabfd8b1a006c60c4735112/azure_ai_evaluation-1.13.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.13.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "479a01c7a5475120eaf751f80f343a61afaaacf5dcadb4d44ea79b83a4d8ad89",
+          "md5": "fe4809cc1a7c2d18c504368738996076",
+          "sha256": "b710b84447a6f5f40ba78875e6e5a459e3a2fa582fb25a798c403e80a411fe29"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "fe4809cc1a7c2d18c504368738996076",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1138694,
+        "upload_time": "2025-11-07T19:43:23",
+        "upload_time_iso_8601": "2025-11-07T19:43:23.466904Z",
+        "url": "https://files.pythonhosted.org/packages/47/9a/01c7a5475120eaf751f80f343a61afaaacf5dcadb4d44ea79b83a4d8ad89/azure_ai_evaluation-1.13.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "033265f7dc03a3a902d58d4f66ed7df99ffb35492ca333b4f4f46e6ebc42bf5b",
+          "md5": "8b43d1b97000bc9ecfd53aae84c90687",
+          "sha256": "6208d5976ab50ad7e279365e7edd2a1c902d0a27407b849cfa3894abed2304d2"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8b43d1b97000bc9ecfd53aae84c90687",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2172066,
+        "upload_time": "2025-11-07T19:43:21",
+        "upload_time_iso_8601": "2025-11-07T19:43:21.491152Z",
+        "url": "https://files.pythonhosted.org/packages/03/32/65f7dc03a3a902d58d4f66ed7df99ffb35492ca333b4f4f46e6ebc42bf5b/azure_ai_evaluation-1.13.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.13.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8f0137fb6b0df5efe95dfe967af3884686b8d7f64c6fa3c194381bf0b300516d",
+          "md5": "408786f4ce05704a513973db26e8b325",
+          "sha256": "7d366f5c9c4b43ee02420520a10fae556e537b2505d63ad42de198197b1fa189"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "408786f4ce05704a513973db26e8b325",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1139482,
+        "upload_time": "2025-11-09T07:43:22",
+        "upload_time_iso_8601": "2025-11-09T07:43:22.789754Z",
+        "url": "https://files.pythonhosted.org/packages/8f/01/37fb6b0df5efe95dfe967af3884686b8d7f64c6fa3c194381bf0b300516d/azure_ai_evaluation-1.13.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "595a18bd1b455348a0c94dcb386b0c05838b990bd76b6f1b2bfb1e8a355730f4",
+          "md5": "cb47f555e8221adc288ff59cdc0070ce",
+          "sha256": "a028a99fd82a214c5347e72e04b987b1e3b5190f9453310be3b4882a44bbb80d"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "cb47f555e8221adc288ff59cdc0070ce",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2173235,
+        "upload_time": "2025-11-09T07:43:20",
+        "upload_time_iso_8601": "2025-11-09T07:43:20.592216Z",
+        "url": "https://files.pythonhosted.org/packages/59/5a/18bd1b455348a0c94dcb386b0c05838b990bd76b6f1b2bfb1e8a355730f4/azure_ai_evaluation-1.13.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.13.4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1fa148ed553a89ebdc99ec9c9c73d975b1d51052f940f3079dbd49fb4aedd2d8",
+          "md5": "7d0516a3145242d14da7f9672ebaa4fc",
+          "sha256": "b8704ba60683086bff474a25d9e85f7deb360f461357dc8347712ca4dba80497"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7d0516a3145242d14da7f9672ebaa4fc",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1139615,
+        "upload_time": "2025-11-10T07:22:14",
+        "upload_time_iso_8601": "2025-11-10T07:22:14.739003Z",
+        "url": "https://files.pythonhosted.org/packages/1f/a1/48ed553a89ebdc99ec9c9c73d975b1d51052f940f3079dbd49fb4aedd2d8/azure_ai_evaluation-1.13.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8eaf4377928cc1b0dec3540d8e8a816a46f8d63ace4963d8dca1c7a9e6362038",
+          "md5": "26c46ac81b02cffbc1ea386135170e9d",
+          "sha256": "b775f5c329bddf452a20dbd5033bdbbfc7287df0653f9bc63ba0275cccc19b9f"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "26c46ac81b02cffbc1ea386135170e9d",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2174529,
+        "upload_time": "2025-11-10T07:22:12",
+        "upload_time_iso_8601": "2025-11-10T07:22:12.659173Z",
+        "url": "https://files.pythonhosted.org/packages/8e/af/4377928cc1b0dec3540d8e8a816a46f8d63ace4963d8dca1c7a9e6362038/azure_ai_evaluation-1.13.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.13.5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4f2b708a8a7e25b8f20ed0c5581a3a3114eaf3341489b4f3f2aefe9455e9319a",
+          "md5": "d00a7c0a698567f082f319b92e23d42c",
+          "sha256": "f1c54cd88dd57cec4e70cb172316bad9726885696f01141cab4f17b16e5bed7e"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "d00a7c0a698567f082f319b92e23d42c",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1139764,
+        "upload_time": "2025-11-11T06:00:08",
+        "upload_time_iso_8601": "2025-11-11T06:00:08.544854Z",
+        "url": "https://files.pythonhosted.org/packages/4f/2b/708a8a7e25b8f20ed0c5581a3a3114eaf3341489b4f3f2aefe9455e9319a/azure_ai_evaluation-1.13.5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0a62e874101c5219e4c532b211dff905ac70d5138e46caaaa43c50c5a637c917",
+          "md5": "c09cd92bbed4f0e471ca3a7769f6395d",
+          "sha256": "4e08ae8e2c4ad6197a906202d66978524b93614f1b05c28a7929d7a96684162d"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c09cd92bbed4f0e471ca3a7769f6395d",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2193028,
+        "upload_time": "2025-11-11T06:00:06",
+        "upload_time_iso_8601": "2025-11-11T06:00:06.660611Z",
+        "url": "https://files.pythonhosted.org/packages/0a/62/e874101c5219e4c532b211dff905ac70d5138e46caaaa43c50c5a637c917/azure_ai_evaluation-1.13.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.13.6": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9231177ad697d04991d2832b55dffe15c458b84898159f40157ff65403147138",
+          "md5": "5bd38a1351f09a3dd123a68d1ea9d17a",
+          "sha256": "f03af6dbfa5abe35c52e94ab3196bfcc644b31dd225f0bf04e796b1845815168"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.6-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5bd38a1351f09a3dd123a68d1ea9d17a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1140413,
+        "upload_time": "2025-11-14T03:52:56",
+        "upload_time_iso_8601": "2025-11-14T03:52:56.468523Z",
+        "url": "https://files.pythonhosted.org/packages/92/31/177ad697d04991d2832b55dffe15c458b84898159f40157ff65403147138/azure_ai_evaluation-1.13.6-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8de470daf80357157cdf92f31c8a09f2ea07202a31b4cc0740aaafba46c6c6eb",
+          "md5": "3c6924d8f2f27428d6d949882cf90432",
+          "sha256": "04875a0b86d39c1d2efa2356b01aee007dcb9bd3c610395b45e2d8ec9366c773"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.6.tar.gz",
+        "has_sig": false,
+        "md5_digest": "3c6924d8f2f27428d6d949882cf90432",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2194034,
+        "upload_time": "2025-11-14T03:52:54",
+        "upload_time_iso_8601": "2025-11-14T03:52:54.474900Z",
+        "url": "https://files.pythonhosted.org/packages/8d/e4/70daf80357157cdf92f31c8a09f2ea07202a31b4cc0740aaafba46c6c6eb/azure_ai_evaluation-1.13.6.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.13.7": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "87019e0466835b8e04defa96c6465278d3dd5e41cecd24bc9806dedb59fccd1f",
+          "md5": "321521fa539bfb9dddd20699ae571d2e",
+          "sha256": "b2683ce51d4060f47960d23948d2b6bb318297031545a4a487ced92e0e618bd6"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.7-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "321521fa539bfb9dddd20699ae571d2e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1140472,
+        "upload_time": "2025-11-15T02:56:39",
+        "upload_time_iso_8601": "2025-11-15T02:56:39.705441Z",
+        "url": "https://files.pythonhosted.org/packages/87/01/9e0466835b8e04defa96c6465278d3dd5e41cecd24bc9806dedb59fccd1f/azure_ai_evaluation-1.13.7-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9eb8429cba728653b3af2a7d07efd4e25b868f11668dbb33932d76b1a17bca51",
+          "md5": "8a0041357006d8f80c3619817913476e",
+          "sha256": "46232b168bd314f18bcbc7207c689df7643b5182e50165a869b2eed88cc7ddfe"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.13.7.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8a0041357006d8f80c3619817913476e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2194357,
+        "upload_time": "2025-11-15T02:56:37",
+        "upload_time_iso_8601": "2025-11-15T02:56:37.371860Z",
+        "url": "https://files.pythonhosted.org/packages/9e/b8/429cba728653b3af2a7d07efd4e25b868f11668dbb33932d76b1a17bca51/azure_ai_evaluation-1.13.7.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.14.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "96681e0bd2123a5e681dbe474a3dda098c85704556e53ae24c7f4b3915d4e048",
+          "md5": "61a6136ac03527a00904128835614919",
+          "sha256": "1785f9be28517839ab9d30a03893951f7c9b530500d939d0ae51dde3aa1478b0"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.14.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "61a6136ac03527a00904128835614919",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 1141136,
+        "upload_time": "2026-01-09T21:25:28",
+        "upload_time_iso_8601": "2026-01-09T21:25:28.113038Z",
+        "url": "https://files.pythonhosted.org/packages/96/68/1e0bd2123a5e681dbe474a3dda098c85704556e53ae24c7f4b3915d4e048/azure_ai_evaluation-1.14.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "66ab62300008df848b210ef2a21b646480eee7c1bf3906afdc1351795343321c",
+          "md5": "d8a3347298b40d27bcbae572bb731774",
+          "sha256": "2a5681805b7cde65ad663f34d0f647d28498dd9395f7e2ce0789320c26664dae"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.14.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "d8a3347298b40d27bcbae572bb731774",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 2196726,
+        "upload_time": "2026-01-09T21:25:25",
+        "upload_time_iso_8601": "2026-01-09T21:25:25.948675Z",
+        "url": "https://files.pythonhosted.org/packages/66/ab/62300008df848b210ef2a21b646480eee7c1bf3906afdc1351795343321c/azure_ai_evaluation-1.14.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.2.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "50eaf6212392e9545a97768ccdff7b6fcc39435431ab27401a576ee2b0dd0a92",
+          "md5": "eca8c2b04d7c4e7963f5e242325737f7",
+          "sha256": "eeac5e937e29ae39efae66560184f5132627f4cc1dbcf88112eb8116d092e84e"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.2.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "eca8c2b04d7c4e7963f5e242325737f7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 587547,
+        "upload_time": "2025-01-30T15:32:51",
+        "upload_time_iso_8601": "2025-01-30T15:32:51.699423Z",
+        "url": "https://files.pythonhosted.org/packages/50/ea/f6212392e9545a97768ccdff7b6fcc39435431ab27401a576ee2b0dd0a92/azure_ai_evaluation-1.2.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9b9f3bdf23020ee1b3a89300c0cbe3fbf8ba185105960ae059c9383b6b31d30d",
+          "md5": "53521d1045b3d35b001b5df93f4af260",
+          "sha256": "f7c15454b06a4dbc24c689b5e901bc07f5698b3ae70fb2233e6baf7ea5feb12b"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.2.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "53521d1045b3d35b001b5df93f4af260",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 593515,
+        "upload_time": "2025-01-30T15:32:49",
+        "upload_time_iso_8601": "2025-01-30T15:32:49.850848Z",
+        "url": "https://files.pythonhosted.org/packages/9b/9f/3bdf23020ee1b3a89300c0cbe3fbf8ba185105960ae059c9383b6b31d30d/azure_ai_evaluation-1.2.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.3.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c46fd06c772ac7a42897c3408c8c4c81d6bd725a5bad7c2336eabfce76adf386",
+          "md5": "36e9628cfea5ed73ff299b01ea690635",
+          "sha256": "39011e1f8701156f36b2960d09b3867c55372f7abd0f0c7cc2f1c756a93bdf1a"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.3.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "36e9628cfea5ed73ff299b01ea690635",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 583837,
+        "upload_time": "2025-02-26T16:38:54",
+        "upload_time_iso_8601": "2025-02-26T16:38:54.437878Z",
+        "url": "https://files.pythonhosted.org/packages/c4/6f/d06c772ac7a42897c3408c8c4c81d6bd725a5bad7c2336eabfce76adf386/azure_ai_evaluation-1.3.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "94fba31373d8d29bec1ee1f912ae30cb77a8b405390a6cd174f1e6c90d3769b4",
+          "md5": "047e77373a359ed2acc03d930e60ed8a",
+          "sha256": "82e993667eb30528a805da96801d1d5a4dc60b7d14637ea4516f0806a7ba8fb7"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.3.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "047e77373a359ed2acc03d930e60ed8a",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 601162,
+        "upload_time": "2025-02-26T16:38:51",
+        "upload_time_iso_8601": "2025-02-26T16:38:51.843630Z",
+        "url": "https://files.pythonhosted.org/packages/94/fb/a31373d8d29bec1ee1f912ae30cb77a8b405390a6cd174f1e6c90d3769b4/azure_ai_evaluation-1.3.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.4.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dce1efc7b125db816d065cdc97884b390994a054181f766151477c99256ef3ab",
+          "md5": "806eae5f546733690ce3a08f064dc247",
+          "sha256": "345fa99127db9a526a10277d7f9e69e27ad84472e4bbc13d3a0da83f33cbea0e"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.4.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "806eae5f546733690ce3a08f064dc247",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 767645,
+        "upload_time": "2025-04-01T23:13:31",
+        "upload_time_iso_8601": "2025-04-01T23:13:31.334142Z",
+        "url": "https://files.pythonhosted.org/packages/dc/e1/efc7b125db816d065cdc97884b390994a054181f766151477c99256ef3ab/azure_ai_evaluation-1.4.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "62809793f2b82fee9acc6e4a9f4066d23de72368b61b0d3ffecc43220d6197dd",
+          "md5": "80889e5fb73ab5cf41b4c831c1746223",
+          "sha256": "210af2a25f263020c3c3a67a3db3a867bc219385894ecd84df733b28857c8dc8"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.4.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "80889e5fb73ab5cf41b4c831c1746223",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 816270,
+        "upload_time": "2025-04-01T23:13:29",
+        "upload_time_iso_8601": "2025-04-01T23:13:29.906767Z",
+        "url": "https://files.pythonhosted.org/packages/62/80/9793f2b82fee9acc6e4a9f4066d23de72368b61b0d3ffecc43220d6197dd/azure_ai_evaluation-1.4.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.5.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "adcf59e8591f29fcf702e8340816fc16db1764fc420553f60e552ec590aa189e",
+          "md5": "d3a9f7979d6615346e77c44c175e9e2c",
+          "sha256": "2845898ef83f7097f201d8def4d8158221529f88102348a72b7962fc9605007a"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.5.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "d3a9f7979d6615346e77c44c175e9e2c",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 773724,
+        "upload_time": "2025-04-07T13:09:27",
+        "upload_time_iso_8601": "2025-04-07T13:09:27.968089Z",
+        "url": "https://files.pythonhosted.org/packages/ad/cf/59e8591f29fcf702e8340816fc16db1764fc420553f60e552ec590aa189e/azure_ai_evaluation-1.5.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5a721a494053b221d0b607bfc84d540d9d1b6e002b17757f9372a61d054b18b5",
+          "md5": "d3cfba7147f379839fd1b7e35331a5ff",
+          "sha256": "694e3bd635979348790c96eb43b390b89eb91ebd17e822229a32c9d2fdb77e6f"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.5.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "d3cfba7147f379839fd1b7e35331a5ff",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 817891,
+        "upload_time": "2025-04-07T13:09:26",
+        "upload_time_iso_8601": "2025-04-07T13:09:26.047648Z",
+        "url": "https://files.pythonhosted.org/packages/5a/72/1a494053b221d0b607bfc84d540d9d1b6e002b17757f9372a61d054b18b5/azure_ai_evaluation-1.5.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.6.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3a6a99639fe86e46497bf9b99c982fb8d7262db2ae2085a5601a350aaa5081b0",
+          "md5": "78cdb96f18f962f3b35eac95d24d5643",
+          "sha256": "9d9e1aa6fd71c1461c487a6c5eb321545a9728debc995c460bb615b21b592297"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.6.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "78cdb96f18f962f3b35eac95d24d5643",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 911755,
+        "upload_time": "2025-05-05T22:25:06",
+        "upload_time_iso_8601": "2025-05-05T22:25:06.343439Z",
+        "url": "https://files.pythonhosted.org/packages/3a/6a/99639fe86e46497bf9b99c982fb8d7262db2ae2085a5601a350aaa5081b0/azure_ai_evaluation-1.6.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2a11c444d532d6ced66240b7fd94d6764e7ea804f93a8af53918d501d0c228dd",
+          "md5": "6bca0d23207b9c2eeac87803482edd64",
+          "sha256": "eb9d1e01078ce78ca9675cb86f1027344bd22185a3c5b736b7420bf781073b59"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.6.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "6bca0d23207b9c2eeac87803482edd64",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 941687,
+        "upload_time": "2025-05-05T22:25:04",
+        "upload_time_iso_8601": "2025-05-05T22:25:04.659483Z",
+        "url": "https://files.pythonhosted.org/packages/2a/11/c444d532d6ced66240b7fd94d6764e7ea804f93a8af53918d501d0c228dd/azure_ai_evaluation-1.6.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.7.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5e92eeb18b687af7251e2772773975c42baf6e714451f1e962a7345530dd66c5",
+          "md5": "d944540445483808458cb361e53b2cf3",
+          "sha256": "4eaa148335c76fb0b15d061d3f91aec62b07eb46f3d903143ae8c6029b4e69d8"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.7.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "d944540445483808458cb361e53b2cf3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 917292,
+        "upload_time": "2025-05-15T03:01:54",
+        "upload_time_iso_8601": "2025-05-15T03:01:54.427121Z",
+        "url": "https://files.pythonhosted.org/packages/5e/92/eeb18b687af7251e2772773975c42baf6e714451f1e962a7345530dd66c5/azure_ai_evaluation-1.7.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1049d08ff05b5ad7337f2793f524df3e3c29fbed7655b9a3f029cb0c0c8c8dc6",
+          "md5": "65cff92aa697f51b4ed572f392d4830d",
+          "sha256": "86322a303f534ab4489306b188d593de5d0217a84d403501b6e9c6e4e655bf3b"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.7.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "65cff92aa697f51b4ed572f392d4830d",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 950853,
+        "upload_time": "2025-05-15T03:01:52",
+        "upload_time_iso_8601": "2025-05-15T03:01:52.353556Z",
+        "url": "https://files.pythonhosted.org/packages/10/49/d08ff05b5ad7337f2793f524df3e3c29fbed7655b9a3f029cb0c0c8c8dc6/azure_ai_evaluation-1.7.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.8.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bea002ae9f3f21501e571530c561dcb8c8db9878c54689a360209714d3b0d2e0",
+          "md5": "e89df37bd2b399a67b7897cc6d12f587",
+          "sha256": "e42f7afab2524e3419ec1a7687fe1091d503e132e7bf7e18261ff697d5ea90e2"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.8.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e89df37bd2b399a67b7897cc6d12f587",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 941544,
+        "upload_time": "2025-05-29T18:53:59",
+        "upload_time_iso_8601": "2025-05-29T18:53:59.991792Z",
+        "url": "https://files.pythonhosted.org/packages/be/a0/02ae9f3f21501e571530c561dcb8c8db9878c54689a360209714d3b0d2e0/azure_ai_evaluation-1.8.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "73abb23e318382a81bc745716e8074ed467f08e7e23c54e0b6edb260066c55e6",
+          "md5": "304f9f8976abff3bf8b4c18a3d584aea",
+          "sha256": "c09e7bc351057b0d43efadc0464eba3bf27546e64e13dbab8adb05ec821b1e24"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.8.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "304f9f8976abff3bf8b4c18a3d584aea",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 977909,
+        "upload_time": "2025-05-29T18:53:57",
+        "upload_time_iso_8601": "2025-05-29T18:53:57.984223Z",
+        "url": "https://files.pythonhosted.org/packages/73/ab/b23e318382a81bc745716e8074ed467f08e7e23c54e0b6edb260066c55e6/azure_ai_evaluation-1.8.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.9.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e0070829d0d1a89eb186a083a757a364887118bee8b4529ed2817a846c42d9de",
+          "md5": "e040c377b5eb2aa9a72d6364466ff910",
+          "sha256": "fba5b3cd831bf67d31c506b9509ce49de574b1ae825161f6f35462533136ca59"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.9.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e040c377b5eb2aa9a72d6364466ff910",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 985924,
+        "upload_time": "2025-07-03T01:13:34",
+        "upload_time_iso_8601": "2025-07-03T01:13:34.618517Z",
+        "url": "https://files.pythonhosted.org/packages/e0/07/0829d0d1a89eb186a083a757a364887118bee8b4529ed2817a846c42d9de/azure_ai_evaluation-1.9.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4ba77af11d0a9185c360358518f7e5a0bcf3b7ef72e072fd52f022e084499f57",
+          "md5": "3c319865b5d39163c34ddc874e3a9e1c",
+          "sha256": "46ac0df5cd52d72fbabb9d9e041173603d41c04c228f239716933f82bf613566"
+        },
+        "downloads": -1,
+        "filename": "azure_ai_evaluation-1.9.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "3c319865b5d39163c34ddc874e3a9e1c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 1035093,
+        "upload_time": "2025-07-03T01:13:32",
+        "upload_time_iso_8601": "2025-07-03T01:13:32.648640Z",
+        "url": "https://files.pythonhosted.org/packages/4b/a7/7af11d0a9185c360358518f7e5a0bcf3b7ef72e072fd52f022e084499f57/azure_ai_evaluation-1.9.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "96681e0bd2123a5e681dbe474a3dda098c85704556e53ae24c7f4b3915d4e048",
+        "md5": "61a6136ac03527a00904128835614919",
+        "sha256": "1785f9be28517839ab9d30a03893951f7c9b530500d939d0ae51dde3aa1478b0"
+      },
+      "downloads": -1,
+      "filename": "azure_ai_evaluation-1.14.0-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "61a6136ac03527a00904128835614919",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.9",
+      "size": 1141136,
+      "upload_time": "2026-01-09T21:25:28",
+      "upload_time_iso_8601": "2026-01-09T21:25:28.113038Z",
+      "url": "https://files.pythonhosted.org/packages/96/68/1e0bd2123a5e681dbe474a3dda098c85704556e53ae24c7f4b3915d4e048/azure_ai_evaluation-1.14.0-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "66ab62300008df848b210ef2a21b646480eee7c1bf3906afdc1351795343321c",
+        "md5": "d8a3347298b40d27bcbae572bb731774",
+        "sha256": "2a5681805b7cde65ad663f34d0f647d28498dd9395f7e2ce0789320c26664dae"
+      },
+      "downloads": -1,
+      "filename": "azure_ai_evaluation-1.14.0.tar.gz",
+      "has_sig": false,
+      "md5_digest": "d8a3347298b40d27bcbae572bb731774",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.9",
+      "size": 2196726,
+      "upload_time": "2026-01-09T21:25:25",
+      "upload_time_iso_8601": "2026-01-09T21:25:25.948675Z",
+      "url": "https://files.pythonhosted.org/packages/66/ab/62300008df848b210ef2a21b646480eee7c1bf3906afdc1351795343321c/azure_ai_evaluation-1.14.0.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

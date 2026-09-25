@@ -1,0 +1,43 @@
+{
+    "id": 140245,
+    "name": "Marcelino N\u00fa\u00f1ez",
+    "firstName": "Marcelino",
+    "lastName": "N\u00fa\u00f1ez",
+    "dateOfBirth": "2000-03-01",
+    "nationality": "Chile",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 32,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png",
+        "address": "Portman Road Ipswich IP1 2DA",
+        "website": "http://www.itfc.co.uk",
+        "founded": 1887,
+        "clubColors": "Blue / White",
+        "venue": "Portman Road Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2025-08",
+            "until": "2029-06"
+        }
+    }
+}

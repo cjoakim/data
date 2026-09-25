@@ -1,0 +1,50 @@
+{
+    "id": 4417,
+    "name": "Antoine Semenyo",
+    "firstName": "Antoine",
+    "lastName": "Semenyo",
+    "dateOfBirth": "2000-01-07",
+    "nationality": "Ghana",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 42,
+    "lastUpdated": "2026-06-01T11:16:29Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png",
+        "address": "SportCity Manchester M11 3FF",
+        "website": "https://www.mancity.com",
+        "founded": 1880,
+        "clubColors": "Sky Blue / White",
+        "venue": "Etihad Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2056,
+                "name": "FA Community Shield",
+                "code": "COM",
+                "type": "SUPER_CUP",
+                "emblem": "https://crests.football-data.org/com.png"
+            },
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-01",
+            "until": "2031-06"
+        }
+    }
+}

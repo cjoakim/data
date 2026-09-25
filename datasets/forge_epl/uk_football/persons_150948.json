@@ -1,0 +1,43 @@
+{
+    "id": 150948,
+    "name": "Chadi Riad",
+    "firstName": "Chadi",
+    "lastName": "Riad",
+    "dateOfBirth": "2003-06-17",
+    "nationality": "Morocco",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 18,
+    "lastUpdated": "2026-06-01T11:16:32Z",
+    "currentTeam": {
+        "area": {
+            "id": 2156,
+            "name": "Morocco",
+            "code": "MAR",
+            "flag": "https://crests.football-data.org/morocco.svg"
+        },
+        "id": 815,
+        "name": "Morocco",
+        "shortName": "Morocco",
+        "tla": "MAR",
+        "crest": "https://crests.football-data.org/morocco.svg",
+        "address": "51 bis, Avenue Ibn Sina Rabat 10000",
+        "website": "http://www.frmf.ma",
+        "founded": 1955,
+        "clubColors": "Red / Green",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2193,
+                "name": "Africa Cup Of Nations - Qualification",
+                "code": "ACQ",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

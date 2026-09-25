@@ -1,0 +1,1005 @@
+{
+  "info": {
+    "author": null,
+    "author_email": "Patrick Arminio <patrick@fastapilabs.com>",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Framework :: FastAPI",
+      "Intended Audience :: Developers",
+      "Intended Audience :: Information Technology",
+      "Intended Audience :: System Administrators",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.9",
+      "Topic :: Software Development",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Software Development :: Libraries :: Application Frameworks",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Typing :: Typed"
+    ],
+    "description": "# FastAPI Cloud CLI\n\n<a href=\"https://github.com/fastapilabs/fastapi-cloud-cli/actions/workflows/test.yml\" target=\"_blank\">\n    <img src=\"https://github.com/fastapilabs/fastapi-cloud-cli/actions/workflows/test.yml/badge.svg\" alt=\"Test\">\n</a>\n<a href=\"https://github.com/fastapilabs/fastapi-cloud-cli/actions/workflows/publish.yml\" target=\"_blank\">\n    <img src=\"https://github.com/fastapilabs/fastapi-cloud-cli/actions/workflows/publish.yml/badge.svg\" alt=\"Publish\">\n</a>\n<a href=\"https://coverage-badge.samuelcolvin.workers.dev/redirect/fastapilabs/fastapi-cloud-cli\" target=\"_blank\">\n    <img src=\"https://coverage-badge.samuelcolvin.workers.dev/fastapilabs/fastapi-cloud-cli.svg\" alt=\"Coverage\">\n<a href=\"https://pypi.org/project/fastapi-cloud-cli\" target=\"_blank\">\n    <img src=\"https://img.shields.io/pypi/v/fastapi-cloud-cli?color=%2334D058&label=pypi%20package\" alt=\"Package version\">\n</a>\n\n---\n\n**Source Code**: <a href=\"https://github.com/fastapilabs/fastapi-cloud-cli\" target=\"_blank\">https://github.com/fastapilabs/fastapi-cloud-cli</a>\n\n---\n\n## License\n\nThis project is licensed under the terms of the MIT license.\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": null,
+    "keywords": null,
+    "license": "MIT",
+    "license_expression": null,
+    "license_files": null,
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "fastapi-cloud-cli",
+    "package_url": "https://pypi.org/project/fastapi-cloud-cli/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/fastapi-cloud-cli/",
+    "project_urls": {
+      "Changelog": "https://github.com/fastapilabs/fastapi-cloud-cli/blob/main/release-notes.md",
+      "Documentation": "https://fastapi.tiangolo.com/fastapi-cloud-cli/",
+      "Homepage": "https://github.com/fastapilabs/fastapi-cloud-cli",
+      "Issues": "https://github.com/fastapilabs/fastapi-cloud-cli/issues",
+      "Repository": "https://github.com/fastapilabs/fastapi-cloud-cli"
+    },
+    "provides_extra": [
+      "standard"
+    ],
+    "release_url": "https://pypi.org/project/fastapi-cloud-cli/0.11.0/",
+    "requires_dist": [
+      "typer>=0.12.3",
+      "uvicorn[standard]>=0.15.0",
+      "rignore>=0.5.1",
+      "httpx>=0.27.0",
+      "rich-toolkit>=0.14.5",
+      "pydantic[email]>=2.0",
+      "sentry-sdk>=2.20.0",
+      "fastar>=0.8.0",
+      "uvicorn[standard]>=0.15.0; extra == \"standard\""
+    ],
+    "requires_python": ">=3.9",
+    "summary": "Deploy and manage FastAPI Cloud apps from the command line 🚀",
+    "version": "0.11.0",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 33571166,
+  "releases": {
+    "0.1.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0ab66692e91575111aa1e07accdcf5343be4d2b2bacffec94eb6f25edc1ddc05",
+          "md5": "be7366d68f9ad8c3151998b7e876125b",
+          "sha256": "404c959b21010a5c4edd5de39c957ae0628a4e95191398376b0922e8d295ecdc"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.1.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "be7366d68f9ad8c3151998b7e876125b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.7",
+        "size": 1219,
+        "upload_time": "2024-12-10T16:45:07",
+        "upload_time_iso_8601": "2024-12-10T16:45:07.056173Z",
+        "url": "https://files.pythonhosted.org/packages/0a/b6/6692e91575111aa1e07accdcf5343be4d2b2bacffec94eb6f25edc1ddc05/fastapi_cloud_cli-0.1.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "074b3076deda9021a77b64320b2d8ae4d0abdefaa548b976ff3c004dd1bf63bb",
+          "md5": "40d8a4dfa9210c5d6b606f573700f749",
+          "sha256": "80f880ce42063b9fc620d0e138bc2c8bb50b3bba52bfa818171752a95e8e15ca"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "40d8a4dfa9210c5d6b606f573700f749",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.7",
+        "size": 637,
+        "upload_time": "2024-12-10T16:45:09",
+        "upload_time_iso_8601": "2024-12-10T16:45:09.382633Z",
+        "url": "https://files.pythonhosted.org/packages/07/4b/3076deda9021a77b64320b2d8ae4d0abdefaa548b976ff3c004dd1bf63bb/fastapi_cloud_cli-0.1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "3a30051f5ba4b87787c78978fb6c0e81883c59d6da12e20f78eafffba7e0fb7f",
+          "md5": "54c24984f358e822db22b3ee8da30556",
+          "sha256": "56e453f6ddbb2ef23c3e1da43dfc40b406cad680c6cf36832d8ef9422eda5ce8"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.1.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "54c24984f358e822db22b3ee8da30556",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18937,
+        "upload_time": "2025-07-07T13:46:38",
+        "upload_time_iso_8601": "2025-07-07T13:46:38.011171Z",
+        "url": "https://files.pythonhosted.org/packages/3a/30/051f5ba4b87787c78978fb6c0e81883c59d6da12e20f78eafffba7e0fb7f/fastapi_cloud_cli-0.1.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "ec3dc1291319cafec0318899a0e196616745fb7400fa215515a7e0575b871419",
+          "md5": "a14536abcf7ab6df7a6ef61e4497e9af",
+          "sha256": "8014ed3529382e61b88628ecb1904df5fc51256f9090de3cc8acae892dbb7109"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.1.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a14536abcf7ab6df7a6ef61e4497e9af",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 20318,
+        "upload_time": "2025-07-07T13:46:38",
+        "upload_time_iso_8601": "2025-07-07T13:46:38.796860Z",
+        "url": "https://files.pythonhosted.org/packages/ec/3d/c1291319cafec0318899a0e196616745fb7400fa215515a7e0575b871419/fastapi_cloud_cli-0.1.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.2": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "bdb9b75d347a4481bb2f9566426d57417f4e897bf6769ff111c47ff9437b4ca9",
+          "md5": "26c533c9711240514bc42d4c0a3e2366",
+          "sha256": "d310db4b80297184f9525f4c63952e464e4f18513ec8d6db9271030d5ffe5af4"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.1.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "26c533c9711240514bc42d4c0a3e2366",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18950,
+        "upload_time": "2025-07-08T16:53:36",
+        "upload_time_iso_8601": "2025-07-08T16:53:36.495543Z",
+        "url": "https://files.pythonhosted.org/packages/bd/b9/b75d347a4481bb2f9566426d57417f4e897bf6769ff111c47ff9437b4ca9/fastapi_cloud_cli-0.1.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "37b2d4d6ddadb93bd97b0794b3eab0cd8c24980fa40434e1d0bc55e7490506da",
+          "md5": "5b709e3f519a57108af18c9b7ea801d4",
+          "sha256": "401abf00856211d1bfb8b24b1b8e8d5b9ff3a11037f7ca03723f6ba27008dde4"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.1.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5b709e3f519a57108af18c9b7ea801d4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 22663,
+        "upload_time": "2025-07-08T16:53:38",
+        "upload_time_iso_8601": "2025-07-08T16:53:38.121904Z",
+        "url": "https://files.pythonhosted.org/packages/37/b2/d4d6ddadb93bd97b0794b3eab0cd8c24980fa40434e1d0bc55e7490506da/fastapi_cloud_cli-0.1.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.4": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "42cf8635cd778b7d89714325b967a28c05865a2b6cab4c0b4b30561df4704f24",
+          "md5": "ba0f7e2e797ffce1465e831160482ea2",
+          "sha256": "1db1ba757aa46a16a5e5dacf7cddc137ca0a3c42f65dba2b1cc6a8f24c41be42"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.1.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ba0f7e2e797ffce1465e831160482ea2",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18957,
+        "upload_time": "2025-07-11T14:15:24",
+        "upload_time_iso_8601": "2025-07-11T14:15:24.451600Z",
+        "url": "https://files.pythonhosted.org/packages/42/cf/8635cd778b7d89714325b967a28c05865a2b6cab4c0b4b30561df4704f24/fastapi_cloud_cli-0.1.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "06d74a987c3d73ddae4a7c93f5d2982ea5b1dd58d4cc1044568bb180227bd0f7",
+          "md5": "ba6a1d69a17c5a41b7b625d67faa0cd2",
+          "sha256": "a0ab7633d71d864b4041896b3fe2f462de61546db7c52eb13e963f4d40af0eba"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.1.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "ba6a1d69a17c5a41b7b625d67faa0cd2",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 22712,
+        "upload_time": "2025-07-11T14:15:25",
+        "upload_time_iso_8601": "2025-07-11T14:15:25.667904Z",
+        "url": "https://files.pythonhosted.org/packages/06/d7/4a987c3d73ddae4a7c93f5d2982ea5b1dd58d4cc1044568bb180227bd0f7/fastapi_cloud_cli-0.1.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.5": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "e5a65aa862489a2918a096166fd98d9fe86b7fd53c607678b3fa9d8c432d88d5",
+          "md5": "028e3c366d3e27ffda6b491ac6b57b7b",
+          "sha256": "d80525fb9c0e8af122370891f9fa83cf5d496e4ad47a8dd26c0496a6c85a012a"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.1.5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "028e3c366d3e27ffda6b491ac6b57b7b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 18992,
+        "upload_time": "2025-07-28T13:30:47",
+        "upload_time_iso_8601": "2025-07-28T13:30:47.427405Z",
+        "url": "https://files.pythonhosted.org/packages/e5/a6/5aa862489a2918a096166fd98d9fe86b7fd53c607678b3fa9d8c432d88d5/fastapi_cloud_cli-0.1.5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "a92e3b6e5016affc310e5109bc580f760586eabecea0c8a7ab067611cd849ac0",
+          "md5": "0ef01319ba9837a8a8b37a4be27087e1",
+          "sha256": "341ee585eb731a6d3c3656cb91ad38e5f39809bf1a16d41de1333e38635a7937"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.1.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0ef01319ba9837a8a8b37a4be27087e1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 22710,
+        "upload_time": "2025-07-28T13:30:48",
+        "upload_time_iso_8601": "2025-07-28T13:30:48.216860Z",
+        "url": "https://files.pythonhosted.org/packages/a9/2e/3b6e5016affc310e5109bc580f760586eabecea0c8a7ab067611cd849ac0/fastapi_cloud_cli-0.1.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.10.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f603f124e84322201c6291267dc74f930e7778f7b0588c01dc20ee7b90f52075",
+          "md5": "8676d394c7902fd8ec5ddd0fcbb64072",
+          "sha256": "146a398fe6752d638c4a9aa6579e8ade7282234c8e83f27d876344a7adc93d36"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.10.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "8676d394c7902fd8ec5ddd0fcbb64072",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 25636,
+        "upload_time": "2026-01-13T18:59:40",
+        "upload_time_iso_8601": "2026-01-13T18:59:40.707222Z",
+        "url": "https://files.pythonhosted.org/packages/f6/03/f124e84322201c6291267dc74f930e7778f7b0588c01dc20ee7b90f52075/fastapi_cloud_cli-0.10.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "26172e6ec4c54dbd76d9ff62fb84a1743c4a70697d784ad779d77b10dab7baf5",
+          "md5": "dc2e6c05eb54623b3f7f1c151906ad43",
+          "sha256": "cbcc66c03b5f714bc44b8d3f2e264e2eb9f0d49f47aeeb073fdb17c08fe4f796"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.10.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "dc2e6c05eb54623b3f7f1c151906ad43",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 34721,
+        "upload_time": "2026-01-13T18:59:39",
+        "upload_time_iso_8601": "2026-01-13T18:59:39.299045Z",
+        "url": "https://files.pythonhosted.org/packages/26/17/2e6ec4c54dbd76d9ff62fb84a1743c4a70697d784ad779d77b10dab7baf5/fastapi_cloud_cli-0.10.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.10.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8c8da70583d311f79ea1d13cb3230d3537fe02e6e848d209ddabb25f30cf845b",
+          "md5": "597a088a126b368a900fba488391a5e3",
+          "sha256": "0feeb2aabfb0558298d60bc19d2afb4782adfa262c23ecf5bda657db42f46df0"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.10.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "597a088a126b368a900fba488391a5e3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 25648,
+        "upload_time": "2026-01-13T20:43:14",
+        "upload_time_iso_8601": "2026-01-13T20:43:14.709752Z",
+        "url": "https://files.pythonhosted.org/packages/8c/8d/a70583d311f79ea1d13cb3230d3537fe02e6e848d209ddabb25f30cf845b/fastapi_cloud_cli-0.10.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f847c071009b1f0dab4135922d50db052308716c59c1e788688396da34045c3b",
+          "md5": "fab2da227eacaca03035efebbfd7850c",
+          "sha256": "f03fb50b457767012ff11d9ed38ae9d2127edf7ddd371febedc0428f531612ca"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.10.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "fab2da227eacaca03035efebbfd7850c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 34868,
+        "upload_time": "2026-01-13T20:43:13",
+        "upload_time_iso_8601": "2026-01-13T20:43:13.531705Z",
+        "url": "https://files.pythonhosted.org/packages/f8/47/c071009b1f0dab4135922d50db052308716c59c1e788688396da34045c3b/fastapi_cloud_cli-0.10.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.11.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1a0760f79270a3320780be7e2ae8a1740cb98a692920b569ba420b97bcc6e175",
+          "md5": "12f38f92957c58fe914a4e36a580f9db",
+          "sha256": "76857b0f09d918acfcb50ade34682ba3b2079ca0c43fda10215de301f185a7f8"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.11.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "12f38f92957c58fe914a4e36a580f9db",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 26884,
+        "upload_time": "2026-01-15T09:51:34",
+        "upload_time_iso_8601": "2026-01-15T09:51:34.471936Z",
+        "url": "https://files.pythonhosted.org/packages/1a/07/60f79270a3320780be7e2ae8a1740cb98a692920b569ba420b97bcc6e175/fastapi_cloud_cli-0.11.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "11156c3d85d63964340fde6f36cc80f3f365d35f371e6a918d68ff3a3d588ef2",
+          "md5": "3af8329b4d902ebac7cfd4e3dd0b0ce7",
+          "sha256": "ecc83a5db106be35af528eccb01aa9bced1d29783efd48c8c1c831cf111eea99"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.11.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "3af8329b4d902ebac7cfd4e3dd0b0ce7",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 36170,
+        "upload_time": "2026-01-15T09:51:33",
+        "upload_time_iso_8601": "2026-01-15T09:51:33.681494Z",
+        "url": "https://files.pythonhosted.org/packages/11/15/6c3d85d63964340fde6f36cc80f3f365d35f371e6a918d68ff3a3d588ef2/fastapi_cloud_cli-0.11.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "4e5d0ee71a1d67b5d028536eb1bc7e2be4409a5a7c4e529a9f74812472076832",
+          "md5": "e4e22e129b4ffd2af77f31eea76faba8",
+          "sha256": "8dc13f95246d80e625e2789a21760494e855d887f70caae109423d00064772d1"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.2.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e4e22e129b4ffd2af77f31eea76faba8",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 19864,
+        "upload_time": "2025-09-18T14:55:43",
+        "upload_time_iso_8601": "2025-09-18T14:55:43.365262Z",
+        "url": "https://files.pythonhosted.org/packages/4e/5d/0ee71a1d67b5d028536eb1bc7e2be4409a5a7c4e529a9f74812472076832/fastapi_cloud_cli-0.2.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "57554e7541c006b492f000cd833bd1db43b587b85aef7f54fa4f63ad7cc7eb44",
+          "md5": "812aa000fddbfa42375faae9cea1b622",
+          "sha256": "115d9b1f198b09ecc66f67156d183babb4fc14431414cc2e57a7649624782da6"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.2.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "812aa000fddbfa42375faae9cea1b622",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 23637,
+        "upload_time": "2025-09-18T14:55:44",
+        "upload_time_iso_8601": "2025-09-18T14:55:44.628692Z",
+        "url": "https://files.pythonhosted.org/packages/57/55/4e7541c006b492f000cd833bd1db43b587b85aef7f54fa4f63ad7cc7eb44/fastapi_cloud_cli-0.2.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.2.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "3b1f5fa06afce6e4bb7fc7e54651236bad3b849340480967c54cbd7c13563c3f",
+          "md5": "a524be74b86c78a106caedaa86b7517a",
+          "sha256": "245447bfb17b01ae5f7bc15dec0833bce85381ecf34532e8fa4bcf279ad1c361"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.2.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a524be74b86c78a106caedaa86b7517a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 19894,
+        "upload_time": "2025-09-25T13:53:31",
+        "upload_time_iso_8601": "2025-09-25T13:53:31.635977Z",
+        "url": "https://files.pythonhosted.org/packages/3b/1f/5fa06afce6e4bb7fc7e54651236bad3b849340480967c54cbd7c13563c3f/fastapi_cloud_cli-0.2.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "68381971f9dc8141e359d2435e6fae8bb228632adc55cff00cd00efed2a98456",
+          "md5": "acb141371463ed316ed35cb75da77bb7",
+          "sha256": "aa22a4b867bf53165b6551d2f4eb21b079bad4aa74047cb889acf941e34699d9"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.2.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "acb141371463ed316ed35cb75da77bb7",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 23676,
+        "upload_time": "2025-09-25T13:53:32",
+        "upload_time_iso_8601": "2025-09-25T13:53:32.901459Z",
+        "url": "https://files.pythonhosted.org/packages/68/38/1971f9dc8141e359d2435e6fae8bb228632adc55cff00cd00efed2a98456/fastapi_cloud_cli-0.2.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "58597d12c5173fe2eed21e99bb1a6eb7e4f301951db870a4d915d126e0b6062d",
+          "md5": "77289e3c2dc09f5e7291295e8eef0b1f",
+          "sha256": "572677dbe38b6d4712d30097a8807b383d648ca09eb58e4a07cef4a517020832"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.3.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "77289e3c2dc09f5e7291295e8eef0b1f",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 19921,
+        "upload_time": "2025-10-02T13:25:51",
+        "upload_time_iso_8601": "2025-10-02T13:25:51.164950Z",
+        "url": "https://files.pythonhosted.org/packages/58/59/7d12c5173fe2eed21e99bb1a6eb7e4f301951db870a4d915d126e0b6062d/fastapi_cloud_cli-0.3.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a65f17b403148a23dd708e3166f534136f4d3918942e168aca66659311eb0678",
+          "md5": "17fe483d6da1ad0624ec96d004ebb058",
+          "sha256": "17c7f8baa16b2f907696bf77d49df4a04e8715bbf5233024f273870f3ff1ca4d"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.3.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "17fe483d6da1ad0624ec96d004ebb058",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 24388,
+        "upload_time": "2025-10-02T13:25:52",
+        "upload_time_iso_8601": "2025-10-02T13:25:52.361428Z",
+        "url": "https://files.pythonhosted.org/packages/a6/5f/17b403148a23dd708e3166f534136f4d3918942e168aca66659311eb0678/fastapi_cloud_cli-0.3.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.3.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "68797f5a5e5513e6a737e5fb089d9c59c74d4d24dc24d581d3aa519b326bedda",
+          "md5": "9606bcccec4e76162ce01b54c9319a7a",
+          "sha256": "7d1a98a77791a9d0757886b2ffbf11bcc6b3be93210dd15064be10b216bf7e00"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.3.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "9606bcccec4e76162ce01b54c9319a7a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 19711,
+        "upload_time": "2025-10-09T11:32:57",
+        "upload_time_iso_8601": "2025-10-09T11:32:57.118382Z",
+        "url": "https://files.pythonhosted.org/packages/68/79/7f5a5e5513e6a737e5fb089d9c59c74d4d24dc24d581d3aa519b326bedda/fastapi_cloud_cli-0.3.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f9480f14d8555b750dc8c04382804e4214f1d7f55298127f3a0237ba566e69dd",
+          "md5": "4bde21a2d2375eb698bd10c4093ce0f8",
+          "sha256": "8c7226c36e92e92d0c89827e8f56dbf164ab2de4444bd33aa26b6c3f7675db69"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.3.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4bde21a2d2375eb698bd10c4093ce0f8",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 24080,
+        "upload_time": "2025-10-09T11:32:58",
+        "upload_time_iso_8601": "2025-10-09T11:32:58.174873Z",
+        "url": "https://files.pythonhosted.org/packages/f9/48/0f14d8555b750dc8c04382804e4214f1d7f55298127f3a0237ba566e69dd/fastapi_cloud_cli-0.3.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.4.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "53fb33894cb2f10fff4794dca43992aaa4416a23c97e76247f4ce2e6ce761f6b",
+          "md5": "678ac56fb44e901f33601c4cf04b0a45",
+          "sha256": "6c44bd0636e57fb9a156ff67f4c54f17b5fbb3d84c65ea9e2461d4daaf64d9e7"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.4.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "678ac56fb44e901f33601c4cf04b0a45",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 20540,
+        "upload_time": "2025-11-19T09:59:44",
+        "upload_time_iso_8601": "2025-11-19T09:59:44.870064Z",
+        "url": "https://files.pythonhosted.org/packages/53/fb/33894cb2f10fff4794dca43992aaa4416a23c97e76247f4ce2e6ce761f6b/fastapi_cloud_cli-0.4.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "cb7c5e72b1a8f0828f45f00a51f3ec73ddeecc719c1fc5ee1367107c6c24c54f",
+          "md5": "4a17cb04288265ff352ac4363eb707de",
+          "sha256": "335c6655d8c2c04f85282ffc70eb33b6dd9e220e89ebef9ff7ccedcb37f94e1d"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.4.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4a17cb04288265ff352ac4363eb707de",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 26005,
+        "upload_time": "2025-11-19T09:59:46",
+        "upload_time_iso_8601": "2025-11-19T09:59:46.227260Z",
+        "url": "https://files.pythonhosted.org/packages/cb/7c/5e72b1a8f0828f45f00a51f3ec73ddeecc719c1fc5ee1367107c6c24c54f/fastapi_cloud_cli-0.4.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.5.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "234181eec3ebc5dc79c688f44d48f024bef647c23fcc483e6483fbb292b3ecf1",
+          "md5": "ab01cfb880a543ccf3617c473575fdef",
+          "sha256": "72e7befbbd22a49bff585ae5b05fe3f9055d103b7985122d3a9f4cafeb2edbc3"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.5.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ab01cfb880a543ccf3617c473575fdef",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 23204,
+        "upload_time": "2025-11-20T11:37:20",
+        "upload_time_iso_8601": "2025-11-20T11:37:20.439135Z",
+        "url": "https://files.pythonhosted.org/packages/23/41/81eec3ebc5dc79c688f44d48f024bef647c23fcc483e6483fbb292b3ecf1/fastapi_cloud_cli-0.5.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a4658e5925e0a9fb3010ff5e8515958ce22d467e5137349f7b2e48e4ddb14775",
+          "md5": "ff64e18512499d65e03ccb1fa4c82ec0",
+          "sha256": "fc06a0334f2f8c8235aa35024ebb4a42161b43d8f90f513a62da6aa640dd2d38"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.5.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "ff64e18512499d65e03ccb1fa4c82ec0",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 30707,
+        "upload_time": "2025-11-20T11:37:21",
+        "upload_time_iso_8601": "2025-11-20T11:37:21.434644Z",
+        "url": "https://files.pythonhosted.org/packages/a4/65/8e5925e0a9fb3010ff5e8515958ce22d467e5137349f7b2e48e4ddb14775/fastapi_cloud_cli-0.5.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.5.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "42d6b83f0801fd2c3f648e3696cdd2a1967b176f43c0c9db35c0350a67e7c141",
+          "md5": "f1fbdf0f083b3ae43bb676ff1e5f446b",
+          "sha256": "1a28415b059b27af180a55a835ac2c9e924a66be88412d5649d4f91993d1a698"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.5.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "f1fbdf0f083b3ae43bb676ff1e5f446b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 23216,
+        "upload_time": "2025-11-20T16:53:23",
+        "upload_time_iso_8601": "2025-11-20T16:53:23.119071Z",
+        "url": "https://files.pythonhosted.org/packages/42/d6/b83f0801fd2c3f648e3696cdd2a1967b176f43c0c9db35c0350a67e7c141/fastapi_cloud_cli-0.5.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "cd8dcb1ae52121190eb75178b146652bfdce9296d2fd19aa30410ebb1fab3a63",
+          "md5": "1902cd060d0f8862c4b9848fbf901010",
+          "sha256": "5ed9591fda9ef5ed846c7fb937a06c491a00eef6d5bb656c84d82f47e500804b"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.5.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "1902cd060d0f8862c4b9848fbf901010",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 30746,
+        "upload_time": "2025-11-20T16:53:24",
+        "upload_time_iso_8601": "2025-11-20T16:53:24.491268Z",
+        "url": "https://files.pythonhosted.org/packages/cd/8d/cb1ae52121190eb75178b146652bfdce9296d2fd19aa30410ebb1fab3a63/fastapi_cloud_cli-0.5.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.5.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1a295b46612e48589df93cbd9a77fe35a36315937386f7ecc0f1d7b9b10ad0ca",
+          "md5": "7d06690b4eb7abd145f2329553b8c554",
+          "sha256": "783ab5e41baf8afcbbfb7e513ac5bdf7376202053b8bf2d158a38978dba1ca69"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.5.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7d06690b4eb7abd145f2329553b8c554",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 23218,
+        "upload_time": "2025-11-25T11:06:13",
+        "upload_time_iso_8601": "2025-11-25T11:06:13.215088Z",
+        "url": "https://files.pythonhosted.org/packages/1a/29/5b46612e48589df93cbd9a77fe35a36315937386f7ecc0f1d7b9b10ad0ca/fastapi_cloud_cli-0.5.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "276c32527a1fd7eee91dd0c52bbe6b7c21e3272b24beb436b142b2c9c01f922d",
+          "md5": "a6896733a74dc9d1268101aab8670cf6",
+          "sha256": "34d04ffadb2562c3ebb39e6f5a599c47353750f75a2ef0a2d9c1442ed09f3308"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.5.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a6896733a74dc9d1268101aab8670cf6",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 30744,
+        "upload_time": "2025-11-25T11:06:14",
+        "upload_time_iso_8601": "2025-11-25T11:06:14.583237Z",
+        "url": "https://files.pythonhosted.org/packages/27/6c/32527a1fd7eee91dd0c52bbe6b7c21e3272b24beb436b142b2c9c01f922d/fastapi_cloud_cli-0.5.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.6.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ac2f5ba9b5faa75067e30ff48e3c454263ebc2d2301d5509cfefe12cf9fc8156",
+          "md5": "b10881aec8699ae1afa811ce8050bf73",
+          "sha256": "b654890b5302c90d2f347b123a35186096328838a526316c470b6005cabd4983"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.6.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "b10881aec8699ae1afa811ce8050bf73",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 23215,
+        "upload_time": "2025-12-04T15:04:08",
+        "upload_time_iso_8601": "2025-12-04T15:04:08.121403Z",
+        "url": "https://files.pythonhosted.org/packages/ac/2f/5ba9b5faa75067e30ff48e3c454263ebc2d2301d5509cfefe12cf9fc8156/fastapi_cloud_cli-0.6.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c2dde5890bb4ee63f9d8988660b755490e346cf5769aaa7f5f3ced9afb9f090a",
+          "md5": "62285656b1da7f6860fbf1de872ce6e8",
+          "sha256": "2c333fff2e4b93b9efbec7896ce3ffa3e77ce4cf3d8cb14e35b4f823dfddac02"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.6.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "62285656b1da7f6860fbf1de872ce6e8",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 30579,
+        "upload_time": "2025-12-04T15:04:07",
+        "upload_time_iso_8601": "2025-12-04T15:04:07.008381Z",
+        "url": "https://files.pythonhosted.org/packages/c2/dd/e5890bb4ee63f9d8988660b755490e346cf5769aaa7f5f3ced9afb9f090a/fastapi_cloud_cli-0.6.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.7.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2daaa2319f008e123b178a5c4cba34935e8459e72d24d8c31214b244ab7266a6",
+          "md5": "5ab0c786670da1fdd8c1ab94e4edf39f",
+          "sha256": "9a152e80d08d465d4a6c4f5c75aa8871d1e8919f69ff131b0567f04e95d5f36c"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.7.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5ab0c786670da1fdd8c1ab94e4edf39f",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 23376,
+        "upload_time": "2025-12-16T12:51:47",
+        "upload_time_iso_8601": "2025-12-16T12:51:47.847114Z",
+        "url": "https://files.pythonhosted.org/packages/2d/aa/a2319f008e123b178a5c4cba34935e8459e72d24d8c31214b244ab7266a6/fastapi_cloud_cli-0.7.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "cf0d3b0d2991f481c122c552b4ae38a8b400a75ab0edbc85536f2a6224f72da2",
+          "md5": "130d604bc7dfd44b7f4868dfefe24f87",
+          "sha256": "8b025944475c3d53262105886dfe051f46383e4f287787a46892b524922ac0b6"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.7.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "130d604bc7dfd44b7f4868dfefe24f87",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 30906,
+        "upload_time": "2025-12-16T12:51:49",
+        "upload_time_iso_8601": "2025-12-16T12:51:49.082681Z",
+        "url": "https://files.pythonhosted.org/packages/cf/0d/3b0d2991f481c122c552b4ae38a8b400a75ab0edbc85536f2a6224f72da2/fastapi_cloud_cli-0.7.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.8.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "dd8eabb95ef59e91bb5adaa2d18fbf9ea70fd524010bb03f406a2dd2a4775ef9",
+          "md5": "04f71d47bf964e24bc2b85a7f2afe889",
+          "sha256": "e9f40bee671d985fd25d7a5409b56d4f103777bf8a0c6d746ea5fbf97a8186d9"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.8.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "04f71d47bf964e24bc2b85a7f2afe889",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 22306,
+        "upload_time": "2025-12-23T12:08:32",
+        "upload_time_iso_8601": "2025-12-23T12:08:32.680146Z",
+        "url": "https://files.pythonhosted.org/packages/dd/8e/abb95ef59e91bb5adaa2d18fbf9ea70fd524010bb03f406a2dd2a4775ef9/fastapi_cloud_cli-0.8.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "515d3b33438de35521fab4968b232caa9a4bd568a5078f2b2dfb7bb8a4528603",
+          "md5": "4dc228381eefd9cd26c0086455719d8e",
+          "sha256": "cf07c502528bfd9e6b184776659f05d9212811d76bbec9fbb6bf34bed4c7456f"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.8.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "4dc228381eefd9cd26c0086455719d8e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 30257,
+        "upload_time": "2025-12-23T12:08:33",
+        "upload_time_iso_8601": "2025-12-23T12:08:33.904833Z",
+        "url": "https://files.pythonhosted.org/packages/51/5d/3b33438de35521fab4968b232caa9a4bd568a5078f2b2dfb7bb8a4528603/fastapi_cloud_cli-0.8.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.9.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "27fd65cdeb2916419eaf5e61428e63ceec7af5463a2239b1583119d85b38a792",
+          "md5": "a68f4eac873fe8c586c4a2b869620ad7",
+          "sha256": "21bf02163cebb5664f59613269eb18f74cc9ea2323d972f049c7fafa7abed0d1"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.9.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a68f4eac873fe8c586c4a2b869620ad7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 23065,
+        "upload_time": "2026-01-09T16:30:24",
+        "upload_time_iso_8601": "2026-01-09T16:30:24.850376Z",
+        "url": "https://files.pythonhosted.org/packages/27/fd/65cdeb2916419eaf5e61428e63ceec7af5463a2239b1583119d85b38a792/fastapi_cloud_cli-0.9.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "51e595ba86183e9cf7357cbd1c101bb629fc6915750eae4b5b94205c127c31c8",
+          "md5": "7143da17b597052dea7ec182bfc0364f",
+          "sha256": "07930591122ee4aefd113ea5355fca33141af31195da9038be526bacd5accbfe"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cloud_cli-0.9.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "7143da17b597052dea7ec182bfc0364f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 31614,
+        "upload_time": "2026-01-09T16:30:26",
+        "upload_time_iso_8601": "2026-01-09T16:30:26.278547Z",
+        "url": "https://files.pythonhosted.org/packages/51/e5/95ba86183e9cf7357cbd1c101bb629fc6915750eae4b5b94205c127c31c8/fastapi_cloud_cli-0.9.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "1a0760f79270a3320780be7e2ae8a1740cb98a692920b569ba420b97bcc6e175",
+        "md5": "12f38f92957c58fe914a4e36a580f9db",
+        "sha256": "76857b0f09d918acfcb50ade34682ba3b2079ca0c43fda10215de301f185a7f8"
+      },
+      "downloads": -1,
+      "filename": "fastapi_cloud_cli-0.11.0-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "12f38f92957c58fe914a4e36a580f9db",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.9",
+      "size": 26884,
+      "upload_time": "2026-01-15T09:51:34",
+      "upload_time_iso_8601": "2026-01-15T09:51:34.471936Z",
+      "url": "https://files.pythonhosted.org/packages/1a/07/60f79270a3320780be7e2ae8a1740cb98a692920b569ba420b97bcc6e175/fastapi_cloud_cli-0.11.0-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "11156c3d85d63964340fde6f36cc80f3f365d35f371e6a918d68ff3a3d588ef2",
+        "md5": "3af8329b4d902ebac7cfd4e3dd0b0ce7",
+        "sha256": "ecc83a5db106be35af528eccb01aa9bced1d29783efd48c8c1c831cf111eea99"
+      },
+      "downloads": -1,
+      "filename": "fastapi_cloud_cli-0.11.0.tar.gz",
+      "has_sig": false,
+      "md5_digest": "3af8329b4d902ebac7cfd4e3dd0b0ce7",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.9",
+      "size": 36170,
+      "upload_time": "2026-01-15T09:51:33",
+      "upload_time_iso_8601": "2026-01-15T09:51:33.681494Z",
+      "url": "https://files.pythonhosted.org/packages/11/15/6c3d85d63964340fde6f36cc80f3f365d35f371e6a918d68ff3a3d588ef2/fastapi_cloud_cli-0.11.0.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

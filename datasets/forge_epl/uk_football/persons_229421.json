@@ -1,0 +1,43 @@
+{
+    "id": 229421,
+    "name": "Geovany Quenda",
+    "firstName": "",
+    "lastName": "Geovany Quenda",
+    "dateOfBirth": "2007-04-30",
+    "nationality": "Guinea-Bissau",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 23,
+    "lastUpdated": "2026-04-22T09:41:06Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png",
+        "address": "Fulham Road London SW6 1HS",
+        "website": "http://www.chelseafc.com",
+        "founded": 1905,
+        "clubColors": "Royal Blue / White",
+        "venue": "Stamford Bridge",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2034-06"
+        }
+    }
+}

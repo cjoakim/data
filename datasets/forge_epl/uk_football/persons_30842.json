@@ -1,0 +1,35 @@
+{
+    "id": 30842,
+    "name": "Matheus Cunha",
+    "firstName": "",
+    "lastName": "Matheus Cunha",
+    "dateOfBirth": "1999-05-27",
+    "nationality": "Brazil",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 9,
+    "lastUpdated": "2026-06-01T11:16:32Z",
+    "currentTeam": {
+        "area": {
+            "id": 2032,
+            "name": "Brazil",
+            "code": "BRA",
+            "flag": "https://crests.football-data.org/764.svg"
+        },
+        "id": 764,
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "tla": "BRA",
+        "crest": "https://crests.football-data.org/764.svg",
+        "address": "Rua Victor Civita 66 Bloco 1, Edifico 5 Rio de Janeiro, RJ 22775-044",
+        "website": "http://www.cbf.com.br/",
+        "founded": 1914,
+        "clubColors": "Yellow / Green / Blue",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

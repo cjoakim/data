@@ -1,0 +1,43 @@
+{
+    "id": 167720,
+    "name": "Noni Madueke",
+    "firstName": "Noni",
+    "lastName": "Madueke",
+    "dateOfBirth": "2002-03-10",
+    "nationality": "England",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 20,
+    "lastUpdated": "2026-06-01T11:16:29Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 770,
+        "name": "England",
+        "shortName": "England",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg",
+        "address": "Wembley Stadium, PO Box 1966 London SW1P 9EQ",
+        "website": "http://www.thefa.com",
+        "founded": 1863,
+        "clubColors": "White / Red / Navy Blue",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

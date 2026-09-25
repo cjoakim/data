@@ -1,0 +1,43 @@
+{
+    "id": 184273,
+    "name": "Facundo Buonanotte",
+    "firstName": "Facundo",
+    "lastName": "Buonanotte",
+    "dateOfBirth": "2004-12-23",
+    "nationality": "Argentina",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 10,
+    "lastUpdated": "2026-07-15T09:25:43Z",
+    "currentTeam": {
+        "area": {
+            "id": 2224,
+            "name": "Spain",
+            "code": "ESP",
+            "flag": "https://crests.football-data.org/760.svg"
+        },
+        "id": 285,
+        "name": "Elche CF",
+        "shortName": "Elche",
+        "tla": "ELC",
+        "crest": "https://crests.football-data.org/285.png",
+        "address": "Avenida Manuel Mart\u00ednez Valero, 3 Elche 03208",
+        "website": "http://www.elchecf.es",
+        "founded": 1923,
+        "clubColors": "White / Green",
+        "venue": "Estadio Manuel Mart\u00ednez Valero",
+        "runningCompetitions": [
+            {
+                "id": 2014,
+                "name": "Primera Division",
+                "code": "PD",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/laliga.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-08",
+            "until": "2027-06"
+        }
+    }
+}

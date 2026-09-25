@@ -1,0 +1,231 @@
+{
+  "info": {
+    "author": null,
+    "author_email": "KanTakahiro <hanyihong0324@gmail.com>",
+    "bugtrack_url": null,
+    "classifiers": [],
+    "description": "# TOON Python\n\nToken-Oriented Object Notation (TOON) is a compact, human-readable format designed for passing structured data to Large Language Models with significantly reduced token usage. This Python implementation achieves 30-60% fewer tokens than equivalent JSON while maintaining full compatibility.\n\nThis project is a Python port of [toon](https://github.com/johannschopplich/toon) and is currently based on `toon v0.3.1`.\n\n## Features\n\n- **Token Efficiency**: 30-60% reduction compared to JSON\n- **LLM-Friendly**: Explicit lengths and field lists help models validate output\n- **Minimal Syntax**: Removes redundant punctuation (braces, brackets, most quotes)\n- **Pythonic API**: Simple, intuitive interface following Python conventions\n- **Type Support**: Handles Python-specific types (datetime, Decimal, UUID, bytes)\n- **Flexible Formatting**: Configurable indentation, delimiters, and length markers\n- **Pure Python**: No runtime dependencies\n\n## Quick Start\n\n```python\nfrom toon_python import encode, EncodeOptions, Delimiter\n\n# Basic encoding\ndata = {\n    \"user\": {\n        \"id\": 123,\n        \"name\": \"Ada Lovelace\",\n        \"active\": True\n    },\n    \"tags\": [\"python\", \"llm\", \"data\"]\n}\n\ntoon_output = encode(data)\nprint(toon_output)\n```\n\nOutput:\n```\nuser:\n  id: 123\n  name: Ada Lovelace\n  active: true\ntags[3]: python,llm,data\n```\n\n## Installation\n\n```bash\npip install toon-python\n```\n\n## Usage\n\n### Basic Encoding\n\n```python\nfrom toon_python import encode\n\n# Simple objects\nencode({\"name\": \"Alice\", \"age\": 30})\n# → name: Alice\n#   age: 30\n\n# Arrays\nencode({\"items\": [1, 2, 3]})\n# → items[3]: 1,2,3\n\n# Nested structures\nencode({\"user\": {\"id\": 1, \"roles\": [\"admin\", \"user\"]}})\n# → user:\n#     id: 1\n#     roles[2]: admin,user\n```\n\n### Formatting Options\n\n```python\nfrom toon_python import encode, EncodeOptions, Delimiter\n\noptions = EncodeOptions(\n    indent=4,                    # 4 spaces instead of 2\n    delimiter=Delimiter.PIPE,    # Use | as delimiter\n    length_marker=\"#\"            # Add # prefix to array lengths\n)\n\ndata = {\"tags\": [\"a\", \"b\", \"c\"]}\nencode(data, options)\n# → tags[#3|]: a|b|c\n```\n\n### Type Support\n\nThe library automatically normalizes Python types to JSON-compatible representations:\n\n```python\nfrom datetime import datetime, date\nfrom decimal import Decimal\nfrom uuid import UUID\n\ndata = {\n    \"timestamp\": datetime(2023, 1, 1, 12, 0, 0),\n    \"date_only\": date(2023, 1, 1),\n    \"price\": Decimal(\"19.99\"),\n    \"id\": UUID(\"12345678-1234-5678-1234-567812345678\"),\n    \"binary\": b\"hello world\"\n}\n\nencode(data)\n# → timestamp: 2023-01-01T12:00:00\n#   date_only: 2023-01-01\n#   price: 19.99\n#   id: 12345678-1234-5678-1234-567812345678\n#   binary: aGVsbG8gd29ybGQ=\n```\n\n### Array Optimization\n\nTOON automatically chooses the best encoding strategy for arrays:\n\n```python\n# Primitive arrays (inline)\nencode({\"numbers\": [1, 2, 3, 4, 5]})\n# → numbers[5]: 1,2,3,4,5\n\n# Tabular arrays (uniform objects)\nencode({\"users\": [\n    {\"id\": 1, \"name\": \"Alice\"},\n    {\"id\": 2, \"name\": \"Bob\"}\n]})\n# → users[2]{id,name}:\n#     1,Alice\n#     2,Bob\n\n# Mixed arrays (list format)\nencode({\"mixed\": [1, {\"a\": 2}, \"three\"]})\n# → mixed[3]:\n#     - 1\n#     - a: 2\n#     - three\n```\n\n## API Reference\n\n### `encode(data, options=None)`\n\nConvert any JSON-serializable value to TOON format.\n\n**Parameters:**\n- `data`: Any Python data structure to encode\n- `options`: Optional `EncodeOptions` instance for configuration\n\n**Returns:** TOON format string\n\n**Raises:**\n- `ToonEncodingError`: If data cannot be encoded\n- `CircularReferenceError`: If circular references detected\n- `DatasetTooLargeError`: If data exceeds 10MB limit\n\n### `EncodeOptions`\n\nConfiguration options for TOON encoding:\n\n```python\n@dataclass\nclass EncodeOptions:\n    indent: int = 2                    # Spaces per nesting level\n    delimiter: Delimiter = Delimiter.COMMA  # Array delimiter\n    length_marker: Optional[str] = None  # '#' or None for array length prefix\n```\n\n### `Delimiter`\n\nEnum for array delimiters:\n- `Delimiter.COMMA` (default): `,`\n- `Delimiter.TAB`: `\\t`\n- `Delimiter.PIPE`: `|`\n\n## Development\n\n### Setup\n\n```bash\n# Clone repository\ngit clone https://github.com/your-username/toon-python.git\ncd toon-python\n\n# Install development dependencies\npip install -e \".[dev]\"\n```\n\n### Testing\n\n```bash\n# Run all tests\npytest\n\n# Run with coverage\npytest --cov=src/toon_python\n\n# Run specific test file\npytest tests/test_encoder.py\n```\n\n### Code Quality\n\n```bash\n# Format code\nblack src/ tests/\n\n# Lint code\nruff check src/ tests/\n\n# Type checking\nmypy src/\n```\n\n## Token Efficiency\n\nTOON achieves significant token reduction through:\n\n1. **Minimal Punctuation**: Removes braces, brackets, and most quotes\n2. **Smart Quoting**: Only quotes when necessary for parsing\n3. **Inline Arrays**: Primitive arrays use comma-separated values\n4. **Tabular Format**: Uniform object arrays use table-like layout\n5. **Compact Syntax**: Eliminates redundant characters\n\nExample comparison for a typical user object:\n\n**JSON (45 tokens):**\n```json\n{\n  \"id\": 123,\n  \"name\": \"Alice Smith\",\n  \"email\": \"alice@example.com\",\n  \"active\": true,\n  \"roles\": [\"user\", \"admin\"]\n}\n```\n\n**TOON (28 tokens, 38% reduction):**\n```\nid: 123\nname: Alice Smith\nemail: alice@example.com\nactive: true\nroles[2]: user,admin\n```\n\n## Limitations\n\n- Maximum dataset size: 10MB (configurable)\n- No circular reference support\n- Pure Python implementation (not optimized for speed)\n- Encoding only (no decoding functionality)\n\n## Contributing\n\n1. Fork the repository\n2. Create a feature branch\n3. Make your changes\n4. Add tests for new functionality\n5. Run the test suite and ensure all tests pass\n6. Submit a pull request\n\n## License\n\nMIT License - see LICENSE file for details.\n\n## Related Projects\n\n- [toon](https://github.com/johannschopplich/toon) - Original TypeScript implementation (v0.3.1)\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": null,
+    "keywords": null,
+    "license": null,
+    "license_expression": null,
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "toon-python",
+    "package_url": "https://pypi.org/project/toon-python/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/toon-python/",
+    "project_urls": {
+      "Repository": "https://gitlab.com/KanTakahiro/toon-python.git"
+    },
+    "provides_extra": [
+      "dev"
+    ],
+    "release_url": "https://pypi.org/project/toon-python/0.1.2/",
+    "requires_dist": [
+      "black>=23.0.0; extra == \"dev\"",
+      "hypothesis>=6.0.0; extra == \"dev\"",
+      "mypy>=1.0.0; extra == \"dev\"",
+      "pytest-cov>=4.0.0; extra == \"dev\"",
+      "pytest>=7.0.0; extra == \"dev\"",
+      "ruff>=0.1.0; extra == \"dev\""
+    ],
+    "requires_python": ">=3.10",
+    "summary": "Token-Oriented Object Notation (TOON) is a compact, human-readable format designed for passing structured data to Large Language Models with significantly reduced token usage. This specification outlines the requirements for porting the existing TypeScript implementation to Python.",
+    "version": "0.1.2",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 32038670,
+  "releases": {
+    "0.1.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9d3c0dec96b55719a11962113eb31894aa2715e6725be463a55f1ad7c8983dbc",
+          "md5": "329a4bd72c3840e3456a4675db16fb55",
+          "sha256": "303a580a55ce43b81512e141f380af8bd3756f5e4b131cf986cd3083e96f9b7d"
+        },
+        "downloads": -1,
+        "filename": "toon_python-0.1.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "329a4bd72c3840e3456a4675db16fb55",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 11247,
+        "upload_time": "2025-10-27T14:31:44",
+        "upload_time_iso_8601": "2025-10-27T14:31:44.008032Z",
+        "url": "https://files.pythonhosted.org/packages/9d/3c/0dec96b55719a11962113eb31894aa2715e6725be463a55f1ad7c8983dbc/toon_python-0.1.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "799989c6601b32935af135e3743abe2787b4c38d688b7ab20edfc24f9c0e8dba",
+          "md5": "752081be9a17ff0c939a9440f0709b22",
+          "sha256": "7c47a320c13243d98e1de20dcf23acfb95a9a68d87b0ce1c079e82f70af17126"
+        },
+        "downloads": -1,
+        "filename": "toon_python-0.1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "752081be9a17ff0c939a9440f0709b22",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 69262,
+        "upload_time": "2025-10-27T14:31:45",
+        "upload_time_iso_8601": "2025-10-27T14:31:45.389038Z",
+        "url": "https://files.pythonhosted.org/packages/79/99/89c6601b32935af135e3743abe2787b4c38d688b7ab20edfc24f9c0e8dba/toon_python-0.1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f6ae3ddd06d0504ab1a52acf3292ddcd41d43c214214bc3e63a04904cdf0dc19",
+          "md5": "9a093becb00a1b6f92e08911d4608e80",
+          "sha256": "365ca12b4c0614b82858ba0afacfb962281cce5bba35fd8b6d031e8506166879"
+        },
+        "downloads": -1,
+        "filename": "toon_python-0.1.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "9a093becb00a1b6f92e08911d4608e80",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 11312,
+        "upload_time": "2025-10-27T14:31:46",
+        "upload_time_iso_8601": "2025-10-27T14:31:46.499016Z",
+        "url": "https://files.pythonhosted.org/packages/f6/ae/3ddd06d0504ab1a52acf3292ddcd41d43c214214bc3e63a04904cdf0dc19/toon_python-0.1.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f12485821c8e86171b52bb772f3669de013c51c540a2a25d1b95ac6f39c1f835",
+          "md5": "636b4809f2a46e388c5659988e16ee14",
+          "sha256": "c570312dbe5595dffa64f20ed41893a620995cf616eeff021ae96f57794e53fe"
+        },
+        "downloads": -1,
+        "filename": "toon_python-0.1.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "636b4809f2a46e388c5659988e16ee14",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 69328,
+        "upload_time": "2025-10-27T14:31:48",
+        "upload_time_iso_8601": "2025-10-27T14:31:48.160787Z",
+        "url": "https://files.pythonhosted.org/packages/f1/24/85821c8e86171b52bb772f3669de013c51c540a2a25d1b95ac6f39c1f835/toon_python-0.1.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.1.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f869017f9f27f0e6b24871ecb73cdc675231c472d4b50a89be0b6779441862cd",
+          "md5": "8197fb7b696aa68fe868aeee774096c7",
+          "sha256": "0582272edbb7b244c4931f80c679c2867c7d0a64faa53f16c355fcc3b8076d8f"
+        },
+        "downloads": -1,
+        "filename": "toon_python-0.1.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "8197fb7b696aa68fe868aeee774096c7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 23680,
+        "upload_time": "2025-10-27T14:58:18",
+        "upload_time_iso_8601": "2025-10-27T14:58:18.627216Z",
+        "url": "https://files.pythonhosted.org/packages/f8/69/017f9f27f0e6b24871ecb73cdc675231c472d4b50a89be0b6779441862cd/toon_python-0.1.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fcc6104805c4efa3853c875bd8d2f199e06d383cd307bbdc788f668c4178ce2d",
+          "md5": "72031da17fc3d4932786f78ff8830095",
+          "sha256": "10420d622c043cb5d9d444f92524731ded4b536fb77194c998855bcda12be3d2"
+        },
+        "downloads": -1,
+        "filename": "toon_python-0.1.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "72031da17fc3d4932786f78ff8830095",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 85215,
+        "upload_time": "2025-10-27T14:58:20",
+        "upload_time_iso_8601": "2025-10-27T14:58:20.168511Z",
+        "url": "https://files.pythonhosted.org/packages/fc/c6/104805c4efa3853c875bd8d2f199e06d383cd307bbdc788f668c4178ce2d/toon_python-0.1.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "f869017f9f27f0e6b24871ecb73cdc675231c472d4b50a89be0b6779441862cd",
+        "md5": "8197fb7b696aa68fe868aeee774096c7",
+        "sha256": "0582272edbb7b244c4931f80c679c2867c7d0a64faa53f16c355fcc3b8076d8f"
+      },
+      "downloads": -1,
+      "filename": "toon_python-0.1.2-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "8197fb7b696aa68fe868aeee774096c7",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.10",
+      "size": 23680,
+      "upload_time": "2025-10-27T14:58:18",
+      "upload_time_iso_8601": "2025-10-27T14:58:18.627216Z",
+      "url": "https://files.pythonhosted.org/packages/f8/69/017f9f27f0e6b24871ecb73cdc675231c472d4b50a89be0b6779441862cd/toon_python-0.1.2-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "fcc6104805c4efa3853c875bd8d2f199e06d383cd307bbdc788f668c4178ce2d",
+        "md5": "72031da17fc3d4932786f78ff8830095",
+        "sha256": "10420d622c043cb5d9d444f92524731ded4b536fb77194c998855bcda12be3d2"
+      },
+      "downloads": -1,
+      "filename": "toon_python-0.1.2.tar.gz",
+      "has_sig": false,
+      "md5_digest": "72031da17fc3d4932786f78ff8830095",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.10",
+      "size": 85215,
+      "upload_time": "2025-10-27T14:58:20",
+      "upload_time_iso_8601": "2025-10-27T14:58:20.168511Z",
+      "url": "https://files.pythonhosted.org/packages/fc/c6/104805c4efa3853c875bd8d2f199e06d383cd307bbdc788f668c4178ce2d/toon_python-0.1.2.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

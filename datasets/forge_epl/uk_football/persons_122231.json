@@ -1,0 +1,50 @@
+{
+    "id": 122231,
+    "name": "Isaac Schmidt",
+    "firstName": "Isaac",
+    "lastName": "Schmidt",
+    "dateOfBirth": "1999-12-07",
+    "nationality": "Switzerland",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 22,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2234,
+            "name": "Switzerland",
+            "code": "CHE",
+            "flag": "https://crests.football-data.org/788.svg"
+        },
+        "id": 1871,
+        "name": "BSC Young Boys",
+        "shortName": "Young Boys",
+        "tla": "YOB",
+        "crest": "https://crests.football-data.org/1871.png",
+        "address": "Postfach 61 Bern 3000",
+        "website": "http://www.bscyb.ch",
+        "founded": 1898,
+        "clubColors": "Yellow / Black",
+        "venue": "Wankdorfstadion",
+        "runningCompetitions": [
+            {
+                "id": 2072,
+                "name": "Super League",
+                "code": "SSL",
+                "type": "LEAGUE",
+                "emblem": null
+            },
+            {
+                "id": 2071,
+                "name": "Schweizer Pokal",
+                "code": "SC",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2030-06"
+        }
+    }
+}

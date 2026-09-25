@@ -1,0 +1,2456 @@
+{
+  "info": {
+    "author": "Anthropic, PBC.",
+    "author_email": null,
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13"
+    ],
+    "description": "# MCP Python SDK\n\n<div align=\"center\">\n\n<strong>Python implementation of the Model Context Protocol (MCP)</strong>\n\n[![PyPI][pypi-badge]][pypi-url]\n[![MIT licensed][mit-badge]][mit-url]\n[![Python Version][python-badge]][python-url]\n[![Documentation][docs-badge]][docs-url]\n[![Protocol][protocol-badge]][protocol-url]\n[![Specification][spec-badge]][spec-url]\n\n</div>\n\n<!-- omit in toc -->\n## Table of Contents\n\n- [MCP Python SDK](#mcp-python-sdk)\n  - [Overview](#overview)\n  - [Installation](#installation)\n    - [Adding MCP to your python project](#adding-mcp-to-your-python-project)\n    - [Running the standalone MCP development tools](#running-the-standalone-mcp-development-tools)\n  - [Quickstart](#quickstart)\n  - [What is MCP?](#what-is-mcp)\n  - [Core Concepts](#core-concepts)\n    - [Server](#server)\n    - [Resources](#resources)\n    - [Tools](#tools)\n      - [Structured Output](#structured-output)\n    - [Prompts](#prompts)\n    - [Images](#images)\n    - [Context](#context)\n      - [Getting Context in Functions](#getting-context-in-functions)\n      - [Context Properties and Methods](#context-properties-and-methods)\n    - [Completions](#completions)\n    - [Elicitation](#elicitation)\n    - [Sampling](#sampling)\n    - [Logging and Notifications](#logging-and-notifications)\n    - [Authentication](#authentication)\n    - [FastMCP Properties](#fastmcp-properties)\n    - [Session Properties and Methods](#session-properties-and-methods)\n    - [Request Context Properties](#request-context-properties)\n  - [Running Your Server](#running-your-server)\n    - [Development Mode](#development-mode)\n    - [Claude Desktop Integration](#claude-desktop-integration)\n    - [Direct Execution](#direct-execution)\n    - [Streamable HTTP Transport](#streamable-http-transport)\n      - [CORS Configuration for Browser-Based Clients](#cors-configuration-for-browser-based-clients)\n    - [Mounting to an Existing ASGI Server](#mounting-to-an-existing-asgi-server)\n      - [StreamableHTTP servers](#streamablehttp-servers)\n        - [Basic mounting](#basic-mounting)\n        - [Host-based routing](#host-based-routing)\n        - [Multiple servers with path configuration](#multiple-servers-with-path-configuration)\n        - [Path configuration at initialization](#path-configuration-at-initialization)\n      - [SSE servers](#sse-servers)\n  - [Advanced Usage](#advanced-usage)\n    - [Low-Level Server](#low-level-server)\n      - [Structured Output Support](#structured-output-support)\n    - [Pagination (Advanced)](#pagination-advanced)\n    - [Writing MCP Clients](#writing-mcp-clients)\n    - [Client Display Utilities](#client-display-utilities)\n    - [OAuth Authentication for Clients](#oauth-authentication-for-clients)\n    - [Parsing Tool Results](#parsing-tool-results)\n    - [MCP Primitives](#mcp-primitives)\n    - [Server Capabilities](#server-capabilities)\n  - [Documentation](#documentation)\n  - [Contributing](#contributing)\n  - [License](#license)\n\n[pypi-badge]: https://img.shields.io/pypi/v/mcp.svg\n[pypi-url]: https://pypi.org/project/mcp/\n[mit-badge]: https://img.shields.io/pypi/l/mcp.svg\n[mit-url]: https://github.com/modelcontextprotocol/python-sdk/blob/main/LICENSE\n[python-badge]: https://img.shields.io/pypi/pyversions/mcp.svg\n[python-url]: https://www.python.org/downloads/\n[docs-badge]: https://img.shields.io/badge/docs-python--sdk-blue.svg\n[docs-url]: https://modelcontextprotocol.github.io/python-sdk/\n[protocol-badge]: https://img.shields.io/badge/protocol-modelcontextprotocol.io-blue.svg\n[protocol-url]: https://modelcontextprotocol.io\n[spec-badge]: https://img.shields.io/badge/spec-spec.modelcontextprotocol.io-blue.svg\n[spec-url]: https://modelcontextprotocol.io/specification/latest\n\n## Overview\n\nThe Model Context Protocol allows applications to provide context for LLMs in a standardized way, separating the concerns of providing context from the actual LLM interaction. This Python SDK implements the full MCP specification, making it easy to:\n\n- Build MCP clients that can connect to any MCP server\n- Create MCP servers that expose resources, prompts and tools\n- Use standard transports like stdio, SSE, and Streamable HTTP\n- Handle all MCP protocol messages and lifecycle events\n\n## Installation\n\n### Adding MCP to your python project\n\nWe recommend using [uv](https://docs.astral.sh/uv/) to manage your Python projects.\n\nIf you haven't created a uv-managed project yet, create one:\n\n   ```bash\n   uv init mcp-server-demo\n   cd mcp-server-demo\n   ```\n\n   Then add MCP to your project dependencies:\n\n   ```bash\n   uv add \"mcp[cli]\"\n   ```\n\nAlternatively, for projects using pip for dependencies:\n\n```bash\npip install \"mcp[cli]\"\n```\n\n### Running the standalone MCP development tools\n\nTo run the mcp command with uv:\n\n```bash\nuv run mcp\n```\n\n## Quickstart\n\nLet's create a simple MCP server that exposes a calculator tool and some data:\n\n<!-- snippet-source examples/snippets/servers/fastmcp_quickstart.py -->\n```python\n\"\"\"\nFastMCP quickstart example.\n\nRun from the repository root:\n    uv run examples/snippets/servers/fastmcp_quickstart.py\n\"\"\"\n\nfrom mcp.server.fastmcp import FastMCP\n\n# Create an MCP server\nmcp = FastMCP(\"Demo\", json_response=True)\n\n\n# Add an addition tool\n@mcp.tool()\ndef add(a: int, b: int) -> int:\n    \"\"\"Add two numbers\"\"\"\n    return a + b\n\n\n# Add a dynamic greeting resource\n@mcp.resource(\"greeting://{name}\")\ndef get_greeting(name: str) -> str:\n    \"\"\"Get a personalized greeting\"\"\"\n    return f\"Hello, {name}!\"\n\n\n# Add a prompt\n@mcp.prompt()\ndef greet_user(name: str, style: str = \"friendly\") -> str:\n    \"\"\"Generate a greeting prompt\"\"\"\n    styles = {\n        \"friendly\": \"Please write a warm, friendly greeting\",\n        \"formal\": \"Please write a formal, professional greeting\",\n        \"casual\": \"Please write a casual, relaxed greeting\",\n    }\n\n    return f\"{styles.get(style, styles['friendly'])} for someone named {name}.\"\n\n\n# Run with streamable HTTP transport\nif __name__ == \"__main__\":\n    mcp.run(transport=\"streamable-http\")\n```\n\n_Full example: [examples/snippets/servers/fastmcp_quickstart.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/fastmcp_quickstart.py)_\n<!-- /snippet-source -->\n\nYou can install this server in [Claude Code](https://docs.claude.com/en/docs/claude-code/mcp) and interact with it right away. First, run the server:\n\n```bash\nuv run --with mcp examples/snippets/servers/fastmcp_quickstart.py\n```\n\nThen add it to Claude Code:\n\n```bash\nclaude mcp add --transport http my-server http://localhost:8000/mcp\n```\n\nAlternatively, you can test it with the MCP Inspector. Start the server as above, then in a separate terminal:\n\n```bash\nnpx -y @modelcontextprotocol/inspector\n```\n\nIn the inspector UI, connect to `http://localhost:8000/mcp`.\n\n## What is MCP?\n\nThe [Model Context Protocol (MCP)](https://modelcontextprotocol.io) lets you build servers that expose data and functionality to LLM applications in a secure, standardized way. Think of it like a web API, but specifically designed for LLM interactions. MCP servers can:\n\n- Expose data through **Resources** (think of these sort of like GET endpoints; they are used to load information into the LLM's context)\n- Provide functionality through **Tools** (sort of like POST endpoints; they are used to execute code or otherwise produce a side effect)\n- Define interaction patterns through **Prompts** (reusable templates for LLM interactions)\n- And more!\n\n## Core Concepts\n\n### Server\n\nThe FastMCP server is your core interface to the MCP protocol. It handles connection management, protocol compliance, and message routing:\n\n<!-- snippet-source examples/snippets/servers/lifespan_example.py -->\n```python\n\"\"\"Example showing lifespan support for startup/shutdown with strong typing.\"\"\"\n\nfrom collections.abc import AsyncIterator\nfrom contextlib import asynccontextmanager\nfrom dataclasses import dataclass\n\nfrom mcp.server.fastmcp import Context, FastMCP\nfrom mcp.server.session import ServerSession\n\n\n# Mock database class for example\nclass Database:\n    \"\"\"Mock database class for example.\"\"\"\n\n    @classmethod\n    async def connect(cls) -> \"Database\":\n        \"\"\"Connect to database.\"\"\"\n        return cls()\n\n    async def disconnect(self) -> None:\n        \"\"\"Disconnect from database.\"\"\"\n        pass\n\n    def query(self) -> str:\n        \"\"\"Execute a query.\"\"\"\n        return \"Query result\"\n\n\n@dataclass\nclass AppContext:\n    \"\"\"Application context with typed dependencies.\"\"\"\n\n    db: Database\n\n\n@asynccontextmanager\nasync def app_lifespan(server: FastMCP) -> AsyncIterator[AppContext]:\n    \"\"\"Manage application lifecycle with type-safe context.\"\"\"\n    # Initialize on startup\n    db = await Database.connect()\n    try:\n        yield AppContext(db=db)\n    finally:\n        # Cleanup on shutdown\n        await db.disconnect()\n\n\n# Pass lifespan to server\nmcp = FastMCP(\"My App\", lifespan=app_lifespan)\n\n\n# Access type-safe lifespan context in tools\n@mcp.tool()\ndef query_db(ctx: Context[ServerSession, AppContext]) -> str:\n    \"\"\"Tool that uses initialized resources.\"\"\"\n    db = ctx.request_context.lifespan_context.db\n    return db.query()\n```\n\n_Full example: [examples/snippets/servers/lifespan_example.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/lifespan_example.py)_\n<!-- /snippet-source -->\n\n### Resources\n\nResources are how you expose data to LLMs. They're similar to GET endpoints in a REST API - they provide data but shouldn't perform significant computation or have side effects:\n\n<!-- snippet-source examples/snippets/servers/basic_resource.py -->\n```python\nfrom mcp.server.fastmcp import FastMCP\n\nmcp = FastMCP(name=\"Resource Example\")\n\n\n@mcp.resource(\"file://documents/{name}\")\ndef read_document(name: str) -> str:\n    \"\"\"Read a document by name.\"\"\"\n    # This would normally read from disk\n    return f\"Content of {name}\"\n\n\n@mcp.resource(\"config://settings\")\ndef get_settings() -> str:\n    \"\"\"Get application settings.\"\"\"\n    return \"\"\"{\n  \"theme\": \"dark\",\n  \"language\": \"en\",\n  \"debug\": false\n}\"\"\"\n```\n\n_Full example: [examples/snippets/servers/basic_resource.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/basic_resource.py)_\n<!-- /snippet-source -->\n\n### Tools\n\nTools let LLMs take actions through your server. Unlike resources, tools are expected to perform computation and have side effects:\n\n<!-- snippet-source examples/snippets/servers/basic_tool.py -->\n```python\nfrom mcp.server.fastmcp import FastMCP\n\nmcp = FastMCP(name=\"Tool Example\")\n\n\n@mcp.tool()\ndef sum(a: int, b: int) -> int:\n    \"\"\"Add two numbers together.\"\"\"\n    return a + b\n\n\n@mcp.tool()\ndef get_weather(city: str, unit: str = \"celsius\") -> str:\n    \"\"\"Get weather for a city.\"\"\"\n    # This would normally call a weather API\n    return f\"Weather in {city}: 22degrees{unit[0].upper()}\"\n```\n\n_Full example: [examples/snippets/servers/basic_tool.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/basic_tool.py)_\n<!-- /snippet-source -->\n\nTools can optionally receive a Context object by including a parameter with the `Context` type annotation. This context is automatically injected by the FastMCP framework and provides access to MCP capabilities:\n\n<!-- snippet-source examples/snippets/servers/tool_progress.py -->\n```python\nfrom mcp.server.fastmcp import Context, FastMCP\nfrom mcp.server.session import ServerSession\n\nmcp = FastMCP(name=\"Progress Example\")\n\n\n@mcp.tool()\nasync def long_running_task(task_name: str, ctx: Context[ServerSession, None], steps: int = 5) -> str:\n    \"\"\"Execute a task with progress updates.\"\"\"\n    await ctx.info(f\"Starting: {task_name}\")\n\n    for i in range(steps):\n        progress = (i + 1) / steps\n        await ctx.report_progress(\n            progress=progress,\n            total=1.0,\n            message=f\"Step {i + 1}/{steps}\",\n        )\n        await ctx.debug(f\"Completed step {i + 1}\")\n\n    return f\"Task '{task_name}' completed\"\n```\n\n_Full example: [examples/snippets/servers/tool_progress.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/tool_progress.py)_\n<!-- /snippet-source -->\n\n#### Structured Output\n\nTools will return structured results by default, if their return type\nannotation is compatible. Otherwise, they will return unstructured results.\n\nStructured output supports these return types:\n\n- Pydantic models (BaseModel subclasses)\n- TypedDicts\n- Dataclasses and other classes with type hints\n- `dict[str, T]` (where T is any JSON-serializable type)\n- Primitive types (str, int, float, bool, bytes, None) - wrapped in `{\"result\": value}`\n- Generic types (list, tuple, Union, Optional, etc.) - wrapped in `{\"result\": value}`\n\nClasses without type hints cannot be serialized for structured output. Only\nclasses with properly annotated attributes will be converted to Pydantic models\nfor schema generation and validation.\n\nStructured results are automatically validated against the output schema\ngenerated from the annotation. This ensures the tool returns well-typed,\nvalidated data that clients can easily process.\n\n**Note:** For backward compatibility, unstructured results are also\nreturned. Unstructured results are provided for backward compatibility\nwith previous versions of the MCP specification, and are quirks-compatible\nwith previous versions of FastMCP in the current version of the SDK.\n\n**Note:** In cases where a tool function's return type annotation\ncauses the tool to be classified as structured _and this is undesirable_,\nthe  classification can be suppressed by passing `structured_output=False`\nto the `@tool` decorator.\n\n##### Advanced: Direct CallToolResult\n\nFor full control over tool responses including the `_meta` field (for passing data to client applications without exposing it to the model), you can return `CallToolResult` directly:\n\n<!-- snippet-source examples/snippets/servers/direct_call_tool_result.py -->\n```python\n\"\"\"Example showing direct CallToolResult return for advanced control.\"\"\"\n\nfrom typing import Annotated\n\nfrom pydantic import BaseModel\n\nfrom mcp.server.fastmcp import FastMCP\nfrom mcp.types import CallToolResult, TextContent\n\nmcp = FastMCP(\"CallToolResult Example\")\n\n\nclass ValidationModel(BaseModel):\n    \"\"\"Model for validating structured output.\"\"\"\n\n    status: str\n    data: dict[str, int]\n\n\n@mcp.tool()\ndef advanced_tool() -> CallToolResult:\n    \"\"\"Return CallToolResult directly for full control including _meta field.\"\"\"\n    return CallToolResult(\n        content=[TextContent(type=\"text\", text=\"Response visible to the model\")],\n        _meta={\"hidden\": \"data for client applications only\"},\n    )\n\n\n@mcp.tool()\ndef validated_tool() -> Annotated[CallToolResult, ValidationModel]:\n    \"\"\"Return CallToolResult with structured output validation.\"\"\"\n    return CallToolResult(\n        content=[TextContent(type=\"text\", text=\"Validated response\")],\n        structuredContent={\"status\": \"success\", \"data\": {\"result\": 42}},\n        _meta={\"internal\": \"metadata\"},\n    )\n\n\n@mcp.tool()\ndef empty_result_tool() -> CallToolResult:\n    \"\"\"For empty results, return CallToolResult with empty content.\"\"\"\n    return CallToolResult(content=[])\n```\n\n_Full example: [examples/snippets/servers/direct_call_tool_result.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/direct_call_tool_result.py)_\n<!-- /snippet-source -->\n\n**Important:** `CallToolResult` must always be returned (no `Optional` or `Union`). For empty results, use `CallToolResult(content=[])`. For optional simple types, use `str | None` without `CallToolResult`.\n\n<!-- snippet-source examples/snippets/servers/structured_output.py -->\n```python\n\"\"\"Example showing structured output with tools.\"\"\"\n\nfrom typing import TypedDict\n\nfrom pydantic import BaseModel, Field\n\nfrom mcp.server.fastmcp import FastMCP\n\nmcp = FastMCP(\"Structured Output Example\")\n\n\n# Using Pydantic models for rich structured data\nclass WeatherData(BaseModel):\n    \"\"\"Weather information structure.\"\"\"\n\n    temperature: float = Field(description=\"Temperature in Celsius\")\n    humidity: float = Field(description=\"Humidity percentage\")\n    condition: str\n    wind_speed: float\n\n\n@mcp.tool()\ndef get_weather(city: str) -> WeatherData:\n    \"\"\"Get weather for a city - returns structured data.\"\"\"\n    # Simulated weather data\n    return WeatherData(\n        temperature=22.5,\n        humidity=45.0,\n        condition=\"sunny\",\n        wind_speed=5.2,\n    )\n\n\n# Using TypedDict for simpler structures\nclass LocationInfo(TypedDict):\n    latitude: float\n    longitude: float\n    name: str\n\n\n@mcp.tool()\ndef get_location(address: str) -> LocationInfo:\n    \"\"\"Get location coordinates\"\"\"\n    return LocationInfo(latitude=51.5074, longitude=-0.1278, name=\"London, UK\")\n\n\n# Using dict[str, Any] for flexible schemas\n@mcp.tool()\ndef get_statistics(data_type: str) -> dict[str, float]:\n    \"\"\"Get various statistics\"\"\"\n    return {\"mean\": 42.5, \"median\": 40.0, \"std_dev\": 5.2}\n\n\n# Ordinary classes with type hints work for structured output\nclass UserProfile:\n    name: str\n    age: int\n    email: str | None = None\n\n    def __init__(self, name: str, age: int, email: str | None = None):\n        self.name = name\n        self.age = age\n        self.email = email\n\n\n@mcp.tool()\ndef get_user(user_id: str) -> UserProfile:\n    \"\"\"Get user profile - returns structured data\"\"\"\n    return UserProfile(name=\"Alice\", age=30, email=\"alice@example.com\")\n\n\n# Classes WITHOUT type hints cannot be used for structured output\nclass UntypedConfig:\n    def __init__(self, setting1, setting2):  # type: ignore[reportMissingParameterType]\n        self.setting1 = setting1\n        self.setting2 = setting2\n\n\n@mcp.tool()\ndef get_config() -> UntypedConfig:\n    \"\"\"This returns unstructured output - no schema generated\"\"\"\n    return UntypedConfig(\"value1\", \"value2\")\n\n\n# Lists and other types are wrapped automatically\n@mcp.tool()\ndef list_cities() -> list[str]:\n    \"\"\"Get a list of cities\"\"\"\n    return [\"London\", \"Paris\", \"Tokyo\"]\n    # Returns: {\"result\": [\"London\", \"Paris\", \"Tokyo\"]}\n\n\n@mcp.tool()\ndef get_temperature(city: str) -> float:\n    \"\"\"Get temperature as a simple float\"\"\"\n    return 22.5\n    # Returns: {\"result\": 22.5}\n```\n\n_Full example: [examples/snippets/servers/structured_output.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/structured_output.py)_\n<!-- /snippet-source -->\n\n### Prompts\n\nPrompts are reusable templates that help LLMs interact with your server effectively:\n\n<!-- snippet-source examples/snippets/servers/basic_prompt.py -->\n```python\nfrom mcp.server.fastmcp import FastMCP\nfrom mcp.server.fastmcp.prompts import base\n\nmcp = FastMCP(name=\"Prompt Example\")\n\n\n@mcp.prompt(title=\"Code Review\")\ndef review_code(code: str) -> str:\n    return f\"Please review this code:\\n\\n{code}\"\n\n\n@mcp.prompt(title=\"Debug Assistant\")\ndef debug_error(error: str) -> list[base.Message]:\n    return [\n        base.UserMessage(\"I'm seeing this error:\"),\n        base.UserMessage(error),\n        base.AssistantMessage(\"I'll help debug that. What have you tried so far?\"),\n    ]\n```\n\n_Full example: [examples/snippets/servers/basic_prompt.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/basic_prompt.py)_\n<!-- /snippet-source -->\n\n### Icons\n\nMCP servers can provide icons for UI display. Icons can be added to the server implementation, tools, resources, and prompts:\n\n```python\nfrom mcp.server.fastmcp import FastMCP, Icon\n\n# Create an icon from a file path or URL\nicon = Icon(\n    src=\"icon.png\",\n    mimeType=\"image/png\",\n    sizes=\"64x64\"\n)\n\n# Add icons to server\nmcp = FastMCP(\n    \"My Server\",\n    website_url=\"https://example.com\",\n    icons=[icon]\n)\n\n# Add icons to tools, resources, and prompts\n@mcp.tool(icons=[icon])\ndef my_tool():\n    \"\"\"Tool with an icon.\"\"\"\n    return \"result\"\n\n@mcp.resource(\"demo://resource\", icons=[icon])\ndef my_resource():\n    \"\"\"Resource with an icon.\"\"\"\n    return \"content\"\n```\n\n_Full example: [examples/fastmcp/icons_demo.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/fastmcp/icons_demo.py)_\n\n### Images\n\nFastMCP provides an `Image` class that automatically handles image data:\n\n<!-- snippet-source examples/snippets/servers/images.py -->\n```python\n\"\"\"Example showing image handling with FastMCP.\"\"\"\n\nfrom PIL import Image as PILImage\n\nfrom mcp.server.fastmcp import FastMCP, Image\n\nmcp = FastMCP(\"Image Example\")\n\n\n@mcp.tool()\ndef create_thumbnail(image_path: str) -> Image:\n    \"\"\"Create a thumbnail from an image\"\"\"\n    img = PILImage.open(image_path)\n    img.thumbnail((100, 100))\n    return Image(data=img.tobytes(), format=\"png\")\n```\n\n_Full example: [examples/snippets/servers/images.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/images.py)_\n<!-- /snippet-source -->\n\n### Context\n\nThe Context object is automatically injected into tool and resource functions that request it via type hints. It provides access to MCP capabilities like logging, progress reporting, resource reading, user interaction, and request metadata.\n\n#### Getting Context in Functions\n\nTo use context in a tool or resource function, add a parameter with the `Context` type annotation:\n\n```python\nfrom mcp.server.fastmcp import Context, FastMCP\n\nmcp = FastMCP(name=\"Context Example\")\n\n\n@mcp.tool()\nasync def my_tool(x: int, ctx: Context) -> str:\n    \"\"\"Tool that uses context capabilities.\"\"\"\n    # The context parameter can have any name as long as it's type-annotated\n    return await process_with_context(x, ctx)\n```\n\n#### Context Properties and Methods\n\nThe Context object provides the following capabilities:\n\n- `ctx.request_id` - Unique ID for the current request\n- `ctx.client_id` - Client ID if available\n- `ctx.fastmcp` - Access to the FastMCP server instance (see [FastMCP Properties](#fastmcp-properties))\n- `ctx.session` - Access to the underlying session for advanced communication (see [Session Properties and Methods](#session-properties-and-methods))\n- `ctx.request_context` - Access to request-specific data and lifespan resources (see [Request Context Properties](#request-context-properties))\n- `await ctx.debug(message)` - Send debug log message\n- `await ctx.info(message)` - Send info log message  \n- `await ctx.warning(message)` - Send warning log message\n- `await ctx.error(message)` - Send error log message\n- `await ctx.log(level, message, logger_name=None)` - Send log with custom level\n- `await ctx.report_progress(progress, total=None, message=None)` - Report operation progress\n- `await ctx.read_resource(uri)` - Read a resource by URI\n- `await ctx.elicit(message, schema)` - Request additional information from user with validation\n\n<!-- snippet-source examples/snippets/servers/tool_progress.py -->\n```python\nfrom mcp.server.fastmcp import Context, FastMCP\nfrom mcp.server.session import ServerSession\n\nmcp = FastMCP(name=\"Progress Example\")\n\n\n@mcp.tool()\nasync def long_running_task(task_name: str, ctx: Context[ServerSession, None], steps: int = 5) -> str:\n    \"\"\"Execute a task with progress updates.\"\"\"\n    await ctx.info(f\"Starting: {task_name}\")\n\n    for i in range(steps):\n        progress = (i + 1) / steps\n        await ctx.report_progress(\n            progress=progress,\n            total=1.0,\n            message=f\"Step {i + 1}/{steps}\",\n        )\n        await ctx.debug(f\"Completed step {i + 1}\")\n\n    return f\"Task '{task_name}' completed\"\n```\n\n_Full example: [examples/snippets/servers/tool_progress.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/tool_progress.py)_\n<!-- /snippet-source -->\n\n### Completions\n\nMCP supports providing completion suggestions for prompt arguments and resource template parameters. With the context parameter, servers can provide completions based on previously resolved values:\n\nClient usage:\n\n<!-- snippet-source examples/snippets/clients/completion_client.py -->\n```python\n\"\"\"\ncd to the `examples/snippets` directory and run:\n    uv run completion-client\n\"\"\"\n\nimport asyncio\nimport os\n\nfrom mcp import ClientSession, StdioServerParameters\nfrom mcp.client.stdio import stdio_client\nfrom mcp.types import PromptReference, ResourceTemplateReference\n\n# Create server parameters for stdio connection\nserver_params = StdioServerParameters(\n    command=\"uv\",  # Using uv to run the server\n    args=[\"run\", \"server\", \"completion\", \"stdio\"],  # Server with completion support\n    env={\"UV_INDEX\": os.environ.get(\"UV_INDEX\", \"\")},\n)\n\n\nasync def run():\n    \"\"\"Run the completion client example.\"\"\"\n    async with stdio_client(server_params) as (read, write):\n        async with ClientSession(read, write) as session:\n            # Initialize the connection\n            await session.initialize()\n\n            # List available resource templates\n            templates = await session.list_resource_templates()\n            print(\"Available resource templates:\")\n            for template in templates.resourceTemplates:\n                print(f\"  - {template.uriTemplate}\")\n\n            # List available prompts\n            prompts = await session.list_prompts()\n            print(\"\\nAvailable prompts:\")\n            for prompt in prompts.prompts:\n                print(f\"  - {prompt.name}\")\n\n            # Complete resource template arguments\n            if templates.resourceTemplates:\n                template = templates.resourceTemplates[0]\n                print(f\"\\nCompleting arguments for resource template: {template.uriTemplate}\")\n\n                # Complete without context\n                result = await session.complete(\n                    ref=ResourceTemplateReference(type=\"ref/resource\", uri=template.uriTemplate),\n                    argument={\"name\": \"owner\", \"value\": \"model\"},\n                )\n                print(f\"Completions for 'owner' starting with 'model': {result.completion.values}\")\n\n                # Complete with context - repo suggestions based on owner\n                result = await session.complete(\n                    ref=ResourceTemplateReference(type=\"ref/resource\", uri=template.uriTemplate),\n                    argument={\"name\": \"repo\", \"value\": \"\"},\n                    context_arguments={\"owner\": \"modelcontextprotocol\"},\n                )\n                print(f\"Completions for 'repo' with owner='modelcontextprotocol': {result.completion.values}\")\n\n            # Complete prompt arguments\n            if prompts.prompts:\n                prompt_name = prompts.prompts[0].name\n                print(f\"\\nCompleting arguments for prompt: {prompt_name}\")\n\n                result = await session.complete(\n                    ref=PromptReference(type=\"ref/prompt\", name=prompt_name),\n                    argument={\"name\": \"style\", \"value\": \"\"},\n                )\n                print(f\"Completions for 'style' argument: {result.completion.values}\")\n\n\ndef main():\n    \"\"\"Entry point for the completion client.\"\"\"\n    asyncio.run(run())\n\n\nif __name__ == \"__main__\":\n    main()\n```\n\n_Full example: [examples/snippets/clients/completion_client.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/clients/completion_client.py)_\n<!-- /snippet-source -->\n### Elicitation\n\nRequest additional information from users. This example shows an Elicitation during a Tool Call:\n\n<!-- snippet-source examples/snippets/servers/elicitation.py -->\n```python\n\"\"\"Elicitation examples demonstrating form and URL mode elicitation.\n\nForm mode elicitation collects structured, non-sensitive data through a schema.\nURL mode elicitation directs users to external URLs for sensitive operations\nlike OAuth flows, credential collection, or payment processing.\n\"\"\"\n\nimport uuid\n\nfrom pydantic import BaseModel, Field\n\nfrom mcp.server.fastmcp import Context, FastMCP\nfrom mcp.server.session import ServerSession\nfrom mcp.shared.exceptions import UrlElicitationRequiredError\nfrom mcp.types import ElicitRequestURLParams\n\nmcp = FastMCP(name=\"Elicitation Example\")\n\n\nclass BookingPreferences(BaseModel):\n    \"\"\"Schema for collecting user preferences.\"\"\"\n\n    checkAlternative: bool = Field(description=\"Would you like to check another date?\")\n    alternativeDate: str = Field(\n        default=\"2024-12-26\",\n        description=\"Alternative date (YYYY-MM-DD)\",\n    )\n\n\n@mcp.tool()\nasync def book_table(date: str, time: str, party_size: int, ctx: Context[ServerSession, None]) -> str:\n    \"\"\"Book a table with date availability check.\n\n    This demonstrates form mode elicitation for collecting non-sensitive user input.\n    \"\"\"\n    # Check if date is available\n    if date == \"2024-12-25\":\n        # Date unavailable - ask user for alternative\n        result = await ctx.elicit(\n            message=(f\"No tables available for {party_size} on {date}. Would you like to try another date?\"),\n            schema=BookingPreferences,\n        )\n\n        if result.action == \"accept\" and result.data:\n            if result.data.checkAlternative:\n                return f\"[SUCCESS] Booked for {result.data.alternativeDate}\"\n            return \"[CANCELLED] No booking made\"\n        return \"[CANCELLED] Booking cancelled\"\n\n    # Date available\n    return f\"[SUCCESS] Booked for {date} at {time}\"\n\n\n@mcp.tool()\nasync def secure_payment(amount: float, ctx: Context[ServerSession, None]) -> str:\n    \"\"\"Process a secure payment requiring URL confirmation.\n\n    This demonstrates URL mode elicitation using ctx.elicit_url() for\n    operations that require out-of-band user interaction.\n    \"\"\"\n    elicitation_id = str(uuid.uuid4())\n\n    result = await ctx.elicit_url(\n        message=f\"Please confirm payment of ${amount:.2f}\",\n        url=f\"https://payments.example.com/confirm?amount={amount}&id={elicitation_id}\",\n        elicitation_id=elicitation_id,\n    )\n\n    if result.action == \"accept\":\n        # In a real app, the payment confirmation would happen out-of-band\n        # and you'd verify the payment status from your backend\n        return f\"Payment of ${amount:.2f} initiated - check your browser to complete\"\n    elif result.action == \"decline\":\n        return \"Payment declined by user\"\n    return \"Payment cancelled\"\n\n\n@mcp.tool()\nasync def connect_service(service_name: str, ctx: Context[ServerSession, None]) -> str:\n    \"\"\"Connect to a third-party service requiring OAuth authorization.\n\n    This demonstrates the \"throw error\" pattern using UrlElicitationRequiredError.\n    Use this pattern when the tool cannot proceed without user authorization.\n    \"\"\"\n    elicitation_id = str(uuid.uuid4())\n\n    # Raise UrlElicitationRequiredError to signal that the client must complete\n    # a URL elicitation before this request can be processed.\n    # The MCP framework will convert this to a -32042 error response.\n    raise UrlElicitationRequiredError(\n        [\n            ElicitRequestURLParams(\n                mode=\"url\",\n                message=f\"Authorization required to connect to {service_name}\",\n                url=f\"https://{service_name}.example.com/oauth/authorize?elicit={elicitation_id}\",\n                elicitationId=elicitation_id,\n            )\n        ]\n    )\n```\n\n_Full example: [examples/snippets/servers/elicitation.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/elicitation.py)_\n<!-- /snippet-source -->\n\nElicitation schemas support default values for all field types. Default values are automatically included in the JSON schema sent to clients, allowing them to pre-populate forms.\n\nThe `elicit()` method returns an `ElicitationResult` with:\n\n- `action`: \"accept\", \"decline\", or \"cancel\"\n- `data`: The validated response (only when accepted)\n- `validation_error`: Any validation error message\n\n### Sampling\n\nTools can interact with LLMs through sampling (generating text):\n\n<!-- snippet-source examples/snippets/servers/sampling.py -->\n```python\nfrom mcp.server.fastmcp import Context, FastMCP\nfrom mcp.server.session import ServerSession\nfrom mcp.types import SamplingMessage, TextContent\n\nmcp = FastMCP(name=\"Sampling Example\")\n\n\n@mcp.tool()\nasync def generate_poem(topic: str, ctx: Context[ServerSession, None]) -> str:\n    \"\"\"Generate a poem using LLM sampling.\"\"\"\n    prompt = f\"Write a short poem about {topic}\"\n\n    result = await ctx.session.create_message(\n        messages=[\n            SamplingMessage(\n                role=\"user\",\n                content=TextContent(type=\"text\", text=prompt),\n            )\n        ],\n        max_tokens=100,\n    )\n\n    # Since we're not passing tools param, result.content is single content\n    if result.content.type == \"text\":\n        return result.content.text\n    return str(result.content)\n```\n\n_Full example: [examples/snippets/servers/sampling.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/sampling.py)_\n<!-- /snippet-source -->\n\n### Logging and Notifications\n\nTools can send logs and notifications through the context:\n\n<!-- snippet-source examples/snippets/servers/notifications.py -->\n```python\nfrom mcp.server.fastmcp import Context, FastMCP\nfrom mcp.server.session import ServerSession\n\nmcp = FastMCP(name=\"Notifications Example\")\n\n\n@mcp.tool()\nasync def process_data(data: str, ctx: Context[ServerSession, None]) -> str:\n    \"\"\"Process data with logging.\"\"\"\n    # Different log levels\n    await ctx.debug(f\"Debug: Processing '{data}'\")\n    await ctx.info(\"Info: Starting processing\")\n    await ctx.warning(\"Warning: This is experimental\")\n    await ctx.error(\"Error: (This is just a demo)\")\n\n    # Notify about resource changes\n    await ctx.session.send_resource_list_changed()\n\n    return f\"Processed: {data}\"\n```\n\n_Full example: [examples/snippets/servers/notifications.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/notifications.py)_\n<!-- /snippet-source -->\n\n### Authentication\n\nAuthentication can be used by servers that want to expose tools accessing protected resources.\n\n`mcp.server.auth` implements OAuth 2.1 resource server functionality, where MCP servers act as Resource Servers (RS) that validate tokens issued by separate Authorization Servers (AS). This follows the [MCP authorization specification](https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization) and implements RFC 9728 (Protected Resource Metadata) for AS discovery.\n\nMCP servers can use authentication by providing an implementation of the `TokenVerifier` protocol:\n\n<!-- snippet-source examples/snippets/servers/oauth_server.py -->\n```python\n\"\"\"\nRun from the repository root:\n    uv run examples/snippets/servers/oauth_server.py\n\"\"\"\n\nfrom pydantic import AnyHttpUrl\n\nfrom mcp.server.auth.provider import AccessToken, TokenVerifier\nfrom mcp.server.auth.settings import AuthSettings\nfrom mcp.server.fastmcp import FastMCP\n\n\nclass SimpleTokenVerifier(TokenVerifier):\n    \"\"\"Simple token verifier for demonstration.\"\"\"\n\n    async def verify_token(self, token: str) -> AccessToken | None:\n        pass  # This is where you would implement actual token validation\n\n\n# Create FastMCP instance as a Resource Server\nmcp = FastMCP(\n    \"Weather Service\",\n    json_response=True,\n    # Token verifier for authentication\n    token_verifier=SimpleTokenVerifier(),\n    # Auth settings for RFC 9728 Protected Resource Metadata\n    auth=AuthSettings(\n        issuer_url=AnyHttpUrl(\"https://auth.example.com\"),  # Authorization Server URL\n        resource_server_url=AnyHttpUrl(\"http://localhost:3001\"),  # This server's URL\n        required_scopes=[\"user\"],\n    ),\n)\n\n\n@mcp.tool()\nasync def get_weather(city: str = \"London\") -> dict[str, str]:\n    \"\"\"Get weather data for a city\"\"\"\n    return {\n        \"city\": city,\n        \"temperature\": \"22\",\n        \"condition\": \"Partly cloudy\",\n        \"humidity\": \"65%\",\n    }\n\n\nif __name__ == \"__main__\":\n    mcp.run(transport=\"streamable-http\")\n```\n\n_Full example: [examples/snippets/servers/oauth_server.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/oauth_server.py)_\n<!-- /snippet-source -->\n\nFor a complete example with separate Authorization Server and Resource Server implementations, see [`examples/servers/simple-auth/`](examples/servers/simple-auth/).\n\n**Architecture:**\n\n- **Authorization Server (AS)**: Handles OAuth flows, user authentication, and token issuance\n- **Resource Server (RS)**: Your MCP server that validates tokens and serves protected resources\n- **Client**: Discovers AS through RFC 9728, obtains tokens, and uses them with the MCP server\n\nSee [TokenVerifier](src/mcp/server/auth/provider.py) for more details on implementing token validation.\n\n### FastMCP Properties\n\nThe FastMCP server instance accessible via `ctx.fastmcp` provides access to server configuration and metadata:\n\n- `ctx.fastmcp.name` - The server's name as defined during initialization\n- `ctx.fastmcp.instructions` - Server instructions/description provided to clients\n- `ctx.fastmcp.website_url` - Optional website URL for the server\n- `ctx.fastmcp.icons` - Optional list of icons for UI display\n- `ctx.fastmcp.settings` - Complete server configuration object containing:\n  - `debug` - Debug mode flag\n  - `log_level` - Current logging level\n  - `host` and `port` - Server network configuration\n  - `mount_path`, `sse_path`, `streamable_http_path` - Transport paths\n  - `stateless_http` - Whether the server operates in stateless mode\n  - And other configuration options\n\n```python\n@mcp.tool()\ndef server_info(ctx: Context) -> dict:\n    \"\"\"Get information about the current server.\"\"\"\n    return {\n        \"name\": ctx.fastmcp.name,\n        \"instructions\": ctx.fastmcp.instructions,\n        \"debug_mode\": ctx.fastmcp.settings.debug,\n        \"log_level\": ctx.fastmcp.settings.log_level,\n        \"host\": ctx.fastmcp.settings.host,\n        \"port\": ctx.fastmcp.settings.port,\n    }\n```\n\n### Session Properties and Methods\n\nThe session object accessible via `ctx.session` provides advanced control over client communication:\n\n- `ctx.session.client_params` - Client initialization parameters and declared capabilities\n- `await ctx.session.send_log_message(level, data, logger)` - Send log messages with full control\n- `await ctx.session.create_message(messages, max_tokens)` - Request LLM sampling/completion\n- `await ctx.session.send_progress_notification(token, progress, total, message)` - Direct progress updates\n- `await ctx.session.send_resource_updated(uri)` - Notify clients that a specific resource changed\n- `await ctx.session.send_resource_list_changed()` - Notify clients that the resource list changed\n- `await ctx.session.send_tool_list_changed()` - Notify clients that the tool list changed\n- `await ctx.session.send_prompt_list_changed()` - Notify clients that the prompt list changed\n\n```python\n@mcp.tool()\nasync def notify_data_update(resource_uri: str, ctx: Context) -> str:\n    \"\"\"Update data and notify clients of the change.\"\"\"\n    # Perform data update logic here\n    \n    # Notify clients that this specific resource changed\n    await ctx.session.send_resource_updated(AnyUrl(resource_uri))\n    \n    # If this affects the overall resource list, notify about that too\n    await ctx.session.send_resource_list_changed()\n    \n    return f\"Updated {resource_uri} and notified clients\"\n```\n\n### Request Context Properties\n\nThe request context accessible via `ctx.request_context` contains request-specific information and resources:\n\n- `ctx.request_context.lifespan_context` - Access to resources initialized during server startup\n  - Database connections, configuration objects, shared services\n  - Type-safe access to resources defined in your server's lifespan function\n- `ctx.request_context.meta` - Request metadata from the client including:\n  - `progressToken` - Token for progress notifications\n  - Other client-provided metadata\n- `ctx.request_context.request` - The original MCP request object for advanced processing\n- `ctx.request_context.request_id` - Unique identifier for this request\n\n```python\n# Example with typed lifespan context\n@dataclass\nclass AppContext:\n    db: Database\n    config: AppConfig\n\n@mcp.tool()\ndef query_with_config(query: str, ctx: Context) -> str:\n    \"\"\"Execute a query using shared database and configuration.\"\"\"\n    # Access typed lifespan context\n    app_ctx: AppContext = ctx.request_context.lifespan_context\n    \n    # Use shared resources\n    connection = app_ctx.db\n    settings = app_ctx.config\n    \n    # Execute query with configuration\n    result = connection.execute(query, timeout=settings.query_timeout)\n    return str(result)\n```\n\n_Full lifespan example: [examples/snippets/servers/lifespan_example.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/lifespan_example.py)_\n\n## Running Your Server\n\n### Development Mode\n\nThe fastest way to test and debug your server is with the MCP Inspector:\n\n```bash\nuv run mcp dev server.py\n\n# Add dependencies\nuv run mcp dev server.py --with pandas --with numpy\n\n# Mount local code\nuv run mcp dev server.py --with-editable .\n```\n\n### Claude Desktop Integration\n\nOnce your server is ready, install it in Claude Desktop:\n\n```bash\nuv run mcp install server.py\n\n# Custom name\nuv run mcp install server.py --name \"My Analytics Server\"\n\n# Environment variables\nuv run mcp install server.py -v API_KEY=abc123 -v DB_URL=postgres://...\nuv run mcp install server.py -f .env\n```\n\n### Direct Execution\n\nFor advanced scenarios like custom deployments:\n\n<!-- snippet-source examples/snippets/servers/direct_execution.py -->\n```python\n\"\"\"Example showing direct execution of an MCP server.\n\nThis is the simplest way to run an MCP server directly.\ncd to the `examples/snippets` directory and run:\n    uv run direct-execution-server\n    or\n    python servers/direct_execution.py\n\"\"\"\n\nfrom mcp.server.fastmcp import FastMCP\n\nmcp = FastMCP(\"My App\")\n\n\n@mcp.tool()\ndef hello(name: str = \"World\") -> str:\n    \"\"\"Say hello to someone.\"\"\"\n    return f\"Hello, {name}!\"\n\n\ndef main():\n    \"\"\"Entry point for the direct execution server.\"\"\"\n    mcp.run()\n\n\nif __name__ == \"__main__\":\n    main()\n```\n\n_Full example: [examples/snippets/servers/direct_execution.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/direct_execution.py)_\n<!-- /snippet-source -->\n\nRun it with:\n\n```bash\npython servers/direct_execution.py\n# or\nuv run mcp run servers/direct_execution.py\n```\n\nNote that `uv run mcp run` or `uv run mcp dev` only supports server using FastMCP and not the low-level server variant.\n\n### Streamable HTTP Transport\n\n> **Note**: Streamable HTTP transport is the recommended transport for production deployments. Use `stateless_http=True` and `json_response=True` for optimal scalability.\n\n<!-- snippet-source examples/snippets/servers/streamable_config.py -->\n```python\n\"\"\"\nRun from the repository root:\n    uv run examples/snippets/servers/streamable_config.py\n\"\"\"\n\nfrom mcp.server.fastmcp import FastMCP\n\n# Stateless server with JSON responses (recommended)\nmcp = FastMCP(\"StatelessServer\", stateless_http=True, json_response=True)\n\n# Other configuration options:\n# Stateless server with SSE streaming responses\n# mcp = FastMCP(\"StatelessServer\", stateless_http=True)\n\n# Stateful server with session persistence\n# mcp = FastMCP(\"StatefulServer\")\n\n\n# Add a simple tool to demonstrate the server\n@mcp.tool()\ndef greet(name: str = \"World\") -> str:\n    \"\"\"Greet someone by name.\"\"\"\n    return f\"Hello, {name}!\"\n\n\n# Run server with streamable_http transport\nif __name__ == \"__main__\":\n    mcp.run(transport=\"streamable-http\")\n```\n\n_Full example: [examples/snippets/servers/streamable_config.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/streamable_config.py)_\n<!-- /snippet-source -->\n\nYou can mount multiple FastMCP servers in a Starlette application:\n\n<!-- snippet-source examples/snippets/servers/streamable_starlette_mount.py -->\n```python\n\"\"\"\nRun from the repository root:\n    uvicorn examples.snippets.servers.streamable_starlette_mount:app --reload\n\"\"\"\n\nimport contextlib\n\nfrom starlette.applications import Starlette\nfrom starlette.routing import Mount\n\nfrom mcp.server.fastmcp import FastMCP\n\n# Create the Echo server\necho_mcp = FastMCP(name=\"EchoServer\", stateless_http=True, json_response=True)\n\n\n@echo_mcp.tool()\ndef echo(message: str) -> str:\n    \"\"\"A simple echo tool\"\"\"\n    return f\"Echo: {message}\"\n\n\n# Create the Math server\nmath_mcp = FastMCP(name=\"MathServer\", stateless_http=True, json_response=True)\n\n\n@math_mcp.tool()\ndef add_two(n: int) -> int:\n    \"\"\"Tool to add two to the input\"\"\"\n    return n + 2\n\n\n# Create a combined lifespan to manage both session managers\n@contextlib.asynccontextmanager\nasync def lifespan(app: Starlette):\n    async with contextlib.AsyncExitStack() as stack:\n        await stack.enter_async_context(echo_mcp.session_manager.run())\n        await stack.enter_async_context(math_mcp.session_manager.run())\n        yield\n\n\n# Create the Starlette app and mount the MCP servers\napp = Starlette(\n    routes=[\n        Mount(\"/echo\", echo_mcp.streamable_http_app()),\n        Mount(\"/math\", math_mcp.streamable_http_app()),\n    ],\n    lifespan=lifespan,\n)\n\n# Note: Clients connect to http://localhost:8000/echo/mcp and http://localhost:8000/math/mcp\n# To mount at the root of each path (e.g., /echo instead of /echo/mcp):\n# echo_mcp.settings.streamable_http_path = \"/\"\n# math_mcp.settings.streamable_http_path = \"/\"\n```\n\n_Full example: [examples/snippets/servers/streamable_starlette_mount.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/streamable_starlette_mount.py)_\n<!-- /snippet-source -->\n\nFor low level server with Streamable HTTP implementations, see:\n\n- Stateful server: [`examples/servers/simple-streamablehttp/`](examples/servers/simple-streamablehttp/)\n- Stateless server: [`examples/servers/simple-streamablehttp-stateless/`](examples/servers/simple-streamablehttp-stateless/)\n\nThe streamable HTTP transport supports:\n\n- Stateful and stateless operation modes\n- Resumability with event stores\n- JSON or SSE response formats\n- Better scalability for multi-node deployments\n\n#### CORS Configuration for Browser-Based Clients\n\nIf you'd like your server to be accessible by browser-based MCP clients, you'll need to configure CORS headers. The `Mcp-Session-Id` header must be exposed for browser clients to access it:\n\n```python\nfrom starlette.applications import Starlette\nfrom starlette.middleware.cors import CORSMiddleware\n\n# Create your Starlette app first\nstarlette_app = Starlette(routes=[...])\n\n# Then wrap it with CORS middleware\nstarlette_app = CORSMiddleware(\n    starlette_app,\n    allow_origins=[\"*\"],  # Configure appropriately for production\n    allow_methods=[\"GET\", \"POST\", \"DELETE\"],  # MCP streamable HTTP methods\n    expose_headers=[\"Mcp-Session-Id\"],\n)\n```\n\nThis configuration is necessary because:\n\n- The MCP streamable HTTP transport uses the `Mcp-Session-Id` header for session management\n- Browsers restrict access to response headers unless explicitly exposed via CORS\n- Without this configuration, browser-based clients won't be able to read the session ID from initialization responses\n\n### Mounting to an Existing ASGI Server\n\nBy default, SSE servers are mounted at `/sse` and Streamable HTTP servers are mounted at `/mcp`. You can customize these paths using the methods described below.\n\nFor more information on mounting applications in Starlette, see the [Starlette documentation](https://www.starlette.io/routing/#submounting-routes).\n\n#### StreamableHTTP servers\n\nYou can mount the StreamableHTTP server to an existing ASGI server using the `streamable_http_app` method. This allows you to integrate the StreamableHTTP server with other ASGI applications.\n\n##### Basic mounting\n\n<!-- snippet-source examples/snippets/servers/streamable_http_basic_mounting.py -->\n```python\n\"\"\"\nBasic example showing how to mount StreamableHTTP server in Starlette.\n\nRun from the repository root:\n    uvicorn examples.snippets.servers.streamable_http_basic_mounting:app --reload\n\"\"\"\n\nimport contextlib\n\nfrom starlette.applications import Starlette\nfrom starlette.routing import Mount\n\nfrom mcp.server.fastmcp import FastMCP\n\n# Create MCP server\nmcp = FastMCP(\"My App\", json_response=True)\n\n\n@mcp.tool()\ndef hello() -> str:\n    \"\"\"A simple hello tool\"\"\"\n    return \"Hello from MCP!\"\n\n\n# Create a lifespan context manager to run the session manager\n@contextlib.asynccontextmanager\nasync def lifespan(app: Starlette):\n    async with mcp.session_manager.run():\n        yield\n\n\n# Mount the StreamableHTTP server to the existing ASGI server\napp = Starlette(\n    routes=[\n        Mount(\"/\", app=mcp.streamable_http_app()),\n    ],\n    lifespan=lifespan,\n)\n```\n\n_Full example: [examples/snippets/servers/streamable_http_basic_mounting.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/streamable_http_basic_mounting.py)_\n<!-- /snippet-source -->\n\n##### Host-based routing\n\n<!-- snippet-source examples/snippets/servers/streamable_http_host_mounting.py -->\n```python\n\"\"\"\nExample showing how to mount StreamableHTTP server using Host-based routing.\n\nRun from the repository root:\n    uvicorn examples.snippets.servers.streamable_http_host_mounting:app --reload\n\"\"\"\n\nimport contextlib\n\nfrom starlette.applications import Starlette\nfrom starlette.routing import Host\n\nfrom mcp.server.fastmcp import FastMCP\n\n# Create MCP server\nmcp = FastMCP(\"MCP Host App\", json_response=True)\n\n\n@mcp.tool()\ndef domain_info() -> str:\n    \"\"\"Get domain-specific information\"\"\"\n    return \"This is served from mcp.acme.corp\"\n\n\n# Create a lifespan context manager to run the session manager\n@contextlib.asynccontextmanager\nasync def lifespan(app: Starlette):\n    async with mcp.session_manager.run():\n        yield\n\n\n# Mount using Host-based routing\napp = Starlette(\n    routes=[\n        Host(\"mcp.acme.corp\", app=mcp.streamable_http_app()),\n    ],\n    lifespan=lifespan,\n)\n```\n\n_Full example: [examples/snippets/servers/streamable_http_host_mounting.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/streamable_http_host_mounting.py)_\n<!-- /snippet-source -->\n\n##### Multiple servers with path configuration\n\n<!-- snippet-source examples/snippets/servers/streamable_http_multiple_servers.py -->\n```python\n\"\"\"\nExample showing how to mount multiple StreamableHTTP servers with path configuration.\n\nRun from the repository root:\n    uvicorn examples.snippets.servers.streamable_http_multiple_servers:app --reload\n\"\"\"\n\nimport contextlib\n\nfrom starlette.applications import Starlette\nfrom starlette.routing import Mount\n\nfrom mcp.server.fastmcp import FastMCP\n\n# Create multiple MCP servers\napi_mcp = FastMCP(\"API Server\", json_response=True)\nchat_mcp = FastMCP(\"Chat Server\", json_response=True)\n\n\n@api_mcp.tool()\ndef api_status() -> str:\n    \"\"\"Get API status\"\"\"\n    return \"API is running\"\n\n\n@chat_mcp.tool()\ndef send_message(message: str) -> str:\n    \"\"\"Send a chat message\"\"\"\n    return f\"Message sent: {message}\"\n\n\n# Configure servers to mount at the root of each path\n# This means endpoints will be at /api and /chat instead of /api/mcp and /chat/mcp\napi_mcp.settings.streamable_http_path = \"/\"\nchat_mcp.settings.streamable_http_path = \"/\"\n\n\n# Create a combined lifespan to manage both session managers\n@contextlib.asynccontextmanager\nasync def lifespan(app: Starlette):\n    async with contextlib.AsyncExitStack() as stack:\n        await stack.enter_async_context(api_mcp.session_manager.run())\n        await stack.enter_async_context(chat_mcp.session_manager.run())\n        yield\n\n\n# Mount the servers\napp = Starlette(\n    routes=[\n        Mount(\"/api\", app=api_mcp.streamable_http_app()),\n        Mount(\"/chat\", app=chat_mcp.streamable_http_app()),\n    ],\n    lifespan=lifespan,\n)\n```\n\n_Full example: [examples/snippets/servers/streamable_http_multiple_servers.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/streamable_http_multiple_servers.py)_\n<!-- /snippet-source -->\n\n##### Path configuration at initialization\n\n<!-- snippet-source examples/snippets/servers/streamable_http_path_config.py -->\n```python\n\"\"\"\nExample showing path configuration during FastMCP initialization.\n\nRun from the repository root:\n    uvicorn examples.snippets.servers.streamable_http_path_config:app --reload\n\"\"\"\n\nfrom starlette.applications import Starlette\nfrom starlette.routing import Mount\n\nfrom mcp.server.fastmcp import FastMCP\n\n# Configure streamable_http_path during initialization\n# This server will mount at the root of wherever it's mounted\nmcp_at_root = FastMCP(\n    \"My Server\",\n    json_response=True,\n    streamable_http_path=\"/\",\n)\n\n\n@mcp_at_root.tool()\ndef process_data(data: str) -> str:\n    \"\"\"Process some data\"\"\"\n    return f\"Processed: {data}\"\n\n\n# Mount at /process - endpoints will be at /process instead of /process/mcp\napp = Starlette(\n    routes=[\n        Mount(\"/process\", app=mcp_at_root.streamable_http_app()),\n    ]\n)\n```\n\n_Full example: [examples/snippets/servers/streamable_http_path_config.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/streamable_http_path_config.py)_\n<!-- /snippet-source -->\n\n#### SSE servers\n\n> **Note**: SSE transport is being superseded by [Streamable HTTP transport](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http).\n\nYou can mount the SSE server to an existing ASGI server using the `sse_app` method. This allows you to integrate the SSE server with other ASGI applications.\n\n```python\nfrom starlette.applications import Starlette\nfrom starlette.routing import Mount, Host\nfrom mcp.server.fastmcp import FastMCP\n\n\nmcp = FastMCP(\"My App\")\n\n# Mount the SSE server to the existing ASGI server\napp = Starlette(\n    routes=[\n        Mount('/', app=mcp.sse_app()),\n    ]\n)\n\n# or dynamically mount as host\napp.router.routes.append(Host('mcp.acme.corp', app=mcp.sse_app()))\n```\n\nWhen mounting multiple MCP servers under different paths, you can configure the mount path in several ways:\n\n```python\nfrom starlette.applications import Starlette\nfrom starlette.routing import Mount\nfrom mcp.server.fastmcp import FastMCP\n\n# Create multiple MCP servers\ngithub_mcp = FastMCP(\"GitHub API\")\nbrowser_mcp = FastMCP(\"Browser\")\ncurl_mcp = FastMCP(\"Curl\")\nsearch_mcp = FastMCP(\"Search\")\n\n# Method 1: Configure mount paths via settings (recommended for persistent configuration)\ngithub_mcp.settings.mount_path = \"/github\"\nbrowser_mcp.settings.mount_path = \"/browser\"\n\n# Method 2: Pass mount path directly to sse_app (preferred for ad-hoc mounting)\n# This approach doesn't modify the server's settings permanently\n\n# Create Starlette app with multiple mounted servers\napp = Starlette(\n    routes=[\n        # Using settings-based configuration\n        Mount(\"/github\", app=github_mcp.sse_app()),\n        Mount(\"/browser\", app=browser_mcp.sse_app()),\n        # Using direct mount path parameter\n        Mount(\"/curl\", app=curl_mcp.sse_app(\"/curl\")),\n        Mount(\"/search\", app=search_mcp.sse_app(\"/search\")),\n    ]\n)\n\n# Method 3: For direct execution, you can also pass the mount path to run()\nif __name__ == \"__main__\":\n    search_mcp.run(transport=\"sse\", mount_path=\"/search\")\n```\n\nFor more information on mounting applications in Starlette, see the [Starlette documentation](https://www.starlette.io/routing/#submounting-routes).\n\n## Advanced Usage\n\n### Low-Level Server\n\nFor more control, you can use the low-level server implementation directly. This gives you full access to the protocol and allows you to customize every aspect of your server, including lifecycle management through the lifespan API:\n\n<!-- snippet-source examples/snippets/servers/lowlevel/lifespan.py -->\n```python\n\"\"\"\nRun from the repository root:\n    uv run examples/snippets/servers/lowlevel/lifespan.py\n\"\"\"\n\nfrom collections.abc import AsyncIterator\nfrom contextlib import asynccontextmanager\nfrom typing import Any\n\nimport mcp.server.stdio\nimport mcp.types as types\nfrom mcp.server.lowlevel import NotificationOptions, Server\nfrom mcp.server.models import InitializationOptions\n\n\n# Mock database class for example\nclass Database:\n    \"\"\"Mock database class for example.\"\"\"\n\n    @classmethod\n    async def connect(cls) -> \"Database\":\n        \"\"\"Connect to database.\"\"\"\n        print(\"Database connected\")\n        return cls()\n\n    async def disconnect(self) -> None:\n        \"\"\"Disconnect from database.\"\"\"\n        print(\"Database disconnected\")\n\n    async def query(self, query_str: str) -> list[dict[str, str]]:\n        \"\"\"Execute a query.\"\"\"\n        # Simulate database query\n        return [{\"id\": \"1\", \"name\": \"Example\", \"query\": query_str}]\n\n\n@asynccontextmanager\nasync def server_lifespan(_server: Server) -> AsyncIterator[dict[str, Any]]:\n    \"\"\"Manage server startup and shutdown lifecycle.\"\"\"\n    # Initialize resources on startup\n    db = await Database.connect()\n    try:\n        yield {\"db\": db}\n    finally:\n        # Clean up on shutdown\n        await db.disconnect()\n\n\n# Pass lifespan to server\nserver = Server(\"example-server\", lifespan=server_lifespan)\n\n\n@server.list_tools()\nasync def handle_list_tools() -> list[types.Tool]:\n    \"\"\"List available tools.\"\"\"\n    return [\n        types.Tool(\n            name=\"query_db\",\n            description=\"Query the database\",\n            inputSchema={\n                \"type\": \"object\",\n                \"properties\": {\"query\": {\"type\": \"string\", \"description\": \"SQL query to execute\"}},\n                \"required\": [\"query\"],\n            },\n        )\n    ]\n\n\n@server.call_tool()\nasync def query_db(name: str, arguments: dict[str, Any]) -> list[types.TextContent]:\n    \"\"\"Handle database query tool call.\"\"\"\n    if name != \"query_db\":\n        raise ValueError(f\"Unknown tool: {name}\")\n\n    # Access lifespan context\n    ctx = server.request_context\n    db = ctx.lifespan_context[\"db\"]\n\n    # Execute query\n    results = await db.query(arguments[\"query\"])\n\n    return [types.TextContent(type=\"text\", text=f\"Query results: {results}\")]\n\n\nasync def run():\n    \"\"\"Run the server with lifespan management.\"\"\"\n    async with mcp.server.stdio.stdio_server() as (read_stream, write_stream):\n        await server.run(\n            read_stream,\n            write_stream,\n            InitializationOptions(\n                server_name=\"example-server\",\n                server_version=\"0.1.0\",\n                capabilities=server.get_capabilities(\n                    notification_options=NotificationOptions(),\n                    experimental_capabilities={},\n                ),\n            ),\n        )\n\n\nif __name__ == \"__main__\":\n    import asyncio\n\n    asyncio.run(run())\n```\n\n_Full example: [examples/snippets/servers/lowlevel/lifespan.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/lowlevel/lifespan.py)_\n<!-- /snippet-source -->\n\nThe lifespan API provides:\n\n- A way to initialize resources when the server starts and clean them up when it stops\n- Access to initialized resources through the request context in handlers\n- Type-safe context passing between lifespan and request handlers\n\n<!-- snippet-source examples/snippets/servers/lowlevel/basic.py -->\n```python\n\"\"\"\nRun from the repository root:\nuv run examples/snippets/servers/lowlevel/basic.py\n\"\"\"\n\nimport asyncio\n\nimport mcp.server.stdio\nimport mcp.types as types\nfrom mcp.server.lowlevel import NotificationOptions, Server\nfrom mcp.server.models import InitializationOptions\n\n# Create a server instance\nserver = Server(\"example-server\")\n\n\n@server.list_prompts()\nasync def handle_list_prompts() -> list[types.Prompt]:\n    \"\"\"List available prompts.\"\"\"\n    return [\n        types.Prompt(\n            name=\"example-prompt\",\n            description=\"An example prompt template\",\n            arguments=[types.PromptArgument(name=\"arg1\", description=\"Example argument\", required=True)],\n        )\n    ]\n\n\n@server.get_prompt()\nasync def handle_get_prompt(name: str, arguments: dict[str, str] | None) -> types.GetPromptResult:\n    \"\"\"Get a specific prompt by name.\"\"\"\n    if name != \"example-prompt\":\n        raise ValueError(f\"Unknown prompt: {name}\")\n\n    arg1_value = (arguments or {}).get(\"arg1\", \"default\")\n\n    return types.GetPromptResult(\n        description=\"Example prompt\",\n        messages=[\n            types.PromptMessage(\n                role=\"user\",\n                content=types.TextContent(type=\"text\", text=f\"Example prompt text with argument: {arg1_value}\"),\n            )\n        ],\n    )\n\n\nasync def run():\n    \"\"\"Run the basic low-level server.\"\"\"\n    async with mcp.server.stdio.stdio_server() as (read_stream, write_stream):\n        await server.run(\n            read_stream,\n            write_stream,\n            InitializationOptions(\n                server_name=\"example\",\n                server_version=\"0.1.0\",\n                capabilities=server.get_capabilities(\n                    notification_options=NotificationOptions(),\n                    experimental_capabilities={},\n                ),\n            ),\n        )\n\n\nif __name__ == \"__main__\":\n    asyncio.run(run())\n```\n\n_Full example: [examples/snippets/servers/lowlevel/basic.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/lowlevel/basic.py)_\n<!-- /snippet-source -->\n\nCaution: The `uv run mcp run` and `uv run mcp dev` tool doesn't support low-level server.\n\n#### Structured Output Support\n\nThe low-level server supports structured output for tools, allowing you to return both human-readable content and machine-readable structured data. Tools can define an `outputSchema` to validate their structured output:\n\n<!-- snippet-source examples/snippets/servers/lowlevel/structured_output.py -->\n```python\n\"\"\"\nRun from the repository root:\n    uv run examples/snippets/servers/lowlevel/structured_output.py\n\"\"\"\n\nimport asyncio\nfrom typing import Any\n\nimport mcp.server.stdio\nimport mcp.types as types\nfrom mcp.server.lowlevel import NotificationOptions, Server\nfrom mcp.server.models import InitializationOptions\n\nserver = Server(\"example-server\")\n\n\n@server.list_tools()\nasync def list_tools() -> list[types.Tool]:\n    \"\"\"List available tools with structured output schemas.\"\"\"\n    return [\n        types.Tool(\n            name=\"get_weather\",\n            description=\"Get current weather for a city\",\n            inputSchema={\n                \"type\": \"object\",\n                \"properties\": {\"city\": {\"type\": \"string\", \"description\": \"City name\"}},\n                \"required\": [\"city\"],\n            },\n            outputSchema={\n                \"type\": \"object\",\n                \"properties\": {\n                    \"temperature\": {\"type\": \"number\", \"description\": \"Temperature in Celsius\"},\n                    \"condition\": {\"type\": \"string\", \"description\": \"Weather condition\"},\n                    \"humidity\": {\"type\": \"number\", \"description\": \"Humidity percentage\"},\n                    \"city\": {\"type\": \"string\", \"description\": \"City name\"},\n                },\n                \"required\": [\"temperature\", \"condition\", \"humidity\", \"city\"],\n            },\n        )\n    ]\n\n\n@server.call_tool()\nasync def call_tool(name: str, arguments: dict[str, Any]) -> dict[str, Any]:\n    \"\"\"Handle tool calls with structured output.\"\"\"\n    if name == \"get_weather\":\n        city = arguments[\"city\"]\n\n        # Simulated weather data - in production, call a weather API\n        weather_data = {\n            \"temperature\": 22.5,\n            \"condition\": \"partly cloudy\",\n            \"humidity\": 65,\n            \"city\": city,  # Include the requested city\n        }\n\n        # low-level server will validate structured output against the tool's\n        # output schema, and additionally serialize it into a TextContent block\n        # for backwards compatibility with pre-2025-06-18 clients.\n        return weather_data\n    else:\n        raise ValueError(f\"Unknown tool: {name}\")\n\n\nasync def run():\n    \"\"\"Run the structured output server.\"\"\"\n    async with mcp.server.stdio.stdio_server() as (read_stream, write_stream):\n        await server.run(\n            read_stream,\n            write_stream,\n            InitializationOptions(\n                server_name=\"structured-output-example\",\n                server_version=\"0.1.0\",\n                capabilities=server.get_capabilities(\n                    notification_options=NotificationOptions(),\n                    experimental_capabilities={},\n                ),\n            ),\n        )\n\n\nif __name__ == \"__main__\":\n    asyncio.run(run())\n```\n\n_Full example: [examples/snippets/servers/lowlevel/structured_output.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/lowlevel/structured_output.py)_\n<!-- /snippet-source -->\n\nTools can return data in four ways:\n\n1. **Content only**: Return a list of content blocks (default behavior before spec revision 2025-06-18)\n2. **Structured data only**: Return a dictionary that will be serialized to JSON (Introduced in spec revision 2025-06-18)\n3. **Both**: Return a tuple of (content, structured_data) preferred option to use for backwards compatibility\n4. **Direct CallToolResult**: Return `CallToolResult` directly for full control (including `_meta` field)\n\nWhen an `outputSchema` is defined, the server automatically validates the structured output against the schema. This ensures type safety and helps catch errors early.\n\n##### Returning CallToolResult Directly\n\nFor full control over the response including the `_meta` field (for passing data to client applications without exposing it to the model), return `CallToolResult` directly:\n\n<!-- snippet-source examples/snippets/servers/lowlevel/direct_call_tool_result.py -->\n```python\n\"\"\"\nRun from the repository root:\n    uv run examples/snippets/servers/lowlevel/direct_call_tool_result.py\n\"\"\"\n\nimport asyncio\nfrom typing import Any\n\nimport mcp.server.stdio\nimport mcp.types as types\nfrom mcp.server.lowlevel import NotificationOptions, Server\nfrom mcp.server.models import InitializationOptions\n\nserver = Server(\"example-server\")\n\n\n@server.list_tools()\nasync def list_tools() -> list[types.Tool]:\n    \"\"\"List available tools.\"\"\"\n    return [\n        types.Tool(\n            name=\"advanced_tool\",\n            description=\"Tool with full control including _meta field\",\n            inputSchema={\n                \"type\": \"object\",\n                \"properties\": {\"message\": {\"type\": \"string\"}},\n                \"required\": [\"message\"],\n            },\n        )\n    ]\n\n\n@server.call_tool()\nasync def handle_call_tool(name: str, arguments: dict[str, Any]) -> types.CallToolResult:\n    \"\"\"Handle tool calls by returning CallToolResult directly.\"\"\"\n    if name == \"advanced_tool\":\n        message = str(arguments.get(\"message\", \"\"))\n        return types.CallToolResult(\n            content=[types.TextContent(type=\"text\", text=f\"Processed: {message}\")],\n            structuredContent={\"result\": \"success\", \"message\": message},\n            _meta={\"hidden\": \"data for client applications only\"},\n        )\n\n    raise ValueError(f\"Unknown tool: {name}\")\n\n\nasync def run():\n    \"\"\"Run the server.\"\"\"\n    async with mcp.server.stdio.stdio_server() as (read_stream, write_stream):\n        await server.run(\n            read_stream,\n            write_stream,\n            InitializationOptions(\n                server_name=\"example\",\n                server_version=\"0.1.0\",\n                capabilities=server.get_capabilities(\n                    notification_options=NotificationOptions(),\n                    experimental_capabilities={},\n                ),\n            ),\n        )\n\n\nif __name__ == \"__main__\":\n    asyncio.run(run())\n```\n\n_Full example: [examples/snippets/servers/lowlevel/direct_call_tool_result.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/lowlevel/direct_call_tool_result.py)_\n<!-- /snippet-source -->\n\n**Note:** When returning `CallToolResult`, you bypass the automatic content/structured conversion. You must construct the complete response yourself.\n\n### Pagination (Advanced)\n\nFor servers that need to handle large datasets, the low-level server provides paginated versions of list operations. This is an optional optimization - most servers won't need pagination unless they're dealing with hundreds or thousands of items.\n\n#### Server-side Implementation\n\n<!-- snippet-source examples/snippets/servers/pagination_example.py -->\n```python\n\"\"\"\nExample of implementing pagination with MCP server decorators.\n\"\"\"\n\nfrom pydantic import AnyUrl\n\nimport mcp.types as types\nfrom mcp.server.lowlevel import Server\n\n# Initialize the server\nserver = Server(\"paginated-server\")\n\n# Sample data to paginate\nITEMS = [f\"Item {i}\" for i in range(1, 101)]  # 100 items\n\n\n@server.list_resources()\nasync def list_resources_paginated(request: types.ListResourcesRequest) -> types.ListResourcesResult:\n    \"\"\"List resources with pagination support.\"\"\"\n    page_size = 10\n\n    # Extract cursor from request params\n    cursor = request.params.cursor if request.params is not None else None\n\n    # Parse cursor to get offset\n    start = 0 if cursor is None else int(cursor)\n    end = start + page_size\n\n    # Get page of resources\n    page_items = [\n        types.Resource(uri=AnyUrl(f\"resource://items/{item}\"), name=item, description=f\"Description for {item}\")\n        for item in ITEMS[start:end]\n    ]\n\n    # Determine next cursor\n    next_cursor = str(end) if end < len(ITEMS) else None\n\n    return types.ListResourcesResult(resources=page_items, nextCursor=next_cursor)\n```\n\n_Full example: [examples/snippets/servers/pagination_example.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/servers/pagination_example.py)_\n<!-- /snippet-source -->\n\n#### Client-side Consumption\n\n<!-- snippet-source examples/snippets/clients/pagination_client.py -->\n```python\n\"\"\"\nExample of consuming paginated MCP endpoints from a client.\n\"\"\"\n\nimport asyncio\n\nfrom mcp.client.session import ClientSession\nfrom mcp.client.stdio import StdioServerParameters, stdio_client\nfrom mcp.types import PaginatedRequestParams, Resource\n\n\nasync def list_all_resources() -> None:\n    \"\"\"Fetch all resources using pagination.\"\"\"\n    async with stdio_client(StdioServerParameters(command=\"uv\", args=[\"run\", \"mcp-simple-pagination\"])) as (\n        read,\n        write,\n    ):\n        async with ClientSession(read, write) as session:\n            await session.initialize()\n\n            all_resources: list[Resource] = []\n            cursor = None\n\n            while True:\n                # Fetch a page of resources\n                result = await session.list_resources(params=PaginatedRequestParams(cursor=cursor))\n                all_resources.extend(result.resources)\n\n                print(f\"Fetched {len(result.resources)} resources\")\n\n                # Check if there are more pages\n                if result.nextCursor:\n                    cursor = result.nextCursor\n                else:\n                    break\n\n            print(f\"Total resources: {len(all_resources)}\")\n\n\nif __name__ == \"__main__\":\n    asyncio.run(list_all_resources())\n```\n\n_Full example: [examples/snippets/clients/pagination_client.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/clients/pagination_client.py)_\n<!-- /snippet-source -->\n\n#### Key Points\n\n- **Cursors are opaque strings** - the server defines the format (numeric offsets, timestamps, etc.)\n- **Return `nextCursor=None`** when there are no more pages\n- **Backward compatible** - clients that don't support pagination will still work (they'll just get the first page)\n- **Flexible page sizes** - Each endpoint can define its own page size based on data characteristics\n\nSee the [simple-pagination example](examples/servers/simple-pagination) for a complete implementation.\n\n### Writing MCP Clients\n\nThe SDK provides a high-level client interface for connecting to MCP servers using various [transports](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports):\n\n<!-- snippet-source examples/snippets/clients/stdio_client.py -->\n```python\n\"\"\"\ncd to the `examples/snippets/clients` directory and run:\n    uv run client\n\"\"\"\n\nimport asyncio\nimport os\n\nfrom pydantic import AnyUrl\n\nfrom mcp import ClientSession, StdioServerParameters, types\nfrom mcp.client.stdio import stdio_client\nfrom mcp.shared.context import RequestContext\n\n# Create server parameters for stdio connection\nserver_params = StdioServerParameters(\n    command=\"uv\",  # Using uv to run the server\n    args=[\"run\", \"server\", \"fastmcp_quickstart\", \"stdio\"],  # We're already in snippets dir\n    env={\"UV_INDEX\": os.environ.get(\"UV_INDEX\", \"\")},\n)\n\n\n# Optional: create a sampling callback\nasync def handle_sampling_message(\n    context: RequestContext[ClientSession, None], params: types.CreateMessageRequestParams\n) -> types.CreateMessageResult:\n    print(f\"Sampling request: {params.messages}\")\n    return types.CreateMessageResult(\n        role=\"assistant\",\n        content=types.TextContent(\n            type=\"text\",\n            text=\"Hello, world! from model\",\n        ),\n        model=\"gpt-3.5-turbo\",\n        stopReason=\"endTurn\",\n    )\n\n\nasync def run():\n    async with stdio_client(server_params) as (read, write):\n        async with ClientSession(read, write, sampling_callback=handle_sampling_message) as session:\n            # Initialize the connection\n            await session.initialize()\n\n            # List available prompts\n            prompts = await session.list_prompts()\n            print(f\"Available prompts: {[p.name for p in prompts.prompts]}\")\n\n            # Get a prompt (greet_user prompt from fastmcp_quickstart)\n            if prompts.prompts:\n                prompt = await session.get_prompt(\"greet_user\", arguments={\"name\": \"Alice\", \"style\": \"friendly\"})\n                print(f\"Prompt result: {prompt.messages[0].content}\")\n\n            # List available resources\n            resources = await session.list_resources()\n            print(f\"Available resources: {[r.uri for r in resources.resources]}\")\n\n            # List available tools\n            tools = await session.list_tools()\n            print(f\"Available tools: {[t.name for t in tools.tools]}\")\n\n            # Read a resource (greeting resource from fastmcp_quickstart)\n            resource_content = await session.read_resource(AnyUrl(\"greeting://World\"))\n            content_block = resource_content.contents[0]\n            if isinstance(content_block, types.TextContent):\n                print(f\"Resource content: {content_block.text}\")\n\n            # Call a tool (add tool from fastmcp_quickstart)\n            result = await session.call_tool(\"add\", arguments={\"a\": 5, \"b\": 3})\n            result_unstructured = result.content[0]\n            if isinstance(result_unstructured, types.TextContent):\n                print(f\"Tool result: {result_unstructured.text}\")\n            result_structured = result.structuredContent\n            print(f\"Structured tool result: {result_structured}\")\n\n\ndef main():\n    \"\"\"Entry point for the client script.\"\"\"\n    asyncio.run(run())\n\n\nif __name__ == \"__main__\":\n    main()\n```\n\n_Full example: [examples/snippets/clients/stdio_client.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/clients/stdio_client.py)_\n<!-- /snippet-source -->\n\nClients can also connect using [Streamable HTTP transport](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http):\n\n<!-- snippet-source examples/snippets/clients/streamable_basic.py -->\n```python\n\"\"\"\nRun from the repository root:\n    uv run examples/snippets/clients/streamable_basic.py\n\"\"\"\n\nimport asyncio\n\nfrom mcp import ClientSession\nfrom mcp.client.streamable_http import streamable_http_client\n\n\nasync def main():\n    # Connect to a streamable HTTP server\n    async with streamable_http_client(\"http://localhost:8000/mcp\") as (\n        read_stream,\n        write_stream,\n        _,\n    ):\n        # Create a session using the client streams\n        async with ClientSession(read_stream, write_stream) as session:\n            # Initialize the connection\n            await session.initialize()\n            # List available tools\n            tools = await session.list_tools()\n            print(f\"Available tools: {[tool.name for tool in tools.tools]}\")\n\n\nif __name__ == \"__main__\":\n    asyncio.run(main())\n```\n\n_Full example: [examples/snippets/clients/streamable_basic.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/clients/streamable_basic.py)_\n<!-- /snippet-source -->\n\n### Client Display Utilities\n\nWhen building MCP clients, the SDK provides utilities to help display human-readable names for tools, resources, and prompts:\n\n<!-- snippet-source examples/snippets/clients/display_utilities.py -->\n```python\n\"\"\"\ncd to the `examples/snippets` directory and run:\n    uv run display-utilities-client\n\"\"\"\n\nimport asyncio\nimport os\n\nfrom mcp import ClientSession, StdioServerParameters\nfrom mcp.client.stdio import stdio_client\nfrom mcp.shared.metadata_utils import get_display_name\n\n# Create server parameters for stdio connection\nserver_params = StdioServerParameters(\n    command=\"uv\",  # Using uv to run the server\n    args=[\"run\", \"server\", \"fastmcp_quickstart\", \"stdio\"],\n    env={\"UV_INDEX\": os.environ.get(\"UV_INDEX\", \"\")},\n)\n\n\nasync def display_tools(session: ClientSession):\n    \"\"\"Display available tools with human-readable names\"\"\"\n    tools_response = await session.list_tools()\n\n    for tool in tools_response.tools:\n        # get_display_name() returns the title if available, otherwise the name\n        display_name = get_display_name(tool)\n        print(f\"Tool: {display_name}\")\n        if tool.description:\n            print(f\"   {tool.description}\")\n\n\nasync def display_resources(session: ClientSession):\n    \"\"\"Display available resources with human-readable names\"\"\"\n    resources_response = await session.list_resources()\n\n    for resource in resources_response.resources:\n        display_name = get_display_name(resource)\n        print(f\"Resource: {display_name} ({resource.uri})\")\n\n    templates_response = await session.list_resource_templates()\n    for template in templates_response.resourceTemplates:\n        display_name = get_display_name(template)\n        print(f\"Resource Template: {display_name}\")\n\n\nasync def run():\n    \"\"\"Run the display utilities example.\"\"\"\n    async with stdio_client(server_params) as (read, write):\n        async with ClientSession(read, write) as session:\n            # Initialize the connection\n            await session.initialize()\n\n            print(\"=== Available Tools ===\")\n            await display_tools(session)\n\n            print(\"\\n=== Available Resources ===\")\n            await display_resources(session)\n\n\ndef main():\n    \"\"\"Entry point for the display utilities client.\"\"\"\n    asyncio.run(run())\n\n\nif __name__ == \"__main__\":\n    main()\n```\n\n_Full example: [examples/snippets/clients/display_utilities.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/clients/display_utilities.py)_\n<!-- /snippet-source -->\n\nThe `get_display_name()` function implements the proper precedence rules for displaying names:\n\n- For tools: `title` > `annotations.title` > `name`\n- For other objects: `title` > `name`\n\nThis ensures your client UI shows the most user-friendly names that servers provide.\n\n### OAuth Authentication for Clients\n\nThe SDK includes [authorization support](https://modelcontextprotocol.io/specification/2025-03-26/basic/authorization) for connecting to protected MCP servers:\n\n<!-- snippet-source examples/snippets/clients/oauth_client.py -->\n```python\n\"\"\"\nBefore running, specify running MCP RS server URL.\nTo spin up RS server locally, see\n    examples/servers/simple-auth/README.md\n\ncd to the `examples/snippets` directory and run:\n    uv run oauth-client\n\"\"\"\n\nimport asyncio\nfrom urllib.parse import parse_qs, urlparse\n\nimport httpx\nfrom pydantic import AnyUrl\n\nfrom mcp import ClientSession\nfrom mcp.client.auth import OAuthClientProvider, TokenStorage\nfrom mcp.client.streamable_http import streamable_http_client\nfrom mcp.shared.auth import OAuthClientInformationFull, OAuthClientMetadata, OAuthToken\n\n\nclass InMemoryTokenStorage(TokenStorage):\n    \"\"\"Demo In-memory token storage implementation.\"\"\"\n\n    def __init__(self):\n        self.tokens: OAuthToken | None = None\n        self.client_info: OAuthClientInformationFull | None = None\n\n    async def get_tokens(self) -> OAuthToken | None:\n        \"\"\"Get stored tokens.\"\"\"\n        return self.tokens\n\n    async def set_tokens(self, tokens: OAuthToken) -> None:\n        \"\"\"Store tokens.\"\"\"\n        self.tokens = tokens\n\n    async def get_client_info(self) -> OAuthClientInformationFull | None:\n        \"\"\"Get stored client information.\"\"\"\n        return self.client_info\n\n    async def set_client_info(self, client_info: OAuthClientInformationFull) -> None:\n        \"\"\"Store client information.\"\"\"\n        self.client_info = client_info\n\n\nasync def handle_redirect(auth_url: str) -> None:\n    print(f\"Visit: {auth_url}\")\n\n\nasync def handle_callback() -> tuple[str, str | None]:\n    callback_url = input(\"Paste callback URL: \")\n    params = parse_qs(urlparse(callback_url).query)\n    return params[\"code\"][0], params.get(\"state\", [None])[0]\n\n\nasync def main():\n    \"\"\"Run the OAuth client example.\"\"\"\n    oauth_auth = OAuthClientProvider(\n        server_url=\"http://localhost:8001\",\n        client_metadata=OAuthClientMetadata(\n            client_name=\"Example MCP Client\",\n            redirect_uris=[AnyUrl(\"http://localhost:3000/callback\")],\n            grant_types=[\"authorization_code\", \"refresh_token\"],\n            response_types=[\"code\"],\n            scope=\"user\",\n        ),\n        storage=InMemoryTokenStorage(),\n        redirect_handler=handle_redirect,\n        callback_handler=handle_callback,\n    )\n\n    async with httpx.AsyncClient(auth=oauth_auth, follow_redirects=True) as custom_client:\n        async with streamable_http_client(\"http://localhost:8001/mcp\", http_client=custom_client) as (read, write, _):\n            async with ClientSession(read, write) as session:\n                await session.initialize()\n\n                tools = await session.list_tools()\n                print(f\"Available tools: {[tool.name for tool in tools.tools]}\")\n\n                resources = await session.list_resources()\n                print(f\"Available resources: {[r.uri for r in resources.resources]}\")\n\n\ndef run():\n    asyncio.run(main())\n\n\nif __name__ == \"__main__\":\n    run()\n```\n\n_Full example: [examples/snippets/clients/oauth_client.py](https://github.com/modelcontextprotocol/python-sdk/blob/main/examples/snippets/clients/oauth_client.py)_\n<!-- /snippet-source -->\n\nFor a complete working example, see [`examples/clients/simple-auth-client/`](examples/clients/simple-auth-client/).\n\n### Parsing Tool Results\n\nWhen calling tools through MCP, the `CallToolResult` object contains the tool's response in a structured format. Understanding how to parse this result is essential for properly handling tool outputs.\n\n```python\n\"\"\"examples/snippets/clients/parsing_tool_results.py\"\"\"\n\nimport asyncio\n\nfrom mcp import ClientSession, StdioServerParameters, types\nfrom mcp.client.stdio import stdio_client\n\n\nasync def parse_tool_results():\n    \"\"\"Demonstrates how to parse different types of content in CallToolResult.\"\"\"\n    server_params = StdioServerParameters(\n        command=\"python\", args=[\"path/to/mcp_server.py\"]\n    )\n\n    async with stdio_client(server_params) as (read, write):\n        async with ClientSession(read, write) as session:\n            await session.initialize()\n\n            # Example 1: Parsing text content\n            result = await session.call_tool(\"get_data\", {\"format\": \"text\"})\n            for content in result.content:\n                if isinstance(content, types.TextContent):\n                    print(f\"Text: {content.text}\")\n\n            # Example 2: Parsing structured content from JSON tools\n            result = await session.call_tool(\"get_user\", {\"id\": \"123\"})\n            if hasattr(result, \"structuredContent\") and result.structuredContent:\n                # Access structured data directly\n                user_data = result.structuredContent\n                print(f\"User: {user_data.get('name')}, Age: {user_data.get('age')}\")\n\n            # Example 3: Parsing embedded resources\n            result = await session.call_tool(\"read_config\", {})\n            for content in result.content:\n                if isinstance(content, types.EmbeddedResource):\n                    resource = content.resource\n                    if isinstance(resource, types.TextResourceContents):\n                        print(f\"Config from {resource.uri}: {resource.text}\")\n                    elif isinstance(resource, types.BlobResourceContents):\n                        print(f\"Binary data from {resource.uri}\")\n\n            # Example 4: Parsing image content\n            result = await session.call_tool(\"generate_chart\", {\"data\": [1, 2, 3]})\n            for content in result.content:\n                if isinstance(content, types.ImageContent):\n                    print(f\"Image ({content.mimeType}): {len(content.data)} bytes\")\n\n            # Example 5: Handling errors\n            result = await session.call_tool(\"failing_tool\", {})\n            if result.isError:\n                print(\"Tool execution failed!\")\n                for content in result.content:\n                    if isinstance(content, types.TextContent):\n                        print(f\"Error: {content.text}\")\n\n\nasync def main():\n    await parse_tool_results()\n\n\nif __name__ == \"__main__\":\n    asyncio.run(main())\n```\n\n### MCP Primitives\n\nThe MCP protocol defines three core primitives that servers can implement:\n\n| Primitive | Control               | Description                                         | Example Use                  |\n|-----------|-----------------------|-----------------------------------------------------|------------------------------|\n| Prompts   | User-controlled       | Interactive templates invoked by user choice        | Slash commands, menu options |\n| Resources | Application-controlled| Contextual data managed by the client application   | File contents, API responses |\n| Tools     | Model-controlled      | Functions exposed to the LLM to take actions        | API calls, data updates      |\n\n### Server Capabilities\n\nMCP servers declare capabilities during initialization:\n\n| Capability   | Feature Flag                 | Description                        |\n|--------------|------------------------------|------------------------------------|\n| `prompts`    | `listChanged`                | Prompt template management         |\n| `resources`  | `subscribe`<br/>`listChanged`| Resource exposure and updates      |\n| `tools`      | `listChanged`                | Tool discovery and execution       |\n| `logging`    | -                            | Server logging configuration       |\n| `completions`| -                            | Argument completion suggestions    |\n\n## Documentation\n\n- [API Reference](https://modelcontextprotocol.github.io/python-sdk/api/)\n- [Experimental Features (Tasks)](https://modelcontextprotocol.github.io/python-sdk/experimental/tasks/)\n- [Model Context Protocol documentation](https://modelcontextprotocol.io)\n- [Model Context Protocol specification](https://modelcontextprotocol.io/specification/latest)\n- [Officially supported servers](https://github.com/modelcontextprotocol/servers)\n\n## Contributing\n\nWe are passionate about supporting contributors of all levels of experience and would love to see you get involved in the project. See the [contributing guide](CONTRIBUTING.md) to get started.\n\n## License\n\nThis project is licensed under the MIT License - see the LICENSE file for details.\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": null,
+    "keywords": "automation, git, llm, mcp",
+    "license": "MIT",
+    "license_expression": null,
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": "David Soria Parra <davidsp@anthropic.com>, Justin Spahr-Summers <justin@anthropic.com>",
+    "name": "mcp",
+    "package_url": "https://pypi.org/project/mcp/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/mcp/",
+    "project_urls": {
+      "Homepage": "https://modelcontextprotocol.io",
+      "Issues": "https://github.com/modelcontextprotocol/python-sdk/issues",
+      "Repository": "https://github.com/modelcontextprotocol/python-sdk"
+    },
+    "provides_extra": [
+      "cli",
+      "rich",
+      "ws"
+    ],
+    "release_url": "https://pypi.org/project/mcp/1.26.0/",
+    "requires_dist": [
+      "anyio>=4.5",
+      "httpx-sse>=0.4",
+      "httpx>=0.27.1",
+      "jsonschema>=4.20.0",
+      "pydantic-settings>=2.5.2",
+      "pydantic<3.0.0,>=2.11.0",
+      "pyjwt[crypto]>=2.10.1",
+      "python-multipart>=0.0.9",
+      "pywin32>=310; sys_platform == \"win32\"",
+      "sse-starlette>=1.6.1",
+      "starlette>=0.27",
+      "typing-extensions>=4.9.0",
+      "typing-inspection>=0.4.1",
+      "uvicorn>=0.31.1; sys_platform != \"emscripten\"",
+      "python-dotenv>=1.0.0; extra == \"cli\"",
+      "typer>=0.16.0; extra == \"cli\"",
+      "rich>=13.9.4; extra == \"rich\"",
+      "websockets>=15.0.1; extra == \"ws\""
+    ],
+    "requires_python": ">=3.10",
+    "summary": "Model Context Protocol SDK",
+    "version": "1.26.0",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 33781757,
+  "releases": {
+    "0.9.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "b3a02ee813d456b57a726d583868417d1ad900fbe12ee3c8cd866e3e804ca486",
+          "md5": "5abddc60d6f65a247ef8fa9710148a03",
+          "sha256": "7f640fcfb0be486aa510594df309920ae1d375cdca1f8aff21db3a96d837f303"
+        },
+        "downloads": -1,
+        "filename": "mcp-0.9.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5abddc60d6f65a247ef8fa9710148a03",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 31562,
+        "upload_time": "2024-11-20T11:37:34",
+        "upload_time_iso_8601": "2024-11-20T11:37:34.333286Z",
+        "url": "https://files.pythonhosted.org/packages/b3/a0/2ee813d456b57a726d583868417d1ad900fbe12ee3c8cd866e3e804ca486/mcp-0.9.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "e71c932818470ffd49c33509110c835101a8dc4c9cdd06028b9f647fb3dde237",
+          "md5": "9695144b3835673ae9929b8cf7429c17",
+          "sha256": "e8509a37c2ab546095788ed170e0fb4d7ce0cf5a3ee56b6449c78af27321a425"
+        },
+        "downloads": -1,
+        "filename": "mcp-0.9.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9695144b3835673ae9929b8cf7429c17",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 78218,
+        "upload_time": "2024-11-20T11:37:36",
+        "upload_time_iso_8601": "2024-11-20T11:37:36.109071Z",
+        "url": "https://files.pythonhosted.org/packages/e7/1c/932818470ffd49c33509110c835101a8dc4c9cdd06028b9f647fb3dde237/mcp-0.9.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "5689900c0c8445ec001d3725e475fc553b0feb2e8a51be018f3bb7de51e683db",
+          "md5": "19deea82946a90e8adb116f380f4a73b",
+          "sha256": "bbe70ffa3341cd4da78b5eb504958355c68381fb29971471cea1e642a2af5b8a"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.0.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "19deea82946a90e8adb116f380f4a73b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 36361,
+        "upload_time": "2024-11-25T14:27:34",
+        "upload_time_iso_8601": "2024-11-25T14:27:34.367301Z",
+        "url": "https://files.pythonhosted.org/packages/56/89/900c0c8445ec001d3725e475fc553b0feb2e8a51be018f3bb7de51e683db/mcp-1.0.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "97dea9ec0a1b6439f90ea59f89004bb2e7ec6890dfaeef809751d9e6577dca7e",
+          "md5": "91338998f75b948ff756b6912d37a9d5",
+          "sha256": "dba51ce0b5c6a80e25576f606760c49a91ee90210fed805b530ca165d3bbc9b7"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.0.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "91338998f75b948ff756b6912d37a9d5",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 82891,
+        "upload_time": "2024-11-25T14:27:35",
+        "upload_time_iso_8601": "2024-11-25T14:27:35.616459Z",
+        "url": "https://files.pythonhosted.org/packages/97/de/a9ec0a1b6439f90ea59f89004bb2e7ec6890dfaeef809751d9e6577dca7e/mcp-1.0.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "b93eaef19ac08a6f9a347c086c4e628c2f7329659828cbe92ffd524ec2aac833",
+          "md5": "6e45e0e0a38b36892a291fc7418bdde6",
+          "sha256": "44aa4d2e541f0924d6c344aa7f96b427a6ee1df2fab70b5f9ae2f8777b3f05f2"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.1.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "6e45e0e0a38b36892a291fc7418bdde6",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 36576,
+        "upload_time": "2024-12-03T22:39:17",
+        "upload_time_iso_8601": "2024-12-03T22:39:17.880529Z",
+        "url": "https://files.pythonhosted.org/packages/b9/3e/aef19ac08a6f9a347c086c4e628c2f7329659828cbe92ffd524ec2aac833/mcp-1.1.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "77f2067b1fc114e8d3ae4af02fc4f4ed8971a2c4900362d976fabe0f4e9a3418",
+          "md5": "be22d888a241d06635255d77115c07c1",
+          "sha256": "e3c8d6df93a4de90230ea944dd667730744a3cd91a4cc0ee66a5acd53419e100"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.1.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "be22d888a241d06635255d77115c07c1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 83802,
+        "upload_time": "2024-12-03T22:39:19",
+        "upload_time_iso_8601": "2024-12-03T22:39:19.157208Z",
+        "url": "https://files.pythonhosted.org/packages/77/f2/067b1fc114e8d3ae4af02fc4f4ed8971a2c4900362d976fabe0f4e9a3418/mcp-1.1.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "8c30dcffd09aa623b5a40e8ccb4227e935e4636cc4bec8d54ef9609768c24a53",
+          "md5": "06f4145dfde4617ce734c0a6cf1fd749",
+          "sha256": "29f693a54ca1d3730e625dcc06732bc83b52d64b993d253881de576a1d66feed"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.1.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "06f4145dfde4617ce734c0a6cf1fd749",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 36574,
+        "upload_time": "2024-12-09T14:45:41",
+        "upload_time_iso_8601": "2024-12-09T14:45:41.584359Z",
+        "url": "https://files.pythonhosted.org/packages/8c/30/dcffd09aa623b5a40e8ccb4227e935e4636cc4bec8d54ef9609768c24a53/mcp-1.1.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "bed515b9ff17c9e03bb6d936a0e1202aca69e3fa93508e749e620ae4f4fbd884",
+          "md5": "a69ea37ff44046e69c42ac60986d7c12",
+          "sha256": "44d9c12461b640c4431618a3ebf1be4178d35511e9169e25c9b1afeb59313b99"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.1.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a69ea37ff44046e69c42ac60986d7c12",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 57790,
+        "upload_time": "2024-12-09T14:45:42",
+        "upload_time_iso_8601": "2024-12-09T14:45:42.926456Z",
+        "url": "https://files.pythonhosted.org/packages/be/d5/15b9ff17c9e03bb6d936a0e1202aca69e3fa93508e749e620ae4f4fbd884/mcp-1.1.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.2": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "df409883eac3718b860d4006eba1920bfcb628f0a1fe37fac46a4f4e391edca6",
+          "md5": "77c244ec12661a12e177ca79cc541e20",
+          "sha256": "a4d32d60fd80a1702440ba4751b847a8a88957a1f7b059880953143e9759965a"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.1.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "77c244ec12661a12e177ca79cc541e20",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 36652,
+        "upload_time": "2024-12-12T17:16:42",
+        "upload_time_iso_8601": "2024-12-12T17:16:42.117828Z",
+        "url": "https://files.pythonhosted.org/packages/df/40/9883eac3718b860d4006eba1920bfcb628f0a1fe37fac46a4f4e391edca6/mcp-1.1.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "9bf35cf212e60681ea6da0dbb6e0d1bc0ab2dbf5eebc749b69663d46f114fea1",
+          "md5": "b7d5f0d7a363fc81f2e22aa4e9cd48f8",
+          "sha256": "694aa9df7a8641b24953c935eb72c63136dc948981021525a0add199bdfee402"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.1.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b7d5f0d7a363fc81f2e22aa4e9cd48f8",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 57628,
+        "upload_time": "2024-12-12T17:16:44",
+        "upload_time_iso_8601": "2024-12-12T17:16:44.675192Z",
+        "url": "https://files.pythonhosted.org/packages/9b/f3/5cf212e60681ea6da0dbb6e0d1bc0ab2dbf5eebc749b69663d46f114fea1/mcp-1.1.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.1.3": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "b808cfcfa13e41f8d27503c51a8cbf1939d720073ace92469d08655bb5de1b24",
+          "md5": "f5fd617da97baa95dda1d77d7551f90a",
+          "sha256": "71462d6cd7c06c14689dfcf110ff22286ba1b608cfc3515c0a5cbe33d131731a"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.1.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "f5fd617da97baa95dda1d77d7551f90a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 36997,
+        "upload_time": "2025-01-03T15:54:39",
+        "upload_time_iso_8601": "2025-01-03T15:54:39.284858Z",
+        "url": "https://files.pythonhosted.org/packages/b8/08/cfcfa13e41f8d27503c51a8cbf1939d720073ace92469d08655bb5de1b24/mcp-1.1.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "f76066ebfd280b197f9a9d074c9e46cb1ac3186a32d12e6bd0425c24fe7cf7e8",
+          "md5": "b1d2c55a0c06c321979fa0faa0f431ef",
+          "sha256": "af11018b8e9153cdd25f3722ec639fe7a462c00213a330fd6f593968341a9883"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.1.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b1d2c55a0c06c321979fa0faa0f431ef",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 57903,
+        "upload_time": "2025-01-03T15:54:43",
+        "upload_time_iso_8601": "2025-01-03T15:54:43.650163Z",
+        "url": "https://files.pythonhosted.org/packages/f7/60/66ebfd280b197f9a9d074c9e46cb1ac3186a32d12e6bd0425c24fe7cf7e8/mcp-1.1.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.10.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0f52e1c43c4b5153465fd5d3b4b41bf2d4c7731475e9f668f38d68f848c25c9a",
+          "md5": "a2e343f933ee8a7e6473cd67a75d7664",
+          "sha256": "925c45482d75b1b6f11febddf9736d55edf7739c7ea39b583309f6651cbc9e5c"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.10.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a2e343f933ee8a7e6473cd67a75d7664",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 150894,
+        "upload_time": "2025-06-26T13:51:17",
+        "upload_time_iso_8601": "2025-06-26T13:51:17.342139Z",
+        "url": "https://files.pythonhosted.org/packages/0f/52/e1c43c4b5153465fd5d3b4b41bf2d4c7731475e9f668f38d68f848c25c9a/mcp-1.10.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c81ad90e42be23a7e6dd35c03e35c7c63fe1036f082d3bb88114b66bd0f2467e",
+          "md5": "0a588d8b56a492f42ec0f9fc75a8ee2c",
+          "sha256": "91fb1623c3faf14577623d14755d3213db837c5da5dae85069e1b59124cbe0e9"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.10.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0a588d8b56a492f42ec0f9fc75a8ee2c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 392961,
+        "upload_time": "2025-06-26T13:51:19",
+        "upload_time_iso_8601": "2025-06-26T13:51:19.025832Z",
+        "url": "https://files.pythonhosted.org/packages/c8/1a/d90e42be23a7e6dd35c03e35c7c63fe1036f082d3bb88114b66bd0f2467e/mcp-1.10.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.10.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d73f435a5b3d10ae242a9d6c2b33175551173c3c61fe637dc893be05c4ed0aaf",
+          "md5": "30ee92254ceb2a890465d7daa7ccd41a",
+          "sha256": "4d08301aefe906dce0fa482289db55ce1db831e3e67212e65b5e23ad8454b3c5"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.10.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "30ee92254ceb2a890465d7daa7ccd41a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 150878,
+        "upload_time": "2025-06-27T12:03:07",
+        "upload_time_iso_8601": "2025-06-27T12:03:07.328572Z",
+        "url": "https://files.pythonhosted.org/packages/d7/3f/435a5b3d10ae242a9d6c2b33175551173c3c61fe637dc893be05c4ed0aaf/mcp-1.10.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7c6863045305f29ff680a9cd5be360c755270109e6b76f696ea6824547ddbc30",
+          "md5": "ca206cf42aa80825b0b2d023ad18d16b",
+          "sha256": "aaa0957d8307feeff180da2d9d359f2b801f35c0c67f1882136239055ef034c2"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.10.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "ca206cf42aa80825b0b2d023ad18d16b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 392969,
+        "upload_time": "2025-06-27T12:03:08",
+        "upload_time_iso_8601": "2025-06-27T12:03:08.982622Z",
+        "url": "https://files.pythonhosted.org/packages/7c/68/63045305f29ff680a9cd5be360c755270109e6b76f696ea6824547ddbc30/mcp-1.10.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.11.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "929cc9ca79f9c512e4113a5d07043013110bb3369fc7770040c61378c7fbcf70",
+          "md5": "dc86d66b723f3a39b03eb2439ce853e2",
+          "sha256": "58deac37f7483e4b338524b98bc949b7c2b7c33d978f5fafab5bde041c5e2595"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.11.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "dc86d66b723f3a39b03eb2439ce853e2",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 155880,
+        "upload_time": "2025-07-10T16:41:07",
+        "upload_time_iso_8601": "2025-07-10T16:41:07.935442Z",
+        "url": "https://files.pythonhosted.org/packages/92/9c/c9ca79f9c512e4113a5d07043013110bb3369fc7770040c61378c7fbcf70/mcp-1.11.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3af59506eb5578d5bbe9819ee8ba3198d0ad0e2fbe3bab8b257e4131ceb7dfb6",
+          "md5": "048e2582409f6cd4a582ae31c0f74fc1",
+          "sha256": "49a213df56bb9472ff83b3132a4825f5c8f5b120a90246f08b0dac6bedac44c8"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.11.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "048e2582409f6cd4a582ae31c0f74fc1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 406907,
+        "upload_time": "2025-07-10T16:41:09",
+        "upload_time_iso_8601": "2025-07-10T16:41:09.388896Z",
+        "url": "https://files.pythonhosted.org/packages/3a/f5/9506eb5578d5bbe9819ee8ba3198d0ad0e2fbe3bab8b257e4131ceb7dfb6/mcp-1.11.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.12.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "eddac7eaab6a58f1034de115b7902141ad8f81b4f3bbf7dc0cc267594947a4d7",
+          "md5": "e5f763c5213c82dcd6cd4b07a821a92c",
+          "sha256": "19a498b2bf273283e463b4dd1ed83f791fbba5c25bfa16b8b34cfd5571673e7f"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.12.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e5f763c5213c82dcd6cd4b07a821a92c",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 158470,
+        "upload_time": "2025-07-17T19:46:34",
+        "upload_time_iso_8601": "2025-07-17T19:46:34.166285Z",
+        "url": "https://files.pythonhosted.org/packages/ed/da/c7eaab6a58f1034de115b7902141ad8f81b4f3bbf7dc0cc267594947a4d7/mcp-1.12.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4594caa0f4754e2437f7033068989f13fee784856f95870c786b0b5c2c0f511e",
+          "md5": "9072b7e27b0436422054402696f68c78",
+          "sha256": "853f6b17a3f31ea6e2f278c2ec7d3b38457bc80c7c2c675260dd7f04a6fd0e70"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.12.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9072b7e27b0436422054402696f68c78",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 424678,
+        "upload_time": "2025-07-17T19:46:35",
+        "upload_time_iso_8601": "2025-07-17T19:46:35.522252Z",
+        "url": "https://files.pythonhosted.org/packages/45/94/caa0f4754e2437f7033068989f13fee784856f95870c786b0b5c2c0f511e/mcp-1.12.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.12.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b9049a967a575518fc958bda1e34a52eae0c7f6accf3534811914fdaf57b0689",
+          "md5": "c73df357bad7cf3798acb81bcfdf9790",
+          "sha256": "34147f62891417f8b000c39718add844182ba424c8eb2cea250b4267bda4b08b"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.12.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "c73df357bad7cf3798acb81bcfdf9790",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 158463,
+        "upload_time": "2025-07-22T16:51:40",
+        "upload_time_iso_8601": "2025-07-22T16:51:40.086642Z",
+        "url": "https://files.pythonhosted.org/packages/b9/04/9a967a575518fc958bda1e34a52eae0c7f6accf3534811914fdaf57b0689/mcp-1.12.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5c5a16cef13b2e60d5f865fbc96372efb23dc8b0591f102dd55003b4ae62f9b1",
+          "md5": "813c7feabfcf27b63867d4d1661ac680",
+          "sha256": "d1d0bdeb09e4b17c1a72b356248bf3baf75ab10db7008ef865c4afbeb0eb810e"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.12.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "813c7feabfcf27b63867d4d1661ac680",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 425768,
+        "upload_time": "2025-07-22T16:51:41",
+        "upload_time_iso_8601": "2025-07-22T16:51:41.660735Z",
+        "url": "https://files.pythonhosted.org/packages/5c/5a/16cef13b2e60d5f865fbc96372efb23dc8b0591f102dd55003b4ae62f9b1/mcp-1.12.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.12.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "2fcf3fd38cfe43962452e4bfadc6966b2ea0afaf8e0286cb3991c247c8c33ebd",
+          "md5": "3535f45dc985bb6a20fc07512e9094cc",
+          "sha256": "b86d584bb60193a42bd78aef01882c5c42d614e416cbf0480149839377ab5a5f"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.12.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "3535f45dc985bb6a20fc07512e9094cc",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 158473,
+        "upload_time": "2025-07-24T18:29:03",
+        "upload_time_iso_8601": "2025-07-24T18:29:03.419879Z",
+        "url": "https://files.pythonhosted.org/packages/2f/cf/3fd38cfe43962452e4bfadc6966b2ea0afaf8e0286cb3991c247c8c33ebd/mcp-1.12.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6685f36d538b1286b7758f35c1b69d93f2719d2df90c01bd074eadd35f6afc35",
+          "md5": "38a6045366c6ddb1cb60dc7f34ef8f46",
+          "sha256": "a4b7c742c50ce6ed6d6a6c096cca0e3893f5aecc89a59ed06d47c4e6ba41edcc"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.12.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "38a6045366c6ddb1cb60dc7f34ef8f46",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 426202,
+        "upload_time": "2025-07-24T18:29:05",
+        "upload_time_iso_8601": "2025-07-24T18:29:05.175499Z",
+        "url": "https://files.pythonhosted.org/packages/66/85/f36d538b1286b7758f35c1b69d93f2719d2df90c01bd074eadd35f6afc35/mcp-1.12.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.12.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8f8b0be74e3308a486f1d127f3f6767de5f9f76454c9b4183210c61cc50999b6",
+          "md5": "1c22e6ef0c3ebffcac88ceb97e59a9f7",
+          "sha256": "5483345bf39033b858920a5b6348a303acacf45b23936972160ff152107b850e"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.12.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "1c22e6ef0c3ebffcac88ceb97e59a9f7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 158810,
+        "upload_time": "2025-07-31T18:36:34",
+        "upload_time_iso_8601": "2025-07-31T18:36:34.915713Z",
+        "url": "https://files.pythonhosted.org/packages/8f/8b/0be74e3308a486f1d127f3f6767de5f9f76454c9b4183210c61cc50999b6/mcp-1.12.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4d199955e2df5384ff5dd25d38f8e88aaf89d2d3d9d39f27e7383eaf0b293836",
+          "md5": "5e31c40556739710eb947ae391e49cee",
+          "sha256": "ab2e05f5e5c13e1dc90a4a9ef23ac500a6121362a564447855ef0ab643a99fed"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.12.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5e31c40556739710eb947ae391e49cee",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 427203,
+        "upload_time": "2025-07-31T18:36:36",
+        "upload_time_iso_8601": "2025-07-31T18:36:36.795429Z",
+        "url": "https://files.pythonhosted.org/packages/4d/19/9955e2df5384ff5dd25d38f8e88aaf89d2d3d9d39f27e7383eaf0b293836/mcp-1.12.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.12.4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ad68316cbc54b7163fa22571dcf42c9cc46562aae0a021b974e0a8141e897200",
+          "md5": "2065b8833a6a709a0f4416ab4023093a",
+          "sha256": "7aa884648969fab8e78b89399d59a683202972e12e6bc9a1c88ce7eda7743789"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.12.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2065b8833a6a709a0f4416ab4023093a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 160145,
+        "upload_time": "2025-08-07T20:31:15",
+        "upload_time_iso_8601": "2025-08-07T20:31:15.690447Z",
+        "url": "https://files.pythonhosted.org/packages/ad/68/316cbc54b7163fa22571dcf42c9cc46562aae0a021b974e0a8141e897200/mcp-1.12.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3188f6cb7e7c260cd4b4ce375f2b1614b33ce401f63af0f49f7141a2e9bf0a45",
+          "md5": "e36fd064647e31aab7b67a0c817ebaf4",
+          "sha256": "0765585e9a3a5916a3c3ab8659330e493adc7bd8b2ca6120c2d7a0c43e034ca5"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.12.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e36fd064647e31aab7b67a0c817ebaf4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 431148,
+        "upload_time": "2025-08-07T20:31:18",
+        "upload_time_iso_8601": "2025-08-07T20:31:18.082079Z",
+        "url": "https://files.pythonhosted.org/packages/31/88/f6cb7e7c260cd4b4ce375f2b1614b33ce401f63af0f49f7141a2e9bf0a45/mcp-1.12.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.13.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8b6b46b8bcefc2ee9e2d2e8d2bd25f1c2512f5a879fac4619d716b194d6e7ccc",
+          "md5": "300b3d7a974fa655975106c8a08b0a96",
+          "sha256": "8b1a002ebe6e17e894ec74d1943cc09aa9d23cb931bf58d49ab2e9fa6bb17e4b"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.13.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "300b3d7a974fa655975106c8a08b0a96",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 160226,
+        "upload_time": "2025-08-14T15:03:56",
+        "upload_time_iso_8601": "2025-08-14T15:03:56.641167Z",
+        "url": "https://files.pythonhosted.org/packages/8b/6b/46b8bcefc2ee9e2d2e8d2bd25f1c2512f5a879fac4619d716b194d6e7ccc/mcp-1.13.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d3a8564c094de5d6199f727f5d9f5672dbec3b00dfafd0f67bf52d995eaa5951",
+          "md5": "859904a95cd42b558a6828dbd891e12b",
+          "sha256": "70452f56f74662a94eb72ac5feb93997b35995e389b3a3a574e078bed2aa9ab3"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.13.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "859904a95cd42b558a6828dbd891e12b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 434709,
+        "upload_time": "2025-08-14T15:03:58",
+        "upload_time_iso_8601": "2025-08-14T15:03:58.580425Z",
+        "url": "https://files.pythonhosted.org/packages/d3/a8/564c094de5d6199f727f5d9f5672dbec3b00dfafd0f67bf52d995eaa5951/mcp-1.13.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.13.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "193fd085c7f49ade6d273b185d61ec9405e672b6433f710ea64a90135a8dd445",
+          "md5": "df0016557ab7166bca7098aa6e88822d",
+          "sha256": "c314e7c8bd477a23ba3ef472ee5a32880316c42d03e06dcfa31a1cc7a73b65df"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.13.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "df0016557ab7166bca7098aa6e88822d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 161494,
+        "upload_time": "2025-08-22T09:22:14",
+        "upload_time_iso_8601": "2025-08-22T09:22:14.705444Z",
+        "url": "https://files.pythonhosted.org/packages/19/3f/d085c7f49ade6d273b185d61ec9405e672b6433f710ea64a90135a8dd445/mcp-1.13.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "663c82c400c2d50afdac4fbefb5b4031fd327e2ad1f23ccef8eee13c5909aa48",
+          "md5": "d57e7c6ddbd76a65b063582b570211ec",
+          "sha256": "165306a8fd7991dc80334edd2de07798175a56461043b7ae907b279794a834c5"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.13.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "d57e7c6ddbd76a65b063582b570211ec",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 438198,
+        "upload_time": "2025-08-22T09:22:16",
+        "upload_time_iso_8601": "2025-08-22T09:22:16.061697Z",
+        "url": "https://files.pythonhosted.org/packages/66/3c/82c400c2d50afdac4fbefb5b4031fd327e2ad1f23ccef8eee13c5909aa48/mcp-1.13.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.14.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "047b84b0dd4c2c5a499d2c5d63fb7a1224c25fc4c8b6c24623fa7a566471480d",
+          "md5": "d9f5e05ed7ccacc13dee4df667835eb7",
+          "sha256": "b2d27feba27b4c53d41b58aa7f4d090ae0cb740cbc4e339af10f8cbe54c4e19d"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.14.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "d9f5e05ed7ccacc13dee4df667835eb7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 163805,
+        "upload_time": "2025-09-11T17:40:46",
+        "upload_time_iso_8601": "2025-09-11T17:40:46.891645Z",
+        "url": "https://files.pythonhosted.org/packages/04/7b/84b0dd4c2c5a499d2c5d63fb7a1224c25fc4c8b6c24623fa7a566471480d/mcp-1.14.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "95fdd6e941a52446198b73e5e4a953441f667f1469aeb06fb382d9f6729d6168",
+          "md5": "e2d6073a71a1efe82cfca119d2340629",
+          "sha256": "2e7d98b195e08b2abc1dc6191f6f3dc0059604ac13ee6a40f88676274787fac4"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.14.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e2d6073a71a1efe82cfca119d2340629",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 454855,
+        "upload_time": "2025-09-11T17:40:48",
+        "upload_time_iso_8601": "2025-09-11T17:40:48.667431Z",
+        "url": "https://files.pythonhosted.org/packages/95/fd/d6e941a52446198b73e5e4a953441f667f1469aeb06fb382d9f6729d6168/mcp-1.14.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.14.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8e11d334fbb7c2aeddd2e762b86d7a619acffae012643a5738e698f975a2a9e2",
+          "md5": "00a0a327c10fac3d5794eac8ffc96458",
+          "sha256": "3b7a479e8e5cbf5361bdc1da8bc6d500d795dc3aff44b44077a363a7f7e945a4"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.14.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "00a0a327c10fac3d5794eac8ffc96458",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 163809,
+        "upload_time": "2025-09-18T13:37:18",
+        "upload_time_iso_8601": "2025-09-18T13:37:18.165771Z",
+        "url": "https://files.pythonhosted.org/packages/8e/11/d334fbb7c2aeddd2e762b86d7a619acffae012643a5738e698f975a2a9e2/mcp-1.14.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "48e9242096400d702924b49f8d202c6ded7efb8841cacba826b5d2e6183aef7b",
+          "md5": "04222111fc007dcda1c0763fe8d0fc54",
+          "sha256": "31c4406182ba15e8f30a513042719c3f0a38c615e76188ee5a736aaa89e20134"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.14.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "04222111fc007dcda1c0763fe8d0fc54",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 454944,
+        "upload_time": "2025-09-18T13:37:19",
+        "upload_time_iso_8601": "2025-09-18T13:37:19.971657Z",
+        "url": "https://files.pythonhosted.org/packages/48/e9/242096400d702924b49f8d202c6ded7efb8841cacba826b5d2e6183aef7b/mcp-1.14.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.15.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c9824d0df23d5ff5bb982a59ad597bc7cb9920f2650278ccefb8e0d85c5ce3d4",
+          "md5": "4a8510fe1b64a008df88d642b5021f1f",
+          "sha256": "314614c8addc67b663d6c3e4054db0a5c3dedc416c24ef8ce954e203fdc2333d"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.15.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "4a8510fe1b64a008df88d642b5021f1f",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 166963,
+        "upload_time": "2025-09-25T15:39:50",
+        "upload_time_iso_8601": "2025-09-25T15:39:50.538187Z",
+        "url": "https://files.pythonhosted.org/packages/c9/82/4d0df23d5ff5bb982a59ad597bc7cb9920f2650278ccefb8e0d85c5ce3d4/mcp-1.15.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0c9ee65114795f359f314d7061f4fcb50dfe60026b01b52ad0b986b4631bf8bb",
+          "md5": "bdf5edb8c52ca476d7efbd15cff3b987",
+          "sha256": "5bda1f4d383cf539d3c035b3505a3de94b20dbd7e4e8b4bd071e14634eeb2d72"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.15.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bdf5edb8c52ca476d7efbd15cff3b987",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 469622,
+        "upload_time": "2025-09-25T15:39:51",
+        "upload_time_iso_8601": "2025-09-25T15:39:51.995478Z",
+        "url": "https://files.pythonhosted.org/packages/0c/9e/e65114795f359f314d7061f4fcb50dfe60026b01b52ad0b986b4631bf8bb/mcp-1.15.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.16.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c90e7cebc88e17daf94ebe28c95633af595ccb2864dc2ee7abd75542d98495cc",
+          "md5": "39c5bf56ee17cfbdbdafbf0c7660e081",
+          "sha256": "ec917be9a5d31b09ba331e1768aa576e0af45470d657a0319996a20a57d7d633"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.16.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "39c5bf56ee17cfbdbdafbf0c7660e081",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 167266,
+        "upload_time": "2025-10-02T16:58:19",
+        "upload_time_iso_8601": "2025-10-02T16:58:19.039586Z",
+        "url": "https://files.pythonhosted.org/packages/c9/0e/7cebc88e17daf94ebe28c95633af595ccb2864dc2ee7abd75542d98495cc/mcp-1.16.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3da1b1f328da3b153683d2ec34f849b4b6eac2790fb240e3aef06ff2fab3df9d",
+          "md5": "326c9748d7ca34c65a4a51ee6801726b",
+          "sha256": "39b8ca25460c578ee2cdad33feeea122694cfdf73eef58bee76c42f6ef0589df"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.16.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "326c9748d7ca34c65a4a51ee6801726b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 472918,
+        "upload_time": "2025-10-02T16:58:20",
+        "upload_time_iso_8601": "2025-10-02T16:58:20.631448Z",
+        "url": "https://files.pythonhosted.org/packages/3d/a1/b1f328da3b153683d2ec34f849b4b6eac2790fb240e3aef06ff2fab3df9d/mcp-1.16.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.17.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1c723751feae343a5ad07959df713907b5c3fbaed269d697a14b0c449080cf2e",
+          "md5": "fa1bfd82ceb3a8daf8a1f5efe9afa5b6",
+          "sha256": "0660ef275cada7a545af154db3082f176cf1d2681d5e35ae63e014faf0a35d40"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.17.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "fa1bfd82ceb3a8daf8a1f5efe9afa5b6",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 167737,
+        "upload_time": "2025-10-10T12:16:42",
+        "upload_time_iso_8601": "2025-10-10T12:16:42.863200Z",
+        "url": "https://files.pythonhosted.org/packages/1c/72/3751feae343a5ad07959df713907b5c3fbaed269d697a14b0c449080cf2e/mcp-1.17.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5a795724a540df19e192e8606c543cdcf162de8eb435077520cca150f7365ec0",
+          "md5": "369dfae5c4c2241cd94c9494781bbaff",
+          "sha256": "1b57fabf3203240ccc48e39859faf3ae1ccb0b571ff798bbedae800c73c6df90"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.17.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "369dfae5c4c2241cd94c9494781bbaff",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 477951,
+        "upload_time": "2025-10-10T12:16:44",
+        "upload_time_iso_8601": "2025-10-10T12:16:44.519894Z",
+        "url": "https://files.pythonhosted.org/packages/5a/79/5724a540df19e192e8606c543cdcf162de8eb435077520cca150f7365ec0/mcp-1.17.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.18.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1b44f5970e3e899803823826283a70b6003afd46f28e082544407e24575eccd3",
+          "md5": "becff67730394455fb07bb5f4a363680",
+          "sha256": "42f10c270de18e7892fdf9da259029120b1ea23964ff688248c69db9d72b1d0a"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.18.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "becff67730394455fb07bb5f4a363680",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 168762,
+        "upload_time": "2025-10-16T19:19:53",
+        "upload_time_iso_8601": "2025-10-16T19:19:53.200345Z",
+        "url": "https://files.pythonhosted.org/packages/1b/44/f5970e3e899803823826283a70b6003afd46f28e082544407e24575eccd3/mcp-1.18.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1ae0fe34ce16ea2bacce489ab859abd1b47ae28b438c3ef60b9c5eee6c02592f",
+          "md5": "7eae7cd8895e1c3d0472e9c9427c5a9e",
+          "sha256": "aa278c44b1efc0a297f53b68df865b988e52dd08182d702019edcf33a8e109f6"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.18.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "7eae7cd8895e1c3d0472e9c9427c5a9e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 482926,
+        "upload_time": "2025-10-16T19:19:55",
+        "upload_time_iso_8601": "2025-10-16T19:19:55.125329Z",
+        "url": "https://files.pythonhosted.org/packages/1a/e0/fe34ce16ea2bacce489ab859abd1b47ae28b438c3ef60b9c5eee6c02592f/mcp-1.18.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.19.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "cea33e71a875a08b6a830b88c40bc413bff01f1650f1efe8a054b5e90a9d4f56",
+          "md5": "fd2c85679cc3ae2b9955f66aa53d9533",
+          "sha256": "f5907fe1c0167255f916718f376d05f09a830a215327a3ccdd5ec8a519f2e572"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.19.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "fd2c85679cc3ae2b9955f66aa53d9533",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 170105,
+        "upload_time": "2025-10-24T01:11:14",
+        "upload_time_iso_8601": "2025-10-24T01:11:14.151538Z",
+        "url": "https://files.pythonhosted.org/packages/ce/a3/3e71a875a08b6a830b88c40bc413bff01f1650f1efe8a054b5e90a9d4f56/mcp-1.19.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "692b916852a5668f45d8787378461eaa1244876d77575ffef024483c94c0649c",
+          "md5": "87415ad0ecd0b617776b7bc530f16816",
+          "sha256": "213de0d3cd63f71bc08ffe9cc8d4409cc87acffd383f6195d2ce0457c021b5c1"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.19.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "87415ad0ecd0b617776b7bc530f16816",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 444163,
+        "upload_time": "2025-10-24T01:11:15",
+        "upload_time_iso_8601": "2025-10-24T01:11:15.839756Z",
+        "url": "https://files.pythonhosted.org/packages/69/2b/916852a5668f45d8787378461eaa1244876d77575ffef024483c94c0649c/mcp-1.19.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.2.0": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "af84fca78f19ac8ce6c53ba416247c71baa53a9e791e98d3c81edbc20a77d6d1",
+          "md5": "86e2bb808d621075fa7a003bdecb29c1",
+          "sha256": "1d0e77d8c14955a5aea1f5aa1f444c8e531c09355c829b20e42f7a142bc0755f"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.2.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "86e2bb808d621075fa7a003bdecb29c1",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 66468,
+        "upload_time": "2025-01-03T16:23:36",
+        "upload_time_iso_8601": "2025-01-03T16:23:36.863122Z",
+        "url": "https://files.pythonhosted.org/packages/af/84/fca78f19ac8ce6c53ba416247c71baa53a9e791e98d3c81edbc20a77d6d1/mcp-1.2.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "aba5b08dc846ebedae9f17ced878e6975826e90e448cd4592f532f6a88a925a7",
+          "md5": "da8ab883d69a567dab52c0398f5da02f",
+          "sha256": "2b06c7ece98d6ea9e6379caa38d74b432385c338fb530cb82e2c70ea7add94f5"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.2.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "da8ab883d69a567dab52c0398f5da02f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 102973,
+        "upload_time": "2025-01-03T16:23:39",
+        "upload_time_iso_8601": "2025-01-03T16:23:39.532156Z",
+        "url": "https://files.pythonhosted.org/packages/ab/a5/b08dc846ebedae9f17ced878e6975826e90e448cd4592f532f6a88a925a7/mcp-1.2.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.2.0rc1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "5fd43af43558260e2cc7e084a04af41724931d66ae918fd232f5452d89eb2c8f",
+          "md5": "06ffa0ff3aa26a2410277db30acb679e",
+          "sha256": "4a9621b7625351fceb3cb518142be1f0a0be73db86375b87e7238e99eacbcce5"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.2.0rc1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "06ffa0ff3aa26a2410277db30acb679e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 66234,
+        "upload_time": "2024-12-23T16:46:43",
+        "upload_time_iso_8601": "2024-12-23T16:46:43.712599Z",
+        "url": "https://files.pythonhosted.org/packages/5f/d4/3af43558260e2cc7e084a04af41724931d66ae918fd232f5452d89eb2c8f/mcp-1.2.0rc1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "3cba42269d2e87e8ed1920364fdc68a8623701ddf8288de148b21ef3f26aa6df",
+          "md5": "e0ec33cd0a4d6b85d5b582291ad144b2",
+          "sha256": "44dda64e7e61c85884cdc0b3686e8a6dfb1a014d10c4bd35914eba2f24306586"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.2.0rc1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e0ec33cd0a4d6b85d5b582291ad144b2",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 99529,
+        "upload_time": "2024-12-23T16:46:49",
+        "upload_time_iso_8601": "2024-12-23T16:46:49.138735Z",
+        "url": "https://files.pythonhosted.org/packages/3c/ba/42269d2e87e8ed1920364fdc68a8623701ddf8288de148b21ef3f26aa6df/mcp-1.2.0rc1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.2.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4c0d6770742a84c8aa1d36c0d628896a380584c5759612e66af7446af07d8775",
+          "md5": "51a80d3e701ab872ca15dffd61b4a6a7",
+          "sha256": "579bf9c9157850ebb1344f3ca6f7a3021b0123c44c9f089ef577a7062522f0fd"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.2.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "51a80d3e701ab872ca15dffd61b4a6a7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 66453,
+        "upload_time": "2025-01-27T16:48:01",
+        "upload_time_iso_8601": "2025-01-27T16:48:01.930698Z",
+        "url": "https://files.pythonhosted.org/packages/4c/0d/6770742a84c8aa1d36c0d628896a380584c5759612e66af7446af07d8775/mcp-1.2.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fc3051e4555826126e3954fa2ab1e934bf74163c5fe05e98f38ca4d0f8abbf63",
+          "md5": "623521d5db1a824da72bd206a4050067",
+          "sha256": "c9d43dbfe943aa1530e2be8f54b73af3ebfb071243827b4483d421684806cb45"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.2.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "623521d5db1a824da72bd206a4050067",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 103968,
+        "upload_time": "2025-01-27T16:48:03",
+        "upload_time_iso_8601": "2025-01-27T16:48:03.960148Z",
+        "url": "https://files.pythonhosted.org/packages/fc/30/51e4555826126e3954fa2ab1e934bf74163c5fe05e98f38ca4d0f8abbf63/mcp-1.2.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.20.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "df0076fc92f4892d47fecb37131d0e95ea69259f077d84c68f6793a0d96cfe80",
+          "md5": "f01500a7b0e4ce33848187df378d2652",
+          "sha256": "d0dc06f93653f7432ff89f694721c87f79876b6f93741bf628ad1e48f7ac5e5d"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.20.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "f01500a7b0e4ce33848187df378d2652",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 173136,
+        "upload_time": "2025-10-30T22:14:51",
+        "upload_time_iso_8601": "2025-10-30T22:14:51.078517Z",
+        "url": "https://files.pythonhosted.org/packages/df/00/76fc92f4892d47fecb37131d0e95ea69259f077d84c68f6793a0d96cfe80/mcp-1.20.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f822fae38092e6c2995c03232635028510d77e7decff31b4ae79dfa0ba99c635",
+          "md5": "f5fde28d5c5a8483a728d5f0217722c4",
+          "sha256": "9ccc09eaadbfbcbbdab1c9723cfe2e0d1d9e324d7d3ce7e332ef90b09ed35177"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.20.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f5fde28d5c5a8483a728d5f0217722c4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 451377,
+        "upload_time": "2025-10-30T22:14:53",
+        "upload_time_iso_8601": "2025-10-30T22:14:53.421875Z",
+        "url": "https://files.pythonhosted.org/packages/f8/22/fae38092e6c2995c03232635028510d77e7decff31b4ae79dfa0ba99c635/mcp-1.20.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.21.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3947850b6edc96c03bd44b00de9a0ca3c1cc71e0ba1cd5822955bc9e4eb3fad3",
+          "md5": "96c3ad708716a1d245ecc544b8abf82b",
+          "sha256": "598619e53eb0b7a6513db38c426b28a4bdf57496fed04332100d2c56acade98b"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.21.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "96c3ad708716a1d245ecc544b8abf82b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 173672,
+        "upload_time": "2025-11-06T23:19:56",
+        "upload_time_iso_8601": "2025-11-06T23:19:56.508595Z",
+        "url": "https://files.pythonhosted.org/packages/39/47/850b6edc96c03bd44b00de9a0ca3c1cc71e0ba1cd5822955bc9e4eb3fad3/mcp-1.21.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3354dd2330ef4611c27ae59124820863c34e1d3edb1133c58e6375e2d938c9c5",
+          "md5": "c27f6145bcd7e7932f280611961560bd",
+          "sha256": "bab0a38e8f8c48080d787233343f8d301b0e1e95846ae7dead251b2421d99855"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.21.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c27f6145bcd7e7932f280611961560bd",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 452697,
+        "upload_time": "2025-11-06T23:19:58",
+        "upload_time_iso_8601": "2025-11-06T23:19:58.432580Z",
+        "url": "https://files.pythonhosted.org/packages/33/54/dd2330ef4611c27ae59124820863c34e1d3edb1133c58e6375e2d938c9c5/mcp-1.21.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.21.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "49af01fb42df59ad15925ffc1e2e609adafddd3ac4572f606faae0dc8b55ba0c",
+          "md5": "8c9f1f8e41c5ba678bf0a89ab986bbc8",
+          "sha256": "dd35abe36d68530a8a1291daa25d50276d8731e545c0434d6e250a3700dd2a6d"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.21.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "8c9f1f8e41c5ba678bf0a89ab986bbc8",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 174852,
+        "upload_time": "2025-11-13T20:33:44",
+        "upload_time_iso_8601": "2025-11-13T20:33:44.502501Z",
+        "url": "https://files.pythonhosted.org/packages/49/af/01fb42df59ad15925ffc1e2e609adafddd3ac4572f606faae0dc8b55ba0c/mcp-1.21.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f7254df633e7574254ada574822db2245bbee424725d1b01bccae10bf128794e",
+          "md5": "9f734d19e78b96df1ef6299c6444cb8f",
+          "sha256": "540e6ac4b12b085c43f14879fde04cbdb10148a09ea9492ff82d8c7ba651a302"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.21.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9f734d19e78b96df1ef6299c6444cb8f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 469071,
+        "upload_time": "2025-11-13T20:33:46",
+        "upload_time_iso_8601": "2025-11-13T20:33:46.139146Z",
+        "url": "https://files.pythonhosted.org/packages/f7/25/4df633e7574254ada574822db2245bbee424725d1b01bccae10bf128794e/mcp-1.21.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.21.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "670f669ecbe78a0ba192afcc0b026ae62d1005779e91bad27ab9d703401510bf",
+          "md5": "fc6cca6719afe8893ba1f30908b53838",
+          "sha256": "59413ef15db757a785e3859548c1a7ffc7be57bf162c3c24afc0e04fd9f4181c"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.21.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "fc6cca6719afe8893ba1f30908b53838",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 174854,
+        "upload_time": "2025-11-17T13:56:04",
+        "upload_time_iso_8601": "2025-11-17T13:56:04.987485Z",
+        "url": "https://files.pythonhosted.org/packages/67/0f/669ecbe78a0ba192afcc0b026ae62d1005779e91bad27ab9d703401510bf/mcp-1.21.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "15bb147bf5d47b8d6f3fb315204cd2f567b1ad85511acd8d59e85cccf7cce65c",
+          "md5": "5f46d99f973cc9e11a096f035a52aaf2",
+          "sha256": "b6497b7f7a77aabe263931a3335956dfd45fe8b1e2168931e455914ba1a7f4c9"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.21.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5f46d99f973cc9e11a096f035a52aaf2",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 470799,
+        "upload_time": "2025-11-17T13:56:06",
+        "upload_time_iso_8601": "2025-11-17T13:56:06.397471Z",
+        "url": "https://files.pythonhosted.org/packages/15/bb/147bf5d47b8d6f3fb315204cd2f567b1ad85511acd8d59e85cccf7cce65c/mcp-1.21.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.22.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a9bb711099f9c6bb52770f56e56401cdfb10da5b67029f701e0df29362df4c8e",
+          "md5": "a8903f203eac93f75fcd2cd88d55ed00",
+          "sha256": "bed758e24df1ed6846989c909ba4e3df339a27b4f30f1b8b627862a4bade4e98"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.22.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a8903f203eac93f75fcd2cd88d55ed00",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 175489,
+        "upload_time": "2025-11-20T20:11:26",
+        "upload_time_iso_8601": "2025-11-20T20:11:26.542962Z",
+        "url": "https://files.pythonhosted.org/packages/a9/bb/711099f9c6bb52770f56e56401cdfb10da5b67029f701e0df29362df4c8e/mcp-1.22.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a3a2c5ec0ab38b35ade2ae49a90fada718fbc76811dc5aa1760414c6aaa6b08a",
+          "md5": "47db70b2922091fefee93f2bfc074878",
+          "sha256": "769b9ac90ed42134375b19e777a2858ca300f95f2e800982b3e2be62dfc0ba01"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.22.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "47db70b2922091fefee93f2bfc074878",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 471788,
+        "upload_time": "2025-11-20T20:11:28",
+        "upload_time_iso_8601": "2025-11-20T20:11:28.095784Z",
+        "url": "https://files.pythonhosted.org/packages/a3/a2/c5ec0ab38b35ade2ae49a90fada718fbc76811dc5aa1760414c6aaa6b08a/mcp-1.22.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.23.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7bb228739ce409f98159c0121eab56e69ad71546c4f34ac8b42e58c03f57dccc",
+          "md5": "5fb9da7fa0940db896bf90e9d7ad3bfb",
+          "sha256": "5a645cf111ed329f4619f2629a3f15d9aabd7adc2ea09d600d31467b51ecb64f"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.23.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5fb9da7fa0940db896bf90e9d7ad3bfb",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 231427,
+        "upload_time": "2025-12-02T13:40:00",
+        "upload_time_iso_8601": "2025-12-02T13:40:00.738293Z",
+        "url": "https://files.pythonhosted.org/packages/7b/b2/28739ce409f98159c0121eab56e69ad71546c4f34ac8b42e58c03f57dccc/mcp-1.23.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "251a9c8a5362e3448d585081d6c7aa95898a64e0ac59d3e26169ae6c3ca5feaf",
+          "md5": "8ee9ba24aa102ec50edb42b9fa314bae",
+          "sha256": "84e0c29316d0a8cf0affd196fd000487ac512aa3f771b63b2ea864e22961772b"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.23.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8ee9ba24aa102ec50edb42b9fa314bae",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 596506,
+        "upload_time": "2025-12-02T13:40:02",
+        "upload_time_iso_8601": "2025-12-02T13:40:02.558797Z",
+        "url": "https://files.pythonhosted.org/packages/25/1a/9c8a5362e3448d585081d6c7aa95898a64e0ac59d3e26169ae6c3ca5feaf/mcp-1.23.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.23.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9f9e26e1d2d2c6afe15dfba5ca6799eeeea7656dce625c22766e4c57305e9cc2",
+          "md5": "dc147c824d36513ef5c52f5026bfde80",
+          "sha256": "3ce897fcc20a41bd50b4c58d3aa88085f11f505dcc0eaed48930012d34c731d8"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.23.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "dc147c824d36513ef5c52f5026bfde80",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 231433,
+        "upload_time": "2025-12-02T18:41:11",
+        "upload_time_iso_8601": "2025-12-02T18:41:11.195085Z",
+        "url": "https://files.pythonhosted.org/packages/9f/9e/26e1d2d2c6afe15dfba5ca6799eeeea7656dce625c22766e4c57305e9cc2/mcp-1.23.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "124210c0c09ca27aceacd8c428956cfabdd67e3d328fe55c4abc16589285d294",
+          "md5": "8c6adeb7655e2ef118540ea939f4f1a7",
+          "sha256": "7403e053e8e2283b1e6ae631423cb54736933fea70b32422152e6064556cd298"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.23.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8c6adeb7655e2ef118540ea939f4f1a7",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 596519,
+        "upload_time": "2025-12-02T18:41:12",
+        "upload_time_iso_8601": "2025-12-02T18:41:12.807686Z",
+        "url": "https://files.pythonhosted.org/packages/12/42/10c0c09ca27aceacd8c428956cfabdd67e3d328fe55c4abc16589285d294/mcp-1.23.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.23.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ad6a1a726905cf41a69d00989e8dfd9de7bd9b4a9f3c8723dac3077b0ba1a7b9",
+          "md5": "2ff8f08dad130ab28aa9acce54783d0b",
+          "sha256": "d8e4c6af0317ad954ea0a53dfb5e229dddea2d0a54568c080e82e8fae4a8264e"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.23.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2ff8f08dad130ab28aa9acce54783d0b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 231897,
+        "upload_time": "2025-12-08T15:51:01",
+        "upload_time_iso_8601": "2025-12-08T15:51:01.023879Z",
+        "url": "https://files.pythonhosted.org/packages/ad/6a/1a726905cf41a69d00989e8dfd9de7bd9b4a9f3c8723dac3077b0ba1a7b9/mcp-1.23.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "39a90e95530946408747ae200e86553ceda0dbd851d4ae9bbe0d02a69cbd6ad5",
+          "md5": "ea27985ccd222d90ff031ed141b8b347",
+          "sha256": "df4e4b7273dca2aaf428f9cf7a25bbac0c9007528a65004854b246aef3d157bc"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.23.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "ea27985ccd222d90ff031ed141b8b347",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 599953,
+        "upload_time": "2025-12-08T15:51:02",
+        "upload_time_iso_8601": "2025-12-08T15:51:02.432201Z",
+        "url": "https://files.pythonhosted.org/packages/39/a9/0e95530946408747ae200e86553ceda0dbd851d4ae9bbe0d02a69cbd6ad5/mcp-1.23.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.23.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "32c613c1a26b47b3f3a3b480783001ada4268917c9f42d78a079c336da2e75e5",
+          "md5": "2e63d32a308272a0644bbdf7d11a6abe",
+          "sha256": "32768af4b46a1b4f7df34e2bfdf5c6011e7b63d7f1b0e321d0fdef4cd6082031"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.23.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2e63d32a308272a0644bbdf7d11a6abe",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 231570,
+        "upload_time": "2025-12-09T16:04:35",
+        "upload_time_iso_8601": "2025-12-09T16:04:35.560431Z",
+        "url": "https://files.pythonhosted.org/packages/32/c6/13c1a26b47b3f3a3b480783001ada4268917c9f42d78a079c336da2e75e5/mcp-1.23.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a7a4d06a303f45997e266f2c228081abe299bbcba216cb806128e2e49095d25f",
+          "md5": "91226de235cc49644b80606b02088ee7",
+          "sha256": "b3b0da2cc949950ce1259c7bfc1b081905a51916fcd7c8182125b85e70825201"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.23.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "91226de235cc49644b80606b02088ee7",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 600697,
+        "upload_time": "2025-12-09T16:04:37",
+        "upload_time_iso_8601": "2025-12-09T16:04:37.351378Z",
+        "url": "https://files.pythonhosted.org/packages/a7/a4/d06a303f45997e266f2c228081abe299bbcba216cb806128e2e49095d25f/mcp-1.23.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.24.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "610d5cf14e177c8ae655a2fd9324a6ef657ca4cafd3fc2201c87716055e29641",
+          "md5": "003d2c4af0e15900d45a6ec6aa5f935b",
+          "sha256": "db130e103cc50ddc3dffc928382f33ba3eaef0b711f7a87c05e7ded65b1ca062"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.24.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "003d2c4af0e15900d45a6ec6aa5f935b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 232896,
+        "upload_time": "2025-12-12T14:19:36",
+        "upload_time_iso_8601": "2025-12-12T14:19:36.140891Z",
+        "url": "https://files.pythonhosted.org/packages/61/0d/5cf14e177c8ae655a2fd9324a6ef657ca4cafd3fc2201c87716055e29641/mcp-1.24.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d62cdb9ae5ab1fcdd9cd2bcc7ca3b7361b712e30590b64d5151a31563af8f82d",
+          "md5": "ba9ae2560f3302f64351b31aa2d4c560",
+          "sha256": "aeaad134664ce56f2721d1abf300666a1e8348563f4d3baff361c3b652448efc"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.24.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "ba9ae2560f3302f64351b31aa2d4c560",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 604375,
+        "upload_time": "2025-12-12T14:19:38",
+        "upload_time_iso_8601": "2025-12-12T14:19:38.205006Z",
+        "url": "https://files.pythonhosted.org/packages/d6/2c/db9ae5ab1fcdd9cd2bcc7ca3b7361b712e30590b64d5151a31563af8f82d/mcp-1.24.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.25.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e2fc6dc7659c2ae5ddf280477011f4213a74f806862856b796ef08f028e664bf",
+          "md5": "f8a9bd323a6a8b24e195de35f06f203f",
+          "sha256": "b37c38144a666add0862614cc79ec276e97d72aa8ca26d622818d4e278b9721a"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.25.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "f8a9bd323a6a8b24e195de35f06f203f",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 233076,
+        "upload_time": "2025-12-19T10:19:55",
+        "upload_time_iso_8601": "2025-12-19T10:19:55.416541Z",
+        "url": "https://files.pythonhosted.org/packages/e2/fc/6dc7659c2ae5ddf280477011f4213a74f806862856b796ef08f028e664bf/mcp-1.25.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d52d649d80a0ecf6a1f82632ca44bec21c0461a9d9fc8934d38cb5b319f2db5e",
+          "md5": "f0bb6caf122dcc9237f71bf13373a3c2",
+          "sha256": "56310361ebf0364e2d438e5b45f7668cbb124e158bb358333cd06e49e83a6802"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.25.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f0bb6caf122dcc9237f71bf13373a3c2",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 605387,
+        "upload_time": "2025-12-19T10:19:56",
+        "upload_time_iso_8601": "2025-12-19T10:19:56.985704Z",
+        "url": "https://files.pythonhosted.org/packages/d5/2d/649d80a0ecf6a1f82632ca44bec21c0461a9d9fc8934d38cb5b319f2db5e/mcp-1.25.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.26.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fdd9eaa1f80170d2b7c5ba23f3b59f766f3a0bb41155fbc32a69adfa1adaaef9",
+          "md5": "a9d21a0e735bf5d55e127d4898611a49",
+          "sha256": "904a21c33c25aa98ddbeb47273033c435e595bbacfdb177f4bd87f6dceebe1ca"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.26.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a9d21a0e735bf5d55e127d4898611a49",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 233615,
+        "upload_time": "2026-01-24T19:40:30",
+        "upload_time_iso_8601": "2026-01-24T19:40:30.652691Z",
+        "url": "https://files.pythonhosted.org/packages/fd/d9/eaa1f80170d2b7c5ba23f3b59f766f3a0bb41155fbc32a69adfa1adaaef9/mcp-1.26.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fc6d62e76bbb8144d6ed86e202b5edd8a4cb631e7c8130f3f4893c3f90262b10",
+          "md5": "f5d5543665d04017b9dd4a6b782bac18",
+          "sha256": "db6e2ef491eecc1a0d93711a76f28dec2e05999f93afd48795da1c1137142c66"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.26.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f5d5543665d04017b9dd4a6b782bac18",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 608005,
+        "upload_time": "2026-01-24T19:40:32",
+        "upload_time_iso_8601": "2026-01-24T19:40:32.468833Z",
+        "url": "https://files.pythonhosted.org/packages/fc/6d/62e76bbb8144d6ed86e202b5edd8a4cb631e7c8130f3f4893c3f90262b10/mcp-1.26.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.3.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d0d2a9e87b506b2094f5aa9becc1af5178842701b27217fa43877353da2577e3",
+          "md5": "f2711430fc3b0be08232749e117b8509",
+          "sha256": "2829d67ce339a249f803f22eba5e90385eafcac45c94b00cab6cef7e8f217211"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.3.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "f2711430fc3b0be08232749e117b8509",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 70672,
+        "upload_time": "2025-02-20T21:45:40",
+        "upload_time_iso_8601": "2025-02-20T21:45:40.102706Z",
+        "url": "https://files.pythonhosted.org/packages/d0/d2/a9e87b506b2094f5aa9becc1af5178842701b27217fa43877353da2577e3/mcp-1.3.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6bb681e5f2490290351fc97bf46c24ff935128cb7d34d68e3987b522f26f7ada",
+          "md5": "6ba1540891244c05f42b27daf3bbf0ac",
+          "sha256": "f409ae4482ce9d53e7ac03f3f7808bcab735bdfc0fba937453782efb43882d45"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.3.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "6ba1540891244c05f42b27daf3bbf0ac",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 150235,
+        "upload_time": "2025-02-20T21:45:42",
+        "upload_time_iso_8601": "2025-02-20T21:45:42.597629Z",
+        "url": "https://files.pythonhosted.org/packages/6b/b6/81e5f2490290351fc97bf46c24ff935128cb7d34d68e3987b522f26f7ada/mcp-1.3.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.3.0rc1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c85598f28823dc4d8ba4b871d56af14b8d3d88e478a53054e1bfd0eaa0afe6be",
+          "md5": "c6edc6e84bd364e4faa0b7a7f61f12e7",
+          "sha256": "ff132ee0814463afe63d5eeeb8c0d2b6c8798d32d844c015fbd7d2068fae7790"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.3.0rc1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "c6edc6e84bd364e4faa0b7a7f61f12e7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 69685,
+        "upload_time": "2025-02-13T16:44:36",
+        "upload_time_iso_8601": "2025-02-13T16:44:36.498648Z",
+        "url": "https://files.pythonhosted.org/packages/c8/55/98f28823dc4d8ba4b871d56af14b8d3d88e478a53054e1bfd0eaa0afe6be/mcp-1.3.0rc1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "53c86b43233123eb7a065ab601a0a1c14e0cde09e2b82db02b359a877386d498",
+          "md5": "0a2306a8548151ec3bee28ea5fc9d9cf",
+          "sha256": "3a50dbe8f62b7d259d1d1f1510c78ac298aa6b08f643efaabee70041c1dc1e9c"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.3.0rc1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0a2306a8548151ec3bee28ea5fc9d9cf",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 148163,
+        "upload_time": "2025-02-13T16:44:37",
+        "upload_time_iso_8601": "2025-02-13T16:44:37.938190Z",
+        "url": "https://files.pythonhosted.org/packages/53/c8/6b43233123eb7a065ab601a0a1c14e0cde09e2b82db02b359a877386d498/mcp-1.3.0rc1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.4.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "93051cbc9f93900d4348f4e782811f251541d860e7d13c30cd68b402cd9edbd4",
+          "md5": "9980ccbcd5bf3353978937c822adc235",
+          "sha256": "d2760e1ea7635b1e70da516698620a016cde214976416dd894f228600b08984c"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.4.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "9980ccbcd5bf3353978937c822adc235",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 73036,
+        "upload_time": "2025-03-13T13:49:47",
+        "upload_time_iso_8601": "2025-03-13T13:49:47.449230Z",
+        "url": "https://files.pythonhosted.org/packages/93/05/1cbc9f93900d4348f4e782811f251541d860e7d13c30cd68b402cd9edbd4/mcp-1.4.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "009dac1aaa3de8655a72fe07c0c2901ed35f0da2b3ffb2a1bfc4f46bbd7b6710",
+          "md5": "bffb9058342b6cd298af6556b8179daf",
+          "sha256": "5b750b14ca178eeb7b2addbd94adb21785d7b4de5d5f3577ae193d787869e2dd"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.4.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bffb9058342b6cd298af6556b8179daf",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 155809,
+        "upload_time": "2025-03-13T13:49:49",
+        "upload_time_iso_8601": "2025-03-13T13:49:49.077861Z",
+        "url": "https://files.pythonhosted.org/packages/00/9d/ac1aaa3de8655a72fe07c0c2901ed35f0da2b3ffb2a1bfc4f46bbd7b6710/mcp-1.4.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.4.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e80e885f156ade60108e67bf044fada5269da68e29d758a10b0c513f4d85dd76",
+          "md5": "668155e651cc784a2c12b8bf5539c7bf",
+          "sha256": "a7716b1ec1c054e76f49806f7d96113b99fc1166fc9244c2c6f19867cb75b593"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.4.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "668155e651cc784a2c12b8bf5539c7bf",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 72448,
+        "upload_time": "2025-03-14T09:52:13",
+        "upload_time_iso_8601": "2025-03-14T09:52:13.669682Z",
+        "url": "https://files.pythonhosted.org/packages/e8/0e/885f156ade60108e67bf044fada5269da68e29d758a10b0c513f4d85dd76/mcp-1.4.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "50cc5c5bb19f1a0f8f89a95e25cb608b0b07009e81fd4b031e519335404e1422",
+          "md5": "feab58a4de8671fb759c8322c051a194",
+          "sha256": "b9655d2de6313f9d55a7d1df62b3c3fe27a530100cc85bf23729145b0dba4c7a"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.4.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "feab58a4de8671fb759c8322c051a194",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 154942,
+        "upload_time": "2025-03-14T09:52:15",
+        "upload_time_iso_8601": "2025-03-14T09:52:15.540179Z",
+        "url": "https://files.pythonhosted.org/packages/50/cc/5c5bb19f1a0f8f89a95e25cb608b0b07009e81fd4b031e519335404e1422/mcp-1.4.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.5.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c1d13ff566ecf322077d861f1a68a1ff025cad337417bd66ad22a7c6f7dfcfaf",
+          "md5": "26dc503319eb7c7c17db20942c049aa7",
+          "sha256": "51c3f35ce93cb702f7513c12406bbea9665ef75a08db909200b07da9db641527"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.5.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "26dc503319eb7c7c17db20942c049aa7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 73734,
+        "upload_time": "2025-03-21T12:51:02",
+        "upload_time_iso_8601": "2025-03-21T12:51:02.597768Z",
+        "url": "https://files.pythonhosted.org/packages/c1/d1/3ff566ecf322077d861f1a68a1ff025cad337417bd66ad22a7c6f7dfcfaf/mcp-1.5.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6dc9c55764824e893fdebe777ac7223200986a275c3191dba9169f8eb6d7c978",
+          "md5": "3e80785e9fbfbeefdf2e7fd443288dfc",
+          "sha256": "5b2766c05e68e01a2034875e250139839498c61792163a7b221fc170c12f5aa9"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.5.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "3e80785e9fbfbeefdf2e7fd443288dfc",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 159128,
+        "upload_time": "2025-03-21T12:51:04",
+        "upload_time_iso_8601": "2025-03-21T12:51:04.183181Z",
+        "url": "https://files.pythonhosted.org/packages/6d/c9/c55764824e893fdebe777ac7223200986a275c3191dba9169f8eb6d7c978/mcp-1.5.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.6.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "103020a7f33b0b884a9d14dd3aa94ff1ac9da1479fe2ad66dd9e2736075d2506",
+          "md5": "46f9a28954d6d4edabd58397181fefdb",
+          "sha256": "7bd24c6ea042dbec44c754f100984d186620d8b841ec30f1b19eda9b93a634d0"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.6.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "46f9a28954d6d4edabd58397181fefdb",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 76077,
+        "upload_time": "2025-03-27T16:46:29",
+        "upload_time_iso_8601": "2025-03-27T16:46:29.919950Z",
+        "url": "https://files.pythonhosted.org/packages/10/30/20a7f33b0b884a9d14dd3aa94ff1ac9da1479fe2ad66dd9e2736075d2506/mcp-1.6.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "95d2f587cb965a56e992634bebc8611c5b579af912b74e04eb9164bd49527d21",
+          "md5": "24389c838ac3f7ecf3e83e6ba9d932e9",
+          "sha256": "d9324876de2c5637369f43161cd71eebfd803df5a95e46225cab8d280e366723"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.6.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "24389c838ac3f7ecf3e83e6ba9d932e9",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 200031,
+        "upload_time": "2025-03-27T16:46:32",
+        "upload_time_iso_8601": "2025-03-27T16:46:32.336541Z",
+        "url": "https://files.pythonhosted.org/packages/95/d2/f587cb965a56e992634bebc8611c5b579af912b74e04eb9164bd49527d21/mcp-1.6.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.7.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f709943fa9dc1e9751c2e7302205112801d0bb6a12050e21f0945486748f9ff3",
+          "md5": "46d230020aadc92a0ea57e4ccfa7d7a1",
+          "sha256": "0e874a587f542211f36f87b02c9acd6ad2534976fb2c36ff794d8b2bc0a91915"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.7.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "46d230020aadc92a0ea57e4ccfa7d7a1",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 100192,
+        "upload_time": "2025-05-01T19:18:05",
+        "upload_time_iso_8601": "2025-05-01T19:18:05.807336Z",
+        "url": "https://files.pythonhosted.org/packages/f7/09/943fa9dc1e9751c2e7302205112801d0bb6a12050e21f0945486748f9ff3/mcp-1.7.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c8b70bf3c75ddedbc744f872c34801b9c6c8930fe1134212c45e25029f0b83df",
+          "md5": "954891a06674db63c47721d1c7921dd3",
+          "sha256": "8b955eddf5fbb09613c4d517956745d932db9f757673200112b336bd8092509f"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.7.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "954891a06674db63c47721d1c7921dd3",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 229504,
+        "upload_time": "2025-05-01T19:18:07",
+        "upload_time_iso_8601": "2025-05-01T19:18:07.612201Z",
+        "url": "https://files.pythonhosted.org/packages/c8/b7/0bf3c75ddedbc744f872c34801b9c6c8930fe1134212c45e25029f0b83df/mcp-1.7.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.7.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ae79fe0e20c3358997a80911af51bad927b5ea2f343ef95ab092b19c9cc48b59",
+          "md5": "bb44de831f5829140d6b2a76ed5ce831",
+          "sha256": "f7e6108977db6d03418495426c7ace085ba2341b75197f8727f96f9cfd30057a"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.7.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "bb44de831f5829140d6b2a76ed5ce831",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 100365,
+        "upload_time": "2025-05-02T17:01:54",
+        "upload_time_iso_8601": "2025-05-02T17:01:54.674737Z",
+        "url": "https://files.pythonhosted.org/packages/ae/79/fe0e20c3358997a80911af51bad927b5ea2f343ef95ab092b19c9cc48b59/mcp-1.7.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "25ae588691c45b38f4fbac07fa3d6d50cea44cc6b35d16ddfdf26e17a0467ab2",
+          "md5": "447e3ad58564b31d3e86c91b4d9cdb99",
+          "sha256": "eb4f1f53bd717f75dda8a1416e00804b831a8f3c331e23447a03b78f04b43a6e"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.7.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "447e3ad58564b31d3e86c91b4d9cdb99",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 230903,
+        "upload_time": "2025-05-02T17:01:56",
+        "upload_time_iso_8601": "2025-05-02T17:01:56.403220Z",
+        "url": "https://files.pythonhosted.org/packages/25/ae/588691c45b38f4fbac07fa3d6d50cea44cc6b35d16ddfdf26e17a0467ab2/mcp-1.7.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.8.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b2b24ac3bd17b1fdd65658f18de4eb0c703517ee0b483dc5f56467802a9197e0",
+          "md5": "b9d221ff11a7757af8c723ee06524d6f",
+          "sha256": "889d9d3b4f12b7da59e7a3933a0acadae1fce498bfcd220defb590aa291a1334"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.8.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "b9d221ff11a7757af8c723ee06524d6f",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 119544,
+        "upload_time": "2025-05-08T20:09:04",
+        "upload_time_iso_8601": "2025-05-08T20:09:04.458890Z",
+        "url": "https://files.pythonhosted.org/packages/b2/b2/4ac3bd17b1fdd65658f18de4eb0c703517ee0b483dc5f56467802a9197e0/mcp-1.8.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ff970a3e08559557b0ac5799f9fb535fbe5a4e4dcdd66ce9d32e7a74b4d0534d",
+          "md5": "95019ad2f4bcfd4d4b3612e75a88d563",
+          "sha256": "263dfb700540b726c093f0c3e043f66aded0730d0b51f04eb0a3eb90055fe49b"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.8.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "95019ad2f4bcfd4d4b3612e75a88d563",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 264641,
+        "upload_time": "2025-05-08T20:09:06",
+        "upload_time_iso_8601": "2025-05-08T20:09:06.255969Z",
+        "url": "https://files.pythonhosted.org/packages/ff/97/0a3e08559557b0ac5799f9fb535fbe5a4e4dcdd66ce9d32e7a74b4d0534d/mcp-1.8.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.8.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1c5d91cf0d40e40ae9ecf8d4004e0f9611eea86085aa0b5505493e0ff53972da",
+          "md5": "803f3fa1acb2543e21e35f6b7e8b172a",
+          "sha256": "948e03783859fa35abe05b9b6c0a1d5519be452fc079dc8d7f682549591c1770"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.8.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "803f3fa1acb2543e21e35f6b7e8b172a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 119761,
+        "upload_time": "2025-05-12T17:33:56",
+        "upload_time_iso_8601": "2025-05-12T17:33:56.136638Z",
+        "url": "https://files.pythonhosted.org/packages/1c/5d/91cf0d40e40ae9ecf8d4004e0f9611eea86085aa0b5505493e0ff53972da/mcp-1.8.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7c1316b712e8a3be6a736b411df2fc6b4e75eb1d3e99b1cd57a3a1decf17f612",
+          "md5": "2e4c80d758955e30c7ca2579a2499525",
+          "sha256": "ec0646271d93749f784d2316fb5fe6102fb0d1be788ec70a9e2517e8f2722c0e"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.8.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2e4c80d758955e30c7ca2579a2499525",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 265605,
+        "upload_time": "2025-05-12T17:33:57",
+        "upload_time_iso_8601": "2025-05-12T17:33:57.887777Z",
+        "url": "https://files.pythonhosted.org/packages/7c/13/16b712e8a3be6a736b411df2fc6b4e75eb1d3e99b1cd57a3a1decf17f612/mcp-1.8.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.9.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a5d522e36c95c83c80eb47c83f231095419cf57cf5cca5416f1c960032074c78",
+          "md5": "98bd4160c1fed54732ca85729075405b",
+          "sha256": "9dfb89c8c56f742da10a5910a1f64b0d2ac2c3ed2bd572ddb1cfab7f35957178"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.9.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "98bd4160c1fed54732ca85729075405b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 125082,
+        "upload_time": "2025-05-15T18:51:04",
+        "upload_time_iso_8601": "2025-05-15T18:51:04.916913Z",
+        "url": "https://files.pythonhosted.org/packages/a5/d5/22e36c95c83c80eb47c83f231095419cf57cf5cca5416f1c960032074c78/mcp-1.9.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bc8d0f4468582e9e97b0a24604b585c651dfd2144300ecffd1c06a680f5c8861",
+          "md5": "6ac5dc967d1444c62f8b7ed35d756002",
+          "sha256": "905d8d208baf7e3e71d70c82803b89112e321581bcd2530f9de0fe4103d28749"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.9.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "6ac5dc967d1444c62f8b7ed35d756002",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 281432,
+        "upload_time": "2025-05-15T18:51:06",
+        "upload_time_iso_8601": "2025-05-15T18:51:06.615148Z",
+        "url": "https://files.pythonhosted.org/packages/bc/8d/0f4468582e9e97b0a24604b585c651dfd2144300ecffd1c06a680f5c8861/mcp-1.9.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.9.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a6c04ac795585a22a0a2d09cd2b1187b0252d2afcdebd01e10a68bbac4d34890",
+          "md5": "3d7966320dec7b5548e2782afbb12a7a",
+          "sha256": "2900ded8ffafc3c8a7bfcfe8bc5204037e988e753ec398f371663e6a06ecd9a9"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.9.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "3d7966320dec7b5548e2782afbb12a7a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 130261,
+        "upload_time": "2025-05-22T15:52:19",
+        "upload_time_iso_8601": "2025-05-22T15:52:19.702842Z",
+        "url": "https://files.pythonhosted.org/packages/a6/c0/4ac795585a22a0a2d09cd2b1187b0252d2afcdebd01e10a68bbac4d34890/mcp-1.9.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e7bc54aec2c334698cc575ca3b3481eed627125fb66544152fa1af927b1a495c",
+          "md5": "13794ce4da174f2027c8bd691cec7f70",
+          "sha256": "19879cd6dde3d763297617242888c2f695a95dfa854386a6a68676a646ce75e4"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.9.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "13794ce4da174f2027c8bd691cec7f70",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 316247,
+        "upload_time": "2025-05-22T15:52:21",
+        "upload_time_iso_8601": "2025-05-22T15:52:21.260004Z",
+        "url": "https://files.pythonhosted.org/packages/e7/bc/54aec2c334698cc575ca3b3481eed627125fb66544152fa1af927b1a495c/mcp-1.9.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.9.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5da68f5ee9da9f67c0fd8933f63d6105f02eabdac8a8c0926728368ffbb6744d",
+          "md5": "34facb62ff6f7c811a1b3448eb0a0f4a",
+          "sha256": "bc29f7fd67d157fef378f89a4210384f5fecf1168d0feb12d22929818723f978"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.9.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "34facb62ff6f7c811a1b3448eb0a0f4a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 131083,
+        "upload_time": "2025-05-29T14:42:16",
+        "upload_time_iso_8601": "2025-05-29T14:42:16.211488Z",
+        "url": "https://files.pythonhosted.org/packages/5d/a6/8f5ee9da9f67c0fd8933f63d6105f02eabdac8a8c0926728368ffbb6744d/mcp-1.9.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ea0377c49cce3ace96e6787af624611b627b2828f0dca0f8df6f330a10eea51e",
+          "md5": "48230739cf0b67c85b914062a262cc08",
+          "sha256": "3c7651c053d635fd235990a12e84509fe32780cd359a5bbef352e20d4d963c05"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.9.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "48230739cf0b67c85b914062a262cc08",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 333066,
+        "upload_time": "2025-05-29T14:42:17",
+        "upload_time_iso_8601": "2025-05-29T14:42:17.760497Z",
+        "url": "https://files.pythonhosted.org/packages/ea/03/77c49cce3ace96e6787af624611b627b2828f0dca0f8df6f330a10eea51e/mcp-1.9.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.9.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7945823ad05504bea55cb0feb7470387f151252127ad5c72f8882e8fe6cf5c0e",
+          "md5": "f2dcee554c8798022e7bfe40d089762d",
+          "sha256": "69b0136d1ac9927402ed4cf221d4b8ff875e7132b0b06edd446448766f34f9b9"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.9.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "f2dcee554c8798022e7bfe40d089762d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 131063,
+        "upload_time": "2025-06-05T15:48:24",
+        "upload_time_iso_8601": "2025-06-05T15:48:24.171716Z",
+        "url": "https://files.pythonhosted.org/packages/79/45/823ad05504bea55cb0feb7470387f151252127ad5c72f8882e8fe6cf5c0e/mcp-1.9.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f2df8fefc0c6c7a5c66914763e3ff3893f9a03435628f6625d5e3b0dc45d73db",
+          "md5": "f072af9ca1034a7e5efce89909df5636",
+          "sha256": "587ba38448e81885e5d1b84055cfcc0ca56d35cd0c58f50941cab01109405388"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.9.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f072af9ca1034a7e5efce89909df5636",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 333045,
+        "upload_time": "2025-06-05T15:48:25",
+        "upload_time_iso_8601": "2025-06-05T15:48:25.681173Z",
+        "url": "https://files.pythonhosted.org/packages/f2/df/8fefc0c6c7a5c66914763e3ff3893f9a03435628f6625d5e3b0dc45d73db/mcp-1.9.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.9.4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "97fc80e655c955137393c443842ffcc4feccab5b12fa7cb8de9ced90f90e6998",
+          "md5": "256da5f9be734b0e006f42de79d611e7",
+          "sha256": "7fcf36b62936adb8e63f89346bccca1268eeca9bf6dfb562ee10b1dfbda9dac0"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.9.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "256da5f9be734b0e006f42de79d611e7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 130232,
+        "upload_time": "2025-06-12T08:20:28",
+        "upload_time_iso_8601": "2025-06-12T08:20:28.551239Z",
+        "url": "https://files.pythonhosted.org/packages/97/fc/80e655c955137393c443842ffcc4feccab5b12fa7cb8de9ced90f90e6998/mcp-1.9.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "06f2dc2450e566eeccf92d89a00c3e813234ad58e2ba1e31d11467a09ac4f3b9",
+          "md5": "241d8858456ef48ce22f2d62b5a65875",
+          "sha256": "cfb0bcd1a9535b42edaef89947b9e18a8feb49362e1cc059d6e7fc636f2cb09f"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.9.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "241d8858456ef48ce22f2d62b5a65875",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 333294,
+        "upload_time": "2025-06-12T08:20:30",
+        "upload_time_iso_8601": "2025-06-12T08:20:30.158843Z",
+        "url": "https://files.pythonhosted.org/packages/06/f2/dc2450e566eeccf92d89a00c3e813234ad58e2ba1e31d11467a09ac4f3b9/mcp-1.9.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "fdd9eaa1f80170d2b7c5ba23f3b59f766f3a0bb41155fbc32a69adfa1adaaef9",
+        "md5": "a9d21a0e735bf5d55e127d4898611a49",
+        "sha256": "904a21c33c25aa98ddbeb47273033c435e595bbacfdb177f4bd87f6dceebe1ca"
+      },
+      "downloads": -1,
+      "filename": "mcp-1.26.0-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "a9d21a0e735bf5d55e127d4898611a49",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.10",
+      "size": 233615,
+      "upload_time": "2026-01-24T19:40:30",
+      "upload_time_iso_8601": "2026-01-24T19:40:30.652691Z",
+      "url": "https://files.pythonhosted.org/packages/fd/d9/eaa1f80170d2b7c5ba23f3b59f766f3a0bb41155fbc32a69adfa1adaaef9/mcp-1.26.0-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "fc6d62e76bbb8144d6ed86e202b5edd8a4cb631e7c8130f3f4893c3f90262b10",
+        "md5": "f5d5543665d04017b9dd4a6b782bac18",
+        "sha256": "db6e2ef491eecc1a0d93711a76f28dec2e05999f93afd48795da1c1137142c66"
+      },
+      "downloads": -1,
+      "filename": "mcp-1.26.0.tar.gz",
+      "has_sig": false,
+      "md5_digest": "f5d5543665d04017b9dd4a6b782bac18",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.10",
+      "size": 608005,
+      "upload_time": "2026-01-24T19:40:32",
+      "upload_time_iso_8601": "2026-01-24T19:40:32.468833Z",
+      "url": "https://files.pythonhosted.org/packages/fc/6d/62e76bbb8144d6ed86e202b5edd8a4cb631e7c8130f3f4893c3f90262b10/mcp-1.26.0.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

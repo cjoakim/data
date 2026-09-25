@@ -1,0 +1,43 @@
+{
+    "id": 193627,
+    "name": "Jens Hjert\u00f6-Dahl",
+    "firstName": null,
+    "lastName": null,
+    "dateOfBirth": "2005-10-31",
+    "nationality": "Norway",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 14,
+    "lastUpdated": "2023-04-14T11:39:38Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 322,
+        "name": "Hull City AFC",
+        "shortName": "Hull City",
+        "tla": "HUL",
+        "crest": "https://crests.football-data.org/322.png",
+        "address": "Walton Street Hull HU3 6HU",
+        "website": "http://www.hullcitytigers.com",
+        "founded": 1904,
+        "clubColors": "Orange / Black",
+        "venue": "Kingston Communications Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-08",
+            "until": "2031-06"
+        }
+    }
+}

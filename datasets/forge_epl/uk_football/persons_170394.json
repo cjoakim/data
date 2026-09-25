@@ -1,0 +1,43 @@
+{
+    "id": 170394,
+    "name": "Loum Tchaouna",
+    "firstName": "Loum",
+    "lastName": "Tchaouna",
+    "dateOfBirth": "2003-09-08",
+    "nationality": "France",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 18,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png",
+        "address": "Gallagher Retail Park, Stoney Stanton Road Coventry CV6 5QE",
+        "website": "http://www.ccfc.co.uk",
+        "founded": 1883,
+        "clubColors": "Sky Blue / White",
+        "venue": "St Andrew's Trillion Trophy Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2031-06"
+        }
+    }
+}

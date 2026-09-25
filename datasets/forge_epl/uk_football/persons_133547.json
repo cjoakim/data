@@ -1,0 +1,43 @@
+{
+    "id": 133547,
+    "name": "Nick Woltemade",
+    "firstName": "Nick",
+    "lastName": "Woltemade",
+    "dateOfBirth": "2002-02-14",
+    "nationality": "Germany",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 11,
+    "lastUpdated": "2025-06-24T09:41:51Z",
+    "currentTeam": {
+        "area": {
+            "id": 2088,
+            "name": "Germany",
+            "code": "DEU",
+            "flag": "https://crests.football-data.org/759.svg"
+        },
+        "id": 759,
+        "name": "Germany",
+        "shortName": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg",
+        "address": "Otto-Fleck-Schneise 6 / Postfach 710265 Frankfurt am Main 60492",
+        "website": "http://www.dfb.de",
+        "founded": 1900,
+        "clubColors": "White / Black",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

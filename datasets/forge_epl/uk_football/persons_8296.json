@@ -1,0 +1,43 @@
+{
+    "id": 8296,
+    "name": "Issa Diop",
+    "firstName": "Issa",
+    "lastName": "Diop",
+    "dateOfBirth": "1997-01-09",
+    "nationality": "France",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 14,
+    "lastUpdated": "2026-06-06T13:59:57Z",
+    "currentTeam": {
+        "area": {
+            "id": 2156,
+            "name": "Morocco",
+            "code": "MAR",
+            "flag": "https://crests.football-data.org/morocco.svg"
+        },
+        "id": 815,
+        "name": "Morocco",
+        "shortName": "Morocco",
+        "tla": "MAR",
+        "crest": "https://crests.football-data.org/morocco.svg",
+        "address": "51 bis, Avenue Ibn Sina Rabat 10000",
+        "website": "http://www.frmf.ma",
+        "founded": 1955,
+        "clubColors": "Red / Green",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2193,
+                "name": "Africa Cup Of Nations - Qualification",
+                "code": "ACQ",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

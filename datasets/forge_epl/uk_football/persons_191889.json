@@ -1,0 +1,43 @@
+{
+    "id": 191889,
+    "name": "Ahmed Abdullahi",
+    "firstName": "Ahmed",
+    "lastName": "Abdullahi",
+    "dateOfBirth": "2004-06-19",
+    "nationality": "Nigeria",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 29,
+    "lastUpdated": "2026-07-15T09:25:43Z",
+    "currentTeam": {
+        "area": {
+            "id": 2247,
+            "name": "Turkey",
+            "code": "TUR",
+            "flag": "https://crests.football-data.org/803.svg"
+        },
+        "id": 10082,
+        "name": "Ey\u00fcpspor",
+        "shortName": null,
+        "tla": "EYP",
+        "crest": "https://crests.football-data.org/10082.png",
+        "address": "null null null",
+        "website": null,
+        "founded": null,
+        "clubColors": null,
+        "venue": "Recep Tayyip Erdogan",
+        "runningCompetitions": [
+            {
+                "id": 2070,
+                "name": "S\u00fcper Lig",
+                "code": "TSL",
+                "type": "LEAGUE",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": "2026-08",
+            "until": null
+        }
+    }
+}

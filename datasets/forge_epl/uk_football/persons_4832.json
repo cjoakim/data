@@ -1,0 +1,43 @@
+{
+    "id": 4832,
+    "name": "David Raya",
+    "firstName": "",
+    "lastName": "David Raya",
+    "dateOfBirth": "1995-09-15",
+    "nationality": "Spain",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 1,
+    "lastUpdated": "2023-07-30T17:01:23Z",
+    "currentTeam": {
+        "area": {
+            "id": 2224,
+            "name": "Spain",
+            "code": "ESP",
+            "flag": "https://crests.football-data.org/760.svg"
+        },
+        "id": 760,
+        "name": "Spain",
+        "shortName": "Spain",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg",
+        "address": "Ram\u00f3n y Cajal, s/n Las Rozas 28230",
+        "website": "http://www.rfef.es",
+        "founded": 1909,
+        "clubColors": "Red / Blue / Yellow",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

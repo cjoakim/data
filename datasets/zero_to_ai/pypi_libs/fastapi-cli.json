@@ -1,0 +1,1008 @@
+{
+  "info": {
+    "author": null,
+    "author_email": "=?utf-8?q?Sebasti=C3=A1n_Ram=C3=ADrez?= <tiangolo@gmail.com>",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Framework :: FastAPI",
+      "Intended Audience :: Developers",
+      "Intended Audience :: Information Technology",
+      "Intended Audience :: System Administrators",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.9",
+      "Topic :: Software Development",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Software Development :: Libraries :: Application Frameworks",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Typing :: Typed"
+    ],
+    "description": "# FastAPI CLI\n\n<a href=\"https://github.com/fastapi/fastapi-cli/actions/workflows/test.yml\" target=\"_blank\">\n    <img src=\"https://github.com/fastapi/fastapi-cli/actions/workflows/test.yml/badge.svg\" alt=\"Test\">\n</a>\n<a href=\"https://github.com/fastapi/fastapi-cli/actions/workflows/publish.yml\" target=\"_blank\">\n    <img src=\"https://github.com/fastapi/fastapi-cli/actions/workflows/publish.yml/badge.svg\" alt=\"Publish\">\n</a>\n<a href=\"https://coverage-badge.samuelcolvin.workers.dev/redirect/fastapi/fastapi-cli\" target=\"_blank\">\n    <img src=\"https://coverage-badge.samuelcolvin.workers.dev/fastapi/fastapi-cli.svg\" alt=\"Coverage\">\n<a href=\"https://pypi.org/project/fastapi-cli\" target=\"_blank\">\n    <img src=\"https://img.shields.io/pypi/v/fastapi-cli?color=%2334D058&label=pypi%20package\" alt=\"Package version\">\n</a>\n\n---\n\n**Source Code**: <a href=\"https://github.com/fastapi/fastapi-cli\" target=\"_blank\">https://github.com/fastapi/fastapi-cli</a>\n\n---\n\nRun and manage FastAPI apps from the command line with FastAPI CLI. 🚀\n\n## Description\n\n**FastAPI CLI** is a command line program `fastapi` that you can use to serve your FastAPI app, manage your FastAPI project, and more.\n\nWhen you install FastAPI (e.g. with `pip install \"fastapi[standard]\"`), it includes a package called `fastapi-cli`, this package provides the `fastapi` command in the terminal.\n\nTo run your FastAPI app for development, you can use the `fastapi dev` command:\n\n<div class=\"termy\">\n\n```console\n$ fastapi dev main.py\n\n   FastAPI   Starting development server 🚀\n\n             Searching for package file structure from directories with __init__.py files\n             Importing from /home/user/code/awesomeapp\n\n    module   🐍 main.py\n\n      code   Importing the FastAPI app object from the module with the following code:\n\n             from main import app\n\n       app   Using import string: main:app\n\n    server   Server started at http://127.0.0.1:8000\n    server   Documentation at http://127.0.0.1:8000/docs\n\n       tip   Running in development mode, for production use: fastapi run\n\n             Logs:\n\n      INFO   Will watch for changes in these directories: ['/home/user/code/awesomeapp']\n      INFO   Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)\n      INFO   Started reloader process [4106097] using WatchFiles\n      INFO   Started server process [4106120]\n      INFO   Waiting for application startup.\n      INFO   Application startup complete.\n```\n\n</div>\n\nThat command line program called `fastapi` is **FastAPI CLI**.\n\nFastAPI CLI takes the path to your Python program and automatically detects the variable with the FastAPI (commonly named `app`) and how to import it, and then serves it.\n\nFor production you would use `fastapi run` instead. 🚀\n\nInternally, **FastAPI CLI** uses <a href=\"https://www.uvicorn.org\" class=\"external-link\" target=\"_blank\">Uvicorn</a>, a high-performance, production-ready, ASGI server. 😎\n\n## `fastapi dev`\n\nWhen you run `fastapi dev`, it will run on development mode.\n\nBy default, it will have **auto-reload** enabled, so it will automatically reload the server when you make changes to your code. This is resource intensive and could be less stable than without it, you should only use it for development.\n\nBy default it will listen on the IP address `127.0.0.1`, which is the IP for your machine to communicate with itself alone (`localhost`).\n\n## `fastapi run`\n\nWhen you run `fastapi run`, it will run on production mode by default.\n\nIt will have **auto-reload disabled** by default.\n\nIt will listen on the IP address `0.0.0.0`, which means all the available IP addresses, this way it will be publicly accessible to anyone that can communicate with the machine. This is how you would normally run it in production, for example, in a container.\n\nIn most cases you would (and should) have a \"termination proxy\" handling HTTPS for you on top, this will depend on how you deploy your application, your provider might do this for you, or you might need to set it up yourself. You can learn more about it in the <a href=\"https://fastapi.tiangolo.com/deployment/\" class=\"external-link\" target=\"_blank\">FastAPI Deployment documentation</a>.\n\n## License\n\nThis project is licensed under the terms of the MIT license.\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": null,
+    "keywords": null,
+    "license": null,
+    "license_expression": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "fastapi-cli",
+    "package_url": "https://pypi.org/project/fastapi-cli/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/fastapi-cli/",
+    "project_urls": {
+      "Changelog": "https://github.com/fastapi/fastapi-cli/blob/main/release-notes.md",
+      "Documentation": "https://fastapi.tiangolo.com/fastapi-cli/",
+      "Homepage": "https://github.com/fastapi/fastapi-cli",
+      "Issues": "https://github.com/fastapi/fastapi-cli/issues",
+      "Repository": "https://github.com/fastapi/fastapi-cli"
+    },
+    "provides_extra": [
+      "standard",
+      "standard-no-fastapi-cloud-cli",
+      "new"
+    ],
+    "release_url": "https://pypi.org/project/fastapi-cli/0.0.20/",
+    "requires_dist": [
+      "typer>=0.15.1",
+      "uvicorn[standard]>=0.15.0",
+      "rich-toolkit>=0.14.8",
+      "tomli>=2.0.0; python_version < \"3.11\"",
+      "uvicorn[standard]>=0.15.0; extra == \"standard\"",
+      "fastapi-cloud-cli>=0.1.1; extra == \"standard\"",
+      "uvicorn[standard]>=0.15.0; extra == \"standard-no-fastapi-cloud-cli\"",
+      "fastapi-new>=0.0.2; python_version >= \"3.10\" and extra == \"new\""
+    ],
+    "requires_python": ">=3.9",
+    "summary": "Run and manage FastAPI apps from the command line with FastAPI CLI. 🚀",
+    "version": "0.0.20",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 33150293,
+  "releases": {
+    "0.0.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "af62ba767fc4e56ac0e518bf5aca54bc08cf33f58732353bee159ac926976b93",
+          "md5": "3c2af449e43dd9ac44788faac069b0d3",
+          "sha256": "9c8616087c373558c2db76f3ab4a96148688f77c404de5dec8a74a8f9412767c"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "3c2af449e43dd9ac44788faac069b0d3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.6,<4.0",
+        "size": 1136,
+        "upload_time": "2020-02-04T05:10:22",
+        "upload_time_iso_8601": "2020-02-04T05:10:22.627445Z",
+        "url": "https://files.pythonhosted.org/packages/af/62/ba767fc4e56ac0e518bf5aca54bc08cf33f58732353bee159ac926976b93/fastapi_cli-0.0.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "bfa530b04522f4e8507765fa640d353b5d44d9fa6ac8be2b84cf965be31f8254",
+          "md5": "9ea096ca93d6814db3ae317de76eb99f",
+          "sha256": "0850d5bf21f8839f5c4f610ed6fc3e486185bf71df35141442de65765aeeefef"
+        },
+        "downloads": -1,
+        "filename": "fastapi-cli-0.0.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9ea096ca93d6814db3ae317de76eb99f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.6,<4.0",
+        "size": 879,
+        "upload_time": "2020-02-04T05:10:20",
+        "upload_time_iso_8601": "2020-02-04T05:10:20.589642Z",
+        "url": "https://files.pythonhosted.org/packages/bf/a5/30b04522f4e8507765fa640d353b5d44d9fa6ac8be2b84cf965be31f8254/fastapi-cli-0.0.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.10": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7c620f00036925c0614e333a2baf739c861453a6779331ffb47ec9a6147f860b",
+          "md5": "affec3439f184b7ade206d758a9a00c3",
+          "sha256": "04bef56b49f7357c6c4acd4f793b4433ed3f511be431ed0af68db6d3f8bd44b3"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.10-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "affec3439f184b7ade206d758a9a00c3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 10851,
+        "upload_time": "2025-08-31T17:43:19",
+        "upload_time_iso_8601": "2025-08-31T17:43:19.481042Z",
+        "url": "https://files.pythonhosted.org/packages/7c/62/0f00036925c0614e333a2baf739c861453a6779331ffb47ec9a6147f860b/fastapi_cli-0.0.10-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "31b6ed25b8874a27f684bf601990c48fcb3edb478edca2b9a38cc2ba196fb304",
+          "md5": "5477a84e45aa7329593284d73384b68b",
+          "sha256": "85a93df72ff834c3d2a356164512cabaf8f093d50eddad9309065a9c9ac5193a"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.10.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5477a84e45aa7329593284d73384b68b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 16994,
+        "upload_time": "2025-08-31T17:43:20",
+        "upload_time_iso_8601": "2025-08-31T17:43:20.702455Z",
+        "url": "https://files.pythonhosted.org/packages/31/b6/ed25b8874a27f684bf601990c48fcb3edb478edca2b9a38cc2ba196fb304/fastapi_cli-0.0.10.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.11": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a38f9e3ad391d1c4183de55c256b481899bbd7bbd06d389e4986741bb289fe94",
+          "md5": "8b5bcb325ee46d23533a89e1faa2eb5e",
+          "sha256": "bcdd1123c6077c7466452b9490ca47821f00eb784d58496674793003f9f8e33a"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.11-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "8b5bcb325ee46d23533a89e1faa2eb5e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 11095,
+        "upload_time": "2025-09-09T12:50:37",
+        "upload_time_iso_8601": "2025-09-09T12:50:37.658845Z",
+        "url": "https://files.pythonhosted.org/packages/a3/8f/9e3ad391d1c4183de55c256b481899bbd7bbd06d389e4986741bb289fe94/fastapi_cli-0.0.11-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "23080af729f6231ebdc17a0356397f966838cbe2efa38529951e24017c7435d5",
+          "md5": "e0a12948a2880dbfe3aa40b27f59077b",
+          "sha256": "4f01d751c14d3d2760339cca0f45e81d816218cae8174d1dc757b5375868cde5"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.11.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e0a12948a2880dbfe3aa40b27f59077b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 17550,
+        "upload_time": "2025-09-09T12:50:38",
+        "upload_time_iso_8601": "2025-09-09T12:50:38.917568Z",
+        "url": "https://files.pythonhosted.org/packages/23/08/0af729f6231ebdc17a0356397f966838cbe2efa38529951e24017c7435d5/fastapi_cli-0.0.11.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.12": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7230decb294fbe94de83df7d2801c0dd1fdcc4643ab0ed4fece575362a4e909f",
+          "md5": "e0293a79604bd1a380bb66b0e71fc032",
+          "sha256": "ec8f8b12080b5a29a08c7f15ba50649f59b5cd28646cb1737c511b319d0408e4"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.12-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e0293a79604bd1a380bb66b0e71fc032",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 11107,
+        "upload_time": "2025-09-17T19:11:59",
+        "upload_time_iso_8601": "2025-09-17T19:11:59.435832Z",
+        "url": "https://files.pythonhosted.org/packages/72/30/decb294fbe94de83df7d2801c0dd1fdcc4643ab0ed4fece575362a4e909f/fastapi_cli-0.0.12-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "aa00db53323ce7cc00a15f07249aefcc8225531bf166156f89b9b7c293e60821",
+          "md5": "6e87dbcf320b48de14b3d34be9ca9dd2",
+          "sha256": "09cbc2d171639ce9e489c78ad8a439328993a8f4c9005d78d58498327492aa3a"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.12.tar.gz",
+        "has_sig": false,
+        "md5_digest": "6e87dbcf320b48de14b3d34be9ca9dd2",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 17742,
+        "upload_time": "2025-09-17T19:12:00",
+        "upload_time_iso_8601": "2025-09-17T19:12:00.495594Z",
+        "url": "https://files.pythonhosted.org/packages/aa/00/db53323ce7cc00a15f07249aefcc8225531bf166156f89b9b7c293e60821/fastapi_cli-0.0.12.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.13": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "08367432750f3638324b055496d2c952000bea824259fca70df5577a6a3c172f",
+          "md5": "5448a0bd1fff8ae16e89b339f312de24",
+          "sha256": "219b73ccfde7622559cef1d43197da928516acb4f21f2ec69128c4b90057baba"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.13-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5448a0bd1fff8ae16e89b339f312de24",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 11142,
+        "upload_time": "2025-09-20T16:37:29",
+        "upload_time_iso_8601": "2025-09-20T16:37:29.695044Z",
+        "url": "https://files.pythonhosted.org/packages/08/36/7432750f3638324b055496d2c952000bea824259fca70df5577a6a3c172f/fastapi_cli-0.0.13-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "324e3f61850012473b097fc5297d681bd85788e186fadb8555b67baf4c7707f4",
+          "md5": "5ade436d675ef486bc2c76c3f7966dd6",
+          "sha256": "312addf3f57ba7139457cf0d345c03e2170cc5a034057488259c33cd7e494529"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.13.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5ade436d675ef486bc2c76c3f7966dd6",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 17780,
+        "upload_time": "2025-09-20T16:37:31",
+        "upload_time_iso_8601": "2025-09-20T16:37:31.089130Z",
+        "url": "https://files.pythonhosted.org/packages/32/4e/3f61850012473b097fc5297d681bd85788e186fadb8555b67baf4c7707f4/fastapi_cli-0.0.13.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.14": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "40e8bc8bbfd93dcc8e347ce98a3e654fb0d2e5f2739afb46b98f41a30c339269",
+          "md5": "e802f1a36b088ad87e05e7020c4e5dc9",
+          "sha256": "e66b9ad499ee77a4e6007545cde6de1459b7f21df199d7f29aad2adaab168eca"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.14-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e802f1a36b088ad87e05e7020c4e5dc9",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 11151,
+        "upload_time": "2025-10-20T16:33:19",
+        "upload_time_iso_8601": "2025-10-20T16:33:19.318792Z",
+        "url": "https://files.pythonhosted.org/packages/40/e8/bc8bbfd93dcc8e347ce98a3e654fb0d2e5f2739afb46b98f41a30c339269/fastapi_cli-0.0.14-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "cc1311e43d630be84e51ba5510a6da6a11eb93b44b72caa796137c5dddda937b",
+          "md5": "14c65a257e3f188e280eabb24c75194c",
+          "sha256": "ddfb5de0a67f77a8b3271af1460489bd4d7f4add73d11fbfac613827b0275274"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.14.tar.gz",
+        "has_sig": false,
+        "md5_digest": "14c65a257e3f188e280eabb24c75194c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 17994,
+        "upload_time": "2025-10-20T16:33:21",
+        "upload_time_iso_8601": "2025-10-20T16:33:21.054365Z",
+        "url": "https://files.pythonhosted.org/packages/cc/13/11e43d630be84e51ba5510a6da6a11eb93b44b72caa796137c5dddda937b/fastapi_cli-0.0.14.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.15": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1ee69c6ee62f008f0e58cfa3f169519a78dc908efd6212a33049e6cbb6f99a58",
+          "md5": "c100c9f90287b829214f9c94304ed2c9",
+          "sha256": "6fda4f0d4c78a1f08bea1db74c5fb6a14ec1e7e4adbec0f6667f7c293c2e717e"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.15-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "c100c9f90287b829214f9c94304ed2c9",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 12147,
+        "upload_time": "2025-11-10T15:46:41",
+        "upload_time_iso_8601": "2025-11-10T15:46:41.270957Z",
+        "url": "https://files.pythonhosted.org/packages/1e/e6/9c6ee62f008f0e58cfa3f169519a78dc908efd6212a33049e6cbb6f99a58/fastapi_cli-0.0.15-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "698f1e9350a188a4d2bc01ee56d0a785200650fc8e39734c317eb5b58ba8117f",
+          "md5": "b763d66043d5d479597f25ac27bb4c24",
+          "sha256": "48618d33a1623686a4a688b5f045f24f30353a0d751a5cd390beb2fcbf549298"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.15.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b763d66043d5d479597f25ac27bb4c24",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 19283,
+        "upload_time": "2025-11-10T15:46:42",
+        "upload_time_iso_8601": "2025-11-10T15:46:42.772046Z",
+        "url": "https://files.pythonhosted.org/packages/69/8f/1e9350a188a4d2bc01ee56d0a785200650fc8e39734c317eb5b58ba8117f/fastapi_cli-0.0.15.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.16": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5543678528c19318394320ee43757648d5e0a8070cf391b31f69d931e5c840d2",
+          "md5": "eb99172f8191e64e001d272986a366c1",
+          "sha256": "addcb6d130b5b9c91adbbf3f2947fe115991495fdb442fe3e51b5fc6327df9f4"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.16-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "eb99172f8191e64e001d272986a366c1",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 12312,
+        "upload_time": "2025-11-10T19:01:06",
+        "upload_time_iso_8601": "2025-11-10T19:01:06.728353Z",
+        "url": "https://files.pythonhosted.org/packages/55/43/678528c19318394320ee43757648d5e0a8070cf391b31f69d931e5c840d2/fastapi_cli-0.0.16-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "99759407a6b452be4c988feacec9c9d2f58d8f315162a6c7258d5a649d933ebe",
+          "md5": "02e8d84276528c3e6467af15825326dd",
+          "sha256": "e8a2a1ecf7a4e062e3b2eec63ae34387d1e142d4849181d936b23c4bdfe29073"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.16.tar.gz",
+        "has_sig": false,
+        "md5_digest": "02e8d84276528c3e6467af15825326dd",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 19447,
+        "upload_time": "2025-11-10T19:01:07",
+        "upload_time_iso_8601": "2025-11-10T19:01:07.856725Z",
+        "url": "https://files.pythonhosted.org/packages/99/75/9407a6b452be4c988feacec9c9d2f58d8f315162a6c7258d5a649d933ebe/fastapi_cli-0.0.16.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.17": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1e3ceda2ff6ced250583317efbb3bbcb58f4b306de885bb844a2384008f73800",
+          "md5": "2cc74b09340bdc3207d3617e8c0006a3",
+          "sha256": "43dcd28384bd9803bccf1c1481bc5b24207866685ae47689fe89c95b9b0e7ff6"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.17-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2cc74b09340bdc3207d3617e8c0006a3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 12164,
+        "upload_time": "2025-12-22T16:55:22",
+        "upload_time_iso_8601": "2025-12-22T16:55:22.641516Z",
+        "url": "https://files.pythonhosted.org/packages/1e/3c/eda2ff6ced250583317efbb3bbcb58f4b306de885bb844a2384008f73800/fastapi_cli-0.0.17-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9be94f0280a64982f671f926a10f961508eb80c6e3f06b641171ab44ec07b84f",
+          "md5": "f5650cc963df6e81c012742ae071d24d",
+          "sha256": "8cdd3a07ae0035e8a22b16990401ba2cfbca3927bf046766c0bfe49b885f5340"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.17.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f5650cc963df6e81c012742ae071d24d",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 19250,
+        "upload_time": "2025-12-22T16:55:23",
+        "upload_time_iso_8601": "2025-12-22T16:55:23.756435Z",
+        "url": "https://files.pythonhosted.org/packages/9b/e9/4f0280a64982f671f926a10f961508eb80c6e3f06b641171ab44ec07b84f/fastapi_cli-0.0.17.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.18": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3b281147aa48cbcb5134147a46b476613eb0ecfd52bfc3597665931595a59f3f",
+          "md5": "746cd58d96f46e8adecc67185bc9d30c",
+          "sha256": "c9d4fcf604dbcf357a55cef8348648b1832f8bb924b80178349572dd03970473"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.18-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "746cd58d96f46e8adecc67185bc9d30c",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 12314,
+        "upload_time": "2025-12-22T17:04:50",
+        "upload_time_iso_8601": "2025-12-22T17:04:50.662088Z",
+        "url": "https://files.pythonhosted.org/packages/3b/28/1147aa48cbcb5134147a46b476613eb0ecfd52bfc3597665931595a59f3f/fastapi_cli-0.0.18-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a6397a796db72268bb2bd3b6a1118657fb73b5a2ff2a59c7448f374c3510b3ae",
+          "md5": "9bb6cc8007a86e20c9dcca996451a7b0",
+          "sha256": "54dd4b03ae5b93e3afbe04885b5cb6f4cc036581f7e873807df55f85a06876fb"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.18.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9bb6cc8007a86e20c9dcca996451a7b0",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 19574,
+        "upload_time": "2025-12-22T17:04:51",
+        "upload_time_iso_8601": "2025-12-22T17:04:51.733951Z",
+        "url": "https://files.pythonhosted.org/packages/a6/39/7a796db72268bb2bd3b6a1118657fb73b5a2ff2a59c7448f374c3510b3ae/fastapi_cli-0.0.18.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.19": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "911860bb4f5b6e556a098beb8c99073608700b2643fa48cbb7a9eb4783c24730",
+          "md5": "c861d745fbce51a07701c1c714f786a3",
+          "sha256": "d4f8acd11547c990dbc88712f07436048b8d97b5b1ed75c060b83de7a97957c8"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.19-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "c861d745fbce51a07701c1c714f786a3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 12287,
+        "upload_time": "2025-12-22T17:07:33",
+        "upload_time_iso_8601": "2025-12-22T17:07:33.645751Z",
+        "url": "https://files.pythonhosted.org/packages/91/18/60bb4f5b6e556a098beb8c99073608700b2643fa48cbb7a9eb4783c24730/fastapi_cli-0.0.19-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5804596a6dfa183f0487d5784d39ead16164c8448f5547919060ac57e4f6fa94",
+          "md5": "216022b33cde947e37cacab742a53703",
+          "sha256": "a3baa6174d1d98e3cf0525028d582a3e77e2eb8dc60ded2acebfe098b456773c"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.19.tar.gz",
+        "has_sig": false,
+        "md5_digest": "216022b33cde947e37cacab742a53703",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 19553,
+        "upload_time": "2025-12-22T17:07:35",
+        "upload_time_iso_8601": "2025-12-22T17:07:35.075319Z",
+        "url": "https://files.pythonhosted.org/packages/58/04/596a6dfa183f0487d5784d39ead16164c8448f5547919060ac57e4f6fa94/fastapi_cli-0.0.19.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.2": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "fd2fc43116ad92f8310960e22b0789efbf10015c5a3c8bcbae03beb861bfa006",
+          "md5": "9726158844101223e25d37783fe108a3",
+          "sha256": "d7a8ec89fd52ad16c52de9fe7299e4b22c7a32e1bf28aa886e5517e4927423dd"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "9726158844101223e25d37783fe108a3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 9084,
+        "upload_time": "2024-05-02T21:50:21",
+        "upload_time_iso_8601": "2024-05-02T21:50:21.291668Z",
+        "url": "https://files.pythonhosted.org/packages/fd/2f/c43116ad92f8310960e22b0789efbf10015c5a3c8bcbae03beb861bfa006/fastapi_cli-0.0.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "391a132f46e6a7122970a102fca6f71baa3b574be1ecac0f6888c68e6625fa33",
+          "md5": "c947e5eb2cf04908032ad7489295f8b6",
+          "sha256": "589565ba758432632eadcf7b950e0ec76bb283b549784d9df17f261a8a9de476"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c947e5eb2cf04908032ad7489295f8b6",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 15102,
+        "upload_time": "2024-05-02T21:50:22",
+        "upload_time_iso_8601": "2024-05-02T21:50:22.348986Z",
+        "url": "https://files.pythonhosted.org/packages/39/1a/132f46e6a7122970a102fca6f71baa3b574be1ecac0f6888c68e6625fa33/fastapi_cli-0.0.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.20": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "08895c4eef60524d0fd704eb0706885b82cd5623a43396b94e4a5b17d3a3f516",
+          "md5": "46c2c60e87ab602bd23ba0ce44253638",
+          "sha256": "e58b6a0038c0b1532b7a0af690656093dee666201b6b19d3c87175b358e9f783"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.20-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "46c2c60e87ab602bd23ba0ce44253638",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 12390,
+        "upload_time": "2025-12-22T17:13:31",
+        "upload_time_iso_8601": "2025-12-22T17:13:31.708851Z",
+        "url": "https://files.pythonhosted.org/packages/08/89/5c4eef60524d0fd704eb0706885b82cd5623a43396b94e4a5b17d3a3f516/fastapi_cli-0.0.20-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d3cad90fb3bfbcbd6e56c77afd9d114dd6ce8955d8bb90094399d1c70e659e40",
+          "md5": "0206e0c1f6861130161b80e2c2a6f519",
+          "sha256": "d17c2634f7b96b6b560bc16b0035ed047d523c912011395f49f00a421692bc3a"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.20.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0206e0c1f6861130161b80e2c2a6f519",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 19786,
+        "upload_time": "2025-12-22T17:13:33",
+        "upload_time_iso_8601": "2025-12-22T17:13:33.794220Z",
+        "url": "https://files.pythonhosted.org/packages/d3/ca/d90fb3bfbcbd6e56c77afd9d114dd6ce8955d8bb90094399d1c70e659e40/fastapi_cli-0.0.20.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.3": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "37f67291a59804c439b8e8338472391bed7c28594c13bc3ddde2272104bc3459",
+          "md5": "2a29a33f20e21d1ef0fcbd510d7613d6",
+          "sha256": "ae233115f729945479044917d949095e829d2d84f56f55ce1ca17627872825a5"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2a29a33f20e21d1ef0fcbd510d7613d6",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 9233,
+        "upload_time": "2024-05-07T19:03:45",
+        "upload_time_iso_8601": "2024-05-07T19:03:45.552240Z",
+        "url": "https://files.pythonhosted.org/packages/37/f6/7291a59804c439b8e8338472391bed7c28594c13bc3ddde2272104bc3459/fastapi_cli-0.0.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "e63b3562b2d5502a976612030c4326541dc24a1c55c5f62acbe2d9bfa4cb934f",
+          "md5": "6e6bb4ef3919400df57cbc8e45fe5059",
+          "sha256": "3b6e4d2c4daee940fb8db59ebbfd60a72c4b962bcf593e263e4cc69da4ea3d7f"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "6e6bb4ef3919400df57cbc8e45fe5059",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 15395,
+        "upload_time": "2024-05-07T19:03:46",
+        "upload_time_iso_8601": "2024-05-07T19:03:46.660614Z",
+        "url": "https://files.pythonhosted.org/packages/e6/3b/3562b2d5502a976612030c4326541dc24a1c55c5f62acbe2d9bfa4cb934f/fastapi_cli-0.0.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.4": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "a10389bf615052aa5453c04d952225ded0b88aab6487b9c5f0c268939d13b860",
+          "md5": "441f9c4623e251f58635ceccdb3fd658",
+          "sha256": "a2552f3a7ae64058cdbb530be6fa6dbfc975dc165e4fa66d224c3d396e25e809"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "441f9c4623e251f58635ceccdb3fd658",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 9468,
+        "upload_time": "2024-05-19T18:54:18",
+        "upload_time_iso_8601": "2024-05-19T18:54:18.151061Z",
+        "url": "https://files.pythonhosted.org/packages/a1/03/89bf615052aa5453c04d952225ded0b88aab6487b9c5f0c268939d13b860/fastapi_cli-0.0.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "3cca2cc414b8246d5b968098514f2e54c8e92dc2d3b3870b539f24d6724b2fb7",
+          "md5": "9fc0abc3673d052ec129d60b9598b62a",
+          "sha256": "e2e9ffaffc1f7767f488d6da34b6f5a377751c996f397902eb6abb99a67bde32"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9fc0abc3673d052ec129d60b9598b62a",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 15783,
+        "upload_time": "2024-05-19T18:54:19",
+        "upload_time_iso_8601": "2024-05-19T18:54:19.247194Z",
+        "url": "https://files.pythonhosted.org/packages/3c/ca/2cc414b8246d5b968098514f2e54c8e92dc2d3b3870b539f24d6724b2fb7/fastapi_cli-0.0.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.5": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "24ea4b5011012ac925fe2f83b19d0e09cee9d324141ec7bf5e78bb2817f96513",
+          "md5": "3948755ca42df20878aa2ac8e4e864f2",
+          "sha256": "e94d847524648c748a5350673546bbf9bcaeb086b33c24f2e82e021436866a46"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "3948755ca42df20878aa2ac8e4e864f2",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 9489,
+        "upload_time": "2024-08-02T05:48:11",
+        "upload_time_iso_8601": "2024-08-02T05:48:11.609410Z",
+        "url": "https://files.pythonhosted.org/packages/24/ea/4b5011012ac925fe2f83b19d0e09cee9d324141ec7bf5e78bb2817f96513/fastapi_cli-0.0.5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "c5f81ad5ce32d029aeb9117e9a5a9b3e314a8477525d60c12a9b7730a3c186ec",
+          "md5": "52208de812edb476d5f8add988c4dd52",
+          "sha256": "d30e1239c6f46fcb95e606f02cdda59a1e2fa778a54b64686b3ff27f6211ff9f"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "52208de812edb476d5f8add988c4dd52",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 15571,
+        "upload_time": "2024-08-02T05:48:13",
+        "upload_time_iso_8601": "2024-08-02T05:48:13.160013Z",
+        "url": "https://files.pythonhosted.org/packages/c5/f8/1ad5ce32d029aeb9117e9a5a9b3e314a8477525d60c12a9b7730a3c186ec/fastapi_cli-0.0.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.6": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "8fab0c8b6ec19594fe4c2e7fe12e8074648f59903047787ac05512c2935d5f7a",
+          "md5": "43b29bcd54220ce2e0f5524c6c270981",
+          "sha256": "43288efee46338fae8902f9bf4559aed3aed639f9516f5d394a7ff19edcc8faf"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.6-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "43b29bcd54220ce2e0f5524c6c270981",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 10687,
+        "upload_time": "2024-12-04T14:16:50",
+        "upload_time_iso_8601": "2024-12-04T14:16:50.175044Z",
+        "url": "https://files.pythonhosted.org/packages/8f/ab/0c8b6ec19594fe4c2e7fe12e8074648f59903047787ac05512c2935d5f7a/fastapi_cli-0.0.6-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "369d9659cee212eeaecd8f54ab5f73d6d6d49a1dc4a46d2519fb9c1e66c8913e",
+          "md5": "c8e9983bce5d2aefbd5ad42271d1cbcd",
+          "sha256": "2835a8f0c44b68e464d5cafe5ec205265f02dc1ad1d640db33a994ba3338003b"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.6.tar.gz",
+        "has_sig": false,
+        "md5_digest": "c8e9983bce5d2aefbd5ad42271d1cbcd",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 16516,
+        "upload_time": "2024-12-04T14:16:51",
+        "upload_time_iso_8601": "2024-12-04T14:16:51.934832Z",
+        "url": "https://files.pythonhosted.org/packages/36/9d/9659cee212eeaecd8f54ab5f73d6d6d49a1dc4a46d2519fb9c1e66c8913e/fastapi_cli-0.0.6.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.7": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "a1e65daefc851b514ce2287d8f5d358ae4341089185f78f3217a69d0ce3a390c",
+          "md5": "ba98c936ea38820e9e6ceb572083b945",
+          "sha256": "d549368ff584b2804336c61f192d86ddea080c11255f375959627911944804f4"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.7-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ba98c936ea38820e9e6ceb572083b945",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 10705,
+        "upload_time": "2024-12-15T14:28:06",
+        "upload_time_iso_8601": "2024-12-15T14:28:06.180406Z",
+        "url": "https://files.pythonhosted.org/packages/a1/e6/5daefc851b514ce2287d8f5d358ae4341089185f78f3217a69d0ce3a390c/fastapi_cli-0.0.7-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "fe7382a5831fbbf8ed75905bacf5b2d9d3dfd6f04d6968b29fe6f72a5ae9ceb1",
+          "md5": "1db9facc1ee3fa504546eec7e5beacf2",
+          "sha256": "02b3b65956f526412515907a0793c9094abd4bfb5457b389f645b0ea6ba3605e"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.7.tar.gz",
+        "has_sig": false,
+        "md5_digest": "1db9facc1ee3fa504546eec7e5beacf2",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 16753,
+        "upload_time": "2024-12-15T14:28:10",
+        "upload_time_iso_8601": "2024-12-15T14:28:10.028469Z",
+        "url": "https://files.pythonhosted.org/packages/fe/73/82a5831fbbf8ed75905bacf5b2d9d3dfd6f04d6968b29fe6f72a5ae9ceb1/fastapi_cli-0.0.7.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.8": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e03f6ad3103c5f59208baf4c798526daea6a74085bb35d1c161c501863470476",
+          "md5": "ebfb949568b55f249869b25a805b8e2f",
+          "sha256": "0ea95d882c85b9219a75a65ab27e8da17dac02873e456850fa0a726e96e985eb"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.8-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "ebfb949568b55f249869b25a805b8e2f",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 10770,
+        "upload_time": "2025-07-07T14:44:08",
+        "upload_time_iso_8601": "2025-07-07T14:44:08.255414Z",
+        "url": "https://files.pythonhosted.org/packages/e0/3f/6ad3103c5f59208baf4c798526daea6a74085bb35d1c161c501863470476/fastapi_cli-0.0.8-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c6943ef75d9c7c32936ecb539b9750ccbdc3d2568efd73b1cb913278375f4533",
+          "md5": "bac6189c7fe7b1d195668330c4dcea74",
+          "sha256": "2360f2989b1ab4a3d7fc8b3a0b20e8288680d8af2e31de7c38309934d7f8a0ee"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.8.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bac6189c7fe7b1d195668330c4dcea74",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 16884,
+        "upload_time": "2025-07-07T14:44:09",
+        "upload_time_iso_8601": "2025-07-07T14:44:09.326150Z",
+        "url": "https://files.pythonhosted.org/packages/c6/94/3ef75d9c7c32936ecb539b9750ccbdc3d2568efd73b1cb913278375f4533/fastapi_cli-0.0.8.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.9": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5d84fd9ea302aeb222d21aed04f779b2e883ce9e20d8c955a6a517f9627d7f15",
+          "md5": "dd9b41e8f8ca0348a2188aeb74698cbb",
+          "sha256": "b2ffc90a43f2196b56fdfb137e6e959c57c5630beb1ff8dcaa1cc398b2461a60"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.9-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "dd9b41e8f8ca0348a2188aeb74698cbb",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 10746,
+        "upload_time": "2025-08-31T16:35:02",
+        "upload_time_iso_8601": "2025-08-31T16:35:02.257057Z",
+        "url": "https://files.pythonhosted.org/packages/5d/84/fd9ea302aeb222d21aed04f779b2e883ce9e20d8c955a6a517f9627d7f15/fastapi_cli-0.0.9-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a265ef2428b29dce2c0b90162fa9984b9c3a1c1d58c77237df9a7c1e50bea780",
+          "md5": "5dd0289f8e16ad46443a68b6dd972c6b",
+          "sha256": "c4d4404395651b8da59c3b28a526c098f9e290848aba63355e12d23cc5e0b7f8"
+        },
+        "downloads": -1,
+        "filename": "fastapi_cli-0.0.9.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5dd0289f8e16ad46443a68b6dd972c6b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 16879,
+        "upload_time": "2025-08-31T16:35:03",
+        "upload_time_iso_8601": "2025-08-31T16:35:03.387231Z",
+        "url": "https://files.pythonhosted.org/packages/a2/65/ef2428b29dce2c0b90162fa9984b9c3a1c1d58c77237df9a7c1e50bea780/fastapi_cli-0.0.9.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "08895c4eef60524d0fd704eb0706885b82cd5623a43396b94e4a5b17d3a3f516",
+        "md5": "46c2c60e87ab602bd23ba0ce44253638",
+        "sha256": "e58b6a0038c0b1532b7a0af690656093dee666201b6b19d3c87175b358e9f783"
+      },
+      "downloads": -1,
+      "filename": "fastapi_cli-0.0.20-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "46c2c60e87ab602bd23ba0ce44253638",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.9",
+      "size": 12390,
+      "upload_time": "2025-12-22T17:13:31",
+      "upload_time_iso_8601": "2025-12-22T17:13:31.708851Z",
+      "url": "https://files.pythonhosted.org/packages/08/89/5c4eef60524d0fd704eb0706885b82cd5623a43396b94e4a5b17d3a3f516/fastapi_cli-0.0.20-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "d3cad90fb3bfbcbd6e56c77afd9d114dd6ce8955d8bb90094399d1c70e659e40",
+        "md5": "0206e0c1f6861130161b80e2c2a6f519",
+        "sha256": "d17c2634f7b96b6b560bc16b0035ed047d523c912011395f49f00a421692bc3a"
+      },
+      "downloads": -1,
+      "filename": "fastapi_cli-0.0.20.tar.gz",
+      "has_sig": false,
+      "md5_digest": "0206e0c1f6861130161b80e2c2a6f519",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.9",
+      "size": 19786,
+      "upload_time": "2025-12-22T17:13:33",
+      "upload_time_iso_8601": "2025-12-22T17:13:33.794220Z",
+      "url": "https://files.pythonhosted.org/packages/d3/ca/d90fb3bfbcbd6e56c77afd9d114dd6ce8955d8bb90094399d1c70e659e40/fastapi_cli-0.0.20.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

@@ -1,0 +1,43 @@
+{
+    "id": 8366,
+    "name": "Benjamin Lecomte",
+    "firstName": "Benjamin",
+    "lastName": "Lecomte",
+    "dateOfBirth": "1991-04-26",
+    "nationality": "France",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 23,
+    "lastUpdated": "2023-07-30T17:03:21Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 63,
+        "name": "Fulham FC",
+        "shortName": "Fulham",
+        "tla": "FUL",
+        "crest": "https://crests.football-data.org/63.png",
+        "address": "Craven Cottage, Stevenage Road London SW6 6HH",
+        "website": "http://www.fulhamfc.com",
+        "founded": 1879,
+        "clubColors": "White / Black",
+        "venue": "Craven Cottage",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2025-07",
+            "until": "2027-06"
+        }
+    }
+}

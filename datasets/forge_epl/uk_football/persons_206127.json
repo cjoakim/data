@@ -1,0 +1,43 @@
+{
+    "id": 206127,
+    "name": "Jeremy Jacquet",
+    "firstName": "J\u00e9r\u00e9my",
+    "lastName": "Jacquet",
+    "dateOfBirth": "2005-07-13",
+    "nationality": "France",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 5,
+    "lastUpdated": "2026-07-15T09:25:43Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png",
+        "address": "Anfield Road Liverpool L4 0TH",
+        "website": "http://www.liverpoolfc.tv",
+        "founded": 1892,
+        "clubColors": "Red / White",
+        "venue": "Anfield",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2031-06"
+        }
+    }
+}

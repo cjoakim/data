@@ -1,0 +1,43 @@
+{
+    "id": 172550,
+    "name": "Norman Bassette",
+    "firstName": "Norman",
+    "lastName": "Bassette",
+    "dateOfBirth": "2004-11-11",
+    "nationality": "Belgium",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": null,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2023,
+            "name": "Belgium",
+            "code": "BEL",
+            "flag": "https://crests.football-data.org/805.svg"
+        },
+        "id": 3803,
+        "name": "KVC Westerlo",
+        "shortName": "Westerlo",
+        "tla": "WES",
+        "crest": "https://crests.football-data.org/3803.png",
+        "address": "De Merodedreef 189 Westerlo 2260",
+        "website": "http://www.kvcwesterlo.be",
+        "founded": 1917,
+        "clubColors": "Yellow / Blue",
+        "venue": "Het Kuipje",
+        "runningCompetitions": [
+            {
+                "id": 2009,
+                "name": "Jupiler Pro League",
+                "code": "BJL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/bjl.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2027-06"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "id": 170391,
+    "name": "Pape Sarr",
+    "firstName": "Pape",
+    "lastName": "Sarr",
+    "dateOfBirth": "2002-09-14",
+    "nationality": "Senegal",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 17,
+    "lastUpdated": "2026-06-01T11:16:31Z",
+    "currentTeam": {
+        "area": {
+            "id": 2205,
+            "name": "Senegal",
+            "code": "SEN",
+            "flag": "https://crests.football-data.org/senegal.svg"
+        },
+        "id": 804,
+        "name": "Senegal",
+        "shortName": "Senegal",
+        "tla": "SEN",
+        "crest": "https://crests.football-data.org/senegal.svg",
+        "address": "VDN-Ouest-Foire en face du CICES, Boite postale 13021 Dakar null",
+        "website": "http://www.fsfoot.sn",
+        "founded": 1960,
+        "clubColors": "White / Green",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2193,
+                "name": "Africa Cup Of Nations - Qualification",
+                "code": "ACQ",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

@@ -1,0 +1,757 @@
+{
+  "info": {
+    "author": null,
+    "author_email": "Eli Bendersky <eliben@gmail.com>",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14"
+    ],
+    "description": "===============\npycparser v3.00\n===============\n\n\n.. image:: https://github.com/eliben/pycparser/workflows/pycparser-tests/badge.svg\n  :align: center\n  :target: https://github.com/eliben/pycparser/actions\n\n----\n\n.. contents::\n    :backlinks: none\n\n.. sectnum::\n\nIntroduction\n============\n\nWhat is pycparser?\n------------------\n\n**pycparser** is a parser for the C language, written in pure Python. It is a\nmodule designed to be easily integrated into applications that need to parse\nC source code.\n\nWhat is it good for?\n--------------------\n\nAnything that needs C code to be parsed. The following are some uses for\n**pycparser**, taken from real user reports:\n\n* C code obfuscator\n* Front-end for various specialized C compilers\n* Static code checker\n* Automatic unit-test discovery\n* Adding specialized extensions to the C language\n\nOne of the most popular uses of **pycparser** is in the `cffi\n<https://cffi.readthedocs.io/en/latest/>`_ library, which uses it to parse the\ndeclarations of C functions and types in order to auto-generate FFIs.\n\n**pycparser** is unique in the sense that it's written in pure Python - a very\nhigh level language that's easy to experiment with and tweak. To people familiar\nwith Lex and Yacc, **pycparser**'s code will be simple to understand. It also\nhas no external dependencies (except for a Python interpreter), making it very\nsimple to install and deploy.\n\nWhich version of C does pycparser support?\n------------------------------------------\n\n**pycparser** aims to support the full C99 language (according to the standard\nISO/IEC 9899). Some features from C11 are also supported, and patches to support\nmore are welcome.\n\n**pycparser** supports very few GCC extensions, but it's fairly easy to set\nthings up so that it parses code with a lot of GCC-isms successfully. See the\n`FAQ <https://github.com/eliben/pycparser/wiki/FAQ>`_ for more details.\n\nWhat grammar does pycparser follow?\n-----------------------------------\n\n**pycparser** very closely follows the C grammar provided in Annex A of the C99\nstandard (ISO/IEC 9899).\n\nHow is pycparser licensed?\n--------------------------\n\n`BSD license <https://github.com/eliben/pycparser/blob/master/LICENSE>`_.\n\nContact details\n---------------\n\nFor reporting problems with **pycparser** or submitting feature requests, please\nopen an `issue <https://github.com/eliben/pycparser/issues>`_, or submit a\npull request.\n\n\nInstalling\n==========\n\nPrerequisites\n-------------\n\n**pycparser** is being tested with modern versions of Python on\nLinux, macOS and Windows. See `the CI dashboard <https://github.com/eliben/pycparser/actions/workflows/ci.yml>`__\nfor details.\n\n**pycparser** has no external dependencies.\n\nInstallation process\n--------------------\n\nThe recommended way to install **pycparser** is with ``pip``::\n\n    > pip install pycparser\n\nUsing\n=====\n\nInteraction with the C preprocessor\n-----------------------------------\n\nIn order to be compilable, C code must be preprocessed by the C preprocessor -\n``cpp``. A compatible ``cpp`` handles preprocessing directives like ``#include`` and\n``#define``, removes comments, and performs other minor tasks that prepare the C\ncode for compilation.\n\nFor all but the most trivial snippets of C code **pycparser**, like a C\ncompiler, must receive preprocessed C code in order to function correctly. If\nyou import the top-level ``parse_file`` function from the **pycparser** package,\nit will interact with ``cpp`` for you, as long as it's in your PATH, or you\nprovide a path to it.\n\nNote also that you can use ``gcc -E`` or ``clang -E`` instead of ``cpp``. See\nthe ``using_gcc_E_libc.py`` example for more details. Windows users can download\nand install a binary build of Clang for Windows `from this website\n<http://llvm.org/releases/download.html>`_.\n\nWhat about the standard C library headers?\n------------------------------------------\n\nC code almost always ``#include``\\s various header files from the standard C\nlibrary, like ``stdio.h``. While (with some effort) **pycparser** can be made to\nparse the standard headers from any C compiler, it's much simpler to use the\nprovided \"fake\" standard includes for C11 in ``utils/fake_libc_include``. These\nare standard C header files that contain only the bare necessities to allow\nvalid parsing of the files that use them. As a bonus, since they're minimal, it\ncan significantly improve the performance of parsing large C files.\n\nThe key point to understand here is that **pycparser** doesn't really care about\nthe semantics of types. It only needs to know whether some token encountered in\nthe source is a previously defined type. This is essential in order to be able\nto parse C correctly.\n\nSee `this blog post\n<https://eli.thegreenplace.net/2015/on-parsing-c-type-declarations-and-fake-headers>`_\nfor more details.\n\nNote that the fake headers are not included in the ``pip`` package nor installed\nvia the package build (`#224 <https://github.com/eliben/pycparser/issues/224>`_).\n\nBasic usage\n-----------\n\nTake a look at the |examples|_ directory of the distribution for a few examples\nof using **pycparser**. These should be enough to get you started. Please note\nthat most realistic C code samples would require running the C preprocessor\nbefore passing the code to **pycparser**; see the previous sections for more\ndetails.\n\n.. |examples| replace:: ``examples``\n.. _examples: examples\n\n\nAdvanced usage\n--------------\n\nThe public interface of **pycparser** is well documented with comments in\n``pycparser/c_parser.py``. For a detailed overview of the various AST nodes\ncreated by the parser, see ``pycparser/_c_ast.cfg``.\n\nThere's also a `FAQ available here <https://github.com/eliben/pycparser/wiki/FAQ>`_.\nIn any case, you can always drop me an `email <eliben@gmail.com>`_ for help.\n\n\nModifying\n=========\n\nThere are a few points to keep in mind when modifying **pycparser**:\n\n* The code for **pycparser**'s AST nodes is automatically generated from a\n  configuration file - ``_c_ast.cfg``, by ``_ast_gen.py``. If you modify the AST\n  configuration, make sure to re-generate the code. This can be done by running\n  the ``_ast_gen.py`` script (from the repository root or the\n  ``pycparser`` directory).\n* Read the docstring in the constructor of the ``CParser`` class for details\n  on configuration and compatibility arguments.\n\n\nPackage contents\n================\n\nOnce you unzip the ``pycparser`` package, you'll see the following files and\ndirectories:\n\nREADME.rst:\n  This README file.\n\nLICENSE:\n  The pycparser license\n\nsetup.py:\n  Legacy installation script (build metadata lives in ``pyproject.toml``).\n\npyproject.toml:\n  Package metadata and build configuration.\n\nexamples/:\n  A directory with some examples of using **pycparser**\n\npycparser/:\n  The **pycparser** module source code.\n\ntests/:\n  Unit tests.\n\nutils/fake_libc_include:\n  Minimal standard C library include files that should allow to parse any C code.\n  Note that these headers now include C11 code, so they may not work when the\n  preprocessor is configured to an earlier C standard (like ``-std=c99``).\n\nutils/internal/:\n  Internal utilities for my own use. You probably don't need them.\n\n\nContributors\n============\n\nSome people have contributed to **pycparser** by opening issues on bugs they've\nfound and/or submitting patches. The list of contributors is in the CONTRIBUTORS\nfile in the source distribution. After **pycparser** moved to Github I stopped\nupdating this list because Github does a much better job at tracking\ncontributions.\n",
+    "description_content_type": "text/x-rst",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": [
+      "License-File"
+    ],
+    "home_page": null,
+    "keywords": null,
+    "license": null,
+    "license_expression": "BSD-3-Clause",
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": "Eli Bendersky <eliben@gmail.com>",
+    "name": "pycparser",
+    "package_url": "https://pypi.org/project/pycparser/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/pycparser/",
+    "project_urls": {
+      "Homepage": "https://github.com/eliben/pycparser"
+    },
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/pycparser/3.0/",
+    "requires_dist": null,
+    "requires_python": ">=3.10",
+    "summary": "C parser in Python",
+    "version": "3.0",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 33708266,
+  "releases": {
+    "2.02": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "55cb7effa342d199085ef53557359edc398582b2237751435d9175107c585a10",
+          "md5": "e484dcd6702770551c3d6cec1caf8dd8",
+          "sha256": "66aaba8a6b75c089956102f583219727639d2c79cb636f37730332f711247881"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.02.zip",
+        "has_sig": false,
+        "md5_digest": "e484dcd6702770551c3d6cec1caf8dd8",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 174817,
+        "upload_time": "2011-02-18T08:15:41",
+        "upload_time_iso_8601": "2011-02-18T08:15:41.567437Z",
+        "url": "https://files.pythonhosted.org/packages/55/cb/7effa342d199085ef53557359edc398582b2237751435d9175107c585a10/pycparser-2.02.zip",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.03": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "a0875b1937f15a2137797cf061c133b3b5fb396896ab1733465cd9a8cc91f04b",
+          "md5": "ae975c230d0f5c275ffc278c2a5c8862",
+          "sha256": "5d45039bb4ce1f942d73a91b1b33a22aef0bdbee6a332d1934f81b7219b88e85"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.03.zip",
+        "has_sig": false,
+        "md5_digest": "ae975c230d0f5c275ffc278c2a5c8862",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 178681,
+        "upload_time": "2011-03-07T06:07:28",
+        "upload_time_iso_8601": "2011-03-07T06:07:28.937453Z",
+        "url": "https://files.pythonhosted.org/packages/a0/87/5b1937f15a2137797cf061c133b3b5fb396896ab1733465cd9a8cc91f04b/pycparser-2.03.zip",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.04": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "d9b8e4a76abd3c4cd4384a62f679e0ed39c4c10fa0f36e64cb96227fec1b0546",
+          "md5": "bc652c2ee023efdd37a67aa92ca88359",
+          "sha256": "490093c52dfca678b73179e90cc2f461fafc1ad2c672e3b17f5438a6c9c1d579"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.04.zip",
+        "has_sig": false,
+        "md5_digest": "bc652c2ee023efdd37a67aa92ca88359",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 179385,
+        "upload_time": "2011-05-21T08:38:58",
+        "upload_time_iso_8601": "2011-05-21T08:38:58.617136Z",
+        "url": "https://files.pythonhosted.org/packages/d9/b8/e4a76abd3c4cd4384a62f679e0ed39c4c10fa0f36e64cb96227fec1b0546/pycparser-2.04.zip",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.05": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "f0201f6094ff621b0ea9df5786cc28067b4ba1c15c50adc0d7855add89a30801",
+          "md5": "23eb23b7f14d0361b155f25d67f82be9",
+          "sha256": "83e35b9f7d14f5f3f71698c991853b27ceab7c6d49f7faef97ba289fb0620f65"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.05.zip",
+        "has_sig": false,
+        "md5_digest": "23eb23b7f14d0361b155f25d67f82be9",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 230982,
+        "upload_time": "2011-10-16T06:25:18",
+        "upload_time_iso_8601": "2011-10-16T06:25:18.636850Z",
+        "url": "https://files.pythonhosted.org/packages/f0/20/1f6094ff621b0ea9df5786cc28067b4ba1c15c50adc0d7855add89a30801/pycparser-2.05.zip",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.06": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "62e993be808d895a9b71ba3980a2bda4319240cfccaaeabb0139c04d7f7fe0fe",
+          "md5": "b6898062ebae1ce52d355ef1039e030e",
+          "sha256": "fcf9f043bc642d61ddedb40900ea201257e54d74eaa0df6b7a3fffc989c6ed49"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.06.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b6898062ebae1ce52d355ef1039e030e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 163353,
+        "upload_time": "2012-02-04T16:33:24",
+        "upload_time_iso_8601": "2012-02-04T16:33:24.568348Z",
+        "url": "https://files.pythonhosted.org/packages/62/e9/93be808d895a9b71ba3980a2bda4319240cfccaaeabb0139c04d7f7fe0fe/pycparser-2.06.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.07": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "556f3889d832463e8b08ec1ad5ca98069975b231accbe09092b671e530be8980",
+          "md5": "985cb5c0d7f357904e7fdff44d31e727",
+          "sha256": "ab1d0422a58c95d6511e33c1f8d3f36169c70a3158f0867342dc7e359e1889e1"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.07.tar.gz",
+        "has_sig": false,
+        "md5_digest": "985cb5c0d7f357904e7fdff44d31e727",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 162408,
+        "upload_time": "2012-06-16T15:09:46",
+        "upload_time_iso_8601": "2012-06-16T15:09:46.259679Z",
+        "url": "https://files.pythonhosted.org/packages/55/6f/3889d832463e8b08ec1ad5ca98069975b231accbe09092b671e530be8980/pycparser-2.07.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.08": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "644ee8a22c36881b407d60d11cfd77a470d8e2004e85e410383d07492cf57c7d",
+          "md5": "923f08a99839b4fac45d2ac395e1ef7e",
+          "sha256": "48165dbc4738973cff67d2986e22013d78634df2dcdf58b57a1e341cc34ef028"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.08.tar.gz",
+        "has_sig": false,
+        "md5_digest": "923f08a99839b4fac45d2ac395e1ef7e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 164243,
+        "upload_time": "2012-08-15T11:09:21",
+        "upload_time_iso_8601": "2012-08-15T11:09:21.746206Z",
+        "url": "https://files.pythonhosted.org/packages/64/4e/e8a22c36881b407d60d11cfd77a470d8e2004e85e410383d07492cf57c7d/pycparser-2.08.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.09": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "129691d469b9fe316ddd6ed337bc28b394327e3b18b0549b59c484f77c9e141b",
+          "md5": "27b8018a93c11c93f8e845488a593db4",
+          "sha256": "907a32d5affc8ef649581633053350360d75bab5e6a5cfd4dbe3fa8de9142ffe"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.09.tar.gz",
+        "has_sig": false,
+        "md5_digest": "27b8018a93c11c93f8e845488a593db4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 183664,
+        "upload_time": "2012-12-27T14:07:28",
+        "upload_time_iso_8601": "2012-12-27T14:07:28.230405Z",
+        "url": "https://files.pythonhosted.org/packages/12/96/91d469b9fe316ddd6ed337bc28b394327e3b18b0549b59c484f77c9e141b/pycparser-2.09.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.09.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "82b90fe7062d85440ea77226a0c2eaafb0ec313dde2e08e988b360bba3fc5b75",
+          "md5": "74aa075fc28b7c24a4426574d1ac91e0",
+          "sha256": "6d5f5d70b2edf7bc43a3ab855511bff16e10e5b0b353fd31686284acab898102"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.09.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "74aa075fc28b7c24a4426574d1ac91e0",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 201517,
+        "upload_time": "2012-12-29T13:23:48",
+        "upload_time_iso_8601": "2012-12-29T13:23:48.439822Z",
+        "url": "https://files.pythonhosted.org/packages/82/b9/0fe7062d85440ea77226a0c2eaafb0ec313dde2e08e988b360bba3fc5b75/pycparser-2.09.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.10": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "18e232e2457514b32ded24f2ebecfca3866ce08203e8cfeec18f9535f14ef374",
+          "md5": "d87aed98c8a9f386aa56d365fe4d515f",
+          "sha256": "957d98b661c0b64b580ab6f94b125e09b6714154ee51de40bca16d3f0076b86c"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.10.tar.gz",
+        "has_sig": false,
+        "md5_digest": "d87aed98c8a9f386aa56d365fe4d515f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 206166,
+        "upload_time": "2013-08-03T13:28:18",
+        "upload_time_iso_8601": "2013-08-03T13:28:18.906406Z",
+        "url": "https://files.pythonhosted.org/packages/18/e2/32e2457514b32ded24f2ebecfca3866ce08203e8cfeec18f9535f14ef374/pycparser-2.10.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.11": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "1f6623f8e517056c7dc7893314d67d1b3105f0e011538cfd4c8348e24818ac08",
+          "md5": "8b87f6f121edded09056c165afd12c4e",
+          "sha256": "702c37484ef8bc224b3098daf4f00cfa6621dbb60ded875cfc327e3f09ee2dfc"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.11.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8b87f6f121edded09056c165afd12c4e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 297249,
+        "upload_time": "2015-04-21T21:48:40",
+        "upload_time_iso_8601": "2015-04-21T21:48:40.432846Z",
+        "url": "https://files.pythonhosted.org/packages/1f/66/23f8e517056c7dc7893314d67d1b3105f0e011538cfd4c8348e24818ac08/pycparser-2.11.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.12": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "96afb1b93ac53810645cf945050bd0c64a5ab1a510179f0e9e9f2d55faeef142",
+          "md5": "debde3e37af8566c95d2c0a0504397e7",
+          "sha256": "da24c80aeb3c794ac64fe5503a01f65f13fece3e02513fd2e0761f93c96597b0"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.12.tar.gz",
+        "has_sig": false,
+        "md5_digest": "debde3e37af8566c95d2c0a0504397e7",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 297648,
+        "upload_time": "2015-04-22T00:23:11",
+        "upload_time_iso_8601": "2015-04-22T00:23:11.178364Z",
+        "url": "https://files.pythonhosted.org/packages/96/af/b1b93ac53810645cf945050bd0c64a5ab1a510179f0e9e9f2d55faeef142/pycparser-2.12.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.13": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "95e02750d501c7e729a0a37dbe0fe0f5ce1e642cea12bc7cdf6d85b9a5abfea3",
+          "md5": "e4fe1a2d341b22e25da0d22f034ef32f",
+          "sha256": "b399599a8a0e386bfcbc5e01a38d79dd6e926781f9e358cd5512f41ab7d20eb7"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.13.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e4fe1a2d341b22e25da0d22f034ef32f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 299363,
+        "upload_time": "2015-05-12T13:05:44",
+        "upload_time_iso_8601": "2015-05-12T13:05:44.940286Z",
+        "url": "https://files.pythonhosted.org/packages/95/e0/2750d501c7e729a0a37dbe0fe0f5ce1e642cea12bc7cdf6d85b9a5abfea3/pycparser-2.13.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.14": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "6d31666614af3db0acf377876d48688c5d334b6e493b96d21aa7d332169bee50",
+          "md5": "a2bc8d28c923b4fe2b2c3b4b51a4f935",
+          "sha256": "7959b4a74abdc27b312fed1c21e6caf9309ce0b29ea86b591fd2e99ecdf27f73"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.14.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a2bc8d28c923b4fe2b2c3b4b51a4f935",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 223295,
+        "upload_time": "2015-06-10T03:02:39",
+        "upload_time_iso_8601": "2015-06-10T03:02:39.058892Z",
+        "url": "https://files.pythonhosted.org/packages/6d/31/666614af3db0acf377876d48688c5d334b6e493b96d21aa7d332169bee50/pycparser-2.14.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.15": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "370565d342ba500c6f9dbb1978e9dd01a1097530e0291003638bbef329ad4522",
+          "md5": "8629238be71db4d3f79b4fb1cd1397dc",
+          "sha256": "457393eb49a0cc1099e67097f3bd73d28f63e76f032dc9eef9d79780120b1b8d"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.15.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8629238be71db4d3f79b4fb1cd1397dc",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 232280,
+        "upload_time": "2016-10-18T13:17:27",
+        "upload_time_iso_8601": "2016-10-18T13:17:27.485107Z",
+        "url": "https://files.pythonhosted.org/packages/37/05/65d342ba500c6f9dbb1978e9dd01a1097530e0291003638bbef329ad4522/pycparser-2.15.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.16": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "eb8300c55ff5cb773a78e9e47476ac1a0cd2f0fb71b34cb6e178572eaec22984",
+          "md5": "983118bb558ba11754af25647573487c",
+          "sha256": "108f9ff23869ae2f8b38e481e7b4b4d4de1e32be968f29bbe303d629c34a6260"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.16.tar.gz",
+        "has_sig": false,
+        "md5_digest": "983118bb558ba11754af25647573487c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 230060,
+        "upload_time": "2016-10-18T15:43:57",
+        "upload_time_iso_8601": "2016-10-18T15:43:57.591536Z",
+        "url": "https://files.pythonhosted.org/packages/eb/83/00c55ff5cb773a78e9e47476ac1a0cd2f0fb71b34cb6e178572eaec22984/pycparser-2.16.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.17": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "be641bb257ffb17d01f4a38d7ce686809a736837ad4371bcc5c42ba7a715c3ac",
+          "md5": "ca98dcb50bc1276f230118f6af5a40c7",
+          "sha256": "0aac31e917c24cb3357f5a4d5566f2cc91a19ca41862f6c3c22dc60a629673b6"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.17.tar.gz",
+        "has_sig": false,
+        "md5_digest": "ca98dcb50bc1276f230118f6af5a40c7",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 231163,
+        "upload_time": "2016-10-29T02:51:42",
+        "upload_time_iso_8601": "2016-10-29T02:51:42.631103Z",
+        "url": "https://files.pythonhosted.org/packages/be/64/1bb257ffb17d01f4a38d7ce686809a736837ad4371bcc5c42ba7a715c3ac/pycparser-2.17.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.18": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "8c2daad7f16146f4197a11f8e91fb81df177adcc2073d36a17b1491fd09df6ed",
+          "md5": "72370da54358202a60130e223d488136",
+          "sha256": "99a8ca03e29851d96616ad0404b4aad7d9ee16f25c9f9708a11faf2810f7b226"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.18.tar.gz",
+        "has_sig": false,
+        "md5_digest": "72370da54358202a60130e223d488136",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 245897,
+        "upload_time": "2017-07-04T22:16:35",
+        "upload_time_iso_8601": "2017-07-04T22:16:35.802951Z",
+        "url": "https://files.pythonhosted.org/packages/8c/2d/aad7f16146f4197a11f8e91fb81df177adcc2073d36a17b1491fd09df6ed/pycparser-2.18.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.19": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "689e49196946aee219aead1290e00d1e7fdeab8567783e83e1b9ab5585e6206a",
+          "md5": "76396762adc3fa769c83d8e202d36b6f",
+          "sha256": "a988718abfad80b6b157acce7bf130a30876d27603738ac39f140993246b25b3"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.19.tar.gz",
+        "has_sig": false,
+        "md5_digest": "76396762adc3fa769c83d8e202d36b6f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 158295,
+        "upload_time": "2018-09-19T12:32:56",
+        "upload_time_iso_8601": "2018-09-19T12:32:56.073947Z",
+        "url": "https://files.pythonhosted.org/packages/68/9e/49196946aee219aead1290e00d1e7fdeab8567783e83e1b9ab5585e6206a/pycparser-2.19.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.20": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "aee7d9c3a176ca4b02024debf82342dab36efadfc5776f9c8db077e8f6e71821",
+          "md5": "61112f106163fef25a95b73ad471c4cc",
+          "sha256": "7582ad22678f0fcd81102833f60ef8d0e57288b6b5fb00323d101be910e35705"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.20-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "61112f106163fef25a95b73ad471c4cc",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
+        "size": 112041,
+        "upload_time": "2020-03-04T14:16:37",
+        "upload_time_iso_8601": "2020-03-04T14:16:37.278303Z",
+        "url": "https://files.pythonhosted.org/packages/ae/e7/d9c3a176ca4b02024debf82342dab36efadfc5776f9c8db077e8f6e71821/pycparser-2.20-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "0f86e19659527668d70be91d0369aeaa055b4eb396b0f387a4f92293a20035bd",
+          "md5": "b8f88de737db8c346ee8d31c07c7a25a",
+          "sha256": "2d475327684562c3a96cc71adf7dc8c4f0565175cf86b6d7a404ff4c771f15f0"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.20.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b8f88de737db8c346ee8d31c07c7a25a",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
+        "size": 161330,
+        "upload_time": "2020-03-04T14:16:39",
+        "upload_time_iso_8601": "2020-03-04T14:16:39.220860Z",
+        "url": "https://files.pythonhosted.org/packages/0f/86/e19659527668d70be91d0369aeaa055b4eb396b0f387a4f92293a20035bd/pycparser-2.20.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.21": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "62d55f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53",
+          "md5": "763d265dfc20860dfbb4c81458400d03",
+          "sha256": "8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.21-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "763d265dfc20860dfbb4c81458400d03",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": null,
+        "size": 118697,
+        "upload_time": "2021-11-06T12:50:13",
+        "upload_time_iso_8601": "2021-11-06T12:50:13.610023Z",
+        "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "5e0b95d387f5f4433cb0f53ff7ad859bd2c6051051cebbb564f139a999ab46de",
+          "md5": "48f7d743bf018f7bb2ffc5fb976d1492",
+          "sha256": "e644fdec12f7872f86c58ff790da456218b10f863970249516d60a5eaca77206"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.21.tar.gz",
+        "has_sig": false,
+        "md5_digest": "48f7d743bf018f7bb2ffc5fb976d1492",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 170877,
+        "upload_time": "2021-11-06T12:48:46",
+        "upload_time_iso_8601": "2021-11-06T12:48:46.095281Z",
+        "url": "https://files.pythonhosted.org/packages/5e/0b/95d387f5f4433cb0f53ff7ad859bd2c6051051cebbb564f139a999ab46de/pycparser-2.21.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.22": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "13a3a812df4e2dd5696d1f351d58b8fe16a405b234ad2886a0dab9183fb78109",
+          "md5": "e9bf4a92f270e6482393bd716406ff85",
+          "sha256": "c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.22-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "e9bf4a92f270e6482393bd716406ff85",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 117552,
+        "upload_time": "2024-03-30T13:22:20",
+        "upload_time_iso_8601": "2024-03-30T13:22:20.476234Z",
+        "url": "https://files.pythonhosted.org/packages/13/a3/a812df4e2dd5696d1f351d58b8fe16a405b234ad2886a0dab9183fb78109/pycparser-2.22-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "1db231537cf4b1ca988837256c910a668b553fceb8f069bedc4b1c826024b52c",
+          "md5": "8922b0b1b53b419e3a38fba4aa43a348",
+          "sha256": "491c8be9c040f5390f5bf44a5b07752bd07f56edf992381b05c701439eec10f6"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.22.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8922b0b1b53b419e3a38fba4aa43a348",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 172736,
+        "upload_time": "2024-03-30T13:22:22",
+        "upload_time_iso_8601": "2024-03-30T13:22:22.564697Z",
+        "url": "https://files.pythonhosted.org/packages/1d/b2/31537cf4b1ca988837256c910a668b553fceb8f069bedc4b1c826024b52c/pycparser-2.22.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.23": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a0e359cd50310fc9b59512193629e1984c1f95e5c8ae6e5d8c69532ccc65a7fe",
+          "md5": "961daf0e0910747590f8a0101322bcd3",
+          "sha256": "e5c6e8d3fbad53479cab09ac03729e0a9faf2bee3db8208a550daf5af81a5934"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.23-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "961daf0e0910747590f8a0101322bcd3",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 118140,
+        "upload_time": "2025-09-09T13:23:46",
+        "upload_time_iso_8601": "2025-09-09T13:23:46.651288Z",
+        "url": "https://files.pythonhosted.org/packages/a0/e3/59cd50310fc9b59512193629e1984c1f95e5c8ae6e5d8c69532ccc65a7fe/pycparser-2.23-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fecfd2d3b9f5699fb1e4615c8e32ff220203e43b248e1dfcc6736ad9057731ca",
+          "md5": "bb4946a7b0d83569f5d29f566a55180a",
+          "sha256": "78816d4f24add8f10a06d6f05b4d424ad9e96cfebf68a4ddc99c65c0720d00c2"
+        },
+        "downloads": -1,
+        "filename": "pycparser-2.23.tar.gz",
+        "has_sig": false,
+        "md5_digest": "bb4946a7b0d83569f5d29f566a55180a",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 173734,
+        "upload_time": "2025-09-09T13:23:47",
+        "upload_time_iso_8601": "2025-09-09T13:23:47.910606Z",
+        "url": "https://files.pythonhosted.org/packages/fe/cf/d2d3b9f5699fb1e4615c8e32ff220203e43b248e1dfcc6736ad9057731ca/pycparser-2.23.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "3.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0cc344f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3",
+          "md5": "dfc689e63af0e21be54c80938cc8ac46",
+          "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992"
+        },
+        "downloads": -1,
+        "filename": "pycparser-3.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "dfc689e63af0e21be54c80938cc8ac46",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 48172,
+        "upload_time": "2026-01-21T14:26:50",
+        "upload_time_iso_8601": "2026-01-21T14:26:50.693739Z",
+        "url": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "1b7d92392ff7815c21062bea51aa7b87d45576f649f16458d78b7cf94b9ab2e6",
+          "md5": "56f3a0a82595b0cb04976cc0d3271a27",
+          "sha256": "600f49d217304a5902ac3c37e1281c9fe94e4d0489de643a9504c5cdfdfc6b29"
+        },
+        "downloads": -1,
+        "filename": "pycparser-3.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "56f3a0a82595b0cb04976cc0d3271a27",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 103492,
+        "upload_time": "2026-01-21T14:26:51",
+        "upload_time_iso_8601": "2026-01-21T14:26:51.890565Z",
+        "url": "https://files.pythonhosted.org/packages/1b/7d/92392ff7815c21062bea51aa7b87d45576f649f16458d78b7cf94b9ab2e6/pycparser-3.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "0cc344f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3",
+        "md5": "dfc689e63af0e21be54c80938cc8ac46",
+        "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992"
+      },
+      "downloads": -1,
+      "filename": "pycparser-3.0-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "dfc689e63af0e21be54c80938cc8ac46",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.10",
+      "size": 48172,
+      "upload_time": "2026-01-21T14:26:50",
+      "upload_time_iso_8601": "2026-01-21T14:26:50.693739Z",
+      "url": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "digests": {
+        "blake2b_256": "1b7d92392ff7815c21062bea51aa7b87d45576f649f16458d78b7cf94b9ab2e6",
+        "md5": "56f3a0a82595b0cb04976cc0d3271a27",
+        "sha256": "600f49d217304a5902ac3c37e1281c9fe94e4d0489de643a9504c5cdfdfc6b29"
+      },
+      "downloads": -1,
+      "filename": "pycparser-3.0.tar.gz",
+      "has_sig": false,
+      "md5_digest": "56f3a0a82595b0cb04976cc0d3271a27",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.10",
+      "size": 103492,
+      "upload_time": "2026-01-21T14:26:51",
+      "upload_time_iso_8601": "2026-01-21T14:26:51.890565Z",
+      "url": "https://files.pythonhosted.org/packages/1b/7d/92392ff7815c21062bea51aa7b87d45576f649f16458d78b7cf94b9ab2e6/pycparser-3.0.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

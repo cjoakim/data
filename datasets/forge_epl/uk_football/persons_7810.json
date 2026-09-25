@@ -1,0 +1,43 @@
+{
+    "id": 7810,
+    "name": "Trevoh Chalobah",
+    "firstName": "Trevoh",
+    "lastName": "Chalobah",
+    "dateOfBirth": "1999-07-05",
+    "nationality": "England",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 99,
+    "lastUpdated": "2026-06-20T16:50:21Z",
+    "currentTeam": {
+        "area": {
+            "id": 2114,
+            "name": "Italy",
+            "code": "ITA",
+            "flag": "https://crests.football-data.org/784.svg"
+        },
+        "id": 7397,
+        "name": "Como 1907",
+        "shortName": "Como 1907",
+        "tla": "COM",
+        "crest": "https://crests.football-data.org/7397.png",
+        "address": "Viale Sinigaglia 2 Como 22100",
+        "website": "http://www.como1907.net/",
+        "founded": 1907,
+        "clubColors": "Sky Blue / White",
+        "venue": "Stadio Giuseppe Sinigaglia",
+        "runningCompetitions": [
+            {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/c111.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-08",
+            "until": "2031-06"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "id": 34646,
+    "name": "John McGinn",
+    "firstName": "John",
+    "lastName": "McGinn",
+    "dateOfBirth": "1994-10-18",
+    "nationality": "Scotland",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 7,
+    "lastUpdated": "2026-06-01T11:16:32Z",
+    "currentTeam": {
+        "area": {
+            "id": 2204,
+            "name": "Scotland",
+            "code": "SCO",
+            "flag": "https://crests.football-data.org/814.svg"
+        },
+        "id": 8873,
+        "name": "Scotland",
+        "shortName": "Scotland",
+        "tla": "SCO",
+        "crest": "https://crests.football-data.org/814.svg",
+        "address": "Hampden Park Glasgow G42 9AY",
+        "website": "http://www.scottishfa.co.uk",
+        "founded": 1873,
+        "clubColors": "Navy Blue / White",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "id": 275522,
+    "name": "Chido Obi-Martin",
+    "firstName": "Chido",
+    "lastName": "Obi-Martin",
+    "dateOfBirth": "2007-11-29",
+    "nationality": "Denmark",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 32,
+    "lastUpdated": "2025-02-17T09:43:06Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png",
+        "address": "Sir Matt Busby Way Manchester M16 0RA",
+        "website": "http://www.manutd.com",
+        "founded": 1878,
+        "clubColors": "Red / White",
+        "venue": "Old Trafford",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2025-07",
+            "until": null
+        }
+    }
+}

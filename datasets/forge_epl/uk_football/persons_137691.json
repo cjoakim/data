@@ -1,0 +1,43 @@
+{
+    "id": 137691,
+    "name": "Robin Roefs",
+    "firstName": "Robin",
+    "lastName": "Roefs",
+    "dateOfBirth": "2003-01-17",
+    "nationality": "Netherlands",
+    "section": "Goalkeeper",
+    "position": "Goalkeeper",
+    "shirtNumber": 13,
+    "lastUpdated": "2023-09-09T01:49:27Z",
+    "currentTeam": {
+        "area": {
+            "id": 2163,
+            "name": "Netherlands",
+            "code": "NLD",
+            "flag": "https://crests.football-data.org/8601.svg"
+        },
+        "id": 8601,
+        "name": "Netherlands",
+        "shortName": "Netherlands",
+        "tla": "NED",
+        "crest": "https://crests.football-data.org/8601.svg",
+        "address": "Woudenbergseweg 56-58 / Postbus 515 Zeist 3700 AM",
+        "website": "http://www.knvb.nl",
+        "founded": 1889,
+        "clubColors": "Orange / White / Blue",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "id": 7562,
+    "name": "Maximilian W\u00f6ber",
+    "firstName": "Max",
+    "lastName": "W\u00f6ber",
+    "dateOfBirth": "1998-02-04",
+    "nationality": "Austria",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 39,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2088,
+            "name": "Germany",
+            "code": "DEU",
+            "flag": "https://crests.football-data.org/759.svg"
+        },
+        "id": 6,
+        "name": "FC Schalke 04",
+        "shortName": "Schalke",
+        "tla": "S04",
+        "crest": "https://crests.football-data.org/6.png",
+        "address": "Ernst-Kuzorra-Weg 1 Gelsenkirchen 45891",
+        "website": "http://www.schalke04.de",
+        "founded": 1904,
+        "clubColors": "Blue / White",
+        "venue": "Veltins-Arena",
+        "runningCompetitions": [
+            {
+                "id": 2011,
+                "name": "DFB-Pokal",
+                "code": "DFB",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/DFB_CUP.png"
+            },
+            {
+                "id": 2002,
+                "name": "Bundesliga",
+                "code": "BL1",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/BL1.png"
+            }
+        ],
+        "contract": {
+            "start": "2026-07",
+            "until": "2027-06"
+        }
+    }
+}

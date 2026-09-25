@@ -1,0 +1,43 @@
+{
+    "id": 8973,
+    "name": "Sander Berge",
+    "firstName": "Sander",
+    "lastName": "Berge",
+    "dateOfBirth": "1998-02-14",
+    "nationality": "Norway",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 8,
+    "lastUpdated": "2026-06-01T11:16:30Z",
+    "currentTeam": {
+        "area": {
+            "id": 2173,
+            "name": "Norway",
+            "code": "NOR",
+            "flag": "https://crests.football-data.org/813.svg"
+        },
+        "id": 8872,
+        "name": "Norway",
+        "shortName": "Norway",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/813.svg",
+        "address": "Serviceboks 1, Ullevaal stadion Oslo 0840",
+        "website": "http://www.fotball.no",
+        "founded": 1902,
+        "clubColors": "Red / White / Navy Blue",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

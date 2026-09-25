@@ -1,0 +1,43 @@
+{
+    "id": 122266,
+    "name": "Jo\u0161ko Gvardiol",
+    "firstName": "Jo\u0161ko",
+    "lastName": "Gvardiol",
+    "dateOfBirth": "2002-01-23",
+    "nationality": "Croatia",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 4,
+    "lastUpdated": "2026-06-01T11:16:29Z",
+    "currentTeam": {
+        "area": {
+            "id": 2058,
+            "name": "Croatia",
+            "code": "HRV",
+            "flag": "https://crests.football-data.org/799.svg"
+        },
+        "id": 799,
+        "name": "Croatia",
+        "shortName": "Croatia",
+        "tla": "CRO",
+        "crest": "https://crests.football-data.org/799.svg",
+        "address": "Ulica grada Vukovara, 269 A Zagreb 10000",
+        "website": "http://www.hns-cff.hr",
+        "founded": 1912,
+        "clubColors": "Red / White / Blue",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "id": 169297,
+    "name": "Aurele Amenda",
+    "firstName": "Aur\u00e8le",
+    "lastName": "Amenda",
+    "dateOfBirth": "2003-07-31",
+    "nationality": "Switzerland",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 24,
+    "lastUpdated": "2026-06-01T11:16:32Z",
+    "currentTeam": {
+        "area": {
+            "id": 2234,
+            "name": "Switzerland",
+            "code": "CHE",
+            "flag": "https://crests.football-data.org/788.svg"
+        },
+        "id": 788,
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg",
+        "address": "Worbstrasse 48 Bern 3000",
+        "website": "http://www.football.ch",
+        "founded": 1895,
+        "clubColors": "Red / White",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

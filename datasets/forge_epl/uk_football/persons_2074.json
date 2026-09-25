@@ -1,0 +1,43 @@
+{
+    "id": 2074,
+    "name": "Pedro Neto",
+    "firstName": "",
+    "lastName": "Pedro Neto",
+    "dateOfBirth": "2000-03-09",
+    "nationality": "Portugal",
+    "section": "Offence",
+    "position": "Offence",
+    "shirtNumber": 18,
+    "lastUpdated": "2026-06-01T11:16:29Z",
+    "currentTeam": {
+        "area": {
+            "id": 2187,
+            "name": "Portugal",
+            "code": "POR",
+            "flag": "https://crests.football-data.org/765.svg"
+        },
+        "id": 765,
+        "name": "Portugal",
+        "shortName": "Portugal",
+        "tla": "POR",
+        "crest": "https://crests.football-data.org/765.svg",
+        "address": "Rua Alexandre Herculano, 58 Lisboa 1250-012",
+        "website": "http://www.fpf.pt",
+        "founded": 1914,
+        "clubColors": "Red / Green",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

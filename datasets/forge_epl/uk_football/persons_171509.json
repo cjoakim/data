@@ -1,0 +1,43 @@
+{
+    "id": 171509,
+    "name": "Kaine Kesler",
+    "firstName": "Kaine",
+    "lastName": "Kesler-Hayden",
+    "dateOfBirth": "2002-10-23",
+    "nationality": "England",
+    "section": "Defence",
+    "position": "Defence",
+    "shirtNumber": 20,
+    "lastUpdated": "2026-07-15T09:25:44Z",
+    "currentTeam": {
+        "area": {
+            "id": 2072,
+            "name": "England",
+            "code": "ENG",
+            "flag": "https://crests.football-data.org/770.svg"
+        },
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png",
+        "address": "Gallagher Retail Park, Stoney Stanton Road Coventry CV6 5QE",
+        "website": "http://www.ccfc.co.uk",
+        "founded": 1883,
+        "clubColors": "Sky Blue / White",
+        "venue": "St Andrew's Trillion Trophy Stadium",
+        "runningCompetitions": [
+            {
+                "id": 2021,
+                "name": "Premier League",
+                "code": "PL",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/PL.png"
+            }
+        ],
+        "contract": {
+            "start": "2025-07",
+            "until": "2029-06"
+        }
+    }
+}

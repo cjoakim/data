@@ -1,0 +1,43 @@
+{
+    "id": 3199,
+    "name": "Rodri",
+    "firstName": "",
+    "lastName": "Rodri",
+    "dateOfBirth": "1996-06-22",
+    "nationality": "Spain",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 16,
+    "lastUpdated": "2026-06-01T11:16:30Z",
+    "currentTeam": {
+        "area": {
+            "id": 2224,
+            "name": "Spain",
+            "code": "ESP",
+            "flag": "https://crests.football-data.org/760.svg"
+        },
+        "id": 760,
+        "name": "Spain",
+        "shortName": "Spain",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg",
+        "address": "Ram\u00f3n y Cajal, s/n Las Rozas 28230",
+        "website": "http://www.rfef.es",
+        "founded": 1909,
+        "clubColors": "Red / Blue / Yellow",
+        "venue": null,
+        "runningCompetitions": [
+            {
+                "id": 2182,
+                "name": "UEFA Nations League",
+                "code": "UNL",
+                "type": "CUP",
+                "emblem": null
+            }
+        ],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}

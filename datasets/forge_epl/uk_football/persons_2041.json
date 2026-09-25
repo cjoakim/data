@@ -1,0 +1,35 @@
+{
+    "id": 2041,
+    "name": "Rodrigo Bentancur",
+    "firstName": "Rodrigo",
+    "lastName": "Bentancur",
+    "dateOfBirth": "1997-06-25",
+    "nationality": "Uruguay",
+    "section": "Midfield",
+    "position": "Midfield",
+    "shirtNumber": 6,
+    "lastUpdated": "2026-06-01T11:07:17Z",
+    "currentTeam": {
+        "area": {
+            "id": 2257,
+            "name": "Uruguay",
+            "code": "URY",
+            "flag": "https://crests.football-data.org/758.svg"
+        },
+        "id": 758,
+        "name": "Uruguay",
+        "shortName": "Uruguay",
+        "tla": "URU",
+        "crest": "https://crests.football-data.org/758.svg",
+        "address": "Guayaybo 1531 Montevideo 11200",
+        "website": "http://www.auf.org.uy",
+        "founded": 1900,
+        "clubColors": "Sky Blue / White / Black",
+        "venue": null,
+        "runningCompetitions": [],
+        "contract": {
+            "start": null,
+            "until": null
+        }
+    }
+}
